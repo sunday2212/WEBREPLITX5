@@ -1,0 +1,869 @@
+{
+  "meta": {
+    "title": "Fmge_Mini_Test_-_8"
+  },
+  "questions": [
+    {
+      "text": "A new screening test for detecting cervical cancer is being studied in a group of 100 women.  60 women tested negative and 40 tested positive.  Among the women who were tested positive by the new test 30 were actually positive and among the women who tested negative, 10 were having the disease. What is the positive predictive value of the test?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50%"
+        },
+        {
+          "id": 2,
+          "text": "66%"
+        },
+        {
+          "id": 3,
+          "text": "75%"
+        },
+        {
+          "id": 4,
+          "text": "80%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>positive predictive value </strong>is<strong> 75%</strong></p>\n<p>The data given in the question is tabulated as follows:</p>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td>Diseased</td>\n<td>Not diseased</td>\n<td>Total</td>\n</tr>\n<tr>\n<td>Test positive</td>\n<td>30 (TP)</td>\n<td>10 (FP)</td>\n<td>40</td>\n</tr>\n<tr>\n<td>Test negative</td>\n<td>10 (FN)</td>\n<td>50 (TN)</td>\n<td>60</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>40</td>\n<td>60</td>\n<td>100</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>TP - True positive, FP - False positive, FN - False negative, TN - True negative.</p>\n<p><strong>Positive predictive value</strong> <strong>(PPV)</strong> = <strong>TP/(TP + FP) x 100.</strong></p>\n<p>Here PPV = 30/(30+10) x 100 = 30/40 x 100 = 75%</p>\n<p><strong>Predictive value of a positive test:</strong></p>\n<p>It<strong> </strong>indicates the probability that a person with a positive test result truly has the disease. Predictive value is affected by sensitivity, specificity, and prevalence. It is highly related to the <strong>prevalence of a disease. </strong>The predictive value of a positive test will be more accurate if the disease is more prevalent and vice-versa.</p><hr><h3>Related Pearl: Validity of a Screening Test</h3><ul>\n<li><strong>Validity/ Accuracy of a screening test</strong> depends upon the <strong>sensitivity, specificity,</strong> and<strong> predictive accuracy</strong> of the test.</li>\n<li>It represents the closeness to a true value/ actual value.</li>\n<li>These are the <strong>inherent properties</strong> of a screening test.</li>\n<li>P<strong>P</strong>V and N<strong>P</strong>V are <strong>dependent</strong> on the <strong>P</strong>revalence of disease.</li>\n<li>Sensitivity &amp; Speciifity are independent of prevalence of disease.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/62275b1d441443bc92db11bb3add523ex1280x959.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td colspan=\"2\"><strong>Formulae</strong>&nbsp;</td>\n</tr>\n<tr>\n<td><span>Sensitivity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TP</strong>&nbsp; &nbsp;&nbsp;</span></span><br /><span><strong>TP</strong> + FN</span></td>\n</tr>\n<tr>\n<td><span>Specificity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TN&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>FP + <strong>TN</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a positive test (<strong>P</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>P&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>T<strong>P</strong> + F<strong>P</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a negative test (<strong>N</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>N&nbsp; &nbsp;&nbsp;</strong>&nbsp;</span><sub><br /></sub>T<strong>N</strong> + F<strong>N</strong></span></td>\n</tr>\n<tr>\n<td><span>Percentage of false positives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FP&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>FP + TN</span></td>\n</tr>\n<tr>\n<td><span>Percentage of false negatives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FN&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>TP + FN</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li><strong>PPV</strong> varies <strong>directly</strong> with prevalence</li>\n<li><strong>NPV</strong> varies <strong>inversely</strong> with prevalence</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7927",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Area marked in the given image is supplied by dermatome number?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "T8"
+        },
+        {
+          "id": 2,
+          "text": "T9"
+        },
+        {
+          "id": 3,
+          "text": "T10"
+        },
+        {
+          "id": 4,
+          "text": "T11"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The marked dermatome which includes the <strong>umbilicus </strong>is<strong> supplied </strong>by<strong> T10.</strong></p>\n<p>The dermatomal distribution of the abdominal region is as follows:&nbsp;</p>\n<ul>\n<li>T7, T8, T9 - supplies skin from&nbsp;the xiphoid process to just above the umbilicus.</li>\n<li>T10 - supplies&nbsp;skin around the umbilicus.</li>\n<li>T11, T12 - supplies skin below the umbilicus upto the suprapubic region.</li>\n<li>L1 - supplies&nbsp;skin around the genitalia and upper medial thigh.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d46332cd9eab4a279a8f32d56a50d3ffx1280x1722.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/f1c90c4c2aed4e53906f944b1db53edf.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4260",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is the earliest sign seen on cystoscopy in a patient suspected to have bladder tuberculosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tubercles at the ureteric orifice"
+        },
+        {
+          "id": 2,
+          "text": "Pallor around the ureteric orifices"
+        },
+        {
+          "id": 3,
+          "text": "Focal areas of hyperaemia"
+        },
+        {
+          "id": 4,
+          "text": "Hunner's patches"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>earliest sign</strong> of tuberculosis of the bladder observed by cystoscopy is the <strong>pallor of the mucosa</strong> around the <strong>ureteric orifice</strong> due to submucous edema. Subsequently, <strong>tubercles</strong> may be seen.</p>\n<p>In long-standing cases, there is marked <strong>fibrosis</strong> and the <strong>capacity</strong> of the bladder is greatly <strong>reduced (thimble bladder).</strong> This is managed by <strong>augmentation cystoplasty.</strong></p>\n<p>The following X-ray KUB shows a thimble bladder:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e5c4b134b71c4d4babbf287b78afcc1ex720x503.PNG\" alt=\"Explanation Image\"><p><br />Ureteric lesions can also be seen in genitourinary tuberculosis. They include:</p>\n<ul>\n<li><strong>Kerr&rsquo;s kink</strong> - kinking of the ureteropelvic junction (UPJ)</li>\n<li>Ureteral stricture</li>\n<li>Beaded ureter</li>\n<li>Shortening of the ureter</li>\n<li><strong>Golf hole ureter</strong> - Longitudinal fibrosis leading to shortening of the ureter and pulling up the orifice as a gaping hole.&nbsp;<strong>Reimplantation of ureter</strong> is done.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4d451ff848c741d1bbb2a2acafee885bx1280x1663.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7891",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 40-year-old patient comes to the OPD with a history significant for a mood disorder. Her moods can be charted as shown in the image given below. What is the diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cyclothymia"
+        },
+        {
+          "id": 2,
+          "text": "Dysthymia"
+        },
+        {
+          "id": 3,
+          "text": "Rapid cycling disorder"
+        },
+        {
+          "id": 4,
+          "text": "Hypomania"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p class=\"p1\">The given image showing 3 episodes of depression and 2 episodes of mania <strong>within 1 year,</strong> points towards a diagnosis of <strong>rapid cycling bipolar disorder</strong>.&nbsp;</p>\n<p class=\"p1\">It is diagnosed when the patient has <strong>4 or more</strong> episodes of <strong>depression and/or mania or hypomania</strong> within <strong>one</strong>&nbsp;<strong>year</strong>. There must be less than 2 weeks of normalcy between the episodes or an immediate shift between the symptoms with no intervening normal mood.</p>\n<p>Risk factors:</p>\n<ul>\n<li>Female patients</li>\n<li>Hypothyroidism</li>\n<li>Alcoholism or substance abuse</li>\n<li>Antidepressants (if used without mood stabilizers)</li>\n<li>Cyclothymia</li>\n<li>Bipolar II disorder</li>\n</ul>\n<p>The <strong>drug of choice</strong> for rapid cycling disorder is <strong>valproate.&nbsp;</strong></p>\n<p>Note:&nbsp;If the phases of mania and depression <strong>alternate</strong> very rapidly in a matter of<strong> hours or days </strong>then&nbsp;the condition is known as <strong>ultra-rapid cycling disorder</strong>.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/8f2413239943465999b55c608d0b0815.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7947",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 45-year-old man presenting with halitosis and regurgitation, underwent a barium swallow scan as shown below. Weakness located in which of the following muscles predisposes to the suspected condition​?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Superior constrictor"
+        },
+        {
+          "id": 2,
+          "text": "Middle constrictor"
+        },
+        {
+          "id": 3,
+          "text": "Inferior constrictor"
+        },
+        {
+          "id": 4,
+          "text": "Palatopharyngeus"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>This clinical scenario of a patient with halitosis and regurgitation with the GIF of an X-ray showing the barium swallow filling a sac in the posterior pharyngeal wall is highly suggestive of<strong>&nbsp;Zenker's diverticulum.</strong>&nbsp;It protrudes through the <strong>Killian's dehiscence,</strong> a potential space present in the <strong>inferior constrictor muscle</strong>.</p>\n<p>The inferior constrictor muscle is made up of 2 parts: The upper<strong> thyropharyngeus</strong>&nbsp;and the lower<strong> cricopharyngeus</strong>. The cricopharyngeus muscle is divisible into the superficial oblique component (<strong>pars oblique</strong>) and the deeper transverse component (<strong>pars fundiformis</strong>). These 2 components of the muscle have a potential space between them termed&nbsp;<strong>Killian's dehiscence.&nbsp;</strong>&nbsp;</p>\n<p>As a result of the uncoordinated contraction between the cricopharyngeus and upper oesophagal sphincter, mucosal herniation through the Killian's dehiscence gives rise to&nbsp;<strong>Zenker's diverticulum.&nbsp;</strong>This diverticulum is a common site for food impaction and accumulation (halitosis, regurgitation) and may cause dysphagia in affected patients.&nbsp;</p>\n<p>Note -&nbsp;Another potential site of diverticulum formation is the&nbsp;<strong>Laimer's triangle,&nbsp;</strong>situated below the cricopharyngeus and above the longitudinal fibres of the oesophagus.&nbsp;</p><hr><h3>Related Pearl: Zenker’s Diverticulum</h3><p>Zenker's diverticulum occurs due to <strong>herniation</strong> of mucosa and submucosa through the <strong>Killian's triangle</strong>, which is a weak area between two&nbsp;parts of the <strong>inferior constrictor - </strong>(thyropharyngeus and cricopharyngeus)&nbsp;in the <strong>posterior pharyngeal wall.&nbsp;</strong>It is usually seen in elderly patients (&gt;60 years).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/35fecfcbb88a42a98271e2710b1fdd14x600x837.JPEG\" alt=\"Pearl Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f1d91adec7cf4043844cb02f3d29e3ffx600x1200.JPEG\" alt=\"Pearl Image\"><p><strong>Characteristics</strong> of Zenker's diverticulum:</p>\n<ul>\n<li aria-level=\"1\">Hypopharyngeal</li>\n<li aria-level=\"1\">False diverticula - doesn't have a muscle coat</li>\n<li aria-level=\"1\">Acquired&nbsp;</li>\n<li aria-level=\"1\">Pulsion diverticulum&nbsp;</li>\n</ul>\n<p><strong>Pathophysiology</strong>: Impaired relaxation and spasm of the cricopharyngeus muscle after swallowing can result in increased pressure within the distal pharynx, and cause the diverticulum.Clinical features:</p>\n<ul>\n<li aria-level=\"1\">Dysphagia</li>\n<li aria-level=\"1\">Regurgitation</li>\n<li aria-level=\"1\">Halitosis</li>\n<li aria-level=\"1\">Aspiration</li>\n<li aria-level=\"1\">Gurgling sound during swallowing</li>\n</ul>\n<p>The investigation of choice is <strong>barium swallow</strong> (lateral X-ray).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ae9cc93c02584eb8b4f68d0d17465135x515x727.GIF\" alt=\"Pearl Image\"><p>It is treated with:</p>\n<ul>\n<li aria-level=\"1\"><strong>Cricopharyngeal myotomy</strong></li>\n<li aria-level=\"1\">Surgical diverticulectomy</li>\n<li aria-level=\"1\">Marsupialization</li>\n<li aria-level=\"1\"><strong>Dohlman&rsquo;s procedure</strong></li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/00013fa0bddb435fb8b941132b434da6.GIF"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7901",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements about the hanging mark is false?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The most common position of the knot is under the chin"
+        },
+        {
+          "id": 2,
+          "text": "The gap in the hanging mark indicates the point of suspension"
+        },
+        {
+          "id": 3,
+          "text": "The hanging mark is situated above the thyroid cartilage"
+        },
+        {
+          "id": 4,
+          "text": "The mark dries to a parchment like consistency post-mortem"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>knot </strong>in a suicidal hanging is much <strong>less likely</strong> to be found under the chin than in other positions - behind the ear or at the occiput.</p>\n<p>Hanging mark</p>\n<ul>\n<li>The hanging mark almost never completely encircles the neck unless a slipknot is used.</li>\n<li>In most instances the point of suspension is indicated by a<strong> gap in the skin mark</strong>.</li>\n<li>This gap is usually seen at <strong>one or other side of the neck or at the centre of the back of the neck</strong>. Much less often it is under the chin.</li>\n<li>The hanging mark is <strong>situated higher on the neck than in strangulation</strong>, usually being directly under the chin anteriorly, passing round beneath the jawbones and rising at the sides or back of the neck to the usual gap under the knot.</li>\n<li>The mark may be abraded, brown and dried to a <strong>parchment-like consistency</strong> after death.</li>\n<li>There may be a narrow red zone either above or below (or both sides) the ligature mark. This is not an indicator of vital reaction but is due to the displacement of blood laterally from under the zone of maximum pressure.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4206",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient presents with multiple nodulocystic lesions on the face. Which among the following is the drug of choice in this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Steroids"
+        },
+        {
+          "id": 2,
+          "text": "Isotretinoin"
+        },
+        {
+          "id": 3,
+          "text": "Erythromycin"
+        },
+        {
+          "id": 4,
+          "text": "Tetracycline"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The likely diagnosis in this patient is <strong>nodular acne</strong> and the drug of choice for this condition is <strong>oral isotretinoin.</strong></p>\n<p><strong>Isotretinoin </strong>is an orally administered systemic retinoid that is used in the management of severe acne.</p>\n<p>Commonly seen adverse effects of isotretinoin are <strong>cheilitis</strong> (dry lips), <strong>xerosis</strong> (dry skin), <strong>xerostomia</strong> (dry mouth), <strong>dry nose,</strong> and <strong>increased</strong> <strong>sun</strong> <strong>sensitivity</strong>. </p>\n<p>Oral isotretinoin is <strong>contraindicated</strong> in <strong>pregnant</strong> patients and patients who may be pregnant. </p>\n<p>Other Options:</p>\n<p><strong>Option A: </strong>Steroids are not indicated in cases of acne as they can exacerbate the condition due to <strong>increased sebum production </strong>and <strong>skin cell turnover disruption</strong>.</p>\n<p><strong>Options B and C:</strong> Nodulocystic acne is a severe form of acne that often requires more aggressive treatment options, such as isotretinoin. While antibiotics may be used in some cases of nodulocystic acne, they are not the first-line treatment option.</p><hr><h3>Related Pearl: Global Alliance Algorithm for Acne Treatment</h3><p><strong>Global Alliance Algorithm for Acne Treatment</strong></p>\n<p><strong>Image: </strong>Global Alliance Algorithm for Improving Outcomes in acne</p><img src=\"https://cdn1.dailyrounds.org/uploads/d0c11e3325124df49bac9104eabccaebx686x530.JPEG\" alt=\"Pearl Image\"><p>BPO - Benzoyl peroxide</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/11148a0215a8402bb40ad4d7b2166a59.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7876",
+      "difficulty": "easy"
+    },
+    {
+      "text": "An intern posted in the labor room is administering birth-dose vaccines to a newborn baby. According to the National Immunization Schedule, which of the following vaccine would he not administer?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "BCG"
+        },
+        {
+          "id": 2,
+          "text": "OPV"
+        },
+        {
+          "id": 3,
+          "text": "Hepatitis B vaccine"
+        },
+        {
+          "id": 4,
+          "text": "Pentavalent vaccine"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The pentavalent vaccine is not given at birth.&nbsp;The vaccines given at birth are <strong>BCG</strong>, <strong>OPV (0 dose) and hepatitis B&nbsp;</strong>vaccines.</p><hr><h3>Related Pearl: National Immunization Schedule (India)</h3><table>\n<tbody>\n<tr>\n<td><strong>Vaccine</strong></td>\n<td><strong>When to give</strong></td>\n<td><strong>Dose</strong></td>\n<td><strong>Route</strong></td>\n<td><strong>Site</strong></td>\n</tr>\n<tr>\n<td colspan=\"5\"><strong>For Pregnant Women</strong></td>\n</tr>\n<tr>\n<td>Td-1</td>\n<td>\n<p>Early in pregnancy</p>\n</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>Upper Arm</td>\n</tr>\n<tr>\n<td>Td-2</td>\n<td>\n<p>4 weeks after Td-1*</p>\n</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>Upper Arm</td>\n</tr>\n<tr>\n<td>Td-&nbsp;Booster</td>\n<td>\n<p>If received 2 Td doses in a pregnancy&nbsp;<br />within the last 3 yrs*</p>\n</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>Upper Arm</td>\n</tr>\n<tr>\n<td colspan=\"5\"><strong>For Infants</strong></td>\n</tr>\n<tr>\n<td>BCG</td>\n<td>\n<p>At birth or as early as possible until one&nbsp;year of age</p>\n</td>\n<td>0.1ml(0.05ml until<br />1 month<br />age)</td>\n<td>Intra-dermal</td>\n<td>Left Upper Arm</td>\n</tr>\n<tr>\n<td>Hepatitis B - Birth&nbsp;Dose</td>\n<td>\n<p>At birth or as early as possible within 24 hrs</p>\n</td>\n<td>0.5ml</td>\n<td>&nbsp;Intra-muscular</td>\n<td>Antero-lateral&nbsp;side of mid-thigh</td>\n</tr>\n<tr>\n<td>OPV - 0</td>\n<td>\n<p>At birth or as early as possible within&nbsp;the first 15 days</p>\n</td>\n<td>2 drops</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td>OPV-1, 2 &amp; 3</td>\n<td>\n<p>At 6 weeks, 10 weeks &amp; 14 weeks (OPV can be given until 5 years of age)</p>\n</td>\n<td>2 drops</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td>Pentavalent&nbsp;1, 2 &amp; 3</td>\n<td>\n<p>At 6 weeks, 10 weeks &amp; 14 weeks (can be given until one year of age)</p>\n</td>\n<td>0.5ml</td>\n<td>lntra&middot;muscular</td>\n<td>Antero-lateral&nbsp;side of mid-thigh</td>\n</tr>\n<tr>\n<td>Rotavirus</td>\n<td>\n<p>At 6 weeks, 10 weeks &amp; 14 weeks (can be given until one year of age)</p>\n</td>\n<td>5&nbsp;drops</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td>IPV</td>\n<td>\n<p>Two fractional doses at 6 &amp; 14&nbsp; weeks of age</p>\n</td>\n<td>0.1ml</td>\n<td>Intra-dermal 2 fractional dose</td>\n<td>Intra-dermal: right&nbsp;Upper Arm</td>\n</tr>\n<tr>\n<td>\n<p>PCV</p>\n<p>(wherever applicable)</p>\n</td>\n<td>\n<p>At 6 weeks &amp; 14 weeks; Booster at 9 completed months</p>\n</td>\n<td>0.5ml</td>\n<td>Intra&middot;muscular</td>\n<td>Antero-lateral&nbsp;side of mid-thigh - Right</td>\n</tr>\n<tr>\n<td>Measles/MR 1<sup>st</sup> Dose</td>\n<td>\n<p>9 completed months -12 months<br />(Can be given till 5 years of age)</p>\n</td>\n<td>0.5ml</td>\n<td>Sub-cutaneous</td>\n<td>Right Upper Arm</td>\n</tr>\n<tr>\n<td>JE- 1**</td>\n<td>\n<p>9 completed months -12 months</p>\n</td>\n<td>0.5ml</td>\n<td>Sub-cutaneous</td>\n<td>Left Upper Arm &nbsp;</td>\n</tr>\n<tr>\n<td>Vitamin A<br />(1st dose)</td>\n<td>\n<p>At&nbsp;9 completed months with measles Rubella</p>\n</td>\n<td>1 ml (1 lakh IU)</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td colspan=\"5\"><strong>For Children&nbsp;</strong></td>\n</tr>\n<tr>\n<td>DPT booster-1</td>\n<td>\n<p>16-24 months</p>\n</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>Antero-lateral&nbsp;side of mid-thigh &nbsp;</td>\n</tr>\n<tr>\n<td>Measles / MR 2<sup>nd </sup>dose</td>\n<td>\n<p>16-24 months</p>\n</td>\n<td>0.5ml</td>\n<td>Sub-cutaneous</td>\n<td>Right Upper Arm &nbsp;</td>\n</tr>\n<tr>\n<td>OPV booster</td>\n<td>\n<p>16-24 months</p>\n</td>\n<td>2 drops</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td>JE-2</td>\n<td>\n<p>16-24 months</p>\n</td>\n<td>0.5ml</td>\n<td>Sub-cutaneous</td>\n<td>Left Upper Arm &nbsp; &nbsp;</td>\n</tr>\n<tr>\n<td>Vitamin A***<br />(2nd to 9<sup>th</sup> dose)</td>\n<td>\n<p>16-18 months.<br />Then one dose every 6 months up to the age of&nbsp; 5 years</p>\n</td>\n<td>2&nbsp;ml (2 lakh IU)</td>\n<td>Oral</td>\n<td>Oral</td>\n</tr>\n<tr>\n<td>DPT booster 2</td>\n<td>\n<p>5-6 years</p>\n</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>Upper Arm</td>\n</tr>\n<tr>\n<td>Td</td>\n<td>10 years &amp; 16 years</td>\n<td>0.5ml</td>\n<td>Intra-muscular</td>\n<td>\n<p>Upper Arm</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>*Give Td-2 or booster doses before 36 weeks of pregnancy. However, give these even if more than 36 weeks have passed. Give Td to a woman in labor, if she has not previously received Td.</p>\n<p>**JE vaccine is introduced in select endemic districts after the campaigns.</p>\n<p>***The 2nd to 9th doses of vitamin A can be administered to children 1-5 years old during biannual rounds, in collaboration with ICDS.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7890",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 66-year-old chronic smoker who is diagnosed with small cell carcinoma of the lung presents to the ER with complaints of nausea, confusion,  and dizziness. After the initial workup, he is diagnosed to have the syndrome of inappropriate ADH secretion (SIADH). The SIADH is characterized by:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hyponatremia and urine sodium excretion > 20 mEq/L"
+        },
+        {
+          "id": 2,
+          "text": "Hypernatremia and urine sodium excretion > 20 mEq/L"
+        },
+        {
+          "id": 3,
+          "text": "Hyponatremia and Hyperkalemia"
+        },
+        {
+          "id": 4,
+          "text": "Hypernatremia and Hyperkalemia"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The syndrome of inappropriate ADH secretion (SIADH) is associated with&nbsp;<strong>increased urinary excretion of sodium</strong>, thereby leading to <strong>hyponatremia and urine sodium excretion &gt; 20 mEq/L.</strong></p>\n<p>&nbsp;<strong>Small cell lung cancer</strong> is commonly associated with SIADH due to the <strong>ectopic release of antidiuretic hormone</strong>.&nbsp;</p>\n<p>Patients usually present with <strong>hyponatremia</strong> with a <strong>euvolemic</strong> status. If hyponatremia develops acutely, signs and symptoms may include mild headache, confusion, anorexia, nausea, vomiting, coma, and convulsions.&nbsp;Chronic hyponatremia allows cerebral adaptation, and the patients are asymptomatic despite the hyponatremia.</p>\n<p>Laboratory findings in SIADH include:</p>\n<ul>\n<li>Hyponatremia: <strong>serum Na<sup>+</sup>&lt;135 mEq/L</strong></li>\n<li><strong>Urinary loss of Na<sup>+ </sup>&gt;25 mEq per day or &gt;40 mEq/L</strong>&nbsp;</li>\n<li>Urinary osmolality is &gt;100 mOsm/kg</li>\n<li>Blood urea nitrogen (BUN) levels are low, usually &lt;10 mg/dL</li>\n<li><strong>Serum K<sup>+</sup></strong> and serum bicarbonate are <strong>normal</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4277",
+      "difficulty": "medium"
+    },
+    {
+      "text": "PET stands for:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Positive electron tomography"
+        },
+        {
+          "id": 2,
+          "text": "Proton electron tomography"
+        },
+        {
+          "id": 3,
+          "text": "Photon emitting tomography"
+        },
+        {
+          "id": 4,
+          "text": "Positron emission tomography"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>PET&nbsp;</strong>stands for <strong>positron emission tomography.</strong></p>\n<ul>\n<li><strong>Positron emission tomography (PET)</strong> is a nuclear medicine imaging technique that produces a three &ndash; dimensional image or picture of functional processes in the body. Three &ndash; dimensional images of tracer concentration within the body are then constructed by computer analysis.</li>\n<li><strong>Single photon emission computed tomography&nbsp;(SPECT)</strong>&nbsp;and&nbsp;<strong>Positron emission tomography (PET)</strong>&nbsp;are nuclear medicine imaging techniques which provide metabolic and functional information, unlike CT and MRI.</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p>Positron emission tomography (PET)</p>\n</td>\n<td>\n<p>Single-photon emission computed tomography&nbsp;(SPECT)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Very expensive</p>\n<p>Uses positron emitting radioisotope (tracer) - <strong><sup>18</sup>F-FDG</strong></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>Better contrast and spatial resolution</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Lower cost</p>\n<p>Uses gamma emitting radioisotope (tracer)</p>\n<p><strong>Technetium-99 m</strong></p>\n<p>Iodine-123</p>\n<p>Iodine-131</p>\n<p>Less contrast and spatial resolution</p>\n<p><strong>&nbsp;</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FA8226",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following bacteria demonstrates tumbling type of motility at 25 °C, but is non-motile at 37 °C?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Listeria monocytogenes"
+        },
+        {
+          "id": 2,
+          "text": "Treponema pallidum"
+        },
+        {
+          "id": 3,
+          "text": "Clostridium tetani"
+        },
+        {
+          "id": 4,
+          "text": "Vibrio cholera"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><em><strong>Listeria monocytogenes</strong></em> demonstrates&nbsp;<strong>tumbling</strong> end-over-end motility at <strong>22&ndash;28 &deg;C</strong> but becomes non-motile at 37 &deg;C.&nbsp;</p>\n<p>Listeria monocytogenes is a gram-positive bacillus. These rods are facultatively intracellular and move&nbsp;from cell to cell using the host cell actin framework. It can grow&nbsp;at<strong>&nbsp;low refrigeration temperatures</strong>. They show tumbling motility at&nbsp;25&deg;C.&nbsp;But, at 37&deg;C, it is non-motile because the&nbsp;<strong>peritrichous</strong>&nbsp;<strong>flagella</strong>&nbsp;are produced by the bacillus optimally between 20&deg;C&nbsp;and 30&deg;C.</p>\n<p>The image below shows the tumbling motility of&nbsp;<em>L. monocytogenes.</em></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/463c39a05dd44991985fe914e7e222bex720x734.GIF\" alt=\"Explanation Image\"><p><em>Listeria&nbsp;</em>can <strong>overcome</strong> the <strong>food preservation</strong> process since it<strong>&nbsp;grows&nbsp;</strong>at&nbsp;<strong>4&deg;C</strong>, with&nbsp;<strong>low pH</strong>, and&nbsp;<strong>high salt</strong>&nbsp;concentration.</p>\n<p><em>Listeriosis&nbsp;</em>can present as<strong>&nbsp;gastroenteritis</strong>&nbsp;in healthy adults. It usually develops within 48 hours of ingestion of a large inoculum in contaminated food. It can also lead to the formation of an abscess, pharyngitis, pneumonia, and endocarditis. It leads to&nbsp;<strong>neonatal meningitis</strong>&nbsp;and sepsis, and&nbsp;<strong>meningoencephalitis</strong>&nbsp;in the elderly and&nbsp;<strong>immunocompromised people</strong>. Listeriosis in pregnancy can lead to abortion and stillbirth.</p>\n<p>Most&nbsp;laboratories do not routinely culture Listeria from stool samples. The diagnosis of systemic listeriosis rests on&nbsp;the isolation of the organism in cultures of blood and spinal fluid.</p>\n<p><strong>Ampicillin plus gentamicin</strong>&nbsp;is often recommended for therapy.<strong>&nbsp;Trimethoprim-sulfamethoxazole</strong>&nbsp;is the drug of choice for&nbsp;<strong>central nervous system infections</strong> in patients who are allergic to penicillin.</p><hr><h3>Related Pearl: Types of motility of microorganisms</h3><table>\n<tbody>\n<tr>\n<td><strong>Motility</strong></td>\n<td><strong>Microorganism</strong></td>\n</tr>\n<tr>\n<td>Darting/vibratory motility&nbsp;</td>\n<td>Vibrio,Campylobacter</td>\n</tr>\n<tr>\n<td>Swarming motility</td>\n<td>Cl. septicum, B.cereus, Proteus, some Vibrio sp</td>\n</tr>\n<tr>\n<td>Tumbling Motility&nbsp;</td>\n<td>Listeria monocytogenes</td>\n</tr>\n<tr>\n<td>Stately motility</td>\n<td>Clostridia</td>\n</tr>\n<tr>\n<td>Spinning motility</td>\n<td>Fusobacterium gyrans</td>\n</tr>\n<tr>\n<td>Cork Screw</td>\n<td>T.pallidum</td>\n</tr>\n<tr>\n<td>Falling leaf motility</td>\n<td>Giardia</td>\n</tr>\n<tr>\n<td>Twitching motility</td>\n<td>Eikenella corrodens</td>\n</tr>\n<tr>\n<td>Differential motility (Motility at different temperature)</td>\n<td>Yersinia enterocolitica &amp; Listeria monocytogenes</td>\n</tr>\n<tr>\n<td>Jerky</td>\n<td>Trichomonas</td>\n</tr>\n<tr>\n<td>Gliding</td>\n<td>Mycoplasma, Entamoeba</td>\n</tr>\n<tr>\n<td>Lashing</td>\n<td>Saprophytic spirochetes</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7949",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 48-year-old man was on crutches for a few months after a road traffic accident. After the initial 2 weeks, he complained of an inability to extend his wrist. He achieved complete recovery a few weeks later. What is the mechanism behind this phenomenon?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Neurotmesis"
+        },
+        {
+          "id": 2,
+          "text": "Axonotmesis"
+        },
+        {
+          "id": 3,
+          "text": "Neurolysis"
+        },
+        {
+          "id": 4,
+          "text": "Neurapraxia"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The given clinical scenario of a man not able to extend his wrist after the use of a crutch and complete recovery after a few weeks is suggestive of <strong>crutch palsy</strong> which is a type of <strong>neurapraxia</strong>. </p>\n<p>Neurapraxia is a <strong>reversible physiological block</strong> in nerve conduction. Some types of sensation and muscle power are lost in neuropraxia. The structure of the nerve is not changed and there is complete, spontaneous recovery after a few weeks. Neurapraxia occurs due to segmental demyelination by mechanical pressure. </p>\n<p>Crutch palsy occurs when the radial nerve is compressed in the arm from direct pressure against a firm object (crutch). Other examples of neuropraxia include <strong>Saturday night palsy </strong>and <strong>tourniquet palsy.</strong></p>\n<p>Other options:</p>\n<p>Option A: <strong>Neurotmesis</strong> occurs due to the damage in <strong>both axon and nerve</strong> by a complete section or scarring of a segment in open fractures. A surgical nerve repair is required since spontaneous recovery doesn't take place.</p>\n<p>Option B: <strong>Axonotmesis</strong> occurs due to the <strong>damage of axons</strong> with <strong>preservation</strong> of the <strong>internal architecture</strong> of the nerve. It is seen typically after closed fractures and dislocations. Spontaneous recovery can occur but may take a long time.</p>\n<p>Option C: <strong>Neurolysis</strong> is the surgical removal of fibrotic tissue inside a nerve trunk.</p><hr><h3>Related Pearl: Seddon's  classification of nerve injuries</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Seddon's</strong>&nbsp;<strong>classification includes 3 groups</strong></p>\n<ol>\n<li><strong>Neurapraxia</strong></li>\n<li><strong>Axonotmesis</strong></li>\n<li><strong>Neurotmesis</strong></li>\n</ol>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Neurapraxia: </strong></p>\n<p>Reversible physiologic conduction block. Occurs due to mechanical pressure causing segmental demyelination.</p>\n<p>E.g.,Saturday night palsy, torniquet, and crutch palsy</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Axonotmesis:&nbsp;</strong></p>\n<p>Axonal interruption. Conduction is lost but the nerve is in continuity and neural tubes are intact.</p>\n<p>E.g.,Closed fractures and dislocations</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Neurotmesis:&nbsp;</strong></p>\n<p>Division of the nerve trunk.&nbsp;Endoneurial tube destruction also occurs.</p>\n<p>E.g., Complete section of nerve in open fractures</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7925",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 45-year-old patient comes with complaints of progressive weakness as the day progresses. He is found to have antibodies against nicotinic acetylcholine receptors. Which is the most common ocular finding in this disease?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Diplopia"
+        },
+        {
+          "id": 2,
+          "text": "Lagophthalmos"
+        },
+        {
+          "id": 3,
+          "text": "Exophthalmos"
+        },
+        {
+          "id": 4,
+          "text": "Ptosis"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Ptosis</strong> is the <strong>most common ocular</strong> feature in<strong> myasthenia gravis</strong> (MG).</p>\n<p>MG is an <strong>autoimmune disorder most</strong>&nbsp;commonly caused by <strong>antibodies against the acetylcholine receptor (AChR)</strong>. These antibodies cause damage to the postsynaptic muscle membrane and increased endocytosis of the AChR.</p>\n<p>Patients usually present with <strong>weakness and</strong>&nbsp;<strong>fatiguability</strong> of the muscles, which <strong>increases on repeated use</strong> or <strong>late in the day</strong> and improves on rest. The cranial muscles, particularly the eyelids and extraocular muscles are involved early in the course of MG. <strong>Diplopia</strong> and <strong>ptosis</strong> are common initial complaints. When MG becomes generalized, the <strong>proximal muscles of the limbs</strong> are affected first. Despite the muscle weakness, the <strong>deep tendon reflexes</strong> remain <strong>normal</strong>.&nbsp;</p>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4270",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the size of the given blade used for incision and drainage of a superficial abscess?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "10"
+        },
+        {
+          "id": 2,
+          "text": "11"
+        },
+        {
+          "id": 3,
+          "text": "23"
+        },
+        {
+          "id": 4,
+          "text": "15"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The blade shown in the image is of the <strong>size 11.</strong></p>\n<p>The <strong>11-blade</strong> is used for <strong>skin incisions</strong> (eg. incision and drainage) and <strong>arteriotomy</strong></p>\n<p>The<strong> 22-blade</strong> is often used for <strong>abdominal incisions</strong></p>\n<p>15-blade for minor surgical procedures</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6c73199ec3b44fe9aa18a905f79a1b53x1280x1666.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/220ed6bfecdb47ebaad96c79e0c5f8ef.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4278",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Identify the instrument given below.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Proctoscope"
+        },
+        {
+          "id": 2,
+          "text": "Sims' speculum"
+        },
+        {
+          "id": 3,
+          "text": "Cusco’s speculum"
+        },
+        {
+          "id": 4,
+          "text": "Doyen's retractor"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The instrument shown in the image is<strong>&nbsp;a proctoscope.&nbsp;</strong></p>\n<p>A&nbsp;lubricated proctoscope to visualize lesions in the anus, anorectal junction, and lower rectum. Proctoscopy is done as an OPD procedure to detect hemorrhoids, polyps, or ulcers</p>\n<p><strong>Cusco&rsquo;s speculum</strong> is a self-retaining bivalve speculum used for <strong>visualisation of the cervix</strong>, <strong>vaginal fornices </strong>and for performing <strong>pap smear</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5d83f3c769c54152b53b9d75fc43e50cx360x270.JPEG\" alt=\"Explanation Image\"><p><strong>Sims' speculum</strong><strong>&nbsp;</strong>is used for the assessment of <strong>rectocele and cystocele</strong>. The speculum is applied against the vaginal wall and slowly retracted out until a bulge appears, indicating cystocele or rectocele.&nbsp; It can also be used for <strong>visualization of the vaginal walls</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/038269f5325540f2bc86d1514c63f589x360x270.JPEG\" alt=\"Explanation Image\"><p><strong>Doyen's retractor&nbsp;</strong>is used to retract the abdominal wall as well as the bladder to facilitate better exposure of the lower uterine segment during cesarian operation. It is also used to pull back the soft tissues to widen the surgical field during laparotomy.</p>\n<p>The image below shows Doyen's retractor.&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/23156d3a9ed24d9ab277de68ad03bd7dx1279x1116.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/c3691143675d4f559dc50f0961aa3bb6.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7968",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A man is receiving a matched kidney allograft. While closing the abdomen, the surgeon notices a sudden change of color of transplanted kidney to pale-white. Which of the following is responsible for graft rejection in this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Preformed antibodies in the recipient"
+        },
+        {
+          "id": 2,
+          "text": "Cytotoxic T lymphocyte–mediated injury"
+        },
+        {
+          "id": 3,
+          "text": "Tubulointerstitial inflammation due to antibodies"
+        },
+        {
+          "id": 4,
+          "text": "Donor antibodies causing endotheliitis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario within minutes of transplant is suggestive of <strong>hyperacute rejection</strong> and is due to <strong>preformed antibodies</strong>&nbsp;from the <strong>recipient.</strong>&nbsp;</p><hr><h3>Related Pearl: Classification of Transplant Rejection Reactions</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p><strong>Mechanism</strong></p>\n</td>\n<td>\n<p><strong>Morphology</strong></p>\n</td>\n</tr>\n<tr>\n<td colspan=\"3\">\n<p><strong>T-cell-mediated</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Acute</p>\n</td>\n<td>\n<p>Seen within the initial months after transplantation;</p>\n<p>Clinical and biochemical signs of organ failure;</p>\n<p><strong>Cytokines secreted by activated CD4</strong><strong>+ </strong><strong>T cells.</strong></p>\n</td>\n<td>\n<p>Increased vascular permeability and&nbsp; accumulation of mononuclear cells (lymphocytes and macrophages)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Chronic</p>\n</td>\n<td>\n<p>Lymphocytes reacting against alloantigens in the vessel wall</p>\n<p>Cytokines that induce local inflammation and may stimulate the proliferation of vascular endothelial and smooth muscle cells.</p>\n</td>\n<td>\n<p>The vascular lesions and T-cell reactions cause parenchymal fibrosis.</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"3\">\n<p><strong>B-cell-mediated</strong></p>\n&nbsp;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Hyperacute</p>\n</td>\n<td>\n<p><strong>Antidonor antibodies present in the circulation of the recipient</strong></p>\n</td>\n<td>\n<p>Endothelial injury and fibrin-platelet thrombi, Neutrophils, thrombotic occlusion of the capillaries, and fibrinoid necrosis in arterial walls</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Acute antibody-mediated</p>\n</td>\n<td>\n<p>Antidonor antibodies produced after transplantation</p>\n<p>Complement-dependent cytotoxicity, inflammation, and antibody dependent cell-mediated cytotoxicity.</p>\n<p><strong>The initial target of these antibodies in rejection seems to be the graft vasculature</strong></p>\n</td>\n<td>\n<p>Inflamation of capillaries</p>\n<p>Deposition of the complement breakdown product C4d</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Chronic antibody-mediated</p>\n</td>\n<td>\n<p>Develops insidiously, without preceding acute rejection, and <strong>primarily affects vascular components.</strong></p>\n</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p><hr><h3>Related Pearl: Transplant Rejection and Hypersensitivity</h3><table>\n<tbody>\n<tr>\n<td>Type of Rejection&nbsp;</td>\n<td>Type of Hypersensitivity</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Host vs Graft</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>Hyperacute</td>\n</tr>\n<tr>\n<td>Acute&nbsp;</td>\n</tr>\n<tr>\n<td>Chronic</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n</td>\n<td>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>Type 2</td>\n</tr>\n<tr>\n<td>Type 4</td>\n</tr>\n<tr>\n<td>Type 4</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Graft vs Host</li>\n</ul>\n</td>\n<td>Type 4</td>\n</tr>\n</tbody>\n</table>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7913",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A young man presented with diarrhea, floating stools, and weight loss for 3 months. The biopsy of the intestine is shown below. His symptoms improved with folic acid intake. What is the most likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Celiac disease"
+        },
+        {
+          "id": 2,
+          "text": "Whipple’s disease"
+        },
+        {
+          "id": 3,
+          "text": "Tropical sprue"
+        },
+        {
+          "id": 4,
+          "text": "Short bowel syndrome"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The above clinical scenario with histopathology showing <strong>partial villous atrophy</strong> with <strong>inflammation of lamina propria,</strong> and<strong> improvement with folic acid intake</strong>&nbsp;suggest that the patient has <strong>tropical sprue.</strong></p>\n<p><strong>Tropical sprue</strong> is an acquired malabsorptive condition of probable <strong>infectious </strong>etiology. Patients present with <strong>diarrhea, steatorrhoea, weight loss</strong>, folic acid, and vitamin B12 <strong>deficiency.</strong> </p>\n<p>The small intestinal mucosal biopsy is <strong>diagnostic</strong> and reveals partial villous atrophy and mononuclear cell infiltration in the lamina propria.&nbsp;</p>\n<p>Broad-spectrum antibiotics such as <strong>tetracycline</strong> can be given for 6 months and <strong>folic acid</strong> is often curative. A gluten-free diet doesn't improve the condition.&nbsp;</p>\n<p>Other options:</p>\n<p>Option A:&nbsp;<strong>Celiac disease</strong> is a <strong>gluten-sensitive enteropathy.</strong> Patients present with iron deficiency anaemia, weight loss, diarrhea, and malabsorption. Biopsy reveals blunting of villi, crypt hyperplasia, and inflammation propria. They respond to a gluten-free diet.</p>\n<p>The below image shows histopathological findings seen in celiac disease.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/20ac1b3677294ec8a5789dfad8ee29a2x1280x853.6.JPEG\" alt=\"Explanation Image\"><p>Option B- <strong>Whipple's disease</strong> is a multiorgan disease caused by the bacteria <em><strong>Tropheryma whipplei.</strong></em> It is characterised by arthralgia, arthritis, weight loss, diarrhea,&nbsp; abdominal pain, and psychiatric manifestation. The organism can be detected by tissue immunohistochemistry and tissue staining for <strong>PAS-positive macrophages</strong>.</p>\n<p>The below image shows the PAS stain in Whipple's disease.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/86297e67cc454b109e8b0c9bafa8ecfbx1023x1534.JPEG\" alt=\"Explanation Image\"><p>Option D: <strong>Short bowel syndrome</strong> occurs after the resection of various lengths of the small intestine. Patients will have diarrhea, steatorrhea, weight loss, and micro and macronutrient deficiencies.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/8b5bea9fa75a450d89c60a80f08da83b.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7967",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Parents of a child with febrile seizures are concerned about the relapse, complications, and treatment of this condition. All of the following are true regarding the risks and management of this case, except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Antipyretics do not reduce the risk of a recurrent febrile seizure"
+        },
+        {
+          "id": 2,
+          "text": "Clobazam or clonazepam help reduce recurrence of febrile seizures"
+        },
+        {
+          "id": 3,
+          "text": "Anti-epileptic therapy can decrease the risk of future epilepsy"
+        },
+        {
+          "id": 4,
+          "text": "Pre-existing neurodevelopmental abnormality increases the risk of febrile seizures"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>All of the above statements are true, except for <strong>option C:&nbsp;Antiepileptic therapy can decrease the risk of future epilepsy</strong>. The risk of future epilepsy does<strong> not change</strong> with or without <strong>antiepileptic therapy</strong>.</p>\n<p><strong>Febrile seizures</strong> are seizures that:</p>\n<ul>\n<li>Occur between the age of 6 months and 5 years</li>\n<li>Occur at a temperature of<strong> 38&deg;C (100.4&deg;F) </strong>or<strong> higher</strong></li>\n<li>Are not due to any CNS infection or any metabolic imbalance</li>\n<li>Occur without a history of prior afebrile seizures</li>\n<li>Occur with <strong>no post-ictal neurological deficit</strong>.</li>\n</ul>\n<p><strong>Antipyretics do not reduce the risk of recurrent febrile seizures.</strong></p>\n<p><strong>Types of febrile seizures:</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Simple febrile seizures</strong></td>\n<td><strong>Complex (atypical) febrile seizures</strong></td>\n</tr>\n<tr>\n<td>Occurs within 24 hours of the onset of fever</td>\n<td>Can occur at any time during a fever</td>\n</tr>\n<tr>\n<td>&nbsp;Generalized seizures</td>\n<td>Focal seizures</td>\n</tr>\n<tr>\n<td>Duration is &lt;15 min</td>\n<td>Prolonged</td>\n</tr>\n<tr>\n<td>No recurrence within 24 hrs of seizures</td>\n<td>Recurrent</td>\n</tr>\n<tr>\n<td>Chances of going into epilepsy <strong>1%</strong></td>\n<td>Chances of going into epilepsy are 6%</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Investigations:</strong></p>\n<div class=\"page\" title=\"Page 561\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<ul>\n<li>In first episode of febrile seizure, lumbar puncture is indicated in cases of clinically suspected meningitis.</li>\n<li><span>EEG and neuroimaging are advised for children with atypical febrile seizures.</span></li>\n</ul>\n</div>\n</div>\n</div>\n<p><strong>Treatment:</strong></p>\n<div class=\"page\" title=\"Page 561\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>An acute episode of seizure is terminated by intravenous lorazepam or midazolam.&nbsp;<span>Antipyretics and proper hydration.</span></p>\n</div>\n</div>\n</div>\n<p><strong>Prophylaxis:</strong></p>\n<ul>\n<li>\n<div class=\"column\">\n<p>In children with risk factors for recurrence or those with frequent recurrences (&ge;3 in 6 months or &ge;4 in one year),give intermittent prophylaxis&nbsp;<span>for 3 days during the fever episode to reduces recurrences.</span></p>\n</div>\n</li>\n</ul>\n<p>Note:</p>\n<ul>\n<li><strong>Antipyretics</strong> can decrease the discomfort of the child but <strong>do not reduce</strong> the risk of having a recurrent febrile seizure.</li>\n<li><strong>Intermittent oral nitrazepam, clobazam, and clonazepam</strong> <strong>help reduce</strong> but do not eliminate, the risks of recurrence of febrile seizures.</li>\n<li>The risk of&nbsp;<strong>future epilepsy</strong> does not change with or without <strong>antiepileptic therapy. </strong></li>\n<li><strong>Pre-existing neurodevelopmental abnormality</strong> increases the <strong>risk of febrile seizures.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7885",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A resident is examining a patient with bilateral leg swelling below the knees. He notes that on applying pressure, the indentation does not persist on release. What is the likely cause of the edema?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Myxedema"
+        },
+        {
+          "id": 2,
+          "text": "Nephrotic syndrome"
+        },
+        {
+          "id": 3,
+          "text": "Chronic lymphangitis"
+        },
+        {
+          "id": 4,
+          "text": "Acute lymphatic filariasis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Bilateral</strong>&nbsp;<strong>non-pitting</strong> edema in the lower limbs is suggestive of <strong>myxedema</strong>.</p>\n<p>Pretibial myxedema is a manifestation of <strong>Grave's disease</strong>. The triad of Grave's disease is <strong>orbitopathy</strong>, <strong>goiter,</strong> and <strong>pretibial</strong> <strong>myxedema.</strong></p>\n<p>This change is caused due to an increased <strong>glycosaminoglycan</strong> deposition in the skin giving it an edematous appearance. Despite this appearance, the skin does not pit with pressure.</p>\n<p>While chronic<strong> lymphangitis</strong> and acute lymphatic<strong> filariasis</strong> can also cause non-pitting edema, they usually have a <strong>unilateral</strong>/localized presentation.&nbsp;<strong>Nephrotic syndrome</strong> and heart failure cause&nbsp;<strong>bilateral pitting</strong> edema.</p>\n<p>Causes of <strong>generalized edema</strong> include:</p>\n<ul>\n<li>Heart failure</li>\n<li>Chronic renal failure</li>\n<li>Nephrotic syndrome</li>\n<li>Liver cirrhosis</li>\n</ul>\n<p>Causes of <strong>localized edema</strong> include:</p>\n<ul>\n<li>Thrombophlebitis</li>\n<li>Chronic lymphangitis</li>\n<li>Resection of regional lymph nodes</li>\n<li>Filariasis</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7960",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is the defective DNA repair mechanism seen in patients with Severe Combined Immuno Deficiency (SCID)?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Non Homologous End Joining (NHEJ)"
+        },
+        {
+          "id": 2,
+          "text": "Homologous recombination"
+        },
+        {
+          "id": 3,
+          "text": "Nucleotide Excision repair"
+        },
+        {
+          "id": 4,
+          "text": "Mismatch repair"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>SCID is associated with a <strong>defective Non-Homologous End Joining (NHEJ). </strong></p>\n<p><strong>Non-homologous end-joining</strong>&nbsp;(NHEJ) is a mechanism by which a group of proteins mediates the recognition, processing, and direct ligation of the ends of two DNA fragments where a&nbsp;<strong>double-strand break</strong>&nbsp;in DNA has occurred. This is in contrast to&nbsp;<strong>homologous repair&nbsp;</strong>(HR), another mechanism,&nbsp;where an undamaged homologous DNA template is required to replace an adjacent damaged one.</p>\n<p>NHEJ deficiency confers combined immunodeficiency due to a failure to carry out recombination efficiently. NHEJ also functions in class switch recombination, another step enhancing T and B cell diversity.</p>\n<p><strong>Severe combined immunodeficiency (SCID)</strong></p>\n<ul>\n<li>Defects in&nbsp;<strong>both humoral</strong>&nbsp;and&nbsp;<strong>cell-mediated</strong>&nbsp;immune responses.</li>\n<li>Persons with SCID are extremely susceptible to recurrent, severe infections by a wide range of pathogens, including&nbsp;<strong>Candida albicans,&nbsp;Pneumocystis jirovecii,&nbsp;</strong>Pseudomonas&nbsp;species, cytomegalovirus, varicella,&nbsp;etc.</li>\n<li>The&nbsp;most common form&nbsp;is&nbsp;<strong>X-linked SCID</strong>, and hence, SCID is more<strong>&nbsp;common in boys</strong>&nbsp;than in girls. The genetic defect in the X-linked form is a&nbsp;mutation in the common &gamma;-chain (&gamma;c) subunit of cytokine receptors.</li>\n<li>The most common cause of <strong>autosomal-recessive</strong> SCID is a<strong>&nbsp;</strong>deficiency of<strong>&nbsp;the adenosine deaminase (ADA)</strong>&nbsp;enzyme.</li>\n<li>other gene mutations that can be seen in SCID are&nbsp;<strong>JAK3, RAG1,</strong>&nbsp;<strong>IL-7R,&nbsp;</strong>etc.</li>\n</ul><hr><h3>Related Pearl: Human Diseases of DNA Damage Repair</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>DNA damage repair type</strong></p>\n</td>\n<td>\n<p><strong>Diseases</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Defective Nonhomologous End Joining Repair (NHEJ)</p>\n</td>\n<td>\n<p>Severe combined immunodeficiency disease (SCID)</p>\n<p>Radiation sensitive severe combined immunodeficiency disease(RS-SCID)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Defective Homologous Repair (HR)</p>\n</td>\n<td>\n<p>AT-like disorder (ATLD)</p>\n<p>Nijmegen breakage syndrome (NBS)</p>\n<p>Bloom syndrome (BS)</p>\n<p>Werner syndrome (WS)</p>\n<p>Rothmund-Thomson syndrome (RTS)</p>\n<p>Breast cancer suspectibility 1 and 2 (BRCA1, BRCA2)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Defective DNA Nucleotide Exicision Repair (NER)</p>\n</td>\n<td>\n<p>Xeroderma pigmentosum (XP)</p>\n<p>Cockayne syndrome (CS)</p>\n<p>Trichothiodystrophy (TTD)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Defective DNA Base Excision Repair (BER)</p>\n</td>\n<td>\n<p>MUTYH-associated polyposis (MAP)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Defective DNA Mismatch Repair (MMR)</p>\n</td>\n<td>\n<p>Hereditary nonpolyposis colorectal cancer (HNPCC)</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7943",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Vasopressin acting on its V2 receptor uses _____ as its secondary messenger.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Calcium"
+        },
+        {
+          "id": 2,
+          "text": "cGMP"
+        },
+        {
+          "id": 3,
+          "text": "cAMP"
+        },
+        {
+          "id": 4,
+          "text": "Nuclear receptor"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Vasopressin acting on its <strong>V2</strong> receptor uses <strong>cAMP</strong> as its secondary messenger.</p>\n<p>Vasopressin is a nonapeptide hormone that is synthesized in the hypothalamus and released from the <strong>posterior pituitary</strong>. Vasopressin plays a vital role in controlling the body's osmotic balance, blood pressure regulation, and sodium homeostasis.</p>\n<p>Vasopressin acts on</p>\n<ul>\n<li><strong>V1</strong> receptor to cause&nbsp;<strong>vasoconstriction</strong> using <strong>calcium</strong> as its secondary messenger.</li>\n<li><strong>V2 </strong>receptor to facilitate reabsorption of water through <strong>aquaporin 2,</strong>&nbsp;primarily in the collecting ducts, using <strong>cAMP</strong> as its secondary messenger.</li>\n<li>Thus, vasopressin acts on g-protein coupled receptors using different secondary messengers to accomplish its various actions.</li>\n</ul><hr><h3>Related Pearl: Mechanisms of Action of Hormones</h3><table>\n<tbody>\n<tr>\n<td colspan=\"2\"><strong>Types of hormone receptors</strong></td>\n</tr>\n<tr>\n<td colspan=\"2\"><strong>Hormones that bind to intracellular receptors</strong></td>\n</tr>\n<tr>\n<td rowspan=\"3\">Cytoplasmic receptors</td>\n<td>Glucocorticoids</td>\n</tr>\n<tr>\n<td>Mineralocorticoids</td>\n</tr>\n<tr>\n<td>Androgens</td>\n</tr>\n<tr>\n<td rowspan=\"2\">Nuclear receptors</td>\n<td>Thyroid hormones</td>\n</tr>\n<tr>\n<td>Vitamins A and D</td>\n</tr>\n<tr>\n<td colspan=\"2\"><strong>Hormones that bind to cell surface receptors</strong></td>\n</tr>\n<tr>\n<td colspan=\"2\">1. <strong>G-protein coupled receptors</strong> (GPCR)</td>\n</tr>\n<tr>\n<td rowspan=\"9\"><strong>Gs</strong>: stimulation of second messenger cAMP</td>\n<td>ACTH, CRH</td>\n</tr>\n<tr>\n<td>TSH</td>\n</tr>\n<tr>\n<td>FSH, LH, hCG</td>\n</tr>\n<tr>\n<td>Vasopressin (V<sub>2</sub> receptors)</td>\n</tr>\n<tr>\n<td>Catecholamines (&beta; receptors)</td>\n</tr>\n<tr>\n<td>Somatostatin</td>\n</tr>\n<tr>\n<td>Glucagon</td>\n</tr>\n<tr>\n<td>Secretin</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td rowspan=\"3\"><strong>Gi:&nbsp;</strong>inhibition of second messenger cAMP</td>\n<td>Catecholamines (ɑ<sub>2</sub> receptors)</td>\n</tr>\n<tr>\n<td>Acetylcholine (M2, M4)</td>\n</tr>\n<tr>\n<td>Somatostatin</td>\n</tr>\n<tr>\n<td rowspan=\"11\">\n<p><strong>Gq</strong>:&nbsp;second messenger is phospholipase&nbsp;C or cGMP</p>\n</td>\n<td><strong>Phospholipase C (IP3 DAG pathway):</strong></td>\n</tr>\n<tr>\n<td>GnRH, GHRH, TRH</td>\n</tr>\n<tr>\n<td>Catecholamines (ɑ<sub>1</sub> receptors)</td>\n</tr>\n<tr>\n<td>Vasopressin (V<sub>1</sub> receptor)</td>\n</tr>\n<tr>\n<td>Gastrin</td>\n</tr>\n<tr>\n<td>Cholecystokinin</td>\n</tr>\n<tr>\n<td>Oxytocin</td>\n</tr>\n<tr>\n<td>Parathyroid hormone</td>\n</tr>\n<tr>\n<td><strong>cGMP:</strong></td>\n</tr>\n<tr>\n<td>Atrial natriuretic peptide</td>\n</tr>\n<tr>\n<td>Nitric oxide</td>\n</tr>\n<tr>\n<td colspan=\"2\">2. <strong>Tyrosine kinase</strong> receptors</td>\n</tr>\n<tr>\n<td rowspan=\"5\">Through&nbsp;JAK-STAT or MAP kinase pathway</td>\n<td>Growth factors like IGF, VEGF, FGF, PDGF</td>\n</tr>\n<tr>\n<td>Growth hormone</td>\n</tr>\n<tr>\n<td>Erythropoietin</td>\n</tr>\n<tr>\n<td>Insulin</td>\n</tr>\n<tr>\n<td>Prolactin</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><br />Note: Even though the cytoplasmic receptors are present in the cytoplasm, once the <strong>hormone-receptor complex</strong> is formed it moves to the <strong>nucleus</strong> for its actions.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7940",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient presents with complaints of severe left loin pain and burning micturition. His erect abdominal X-ray is shown below. What is the best management for his condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Extracorporeal shockwave lithotripsy"
+        },
+        {
+          "id": 2,
+          "text": "Percutaneous nephrolithotomy"
+        },
+        {
+          "id": 3,
+          "text": "Percutaneous nephrostomy"
+        },
+        {
+          "id": 4,
+          "text": "Ureteroscopic removal"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given abdominal X-ray shows <strong>left staghorn renal calculi. </strong>The best treatment option for staghorn renal calculi is <strong>percutaneous nephrolithotomy (PCNL).</strong></p>\n<p><strong>Staghorn calculi </strong>is also known as <strong>triple phosphate stone. </strong>It occupies the renal pelvis and calyces.</p>\n<p><strong>PCNL:</strong><strong>&nbsp;</strong>Endoscopic instruments are passed into the kidney by percutaneous technique and stones are fragmented and removed. It is mainly used in treating large stones and stones in the proximal ureter.</p>\n<p>Indications of PCNL:</p>\n<ul>\n<li>Obstructions caused by anatomical abnormalities like pulviureteric junction obstruction, calyceal diverticula or ureteric obstruction</li>\n<li><strong>Staghorn calculi</strong></li>\n<li>Stones <strong>&gt;2.5 cm</strong> in size</li>\n<li>Stone composition - <strong>struvite</strong>, <strong>calcium oxalate monohydrate</strong> and <strong>cystine</strong> stones</li>\n<li><strong>Multiple stones</strong></li>\n<li><strong>Obese patients</strong> in whom <strong>ESWL</strong> is <strong>contraindicated </strong></li>\n<li>Stones not responding for ESWL</li>\n</ul><p>Other options:</p>\n<p>Option A:&nbsp;<strong>Extracorporeal shockwave lithotripsy (ESWL)</strong> is a non-invasive method that generates shockwaves outside the body, which are focused on stones. It is the <strong>commonest method</strong> of treating urinary tract stones nowadays.&nbsp;</p>\n<p>Stones&nbsp;up to&nbsp;approximately&nbsp;<strong>1.5 cm</strong>&nbsp;in size&nbsp;<strong>are suitable</strong>&nbsp;for this form of treatment.&nbsp;<span data-preserver-spaces=\"true\"><strong>Cystine stones</strong> which are&nbsp;often multiple, and very hard&nbsp;are relatively <strong>resistant</strong> <strong>to ESWL</strong> due to their hardness.&nbsp;</span><span data-preserver-spaces=\"true\"><strong>Contraindications</strong> for ESWL include obese patients, pregnant patients, and patients taking oral anticoagulants.</span></p><p>Option C:&nbsp;<strong>Percutaneous nephrostomy</strong>, or nephropyelostomy, is an interventional procedure that is used in the <strong>decompression of the renal collecting system</strong>.</p>\n<p>It is done in grossly unwell patients due to <strong>sepsis</strong> secondary to an obstructive urinary tract calculi. They <strong>drain pus</strong> from the kidneys adequately with less manipulation and a lower risk of septicemia than a ureteric stent.</p><p>Option D:&nbsp;<strong>Ureteroscopic removal</strong>&nbsp;is generally preferred for <strong>stones &lt;6mm</strong> and specifically those present in the&nbsp;<strong>distal ureter.&nbsp;</strong>Ureteric calculi are directly visualized through semi-rigid ureteroscopes. Stones are then fragmented and extracted using a dormia basket.</p>\n<p>Ureteroscopic stone removal using dormia basket is depicted in the image below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ec2aa35ede5b4582ba611a596f1bfeedx1280x1688.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/ac9bdd68050f4bf3b862360b6757438a.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7964",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the investigation of choice in a 55-year-old woman who presents with post-menopausal bleed?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pap smear"
+        },
+        {
+          "id": 2,
+          "text": "Endometrial biopsy"
+        },
+        {
+          "id": 3,
+          "text": "Fractional curettage"
+        },
+        {
+          "id": 4,
+          "text": "CA-125 estimation"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Endometrial biopsy&nbsp;</strong>is the investigation of choice in a case of <strong>post-menopausal bleed</strong>, as the chances of <strong>endometrial cancer</strong> are quite high.</p>\n<p>For those who undergo TVUS and have an <strong>EEC</strong> (endometrial echo complex) <strong>&gt;4 mm</strong>, localized thickening, or an <strong>indistinct</strong> or nonvisible EEC, <strong>endometrial sampling</strong> is a reasonable next step.</p>\n<p>Investigations for endometrial carcinoma include:</p>\n<ul>\n<li><strong>Endometrial aspiration biopsy </strong>is the&nbsp;first investigation in abnormal uterine bleeding, especially in females &gt;35 years.</li>\n<li>Dilatation and fractional curettage&nbsp;was the best method to diagnose but now it is not used.</li>\n<li><strong>Hysteroscopy and biopsy </strong>is the investigation of choice for endometrial cancer.</li>\n<li><strong>Transvaginal USG </strong>is used as an&nbsp;<strong>adjunct</strong> to endometrial biopsy.</li>\n<li>Pap smear is&nbsp;not reliable to diagnose endometrial carcinoma.&nbsp;It is more useful as a screening tool rather than a diagnostic tool.</li>\n</ul>\n<p>If symptoms of postmenopausal bleeding persist, imaging of the endometrial cavity should be performed with one or a combination of the following: TVUS, contrast sonography, or hysteroscopy.</p>\n<p>Note:&nbsp;<strong>Surgical staging</strong> is the gold standard investigation for staging endometrial carcinoma.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4222",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The given emblem shows an organization related to which organism?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mycobacterium tuberculosis"
+        },
+        {
+          "id": 2,
+          "text": "Mycobacterium leprae"
+        },
+        {
+          "id": 3,
+          "text": "Wuchereria bancrofti"
+        },
+        {
+          "id": 4,
+          "text": "Leishmania donovani"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given image is the emblem of <strong>National Leprosy Eradication Programme (NLEP).&nbsp;</strong>Leprosy is&nbsp;caused by <em><strong>Mycobacterium leprae.</strong></em></p>\n<p><strong>Characteristics of NLEP emblem:</strong></p>\n<ul>\n<li>The <strong>lotus</strong> in the&nbsp;NLEP emblem<strong>&nbsp;</strong>symbolizes beauty and purity.</li>\n<li>A&nbsp;<strong>partially affected thumb,</strong>&nbsp;a&nbsp;<strong>normal forefinger,</strong>&nbsp;and the&nbsp;<strong>shape of a house </strong>symbolize that leprosy can be cured and that a patient with leprosy can be a useful member of society.</li>\n<li>The&nbsp;<strong>rising</strong>&nbsp;<strong>sun</strong> symbolizes hope and optimism.</li>\n<li>The emblem captures the spirit of hope and positivity in the eradication of leprosy.</li>\n</ul>\n<p>NLEP is a centrally sponsored health scheme of the Ministry of Health and Family Welfare, Govt. of India.</p>\n<p>Other options:</p>\n<p>Option A- Programme dealing with&nbsp;<strong><em>Mycobacterium tuberculosis</em></strong>, is&nbsp;<strong>National Tuberculosis Elimination Program</strong>&nbsp;(NTEP)</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/af0419fa8df7413eaa2ff9f549fa1569x1280x1259.JPEG\" alt=\"Explanation Image\"><p>Option C and D -&nbsp;<em>Wuchereria bancrofti&nbsp;</em>causes filariasis and&nbsp;<em>Leishmania donovani</em> causes&nbsp;Kala-azar, which are&nbsp;<strong>vector-borne diseases</strong>.&nbsp;<strong>National Vector Borne Disease Control Programme (NVBDCP)</strong>&nbsp;is the nodal agency for the prevention of control of the following vector-borne diseases:</p>\n<ul>\n<li><strong>Kala-azar</strong> (also called <strong>visceral leishmaniasis</strong>)</li>\n<li>Malaria</li>\n<li>Dengue</li>\n<li><strong>Filariasis</strong></li>\n<li>Japanese encephalitis</li>\n<li>Chikungunya.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ecd10ba1b8ef4b47bd4f6994ca1dc3e8x358x255.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/ba5ff29862c44b43acd6ed8190605a64.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7958",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 64-year-old man is rushed to the emergency department with severe abdominal pain, abdominal distension, and obstipation. His erect X-ray abdomen is as shown. Which of the following is the likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sigmoid volvulus"
+        },
+        {
+          "id": 2,
+          "text": "Colonic diverticulosis"
+        },
+        {
+          "id": 3,
+          "text": "Cecal volvulus"
+        },
+        {
+          "id": 4,
+          "text": "Paralytic ileus"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario of a 64-year-old man with severe abdominal pain, abdominal distension, and obstipation along with the radiograph showing the <strong>coffee bean</strong> <strong>sign</strong> is likely to be <strong>sigmoid volvulus</strong>.</p>\n<p>Sigmoid volvulus is a condition that occurs when the sigmoid colon twists on the sigmoid mesocolon.</p>\n<p>A sigmoid volvulus can be differentiated from a cecal volvulus by swirl sign, location of the obstructed loop, and anatomical appendages. The swirl with sigmoid volvulus is located on the right quadrant while the swirl with cecal volvulus is located at the pelvic brim. </p>\n<p>Other options:</p>\n<p>Option B: <strong>Colonic diverticulosis</strong> refers to the condition where multiple outpouchings occur along the gastrointestinal tract without any inflammation. The barium enema given below shows multiple outpouchings in the ascending, transverse, and descending colon resembling a <strong>saw-tooth. </strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/40b9429a727d499781f74e8927d3d98fx720x720.JPEG\" alt=\"Explanation Image\"><p>Option C:<strong> Cecal volvulus</strong> is more common in females in the 4th to 5th decade. It is characterized by ischemia. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2b334bc9e29748279b03ee681ec6c286x709x599.JPEG\" alt=\"Explanation Image\"><p>Option D:<strong> Paralytic ileus</strong> occurs secondary to neuromuscular failure. This leads to the failure of transmission of peristaltic waves. It mainly occurs following laparotomy. The image given below is an X-ray of a patient with a paralytic ileus.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7bc8c2b4ad6e4071a517011839c1bbe0x512x568.PNG\" alt=\"Explanation Image\"><p>Differences between the small bowel and large bowel obstruction:</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Features</strong></td>\n<td><strong>Small bowel</strong></td>\n<td><strong>Large bowel</strong></td>\n</tr>\n<tr>\n<td>Valvulae conniventes</td>\n<td>Present in jejunum</td>\n<td>Absent</td>\n</tr>\n<tr>\n<td>No of Loops</td>\n<td>Many</td>\n<td>Few</td>\n</tr>\n<tr>\n<td>Distribution of loops</td>\n<td>Central</td>\n<td>Peripheral</td>\n</tr>\n<tr>\n<td>Haustra</td>\n<td>Absent</td>\n<td>Present</td>\n</tr>\n<tr>\n<td>Diameter</td>\n<td>3-5 cm</td>\n<td>&gt;5 cm</td>\n</tr>\n<tr>\n<td>Solid feces</td>\n<td>Absent</td>\n<td>Present</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/f2e31c85c11c4710af02d888bf000b33.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7921",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following drugs can be used in the first trimester of pregnancy?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ACE inhibitors"
+        },
+        {
+          "id": 2,
+          "text": "Angiotensin receptor blockers"
+        },
+        {
+          "id": 3,
+          "text": "Propylthiouracil"
+        },
+        {
+          "id": 4,
+          "text": "Statins"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Propylthiouracil</strong>&nbsp;can be used in the <strong>first trimester</strong> of pregnancy. It is indicated in the management of<strong> hyperthyroidism.</strong></p>\n<p>Other options</p>\n<p><strong>ACE</strong> inhibitors and Angiotensin receptor blockers are fetopathic and can cause <strong>fetal growth retardation</strong> and hypoplasia of organs.&nbsp;</p>\n<div class=\"page\" title=\"Page 544\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Statins</strong> can cause Vertebral, anal, cardiac, tracheoesophageal fistula, renal, arterial, limb (<strong>VACTERAL</strong>) defects</p>\n</div>\n</div>\n</div>\n</div><hr><h3>Related Pearl: Teratogenic drugs and the birth defects</h3><table>\n<tbody>\n<tr>\n<td><strong>Drugs</strong></td>\n<td><strong>Adverse effects</strong></td>\n</tr>\n<tr>\n<td>Penicillamine</td>\n<td>Cutis laxa syndrome</td>\n</tr>\n<tr>\n<td><strong>Lithium</strong></td>\n<td><strong>Ebstein anomaly</strong></td>\n</tr>\n<tr>\n<td>Isotretinoin</td>\n<td>Facial-ear anomalies, heart disease, CNS anomalies</td>\n</tr>\n<tr>\n<td>Progesterone</td>\n<td>Masculinization of the female fetus</td>\n</tr>\n<tr>\n<td>Quinine</td>\n<td>Abortion, thrombocytopenia, deafness</td>\n</tr>\n<tr>\n<td>Topiramate</td>\n<td>Cleft lip</td>\n</tr>\n<tr>\n<td><strong>Valproate</strong></td>\n<td>Spina bifida, limb defects,&nbsp;<strong>autism spectrum disorder</strong>, facial and cardiac anomalies,&nbsp;<strong>Coarctation of the aorta</strong>, Aortic stenosis, Pulmonary atresia, Ventricular Septal Defect.&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Vitamin D</strong></td>\n<td><strong>Supravalvular aortic stenosis</strong></td>\n</tr>\n<tr>\n<td><strong>Warfarin</strong></td>\n<td>Fetal bleeding, <strong>hypoplastic nasal structures</strong></td>\n</tr>\n<tr>\n<td><strong>Statins</strong></td>\n<td>Vertebral, anal, cardiac, tracheoesophageal fistula, renal, arterial, limb (<strong>VACTERAL</strong>) defects</td>\n</tr>\n<tr>\n<td><strong>Phenytoin</strong></td>\n<td>Ventricular septal defect, Atrial Septal Defect, Coarctation of the aorta, Patent Ductus Arteriosus</td>\n</tr>\n<tr>\n<td>Alcohol</td>\n<td>Atrial Septal Defect, Ventricular Septal Defect</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4205",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which is the shortest acting muscle relaxant?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Vecuronium"
+        },
+        {
+          "id": 2,
+          "text": "Pancuronium"
+        },
+        {
+          "id": 3,
+          "text": "Suxamethonium"
+        },
+        {
+          "id": 4,
+          "text": "Pipecuronium"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Suxamethonium</strong> (succinylcholine) is the shortest-acting muscle relaxant.</p>\n<p>It has a <strong>rapid-onset</strong> (30&ndash;60secs) and <strong>short duration</strong> of action (typically less than 10 min) due to <strong>rapid hydrolysis</strong> by butyrylcholinesterase (<strong>plasma cholinesterase</strong> or pseudocholinesterase).</p><hr><h3>Related Pearl: Types of muscle relaxants</h3><p>There are 2 types of muscle relaxants: depolarizing &amp; non-depolarizing.</p>\n<p><strong>Depolarizing Muscle Relaxant:</strong>&nbsp;</p>\n<ul>\n<li>Succinylcholine</li>\n</ul>\n<p><strong>Non-Depolarizing Muscle Relaxant:</strong></p>\n<p>Ultra short-acting (&lt;10 minutes)</p>\n<ul>\n<li>Gantacurium</li>\n</ul>\n<p>Short-acting (10-20 minutes)</p>\n<ul>\n<li>Mivacurium</li>\n</ul>\n<p>&nbsp;Intermediate-acting (20-50 minutes)</p>\n<ul>\n<li>Atracurium</li>\n<li>Cisatracurium</li>\n<li>Vecuronium</li>\n<li>Rocuronium</li>\n</ul>\n<p>Long-acting (&gt;50 minutes)</p>\n<ul>\n<li>Pancuronium</li>\n<li>Doxacurium</li>\n</ul>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB4227",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A woman presents to the outpatient department with complaints of amenorrhoea for the past year. She has a history of postpartum hemorrhage and lactational failure. What is the probable diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sheehan's syndrome"
+        },
+        {
+          "id": 2,
+          "text": "Hyperthyroidism"
+        },
+        {
+          "id": 3,
+          "text": "Prolactinoma"
+        },
+        {
+          "id": 4,
+          "text": "Pituitary apoplexy"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The clinical scenario points to a diagnosis of <strong>Sheehan's syndrome</strong>. </p>\n<p>Sheehan syndrome also called <strong>post-partum pituitary necrosis</strong> refers to the necrosis of the pituitary gland following significant <strong>post-partum bleeding, hypovolemia, and shock.</strong> It may present acutely as an endocrine emergency or present chronically.The late presentation has the following features:</p>\n<ul>\n<li><strong>Lactation failure</strong> - due to prolactin deficiency</li>\n<li><strong>Amenorrhea</strong> - due to anovulation caused by reduced gonadotropin activity</li>\n<li><strong>Hypothyroidism</strong> - due to decreased TSH secretion </li>\n<li><strong>Adrenal insufficiency</strong> - due to low ACTH</li>\n</ul>\n<p class=\"p1\">Option B: <strong>Hyperthyroidism </strong>can cause oligomenorrhoea and amenorrhea but is likely to have symptoms of hyperthyroidism like weight loss, palpitations, tremors, heat intolerance, dyspnea on exertion, diarrhoea and muscle weakness.</p>\n<p class=\"p1\">Option C:<strong> Prolactinoma</strong> or pituitary adenoids is the condition of hyperprolactinemia diagnosed by a prolactin level &gt;200 μg/L. It usually presents with infertility, amenorrhea, and <strong>galactorrhea.</strong></p>\n<p class=\"p1\">Option D: <strong>Pituitary apoplexy</strong> is a condition in which there is a <strong>haemorrhage or infarction</strong> of the pituitary gland. This disorder commonly occurs in a<strong> pre-existing pituitary adenoma</strong>. This patient does not have any signs of adenoma and a history of PPH makes Sheehan syndrome more likely.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7907",
+      "difficulty": "easy"
+    },
+    {
+      "text": "You are a physiologist, studying the microstructure of a skeletal muscle. In the image given below, all of the following can be found in the area marked 'x' except ______.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Actin"
+        },
+        {
+          "id": 2,
+          "text": "Myosin"
+        },
+        {
+          "id": 3,
+          "text": "Troponin"
+        },
+        {
+          "id": 4,
+          "text": "Tropomyosin"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The marked region 'x' is depicting the <strong>I-band</strong>&nbsp;of the myofibril.&nbsp;It does not contain myosin.</p>\n<p><span data-preserver-spaces=\"true\">The portion of myofibril that lies between two&nbsp;<strong>Z lines</strong>&nbsp;is known as the&nbsp;<strong>sarcomere.&nbsp;</strong>One sarcomere comprises&nbsp;<strong>1 entire A band</strong>&nbsp;and&nbsp;<strong>2 half-I bands.&nbsp;</strong></span></p>\n<p><span data-preserver-spaces=\"true\"><strong>A band</strong> consists of <strong>Myosin</strong>&nbsp;(thick filaments) surrounded by Actin filaments. I-band comprises&nbsp;<strong>thin filaments</strong>&nbsp;that contain&nbsp;<strong>actin, troponin,</strong> and <strong>tropomyosin.&nbsp;</strong><strong>H zone</strong>&nbsp;is the middlemost part of the<strong> A band</strong> which comprises only myosin heads.&nbsp;During skeletal muscle contraction,&nbsp;<strong>A band</strong>&nbsp;remains constant.&nbsp;<strong>Z lines</strong>&nbsp;come closer to each other.&nbsp;<strong>H and I bands</strong>&nbsp;reduce in their lengths.&nbsp;</span></p>\n<p><strong>Tropomyosin&nbsp;</strong>molecules are long filaments located in the groove between the two chains in the actin. Each thin filament contains 300&ndash;400 actin molecules and 40&ndash;60 tropomyosin molecules.</p>\n<p><strong>Troponin</strong>&nbsp;molecules are small globular units located at intervals along with the tropomyosin molecules. Each of the three troponin subunits has a unique function:</p>\n<ul>\n<li>Troponin&nbsp;<strong>T</strong>&nbsp;binds the troponin components to tropomyosin.</li>\n<li>Troponin&nbsp;<strong>I</strong>&nbsp;inhibits the <strong>i</strong>nteraction of myosin with actin.</li>\n<li>Troponin&nbsp;<strong>C</strong>&nbsp;contains the binding sites for the&nbsp;<strong>Ca&nbsp;</strong><strong><sup>2+</sup></strong>&nbsp;that help to initiate contraction.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/81984b509dcd497685b5e4c7bbf63aa5x1280x2342.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Microanatomy of Muscle Fibres</h3><ul>\n<li>Each muscle consists of numerous <strong>muscle</strong> <strong>fibres</strong>.</li>\n<li>Each skeletal muscle fibre is <strong>multi</strong> <strong>nucleated</strong>, bonded by <strong>sarcolemma</strong>, enclosing <strong>sarcoplasm</strong>, smooth muscle and cardiac muscles are uninucleated.&nbsp;</li>\n<li>Within the <strong>sarcoplasm</strong>, there are several hundreds of <strong>nuclei</strong> arranged in the periphery just beneath the sarcolemma.</li>\n<li>The sarcoplasm also consists of evenly distributed, longitudinal threads called <strong>myofibrils</strong>.</li>\n<li><strong>Each myofibril</strong> consists of <strong>thick (myosin) and thin (actin) filaments</strong> overlapping each other.</li>\n<li>The portion of myofibril which consists of thick filaments is known as <strong>A band</strong> or <strong>dark band</strong>, and the portion of a myofibril between two A bands consisting of only thin filaments is known <strong>I band or Light band</strong>.</li>\n<li>Thus the <strong>A band</strong> consists of <strong>both thick and thin filaments</strong>, where as <strong>I band</strong> consists of only thin filaments.</li>\n<li>In the <strong>middle of &lsquo;A&rsquo; band</strong>, there are <strong>only thick filaments</strong> with no overlapping thin filaments. This zone is known as &lsquo;<strong>H&rsquo; zone</strong>. In the middle of H zone, there is a dark band known as &lsquo;<strong>M&rsquo; band</strong>.</li>\n<li>In the <strong>middle of I band</strong>, there is a dark &lsquo;<strong>Z&rsquo; disc or Krause's membrane</strong>.</li>\n<li>The segment of the myofibril between two Z discs is known as the <strong>sarcomere</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/484dd92344534f49979b2bf687dc07bcx720x664.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/3e00cb0bad1549dbbb6c39d6181d356e.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7879",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 25-year-old woman with 16 weeks of gestation presents with cramping abdominal pain followed by the passage of fleshy mass per vaginum. The pain subsided following the expulsion. On examination, the uterus appeared smaller with the os closed and the bleeding had stopped. Ultrasound reveals an empty uterine cavity. This is a case of ____________ miscarriage.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Threatened"
+        },
+        {
+          "id": 2,
+          "text": "Complete"
+        },
+        {
+          "id": 3,
+          "text": "Inevitable"
+        },
+        {
+          "id": 4,
+          "text": "Missed"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given clinical features are suggestive of <strong>complete miscarriage.</strong></p>\n<p>Expulsion of products of conception,<strong> en masse</strong>, is called a complete miscarriage.</p>\n<p>Features:</p>\n<ul>\n<li>Subsidence of abdominal pain</li>\n<li>Decreased or absent vaginal bleeding</li>\n<li>Uterus is smaller</li>\n<li>The cervical os is closed</li>\n<li>Examination of the expelled fleshy mass is found complete.</li>\n<li>USG - empty uterine cavity</li>\n</ul>\n<p>Abortion is the expulsion or extraction from the mother of an embryo or fetus weighing&nbsp;500 g or less when it is not capable of independent survival.</p>\n<p>Classification of abortion:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5d01749d935b4409a791007540546e5ax1280x1480.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option A: In <strong>threatened</strong> miscarriage, the&nbsp;process of miscarriage has started but has not progressed&nbsp;to a state from which recovery is impossible.&nbsp;</p>\n<p>Features:</p>\n<ul>\n<li>Bleeding which is usually slight and may be brownish or bright red in color</li>\n<li>Usually painless but&nbsp;pain appears following hemorrhage</li>\n<li>Closed external&nbsp;os</li>\n<li>Uterine size corresponds to the period of amenorrhea</li>\n<li>The uterus and cervix feel&nbsp;soft</li>\n<li>Well-formed gestation ring</li>\n<li>Fetal cardiac motion</li>\n<li>Blighted ovum</li>\n</ul>\n<p>Option C: In <strong>inevitable</strong> miscarriage,&nbsp;the changes have progressed to a state from&nbsp;where continuation of pregnancy is impossible.</p>\n<p>Features:</p>\n<ul>\n<li>Increased vaginal bleeding</li>\n<li>Aggravation of pain in the lower abdomen which&nbsp;may be colicky in nature</li>\n<li>Dilated internal os</li>\n<li>Rupture of the membranes</li>\n</ul>\n<p>Option D: In <strong>missed</strong> miscarriage,&nbsp;the fetus is dead and retained inside the uterus for a variable period</p>\n<p>Features: The&nbsp;patient usually presents with features of threatened miscarriage&nbsp;followed by</p>\n<ul>\n<li>Persistence of brownish vaginal discharge</li>\n<li>Subsidence of pregnancy symptoms</li>\n<li>Retrogression of breast changes</li>\n<li>Cessation of&nbsp;uterine growth</li>\n<li>Nonaudibility of the fetal heart sound</li>\n<li>Cervix feels firm</li>\n<li>Negative immunological test for pregnancy</li>\n<li>Empty sac</li>\n</ul>\n<p>In <strong>incomplete miscarriage</strong>,&nbsp;entire products of conception are not expelled, instead, a part of it is left&nbsp;inside the uterine cavity</p>\n<ul>\n<li>Pain in the lower abdomen</li>\n<li>Vaginal bleeding</li>\n<li>Uterus smaller than the period of amenorrhea</li>\n<li>Patulous cervical os</li>\n<li>Echogenic material (products of conception) within the cavity</li>\n</ul>\n<p>In <strong>septic abortion</strong>, there will be&nbsp;clinical evidence of infection of the uterus and its&nbsp;contents</p>\n<p>Features:</p>\n<ul>\n<li>Rise of the temperature of at least 100.4 F for 24 hours or more</li>\n<li>Offensive or&nbsp;purulent vaginal discharge</li>\n<li>Other evidence of pelvic infection such as lower abdominal pain&nbsp;and tenderness.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/854c2fcd5e714055ab0ca6b14640f88fx1280x6462.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB7969",
+      "difficulty": "easy"
+    }
+  ]
+}

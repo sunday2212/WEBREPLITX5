@@ -1,0 +1,824 @@
+{
+  "meta": {
+    "title": "Sterilization_Disinfection"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cancel the procedure.</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Continue with the procedure.</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wipe the rust off with a disinfectant and use</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Return the complete set to sterile services for reprocessing and use a new set</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A surgeon wants your advice about rust found on surgical instruments that are required for an operational procedure this afternoon. He has no other sets available. What is the most appropriate advice?</span></p>",
+      "unique_key": "DT1181878",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181878,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<ul>\n<li>When rusty instruments are found, the items need to be taken out of service so as not to compromise patient care. Loan equipment or alternative instruments need to be provided as a replacement.</li>\n<li>Surgical instruments are made from high-grade stainless steel and are coated for protection against the aggressive nature of the decontamination process (passivation layer), which prevents the steel from rusting.</li>\n<li>If at any time rust is found on the surface of an instrument, it indicates that either the passivation layer is compromised or there is weakness in the metal from which the instrument is made.</li>\n</ul>",
+      "correct_choice_id": 4,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoclave at 121&deg;C for 15 min at 15 lbs pressure</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">5% formalin followed by autoclave at 121&deg;C for 30 min</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sodium hydroxide for 1 hr followed by autoclave at 121&deg;C for 60 min</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sodium hypochlorite for 10 min followed by autoclave at 121&deg;C for 30 min</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 62-year-old patient with rapidly progressive dementia undergoes a brain biopsy, which confirms sporadic Creutzfeldt-Jakob disease (sCJD). The hospital's infection control team is tasked with decontaminating the neurosurgical instruments used in the procedure to prevent iatrogenic transmission of prions. Which of the following methods is MOST effective for prion decontamination?</span></p>",
+      "unique_key": "DT1181879",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181879,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<ul>\n<li>Prions are the most resistant structure to sterilization and disinfection, and are best removed by <strong>Sodium hydroxide for 1 hr followed by autoclave at 121&deg;C for 60 min</strong>.</li>\n<li>Prions can be sterilized by either <strong>Steam sterilization</strong> or using a c<strong>ombination of sodium hydroxide and autoclaving</strong>, using 1 of the 4 following options:\n<ul>\n<li>Autoclave at 134&deg;C for 18 minutes in a pre-vacuum sterilizer.</li>\n<li>Autoclave at 132&deg;C for 1 hour in a gravity displacement sterilizer.</li>\n<li>Immerse in 1 N NaOH (1 N NaOH is a solution of 40 g NaOH in 1 L water) for 1 hour; remove and rinse in water, then transfer to an open pan and autoclave (121&deg;C gravity displacement sterilizer or 134&deg;C porous pre-vacuum sterilizer) for 1 hour.</li>\n<li>Immerse in 1 N NaOH for 1 hour and heat in a gravity displacement sterilizer.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Autoclaving at 121&deg;C for 15 minutes at 15 lbs pressure (Option A)</strong> is effective for destroying heat-resistant microorganisms like bacterial spores, but not effective against prions.</p>\n<p><strong>5% formalin followed by autoclave at 121&deg;C for 30 min (Option B)</strong> is not effective for the complete inactivation of prions.</p>\n<p><strong>Sodium hypochlorite for 10 min, followed by autoclaving at 121&deg;C for 30 min (Option D),</strong> is not effective against the complete inactivation of prions.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glutaraldehyde</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ethylene oxide</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Isopropyl alcohol</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Formaldehyde</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The equipment shown in the image is best sterilised by:<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032000b260db-54e1-4659-9ff5-93c194406399.jpg\"></span></p>",
+      "unique_key": "DT1181880",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181880,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>The equipment shown in the image is a <strong>'Heart-Lung Machine'</strong>, which is best sterilised by <strong>Ethylene Oxide</strong>.</p>\n<p><strong>Ethylene oxide:</strong></p>\n<p>Used for <strong>heat-sensitive plastics, electronics, and complex devices that cannot withstand steam sterilization</strong>. eg, Heart-lung machine, Implantable devices, Catheters, Endoscopic instruments, Pre-filled syringes.</p>\n<p>Mechanism of action: Microbicidal and Sporicidal.</p>\n<p><strong>Side effects:</strong></p>\n<ul>\n<li>Highly inflammable</li>\n<li>Highly irritant</li>\n<li>Highly explosive</li>\n<li>Never use 100% ethylene oxide (3-10% is enough)</li>\n<li>Mix with inert gas to prevent inflammability</li>\n</ul>\n<p><strong>Used in:</strong></p>\n<ul>\n<li>Cardio-pulmonary machines</li>\n<li>Pre-packed syringes</li>\n<li>Heat-labile surgical instruments</li>\n<li>Dental equipment</li>\n<li>Respirators</li>\n</ul>\n<p>The control used is <strong>Bacillus Globigii.</strong></p>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Glutaraldehyde (Option A):</strong></p>\n<ul>\n<li>It is a chemical method of sterilization.</li>\n<li>Used for sterilising bronchoscopes, laryngoscopes, and endoscopes.</li>\n</ul>\n<p><strong>Isopropyl alcohol (Option C):</strong> Used for sterilizing stethoscopes and thermometers.</p>\n<p><strong>Formaldehyde (Option D): </strong>It is a chemical method of sterilization used for</p>\n<ul>\n<li>OT fumigation</li>\n<li>Storing biological specimens</li>\n<li>Duckering (killing bacillus anthracis spores from animal wool) is a process where animal spores are treated with formaldehyde</li>\n</ul>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Isopropyl alcohol</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Formaldehyde</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glutaraldehyde</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Plasma sterilisation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The best disinfectant for the equipment shown in the image is:<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240320e6a81b85-5c66-418e-9f5f-fad8fc424cba.jpg\"></span></p>",
+      "unique_key": "DT1181881",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181881,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>The instrument shown in the image is an <strong>Endoscope, </strong>and it is sterilized with <strong>Glutaraldehyde</strong>.</p>\n<ul>\n<li>It is a chemical method of sterilization.</li>\n<li>Used for sterilising bronchoscope, laryngoscope and endoscope.</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Isopropyl alcohol (Option A):</strong> used for sterilizing stethoscope and thermometer</p>\n<p><strong>Formaldehyde (Option B):</strong></p>\n<p>It is a chemical method of sterilization used for</p>\n<ul>\n<li>OT fumigation</li>\n<li>Storing biological specimens</li>\n<li>Duckering(killing bacillus anthracis spores from animal wool)-process where animal spores treated with formaldehyde</li>\n</ul>\n<p><strong>Plasma sterilisation (Option D):</strong> It is a chemical method of sterilization and uses UV photons.</p>\n<ul>\n<li>It uses Hydrogen peroxide.</li>\n<li>It is used in surgical instruments like (arthroscopes and ureteroscopes)</li>\n<li>Control used is bacillus stearothermophilus (it is for both autoclave and plasma sterilization)</li>\n</ul>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spore</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prion</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cyst</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fungus</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is most resistant to antiseptics?</span></p>",
+      "unique_key": "DT1181883",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181883,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\r\n<p>Out of the given options, Prions are the most resistant to antiseptics.</p>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240320e1ae9289-35fe-4d04-81dc-279ae0ee8a70.jpg\">\r\n<p><strong>Reference:</strong>&nbsp;CDC Guideline for Disinfection and Sterilization in Healthcare Facilities (2008)</p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoclave</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hot air oven</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ethylene oxide</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radiation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What sterilization methods should first-year medical students use to ensure the test tubes and funnels used in biochemical tests are properly sanitized before and after lab experiments?</span></p>",
+      "unique_key": "DT1181886",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181886,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Test tubes and funnels are sterilised in a <strong>hot air oven</strong>.</p>\n<ul>\n<li>It is used at temp <strong>160 degrees Celsius for 2 hrs. </strong></li>\n<li>It is used for:\n<ul>\n<li>Glassware (test tubes and funnels)</li>\n<li>Cotton swab</li>\n<li>Dusting powder and liquid paraffin</li>\n<li>Oil and greasy material</li>\n</ul>\n</li>\n</ul>\n<p><strong>Controls of the hot air oven are:</strong></p>\n<ul>\n<li>Biological: Bacillus subtilis, Bacillus atrophaeus, Clostridium tetani.</li>\n<li>Chemical: Browne tube</li>\n</ul>\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240320de062660-a913-4168-aa70-a29fe0b88d3d.jpg\">\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Autoclave (Option A):</strong></p>\n<ul>\n<li>It is used at temp of 121 degrees Celsius for 15 minutes at 15 PSI pressure</li>\n<li>It is used for\n<ul>\n<li>Aprons</li>\n<li>Pipette tips</li>\n<li>Instruments</li>\n<li>Sutures except catgut sutures</li>\n<li>Culture media except LJ (lowenstein jensen) and LSS (loeffler serum slope )</li>\n</ul>\n</li>\n<li>The control used is Bacillus stearothermophilus</li>\n</ul>\n<p><strong>Ethylene oxide (Option C):</strong></p>\n<ul>\n<li>Mechanism of action: microbicidal and sporicidal.</li>\n<li>Used in:</li>\n<li>Cardio-pulmonary machines</li>\n<li>Pre-packed syringes</li>\n<li>Heat labile surgical instruments</li>\n<li>The Dental equipments.</li>\n<li>Respirators</li>\n<li>Control used is bacillus globigii</li>\n</ul>\n<p><strong>Radiation (Option D):</strong></p>\n<p>Control used is bacillus pumilus</p>\n<p>2 types:</p>\n<ul>\n<li>Ionizing radiation</li>\n<li>Non-Ionizing radiation</li>\n</ul>\n<p>Ionizing radiation:</p>\n<ul>\n<li>Sporicidal</li>\n<li>Used for catgut sutures and grafts</li>\n<li>Examples (x-rays,gamma rays,cosmic rays)</li>\n</ul>\n<p>Non-Ionizing radiation:</p>\n<ul>\n<li>Not sporicidal</li>\n<li>Used for OT fumigation,biosafety cabinet</li>\n<li>Examples (uv rays, infrared rays)</li>\n</ul>\n<p><strong>Reference:</strong> <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC480155/\"><strong>https://pmc.ncbi.nlm.nih.gov/articles/PMC480155/</strong></a></p>",
+      "correct_choice_id": 52,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dry air at 121&deg;C and 15 lb/square inch pressure</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Steam at 100&deg;C for 30 minutes</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Steam at 121&deg;C for 15 minutes</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dry air at 160&deg;C for 30 minutes</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">You are a first-year medical student observing in a surgical department. The surgical team has just finished a procedure and is preparing to clean and sterilize their instruments. You notice that the team is using an autoclave to ensure all surgical tools are properly sterilized before their next use. Which of the following is true about Autoclave operation?<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202501212ba90993-c415-4dde-9352-a1f25761c244.jpg\"></span></p>",
+      "unique_key": "DT1181888",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181888,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Most commonly used Sterilization operating conditions for autoclave: <strong>121&deg;C for 15 min at pressure of 15 psi</strong>.</p>\n<p><strong>Autoclave (Option A):</strong></p>\n<ul>\n<li>It is used at temp of 121 degrees Celsius for 15 minutes at 15 PSI pressure</li>\n<li>It is used for\n<ul>\n<li>Aprons</li>\n<li>Pipette tips</li>\n<li>Instruments</li>\n<li>Sutures except catgut sutures</li>\n<li>Culture media except LJ (lowenstein jensen) and LSS (loeffler serum slope )</li>\n</ul>\n</li>\n<li>The control used is Bacillus stearothermophilus</li>\n</ul>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glutaraldehyde</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tyndalization</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inspissation</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hot air oven</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following sterilization is not sporicidal?</span></p>",
+      "unique_key": "DT1181891",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181891,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\r\n<p>Inspissation is not effective against spores</p>\r\n<p>Sporicidal agents include:</p>\r\n<ul>\r\n<li>Aldehyde: Formaldehyde, Glutaraldehyde <strong>(Option A ruled out)</strong></li>\r\n<li>Tyndalization, autoclave, and hot air oven <strong>(Option B, D ruled out)</strong></li>\r\n<li>Halogens: Sodium hypochlorite, iodine/iodophors</li>\r\n<li>Hydrogen peroxide</li>\r\n<li>Peracetic acid</li>\r\n<li>Ozone</li>\r\n<li>Peroxynitrite</li>\r\n<li>Gaseous or vapor-phase disinfectants like Ethylene oxide.</li>\r\n</ul>\r\n<p><strong>Reference:</strong>&nbsp;Guideline for Disinfection and Sterilization in Healthcare Facilities (2008)</p>",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dry heat is the best method of sterilization of liquid paraffin</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">All glass syringes are best sterilized by boiling at 100&deg;C</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bacterial vaccines are best sterilized by ethylene oxide</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pasteurization of milk by flash method is done by heating at 63&deg;C for 30 minutes</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">True statement regarding sterilization is:</span></p>",
+      "unique_key": "DT1181901",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181901,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<ul>\n<li>Hot air ovens (Dry heat) are widely used to sterilize articles that can withstand high temperatures and not get burnt, like glassware, oils, liquid paraffin, powders, and silicone rubber items.</li>\n<li>Hot air ovens are electrical devices that use dry heat to sterilize.</li>\n<li>The standard settings for a hot air oven are:\n<ul>\n<li>5 to 2 hours at 160 &deg;C (320 &deg;F)</li>\n<li>6 to 12 minutes at 190 &deg;C (374 &deg;F)</li>\n</ul>\n</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p>All glassware are best sterilized by dry heat (hot air oven above 150 C) <strong>(Option B ruled out)</strong>.</p>\n<p>Bacterial vaccines are best sterilized by vaccine water bath <strong>(Option C ruled out)</strong>.</p>\n<p>Pasteurisation is done by 2 methods:</p>\n<ul>\n<li><strong>Holder method:</strong>&nbsp;done at 63 degreecelsius for 30 minutes</li>\n<li><strong>Flash method:</strong> done at 72 degreecelsius for 20 seconds and cool to &lt;13 degree celsius <strong>(Option D ruled out)</strong></li>\n</ul>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Formaldehyde</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ethylene oxide</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glutaraldehyde</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">GAMMA RADIATION</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient is admitted with a persistent fever of 102&deg;F (38.9&deg;C) for three days, unresponsive to oral antibiotics. The physician decides to switch his treatment to parenteral antibiotics for better efficacy. The head nurse prepares to administer the new medication using disposable syringes. What sterilization process is used for disposable syringes?</span></p>",
+      "unique_key": "DT1181903",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181903,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Disposable syringes are sterilised using gamma radiation (ionising radiation).</p>\n<p>Pre-filled syringes are sterilised by ethylene oxide&nbsp;</p>\n<p><strong>Radiation:</strong></p>\n<p>The control used is Bacillus pumilus.</p>\n<p>2 types:</p>\n<ul>\n<li>Ionizing radiation</li>\n<li>Non-Ionizing radiation</li>\n</ul>\n<p><strong>Ionizing radiation:</strong></p>\n<ul>\n<li>It has high penetrating power</li>\n<li>Sporicidal</li>\n<li>Cold radiation (does not increase the surface temperature)</li>\n<li>Used for catgut sutures and grafts</li>\n<li>Examples (x-rays, gamma rays, cosmic rays)</li>\n</ul>\n<p><strong>Non-Ionizing radiation:</strong></p>\n<ul>\n<li>It has low penetrating power</li>\n<li>Not sporicidal</li>\n<li>Hot-Radiation (increase the surface temperature)</li>\n<li>Used for OT fumigation, biosafety cabinet</li>\n<li>Examples (UV rays, infrared rays)</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Fornaldehyde (Option A):</strong></p>\n<ul>\n<li>It is a chemical method of sterilization used for</li>\n<li>OT fumigation formalin (all human specimen stored)</li>\n<li>Duckering(killing bacillus anthracis spores from animal wool)-process where animal spores treated with formaldehyde</li>\n</ul>\n<p><strong>Ethylene oxide (Option B):</strong></p>\n<ul>\n<li>Mechanism of action: Microbicidal and Sporicidal</li>\n<li>Side effects:\n<ul>\n<li>Highly inflammable</li>\n<li>Highly irritant</li>\n<li>Highly explosive</li>\n<li>never use 100% ethylene oxide (3-10% is enough)</li>\n<li>mix with inert gas to prevent inflammable</li>\n</ul>\n</li>\n<li>Used in:\n<ul>\n<li>Cardio-pulmonary machines</li>\n<li>Pre-packed syringes</li>\n<li>Heat labile surgical instruments</li>\n<li>Dental equipments</li>\n<li>Respirators</li>\n</ul>\n</li>\n<li>Control used is bacillus globigii</li>\n</ul>\n<p><strong>Glutaraldehyde (Option D):</strong></p>\n<ul>\n<li>It is a chemical method of sterilization</li>\n<li>Used for sterilisation of bronchoscope, laryngoscope and endoscope</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509119dea6c2b-0e9e-43c9-8b75-140dd352f878.jpg\">",
+      "correct_choice_id": 94,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both Assertion and reason are true; the reason is a correct explanation of the assertion</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both assertion and reason are true; reason is not a correct explanation of the assertion.</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Assertion is true, but reason is false.</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both assertion and reason are false.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Assertion: The Rideal-Walker test is superior to the Chick-Martin test for evaluating the effectiveness of disinfection.<br>Reason: The Rideal-Walker test is specifically designed to compare disinfection efficacy in the presence of organic matter</span></p>",
+      "unique_key": "DT1181904",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181904,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<ul>\n<li>The Chick-Martin test is superior to the Rideal-Walker test for evaluating the effectiveness of disinfection.</li>\n<li>The Chick-Martin test is specifically designed to compare disinfection efficacy in the presence of organic matter.</li>\n</ul>\n<p><strong>Phenol coefficient (Rideal-Walker) test:</strong></p>\n<ul>\n<li>It is determined by the dilution of the test disinfectant to sterilize the suspension of Salmonella Typhi in a given time divided by the dilution of phenol (standard disinfectant) to sterilize the suspension in the same time.</li>\n<li>Phenol coefficient of &gt; 1 is taken as satisfactory.</li>\n<li>Disadvantages:\n<ul>\n<li>Only the phenolic disinfectants can be assessed</li>\n<li>It does not evaluate the disinfectant ability to act in presence of organic matter.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Chick-Martin test (Modified Rideal and Walker test):</strong></p>\n<ul>\n<li>Here, the disinfectants are tested in the presence of organic matter (e.g., dried yeast, feces, etc.) to simulate the natural conditions.</li>\n</ul>\n<p><strong>Capacity (Kelsey-Sykes) test:</strong></p>\n<ul>\n<li>It assesses the capacity of a disinfectant to retain its activity when repeatedly used microbiologically.</li>\n</ul>\n<p><strong>Kelsey and Maurer test:</strong> It determines whether the test disinfectant is effective in actual use in hospital practice.<br /> <br /> <strong>Reference: </strong><a href=\"https://pubmed.ncbi.nlm.nih.gov/24965238/\">https://pubmed.ncbi.nlm.nih.gov/24965238/</a></p>",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Plasma sterilisation</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glutaraldehyde</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ethylene oxide</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Formaldehyde</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 22-year-old male athlete presents to the orthopedic clinic after experiencing severe pain in his right knee during a football match. He reports that the pain is localized to the inner side of the knee, and he has difficulty bearing weight. On Clinical Examination, there is a Positive McMurray test, indicating a possible meniscal tear. For confirmation, the orthopedic surgeon recommends an arthroscopic examination. Sterilisation of the above instrument is done by?</span></p>",
+      "unique_key": "DT1181906",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181906,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Arthroscope is sterilised by plasma sterilisation.</p>\n<p><strong>Plasma sterilisation:</strong></p>\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202501217c5c3710-3dbe-4bb7-a45c-7503d5cd9847.jpg\">\n<ul>\n<li>It is a chemical method of sterilization and uses UV photons</li>\n<li>It uses Hydrogen peroxide.</li>\n<li>It uses a gaseous medium containing ions and electrons</li>\n<li>It is used for sterilizing surgical instruments like arthroscopes and ureteroscopes</li>\n<li>The control used is <strong>Bacillus stearothermophilus</strong></li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Glutaraldehyde (Option B):</strong></p>\n<ul>\n<li>It is a chemical method of sterilization</li>\n<li>Used for bronchoscope, laryngoscope and endoscope</li>\n</ul>\n<p><strong>Ethylene oxide (Option C):</strong></p>\n<ul>\n<li>Mechanism of action: (microbicidal and sporicidal)</li>\n<li>Side effects:\n<ul>\n<li>Highly inflammable</li>\n<li>Highly irritant</li>\n<li>Highly explosive</li>\n<li>never use 100% ethylene oxide (3-10% is enough)</li>\n<li>mix with inert gas to prevent inflammable</li>\n</ul>\n</li>\n<li>Used in:\n<ul>\n<li>Cardio-pulmonary machines</li>\n<li>Pre-packed syringes</li>\n<li>Heat labile surgical instruments</li>\n<li>Dental equipments</li>\n<li>Respirators</li>\n</ul>\n</li>\n<li>Control used is bacillus globigii</li>\n</ul>\n<p><strong>Formaldehyde (Option A):</strong></p>\n<ul>\n<li>It is a chemical method of sterilization used for</li>\n<li>OT fumigation formalin (all human specimen stored)</li>\n<li>Duckering (killing bacillus anthracis spores from animal wool)-process where animal spores treated with formaldehyde.</li>\n</ul>\n<p><strong>Reference:</strong> <a href=\"https://pubmed.ncbi.nlm.nih.gov/9819691/\">https://pubmed.ncbi.nlm.nih.gov/9819691/</a></p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Filtration</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoclaving</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radiation</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hot air oven</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is the best method for sera/SERUM sterilization?</span></p>",
+      "unique_key": "DT1181909",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181909,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<ul>\n<li><strong>Filtration</strong> is the best method of sterilization of <strong>heat-labile liquids</strong> such as sera and solutions of sugars or antibiotics, toxins, and vaccines, as well as for the purification of air in laminar air flow systems.</li>\n</ul>\n<p><strong>Types of filtrations:</strong></p>\n<ul>\n<li><strong>Membrane filtration:</strong> Membrane filters made of cellulose esters or other polymers have largely replaced other types of filters. They are routinely used in water purification and analysis, sterilisation and sterility testing, and for the preparation of solutions for parenteral use. They come in a wide range of average pore diameters. The pore size of microfiltration ranges from 0.1 - 5<strong>&mu;m.&nbsp;</strong>22<strong>&nbsp;&mu;m&nbsp;</strong>filters are the most widely used for filtering out bacteria.</li>\n<li><strong>Ultrafiltration (UF): </strong>UF membranes have a pore size range of 0.01 - 0.1<strong>&mu;m.&nbsp;</strong>UF membranes reject particles such as silica, viruses, endotoxins, and proteins.</li>\n<li><strong>Nanofiltration (NF):</strong> NF membranes have a pore size range of 0.001 - 0.01<strong>&mu;m.&nbsp;</strong>NF membranes can filter salts, sugars, and dyes.</li>\n<li><strong>High-efficiency particulate air (HEPA) filter:</strong> This is a type of air filter used to remove at least 99.97% of airborne particles measuring up to 0.3<strong>&mu;m&nbsp;</strong>in diameter. Larger particles are filtered with high efficiency. These filters are used in biosafety cabinets, operating theatres, laboratories, etc., to restrict the entry of infectious particles into the air.</li>\n<li><strong>Ultra-low penetration air (ULPA)</strong> <strong>filter</strong> can (theoretically) remove from the air at least 99.99% of dust, pollen, mould, bacteria, and any airborne particles with a size of 120 nanometres or more. These are used in the precision industry.</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Autoclave (option B):</strong></p>\n<ul>\n<li>It is used at a temp of 121 degree celsius for 15 minutes for 15 psi pressure.</li>\n<li>Used for:\n<ul>\n<li>Aprons</li>\n<li>Instruments</li>\n<li>sutures except catgut sutures</li>\n<li>culture media except Lowenstein-Jensen) and LSS.</li>\n</ul>\n</li>\n<li>Control used is bacillus stearo-thermophilus</li>\n<li>All sutures are sterilised by autoclave but catgut is sterilised by ionising radiation</li>\n</ul>\n<p><strong>Radiation (Option C):</strong></p>\n<ul>\n<li>2 types:\n<ul>\n<li>Ionizing radiation</li>\n<li>Non-Ionizing radiation</li>\n</ul>\n</li>\n<li>Ionizing radiation:\n<ul>\n<li>Sporicidal</li>\n<li>Used for catgut, sutures, and grafts</li>\n<li>Examples (x-rays,gamma rays,cosmic rays)</li>\n</ul>\n</li>\n<li>Non-Ionizing radiation:\n<ul>\n<li>Not sporicidal</li>\n<li>Used for OT fumigation,biosafety cabinet</li>\n<li>Examples (uv rays, infrared rays)</li>\n</ul>\n</li>\n<li>Control used is Bacillus Pumilus</li>\n</ul>\n<p><strong>Hot air oven (Option D):</strong></p>\n<ul>\n<li>It is used at temp 160 degree Celsius for 2 hrs</li>\n<li>It is used for\n<ul>\n<li>Glassware</li>\n<li>Cotton swab</li>\n<li>Dusting powder and liquid paraffin</li>\n<li>Oil and Greasy material</li>\n</ul>\n</li>\n</ul>",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Phenol</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Iso propyl alcohol</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Povidone iodine</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sodium hypochlorite</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 25-year-old female is scheduled for an appendectomy. The patient is prepped for surgery in the surgical waiting area. As the posted intern secures a green cannula, an unexpected movement causes a needle stick injury, resulting in the spillage of blood on the floor. What is the recommended protocol for sterilizing a blood spillage on the floor?</span></p>",
+      "unique_key": "DT1181912",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181912,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>In case of Blood spillage in a clinical setting, the recommended Sterilant is <strong>Sodium hypochlorite.</strong></p>\n<p>Mechanism of action: Forms an <strong>Oxidising agent.</strong></p>\n<p>1% sodium hypochlorite is diluted and used depending on how much blood is spilled.</p>\n<ul>\n<li>&lt;10ml spill - 1:100 dilution</li>\n<li>&gt;10ml spill - 1:10 dilution</li>\n</ul>\n<p><strong>Blood Spill Management:</strong></p>\n<ul>\n<li>Block off the area to be disinfected.</li>\n<li>Use a caution board.</li>\n<li>Wear a pair of non-sterile gloves.</li>\n<li>Have PPE ready</li>\n<li>Use tongs or a pan and brush to sweep up as much of the broken glass (or container) as possible. Do not pick up pieces with your hands.</li>\n<li>Discard the broken glass in a sharp container.</li>\n<li>Use disposable towels to absorb as much of the body fluids as possible.</li>\n<li>Saturate the area again with sodium hypochlorite (1:10 dilution) for a minimum of 20 mins</li>\n<li>Rinse off the tongs, brush, and pan under running water and place them to dry</li>\n<li>Remove gloves and discard them.</li>\n<li>Wash your hands carefully with soap and water, and dry thoroughly with single-use towels</li>\n<li>Record the incident in the incident book if a specimen was lost, or if persons were exposed to blood and body fluids.</li>\n</ul>\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Phenol (Option A):</strong> Used as disinfectant on hospital floors and walls.</p>\n<p><strong>Isopropyl alcohol (Option B):</strong> It has 70-80% alcohol, used for sterilizing instruments like a stethoscope and thermometer.</p>\n<p><strong>Povidone iodine (Option C):</strong> Used for treatment and prevention of infection in wounds.</p>",
+      "correct_choice_id": 134,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">A-3, B-2, C-1</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">A-2, B-1, C-3</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">A-2, B-3, C-1</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">A-1, B-2, C-3</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Match the following<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202501217fe9c453-8760-4988-b138-79940922c694.jpg\"></span></p>",
+      "unique_key": "DT1181914",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181914,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Sterilization:</strong>&nbsp;It is the process of destroying all living microorganisms, including viable spores, with a reduction of at least 10<sup>6</sup> log colony-forming units (CFU) of microorganisms and spores.</li>\n<li><strong>Disinfection:</strong>&nbsp;It is the process to destroy or remove most, if not all, pathogenic organisms, but not bacterial spores, with a reduction of at least 10<sup>3</sup>&nbsp;log CFU of microorganism but not spores.</li>\n<li><strong>Asepsis:</strong>&nbsp;It refers to the complete absence of viable pathogenic microorganisms in any environment.</li>\n</ul>",
+      "correct_choice_id": 143,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cetrimide + Chlorhexidine</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cetrimide + Butyl alcohol</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cetrimide + Chlorhexidine + Butyl alcohol</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cetrimide + Cetavlon</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Composition of 'Savlon' is:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032042c563c7-37c9-43ac-a30e-967dd4083c16.jpg\"></span></p>",
+      "unique_key": "DT1181918",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181918,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Savlon contains:- <strong>Cetrimide (Cetavlon)</strong> + <strong>Chlorhexidine (Hibitane)</strong></p>\n<ul>\n<li>Chlorhexidine Gluconate (CHG):\n<ul>\n<li>Broad-spectrum antibacterial (Gram +ve &amp; Gram -ve).</li>\n<li>Persistent action (binds to skin, providing long-lasting protection).</li>\n</ul>\n</li>\n<li>Cetrimide:\n<ul>\n<li>Surfactant &amp; disinfectant - enhances activity against <em>Pseudomonas</em> and fungi.</li>\n<li>Helps in cleaning wounds by loosening debris.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Common Uses:</strong></p>\n<ul>\n<li>First aid for cuts, burns, and grazes (Savlon Antiseptic Cream).</li>\n<li>Pre-surgical skin disinfection (Savlon Surgical Scrub &ndash; 4% CHG).</li>\n<li>Hand sanitization (Savlon Hand Wash).</li>\n<li>Mouthwash (Savlon Mouthwash for oral infections).</li>\n</ul>\n<p>Savlon is the <strong>gold standard for pre-op skin prep</strong> (superior to iodine in clean-contaminated surgeries).</p>\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403208204ddcc-10e7-4f49-97f2-485418dee82b.jpg\">\n<p><strong>Reference: </strong><a href=\"https://pubmed.ncbi.nlm.nih.gov/12683517/\">https://pubmed.ncbi.nlm.nih.gov/12683517/</a></p>",
+      "correct_choice_id": 151,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoclave</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Boiling</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cresol</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chlorhexidine</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 50-year-old male patient came with a complaint of cough, poor appetite, weight loss, and evening rise of temperature and breathlessness. The attending physician advised sputum examination for lab investigation. Sputum can be disinfected by all of the following except:</span></p>",
+      "unique_key": "DT1181920",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181920,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Sputum cannot be disinfected by chlorhexidine</p>\n<p>Chlorhexidine mouth rinse before sputum collection may not reduce the contamination rate of mycobacterial cultures <strong>due to the presence of spore-forming bacteria.</strong></p>\n<p><strong>Chlorhexidine:</strong></p>\n<ul>\n<li><strong>Not Commonly Used for Sputum:&nbsp;</strong>Chlorhexidine is not commonly used for disinfecting sputum.</li>\n<li>It is typically used as a skin antiseptic or for hand hygiene.</li>\n<li>Chlorhexidine is not a mycobactericidal agent and is not the standard method for sputum disinfection.</li>\n</ul>\n<p><strong>Incorrect option:</strong></p>\n<p><strong>Autoclave (Option A):</strong></p>\n<ul>\n<li>Autoclaves use high pressure and steam to kill microorganisms and spores, which is how they disinfect sputum samples.</li>\n<li>It is used at temp of 121 degrees Celsius for 15 minutes at 15 PSI pressure.</li>\n</ul>\n<p><strong>Boiling (Option B):</strong></p>\n<ul>\n<li><strong>Effective Method:&nbsp;</strong>Boiling is an effective method for disinfecting sputum.</li>\n<li>Boiling inactivates or kills pathogens in sputum samples by damaging their structural components and disrupting their life processes.</li>\n</ul>\n<p><strong>Cresol (Option C):</strong></p>\n<ul>\n<li><strong>Suitable Disinfectant:&nbsp;</strong>Cresol (or phenol) at a concentration of 5% is a suitable disinfectant for sputum.</li>\n<li>It helps in killing or inactivating various pathogens present in sputum.</li>\n<li>Cresol is a recognized disinfectant in healthcare settings and laboratories.</li>\n</ul>",
+      "correct_choice_id": 164,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Guidance about noncritical items is included in the classification</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Semi-critical items are those in contact with the mucus membrane</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Semi-critical items need low-level disinfectant</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cardiac catheter is a critical item</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is incorrect about Spaulding classification?</span></p>",
+      "unique_key": "DT1181921",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1181921,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p><strong>Semi-critical devices need a high level of disinfectant</strong></p>\n<p>The <strong>Spaulding classification system</strong> categorizes medical and dental devices into three groups based on their potential risk of transmitting infections:</p>\n<p><strong>A) Critical items:</strong> These items come into direct contact with sterile tissues or the bloodstream, and they must be sterilized to prevent infection transmission. Examples include surgical instruments.</p>\n<p><strong>B) Semi-critical items:</strong> These items come into contact with mucous membranes or non-intact skin. They do not need to be sterilized but require high-level disinfection to ensure that they are safe for use. Examples include endoscopes and dental instruments.</p>\n<p><strong>C) Non-critical items:</strong> These items come into contact with intact skin and do not require sterilization or high-level disinfection. Low-level disinfection is typically sufficient. Examples include stethoscopes and blood pressure cuffs.</p>\n<p><strong>Spaulding classification:</strong></p>\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403201a2d9453-ce4a-4210-b9e0-4ddaac10e1a0.jpg\">\n<p><strong>Reference:</strong> <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK536426/table/ch3.tab7/\">https://www.ncbi.nlm.nih.gov/books/NBK536426/table/ch3.tab7/</a></p>",
+      "correct_choice_id": 173,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Precurrent disinfection</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Concurrent disinfection</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">Terminal disinfection</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Terminal cleaning</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old female was admitted for pneumonia. The patient is hospitalized in a shared room. Due to her respiratory condition, she is on supplemental oxygen and is frequently monitored for any signs of infection. During her stay, a healthcare worker notices that the patient has coughed without covering their mouth. Concern arises regarding potential airborne pathogens and surface contamination in the room. What type of disinfection should be done for this case?</span></p>",
+      "unique_key": "DT1313279",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1313279,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation for answer:</strong></p>\n<p>Sputum/droplets discharged from the patient are harmful to other people.<strong> Concurrent disinfection </strong>should be done for the above case because there is a high risk of spreading infection to others.</p>\n<p><strong>Concurrent disinfection:</strong>&nbsp;Application of disinfection methods after the discharge of infectious material from the body of an actively infected person/soiling.</p>\n<ul>\n<li><strong>Patient is still infectious</strong> (active pneumonia + uncovered cough &rarr; <strong>airborne droplets</strong>).</li>\n<li><strong>Shared room</strong> &rarr; Risk to other patients (e.g., <em>Mycoplasma</em>, <em>Legionella</em>, or *COVID-19* if not ruled out).</li>\n<li><strong>Actions needed:</strong>\n<ul>\n<li><strong>Immediate surface disinfection</strong> (e.g., bed rails, oxygen mask).</li>\n<li><strong>Airborne precautions</strong> (N95 masks, HEPA filters if available).</li>\n<li><strong>Hand hygiene enforcement</strong> for staff/visitors.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091155499077-8625-4406-a92e-1fdd2cc5c73d.jpg\">\n<p><strong>Incorrect options:</strong></p>\n<p><strong>Precurrent disinfection (Option A):</strong> It is done as a preventive measure to prevent the spread of infection.</p>\n<p>Examples:- Pasteurisation of milk, Chlorination of water, and hand washing</p>\n<p><strong>Terminal disinfection (Option C):</strong>&nbsp;Application of disinfection measures after the patient has died or has been shifted to another hospital or after cessation of isolation.</p>\n<p><strong>Terminal cleaning (Option D):</strong>&nbsp;Basic cleaning without germicidal agents (insufficient for pathogens).</p>\n<p><strong>Reference: </strong><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7751027/\">https://pmc.ncbi.nlm.nih.gov/articles/PMC7751027/</a></p>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

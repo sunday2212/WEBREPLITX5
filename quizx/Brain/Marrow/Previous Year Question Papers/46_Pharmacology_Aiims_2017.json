@@ -1,0 +1,905 @@
+{
+  "meta": {
+    "title": "46_Pharmacology_Aiims_2017"
+  },
+  "questions": [
+    {
+      "text": "How much drug will remain at the end of 6 hours when a patient is given 200 mg drug, 75 mg excreted in 90 min and if the drug follows first-order kinetics?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 mg"
+        },
+        {
+          "id": 2,
+          "text": "30.5 mg"
+        },
+        {
+          "id": 3,
+          "text": "12.5 mg"
+        },
+        {
+          "id": 4,
+          "text": "6.25 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In <strong>first order kinetics, </strong>a<strong> constant fraction</strong> of the drug is<strong> excreted in </strong>a<strong> given time.</strong> </p>\n<p>Since 75 mg of 200 mg is excreted in 90 minutes, the fraction of drug excreted in each 90 mins is 75/200, which is 3/8. Thus, the fraction of the drug that remains in the body is 5/8. </p>\n<p>There will be 4 cycles of excretion of the drug (6 hours = 360 mins, and 360/90 = 4). Thus, with a starting dose of 200mg, the drug remaining in the body after 4 hours will be:</p>\n<p>200 x 5/8 x 5/8 x 5/8 x 5/8 = <strong>30.5mg</strong></p>\n<p><strong>Alternate way to calculate: </strong></p>\n<p>75 mg of 200 mg is excreted in 90 minutes, thus 75/200 = 0.375 is eliminated </p>\n<p>After 90 minutes; 200 mg-75 mg = 125 mg remains.<br /><span>The second 90 minutes (after 180 minutes) = 125 x 0.375 = 46.875 mg is eliminated, and 125-46.875 = 78.125 mg remains<br /></span><span>The third 90 minutes (after 270 minutes) = 78.125 x 0.375 = 29.297 mg is eliminated, and 78.125-29.297 = 48.828 remains<br /></span><span>The fourth 90 minutes (after 360 minutes) = 48.828 x 0.375 = 18.310 mg is eliminated, 48.828-18.310 = 30.518 mg remains after 6 hours. </span></p><hr><h3>Related Pearl: Zero order vs First order kinetics of drugs</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Zero order</strong></p>\n</td>\n<td>\n<p><strong>First order</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Constant <strong>amount</strong> of drug is eliminated per unit time</p>\n</td>\n<td>Constant <strong>fraction</strong> of drug is eliminated per unit time</td>\n</tr>\n<tr>\n<td>\n<p>Rate of elimination is <strong>independent</strong> of plasma concentration</p>\n</td>\n<td>Rate of elimination is <strong>proportional</strong> to the plasma concentration</td>\n</tr>\n<tr>\n<td>\n<p>Clearance is <strong>more at low</strong> concentration and <strong>less at high</strong> concentration</p>\n</td>\n<td>Clearance remains <strong>constant</strong>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Half-life is <strong>less at low</strong> concentration and <strong>more at high</strong> concentration</p>\n</td>\n<td>Half-life remains <strong>constant</strong></td>\n</tr>\n<tr>\n<td>\n<p>Very <strong>few drugs</strong> follow zero-order kinetics, e.g.(<strong>WATT Power</strong>)</p>\n<ul>\n<li><strong>W</strong>arfarin</li>\n<li><strong>A</strong>lcohol,&nbsp;<strong>A</strong>spirin</li>\n<li><strong>T</strong>olbutamide</li>\n<li><strong>T</strong>heophylline&nbsp;</li>\n<li><strong>P</strong>henytoin</li>\n</ul>\n<p>&nbsp;</p>\n</td>\n<td><strong>Most of the drugs</strong> follow first order kinetics&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8bee4685a9ae43ae9d112e3d0790eaffx1280x2445.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA1112",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the most bactericidal anti leprotic drug amongst the given drugs?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Amoxicillin"
+        },
+        {
+          "id": 2,
+          "text": "Ciprofloxacin"
+        },
+        {
+          "id": 3,
+          "text": "Ofloxacin"
+        },
+        {
+          "id": 4,
+          "text": "Erythromycin"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Ofloxacin</strong> is the most&nbsp;bactericidal anti leprotic drug amongst the given drugs.</p>\n<p>It exhibits high activity against <em>M. leprae</em>, and it is being used in <strong>alternative</strong> multidrug therapy (<strong>MDT</strong>) regimens in rifampicin-resistant cases.&nbsp;As a component of MDT, it has been found to hasten the bacteriological and clinical response.</p>\n<p>Among the macrolides, <strong>clarithromycin</strong> has activity against leprosy bacilli and is used for alternative MDT in cases resistant to both rifampicin and fluoroquinolones. Azithromycin shows activity against Mycobacterium avium complex but not lepra bacilli.</p>\n<p>Note: <strong>Rifampicin</strong> is the <strong>most potent</strong> bactericidal anti leprotic drug.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA0821",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not true about P-glycoprotein?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pgp stands for permeability glycoprotein"
+        },
+        {
+          "id": 2,
+          "text": "Also known as CD243"
+        },
+        {
+          "id": 3,
+          "text": "Also known as ABCB1"
+        },
+        {
+          "id": 4,
+          "text": "Also known as MDR2"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p class=\"p1\"><strong>P-glycoprotein</strong> is also known as multidrug resistance protein 1<span class=\"Apple-converted-space\"> or </span><strong>MDR1</strong> (not MDR2).  It is also denoted by cluster of differentiation 243 (<strong>CD243</strong>).</p>\n<p>P-glycoprotein<strong> (P-gp)</strong> is one of the first members of the ATP-binding cassette (ABC) transporter, which acts as an <strong>efflux membrane transporter</strong>. It is responsible for limiting cellular uptake and the distribution of xenobiotics and toxic substances. It is associated with <strong>multidrug resistance</strong> (MDR).</p>\n<ul>\n<li><strong>Increased</strong> P-gp expression:<strong> </strong><strong>Reduces</strong> the <strong>absorption</strong> of drugs that are substrates for P-gp</li>\n<li><strong>Decreased</strong> P-gp expression: Leads to supratherapeutic plasma concentrations and <strong>drug toxicity</strong> </li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA1110",
+      "difficulty": "hard"
+    },
+    {
+      "text": "For which of the following drugs, is absorption increased after a fatty meal?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Griseofulvin"
+        },
+        {
+          "id": 2,
+          "text": "Amphotericin B"
+        },
+        {
+          "id": 3,
+          "text": "Ampicillin"
+        },
+        {
+          "id": 4,
+          "text": "Aspirin"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>absorption</strong> of <strong>griseofulvin</strong> is <strong>increased</strong> after a <strong>fatty meal.</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Drug absorption reduced /delayed by food</strong></td>\n<td><strong>Drug absorption increased by food</strong></td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Ampicillin</li>\n<li>Aspirin</li>\n<li>Atenolol</li>\n<li>Azithromycin</li>\n<li>Captopril</li>\n<li>Indinavir</li>\n<li>Isoniazid</li>\n<li>Rifampin</li>\n<li>Sucralfate</li>\n<li>Tetracycline</li>\n<li>Doxycycline</li>\n</ul>\n</td>\n<td>\n<ul>\n<li>Atovaquone</li>\n<li>Carbamazepine</li>\n<li>Chlorothiazide</li>\n<li>Cefuroxime</li>\n<li>Diazepam</li>\n<li>Ganciclovir</li>\n<li>Lithium</li>\n<li>Metoprolol</li>\n<li>Ritonavir</li>\n<li>Hydralazine</li>\n<li>Lumefantrine</li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Note: Fatty meals increase the rate of absorption of efavirenz to such an extent as to cause toxicity. Hence, efavirenz is recommended to be taken on an empty stomach.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA1109",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient with Prinzmetal angina is administered isosorbide mononitrate and is noticed to have symptomatic relief. What is the mechanism of action of nitrate in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Endothelium independent coronary vasodilation"
+        },
+        {
+          "id": 2,
+          "text": "Reduced cardiac contractility"
+        },
+        {
+          "id": 3,
+          "text": "Increased left ventricular end diastolic volume"
+        },
+        {
+          "id": 4,
+          "text": "Decreased diastolic perfusion pressure"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The mechanism of action of nitrates in prinzmetal angina is <strong>endothelium-independent coronary vasodilatation</strong>.</p>\n<p><strong>Prinzmetal angina </strong>occurs due to <strong>vasospasm</strong> of the coronary arteries. <strong>Nitrates</strong> relax the smooth muscles of epicardial coronary arteries and <strong>relieve coronary artery spasm.</strong></p>\n<p>In the case of <strong>stable angina</strong>, the primary mechanism of action of <strong>nitrates</strong> is&nbsp;<strong>preferential dilatation of veins</strong> (by increasing cGMP). Venous dilatation leads to a <strong>decrease</strong> in the venous return to the heart (<strong>preload</strong>). This decreases the ventricular end-diastolic volume and thereby a <strong>decrease</strong> in <strong>myocardial oxygen consumption</strong>. The diastolic perfusion pressure (aortic blood pressure in diastole - left ventricular pressure in diastole) is increased.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9289",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The drug of choice in anaphylactic shock is?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Adrenaline 0.5 mg 1/1000 IM"
+        },
+        {
+          "id": 2,
+          "text": "Adrenaline 1 mg 1/10000 IV"
+        },
+        {
+          "id": 3,
+          "text": "Atropine 3 mg"
+        },
+        {
+          "id": 4,
+          "text": "Adenosine 6 mg followed by 12 mg IV"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Adrenaline 0.5 mg 1/1000 by intramuscular route (IM)</strong> is the <strong>drug of choice</strong> for treatment of <strong>anaphylactic shock</strong>. Hence it is the answer here.</p>\n<p>In case the <strong>patient develops life threatening condition</strong>, <strong>adrenaline 0.25 mg IV is</strong> given.</p>\n<p><strong>Note :</strong> This is a controversial question. The following inference from journal may help to clarify the concept.</p>\n<ul>\n<li>As <strong>vasodilatation </strong>is the main pathological change <strong>early </strong>in anaphylaxis, this enables the <strong>subcutaneous or intramuscular absorption </strong>of adrenaline to be rapid and effective.</li>\n<li>Thus, when the disease is <strong>treated early </strong>and is progressing slowly, or venous access is difficult or the patient is unmonitored, <strong>intramuscular adrenaline has advantages </strong>in terms of safety and is usually effective.</li>\n<li>Later, <strong>when intravascular volume is depleted and shock occurs with a life threatening situation, </strong>or there is severe dyspnoea or airway compromise, the <strong>intravenous route is necessary to achieve optimal absorption</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9266",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What instruction do you give to a mother who is lactating for drug use?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "No advice as most of drug are not present in breast milk"
+        },
+        {
+          "id": 2,
+          "text": "Give longer half-life drugs"
+        },
+        {
+          "id": 3,
+          "text": "Tell the mother to feed when it is least efficacious"
+        },
+        {
+          "id": 4,
+          "text": "To feed just before the next dose, when the plasma concentration of the drug would be the least"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Ideally, the mother should feed just before the next dose, when the plasma concentration of the drug would be the least.</p>\n<ul>\n<li>The drugs are present in breast milk in variable amount but <strong>lesser than in plasma</strong> of mother.</li>\n<li>Breastfeeding is advised at least&nbsp;<strong>3-4 hours after drug intake</strong> so that plasma concentration is lesser and hence the concentration in the breast milk is also less.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9297",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a case of acute exacerbation of asthma, salbutamol was given, however, no improvement was noticed. Intravenous corticosteroids and aminophylline were given and the condition improved. What is the probable mechanism by which the corticosteroids would have improved the condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Corticosteroids increase bronchial responsiveness to salbutamol"
+        },
+        {
+          "id": 2,
+          "text": "Corticosteroids cause direct bronchodilatation when used with xanthines"
+        },
+        {
+          "id": 3,
+          "text": "Corticosteroids indirectly increase the effect of xanthines on adenosine receptor"
+        },
+        {
+          "id": 4,
+          "text": "Corticosteroids increase mucociliary clearance"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Corticosteroids</strong> improved the condition by <strong>increasing </strong>the <strong>airway&nbsp;responsiveness</strong> to<strong> salbutamol</strong>.</p>\n<p>Mechanism of action of corticosteroids in an acute asthma attack:</p>\n<ul>\n<li>Increases responsiveness to &beta;-2 agonists</li>\n<li>Decreases mucous secretion</li>\n<li>Decreases inflammatory cell response.</li>\n</ul>\n<p><strong>Steroids increase</strong> the <strong>transcription of &beta;-2 receptor genes</strong> and hence increases responsiveness to &beta;-2 agonists.</p>\n<p><strong>&beta;-2 agonists</strong> increase the effect of steroids by <strong>enhancing</strong> the <strong>action</strong> of <strong>glucocorticoid receptors.</strong></p>\n<p>Theophylline increases the effects of steroids by activating&nbsp;the enzyme histone deacetylase which is the target for steroids as well.</p>\n<p>Note: As per recent GINA 2021 guidelines, aminophyllines are no longer preferred in the management of acute severe asthma due to their low efficacy and poor safety profile.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9236",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following opioids is a partial agonist at mu and a full agonist at kappa receptors?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pentazocine"
+        },
+        {
+          "id": 2,
+          "text": "Buprenorphine"
+        },
+        {
+          "id": 3,
+          "text": "Tramadol"
+        },
+        {
+          "id": 4,
+          "text": "Fentanyl"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Pentazocine</strong> is a <strong>partial</strong> <strong>agonist</strong> at <strong>mu</strong> and a <strong>full</strong> <strong>agonist</strong> at <strong>kappa</strong> receptors.</p>\n<p><strong>Analgesia</strong> produced by pentazocine is predominantly mediated by the&nbsp;<strong>&kappa;</strong> receptor.</p>\n<p>Pentazocine is a&nbsp;<strong>mixed agonist-antagonist</strong>&nbsp;opioid agent. It is a&nbsp;<strong>full agonist</strong>&nbsp;at the&nbsp;<strong>&kappa;</strong>&nbsp;receptor and a partial agonist or weak antagonist at the &micro; receptor</p>\n<p>Note: Buprenorphine is a partial agonist at mu receptors but an&nbsp;<strong>antagonist</strong>&nbsp;at kappa receptors</p><hr><h3>Related Pearl: Classification of opioids based on their action on opioid receptors</h3><div class=\"page\" title=\"Page 569\">\n<table><colgroup><col /><col /><col /><col /><col /><col /><col /><col /> </colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"2\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Generic Name</strong></p>\n</div>\n</div>\n</td>\n<td colspan=\"3\" rowspan=\"1\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Receptor Effects&nbsp;</strong></p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>&micro;</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>&delta;</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>&kappa;</strong></p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Morphine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Methadone</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Meperidine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Fentanyl</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Sufentanil</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Codeine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>&plusmn;</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Pentazocine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>&plusmn;</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Nalbuphine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>-</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>++</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Buprenorphine</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>&plusmn;</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>-</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>-</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Butorphanol</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>&plusmn;</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++</p>\n</div>\n</div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<div class=\"page\" title=\"Page 569\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>+++, ++, +, strong agonist; &plusmn;, partial or weak agonist; -, antagonist.</p>\n</div>\n</div>\n</div>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9296",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The drug of choice for insomnia in blind people is",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Latanoprostene"
+        },
+        {
+          "id": 2,
+          "text": "Zerviate"
+        },
+        {
+          "id": 3,
+          "text": "Tasimelteon"
+        },
+        {
+          "id": 4,
+          "text": "Ramelteon"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The drug of choice for <strong>insomnia in blind people</strong> is <strong>tasimelteon</strong>.</p>\n<p>Option A - Latanoprostene is used in primary <strong>open-angle glaucoma.</strong></p>\n<p>Option B -<strong> </strong>Zerviate is a cetirizine ophthalmic solution used in <strong>allergic conjunctivitis.</strong></p>\n<p>Option D - Ramelteon is a synthetic tricyclic analog of melatonin used in <strong>sleep onset</strong> difficulty insomnia. </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9249",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Dofetilide belongs to which class of anti-arrhythmic drugs?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Class I"
+        },
+        {
+          "id": 2,
+          "text": "Class II"
+        },
+        {
+          "id": 3,
+          "text": "Class III"
+        },
+        {
+          "id": 4,
+          "text": "Class IV"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Dofetilide</strong> belongs to <strong>class III</strong> of anti-arrhythmic drugs.</p><hr><h3>Related Pearl: Anti-arrhythmic drugs</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7d6c4d5ed4a54f70b2030d71f3d06969x1280x1697.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p><span><strong>Class of antiarrhythmic drugs&nbsp;</strong></span></p>\n</td>\n<td>\n<p><span>&nbsp;</span></p>\n<p><span><strong>Mechanism of action</strong></span></p>\n</td>\n<td>\n<p><span><strong>Effect on action potential duration</strong></span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class I</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IA</strong></span></p>\n<p><span>Procainamide</span></p>\n<p><span>Quinidine</span></p>\n<p><span>Disopyramide</span></p>\n</td>\n<td>\n<p><span>&nbsp;</span></p>\n<p><span>Na+ channel blockers with significant K<sup>+</sup> channel blocking property</span></p>\n<p><span>&nbsp;</span></p>\n</td>\n<td>\n<p><span>Prolonged</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IB</strong></span></p>\n<p><span>Lidocaine</span></p>\n<p><span>Mexiletine</span></p>\n</td>\n<td><span>Na+ channel blockers with K<sup>+</sup> channel opening property&nbsp;</span></td>\n<td>\n<p><span>Shortened or no effect</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IC</strong></span></p>\n<p><span>Flecainide</span></p>\n<p><span>Propafenone</span></p>\n<p><span>Moricizine</span></p>\n</td>\n<td><span>Na+ channel blockers with negligible K<sup>+</sup> channel blocking property&nbsp;</span></td>\n<td>\n<p><span>Variable or no effect</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class II</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Propranolol</span></p>\n<p><span>Esmolol</span></p>\n</td>\n<td><span>&beta;- blockers</span></td>\n<td><span>-&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class III</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Amiodarone, dronedarone</span></p>\n<p><span>Dofetilide</span></p>\n<p><span>Sotalol</span></p>\n<p><span>Ibutilide</span></p>\n<p><span>Vernakalant</span></p>\n</td>\n<td><span>K<sup>+</sup> channel blockers&nbsp;</span></td>\n<td><span>Prolonged&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IV</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Verapamil</span></p>\n<p><span>Diltiazem</span></p>\n</td>\n<td><span>Ca<sup>2+</sup> channel blockers</span></td>\n<td><span>-</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Miscellaneous</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Adenosine</span></p>\n</td>\n<td><span>Activates adenosine receptors</span></td>\n<td><span>Shortened</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Digoxin</span></p>\n</td>\n<td><span>Na<sup>+</sup>-K<sup>+</sup> ATPase inhibitor</span></td>\n<td><span>Increases AV node refractoriness</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Magnesium</span></p>\n</td>\n<td><span>Unknown</span></td>\n<td><span>-</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB8487",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the mechanism of action of vancomycin?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cell wall synthesis inhibition"
+        },
+        {
+          "id": 2,
+          "text": "Cell membrane inhibition"
+        },
+        {
+          "id": 3,
+          "text": "Peptide synthesis inhibition"
+        },
+        {
+          "id": 4,
+          "text": "50s ribosome inhibition"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The mechanism of action of <strong>vancomycin</strong> is&nbsp;<strong>cell wall synthesis inhibition</strong>.</p>\n<p>The bacterial cell wall has long chains of peptidoglycan and is cross-linked to each other by the action of the enzyme&nbsp;transglycosylase. Vancomycin is a<strong> glycopeptide</strong> group of antibiotics that binds to<strong>&nbsp;</strong>the<strong> D-alanyl-D-alanine</strong> terminus of the synthesized <strong>peptidoglycan.</strong> This inhibits the transglycosylase enzyme and <strong>prevents elongation</strong> and<strong> cross-linking</strong> <strong>of</strong> peptidoglycan. This leads to the weakening of the cell wall causing&nbsp;<strong>lysis</strong>.</p>\n<p>It exhibits a time-dependant or concentration-independent killing of bacteria. It primarily acts on Gram +ve organisms which are resistant to other antibiotics such as methicillin-resistant staphylococcus and ampicillin resistant enterococci.</p>\n<div class=\"page\" title=\"Page 1064\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Lipoglycopeptides</strong>&nbsp;are a new generation of glycopeptide congeners which include <strong>telavancin, dalbavancin, and oritavancin.&nbsp;</strong>Dalbavancin and Oritovancin are administered as a single intravenous dose for skin and soft-tissue infections.</p>\n</div>\n</div>\n</div>\n</div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/73615aecfff64b5a8411e8d31d48db56x1280x1908.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9276",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The following table gives BP values before and after administration of drug ‘X’. What would be the probable mechanism of action of drug ‘X’?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "α1 agonist and β1 agonist"
+        },
+        {
+          "id": 2,
+          "text": "M2 agonist and M3 agonist"
+        },
+        {
+          "id": 3,
+          "text": "α1 antagonist and β2 agonist"
+        },
+        {
+          "id": 4,
+          "text": "β1 agonist and β2 agonist"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The probable mechanism of action of drug &lsquo;X&rsquo; is <strong>&beta;1</strong> and <strong>&beta;2 agonism</strong>.</p>\n<p>According to the given table, systolic BP and heart rate is increased due to &beta;1 agonistic effect, and diastolic BP is decreased by vasodilatation due to &beta;2 action.</p>\n<p>Option A: Action on &alpha;1 causes &uarr; DBP</p>\n<p>Option B: Action on M2 causes &darr;&nbsp;HR and action on M3 causes vasodilatation and reflex increase in HR. Hence there is no net effect on heart rate</p>\n<p>Option C:&nbsp;&alpha;1 antagonism causes vasodilatation and&nbsp;&darr;&nbsp;DBP. &beta;2 action causes vasodilatation and DBP &darr;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/9844bea46ae744c1b79b9692e7beff7a.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9277",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient requires Ceftriaxone 180 mg. You have a 2 ml syringe with 10 divisions per ml. The vial contains 500 mg/5ml of ceftriaxone. How many divisions in the 2 ml syringe will you fill to give 180 mg ceftriaxone?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "18"
+        },
+        {
+          "id": 2,
+          "text": "1.8"
+        },
+        {
+          "id": 3,
+          "text": "20"
+        },
+        {
+          "id": 4,
+          "text": "2"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<ul>\n<li>500 mg of drug is in 5 ml and hence 100 mg in 1ml. Thus 180 mg <strong>in 1.8 ml</strong></li>\n<li>10 divisions for each ml</li>\n<li>1 ml = 10 divisions</li>\n<li>Therefore, 1.8 ml = 10*1.8 <strong>= 18 Divisions</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9237",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The drug that decreases the size of prostate is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tamsulosin"
+        },
+        {
+          "id": 2,
+          "text": "Sildenafil"
+        },
+        {
+          "id": 3,
+          "text": "Finasteride"
+        },
+        {
+          "id": 4,
+          "text": "Flutamide"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Finasteride </strong>reduces prostatic size.</p>\n<p>Finasteride:</p>\n<ul>\n<li>It is a competitive inhibitor of <strong>5&alpha;-reductase enzyme</strong>, thus inhibiting the conversion of testosterone into its active form DHT(Dihydrotestosterone) which is responsible for androgenic action in Prostate gland.</li>\n<li>It produces effect on long term use (nearly 6 months) by <strong>reducing prostatic epithelial cell proliferation </strong>thereby reducing the size of prostate and improves urine flow.</li>\n</ul>\n<p><strong>Tamsulosin</strong> is an &alpha; 1 Selective Antagonist which dilates prostatic urethra and hence produces immediate symptom relief in BPH. It has<strong> no </strong>effect on reducing size of the prostate.</p>\n<p><strong>Sildenafil&nbsp;</strong>acts by inhibiting&nbsp;<strong>phosphodiesterase-5&nbsp;</strong>(PDE-5)&nbsp;and is used in the treatment of&nbsp;<strong>erectile dysfunction.</strong></p>\n<p><strong>Flutamide</strong> is a Nonsteroidal Androgen Receptor antagonist with <strong>no hormonal activity</strong>. They are used for treatment of <strong>m</strong><strong>etastatic prostatic cancer</strong> in conjunction with <strong>GnRH</strong> agonists.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9239",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which one of the following is a placebo?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Herbal medication with no effect known"
+        },
+        {
+          "id": 2,
+          "text": "Physiotherapy"
+        },
+        {
+          "id": 3,
+          "text": "Sham surgery"
+        },
+        {
+          "id": 4,
+          "text": "Cognitive behavioural therapy"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Sham surgery</strong> (<strong>placebo surgery</strong>) is a <strong>faked surgical intervention</strong> that omits the step thought to be therapeutically necessary.</p>\n<p>Note: While option A may be considered a placebo due to there being no known effects, it is not certain as to whether all possible effects (known and unknown) have been considered. Hence, weighing options A and C, the better option among the two would be C as sham surgery is a widely used placebo.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9247",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A young male developed 5 episodes of loose stools 2 hours after eating in a restaurant. He is afebrile and has mild dehydration. What should be the treatment?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ciprofloxacin and tinidazole"
+        },
+        {
+          "id": 2,
+          "text": "Only ciprofloxacin"
+        },
+        {
+          "id": 3,
+          "text": "Only ORS"
+        },
+        {
+          "id": 4,
+          "text": "Ciprofloxacin, tinidazole and ORS"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>It is a case of <strong>acute diarrhea</strong>&nbsp;in an <strong>afebrile,&nbsp;</strong>stable patient which can be managed with<strong>&nbsp;ORS</strong> <strong>alone</strong>.</p>\n<p><strong>Management</strong> of <strong>diarrhea:</strong></p>\n<ul>\n<li>Mild-moderate dehydration -&nbsp;<strong>ORS.</strong></li>\n<li>Severe dehydration- <strong>IV fluids</strong> are given.</li>\n<li><strong>Afebrile</strong> patient - <strong>No antibiotics</strong> are given.</li>\n<li><strong>Febrile</strong> patient - <strong>empirical&nbsp;antibiotics.</strong> If only bacterial etiology is suspected, ciprofloxacin is given. If giardiasis is suspected, metronidazole or tinidazole are recommended.</li>\n</ul><p>National ORS Day is celebrated every year on 29th July to&nbsp;highlight the importance of Oral Rehydration Salts (ORS) as a cost-effective method of health intervention to prevent death due to dehydration in acute diarrhoeal diseases. ADD accounts for one of the leading causes of mortality in infants and young children in many developing countries.</p><hr><h3>Related Pearl: Treatment of dehydration based on severity</h3><p><strong>Plan A</strong>: For no dehydration or minimal dehydration.&nbsp;ORS is administered after each loose stool.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Age</strong></td>\n<td><strong>Amount&nbsp;</strong></td>\n</tr>\n<tr>\n<td>&lt;2 years</td>\n<td>50&ndash;100 mL</td>\n</tr>\n<tr>\n<td>2-10 years</td>\n<td>100&ndash;200 mL</td>\n</tr>\n<tr>\n<td>&gt;10 years</td>\n<td>As much fluid as they want</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Plan B</strong>: For moderate dehydration.</p>\n<p>The amount of oral rehydration solution (ORS) to be given is <strong>75 mL/kg body weight</strong> (wt &times; 75).</p>\n<p><strong>Plan C</strong>: Severe dehydration</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Age</strong></td>\n<td>First, give<strong> 30 mL/kg in</strong></td>\n<td>Followed by <strong>70 mL/kg in</strong></td>\n<td>Total<strong> 100 mL/kg in</strong></td>\n</tr>\n<tr>\n<td>Infants (under 12 months)</td>\n<td>1 hr</td>\n<td>5 hrs</td>\n<td>&nbsp;6 hrs</td>\n</tr>\n<tr>\n<td>Older</td>\n<td>30 min</td>\n<td>2&frac12; hrs</td>\n<td>&nbsp;3 hrs</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Note:&nbsp;</strong><strong>Ringer lactate</strong> (ideal) or normal saline is used as intravenous fluids.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9267",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Atropine is indicated in all of the following poisonings except _____.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Baygon"
+        },
+        {
+          "id": 2,
+          "text": "TIK 20"
+        },
+        {
+          "id": 3,
+          "text": "Parathion"
+        },
+        {
+          "id": 4,
+          "text": "Endrin"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Endrin</strong> is an <strong>organochloride</strong>&nbsp;pesticide that causes neurotoxicity. There <strong>is no antidote</strong> available and&nbsp;<strong>only symptomatic treatment</strong> is done.</p>\n<p>Parathion and TIK20 are organophosphates and baygon is a combination of organophosphate and carbamate. For all of these, atropine is the drug of choice.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9262",
+      "difficulty": "medium"
+    },
+    {
+      "text": "27-year-old female came for treatment of infertility to OPD. Bromocriptine was prescribed. What could be the possible reason?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hyperprolactinemia"
+        },
+        {
+          "id": 2,
+          "text": "PCOD"
+        },
+        {
+          "id": 3,
+          "text": "Hypogonadotrophic hypogonadism"
+        },
+        {
+          "id": 4,
+          "text": "PID"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The patient is likely to be suffering from <strong>hyperprolactinemia</strong>.&nbsp;</p>\n<p>Prolactin inhibits the secretion of GnRH, which leads to the decreased secretion of LH and FSH resulting in infertility.<strong> Bromocriptine</strong> acts on Dopamine D2 receptors to reduce prolactin secretion.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9292",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which is a mood stabiliser with an anti-suicidal role?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Carbamazepine"
+        },
+        {
+          "id": 2,
+          "text": "Lamotrigine"
+        },
+        {
+          "id": 3,
+          "text": "Lithium"
+        },
+        {
+          "id": 4,
+          "text": "Valproate"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Lithium</strong> is a mood stabilizer with an<strong> antisuicidal role</strong>.</p>\n<p><strong>Maintenance</strong> treatment with <strong>lithium</strong> has shown to<strong> decrease</strong> the rate of<strong> suicide</strong> in<strong> mood disorders</strong>. Lithium was found to be better than other mood stabilizers such as carbamazepine, lamotrigine, and valproate.</p>\n<p>Lithium is also used in recurrent depression with a cyclic pattern is controlled by either lithium or imipramine. It is also used to augment standard antidepressant response in acute major depression in those patients who have had an inadequate response to monotherapy.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9508",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is not an idiosyncratic reaction of carbamazepine?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Blurred vision"
+        },
+        {
+          "id": 2,
+          "text": "Agranulocytosis"
+        },
+        {
+          "id": 3,
+          "text": "Rash"
+        },
+        {
+          "id": 4,
+          "text": "Steven Johnson Syndrome"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Blurred vision is not an idiosyncratic reaction of carbamazepine.</p>\n<p>Idiosyncratic blood dyscrasias with carbamazepine, include fatal cases of <strong>aplastic anaemia</strong> and <strong>agranulocytosis.</strong> The most common idiosyncratic reaction is an <strong>erythematous skin rash.</strong> It can rarely cause<strong> Steven Johnson Syndrome.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9509",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a middle-aged diabetic patient with chronic kidney disease stage 5, which of the following drugs can be given safely without altering the dose?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Vildagliptin"
+        },
+        {
+          "id": 2,
+          "text": "Linagliptin"
+        },
+        {
+          "id": 3,
+          "text": "Saxagliptin"
+        },
+        {
+          "id": 4,
+          "text": "Sitagliptin"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Linagliptin</strong> can be given safely without altering the dose for this patient.</p>\n<p>Linagliptin is a <strong>dipeptidyl-peptidase-4 (DPP-4) inhibitor</strong>&nbsp;and is <strong>eliminated</strong> by the<strong>&nbsp;hepatobiliary route.&nbsp;</strong>Hence no dosage adjustment is needed in renal failure.</p>\n<p>It is used in type 2 diabetes as monotherapy or as combination therapy with other drugs when metformin is not tolerated or contraindicated.</p>\n<p><strong>Other DPP-4 inhibitors</strong>&nbsp;like sitagliptin, vildagliptin, saxagliptin, alogliptin show <strong>renal elimination</strong>.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9510",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following drugs can be used as an antidote for fibrinolytic therapy?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Protamine"
+        },
+        {
+          "id": 2,
+          "text": "Streptokinase"
+        },
+        {
+          "id": 3,
+          "text": "Heparin"
+        },
+        {
+          "id": 4,
+          "text": "ε-Aminocaproic acid"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>&epsilon;-Aminocaproic acid</strong> can be used as an antidote for fibrinolytic therapy.</p>\n<p>It is a lysine analog that binds competitively to plasminogen, blocking plasminogen from binding to fibrin and the subsequent conversion to plasmin. This activity subsequently results in the <strong>inhibition of fibrinolysis.</strong></p>\n<p>It should not be given unless hemorrhage is life-threatening because it inhibits intrinsic fibrinolytic activity and <strong>can precipitate DIC.</strong>&nbsp;Fresh frozen plasma and cryoprecipitate may also be used to replenish fibrin and clotting factors.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/114b5293e3404eddbd69d440272edb0ex1280x1988.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9511",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A known epileptic patient on levetiracetam has been seizure-free for 2 years. But he develops agitation and anger issues interfering with his day-to-day activities as a result of the drug intake. Which of the following measures is to be taken next?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Slowly taper the drug over next 6 months"
+        },
+        {
+          "id": 2,
+          "text": "Continue levetriacetam since a 5 year seizure free interval is needed"
+        },
+        {
+          "id": 3,
+          "text": "Stop levetiracetam and start on a different anti-epileptic"
+        },
+        {
+          "id": 4,
+          "text": "Discontinue the drug as he is seizure free"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The mood changes observed in the above patient must be due to an adverse effect of levetiracetam. <strong>Abrupt stoppage</strong> of the drug can result in <strong>rebound</strong> seizures. So the best management will be to <strong>slowly taper the drug</strong> over the <strong>next 6 months</strong>.</p>\n<p>Adverse effects of <strong>levetiracetam</strong>:</p>\n<ul>\n<li>Somnolence</li>\n<li>Asthenia</li>\n<li>Ataxia</li>\n<li>Dizziness.</li>\n<li><strong>Mood and behavioral changes</strong></li>\n<li>Psychotic reactions (rare)</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9512",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A drug was given IV at a rate of 1.6mg/min. The clearance of the drug is 640ml/min. The half life of the drug is 1.8 hour. Calculate the plasma concentration of the drug at steady state.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.88mg/ml"
+        },
+        {
+          "id": 2,
+          "text": "0.004mg/ml"
+        },
+        {
+          "id": 3,
+          "text": "3.55mg/ml"
+        },
+        {
+          "id": 4,
+          "text": "0.002mg/ml"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Plasma steady-state concentration</strong> is achieved when the amount of <strong>drug</strong> being <strong>administered equals</strong> the amount of <strong>drug</strong> being <strong>excreted</strong> from the body.</p>\n<p>The amount of drug being administered = 1.6mg/min</p>\n<p><strong>Amount of drug being excreted = Clearance (CL) x Plasma concentration of the drug (C)</strong></p>\n<p>Clearance = 640ml/min</p>\n<p>Therefore,</p>\n<p>1.6mg/min = 640ml /min ( clearance) x Plasma concentration of the drug</p>\n<p>Hence,</p>\n<p><strong>Plasma concentration</strong> of the drug = 1.6 mg/min / 640 ml/min = <strong>0.002 mg/ml.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9513",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following disease-modifying anti rheumatoid drug increases extracellular adenosine?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Methotrexate"
+        },
+        {
+          "id": 2,
+          "text": "Lefunamide"
+        },
+        {
+          "id": 3,
+          "text": "Sulphasalazine"
+        },
+        {
+          "id": 4,
+          "text": "Hydroxychloroquine"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Methotrexate</strong> is the disease-modifying anti rheumatoid drug that <strong>increases extracellular adenosine</strong>. Methotrexate&rsquo;s principal mechanism of action relates to inhibition of amino-imidazole carboxamide ribonucleotide (AICAR) transformylase and thymidylate synthetase.</p>\n<p>AICAR accumulates intracellularly, competitively inhibits AMP deaminase, leading to an <strong>accumulation of AMP</strong>.&nbsp;The AMP is released and converted extracellularly to <strong>adenosine, </strong>which is a <strong>potent inhibitor of inflammation</strong>. As a result, the inflammatory functions of neutrophils, macrophages, dendritic cells, and lymphocytes are suppressed.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9f8d4a9516b044e2a3f0355baf01eb5cx1280x1905.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9514",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Composition of Lente insulin is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "70% amorphous 30% crystalline"
+        },
+        {
+          "id": 2,
+          "text": "70% crystalline 30% amorphous"
+        },
+        {
+          "id": 3,
+          "text": "Only 70% amorphous"
+        },
+        {
+          "id": 4,
+          "text": "Other name of NPH insulin"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Lente</strong> insulin is an <strong>intermediate-acting</strong> insulin and is a <strong>combination of Ultralente and Semilente </strong>in the<strong> ratio of 7:3</strong></p>\n<p>Two types of insulin zinc suspensions have been produced. The one with large particles is crystalline and practically insoluble in water (<strong>Ultralente</strong>). It is long-acting. The other has smaller particles and is amorphous (<strong>Semilente</strong>), is short-acting. Their 7:3 ratio mixture is called &lsquo;Lente insulin&rsquo; and is intermediate-acting.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9515",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Mechanism of action of Oseltamivir  as an antiviral agent is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Inhibition of M2 receptor"
+        },
+        {
+          "id": 2,
+          "text": "Neuraminidase inhibition"
+        },
+        {
+          "id": 3,
+          "text": "Inhibition of RNA dependent DNA polymerase"
+        },
+        {
+          "id": 4,
+          "text": "Apoptosis of infected cells"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Oseltamivir and zanamivir are&nbsp;<strong>neuraminidase inhibitors</strong>.</p>\n<p>They&nbsp;<strong>competitively and reversibly</strong>&nbsp;interact with the enzyme sites to inhibit viral neuraminidase activity. This <strong>interferes with the release</strong>&nbsp;of the progeny from infected host cells, halting the spread of infection. Early administration is crucial.</p>\n<p>Oseltamivir is given at a dose of&nbsp;<strong>75 mg, twice a day for 5 days </strong>for the<strong> treatment</strong> of Influenza A and B. For <strong>prophylaxis</strong>, it is given at a dose of <strong>75mg, once per day</strong> and continued for the duration of exposure.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9516",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A male patient who is suffering from a psychotic disorder is on antipsychotic, antidepressant and antihypertensive treatment. He suddenly developed tachycardia and chest tightness. On evaluation he had metabolic acidosis. ECG showed widened QRS complex and prolonged QT interval. Which of the following drugs is responsible for this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Amitriptyline"
+        },
+        {
+          "id": 2,
+          "text": "Amlodipine"
+        },
+        {
+          "id": 3,
+          "text": "Chlorthalidone"
+        },
+        {
+          "id": 4,
+          "text": "Enalapril"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario is suggestive of&nbsp;<strong>torsades de pointes. </strong>Only <strong>amitriptyline</strong> causes this condition, among the above drugs.</p>\n<p><strong>Torsades de pointes</strong> (French: twisting of points) is a life-threatening form of <strong>polymorphic ventricular tachycardia</strong> with rapid asynchronous complexes and an <strong>undulating baseline on ECG.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/535a12eac6994d8da51548e737760d35x1268x324.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Drugs causing QT prolongation and torsades de pointes</h3><p>Drugs Associated with QT Prolongation and Torsades de Pointes:</p>\n<p>Antiarrhythmics:</p>\n<ul>\n<li>Sotalol</li>\n<li>Amiodarone</li>\n<li>Quinidine</li>\n<li>Procainamide</li>\n<li>Dofetilide</li>\n<li>Ibutilide</li>\n</ul>\n<p>Antimicrobials:</p>\n<ul>\n<li>Levofloxacin</li>\n<li>Ciprofloxacin</li>\n<li>Gatifloxacin</li>\n<li>Moxifloxacin</li>\n<li>Clarithromycin</li>\n<li>Erythromycin</li>\n<li>Ketoconazole</li>\n<li>Itraconazole</li>\n<li>Rilpivirine</li>\n</ul>\n<p>Antidepressants:</p>\n<ul>\n<li>Amitriptyline</li>\n<li>Desipramine</li>\n<li>Imipramine</li>\n<li>Doxepin</li>\n<li>Fluoxetine</li>\n<li>Sertraline</li>\n<li>Venlafaxine</li>\n</ul>\n<p>Antipsychotics:</p>\n<ul>\n<li>Haloperidol</li>\n<li>Droperidol</li>\n<li>Quetiapine</li>\n<li>Ziprasidone</li>\n<li>Thioridazine</li>\n</ul>\n<p>Others:</p>\n<ul>\n<li>Cisapride</li>\n<li>Sumatriptan</li>\n<li>Zolmitriptan</li>\n<li>Arsenic</li>\n<li>Dolasetron</li>\n<li>Methadone<br />&nbsp;</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9517",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You and your friend plan for a mountain trip for the day after. What medication would you advise him to help with his motion sickness?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ranitidine tablet before start of trip"
+        },
+        {
+          "id": 2,
+          "text": "Dimenhydrinate before start of trip"
+        },
+        {
+          "id": 3,
+          "text": "Scopolamine patch the night before trip"
+        },
+        {
+          "id": 4,
+          "text": "Omeprazole the night before and before start of trip"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In the above case, a <strong>scopolamine patch</strong> the <strong>night before</strong> the trip should be advised.</p>\n<p>Treatment for motion sickness :</p>\n<ul>\n<li><strong>Scopolamine patch- </strong>preferred, most effective.\n<ul>\n<li>Do not&nbsp;give to children &lt;10 years of age.</li>\n<li>Place patch behind the ears <strong>at least 4 hours before travel</strong> and replace every 72 hours as needed.</li>\n<li>Transdermal patch &ndash; Most effective</li>\n<li>Oral dose - 0.4&ndash;0.6 mg one hour before travel and then TID may be recommended.</li>\n</ul>\n</li>\n<li><strong>Cinnarizine </strong>&ndash; 30mg, 2 hours prior to travel, and 15mg TID as required. Not as effective as scopolamine. Moderately effective.</li>\n<li><strong>Promethazine</strong></li>\n<li>Other drugs (minimally effective):&nbsp;\n<ul>\n<li>Cyclizine</li>\n<li><strong>Dimenhydrinate</strong></li>\n<li>Diphenhydramine</li>\n<li>Meclizine</li>\n</ul>\n</li>\n</ul>\n<p>PPI&rsquo;s / ranitidine / traditional ginger &ndash; all are ineffective.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD7318",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A patient was treated for septicemia with norepinephrine infusion. Which of the following best explains the benefit of this drug?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Bradycardia"
+        },
+        {
+          "id": 2,
+          "text": "Tachycardia"
+        },
+        {
+          "id": 3,
+          "text": "Increases urine output"
+        },
+        {
+          "id": 4,
+          "text": "Increases mean arterial blood pressure"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The benefit of using <strong>noradrenaline</strong> in septicemia is that it <strong>increases</strong> the <strong>mean arterial blood pressure</strong>.&nbsp;It acts as a powerful peripheral vasoconstrictor and inotrope.</p>\n<p>Noradrenaline causes a rise in <strong>both systolic BP and diastolic BP</strong>, resulting in a rise in the mean arterial blood pressure.&nbsp;This increases the organ perfusion in patients in&nbsp;<strong>septic</strong> shock or&nbsp;<strong>cardiogenic shock.&nbsp;</strong></p>\n<p>Another advantage of noradrenaline is that it does so <strong>without causing tachycardia</strong>, which is often a troublesome event with other inotropes in critical care.</p>\n<p>Options A and B: The rise in mean arterial pressure causes reflex bradycardia which is not a major contributor to the treatment of septic shock.</p>\n<p>Option C: Low-dose dopamine infusions and furosemide are used to increase urine output in critically ill patients.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD7320",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following suggests storage of drugs in tissue?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Excretion in saliva"
+        },
+        {
+          "id": 2,
+          "text": "Excretion in urine"
+        },
+        {
+          "id": 3,
+          "text": "Large volume of distribution"
+        },
+        {
+          "id": 4,
+          "text": "Small volume of distribution"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Storage of drug in tissue suggests large volume distribution.</p>\n<p><strong>Drugs with small volume of distribution are confined to vascular component.</strong></p>\n<p><strong>Drugs with large volume of distribution are in compartments like adipose tissue, muscle, bone.</strong></p>\n<p>Volume of distribution depends on:</p>\n<ul>\n<li>Lipid solubility</li>\n<li>pKa value of a drug</li>\n<li>Degree of plasma protein binding</li>\n<li>presence of tissue-specific transporters</li>\n<li>differences in regional blood flow.</li>\n</ul>\n<p><strong>Volume (V) = Dose administered I.V. / Plasma concentration</strong></p>\n<p>e.g., when 1000mg of drug is injected I.V. and plasma concentration of drug is 50mg/L,</p>\n<ul>\n<li>V=1000/50</li>\n<li>V=20L</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF8283",
+      "difficulty": "easy"
+    }
+  ]
+}

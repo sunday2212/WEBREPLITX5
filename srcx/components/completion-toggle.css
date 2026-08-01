@@ -1,0 +1,46 @@
+
+.completion-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.completion-circle {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completion-circle:hover {
+  border-color: #4299e1;
+  transform: scale(1.05);
+}
+
+.completion-circle.completed {
+  background: #48bb78;
+  border-color: #48bb78;
+}
+
+.completion-circle .fas.fa-check {
+  color: white;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.completion-circle .fas.fa-check.visible {
+  opacity: 1;
+}
+
+.lecture-card {
+  position: relative;
+}

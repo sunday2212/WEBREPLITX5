@@ -1,0 +1,824 @@
+{
+  "meta": {
+    "title": "Thyroid_Disease"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sodium/Iodide Symporter (NIS)</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thyroid Peroxidase (TPO)</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pendrin</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dual oxidase (DUOX)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient is being evaluated for a thyroid disorder. The physician explains that iodide uptake by the thyroid is a crucial step in thyroid hormone synthesis. Which of the following proteins is responsible for the active transport of iodide into thyroid follicular cells?</span></p>",
+      "unique_key": "DT1295375",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295375,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Sodium/Iodide Symporter (NIS)</strong> actively transports <strong>iodide</strong> into thyroid follicular cells at the <strong>basolateral membrane</strong>. This is a critical first step in <strong>thyroid hormone synthesis</strong>.</li>\r\n<li><strong>Pendrin</strong> is involved in the efflux of iodide into the follicular lumen.</li>\r\n<li><strong>Thyroid peroxidase (TPO)</strong> catalyzes the organification of iodine after it enters the follicular lumen.</li>\r\n<li><strong>Dual oxidase (DUOX)</strong> produces hydrogen peroxide necessary for the TPO-mediated reactions.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250109f8bfbc42-86d7-4fff-8b9e-f8e015bd1f34.jpg\"><p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>The <strong>NIS</strong> is essential for the active transport of <strong>iodide</strong> into thyroid cells, which is the initial step in the synthesis of thyroid hormones.</li>\r\n<li>Mutations in the NIS gene can lead to <strong>congenital hypothyroidism</strong>.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 1,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decreased production of thyroid peroxidase</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Impaired active transport of iodide into the thyroid follicular cells</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased release of thyrotropin-releasing hormone (TRH) from the hypothalamus</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Overexpression of the DUOX gene leading to excessive hydrogen peroxide production</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A newborn is diagnosed with congenital hypothyroidism. Genetic testing reveals a mutation in the gene coding for the Sodium/Iodide Symporter (NIS). Which of the following best explains the pathophysiology behind the child's condition?</span></p>",
+      "unique_key": "DT1295377",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295377,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Congenital hypothyroidism</strong> due to a mutation in the <strong>NIS gene</strong> leads to impaired <strong>iodide uptake</strong> by thyroid follicular cells, which is critical for <strong>thyroid hormone synthesis</strong>. Without sufficient iodide, the thyroid cannot produce adequate levels of <strong>T3 and T4</strong>, resulting in hypothyroidism.</li>\r\n<li><strong>Thyroid peroxidase (TPO)</strong> plays a role in organification of iodide, but a <strong>mutation in NIS</strong> does not affect TPO.</li>\r\n<li><strong>TRH</strong> regulation is not the primary defect in this genetic condition.</li>\r\n<li><strong>DUOX</strong> gene overexpression would result in excessive hydrogen peroxide production, but this is unrelated to iodide transport.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>NIS mutations</strong> can lead to <strong>congenital hypothyroidism</strong> due to the failure of iodide transport into thyroid follicular cells.</li>\r\n<li>Early diagnosis and treatment of congenital hypothyroidism are critical to prevent developmental delays and intellectual disability.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 12,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased synthesis of thyroid hormone</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inhibition of thyroid iodide organification</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Activation of TSH receptors by iodide</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased conversion of T4 to T3</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old man with a history of Graves' disease undergoes a CT scan with iodinated contrast. Shortly after the procedure, he experiences a transient reduction in thyroid hormone levels. What is the most likely mechanism for this effect?</span></p>",
+      "unique_key": "DT1295379",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295379,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>The <strong>Wolff-Chaikoff effect</strong> refers to the <strong>transient inhibition</strong> of <strong>thyroid iodide organification</strong> following exposure to high levels of iodide. This effect <strong>reduces thyroid hormone synthesis</strong> temporarily.</li>\r\n<li>In patients with a normal thyroid, the gland escapes from this inhibitory effect, and thyroid hormone synthesis resumes. However, in some individuals, especially those with underlying thyroid disease (e.g., <strong>Graves' disease</strong>), the inhibitory effect can persist.</li>\r\n<li><strong>Iodide</strong> does not directly stimulate <strong>TSH receptors</strong> (option C), and the <strong>conversion of T4 to T3</strong> is not directly affected by iodide exposure (option D).</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>The <strong>Wolff-Chaikoff effect</strong> is a temporary <strong>inhibition of thyroid hormone production</strong> caused by exposure to high levels of <strong>iodide</strong>.</li>\r\n<li>This mechanism is particularly relevant in the context of <strong>iodine-based contrast agents</strong> used in imaging studies.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">T3 has a longer half-life than T4</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">T4 has a higher intracellular hormone fraction compared to T3</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">T3 is the primary hormone secreted by the thyroid gland</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">T3 has a higher receptor-binding affinity than T4</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Based on the properties of circulating T4 and T3, which of the following statements is true regarding the metabolism and activity of these hormones?</span></p>",
+      "unique_key": "DT1295381",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295381,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul><li><strong>T3</strong> has a <strong>higher receptor-binding affinity</strong> compared to T4, with a receptor binding of <strong>10<sup>-11</sup>M</strong> versus <strong>10<sup>-10</sup> M</strong> for T4, making it more potent in activating thyroid hormone receptors at the cellular level.</li><li><strong>T4</strong> has a longer half-life (<strong>7 days</strong>) compared to <strong>T3</strong> (<strong>2 days</strong>).</li><li><strong>T4</strong> is the <strong>primary hormone secreted by the thyroid gland</strong> (100% from the thyroid), but most of the active <strong>T3</strong> is generated by peripheral conversion of T4.</li><li><strong>T3</strong> has a higher intracellular hormone fraction (~70%) compared to <strong>T4</strong> (~20%).</li></ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202501097edc5802-d630-403e-8b58-8f58aeef1538.jpg\"><p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>T3</strong> is more potent than <strong>T4</strong> due to its higher receptor binding affinity.</li>\r\n<li><strong>T4</strong> is primarily secreted by the thyroid, but it is converted to the more active <strong>T3</strong> in peripheral tissues.</li>\r\n<li>The <strong>half-life</strong> of <strong>T4</strong> is much longer than that of <strong>T3</strong>, allowing for more stable levels in circulation.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 34,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Estrogen-induced increase in thyroid-binding globulin (TBG)</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decreased iodine requirement during pregnancy</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduced thyroid hormone metabolism by placental deiodinase</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased production of thyroid-stimulating immunoglobulins (TSI)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old woman in her first trimester of pregnancy is found to have mildly decreased TSH levels on routine testing. Her total T4 is elevated, but her free T4 is within the normal range. Which of the following is the most likely explanation for these findings?</span></p>",
+      "unique_key": "DT1295422",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295422,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>During pregnancy, <strong>estrogen</strong> leads to an increase in <strong>thyroxine-binding globulin (TBG)</strong>, which raises the levels of <strong>total T4</strong> and <strong>total T3</strong>. However, the <strong>free (unbound) hormone levels</strong> usually remain within the normal range, as seen in this patient.</li>\r\n<li>The <strong>human chorionic gonadotropin (hCG)</strong> produced in early pregnancy can weakly stimulate the <strong>TSH receptor</strong>, leading to a <strong>transient decrease in TSH</strong>.</li>\r\n</ul>\r\n<p>OPTION B: There is no <strong>decreased iodine requirement</strong> during pregnancy; in fact, iodine requirements increase</p>\r\n<p>OPTION C: <strong>Placental type III deiodinase</strong> increases thyroid hormone metabolism, rather than reducing it</p>\r\n<p>OPTION D:&nbsp;<strong>Thyroid-stimulating immunoglobulins (TSI)</strong> are seen in <strong>Graves' disease</strong>, not in normal pregnancy</p>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Estrogen</strong> increases <strong>TBG</strong> during pregnancy, which elevates <strong>total T4 and T3</strong> levels while keeping <strong>free hormone levels</strong> normal.</li>\r\n<li>The rise in <strong>hCG</strong> during the first trimester can transiently <strong>suppress TSH</strong> levels.</li>\r\n<li><strong>Iodine requirements</strong> are increased during pregnancy due to increased renal excretion and fetal use.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">TRH stimulation test</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRI of the pituitary gland</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Genetic testing for thyroid hormone receptor beta mutations</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Measurement of sex hormone-binding globulin (SHBG) levels</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old woman presents with symptoms of hyperthyroidism. Her lab results show elevated TSH, free T4, and free T3 levels. Imaging reveals a pituitary mass. Which of the following tests would best help differentiate between a TSH-secreting pituitary adenoma (TSHoma) and Resistance to Thyroid Hormone (RTH)?</span></p>",
+      "unique_key": "DT1295424",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295424,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li>In <strong>TSHoma</strong>, elevated TSH, T4, and T3 levels are present due to a <strong>pituitary adenoma</strong> secreting TSH autonomously. One way to differentiate <strong>TSHoma</strong> from <strong>RTH</strong> is by measuring <strong>sex hormone-binding globulin (SHBG)</strong> levels.\n<ul>\n<li><strong>SHBG</strong> is typically <strong>increased</strong> in <strong>TSHoma</strong> due to the hyperthyroid state and elevated T3 action.</li>\n<li>In <strong>RTH</strong>, despite elevated thyroid hormone levels, SHBG remains <strong>normal</strong> because the <strong>tissues</strong> (including the liver, where SHBG is synthesized) are resistant to the action of thyroid hormone.</li>\n</ul>\n</li>\n<li><strong>TRH stimulation test</strong> (option A) is not typically used for differentiation, as responses can be variable in both conditions.</li>\n<li><strong>MRI</strong> (option B) can help identify a pituitary adenoma in TSHoma but cannot differentiate it from RTH without further functional testing.</li>\n<li><strong>Genetic testing</strong> (option C) can confirm <strong>RTH</strong> due to <strong>thyroid hormone receptor beta mutations</strong>, but SHBG testing is simpler and more immediately available.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>TSHoma</strong> is associated with elevated TSH and thyroid hormone levels, and <strong>SHBG</strong> levels are increased due to thyroid hormone activity.</li>\n<li>In <strong>RTH</strong>, SHBG remains <strong>normal</strong> due to tissue resistance to thyroid hormone action, despite elevated circulating hormone levels.</li>\n</ul>",
+      "correct_choice_id": 54,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">TR&alpha; is highly expressed in the liver and pituitary</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">TR&beta;2 isoform is important for feedback regulation of the thyroid axis in the hypothalamus and pituitary</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thyroid hormone receptors function exclusively as homodimers</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">T4 has a higher binding affinity for TRs than T3</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Thyroid hormones enter target cells through specific transporters and exert their effects primarily via nuclear receptors. Which of the following is true regarding thyroid hormone receptors (TRs)?</span></p>",
+      "unique_key": "DT1295429",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295429,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>The <strong>TR&beta;2 isoform</strong> is selectively expressed in the <strong>hypothalamus</strong> and <strong>pituitary</strong>, where it plays a crucial role in <strong>negative feedback regulation</strong> of the thyroid axis by controlling TSH production.</li>\r\n<li><strong>TR&alpha;</strong> is highly expressed in organs like the <strong>heart</strong>, <strong>brain</strong>, <strong>muscle</strong>, and <strong>kidneys</strong> rather than the liver and pituitary (option A).</li>\r\n<li>Thyroid hormone receptors can bind to DNA as <strong>homodimers</strong> or more commonly as <strong>heterodimers</strong> with <strong>retinoic acid X receptors (RXRs)</strong> (option C).</li>\r\n<li><strong>T3</strong> binds to thyroid hormone receptors with <strong>10-15 times greater affinity</strong> than T4, which makes T3 the more potent hormone (option D).</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>TR&beta;2</strong> is critical for regulating the <strong>feedback loop</strong> in the thyroid axis, ensuring proper control of TSH secretion.</li>\r\n<li><strong>T3</strong> has higher receptor-binding affinity and potency compared to T4, despite being present in lower quantities in circulation.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Start methimazole and follow-up in 3 months</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Perform fine-needle aspiration of the largest nodule</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administer radioactive iodine therapy</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proceed with total thyroidectomy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old woman with a long-standing goiter presents with new onset palpitations, weight loss, and tremors. She denies any neck pain or recent illnesses. Physical examination reveals a diffusely enlarged thyroid with multiple palpable nodules. Thyroid function tests show a suppressed TSH (<0.01 mIU/L) and elevated total T3. A thyroid scan reveals heterogeneous uptake with multiple areas of increased and decreased radioiodine uptake. What is the most appropriate next step in managing this patient?</span></p>",
+      "unique_key": "DT1295437",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295437,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>A) Start methimazole and follow-up in 3 months: Methimazole is used to control hyperthyroidism, but it is not a long-term solution for toxic multinodular goiter (TMNG). It is often used as a <strong>temporary measure, especially in older or unstable patients, to normalize thyroid function before definitive therapy</strong> (radioiodine or surgery). However, in this case, the definitive treatment option (radioiodine) is preferred.</p>\r\n<p>B) Perform fine-needle aspiration of the largest nodule: While FNA is important to rule out malignancy in thyroid nodules, it is not routinely indicated in all TMNG cases unless there are suspicious sonographic features (e.g., hypoechoic nodules with irregular borders). In this case, the patient's hyperthyroidism and typical scan findings (<strong>heterogeneous uptake</strong>) point to a diagnosis of toxic multinodular goiter, making FNA unnecessary at this stage.</p>\r\n<p>C) <strong>Administer radioactive iodine therapy: Radioactive iodine therapy is the treatment of choice for toxic multinodular goiter</strong>. It is effective in ablating the hyperfunctioning nodules while sparing normal thyroid tissue. This approach can control the hyperthyroidism and <strong>reduce the size of the goiter over time</strong>. It is a definitive, non-surgical treatment, especially suitable for older patients or those with comorbidities.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250109390734e2-7da9-4501-a5b7-1f65800cc044.jpg\"><p>D) Proceed with total thyroidectomy: Surgery (thyroidectomy) is a definitive treatment option, especially for patients with very large goiters causing compressive symptoms, suspicion of malignancy, or those unable to undergo radioactive iodine therapy. However, it carries risks, particularly in older patients, and is usually reserved for specific cases. In this patient, with no compressive symptoms and an otherwise stable condition, radioactive iodine is preferred.</p>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<p><strong>Radioactive iodine therapy is the treatment of choice for toxic multinodular goiter</strong> in most cases, especially in elderly patients.</p>\r\n<p>Surgery is indicated for those with compressive symptoms or suspicion of malignancy.</p>\r\n<p>Beta-blockers and methimazole are used to control symptoms and normalize thyroid function prior to definitive treatment.</p>\r\n ",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thyrotoxicosis</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Biotin interference with the TSH assay</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vitamin A RXR mediated neutralisation </span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">TRH stimulation artifact</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old woman presents with symptoms of palpitations and weight loss. Her lab tests show suppressed TSH levels and elevated free T4 and free T3 levels. Upon further questioning, the patient reveals she has been having vitamin supplements for hair and nail health. What is the most likely explanation for her thyroid function test results?</span></p>",
+      "unique_key": "DT1295502",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295502,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Biotin</strong> can interfere with <strong>thyroid function tests</strong> by affecting the immunoassays used to measure <strong>TSH</strong>, leading to <strong>falsely low TSH</strong> values and <strong>falsely elevated free T4 and T3</strong> levels.</li>\r\n<li>Biotin supplementation, especially in high doses, can interfere with <strong>biotinylated antibodies</strong> used in the <strong>TSH</strong> and <strong>free thyroid hormone assays</strong>.</li>\r\n<li>Stopping biotin for at least <strong>2 days</strong> prior to thyroid function testing is recommended to avoid these artifacts.</li>\r\n<li><strong>Thyrotoxicosis</strong> or <strong>subclinical hyperthyroidism</strong> would typically not be associated with recent biotin use and would have clinical signs correlating with the lab findings.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>High-dose <strong>biotin supplementation</strong> can interfere with thyroid function testing, leading to <strong>false lab results</strong>. Patients should be advised to stop biotin supplementation before testing.</li>\r\n<li>It is important to ask about <strong>supplements</strong> when interpreting abnormal thyroid function test results.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 82,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Central hypothyroidism</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Subclinical hypothyroidism</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonthyroidal illness syndrome (euthyroid sick syndrome)</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary hypothyroidism</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old man is admitted to the ICU with sepsis. His thyroid function tests show low T3, low normal T4, and normal TSH levels. Which of the following is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295505",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295505,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>In <strong>nonthyroidal illness syndrome (euthyroid sick syndrome)</strong>, patients with severe illness often have <strong>low T3</strong> and sometimes <strong>low T4</strong> levels, with <strong>normal or low-normal TSH</strong>. This is due to altered peripheral conversion of T4 to T3 and changes in thyroid hormone metabolism during critical illness.</li>\r\n<li><strong>Central hypothyroidism</strong> would present with low TSH and low thyroid hormone levels, and <strong>primary hypothyroidism</strong> would present with an elevated TSH and low thyroid hormone levels.</li>\r\n<li>In <strong>subclinical hypothyroidism</strong>, TSH is elevated with normal thyroid hormone levels.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Nonthyroidal illness syndrome</strong> occurs in critically ill patients and can mimic hypothyroidism. Treatment is not usually necessary unless there is underlying thyroid dysfunction.</li>\r\n<li><strong>TSH</strong> levels can be normal in nonthyroidal illness despite low T3 or T4.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inadequate levothyroxine dosing</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pituitary adenoma</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">TSH resistance</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Poor medication adherence or malabsorption</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old woman presents with fatigue and mild weight gain. Her thyroid function tests reveal elevated TSH, normal free T4, and normal free T3. She is already on levothyroxine therapy for hypothyroidism. What is the most likely cause of her persistent TSH elevation?</span></p>",
+      "unique_key": "DT1295513",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295513,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>Persistent <strong>elevation of TSH</strong> despite <strong>normal free T4</strong> and <strong>T3</strong> levels in a patient on <strong>levothyroxine</strong> therapy often indicates <strong>poor medication adherence</strong> or <strong>malabsorption</strong> of the medication.</li>\r\n<li>Inadequate dosing (option A) would typically result in <strong>low free T4</strong> levels along with elevated TSH.</li>\r\n<li>A <strong>pituitary adenoma</strong> would cause elevated <strong>TSH</strong> and <strong>thyroid hormone levels</strong> rather than normal free T4.</li>\r\n<li><strong>TSH resistance</strong> (option C) is rare and typically presents with <strong>elevated TSH</strong> along with elevated free thyroid hormone levels.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Persistent TSH elevation</strong> in patients on <strong>levothyroxine</strong> therapy may result from <strong>poor medication adherence</strong>, <strong>improper timing</strong> of the dose, or <strong>malabsorption</strong> (e.g., from gastrointestinal conditions or drug interactions like PPIs).</li>\r\n<li>Ensure patients are educated on proper medication intake, including fasting and avoiding drug interactions.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-pitting pretibial edema</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Puffy face and periorbital edema</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hyperactive tendon reflexes</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dry, brittle hair with alopecia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old woman presents with fatigue, weight gain, and constipation. On examination, she has dry skin, brittle hair, and non-pitting edema of the lower legs. Which of the following symptoms is least likely to be associated with following thyroid disease?</span></p>",
+      "unique_key": "DT1295516",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295516,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Hypothyroidism</strong> is associated with <strong>hypoactive</strong> or <strong>delayed relaxation of tendon reflexes</strong>, not hyperactive reflexes.</li>\r\n<li><strong>Non-pitting pretibial edema</strong> (myxedema), a <strong>puffy face</strong>, and <strong>dry, brittle hair</strong> with <strong>alopecia</strong> are common features of hypothyroidism due to the accumulation of <strong>glycosaminoglycans</strong> in tissues and the <strong>metabolic slowing</strong> caused by thyroid hormone deficiency.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>In hypothyroidism, <strong>reflexes are slowed</strong> rather than exaggerated, and <strong>myxedema</strong> is a key feature.</li>\r\n<li><strong>Myxedema</strong> refers to the <strong>non-pitting</strong> swelling of tissues, most commonly seen in the <strong>pretibial</strong> region and face.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hyperreflexia</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Myxedema coma</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Conductive hearing loss</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased ventilatory drive</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old man presents with fatigue, muscle stiffness, and slowness of movement. He reports frequent muscle cramps and difficulty hearing. On examination, his reflexes show delayed relaxation and he has non-pitting edema of his hands and face. Which neurological manifestation is most likely to be found in this patient with hypothyroidism?</span></p>",
+      "unique_key": "DT1295519",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295519,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Conductive hearing loss</strong> can occur in hypothyroidism due to <strong>fluid accumulation</strong> in the <strong>middle ear</strong>, leading to <strong>hearing difficulties</strong>.</li>\r\n<li><strong>Delayed relaxation of reflexes</strong> is a hallmark feature of hypothyroidism, not <strong>hyperreflexia</strong> (option A).</li>\r\n<li><strong>Myxedema coma</strong> (option B) is a severe, life-threatening complication of long-standing untreated hypothyroidism, but it is rare and associated with <strong>hypothermia</strong>, <strong>bradycardia</strong>, and <strong>hypoventilation</strong>.</li>\r\n<li>Patients with hypothyroidism tend to have <strong>diminished ventilatory drive</strong> (option D), sometimes leading to <strong>dyspnea</strong> or <strong>sleep apnea</strong>, rather than increased drive.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Conductive hearing loss</strong> is a common feature of hypothyroidism due to <strong>fluid retention</strong> in the middle ear.</li>\r\n<li><strong>Delayed reflex relaxation</strong>, <strong>muscle cramps</strong>, and <strong>non-pitting edema</strong> are typical signs in hypothyroidism.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 123,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Activating mutation TSH receptor</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Activating mutation of Gs&alpha;</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Jod-Basedow</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Struma ovarii</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old woman presents with symptoms of thyrotoxicosis including weight loss, palpitations, and heat intolerance. Laboratory findings reveal elevated free T4 and suppressed TSH. Which of the following is not a cause of syndromic hyperthyroidism?</span></p>",
+      "unique_key": "DT1295526",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295526,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Hyperthyroidism, or thyrotoxicosis, can arise from a variety of causes, which are classified into <strong>primary hyperthyroidism</strong>, <strong>thyrotoxicosis without hyperthyroidism</strong>, and <strong>secondary hyperthyroidism</strong>. Some causes are <strong>syndromic</strong>, meaning they are part of a genetic or congenital disorder, while others are <strong>acquired</strong> or result from external factors.</p>\n<p><strong>Option A. Activating mutation of the TSH receptor</strong></p>\n<ul>\n<li><strong>Mechanism</strong>: Activating mutations in the <strong>TSH receptor (TSH-R)</strong> can lead to <strong>autonomous thyroid function</strong>, causing hyperthyroidism. These mutations make the thyroid responsive without needing stimulation from <strong>TSH</strong>, leading to <strong>overproduction of thyroid hormones</strong>.</li>\n<li><strong>Associated Syndrome</strong>: <strong>Familial non-autoimmune hyperthyroidism</strong> is a well-recognized genetic syndrome resulting from activating <strong>TSH-R mutations</strong>. Patients typically present with <strong>goiter</strong>, <strong>hyperthyroidism</strong>, and <strong>thyroid nodules</strong> at an early age.</li>\n</ul>\n<p><strong>Option B. Activating mutation of Gs&alpha; (McCune-Albright syndrome)</strong></p>\n<ul>\n<li><strong>Mechanism</strong>: McCune-Albright syndrome is caused by post-zygotic mutations in the <strong>Gs&alpha;</strong> subunit, which leads to <strong>constitutive activation</strong> of adenylate cyclase. This overactivation can cause <strong>hyperfunctioning thyroid nodules</strong>, resulting in <strong>thyrotoxicosis</strong>.</li>\n<li><strong>Associated Syndrome</strong>: <strong>McCune-Albright syndrome</strong> is a genetic disorder characterized by a triad of features:\n<ul>\n<li><strong>Caf&eacute;-au-lait spots</strong> (hyperpigmented macules on the skin)</li>\n<li><strong>Polyostotic fibrous dysplasia</strong> (bone lesions)</li>\n<li><strong>Endocrine hyperactivity</strong>, including <strong>hyperthyroidism</strong>, <strong>Cushing's syndrome</strong>, and <strong>precocious puberty</strong>.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Option C. Jod-Basedow phenomenon due to iodine excess</strong></p>\n<ul>\n<li><strong>Mechanism</strong>: The <strong>Jod-Basedow phenomenon</strong> occurs when iodine intake increases suddenly (e.g., from iodine-containing contrast agents, medications like amiodarone, or dietary sources). In individuals with underlying <strong>thyroid autonomy</strong> (e.g., <strong>nodular goiter</strong>), the sudden availability of iodine leads to <strong>excessive production of thyroid hormones</strong>, causing <strong>thyrotoxicosis</strong>. However, this condition is <strong>acquired</strong> rather than genetic or congenital.</li>\n<li><strong>Conclusion</strong>: <strong>Jod-Basedow phenomenon</strong> is an acquired form of hyperthyroidism and is <strong>not syndromic</strong>. It results from excess iodine intake in predisposed individuals and does not have a genetic or congenital basis.</li>\n</ul>\n<p><strong>Option D. Struma ovarii</strong></p>\n<ul>\n<li><strong>Mechanism</strong>: <strong>Struma ovarii</strong> is a rare ovarian tumor that contains <strong>functioning thyroid tissue</strong>. The ectopic thyroid tissue in the tumor produces thyroid hormones, leading to <strong>thyrotoxicosis</strong>. It is a form of <strong>paraneoplastic syndrome</strong>, where the thyroid hormone production is occurring outside the thyroid gland.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Syndromic causes</strong> of hyperthyroidism are those associated with <strong>genetic mutations</strong> or specific <strong>congenital conditions</strong>, such as <strong>TSH receptor mutations</strong> and <strong>McCune-Albright syndrome</strong>.</li>\n<li>The <strong>Jod-Basedow phenomenon</strong> is an <strong>acquired condition</strong> that occurs due to excess iodine intake in individuals with <strong>pre-existing thyroid disease</strong>, and it is <strong>not considered syndromic</strong>.</li>\n<li>Understanding the distinction between <strong>syndromic</strong> and <strong>acquired causes</strong> is important for diagnosing and managing hyperthyroidism appropriately.</li>\n</ul>",
+      "correct_choice_id": 133,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">CTLA-4 polymorphism</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sudden increase in iodine intake</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Activating mutation of TSH receptor</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Polymorphism in PTPN22 gene</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old woman presents with symptoms of thyrotoxicosis including palpitations, weight loss, and heat intolerance. Her physical examination reveals a diffusely enlarged thyroid and proptosis. She is diagnosed with Graves' disease. Which of the following factors is not directly implicated in the pathogenesis of Graves' disease?</span></p>",
+      "unique_key": "DT1295530",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295530,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Graves' disease</strong> is an autoimmune condition in which <strong>thyroid-stimulating immunoglobulins (TSIs)</strong> activate the <strong>TSH receptor</strong> (TSH-R), leading to <strong>increased production of thyroid hormones</strong>. The disease is a result of a combination of <strong>genetic susceptibility</strong> and <strong>environmental triggers</strong>.</p>\r\n<p>Option A. CTLA-4 Polymorphism: <strong>CTLA-4</strong> is an important <strong>immune checkpoint</strong> that regulates T-cell activation. Polymorphisms in <strong>CTLA-4</strong> have been linked to <strong>autoimmune diseases</strong>, including Graves' disease, by promoting <strong>autoimmune reactions</strong> against the thyroid gland.</p>\r\n<p>Option B. Sudden Increase in Iodine Intake<strong>: </strong>A <strong>sudden increase in iodine intake</strong> (e.g., from iodinated contrast agents or dietary supplements) can precipitate <strong>Graves' disease</strong> in susceptible individuals. This phenomenon is linked to the <strong>Jod-Basedow effect</strong>, where iodine triggers <strong>thyroid autoimmunity</strong> in individuals with <strong>underlying thyroid pathology</strong>.</p>\r\n<p><strong>C. Activating Mutation of TSH Receptor: </strong>While <strong>Graves' disease</strong> involves <strong>autoimmune activation</strong> of the <strong>TSH receptor</strong>, <strong>activating mutations of the TSH receptor</strong> are seen in other forms of <strong>hyperthyroidism</strong>, such as <strong>toxic adenoma</strong> or <strong>toxic multinodular goiter</strong>, rather than autoimmune thyroid conditions. These mutations result in <strong>autonomous thyroid hormone production</strong>, independent of TSH regulation.</p>\r\n<p><strong>D. Polymorphism in PTPN22 Gene</strong></p>\r\n<ul>\r\n<li><strong>Explanation</strong>: <strong>PTPN22</strong> encodes a protein involved in the <strong>negative regulation of T-cell activation</strong>. Polymorphisms in <strong>PTPN22</strong> are associated with increased susceptibility to various autoimmune diseases, including <strong>Graves' disease</strong>, by impairing immune tolerance and promoting <strong>autoimmunity</strong>.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Graves' disease</strong> is primarily driven by <strong>autoimmunity</strong>, with <strong>genetic polymorphisms</strong> in immune regulatory genes like <strong>CTLA-4</strong> and <strong>PTPN22</strong> contributing to susceptibility.</li>\r\n<li>Environmental factors such as <strong>sudden iodine intake</strong> and <strong>stress</strong> may act as <strong>triggers</strong> for the disease in genetically predisposed individuals.</li>\r\n<li><strong>Activating mutations of the TSH receptor</strong>, however, are not involved in <strong>Graves' disease</strong> but rather are seen in other conditions like <strong>toxic adenoma</strong>.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 143,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acute bacterial thyroiditis</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Subacute (de Quervain's) thyroiditis</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hashimoto's thyroiditis</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silent thyroiditis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old man presents with fever, neck pain, and tenderness over the thyroid gland. His symptoms began a few days ago and were accompanied by a sore throat. Examination reveals a tender, slightly enlarged thyroid. Laboratory results show an elevated erythrocyte sedimentation rate (ESR) and suppressed TSH levels. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295534",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295534,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Subacute thyroiditis</strong> (also known as <strong>de Quervain's thyroiditis</strong> or <strong>granulomatous thyroiditis</strong>) is an inflammatory condition of the thyroid, often following a <strong>viral infection</strong>. It is one of the most common causes of <strong>painful thyroiditis</strong> and is characterized by <strong>thyroid tenderness</strong> and <strong>thyrotoxicosis</strong> during the initial phase.</p>\r\n<p>Option <strong>A. Acute bacterial thyroiditis</strong>: <strong>Acute thyroiditis</strong> is typically due to a <strong>suppurative bacterial infection</strong> and is much <strong>rarer</strong> than subacute thyroiditis. It often presents with <strong>high fever</strong>, <strong>erythema over the thyroid</strong>, and <strong>systemic signs of infection</strong>. It is commonly caused by <strong>Staphylococcus</strong> or <strong>Streptococcus</strong>. Although <strong>thyroid pain</strong> is a shared feature, <strong>bacterial infections</strong> are associated with an <strong>elevated white blood cell count</strong> and <strong>fever</strong> and are usually more <strong>severe</strong> than viral-induced thyroiditis. The patient's symptoms and elevated <strong>ESR</strong> without clear infectious signs point to <strong>subacute thyroiditis</strong> instead of bacterial thyroiditis.</p>\r\n<p>Option <strong>B. Subacute (de Quervain's) thyroiditis: Correct answer</strong>: This patient's history of <strong>fever, neck pain,</strong> and <strong>thyroid tenderness</strong>, coupled with a <strong>preceding viral infection</strong> and <strong>elevated ESR</strong>, strongly points toward <strong>subacute thyroiditis</strong>. The disease often has a viral trigger and is characterized by a <strong>transient thyrotoxic phase</strong> (with <strong>suppressed TSH</strong> and elevated T4/T3) followed by a <strong>hypothyroid phase</strong>. Pain is a hallmark of this condition, distinguishing it from <strong>silent thyroiditis</strong>. The thyroid often recovers over a few months, but a minority of patients may develop permanent hypothyroidism.</p>\r\n<p>Option <strong>C. Hashimoto's thyroiditis: Hashimoto's thyroiditis</strong> is a <strong>chronic autoimmune disorder</strong> and typically presents with a <strong>painless, firm goiter</strong> or <strong>atrophic thyroid</strong> and is more associated with <strong>hypothyroidism</strong> over time. It is <strong>not typically associated with fever</strong> or <strong>thyroid pain</strong>, as seen in this patient. Additionally, <strong>Hashimoto's</strong> thyroiditis often presents with <strong>positive TPO antibodies</strong> and does not follow the acute, inflammatory course seen in subacute thyroiditis.</p>\r\n<p><strong>D. Silent thyroiditis: Silent thyroiditis</strong> (painless thyroiditis) is a form of <strong>autoimmune thyroiditis</strong> and is typically <strong>painless</strong>, unlike subacute thyroiditis, which is characterized by thyroid tenderness. It often occurs in the <strong>postpartum period</strong> or with the use of <strong>medications</strong> such as interferons or immune checkpoint inhibitors. The absence of <strong>pain</strong> and <strong>lower ESR</strong> are key factors that differentiate silent thyroiditis from subacute thyroiditis.</p>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Subacute thyroiditis</strong> presents with <strong>painful thyroid enlargement</strong>, often preceded by a <strong>viral illness</strong>, and has distinct <strong>phases</strong>: a <strong>thyrotoxic phase</strong> followed by a <strong>hypothyroid phase</strong> and eventual recovery.</li>\r\n<li><strong>Thyroid tenderness</strong> and <strong>elevated ESR</strong> are key distinguishing features of <strong>subacute thyroiditis</strong>, helping differentiate it from <strong>silent thyroiditis</strong>, which is painless.</li>\r\n<li><strong>Thyroid function testing</strong> in subacute thyroiditis typically shows <strong>suppressed TSH</strong> with <strong>elevated T4/T3</strong> during the <strong>thyrotoxic phase</strong>.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 152,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Antithyroid drugs</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radioactive iodine therapy</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aspirin</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Levothyroxine therapy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 38-year-old woman presents with neck pain, fatigue, and fever that began two weeks ago. On examination, she has a tender, slightly enlarged thyroid. Laboratory tests reveal elevated T4 levels, suppressed TSH, and an elevated erythrocyte sedimentation rate (ESR). Radioactive iodine uptake is low. Which of the following is the most appropriate initial treatment?</span></p>",
+      "unique_key": "DT1295544",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295544,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Subacute thyroiditis is an <strong>inflammatory thyroid condition</strong> often triggered by a <strong>viral infection</strong> and typically follows a <strong>self-limited course</strong>. The patient usually presents in the <strong>thyrotoxic phase</strong>, during which <strong>thyroid hormone levels</strong> are elevated due to the release of preformed T4 and T3 from <strong>damaged thyroid follicles</strong>. The condition progresses through a <strong>thyrotoxic phase</strong>, a <strong>hypothyroid phase</strong>, and ultimately, recovery.</p>\r\n<p><strong>Option A. Antithyroid drugs</strong>: Antithyroid drugs (e.g., methimazole, propylthiouracil) are used to reduce thyroid hormone production in patients with <strong>Graves' disease</strong> or <strong>toxic multinodular goiter</strong>, where thyroid hormone is overproduced due to gland hyperactivity. In <strong>subacute thyroiditis</strong>, the elevation in thyroid hormone is due to <strong>release</strong> of preformed hormone, not overproduction. Therefore, antithyroid drugs are <strong>ineffective</strong> in this setting.</p>\r\n<p>Option <strong>B. Radioactive iodine therapy: </strong>Radioactive iodine (RAI) therapy is used to <strong>destroy overactive thyroid tissue</strong> in cases of <strong>Graves' disease</strong> or <strong>toxic nodules</strong>. However, in <strong>subacute thyroiditis</strong>, the thyroid is <strong>not overactive</strong>; instead, it is <strong>inflamed</strong> and releasing preformed hormone. The <strong>low radioactive iodine uptake</strong> seen in this case confirms that the thyroid is not actively synthesizing hormone, making RAI therapy inappropriate.</p>\r\n<p><strong>C. Nonsteroidal anti-inflammatory drugs (NSAIDs): NSAIDs</strong> (e.g., ibuprofen) are the treatment of choice for controlling <strong>pain</strong> and <strong>inflammation</strong> in <strong>subacute thyroiditis</strong>. These agents help reduce the <strong>thyroid pain</strong> and <strong>inflammation</strong> commonly seen in the early phase of the condition. <strong>Aspirin</strong> or <strong>corticosteroids</strong> (in more severe cases) are alternatives if NSAIDs fail to control symptoms. Since the thyroid gland inflammation is self-limited, symptom control with NSAIDs is often sufficient for many patients.</p>\r\n<p><strong>Option D. Levothyroxine therapy</strong>: <strong>Levothyroxine</strong> (T4) therapy is indicated in the <strong>hypothyroid phase</strong> of subacute thyroiditis, if it occurs. In the initial <strong>thyrotoxic phase</strong>, the patient typically does not require thyroid hormone replacement. Treatment with <strong>levothyroxine</strong> is only started during the hypothyroid phase if the patient's T4 levels fall below normal and the hypothyroidism is <strong>symptomatic</strong> or prolonged.</p>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Subacute thyroiditis</strong> presents with a <strong>painful thyroid</strong>, often following a <strong>viral infection</strong>.</li>\r\n<li>Treatment is focused on <strong>symptom control</strong>, primarily with <strong>NSAIDs</strong> or <strong>glucocorticoids</strong> in more severe cases.</li>\r\n<li><strong>Antithyroid drugs</strong> and <strong>radioactive iodine</strong> are ineffective in subacute thyroiditis, as the thyrotoxicosis results from <strong>release</strong> of preformed hormone, not <strong>overproduction</strong>.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 163,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase LT4 dosage by 20% and monitor TSH every 8 weeks</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Maintain current LT4 dosage and monitor TSH in the second trimester</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase LT4 dosage by 30-50% and monitor TSH every 4 weeks during the first half of pregnancy</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wait until TSH increases above 4.0 mIU/L before adjusting LT4 dose</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old woman with a history of Hashimoto's thyroiditis is planning to conceive. She is currently on levothyroxine (LT4) 100 mcg daily, and her most recent TSH level is 2.8 mIU/L. What is the most appropriate management of her LT4 therapy once she confirms pregnancy?</span></p>",
+      "unique_key": "DT1295549",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295549,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Thyroid hormone requirements</strong> increase during pregnancy due to several physiological changes, including:</p>\n<ul>\n<li><strong>Increased thyroid-binding globulin (TBG)</strong> due to elevated <strong>estrogen levels</strong>.</li>\n<li>Increased <strong>deiodinase activity</strong> in the placenta, which increases the conversion of <strong>T4 to inactive forms</strong>.</li>\n<li>The growing fetus is dependent on maternal <strong>thyroid hormones</strong> for normal <strong>neurodevelopment</strong>, particularly during the <strong>first trimester</strong> before the fetal thyroid begins to function.</li>\n</ul>\n<p>Women with <strong>hypothyroidism</strong> need to <strong>increase their LT4 dosage</strong> early in pregnancy to maintain <strong>euthyroidism</strong>, which is critical for both <strong>maternal</strong> and <strong>fetal health</strong>.</p>\n<p><strong>Protocol for LT4 Management in Hypothyroid Pregnant Women:</strong></p>\n<p><strong>1. Preconception:</strong></p>\n<ul>\n<li><strong>Goal TSH</strong>: &lt;2.5 mIU/L before conception.</li>\n<li>Monitor TSH every <strong>6-8 weeks</strong> if trying to conceive.</li>\n</ul>\n<p><strong>2. After Pregnancy is Confirmed:</strong></p>\n<ul>\n<li><strong>Increase LT4 dosage</strong> by <strong>30-50%</strong> (e.g., take <strong>nine doses per week</strong>).</li>\n<li><strong>Check TSH</strong> and <strong>free T4</strong> as soon as pregnancy is confirmed.</li>\n<li><strong>Target TSH</strong>:\n<ul>\n<li><strong>First trimester:</strong> &lt;2.5 mIU/L</li>\n<li><strong>Second and third trimesters:</strong> &lt;3.0 mIU/L</li>\n</ul>\n</li>\n</ul>\n<p><strong>3. Monitoring During Pregnancy:</strong></p>\n<ul>\n<li>Recheck <strong>TSH</strong> and <strong>free T4</strong> every <strong>4 weeks</strong> during the first half of pregnancy (up to 20 weeks).</li>\n<li>After 20 weeks, monitor every <strong>6-8 weeks</strong> if thyroid levels are stable.</li>\n<li>Adjust LT4 dose based on TSH results, aiming to keep TSH below <strong>2.5 mIU/L</strong> during the first trimester and <strong>3.0 mIU/L</strong> during the second and third trimesters.</li>\n</ul>\n<p><strong>4. Postpartum Management:</strong></p>\n<ul>\n<li><strong>Reduce LT4 dose</strong> to <strong>pre-pregnancy levels</strong> after delivery.</li>\n<li>Check <strong>TSH</strong> 6-8 weeks postpartum to ensure stable thyroid function.</li>\n<li>Continue monitoring periodically as needed based on the patient&rsquo;s history and postpartum recovery.</li>\n</ul>\n<p><strong>5. Special Instructions:</strong></p>\n<ul>\n<li>Advise the patient to <strong>separate LT4</strong> from <strong>prenatal vitamins</strong> and <strong>iron supplements</strong> by at least <strong>4 hours</strong> to avoid absorption issues.</li>\n<li>Educate the patient about the importance of adherence to the new dosage schedule during pregnancy and monitoring after delivery.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>TSH levels</strong> should be tightly controlled during pregnancy due to the crucial role of thyroid hormone in <strong>fetal brain development</strong>.</li>\n<li><strong>LT4 dosage</strong> must be increased early in pregnancy and adjusted throughout to maintain <strong>optimal thyroid function</strong>.</li>\n<li>Postpartum, LT4 dosage typically returns to <strong>pre-pregnancy levels</strong>, but close monitoring is still required.</li>\n</ul>",
+      "correct_choice_id": 173,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">The patient has primary hypothyroidism</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">The patient has secondary hypothyroidism</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">The low total T4 is due to reduced thyroid hormone-binding proteins</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">The free T4 measurement is inaccurate due to liver disease</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old woman is undergoing evaluation for suspected hypothyroidism. She has a history of liver cirrhosis and her total T4 is found to be low. However, her free T4 and TSH levels are within the normal range. What is the most appropriate interpretation of these results?</span></p>",
+      "unique_key": "DT1313090",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1313090,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>In patients with <strong>liver disease</strong>, such as <strong>cirrhosis</strong>, levels of <strong>thyroid-binding globulin (TBG)</strong> can be decreased, leading to a <strong>low total T4</strong>.</li>\r\n<li>However, the <strong>free T4</strong> level is unaffected, and the patient is <strong>euthyroid</strong> as indicated by a <strong>normal TSH</strong>.</li>\r\n<li>This is a classic example of how <strong>total thyroid hormone measurements</strong> can be misleading in conditions affecting <strong>binding proteins</strong>, and the <strong>free hormone levels</strong> are more accurate for assessing thyroid function.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Total T4</strong> levels can be falsely low in patients with <strong>liver disease</strong> due to decreased production of <strong>thyroid hormone-binding proteins</strong>.</li>\r\n<li><strong>Free T4</strong> levels provide a more accurate assessment of thyroid function in such cases.</li>\r\n</ul>\r\n ",
+      "correct_choice_id": 183,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

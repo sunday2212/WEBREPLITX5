@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "title": "33_Diffusion_Of_Gases_O2_And_Co2_Transport"
+  },
+  "questions": [
+    {
+      "text": "Which of the following formulas gives the oxygen extraction ratio (OER) of a substance?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "(Arterial Concentration+Venous Concentration) / Arterial Concentration"
+        },
+        {
+          "id": 1,
+          "text": "(Arterial Concentration−Venous Concentration) / Arterial Concentration"
+        },
+        {
+          "id": 2,
+          "text": "Venous Concentration / Arterial Concentration"
+        },
+        {
+          "id": 3,
+          "text": "(Venous Concentration−Arterial Concentration) / Venous Concentration"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) (Arterial Concentration−Venous Concentration) / Arterial Concentration</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>The Oxygen <span class=\"customMeta\" data-dictid=\"00456bf7d8169277718782edf9fa2c\">Extraction</span> Ratio (OER) is defined as the ratio of <span class=\"customMeta\" data-dictid=\"72d435bfb11692777194f88fdb0bf3\">oxygen consumption</span> (VO₂) to oxygen delivery (DO₂), expressed mathematically as:</p>\n\n<p>Oxygen <span class=\"customMeta\" data-dictid=\"00456bf7d8169277718782edf9fa2c\">Extraction</span> Ratio (OER) = <span class=\"customMeta\" data-dictid=\"72d435bfb11692777194f88fdb0bf3\">oxygen consumption</span> (VO₂) / oxygen delivery (DO₂)</p>\n\n<p>VO<sub>2</sub> = Arterial Concentration−Venous Concentration</p>\n\n<p>DO<sub>2</sub> = Arterial Concentration</p>\n\n<p>In a healthy adult, OER is about 25%. During intense physical activity, OER can rise to 70-80%.</p>\n\n<p><strong>Factors affecting OER:</strong></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:666px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Factor</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Key Influences</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Impact on OER</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Oxygen Delivery (DO<sub>2</sub>)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Cardiac output, Hemoglobin, SpO₂</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Decrease leads to increased OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Oxygen Consumption (VO<sub>2</sub>)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Metabolic demands (exercise, sepsis)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Increase without DO₂ increase elevates OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Blood Flow</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Vascular diseases, Shock states</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Altered <span class=\"customMeta\" data-dictid=\"82cc227a1c169277718387905b50c6\">blood flow</span> dynamics affect OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Physiological Conditions</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Hypoxia, Anemia, Hypercapnia</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Hypoxia increases OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Dialysis</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Hemodynamic changes during dialysis</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Higher OER <span class=\"customMeta\" data-dictid=\"8d0fca798b1692777191b6cd41880f\">linked</span> to <span class=\"customMeta\" data-dictid=\"fd62943ef1169277719047f8b84f88\">intradialytic</span> hypotension</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Age and Health Status</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Age-related cardiovascular/respiratory changes</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Reduced <span class=\"customMeta\" data-dictid=\"e1fb96fd2416927771830dfed40e14\">cardiac</span> output and <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> levels impact OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Medications/<br />\n\t\t\tTreatments</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Vasodilators, Inotropes, Mechanical ventilation</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Influence <span class=\"customMeta\" data-dictid=\"82cc227a1c169277718387905b50c6\">blood flow</span> and oxygen delivery, affecting OER</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/vnT0269c9oGdtHZBmekG1744898834.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/jVXI3YLvOegT1rTt1cRR1744898926.mp3"
+    },
+    {
+      "text": "Which of the following contributes to the higher hematocrit in venous blood than arterial blood?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Lower Plasma Volume in venous blood"
+        },
+        {
+          "id": 1,
+          "text": "Chloride shift causing red blood cell swelling"
+        },
+        {
+          "id": 2,
+          "text": "Greater carbon dioxide content in venous blood"
+        },
+        {
+          "id": 3,
+          "text": "All of the above"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Correct answer: D) All of the above</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Higher <span class=\"customMeta\" data-dictid=\"2e114d4cdc169277718882a0a01076\">hematocrit</span> in <span class=\"customMeta\" data-dictid=\"96e7e3fecc16927772018cb9f8c8cd\">venous</span> blood compared to <span class=\"customMeta\" data-dictid=\"b905d8d51416927771821f9cceb3a3\">arterial blood</span> can be attributed to several factors:</p>\n\n<ol>\n\t<li><strong>Lower <span class=\"customMeta\" data-dictid=\"a0e40688fa169277719572bdb48c92\">Plasma</span> Volume in <span class=\"customMeta\" data-dictid=\"96e7e3fecc16927772018cb9f8c8cd\">Venous</span> Blood:</strong>\n\n\t<ul>\n\t\t<li><strong>Fluid Shifting:</strong> A small amount of fluid from <span class=\"customMeta\" data-dictid=\"b905d8d51416927771821f9cceb3a3\">arterial blood</span> returns to <span class=\"customMeta\" data-dictid=\"337d16dac5169277718474b97f6e4a\">circulation</span> via the <span class=\"customMeta\" data-dictid=\"4fb6bd90f016927771918d4a2993ed\">lymphatic</span> system, reducing <span class=\"customMeta\" data-dictid=\"a0e40688fa169277719572bdb48c92\">plasma</span> volume in veins and increasing hematocrit.</li>\n\t</ul>\n\t</li>\n\t<li><strong>Greater <span class=\"customMeta\" data-dictid=\"c32b3a9fac16927771831530888fdf\">Carbon Dioxide</span> Content in <span class=\"customMeta\" data-dictid=\"96e7e3fecc16927772018cb9f8c8cd\">Venous</span> Blood:</strong>\n\t<ul>\n\t\t<li>CO<sub>2</sub> and Bicarbonate:\n\t\t<ul>\n\t\t\t<li>Venous blood has higher CO₂ levels, which result in increased <span class=\"customMeta\" data-dictid=\"2311c3b4ac16927771831d4c919043\">bicarbonate</span> formation within red blood cells.</li>\n\t\t\t<li>The <span class=\"customMeta\" data-dictid=\"f7dbd0ab551692777184f9b1a73c6d\">chloride</span> shift facilitates this process, contributing to <span class=\"customMeta\" data-dictid=\"248111ded81692777197946454db52\">red blood cell</span> <span class=\"customMeta\" data-dictid=\"e3d212ebd316927771996e0c472d4a\">swelling</span> and higher hematocrit.</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ol>\n\n<p><strong>Chloride shift (Hamburger phenomenon) vs Reverse <span class=\"customMeta\" data-dictid=\"f7dbd0ab551692777184f9b1a73c6d\">chloride</span> shift:</strong></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:606px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Feature</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Chloride shift</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Reverse <span class=\"customMeta\" data-dictid=\"f7dbd0ab551692777184f9b1a73c6d\">chloride</span> shift</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Location</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Tissues</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Lungs</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Process</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>CO₂ enters RBCs, forming H₂CO₃ → H⁺ + HCO₃⁻. HCO₃⁻ exits in exchange for Cl⁻</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>CO₂ exits RBCs. HCO₃⁻ re-enters RBCs in exchange for Cl⁻</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Effect on RBCs</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Chloride influx causes water influx, <span class=\"customMeta\" data-dictid=\"e3d212ebd316927771996e0c472d4a\">swelling</span> RBCs</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Chloride efflux balances HCO₃⁻ re-entry, CO₂ is released</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Impact on haematocrit</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Increases <span class=\"customMeta\" data-dictid=\"2e114d4cdc169277718882a0a01076\">hematocrit</span> due to <span class=\"customMeta\" data-dictid=\"8790b4667016927771979066e8958c\">RBC</span> swelling</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Primarily facilitates CO₂ release, indirectly affecting hematocrit</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/ATvhTI2d1LyuG8EvSAic1744824382.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/6RDxH5FiodZuBjfkjvqy1744824483.mp3"
+    },
+    {
+      "text": "What is the significance of the Haldane effect?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Oxygenation promotes CO₂ release in the lungs."
+        },
+        {
+          "id": 1,
+          "text": "Deoxygenation enhances oxygen uptake in tissues."
+        },
+        {
+          "id": 2,
+          "text": "CO₂ binding boosts oxygen release in tissues."
+        },
+        {
+          "id": 3,
+          "text": "Haemoglobin buffers blood pH by binding hydrogen ions."
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A) <span class=\"customMeta\" data-dictid=\"db3aca8a9a16927771948a3ff7512d\">Oxygenation</span> promotes CO₂ release in the lungs.</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"Haldane effect\" data-author=\"na\" data-hash=\"553\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"385\" src=\"https://image.prepladder.com/notes/ttDEwZcbfssqsiFThPIA1735979188.png\" width=\"500\" /></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:632px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Concept</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>The binding of oxygen (O2) to haemoglobin in the lungs promotes the release of <span class=\"customMeta\" data-dictid=\"c32b3a9fac16927771831530888fdf\">carbon dioxide</span> (CO2) from the blood.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Mechanism</p>\n\t\t\t</td>\n\t\t\t<td rowspan=\"4\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>When O2 binds to haemoglobin, it becomes a stronger acid.</li>\n\t\t\t\t<li>Increased <span class=\"customMeta\" data-dictid=\"038f5d38b41692777180a957459f95\">acidity</span> reduces haemoglobin's tendency to bind CO2 (carbaminohemoglobin), releasing CO2 into the blood.</li>\n\t\t\t\t<li>Increased <span class=\"customMeta\" data-dictid=\"038f5d38b41692777180a957459f95\">acidity</span> causes haemoglobin to release <span class=\"customMeta\" data-dictid=\"11f7bcb8da16927771898e93932195\">hydrogen</span> ions (H+), which combine with <span class=\"customMeta\" data-dictid=\"2311c3b4ac16927771831d4c919043\">bicarbonate</span> ions (HCO3-) to <span class=\"customMeta\" data-dictid=\"a1b06f401f1692777203a53393ba98\">form</span> <span class=\"customMeta\" data-dictid=\"95585a69c21692777183b817f72e70\">carbonic acid</span> (H2CO3).</li>\n\t\t\t\t<li>Carbonic acid dissociates into water and CO2, exhaling into the alveoli.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"3\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Effects</p>\n\t\t\t</td>\n\t\t\t<td rowspan=\"3\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>In the lungs, high <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of oxygen (PO2) shifts the CO2 <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve, causing more CO2 to be released from the blood.</li>\n\t\t\t\t<li>This effect approximately doubled the amount of CO2 released in the lungs and picked up in the tissues compared to without this shift.</li>\n\t\t\t\t<li>The CO2 <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve shows the effect quantitatively.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Significance</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>The Haldane Effect is more quantitatively significant in promoting CO2 transport compared to the Bohr effect's role in promoting O2 transport.</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><br />\n </p>\n\n<p><strong>Deoxygenation enhances oxygen <span class=\"customMeta\" data-dictid=\"cc20d2d7111692777201fb0caeb3f2\">uptake</span> in tissues (Option B):</strong> In tissues, <strong>deoxygenation occurs because <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> is releasing oxygen, </strong>not helping it take in more.</p>\n\n<p><strong>CO₂ binding boosts oxygen release in tissues (Option C): </strong>This is the <strong>Bohr effect</strong>, <strong>not the Haldane effect</strong>. In tissues, high CO₂ (and low pH) makes <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> release more oxygen.</p>\n\n<p><strong>Haemoglobin buffers blood pH by binding <span class=\"customMeta\" data-dictid=\"11f7bcb8da16927771898e93932195\">hydrogen</span> ions (Option D): </strong>This is <strong>true</strong>, but <strong>not</strong> the Haldane effect. <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">Hemoglobin</span> acts as a <strong>buffer</strong> by binding to H⁺ ions, especially in deoxygenated blood.</p>\n\n<p> </p>\n\n<p><br />\n </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/ttDEwZcbfssqsiFThPIA1735979188.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/HQefshCyn9MIA8XbpzHr1744824603.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/ddN8pHKc5ngOv4Xwibob1744824667.mp3"
+    },
+    {
+      "text": "Which phenomenon explains the release of oxygen from haemoglobin in response to high carbon dioxide concentrations at the tissue level?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Haldane Effect"
+        },
+        {
+          "id": 1,
+          "text": "Bohr Effect"
+        },
+        {
+          "id": 2,
+          "text": "Chloride Shift"
+        },
+        {
+          "id": 3,
+          "text": "Root Effect"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) </strong><strong>Bohr Effect</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"Bohr effect\" data-author=\"na\" data-hash=\"554\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"464\" src=\"https://image.prepladder.com/notes/dZeX0ZTMuGQtpIDIFZQa1735979840.png\" width=\"500\" /></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:606px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Bohr Effect</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>A shift of the oxygen-hemoglobin <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve to the right in response to increases in blood CO2 and H+ levels has a significant effect by enhancing the release of O2 from the blood in the tissues and enhancing <span class=\"customMeta\" data-dictid=\"db3aca8a9a16927771948a3ff7512d\">oxygenation</span> of the blood in the lungs</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"2\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Mechanism</p>\n\t\t\t</td>\n\t\t\t<td rowspan=\"2\" style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Increase in CO<sub>2</sub>: CO<sub>2</sub> diffuses from tissues into the blood, forming <span class=\"customMeta\" data-dictid=\"95585a69c21692777183b817f72e70\">carbonic acid</span> (H₂CO₃), dissociating into H+ and HCO<sub>3</sub>-. This increase in H+ lowers blood pH.</li>\n\t\t\t\t<li>Decrease in pH: Lower pH shifts the oxygen-haemoglobin <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve to the right, causing haemoglobin to release O2 more readily.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Effects in Tissues</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Higher CO2 and lower pH cause haemoglobin to release O2, delivering more O2 to metabolically active tissues.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Effects in Lungs</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Expelling CO2 in the lungs decreases blood CO2 levels and increases pH, shifting the <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve to the left and allowing haemoglobin to bind O2 more readily for transport.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Factors Influencing the Bohr Effect</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Increased CO2 concentration</li>\n\t\t\t\t<li>Increased blood temperature</li>\n\t\t\t\t<li>Increased <span class=\"customMeta\" data-dictid=\"5eb010f3041692777182726fdec300\">2,3-bisphosphoglycerate</span> (BPG) concentration: BPG binds to haemoglobin, reducing its <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for O2 and promoting O2 release.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p>The Double <span class=\"customMeta\" data-dictid=\"26c59156491692777183e66150a323\">Bohr Effect</span> is a <span class=\"customMeta\" data-dictid=\"6c2c85ae6b16927771950809419a59\">physiological</span> phenomenon observed in the placenta. This effect involves two distinct Bohr effects occurring simultaneously—one on the <span class=\"customMeta\" data-dictid=\"f375a3584316927772020efa386e3e\">fetal</span> side and one on the <span class=\"customMeta\" data-dictid=\"a191a950d7169277719148e72a75e2\">maternal</span> side<strong>. </strong></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:613px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Double bohr effect</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Details</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Location</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Placenta where <span class=\"customMeta\" data-dictid=\"a191a950d7169277719148e72a75e2\">maternal</span> and <span class=\"customMeta\" data-dictid=\"f375a3584316927772020efa386e3e\">fetal</span> <span class=\"customMeta\" data-dictid=\"337d16dac5169277718474b97f6e4a\">circulation</span> meet.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Fetal Blood Flow</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Umbilical arteries carry deoxygenated blood with high CO<sub>2</sub> from the <span class=\"customMeta\" data-dictid=\"421fecf0e21692777202704942ac48\">fetus</span> to placenta</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>CO<sub>2</sub> Diffusion</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>CO<sub>2</sub> diffuses from <span class=\"customMeta\" data-dictid=\"f375a3584316927772020efa386e3e\">fetal</span> to <span class=\"customMeta\" data-dictid=\"a191a950d7169277719148e72a75e2\">maternal</span> blood</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Effect on <span class=\"customMeta\" data-dictid=\"f375a3584316927772020efa386e3e\">Fetal</span> Blood</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>CO<sub>2</sub> decreases, blood becomes alkaline</li>\n\t\t\t\t<li>Oxygen <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve shifts left</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Effect on <span class=\"customMeta\" data-dictid=\"a191a950d7169277719148e72a75e2\">Maternal</span> Blood</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>CO<sub>2</sub> increases, blood becomes acidic</li>\n\t\t\t\t<li>Oxygen <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve shifts right</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Clinical Significance</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Enhances oxygen transfer from mother to fetus, improving <span class=\"customMeta\" data-dictid=\"f375a3584316927772020efa386e3e\">fetal</span> oxygenation</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/dZeX0ZTMuGQtpIDIFZQa1735979840.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/RCIfXFikap31PqiuQYuG1744824904.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/TegkySHKOFwDBiL0sYqP1744824981.mp3"
+    },
+    {
+      "text": "In which form is carbon dioxide predominantly transported in the blood?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Dissolved CO2"
+        },
+        {
+          "id": 1,
+          "text": "Carbaminohemoglobin"
+        },
+        {
+          "id": 2,
+          "text": "Bicarbonate ions (HCO3⁻)"
+        },
+        {
+          "id": 3,
+          "text": "Protein bound"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: </strong><strong>C) <span class=\"customMeta\" data-dictid=\"2311c3b4ac16927771831d4c919043\">Bicarbonate</span> ions (HCO</strong><strong><sub>3</sub></strong><strong>⁻)</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong></p>\n\n<ul>\n\t<li><strong>Bicarbonate Ions (HCO<sub>3</sub>⁻) (70%):</strong> CO₂ reacts with water to <span class=\"customMeta\" data-dictid=\"a1b06f401f1692777203a53393ba98\">form</span> carbonic acid, which dissociates into H⁺ and HCO₃⁻. HCO₃⁻ moves to plasma, and Cl⁻ enters red blood cells. This is the main CO₂ transport method contributing 70%.</li>\n\t<li><strong>Dissolved CO₂ (7%)(Option A ruled out)</strong>: A small percentage of CO₂ dissolves directly into the plasma. About 2.7 ml/dl of CO₂ dissolves in <span class=\"customMeta\" data-dictid=\"a0e40688fa169277719572bdb48c92\">plasma</span> at 45 mmHg, making up 7% of CO₂ transport.</li>\n\t<li><strong>Carbaminohemoglobin (23%)(Option B ruled out)</strong>: CO₂ binds to <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> to <span class=\"customMeta\" data-dictid=\"a1b06f401f1692777203a53393ba98\">form</span> <span class=\"customMeta\" data-dictid=\"909fac33671692777183a247aa6867\">carbaminohemoglobin</span> which is a <span class=\"customMeta\" data-dictid=\"a4488d66fc16927771975d043c4ccc\">reversible</span> process, releasing CO₂ in the alveoli.</li>\n\t<li><strong>Protein <span class=\"customMeta\" data-dictid=\"d82fcb9d1f16927771836a9f6ccf14\">Bound</span> (Option D ruled out): </strong>CO₂ binds to <span class=\"customMeta\" data-dictid=\"a0e40688fa169277719572bdb48c92\">plasma</span> proteins (mainly albumin). Similar to carbamino formation with hemoglobin. Minor contribution to overall CO₂ transport</li>\n</ul>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/KphgeBmMuUepdpaGrBA41744824755.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/s0G9UWtnfI305nge2dG31744824804.mp3"
+    },
+    {
+      "text": "Which of the following solutions is considered best for blood storage?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "ACD (Acid Citrate Dextrose)"
+        },
+        {
+          "id": 1,
+          "text": "CPDA (Citrate Phosphate Dextrose Adenine)"
+        },
+        {
+          "id": 2,
+          "text": "CPD (Citrate Phosphate Dextrose)"
+        },
+        {
+          "id": 3,
+          "text": "EDTA (Ethylenediaminetetraacetic Acid)"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) CPDA (Citrate <span class=\"customMeta\" data-dictid=\"189b6fc834169277719580eb39bb4c\">Phosphate</span> <span class=\"customMeta\" data-dictid=\"baf8b019b01692777186c856f83721\">Dextrose</span> Adenine)</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>CPDA (Citrate <span class=\"customMeta\" data-dictid=\"189b6fc834169277719580eb39bb4c\">Phosphate</span> <span class=\"customMeta\" data-dictid=\"baf8b019b01692777186c856f83721\">Dextrose</span> Adenine) is best for blood storage for the following reasons:</p>\n\n<p> </p>\n\n<ol>\n\t<li><strong>Ensures effective oxygen delivery:</strong> Higher 2,3-BPG concentration in <span class=\"customMeta\" data-dictid=\"ad493f51b01692777185ff9ca0da87\">CPDA-1</span> ensures that more deoxygenated haemoglobin is <span class=\"customMeta\" data-dictid=\"d82fcb9d1f16927771836a9f6ccf14\">bound</span> to 2,3-BPG, which is crucial for effective oxygen delivery to tissues.</li>\n\t<li><strong>Facilitates oxygen release:</strong> The increased 2,3-BPG concentration decreases haemoglobin's <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen, making it release oxygen more readily to the tissues.</li>\n\t<li><strong>Optimises and promotes better oxygen delivery:</strong> The higher P<sub>50</sub> levels in <span class=\"customMeta\" data-dictid=\"ad493f51b01692777185ff9ca0da87\">CPDA-1</span> indicate a rightward shift of the hemoglobin-oxygen <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve, enhancing oxygen release to tissues.</li>\n</ol>\n\n<p> </p>\n\n<p><strong>Preservation Properties:</strong></p>\n\n<p>CPDA-1 is commonly used to store <span class=\"customMeta\" data-dictid=\"60d609888b169277720258496ef45a\">whole blood</span> and red blood cells due to its superior preservation properties:</p>\n\n<p> </p>\n\n<ol>\n\t<li><strong>Citrate:</strong> Acts as an <span class=\"customMeta\" data-dictid=\"b5fc7729f316927771817f809648f5\">anticoagulant</span> by binding <span class=\"customMeta\" data-dictid=\"54de8b79a91692777183e608bc0dd4\">calcium</span> and preventing clotting.</li>\n\t<li><strong>Phosphate:</strong> Helps maintain pH balance and provides a source of cell energy.</li>\n\t<li><strong>Dextrose:</strong> Is a nutrient that the red blood cells can metabolize for energy.</li>\n\t<li><strong>Adenine:</strong> Is crucial for maintaining <span class=\"customMeta\" data-dictid=\"5abb3a7e7f1692777182a8f4c42522\">ATP</span> levels, essential for cell energy and longevity.</li>\n</ol>\n\n<p> </p>\n\n<p><strong>Benefits:</strong></p>\n\n<p>The combination of these components in <span class=\"customMeta\" data-dictid=\"ad493f51b01692777185ff9ca0da87\">CPDA-1</span> allows it to preserve blood for up to 35 days, which is longer than other anticoagulants and <span class=\"customMeta\" data-dictid=\"d3a8a234c61692777196ab718189bf\">preservative</span> solutions like ACD, EDTA, and CPD. This makes <span class=\"customMeta\" data-dictid=\"ad493f51b01692777185ff9ca0da87\">CPDA-1</span> an ideal solution for storing blood for medical use. </p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/KYMgCQfPhybkccKLKeIQ1744913136.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/DBuY0Phc1yrn76nVKUBR1744913222.mp3"
+    },
+    {
+      "text": "What is the shape of the oxygen dissociation curve for myoglobin?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Rectangular Hyperbolic"
+        },
+        {
+          "id": 1,
+          "text": "Sigmoidal"
+        },
+        {
+          "id": 2,
+          "text": "Linear"
+        },
+        {
+          "id": 3,
+          "text": "Exponential"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) Rectangular Hyperbolic </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: Myoglobin-O2 <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve:</strong></p>\n\n<p><img alt=\"Myoglobin-O2 <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve\" data-author=\"na\" data-hash=\"551\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"600\" src=\"https://image.prepladder.com/notes/4MwulaJsCTJ7LckFdZxW1735978703.png\" width=\"600\" /></p>\n\n<p> </p>\n\n<ul>\n\t<li>The oxygen <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve for <span class=\"customMeta\" data-dictid=\"42cd6f8fc316927771931f5a10bb5f\">myoglobin</span> is <strong>rectangular hyperbolic</strong>.</li>\n\t<li>This is because, in the case of myoglobin, one molecule of haemoglobin binds with one molecule of oxygen with high affinity, and complete <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> will occur.</li>\n\t<li>Unlike haemoglobin, which has a sigmoidal curve due to cooperative binding among its four subunits, myoglobin's curve does not exhibit cooperativity.</li>\n\t<li>This means <span class=\"customMeta\" data-dictid=\"42cd6f8fc316927771931f5a10bb5f\">myoglobin</span> can efficiently bind and release oxygen at varying partial pressures, making it well-suited for oxygen storage in muscle tissues.</li>\n</ul>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/otssAm7jTGPw7xsoSqUk1744912307.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/OWOTca1uKaRJeuo4VeQZ1744912883.mp3"
+    },
+    {
+      "text": "Which of the following statements is true regarding the Luebering-Rapoport pathway?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "It reduces the affinity of hemoglobin for oxygen by producing 2,3-bisphosphoglycerate (2,3-BPG)."
+        },
+        {
+          "id": 1,
+          "text": "It generates NADPH as a key product and decreases the affinity of hemoglobin for oxygen"
+        },
+        {
+          "id": 2,
+          "text": "It functions to increase the ATP yield of glycolysis in red blood cells."
+        },
+        {
+          "id": 3,
+          "text": "It involves the enzyme hexokinase to initiate the pathway."
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) It reduces the <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> of haemoglobin for oxygen by producing <span class=\"customMeta\" data-dictid=\"5eb010f3041692777182726fdec300\">2,3-bisphosphoglycerate</span> (2,3-BPG).</strong></p>\n\n<p> </p>\n\n<p><strong>Explanations: Luebering- Rapoport Pathway</strong><br />\n </p>\n\n<div style=\"text-align:center\">\n<figure class=\"caption_element\" style=\"display:inline-block\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"336\" src=\"https://image.prepladder.com/content/YLOT1ISuObxR2Z9nSUHK1736588846.png\" width=\"650\" />\n<figcaption>{{caption_text}}</figcaption>\n</figure>\n</div>\n\n<p><br />\n </p>\n\n<ul>\n\t<li>The Luebering-Rapoport <span class=\"customMeta\" data-dictid=\"3aa5abc2fa169277719488e088076d\">pathway</span> produces 2,3-BPG, which binds to haemoglobin and decreases its <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen, facilitating oxygen release to tissues. <strong>(Option B ruled out)</strong></li>\n</ul>\n\n<ul>\n\t<li>Bisphosphoglycerate <span class=\"customMeta\" data-dictid=\"a99efad2cc169277719359c8d9ab8f\">mutase</span> <span class=\"customMeta\" data-dictid=\"0f160e4e42169277718771b715516a\">enzyme</span> initiates the Luebering-Rapoport <span class=\"customMeta\" data-dictid=\"3aa5abc2fa169277719488e088076d\">pathway</span> <strong>(Option D ruled out)</strong></li>\n</ul>\n\n<ul>\n\t<li>The balance between <span class=\"customMeta\" data-dictid=\"d0cc3a273b1692777183243cd0bcce\">bisphosphoglycerate mutase</span> and <span class=\"customMeta\" data-dictid=\"6503f2a3b91692777183d121407bd5\">bisphosphoglycerate phosphatase</span> <span class=\"customMeta\" data-dictid=\"0f160e4e42169277718771b715516a\">enzyme</span> determines the amount of 2,3-BPG in blood.</li>\n</ul>\n\n<ul>\n\t<li>2,3-BPG causes the right shifting of OHDC by stabilising the lower <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> of haemoglobin for oxygen.</li>\n</ul>\n\n<ul>\n\t<li>One molecule of haemoglobin binds with one molecule of 2,3-BPG which is a byproduct of the <span class=\"customMeta\" data-dictid=\"e55eb31d591692777188cb1fad1f5e\">glycolytic</span> pathway</li>\n</ul>\n\n<ul>\n\t<li>Chronic <span class=\"customMeta\" data-dictid=\"6caf3a39f416927771807e122b9032\">acidosis</span> maintained for a long time inhibits the <span class=\"customMeta\" data-dictid=\"d0cc3a273b1692777183243cd0bcce\">bisphosphoglycerate mutase</span> enzyme, which decreases the blood's 2,3-BPG content, leading to left shifting of OHDC.</li>\n</ul>\n\n<ul>\n\t<li>The Luebering-Rapoport <span class=\"customMeta\" data-dictid=\"3aa5abc2fa169277719488e088076d\">pathway</span> diverts from the ATP-producing steps of glycolysis, resulting in a net decrease in <span class=\"customMeta\" data-dictid=\"5abb3a7e7f1692777182a8f4c42522\">ATP</span> yield because it consumes ATP.<strong> (Option C ruled out)</strong></li>\n</ul>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/content/YLOT1ISuObxR2Z9nSUHK1736588846.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/j76m8NKfirdz0iCYV2l11744911413.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/W18kfWn04bu31y40KUKU1744912157.mp3"
+    },
+    {
+      "text": "A patient has a haemoglobin concentration of 15 g/dL. Calculate the oxygen-carrying capacity of the patient's blood.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "20.1 mL O2/g"
+        },
+        {
+          "id": 1,
+          "text": "22.5 mL O2/g"
+        },
+        {
+          "id": 2,
+          "text": "19.8 mL O2/g"
+        },
+        {
+          "id": 3,
+          "text": "15.0 mL O2/g"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) 20.1 mL O2/g </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong></p>\n\n<p><strong>Oxygen-carrying capacity = <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">Hemoglobin</span> concentration * Oxygen <span class=\"customMeta\" data-dictid=\"d82fcb9d1f16927771836a9f6ccf14\">bound</span> per <span class=\"customMeta\" data-dictid=\"f0347e3a7a1692777188cf90c50d6f\">gram</span> of hemoglobin</strong></p>\n\n<p> </p>\n\n<p>Given the <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> concentration of 15 g/dL and knowing that each <span class=\"customMeta\" data-dictid=\"f0347e3a7a1692777188cf90c50d6f\">gram</span> of <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> can bind 1.34 mL of oxygen, we can calculate:</p>\n\n<p> </p>\n\n<p>Oxygen-carrying capacity = 15 g/dL *1.34 mL O<sub>2</sub>/g hemoglobin</p>\n\n<p> </p>\n\n<p>Oxygen-carrying capacity = <strong>20.1mL O</strong><strong><sub>2</sub></strong><strong>/g Hb</strong></p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/Eb6fzlPMHrD4nHW5JZat1744910995.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/QHOfeSx5VTxbg9j4NlRM1744911082.mp3"
+    },
+    {
+      "text": "What is the cause of this shift in the hemoglobin-oxygen (Hb-O2) dissociation curve given below?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Increased pH"
+        },
+        {
+          "id": 1,
+          "text": "Increased temperature"
+        },
+        {
+          "id": 2,
+          "text": "Increased metabolic rate"
+        },
+        {
+          "id": 3,
+          "text": "Increased carbon dioxide levels"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) Increased pH </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>Given image in the question is a left shift in the Hb-O<sub>2</sub> <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve.</p>\n\n<p> </p>\n\n<p><strong>Hb-O<sub>2</sub> <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve shift</strong><br />\n </p>\n\n<figure class=\"caption_element\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"534\" src=\"https://image.prepladder.com/content/xFVRvM9Cmuh49Uu1q12Y1736589359.png\" width=\"600\" />\n<figcaption>{{caption_text}}</figcaption>\n</figure>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:598px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Left Shift - Higher O</strong><strong><sub>2</sub></strong><strong> affinity</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Right Shift - <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">Reduced</span> O</strong><strong><sub>2</sub></strong><strong> affinity</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"5\" style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Alkalosis.</li>\n\t\t\t\t<li>Decreased pCO<sub>2</sub>.</li>\n\t\t\t\t<li>Decreased 2,3-DPG.</li>\n\t\t\t\t<li>Hypothermia.</li>\n\t\t\t\t<li>Methaemoglobin.</li>\n\t\t\t\t<li>Carboxyhaemoglobin.</li>\n\t\t\t\t<li>Foetal haemoglobin.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td rowspan=\"5\" style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Acidosis.</li>\n\t\t\t\t<li>Increased pCO<sub>2</sub>.</li>\n\t\t\t\t<li>Increased 2,3-DPG.</li>\n\t\t\t\t<li>Hyperthermia.</li>\n\t\t\t\t<li>Sulfhaemoglobin.</li>\n\t\t\t\t<li>Chronic anaemia.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>",
+      "question_images": [
+        "https://image.prepladder.com/notes/G0RMsNbl9YYedRh743In1735978821.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/content/xFVRvM9Cmuh49Uu1q12Y1736589359.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/VEeF4MXKOUqsj3uDDbM11744909686.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/MfuyUW22HDTZJgL2ZSDX1744910016.mp3"
+    },
+    {
+      "text": "Select the correct statements from the following\n\n\n\tThe binding of one oxygen molecule to Hb decreases the affinity of the remaining heme groups for oxygen.\n\tHb shifts from the Tense (T) state to the Relaxed (R) state upon oxygen binding, increasing oxygen affinity.\n\tAt low PO2, small changes in PO2 lead to large changes in oxygen saturation.\n\tAt moderate PO2, the dissociation curve is steep, meaning small increases in PO2 results in large increase in oxygen saturation.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "1 and 2"
+        },
+        {
+          "id": 1,
+          "text": "2 and 3"
+        },
+        {
+          "id": 2,
+          "text": "2 and 4"
+        },
+        {
+          "id": 3,
+          "text": "3 and 4"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) 2 and 4</strong></p>\n\n<p><strong>Explanation: </strong>Statements <strong>1 and 3 are wrong</strong> as binding of one oxygen molecule to Hb increases the <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> of the remaining <span class=\"customMeta\" data-dictid=\"d4fff554a316927771885dc8700abe\">heme</span> groups for oxygen. At low PO2, small PO2 changes lead to small changes in oxygen saturation.</p>\n\n<p> </p>\n\n<p><strong>Cooperative Binding of Oxygen to Haemoglobin (Hb):</strong></p>\n\n<p> </p>\n\n<ul>\n\t<li><strong>Cooperative Process:</strong> The binding of one oxygen molecule to Hb increases the <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> of the remaining <span class=\"customMeta\" data-dictid=\"d4fff554a316927771885dc8700abe\">heme</span> groups for oxygen, <span class=\"customMeta\" data-dictid=\"014b1a7b931692777197f57251720d\">reflected</span> in the <span class=\"customMeta\" data-dictid=\"9008060dc21692777198e329f5be75\">sigmoid</span> shape of the oxygen–haemoglobin <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve.</li>\n\t<li><strong>Conformational Change:</strong>\n\t<ul>\n\t\t<li><strong>Tense (T) State: </strong>Low <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen.</li>\n\t\t<li><strong>Relaxed (R) State:</strong> High <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen.</li>\n\t\t<li>Oxygen binding to the first <span class=\"customMeta\" data-dictid=\"d4fff554a316927771885dc8700abe\">heme</span> group shifts Hb from the T state to the R state, exposing more oxygen-binding sites.</li>\n\t</ul>\n\t</li>\n\t<li>As the <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of oxygen (PO<sub>2</sub>) increases, more oxygen molecules are available to bind to Hb, resulting in a higher percentage of oxygen saturation</li>\n</ul>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:477px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>PO2 Levels</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Oxygen Saturation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Affinity for Oxygen</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Low</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Slow increase</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Low (T state)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Moderate</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Steep increase</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>High (cooperative)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>High</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Plateau</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Approaching full saturation</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<ul>\n\t<li><strong>Low PO<sub>2</sub></strong>: Small PO<sub>2</sub> changes lead to small changes in oxygen saturation.</li>\n\t<li><strong>Steep Curve (Moderate PO<sub>2</sub>):</strong> Small PO<sub>2</sub> increases lead to large <span class=\"customMeta\" data-dictid=\"b98c3a8ea216927771949889d9505f\">oxygen saturation</span> increases.</li>\n\t<li><strong>High PO<sub>2</sub>:</strong> Hb nearing full saturation; large PO<sub>2</sub> increases result in small <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> changes.</li>\n</ul>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/67eMmmELWjYFoYGAZoXH1744909037.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/wKLtcPzN8EJ33H5dl7QX1744909184.mp3"
+    },
+    {
+      "text": "All of the following are true regarding the oxygen-hemoglobin (O2-Hb) dissociation curve except?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "It is a sigmoid-shaped curve."
+        },
+        {
+          "id": 1,
+          "text": "The plateau phase ranges from 10-60 mm Hg."
+        },
+        {
+          "id": 2,
+          "text": "The steep phase ensures efficient oxygen delivery to tissues even with small drops in PO2."
+        },
+        {
+          "id": 3,
+          "text": "P50 assesses the binding affinity of haemoglobin for oxygen."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) The <span class=\"customMeta\" data-dictid=\"7a4ced7da71692777195938424f299\">plateau</span> phase ranges from 10-60 mm Hg.</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>The <span class=\"customMeta\" data-dictid=\"7a4ced7da71692777195938424f299\">plateau</span> phase ranges from 60-100 mm Hg.</p>\n\n<p><strong>Oxygen-Haemoglobin Disassociation Curve:</strong></p>\n\n<p>The oxygen-haemoglobin <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve represents the relationship between the <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of oxygen (PO<sub>2</sub>) and the percentage of haemoglobin <span class=\"customMeta\" data-dictid=\"bd2ac838bb16927771983dd9afc74c\">saturated</span> with oxygen (SaO<sub>2</sub>).</p>\n\n<p><strong>Key Points:</strong></p>\n\n<ul>\n\t<li>Sigmoid Shape: Reflects varying Hb <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen at different PO<sub>2</sub> levels.  <strong>(Option A ruled out)</strong></li>\n\t<li>Steep Phase: Rapid increase in Hb <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> with PO<sub>2</sub>.</li>\n\t<li>Plateau Phase: Minimal change in Hb <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> despite large changes in PO<sub>2</sub>.</li>\n</ul>\n\n<p><strong>Phases:</strong></p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:657px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\"> </td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Steep phase</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Plateau phase</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Range</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>10-60 mm Hg</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>60-100 mm Hg</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Characteristics</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>A rapid increase in Hb saturation.</li>\n\t\t\t\t<li>Hb ~90% <span class=\"customMeta\" data-dictid=\"bd2ac838bb16927771983dd9afc74c\">saturated</span> at PO<sub>2</sub> of 60 mm Hg.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Curve flattens.</li>\n\t\t\t\t<li>Small increase in Hb <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> despite PO<sub>2</sub> rise.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Significance</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>The steep phase (10-60 <span class=\"customMeta\" data-dictid=\"66ae2626ae169277719278edf9936d\">mm Hg</span> PO₂) ensures efficient oxygen unloading, where small PO₂ drops cause significant O₂ release, crucial for active muscles and hypoxic conditions <strong>(Option C ruled out)</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>It provides a safety buffer.</li>\n\t\t\t\t<li>It maintains high Hb <span class=\"customMeta\" data-dictid=\"e4696a0f8d169277719865588e55c7\">saturation</span> (~90%) despite moderate PO<sub>2</sub> decreases.</li>\n\t\t\t\t<li>It ensures stable oxygen delivery under varying conditions.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p><img alt=\"Oxygen-Haemoglobin Disassociation Curve\" data-author=\"na\" data-hash=\"550\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"395\" src=\"https://image.prepladder.com/notes/v2lwzhRlMpRm2166dCMY1735978623.png\" width=\"600\" /></p>\n\n<p> </p>\n\n<p><strong>P</strong><strong><sub>50</sub></strong><strong>: </strong>P<sub>50</sub> is the level of PO<sub>2</sub> at which 50% of haemoglobin is <span class=\"customMeta\" data-dictid=\"bd2ac838bb16927771983dd9afc74c\">saturated</span> with oxygen.</p>\n\n<ol>\n\t<li>P<sub>50</sub> assesses the binding <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> of haemoglobin for oxygen. <strong>(Option D ruled out)</strong></li>\n\t<li>In adults at sea level, the normal P<sub>50</sub> occurs at a PO<sub>2</sub> of 27 mm Hg.</li>\n\t<li>Alteration in the P<sub>50</sub> value has a greater impact on the steep phase of the curve.</li>\n\t<li>If P<sub>50</sub> is high, it signifies a decrease in Hb's <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen, which is seen in the right shift of the oxygen <span class=\"customMeta\" data-dictid=\"ad2073fe6716927771885f3c1ec652\">hemoglobin</span> <span class=\"customMeta\" data-dictid=\"d52b8551541692777187be85e4bb2f\">equilibrium</span> curve.</li>\n\t<li>Conversely, if P<sub>50</sub> is low, it signifies a shift of the curve to the left, in which Hb's <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for oxygen increases.</li>\n</ol>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/v2lwzhRlMpRm2166dCMY1735978623.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/R4BUZKbed4a5gSVYCcd51744899094.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/6ri0BOsA32lfqRY1vY6T1744899211.mp3"
+    },
+    {
+      "text": "Which of the following is not a component of the respiratory unit?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Respiratory bronchiole"
+        },
+        {
+          "id": 1,
+          "text": "Alveolar duct"
+        },
+        {
+          "id": 2,
+          "text": "Terminal bronchiole"
+        },
+        {
+          "id": 3,
+          "text": "Alveolus"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) <span class=\"customMeta\" data-dictid=\"16b76d1d1c1692777200240efcb0e2\">Terminal</span> bronchiole</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong>Terminal bronchiole</strong> <strong>(Option C)</strong> is a component of the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> system's conducting zone and does not participate directly in gas exchange. It leads to the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> bronchioles but is not considered part of the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> unit.</p>\n\n<p><img alt=\"the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> unit\" data-author=\"na\" data-hash=\"547\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"459\" src=\"https://image.prepladder.com/notes/ZrpMZPrmti2JpEgYgCKY1735977823.png\" width=\"500\" /></p>\n\n<p>The <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> unit, also known as the acinus, is the functional unit of the lung where gas exchange occurs. It consists of several structures:</p>\n\n<ul>\n\t<li><strong>Respiratory bronchiole</strong> <strong>(Option A)</strong>: These are the airways where gas exchange begins and leads to alveolar ducts.</li>\n\t<li><strong>Alveolar duct</strong> <strong>(Option B)</strong>: These passages lead from <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> bronchioles to the <span class=\"customMeta\" data-dictid=\"7a40962eab169277718174bb66077a\">alveolar sacs</span> and provide the <span class=\"customMeta\" data-dictid=\"3aa5abc2fa169277719488e088076d\">pathway</span> for air to reach the alveoli.</li>\n\t<li><strong>Alveolus</strong> <strong>(Option D)</strong>: The <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> are the tiny air sacs where gas exchange occurs. They are the final part of the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> unit and essential for respiration.</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/hiNhmhTJDpStR8QojaBb1744822533.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/ZF6uNgVswJ6kXv1dQ4r51744822589.mp3"
+    },
+    {
+      "text": "What is the major mode of transport for oxygen in the blood?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Dissolved directly in plasma"
+        },
+        {
+          "id": 1,
+          "text": "Bound to haemoglobin in red blood cells"
+        },
+        {
+          "id": 2,
+          "text": "As bicarbonate ions in plasma"
+        },
+        {
+          "id": 3,
+          "text": "Bound to plasma proteins"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) <span class=\"customMeta\" data-dictid=\"d82fcb9d1f16927771836a9f6ccf14\">Bound</span> to haemoglobin in red blood cells</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: <span class=\"customMeta\" data-dictid=\"d27c5d96b416927771941e7efc4010\">Oxygen Transport</span> from Lungs to Body Tissues:</strong></p>\n\n<p><strong>Hemoglobin Transport (97%):</strong></p>\n\n<ul>\n\t<li><strong>Binding:</strong> Oxygen binds reversibly to the iron <span class=\"customMeta\" data-dictid=\"435060133416927771829458eecc80\">atom</span> in the <span class=\"customMeta\" data-dictid=\"d4fff554a316927771885dc8700abe\">heme</span> portion of haemoglobin molecules within the red blood cells.</li>\n\t<li><strong>Capacity:</strong> Each haemoglobin molecule can bind up to four oxygen molecules.</li>\n\t<li><strong>Significance of Haemoglobin in Oxygen Transport:</strong>\n\t<ul>\n\t\t<li><strong>Oxygen Buffer:</strong> Haemoglobin acts as an oxygen buffer, ensuring that tissue PO2 remains stable (between 15-40 mm Hg) despite fluctuations in environmental oxygen levels.</li>\n\t\t<li><strong>Exercise Adaptation:</strong> During exercise, increased levels of CO<sub>2</sub>, higher temperatures, and lower pH (Bohr effect) cause a rightward shift in the <span class=\"customMeta\" data-dictid=\"18fb34ab321692777186e9bc95a726\">dissociation</span> curve, which enhances the release of oxygen to active muscles, ensuring adequate oxygen delivery.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><strong>Dissolved <span class=\"customMeta\" data-dictid=\"d27c5d96b416927771941e7efc4010\">Oxygen Transport</span> (3%):</strong></p>\n\n<ul>\n\t<li><strong>Mechanism:</strong> A small amount of oxygen is dissolved in the water component of <span class=\"customMeta\" data-dictid=\"a0e40688fa169277719572bdb48c92\">plasma</span> and blood cells.</li>\n\t<li><strong>Amounts:</strong>\n\t<ul>\n\t\t<li>At a PO<sub>2</sub> of 95 mm Hg, approximately 0.29 ml of oxygen is dissolved per 100 ml of blood.</li>\n\t\t<li>At a PO<sub>2</sub> of 40 mm Hg, approximately 0.12 ml of oxygen is dissolved.</li>\n\t</ul>\n\t</li>\n\t<li>While the amount of dissolved oxygen is minor under normal conditions, it becomes more significant at high alveolar PO<sub>2</sub> levels, such as during <span class=\"customMeta\" data-dictid=\"1b1cc7f2861692777189c9bd7d9b81\">hyperbaric</span> oxygen therapy.</li>\n\t<li>However, this mechanism alone cannot meet the body's oxygen demands.</li>\n</ul>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/vXhuMlFX9ZEP0eFQi5NI1744898581.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/KRHTjaJ0kMnBTC7kI9wJ1744898667.mp3"
+    },
+    {
+      "text": "Which of the following describes Henry's law?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "The volume of a gas is inversely proportional to its pressure at constant temperature."
+        },
+        {
+          "id": 1,
+          "text": "A gas's effusion rate is inversely proportional to the square root of its molar mass."
+        },
+        {
+          "id": 2,
+          "text": "The solubility of a gas in a liquid is directly proportional to the partial pressure of the gas above the liquid at a constant temperature."
+        },
+        {
+          "id": 3,
+          "text": "The volume of a gas is directly proportional to its temperature at constant pressure"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: C) The <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> of a gas in a liquid is directly proportional to the <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of the gas above the liquid at a constant temperature.</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>Henry's law states that the amount of gas that dissolves in a liquid is directly proportional to the <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of that gas in contact with the liquid.</p>\n\n<p> </p>\n\n<p>Partial Pressure = Concentration of Dissolved Gas​ / <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">Solubility</span> Coefficient</p>\n\n<p> </p>\n\n<p><strong>Solubility Coefficients for <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">Respiratory</span> Gases at Normal Body Temperature:</strong></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:405px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p><strong>Gas</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #000000; border-top:1px solid #cccccc; vertical-align:bottom\">\n\t\t\t<p><strong>Solubility Coefficient</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Oxygen</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>0.024</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Carbon Dioxide</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>0.57</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Carbon Monoxide</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>0.018</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Nitrogen</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>0.012</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>Helium</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-top:1px solid #cccccc; vertical-align:top\">\n\t\t\t<p>0.008</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<ul>\n\t<li>Carbon <span class=\"customMeta\" data-dictid=\"0bd01a042116927771868e3482910e\">Dioxide</span> (CO2) has a higher <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> than oxygen, meaning more CO2 can dissolve in water at the same <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> as oxygen.</li>\n\t<li>The difference in <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> coefficients plays a crucial role in transporting <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> gases within the body.</li>\n</ul>\n\n<p><br />\n </p>\n\n<p>Boyle's law states that the volume of a gas is inversely proportional to its pressure at constant temperature(PV = nRT) <strong>(Option A)</strong></p>\n\n<p> </p>\n\n<p>Graham's law states that a gas's <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rate is inversely proportional to molecular weight. <strong>(Option B)</strong></p>\n\n<p> </p>\n\n<p>Charles's law states that at a constant pressure, the volume occupied by a fixed mass of gas is proportional to temperature (V/T = constant). <strong>(Option D)</strong></p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/RGW4nTZormB4oubef7qQ1744892007.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/zcKIeA4k58LLY9rnWF4W1744892424.mp3"
+    },
+    {
+      "text": "Which of the following statements is true regarding the effect of high altitude on gas diffusion?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Diffusion capacity increases"
+        },
+        {
+          "id": 1,
+          "text": "Diffusion capacity decreases"
+        },
+        {
+          "id": 2,
+          "text": "Diffusion capacity remains constant"
+        },
+        {
+          "id": 3,
+          "text": "Any of the above, depending on the type of gas"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer:</strong> <strong>A) <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">Diffusion</span> capacity increases </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>Pulmonary <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> of gases increases in high altitudes.</p>\n\n<p> </p>\n\n<p><strong>Respiratory changes in high altitude:</strong></p>\n\n<p><img alt=\"Hypoxia\" data-author=\"na\" data-hash=\"549\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"600\" src=\"https://image.prepladder.com/notes/klA1jcwYQq1vYQGAP6b61735978516.png\" width=\"600\" /></p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/klA1jcwYQq1vYQGAP6b61735978516.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/n13gYqmNB7U0Rkbvc16i1744891669.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/l6W7Pigxzjc5AhPrXLwi1744891853.mp3"
+    },
+    {
+      "text": "A 55-year-old female patient with a history of chronic obstructive pulmonary disease (COPD) is admitted to the hospital with severe shortness of breath. Arterial blood gas analysis shows an oxygen content of 16 ml/dl, while the mixed venous blood sample shows an oxygen content of 12 ml/dl. The pulmonary capillary oxygen content is determined to be 20 ml/dl. Calculate the percentage of cardiac output shunt for this patient.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "25%"
+        },
+        {
+          "id": 1,
+          "text": "10%"
+        },
+        {
+          "id": 2,
+          "text": "15%"
+        },
+        {
+          "id": 3,
+          "text": "50%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Correct Answer: D) 50%</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong></p>\n\n<p><strong>Shunt Fraction: </strong></p>\n\n<ul>\n\t<li>The proportion of <span class=\"customMeta\" data-dictid=\"e1fb96fd2416927771830dfed40e14\">cardiac</span> output bypassing the <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> and not participating in gas exchange.</li>\n\t<li>Frequently calculated in critically ill patients to monitor <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"db3aca8a9a16927771948a3ff7512d\">oxygenation</span> effectiveness.</li>\n</ul>\n\n<p><strong>Shunt fraction </strong>= (CcO<sub>2</sub> - CaO<sub>2</sub>) / (CcO<sub>2</sub> - CvO<sub>2</sub>)</p>\n\n<p> </p>\n\n<p>CcO<sub>2</sub>: Oxygen content of <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"89e3252d5b16927771833fb9b432ae\">capillary</span> blood = 20 ml/dl</p>\n\n<p>CaO<sub>2</sub>: Arterial oxygen content = 16 ml/dl</p>\n\n<p>CvO<sub>2</sub>: Mixed <span class=\"customMeta\" data-dictid=\"96e7e3fecc16927772018cb9f8c8cd\">venous</span> oxygen content = 12 ml/dl</p>\n\n<p> </p>\n\n<p>Shunt fraction = (20-16)/(20-12)</p>\n\n<p>= 4/8 = 1/2</p>\n\n<p>= 50%</p>\n\n<p> </p>\n\n<ol>\n</ol>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/y12RDDqin7ShcLY0eyCI1744891347.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/zwJIC801QJGab6c2PiIZ1744891505.mp3"
+    },
+    {
+      "text": "Nitrous oxide is classified as a perfusion-limited gas. What does this imply about its diffusion properties in the lungs?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "N2O uptake into pulmonary capillaries is dependent on the amount of blood flowing through it"
+        },
+        {
+          "id": 1,
+          "text": "N2O uptake into pulmonary capillaries is dependent on temperature"
+        },
+        {
+          "id": 2,
+          "text": "N2O uptake into pulmonary capillaries is dependent on atmospheric pressure"
+        },
+        {
+          "id": 3,
+          "text": "None of the above"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) N</strong><strong><sub>2</sub></strong><strong>O <span class=\"customMeta\" data-dictid=\"cc20d2d7111692777201fb0caeb3f2\">uptake</span> into <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> capillaries is dependent on the amount of blood flowing through it </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>N<sub>2</sub>O is a prefusion-limited gas. Its <span class=\"customMeta\" data-dictid=\"cc20d2d7111692777201fb0caeb3f2\">uptake</span> is limited by the amount of blood flowing through the <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> capillaries.</p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle\">\n\t\t\t<p><strong>Gas Type</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle\">\n\t\t\t<p><strong>Explanation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle\">\n\t\t\t<p><strong>Example</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Diffusion-Limited Gas</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>The <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> process limits the transfer</li>\n\t\t\t\t<li>Diffusing capacity for <span class=\"customMeta\" data-dictid=\"44758fcec31692777184e24fa84582\">CO</span> (DLCO) is used to measure the <span class=\"customMeta\" data-dictid=\"68325001361692777186184e298e9d\">diffusing capacity</span> of the lungs</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>CO</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Perfusion-Limited Gas</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>The amount of gas taken up is dependent on <span class=\"customMeta\" data-dictid=\"82cc227a1c169277718387905b50c6\">blood flow</span> (perfusion) through <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> capillaries</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>N<sub>2</sub>O</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Intermediate Case</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Uptake is primarily perfusion-limited under normal conditions.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>O<sub>2</sub></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/Bc0n7w22JZyFgcs4TuXQ1744889488.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/T3ne68qHnOZaD11av96P1744890583.mp3"
+    },
+    {
+      "text": "Calculate the alveolar oxygen tension (PAO2) for a patient with a barometric pressure (Patm) of 760 mmHg, a water vapour pressure (PH2O) of 47 mmHg, an inspired oxygen fraction (FiO2) of 0.21, and an arterial carbon dioxide tension (PACO2) of 40 mmHg. Assume the respiratory quotient (R.Q) is 0.8.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "80 mmHg"
+        },
+        {
+          "id": 1,
+          "text": "90 mmHg"
+        },
+        {
+          "id": 2,
+          "text": "100 mmHg"
+        },
+        {
+          "id": 3,
+          "text": "70 mmHg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) 100 mmHg </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<p> </p>\n\n<p>Alveolar gas equation: PAO<sub>2</sub> = (P<sub>atm</sub> - P<sub>H2O</sub>) x FiO2 - PaCO<sub>2</sub>/RQ</p>\n\n<p> </p>\n\n<p>= (760-47) x 0.21 - (40/0.8)</p>\n\n<p> </p>\n\n<p>= 713x0.21-50</p>\n\n<p> </p>\n\n<p>= 99.73 ≈ 100 mm Hg</p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/eEseSS8S39IuquthiTUk1744888845.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/yXXQwukUMlamPyAkbC9b1744889213.mp3"
+    },
+    {
+      "text": "During a pulmonary function test, it is noted that the diffusion equilibrium for oxygen is reached at ⅓ rd of the transit time in the pulmonary capillary. Based on the information provided in the diagram, at what point during the red blood cell's transit through the pulmonary capillary is diffusion equilibrium for oxygen reached?\n\n \n\n\n{{caption_text}}",
+      "choices": [
+        {
+          "id": 0,
+          "text": "0.75 second"
+        },
+        {
+          "id": 1,
+          "text": "1 second"
+        },
+        {
+          "id": 2,
+          "text": "0.25 second"
+        },
+        {
+          "id": 3,
+          "text": "0.1 second"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) 0.25 second</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong></p>\n\n<p>Diffusion <span class=\"customMeta\" data-dictid=\"d52b8551541692777187be85e4bb2f\">equilibrium</span> for oxygen and <span class=\"customMeta\" data-dictid=\"c32b3a9fac16927771831530888fdf\">carbon dioxide</span> will be reached at 0.25 seconds.</p>\n\n<ul>\n\t<li>Transit time: The total time the <span class=\"customMeta\" data-dictid=\"8790b4667016927771979066e8958c\">RBC</span> takes to travel the whole <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"89e3252d5b16927771833fb9b432ae\">capillary</span> = 0.75 seconds.</li>\n\t<li>Air inspiration is diffused from the <span class=\"customMeta\" data-dictid=\"943b7cdefe1692777181b397779312\">alveolus</span> to the <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> capillary.</li>\n\t<li>Diffusion <span class=\"customMeta\" data-dictid=\"d52b8551541692777187be85e4bb2f\">equilibrium</span> of oxygen and <span class=\"customMeta\" data-dictid=\"c32b3a9fac16927771831530888fdf\">carbon dioxide</span> will be reached when <span class=\"customMeta\" data-dictid=\"8790b4667016927771979066e8958c\">RBC</span> has reached ⅓ rd of <span class=\"customMeta\" data-dictid=\"5aa2a98f8e1692777200beac5d7e69\">transit time</span> = ⅓ x 0.75 = 0.25 seconds.</li>\n\t<li>No <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> occurs in the remaining ⅔ rd of the transit time.</li>\n</ul>",
+      "question_images": [
+        "https://image.prepladder.com/content/FwU4CsqLccdyDMu2YaP01727523326.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/PW6FjwS1KdaStXj3gyaz1744888376.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/ooOnwVZq7MTVHDeBVDnd1744888578.mp3"
+    },
+    {
+      "text": "Carbon dioxide (CO2) diffuses more rapidly than oxygen (O2) primarily due to which of the following properties?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Higher molecular weight"
+        },
+        {
+          "id": 1,
+          "text": "Higher solubility in water"
+        },
+        {
+          "id": 2,
+          "text": "Smaller molecular size"
+        },
+        {
+          "id": 3,
+          "text": "Higher partial pressure in the alveoli"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) Higher <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> in water</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>CO₂ is about 20 times more <span class=\"customMeta\" data-dictid=\"845fedd06d16927771989597afa034\">soluble</span> in water (and thus in blood) than O₂. This higher <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> allows CO₂ to <span class=\"customMeta\" data-dictid=\"89275101301692777186567d1912a0\">diffuse</span> more rapidly across the alveolar and <span class=\"customMeta\" data-dictid=\"89e3252d5b16927771833fb9b432ae\">capillary</span> membranes.</p>\n\n<p> </p>\n\n<p><strong>Higher molecular </strong>weight <strong>(Option A)</strong>: Although CO<sub>2</sub> has a higher <span class=\"customMeta\" data-dictid=\"b2df2436bf1692777193d90e9c0132\">molecular weight</span> (44 g/mol) compared to O<sub>2</sub> (32 g/mol), <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rate is influenced more by <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> and other factors. </p>\n\n<p> </p>\n\n<p><strong>Smaller molecular size (Option C): </strong>O<sub>2</sub> is smaller in molecular size than CO<sub>2</sub>. However, molecular size is not the primary factor determining <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rates in this context. </p>\n\n<p> </p>\n\n<p><strong>Higher <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> in the <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> (Option D)</strong>: While the partial pressures of gases affect their diffusion, O₂ generally has a higher <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> <span class=\"customMeta\" data-dictid=\"04136f692516927771888cf07d46a4\">gradient</span> in the <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> than CO₂. </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/80WHN8AA53TC26fsOqdq1744824007.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/8hYYhdZxAxXhBOozmkbj1744824181.mp3"
+    },
+    {
+      "text": "A 65-year-old male has had progressive difficulty breathing over the past year. He reports a persistent dry cough and fatigue. He has no history of smoking or exposure to occupational hazards. On examination, he has fine crackles at the lung bases and clubbing of the fingers. PFT reveals a restrictive pattern. An HRCT scan of the chest shows honeycombing and reticular opacities, predominantly in the lower lobes. This condition primarily affects which aspect of the respiratory membrane?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Alveolar epithelium"
+        },
+        {
+          "id": 1,
+          "text": "Capillary endothelium"
+        },
+        {
+          "id": 2,
+          "text": "Interstitial space"
+        },
+        {
+          "id": 3,
+          "text": "Surfactant layer"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer:</strong> <strong>C) <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">Interstitial</span> space</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The clinical vignette suggests <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"21e2d5a70616927772021fcdec0ca9\">fibrosis</span> (restrictive lung disease). In <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis, the <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">interstitial</span> space of the lungs becomes thickened and scarred due to <span class=\"customMeta\" data-dictid=\"458e050fdc16927771809854c9fd53\">abnormal</span> fibrotic processes. This disrupts the normal lung architecture, impairing gas exchange and restrictive lung disease.</li>\n\t<li>The thickening of the <span class=\"customMeta\" data-dictid=\"318304493d1692777190524bea4edd\">interstitium</span> increases the <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> distance across the <span class=\"customMeta\" data-dictid=\"cfad80a0f716927771979aae100f95\">respiratory</span> membrane, hindering the transfer of oxygen and carbon dioxide. Consequently, this increased <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> distance results in <span class=\"customMeta\" data-dictid=\"9f81027f0116927771892823259e5d\">hypoxemia</span> and contributes to the patient's difficulty in breathing.</li>\n</ul>\n\n<p><strong>Alveolar epithelium</strong> <strong>(Option A) </strong>can be affected in <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis, the primary <span class=\"customMeta\" data-dictid=\"c0c247b89916927771948bc5e6d39c\">pathological</span> changes occur in the <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">interstitial</span> space, leading to thickening and scarring. </p>\n\n<p><strong>Capillary endothelium</strong> <strong>(Option B) </strong>may be secondarily involved, but the primary issue in <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"21e2d5a70616927772021fcdec0ca9\">fibrosis</span> is the <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">interstitial</span> space, where <span class=\"customMeta\" data-dictid=\"21e2d5a70616927772021fcdec0ca9\">fibrosis</span> and <span class=\"customMeta\" data-dictid=\"e9dcc3d4241692777198c7030bf313\">scarring</span> occur. </p>\n\n<p><strong>Surfactant layer</strong> <strong>(Option D) </strong>reduces <span class=\"customMeta\" data-dictid=\"6edf4961e61692777199edf8feaa6d\">surface tension</span> within the alveoli, and is not the primary site affected by <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis. The main problem lies in the <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">interstitial</span> space. </p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/pDU2m1iIZhlwYX5lyIyZ1744823568.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/h888DC3S29FeANdj7N081744823737.mp3"
+    },
+    {
+      "text": "A 65-year-old male with a 40-year history of heavy smoking presents with progressive shortness of breath and a chronic cough. On examination, he has a barrel-shaped chest and decreased breath sounds bilaterally. Pulmonary function tests show an FEV1/FVC ratio of 0.55 and a significantly decreased DLCO. Which of the following is the most likely reason for the decreased DLCO in this patient?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Loss of alveolar surface area"
+        },
+        {
+          "id": 1,
+          "text": "Increased thickness of the alveolar-capillary membrane"
+        },
+        {
+          "id": 2,
+          "text": "Decreased pulmonary blood flow"
+        },
+        {
+          "id": 3,
+          "text": "Hyperinflation of the lungs"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) Loss of alveolar surface area.</strong></p>\n\n<p> </p>\n\n<p><strong>Explanation: </strong>In emphysema, the destruction of alveolar walls leads to a significant reduction in the surface area available for gas exchange. This is the primary reason for the decreased DLCO in patients with emphysema, as the <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">reduced</span> alveolar surface area limits the ability of gases, such as carbon monoxide, to <span class=\"customMeta\" data-dictid=\"89275101301692777186567d1912a0\">diffuse</span> across the alveolar-capillary membrane.</p>\n\n<p> </p>\n\n<p><strong>DL</strong><strong><sub>CO</sub></strong><strong> (Diffusing Capacity of the Lungs for Carbon Monoxide)</strong></p>\n\n<ul>\n\t<li>It measures <span class=\"customMeta\" data-dictid=\"bb021d26d3169277718336718849a5\">carbon monoxide</span> (CO) transfer from the <span class=\"customMeta\" data-dictid=\"b00e6e2b2f1692777181ffd1c08497\">alveolar gas</span> to the <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"89e3252d5b16927771833fb9b432ae\">capillary</span> blood.</li>\n\t<li>Carbon <span class=\"customMeta\" data-dictid=\"03077f6c8716927771923763487a9e\">monoxide</span> is used because it has a high <span class=\"customMeta\" data-dictid=\"227269f3ec1692777180d76a7898dd\">affinity</span> for hemoglobin, and its <span class=\"customMeta\" data-dictid=\"cc20d2d7111692777201fb0caeb3f2\">uptake</span> is limited primarily by the rate of <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rather than by perfusion.</li>\n</ul>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:617px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Procedure</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Inhale gas mixture (CO and helium)</li>\n\t\t\t\t<li>Hold breath for ~10 seconds</li>\n\t\t\t\t<li>Exhale and measure <span class=\"customMeta\" data-dictid=\"44758fcec31692777184e24fa84582\">CO</span> concentration</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Factors Affecting DL</strong><strong><sub>CO</sub></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Lung Volume: Lower volumes decrease DL<sub>CO</sub> (e.g., restrictive lung diseases)</li>\n\t\t\t\t<li>Hemoglobin Level: <span class=\"customMeta\" data-dictid=\"53bee2a41216927771814d7ec3a67f\">Anemia</span> lowers DL<sub>CO</sub>; <span class=\"customMeta\" data-dictid=\"7fd466a9c016927771962d5b061b0f\">polycythemia</span> increases DL<sub>CO</sub></li>\n\t\t\t\t<li>Carboxyhemoglobin Levels: Elevated in smokers, reducing DL<sub>CO</sub></li>\n\t\t\t\t<li>Alveolar Surface Area: <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">Reduced</span> in emphysema, decreasing DL<sub>CO</sub></li>\n\t\t\t\t<li>Pulmonary Blood Flow: <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">Reduced</span> flow (e.g., <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> hypertension) decreases DL<sub>CO</sub></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Clinical Interpretation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Reduced DL<sub>CO</sub>: <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">Interstitial</span> lung disease, emphysema, <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis, <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"526ede3fee169277720184378acc5e\">vascular</span> disease, anemia</li>\n\t\t\t\t<li>Increased DL<sub>CO</sub>: Polycythemia, asthma, left-to-right <span class=\"customMeta\" data-dictid=\"e1fb96fd2416927771830dfed40e14\">cardiac</span> shunts</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Significance in Clinical Practice</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Differentiate obstructive vs restrictive lung diseases</li>\n\t\t\t\t<li>Assess disease extent in <span class=\"customMeta\" data-dictid=\"4acddc3cf5169277718996440e2e14\">idiopathic</span> <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis, sarcoidosis</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p>Increased <span class=\"customMeta\" data-dictid=\"facd67f6341692777200653d383689\">thickness</span> of the alveolar-capillary <span class=\"customMeta\" data-dictid=\"34cd707428169277719272942b7905\">membrane</span> can decrease DLCO, it is more characteristic of <span class=\"customMeta\" data-dictid=\"f46ba26d111692777190def3b1d80a\">interstitial</span> lung diseases such as <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> fibrosis, where <span class=\"customMeta\" data-dictid=\"21e2d5a70616927772021fcdec0ca9\">fibrosis</span> thickens the membrane. <strong>(Option B)</strong></p>\n\n<p> </p>\n\n<p>Decreased <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"82cc227a1c169277718387905b50c6\">blood flow</span> can contribute to a <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">reduced</span> DLCO, it is not the main mechanism in emphysema. In emphysema, the primary issue is the loss of alveolar structures. <strong>(Option C)</strong></p>\n\n<p> </p>\n\n<p>Hyperinflation of the lungs is a common feature of emphysema, it does not directly cause a decreased DLCO. <span class=\"customMeta\" data-dictid=\"301f9a675d16927771892fb39029d3\">Hyperinflation</span> results from the loss of <span class=\"customMeta\" data-dictid=\"2dba7c03f61692777187254f866bcc\">elastic</span> <span class=\"customMeta\" data-dictid=\"b45dda9ea71692777197cbb7b1cab1\">recoil</span> and air trapping, contributing to <span class=\"customMeta\" data-dictid=\"99caf903791692777180bc28743310\">airflow</span> <span class=\"customMeta\" data-dictid=\"39f44b27bf169277719416f29a74ee\">obstruction</span> but not directly to the decrease in diffusing capacity. <strong>(Option D)</strong></p>\n\n<p> </p>\n\n<ol>\n</ol>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/gjs5yUmz9gYTzxvapS4k1744823203.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/o6wpY8O1vbg0EELd5lr61744823352.mp3"
+    },
+    {
+      "text": "Which of the following factors does NOT affect the rate of diffusion in the lung according to Fick's Law?\n\n\n\tThickness of the alveolar-capillary membrane\n\tDiameter of the bronchiole\n\tSurface area of the alveolar-capillary membrane\n\tPartial pressure gradient of the gases\n\tTemperature\n\tSolubility of the Gas",
+      "choices": [
+        {
+          "id": 0,
+          "text": "1 and 2"
+        },
+        {
+          "id": 1,
+          "text": "2 and 5"
+        },
+        {
+          "id": 2,
+          "text": "4 and 5"
+        },
+        {
+          "id": 3,
+          "text": "2 only"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Correct Answer: D) 2 only</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Fick's Law of <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> states that the rate of gas <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> is directly proportional to the surface area of the membrane, the <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> gradient, and the gas's <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> and inversely proportional to the membrane's thickness.</p>\n\n<p> </p>\n\n<p><strong>Diffusion Capacity (D</strong><strong><sub>L</sub></strong><strong>)</strong>: It measures how effectively gases like oxygen (O<sub>2</sub>) and <span class=\"customMeta\" data-dictid=\"c32b3a9fac16927771831530888fdf\">carbon dioxide</span> (CO<sub>2</sub>) move from the <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> into the blood.</p>\n\n<p> </p>\n\n<p><strong>Diffusion Capacity Formula:</strong></p>\n\n<p>Fick's Law describes the rate of <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> of a gas across a membrane. For gases diffusing across the alveolar-capillary <span class=\"customMeta\" data-dictid=\"34cd707428169277719272942b7905\">membrane</span> in the lungs, the law can be expressed as</p>\n\n<p><img alt=\"Diffusion Capacity Formula\" data-author=\"na\" data-hash=\"548\" data-license=\"na\" data-source=\"na\" data-tags=\"January2025\" height=\"141\" src=\"https://image.prepladder.com/notes/6Yk7vXkX0IeKocWs3W3q1735977934.png\" width=\"300\" /></p>\n\n<p> </p>\n\n<p>ΔP: Partial pressure.</p>\n\n<p>A: Total surface area.</p>\n\n<p>K: Constant (Diffusion Constant of gases)</p>\n\n<p>d: <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">Diffusion</span> distance or the <span class=\"customMeta\" data-dictid=\"facd67f6341692777200653d383689\">thickness</span> of the membrane.</p>\n\n<p>D<sub>L</sub>: Total <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> capacity of the lung.</p>\n\n<p> </p>\n\n<p><strong>Factors Affecting the Rate of Diffusion:</strong></p>\n\n<p> </p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Surface Area of the Membrane</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>The greater the surface area available for diffusion, the higher the rate of gas exchange.</li>\n\t\t\t\t<li>In diseases like emphysema, where alveolar surface area is reduced, <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> capacity decreases.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Concentration Gradient</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>A steeper <span class=\"customMeta\" data-dictid=\"04136f692516927771888cf07d46a4\">gradient</span> (difference in partial pressures between the <span class=\"customMeta\" data-dictid=\"0dd428c12116927771819285c8849c\">alveoli</span> and the blood) increases the <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rate.</li>\n\t\t\t\t<li>For example, if the alveolar <span class=\"customMeta\" data-dictid=\"a66961ad3a16927771941f00c5ed57\">partial pressure</span> of oxygen is high compared to the blood, oxygen will <span class=\"customMeta\" data-dictid=\"89275101301692777186567d1912a0\">diffuse</span> more rapidly.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Thickness of the Membrane</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>The thinner the <span class=\"customMeta\" data-dictid=\"34cd707428169277719272942b7905\">membrane</span> (alveolar-capillary membrane), the faster the <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rate.</li>\n\t\t\t\t<li>Conditions like <span class=\"customMeta\" data-dictid=\"10e2dee19e1692777196673db90c23\">pulmonary</span> <span class=\"customMeta\" data-dictid=\"21e2d5a70616927772021fcdec0ca9\">fibrosis</span> increase <span class=\"customMeta\" data-dictid=\"34cd707428169277719272942b7905\">membrane</span> <span class=\"customMeta\" data-dictid=\"facd67f6341692777200653d383689\">thickness</span> and reduce <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> capacity.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Diffusion <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">Coefficient</span> of the Gas</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Different gases <span class=\"customMeta\" data-dictid=\"89275101301692777186567d1912a0\">diffuse</span> at different rates.</li>\n\t\t\t\t<li>For example, CO<sub>2</sub> diffuses more readily than O<sub>2</sub> due to its higher <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> coefficient.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Temperature and Pressure</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Higher temperatures increase the <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rate, and <span class=\"customMeta\" data-dictid=\"11780a9ef716927771825d082fc9a5\">barometric pressure</span> changes can also influence <span class=\"customMeta\" data-dictid=\"9c760dcb641692777186f4cda5dc95\">diffusion</span> rates.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Solubility of the Gas</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Gases more <span class=\"customMeta\" data-dictid=\"845fedd06d16927771989597afa034\">soluble</span> in blood (like CO<sub>2</sub>) will <span class=\"customMeta\" data-dictid=\"89275101301692777186567d1912a0\">diffuse</span> more readily than gases with lower <span class=\"customMeta\" data-dictid=\"a9295e67a41692777198dce0de3f34\">solubility</span> (like O<sub>2</sub>).</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/6Yk7vXkX0IeKocWs3W3q1735977934.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/A23hezOrSc3QZfoGGoF51744822954.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/zou6eyjXUoomz88ePCdF1744823079.mp3"
+    }
+  ]
+}

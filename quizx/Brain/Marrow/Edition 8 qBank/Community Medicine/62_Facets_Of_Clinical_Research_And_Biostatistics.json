@@ -1,0 +1,529 @@
+{
+  "meta": {
+    "title": "62_Facets_Of_Clinical_Research_And_Biostatistics"
+  },
+  "questions": [
+    {
+      "text": "Which of the following is true about simple random sampling?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It is the sampling method of choice for heterogenous population"
+        },
+        {
+          "id": 2,
+          "text": "Members are selected without specifying any criteria for selection"
+        },
+        {
+          "id": 3,
+          "text": "Every 5th or 10th member is picked at regular interval"
+        },
+        {
+          "id": 4,
+          "text": "Population is first divided into strata then sampled randomly"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In <strong>simple</strong> <strong>random</strong> sampling, samples are drawn in such a way that every element in a population has <strong>equal</strong> <strong>chances</strong> of being included. In other words, the members are selected <strong>without </strong>specifying any<strong> criteria </strong>for selection.</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3204",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study on the prevalence of diabetes was conducted and the sampling method shown below was used. Identify the sampling method used.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Simple random"
+        },
+        {
+          "id": 2,
+          "text": "Cluster"
+        },
+        {
+          "id": 3,
+          "text": "Systematic"
+        },
+        {
+          "id": 4,
+          "text": "Stratified random"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this study, the population is separated into <strong>homogenous sub-groups</strong> and from these, random samples are drawn. This sampling method is called&nbsp;<strong>stratified random sampling</strong>.</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/c19862b2b0e24741955e82dd44c83f18.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3205",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is incorrect about cluster sampling?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Clusters are created based on similarities"
+        },
+        {
+          "id": 2,
+          "text": "It is a two stage sampling"
+        },
+        {
+          "id": 3,
+          "text": "It is cheaper than most other methods"
+        },
+        {
+          "id": 4,
+          "text": "It is a method used for rapid assessment"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In <strong>c</strong><strong>luster sampling, </strong>the clusters are created<strong> randomly</strong>. On the contrary,&nbsp;in stratified <strong>random</strong> <strong>sampling</strong>, the strata or groups are created based on <strong>similarities.</strong></p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3207",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which sampling method is used for assessing the immunization status of children under the immunization program?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Systematic sampling"
+        },
+        {
+          "id": 2,
+          "text": "Cluster sampling"
+        },
+        {
+          "id": 3,
+          "text": "Group sampling"
+        },
+        {
+          "id": 4,
+          "text": "Stratified random sampling"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Cluster sampling </strong>is the method of sampling done in <strong>immunization</strong> programs for assessing the immunization status of <strong>children.</strong></p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3208",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A research is being conducted to assess the nutritional status of the children in a particular district. For this purpose, 2 children are randomly selected from every school in the district. What is this type of sampling known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Simple random"
+        },
+        {
+          "id": 2,
+          "text": "Systematic random"
+        },
+        {
+          "id": 3,
+          "text": "Stratified random"
+        },
+        {
+          "id": 4,
+          "text": "Cluster"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the&nbsp;<strong>cluster sampling</strong> technique, the sub-groups of the population/ clusters&nbsp;are naturally occurring. These clusters are <strong>randomly</strong> made rather than based on any particular&nbsp;characteristic. The population of children here is naturally divided into various schools without being based on any characteristics.&nbsp;&nbsp;</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3209",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In which of the following sampling techniques is design effect used?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Simple random"
+        },
+        {
+          "id": 2,
+          "text": "Stratified random"
+        },
+        {
+          "id": 3,
+          "text": "Cluster"
+        },
+        {
+          "id": 4,
+          "text": "Systematic random"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The<strong> design effect</strong> is used in <strong>cluster sampling</strong> to allow for design structure and correlation between clusters.</p>\n<p>The design effect (DEFF) is used to decide the <strong>sample</strong> <strong>size</strong> needed for cluster sampling. This is done by calculating&nbsp;the <strong>difference</strong> in sampling <strong>variability</strong> to the variability expected with simple random sampling (SRS).</p>\n<p>It can more simply be stated as the actual sample size divided by the effective sample size (what you would expect if you were using SRS). For example, let&rsquo;s say you were using cluster sampling. A DEFF of 2 means the variance is twice as large as you would expect with SRS. It also means that if you used cluster sampling, you&rsquo;d have to use twice the sample size.</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3211",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Simple random sampling is ideal for which of the following study groups?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "A study being conducted on all vaccinated people of an area"
+        },
+        {
+          "id": 2,
+          "text": "A study on occupational exposure in all workers of the same factory"
+        },
+        {
+          "id": 3,
+          "text": "A study being conducted on prevalence of acute gastroenteritis in all school children of an area"
+        },
+        {
+          "id": 4,
+          "text": "A study on prevalence of hypertension in men aged 50-75 years in an area"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Simple random sampling</strong>&nbsp;is ideal for a&nbsp;<strong>homogeneous </strong>population<strong>&nbsp;</strong>as the sample would be completely representative of the population and it would eliminate the need for systematization or stratification. Here,&nbsp;workers of the same factory form a homogeneous population.</p>\n<p>Option A: For a <strong>vaccinated</strong> population - <strong>cluster</strong> sampling</p>\n<p>Options C and D: For a <strong>heterogeneous</strong> population - <strong>stratified</strong> sampling</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3213",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study, first schools were sampled, then sections and finally students. What is this type of sampling known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Stratified sampling"
+        },
+        {
+          "id": 2,
+          "text": "Snowball sampling"
+        },
+        {
+          "id": 3,
+          "text": "Systematic sampling"
+        },
+        {
+          "id": 4,
+          "text": "Multistage sampling"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Multistage sampling</strong> is the taking of&nbsp;samples&nbsp;in stages using smaller and smaller sampling units at each <strong>stage</strong>. It involves dividing the population into groups (or clusters). Then, one or more clusters are chosen at random and everyone within the chosen cluster is sampled.</p>\n<p>Snowball sampling is a type of non-random sampling preferred in case of diseases with social stigma (eg., alcoholism, iv drug abuse etc).</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3216",
+      "difficulty": "medium"
+    },
+    {
+      "text": "For an epidemiological study, sampling was done as shown below. What is this type of sampling known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cluster sampling"
+        },
+        {
+          "id": 2,
+          "text": "Simple random sampling"
+        },
+        {
+          "id": 3,
+          "text": "Stratified random sampling"
+        },
+        {
+          "id": 4,
+          "text": "Systematic sampling"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Systematic sampling</strong> involves a systematic <strong>pattern</strong> to sampling, like choosing every 3rd&nbsp;person from an area or hospital, etc.</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/e8822b36a3e14ee3bd710150d1a510bb.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3217",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a study, subjects were assigned according to the potential factor that will influence the outcome of the study. What is this type of sampling known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Stratified"
+        },
+        {
+          "id": 2,
+          "text": "Systematic"
+        },
+        {
+          "id": 3,
+          "text": "Simple"
+        },
+        {
+          "id": 4,
+          "text": "Cluster"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In <strong>stratified random</strong> sampling, the <strong>population </strong>is first<strong> divided</strong> into<strong> homogeneous groups</strong>&nbsp;or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</p>\n<p>For example: If a researcher wants to conduct a research study to determine if alcohol consumption is a risk factor for lung cancer. He must first stratify the population into smokers and non-smokers because smoking is a known risk factor and also smoking is associated with alcohol consumption.&nbsp;</p><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3219",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the given statistical plot.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Forest plot"
+        },
+        {
+          "id": 2,
+          "text": "Funnel plot"
+        },
+        {
+          "id": 3,
+          "text": "Stem-and-leaf plot"
+        },
+        {
+          "id": 4,
+          "text": "Box and Whisker plot"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image shows a <strong>stem-and-leaf</strong> plot.</p>\n<p>To construct the above stem-and leaf plot, the given data is first arranged in ascending order. E.g., 44, 46, 47, 49, 63, 64, 66, 68, 68, 72, 72, 75, 76, 81, 84, 88, 106</p>\n<p>While constructing the plot, the leaf contains the last digit of the number and the stem contains all of the other digits. For example, for the number 106 the stem contains 10 and the leaf contains 6; similarly for the number 46 stem contains 4 and the leaf contains 6. Following this, the whole stem-and-leaf plot is given below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/21167a4cde7f42898fff879cab2f47a2x176x199.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Stem-and-Leaf Displays</h3><ul>\n<li>A stem-and-leaf plot is used to <strong>graphically display small to moderate sized data</strong>.</li>\n<li>In this type of representation, the values of the data are separated into two parts, the <strong>stem and the leaf</strong>.</li>\n<li>Usually, the <strong>stem</strong> represents the <strong>tens, hundreds, thousandth digits</strong>, etc. and the <strong>leaf part</strong> represents the remainders of the digits.</li>\n<li>For example, if a set of data containing marks of students of out 100 is 94, 90, 84, 87, 89, 85, 83, 79, 72, 70, 72, 68, 69, 65, 53. Then the stem-and-leaf for this set of data would be as shown in the image.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/68bd7ec51ce343b0b6a1be7aeb0f83e1.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3220",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the type of statistical plot shown below.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Funnel plot"
+        },
+        {
+          "id": 2,
+          "text": "Forest plot"
+        },
+        {
+          "id": 3,
+          "text": "McNemar plot"
+        },
+        {
+          "id": 4,
+          "text": "Spot map"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The image shown is of a <strong>symmetric funnel plot.</strong></p><hr><h3>Related Pearl: Funnel Plots</h3><ul>\n<li>A <strong>funnel plot</strong> is basically a <strong>scatter plot of individual studies</strong> which are used in <strong>systematic reviews and meta-analysis</strong>. It plots their <strong>precisions and results</strong>.</li>\n<li>In a funnel plot, <strong>each dot represents an individual study</strong>.</li>\n<li>The <strong>y-axis</strong> is usually the <strong>standard error or another estimate of precision</strong> and the <strong>x-axis is the outcome</strong>, usually the <strong>odds ratio</strong>.</li>\n<li><strong>Higher powered studies</strong> are placed towards the <strong>top</strong> and the <strong>lower powered</strong> ones towards the <strong>bottom</strong> such that the plot resembles <strong>an inverted funnel or a pyramid</strong>.</li>\n<li>This shape is expected as different studies have different standard errors and other estimates.</li>\n<li>A symmetrical funnel plot is shown in Fig. A. in the image below.</li>\n<li>These funnel plots are used in meta-analysis to check for bias like publication bias or other reporting bias.</li>\n<li>In the case of <strong>bias being present</strong>, an <strong>asymmetrical funnel plot</strong> results, as shown in Fig. B. of the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/21720e796dc64464b128ea514020d1edx1280x1746.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6d88bc7db9de4cdca7618be8a1336522.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3225",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The plot from the data obtained from a study is shown below. Which of the following results in this type of plot?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sampling error"
+        },
+        {
+          "id": 2,
+          "text": "Berkesonian bias"
+        },
+        {
+          "id": 3,
+          "text": "Large sample size of people"
+        },
+        {
+          "id": 4,
+          "text": "Publication bias"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The image shown is that of an <strong>asymmetric funnel plot.</strong> This usually occurs in <strong>meta-analysis</strong> due to <strong>publication bias</strong> or other<strong> reporting bias.</strong></p><hr><h3>Related Pearl: Funnel Plots</h3><ul>\n<li>A <strong>funnel plot</strong> is basically a <strong>scatter plot of individual studies</strong> which are used in <strong>systematic reviews and meta-analysis</strong>. It plots their <strong>precisions and results</strong>.</li>\n<li>In a funnel plot, <strong>each dot represents an individual study</strong>.</li>\n<li>The <strong>y-axis</strong> is usually the <strong>standard error or another estimate of precision</strong> and the <strong>x-axis is the outcome</strong>, usually the <strong>odds ratio</strong>.</li>\n<li><strong>Higher powered studies</strong> are placed towards the <strong>top</strong> and the <strong>lower powered</strong> ones towards the <strong>bottom</strong> such that the plot resembles <strong>an inverted funnel or a pyramid</strong>.</li>\n<li>This shape is expected as different studies have different standard errors and other estimates.</li>\n<li>A symmetrical funnel plot is shown in Fig. A. in the image below.</li>\n<li>These funnel plots are used in meta-analysis to check for bias like publication bias or other reporting bias.</li>\n<li>In the case of <strong>bias being present</strong>, an <strong>asymmetrical funnel plot</strong> results, as shown in Fig. B. of the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/21720e796dc64464b128ea514020d1edx1280x1746.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/c173087a819d408199f038e037b3cca1.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3226",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Results of various studies carried out to study the role of smoking in breast cancer are plotted below. Identify the plot.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "McNemar plot"
+        },
+        {
+          "id": 2,
+          "text": "Box-and-whisker plot"
+        },
+        {
+          "id": 3,
+          "text": "Forest plot"
+        },
+        {
+          "id": 4,
+          "text": "Fisher’s exact plot"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shown is that of a <strong>forest plot</strong> used for plotting the results of a <strong>meta-analysis.</strong></p><hr><h3>Related Pearl: Forest Plot</h3><ul>\n<li>A <strong>forest plot</strong> is used to present the results of a <strong>meta-analysis.</strong></li>\n<li>It is also called <strong>blobbogram.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/01f09b9b2dbb44fc90c6a6bb84df981ax1125x727.PNG\" alt=\"Pearl Image\"><p>Interpretation of forest plots:&nbsp;</p>\n<ul>\n<li aria-level=\"1\">The <strong>rectangles</strong> represent the single studies</li>\n<li aria-level=\"1\">The <strong>size of the rectangle</strong> is proportional to the sample size</li>\n<li aria-level=\"1\">The <strong>horizontal line on either side</strong> - confidence interval, the longer the lines, the wider the confidential interval, the less reliable the study results</li>\n<li aria-level=\"1\">The <strong>vertical solid line</strong> - the &ldquo;line of no effect\", which represents the odds ratio or relative risk. If it is the odds ratio, then the vertical line would be at 1. No difference between the intervention and the placebo (i.e., <strong>a risk ratio of 1</strong>).&nbsp;</li>\n<li aria-level=\"1\">The <strong>location of the result</strong> - whether it favours the intervention (the statin drug) or not</li>\n<li aria-level=\"1\">A <strong>diamond</strong> shows the overall pooled result where all the individual studies are combined together and averaged</li>\n<li aria-level=\"1\"><strong>Lateral corners</strong> of the diamond represent the confidence interval, if these corners do not cross 'the line of no effect', then there is an overall statistically significant effect. If the diamond touches the vertical line, the overall result is not statistically significant.</li>\n<li>The <strong>vertical dashed line</strong> represents the <strong>overall pooled estimate</strong> which represents the <strong>meta-analysed measure of effect</strong>.</li>\n</ul>\n<p>Let's understand with an example -&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5b5dee4fbd514313a94da59b6f5366a4x1280x1200.JPEG\" alt=\"Pearl Image\"><ul>\n<li aria-level=\"1\">For <strong>study A</strong>- it has a wide horizontal line that crosses the line of null effect with a black box that is to the right of the vertical line. This most likely demonstrates a small scale study with few participants where the point estimate result favours the control used in the study. But because the study contains the null value in its 95% confidence interval, it is likely to have a p-value &gt;0.05 and not be statistically significant.</li>\n<li aria-level=\"1\">For <strong>study B</strong>- it has quite a narrow line that does not cross the line of null effect with a black box that is to the left of the vertical line and is bigger than study A. This most likely demonstrates a larger study with more participants compared to study A, where the result favours the intervention used. Because the 95% confidence interval does not contain the null value, this study is likely to have a p-value &lt;0.05 and hence the differences observed in the study can be regarded as statistically significant.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/e6a8e8c36fc144cfa85bc3a49e929295.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3228",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was done to assess the risk factors for breast cancer in 100 females from urban cities. A statistical group and analysis are shown below. The values indicate the odds ratio and the 95% confidence interval. How many risk factors may be ascertained from the statistical analysis of the research?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "3"
+        },
+        {
+          "id": 2,
+          "text": "4"
+        },
+        {
+          "id": 3,
+          "text": "5"
+        },
+        {
+          "id": 4,
+          "text": "6"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Among the factors shown in the above statistical group, the odds ratio of </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>early&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>menarche</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>BRCA&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>mutation</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">, and </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>obesity&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">show positive association and are statistically significant. Hence these <strong>3 factors</strong> can be ascertained as risk factors.</span></div>\n<div>&nbsp;</div>\n<div>High socioeconomic status is <strong>not</strong> a risk factor. Even though there is a positive association, it is not statistically significant. Any association that has a 95% confidence interval range that includes the value of 1.0 is considered to be non-significant. The value of 1.0 in the range means that the two factors may co-exist together but one is not causing the other to happen.</div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Odds ratio&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>(OR</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>)</strong>&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">is the key parameter in case-control studies to assess the strength of association between the exposure and outcome. The interpretation of the odds ratio can be done as below:</span></div>\n<ul class=\"listtype-bullet listindent1 list-bullet1\">\n<li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>OR &gt; 1 </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">indicates </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>a positive&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>association</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">. If </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>both upper and lower limits </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">of the 95% confidence limits are also&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>&gt;1</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">, it suggests that the odds ratio is </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>significant&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">and the factor can be ascertained as a </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>risk&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>factor</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">.</span></li>\n<li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>OR = 1</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">indicates </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>no association</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">. Irrespective of the odds ratio, if the lower limit of 95% CI is &lt;1 and the upper limit of 95% CI &gt;1, the OR is </span>non-significant and<span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"> cannot be ascertained either as a protective or a risk factor.</span></li>\n<li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>OR &lt; 1 </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">indicates </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>a negative&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>association</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">. If </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>both upper and lower limits </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">of the 95% confidence limits are also&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>&lt;1</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">, it suggests that the odds ratio is </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>significant&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">and the factor can be ascertained as a </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>protective&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>factor</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">.</span>&nbsp;</li>\n</ul>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Interpretation&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">of the individual factors given in the question:</span></div>\n<div>\n<table class=\"table-top-header\">\n<tbody>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Factor</span></strong></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Odds ratio&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(95%</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">confidence limits)</span></strong></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Interpretation</span></strong></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Early menarche</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">1.3</span> <span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(1.2-1.9)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Positive association, significant, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>risk factor</strong></span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Age &lt;50 years</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">0.04 (0.01-0.32)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Negative association, significant, protective factor</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Smoking</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">0.5 (0.02-0.9)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Negative association, significant, protective factor</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">BRCA mutation</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">1.9 (1.1-2.8)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Positive association, significant, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>risk factor</strong></span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Alcohol</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">1.0 (0.8-1.8)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">No association, non-significant</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">High socioeconomic status</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">1.4 (0.5-3.5)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Positive association, non-significant</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Obesity</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">1.24 (1.1-1.7)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Positive association, significant, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>risk factor</strong></span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">No family history of Ca. breast</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">0.3 (0.01-0.9)</span></div>\n</td>\n<td>\n<div class=\"ace-line gutter-author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z ace-ltr\" dir=\"auto\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Negative association, significant, protective factor</span></div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n</div>\n<div>&nbsp;</div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d476e7a3736444a09d500a42b158681c.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7625",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the following statistical plot.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Fisher’s box plot"
+        },
+        {
+          "id": 2,
+          "text": "Stem and leaf plot"
+        },
+        {
+          "id": 3,
+          "text": "Box-and-whisker plot"
+        },
+        {
+          "id": 4,
+          "text": "McNemar’s plot"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shown is that of a <strong>box-and-whisker plot.</strong></p>\n<p>McNemar's test&nbsp;is a statistical test used on&nbsp;paired&nbsp;nominal data. It is used as a transmission disequilibrium test&nbsp;for detecting&nbsp;linkage disequilibrium.</p><hr><h3>Related Pearl: Box and Whisker Plot</h3><ul>\n<li>A box and whisker plot is used to show <strong>variation in a set of data</strong>.</li>\n<li>They can summarize data from various sources and display it in a single graph.</li>\n<li>A box and whisker plot is usually based on <strong>median, quartiles and percentiles</strong>.</li>\n<li>It is also called a <strong>box plot.</strong></li>\n<li>In the box plot as shown in the image, a simple box is divided into two by the <strong>median value</strong>. Above and below it are the <strong>whiskers</strong>. The top and bottom ends of the whiskers are the <strong>highest and lowest value of that group</strong>.&nbsp;</li>\n</ul><ul>\n<li>A box plot can help in identifying <strong>outliers</strong> and the <strong>interquartile range (IQR), </strong>as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/557efa950e5f407ca148010054728d60x314x146.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/9a75c5dee3ee40e799106d1ca508f686.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3232",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is Dixon’s Q test used for?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Outliers"
+        },
+        {
+          "id": 2,
+          "text": "Interquartile range"
+        },
+        {
+          "id": 3,
+          "text": "Difference of proportions"
+        },
+        {
+          "id": 4,
+          "text": "Medians"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>Dixon&rsquo;s Q test</strong> is used for identification and rejection of&nbsp;<strong>outliers.</strong>&nbsp;It is usually used in normal distributions.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3234",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Regarding the given box-whisker plot, the true statement is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean > Median > Mode"
+        },
+        {
+          "id": 2,
+          "text": "Mode > Median > Mean"
+        },
+        {
+          "id": 3,
+          "text": "Mode = Mean = Median"
+        },
+        {
+          "id": 4,
+          "text": "Peaked symmetrical distribution"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given <strong>box-whisker plot</strong> represents a <strong>positively</strong> (or right) <strong>skewed</strong> distribution.&nbsp; In a positively skewed distribution, <strong>the mean &gt; median &gt; mode</strong>.</p>\n<p>To further understand and correlate the fact, have a look at the following images:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a8627ad901984d5ba73af62c9f117f17x650x1175.PNG\" alt=\"Explanation Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/61641c5825e04bdaab48c22de2284cc8x785x1452.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul><hr><h3>Related Pearl: Box and Whisker Plot</h3><ul>\n<li>A box and whisker plot is used to show <strong>variation in a set of data</strong>.</li>\n<li>They can summarize data from various sources and display it in a single graph.</li>\n<li>A box and whisker plot is usually based on <strong>median, quartiles and percentiles</strong>.</li>\n<li>It is also called a <strong>box plot.</strong></li>\n<li>In the box plot as shown in the image, a simple box is divided into two by the <strong>median value</strong>. Above and below it are the <strong>whiskers</strong>. The top and bottom ends of the whiskers are the <strong>highest and lowest value of that group</strong>.&nbsp;</li>\n</ul><ul>\n<li>A box plot can help in identifying <strong>outliers</strong> and the <strong>interquartile range (IQR), </strong>as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/557efa950e5f407ca148010054728d60x314x146.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/82d87a7d0288489b82120648f2753b90.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6182",
+      "difficulty": "medium"
+    }
+  ]
+}

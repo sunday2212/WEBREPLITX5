@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Nextpulse</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../quiz-styles.css">
+  <link rel="stylesheet" href="brain-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../../theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../supabase-config.js"></script>
+  <script src="../../access-control.js"></script>
+  <script src="../../block.js"></script>
+  <script src="../../error-handler/link-checker.js"></script>
+  <style>
+    .file-selector {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .file-selector h3 {
+      margin-bottom: 1rem;
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .file-list {
+      display: grid;
+      gap: 0.75rem;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .file-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.875rem 1rem;
+      background: #f7fafc;
+      border-radius: 10px;
+      transition: all 0.2s;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+    }
+    .file-item:hover {
+      background: #edf2f7;
+      border-color: #cbd5e0;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .file-item .file-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .file-item .file-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .file-item .file-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #2d3748;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .file-item .file-meta {
+      font-size: 0.8rem;
+      color: #718096;
+      margin-top: 2px;
+    }
+    .file-item .file-arrow {
+      flex-shrink: 0;
+      color: #a0aec0;
+      font-size: 0.85rem;
+    }
+    
+    /* Mode Selection Modal */
+    .mode-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .mode-modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .mode-modal {
+      background: white;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 400px;
+      max-height: 90vh;
+      overflow-y: auto;
+      transform: translateY(20px) scale(0.95);
+      transition: all 0.3s ease;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+    .mode-modal-overlay.active .mode-modal {
+      transform: translateY(0) scale(1);
+    }
+    .mode-modal-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .mode-modal-header h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mode-modal-header .close-modal-btn {
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: #f7fafc;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #718096;
+      transition: all 0.2s;
+    }
+    .mode-modal-header .close-modal-btn:hover {
+      background: #e2e8f0;
+      color: #2d3748;
+    }
+    .mode-modal-body {
+      padding: 1.5rem;
+    }
+    .mode-modal-topic {
+      background: #f7fafc;
+      padding: 0.875rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .mode-modal-topic i {
+      color: #2c5282;
+      font-size: 1.1rem;
+    }
+    .mode-modal-topic span {
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 0.95rem;
+    }
+    .mode-modal-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .mode-modal-option {
+      padding: 1rem 1.25rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .mode-modal-option:hover {
+      border-color: #2c5282;
+      background: #f7fafc;
+    }
+    .mode-modal-option.selected {
+      border-color: #2c5282;
+      background: #ebf4ff;
+    }
+    .mode-modal-option .mode-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .mode-modal-option.normal-mode .mode-icon {
+      background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);
+      color: white;
+    }
+    .mode-modal-option.test-mode .mode-icon {
+      background: linear-gradient(135deg, #d69e2e 0%, #ecc94b 100%);
+      color: white;
+    }
+    .mode-modal-option .mode-content {
+      flex: 1;
+    }
+    .mode-modal-option .mode-title {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #2d3748;
+      margin-bottom: 0.25rem;
+    }
+    .mode-modal-option .mode-desc {
+      font-size: 0.8rem;
+      color: #718096;
+      line-height: 1.4;
+    }
+    .mode-modal-option .mode-check {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #cbd5e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .mode-modal-option.selected .mode-check {
+      background: #38a169;
+      border-color: #38a169;
+    }
+    .mode-modal-footer {
+      padding: 1rem 1.5rem 1.5rem;
+    }
+    .mode-modal-start-btn {
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(56, 161, 105, 0.3);
+    }
+    .mode-modal-start-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(56, 161, 105, 0.4);
+    }
+    .mode-modal-start-btn:active {
+      transform: translateY(0);
+    }
+    
+    /* Resume Popup Page inside Modal */
+    .resume-page {
+      display: none;
+    }
+    .resume-page.active {
+      display: block;
+    }
+    .mode-page {
+      display: none;
+    }
+    .mode-page.active {
+      display: block;
+    }
+    .resume-info-card {
+      background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+      border: 1px solid #bee3f8;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.875rem;
+    }
+    .resume-info-card .resume-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .resume-info-card .resume-details {
+      flex: 1;
+    }
+    .resume-info-card .resume-headline {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #2c5282;
+      margin-bottom: 0.25rem;
+    }
+    .resume-info-card .resume-meta {
+      font-size: 0.82rem;
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .resume-action-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .resume-continue-btn {
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+      transition: all 0.2s;
+    }
+    .resume-continue-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(49, 130, 206, 0.4);
+    }
+    .resume-fresh-btn {
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      background: white;
+      color: #4a5568;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+    .resume-fresh-btn:hover {
+      border-color: #cbd5e0;
+      background: #f7fafc;
+    }
+    /* Mobile Responsive for Modal — bottom-sheet style */
+    @media (max-width: 600px) {
+      .mode-modal-overlay {
+        align-items: flex-end;
+        padding: 0;
+      }
+      .mode-modal {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        border-radius: 20px 20px 0 0;
+        max-height: 88vh;
+      }
+      .mode-modal-header {
+        padding: 0.875rem 1.1rem;
+      }
+      .mode-modal-header h3 {
+        font-size: 1rem;
+      }
+      .mode-modal-body {
+        padding: 0.875rem 1.1rem;
+      }
+      .mode-modal-topic {
+        padding: 0.6rem 0.875rem;
+        margin-bottom: 0.75rem;
+        gap: 0.6rem;
+      }
+      .mode-modal-topic i {
+        font-size: 0.95rem;
+      }
+      .mode-modal-topic span {
+        font-size: 0.88rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .mode-modal-options {
+        gap: 0.6rem;
+      }
+      .mode-modal-option {
+        padding: 0.7rem 0.875rem;
+        gap: 0.75rem;
+        border-radius: 10px;
+      }
+      .mode-modal-option .mode-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+        border-radius: 10px;
+      }
+      .mode-modal-option .mode-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.15rem;
+      }
+      .mode-modal-option .mode-desc {
+        font-size: 0.72rem;
+        line-height: 1.35;
+      }
+      .mode-modal-option .mode-check {
+        width: 20px;
+        height: 20px;
+      }
+      .mode-modal-footer {
+        padding: 0.75rem 1.1rem 1.25rem;
+      }
+      .mode-modal-start-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+      }
+      /* Resume page compact */
+      .resume-info-card {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.875rem;
+        gap: 0.65rem;
+      }
+      .resume-info-card .resume-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+      .resume-info-card .resume-headline {
+        font-size: 0.88rem;
+      }
+      .resume-info-card .resume-meta {
+        font-size: 0.78rem;
+      }
+      .resume-action-btns { gap: 0.6rem; }
+      .resume-continue-btn,
+      .resume-fresh-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.88rem;
+      }
+      .file-item {
+        padding: 0.75rem;
+        gap: 0.6rem;
+      }
+      .file-item .file-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+      }
+      .file-item .file-name {
+        font-size: 0.9rem;
+      }
+    }
+    .start-quiz-btn {
+      width: 100%;
+      padding: 1rem;
+      background: #38a169;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+    .start-quiz-btn:hover {
+      background: #2f855a;
+    }
+    .start-quiz-btn:disabled {
+      background: #a0aec0;
+      cursor: not-allowed;
+    }
+    .question-html-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    .explanation-html-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    /* ─── Ask Doubt ─── */
+    .ask-doubt-section {
+      margin-top: 1.5rem; border-top: 1px solid #e2e8f0;
+      padding-top: 1.25rem;
+    }
+    .ask-doubt-toggle {
+      display: flex; align-items: center; gap: 0.6rem;
+      background: linear-gradient(135deg, #553c9a 0%, #6b46c1 100%);
+      color: white; border: none; border-radius: 10px;
+      padding: 0.6rem 1.1rem; font-size: 0.88rem; font-weight: 600;
+      cursor: pointer; transition: all 0.2s;
+      box-shadow: 0 2px 8px rgba(107,70,193,0.3);
+    }
+    .ask-doubt-toggle:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(107,70,193,0.4); }
+    .ask-doubt-body { margin-top: 1rem; display: none; }
+    .ask-doubt-body.open { display: block; }
+    /* Key prompt box */
+    .doubt-key-prompt {
+      background: #f7f3ff; border: 1px solid #d6bcfa;
+      border-radius: 12px; padding: 1rem 1.1rem;
+    }
+    .doubt-key-prompt p { font-size: 0.85rem; color: #553c9a; font-weight: 600; margin-bottom: 0.6rem; }
+    .doubt-key-prompt small { font-size: 0.75rem; color: #805ad5; display: block; margin-top: 0.4rem; }
+    .doubt-key-prompt a { color: #6b46c1; font-weight: 600; }
+    .doubt-key-input-row { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+    .doubt-key-input-row input {
+      flex: 1; min-width: 0; padding: 0.55rem 0.8rem; border: 1.5px solid #d6bcfa;
+      border-radius: 8px; font-size: 0.85rem; background: white; color: #2d3748;
+      box-sizing: border-box;
+    }
+    .doubt-key-input-row input:focus { outline: none; border-color: #6b46c1; }
+    .doubt-key-save-btn {
+      padding: 0.55rem 1rem; background: #6b46c1; color: white;
+      border: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600;
+      cursor: pointer; flex-shrink: 0; transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .doubt-key-save-btn:hover { background: #553c9a; }
+    @media (max-width: 400px) {
+      .doubt-key-input-row { flex-direction: column; }
+      .doubt-key-save-btn { width: 100%; }
+    }
+    /* Doubt UI */
+    .doubt-ui textarea {
+      width: 100%; box-sizing: border-box;
+      padding: 0.7rem 0.9rem; border: 1.5px solid #e2e8f0;
+      border-radius: 10px; font-size: 0.9rem; color: #2d3748;
+      resize: vertical; min-height: 72px; font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .doubt-ui textarea:focus { outline: none; border-color: #6b46c1; }
+    .doubt-ui-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 0.6rem; }
+    .doubt-ui-footer small { font-size: 0.72rem; color: #a0aec0; cursor: pointer; }
+    .doubt-ui-footer small:hover { color: #6b46c1; }
+    .ask-doubt-btn {
+      padding: 0.5rem 1.2rem; background: #6b46c1; color: white;
+      border: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600;
+      cursor: pointer; display: flex; align-items: center; gap: 0.45rem;
+      transition: all 0.2s; flex-shrink: 0;
+    }
+    .ask-doubt-btn:hover { background: #553c9a; }
+    .ask-doubt-btn:disabled { background: #a0aec0; cursor: not-allowed; }
+    .doubt-answer {
+      margin-top: 1rem; padding: 1rem 1.1rem;
+      background: #f7f3ff; border: 1px solid #d6bcfa;
+      border-radius: 12px; font-size: 0.88rem; line-height: 1.65;
+      color: #2d3748; display: none;
+    }
+    .doubt-answer.visible { display: block; }
+    .doubt-answer-label {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      color: #6b46c1; letter-spacing: 0.05em; margin-bottom: 0.5rem;
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    
+    /* Global Search Bar */
+    .global-search-container {
+      margin-bottom: 1.5rem;
+    }
+    .global-search-bar {
+      background: white;
+      border-radius: 25px;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .global-search-bar i {
+      color: #718096;
+      margin-right: 0.75rem;
+    }
+    .global-search-bar input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      color: #2d3748;
+    }
+    .search-results {
+      margin-top: 0.75rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+    }
+    .search-results.active {
+      display: block;
+    }
+    .search-result-item {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .search-result-item:hover {
+      background: #f7fafc;
+    }
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+    .search-result-item i {
+      color: #2c5282;
+    }
+    .search-result-item .result-title {
+      font-weight: 500;
+      color: #2d3748;
+    }
+    .search-result-item .result-path {
+      font-size: 0.8rem;
+      color: #718096;
+    }
+    
+    /* Mode Selector */
+    .mode-selector {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .mode-selector h3 {
+      margin-bottom: 1rem;
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mode-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 480px) {
+      .mode-options {
+        grid-template-columns: 1fr;
+      }
+    }
+    .mode-option {
+      padding: 1.25rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+    .mode-option:hover {
+      border-color: #2c5282;
+      background: #f7fafc;
+    }
+    .mode-option.selected {
+      border-color: #2c5282;
+      background: #2c5282;
+      color: white;
+    }
+    .mode-option i {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .mode-option .mode-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .mode-option .mode-desc {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    .mode-option.selected .mode-desc {
+      opacity: 0.9;
+    }
+    
+    /* Timer + Bookmark wrapper (top-right of question card) */
+    .quiz-top-right {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 10;
+    }
+    /* Timer — inline next to bookmark, not fixed */
+    .quiz-timer {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #eef2ff;
+      border: 1.5px solid #c7d2fe;
+      border-radius: 8px;
+      padding: 0.35rem 0.65rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #3730a3;
+      white-space: nowrap;
+    }
+    .quiz-timer.warning {
+      background: #fef3c7;
+      border-color: #fcd34d;
+      color: #d97706;
+    }
+    .quiz-timer.danger {
+      background: #fee2e2;
+      border-color: #fca5a5;
+      color: #dc2626;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .quiz-timer i {
+      font-size: 0.9rem;
+    }
+    
+    /* Bookmark inside the top-right wrapper — override absolute pos from quiz-styles.css */
+    .quiz-top-right .bookmark-question-btn {
+      position: static !important;
+      top: auto !important; right: auto !important;
+    }
+
+    /* Right padding on question text to avoid overlap with timer+bookmark row */
+    .question-container .question-text {
+      padding-right: 130px !important;
+    }
+    /* Tablet: timer + bookmark still fit at 90px */
+    @media (max-width: 768px) {
+      .question-container .question-text { padding-right: 90px !important; }
+    }
+    /* Mobile: only the bookmark button (36px) is visible — give it 52px breathing room */
+    @media (max-width: 480px) {
+      .question-container .question-text { padding-right: 52px !important; }
+    }
+
+    /* Test Mode Styling */
+    .test-mode-active .explanation-container,
+    body.test-mode-active .explanation-container,
+    body.test-mode-active #explanation-container {
+      display: none !important;
+    }
+    .test-mode-active .option-btn.selected-test {
+      background: #e2e8f0;
+      border-color: #2c5282;
+    }
+    
+    /* Horizontal Scroll for Explanations/Tables */
+    .explanation-html-content,
+    .question-html-content {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+    }
+    .explanation-html-content table,
+    .question-html-content table {
+      min-width: 600px;
+      display: block;
+      overflow-x: auto;
+    }
+    .table-scroll-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+    .table-scroll-wrapper table {
+      min-width: 500px;
+    }
+    
+    /* Mobile-Friendly Improvements */
+    @media (max-width: 768px) {
+      .quiz-timer {
+        top: auto;
+        bottom: 70px;
+        right: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+      .file-selector,
+      .mode-selector {
+        padding: 1rem;
+      }
+      .file-item {
+        padding: 0.875rem;
+      }
+      .mode-option {
+        padding: 1rem;
+      }
+      .mode-option i {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* ── Header topic-name overflow fix (mobile) ── */
+    @media (max-width: 768px) {
+      .header-content {
+        overflow: hidden;
+        min-width: 0;
+      }
+      #pageTitle {
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        display: block;
+      }
+      .header-subtitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-size: 0.8rem;
+      }
+    }
+    @media (max-width: 480px) {
+      #pageTitle {
+        font-size: 1.05rem;
+      }
+    }
+
+    /* ================================================================
+       DARK MODE — all inline elements in quiz.html
+       ================================================================ */
+    html:not([data-theme="light"]) .file-selector {
+      background: #1a1d2e;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    html:not([data-theme="light"]) .file-selector h3 { color: #e2e8f0; }
+
+    html:not([data-theme="light"]) .file-item {
+      background: #1e2235;
+      border-color: #2a3045;
+    }
+    html:not([data-theme="light"]) .file-item:hover {
+      background: #252b3b;
+      border-color: #3182ce;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    html:not([data-theme="light"]) .file-item .file-name { color: #e2e8f0; }
+    html:not([data-theme="light"]) .file-item .file-meta { color: #8892a4; }
+    html:not([data-theme="light"]) .file-item .fa-chevron-right { color: #4a5568 !important; }
+
+    html:not([data-theme="light"]) .mode-modal { background: #1a1d2e; box-shadow: 0 20px 50px rgba(0,0,0,0.6); }
+    html:not([data-theme="light"]) .mode-modal-header { border-bottom-color: #2a3045; }
+    html:not([data-theme="light"]) .mode-modal-header h3 { color: #e2e8f0; }
+    html:not([data-theme="light"]) .mode-modal-header .close-modal-btn { background: #252b3b; color: #94a3b8; }
+    html:not([data-theme="light"]) .mode-modal-header .close-modal-btn:hover { background: #2a3045; color: #e2e8f0; }
+
+    html:not([data-theme="light"]) .mode-modal-body { background: #1a1d2e; }
+    html:not([data-theme="light"]) .mode-modal-topic { background: #252b3b; }
+    html:not([data-theme="light"]) .mode-modal-topic span { color: #e2e8f0; }
+
+    html:not([data-theme="light"]) .mode-modal-option { border-color: #2a3045; }
+    html:not([data-theme="light"]) .mode-modal-option:hover { border-color: #3182ce; background: #1e2235; }
+    html:not([data-theme="light"]) .mode-modal-option.selected { border-color: #3182ce; background: #1a2844; }
+    html:not([data-theme="light"]) .mode-modal-option .mode-title { color: #e2e8f0; }
+    html:not([data-theme="light"]) .mode-modal-option .mode-desc { color: #8892a4; }
+    html:not([data-theme="light"]) .mode-modal-option .mode-check { border-color: #2a3045; }
+
+    html:not([data-theme="light"]) .mode-modal-footer { background: #1a1d2e; }
+
+    html:not([data-theme="light"]) .resume-info-card { background: #1a2844; border-color: #1e3a5f; }
+    html:not([data-theme="light"]) .resume-info-card .resume-headline { color: #63b3ed; }
+    html:not([data-theme="light"]) .resume-info-card .resume-meta { color: #8892a4; }
+
+    html:not([data-theme="light"]) .resume-fresh-btn {
+      background: #1e2235; color: #94a3b8; border-color: #2a3045;
+    }
+    html:not([data-theme="light"]) .resume-fresh-btn:hover { background: #252b3b; border-color: #3182ce; }
+
+    html:not([data-theme="light"]) .global-search-bar { background: #1a1d2e; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+    html:not([data-theme="light"]) .global-search-bar i { color: #8892a4; }
+    html:not([data-theme="light"]) .global-search-bar input { color: #e2e8f0; }
+    html:not([data-theme="light"]) .global-search-bar input::placeholder { color: #4a5568; }
+
+    html:not([data-theme="light"]) .search-results { background: #1a1d2e; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    html:not([data-theme="light"]) .search-result-item { border-bottom-color: #2a3045; color: #e2e8f0; }
+    html:not([data-theme="light"]) .search-result-item:hover { background: #252b3b; }
+    html:not([data-theme="light"]) .search-result-item .result-title { color: #e2e8f0; }
+    html:not([data-theme="light"]) .search-result-item .result-path { color: #8892a4; }
+
+    html:not([data-theme="light"]) .ask-doubt-section { border-top-color: #2a3045; }
+    html:not([data-theme="light"]) .doubt-key-prompt { background: #1e1530; border-color: #4a3880; }
+    html:not([data-theme="light"]) .doubt-key-prompt p { color: #b794f4; }
+    html:not([data-theme="light"]) .doubt-key-prompt small { color: #9f7aea; }
+    html:not([data-theme="light"]) .doubt-key-prompt a { color: #b794f4; }
+    html:not([data-theme="light"]) .doubt-key-input-row input { background: #252b3b; color: #e2e8f0; border-color: #4a3880; }
+    html:not([data-theme="light"]) .doubt-ui textarea { background: #1e2235; color: #e2e8f0; border-color: #2a3045; }
+    html:not([data-theme="light"]) .doubt-answer { background: #1e1530; border-color: #4a3880; color: #e2e8f0; }
+    html:not([data-theme="light"]) .doubt-answer-label { color: #b794f4; }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+  <script>
+    if (!accessControl.initProtectedPage()) {
+      throw new Error('Access denied - redirecting to index.html');
+    }
+  </script>
+  
+  <header>
+    <div class="header-content">
+      <button onclick="goBackToFolder()" class="back-button" style="display: block;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 id="pageTitle">Quiz</h1>
+      <p class="header-subtitle" id="quizInfo">Loading...</p>
+    </div>
+  </header>
+
+  <main>
+    <div id="loading" class="loading-container">
+      <div class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading questions...</p>
+      </div>
+    </div>
+
+    <div id="file-selector-container" class="brain-main-container" style="display: none;">
+      <!-- Global Search -->
+      <div class="global-search-container">
+        <div class="global-search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search Q-Bank topics across all platforms..." id="globalSearchInput" oninput="handleGlobalSearch(event)">
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+      
+      <div class="file-selector">
+        <h3><i class="fas fa-file-alt"></i> Select a Topic</h3>
+        <div class="file-list" id="fileList"></div>
+      </div>
+    </div>
+    
+    <!-- Mode Selection Modal (also used for resume prompt) -->
+    <div class="mode-modal-overlay" id="modeModalOverlay" onclick="closeModeModal(event)">
+      <div class="mode-modal" onclick="event.stopPropagation()">
+        <div class="mode-modal-header">
+          <h3 id="modalHeaderTitle"><i class="fas fa-play-circle"></i> Start Quiz</h3>
+          <button class="close-modal-btn" onclick="closeModeModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mode-modal-body">
+          <div class="mode-modal-topic">
+            <i class="fas fa-file-alt"></i>
+            <span id="modalTopicName">Topic Name</span>
+          </div>
+
+          <!-- Page 1: Resume Prompt (shown if saved progress exists) -->
+          <div class="resume-page" id="resumePage">
+            <div class="resume-info-card">
+              <div class="resume-icon"><i class="fas fa-bookmark"></i></div>
+              <div class="resume-details">
+                <div class="resume-headline">You have saved progress!</div>
+                <div class="resume-meta" id="resumeMetaText">Loading...</div>
+              </div>
+            </div>
+            <div class="resume-action-btns">
+              <button class="resume-continue-btn" onclick="resumeFromSaved()">
+                <i class="fas fa-play"></i>
+                <span id="resumeContinueBtnText">Continue from Q1</span>
+              </button>
+              <button class="resume-fresh-btn" onclick="showModePage()">
+                <i class="fas fa-redo"></i> Start from Beginning
+              </button>
+            </div>
+          </div>
+
+          <!-- Page 2: Mode Selection -->
+          <div class="mode-page" id="modePage">
+            <div class="mode-modal-options">
+              <div class="mode-modal-option normal-mode selected" data-mode="normal" onclick="selectModalMode('normal')">
+                <div class="mode-icon">
+                  <i class="fas fa-book-open"></i>
+                </div>
+                <div class="mode-content">
+                  <div class="mode-title">Normal Mode</div>
+                  <div class="mode-desc">See answers immediately with explanations</div>
+                </div>
+                <div class="mode-check">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+              <div class="mode-modal-option test-mode" data-mode="test" onclick="selectModalMode('test')">
+                <div class="mode-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="mode-content">
+                  <div class="mode-title">Test Mode</div>
+                  <div class="mode-desc">Timed quiz (1 min/question). Results at the end</div>
+                </div>
+                <div class="mode-check">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mode-modal-footer" id="modeModalFooter">
+          <button class="mode-modal-start-btn" onclick="startQuizFromModal()">
+            <i class="fas fa-play"></i> Start Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="quiz-container" class="quiz-container" style="display: none;">
+      <div class="question-container">
+        <div class="quiz-progress" onclick="showQuestionNavigation()" style="cursor: pointer; user-select: none;" title="Click to navigate">
+          <span id="current-question">1</span> / <span id="total-questions">1</span>
+        </div>
+
+        <!-- Timer + Bookmark row (top-right of question card) -->
+        <div class="quiz-top-right">
+          <div id="quizTimer" class="quiz-timer" style="display: none;">
+            <i class="fas fa-clock"></i>
+            <span id="timerDisplay">00:00</span>
+          </div>
+          <button id="bookmark-btn" onclick="toggleBookmark()" class="bookmark-question-btn" title="Bookmark this question">
+            <i class="far fa-bookmark"></i>
+          </button>
+        </div>
+        
+        <div id="question-text" class="question-text question-html-content"></div>
+        <div id="question-image" class="question-image" style="display: none;">
+          <img id="question-img" src="" alt="Question Image">
+        </div>
+        
+        <div id="options-container" class="options-container"></div>
+      </div>
+
+      <div id="explanation-container" class="explanation-container" style="display: none;">
+        <h3>Explanation:</h3>
+        <div id="explanation-text" class="explanation-html-content"></div>
+        <div id="explanation-image" class="explanation-image" style="display: none;">
+          <img id="explanation-img" src="" alt="Explanation Image">
+        </div>
+        <!-- Ask Doubt Section -->
+        <div id="ask-doubt-section" class="ask-doubt-section" style="display:none;">
+          <button class="ask-doubt-toggle" onclick="toggleDoubtPanel()">
+            <i class="fas fa-robot"></i> Ask AI Doubt
+          </button>
+          <div id="ask-doubt-body" class="ask-doubt-body">
+            <!-- Filled dynamically by initDoubtSection() -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="error-container" class="error-container" style="display: none;">
+      <div class="error-content">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h3>No Questions Available</h3>
+        <p id="error-message">No questions found for this content.</p>
+        <button onclick="goBackToFolder()" class="action-btn">Go Back</button>
+      </div>
+    </div>
+
+    <div id="questionNavPopup" class="question-nav-popup" style="display: none;">
+      <div class="popup-overlay" onclick="closeQuestionNavigation()"></div>
+      <div class="popup-content">
+        <div class="popup-header">
+          <h3>Navigate to Question</h3>
+          <button onclick="closeQuestionNavigation()" class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="question-nav-grid" id="questionNavGrid"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentQuiz = null;
+    let currentQuestionIndex = 0;
+    let userAnswers = [];
+    let score = 0;
+    let folderName = '';
+    let folderPath = '';
+    let pathString = '';
+    let availableFiles = [];
+    let selectedFileIndex = -1;
+    let quizMode = 'normal'; // 'normal' or 'test'
+    let timerInterval = null;
+    let totalTimeSeconds = 0;
+    let remainingTimeSeconds = 0;
+    let allManifestFiles = []; // For global search
+    let _supabase = null;
+    let currentUserId = null;
+    let currentProgressKey = ''; // localStorage key for this quiz's progress
+    let savedProgressData = null; // holds loaded progress if any
+    let currentFilePath = ''; // path to the active quiz JSON file
+    let isReviewMode = false; // true when launched from results analysis
+
+    // ── Supabase init ──────────────────────────────────────────────
+    async function initSupabase() {
+      try {
+        const { createClient } = supabase;
+        _supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+        const { data: { session } } = await _supabase.auth.getSession();
+        if (session && session.user) {
+          currentUserId = session.user.id;
+        }
+      } catch (e) {
+        console.log('Supabase init skipped:', e.message);
+      }
+    }
+
+    // ── Progress key (unique per file) ─────────────────────────────
+    function buildProgressKey(filePath) {
+      return 'qp_' + btoa(unescape(encodeURIComponent(filePath))).slice(0, 60);
+    }
+
+    // ── Save progress ─────────────────────────────────────────────
+    async function saveProgress() {
+      if (!currentQuiz || !currentProgressKey) return;
+      const data = {
+        currentQuestionIndex,
+        userAnswers,
+        quizMode,
+        totalQuestions: currentQuiz.length,
+        savedAt: new Date().toISOString()
+      };
+      // Always save locally first
+      try { localStorage.setItem(currentProgressKey, JSON.stringify(data)); } catch(e) {}
+      // Also sync to Supabase if logged in
+      if (_supabase && currentUserId) {
+        try {
+          await _supabase.from('quiz_progress').upsert({
+            user_id: currentUserId,
+            file_path: currentProgressKey,
+            current_question_index: currentQuestionIndex,
+            user_answers: userAnswers,
+            quiz_mode: quizMode,
+            total_questions: currentQuiz.length,
+            updated_at: new Date().toISOString()
+          }, { onConflict: 'user_id,file_path' });
+        } catch(e) {}
+      }
+    }
+
+    // ── Load progress ─────────────────────────────────────────────
+    async function loadProgress(progressKey) {
+      // Try Supabase first (cross-device)
+      if (_supabase && currentUserId) {
+        try {
+          const { data, error } = await _supabase
+            .from('quiz_progress')
+            .select('*')
+            .eq('user_id', currentUserId)
+            .eq('file_path', progressKey)
+            .single();
+          if (!error && data) {
+            return {
+              currentQuestionIndex: data.current_question_index,
+              userAnswers: data.user_answers,
+              quizMode: data.quiz_mode,
+              totalQuestions: data.total_questions,
+              savedAt: data.updated_at
+            };
+          }
+        } catch(e) {}
+      }
+      // Fall back to localStorage
+      try {
+        const raw = localStorage.getItem(progressKey);
+        if (raw) return JSON.parse(raw);
+      } catch(e) {}
+      return null;
+    }
+
+    // ── Clear progress (on quiz completion) ───────────────────────
+    async function clearProgress() {
+      if (!currentProgressKey) return;
+      try { localStorage.removeItem(currentProgressKey); } catch(e) {}
+      if (_supabase && currentUserId) {
+        try {
+          await _supabase.from('quiz_progress')
+            .delete()
+            .eq('user_id', currentUserId)
+            .eq('file_path', currentProgressKey);
+        } catch(e) {}
+      }
+      savedProgressData = null;
+    }
+
+    // ── Modal page helpers ────────────────────────────────────────
+    function showResumePage(progress) {
+      document.getElementById('resumePage').classList.add('active');
+      document.getElementById('modePage').classList.remove('active');
+      document.getElementById('modeModalFooter').style.display = 'none';
+      document.getElementById('modalHeaderTitle').innerHTML = '<i class="fas fa-bookmark"></i> Resume Quiz';
+      const qNum = (progress.currentQuestionIndex || 0) + 1;
+      const total = progress.totalQuestions || '?';
+      const mode = progress.quizMode === 'test' ? 'Test Mode' : 'Normal Mode';
+      const savedDate = progress.savedAt ? new Date(progress.savedAt).toLocaleDateString() : '';
+      document.getElementById('resumeMetaText').innerHTML =
+        `Paused at <strong>Question ${qNum} of ${total}</strong> &nbsp;·&nbsp; ${mode}${savedDate ? '<br>Saved on ' + savedDate : ''}`;
+      document.getElementById('resumeContinueBtnText').textContent = `Continue from Q${qNum}`;
+    }
+
+    function showModePage() {
+      document.getElementById('resumePage').classList.remove('active');
+      document.getElementById('modePage').classList.add('active');
+      document.getElementById('modeModalFooter').style.display = 'block';
+      document.getElementById('modalHeaderTitle').innerHTML = '<i class="fas fa-play-circle"></i> Start Quiz';
+      selectModalMode('normal');
+    }
+
+    // ── Resume from saved progress ────────────────────────────────
+    async function resumeFromSaved() {
+      if (!savedProgressData || selectedFileIndex < 0) return;
+      closeModeModal();
+      cleanupQuizState();
+      document.getElementById('file-selector-container').style.display = 'none';
+      document.getElementById('loading').style.display = 'block';
+
+      const fileInfo = availableFiles[selectedFileIndex];
+      currentFilePath = fileInfo.path; // track for bookmarks
+      try {
+        const response = await fetch(fileInfo.path);
+        if (!response.ok) throw new Error('Failed to load file');
+        const data = await response.json();
+        // Process quiz data normally first
+        let questions = [];
+        if (data.questions && Array.isArray(data.questions)) {
+          questions = data.questions.map(normalizeQuestion);
+        } else if (Array.isArray(data)) {
+          questions = data.map(normalizeQuestion);
+        }
+        if (questions.length === 0) { showError('No questions found.'); return; }
+
+        currentQuiz = questions;
+        quizMode = savedProgressData.quizMode || 'normal';
+        userAnswers = Array.isArray(savedProgressData.userAnswers)
+          ? [...savedProgressData.userAnswers]
+          : new Array(questions.length).fill(null);
+        // Clamp index
+        currentQuestionIndex = Math.min(
+          savedProgressData.currentQuestionIndex || 0,
+          questions.length - 1
+        );
+        score = userAnswers.filter((a, i) => a !== null && a === currentQuiz[i].correct_answer).length;
+
+        loadQuestion();
+        if (quizMode === 'test') startTimer();
+      } catch(e) {
+        showError('Could not restore saved progress. Please start fresh.');
+      }
+    }
+    
+    // Cleanup function to reset quiz state
+    function cleanupQuizState() {
+      stopTimer();
+      document.getElementById('quiz-container').classList.remove('test-mode-active');
+      document.body.classList.remove('test-mode-active');
+      document.getElementById('explanation-container').style.display = 'none';
+    }
+    
+    // Timer functions
+    function startTimer() {
+      if (quizMode !== 'test' || !currentQuiz) return;
+      
+      // Clear any existing timer first
+      stopTimer();
+      
+      // Compute fresh duration: 1 minute per question
+      totalTimeSeconds = currentQuiz.length * 60;
+      remainingTimeSeconds = totalTimeSeconds;
+      
+      document.getElementById('quizTimer').style.display = 'flex';
+      document.getElementById('quiz-container').classList.add('test-mode-active');
+      document.body.classList.add('test-mode-active');
+      
+      // Ensure explanation container is hidden in test mode
+      document.getElementById('explanation-container').style.display = 'none';
+      
+      updateTimerDisplay();
+      
+      timerInterval = setInterval(() => {
+        remainingTimeSeconds--;
+        updateTimerDisplay();
+        
+        if (remainingTimeSeconds <= 0) {
+          stopTimer();
+          // Show time's up alert and auto-submit
+          alert('Time is up! Submitting your answers.');
+          finishTestMode();
+        }
+      }, 1000);
+    }
+    
+    function updateTimerDisplay() {
+      const minutes = Math.floor(remainingTimeSeconds / 60);
+      const seconds = remainingTimeSeconds % 60;
+      const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      document.getElementById('timerDisplay').textContent = display;
+      
+      const timerEl = document.getElementById('quizTimer');
+      const percentRemaining = remainingTimeSeconds / totalTimeSeconds;
+      
+      timerEl.classList.remove('warning', 'danger');
+      if (percentRemaining <= 0.1) {
+        timerEl.classList.add('danger');
+      } else if (percentRemaining <= 0.25) {
+        timerEl.classList.add('warning');
+      }
+    }
+    
+    function stopTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+      document.getElementById('quizTimer').style.display = 'none';
+      // Reset timer state
+      remainingTimeSeconds = 0;
+      totalTimeSeconds = 0;
+    }
+    
+    function finishTestMode() {
+      stopTimer();
+      document.getElementById('quiz-container').classList.remove('test-mode-active');
+      document.body.classList.remove('test-mode-active');
+      
+      // Calculate final score from test mode answers (only at submission)
+      if (currentQuiz) {
+        score = 0;
+        currentQuiz.forEach((q, index) => {
+          if (userAnswers[index] === q.correct_answer) {
+            score++;
+          }
+        });
+      }
+      showQuizResults(); // clearProgress() is called inside showQuizResults
+    }
+    
+    // Global Search - loads ONLY qbank entries (no articles)
+    async function loadManifestForSearch() {
+      try {
+        const response = await fetch('./file-manifest.json');
+        if (response.ok) {
+          const manifest = await response.json();
+          allManifestFiles = [];
+          
+          if (manifest.folders) {
+            for (const [folderPath, folderData] of Object.entries(manifest.folders)) {
+              const type = folderData.type || 'quiz';
+              if (type === 'article') continue; // skip articles
+              if (folderData.files && Array.isArray(folderData.files)) {
+                const platform = folderPath.split('/')[0];
+                folderData.files.forEach(fileName => {
+                  allManifestFiles.push({
+                    name: fileName.replace('.json', '').replace(/_/g, ' '),
+                    path: `./${folderPath}/${fileName}`,
+                    folderPath: folderPath,
+                    platform: platform,
+                    type: 'quiz'
+                  });
+                });
+              }
+            }
+          }
+        }
+      } catch (e) {
+        console.log('Could not load manifest for search');
+      }
+    }
+    
+    function handleGlobalSearch(event) {
+      const query = event.target.value.toLowerCase().trim();
+      const resultsContainer = document.getElementById('searchResults');
+      
+      if (query.length < 2) {
+        resultsContainer.classList.remove('active');
+        return;
+      }
+      
+      const filtered = allManifestFiles.filter(file => 
+        file.name.toLowerCase().includes(query) ||
+        file.folderPath.toLowerCase().includes(query)
+      );
+      
+      if (filtered.length === 0) {
+        resultsContainer.innerHTML = '<div class="search-result-item"><span>No results found</span></div>';
+        resultsContainer.classList.add('active');
+        return;
+      }
+      
+      resultsContainer.innerHTML = filtered.slice(0, 15).map(file => `
+        <div class="search-result-item" onclick="openSearchResult('${encodeURIComponent(file.path)}', '${encodeURIComponent(file.folderPath)}', '${encodeURIComponent(file.name)}')">
+          <i class="fas fa-question-circle" style="color:#2c5282;flex-shrink:0;"></i>
+          <div style="flex:1;min-width:0;">
+            <div class="result-title">${file.name}</div>
+            <div class="result-path">${file.folderPath}</div>
+          </div>
+          <span style="font-size:0.72rem;background:#ebf4ff;color:#2c5282;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;">${file.platform}</span>
+        </div>
+      `).join('');
+      resultsContainer.classList.add('active');
+    }
+    
+    function openSearchResult(encodedPath, encodedFolderPath, encodedName) {
+      const filePath = decodeURIComponent(encodedPath);
+      const folderPath = decodeURIComponent(encodedFolderPath);
+      const fileName = decodeURIComponent(encodedName);
+      // Pass directFile so quiz.html opens the mode modal immediately
+      window.location.href = `quiz.html?directFile=${encodeURIComponent(filePath)}&folderPath=${encodeURIComponent(folderPath)}&folder=${encodeURIComponent(fileName)}`;
+    }
+
+    function goBackToFolder() {
+      if (pathString) {
+        const pathParts = pathString.split(',');
+        pathParts.pop();
+        if (pathParts.length > 0) {
+          window.location.href = `browse.html?path=${pathParts.join(',')}`;
+        } else {
+          window.location.href = 'index.html';
+        }
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    async function loadQuiz() {
+      // Init Supabase for progress sync
+      await initSupabase();
+
+      const urlParams = new URLSearchParams(window.location.search);
+      folderName = urlParams.get('folder') || '';
+      folderPath = urlParams.get('folderPath') || '';
+      pathString = urlParams.get('path') || '';
+      const directFile = urlParams.get('directFile') || '';
+
+      // ── Review mode: launched from results analysis bar ──────────
+      if (urlParams.get('reviewMode') === 'true') {
+        const reviewIndex = parseInt(urlParams.get('reviewIndex') || '0', 10);
+        loadReviewMode(reviewIndex, urlParams);
+        return;
+      }
+
+      if (!folderName && !directFile) {
+        showError('No content folder specified.');
+        return;
+      }
+
+      document.getElementById('pageTitle').textContent = folderName || 'Quiz';
+      document.getElementById('quizInfo').textContent = 'Nextpulse Quiz';
+
+      // directFile mode: came from search result - open mode modal (with resume check)
+      if (directFile) {
+        document.getElementById('loading').style.display = 'none';
+        const fileDisplayName = folderName || directFile.split('/').pop().replace('.json', '').replace(/_/g, ' ');
+        availableFiles = [{ name: fileDisplayName + '.json', path: directFile }];
+        // openModeModal checks for saved progress and shows resume or mode page
+        await openModeModal(0);
+        return;
+      }
+
+      await findAndLoadQuestions();
+    }
+
+    async function findAndLoadQuestions() {
+      let foundFiles = [];
+      
+      try {
+        const manifestResponse = await fetch('./file-manifest.json');
+        if (manifestResponse.ok) {
+          const manifest = await manifestResponse.json();
+          
+          if (manifest.folders && folderPath && manifest.folders[folderPath]) {
+            const folderData = manifest.folders[folderPath];
+            foundFiles = folderData.files.map(fileName => ({
+              name: fileName.replace('.json', '').replace(/_/g, ' '),
+              path: `./${folderPath}/${fileName}`
+            }));
+          }
+        }
+      } catch (e) {
+        console.log('Manifest not found, trying direct file access');
+      }
+
+      if (foundFiles.length === 0) {
+        const possiblePaths = [];
+        if (folderPath) {
+          possiblePaths.push(`./${folderPath}/`);
+        }
+        const sanitizedName = folderName.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_-]/g, '');
+        possiblePaths.push(`./${folderName}/`);
+        possiblePaths.push(`./${sanitizedName}/`);
+        
+        for (const basePath of possiblePaths) {
+          try {
+            const files = await scanForJsonFiles(basePath);
+            if (files.length > 0) {
+              foundFiles = files;
+              break;
+            }
+          } catch (e) {
+            console.log(`No files found at ${basePath}`);
+          }
+        }
+      }
+
+      if (foundFiles.length === 0) {
+        const directJsonPaths = [
+          `./${folderPath}.json`,
+          `./${folderName}.json`,
+          `./${folderName.replace(/\s+/g, '_')}.json`
+        ];
+        
+        for (const jsonPath of directJsonPaths) {
+          try {
+            const response = await fetch(jsonPath);
+            if (response.ok) {
+              const displayName = folderName || jsonPath.split('/').pop().replace('.json', '').replace(/_/g, ' ');
+              availableFiles = [{ name: displayName, path: jsonPath }];
+              document.getElementById('loading').style.display = 'none';
+              await openModeModal(0);
+              return;
+            }
+          } catch (e) {
+            console.log(`No file at ${jsonPath}`);
+          }
+        }
+      }
+
+      if (foundFiles.length === 1) {
+        availableFiles = foundFiles;
+        document.getElementById('loading').style.display = 'none';
+        await openModeModal(0);
+      } else if (foundFiles.length > 1) {
+        showFileSelector(foundFiles);
+      } else {
+        showError(`No quiz files found in folder: ${folderName}. Please upload JSON files to the ${folderPath || folderName} folder and update the file-manifest.json.`);
+      }
+    }
+
+    async function scanForJsonFiles(basePath) {
+      const files = [];
+      
+      const knownFiles = await getKnownJsonFiles(basePath);
+      
+      for (const fileName of knownFiles) {
+        try {
+          const fullPath = basePath + fileName;
+          const response = await fetch(fullPath, { method: 'HEAD' });
+          if (response.ok) {
+            files.push({ name: fileName, path: fullPath });
+          }
+        } catch (e) {
+        }
+      }
+      
+      return files;
+    }
+
+    async function getKnownJsonFiles(basePath) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const folderPath = urlParams.get('folderPath') || '';
+      
+      const testFiles = [];
+      
+      const commonPatterns = [
+        'questions.json',
+        'quiz.json',
+        'data.json',
+        'index.json'
+      ];
+      
+      const pathParts = folderPath.split('/');
+      const lastFolder = pathParts[pathParts.length - 1];
+      if (lastFolder) {
+        testFiles.push(`${lastFolder}.json`);
+        testFiles.push(`${lastFolder.replace(/\s+/g, '_')}.json`);
+      }
+      
+      return [...testFiles, ...commonPatterns];
+    }
+
+    function showFileSelector(files) {
+      availableFiles = files;
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('file-selector-container').style.display = 'block';
+      
+      // Load manifest for global search
+      loadManifestForSearch();
+      
+      const fileList = document.getElementById('fileList');
+      fileList.innerHTML = files.map((file, index) => {
+        const displayName = file.name.replace(/.json$/, '').replace(/_/g, ' ');
+        return `
+          <div class="file-item" data-index="${index}" onclick="openModeModal(${index})">
+            <div class="file-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="file-info">
+              <div class="file-name">${displayName}</div>
+              <div class="file-meta">Quiz</div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:#a0aec0;font-size:0.85rem;flex-shrink:0;"></i>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Modal Functions
+    async function openModeModal(index) {
+      selectedFileIndex = index;
+      const file = availableFiles[index];
+      const displayName = file.name.replace(/.json$/, '').replace(/_/g, ' ');
+      
+      document.getElementById('modalTopicName').textContent = displayName;
+      document.getElementById('modeModalOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      // Build a progress key based on the file path
+      currentProgressKey = buildProgressKey(file.path);
+
+      // Check for saved progress
+      savedProgressData = await loadProgress(currentProgressKey);
+      
+      if (savedProgressData && savedProgressData.currentQuestionIndex > 0) {
+        // Has meaningful progress — show resume page
+        showResumePage(savedProgressData);
+      } else {
+        // No progress or just at Q1 — show mode selection
+        savedProgressData = null;
+        showModePage();
+      }
+    }
+    
+    function closeModeModal(event) {
+      // If event exists and target is not the overlay, don't close
+      if (event && event.target !== event.currentTarget) return;
+      
+      document.getElementById('modeModalOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    
+    function selectModalMode(mode) {
+      quizMode = mode;
+      document.querySelectorAll('.mode-modal-option').forEach(el => {
+        el.classList.toggle('selected', el.dataset.mode === mode);
+      });
+    }
+    
+    async function startQuizFromModal() {
+      if (selectedFileIndex < 0 || !availableFiles[selectedFileIndex]) return;
+      
+      // Close modal
+      closeModeModal();
+      
+      // Clear any old saved progress (user chose "Start Fresh")
+      await clearProgress();
+      
+      // Cleanup any previous quiz state before starting
+      cleanupQuizState();
+      
+      document.getElementById('file-selector-container').style.display = 'none';
+      document.getElementById('loading').style.display = 'block';
+      
+      await loadQuizFromFile(availableFiles[selectedFileIndex]);
+    }
+
+    async function loadQuizFromFile(fileInfo) {
+      currentFilePath = fileInfo.path; // track active file for bookmarks
+      try {
+        const response = await fetch(fileInfo.path);
+        if (!response.ok) {
+          throw new Error('Failed to load file');
+        }
+        const data = await response.json();
+        await processQuizData(data, fileInfo.path);
+      } catch (error) {
+        console.error('Error loading quiz:', error);
+        showError(`Failed to load quiz from: ${fileInfo.name}`);
+      }
+    }
+
+    async function processQuizData(data, sourcePath) {
+      let questions = [];
+      
+      if (data.questions && Array.isArray(data.questions)) {
+        questions = data.questions.map(normalizeQuestion);
+      } else if (Array.isArray(data)) {
+        questions = data.map(normalizeQuestion);
+      } else {
+        throw new Error('Invalid quiz data format');
+      }
+
+      if (questions.length === 0) {
+        showError('No questions found in the quiz file.');
+        return;
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const startAt = parseInt(urlParams.get('startAt') || '0', 10);
+      const singleQ = urlParams.get('singleQ') === '1';
+
+      if (singleQ && !isNaN(startAt) && startAt >= 0 && startAt < questions.length) {
+        // Bookmark mode: show ONLY the bookmarked question as Q1 of 1
+        currentQuiz = [questions[startAt]];
+        currentQuestionIndex = 0;
+        // Show back-to-bookmarks button
+        const backBtn = document.querySelector('.back-button') || document.getElementById('backBtn');
+        if (backBtn) {
+          backBtn.onclick = function() { window.location.href = 'bookmarks.html'; };
+          backBtn.title = 'Back to Bookmarks';
+        }
+        // Update subtitle to show original question info
+        const subtitle = document.querySelector('.header-subtitle');
+        if (subtitle) subtitle.textContent = 'From Bookmarks';
+      } else {
+        currentQuiz = questions;
+        currentQuestionIndex = (!isNaN(startAt) && startAt > 0 && startAt < questions.length) ? startAt : 0;
+      }
+
+      userAnswers = new Array(currentQuiz.length).fill(null);
+      score = 0;
+      loadQuestion();
+      
+      // Start timer if in test mode
+      if (quizMode === 'test') {
+        startTimer();
+      }
+    }
+
+    function normalizeQuestion(q, index) {
+      // Old Cerebellum/BTR format: choices array with numeric ids + correct_choice_id
+      if (q.choices && Array.isArray(q.choices)) {
+        const options = {};
+        const optionLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+        let correctAnswer = '';
+        
+        q.choices.forEach((choice, i) => {
+          const label = optionLabels[i] || String(i + 1);
+          options[label] = stripHtml(choice.text || choice);
+          
+          if (choice.id === q.correct_choice_id) {
+            correctAnswer = label;
+          }
+        });
+        
+        return {
+          q_no: q.id || index + 1,
+          question: stripHtml(q.text || q.question || ''),
+          options: options,
+          correct_answer: correctAnswer,
+          explanation: q.solution || q.explanation || '',
+          image: extractImageFromHtml(q.text) || (q.question_images && q.question_images[0]) || null,
+          explanation_image: extractImageFromHtml(q.solution) || (q.explanation_images && q.explanation_images[0]) || null,
+          tags: q.tags || [],
+          difficulty: q.difficulty_level || 'intermediate'
+        };
+      }
+
+      // CoreBTR format: options is an array of {id: "A"/"B"/"C"/"D", text, is_correct}
+      if (q.options && Array.isArray(q.options)) {
+        const options = {};
+        let correctAnswer = '';
+        q.options.forEach(opt => {
+          options[opt.id] = opt.text || '';
+          if (opt.is_correct) correctAnswer = opt.id;
+        });
+        return {
+          q_no: q.id || index + 1,
+          question: q.text || '',
+          options: options,
+          correct_answer: correctAnswer,
+          explanation: q.explanation || '',
+          image: (q.images && q.images[0] && q.images[0].url) || null,
+          explanation_image: null,
+          tags: q.tags || [],
+          difficulty: q.difficulty || 'intermediate'
+        };
+      }
+      
+      // Plain object format: options is already a {A: text, B: text} map
+      if (q.options && typeof q.options === 'object') {
+        return {
+          q_no: q.q_no || q.id || index + 1,
+          question: q.question || '',
+          options: q.options,
+          correct_answer: q.correct_answer || '',
+          explanation: q.explanation || '',
+          image: q.image || null,
+          explanation_image: q.explanation_image || null,
+          tags: q.tags || [],
+          difficulty: q.difficulty || 'intermediate'
+        };
+      }
+      
+      return q;
+    }
+
+    function stripHtml(html) {
+      if (!html) return '';
+      const temp = document.createElement('div');
+      temp.innerHTML = html;
+      return temp.textContent || temp.innerText || '';
+    }
+
+    function extractImageFromHtml(html) {
+      if (!html) return null;
+      const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+      return match ? match[1] : null;
+    }
+
+    function showError(message) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('quiz-container').style.display = 'none';
+      document.getElementById('file-selector-container').style.display = 'none';
+      document.getElementById('error-container').style.display = 'block';
+      document.getElementById('error-message').textContent = message;
+    }
+
+    function loadQuestion() {
+      if (!currentQuiz || currentQuiz.length === 0) return;
+
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('file-selector-container').style.display = 'none';
+      document.getElementById('quiz-container').style.display = 'block';
+      document.getElementById('error-container').style.display = 'none';
+
+      const question = currentQuiz[currentQuestionIndex];
+      document.getElementById('current-question').textContent = currentQuestionIndex + 1;
+      document.getElementById('total-questions').textContent = currentQuiz.length;
+      
+      document.getElementById('question-text').innerHTML = `<strong>Q${question.q_no || (currentQuestionIndex + 1)}.</strong> ${question.question}`;
+
+      const questionImageDiv = document.getElementById('question-image');
+      const questionImg = document.getElementById('question-img');
+      if (question.image) {
+        questionImg.src = question.image;
+        questionImageDiv.style.display = 'block';
+      } else {
+        questionImageDiv.style.display = 'none';
+      }
+
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      if (question.options) {
+        Object.entries(question.options).forEach(([key, value]) => {
+          const button = document.createElement('button');
+          button.className = 'option-btn';
+          
+          // In test mode, show previously selected answer
+          if (quizMode === 'test' && userAnswers[currentQuestionIndex] === key) {
+            button.classList.add('selected-test');
+          }
+          
+          button.onclick = () => selectOption(key, button);
+          button.innerHTML = `
+            <span class="option-label">${key}</span>
+            <span>${value}</span>
+          `;
+          optionsContainer.appendChild(button);
+        });
+      }
+
+      // Always hide explanation when loading a new question
+      document.getElementById('explanation-container').style.display = 'none';
+      
+      // Defensive: Ensure test mode classes are maintained during quiz
+      if (quizMode === 'test') {
+        document.body.classList.add('test-mode-active');
+        document.getElementById('quiz-container').classList.add('test-mode-active');
+      }
+      
+      updateBookmarkButton();
+      
+      // In test mode, add navigation buttons
+      if (quizMode === 'test') {
+        addTestModeNavigation();
+      }
+    }
+    
+    function addTestModeNavigation() {
+      const quizContainer = document.getElementById('quiz-container');
+      
+      // Remove existing navigation if any
+      const existingNav = quizContainer.querySelector('.test-mode-nav');
+      if (existingNav) existingNav.remove();
+      
+      const navContainer = document.createElement('div');
+      navContainer.className = 'test-mode-nav';
+      navContainer.style.cssText = 'display: flex; justify-content: space-between; gap: 1rem; padding: 1rem; margin-top: 1rem;';
+      
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'nav-btn secondary';
+      prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i> Previous';
+      prevBtn.style.cssText = 'flex: 1; padding: 0.75rem 1rem; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; background: #e2e8f0; color: #2d3748;';
+      prevBtn.disabled = currentQuestionIndex === 0;
+      prevBtn.onclick = () => {
+        if (currentQuestionIndex > 0) {
+          currentQuestionIndex--;
+          saveProgress();
+          loadQuestion();
+        }
+      };
+      
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'nav-btn primary';
+      nextBtn.style.cssText = 'flex: 1; padding: 0.75rem 1rem; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; background: #2c5282; color: white;';
+      
+      if (currentQuestionIndex === currentQuiz.length - 1) {
+        nextBtn.innerHTML = '<i class="fas fa-check"></i> Finish Quiz';
+        nextBtn.onclick = finishTestMode;
+      } else {
+        nextBtn.innerHTML = 'Next <i class="fas fa-chevron-right"></i>';
+        nextBtn.onclick = () => {
+          currentQuestionIndex++;
+          saveProgress();
+          loadQuestion();
+        };
+      }
+      
+      navContainer.appendChild(prevBtn);
+      navContainer.appendChild(nextBtn);
+      quizContainer.appendChild(navContainer);
+    }
+
+    function selectOption(selectedOption, buttonElement) {
+      const question = currentQuiz[currentQuestionIndex];
+      const correctAnswer = question.correct_answer;
+      
+      userAnswers[currentQuestionIndex] = selectedOption;
+      
+      if (quizMode === 'test') {
+        // Test mode: just mark selection visually, NO SCORING until end
+        const allOptions = document.querySelectorAll('.option-btn');
+        allOptions.forEach(btn => {
+          btn.classList.remove('selected-test');
+          const optionLabel = btn.querySelector('.option-label').textContent;
+          if (optionLabel === selectedOption) {
+            btn.classList.add('selected-test');
+          }
+        });
+        
+        // Ensure explanation remains hidden in test mode
+        document.getElementById('explanation-container').style.display = 'none';
+        
+        // Save progress after each answer in test mode
+        saveProgress();
+        
+        // Do NOT auto-navigate, let user use navigation buttons
+        // This allows them to review/change answers
+        return; // Exit early - no scoring in test mode during selection
+      }
+      
+      // Normal mode only: show correct/incorrect and explanation
+      const allOptions = document.querySelectorAll('.option-btn');
+      allOptions.forEach(btn => {
+        btn.disabled = true;
+        btn.onclick = null;
+      });
+      
+      allOptions.forEach(btn => {
+        const optionLabel = btn.querySelector('.option-label').textContent;
+        if (optionLabel === correctAnswer) {
+          btn.classList.add('correct');
+        } else if (optionLabel === selectedOption && selectedOption !== correctAnswer) {
+          btn.classList.add('incorrect');
+        }
+      });
+      
+      // Normal mode scoring
+      if (selectedOption === correctAnswer) {
+        score++;
+      }
+      
+      // Save progress in normal mode too
+      saveProgress();
+      
+      setTimeout(() => {
+        showExplanation();
+      }, 800);
+    }
+
+    function showExplanation() {
+      const question = currentQuiz[currentQuestionIndex];
+      const explanationContainer = document.getElementById('explanation-container');
+      const explanationText = document.getElementById('explanation-text');
+      const explanationImageDiv = document.getElementById('explanation-image');
+      const explanationImg = document.getElementById('explanation-img');
+      
+      explanationText.innerHTML = question.explanation || 'No explanation available.';
+      
+      if (question.explanation_image) {
+        explanationImg.src = question.explanation_image;
+        explanationImageDiv.style.display = 'block';
+      } else {
+        explanationImageDiv.style.display = 'none';
+      }
+      
+      explanationContainer.style.display = 'block';
+
+      // Show Ask Doubt section and initialise it for this question
+      initDoubtSection(question);
+      
+      const existingButtons = explanationContainer.querySelectorAll('.next-btn, .finish-btn');
+      existingButtons.forEach(btn => btn.remove());
+      
+      const buttonContainer = document.createElement('div');
+      buttonContainer.style.cssText = 'text-align: center; margin-top: 2rem;';
+      
+      const nextBtn = document.createElement('button');
+      nextBtn.className = currentQuestionIndex === currentQuiz.length - 1 ? 'finish-btn' : 'next-btn';
+      nextBtn.style.cssText = 'background: #16a34a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: all 0.3s ease;';
+      nextBtn.innerHTML = currentQuestionIndex === currentQuiz.length - 1 ? 
+        '<i class="fas fa-check"></i> Finish Quiz' : 
+        '<i class="fas fa-arrow-right"></i> Next Question';
+      nextBtn.onclick = nextQuestion;
+      
+      buttonContainer.appendChild(nextBtn);
+      explanationContainer.appendChild(buttonContainer);
+    }
+
+    // ── Ask Doubt Feature ─────────────────────────────────────────
+    let _doubtQuestion = null; // holds current question context
+
+    function initDoubtSection(question) {
+      _doubtQuestion = question;
+      const section = document.getElementById('ask-doubt-section');
+      const body = document.getElementById('ask-doubt-body');
+      // Reset state
+      section.style.display = 'block';
+      body.classList.remove('open');
+      body.innerHTML = '';
+    }
+
+    function toggleDoubtPanel() {
+      const body = document.getElementById('ask-doubt-body');
+      if (body.classList.contains('open')) {
+        body.classList.remove('open');
+        return;
+      }
+      body.classList.add('open');
+      if (!body.innerHTML.trim()) {
+        renderDoubtBody(body);
+      }
+    }
+
+    function renderDoubtBody(body) {
+      const key = localStorage.getItem('groqApiKey') || '';
+      if (!key) {
+        // Show key prompt
+        body.innerHTML = `
+          <div class="doubt-key-prompt">
+            <p><i class="fas fa-key"></i> &nbsp;Activate AI Doubt Solver</p>
+            <span>Enter a free Groq API key to ask AI questions about this topic.</span>
+            <div class="doubt-key-input-row">
+              <input type="text" id="doubt-key-field" placeholder="gsk_..." autocomplete="off">
+              <button class="doubt-key-save-btn" onclick="saveDoubtApiKey()">Activate</button>
+            </div>
+            <small>🔗 <a href="../Aiquiz/groq.html" target="_blank">Click here to get a free API key</a></small>
+          </div>
+        `;
+      } else {
+        // Show doubt UI
+        body.innerHTML = `
+          <div class="doubt-ui">
+            <textarea id="doubt-textarea" placeholder="Type your doubt about this question or topic…"></textarea>
+            <div class="doubt-ui-footer">
+              <small onclick="clearGroqKey()">⚙ Change API key</small>
+              <button class="ask-doubt-btn" id="ask-doubt-btn" onclick="submitDoubt()">
+                <i class="fas fa-paper-plane"></i> Ask AI
+              </button>
+            </div>
+            <div class="doubt-answer" id="doubt-answer">
+              <div class="doubt-answer-label"><i class="fas fa-robot"></i> AI Answer</div>
+              <div id="doubt-answer-text"></div>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function saveDoubtApiKey() {
+      const field = document.getElementById('doubt-key-field');
+      const key = (field ? field.value : '').trim();
+      if (!key) return;
+      localStorage.setItem('groqApiKey', key);
+      const body = document.getElementById('ask-doubt-body');
+      renderDoubtBody(body);
+    }
+
+    function clearGroqKey() {
+      if (!confirm('Remove your Groq API key?')) return;
+      localStorage.removeItem('groqApiKey');
+      const body = document.getElementById('ask-doubt-body');
+      renderDoubtBody(body);
+    }
+
+    async function submitDoubt() {
+      const textarea = document.getElementById('doubt-textarea');
+      const doubt = (textarea ? textarea.value : '').trim();
+      if (!doubt) { textarea.focus(); return; }
+
+      const btn = document.getElementById('ask-doubt-btn');
+      const answerBox = document.getElementById('doubt-answer');
+      const answerText = document.getElementById('doubt-answer-text');
+      const key = localStorage.getItem('groqApiKey') || '';
+      if (!key) { renderDoubtBody(document.getElementById('ask-doubt-body')); return; }
+
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Thinking…';
+      answerBox.classList.remove('visible');
+      answerText.innerHTML = '';
+
+      // Build question context from current question
+      const q = _doubtQuestion;
+      const div = document.createElement('div');
+      div.innerHTML = (q ? q.explanation || '' : '');
+      const explanationText = div.textContent.slice(0, 600);
+
+      const prompt = `A NEET PG student has a doubt about this medical question.
+
+Question: ${q ? (q.question_text || ((() => { const d = document.createElement('div'); d.innerHTML = q.text || ''; return d.textContent; })()) || '') : ''}
+
+Explanation context: ${explanationText}
+
+Student's doubt: "${doubt}"
+
+Please provide a clear, educational, and concise answer. Use simple language. If relevant, mention key concepts for NEET PG.`;
+
+      try {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${key}`
+          },
+          body: JSON.stringify({
+            model: 'llama-3.1-8b-instant',
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.7,
+            max_tokens: 1000
+          })
+        });
+
+        if (!response.ok) {
+          const err = await response.json().catch(() => ({}));
+          if (response.status === 401) {
+            answerText.innerHTML = '<span style="color:#e53e3e;">Invalid API key. Please check your key.</span>';
+          } else {
+            answerText.innerHTML = `<span style="color:#e53e3e;">Error: ${err.error?.message || 'API request failed.'}</span>`;
+          }
+        } else {
+          const data = await response.json();
+          const raw = data.choices?.[0]?.message?.content || 'No response.';
+          answerText.innerHTML = raw
+            .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+            .replace(/\n/g, '<br>');
+        }
+      } catch(e) {
+        answerText.innerHTML = '<span style="color:#e53e3e;">Network error. Please check your connection.</span>';
+      }
+
+      answerBox.classList.add('visible');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Ask AI';
+    }
+
+    // ── Review Mode — launched from Results analysis bar ─────────
+    function loadReviewMode(startIndex, urlParams) {
+      const saved = localStorage.getItem('quizResultsData');
+      if (!saved) {
+        showError('No review data found. Please go back to results.');
+        return;
+      }
+      let data;
+      try { data = JSON.parse(saved); } catch(e) {
+        showError('Could not load review data.');
+        return;
+      }
+      if (!data.questions || !data.questions.length) {
+        showError('No questions in review data.');
+        return;
+      }
+
+      isReviewMode = true;
+      currentQuiz = data.questions;
+      userAnswers = data.userAnswers || new Array(data.questions.length).fill(null);
+      folderName = data.subject || urlParams.get('folder') || '';
+      pathString = data.path || urlParams.get('path') || '';
+      score = data.score || 0;
+      quizMode = 'normal';
+      currentQuestionIndex = Math.min(Math.max(startIndex, 0), currentQuiz.length - 1);
+
+      // Build results.html back URL
+      const resultsBackUrl = `results.html?folder=${encodeURIComponent(folderName)}&path=${encodeURIComponent(pathString)}&score=${data.score || 0}&total=${data.total || currentQuiz.length}`;
+
+      // Update page header
+      document.getElementById('pageTitle').textContent = `Review: ${folderName}`;
+      document.getElementById('quizInfo').textContent = 'Analysis Review';
+
+      // Wire back button → results page (scrolls to last reviewed question)
+      const backBtn = document.querySelector('.back-button');
+      if (backBtn) {
+        backBtn.onclick = () => { window.location.href = resultsBackUrl + '&scrollTo=' + currentQuestionIndex; };
+        backBtn.title = 'Back to Analysis';
+      }
+
+      // Hide loading, show quiz
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('quiz-container').style.display = 'block';
+
+      // Load question then show review state
+      loadQuestion();
+      setTimeout(() => showReviewAnswers(resultsBackUrl), 0);
+    }
+
+    function showReviewAnswers(resultsBackUrl) {
+      if (!isReviewMode || !currentQuiz) return;
+      const question = currentQuiz[currentQuestionIndex];
+      const userAnswer = userAnswers[currentQuestionIndex];
+
+      // Highlight options
+      const allOptions = document.querySelectorAll('.option-btn');
+      allOptions.forEach(btn => {
+        btn.disabled = true;
+        btn.onclick = null;
+        const label = btn.querySelector('.option-label')?.textContent;
+        if (label === question.correct_answer) {
+          btn.classList.add('correct');
+        } else if (label === userAnswer && userAnswer !== question.correct_answer) {
+          btn.classList.add('incorrect');
+        }
+      });
+
+      // Show explanation with review navigation
+      const explanationContainer = document.getElementById('explanation-container');
+      const explanationText = document.getElementById('explanation-text');
+      const explanationImageDiv = document.getElementById('explanation-image');
+      const explanationImg = document.getElementById('explanation-img');
+
+      explanationText.innerHTML = question.explanation || 'No explanation available.';
+      if (question.explanation_image) {
+        explanationImg.src = question.explanation_image;
+        explanationImageDiv.style.display = 'block';
+      } else {
+        explanationImageDiv.style.display = 'none';
+      }
+      explanationContainer.style.display = 'block';
+      initDoubtSection(question);
+
+      // Remove leftover next/finish/review nav buttons and their containers
+      explanationContainer.querySelectorAll('.next-btn, .finish-btn, .review-nav-btn').forEach(b => b.remove());
+      // Remove any wrapper divs that only contained those buttons
+      explanationContainer.querySelectorAll('div').forEach(d => {
+        if (d.children.length === 0 && d.style.textAlign === 'center') d.remove();
+      });
+      const navDiv = document.createElement('div');
+      navDiv.style.cssText = 'display:flex;gap:0.75rem;margin-top:1.5rem;flex-wrap:wrap;';
+
+      if (currentQuestionIndex > 0) {
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'review-nav-btn';
+        prevBtn.style.cssText = 'background:#e2e8f0;color:#2d3748;border:none;padding:0.75rem 1.25rem;border-radius:8px;cursor:pointer;font-size:0.95rem;font-weight:600;display:flex;align-items:center;gap:0.5rem;';
+        prevBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Prev Question';
+        prevBtn.onclick = () => {
+          currentQuestionIndex--;
+          loadQuestion();
+          setTimeout(() => showReviewAnswers(resultsBackUrl), 0);
+        };
+        navDiv.appendChild(prevBtn);
+      }
+
+      if (currentQuestionIndex < currentQuiz.length - 1) {
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'review-nav-btn';
+        nextBtn.style.cssText = 'background:#2c5282;color:white;border:none;padding:0.75rem 1.25rem;border-radius:8px;cursor:pointer;font-size:0.95rem;font-weight:600;display:flex;align-items:center;gap:0.5rem;';
+        nextBtn.innerHTML = 'Next Question <i class="fas fa-arrow-right"></i>';
+        nextBtn.onclick = () => {
+          currentQuestionIndex++;
+          loadQuestion();
+          setTimeout(() => showReviewAnswers(resultsBackUrl), 0);
+        };
+        navDiv.appendChild(nextBtn);
+      }
+
+      // Back to analysis always visible
+      const backBtn = document.createElement('button');
+      backBtn.className = 'review-nav-btn';
+      backBtn.style.cssText = 'background:#f0fff4;color:#38a169;border:1.5px solid #9ae6b4;padding:0.75rem 1.25rem;border-radius:8px;cursor:pointer;font-size:0.95rem;font-weight:600;display:flex;align-items:center;gap:0.5rem;margin-left:auto;';
+      backBtn.innerHTML = '<i class="fas fa-list"></i> Back to Analysis';
+      backBtn.onclick = () => { window.location.href = resultsBackUrl + '&scrollTo=' + currentQuestionIndex; };
+      navDiv.appendChild(backBtn);
+
+      explanationContainer.appendChild(navDiv);
+
+      // Scroll to explanation
+      setTimeout(() => explanationContainer.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+
+    function nextQuestion() {
+      if (isReviewMode) return; // Review mode uses its own navigation
+      if (currentQuestionIndex < currentQuiz.length - 1) {
+        currentQuestionIndex++;
+        saveProgress(); // Save position as user advances
+        loadQuestion();
+      } else {
+        showQuizResults();
+      }
+    }
+
+    function showQuizResults() {
+      clearProgress(); // Quiz finished — wipe saved state
+      const resultsData = {
+        questions: currentQuiz,
+        userAnswers: userAnswers,
+        score: score,
+        total: currentQuiz.length,
+        platform: 'brain',
+        subject: folderName,
+        chapter: folderName,
+        path: pathString
+      };
+      localStorage.setItem('quizResultsData', JSON.stringify(resultsData));
+      
+      window.location.href = `results.html?folder=${encodeURIComponent(folderName)}&path=${pathString}&score=${score}&total=${currentQuiz.length}`;
+    }
+
+    async function toggleBookmark() {
+      if (!currentQuiz || !currentFilePath) return;
+
+      const question = currentQuiz[currentQuestionIndex];
+      const platform = currentFilePath.replace(/^\.\//, '').split('/')[0] || 'Unknown';
+      const bookmarkId = `${currentFilePath}::${currentQuestionIndex}`;
+
+      // Load existing lightweight bookmarks
+      let bookmarks = [];
+      try {
+        const raw = localStorage.getItem('qbkmarks');
+        if (raw) bookmarks = JSON.parse(raw);
+      } catch(e) {}
+
+      const existingIndex = bookmarks.findIndex(b => b.id === bookmarkId);
+      const bookmarkIcon = document.getElementById('bookmark-btn').querySelector('i');
+
+      if (existingIndex > -1) {
+        // Remove bookmark
+        bookmarks.splice(existingIndex, 1);
+        bookmarkIcon.className = 'far fa-bookmark';
+        if (_supabase && currentUserId) {
+          try {
+            await _supabase.from('quiz_bookmarks').delete()
+              .eq('user_id', currentUserId)
+              .eq('file_path', currentFilePath)
+              .eq('question_index', currentQuestionIndex);
+          } catch(e) {}
+        }
+      } else {
+        // Add bookmark — lightweight pathway only, no question text/images
+        const ref = {
+          id: bookmarkId,
+          filePath: currentFilePath,
+          questionIndex: currentQuestionIndex,
+          qNo: question.q_no || (currentQuestionIndex + 1),
+          platform: platform,
+          folderPath: folderPath,
+          topicName: folderName,
+          bookmarkedAt: new Date().toISOString()
+        };
+        bookmarks.push(ref);
+        bookmarkIcon.className = 'fas fa-bookmark';
+        if (_supabase && currentUserId) {
+          try {
+            await _supabase.from('quiz_bookmarks').upsert({
+              user_id: currentUserId,
+              file_path: currentFilePath,
+              question_index: currentQuestionIndex,
+              q_no: String(ref.qNo),
+              platform: platform,
+              folder_path: folderPath,
+              topic_name: folderName,
+              bookmarked_at: ref.bookmarkedAt
+            }, { onConflict: 'user_id,file_path,question_index' });
+          } catch(e) {}
+        }
+      }
+
+      try { localStorage.setItem('qbkmarks', JSON.stringify(bookmarks)); } catch(e) {}
+    }
+
+    function updateBookmarkButton() {
+      if (!currentQuiz || !currentFilePath) return;
+      const bookmarkId = `${currentFilePath}::${currentQuestionIndex}`;
+      let bookmarks = [];
+      try {
+        const raw = localStorage.getItem('qbkmarks');
+        if (raw) bookmarks = JSON.parse(raw);
+      } catch(e) {}
+      const isBookmarked = bookmarks.some(b => b.id === bookmarkId);
+      const bookmarkIcon = document.getElementById('bookmark-btn').querySelector('i');
+      bookmarkIcon.className = isBookmarked ? 'fas fa-bookmark' : 'far fa-bookmark';
+    }
+
+    function showQuestionNavigation() {
+      if (!currentQuiz || currentQuiz.length === 0) return;
+      
+      const popup = document.getElementById('questionNavPopup');
+      const grid = document.getElementById('questionNavGrid');
+      
+      grid.innerHTML = '';
+      
+      for (let i = 0; i < currentQuiz.length; i++) {
+        const questionBtn = document.createElement('button');
+        questionBtn.className = 'question-nav-btn';
+        questionBtn.textContent = i + 1;
+        
+        if (i === currentQuestionIndex) {
+          questionBtn.classList.add('current');
+        }
+        
+        if (userAnswers[i] !== null) {
+          questionBtn.classList.add('answered');
+        }
+        
+        questionBtn.onclick = () => {
+          navigateToQuestion(i);
+          closeQuestionNavigation();
+        };
+        
+        grid.appendChild(questionBtn);
+      }
+      
+      popup.style.display = 'flex';
+    }
+
+    function closeQuestionNavigation() {
+      document.getElementById('questionNavPopup').style.display = 'none';
+    }
+
+    function navigateToQuestion(questionIndex) {
+      if (questionIndex >= 0 && questionIndex < currentQuiz.length) {
+        currentQuestionIndex = questionIndex;
+        loadQuestion();
+      }
+    }
+
+    window.addEventListener('load', loadQuiz);
+  </script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

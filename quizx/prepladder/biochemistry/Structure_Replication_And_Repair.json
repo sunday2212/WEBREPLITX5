@@ -1,0 +1,408 @@
+{
+  "chapter": "Structure Replication And Repair",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following is not a requirement for the activity of DNA polymerase during DNA replication? ′ -OH group I",
+      "options": {
+        "A": "A primer with a free 3",
+        "B": "A single-stranded DNA template",
+        "C": "Free ribonucleoside triphosphates (rNTPs)",
+        "D": "A divalent cation cofactor, typically Mg²"
+      },
+      "correct_answer": "C",
+      "explanation": "requires deoxynucleoside triphosphates (dNTPs), not ribonucleoside triphosphates, which are used in RNA synthesis. DNA Polymerase requirements & function : Synthesis Direction : DNA polymerases synthesize DNA in the 5 ′ to 3 ′ direction, adding nucleotides to the 3 ′ end of a DNA strand. Primer Requirement : DNA polymerases require a short RNA primer, synthesized by primase, to initiate DNA synthesis. Primer Binding : The 3 ′ -hydroxyl group of the RNA primer initiates the nucleophilic attack on the first deoxynucleoside triphosphate (dNTP). Template Requirement : A single-stranded DNA template is necessary to guide the order of dNTP addition. (Option B ruled out) dNTPs : The four dNTPs required for DNA synthesis are dATP, dGTP, dCTP, and dTTP. Cofactor : DNA polymerases require a divalent cation cofactor, typically Mg² I . (Option D ruled out) Properties : Chain elongation, processivity, and proofreading ensure DNA replication and repair accuracy and efficiency. A primer with a free 3 ′ -OH group (Option A): DNA polymerase cannot initiate DNA synthesis de novo and requires a primer to provide a free 3 ′ -OH group to which it can add nucleotides. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 372, 373, 374, 387 Role of Mg2+",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 2,
+      "question": "A scientist observes the process of DNA replication in a human stem cell. He takes a sample of double-stranded DNA from the cell and studies it separately. He finds that the total amount of adenine in the sample is 24%. From the given information, what percentage of cytosine is present in the sample?",
+      "options": {
+        "A": "52%",
+        "B": "24%",
+        "C": "30%",
+        "D": "26%"
+      },
+      "correct_answer": "D",
+      "explanation": "(T) Cytosine (C) pairs with Guanine (G) Given Adenine (A) = 24% , this means Thymine (T) = 24% as well. The total percentage of A + T = 24% + 24% = 48% . Since DNA is double-stranded , the remaining percentage must be from Cytosine (C) and Guanine (G) . C + G = 100% - 48% = 52% . As C and G are equal in amount , we divide: C = G = 52% ÷ 2 = 26% . . Reference: Harper 32nd edition. Pg. 349",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q2_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 3,
+      "question": "What is the wavelength at which nucleic acids show maximum absorbance of UV light?",
+      "options": {
+        "A": "260 nm",
+        "B": "280 nm",
+        "C": "400 nm",
+        "D": "340 nm"
+      },
+      "correct_answer": "A",
+      "explanation": "aromatic nitrogenous bases (adenine, guanine, cytosine, thymine, and uracil). The purines and pyrimidines contain conjugated double bonds that strongly absorb UV light at this wavelength. Protein contamination is assessed using the 260/280 nm ratio since proteins absorb maximally at 280 nm due to aromatic amino acids (tryptophan and tyrosine). UV Absorption of Biomolecules: Molecule Maximum Absorbance (nm) Reason DNA/RNA 260 nm Nitrogenous bases (purines & pyrimidines) Proteins 280 nm (Option B ruled out) Aromatic amino acids (tryptophan & tyrosine) NADH/NADPH 340 nm (Option D ruled out) Reduced nicotinamide ring Hemoglobin 400 nm (Option C ruled out) Heme group Reference: Harper 32nd edition. Pg. 331, 21, 318, 66",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 4,
+      "question": "What sequence is repeated in human telomeres?",
+      "options": {
+        "A": "5'-TTAAGG-3'",
+        "B": "5'-GGTACC-3'",
+        "C": "5'-TTAGGG-3'",
+        "D": "5'-AGCTAG-3'"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) 5'-TTAGGG-3' Explanation: Human telomeres consist of repetitive nucleotide sequences that protect chromosome ends from degradation. The repeated sequence in human telomeres is 5'-TTAGGG-3' , which is tandemly repeated thousands of times. Telomerase, a ribonucleoprotein enzyme, extends the telomeres using an RNA template to prevent progressive shortening. Telomere Structure and Function: Feature Description Sequence 5'-TTAGGG-3' repeat Function Protects chromosome ends from degradation and fusion Telomerase Activity Adds repeats using an RNA template Shortening Effect Telomeres shorten with each cell division due to incomplete lagging strand synthesis Associated Diseases Premature telomere shortening is linked to aging and diseases like dyskeratosis congenita and aplastic anemia Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 365",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 5,
+      "question": "Which of the following is not caused by a defective NER mechanism?",
+      "options": {
+        "A": "Xeroderma pigmentosum (XP)",
+        "B": "Cockayne syndrome (CS)",
+        "C": "Trichothiodystrophy (TTD)",
+        "D": "Werner syndrome (WS)"
+      },
+      "correct_answer": "D",
+      "explanation": "Nucleotide Excision Repair (NER): Required when chemical damage to a segment occurs. Removes bulky DNA lesions, such as pyrimidine dimers and chemical adducts. Excises a variable number of nucleotides (typically 24-32 bases), followed by DNA synthesis to fill the gap. UV-Induced Damage: UV radiation causes the covalent joining of adjacent pyrimidines (usually thymine dimers). These bulky DNA lesions impede DNA replication and transcription. Recognition and Excision: In bacteria: UvrABC proteins (UvrABC excinuclease) recognize thymine dimers. The damaged strand is cleaved on both the 5 ′ and 3 ′ sides. A short oligonucleotide containing the dimer is excised. DNA polymerase I fills the gap, and DNA ligase seals it. Nucleotide Excision Repair in Humans: Repairs UV-induced damage and other bulky lesions throughout the cell cycle. Transcription-coupled repair (a type of NER) specifically targets lesions blocking RNA polymerase. Defects in NER cause: (Options A, B & C ruled out) Xeroderma pigmentosum (XP) Cockayne syndrome (CS) Trichothiodystrophy (TTD) Xeroderma Pigmentosum (XP): Pyrimidine dimers form in human skin cells exposed to unfiltered sunlight. In XP, the inability to repair UV-induced DNA damage leads to: Accumulation of mutations. Increased risk of early and multiple skin cancers. XP results from defects in genes coding for global genome NER proteins , while CS affects transcription-coupled NER proteins .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 6,
+      "question": "What is the role of UvrABC exinuclease in nucleotide excision repair (NER)?",
+      "options": {
+        "A": "It fills in the gap with new nucleotides",
+        "B": "It recognizes and excises damaged DNA segments.",
+        "C": "It seals the DNA strand after repair.",
+        "D": "It unwinds the DNA double helix."
+      },
+      "correct_answer": "B",
+      "explanation": "DNA segments during nucleotide excision repair Nucleotide excision repair: Nucleotide excision repair is required when chemical damage to a segment occurs. 30 bases are removed and then the correct bases are added UV-Induced Damage: Exposure to UV radiation can cause the covalent joining of adjacent pyrimidines (usually thymine dimers), creating bulky DNA lesions that impede DNA replication. Recognition and Excision: In bacteria, UvrABC proteins (uvrABC excinuclease) recognize these dimers and cleave the damaged strand on both the 5 ′ and 3 ′ sides of the lesion. A short oligonucleotide containing the dimer is excised, leaving a gap in the DNA strand. The gap is subsequently filled in by DNA polymerase I and sealed by DNA ligase. Nucleotide Excision Repair in Humans: A related nucleotide excision repair (NER) pathway exists in humans, addressing UV-induced damage encountered during DNA synthesis. Transcription-coupled repair, a type of NER, specifically targets lesions that obstruct RNA synthesis. Clinical application: Pyrimidine dimers can form in human skin cells exposed to unfiltered sunlight. In xeroderma pigmentosum (XP), a genetic disorder, the inability to repair UV-induced DNA damage leads to the accumulation of mutations and a heightened risk of developing early and multiple skin cancers. XP results from defects in genes coding for proteins necessary for NER of UV damage It fills in the gap with new nucleotides (Option A): While filling in the gap is part of NER, it is the role of DNA polymerase I. It seals the DNA strand after repair. (Option C): Sealing the DNA strand is the function of DNA ligase. It unwinds the DNA double helix (Option D): DNA helicase is responsible for unwinding the DNA double helix.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 7,
+      "question": "Mismatch repair defects are mostly associated with which of the following?",
+      "options": {
+        "A": "Hereditary Nonpolyposis Colon Cancer (HNPCC)",
+        "B": "Familial Adenomatous Polyposis (FAP)",
+        "C": "Li-Fraumeni syndrome",
+        "D": "Retinoblastoma"
+      },
+      "correct_answer": "A",
+      "explanation": "Hereditary Nonpolyposis Colon Cancer (HNPCC), also known as Lynch syndrome . HNPCC is caused by mutations in MMR genes, including MLH1, MSH2, MSH6, and PMS2 . Individuals with HNPCC have a higher risk of colorectal cancer, endometrial cancer, and other malignancies . Mismatch Repair and Cancer Association Syndrome Genetic Defect Cancer Risk HNPCC (Lynch Syndrome) MMR gene mutations (MLH1, MSH2, MSH6, PMS2) Colorectal, endometrial, ovarian, gastric cancers FAP (Familial Adenomatous Polyposis) (Option B ruled out) APC gene mutation Multiple colorectal adenomas, colon cancer Li-Fraumeni Syndrome (Option C ruled out) TP53 mutation Breast, brain, sarcomas, leukemias Retinoblastoma (Option D ruled out) RB1 gene mutation Retinoblastoma, osteosarcoma Reference: Vasudevan 7th edition, pg 585 Lippincott 7th edition, 1217,1219 Harper Biochemistry Pg 715 Hereditary cancer syndromes",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 8,
+      "question": "Why are methylases important in the mismatch repair mechanism in prokaryotes like E. coli? daughter strand.",
+      "options": {
+        "A": "They add methyl groups to the newly synthesized DNA strand, marking it for repair.",
+        "B": "They methylate the parental DNA strand, allowing the Mut proteins to distinguish it from the",
+        "C": "They remove mismatched bases from the DNA strand.",
+        "D": "They act as exonucleases during the repair process."
+      },
+      "correct_answer": "B",
+      "explanation": "distinguish it from the daughter strand. parental strand as correct and target the unmethylated daughter strand for repair. Mismatch Repair: The defect occurs as a copying error, 1-5 bases unpaired Repair is done by strand cutting and exonuclease digestion Mismatched Strand Identification: MMR corrects errors that escape proofreading during DNA synthesis, significantly reducing the error rate. In prokaryotes like E. coli, Mut proteins identify and correct mismatches by distinguishing between the newly synthesized (unmethylated) and the parental (methylated) strands. GATC sequences in DNA are methylated on adenine by DNA adenine methylase (DAM), with the parental strand being methylated and the newly synthesized strand remaining unmethylated shortly after replication. The methylated parental strand is considered correct, guiding the repair of the unmethylated daughter strand. Repair Procedure: Once the mismatched strand is identified, an endonuclease nicks the strand, and an exonuclease removes the mismatched nucleotides along with additional nucleotides at the 5 ′ and 3 ′ ends. The gap is then filled using the sister strand as a template by DNA polymerase, typically DNA pol III in prokaryotes. DNA ligase seals the nick, completing the repair process. They add methyl groups to the newly synthesized DNA strand, marking it for repair. (Option A) : Methylation occurs on the parental strand, not the newly synthesized strand, to mark it as the correct template They remove mismatched bases from the DNA strand. (Option C): Methylases do not remove mismatched bases; they add methyl groups to the DNA. They act as exonucleases during the repair process. (Option D): Exonucleases remove mismatched nucleotides, but methylases do not have this function. Reference: Lippincott 7th edition, 1217,1219 Vasudevan 7th edition Pg 583",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 9,
+      "question": "Which of the following enzymes helps remove the defective base during base excision repair (BER)?",
+      "options": {
+        "A": "DNA polymerase I",
+        "B": "DNA ligase",
+        "C": "DNA glycosylase",
+        "D": "AP endonuclease"
+      },
+      "correct_answer": "C",
+      "explanation": "deoxyribose-phosphate backbone, initiating the base excision repair process. Base excision repair A defect occurs as a result of chemical damage to a single base The defective base is removed by N-glycosylase and a new base is added Steps: Abnormal Base Removal: BER targets abnormal bases, such as uracil, which can form from the deamination of cytosine or the incorporation of dUTP instead of dTTP during DNA synthesis. Specific DNA glycosylases recognize and cleave these abnormal bases from the deoxyribose-phosphate backbone, creating an apyrimidinic (AP) site if a pyrimidine is removed or an apurinic (AP) site if a purine is removed. AP Site Recognition and Repair: Specific AP endonucleases recognize the missing base and initiate repair by cutting just the 5 ′ side of the AP site. (Option D ruled out) A deoxyribose phosphate lyase removes the single, base-free sugar phosphate residue. DNA polymerase I fills in the gap with the correct nucleotide. (Option A ruled out) DNA ligase seals the nick, completing the repair process. (Option B ruled out) Reference: Lippincott 7th edition, 1224,1226 Vasudevan 7th edition Pg 583",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 10,
+      "question": "A 6-year-old child presents with recurrent respiratory infections and poor growth despite a normal diet. Genetic testing reveals Cystic fibrosis. What type of mutation causes cystic fibrosis?",
+      "options": {
+        "A": "Phenotypic heterogeneity",
+        "B": "Pleiotropy",
+        "C": "Allelic heterogeneity",
+        "D": "Heteroplasmy"
+      },
+      "correct_answer": "C",
+      "explanation": "cystic fibrosis, many different mutations in the CFTR gene can cause the disease Phenotypic heterogeneity (Option A ruled out) Pleiotropy (Option B ruled out) Allelic heterogeneity (Option C) Variability in the phenotype that is caused by mutations in the same gene Disorders where multiple, seemingly unrelated organ systems are affected. A single gene is responsible for several distinct and seemingly unrelated phenotypic effects Different mutations (changes) in a single gene cause the same disease or condition Example: Loss-of-function mutations in the RET gene, which encodes a receptor tyrosine kinase, leads to inherited failure of development of colonic ganglia, leading to defective colonic motility and severe chronic constipation (Hirschsprung disease) Example: The allele causing neurofibromatosis type 1 can produce abnormalities of skin pigmentation, neurofibromas of the peripheral nerves, short stature, macrocephaly, skeletal abnormalities, and fits Example: Cystic fibrosis is caused by having one of many different mutations in the CFTR gene. Heteroplasmy (Option D) refers to the presence of more than one type of mitochondrial DNA within a cell or individual. This is not relevant to cystic fibrosis, which is caused by mutations in the nuclear CFTR gene, not mitochondrial DNA Reference: Phenotypic heterogeneity , Hirschsprung disease Pleiotropy Allelic heterogeneity",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 11,
+      "question": "Which of the following statements accurately describes the role of DNA polymerase δ (Pol δ ) in eukaryotic cells?",
+      "options": {
+        "A": "It synthesizes RNA primers necessary for DNA replication.",
+        "B": "It is responsible for leading-strand DNA synthesis.",
+        "C": "It requires a primer and provides proofreading during lagging-strand synthesis.",
+        "D": "It directly repairs damaged DNA by filling in gaps."
+      },
+      "correct_answer": "C",
+      "explanation": "δ (Pol δ ) is the primary enzyme responsible for lagging-strand synthesis in eukaryotic cells. It requires an RNA primer synthesized by DNA polymerase α -primase complex to initiate replication. It has 3 ′ → 5 ′ exonuclease activity , enabling proofreading and ensuring high fidelity during DNA replication. Works in coordination with PCNA (proliferating cell nuclear antigen) for high processivity. Eukaryotic DNA Polymerases and Their Functions DNA Polymerase Function Pol α Synthesizes RNA primers and initiates DNA synthesis Pol δ Lagging-strand synthesis, proofreading, and high-fidelity replication Pol ε Leading-strand synthesis and proofreading Pol β Involved in base excision repair (BER) Pol γ Replicates mitochondrial DNA It synthesizes RNA primers necessary for DNA replication. (Option A) Incorrect because RNA primers are synthesized by DNA polymerase α -primase , not Pol δ . It is responsible for leading-strand DNA synthesis. (Option B) Incorrect because leading-strand synthesis is performed by DNA polymerase ε . It directly repairs damaged DNA by filling in gaps. (Option D) Incorrect because DNA repair is primarily performed by DNA polymerase β (base excision repair) and other polymerases in repair pathways. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 374 DNA polymerase delta in DNA replication",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 12,
+      "question": "Which of the following statements about telomeres and telomerase is correct? ′ end of chromosomes",
+      "options": {
+        "A": "Telomeres prevent chromosome ends from degrading but do not shorten during cell division.",
+        "B": "Telomerase adds repetitive DNA sequences to the 5",
+        "C": "Telomeres are composed of repetitive sequences that help prevent chromosome fusion.",
+        "D": "The shortening of telomeres occurs due to the continuous synthesis of the lagging strand."
+      },
+      "correct_answer": "C",
+      "explanation": "fusion. that protect genetic information and prevent chromosome fusion. Telomerase is an RNA-dependent DNA polymerase that extends the 3 ′ end of chromosomes, not the 5 ′ end . Telomeres shorten with each cell division due to the end-replication problem in the lagging strand, but not solely because of its synthesis. While telomeres prevent chromosome degradation , they do shorten with every replication cycle in somatic cells due to incomplete lagging strand synthesis. Telomeres and Telomerase Feature Description Telomere Composition Repetitive TTAGGG sequences in humans Function Protect chromosome ends from degradation and fusion Shortening Mechanism Due to incomplete lagging strand synthesis in DNA replication Role of Telomerase Extends the 3 ′ end of DNA using an RNA template to compensate for shortening Cell Types with Active Telomerase Germ cells, stem cells, and cancer cells Telomeres prevent chromosome ends from degrading but do not shorten during cell division. (Option A) Incorrect because telomeres do shorten with each cell cycle in somatic cells. Telomerase adds repetitive DNA sequences to the 5 ′ end of chromosomes. (Option B) Incorrect because telomerase extends the 3 ′ end , not the 5 ′ end . The shortening of telomeres occurs due to the continuous synthesis of the lagging strand. (Option D) Incorrect because telomeres shorten due to incomplete lagging strand synthesis, not its continuous synthesis. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 365 Vasudevan, 7th Ed. Pg 585 Telomeres and telomere length",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 13,
+      "question": "Which of the following statements about DNA polymerases in E. coli is true? lagging strand synthesis.",
+      "options": {
+        "A": "DNA Polymerase I is the primary enzyme for DNA synthesis at the replication fork.",
+        "B": "DNA Polymerase II is primarily responsible for gap filling following DNA replication",
+        "C": "DNA Polymerase III has the highest rate of chain elongation and is involved in both leading and",
+        "D": "All three DNA polymerases perform identical functions in DNA synthesis."
+      },
+      "correct_answer": "C",
+      "explanation": "both leading and lagging strand synthesis. Polymerase I (pol I): (Option A ruled out) Involved in proofreading and DNA repair. Plays a role in gap-filling after DNA replication and recombination. DNA Polymerase II (pol II): (Option B ruled out) Primarily functions in proofreading and DNA repair. DNA Polymerase III (pol III): Main enzyme for DNA synthesis at the replication fork. Exhibits the highest chain elongation rate and processivity. Participates in both leading and lagging strand synthesis. High processivity due to association with β subunits of the sliding clamp, enabling it to add a large number of nucleotides (100 to >50,000) before detaching. All three DNA polymerases perform identical functions in DNA synthesis (Option D): They have distinct roles, with pol III being the main replicative polymerase while pol I and II focus on proofreading and repair. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 373, 374",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 14,
+      "question": "Which of the following is not a requirement for DNA replication in eukaryotes?",
+      "options": {
+        "A": "Origin of replication (ori)",
+        "B": "DNA helicase",
+        "C": "RNA primer",
+        "D": "RNA polymerase"
+      },
+      "correct_answer": "D",
+      "explanation": "replication to ensure efficient duplication. DNA helicase : Unwinds the DNA double helix to allow access for replication machinery. RNA primer : Required because DNA polymerase cannot initiate synthesis de novo ; RNA primase lays down short RNA primers for DNA polymerase to extend. RNA polymerase (Option D): Incorrect because RNA polymerase is involved in transcription, not DNA replication . It synthesizes RNA from a DNA template but does not play a role in DNA synthesis. DNA Replication Requirements in Eukaryotes Component Function Origin of Replication (ori) (Option A ruled out) Specific DNA sequences where replication starts DNA Helicase (Option B ruled out) Unwinds the DNA double helix Single-Strand Binding Proteins (SSBPs) Stabilize unwound DNA strands Primase (RNA polymerase type) Synthesizes short RNA primers DNA Polymerase α , δ , and ε Synthesizes new DNA strands Sliding Clamp (PCNA) Enhances DNA polymerase processivity Topoisomerase Relieves supercoiling ahead of the replication fork DNA Ligase Seals Okazaki fragments on the lagging strand RNA polymerase (Option D): Incorrect because it is involved in transcription, not DNA replication . Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 372, 373, 374, 377, 378",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 15,
+      "question": "Which of the following disorders are not caused due to defect in the Non homologous End Joining?",
+      "options": {
+        "A": "Fanconi's anaemia",
+        "B": "Ataxia telengectasia",
+        "C": "Blooms syndrome",
+        "D": "Severe combined immunodeficiency disorder (SCID)"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) Fanconi's anaemia Explanation: Fanconi’s anemia is caused due to a defect in Homologous recombination and not Non homologous end joining. Double-Strand DNA Break Repair Definition: Double-strand DNA breaks (DSBs) are severe forms of DNA damage that can lead to mutations if not properly repaired. They involve the breakage of both DNA strands. Mechanisms : Cells employ specific pathways to repair these breaks, ensuring genetic stability and preventing mutations. Sources of DSBs : These can be caused by ionizing radiation, chemotherapeutic agents, X-rays, and natural genetic recombination processes. Types of Repair: Nonhomologous End Joining (NHEJ) Homologous Recombination (HR) Nonhomologous End Joining (NHEJ) Definition: NHEJ is a DNA repair mechanism that fixes double-strand breaks (DSBs) by directly joining the broken ends without requiring a homologous template. Cell Cycle Phase: Active throughout the entire cell cycle, including G0/G1 phases. Process: Involves a group of proteins that recognize, process, and ligate the ends of the broken DNA. Some DNA may be lost during the process, making it error-prone and potentially mutagenic. Key Proteins: DNA-dependent protein kinase (DNA-PK) and Ku70/80 complex are crucial for recognizing and binding to DNA ends. Clinical Relevance: Defects in NHEJ are associated with an increased risk of cancer and immunodeficiency syndromes due to improper repair and accumulation of mutations Ataxia telangiectasia (Option B) Bloom's syndrome (Option C) Severe Combined Immunodeficiency (SCID) (Option D) Reference: Harper 32nd edition, pg 380-382 Lippincott 7th edition, 1226",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 16,
+      "question": "A 45 y/o woman presents with visual disturbances, including gradual vision loss and difficulty seeing in low light, along with muscle weakness and fatigue. She has a history of early-onset cardiac conduction issues and worsening symptoms over the years. Her family history shows similar symptoms in her mother. What genetic condition best explains her symptoms?",
+      "options": {
+        "A": "Leber’s Hereditary Optic Neuropathy (LHON)",
+        "B": "Myoclonic Epilepsy with Ragged Red Fibers (MERRF)",
+        "C": "Mitochondrial Encephalopathy, Lactic Acidosis, and Stroke-like Episodes (MELAS)",
+        "D": "Leigh’s Syndrome."
+      },
+      "correct_answer": "A",
+      "explanation": "LHON , a mitochondrial disorder affecting the optic nerve. Muscle Weakness and Fatigue : Mitochondrial dysfunction commonly leads to neuromuscular symptoms . Cardiac Conduction Issues : Some cases of LHON involve cardiac arrhythmias , particularly pre-excitation syndromes . Maternal Inheritance : Mitochondrial diseases, including LHON, follow maternal inheritance , consistent with the family history in her mother. Mitochondrial Syndromes and Their Features Syndrome Genetic Defect Key Clinical Features Leber’s Hereditary Optic Neuropathy (LHON) mtDNA mutations in ND1, ND4, ND6 (Complex I subunits) Painless, progressive vision loss , optic atrophy, cardiac conduction defects , maternal inheritance Myoclonic Epilepsy with Ragged Red Fibers (MERRF) (Option B ruled out) mtDNA mutations in MT-TK (tRNA-Lys gene) Myoclonic epilepsy, muscle weakness , ataxia, hearing loss, ragged red fibers on muscle biopsy Mitochondrial Encephalopathy, Lactic Acidosis, and Stroke-like Episodes (MELAS) (Option C ruled out) mtDNA mutations in MT-TL1 (tRNA-Leu gene) Stroke-like episodes, lactic acidosis , seizures, progressive dementia, diabetes, muscle weakness Leigh’s Syndrome (Option D ruled out) mtDNA or nuclear DNA mutations (Complex I or IV defects, NDUFS genes ) Neurodegeneration in infancy , hypotonia, brainstem dysfunction, ataxia, respiratory failure Kearns-Sayre Syndrome (KSS) Large-scale mtDNA deletions Progressive external ophthalmoplegia, pigmentary retinopathy, cardiac conduction defects, muscle weakness Reference: Vasudevan Biochemistry 7th edition. Pg.606",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 17,
+      "question": "Which of the following is a characteristic of mitochondrial DNA (mtDNA)?",
+      "options": {
+        "A": "It is linear and single-stranded",
+        "B": "It has very few non-coding regions and a higher mutation rate compared to nuclear DNA.",
+        "C": "It uses the standard genetic code, including AGA and AGG as codons for arginine (Arg).",
+        "D": "It is composed of linear strands and encodes for all 67 subunits of the respiratory chain."
+      },
+      "correct_answer": "B",
+      "explanation": "nuclear DNA. rate of 5-10 times compared to nuclear DNA. Feature Description Structure Circular, double-stranded; composed of heavy (H) and light (L) chains. (Option A ruled out) Length 16,569 base pairs (bp). Protein-Encoding Subunits Most respiratory chain proteins are encoded by nuclear DNA and imported into mitochondria ( Option D ruled out ) Ribosomal RNAs Encodes 16S (large) and 12S (small) mitochondrial rRNAs. tRNAs Encodes 22 mitochondrial tRNA molecules. Genetic Code Differences UGA typically a stop codon is read as tryptophan (Trp) AGA and AGG: normally arginine (Arg) codons are read as stop codons (Option C ruled out) Untranslated Sequences Very few non-coding regions. Mutation Rate 5-10 times higher than nuclear DNA. Evolutionary Studies Comparisons of mtDNA sequences provide insights into the evolutionary history of primates and other species. Reference: Harper 32nd edition. Pg.369",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 18,
+      "question": "Which histone is least tightly bound to chromatin and can be easily removed with a salt solution?",
+      "options": {
+        "A": "H2A",
+        "B": "H1",
+        "C": "H3",
+        "D": "H4"
+      },
+      "correct_answer": "B",
+      "explanation": "exit sites , helping in higher-order chromatin organization. Least tightly bound to chromatin and can be easily removed with a salt solution , increasing chromatin solubility. Histone Classification and Role Histone Type Function Binding to DNA H1 (Linker Histone) Stabilizes nucleosomes, promotes chromatin compaction Least tightly bound , removable with salt solutions H2A, H2B (Core Histones) (Option A ruled out) Form histone octamer, aid in nucleosome structure Tightly bound H3, H4 (Core Histones) (Options C & D ruled out) Critical for nucleosome stability and gene regulation Tightly bound Reference: Harper 32nd edition. Pg. 361, 363",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q18_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 19,
+      "question": "Which of the following factors can cause the denaturation of DNA? a) Increasing temperature b) Increasing salt concentration c) Decreasing temperature d) DNA with a high A-T base composition e) DNA with a high G-C base composition f) Adding Urea g) Adding Formamide h) Decreasing salt concentration",
+      "options": {
+        "A": "b, c, e, g, h",
+        "B": "c, d, e, h",
+        "C": "a, d, f, g, h",
+        "D": "a, b, e, g"
+      },
+      "correct_answer": "C",
+      "explanation": "Adding Chaotropic agents like Urea and Formamide cause denaturation of DNA. Factors Influencing Denaturation of DNA Increasing Temperature : Higher temperatures cause the double-stranded DNA to separate into single strands. Decreasing Solution Salt Concentrations : Lower salt concentrations reduce the stability of the double-stranded DNA, promoting denaturation. Adding Chaotropic Agents : Agents like urea and formamide form competing hydrogen bonds with nucleotide bases, destabilizing the hydrogen bonding between complementary bases and lowering the melting temperature (T m ). Base Composition : DNA rich in G-C pairs melts at a higher temperature than DNA rich in A-T pairs due to stronger hydrogen bonding and base stacking interactions in G-C pairs. Denaturation: In Vivo Denaturation : In living cells, DNA denaturation and renaturation occur naturally during DNA replication, recombination, repair, and transcription. These processes are mediated by nucleic acid binding proteins, enzymes, and thermal or chemical energy from ATP hydrolysis. Experimental Denaturation : In the laboratory, a combination of increasing temperature, decreasing salt concentration, and adding chaotropic agents is often used to denature DNA, ensuring the strands separate efficiently without causing significant damage to the nucleotides. Reference: Harper 32nd edition. Pg. 350, 351",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 20,
+      "question": "Which of the following statements about the different types of DNA is TRUE?",
+      "options": {
+        "A": "B-DNA has a left-handed helix and a full turn with 12 bases.",
+        "B": "A-DNA forms during dehydration and has grooves of the same dimensions.",
+        "C": "Z-DNA forms under normal physiological conditions and has a right-handed helix",
+        "D": "A-DNA is the predominant form found in physiological conditions and has 11 bases per full turn."
+      },
+      "correct_answer": "B",
+      "explanation": "turn and a more compact structure than B-DNA. Unlike B-DNA, A-DNA has grooves of nearly equal dimensions (major and minor grooves are not as distinct). Explanation of DNA Types: Type of DNA Helical Direction Base Pairs per Turn Grooves Conditions B-DNA Right-handed 10.5 Major groove is wide and deep, minor groove is narrow Physiological conditions A-DNA Right-handed 11 Grooves are of nearly equal dimensions Forms during dehydration Z-DNA Left-handed 12 Major groove is shallow, minor groove is deep Forms under high salt or supercoiling B-DNA has a left-handed helix and a full turn with 12 bases (Option A): Incorrect because B-DNA is right-handed and has 10.5 bases per turn , not 12. Z-DNA forms under normal physiological conditions and has a right-handed helix (Option C): Incorrect because Z-DNA is left-handed and forms under high salt or supercoiling , not in normal conditions. A-DNA is the predominant form found in physiological conditions and has 11 bases per full turn (Option D): Incorrect because B-DNA, not A-DNA, is the predominant form under physiological conditions. Reference: Harper 32nd edition. Pg.350 DNA: Alternative Conformations and Biology - Madame Curie Bioscience Database - NCBI Bookshelf (nih.gov) B-DNA succumbs to form A-DNA in dehydrated conditions",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q20_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 21,
+      "question": "In the analogy of the DNA double helix to a spiral staircase, what do the \"handrails\" and \"steps\" represent?",
+      "options": {
+        "A": "Handrails are nitrogenous bases; steps are phosphodiester bonds",
+        "B": "Handrails are nitrogenous bases; steps are the sugar-phosphate backbone",
+        "C": "Handrails are the sugar-phosphate backbone; steps are nitrogenous bases",
+        "D": "Handrails are hydrogen bonds; steps are deoxyribose sugars"
+      },
+      "correct_answer": "C",
+      "explanation": "framework of the DNA double helix. It consists of deoxyribose sugars connected by phosphodiester bonds. Steps (Nitrogenous Bases): The nitrogenous bases (adenine, thymine, cytosine, guanine) form the \"steps\" of the staircase. They pair via hydrogen bonds (A-T with two bonds, G-C with three bonds), connecting the two strands. Structural Features of the DNA Molecule: The DNA molecule consists of two antiparallel strands : one runs 5' to 3' , while the complementary strand runs 3' to 5' . It resembles a spiral staircase , where two polynucleotide chains twist together in a right-handed helix . The DNA helix has distinct major (2.2 nm) and minor (1.2 nm) grooves , providing protein-binding sites . The double helix is stabilized by base stacking , involving hydrophobic interactions and the specific arrangement of base ring systems . Each complete turn of the helix spans 3.4 nm and includes ~10.5 base pairs . The helical diameter of B-DNA is 2 nm (20 Å) . Handrails are nitrogenous bases; steps are phosphodiester bonds (Option A): Incorrect because phosphodiester bonds form the backbone, not the steps. Handrails are nitrogenous bases; steps are the sugar-phosphate backbone (Option B): Incorrect because nitrogenous bases form the steps, not the handrails. Handrails are hydrogen bonds; steps are deoxyribose sugars (Option D): Incorrect because hydrogen bonds connect bases, and deoxyribose is part of the backbone, not the steps.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 22,
+      "question": "In the structure of nucleotides, where does the esterification of the phosphate group typically occur?",
+      "options": {
+        "A": "On the 1' carbon of the pentose sugar",
+        "B": "On the 2' hydroxyl group of the pentose sugar",
+        "C": "On the 5' or 3' hydroxyl group of the pentose sugar",
+        "D": "On the N1 position of the nitrogenous base"
+      },
+      "correct_answer": "C",
+      "explanation": "pentose sugar, forming 5'-nucleotides. The 3' hydroxyl group can also participate in forming phosphodiester bonds, linking nucleotides together in nucleic acids. The 1' carbon of the pentose sugar (Option A): It is involved in forming the β -N-glycosidic bond with the nitrogenous base, not in esterification with the phosphate group. 2' hydroxyl group is present in ribose (in RNA) (Option B ): it is not typically the site for phosphate esterification. The 2' position plays a role in distinguishing RNA from DNA, as deoxyribose lacks a hydroxyl group at this position. The N1 position (Option D): It is involved in attaching the base to the pentose sugar in pyrimidines, not in phosphate esterification. In purines, the corresponding attachment occurs at the N9 position. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 330, 348 Textbook of Biochemistry- Vasudevan, 7th Edition, Pg. 559, 561",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q22_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 23,
+      "question": "What is the primary role of inosine monophosphate (IMP) in cellular metabolism? (GMP)",
+      "options": {
+        "A": "Directly involved in energy transfer like ATP",
+        "B": "Acts as a precursor for both adenosine monophosphate (AMP) and guanosine monophosphate",
+        "C": "Inhibits the de novo synthesis of purine nucleotides",
+        "D": "Serves as an end product of the salvage pathway for purine nucleotides"
+      },
+      "correct_answer": "B",
+      "explanation": "monophosphate (GMP) crucial for various cellular processes, including nucleic acid synthesis and energy transfer. Conversion of IMP to AMP and GMP: Structure Of IMP: Directly involved in energy transfer like ATP (Option A) : While ATP is essential for energy transfer, IMP does not serve this function directly. IMP's primary role is as an intermediate in purine metabolism. Inhibits the de novo synthesis of purine nucleotides (Option C) : IMP does not inhibit the de novo synthesis pathway. However, AMP and GMP, derived from IMP, can provide feedback inhibition to regulate their synthesis. Serves as an end product of the salvage pathway for purine nucleotides (Option D): Incorrect because IMP is an intermediate in the salvage pathway, not the final product.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q23_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 24,
+      "question": "What type of bond forms between a nitrogenous base and a pentose sugar in a nucleoside? A. α -N-glycosidic bond B. β -N-glycosidic bond",
+      "options": {
+        "C": "Phosphodiester bond",
+        "D": "Hydrogen bond"
+      },
+      "correct_answer": "B",
+      "explanation": "β -N-glycosidic bond β -N-glycosidic bond is the bond that connects the nitrogenous base to the pentose sugar in nucleosides. It links the 1' carbon of the sugar (ribose or deoxyribose) to the nitrogen atom of the base- N9 of purines or N1 of pyrimidines. It is called a β linkage because the OH group at the 1' position of ribose or deoxyribose is above the plane of the sugar ring. This orientation determines the β configuration of the glycosidic bond. α -N-glycosidic bond (Option A) : This bond is not found between nitrogenous bases and pentose sugars in nucleosides. Phosphodiester bond (Option C) : This bond links nucleotides together to form the backbone of nucleic acids (DNA and RNA). It connects the 5' phosphate group of one nucleotide to the 3' hydroxyl group of the next nucleotide. Hydrogen bond (Option D) : Hydrogen bonds are responsible for the base pairing between complementary nitrogenous bases in DNA or RNA. They do not connect the base to the sugar in a nucleoside. Reference: Harper’s Illustrated Biochemistry, 32nd Edition, Pg. 330,348,249 Textbook of Biochemistry- Vasudevan, 7th Edition, Pg. 560",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q24_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 25,
+      "question": "Which of the following is a pyrimidine base found in nucleic acids?",
+      "options": {
+        "A": "Uracil",
+        "B": "Hypoxanthine",
+        "C": "Xanthine",
+        "D": "Guanosine"
+      },
+      "correct_answer": "A",
+      "explanation": "adenine. It is a single-ring nitrogenous base, characteristic of pyrimidines. Classification of Nitrogenous Bases Hypoxanthine (Option B): It is a purine derivative , not a primary component of DNA or RNA. It appears in tRNA and purine metabolism as an intermediate. Xanthine (Option C): It is a purine base involved in purine degradation but not directly incorporated into nucleic acids. It is also a precursor for caffeine, theophylline, and theobromine. Guanosine (Option D): It is a nucleoside , consisting of guanine (a purine) attached to ribose. While guanine is found in DNA and RNA, guanosine itself is not a base but a nucleoside.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Structure_Replication_And_Repair_Q25_exp.jpg",
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 26,
+      "question": "Which of the following is not caused by a defect of ds DNA repair?",
+      "options": {
+        "A": "Cockayne syndrome (CS)",
+        "B": "Fanconi’s anemia",
+        "C": "Severe Combined Immunodeficiency (SCID)",
+        "D": "Bloom's syndrome"
+      },
+      "correct_answer": "A",
+      "explanation": "(TC-NER) , which is a type of Nucleotide Excision Repair (NER) . It does not involve defects in double-strand DNA (dsDNA) repair mechanisms like Homologous Recombination (HR) or Non-Homologous End Joining (NHEJ) . Disorders Associated with dsDNA Repair Defects Disorder Defective Repair Mechanism Ataxia telangiectasia Non-Homologous End Joining (NHEJ) Bloom’s syndrome (Option D ruled out) Homologous DNA Repair (HDR) Severe Combined Immunodeficiency (SCID) (Option C ruled out) Non-Homologous End Joining (NHEJ) Fanconi’s anemia (Option B ruled out) Fanconi Anemia Repair Pathway (Interacts with HDR) HBOC (Human Breast and Ovarian Cancer Syndrome) Homologous DNA Repair (HDR) (BRCA1/BRCA2 mutation) Reference: Harper 32nd edition , pg 380",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    },
+    {
+      "q_no": 27,
+      "question": "Which of the following statements about Homologous DNA Repair (HR) is correct?",
+      "options": {
+        "A": "HR is active during G0/G1 phases of the cell cycle.",
+        "B": "HR is an error-prone process compared to nonhomologous end joining (NHEJ).",
+        "C": "HR uses a homologous DNA template for repair, making it highly accurate.",
+        "D": "Defects in HR-related proteins decrease Ovarian and breast cancers"
+      },
+      "correct_answer": "C",
+      "explanation": "homologous DNA template for repair, making it highly accurate. Homologous DNA Repair (HR) Definition: HR is a type of Double-strand DNA break repair mechanism used to fix double-strand breaks (DSBs) by utilizing a homologous DNA template for error-free repair. Cell Cycle Phase : HR is active during the S and G2 phases of the cell cycle. (Option A ruled out) Process: Uses enzymes involved in genetic recombination between homologous chromosomes during meiosis. DNA damage is recognized, and the homologous sequence is used as a template for repair. Accuracy: HR is less error-prone compared to nonhomologous end joining (NHEJ), making it an \"error-free\" repair process. (Option B ruled out) Clinical Relevance: Mutations in HR-related proteins (e.g., BRCA1/BRCA2) increase the risk for breast and ovarian cancers . (Option D ruled out) Fanconi's anemia HBOC (Human Breast and Ovarian Cancer Syndrome) Advantages : Ensures high fidelity in DNA repair by accurately restoring the original DNA sequence using a homologous template. Holliday junction is a -cross-shaped structure formed during the process of genetic r ecombination when two double-stranded DNA molecules become separated into four strands to exchange segments of genetic information. Reference: Harper 32nd edition, pg 380 Lippincott 7th edition, 1219-1222 https://www.britannica.com/science/Holliday-junction",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Structure Replication And Repair"
+    }
+  ]
+}

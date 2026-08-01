@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Results - Q Bank</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="quiz-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .results-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .score-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .score-text {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }    
+    .results-info {
+      margin: 2rem 0;
+      font-size: 1.2rem;
+    }    
+    .results-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .action-btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .btn-primary { background: #2c5281; color: white; }
+    .btn-primary:hover { background: #23476d; }
+
+    
+    .btn-success { background: #16a34a; color: white; }
+    .btn-success:hover { background: #15803d; }
+    
+    .btn-secondary { background: #6b7280; color: white; }
+    .btn-secondary:hover { background: #4b5563; }
+    
+    .analysis-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: rgba(0,0,0,0.05);
+      border-radius: 12px;
+    }
+    
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .question-number-btn {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .question-number-btn.correct {
+      background: #16a34a;
+      color: white;
+    }
+    
+    .question-number-btn.incorrect {
+      background: #ef4444;
+      color: white;
+    }
+    
+    .question-number-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+<script src="../access-control.js"></script>
+  <script src="../block.js"></script>
+  <script src="../error-handler/link-checker.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
+     crossorigin="anonymous"></script>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+<script>
+      // Initialize access control for protected page
+      if (!accessControl.initProtectedPage()) {
+        throw new Error('Access denied - redirecting to index.html');
+      }
+    </script>
+  <header>
+    <div class="header-content">
+      <button onclick="history.back()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1>Quiz Results</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="results-container">
+      <div class="score-circle" id="scoreCircle">
+        <div class="score-text" id="scorePercentage">0%</div>
+      </div>
+      
+      <div class="results-info">
+        <h2>Quiz Completed!</h2>
+        <p>You scored <span id="correctAnswers">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
+      </div>
+      
+      <div class="results-actions">
+        <button class="action-btn btn-success" onclick="restartQuiz()">
+          <i class="fas fa-redo"></i>
+          Restart Quiz
+        </button>
+        <button class="action-btn btn-primary" onclick="reviewQuestions()">
+          <i class="fas fa-eye"></i>
+          Review Questions
+        </button>
+      </div>
+      
+      <div class="analysis-section">
+        <h3>Question Analysis</h3>
+        <p>Click on any question number to review your answer:</p>
+        <div class="question-grid" id="questionGrid">
+          <!-- Question numbers will be populated here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let quizData = null;
+    let userAnswers = [];
+    let score = 0;
+
+    function loadResults() {
+      // Get data from URL parameters or localStorage
+      const urlParams = new URLSearchParams(window.location.search);
+      const platform = urlParams.get('platform');
+      const subject = urlParams.get('subject');
+      const scoreParam = urlParams.get('score');
+      const totalParam = urlParams.get('total');
+      
+      // Load quiz results data from localStorage
+      const savedResults = localStorage.getItem('quizResultsData');
+      if (savedResults) {
+        quizData = JSON.parse(savedResults);
+        userAnswers = quizData.userAnswers || [];
+        score = quizData.score || 0;
+      }
+      
+      if (scoreParam && totalParam) {
+        score = parseInt(scoreParam);
+        const total = parseInt(totalParam);
+        displayResults(score, total);
+      } else {
+        // Fallback to localStorage or redirect back
+        console.log('No results data found');
+        history.back();
+      }
+    }
+
+    function displayResults(score, total) {
+      const percentage = Math.round((score / total) * 100);
+      
+      document.getElementById('scorePercentage').textContent = `${percentage}%`;
+      document.getElementById('correctAnswers').textContent = score;
+      document.getElementById('totalQuestions').textContent = total;
+      
+      // Update score circle color based on performance
+      const scoreCircle = document.getElementById('scoreCircle');
+      if (percentage >= 80) {
+        scoreCircle.style.background = 'linear-gradient(135deg, #16a34a, #15803d)';
+      } else if (percentage >= 60) {
+        scoreCircle.style.background = 'linear-gradient(135deg, #eab308, #ca8a04)';
+      } else {
+        scoreCircle.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+      }
+      
+      // Load question analysis if data is available
+      loadQuestionAnalysis(total);
+    }
+
+    function loadQuestionAnalysis(total) {
+      const questionGrid = document.getElementById('questionGrid');
+      questionGrid.innerHTML = '';
+      
+      // Create question number buttons with actual answer status
+      for (let i = 0; i < total; i++) {
+        const questionBtn = document.createElement('button');
+        questionBtn.className = 'question-number-btn';
+        questionBtn.textContent = i + 1;
+        
+        // Check if we have quiz data to determine answer status
+        if (quizData && quizData.questions && quizData.questions[i]) {
+          const question = quizData.questions[i];
+          const userAnswer = userAnswers[i];
+          const correctAnswer = question.correct_answer;
+          
+          if (userAnswer === null || userAnswer === undefined) {
+            // Unanswered - no color class, keep default background
+            questionBtn.style.background = '#e5e7eb';
+            questionBtn.style.color = '#374151';
+          } else if (userAnswer === correctAnswer) {
+            // Correct - green
+            questionBtn.classList.add('correct');
+          } else {
+            // Incorrect - red
+            questionBtn.classList.add('incorrect');
+          }
+        } else {
+          // No data available - default styling
+          questionBtn.style.background = '#e5e7eb';
+          questionBtn.style.color = '#374151';
+        }
+        
+        questionBtn.onclick = () => reviewSpecificQuestion(i);
+        questionGrid.appendChild(questionBtn);
+      }
+    }
+
+    function reviewSpecificQuestion(questionIndex) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const platform = urlParams.get('platform');
+      const subject = urlParams.get('subject');
+      const chapter = urlParams.get('chapter');
+      
+      // Store the current question index for review
+      localStorage.setItem('reviewQuestionIndex', questionIndex.toString());
+      
+      // Navigate back to quiz.html and let it handle the review (0-based index)
+      window.location.href = `quiz.html?platform=${platform}&subject=${subject}&chapter=${chapter}&reviewMode=true&reviewIndex=${questionIndex}`;
+    }
+
+    function restartQuiz() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const platform = urlParams.get('platform');
+      const subject = urlParams.get('subject');
+      const chapter = urlParams.get('chapter');
+      
+      window.location.href = `quiz.html?platform=${platform}&subject=${subject}&chapter=${chapter}`;
+    }
+
+    function reviewQuestions() {
+      // Start review from first question
+      reviewSpecificQuestion(0);
+    }
+
+    function exitToMenu() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const platform = urlParams.get('platform');
+      const subject = urlParams.get('subject');
+      
+      if (platform && subject) {
+        window.location.href = `chapters.html?platform=${platform}&subject=${subject}`;
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    // Load results when page loads
+    window.addEventListener('load', loadResults);
+  </script>
+<script src="../theme.js"></script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

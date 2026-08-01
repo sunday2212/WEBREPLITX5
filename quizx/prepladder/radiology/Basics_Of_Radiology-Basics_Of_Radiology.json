@@ -1,0 +1,377 @@
+{
+  "chapter": "Basics Of Radiology-Basics Of Radiology",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "What is the primary difference between axial and helical CT scanning?",
+      "options": {
+        "A": "Axial CT uses contrast agents, while helical CT does not.",
+        "B": "Axial CT scans in single slices, while helical CT scans continuously in a spiral.",
+        "C": "Helical CT requires more radiation than axial CT.",
+        "D": "Axial CT produces 3D images, while helical CT produces 2D images."
+      },
+      "correct_answer": "B",
+      "explanation": "continuously collects data in a spiral path as the patient moves through the scanner. Axial and Helical CT: Axial CT (Computed Tomography) and Helical CT(also known as Spiral CT) are two different scanning techniques used in medical imaging to obtain cross-sectional images of the body. Axial CT Helical CT Definition Axial CT scans acquire images in discrete slices or cross-sections of the body. The scanner rotates around the patient, capturing one slice at a time. Helical CT scans acquire images continuously in a spiral pattern as the patient moves through the scanner. This allows for a continuous data stream and overlapping slices. Data Acquisition The table holding the patient moves in small increments between scans. After each slice is acquired, the table stops to allow for the next slice to be taken. The scanner rotates around the patient while the table moves through the gantry simultaneously, resulting in a spiral path of data collection. Scan Time Generally longer due to the stepwise approach, as the table must move and stop for each slice. Much faster than axial CT, as the entire area can be scanned in a single breath-hold, which is beneficial for patients who may have difficulty remaining still. Image Quality Typically provides high-resolution images, making it ideal for detailed examinations, especially of the brain and other structures. Provides good quality images and can be processed for 3D reconstructions , making it useful for dynamic studies and quick imaging. Advantages High-resolution images, ideal for detailed examinations. Faster scans, less motion artifact, and the ability to reconstruct images in multiple planes. Disadvantages Longer scan times and may be less effective for dynamic imaging. May require higher radiation doses depending on parameters and can have slightly lower image resolution compared to axial scans. Axial CT uses contrast agents, while helical CT does not.(Option A): Both axial and helical CT can use contrast agents, depending on the clinical requirements. Helical CT requires more radiation than axial CT.(Option C): Helical CT does not inherently require more radiation than axial CT; radiation exposure can depend on various factors, including scan parameters. Axial CT produces 3D images, while helical CT produces 2D images.(Option D): Both axial and helical CT can be processed to create 3D images. Reference: David Sutton Textbook of Radiology edition 8, page 254, 255, 256 & 257",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following imaging modalities requires the use of iodinated contrast for both diagnostic and therapeutic purposes?",
+      "options": {
+        "A": "CT Angiography",
+        "B": "MRA",
+        "C": "DSA - Fluoroscopy",
+        "D": "Both A and C"
+      },
+      "correct_answer": "C",
+      "explanation": "purposes. It is invasive, using intra-arterial contrast via catheter angiography. CT Angiography MRA DSA - Fluoroscopy Vessels White White Black/white (fluoroscopy gives inverted images). Contrast Essential It can be done without contrast . TOF sequence (time of flight) It can be used in renal failure patients. (without gadolinum since gadolinium is nephrotoxic) Essential Type of contrast Iodinated contrast Gadolinium (Option B ruled out) Iodinated contrast Route of contrast IV Non-invasive IV Non-invasive Intra-arterial contrast (catheter angiography) Invasive. Application Diagnostic (Option A and D ruled out) Diagnostic Both diagnostic and therapeutic (Option C) CT Angiography (Option A): Uses iodinated contrast but is non-invasive and only for diagnostic purposes.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q2_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 3,
+      "question": "A 38 year old woman presents with chronic pelvic pain and menorrhagia due to multiple uterine fibroids. She is exploring non-invasive treatment options and wishes to avoid surgery. Her gynecologist suggests high-intensity focused ultrasound (HIFU) as a potential treatment. What is the primary mechanism by which HIFU treats uterine fibroids? the fibroid. ischemia.",
+      "options": {
+        "A": "HIFU emits continuous low-energy ultrasound waves that dissolve fibroid tissue through vibration.",
+        "B": "HIFU directs focused ultrasound energy to induce thermal damage and coagulation necrosis within",
+        "C": "HIFU causes cavitation within blood vessels, disrupting the fibroid’s blood supply and leading to",
+        "D": "HIFU uses ultrasound energy to fragment fibroid tissue through mechanical shearing forces."
+      },
+      "correct_answer": "B",
+      "explanation": "coagulation necrosis within the fibroid. the fibroid. Therapeutic applications of USG- High-intensity focused ultrasonography (HIFU) Mechanism (Option B) Uses high-intensity ultrasound waves focused on a specific target area, delivering localized energy while minimizing damage to surrounding tissues. Thermal Effects: Heat from ultrasound energy leads to coagulation necrosis. Cavitation Effects: Formation and collapse of microbubbles generate mechanical forces for tissue destruction. Applications Bleeding Sites: Coagulates vessels to stop bleeding. Uterine Fibroids: Induces necrosis in fibroid tissue, causing shrinkage. Tumours: Destroys tumour cells in organs like the prostate, liver and breast while sparing healthy tissues. Limitations Gas or Bone Interference: Ultrasound waves can be scattered or reflected by gas or bone, reducing effectiveness. Unintended Tissue Damage: Heating and damage can occur to normal tissue, especially near reflectors like bowel gas or bone. Guidance Systems Ultrasound Guidance: Real-time imaging for accurate targeting. MRI Guidance: Monitors tissue temperature during treatment, allowing better control of thermal effects. Reference: David Sutton textbook of Radiology & Imaging Edition 8, Volume I, Page 231,232",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 4,
+      "question": "A 62 year old woman with a history of hepatic metastases undergoes an ultrasound study using contrast-enhanced ultrasonography (CEUS) for liver lesion characterization. CEUS employs microbubbles that improve imaging of small vessels and capillaries. Which of the following is a primary advantage of CEUS compared to traditional contrast-enhanced CT or MRI?",
+      "options": {
+        "A": "CEUS allows targeted drug delivery in specific lesions",
+        "B": "CEUS allows real-time imaging with enhanced lesion detection",
+        "C": "CEUS is a safe alternative for patients with renal impairment",
+        "D": "All the above"
+      },
+      "correct_answer": "C",
+      "explanation": "gadolinium), CEUS uses microbubbles that are well-tolerated and not nephrotoxic. This makes it an excellent choice for patients with renal impairment who need detailed imaging. Contrast-Enhanced Ultrasonography (CEUS) Basic Principle Uses microbubbles (3-5 µm) as contrast agents Microbubbles contain gases (air, nitrogen, perfluorocarbons) which are encapsulated in albumin or phospholipid shells Mechanism Microbubbles create acoustic impedance mismatch ↓ Generate nonlinear harmonic frequencies ↓ Enables visualization of small vessels/capillaries Uses Liver lesion characterization Intervention guidance Treatment response monitoring Vascular flow assessment Non-vascular uses (e.g., tubal patency) Advantages / Limitations Advantages Enhanced lesion detection Potential for targeted drug delivery Safe alternative to CT/MRI contrast Enables non-invasive pressure measurements CEUS allows targeted drug delivery in specific lesions (Option A): CEUS has applications in targeted drug delivery, but its not primary advantage over traditional contrast-enhanced CT or MRI. CEUS allows real-time imaging with enhanced lesion detection (Option B): One of the main advantages of CEUS is that it provides real-time imaging with enhanced visualization of small vessels and capillaries, aiding in liver lesion characterization. But this is not the primary advantage over traditional contrast-enhanced CT or MRI. Reference: David Sutton textbook of Radiology & Imaging Edition 8, Volume I, Page 223, 229, 230",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 5,
+      "question": "A 45 year old woman presents to the emergency department with dull abdominal pain. An ultrasound of the abdomen is performed, and a cystic structure is seen in the right kidney. The ultrasound technician notes increased echogenicity behind the cystic structure. Which of the following best explains this ultrasound finding?",
+      "options": {
+        "A": "Posterior Acoustic shadowing",
+        "B": "Posterior acoustic enhancement",
+        "C": "Reverberation artifact",
+        "D": "Comet tail artifact"
+      },
+      "correct_answer": "B",
+      "explanation": "fluid-filled structure (like a cyst), causing less attenuation (energy loss) compared to surrounding tissue. As a result, tissues behind the fluid appear brighter, which explains the increased echogenicity behind the cystic structure. Black and white principles of USG Posterior Acoustic Enhancement Ultrasound artifact where tissues behind fluid appear brighter Occurs because fluid causes less attenuation of ultrasound waves Mechanism: Ultrasound beam encounters fluid-filled structure ↓ Less energy lost passing through fluid vs. surrounding tissue ↓ More energy reaches tissues behind fluid ↓ Result: Increased echogenicity (brightness) posterior to fluid Helpful For Identifying: Cysts Bladder Ascites Other fluid-filled structures Can cause misinterpretation: Example: Kidneys viewed through ascites may appear falsely hyperechoic Posterior Acoustic shadowing (Option A ruled out) Ultrasound artifact appearing as dark area behind highly attenuating structures Results from significant reduction in ultrasound intensity Mechanism: Ultrasound beam hits highly reflective/attenuating structure ↓ Most sound waves are blocked or reflected ↓ Little to no energy reaches tissues behind structure ↓ Result: Dark (hypoechoic) area appears on image Helpful For Identifying: Calcifications Stones Foreign bodies Bone Reverberation artifact (Option C): Reverberation occurs when ultrasound waves bounce back and forth between two strong reflectors, creating multiple lines on the image. This artifact does not relate to the increased brightness seen here. Comet tail artifact (Option D): A form of reverberation artifact, comet tail appears as a series of closely spaced echoes behind a reflective object, not related to increased brightness behind a fluid-filled structure",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q5_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 6,
+      "question": "A 45 year old female patient presents for a carotid Doppler ultrasound due to complaints of transient ischemic attacks. During the examination, the radiologist notices that the displayed velocity of blood flow in the carotid artery appears higher than expected. Upon reviewing the images, he suspects an artifact affecting the velocity measurements. Which artifact is most likely responsible for the incorrect velocity display, and what is the best method to mitigate it?",
+      "options": {
+        "A": "Aliasing; mitigate by increasing the pulse repetition frequency (PRF).",
+        "B": "Blooming; mitigate by increasing the wall filter settings.",
+        "C": "Direction Ambiguity; mitigate by adjusting the beam angle to be more parallel to the flow.",
+        "D": "Twinkle Artifact; mitigate by adjusting the color gain settings."
+      },
+      "correct_answer": "A",
+      "explanation": "high blood flow velocities are being measured, such as in the carotid arteries . It occurs when the velocity of blood flow exceeds the Nyquist limit (which is half the PRF), causing the displayed waveform to wrap around , leading to overestimation or misinterpretation of velocity. Aliasing appears as a sudden shift or wrap-around of the spectral waveform or color scale reversal (e.g., red to blue). To mitigate aliasing: Increase PRF (not decrease). Use a lower frequency transducer . Adjust the baseline downward . Use continuous wave Doppler if feasible. So, the mitigation option in the question is incorrect — you should increase PRF, not decrease it. Corrected Answer: Aliasing; mitigate by increasing the pulse repetition frequency (PRF). Ruling Out Incorrect Options: Blooming (Option B): Incorrect , because blooming causes overestimation of vessel diameter or area due to excessive gain; it doesn’t affect velocity. Increasing wall filter doesn't mitigate blooming. Direction Ambiguity (Option C): Incorrect , this occurs with transcranial or abdominal Doppler using large sample volumes ; not typical in carotid studies . Twinkle Artifact (Option D): Incorrect , seen in color Doppler near calcifications or stones , not relevant to velocity overestimation in carotids. Summary Table: Artifact Appearance Best Solution Aliasing Wrap-around waveform or reversed color Increase PRF , lower frequency, shift baseline Blooming Overfilled color/velocity extending beyond vessel wall Reduce gain, optimize wall filters Direction Ambiguity Flow appears in both directions Use angle correction, reduce sample volume Twinkle Artifact Color speckling behind calcified area Lower color gain or change angle Reference: David Sutton textbook of Radiology & Imaging Edition 8, Volume I, Page 209-221",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 7,
+      "question": "A 35-year-old patient presents to the emergency department with chest pain and shortness of breath following a traumatic injury. M-mode ultrasound is utilized to assess pneumothorax. Which specific ultrasound finding would indicate the absence of a pneumothorax?",
+      "options": {
+        "A": "Absence of pleural sliding",
+        "B": "Barcode sign (stratosphere sign)",
+        "C": "Absence of diaphragmatic movement",
+        "D": "Seashore sign"
+      },
+      "correct_answer": "D",
+      "explanation": "The presence of this pattern confirms that there is no pneumothorax. \"Barcode sign\" or \"stratosphere sign\" is indicative of a pneumothorax, where the normal pleural sliding is absent , and the image resembles parallel horizontal lines (Option A and B ruled out). M-mode Ultrasound M-mode (Motion mode) uses a rapid sequence of B-mode scans to track organ movement relative to the probe. It captures motion over time, providing clinicians with a dynamic view of structure movements, which is crucial for assessing processes that static 2D ultrasound cannot. Clinical Applications Pneumothorax : Detects air in the pleural space by visualizing pleural movement. Left Ventricular Function : Assesses heart performance via measurements like E-point septal separation. Cardiac Tamponade : Detects fluid around the heart. Hypertrophic Cardiomyopathy : Evaluates abnormal thickening of the heart muscle. Diaphragmatic Kinetics : Reliable for measuring diaphragmatic movement, both at rest and during forced breathing. Echocardiography : Measures heart function through mitral (MAPSE) and tricuspid (TAPSE) annular plane systolic excursions. Volume Status: Evaluates fluid status via inferior and superior vena cava diameters. Identifies issues like systolic anterior motion of the mitral valve and cardiac tamponade. Advantages High temporal resolution, offering precise timing of motion. Quick and easy to perform, even for less experienced users. Applicable across various clinical settings. Absence of diaphragmatic movement (Option C): This is related to diaphragmatic paralysis or dysfunction, not pneumothorax, and is not a reliable indicator in this context.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 8,
+      "question": "Which of the following statements accurately distinguishes between A-scan from structures. cornea.",
+      "options": {
+        "B": "A-scan is primarily used to measure axial length, whereas B-scan is used to visualize internal ocular",
+        "A": "A-scan provides a two-dimensional image, while B-scan provides a one-dimensional image.",
+        "C": "B-scan displays spikes on a graph, while A-scan displays a dotted section of the eyeball.",
+        "D": "A-scan requires the probe to be applied on the eyelids, while B-scan requires direct contact with the"
+      },
+      "correct_answer": "B",
+      "explanation": "visualize internal ocular structures. (IOL) power calculation and anterior chamber depth measurements. A-Scan (Time Amplitude) B-Scan (Intensity Modulation) Dimension (Option A ruled out) One-dimensional Two-dimensional Probe size Smaller Larger Method (Option D ruled out) The patient's eye is numbed with anesthetic drops, and a small A-scan probe is applied to the cornea to collect measurements. The B scan probe is softly positioned on the eyelids as the patient gazes in different directions to obtain various angles. Purpose (Option B) Measures axial length Visualizes internal structures Display (Option C ruled out) Spikes on graph Interpretation: Spike distance = tissue measurement Spike height = tissue density High spikes: cornea, lens, sclera Low spikes: vitreous structures Dotted section of eyeball Uses IOL power calculation (biometry) Anterior chamber depth measurement Intraocular mass thickness assessment Posterior segment evaluation with opaque media Tumor assessment: Intraocular Orbital Foreign body localization: Intraocular Intraorbital Advantage: Easier interpretation of structure location/size",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q8_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 9,
+      "question": "Match each type of ultrasound probe with its primary use. Probe Primary Use 1) Abdominal, OBS/GYN",
+      "options": {
+        "A": "Vascular, high-resolution imaging 2) b) Cardiac, endocavitary, neonatal brain 3) c)"
+      },
+      "correct_answer": "",
+      "explanation": "",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 10,
+      "question": "What is the primary reason for applying ultrasound gel during an ultrasound examination?",
+      "options": {
+        "A": "To enhance image contrast",
+        "B": "To act as a lubricant for easier probe movement",
+        "C": "To eliminate air pockets between the probe and skin",
+        "D": "To cool down the transducer while in constant use"
+      },
+      "correct_answer": "C",
+      "explanation": "between the probe and skin. Although the gel can provide lubrication, its main purpose is not it. (Option B ruled out) Ultrasound Gel Purpose of Gel Eliminates air pockets between probe and skin for effective sound transmission. (Option C) Serves as a medium for sound and lubricant. Preferred Gel Hydrogel is preferred over Lipogel for easier cleaning. Ingredients Distilled water, carbomer, ethylenediaminetetraacetic acid (EDTA), propylene glycol, glycerin, trolamine, and occasionally contains blue colorant. Infection Control Cover transducer and skin with plastic for patients with open wounds or skin issues. ↓ Apply gel on both sides of the plastic. ↓ Clean transducer after each use Principle of USG : Ultrasound operates on the pulse-echo principle, utilizing piezoelectric materials found in the ultrasound probe's crystal. Electrical pulse applied to piezoelectric crystal ↓ Crystal deforms and vibrates ↓ Sound beam generated ↓ Sound beam travels through tissues ↓ Sound beam encounters tissues and reflects echoes ↓ Reflected echoes reach the transducer ↓ Transducer vibrates due to incoming echoes ↓ Electrical voltage generated corresponding to echoes Reference: David Sutton textbook of Radiology & Imaging Edition 8, Volume I, Page 197,198",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 11,
+      "question": "Which among the following is a common clinical application of dual-energy CT (DECT)? Detection of intracranial hemorrhage B) Differentiation between gout and pseudogout crystals C) Removal of calcium from carotid arteries in head and neck angiography D) Quantification of liver fat in hepatic steatosis E) Reduction of artifacts caused by metal implants F) Characterization of solitary lung nodules",
+      "options": {
+        "A": "All except A",
+        "B": "All except E",
+        "C": "All except A and C",
+        "D": "All the above"
+      },
+      "correct_answer": "D",
+      "explanation": "assessment of tissue composition in ways that traditional CT cannot provide. System Applications of DECT Central Nervous System Removal of calcium from carotid arteries in head and neck angiography (Option A and C ruled out) (Option D) Detection of intracranial hemorrhage (Option A and C ruled out) (Option D) Elimination of bone structures in CT angiography to enhance vascular imaging Cardiovascular System Assessment of myocardial viability and blood flow Detection of iron deposits in the myocardium Evaluation of coronary stents and calcified plaque Identification of aortic endoleaks post-repair Thoracic System Evaluation of pulmonary blood flow for diagnosing pulmonary embolism Characterization of solitary lung nodules by measuring iodine concentration (Option D) Gastrointestinal System Detection of colonic masses and polyps during CT colonography Quantification of liver fat in steatosis (Option D) Detection of liver iron accumulation Identification of gallstones Urinary System Identification and characterization of renal stones for treatment planning Assessment and characterization of renal cysts Musculoskeletal System Differentiation between gout and pseudogout crystals (Option D) Reduction of artifacts caused by metal implants (Option B ruled out) (Option D) Distinction of bone marrow edema from trabecular bone to locate fractures and lesions Visualization of tendons and ligaments for better assessment Reference: David Sutton textbook of Radiology & Imaging Edition 8, Volume I, Page 316, 323-326",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 12,
+      "question": "In which scenario would CECT be preferred over NCCT?",
+      "options": {
+        "A": "Evaluating a fracture in a long bone",
+        "B": "Assessing a lung nodule for malignancy",
+        "C": "Diagnosing kidney stones",
+        "D": "Evaluating head trauma"
+      },
+      "correct_answer": "B",
+      "explanation": "nodule and its characteristics, which helps in differentiating between benign and malignant lesions. It also allows for better assessment of surrounding structures and lymph nodes. Non-Contrast Computed Tomography (NCCT) and Contrast-Enhanced Computed Tomography (CECT) Non-Contrast Computed Tomography (NCCT) Contrast-Enhanced Computed Tomography (CECT) NCCT refers to CT imaging performed without the use of intravenous contrast agents. CECT involves the administration of an intravenous contrast agent to enhance the visibility of vascular structures and improve differentiation of tissues in the body. Indications : Bone Injuries: Fractures, especially of the spine and long bones. (Option A ruled out) Kidney Stones: Evaluation of renal calculi (stones) and urinary tract obstruction. (Option C ruled out) Head Trauma: Detecting hemorrhage or skull fractures. (Option D ruled out) Acute Abdomen: Initial evaluation of acute abdominal pain (appendicitis, diverticulitis). Indications: Tumor Detection: Identifying and characterizing masses or tumors in various organs. Pulmonary Diseases: Assessing lung pathology (pneumonia, lung nodules). (Option B) Vascular Assessment: Evaluating blood vessels for stenosis, thrombosis, or aneurysms. Infection : Assessing abscesses or inflammatory conditions where contrast can delineate structures. Staging of Cancer: Determining the extent of malignancies by evaluating lymph nodes and distant metastases. Assessment of Organ Perfusion : Evaluating blood flow in organs. Advantages : No Allergic Reactions: Eliminates the risk of allergic reactions to contrast agents. No Need for Renal Function Assessment: Suitable for patients with renal impairment who cannot tolerate contrast. Faster : Typically quicker to perform than CECT, as no time is needed for contrast administration. Cost-effective: Generally less expensive than CECT. Advantages: Enhanced Visualization : Improves the contrast between different tissues, making it easier to identify abnormalities. Better Soft Tissue Detail: Provides superior detail of soft tissue structures compared to NCCT. Vascular Imaging: Excellent for visualizing blood vessels and detecting vascular pathologies. Limitations: Limited Diagnostic Capability: May not provide enough detail for soft tissue structures or vascular assessments. Less Sensitivity: Lower sensitivity for detecting certain conditions, such as tumors or vascular abnormalities, compared to CECT. Limitations: Risk of Allergic Reactions: Possible allergic reactions to contrast agents, ranging from mild to severe (anaphylaxis). Renal Impairment: Requires caution in patients with pre-existing kidney disease, as contrast can further compromise renal function (risk of Contrast-Induced Nephropathy). Increased Radiation Exposure: Slightly higher radiation exposure compared to NCCT due to additional imaging phases.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 13,
+      "question": "A 65-year-old male patient presents with a 6-month history of progressive shortness of breath and a dry cough. He is a former smoker, having quit 10 years ago, and has no significant past medical history. On examination, he has clubbing of the fingers and fine crackles on lung auscultation. Pulmonary function tests reveal a restrictive pattern with reduced lung volumes and a decreased diffusion capacity.Which imaging modality is most appropriate for confirming the diagnosis of this condition?",
+      "options": {
+        "A": "Contrast-Enhanced Computed Tomography (CECT) of the chest",
+        "B": "High-Resolution CT (HRCT) of the chest",
+        "C": "MRI of the chest",
+        "D": "Chest X-ray"
+      },
+      "correct_answer": "B",
+      "explanation": "(shortness of breath) Dry cough Clubbing of fingers Fine crackles on auscultation Restrictive lung pattern on pulmonary function tests HRCT is the gold standard for diagnosing IPF , as it can reveal the characteristic patterns of fibrosis, such as reticular patterns, honeycombing, and ground-glass opacities. HRCT showing IPF High-Resolution CT (HRCT): Definition Specialized imaging technique that provides highly detailed cross-sectional images of the body's internal structures, primarily the lungs Technique Thin Collimation: Uses thin slices (usually 1 mm or less) to improve image resolution. High Spatial Resolution: Optimized scanning protocols to enhance the detail of structures. Breath-Holding: Images are often obtained during full inspiration to reduce motion artifacts. Indications Pulmonary Assessment: Primarily used to evaluate lung diseases, especially interstitial lung diseases (e.g., Idiopathic Pulmonary Fibrosis, sarcoidosis). Tumor Evaluation: Assessing lung nodules and tumors. (For Pancoast tumor MRI is preferred) Infectious Diseases : Identifying lung infections (pneumonia, tuberculosis). Key Imaging Features Reticular Patterns: Suggestive of fibrosis and interstitial lung disease. Ground-Glass Opacities: Indicate inflammation or partial consolidation. Nodules and Masses: Detailed visualization of pulmonary nodules. Advantages High Sensitivity and Specificity: Superior ability to detect and characterize lung pathologies compared to standard CT or X-rays. Detailed Assessment: Provides detailed anatomical information, aiding in accurate diagnosis and treatment planning. 3D Reconstruction: Data can be processed to create 3D images for better anatomical visualization. Limitations Radiation Exposure: Increased radiation dose compared to conventional radiography. Cost : Generally more expensive than standard imaging modalities. Contrast-Enhanced Computed Tomography (CECT) of the chest (Option A): It is not the preferred method for diagnosing IPF as it does not provide the high-resolution images necessary to visualize the specific interstitial patterns of fibrosis. MRI of the chest (Option C): Not routinely used for the diagnosis of IPF; HRCT is preferred due to better visualization of lung parenchyma. Ultrasound of the chest (Option D): Not a suitable modality for diagnosing interstitial lung diseases like IPF, as it cannot provide detailed images of lung parenchyma.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 14,
+      "question": "Arrange the following in their decreasing order of penetration power 1) Neutrons 2) Alpha ( α ) rays 3) Beta ( β ) rays 4) Gamma ( γ ) rays",
+      "options": {
+        "A": "1>2>3>4",
+        "B": "1>4>3>2",
+        "C": "4>3>2>1",
+        "D": "2>3>4>1"
+      },
+      "correct_answer": "B",
+      "explanation": "γ ) rays (4) > Beta ( β ) rays (3) > Alpha ( α ) rays (2). Hence, the correct answer is 1>4>3>2 (Option B) . Alpha ( α ), Beta ( β ) & Gamma ( γ ) rays: Alpha ( α ) rays: Particles emitted by the nucleus through α decay, containing 2 protons and 2 neutrons. Beta ( β ) rays: Particles emitted by the nucleus through β decay, either electrons/positrons Gamma ( γ ) rays: Photons emitted by the nucleus. Ionizing power: (damaging capacity of linear energy transfer - LET) Alpha ( α ) > Beta ( β ) > X-Rays > Gamma ( γ ) rays Penetration power: Neutrons > Gamma ( γ )rays >Beta ( β )rays >Alpha ( α )rays Reference: https://www.ncbi.nlm.nih.gov/books/NBK158792/ Basic Radiotherapy Physics and Biology by David S. Chang, Foster D. Lasley, Indra J. Das, Marc S. Mendonca, Joseph R. Dynlacht (Springer) pages - 11-17",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 15,
+      "question": "Which window setting would be most appropriate for viewing bone structures in a CT scan?",
+      "options": {
+        "A": "Low window level and narrow window width",
+        "B": "High window level and wide window width",
+        "C": "Low window level and wide window width",
+        "D": "High window level and narrow window width"
+      },
+      "correct_answer": "B",
+      "explanation": "because it allows for better differentiation of highly dense tissues. In CT imaging, the window refers to the range of Hounsfield units (HU) that are displayed on the CT image , allowing radiologists to better visualize specific tissues or structures by adjusting the image contrast. The window settings include two key components: Window Width (WW) : This defines the range of Hounsfield units that will be displayed. It controls the contrast of the image. A narrow window width is used for better contrast of soft tissues. A wide window width is used for imaging high-contrast structures like bone . Window Level (WL): This determines the central Hounsfield value of the window range and adjusts the brightness of the image. A higher window level is used to visualize dense tissues like bones . A lower window level is used for soft tissues. Types of CT Windows: Bone window: High window level and wide window width to clearly view bones and other dense structures. Lung window: Narrow window width and lower window level for optimal visualization of lung parenchyma and air spaces. Soft tissue window: Lower window level and narrower width to focus on soft tissue structures like muscles, organs, and the brain. Low window level and narrow window width (Option A): are more suitable for soft tissues where contrast needs to be enhanced, not for dense structures like bone. Low window level and wide window width (Option C): would reduce brightness, making it harder to see dense structures like bones. High window level and narrow window width (Option D): While a high window level is appropriate for bones, a narrow window width would reduce the ability to distinguish different densities within the bone itself. Reference: Ct window",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 16,
+      "question": "A 45-year-old man presents with sudden headache, confusion, and decreased consciousness following recent cranial surgery. CT image is given below. What is the black area seen in the CT?",
+      "options": {
+        "A": "Blood",
+        "B": "Air",
+        "C": "Pus",
+        "D": "Highly vascularised areas"
+      },
+      "correct_answer": "B",
+      "explanation": "compressing the brain structures and showing the classic Mount Fuji sign in CT. The black area here is air. In CT imaging, black areas usually correspond to low-density substances like air or fluid, which do not absorb much X-ray radiation. Imaging principles of CT scan: CT uses filtered x-ray beams and a computer to create cross-sectional images of the body. CT slices reveal specific anatomy levels, with slice thickness chosen to minimise scatter radiation and superimposition using collimators. CT data are divided into pixels, forming a matrix, each representing different image details. Structures in CT images are depicted in varying shades of grey based on x-ray beam attenuation principles. The linear attenuation coefficient quantifies photon interaction with matter and varies with density, atomic number, and energy. Higher density and atomic number lead to more",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q16_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 17,
+      "question": "Match the following items with its corresponding Hounsfield Unit Item Hounsfield Unit 1.Metal a.1000 2.Bone b.3000 3.Air c.-1000 4. Water d. 0",
+      "options": {
+        "A": "1b,2a,3c,4d",
+        "B": "1a,2b,3d,4c",
+        "C": "1c,2d,3a,4b",
+        "D": "1d,2c,3b,4a"
+      },
+      "correct_answer": "A",
+      "explanation": "Tomography) images to evaluate tissue density Calculated based on the absorption/attenuation coefficient of the X-ray beam within different tissues Item Hounsfield Unit (HU) Water 0 HU Air -1000 HU Bone 1000 HU Dense bones like the cochlea 2000 HU Metals 3000 HU Reference: https://www.ncbi.nlm.nih.gov/books/NBK547721/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 18,
+      "question": "Which of the following statements is NOT true about Computed Tomography?",
+      "options": {
+        "A": "Uses a rotating beam of X-ray",
+        "B": "Uses more radiation than a plain X-ray",
+        "C": "The computer generates the images",
+        "D": "Slices are as if viewing from the head end of the bed"
+      },
+      "correct_answer": "D",
+      "explanation": "CT uses a rotating fan beam of X-rays (Option A ruled out) to pass through the patient and measure transmission at thousands of points A computer calculates X-ray absorption at specific points in the patient and manipulates data for various image displays (Option C ruled out) CT uses 10 to 100 times more radiation than plain X-rays (Option B ruled out) CT slices are two-dimensional and shown as if viewing the patient from the foot of the bed i.e., the right side of the patient appears on the left of the image (Option D) Reference: Fred A. Mettler Jr. Essentials of Radiology, 4th edition pages 4-5",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q18_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 19,
+      "question": "Which of the following statements is false?",
+      "options": {
+        "A": "C-arm is a mobile X-ray machine",
+        "B": "Fluoroscopy shows continuous X-ray images in a monitor",
+        "C": "In fluoroscopy, only movement of a body part can be visualized",
+        "D": "Fluoroscopy can be used in catheter insertion"
+      },
+      "correct_answer": "C",
+      "explanation": "seen in detail Fluoroscopy: An imaging technique that shows a continuous X-ray image on a monitor (Option B ruled out) The movement of a body part or an instrument or contrast agent through the body can be seen in detail (Option C) Used in : Barium X-rays and enemas Catheter insertion (Option D ruled out) and manipulation Placement of devices within the body, such as stents Angiograms Orthopedic surgery C-arm: Mobile X-ray machine with a half-moon frame (Option A ruled out) Allows mobility in all directions, enhancing flexibility in imaging Reference: https://www.ncbi.nlm.nih.gov/books/NBK573065/#:~:text=The%20C%2Darm%2C%20an%20X,machin e%20mobile%20in%20all%20directions https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/fluoroscopy",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q19_exp.png",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 20,
+      "question": "Which of the following statements is false about mammography?",
+      "options": {
+        "A": "Grids are used to reduce scattered radiation",
+        "B": "Primarily for women over 40",
+        "C": "Breast compression is required",
+        "D": "The craniocaudal view will show the breast with the axillary tail"
+      },
+      "correct_answer": "D",
+      "explanation": "craniocaudal view Mammography: X-ray imaging method used to examine the breast for the early detection of cancer and other breast diseases Primarily used for women over 40 (Option B ruled out) for breast cancer screening and follow-up after treatment (Women > 40 have less dense breast and more fatty tissues). Guides biopsy and preoperative localization Molybdenum targets are common. Other target/filter combinations - molybdenum/rhodium, rhodium/rhodium, tungsten/molybdenum, and tungsten/rhodium Grids reduce scattered radiation (Option A ruled out) The breast is compressed for better results (Option C ruled out) Standard two-view mammography has a radiation dose of ~3 mGy Standard Projections: Mediolateral Oblique (MLO) View: Comprehensive view of the breast with the axillary tail (Option C) Craniocaudal (CC) View: Visualises most of the medial and lateral breast tissue with superior-to-inferior compression",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q20_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 21,
+      "question": "Match the following types of X-rays with its mechanism 1. Film X-ray a. X-rays hit a detector which converts them into an electrical charge 2. Computed Radiography Digital Radiography c. X-rays strike a fluorescent screen, producing light",
+      "options": {
+        "B": "1c,2b,3a",
+        "A": "1a,2b,3c",
+        "C": "1b,2a,3c",
+        "D": "1b,2c,3a"
+      },
+      "correct_answer": "B",
+      "explanation": "screen, producing light. - The light exposes a film, which is then developed. Computed Radiography (CR) - X-rays strike a plate that absorbs the energy and stores it at a specific location. - A laser scans the plate, releasing light from the location, which is then detected and stored in a computer. Digital Radiography (DR) - X-rays hit a detector, which converts them into light or an electrical charge immediately. - The image is stored directly in a computer.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q21_exp.png",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 22,
+      "question": "True about Compton effect in X-rays are 1) Interacts with the innermost electron 2) Interacts with the outermost electron 3) Responsible for contrast on the films 4) Produces scattered radiations on the films",
+      "options": {
+        "A": "1,3",
+        "B": "2,3",
+        "C": "1,4",
+        "D": "2,4"
+      },
+      "correct_answer": "D",
+      "explanation": "Compton scatter (or) effect . Compton effect & Photoelectric effect: Compton effect Photoelectric effect Interaction Outermost electron (Statement-2) Innermost electron (Statement-1) Process Displaces the outer electron and a high energy photon is emitted Displaces the innermost electron and a low energy photon is emitted Result Scattered radiations on the film - obscures the image (Statement-4) Responsible for Contrast in the film - Good (provides a good image) (Statement-4) Relation to atomic number Independent of atomic number Directly proportional to atomic number Reference: David Sutton textbook of Radiology & Imaging 8th edition pages - 96-108",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q22_exp.png",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 23,
+      "question": "Which among the following statements is true regarding the machine shown below",
+      "options": {
+        "A": "Produced by sudden deceleration of moving electrons",
+        "B": "Anode is primarily made up of Lead (Pb)",
+        "C": "The majority of heat dissipation is by convection",
+        "D": "Electron beam travels from anode to the cathode"
+      },
+      "correct_answer": "A",
+      "explanation": "X-ray: Introduction Discovered by W.C. Roentgen on 8 November 1895 (International Day of Radiology). Production By sudden deceleration of fast-moving electron beam (Option A) Working principle The Cathode (filament) is an electron source that produces the electron beam and the Anode is a tungsten target for the electron beam. The electron beam travels from the cathode (negatively charged) to the anode (positively charged) (Option D) Thermionic emission occurs at the Cathode. Blocking of the electron beam is done at the Anode, where 99% of heat dissipation is by Radiation (Option C) and the remaining 1% escapes through the window onto a film called X-rays. Components The Cathode Made up of Tungsten (atomic no.- 74) & Thorium . The Anode Made up of Tungsten & Rhenium (Option B) . Rotatory anodes are preferred (to avoid focal points), now stationary anodes are only used in Portable X-ray machines. Glass envelope Made up of Lead (Pb). Focusing cup Made up of Nickel. Bremsstrahlung radiation (produced by the interaction of electron with nucleus) : Electromagnetic radiation produced by the deceleration of a charged particle when deflected by another charged particle. When an electron beam (negatively charged) travels towards the anode, the nucleus (positively charged) gets deflected and travels in a different direction. Bremsstrahlung radiation depends upon the angle of deflection . Characteristic radiation:",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q23_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 24,
+      "question": "Which among the following are examples of ionizing radiation? 1) X-rays 2) UV rays 3) MRI 4) SPECT 5) Doppler 6) IVP (Intravenous pyelography)",
+      "options": {
+        "A": "1,3,5,6",
+        "B": "1,2,4,6",
+        "C": "1,4,6",
+        "D": "1,2,4"
+      },
+      "correct_answer": "C",
+      "explanation": "tomography), IVP (Intravenous pyelography). Non-ionizing radiation: MRI, USG-Doppler. Ionizing and non-ionizing radiation: Ionizing radiation Non-ionizing radiation Rays that have the ability to displace orbiting electrons from the atom thus causing biomolecular damage. Some electromagnetic and mechanical waves do not dissipate energy and hence are called non-ionizing. Conventional X-rays , Mammography, CT Contrast X-rays: HSG, IVP, ERCP, Myelography Nuclear imaging (gamma rays): PET, SPECT, Scintigraphy UV rays USG (including Doppler, FAST) MRI (Magnetic resonance imaging), MRCP Thermography Reference: https://radiopaedia.org/articles/ionizing-radiation-1",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    },
+    {
+      "q_no": 25,
+      "question": "Regarding X-rays in comparison to Gamma ( γ ) rays, that X-rays have all among the following except",
+      "options": {
+        "A": "Less penetration power",
+        "B": "Emits a higher wavelength light",
+        "C": "Relative lower frequency",
+        "D": "Emitted from within the nucleus"
+      },
+      "correct_answer": "D",
+      "explanation": "( γ ) rays are emitted from within the nucleus. X-rays and Gamma ( γ ) rays: X-rays Gamma ( γ ) rays Energy Low High Frequency Low High Penetration power Low High Wavelength High Low Origin Extranuclear Nucleus Reference: https://www.epa.gov/radiation/radiation-basics#:~:text=Gamma%20rays%20(%CE%B3)%20are%20w eightless,beta%20particles%20during%20radioactive%20decay Basic Radiotherapy Physics and Biology by David S. Chang, Foster D. Lasley, Indra J. Das, Marc S. Mendonca, Joseph R. Dynlacht (Springer) pages - 11,12",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Basics_Of_Radiology-Basics_Of_Radiology_Q25_exp.jpg",
+      "chapter_heading": "Basics Of Radiology-Basics Of Radiology"
+    }
+  ]
+}

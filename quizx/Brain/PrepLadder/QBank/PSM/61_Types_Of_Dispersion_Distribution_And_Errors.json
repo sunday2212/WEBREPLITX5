@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "title": "61_Types_Of_Dispersion_Distribution_And_Errors"
+  },
+  "questions": [
+    {
+      "text": "Which of the following correctly describes Type I and Type II errors in hypothesis testing?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Type I rejects a true null hypothesis; Type II accepts a false null hypothesis."
+        },
+        {
+          "id": 1,
+          "text": "Type I accepts a false null hypothesis; Type II rejects a true null hypothesis."
+        },
+        {
+          "id": 2,
+          "text": "Type I rejects a true alternative hypothesis; Type II accepts a false alternative hypothesis."
+        },
+        {
+          "id": 3,
+          "text": "Type I: Accepting a true null hypothesis; Type II: Rejecting a false null hypothesis."
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A) <span class=\"customMeta\" data-dictid=\"946a9a6be11692777201eb269e8327\">Type I</span> rejects a true null hypothesis; <span class=\"customMeta\" data-dictid=\"bd04ba63bc1692777201f54e0ee060\">Type II</span> accepts a false null hypothesis.</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Criteria</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Type I Error</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Type II Error</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Definition</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Rejecting a true null hypothesis</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Accepting a false null hypothesis</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Also Known As</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>False positive.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>False-negative.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Implication</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding there is an effect when there is none.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding there is no effect when there is one.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Probability Notation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Alpha (α)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Beta (β)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Consequences</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Believing a result is significant when it is not.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Missing a significant result.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Example</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding a drug has an effect when it does not.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding a drug does not have an effect when it does.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Testing Goal</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Minimise α to reduce the <span class=\"customMeta\" data-dictid=\"946a9a6be11692777201eb269e8327\">Type I</span> error rate.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Minimise β to reduce the <span class=\"customMeta\" data-dictid=\"bd04ba63bc1692777201f54e0ee060\">Type II</span> error rate.</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/Qoog5g4CXCDZsdLaVvnf1741596348.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/tB7kggubwrIuyfdn0ECZ1741596418.mp3"
+    },
+    {
+      "text": "Which of the following is statistically significant?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "RR of 2.5 with a 95% CI of 2.0 to 3.1"
+        },
+        {
+          "id": 1,
+          "text": "OR of 0.9 with a 95% CI of 0.5 to 8"
+        },
+        {
+          "id": 2,
+          "text": "p-value of 0.5 and a RR of 2.5."
+        },
+        {
+          "id": 3,
+          "text": "RR of 5.0 with a 95% CI of 0.1 to 9.8"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A)</strong> <strong>RR of 2.5 with a 95% CI of 2.0 to 3.1</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>A 95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> (CI) of 2.0 to 3.1 suggests that the <span class=\"customMeta\" data-dictid=\"8bbe99007e1692777197cdb196b181\">relative risk</span> of 2.5 is statistically significant because the CI does not include 1.</p>\n\n<p><strong>Level of significance:</strong></p>\n\n<ul>\n\t<li>Null hypothesis is accepted / results are not statistically significant when\n\t<ul>\n\t\t<li>95% CI for the mean difference between 2 variables includes 0</li>\n\t\t<li>95% CI for <span class=\"customMeta\" data-dictid=\"3715bdc9d21692777194dd6b78bed9\">odds ratio</span> or <span class=\"customMeta\" data-dictid=\"8bbe99007e1692777197cdb196b181\">relative risk</span> includes 1</li>\n\t\t<li>CI between 2 groups do not <span class=\"customMeta\" data-dictid=\"ea564f2f5e1692777194df1391fd69\">overlap</span> → statistically significant difference exists.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><strong>Option B)</strong> <strong>An odd’s ratio of 0.9 with a 95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> of 0.5 to 8: </strong></p>\n\n<p>The CI includes 1, meaning there is no significant difference and hence not statistically significant.</p>\n\n<p><strong>Option C) A p-value of 0.5 and a <span class=\"customMeta\" data-dictid=\"8bbe99007e1692777197cdb196b181\">relative risk</span> of 2.5: </strong></p>\n\n<p>The p-value is >0.05 hence it is not statistically significant.</p>\n\n<p><strong>Option: D) A <span class=\"customMeta\" data-dictid=\"8bbe99007e1692777197cdb196b181\">relative risk</span> of 5.0 with a 95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> of 0.1 to 9.8:</strong></p>\n\n<p>The CI includes 1, meaning the results are not statistically significant.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/FOyDavMKtS5IadP1ybEK1741594920.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/CsnqwZGu2dktNXU5HI9r1741595016.mp3"
+    },
+    {
+      "text": "A biostatistician studies adults' average systolic blood pressure (SBP) in a certain population. A sample of 40 adults was taken, and the mean systolic blood pressure was 130 mmHg with a standard deviation of 15 mmHg. Which is the correct 95% confidence interval for the true mean systolic blood pressure?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "(125.25 mmHg, 134.75 mmHg)"
+        },
+        {
+          "id": 1,
+          "text": "(138.36 mmHg, 131.64 mmHg)"
+        },
+        {
+          "id": 2,
+          "text": "(128.00 mmHg, 127.00 mmHg)"
+        },
+        {
+          "id": 3,
+          "text": "(127.36 mmHg, 132.64 mmHg)"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A) (125.25 mmHg, 134.75 mmHg)</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Sample Mean (X̄)= 130 mmHg.</p>\n\n<p>Standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> (SD)= 15 mmHg.</p>\n\n<p>Sample Size (n)= 40</p>\n\n<p><strong>Formula of the confidence interval:</strong></p>\n\n<p>95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> for mean = mean ± 1.96 * <span class=\"customMeta\" data-dictid=\"e47ea542fc1692777199a0c8d62700\">standard error</span> of mean (SEM)</p>\n\n<p>This can be considered mean ± 2 * <span class=\"customMeta\" data-dictid=\"e47ea542fc1692777199a0c8d62700\">standard error</span> of the mean (SEM).</p>\n\n<p>SEM =SD/√n</p>\n\n<p>SEM = 15/√40</p>\n\n<p>         = 2.37</p>\n\n<p>Confidence interval = 130 ± 2x2.37  = 130 ± 4.75</p>\n\n<p>CI = (125.25, 134.75)</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/opYGXVY1wnPaOYKwBepP1741595101.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/2bFoMmuaeDHmtYMHYUJl1741595186.mp3"
+    },
+    {
+      "text": "A public health researcher is studying the average weight of newborns in a specific region. The researcher collects a random sample of 100 newborns and calculates a 95% confidence interval for the mean weight (3.2 kg, 3.8 kg). Which of the following statements correctly interprets the 95% confidence level?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "There is a 95% chance that the mean weight of all newborns in the region falls between 3.2 kg and 3.8 kg"
+        },
+        {
+          "id": 1,
+          "text": "95% of the newborns in the sample weigh between 3.2 kg and 3.8 kg."
+        },
+        {
+          "id": 2,
+          "text": "95 % of the intervals will include the true mean if we calculate CI for multiple samples"
+        },
+        {
+          "id": 3,
+          "text": "Mean weight of all newborns in the region is exactly 3.5 kg, which is the midpoint of the confidence interval."
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: C)</strong> <strong>95 % of the intervals will include the true mean if we calculate CI for multiple samples </strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Confidence interval:</p>\n\n<p>The <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">confidence interval</span> is the range of values within which the true mean of the population is expected to fall with a specified probability.</p>\n\n<p>Confidence Level:</p>\n\n<p>A 95% <span class=\"customMeta\" data-dictid=\"177590d99e1692777185cb64f3b61d\">confidence level</span> means that if we take many random samples and compute a <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">confidence interval</span> for each, we expect 95% of those intervals to contain the true population mean.</p>\n\n<p>Formula to calculate the confidence interval:</p>\n\n<ul>\n\t<li>95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> for mean = mean ± 2 x <span class=\"customMeta\" data-dictid=\"e47ea542fc1692777199a0c8d62700\">standard error</span> of mean</li>\n\t<li>95% <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">Confidence interval</span> for proportion = p ± 2 x <span class=\"customMeta\" data-dictid=\"e47ea542fc1692777199a0c8d62700\">standard error</span> of proportion</li>\n</ul>\n\n<p><strong>Option A:</strong> There is a 95% chance that the mean weight of all newborns in the region falls between 3.2 kg and 3.8 kg. This is incorrect because the <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">confidence interval</span> does not give the <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of the <span class=\"customMeta\" data-dictid=\"545f858ab4169277719506466fab93\">population mean</span> being within the interval.</p>\n\n<p><strong>Option B:</strong> 95% of the newborns in the sample have weights between 3.2 kg and 3.8 kg. This is incorrect because the <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">confidence interval</span> pertains to the mean weight, not the distribution of individual weights within the sample.</p>\n\n<p><strong>Option D:</strong> The mean weight of all newborns in the region is exactly 3.5 kg, the midpoint of the confidence interval. This is incorrect because the <span class=\"customMeta\" data-dictid=\"5b0b2297f516927771854d4cab77e5\">confidence interval</span> indicates a range of values for the population mean, not a specific value.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/gltdXy42C4rRspwxakjb1741595295.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/5HSf0xLcxQxArvOFOvhx1741595415.mp3"
+    },
+    {
+      "text": "A study was conducted to determine the effectiveness of a new antihypertensive. The study is designed with a significance level (alpha) of 0.05 and a sample size of 50 participants. The type II error is calculated as 0.25. Which of the following is the power of this study, and how can it be increased?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "The power of the study is 75% and can be increased by decreasing the sample size."
+        },
+        {
+          "id": 1,
+          "text": "The power of the study is 70%, and it can be increased by increasing the sample size."
+        },
+        {
+          "id": 2,
+          "text": "The power of the study is 75% and it can be increased by increasing the sample size."
+        },
+        {
+          "id": 3,
+          "text": "The power of the study is 95% and it can be increased by increasing the sample size."
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: C) The power of the study is 75%, and it can be increased by increasing the sample size.</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The power of a study is calculated as:</p>\n\n<p><strong>Power = 1- β </strong></p>\n\n<p>From the above result, β (Type II error) = 0.25</p>\n\n<p>Hence power = 1 - 0.25 = 0.75 or 75%</p>\n\n<p>Power and <span class=\"customMeta\" data-dictid=\"bd04ba63bc1692777201f54e0ee060\">type II</span> error:</p>\n\n<ul>\n\t<li>Type II error (beta) occurs when the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> is false but accepted.</li>\n\t<li>The power of a test can be increased by decreasing the <span class=\"customMeta\" data-dictid=\"bd04ba63bc1692777201f54e0ee060\">Type II</span> error, i.e. by increasing the sample size.</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/5s4HiXCsrNNRj7t8XzPw1741597118.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/0EPsUxKosGELMEkmrASs1741597207.mp3"
+    },
+    {
+      "text": "A health researcher is testing the effectiveness of a new drug in reducing blood pressure. The null hypothesis (H0) is that the drug does not affect blood pressure, while the alternative hypothesis (H1) is that the drug does reduce blood pressure. After conducting the study and analysing the data, the researcher calculates a p-value of 0.03. Based on this information, which of the following is true?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Probability of the null hypothesis being accepted is 3%."
+        },
+        {
+          "id": 1,
+          "text": "Observed effect has a less than 3% chance of occurring by random chance."
+        },
+        {
+          "id": 2,
+          "text": "Probability of the null hypothesis being rejected is 3%."
+        },
+        {
+          "id": 3,
+          "text": "Observed effect has a 97% chance of occurring due to the new drug"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct  Answer: A) <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">Probability</span> of the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> being accepted is 3%.</strong></p>\n\n<p><strong>Explanation: </strong>There is less than 3% chance that the observed effect is due to random variation.</p>\n\n<p>A p-value of 0.03 means that there is a less than 3% <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> that the observed effect occurred by chance, which suggests that the outcome of the study is statistically significant</p>\n\n<p>p-value:</p>\n\n<ul>\n\t<li>It is the <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of committing a <span class=\"customMeta\" data-dictid=\"ebcb7136251692777201ef4b5c5718\">Type 1</span> error</li>\n\t<li>Maximum threshold for committing a <span class=\"customMeta\" data-dictid=\"ebcb7136251692777201ef4b5c5718\">Type 1</span> error is set at 5%</li>\n\t<li>When the p-value is less than α, the result is statistically significant. (p<0.05)</li>\n\t<li>It only tells us about the strength of evidence against the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> based on the observed data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/S1hkPpGGVEJ0GtvHN0PL1741596938.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/6D9Mu4U8QuIZpyPqjMdC1741597033.mp3"
+    },
+    {
+      "text": "What does the p-value represent in hypothesis testing?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Probability that a Type 2 error is being made."
+        },
+        {
+          "id": 1,
+          "text": "Probability of declaring a significant difference when there is none in reality."
+        },
+        {
+          "id": 2,
+          "text": "Probability of declaring a significant difference when it is present."
+        },
+        {
+          "id": 3,
+          "text": "It represents power and is equal to 1 - Beta."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B. <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">Probability</span> of declaring a significant difference when there is none in reality</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The p-value in hypothesis testing represents the <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of obtaining the observed data or more extreme results, assuming that the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> is true.</li>\n\t<li>It helps researchers determine the strength of the evidence against the null hypothesis; a lower p-value indicates stronger evidence.</li>\n\t<li>The maximum value for committing a <span class=\"customMeta\" data-dictid=\"ebcb7136251692777201ef4b5c5718\">Type 1</span> error is 5%. This is known as the α level of significance</li>\n\t<li>p-value can be less, equal or more than ɑ, but the p-value has to be less than ɑ(p < 0.05) to be statistically significant.</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/zFF6pHuk7dUfDynred7H1741596788.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/OD6pbbt2DsyMnI3SVhdF1741596847.mp3"
+    },
+    {
+      "text": "A weighing scale consistently adds 10% to each weight. A true weight of 10 kg is 11 kg, while a true weight of 40 kg is 44 kg. Which type of error is exhibited in this scenario?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Random error"
+        },
+        {
+          "id": 1,
+          "text": "Non-random error"
+        },
+        {
+          "id": 2,
+          "text": "Human error"
+        },
+        {
+          "id": 3,
+          "text": "Operator error"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B)</strong> <strong>Non-random error </strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:721px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Criteria</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Random Error</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Non <span class=\"customMeta\" data-dictid=\"21d21637461692777197aab2a7283a\">Random Error</span> </strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Definition</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Unpredictable variations in measurements due to chance factors</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Consistent or predictable deviations from the true value</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Nature of Variation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Causes measurements to fluctuate randomly around the true value</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Causes measurements to deviate in one direction consistently.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Cause</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Typically due to</p>\n\n\t\t\t<ul>\n\t\t\t\t<li>Random chance</li>\n\t\t\t\t<li>Environmental factors</li>\n\t\t\t\t<li>Sampling variability</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Often due</p>\n\n\t\t\t<ul>\n\t\t\t\t<li>Instrumental error</li>\n\t\t\t\t<li>Methodological error</li>\n\t\t\t\t<li>Calibration error</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Effect on Measurements</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Increases measurement <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> across repeated trials.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Introduces a consistent bias or offset from the true value.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Reduction Strategy</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>This can be <span class=\"customMeta\" data-dictid=\"10c83adb331692777197f775bec1aa\">reduced</span> by increasing sample size or conducting more trials</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Requires adjustments to measurement tools, recalibration, or procedural changes</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Examples</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Fluctuations in experimental readings despite controlled conditions.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>A scale consistently adding 10% to all weights measured.</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/Lp3ykJdEUavc2aLv1rFQ1741596658.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/eFC4r8Bof4PqaPTHcSpf1741596733.mp3"
+    },
+    {
+      "text": "A new drug designed to lower cholesterol levels is being tested. The testing involved 1000 participants. The null hypothesis is that \"the new drug does not affect cholesterol levels\". After analysing the data, the researchers conclude that the drug doesn't work, but in reality, it does have a small but clinically significant effect. What type of error has occurred?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Type I error"
+        },
+        {
+          "id": 1,
+          "text": "Type II error"
+        },
+        {
+          "id": 2,
+          "text": "No error has occurred"
+        },
+        {
+          "id": 3,
+          "text": "Both Type I and Type II errors"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B)</strong> <strong>Type II error </strong></p>\n\n<p> </p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>This scenario describes a Type II error, also known as a \"false negative.\"</p>\n\n<ul>\n\t<li>The <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> states the drug has no effect.</li>\n\t<li>In reality, the drug does have an effect (the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> is false).</li>\n\t<li>The researchers fail to reject the null hypothesis</li>\n</ul>\n\n<p><strong>Key points:</strong></p>\n\n<ul>\n\t<li>Type II error occurs when we fail to reject a false null hypothesis.</li>\n\t<li>It results in missing a real effect or relationship.</li>\n\t<li>In this case, a potentially beneficial drug might be overlooked.</li>\n\t<li>Type II errors are particularly important in medical research, as they can lead to overlooking potentially beneficial treatments.</li>\n\t<li><strong>The power of a statistical test (1 - <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of Type II error) </strong>is crucial in designing studies to minimise this risk.</li>\n</ul>\n\n<p><strong>Type I error (Option A):</strong> A Type I error occurs when you <strong>reject a true null hypothesis</strong>. In this scenario, the researchers <em>concluded</em> the drug doesn't work (failed to reject the null), but it <em>actually does</em> have an effect. This is the opposite of a Type I error.</p>\n\n<p><strong>No error has occurred (Option C):</strong> An error clearly occurred because the researchers' conclusion (drug doesn't work) contradicts the reality (drug does work).</p>\n\n<p><strong>Both Type I and Type II errors (Option D):</strong> It is impossible to commit both a Type I and a Type II error in the same hypothesis test for the same null hypothesis.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/s9i5hX9vz2OK28i0Nlpd1741597358.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/g1VWsEy7YotVAW8cgqNn1741597415.mp3"
+    },
+    {
+      "text": "In a clinical trial for a new hypertension drug, the null hypothesis states: \"The new drug does not affect blood pressure.\" If researchers commit a Type 1 error, which of the following is true?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Drug lower BP, but it was concluded that it has no effect."
+        },
+        {
+          "id": 1,
+          "text": "Drug has no effect, but it was concluded as it lowers BP."
+        },
+        {
+          "id": 2,
+          "text": "Drug raises BP, but it was concluded that it has no effect."
+        },
+        {
+          "id": 3,
+          "text": "Drug has no effect, and it was correctly concluded."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B)</strong> <strong>Drug has no effect, but it was concluded as it lowers BP</strong></p>\n\n<p><strong>Explanation: </strong>A Type 1 error, also known as a \"false positive,\" occurs when we reject the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> when it is true. In this case:</p>\n\n<ul>\n\t<li><strong>Null hypothesis</strong>: The drug does not affect blood pressure.</li>\n\t<li><strong>Type 1 error</strong>: Rejecting this true <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> and accepting an alternative hypothesis.</li>\n</ul>\n\n<p><strong>Key points:</strong></p>\n\n<ul>\n\t<li>In a Type 1 error, the truth aligns with the <span class=\"customMeta\" data-dictid=\"c897b277481692777193e7e3165f10\">null hypothesis</span> (the drug truly has no effect).</li>\n\t<li>The error lies in the researchers' conclusion, which incorrectly rejects the null hypothesis.</li>\n\t<li>This error leads to a false claim of a significant effect when there isn't one.</li>\n</ul>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Criteria</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Type I Error</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Type II Error</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Definition</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Rejecting a true null hypothesis</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Accepting a false null hypothesis</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Also Known As</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>False positive.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>False-negative.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Implication</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding there is an effect when there is none.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding there is no effect when there is one.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Probability Notation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Alpha (α)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Beta (β)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Consequences</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Believing a result is significant when it is not.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Missing a significant result.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Example</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding a drug has an effect when it does not.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Concluding a drug does not have an effect when it does.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Testing Goal</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Minimise α to reduce the Type I error rate.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Minimise β to reduce the Type II error rate.</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><strong>Drug lowers BP, but it was concluded that it has no effect (Option A): </strong>This would be a <strong>Type II error</strong>: failing to reject H₀ when it is false.</p>\n\n<p><strong>Drug raises BP, but it was concluded that it has no effect (Option C): </strong> Again, H₀ is false (it raises BP), but we accept it — a <strong>Type II error</strong>.</p>\n\n<p><strong>Drug has no effect, and it was correctly concluded (Option D): </strong>This is a <strong>correct decision</strong>, not an error at all.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/ZaZeCs73RBJzIzkNFoAi1741596499.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/0ylP6nhWpoRsnhpGrf771741596577.mp3"
+    },
+    {
+      "text": "Which measure of dispersion is considered the most comprehensive and widely used in statistical analysis?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Range"
+        },
+        {
+          "id": 1,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 2,
+          "text": "Mean deviation"
+        },
+        {
+          "id": 3,
+          "text": "Variance"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) Standard deviation</strong></p>\n\n<p><strong>Explanation: </strong>Standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> is considered the most comprehensive and widely used measure of <span class=\"customMeta\" data-dictid=\"aff8304142169277718661b3b8980a\">dispersion</span> in statistical analysis.</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:607px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-color:#000000; border-style:solid; border-width:1px; text-align:center; vertical-align:top\"><strong>Measures of dispersion</strong></td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Definition</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Calculation </strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Standard deviation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Measures the variation or <span class=\"customMeta\" data-dictid=\"aff8304142169277718661b3b8980a\">dispersion</span> of a set of values around the mean.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>σ = √(∑(x− x̄)<sup>2 </sup>/n)</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Range</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>The difference between the highest and lowest values in a dataset.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Range = Maximum value - Minimum value</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Mean deviation</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Measures the average absolute <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> of data points from the mean.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mean <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> = ∑ X - x̄ / n</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Variance</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Measures the average of the squared differences from the mean.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Variance = σ<sup>2</sup></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/wpfS79DQT9X72xvBu01C1741593368.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/7vtJ2uEEzE0e6bovc4Si1741593425.mp3"
+    },
+    {
+      "text": "Which of the following statements regarding Poisson’s distribution is NOT true?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "It measures the probability of the occurrence of discrete events."
+        },
+        {
+          "id": 1,
+          "text": "The average rate of events is denoted by lambda."
+        },
+        {
+          "id": 2,
+          "text": "Poisson's distribution is skewed to the left when the rate of occurrence is small."
+        },
+        {
+          "id": 3,
+          "text": "The distribution approaches symmetry as its rate of occurrence increases."
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: C) Poisson's distribution is skewed to the left when the rate of occurrence is small.</strong></p>\n\n<p><strong>Explanation: </strong>In Poisson's distribution, when the rate of occurrence is small, the <span class=\"customMeta\" data-dictid=\"90b63cdcfe16927771885e9612aecb\">graph</span> is skewed to the right and not the left.</p>\n\n<ul>\n\t<li>Poisson’s distribution measures the <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of a <span class=\"customMeta\" data-dictid=\"635650799116927771862d7cb568f4\">discrete</span> event happening in a fixed interval of time or space. <strong>(Option A)</strong></li>\n\t<li>The average rate of event distribution is denoted by <span class=\"customMeta\" data-dictid=\"480a28f2ba1692777191df6f60792d\">lambda</span> (𝝺) <strong>(Option B)</strong></li>\n\t<li>When the 𝝺 is small, the distribution is skewed to the right, and as the 𝝺 increases, the distribution approaches symmetry<strong> (Options C and Option D)</strong></li>\n</ul>\n\n<p><strong>Example of a Possion’s distribution graph</strong></p>\n\n<p> </p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"473\" src=\"https://image.prepladder.com/content/Jm6Ed8P1dKQM3j8hUStg1728632950.jpg\" width=\"295\" /></p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/content/Jm6Ed8P1dKQM3j8hUStg1728632950.jpg"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/32b4qnnULtS2i3kV4MYK1741596146.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/sAPlXRyrsewScFc3dp211741596224.mp3"
+    },
+    {
+      "text": "In the right-sided skewed distribution graph given below, what is the correct order of the measures of central tendency?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Mean < median < mode"
+        },
+        {
+          "id": 1,
+          "text": "Mean > median > mode"
+        },
+        {
+          "id": 2,
+          "text": "Mean = median > mode"
+        },
+        {
+          "id": 3,
+          "text": "Mean = median = mode"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) Mean > <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> > mode</strong></p>\n\n<p><strong>Explanation: </strong>For a right-sided / Positively skewed curve, Mean > <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> > mode</p>\n\n<p>An asymmetric curve forms when the mean, median, and mode are not equal at the coincidence point, leading to a skewed distribution.</p>\n\n<p>Skewness of the curve is determined by the direction of the tail.</p>\n\n<ul>\n\t<li>If the tail is right-sided, it is positively skewed.</li>\n\t<li>If the tail is left-sided, it is negatively skewed.</li>\n\t<li>Mean is the most affected central tendency in a skewed distribution.</li>\n</ul>\n\n<figure class=\"caption_element\"><img alt=\"CM041-Right-sided  Positively skewed curve-unlabelled\" data-author=\"na\" data-hash=\"319\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/bjLhH3jqnIfkpGdmDf0n1734024654.png\" />\n<figcaption>{{caption_text}}</figcaption>\n</figure>\n\n<p><strong>Option A: </strong>If <strong>Mean < <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> < mode</strong>, it leads to the formation of a negatively skewed /left-sided curved</p>\n\n<figure class=\"caption_element\"><img alt=\"CM043-Negatively skewed left-sided curved\" data-author=\"na\" data-hash=\"320\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/vnxRcR7DRMzbvfiO650l1734024684.png\" />\n<figcaption>{{caption_text}}</figcaption>\n</figure>\n\n<p><strong>Option C: Mean = <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> > mode</strong></p>\n\n<p>This observation is not possible in a skewed distribution, as for the mean to be equal to the median, the distribution must be <span class=\"customMeta\" data-dictid=\"d963da62eb16927771993737a99c7c\">symmetrical</span> and not skewed.</p>\n\n<p><strong>Option D</strong>:<strong> Mean = <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> = mode</strong></p>\n\n<p>If all the values of measures of central tendency are equal, this leads to a <span class=\"customMeta\" data-dictid=\"d963da62eb16927771993737a99c7c\">symmetrical</span> distribution rather than a skewed distribution.</p>\n\n<p><img alt=\"CM044-Symmetrical distribution\" data-author=\"na\" data-hash=\"321\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/hUQEMxjHR3SnqPjV1Aq01734024716.png\" /></p>",
+      "question_images": [
+        "https://image.prepladder.com/notes/nnu8YIZ1zjLPfFxe0Uj51734024601.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/bjLhH3jqnIfkpGdmDf0n1734024654.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/ImH0LbuVFJDfbV9vkaUK1741596011.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/At53FOGmiblgCkIg8e981741596065.mp3"
+    },
+    {
+      "text": "Based on the Gaussian curve, which ranges under the curve cover 95% of the observations?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Range A"
+        },
+        {
+          "id": 1,
+          "text": "Range B"
+        },
+        {
+          "id": 2,
+          "text": "Range C"
+        },
+        {
+          "id": 3,
+          "text": "Range D"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct answer: C. Range C</strong></p>\n\n<p><strong>Explanation: </strong>If we consider the area under the curve in range C, it is equal to mean +/- 2SD, which covers 95% of observations in a Gaussian/bell-shaped curve.</p>\n\n<p style=\"text-align:center\"><img alt=\"Normal distribution graph\" data-author=\"na\" data-hash=\"317\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" height=\"372\" src=\"https://image.prepladder.com/notes/i1XSkTRB07F19BoHSCIs1734024515.png\" width=\"500\" /></p>\n\n<p>A Gaussian/bell-shaped curve showing <span class=\"customMeta\" data-dictid=\"475819fca9169277719331ada0265e\">normal distribution</span> forms when the point of coincidence is equal to Mean = Median = Mode ~ Normal distribution</p>\n\n<p>In a standard normal distribution</p>\n\n<p>Mean = Median = Mode = 0</p>\n\n<p>Standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> = 1</p>\n\n<p>Total area under the curve = 1</p>\n\n<p>If we draw the following line</p>\n\n<ul>\n\t<li>Redline cuts the base at the distance of 1 standard deviation.</li>\n\t<li>Pink line at +/- 2 standard deviation.</li>\n\t<li>Green line at +/- 3 standard deviation.</li>\n\t<li>The tail of the curve never touches the baseline.</li>\n</ul>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:547px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Area under the curve </strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Observation covered </strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mean +/- 1 SD</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>68.3% ~ 68% of observation</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mean +/- 2 SD</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>95.4% ~ 95% of observation</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mean +/- 3 SD</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>99.7% ~ 99% of observation</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mean +/- ∞SD</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>100% of observation</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [
+        "https://image.prepladder.com/notes/d7WfWHKhf9tzG18zkrIz1734024454.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/i1XSkTRB07F19BoHSCIs1734024515.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/0FcbdqDSMtlMol4qSqsg1741595922.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/QIWR372MXSWW6ByoT71G1741595963.mp3"
+    },
+    {
+      "text": "The blood pressure measurement of 120 patients was conducted in a health camp. The first quartile systolic blood pressure was 108 mm Hg, and the third quartile was 136 mm Hg. How many people will have their BP between the 1st and 3rd quartile?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "30 patients"
+        },
+        {
+          "id": 1,
+          "text": "60 patients"
+        },
+        {
+          "id": 2,
+          "text": "90 patients"
+        },
+        {
+          "id": 3,
+          "text": "75 patients"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) 60 patients</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Total number of patients = 120</p>\n\n<p>Q1= 108 mm hg</p>\n\n<p>Q3= 136 mm hg</p>\n\n<p>We know,</p>\n\n<p>Quartiles divide the data set into 4 equal parts.</p>\n\n<p>Q1 is the point below which 25% of the data falls, and Q3 is below which 75% falls.</p>\n\n<p><img alt=\"Quartiles\" data-author=\"na\" data-hash=\"315\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/ouwIhwdbewnWRE6MV7dz1734024343.png\" /></p>\n\n<p>If,</p>\n\n<p>25 % of people have <span class=\"customMeta\" data-dictid=\"cf69f5256416927771991c21f264ae\">systolic</span> BP less than 108 <span class=\"customMeta\" data-dictid=\"66ae2626ae169277719278edf9936d\">mm Hg</span> = 30 people</p>\n\n<p>75% of people have <span class=\"customMeta\" data-dictid=\"cf69f5256416927771991c21f264ae\">systolic</span> BP less than or equal to 136 <span class=\"customMeta\" data-dictid=\"66ae2626ae169277719278edf9936d\">mm Hg</span> = 90 people</p>\n\n<p>25% of people have <span class=\"customMeta\" data-dictid=\"cf69f5256416927771991c21f264ae\">systolic</span> BP more than 136 <span class=\"customMeta\" data-dictid=\"66ae2626ae169277719278edf9936d\">mm Hg</span> = 30 people</p>\n\n<p> </p>\n\n<p>Thus</p>\n\n<p>The number of people with BP between 108 and 136 <span class=\"customMeta\" data-dictid=\"66ae2626ae169277719278edf9936d\">mm Hg</span> (i.e., between the 1st and 3rd quartile) is 75% - 25% = 50% of the total patients.</p>\n\n<p>Hence, 50% * 120 = 60 patients will have their BP between the 1st and 3rd quartiles.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/ouwIhwdbewnWRE6MV7dz1734024343.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/twdqt7r98Sz9iTOJB0fr1741595794.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/unFyN5JY6H0IA0i58B301741595872.mp3"
+    },
+    {
+      "text": "Where does the data point fall if the Z score equals zero in a normal distribution graph?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Between mean and +1 SD"
+        },
+        {
+          "id": 1,
+          "text": "Exactly at the mean"
+        },
+        {
+          "id": 2,
+          "text": "Between mean and -1 SD"
+        },
+        {
+          "id": 3,
+          "text": "Less than -3 SD"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) Exactly at the mean </strong></p>\n\n<p><strong>Explanation: </strong>In a <span class=\"customMeta\" data-dictid=\"475819fca9169277719331ada0265e\">normal distribution</span> curve, the data point falls exactly on the mean if the Z score equals zero.</p>\n\n<ul>\n\t<li>The Z-score of a data point measures how many standard deviations it is above or below the mean.</li>\n\t<li>If a data set follows a normal distribution, the mean is at the centre, and a Z score of <span class=\"customMeta\" data-dictid=\"116e588c7b1692777202c7f3040428\">zero</span> indicates that the data point is exactly at the mean.</li>\n\t<li>A positive Z score indicates the data point is above the mean, while a negative Z score indicates it is below the mean.</li>\n</ul>\n\n<ul>\n\t<li>The formula for the calculation of the Z score:\n\t<ul>\n\t\t<li><strong>Z = (x-μ) / σ</strong>\n\n\t\t<ul>\n\t\t\t<li>X - observed value</li>\n\t\t\t<li>μ - mean</li>\n\t\t\t<li>σ - standard deviation</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><img alt=\"Normal distribution graph\" data-author=\"na\" data-hash=\"314\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/8nd4QpaWtyqajDr6X8l81734024231.png\" /></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:460px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Z score </strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> </strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">-2</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">-2</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">-1</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">-1</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">0</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">Mean</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">+1</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">+1</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">+2</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\">+2</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [
+        "https://image.prepladder.com/notes/8nd4QpaWtyqajDr6X8l81734024231.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/8nd4QpaWtyqajDr6X8l81734024231.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/CZ3MtDyBaBxbLVBBN0Kz1741594462.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/jEoTCdeCBWaJeQzPsl3u1741594791.mp3"
+    },
+    {
+      "text": "In a survey, 100 individuals were randomly sampled to estimate the mean age of a population. The sample mean age was 35, with a standard deviation of 5 years. What is the standard error of the mean (SE of mean) for this survey?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "0.5 years"
+        },
+        {
+          "id": 1,
+          "text": "0.05 years"
+        },
+        {
+          "id": 2,
+          "text": "5 years"
+        },
+        {
+          "id": 3,
+          "text": "0.25 years"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A) 0.5 years</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>To solve this question, use the formula for the <span class=\"customMeta\" data-dictid=\"e47ea542fc1692777199a0c8d62700\">standard error</span> of the mean:</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:497px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Standard error of the mean = standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> / </strong><strong>√</strong><strong> </strong><strong>sample size</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>SE = 5 /√100</p>\n\n<p>      = 5 / 10</p>\n\n<p>      = 0.5 years</p>\n\n<p>Standard error provides a measure of the <span class=\"customMeta\" data-dictid=\"55748e259a169277719699c6638990\">precision</span> of sample estimates. A smaller SE indicates less <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> in sample means, suggesting more precise estimates.</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:700px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Standard error of the mean </strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>Standard error of proportion</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Quantifies the <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> of sample means around the true population mean<strong>.</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Measures how much sample proportions vary around the population proportion</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>SE mean = σ/√N</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>SE proportion = √(pq/N)</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/CjKepVE27B75XUDETA8d1741594263.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/anJkTNCGZmcOPJTC4GLf1741594313.mp3"
+    },
+    {
+      "text": "The heights (in centimetres) of students in the two classes are summarised as follows:\n\nClass A: Mean height = 170 cm, Standard Deviation = 7.5 cm\nClass B: Mean height = 162.5 cm, Standard Deviation = 8.2 cm\n\nCalculate the coefficient of variation (COV) for both classes and determine which class shows greater relative variability in heights.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Class A"
+        },
+        {
+          "id": 1,
+          "text": "Class B"
+        },
+        {
+          "id": 2,
+          "text": "Both classes have the same coefficient of variation"
+        },
+        {
+          "id": 3,
+          "text": "Cannot be determined from the given information"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct answer: B) Class B</strong><br />\n<strong>Explanation:</strong></p>\n\n<p>To solve this question, use the formula for COV:</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:394px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>COV = (Standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> / Mean)×100</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><strong>Calculate COV for Class A:</strong></p>\n\n<p>COV A = (7.5 / 170)×100</p>\n\n<p>            ≈ 4.41%</p>\n\n<p><strong>Calculate COV for Class B:</strong></p>\n\n<p>COV B = (8.2 / 162.5)×100</p>\n\n<p>             ≈ 5.05</p>\n\n<p>Therefore, Class B has a higher <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> of variation (COV) than Class A, indicating that Class B shows greater relative <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> in heights.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/Vuco8Mfkmm6GeukhBI5m1741594121.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/OCqf0EMdsndIULGA6oM71741594215.mp3"
+    },
+    {
+      "text": "Which of the following is not true regarding the coefficient of variation (COV)?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "COV compares the relative variability of datasets with different means."
+        },
+        {
+          "id": 1,
+          "text": "Higher COV signifies greater dispersion relative to the mean, indicating lower reliability"
+        },
+        {
+          "id": 2,
+          "text": "Lower COV suggests data points are closer to the mean, indicating higher reliability."
+        },
+        {
+          "id": 3,
+          "text": "COV can be negative if the standard deviation is smaller than the mean."
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Correct answer: D) COV can be negative if the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> is smaller than the mean.</strong></p>\n\n<p><strong>Explanation: </strong>The <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> of variation (COV) is calculated as the ratio of the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> to the mean, and both the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> and the mean are non-negative quantities. Therefore, COV values are always non-negative and cannot be negative.</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:295px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align: center;\"><strong>COV = σ/ mean x 100</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<ul>\n\t<li>The <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> of variation (COV) is specifically designed to compare the <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> of datasets with different means.<strong> (Option A)</strong></li>\n\t<li>It standardises the measure of <span class=\"customMeta\" data-dictid=\"aff8304142169277718661b3b8980a\">dispersion</span> by expressing the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> as a percentage of the mean, allowing for meaningful comparison even when the datasets have different scales.</li>\n</ul>\n\n<ul>\n\t<li>A higher COV signifies that the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> is relatively larger than the mean, indicating greater <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> or spread of data points around the mean and less reliable<strong> (Option B).</strong></li>\n</ul>\n\n<p>A lower COV indicates that the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> is smaller than the mean, suggesting that data points are closer to the mean. This typically implies more <span class=\"customMeta\" data-dictid=\"bb67ce71481692777185f0e078535f\">consistency</span> and less variability, which can indicate higher reliability of the dataset for analysis or decision-making. <strong>(Option C).</strong></p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/irlQFE6GYlsbOhxbd0Cn1741593753.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/bAc96Apf8gqGRzEoPEAt1741594030.mp3"
+    },
+    {
+      "text": "A small sample of students' weights (in pounds) is recorded to analyse their distribution. The weights are 120,125,130,122,128. Calculate the standard deviation for the weights of students.",
+      "choices": [
+        {
+          "id": 0,
+          "text": "4.12"
+        },
+        {
+          "id": 1,
+          "text": "4.00"
+        },
+        {
+          "id": 2,
+          "text": "4.51"
+        },
+        {
+          "id": 3,
+          "text": "5.20"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct answer: A) 4.12</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>To find the standard <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">deviation</span> for the weights:</p>\n\n<p>1. Calculate the mean: = 120+125+130+122+128/5</p>\n\n<p>                                     = 625/5</p>\n\n<p>                                     = 125</p>\n\n<p>2. Calculate the deviations from the mean:</p>\n\n<p>                  <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> for 120: 120−125=−5</p>\n\n<p>                  <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> for 125: 125−125=0</p>\n\n<p>                  <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> for 130: 130−125=5</p>\n\n<p>                  <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> for 122: 122−125=−3</p>\n\n<p>                  <span class=\"customMeta\" data-dictid=\"fa328dbc09169277718631e23a772f\">Deviation</span> for 128: 128−125=3</p>\n\n<p>3. Calculate the sum of squared deviations:</p>\n\n<p>                  ∑(xi− x̄)<sup>2</sup>=25+0+25+9+9=68</p>\n\n<p>    Use n−1 since the sample size is less than 30 and calculate the standard deviation:</p>\n\n<p>                  S =√∑(xi− x̄)<sup>2</sup>/n−1</p>\n\n<p>                     =√68/5−1</p>\n\n<p>                     = √68/4</p>\n\n<p>                     = √17</p>\n\n<p>                     ≈ 4.12</p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/F2oZtPXbgwGcMfEme0Wd1741593540.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/TE3lqR6vbd5IwkATtZ6x1741593644.mp3"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mbbs-quiz",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "servor . --reload",
+    "dev": "servor . --reload"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}

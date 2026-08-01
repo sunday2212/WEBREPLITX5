@@ -1,0 +1,95 @@
+{
+  "chapter": "Evidence-Based Studies",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Below are the steps for conducting a systematic review. Select the option that states the correct order of the steps. Data extraction Data synthesis Selecting the studies Defining the review question and eligibility criteria Searching for the studies Result Interpretation",
+      "options": {
+        "A": "3-5-4-2-1-6",
+        "B": "5-3-1-2-4-6",
+        "C": "4-5-3-1-2-6",
+        "D": "2-1-5-3-4-6"
+      },
+      "correct_answer": "C",
+      "explanation": "unpublished, are collected and rigorously analysed ( except quantitative analysis ) The steps followed in a systematic review are: Systematic Review Process A systematic review follows a rigorous, step-by-step methodology to collect and analyze evidence from multiple studies. This ensures transparency, reduces bias, and helps generate strong conclusions for clinical and public health decision-making. Step Paraphrased Description 1. Formulating the Research Question Start by framing a specific, well-defined question using models like PICO (Population, Intervention, Comparison, Outcome). This step directs all following activities. 2. Developing a Protocol Create a comprehensive plan that includes aims, eligibility criteria, and methods for searching, screening, and synthesizing studies. Register the protocol in databases like PROSPERO. 3. Identifying Studies Perform an extensive literature search across various sources with no language barriers. Use predefined inclusion and exclusion criteria. 4. Selecting Relevant Studies Screen titles, abstracts, and full texts using explicit criteria. Involve multiple reviewers and resolve disagreements through discussion or a third-party reviewer. 5. Assessing Quality Evaluate the methodological strength of included studies using standard checklists to gauge bias and relevance for synthesis. 6. Data Extraction and Summarization Use uniform tools to extract key data from studies. Summarize findings using descriptive tables and figures. 7. Synthesizing the Evidence Combine data either qualitatively or quantitatively (meta-analysis), depending on the heterogeneity of studies. Subgroup analysis may be applied. 8. Interpreting and Reporting Discuss the strength, limitations, and implications of the findings. Provide recommendations and suggestions for future research directions. Enhances credibility and reproducibility of results. Reduces selection and publication bias . Supports evidence-based practice and policy development .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Evidence-Based Studies"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following best describes meta-analysis?",
+      "options": {
+        "A": "Quantitative analysis of the result derived from a single study",
+        "B": "Conducting time-specific research and analysing the same",
+        "C": "Analysis of results derived from multiple studies",
+        "D": "Conducting population-specific research and analysing the same"
+      },
+      "correct_answer": "C",
+      "explanation": "qualitatively analyses the results from various studies to reach a common conclusion. It differs from a systematic review in that the latter can be used to analyse the outcome of only a single study. Meta-analysis takes the upper hand because the final outcome will always be reliable if multiple studies on the same topic are being analysed rather than a single study. Reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3099299/ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3024725/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Evidence-Based Studies"
+    },
+    {
+      "q_no": 3,
+      "question": "All of the following are true about funnel plot except?",
+      "options": {
+        "A": "It is used in both systematic review and meta-analysis",
+        "B": "Unbiased results of large-scale studies will be near the average",
+        "C": "A triangular distribution of results indicates the absence of heterogeneity",
+        "D": "A positive file drawer means many good outcomes of research were unpublished"
+      },
+      "correct_answer": "D",
+      "explanation": "drawn while conducting both a systematic review and meta-analysis (Option A ) to determine whether there is any heterogeneity or publication bias. Graph description: X-axis: Study's precision. The central vertical line shows the average, and the negative and positive outcomes of the studies are on the left and right sides of the average line, respectively. Y-axis: Standard errors in descending order from bottom to top. Unbiased large-scale studies generally have fewer errors (considering the huge sample population) provided there is no bias; hence, these studies will be plotted at the top close to the average line (Option B) . Unbiased smaller studies are generally more prone to errors and thus plotted at the bottom and distributed on both sides away from the average line. If there is no publication bias or heterogeneity (Option C) , this gives a triangular/inverted funnel-shaped plot. File drawer effect : This refers to a graph pattern in which all the results are plotted predominantly on either side of the average line, signifying publication bias (meaning some parts of the results never went beyond the researcher’s file drawer). Positive file drawer effect Negative file drawer effect Most of the bad research outcomes are not published, leading to the clubbing of results to the right of the average line. Most good research outcomes are not published, leading to the clubbing of results to the left of the average line. Reference: https://www.bmj.com/content/343/bmj.d4002",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Evidence-Based_Studies_Q3_exp.jpg",
+      "chapter_heading": "Evidence-Based Studies"
+    },
+    {
+      "q_no": 4,
+      "question": "Which of the following best describes the use of a blobbogram?",
+      "options": {
+        "A": "Association of multiple risk factors with the same disease",
+        "B": "Association of one risk factor with selected diseases",
+        "C": "Association of one risk factor for a disease with another",
+        "D": "Association of multiple risk factors with selected diseases"
+      },
+      "correct_answer": "A",
+      "explanation": "plot is used in a meta-analysis to find out the association between multiple risk factors related to the same disease. Example: Consider the blobbogram given below, which depicts 5 different studies about the association of 5 different risk factors for breast cancer. Particulars in a Blobbogram: OR (Odd’s ratio) An OR of 1 means no association; <1 means the factor considered is not risky / a protective factor ; >1 means the factor considered is risky. Solid vertical line Corresponds to the Odd’s ratio of no effect. Diamond A summary measure signifies the overall association of all the risk factors with the disease. Broken vertical line Corresponds to the summary measure. Black shapes This signifies the sample population's size is proportionate to the shape's size. Horizontal lines Confidence intervals (where 95% of the results fall) of each study. Interpretation : If the confidence interval of a study crosses 1, the risk factor association cannot be taken as conclusive, i.e., insignificant (Smith 1991, Jones 1993, Smith 1999). The more the confidence interval moves away from either side of 1, the stronger the association between the factors (risk/protective) and the disease (Ng 2004, Chu 2009— greater risk association as the confidence intervals lie to the right of 1). Reference: https://www.statisticshowto.com/forest-plot-blobbogram/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Evidence-Based Studies"
+    },
+    {
+      "q_no": 5,
+      "question": "Which is not a reporting format used in systematic review and meta-analysis?",
+      "options": {
+        "A": "PRISMA",
+        "B": "COCHRANE",
+        "C": "QUOROM",
+        "D": "CONSORT"
+      },
+      "correct_answer": "D",
+      "explanation": "the results of individual randomised controlled trials (and not that of a meta-analysis). Reporting the result of a systematic review or a meta-analysis involves the following steps: Explanation of the research and the inclusion criteria. Study/studies used. Result of the systematic review/meta-analysis. Sensitivity of the results. Summarising in tables. Various formats are used to report a systematic review/meta-analysis. PRISMA (Option A) Preferred Reporting Items - Systematic Review and Meta-Analysis. COCHRANE (Option B) Based on a set of guidelines devised by the Cochrane organisation. QUOROM (Option C) Quality Of Reporting Of Meta-analysis (devised by the quorum group). Reference: https://en.wikipedia.org/wiki/Randomized_controlled_trial https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-021-01626-4 https://www.cochranelibrary.com/about/about-cochrane-reviews https://pubmed.ncbi.nlm.nih.gov/10584742/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Evidence-Based Studies"
+    },
+    {
+      "q_no": 6,
+      "question": "Which of the following incorporates the advantage of researched science into a doctor’s clinical expertise and patient values?",
+      "options": {
+        "A": "Correlational research",
+        "B": "Controlled trials",
+        "C": "Evidence-based medicine",
+        "D": "Meta-analysis"
+      },
+      "correct_answer": "C",
+      "explanation": "doctor’s clinical expertise and patient values. Steps for applying evidence-based medicine in practice: The father of evidence-based medicine is David Sackett. The founder of evidence-based medicine is Gordon Guyatt. Reference: https://www.ncbi.nlm.nih.gov/books/NBK470182/#:~:text=Evidence%2Dbased%20medicine%20(EBM), medical%20decision%20for%20the%20patient .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Evidence-Based Studies"
+    }
+  ]
+}

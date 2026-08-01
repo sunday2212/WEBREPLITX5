@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "title": "Enzyme_Inhibition_Regulation_Isoenzymes_And_Applications"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Noncompetitive</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Uncompetitive</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Competitive</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allosteric</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The type of enzyme inhibition in which Succinate dehydrogenase reaction is inhibited by malonate is an example of:</span></p>",
+      "unique_key": "DT1195620",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195620,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The inhibition of succinate dehydrogenase by malonate is a classic example of <strong>competitive inhibition</strong>.</p>\n<ul>\n<li><strong>Competitive Inhibition:</strong>\n<ul>\n<li>Inhibitor (I) binds reversibly to the <strong>active site</strong> of the enzyme.</li>\n<li>The inhibitor's structure often <strong>resembles the substrate</strong> (substrate analog).</li>\n<li><strong>Effect on Km:</strong> Apparent Km increases (enzyme appears to have lower affinity for substrate).</li>\n<li><strong>Effect on Vmax:</strong> Vmax remains unchanged (can be reached at very high substrate concentrations).</li>\n<li><strong>Reversal:</strong> Can be overcome by increasing substrate concentration.</li>\n<li><strong>Example:</strong> Inhibition of succinate dehydrogenase by malonate.</li>\n</ul>\n</li>\n<li><strong>Succinate Dehydrogenase:</strong> An enzyme in the Krebs cycle that catalyzes the oxidation of succinate to fumarate.</li>\n<li><strong>Malonate:</strong> A structural analog of succinate that acts as a competitive inhibitor. It has only one methylene carbon, unlike succinate's two, preventing its dehydrogenation.</li>\n</ul>\n<p><strong>Explanation of Other Options:<br /> Noncompetitive (Option A):</strong> Noncompetitive inhibition occurs when the inhibitor binds to a site on the enzyme <em>distinct</em> from the active site (allosteric site), causing a conformational change that reduces the enzyme's catalytic efficiency. It reduces Vmax but typically does not change Km. This type of inhibition cannot be fully overcome by increasing substrate concentration. Malonate's action is not consistent with this mechanism.</p>\n<p><strong>Uncompetitive (Option B):</strong> Uncompetitive inhibition occurs when the inhibitor binds <em>only</em> to the enzyme-substrate (ES) complex. It leads to a decrease in both Vmax and Km. This type of inhibition is rare and does not describe the interaction between malonate and succinate dehydrogenase.</p>\n<p><strong>Allosteric (Option D):</strong> Allosteric regulation involves molecules binding to sites other than the active site (allosteric sites) to modulate enzyme activity. While noncompetitive inhibition is a type of allosteric inhibition, competitive inhibition, as seen with malonate, involves binding to the active site directly, not a separate allosteric site. Therefore, \"allosteric\" is a broader term, but \"competitive\" more specifically describes this particular type of active site inhibition.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The inhibition of succinate dehydrogenase by malonate is a classic demonstration of competitive inhibition, where a substrate analog (malonate) competes with the natural substrate (succinate) for binding to the enzyme's active site.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250811c6313303-ef64-41b1-96ff-c97794bd2df5.png\">\n<p><strong>Some competitive inhibitors which are not drugs are</strong></p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202508118c10c751-adc3-431b-8cb2-a97428f1d395.png\">",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inversely initial velocity versus inverse of the substrate concentration</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Double reciprocal plot</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gives a straight line graph</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Lineweaver-Burk plot is:</span></p>",
+      "unique_key": "DT1195630",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195630,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation of Answer:<br /> </strong>The Lineweaver-Burk plot is a widely used graphical representation in enzyme kinetics. It is derived by taking the reciprocal of the Michaelis-Menten equation, resulting in a linear equation.</p>\n<ul>\n<li>A plot of 1/Vi (inverse of initial velocity) vs. 1/[S] (inverse of substrate concentration).</li>\n<li>Also known as the <strong>Double Reciprocal Plot</strong>.<strong>(Option B)</strong></li>\n<li>Produces a <strong>straight line graph</strong>.<strong>(Option C)</strong></li>\n<li><strong>Kinetic Parameters from Plot:(Option A)</strong>\n<ul>\n<li>X-intercept: &minus;1/Km</li>\n<li>Y-intercept: 1/Vmax</li>\n<li>Slope: Km/Vmax</li>\n</ul>\n</li>\n<li><strong>Utility:</strong>\n<ul>\n<li>Easier determination of Km and Vmax compared to hyperbolic plots.</li>\n<li>Useful for graphically distinguishing between competitive and noncompetitive inhibition. For competitive inhibition, lines from inhibited reactions converge at the y-axis (same Vmax). For noncompetitive inhibition, lines intersect on the x-axis (same Km).</li>\n</ul>\n</li>\n</ul>\n<h3><strong>Key Takeaway:</strong></h3>\n<p>The <strong>Lineweaver-Burk plot</strong> is a powerful tool in enzyme kinetics, recognized by its characteristic <strong>double reciprocal</strong>nature (plotting inverse velocity vs. inverse substrate concentration) and its ability to produce a <strong>straight line graph</strong> that simplifies kinetic analysis.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202508116460cd63-bd24-4b36-8cdb-985853196747.png\">",
+      "correct_choice_id": 14,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Competitive Inhibition</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Un competitive Inhibition</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non  Competitive Inhibition</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Suicidal Inhibition</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Statin is a lipid lowering drug. Statin drug act by which of the following inhibition mechanisms on HMG CoA reductase?</span></p>",
+      "unique_key": "DT1195648",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195648,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation of Answer:</strong></p>\n<p>Statins are a class of highly effective lipid-lowering drugs that primarily target cholesterol synthesis. They exert their therapeutic effect by acting as <strong>competitive inhibitors</strong> of the enzyme <strong>HMG-CoA reductase</strong>.</p>\n<ul>\n<li><strong>Statins:</strong> A class of drugs (e.g., atorvastatin, simvastatin) used to lower cholesterol levels.</li>\n<li><strong>Target Enzyme:</strong> <strong>HMG-CoA reductase</strong>.</li>\n<li><strong>Mechanism of Action:</strong> Statins act as <strong>competitive inhibitors</strong> of HMG-CoA reductase.</li>\n<li><strong>Rational for Competitive Inhibition:</strong> Statins mimic the structure of the natural substrate, HMG-CoA, allowing them to bind to the enzyme's active site and block substrate access.</li>\n<li><strong>Clinical Significance:</strong> Inhibition of HMG-CoA reductase by statins reduces endogenous cholesterol synthesis, leading to a decrease in plasma LDL cholesterol levels.</li>\n</ul>\n<h3><strong>Explanation of Other Options: </strong></h3>\n<p><strong>Un competitive Inhibition (Option B):</strong> Uncompetitive inhibition occurs when the inhibitor binds only to the enzyme-substrate (ES) complex. This type of inhibition typically decreases both the apparent Vmax and apparent Km. This mechanism is not how statins inhibit HMG-CoA reductase.</p>\n<p><strong>Non Competitive Inhibition (Option C):</strong>Noncompetitive inhibition involves the inhibitor binding to a site on the enzyme <em>distinct</em> from the active site (an allosteric site), leading to a conformational change that reduces the enzyme's catalytic efficiency. This results in a decrease in Vmax but usually no change in Km. This is not the mechanism of statin action.</p>\n<p><strong>Suicidal Inhibition (Option D):</strong> Suicidal (or mechanism-based) inhibition is an irreversible type of inhibition where the inhibitor is initially a substrate for the enzyme, but during the catalytic process, it is converted into a highly reactive intermediate that permanently inactivates the enzyme's active site. While some drugs are suicide inhibitors, statins are reversible competitive inhibitors.</p>\n<h3><strong>Key Takeaway:</strong></h3>\n<p>Statins are potent lipid-lowering drugs that act via <strong>competitive inhibition</strong> of <strong>HMG-CoA reductase</strong>, the rate-limiting enzyme in cholesterol synthesis, by mimicking its natural substrate.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250811cd774a32-0101-4f57-8d80-564191d450b7.png\">",
+      "correct_choice_id": 21,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chemically and immunologically different forms of an enzyme</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Same forms with similar physical properties</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Catalyse same reactions</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All statements regarding Isoenzymes are correct except</span></p>",
+      "unique_key": "DT1195649",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195649,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:<br /> </strong>Isoenzymes are defined as physically distinct forms of an enzyme that catalyze the <strong>same reaction</strong>. They are typically encoded by different genes (gene duplication) or by alternative splicing, leading to variations in their amino acid sequences. Consequently, these distinct chemical structures result in different <strong>physical properties</strong>.</p>\n<ul>\n<li><strong>Isoenzymes (Isozymes):</strong> Multiple forms of an enzyme that catalyze the <strong>same chemical reaction</strong>.</li>\n<li><strong>Origin:</strong> Often arise from gene duplication or differential gene expression.</li>\n<li><strong>Differences:</strong>\n<ul>\n<li><strong>Chemically and Immunologically Different (Option A):</strong> Due to variations in amino acid sequence.</li>\n<li><strong>Different Physical Properties (Contradicts Option B):</strong> This is a key distinguishing feature (e.g., different electrophoretic mobilities, heat sensitivities, pH optima, substrate affinities).</li>\n<li><strong>May have different Quaternary Structures: </strong>Variations are common (e.g., LDH isoenzymes are tetramers with different combinations of H and M subunits). They are distinct forms, implying possible differences in quaternary structure.</li>\n</ul>\n</li>\n<li><strong>Functional Significance:</strong> Often adapted to specific tissues or physiological conditions, exhibiting subtle differences in regulatory properties or substrate affinity (e.g., Hexokinase vs. Glucokinase).</li>\n<li><strong>Clinical Significance:</strong> Used as diagnostic markers (e.g., Lactate Dehydrogenase (LDH) isoenzymes for myocardial infarction, Creatine Kinase (CK) isoenzymes for tissue damage).</li>\n</ul>\n<h3><strong>Key Takeaway:</strong></h3>\n<p>Isoenzymes are distinct forms of an enzyme that catalyze the same reaction, but they <strong>differ chemically, immunologically, and in their physical properties</strong> (including potentially their quaternary structure), allowing them to be separated and often exhibiting different kinetic or regulatory characteristics.</p>",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Km increases whereas Vmax decreases</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Km increases whereas Vmax remain unchanged</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vmax increases while Km decreases</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vmax decreases while Km remains unchanged</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The enzyme cytochrome oxidase is inhibited by cyanide, and prevents electron transport, regardless of substrate concentration. This reaction is characterized by:</span></p>",
+      "unique_key": "DT1195655",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195655,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Cytochrome oxidase that is inhibited by cyanide, which binds to a site <em>other than the active site</em> and prevents the reaction (electron transport) regardless of substrate concentration.</li>\n<li>This mechanism is characteristic of <strong>noncompetitive inhibition</strong>. In noncompetitive inhibition, the inhibitor binds to an allosteric site, causing a conformational change that reduces the enzyme's catalytic efficiency.</li>\n<li>This leads to a <strong>decrease in the maximum reaction rate (Vmax)</strong> because the enzyme's ability to turn over substrates is impaired, even if the active site is saturated. However, since the inhibitor does not compete for the active site, the enzyme's <strong>affinity for the substrate (Km) remains unchanged</strong>.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Km increases whereas Vmax decreases (Option A):</strong> This kinetic profile is characteristic of <strong>mixed noncompetitive inhibition</strong>, where the inhibitor binds to both the free enzyme and the enzyme-substrate complex, but with different affinities. This is not the primary characteristic of the described inhibition.</p>\n<p><strong>Km increases whereas Vmax remain unchanged (Option B):</strong> This kinetic profile is the hallmark of <strong>competitive inhibition</strong>, where the inhibitor structurally resembles the substrate and competes for the active site, thus increasing the apparent Km.</p>\n<p><strong>Vmax increases while Km decreases (Option C):</strong> This combination of kinetic changes is not typically observed with any form of enzyme inhibition. Inhibition, by definition, leads to a reduction in activity, not an increase in Vmax.</p>\n<p><strong>Key Takeaway:<br /> </strong>The inhibition of cytochrome oxidase by cyanide, where cyanide binds to an allosteric site and reduces catalytic efficiency without affecting substrate binding, is a clear example of <strong>noncompetitive inhibition</strong>, characterized by a <strong>decreased Vmax and an unchanged Km</strong>.</p>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Activation energy</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Binding energy</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Heat energy</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Enzymes act by reducing the</span></p>",
+      "unique_key": "DT1195670",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195670,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Enzymes as Catalysts. </strong>They accelerate reaction rates without being consumed in the process.</li>\n<li><strong>Mechanism of Action:</strong> Enzymes lower the <strong>activation energy barrier</strong> (&Delta;G&Dagger;).</li>\n<li><strong>Effect on Reaction Rate:</strong> Lowering activation energy increases the proportion of reactant molecules that can reach the transition state, thus increasing the reaction rate.</li>\n<li><strong>No Effect on Equilibrium:</strong> Enzymes do not change the overall free energy change (&Delta;G) of the reaction or the position of equilibrium. They only affect the <em>rate</em> at which equilibrium is reached.</li>\n<li><strong>Stabilization of Transition State:</strong> The enzyme's active site stabilizes the transition state intermediates, effectively binding to them more tightly than to either substrates or products.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Binding energy (Option B):</strong> While enzymes utilize binding energy (energy derived from non-covalent interactions between the enzyme and substrate) to achieve catalysis, they don't \"reduce\" binding energy in a way that directly explains their primary mode of action on the reaction. Instead, they <em>use</em> binding energy to lower the activation energy, particularly by stabilizing the transition state.</p>\n<p><strong>Heat energy (Option C):</strong> Enzymes do not directly act by reducing heat energy. They function optimally within specific temperature ranges, and excessive heat can denature them, but their catalytic mechanism is not about reducing ambient heat.</p>\n<p><strong>All of the above (Option D):</strong> Since only activation energy is correctly reduced by enzymes to accelerate reactions, this option is incorrect.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Enzymes function by exquisitely lowering the <strong>activation energy</strong> required for a biochemical reaction, thereby significantly increasing the reaction rate without altering the overall thermodynamics or equilibrium of the reaction.</p>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acetylation-deacetylation has long been associated with histones and other nuclear proteins</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lysine acetyltransferases catalyze the transfer of the acetyl group of acetyl-CoA to the the &epsilon;-amino groups of lysyl residues, forming N-acetyl lysine</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acetylation decreases the steric bulk of the lysine side chain</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">It transforms a basic and potentially positively charged primary amine into a neutral, nonionizable amide</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All of the following sentences are true about protein acetylation except</span></p>",
+      "unique_key": "DT1195679",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195679,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:<br /> </strong>Protein acetylation is a crucial post-translational modification, particularly on lysine residues. The statement \"Acetylation decreases the steric bulk of the lysine side chain\" is incorrect. In fact, acetylation <strong>increases</strong> the steric bulk of the lysine side chain by adding an acetyl group. This addition changes the chemical properties of the lysine residue, transforming its basic, positively charged primary amine into a neutral, nonionizable amide. This change in charge and steric bulk has significant implications for protein structure, function, and interactions, especially in histones, where it affects chromatin structure and gene expression.</p>\r\n<ul>\r\n<li><strong>Protein Acetylation:</strong> A common post-translational modification involving the addition of an acetyl group.</li>\r\n<li><strong>Target Residue:</strong> Primarily occurs on the &epsilon;-amino group of <strong>lysine</strong></li>\r\n<li><strong>Enzyme Catalysis:</strong>\r\n<ul>\r\n<li><strong>Lysine acetyltransferases (KATs) / Histone acetyltransferases (HATs):</strong> Catalyze the transfer of an acetyl group from <strong>acetyl-CoA</strong> to the lysine residue, forming N-&epsilon;-acetyllysine.<strong>(Option B)</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Effect of Acetylation:</strong>\r\n<ul>\r\n<li><strong>Increases steric bulk:</strong> The addition of the acetyl group makes the lysine side chain bulkier.</li>\r\n<li><strong>Neutralizes Charge (Option D):</strong> Transforms the basic, positively charged primary amine of lysine into a neutral, nonionizable amide. This charge neutralization is critical for many functions, especially in DNA-protein interactions.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Reversibility:</strong> Acetylation is a reversible modification.\r\n<ul>\r\n<li><strong>Protein deacetylases:</strong> Two classes exist:\r\n<ul>\r\n<li><strong>Histone deacetylases (HDACs):</strong> Catalyze the hydrolytic removal of acetyl groups.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Biological Significance (Option A):</strong> Acetylation-deacetylation is widely recognized for its critical role in regulating <strong>histones</strong> (affecting chromatin structure and gene transcription) and many <strong>other nuclear and cytoplasmic proteins</strong> involved in metabolism, signaling, and cellular processes.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>Protein acetylation, particularly on lysine residues, <strong>increases the steric bulk</strong> of the lysine side chain and neutralizes its positive charge, impacting protein structure and function, especially in histones and other regulatory proteins.<br /> </p>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Competitive inhibition</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non competitive inhibition</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allosteric inhibition</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Feedback inhibition</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A researcher is studying the enzyme succinate dehydrogenase, which catalyzes the oxidation of succinate to fumarate in the tricarboxylic acid (TCA) cycle. In a set of experiments, the enzyme is exposed to increasing concentrations of mercury chloride (HgCl2). The addition of mercury leads to a progressive decline in enzymatic activity, which is not reversed by increasing the concentration of succinate. This type of enzyme inhibition is:</span></p>",
+      "unique_key": "DT1195683",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195683,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:<br /> </strong>The experiment describes the inhibition of succinate dehydrogenase by mercury chloride (HgCl2), a heavy metal. The critical observation is that the inhibition is <em>not reversed by increasing the substrate (succinate) concentration</em>. This is a hallmark of <strong>noncompetitive inhibition</strong>.</p>\n<p>Heavy metal ions like mercury typically act as noncompetitive inhibitors by binding to sites on the enzyme (often sulfhydryl groups) that are distinct from the active site.</p>\n<p>This binding induces conformational changes, impairing the enzyme's catalytic efficiency and leading to a <strong>decrease in the maximal reaction rate (Vmax)</strong>. Because the inhibitor does not compete with the substrate for the active site, the enzyme's <strong>affinity for the substrate (Km) remains unchanged</strong>.</p>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Competitive inhibition (Choice A):</strong> In competitive inhibition, the inhibitor structurally resembles the substrate and competes for the active site. This increases the apparent Km but does not change Vmax. The described experiment explicitly states that increasing substrate concentration does <em>not</em> reverse the inhibition, ruling out competitive inhibition.</p>\n<p><strong>Allosteric inhibition (Choice C):</strong> Allosteric inhibition is a broader term where a molecule binds to a site other than the active site (an allosteric site) to change enzyme activity. Noncompetitive inhibition is a <em>type</em> of allosteric inhibition, but \"noncompetitive\" more precisely describes the kinetic outcome (Vmax down, Km unchanged) and the fact that the inhibition cannot be overcome by increased substrate.</p>\n<p><strong>Feedback inhibition (Choice D):</strong> Feedback inhibition is a specific regulatory mechanism where the end-product of a metabolic pathway inhibits an enzyme earlier in the same pathway. It's not a general mechanism of enzyme inhibition like that caused by heavy metals.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The experimental findings (inhibition not reversed by increased substrate) demonstrate <strong>noncompetitive inhibition</strong>, characterized by a <strong>decreased Vmax and an unchanged Km</strong>. This is the typical effect of heavy metals like mercury (HgCl2) on enzymes.</p>",
+      "correct_choice_id": 72,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Otherwise called mechanism based inactivation</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Irreversibly bind to the enzyme and inhibit the enzyme</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lineweaver-Burk or the Dixon approach is applicable to this inhibiton</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">. Treatment of Trypanosomiasis by Difluoromethyl ornithine (DFMO) inhibit Ornithine Decarboxylase is example of suicidal inhibition</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All of the following sentences are true about Suicidal inhibition except</span></p>",
+      "unique_key": "DT1195687",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195687,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Suicidal inhibition</strong>, also knn as <strong>mechanism-based inactivation</strong> (Option A), is a unique type of irreversible enzyme inhibition.</li>\n<li>A key characteristic is that the inhibitor, initially resembling a substrate, is processed by the enzyme's catalytic mechanism to generate a highly reactive intermediate.</li>\n<li>This intermediate then forms a stable <strong>covalent bond with the enzyme, irreversibly inhibiting it</strong>(Option B).</li>\n<li>Because the enzyme's activity continuously decreases over the course of the assay as it self-inactivates, the fundamental assumption of constant enzyme activity required for standard kinetic analyses like the <strong>Lineweaver-Burk plot or the Dixon plot is violated</strong>.</li>\n<li>Therefore, these graphical methods are <strong>not applicable</strong> to analyze suicidal inhibition, making statement C incorrect. The inhibition of Ornithine Decarboxylase by Difluoromethylornithine (DFMO) in treating Trypanosomiasis is indeed a classic example of suicidal inhibition (Option D).</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Suicidal inhibition</strong> involves the enzyme's own catalytic activity converting a substrate-like molecule into a reactive species that <strong>irreversibly binds</strong> to and inactivates the enzyme. Because enzyme activity declines during the assay, standard steady-state kinetic plots like <strong>Lineweaver-Burk and Dixon are not applicable</strong>.</p>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Some allosteric enzymes act by cooperative binding</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allosteric enzymes exist as two classes: K class and V class</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allosteric enzymes are those  for which catalysis at the active site may be  modulated by the presence of effectors at the allosteric site</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">The modifier need  be a structural analogue of the substrate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All of the following statements about allosteric regulations are true except</span></p>",
+      "unique_key": "DT1195691",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195691,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:<br /> </strong>Allosteric regulation involves a modifier (effector) binding to a site on the enzyme <strong>distinct from the active site</strong> (the allosteric site) to modulate catalytic activity. A key characteristic of allosteric regulation, distinguishing it from competitive inhibition, is that the <strong>modifier (effector) does NOT need to be a structural analogue of the substrate</strong>. Its binding alters the enzyme's conformation, affecting the active site's catalytic efficiency or substrate affinity.</p>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Some allosteric enzymes act by cooperative binding (Option A):</strong> Cooperative binding is a common feature of multisubunit allosteric enzymes, where the binding of a ligand to one subunit influences the binding affinity of other subunits for the same or different ligands, leading to sigmoidal (S-shaped) kinetics.</p>\n<p><strong>Allosteric enzymes exist as two classes: K class and V class (Option B):</strong> Allosteric enzymes are indeed broadly categorized into K-class (affecting Km) and V-class (affecting Vmax), based on how their kinetic parameters are altered by allosteric effectors.</p>\n<p><strong>Allosteric enzymes are those for which catalysis at the active site may be modulated by the presence of effectors at the allosteric site (Option C):</strong> This statement provides the fundamental definition of an allosteric enzyme. The effector binds to a non-active site, causing conformational changes that transmit to the active site to alter catalysis.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The defining characteristic of allosteric regulation, which differentiates it from competitive inhibition, is that the <strong>modifier (effector) binds to a site distinct from the active site and does NOT need to be a structural analogue of the substrate</strong>.</p>",
+      "correct_choice_id": 94,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acyl CoA and citrate</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">CTP and ATP</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acetyl CoA and NAD+</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">ATP and Fructose 2,6 biphosphate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following molecules act as allosteric modulators for the enzyme phosphofructokinase</span></p>",
+      "unique_key": "DT1195692",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195692,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Phosphofructokinase-1 (PFK-1) is a key regulatory enzyme in glycolysis, often referred to as the rate-limiting enzyme. Its activity is tightly regulated by various allosteric modulators that signal the energy status of the cell. Among the given options, <strong>ATP and Fructose 2,6-bisphosphate</strong> are well-established allosteric modulators for PFK-1.</p>\n<ul>\n<li><strong>ATP:</strong> High concentrations of ATP act as an <strong>allosteric inhibitor</strong> of PFK-1. This makes sense as ATP signals a high energy state, and therefore, further breakdown of glucose via glycolysis is not immediately needed.</li>\n<li><strong>Fructose 2,6-bisphosphate (F2,6BP):</strong> This molecule is the most potent <strong>allosteric activator</strong> of PFK-1 in the liver. Its concentration is regulated by the bifunctional enzyme PFK-2/FBPase-2, which itself is controlled by hormones like insulin and glucagon. F2,6BP signals an abundance of glucose (when insulin is high), promoting glycolysis.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Acyl CoA and citrate (Option A):</strong> While citrate is an allosteric inhibitor of PFK-1, Acyl CoA (Fatty acyl-CoA) does not directly regulate PFK-1; it primarily inhibits hexokinase and can activate pyruvate carboxylase.</p>\n<p><strong>CTP and ATP (Option B):</strong> ATP is an allosteric inhibitor of PFK-1. However, CTP (Cytidine triphosphate) is typically an allosteric inhibitor of enzymes involved in pyrimidine synthesis (e.g., aspartate transcarbamoylase), not directly PFK-1.</p>\n<p><strong>Acetyl CoA and NAD+ (Option C):</strong> Acetyl CoA and NAD+ are not direct allosteric modulators of PFK-1. Acetyl CoA is a key regulator of pyruvate dehydrogenase and pyruvate carboxylase, and NAD+ is a coenzyme for dehydrogenases involved in redox reactions.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>ATP (inhibitor)</strong> and <strong>Fructose 2,6-bisphosphate (activator)</strong> are critical and well-known allosteric modulators that regulate the activity of <strong>phosphofructokinase-1 (PFK-1)</strong>, the major control point of glycolysis.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250811c38c081e-e5bf-4bab-b242-0cf41866e75d.png\">",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reversible phosphorylation</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acetylation</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">ADP-ribosylation</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following mechanisms are associated with covalent modification</span></p>",
+      "unique_key": "DT1195694",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1195694,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:<br /> </strong>Covalent modification is a crucial mechanism for regulating enzyme activity by adding or removing a chemical group through the formation or breakage of a covalent bond. This modification can either increase or decrease the enzyme's activity. All of them are well-established examples.</p>\n<ul>\n<li><strong>Types of Covalent Modification:</strong>\n<ul>\n<li><strong>Irreversible:</strong> Partial proteolysis (zymogen activation).</li>\n<li><strong>Reversible:</strong> Addition/removal of a chemical group.</li>\n</ul>\n</li>\n<li><strong>Common Methods of Reversible Covalent Modification:</strong>\n<ul>\n<li><strong>Phosphorylation/Dephosphorylation (Option A):</strong> The most common type. Involves the addition (by kinases) or removal (by phosphatases) of a phosphate group, typically to serine, threonine, or tyrosine residues.</li>\n<li><strong>Acetylation (Option B):</strong> The addition of an acetyl group, often to lysine residues. Important in histone modification and other cellular processes.</li>\n<li><strong>ADP-ribosylation (Option C):</strong> The addition of an ADP-ribose group, often by bacterial toxins.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Phosphorylation, acetylation, and ADP-ribosylation</strong> are all important mechanisms of <strong>covalent modification</strong>, where chemical groups are covalently attached to enzymes to regulate their activity.</p>",
+      "correct_choice_id": 114,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

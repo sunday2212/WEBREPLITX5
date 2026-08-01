@@ -1,0 +1,18 @@
+cd ~/webreadme4/1234xxx
+
+find . -type f -name "*.json" ! -name "manifest.json" -printf "%P\0" | \
+jq -R -s '
+  split("\u0000") | map(select(length>0)) |
+  map(split("/") as $p | {
+    platform: $p[0],
+    subfolder: if ($p | length) == 2 then "non" else ($p[1:-1] | join("/")) end,
+    file: $p[-1]
+  }) |
+  group_by([.platform, .subfolder]) |
+  map({
+    platform: .[0].platform,
+    subfolder: .[0].subfolder,
+    files: map(.file) | sort
+  }) |
+  sort_by(.platform, .subfolder)
+' | jq -c '.[]' | sed 's/^/  /; $!s/$/,/' | (echo '['; cat; echo ']') > manifest.json

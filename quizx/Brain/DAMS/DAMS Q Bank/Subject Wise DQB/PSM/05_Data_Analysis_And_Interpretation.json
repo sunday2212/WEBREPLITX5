@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "title": "05_Data_Analysis_And_Interpretation"
+  },
+  "questions": [
+    {
+      "id": 75646,
+      "choices": [
+        {
+          "id": 295160,
+          "text": "1"
+        },
+        {
+          "id": 295161,
+          "text": "2"
+        },
+        {
+          "id": 295162,
+          "text": "3"
+        },
+        {
+          "id": 295163,
+          "text": "4"
+        }
+      ],
+      "text": "Which of the following statement is not true? 1. Blood Pressure in mmhg-NOMINAL SCALE 2. Blood Pressure classified as low, medium, highORDINAL SCALE 3. Blood Pressure classified as low, not lowDICHOTOMOUS DATA 4. Systolic or diastolic Blood Pressure-NOMINAL SCALE",
+      "unique_key": "Q4895180",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34999342,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (A) (1. Blood Pressure in mmHg - NOMINAL SCALE) Explanation for the Correct Answer: Blood pressure measured in mmHg is a continuous numerical variable that has a meaningful zero and can be measured on a scale. The **correct scale for blood pressure in mmHg is the RATIO SCALE, not the NOMINAL SCALE. Nominal scale is used for categorical variables without a meaningful order (e.g., gender, blood group). Since blood pressure in mmHg is not nominal data, statement 1 is incorrect, making Option A the correct answer. Incorrect Options: 2. Blood Pressure classified as low, medium, high - ORDINAL SCALE When blood pressure is classified into categories like low, medium, and high, it is considered ordinal data because: There is a meaningful order (low < medium < high). However, the difference between the categories is not exactly measurable (e.g., \"medium\" does not mean exactly twice \"low\"). Since this is an ordinal scale, statement 2 is correct. 3. Blood Pressure classified as low, not low - DICHOTOMOUS DATA Dichotomous data refers to variables with only two possible categories (e.g., yes/no, present/absent, high/low). Classifying blood pressure as \"low\" or \"not low\" is an example of dichotomous data because there are only two possible outcomes. Since this is correct, statement 3 is valid. 4. Systolic or diastolic Blood Pressure - NOMINAL SCALE Systolic or diastolic blood pressure are numerical values, so they should be on the ratio scale rather than the nominal scale. However, compared to statement 1, this option is less clearly incorrect. Since statement 1 is more obviously incorrect, Option A remains the best choice.",
+      "correct_choice_id": 295160,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/76737191699349513/76737191699349513.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/76737191699349513/76737191699349513.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75647,
+      "choices": [
+        {
+          "id": 295164,
+          "text": "It is a positive skewed data i.e. mean>median>mode"
+        },
+        {
+          "id": 295165,
+          "text": "Median is 35.6 kg/cm2"
+        },
+        {
+          "id": 295166,
+          "text": "Mode is 35.6 kg/cm2"
+        },
+        {
+          "id": 295167,
+          "text": "Mean is 39 kg/cm2"
+        }
+      ],
+      "text": "BMI of 6 patients is given as 32.2 kg/cm2 , 35.6 kg/cm2 , 35.6 kg/cm2 , 52.4 kg/cm2 , 37.2 kg/cm2 and 41.0 kg/cm2 . Which of the following can’t be expected from this data while measuring central tendency?",
+      "unique_key": "Q9200540",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34975295,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Median is 35.6 kg/m2). Explanation for the Correct Answer: The given BMI values are: 32.2, 35.6, 35.6, 52.4, 37.2, 41.0 Step 1: Arranging the data in ascending order: 32.2, 35.6, 35.6, 37.2, 41.0, 52.4 Step 2: Finding the Median • The median is the middle value in an ordered dataset. • Since there are 6 values (even number of observations), the median is the average of the 3rd and 4th values: Median= 35.6+37.2/2 = 72.8/2 = 36.4 kg/m2 The correct median is 36.4 kg/m2 not 35.6 kg/m2, so option B is incorrect (making it the correct answer to the question). Explanation for the Other Options: A. It is a positively skewed data (Mean > Median > Mode) – Correct • The presence of 52.4 kg/m2 (a high outlier) skews the data to the right, creating a positive skew. • In positively skewed data: - Mean > Median > Mode, which is true in this case. • So, option A is correct. C. Mode is 35.6 kg/m2 – Correct • Mode is the most frequently occurring value in the dataset. • Since 35.6 kg/m2 appears twice, it is the mode. • So, option C is correct. D. Mean is 39 kg/m2 – Correct • Mean is calculated as Mean= 32.2+35.6+35.6+37.2+41.0+52.4/6 = 234/6 =39 kg/m2",
+      "correct_choice_id": 295165,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/75010631699349526/75010631699349526.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/75010631699349526/75010631699349526.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75648,
+      "choices": [
+        {
+          "id": 295168,
+          "text": "22"
+        },
+        {
+          "id": 295169,
+          "text": "33"
+        },
+        {
+          "id": 295170,
+          "text": "12"
+        },
+        {
+          "id": 295171,
+          "text": "13"
+        }
+      ],
+      "text": "Mode in the given data is?<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/61(1).jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q4708817",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34737833,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) (13) The mode is the number that appears most frequently in a dataset. In the given stem-and-leaf plot, the stem represents the tens place, and the leaf represents the ones place. Let's first extract the values from the plot: 1 | 2,3,3,3,4,5 → 12, 13, 13, 13, 14, 15 2 | 5,6 → 25, 26 3 | 8,9 → 38, 39 4 | 2,5,6 → 42, 45, 46 5 | 6,7 → 56, 57 6 | 1,6 → 61, 66 7 | 0,2 → 70, 72 Now, counting the frequency of each number, 13 appears three times, which is more frequent than any other number in the dataset. Since the mode is defined as the most frequently occurring number, the correct answer is D (13). Incorrect Options: A. 22 – Incorrect The number 22 is not present in the dataset. Therefore, it cannot be the mode. B. 33 – Incorrect The number 33 is also not present in the dataset. The closest numbers in the 30s are 38 and 39, which each appear only once. Since mode is the most frequently occurring number, 33 is not a valid option. C. 12 – Incorrect The number 12 appears only once in the dataset. Since mode is the most frequently occurring value, and 13 appears three times, 12 cannot be the mode.",
+      "correct_choice_id": 295171,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/72326371699349694/72326371699349694.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/72326371699349694/72326371699349694.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75649,
+      "choices": [
+        {
+          "id": 295172,
+          "text": "Simple linear regression"
+        },
+        {
+          "id": 295173,
+          "text": "Multiple linear regression"
+        },
+        {
+          "id": 295174,
+          "text": "Simple logistic regression"
+        },
+        {
+          "id": 295175,
+          "text": "Multiple logistic regression"
+        }
+      ],
+      "text": "The type of regression to be applied for this hypothesis : Mean SBP = a + b (age) + c (Cholestrol levels)",
+      "unique_key": "Q4421515",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34210117,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Multiple Linear Regression) The given hypothesis is: Mean SBP=a+b(Age)+c(Cholesterol levels) Here, SBP (Systolic Blood Pressure) is the dependent variable (outcome), and Age and Cholesterol levels are the independent variables (predictors). • Since the dependent variable (SBP) is continuous and we have two independent variables (Age & Cholesterol levels), the appropriate statistical method is Multiple Linear Regression. • Multiple Linear Regression is used when we predict an outcome based on two or more continuous independent variables. Thus, the correct answer is B (Multiple Linear Regression). Incorrect Options: A. Simple Linear Regression – Incorrect • Simple Linear Regression is used when there is only one independent variable predicting a continuous dependent variable. • The given equation has two independent variables (Age & Cholesterol levels), so Simple Linear Regression is not applicable. C. Simple Logistic Regression – Incorrect • Logistic regression is used when the dependent variable is categorical (binary or multinomial). • Here, SBP is a continuous variable, not categorical, so Logistic Regression is not suitable. D. Multiple Logistic Regression – Incorrect • Multiple Logistic Regression is used when the dependent variable is categorical (e.g., disease present vs. absent) and multiple predictors are involved. • Since SBP is a continuous variable, Multiple Logistic Regression is not the correct choice.",
+      "correct_choice_id": 295173,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/14300461699349716/14300461699349716.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/14300461699349716/14300461699349716.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75650,
+      "choices": [
+        {
+          "id": 295176,
+          "text": "i., ii., iii., v"
+        },
+        {
+          "id": 295177,
+          "text": "ii., iii., iv., v"
+        },
+        {
+          "id": 295178,
+          "text": "ii., iv, v"
+        },
+        {
+          "id": 295179,
+          "text": "i., iv., v"
+        }
+      ],
+      "text": "Consider the following statements I. 25th percentile value II. 50th percentile value III. 2 nd tertile value IV. 2 nd quartile value V. 5 th decile Which of the following corresponds to median?",
+      "unique_key": "Q6234209",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34019568,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (II, IV, V - 50th percentile value, 2nd quartile value, 5th decile) The median is the middle value of an ordered dataset, meaning that 50% of the data falls below it and 50% is above it. This corresponds to: 50th percentile (II) – The median is by definition the 50th percentile, as it is the value that divides the dataset into two equal halves. 2nd quartile (IV) – Quartiles divide data into four equal parts, and the 2nd quartile (Q2) is the median. 5th decile (V) – Deciles divide data into ten equal parts, and the 5th decile (D5) represents the median (i.e., the middle 50% of data falls below it). Thus, the correct answer is C (II, IV, V). Incorrect Options: Option A (I, II, III, V) – Incorrect I (25th percentile) – The 25th percentile (Q1) represents the first quartile, not the median. III (2nd tertile value) – Tertiles divide data into three equal parts, and the 2nd tertile is not necessarily the median. Option B (II, III, IV, V) – Incorrect III (2nd tertile value) – As mentioned, tertiles split data into three groups, and the 2nd tertile does not always correspond to the median. Option D (I, IV, V) – Incorrect I (25th percentile value) – The 25th percentile (Q1) is not the median; it represents the lower quarter of the data.",
+      "correct_choice_id": 295178,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/45769021699349750/45769021699349750.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/45769021699349750/45769021699349750.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75651,
+      "choices": [
+        {
+          "id": 295180,
+          "text": "It is a stem and leaf plot"
+        },
+        {
+          "id": 295181,
+          "text": "It tells us about mean"
+        },
+        {
+          "id": 295182,
+          "text": "median and range can be calculated"
+        },
+        {
+          "id": 295183,
+          "text": "none of above"
+        }
+      ],
+      "text": "True about the following plot<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/64.jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q3991734",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34384530,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (Median and Range Can Be Calculated) The given plot is a stem-and-leaf plot, which is a way of organizing numerical data to display the distribution of values. From this plot, we can determine: Median: The median is the middle value of an ordered dataset, which can be easily determined from the stem-and-leaf plot by counting the values and identifying the middle one. Range: The range is calculated as the difference between the highest and lowest values in the dataset. Since the stem-and-leaf plot displays all values clearly, the range can be found easily. Thus, the correct answer is C (Median and Range Can Be Calculated). Incorrect Options: Option A (It is a stem and leaf plot) – Incorrect While the question suggests that the plot may resemble a stem-and-leaf plot, we cannot be certain unless the format explicitly matches that type. Option B (It tells us about mean) – Incorrect A stem-and-leaf plot does not directly give the mean. The mean requires summing all values and dividing by the number of observations, which is not straightforward from this plot alone. Option D (None of the above) – Incorrect Since median and range can be determined, option D is incorrect.",
+      "correct_choice_id": 295182,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/32057791699349763/32057791699349763.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/32057791699349763/32057791699349763.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75652,
+      "choices": [
+        {
+          "id": 295184,
+          "text": "120 cm"
+        },
+        {
+          "id": 295185,
+          "text": "160cm"
+        },
+        {
+          "id": 295186,
+          "text": "40 cm"
+        },
+        {
+          "id": 295187,
+          "text": "20 cm"
+        }
+      ],
+      "text": "Following is the data of height of 100 students. Find inter quartile range?<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/66.jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q3275675",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34918201,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) The Interquartile Range (IQR) is a measure of statistical dispersion and represents the difference between the third quartile (Q3) and the first quartile (Q1). IQR=Q3?Q1 To determine the IQR from the given height data: 1. Q1 (First Quartile): Represents the 25th percentile (the value below which 25% of observations fall). 2. Q3 (Third Quartile): Represents the 75th percentile (the value below which 75% of observations fall). 3. IQR Calculation: The difference between Q3 and Q1. From the provided data, we find that: IQR=Q3?Q1=160cm?120cm=40cm Incorrect Options: Option A (120 cm) 120 cm might be Q1 (First Quartile), but it is not the interquartile range. Option B (160 cm) 160 cm might be Q3 (Third Quartile), but again, it is not the interquartile range. Option D (20 cm) An IQR of 20 cm would mean the difference between Q3 and Q1 is smaller than calculated from the given data.",
+      "correct_choice_id": 295186,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/69922351699349786/69922351699349786.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/69922351699349786/69922351699349786.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75653,
+      "choices": [
+        {
+          "id": 295188,
+          "text": "Likert scale"
+        },
+        {
+          "id": 295189,
+          "text": "Adjective scale"
+        },
+        {
+          "id": 295190,
+          "text": "Cummulative scale"
+        },
+        {
+          "id": 295191,
+          "text": "Summative scale"
+        }
+      ],
+      "text": "Consider the following statements. This is example of • Smoking can cause lung cancer. • Smoking is an important cause of lung cancer. • Smoking is a very important cause of lung cancer • Smoking is the most important cause of lung cancer & death in india.",
+      "unique_key": "Q8051918",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34316546,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (Cumulative Scale) A cumulative scale (Guttman scale) is a type of measurement where the statements are arranged in increasing intensity or severity. If a respondent agrees with a statement at a certain level, they are expected to agree with all previous (less intense) statements as well. The given statements about smoking and lung cancer progress in intensity from a general statement (\"Smoking can cause lung cancer\") to a stronger, more definitive claim (\"Smoking is the most important cause of lung cancer & death in India\"). This characteristic of hierarchical agreement is a key feature of the cumulative (Guttman) scale. Thus, the correct answer is C (Cumulative Scale). Incorrect Options: Option A (Likert Scale) – Incorrect A Likert scale is used to measure attitudes or opinions on a continuous scale (e.g., strongly agree to strongly disagree). The given statements are not opinion-based ratings but rather a progression of intensity, making the Likert scale inappropriate. Option B (Adjective Scale) – Incorrect An adjective scale uses descriptive words to classify responses (e.g., \"poor,\" \"average,\" \"excellent\"). The provided statements do not rely on qualitative adjectives for rating, so this is incorrect. Option D (Summative Scale) – Incorrect A summative scale consists of multiple statements where scores are summed to get a total value. The given statements do not assign numeric values or require summation, making this an incorrect choice.",
+      "correct_choice_id": 295190,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/56679771699349866/56679771699349866.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/56679771699349866/56679771699349866.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75654,
+      "choices": [
+        {
+          "id": 295192,
+          "text": "Histogram"
+        },
+        {
+          "id": 295193,
+          "text": "Line chart"
+        },
+        {
+          "id": 295194,
+          "text": "Scatter diagram"
+        },
+        {
+          "id": 295195,
+          "text": "Ogive"
+        }
+      ],
+      "text": "Following is the data of COVID 19 cases in India. What diagram can be used to represent this data:<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/69.jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q2588531",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34543096,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Line Chart) A line chart is the best choice for representing COVID-19 cases over time because it effectively shows trends and patterns in data that change over a continuous variable (time in this case). The given data represents COVID-19 cases increasing week by week (Week 1 to Week 5). A line chart connects data points in a sequential manner, making it easy to visualize trends, growth rates, or fluctuations over time. This is particularly useful for tracking disease progression, outbreaks, and forecasting future cases. Thus, a line chart is the best representation of this data. Incorrect Options: Option A (Histogram) – Incorrect A histogram is used to show frequency distribution of a dataset divided into intervals or bins (e.g., age groups of patients). It is not suitable for time-series data like COVID-19 cases over weeks. Option C (Scatter Diagram) – Incorrect A scatter diagram is used to analyze relationships between two variables, such as COVID-19 cases vs. population density or temperature vs. infection rate. Since the given data represents only one variable (COVID-19 cases) over time, a scatter diagram is not appropriate. Option D (Ogive) – Incorrect An ogive (cumulative frequency curve) is used to show cumulative data distribution and is typically used for grouped frequency data (e.g., total COVID-19 cases up to each week). The given data shows weekly individual case counts, making an ogive not the best fit.",
+      "correct_choice_id": 295193,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/60745271699349894/60745271699349894.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/60745271699349894/60745271699349894.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75655,
+      "choices": [
+        {
+          "id": 295196,
+          "text": "higher sensitivity, higher specificity"
+        },
+        {
+          "id": 295197,
+          "text": "higher sensitivity, lower specificity"
+        },
+        {
+          "id": 295198,
+          "text": "lower sensitivity, higher specificity"
+        },
+        {
+          "id": 295199,
+          "text": "lower sensitivity, lower specificity"
+        }
+      ],
+      "text": "Compared to red curve, blue curve will have<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/74(1).jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q9294364",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34963901,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) (Lower sensitivity, lower specificity) The question refers to Receiver Operating Characteristic (ROC) curves, which are used to evaluate the diagnostic accuracy of a test by plotting sensitivity (True Positive Rate) against 1-specificity (False Positive Rate). A curve closer to the top-left corner represents a better test with higher sensitivity and specificity. A lower or more right-shifted curve (like the blue curve compared to the red curve) indicates a test with poorer diagnostic accuracy, meaning both sensitivity and specificity are lower. Since the blue curve is positioned below the red curve, it means that both sensitivity and specificity are lower, making Option D the correct answer. Incorrect Options: Option A (Higher sensitivity, higher specificity) - Incorrect If the blue curve had higher sensitivity and higher specificity, it would be above the red curve or closer to the top-left corner. Since the blue curve is lower, it indicates a worse test performance rather than an improvement. Option B (Higher sensitivity, lower specificity) - Incorrect Higher sensitivity means the curve should be further to the left (closer to 1 on the y-axis). The blue curve being lower than the red curve suggests that sensitivity has decreased rather than increased. Option C (Lower sensitivity, higher specificity) - Incorrect Lower sensitivity means the curve shifts downward. Higher specificity means the curve should shift to the left, but the blue curve is generally worse than the red, indicating that both sensitivity and specificity are lower.",
+      "correct_choice_id": 295199,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/66389971699350072/66389971699350072.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/66389971699350072/66389971699350072.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75656,
+      "choices": [
+        {
+          "id": 295200,
+          "text": "Bar chart"
+        },
+        {
+          "id": 295201,
+          "text": "Histogram"
+        },
+        {
+          "id": 295202,
+          "text": "Line graph"
+        },
+        {
+          "id": 295203,
+          "text": "Frequency polygon"
+        }
+      ],
+      "text": "PSM department of your college is preparing a report that has to be presented to the central health authorities showing the performance of STD control programme regarding declining rates of gonorrhea in your state in both men and women over the last 10 years. Which type of graph would best illustrate the data?",
+      "unique_key": "Q4767512",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34654535,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (Line Graph) A line graph is the best choice for illustrating trends over time, such as the declining rates of gonorrhea in both men and women over the last 10 years. It provides a clear visual representation of how the rates have changed year by year, making it easier for health authorities to assess the program’s performance. A line graph is particularly useful when: The x-axis represents time (e.g., years). The y-axis represents the rate of gonorrhea in men and women. The data shows a trend or progression over time. Multiple groups (men and women) need to be compared on the same graph. Incorrect Options: A. Bar Chart – Incorrect Bar charts are useful for comparing categories (e.g., gonorrhea rates in different states in one year) but not for showing trends over time. It would not effectively show how gonorrhea rates changed year by year. B. Histogram – Incorrect Histograms represent frequency distributions of continuous data (e.g., age distribution of gonorrhea patients). They are not suitable for comparing trends over multiple years. D. Frequency Polygon – Incorrect A frequency polygon is mainly used for displaying distributions of continuous variables, similar to a histogram. It is not ideal for showing time trends in disease rates.",
+      "correct_choice_id": 295202,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/2327081699350391/2327081699350391.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/2327081699350391/2327081699350391.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75657,
+      "choices": [
+        {
+          "id": 295204,
+          "text": "True negatives"
+        },
+        {
+          "id": 295205,
+          "text": "Prevalence of disease"
+        },
+        {
+          "id": 295206,
+          "text": "False-negatives"
+        },
+        {
+          "id": 295207,
+          "text": "False-positives"
+        }
+      ],
+      "text": "An agency is comparing five new serological tests developed for a disease by different research laboratories. The test performance characteristics are used to create the receiver operator curve (ROC) illustrated in the following figure. The x axis represents ?<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/11(245).jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q2091526",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34681278,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) This is an example of receiver-operator curves, or ROC curves. The horizontal axis (x) represents 1 ? specificity, or the false-positive rate. This is plotted against the sensitivity on the vertical axis (y). There is always a trade-off between sensitivity and specificity as no test is ever 100% sensitive and 100% specific. Each curve can be used to determine the optimal cut-off point for the respective test. In general, the point closest to the upper-left corner, where sensitvity is highest and the false-positive rate is lowest, is chosen as the cut-off. The area under the curve is used to calculate the diagnostic accuracy (best combined sensitivity and specificity) of the test, that is, the probability of correctly identifying disease or no disease based on the result of the test. The larger the area under the curve, the “better” the test. In this example, test C has the largest area under the curve compared to the other tests, and therefore would have the greatest diagnostic accuracy.",
+      "correct_choice_id": 295207,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/40085211699350407/40085211699350407.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/40085211699350407/40085211699350407.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 75658,
+      "choices": [
+        {
+          "id": 295208,
+          "text": "The mean is a more robust measure of central tendency"
+        },
+        {
+          "id": 295209,
+          "text": "This is a normal distribution"
+        },
+        {
+          "id": 295210,
+          "text": "The data is skewed to the right"
+        },
+        {
+          "id": 295211,
+          "text": "The median is larger than the mean"
+        }
+      ],
+      "text": "Consider the distribution curve given below. Which of the following statement best applies to this curve?<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/19(171).jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q9465688",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34785704,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) (The median is larger than the mean) Since the distribution curve is not provided, I will assume it is a left-skewed (negatively skewed) distribution, based on the correct answer choice. In a left-skewed distribution, the tail is longer on the left side (negative direction). The mean is pulled toward the tail, making it smaller than the median. Key relationships in skewed distributions: Normal distribution: Mean = Median = Mode Right-skewed (positively skewed) distribution: Mean > Median > Mode Left-skewed (negatively skewed) distribution: Mean < Median < Mode Incorrect Options: A. The mean is a more robust measure of central tendency – Incorrect The median is a more robust measure in skewed distributions because it is not affected by extreme values, whereas the mean is influenced by outliers. B. This is a normal distribution – Incorrect A normal distribution is symmetric (bell-shaped) with the mean, median, and mode being equal. A left-skewed distribution is asymmetrical, making this option incorrect. C. The data is skewed to the right – Incorrect A right-skewed (positively skewed) distribution has a longer right tail, where the mean is greater than the median, but in this case, the median is greater than the mean, indicating left skewness.",
+      "correct_choice_id": 295211,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/11632871699350796/11632871699350796.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/11632871699350796/11632871699350796.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

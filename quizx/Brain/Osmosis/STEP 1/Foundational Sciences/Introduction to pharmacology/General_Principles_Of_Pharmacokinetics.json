@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "title": "General_Principles_Of_Pharmacokinetics"
+  },
+  "questions": [
+    {
+      "text": "A 78-year-old woman is brought to an emergency room from a nursing home due to increased agitation. The patient&#8217;s symptoms developed around 12 hours ago. The nursing staff reported that the patient saw people when no one was there. Her temperature is 37.0&#176;C (98.6&#176;F), blood pressure is 153/87 mmHg, and pulse is 102/min. Physical examination is unremarkable except for flushed skin. The patient is oriented to self but not to time or place. She describes seeing &#8220;scary animals&#8221; in the room. Which of the following medications could be responsible for the patient&#8217;s presentation? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Lisinopril"
+        },
+        {
+          "id": 2,
+          "text": "Omeprazole"
+        },
+        {
+          "id": 3,
+          "text": "Acetaminophen"
+        },
+        {
+          "id": 4,
+          "text": "Zoledronate"
+        },
+        {
+          "id": 5,
+          "text": "Diphenhydramine"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "This elderly individual presents with agitation, visual hallucinations, and flushed skin. Among the answer choices listed, <strong>diphenhydramine&#160;</strong>best accounts for these symptoms. Furthermore, diphenhydramine is listed in <strong>Beers criteria</strong>, a set of guidelines to reduce polypharmacy, inappropriate drug prescriptions, and drug-related side effects in patients over 65-years-old. Examples of medications listed in Beers criteria include: &#160; <br><br><strong>Alpha-blockers-</strong> increased risk of orthostatic hypotension &#160;<br><strong>Anticholinergics&#160;</strong>and <strong>antihistamine</strong>- increased risk of confusion, falls, urinary retention, and constipation &#160;<br><strong>Antidepressants</strong>- causes sedation, orthostatic hypotension &#160;<br><strong>Benzodiazepines</strong>- increased risk of cognitive impairment, delirium, falls &#160;<br><strong>NSAIDs</strong>- increased risk of gastrointestinal bleeding &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Lisinopril:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Lisinopril is an ACE inhibitor and can cause side effects, including angioedema, hyperkalemia, and hypotension. However, the medication does not typically cause agitation or hallucinations in elderly patients. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Omeprazole:</strong><br><span style='opacity:0.9'><strong>Incorrect:</strong> Omeprazole is a proton pump inhibitor (PPI). The Beer criteria recommend against scheduling PPIs for more than 8-weeks in elderly individuals, given the medication can cause bone loss and increased risk of <em>Clostridium difficile </em>infection. However, PPIs do not typically cause agitation, hallucinations, or flushed skin in elderly patients. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Acetaminophen:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Acetaminophen is a relatively safe drug and would not account for the symptoms experienced by this patient. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Zoledronate:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Zoledronate is a bisphosphonate and is used to treat osteoporosis. The drug can cause pill esophagitis, osteonecrosis of the jaw, and atypical stress fractures. However, bisphosphonates do not typically cause agitation, hallucinations, or flushed skin in elderly patients. &#160; &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Diphenhydramine:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A research team has developed a new chemotherapeutic agent, Drug A, and is conducting a clinical trial. As part of the trial, 300 participants with pancreatic cancer will receive continuous infusions of Drug A. Aggregate information regarding the participants is shown below. Prior studies have demonstrated the drug has a volume of distribution (VD) of 25 L in the average adult. Furthermore, Drug A is renally cleared at a 10 mL/min rate via first-order elimination kinetics. Approximately how long after initiation of the infusion will Drug A reach steady-state concentration in patients? &#160;<br><br><table><tbody><tr><td><strong>Participant Information</strong><br></td><td><strong>Average Value</strong><br></td></tr><tr><td>Age<br></td><td>63 years<br></td></tr><tr><td>Blood urea nitrogen (BUN) &#160; <br></td><td>16 mg/dL<br></td></tr><tr><td>Creatinine<br></td><td>1.0 mg/dL<br></td></tr><tr><td>Glomerular filtration rate (GFR) &#160; <br></td><td>107 ml/min/1.73 m<sup>2</sup><br></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5 hours"
+        },
+        {
+          "id": 2,
+          "text": "15 hours"
+        },
+        {
+          "id": 3,
+          "text": "60 hours"
+        },
+        {
+          "id": 4,
+          "text": "90 hours"
+        },
+        {
+          "id": 5,
+          "text": "120 hours"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/qAi8SRd4R7iYGQdwoAERJRwzQZy3Q5fK/_.png\"></div><br>The patients in this clinical trial are started on Drug A. Since the medication is administered via a <strong>continuous infusion</strong>, the plasma drug concentration will rise, peak, and continue at a plateau known as the <strong>steady-state</strong>. A steady-state is achieved because Drug A is eliminated via <strong>first-order kinetics</strong>, meaning that as the plasma concentration of Drug A increases, so does its elimination rate.<br><br>The time required to reach a steady-state is determined by the drug&#8217;s <strong>half-life</strong> (t<sub>1/2</sub>), which is the time needed for the plasma concentration of a medication to be reduced by 50%. Generally, it takes <strong>4 to 5 half-lives</strong> to reach a steady state. Half-life can be calculated via the equation above.<br><br>In patients receiving Drug A, the half-life equals:<br>&#160;<br>&#160; t<sub>1/2</sub> = (0.7 * 25 L) / (10 ml/min) = (0.7 * 25 L) / (0.01 L/min) = 1750 min = <strong>~29 hours</strong><br><br>As a result, 4-5 half-lives is approximately <strong>116-145 hours</strong>. <br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/JqsHTh64R-G2bHJNN71J07eOT2W-CC0q/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 5 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The half-life of Drug A can be calculated via the equation t<sub>1/2</sub> = 0.7*V<sub>D</sub>/CL, which equals roughly 29 hours. The drug will reach steady-state concentration after 4-5 half-lives, corresponding to 116-145 hours. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 15 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Drug A has a half-life of 29 hours and will reach steady-state concentration after around 116-145 hours. In contrast, 15 hours would be insufficient time for Drug A to reach a steady state. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 60 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Drug A has a half-life of 29 hours, and 60 hours corresponds to only around two half-lives. The medication will require 4-5 half-lives to reach steady-state concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 90 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Drug A has a half-life of 29 hours, and 90 hours corresponds to only around three half-lives. The medication will require 4-5 half-lives to reach a steady-state concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 120 hours:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 37-year-old man is diagnosed with Gram-positive bacteremia and started on Antibiotic X. The drug is administered intravenously and requires a plasma concentration of at least 20 mg/L to achieve therapeutic effects. Additional information regarding Antibiotic X&#8217;s pharmacokinetics is listed below. Unfortunately, Antibiotic X can lead to severe side effects. As a result, the ordering physician wants to administer the lowest possible dose. Suppose the patient's body weight is 75 kg. Which of the following would be the smallest loading dose of Antibiotic X that can achieve therapeutic levels? &#160;<br><br><table><tbody><tr><td><strong>Pharmacokinetic Parameter</strong><br></td><td><strong>Value</strong><br></td></tr><tr><td>Volume of distribution &#160; <br></td><td>0.4 L/kg &#160; <br></td></tr><tr><td>Dosing interval &#160; <br></td><td>6 hours &#160; <br></td></tr><tr><td>Bioavailability* &#160; <br></td><td>100% &#160; <br></td></tr><tr><td>Elimination rate &#160; <br></td><td>2.6 L/h &#160; <br></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>*For intravenous administration",
+      "choices": [
+        {
+          "id": 1,
+          "text": "300 mg"
+        },
+        {
+          "id": 2,
+          "text": "450 mg"
+        },
+        {
+          "id": 3,
+          "text": "600 mg"
+        },
+        {
+          "id": 4,
+          "text": "850 mg"
+        },
+        {
+          "id": 5,
+          "text": "1500 mg"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/hrnaUOIsSHGYRACxhTFoE5ETQhGydAyb/_.png\"></div><br>This patient has Gram-positive bacteremia and is started on Antibiotic X, administered via an <strong>intermittent dosing</strong> regimen. In other words, the medication is administered at regular time intervals. In emergency cases, a loading dose (a large dose given at the beginning of treatment) can be administered to help the medication rapidly achieve target concentrations. Maintenance doses, given at scheduled intervals, can be subsequently administered to help keep the drug level at a steady state. The loading dose can be calculated via the equation above.<br><br>The first step in determining the loading dose of Antibiotic X for this patient would be to calculate the patient&#8217;s <strong>volume of distribution</strong>, which equals 0.4 L/kg*75 kg, or 30 L. Afterwards, the loading dose can be calculated as follows:<br><br>&#160; &#160;Loading dose = (20 mg/L * 30 L) / 100% = 600 mg / 1 = <strong>600 mg</strong><br><br>Therefore, a loading dose of at least 600 mg would be required for Antibiotic X to reach therapeutic levels in this patient. <br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/QHmmvmeCSZijveDxnrsmv2BqQQWiZ7Mn/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 300 mg:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This patient has a volume of distribution of 30 L (0.4 L/kg*75 kg). Given Antibiotic X is intravenously administered and has a bioavailability of 100%, a loading dose of 600 mg would be necessary to achieve therapeutic levels. In contrast, a 300 mg loading dose would be insufficient. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 450 mg:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This patient has a volume of distribution of 30 L (0.4 L/kg*75 kg). Given Antibiotic X is intravenously administered and has a bioavailability of 100%, a loading dose of 600 mg would be necessary to achieve therapeutic levels. In contrast, a 450 mg loading dose would be insufficient. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 600 mg:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 850 mg:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A minimum loading dose of 600 mg is required for Antibiotic X to reach therapeutic levels in this patient. A loading dose of 850 mg would be excessive and increase the risk of side effects. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 1500 mg:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A minimum loading dose of 600 mg is required for Antibiotic X to reach therapeutic levels in this patient. A loading dose of 1500 mg would be excessive and increase the risk of side effects. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of researchers is studying a novel therapeutic agent and performing experiments to better understand this compound's properties. One of the researchers is assigned to study the pharmacokinetics of the compound. Which of the following describes a pharmacokinetic process? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Plasma concentration of a medication over time"
+        },
+        {
+          "id": 2,
+          "text": "Receptor binding sites&#160;"
+        },
+        {
+          "id": 3,
+          "text": "Inert binding sites&#160;"
+        },
+        {
+          "id": 4,
+          "text": "Therapeutic window"
+        },
+        {
+          "id": 5,
+          "text": "Median toxic dose"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/i8ar4c-qQV2rTf6OxvrgqnxwR7m4H2g-/_.png\"></div><br><br>Two major categories describe a medication&#8217;s interaction with the body i.e. <strong>pharmacokinetics&#160;</strong>and <strong>pharmacodynamics</strong>. Pharmacokinetics is the study of the activity of a drug in the body and its concentration in the body&#8217;s compartments over time, including the processes by which drugs are <strong>absorbed, distributed&#160;</strong>in the body, <strong>metabolized</strong>, localized in the tissues, and <strong>excreted</strong>. Pharmacokinetic principles include a <strong>volume of distribution, half-life</strong>, rate of absorption, clearance, and <strong>bioavailability</strong>, amongst others. &#160; &#160;<br><br>In summary, pharmacokinetics refers to the movement and modification of the therapeutic agent in the body or what the body does to the agent. In contrast, pharmacodynamics refers to what the medication does to the body. The processes that fall under the two categories are outlined in the table below. &#160; <br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/JMI1NPcuS0mrV7s-ECLB4x9IS-_NMr8L/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Plasma concentration of a medication over time:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation.&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Receptor binding sites&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Receptor binding falls under the category of pharmacodynamics. Receptor binding refers to the medication binding to a receptor or a specialized protein that results in the desired effect. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Inert binding sites&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong> Studying inert binding sites fall under the category of pharmacodynamics. Inert binding refers to the binding of the medication to a receptor or a specialized protein that results in no effects. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Therapeutic window:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The therapeutic window describes the concentration range that produces the desired effect of a medication. The therapeutic window falls under the category of pharmacodynamics. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Median toxic dose:</strong><br><span style='opacity:0.9'><strong>Incorrect: &#160;</strong>The median toxic dose (TD50) refers to the dose of a medication where toxicity occurs in 50% of cases. The median toxic dose (TD50) falls under the category of pharmacodynamics. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A new drug is currently under investigation. The drug is eliminated via first-order kinetics. It is dosed twice daily, and each dose is 600 mg. The steady-state plasma concentration with normal kidney function at this dosage is 2 mg/L. Which of the following is the clearance of this medication? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "6.25 L/hr"
+        },
+        {
+          "id": 2,
+          "text": "12.5 L/hr"
+        },
+        {
+          "id": 3,
+          "text": "25 L/hr"
+        },
+        {
+          "id": 4,
+          "text": "41.67 L/hr"
+        },
+        {
+          "id": 5,
+          "text": "300 L/hr"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/AWMxBNHPTxqTBxrruzwNKKfsQm_STXyV/_.png\"></div><br><br><strong>Clearance&#160;</strong>is the volume of plasma cleared of a drug per unit time. Clearance is a constant value for drugs eliminated via first-order kinetics. &#160; &#160; <br><br>Clearance is affected by underlying renal, hepatic, and pulmonary function. In pathological conditions affecting these organs (e.g., end-stage renal disease, liver cirrhosis), patients will have significantly prolonged clearance of medications that utilize the affected organ as their primary route(s) of elimination. Clearance may be calculated by the formula<strong>&#160;CL= V<span>d</span> x k<span>e</span>,</strong> wherein V<span>d</span> indicates the <strong>volume of distribution</strong> of a drug and k<span>e</span> indicates the <strong>elimination constant.</strong> Clearance can also be calculated by dividing the drug&#8217;s <strong>elimination rate</strong> by its initial <strong>plasma concentration. &#160;</strong> &#160; <br><br>In the above example, the medication is consumed as a 600 mg dose twice daily (24 hours). The steady-state plasma concentration of the drug is 2 mg/L. Thus, the clearance may be calculated as shown: &#160; <br><br>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; Clearance = Rate of Elimination / [Medication in the Plasma] &#160; &#160;<br>((600 mg/dose * 2 doses)/ 24 h) / 2 mg/L = (600 mg/dose * 2 doses) / (2 mg/L * 24 h) =<strong>&#160;25 L/h&#160;</strong>&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 6.25 L/hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not describe the clearance of this medication. Clearance is defined as the rate of elimination divided by the medication&#8217;s plasma concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 12.5 L/hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not describe the clearance of this medication. Clearance is defined as the rate of elimination divided by the medication&#8217;s plasma concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 25 L/hr:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 41.67 L/hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not describe the clearance of this medication. Clearancelimination e is defined as the rate of elimination divided by the medication&#8217;s plasma concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 300 L/hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not describe the clearance of this medication. Clearance is defined as the rate of elimination divided by the medication&#8217;s plasma concentration. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to understand the factors that influence the elimination rates of several medications. One medication is found to have a variable elimination rate dependent on the drug&#8217;s plasma concentration. A graph demonstrating the change in plasma drug concentration over time is shown below. Based on the graph depicted, which of the following is true? &#160;<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/d_3JZbtHR2eRgnNLnE_q9W-8SjWqxt2e/_.png\"></div><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The medication demonstrates first-order elimination."
+        },
+        {
+          "id": 2,
+          "text": "The medication under study is phenytoin."
+        },
+        {
+          "id": 3,
+          "text": "The medication demonstrates zero-order elimination kinetics."
+        },
+        {
+          "id": 4,
+          "text": "The medication has a variable half-life."
+        },
+        {
+          "id": 5,
+          "text": "The medication under study is aspirin."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The vast majority of medications are eliminated via<strong>&#160;first-order kinetics</strong>, meaning that the rate of drug elimination is directly proportional to the drug&#8217;s plasma concentration. In other words, at higher plasma concentrations, a more significant amount of drug is eliminated per unit time. The result is that the medication concentration in plasma <strong>decreases exponentially with time.</strong> Moreover, medications that demonstrate first-order elimination kinetics will have a <strong>constant half-life</strong> regardless of the plasma concentration. &#160; &#160;<br><br>In contrast, select medications are eliminated via <strong>zero-order kinetics,</strong> wherein the rate of elimination is constant and independent of the drug&#8217;s plasma concentration. Zero-order kinetics tend to occur in medications where there is a bottleneck limiting the number of reactant molecules that can be metabolized at a given time. As a result, there is a <strong>linear rate of elimination&#160;</strong>graphically when the plasma concentration is plotted over time. Examples of medications that undergo zero-order kinetics include <strong>ethanol, warfarin, aspirin,</strong> and <strong>phenytoin.</strong><br><br><strong><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/gTLHnXjzTLSWAH799ZHYVWUoQSiADpqp/_.png\"></div></strong><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ The medication demonstrates first-order elimination.:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication under study is phenytoin.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Phenytoin demonstrates zero-order elimination kinetics, meaning that the rate of drug elimination is constant and independent of the drug&#8217;s plasma concentration.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication demonstrates zero-order elimination kinetics.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Drugs with zero-order elimination kinetics will exhibit a linear relation when drug concentration is plotted against time. In contrast, the graphical representation above demonstrates first-order elimination kinetics.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication has a variable half-life.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Medications that show first-order elimination kinetics have a constant half-life, whereas medications that demonstrate zero-order kinetics have a half-life that decreases with decreasing concentration.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication under study is aspirin.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Aspirin demonstrates zero-order elimination kinetics, meaning that the rate of drug elimination is constant and independent of the drug&#8217;s plasma concentration.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher attempts to understand the factors that influence the elimination rates of a commonly prescribed medication. The medication is found to have a constant elimination rate independent of plasma concentration, as demonstrated in the graph below. Which of the statements regarding this medication is most likely true?<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/cB0_ufqZTLGMHR7eN1ARrthSRSq8t6mi/_.png\"></div><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The medication has a variable half-life."
+        },
+        {
+          "id": 2,
+          "text": "The medication being studied is likely propranolol."
+        },
+        {
+          "id": 3,
+          "text": "The medication demonstrates first-order elimination kinetics."
+        },
+        {
+          "id": 4,
+          "text": "The medication has a constant half-life."
+        },
+        {
+          "id": 5,
+          "text": "The medication&#8217;s plasma concentration increases exponentially with time."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The vast majority of medications are eliminated via <strong>first-order kinetics,&#160;</strong>meaning that the rate of drug elimination is directly proportional to the drug&#8217;s plasma concentration. In other words, at higher plasma concentrations, a greater amount of drug is eliminated per unit of time. The result is that medication concentration in plasma<strong>&#160;decreases exponentially with time.&#160;</strong>Moreover, medications that demonstrate first-order elimination kinetics will have a <strong>constant half-life</strong> regardless of the initial plasma concentration. &#160; &#160; <br><br>In contrast, select medications are eliminated via <strong>zero-order kinetics</strong>, wherein the rate of elimination is constant and independent of the drug&#8217;s plasma concentration. Zero-order kinetics tends to occur in medications where there is a bottleneck limiting the number of reactant molecules that can be metabolized at a given time. As a result, there is a <strong>linear rate of elimination </strong>graphically when the plasma concentration of medication is plotted over time. Examples of medications that undergo zero-order kinetics include <strong>ethanol, warfarin, aspirin,&#160;</strong>and<strong>&#160;phenytoin. &#160;</strong>&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ The medication has a variable half-life.:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication being studied is likely propranolol.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Most medications, including propranolol, are eliminated via first-order kinetics. The drug&#8217;s plasma concentration is expected to decrease exponentially over time. In contrast, the drug being studied demonstrates a linear decrease in concentration over time, suggesting zero-order elimination kinetics. Drugs eliminated via zero-order kinetics include warfarin, aspirin, and phenytoin.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication demonstrates first-order elimination kinetics.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>First-order elimination kinetics results in a graph with an exponential decrease in drug concentration when plotted against time. In contrast, a linear decrease in drug concentration over time suggests zero-order elimination kinetics.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication has a constant half-life.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Medications that demonstrate first-order elimination kinetics have a constant half-life. In contrast, medications showing zero-order kinetics will have a half-life that decreases with decreasing initial drug concentration.</span></div><div style='margin-bottom: 12px;'><strong>❌ The medication&#8217;s plasma concentration increases exponentially with time.:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This statement applies to neither first-order nor zero-order pharmacokinetics.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of researchers is studying a novel medication used to treat hypertension. They are attempting to understand its pharmacokinetic profile better. In particular, they investigate the drug&#8217;s primary route of excretion from the body. Which of the following organs is this medication&#8217;s most likely route of excretion from the body? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Kidneys"
+        },
+        {
+          "id": 2,
+          "text": "Hepatobiliary system"
+        },
+        {
+          "id": 3,
+          "text": "Lungs"
+        },
+        {
+          "id": 4,
+          "text": "Skin"
+        },
+        {
+          "id": 5,
+          "text": "Gastrointestinal tract"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "Elimination refers to the irreversible loss of drugs from the body and occurs via two processes: metabolism or excretion. Metabolism refers to the build-up and breakdown of substances by enzymatic conversion of one chemical entity to another. In contrast, excretion eliminates drug or drug metabolites from the body. In some cases, certain medications do not undergo any metabolism (e.g. lithium) and do not exert their effects until they are excreted via the kidneys. &#160; &#160; <br><br>In general, most medications are excreted through urination via the kidneys. In the kidneys, some medications or their metabolites are directly filtered through the glomerulus, while others are secreted in the proximal convoluted tubule. Ultimately, these drugs and metabolites travel to the distal convoluted tubule where polar, water-soluble molecules are excreted. A portion of non-soluble molecules is passively diffused back into peritubular circulation. &#160; &#160; <br><br>Additional routes of excretion include the hepatobiliary system, lungs, and to a lesser extent, bodily secretions such as sweat or milk. Of note, medications excreted via the lungs are limited to volatile gasses such as nitrous oxide and halothane. &#160;<br><br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/sLad4rBJSDOvyw56ovJFRqQqT8q8wOLH/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Kidneys:</strong><br><span style='opacity:0.9'><strong>Correct:&#160;</strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ Hepatobiliary system:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Multiple medications are processed and excreted through the hepatobiliary system, including those processed by the CYP-450 enzyme system. However, the kidneys remain the most common route of drug excretion from the body. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Lungs:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Volatile anesthetics, such as those used during surgery (e.g., halothane, nitric oxide), are excreted via the lungs. However, the kidneys remain the most common route of drug excretion from the body. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Skin:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The skin is not a standard route of drug excretion. However, trace quantities of specific drug metabolites can be found in sweat. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Gastrointestinal tract:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The gastrointestinal tract (e.g., small intestine, large intestine) is not a common route of drug excretion. However, an example of a drug excreted primarily via this route is rifampicin. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is studying two drugs regarding their urine and plasma concentrations at differing urinary pH levels. In one study series, the patient&#8217;s urine is found to have a pH of 10. The characteristics of the two drugs are shown below. Which of the following findings is most likely to be present on further evaluation? &#160;<br><br><table><tbody><tr><td>&#160;<strong>Medication &#160;</strong></td><td>&#160;<strong>pKa&#160;</strong></td></tr><tr><td>&#160;Drug A&#160;</td><td>&#160;2.97&#160;</td></tr><tr><td>&#160;Drug B&#160;</td><td>&#160;10.5&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Urine concentration of Drug A &gt; Plasma concentration of Drug A"
+        },
+        {
+          "id": 2,
+          "text": "Urine concentration of Drug A &lt; Plasma concentration of Drug A"
+        },
+        {
+          "id": 3,
+          "text": "Urine concentration Drug B &gt; Plasma concentration Drug B"
+        },
+        {
+          "id": 4,
+          "text": "Urine concentration Drug B &gt; Urine concentration of Drug A"
+        },
+        {
+          "id": 5,
+          "text": "Plasma concentration Drug A &gt; Plasma concentration Drug B"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>pKa&#160;</strong>is defined as the pH at which a drug is 50% ionized and 50% nonionized. It reflects the strength or weakness of an acid or base. Most medications undergo elimination via the kidneys and are either reabsorbed in the distal convoluted tubule or are excreted. Non-polar, lipid-soluble molecules can quickly diffuse through tubular cells, peritubular circulation, and back into the systemic circulation. In contrast, polar water-soluble molecules get trapped in the tubule lumen and are excreted via urine. &#160; &#160; <br><br>When drugs that are <strong>weak acids</strong> are placed in an alkaline solution, they tend to <strong>deprotonate&#160;</strong>to exist in their <strong>polar&#160;</strong>form. Thus, they become trapped in the tubular lumen and are excreted mainly. In contrast, when weak acids are placed in an acidic solution, they tend not to deprotonate and remain in their nonpolar form. &#160; &#160; <br><br>Likewise, when drugs that are <strong>weak bases</strong> are placed in an acidic solution, they tend to <strong>accept hydrogen ions</strong> to exist in their <strong>polar&#160;</strong>protonated form. They will subsequently be trapped in the tubular lumen for excretion. In contrast, when weak bases are placed in alkaline solutions, they will mostly remain in the non-protonated nonpolar form. &#160; <br><br>These concepts become clinically relevant when attempting to treat overdoses by manipulating the urine pH to enhance the elimination of certain drugs (e.g. aspirin). &#160;<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/uAV9c7QNQCKQDbMzeBBGYXzHTSS1-4b6/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Urine concentration of Drug A &gt; Plasma concentration of Drug A:</strong><br><span style='opacity:0.9'><strong>Correct:&#160;</strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ Urine concentration of Drug A &lt; Plasma concentration of Drug A:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Drug A has a pKa more minor than the pH of the patient&#8217;s urine. Thus, the drug is likely to exist in its deprotonated or polar form and cannot be reabsorbed through tubular cells back into the systemic circulation. As a result, the drug&#8217;s urine concentration will be greater than its plasma concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Urine concentration Drug B &gt; Plasma concentration Drug B:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Drug B has a relatively high pKa, indicative of a weak base. As a result, when Drug B is placed in a basic solution (e.g. urine), it is unlikely to accept hydrogen ions and become polar. Thus the drug is more likely to be reabsorbed through the tubular cells and into the systemic circulation, resulting in a plasma concentration more remarkable than the urinary concentration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Urine concentration Drug B &gt; Urine concentration of Drug A:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Drug B has a relatively high pKa, which is indicative of a weak base. As a result, when Drug B is placed in a basic solution (e.g. urine), it is unlikely to accept hydrogen ions and become polar. Thus the drug is more likely to be reabsorbed through the tubular cells and systemic circulation. In contrast, Drug A is a weak acid and, when placed into a basic solution, is more likely to exist in a deprotonated form and become trapped in the tubular lumen. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Plasma concentration Drug A &gt; Plasma concentration Drug B:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Drug B has a relatively high pKa, which is indicative of a weak base. As a result, when Drug B is placed in a basic solution (e.g. urine), it is unlikely to accept hydrogen ions and become polar. Thus the drug is more likely to be reabsorbed through the tubular cells and systemic circulation. In contrast, Drug A is a weak acid and, when placed into a basic solution, is more likely to exist in a deprotonated form and become trapped in the tubular lumen. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to understand the factors that influence the elimination rates of several medications. One medication is found to have a constant elimination rate, as demonstrated in the figure below. Which of the following medications is most likely under study?<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/L6uQSGrBTsqrqJsnceK659BQRlGK7oNa/_.png\"></div><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Aspirin"
+        },
+        {
+          "id": 2,
+          "text": "Metoprolol"
+        },
+        {
+          "id": 3,
+          "text": "Apixaban"
+        },
+        {
+          "id": 4,
+          "text": "Acetaminophen"
+        },
+        {
+          "id": 5,
+          "text": "Ibuprofen"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "In general, most medications are eliminated via<strong>&#160;first-order kinetics,</strong> which means that the rate of elimination is directly proportional to the drug concentration. In other words, at higher drug concentrations, a higher amount of drug is eliminated per unit time. &#160; &#160; <br><br>In contrast, select medications are eliminated via <strong>zero-order kinetics,</strong> wherein the rate of elimination is constant irrespective of the plasma concentration of the medication. When the plasma concentration of a medication eliminated via zero-order kinetics is plotted over time, the graph will show a <strong>linear rate of elimination.</strong> Zero-order kinetics tend to occur in medications where there is a bottleneck limiting the number of reactant molecules that can be metabolized at a given time. &#160; &#160; <br><br>For example, in the case of <strong>ethanol&#160;</strong>metabolism, the rate of oxidation by the enzyme alcohol dehydrogenase reaches a maximum at low ethanol concentrations due to the limited availability of the cofactor NAD+. Additional medications that undergo zero-order elimination include <strong>warfarin, aspirin,</strong> and<strong>&#160;phenytoin.</strong><br><br><strong><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/5R9gNh9IScOSPz7of1QgIqFGTNKUKWFt/_.png\"></div>&#160;</strong>&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Aspirin:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation</span></div><div style='margin-bottom: 12px;'><strong>❌ Metoprolol:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Most medications are eliminated via first-order elimination kinetics, including metoprolol. However, this graph demonstrates zero-order kinetics, wherein the rate of elimination is constant irrespective of the plasma concentration of the medication.</span></div><div style='margin-bottom: 12px;'><strong>❌ Apixaban:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Most medications are eliminated via first-order elimination kinetics, including apixaban. However, this graph demonstrates zero-order kinetics, wherein the rate of elimination is constant irrespective of the plasma concentration of the medication.</span></div><div style='margin-bottom: 12px;'><strong>❌ Acetaminophen:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Most medications are eliminated via first-order elimination kinetics, including acetaminophen. However, this graph demonstrates zero-order kinetics, wherein the rate of elimination is constant irrespective of the plasma concentration of the medication.</span></div><div style='margin-bottom: 12px;'><strong>❌ Ibuprofen:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Most medications are eliminated via first-order elimination kinetics, including ibuprofen. However, this graph demonstrates zero-order kinetics, wherein the rate of elimination is constant irrespective of the plasma concentration of the medication.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 37-year-old man is diagnosed with Gram-positive bacteremia and started on intravenous Antibiotic X. After admission to the hospital, the patient is given a loading dose of the medication. Afterward, he is scheduled to receive additional injections every six hours. Information regarding Antibiotic X&#8217;s pharmacokinetics is listed below. The patient&#8217;s body weight is 75 kg, and the target plasma concentration for Antibiotic X is 30 mg/L. Which of the following maintenance doses should be administered? &#160;<br><br><table><tbody><tr><td><strong>Pharmacokinetic Parameter</strong><br></td><td><strong>Value</strong><br></td></tr><tr><td>Volume of distribution &#160; <br></td><td>0.4 L/kg &#160; <br></td></tr><tr><td>Dosing interval &#160; <br></td><td>6 hours &#160; <br></td></tr><tr><td>Bioavailability* &#160; <br></td><td>100% &#160; <br></td></tr><tr><td>Elimination rate &#160; <br></td><td>2.6 L/h &#160; <br></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>*For intravenous administration",
+      "choices": [
+        {
+          "id": 1,
+          "text": "180 mg every 6 hours"
+        },
+        {
+          "id": 2,
+          "text": "250 mg every 6 hours"
+        },
+        {
+          "id": 3,
+          "text": "470 mg every 6 hours"
+        },
+        {
+          "id": 4,
+          "text": "600 mg every 6 hours"
+        },
+        {
+          "id": 5,
+          "text": "730 mg every 6 hours"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/k0wYCgvvTKaZytK7LByv2JBZQiGeK_8h/_.png\"></div><br>This patient was diagnosed with Gram-positive bacteremia and started on Antibiotic X, administered via an <strong>intermittent dosing</strong> regimen. In emergency cases, a loading dose (a large dose given at the beginning of treatment) can be administered to help the medication rapidly achieve target concentrations. Maintenance doses, given at scheduled intervals, can be subsequently administered to help keep the drug level at a steady-state concentration. The maintenance dose can be calculated via the equation above.<br><br>The maintenance dose of Antibiotic X can be calculated as follows:<br><br>&#160; &#160;Maintenance dose = (30 mg/L * 2.6 L * 6 h) / 100% = 468 mg / 1 = 468 mg = <strong>~470 mg</strong><br><br>Therefore, 470 mg of Antibiotic X should be administered every 6 hours to help maintain the desired target plasma concentration.<br>&#160; <div><img src=\"https://d16qt3wv6xm098.cloudfront.net/hWH7K3OBTG2e9QOBIDt5SyWrRDWs4X24/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 180 mg every 6 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The maintenance dose can be calculated by multiplying the target plasma concentration, clearance rate, and dosing interval and dividing by the drug&#8217;s bioavailability. In the case of Antibiotic X, the patient should take a maintenance dose of 470 mg every six hours to keep the plasma drug concentration at 30 mg/L. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 250 mg every 6 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A maintenance dose of 470 mg should be given every 6 hours to achieve a plasma drug concentration of 30 mg/L. In contrast, a dose of 250 mg every 6 hours would be insufficient. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 470 mg every 6 hours:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 600 mg every 6 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A maintenance dose of 470 mg should be given every 6 hours to achieve a plasma drug concentration of 30 mg/L. In contrast, a dose of 600 mg every 6 hours would cause the actual plasma concentration to be more than the targeted goal. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 730 mg every 6 hours:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The maintenance dose can be calculated by multiplying the target plasma concentration, clearance rate, and dosing interval and dividing by the drug&#8217;s bioavailability. In the case of Antibiotic X, a maintenance dose of 470 mg should be given every six hours to keep the plasma drug concentration at 30 mg/L. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A new medication is currently under study and demonstrates first-order kinetics. The medication is administered intravenously as a 120 mg bolus, which results in a plasma concentration of 2 mg/L. The clearance of the medication is calculated to be 30 L/h. Which of the following best approximates the half-life of this medication? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.5 hr"
+        },
+        {
+          "id": 2,
+          "text": "1.4 hr"
+        },
+        {
+          "id": 3,
+          "text": "1.8 hr"
+        },
+        {
+          "id": 4,
+          "text": "2.0 hr"
+        },
+        {
+          "id": 5,
+          "text": "2.8 hr"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/hfMK0YXEQfOeKndEhQFy6QbaS46ukGGg/_.png\"></div><br><br>The <strong>half-life&#160;</strong>(T1/2) of medication is defined as the time required for the plasma concentration of the medication to be reduced by 50%. In first-order kinetics, a medication-infused at a constant rate takes <strong>4-5</strong>&#160;<strong>half-lives</strong> to reach a <strong>steady-state&#160;</strong>and takes 3.3 half-lives to get to 90% of the steady-state level. The half-life can be determined graphically from a plot of the plasma drug concentration versus time (as demonstrated below) or from the formula above. &#160; &#160;<br><br>In the above example, the <strong>volume of distribution</strong> can be calculated by dividing the loading dose by the plasma concentration (120 mg / 2mg/L = 60 L). Subsequently, the volume of distribution is multiplied by the <strong>elimination constant</strong> and divided by the <strong>clearance&#160;</strong>(60 L * 0.7 / 30 L/hr = 1.4 hr).<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/qSZlr_vERgemjhlKLrvHU3XzQbyqAiaO/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.5 hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not accurately describe the half-life of this medication. Half-life is defined as the time required for the concentration of a drug to decrease by 50%. At 0.5 hours after drug administration, less than 50% of the drug will have been eliminated. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 1.4 hr:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ 1.8 hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not accurately describe the half-life of this medication. Half-life is defined as the time required for the concentration of a drug to decrease by 50%. At 1.8 hours after drug administration, well over 50% of the drug will have been eliminated.</span></div><div style='margin-bottom: 12px;'><strong>❌ 2.0 hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not accurately describe the half-life of this medication. Half-life is defined as the time required for the concentration of a drug to decrease by 50%. At 2 hours after drug administration, well over 50% of the drug will have been eliminated.</span></div><div style='margin-bottom: 12px;'><strong>❌ 2.8 hr:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>This answer choice does not accurately describe the half-life of this medication. Half-life is defined as the time required for the concentration of a drug to decrease by 50%. At 2.8 hours after drug administration, well over 50% of the drug will have been eliminated. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of researchers is developing a new drug for the treatment of Paget disease. They are currently conducting phase I trials to evaluate the safety profile and pharmacokinetics of the prodrug. Initial studies in animals show that the prodrug undergoes metabolism by the membrane-bound enzymes found within the endoplasmic reticulum of hepatocytes. The metabolism exposes a polar functional -OH group, creating active metabolites. Which of the following reactions most likely took place during this phase? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Reduction"
+        },
+        {
+          "id": 2,
+          "text": "Glucuronidation"
+        },
+        {
+          "id": 3,
+          "text": "Acetylation"
+        },
+        {
+          "id": 4,
+          "text": "Sulfation"
+        },
+        {
+          "id": 5,
+          "text": "Methylation"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "Biotransformation is a metabolic process that takes place mainly in the hepatocytes and facilitates the excretion of exogenous substances. A series of reactions alter the chemical structures of these substances. The enzymes catalyzing these reactions can cause the substrate to become inactive, active, and toxic. These reactions can be classified into two main phases: <strong>phase I&#160;</strong>and <strong>phase II</strong>. However, it is important to realize that these reactions do not have to take place sequentially, and can even take place in reverse.<br><br><ul><li>Phase I metabolism consists of <strong>reduction</strong>, <strong>oxidation</strong>, and <strong>hydrolysis&#160;</strong>reactions. These reactions convert lipophilic drugs into <strong>more polar molecules</strong> by adding or exposing a polar functional group such as -NH2 or -OH. These reactions also create active metabolites, which are necessary in converting prodrugs into active and therapeutic forms. Phase I metabolism involves the use of the cytochrome P450 system found in the membrane of the endoplasmic reticulum.</li><li>Phase II reactions are conjugation reactions, meaning the medications or metabolites are conjugated, or joined with another compound and therefore, include <strong>methylation</strong>, <strong>acetylation</strong>, <strong>sulfation</strong>, <strong>glutathionylation</strong>, and <strong>glucuronidation</strong>. These reactions create highly polar, water-soluble metabolites that cannot diffuse through cell membranes, so they are trapped in the urine, and eliminated by the kidneys. The purpose of these reactions is to create <strong>inactive compounds</strong> that can be excreted by the body.</li></ul>&#160; <div><img src=\"https://d16qt3wv6xm098.cloudfront.net/3gXz-R6JSQO1IjaOEnD4JHFxS0q3PGTA/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Reduction:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Glucuronidation:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Phase II reactions consist of conjugation reactions, glucuronidation, acetylation, and sulfation. The ultimate goal of phase II reactions is to form water-soluble products that can be excreted by the body. This prodrug being metabolized into an active metabolite is suggestive of phase I metabolism. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Acetylation:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Phase II reactions consist of conjugation reactions, glucuronidation, acetylation, and sulfation. The ultimate goal of phase II reactions is to form water-soluble products that can be excreted by the body. This prodrug being metabolized into an active metabolite is suggestive of phase I metabolism. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Sulfation:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Phase II reactions consist of conjugation reactions, glucuronidation, acetylation, and sulfation. The ultimate goal of phase II reactions is to form water-soluble products that can be excreted by the body. This prodrug being metabolized into an active metabolite is suggestive of phase I metabolism. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Methylation:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Phase II reactions consist of conjugation reactions, glucuronidation, acetylation, sulfation, and methylation. The ultimate goal of phase II reactions is to form water-soluble products that can be excreted by the body. This prodrug being metabolized into an active metabolite is suggestive of phase I metabolism. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 75-year-old man presents to his primary care physician for a routine follow-up visit. The patient is on several medications for the management of hypertension and osteoarthritis. Which of the following statements is true regarding medication pharmacokinetics in elderly patients? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Decreased phase I hepatic metabolism of drugs"
+        },
+        {
+          "id": 2,
+          "text": "Increased renal excretion of water-soluble drugs"
+        },
+        {
+          "id": 3,
+          "text": "Decreased volume of distribution for lipid-soluble drugs"
+        },
+        {
+          "id": 4,
+          "text": "Increased gastrointestinal absorption of orally ingested drugs &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Increased volume of distribution for water-soluble drugs"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "As individuals age, there are associated changes in the pharmacokinetics of drug absorption, distribution, metabolism, and excretion. For instance, phase I hepatic metabolism is dampened with age. Therefore, drugs that are metabolized during phase II (e.g. lorazepam) should be preferred to those that are metabolized during phase I (e.g. diazepam). If the latter is needed, decreased therapeutic doses may suffice in the elderly. &#160; &#160;<br><br>Other age-related changes in pharmacokinetics are shown in the following table: &#160;<br><br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/EsOlGXoVSR_AcexEl-sQ3JU0QFiI2Xjp/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Decreased phase I hepatic metabolism of drugs:</strong><br><span style='opacity:0.9'><strong>Correct:</strong> See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Increased renal excretion of water-soluble drugs:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Elderly individuals have a reduced glomerular filtration rate and reduced tubular excretion. As a result, renal excretion of water-soluble drugs is decreased. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Decreased volume of distribution for lipid-soluble drugs:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Elderly individuals have greater body fat content than younger individuals. The volume of distribution for lipid-soluble drugs will be increased, not decreased. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Increased gastrointestinal absorption of orally ingested drugs &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect:</strong> Aging leads to reduced gastric acid secretion, splanchnic blood flow, and absorptive capacity of the small intestines. As a result, the absorption of orally ingested medications will decrease with aging. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Increased volume of distribution for water-soluble drugs:</strong><br><span style='opacity:0.9'><strong>Incorrect:&#160;</strong>Elderly individuals have decreased total body water volume. The volume of distribution for water-soluble drugs will be decreased, not increased. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 52-year-old man presents with right knee pain and swelling to the emergency department. An arthrocentesis is performed, and he is diagnosed with a septic joint. He is started on Antibiotic A, administered intravenously, and renally-excreted according to first-order kinetics. The patient&#8217;s past medical history is notable for type II diabetes mellitus, hyperlipidemia, and stage III chronic kidney disease. Temperature is 38.7&#176;C (102&#176;F), blood pressure is 125/79 mmHg, and pulse is 109/min. Given the patient&#8217;s comorbidities, which of the following adjustments should be made to the loading dose and maintenance dose of Antibiotic A? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": ""
+        },
+        {
+          "id": 2,
+          "text": ""
+        },
+        {
+          "id": 3,
+          "text": ""
+        },
+        {
+          "id": 4,
+          "text": ""
+        },
+        {
+          "id": 5,
+          "text": ""
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "This patient with a history of chronic kidney disease (CKD) is started on a renally-cleared drug. His loading dose will remain unchanged, but subsequent maintenance doses should be reduced compared to a healthy individual.<br><br>A <strong>loading dose</strong> is a large initial bolus given to achieve a target drug concentration rapidly. It can be calculated via the following equation:<br>&#160; <div><img src=\"https://d16qt3wv6xm098.cloudfront.net/m48XDVrDSvikpoKZaZOrhUPDSBSL16K-/_.png\"></div><br>Since the loading dose aims to achieve a target serum concentration after the first dose, changes in drug clearance do not influence the loading dose given. Therefore, if other pharmacokinetic parameters remain unchanged, reducing drug clearance (e.g., liver cirrhosis, kidney disease) would not alter the loading dose. <br><br>In contrast, the <strong>maintenance dose</strong> is given at scheduled intervals to keep the serum drug concentration at the desired level. The maintenance dose can be calculated via the following equation:<br>&#160; <div><img src=\"https://d16qt3wv6xm098.cloudfront.net/_kPKTJT0RqGTYOBMwufu8d_zTFGc3sHu/_.png\"></div><br>Therefore, a reduction in drug clearance (CL) would mean a decreased maintenance dose should be given. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ :</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Patients with chronic kidney disease will have reduced renal clearance of drugs. As a result, the maintenance dose should be decreased. However, the loading dose is unaffected since it does not depend on the drug&#8217;s clearance rate. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This patient has stage III chronic kidney disease (CKD) and would likely have reduced clearance of renally-eliminated drugs. As a result, the maintenance dose of Antibiotic A (which factors in the target plasma concentration, clearance rate, dosing interval, and bioavailability) should be decreased, not increased. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Although this patient has stage III chronic kidney disease, the loading dose of antibiotic A would remain unchanged. There is no change since the loading dose is dependent on target plasma concentration, the volume of distribution, and bioavailability, but not the clearance rate. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Although this patient has stage III chronic kidney disease (CKD), the loading dose of antibiotic A would remain unchanged. There is no change since the loading dose is dependent on target plasma concentration, the volume of distribution, and bioavailability, but not the clearance rate. Furthermore, the maintenance dose of renally-cleared drugs should be decreased in patients with CKD. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study on the clearance of medication X. A population of 100 people is split into two study groups. Study group A is given the therapeutic dose of the medication, while study group B is given a higher dose of the same medication. In both groups, the medication concentration in plasma is monitored over time, with the results documented below. Which of the following is the most likely medication under study? <br><br><table><tbody><tr><td>&#160;<strong>Group A</strong>&#160;</td></tr><tr><td>&#160;Time (hours)&#160;</td><td>&#160;0 &#160;</td><td>&#160;1 &#160;</td><td>&#160;2 &#160;</td><td>&#160;3 &#160;</td></tr><tr><td>&#160;Plasma concentration of drug X (mg/dL)&#160;</td><td>&#160;10 &#160;</td><td>&#160;5 &#160;</td><td>&#160;2.5 &#160;</td><td>&#160;1.25 &#160;</td></tr><tr><td><strong> Group B </strong></td></tr><tr><td>&#160;Time (hours)&#160;</td><td>&#160;0&#160;</td><td>&#160;1&#160;</td><td>&#160;2&#160;</td><td>&#160;3&#160;</td></tr><tr><td>&#160;Plasma concentration of drug X (mg/dL)&#160;</td><td>&#160;20&#160;</td><td>&#160;15&#160;</td><td>&#160;10&#160;</td><td>&#160;5&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phenytoin&#160;"
+        },
+        {
+          "id": 2,
+          "text": "Carbamazepine"
+        },
+        {
+          "id": 3,
+          "text": "Valproic acid&#160;"
+        },
+        {
+          "id": 4,
+          "text": "Lamotrigine&#160;"
+        },
+        {
+          "id": 5,
+          "text": "Topiramate"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The results of this study reveal a medication administered at a standard therapeutic dose that follows <strong>first-order kinetics&#8211;</strong>where a constant<strong>&#160;fraction of the medication is eliminated over time.&#160;</strong>However, this same medication administered at a higher dose follows <strong>zero-order kinetics &#8211; where a constant amount of medication is eliminated over time.</strong> The only medication listed that follows these clearance kinetics is <strong>phenytoin</strong>. &#160; &#160;<br><br>Phenytoin is an antiepileptic medication that inhibits the voltage-gated sodium channels and is used for multiple types of seizure disorders. Phenytoin has a <strong>narrow therapeutic index, and the medication's clearance&#160;</strong>depends on plasma concentration. &#160; &#160;<br><br>Cytochrome P450 enzymes metabolize phenytoin in the liver, and under typical therapeutic doses, the elimination of phenytoin from the plasma follows <strong>first-order kinetics.</strong> A constant <strong>fraction of the plasma concentration of the medication is eliminated over time, and the clearance of the medication is dependent on plasma concentration. &#160; &#160;<br></strong><br>In the case of an overdose of the phenytoin, the CYP450 system becomes saturated, and the elimination of phenytoin begins following <strong>zero-order kinetics.</strong> This means that a<strong>&#160;constant amount of the medication is eliminated over time, irrespective of the plasma concentration. &#160;</strong>&#160;<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/Azt1s4uJRtu1v9FdlOx0DRK1Rcui3rHh/_.png\"></div><br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/aSxjMyQrT2KUM5XQl8zGxHM1SOWQsBT6/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Phenytoin&#160;:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ Carbamazepine:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Carbamazepine is eliminated via first-order kinetics regardless of dosage. In contrast, the drug under study demonstrates first-order kinetics at a standard therapeutic dose, then zero-order kinetics at a higher dose.</span></div><div style='margin-bottom: 12px;'><strong>❌ Valproic acid&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Valproic acid is eliminated via first-order kinetics regardless of dosage. In contrast, the drug under study demonstrates first-order kinetics at a standard therapeutic dose, then zero-order kinetics at a higher dose.&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Lamotrigine&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Lamotrigine clearance follows first-order kinetics regardless of dosage. In contrast, the drug under study demonstrates first-order kinetics at a standard therapeutic dose, then zero-order kinetics at a higher dose.&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Topiramate:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>Topiramate clearance follows first-order kinetics regardless of dosage. In contrast, the drug under study demonstrates first-order kinetics at a standard therapeutic dose, then zero-order kinetics at a higher dose.&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 50-year-old man comes to the office for a follow-up appointment. The patient was diagnosed with type 2 diabetes mellitus 7 years ago and follows a strict glucose control diet. He has no active complaints. Past medical history is otherwise noncontributory. Temperature is 36.6&#176;C (97.9&#176;F), pulse is 90/min, respirations are 18/min and blood pressure is 148/85 mmHg. Physical examination shows decreased lower-extremity sensations during a monofilament test. Laboratory evaluation reveals increased urinary albumin and a serum creatinine level of 1.1 mg/dL. His most recent HbA1c was 7.1%. The patient is started on an antihypertensive agent. This new medication<span>&#160;</span>likely provides<span>&#160;</span>benefit by blocking the formation of what<span>&#160;</span>hormone?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Bradykinin"
+        },
+        {
+          "id": 2,
+          "text": "Angiotensin II"
+        },
+        {
+          "id": 3,
+          "text": "Endothelin"
+        },
+        {
+          "id": 4,
+          "text": "Substance P"
+        },
+        {
+          "id": 5,
+          "text": "Vasopressin"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "This patient has type 2 diabetes mellitus complicated by neuropathy (decreased lower extremity sensations) and nephropathy (albuminuria). The progression of diabetic nephropathy can be reduced by glycemic and blood pressure control. <strong>Angiotensin converting enzyme (ACE)&#160;</strong><strong>inhibitors&#160;</strong>play an important role in slowing the progression. &#160; <br><br>ACE is responsible for activating angiotensin I to angiotensin II and for inactivating bradykinin, a vasodilator normally present in very low concentrations. ACE inhibitors (ACEI) such as captopril, enalapril, or lisinopril, <strong>inhibit the action of ACE&#160;</strong>and prevent the formation of angiotensin II, thereby lessening systemic vasoconstriction. In addition, they <strong>lower aldosterone release</strong> (which subsequently results in natriuresis) and cause an increase in endogenous vasodilators of the kinin family (bradykinin). &#160; &#160;<br><br>ACEI is &#160;indicated in the management of hypertension,<strong>&#160;heart failure, and diabetic nephropathy&#160;</strong>(by reducing the glomerular filtration pressure). It should also be given right after an acute myocardial infarction to increase the perfusion of the heart to prevent further ischemic damage. &#160; &#160;<br><br>Side effects include <strong>dry cough</strong> and <strong>angioedema&#160;</strong>(due to bradykinin accumulation), hypotension, and hyperkalemia (due to less circulating aldosterone). It is excreted renally so care should be taken in patients with renal impairment. &#160;<br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/uhxr2VhQSmuyS5_rnxfx4i5uTdChn6tW/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Bradykinin:</strong><br><span style='opacity:0.9'><strong>Incorrect:&#160;</strong>Degradation of bradykinin is mediated by kininases. ACE, which plays a role in the degradation of bradykinin, can be inhibited by ACE inhibitors and would increase the serum levels of bradykinin. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Angiotensin II:</strong><br><span style='opacity:0.9'><strong>Correct:&#160;</strong>See Main Examination.</span></div><div style='margin-bottom: 12px;'><strong>❌ Endothelin:</strong><br><span style='opacity:0.9'><strong>Incorrect:&#160;</strong>Endothelin-receptor antagonists (e.g., bosentan and ambrisentan) can help improve symptoms in patients with pulmonary hypertension. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Substance P:</strong><br><span style='opacity:0.9'><strong>Incorrect:&#160;</strong>Aprepitant is an oral antagonist at NK1 (substance P) receptors and is approved for use in chemotherapy-induced nausea and vomiting. It has no role in systemic hypertension. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Vasopressin:</strong><br><span style='opacity:0.9'><strong>Incorrect:&#160;</strong>The presser effects of vasopressin are mediated by V1a receptors, whereas V2 receptors are responsible for the antidiuretic action. Conivaptan, a V1a and V2 antagonist, is approved for use in hyponatremia. It has no role in systemic hypertension. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    }
+  ]
+}

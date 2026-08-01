@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "title": "Biostatistics_Mini_Test_-_Tmt"
+  },
+  "questions": [
+    {
+      "text": "A screening test gave positive results in 60% of the diseased individuals and 20% of the healthy individuals. Calculate the Specificity for this test.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.8"
+        },
+        {
+          "id": 2,
+          "text": "0.6"
+        },
+        {
+          "id": 3,
+          "text": "0.2"
+        },
+        {
+          "id": 4,
+          "text": "0.4"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>specificity</strong> of a test from the given information can be calculated as <strong>0.8.</strong></p>\n<p>60% of individuals having the disease came out to be positive. So for 100 diseased individuals, <strong>60 are True positives</strong> and <strong>40 are False negatives.</strong></p>\n<p>20% of the individuals not having the disease came out to be positive. so for 100 healthy individuals, <strong>20 are False positives</strong> and <strong>80 are true negatives.</strong></p>\n<p>The<strong> specificity </strong>of a test is given by those who <strong>are healthy(do not have the disease) and test negative</strong> (true negatives) out of the <strong>total healthy </strong>population. So the specificity = TN divided by TN+FP, i.e <strong>80/100= 0.8</strong></p>\n<p>The<strong> sensitivity </strong>of a test is given by those who have the disease and test positive (<strong>true positives</strong>) out of the&nbsp;<strong>total diseased</strong> population. Here Sensitivity= TP/TP+FN = <strong>60/100=0.6</strong></p>\n<p>The<strong> test's positive predictive value</strong>&nbsp;is&nbsp;given by those who have the disease and test positive (<strong>true positives</strong>)&nbsp;out of the&nbsp;<strong>total positive</strong> population. Here PPV= TP/TP+FP = <strong>60/80=0.75</strong></p>\n<p>The<strong> negative predictive value </strong>of the test is given by those who do not have the disease and test negative (<strong>true negatives</strong>) out of the&nbsp;<strong>total negative&nbsp;</strong>population. NPV here= TN/TN+FN =<strong> 80/120=0.67</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/62275b1d441443bc92db11bb3add523ex1280x959.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Validity of a Screening Test</h3><ul>\n<li><strong>Validity/ accuracy </strong>of a screening test depends upon the <strong>sensitivity, specificity,</strong> and<strong> predictive accuracy</strong> of the test.</li>\n<li>It represents the closeness to a true value/ actual value.</li>\n<li>These are the <strong>inherent properties</strong> of a screening test.</li>\n<li>P<strong>P</strong>V and N<strong>P</strong>V are <strong>dependent</strong> on the <strong>P</strong>revalence of disease.</li>\n<li>Sensitivity &amp; Specificity are independent of prevalence of disease.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/62275b1d441443bc92db11bb3add523ex1280x959.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td colspan=\"2\"><strong>Formulae</strong>&nbsp;</td>\n</tr>\n<tr>\n<td><span>Sensitivity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TP</strong>&nbsp; &nbsp;&nbsp;</span></span><br /><span><strong>TP</strong> + FN</span></td>\n</tr>\n<tr>\n<td><span>Specificity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TN&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>FP + <strong>TN</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a positive test (<strong>P</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>P&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>T<strong>P</strong> + F<strong>P</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a negative test (<strong>N</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>N&nbsp; &nbsp;&nbsp;</strong>&nbsp;</span><sub><br /></sub>T<strong>N</strong> + F<strong>N</strong></span></td>\n</tr>\n<tr>\n<td><span>Percentage of false positives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FP&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>FP + TN</span></td>\n</tr>\n<tr>\n<td><span>Percentage of false negatives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FN&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>TP + FN</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li><strong>PPV</strong> varies <strong>directly</strong> with prevalence</li>\n<li><strong>NPV</strong> varies <strong>inversely</strong> with prevalence</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9644",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study, group A received a placebo while Group B received a new drug. In group A,  36 deaths were reported out of a sample of 120. In group B, 26 deaths were reported out of a sample size of 130. Calculate the Absolute Risk Reduction (ARR) value.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "20%"
+        },
+        {
+          "id": 2,
+          "text": "10%"
+        },
+        {
+          "id": 3,
+          "text": "15%"
+        },
+        {
+          "id": 4,
+          "text": "40%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div>The<strong> </strong>value of <strong>Absolute Risk Reduction(ARR) </strong>in the given question is 10%.</div>\n<div>&nbsp;</div>\n<div>The <strong>ARR(</strong><strong>Absolute Risk Reduction) </strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">is the <strong>difference</strong> in the <strong>absolute risk rates</strong> between the placebo group and the drug group.</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"> The absolute risk rate is usually expressed in percentages.</span></div>\n<div>Here Absolute Risk rate is given as,</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">No. </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">of deaths/Sample population) x 100.</span></div>\n<div>&nbsp;</div>\n<div><strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Calculation:</span></strong></div>\n<div><span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Step 1:</strong> Calculation of absolute risk rate</span></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">The absolute risk rate in&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>group A&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>(placebo)</strong></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">=&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(36/120)x100</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">= </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>30%</strong></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">The absolute risk rate in&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>group B&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>(new&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>drug)</strong></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">=&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(26/130)x100</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">= </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>20%</strong></span></div>\n<div>&nbsp;</div>\n<div><span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Step 2: </strong>Calculation of absolute risk reduction&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(ARR)</span></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">ARR = Absolute risk rate in group A - Absolute risk rate in group B</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">= 30 - 20</span></div>\n<div><span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>= 10%</strong></span></span></div>\n<div>&nbsp;</div>\n<div>Therefore the <strong>Absolute Risk Reduction </strong>in Group B as compared to the placebo group is <strong>10%.</strong></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">The Absolute Risk Reduction(ARR) signifies the proportion of people who benefitted from the new treatment/intervention over the existing treatment/placebo.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9651",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study on RBC counts in healthy women, the data recorded has a mean of 4.5 mn/μL and a standard deviation of 0.5 mn/μL. What is the z score for an element with an RBC count of 3mn/μL?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1.5"
+        },
+        {
+          "id": 2,
+          "text": "3.0"
+        },
+        {
+          "id": 3,
+          "text": "-1.5"
+        },
+        {
+          "id": 4,
+          "text": "-3.0"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The Z score for the element with an RBC count of 3mn/&mu;L is -<strong>3.0</strong></p>\n<p>The formula for the z score is <strong>z = (X- &micro;)/&sigma;.</strong></p>\n<p>X is the value of the element,&nbsp;&micro; is the mean and&nbsp;&sigma; is the standard deviation.</p>\n<p>In this scenario, z = (3 &ndash; 4.5) / 0.5 = -1.5/0.5 = <strong>-3.</strong></p>\n<p>The <strong>location of</strong> any <strong>element</strong> in a <strong>normal distribution</strong> can be expressed <strong>in terms of </strong>how many <strong>standard deviations </strong>it lies above or below the mean of the distribution. This is the <strong>z score </strong>or <strong>standard score </strong>of the element. If the element lies above the mean, it will have a positive z score; if it lies below the mean, it will have a negative z score.</p><img src=\"https://cdn1.dailyrounds.org/uploads/3c721cec34984f469fc61fb82ae88716.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Z Scores</h3><ul>\n<li><strong>Z score</strong>&nbsp;indicates the <strong>position </strong>of any<strong> element</strong> in a distribution in terms of how many <strong>standard deviations </strong>it lies<strong> from </strong>the<strong> mean </strong>of the distribution.</li>\n<li>It is also called the <strong>standard score.</strong></li>\n<li>If it lies <strong>above</strong> the <strong>mean</strong>, its <strong>z score</strong> will be <strong>positive</strong> and if it lies <strong>below</strong> it, the z score will be <strong>negative</strong>.</li>\n<li>For example, if an element lies 1.5 standard deviations below the mean, its z score will be <strong>-1.5 </strong>and if it lies 0.5 standard deviations above the mean, its z score will be <strong>+0.5.</strong></li>\n<li>The formula for calculating <strong>z scores </strong>is <strong>z = (X- &micro;)/&sigma;</strong>, where x is the element&rsquo;s value, &micro; is the mean and &sigma; is the standard deviation. From this, we can also calculate the actual value of the element.</li>\n<li>Some of the z-values for commonly used percentiles:</li>\n</ul>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Percentile</strong></p>\n</td>\n<td>\n<p><strong>Z value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1<sup>st</sup></p>\n</td>\n<td>\n<p>-2.326</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2.5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10<sup>th</sup></p>\n</td>\n<td>\n<p>-1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>25<sup>th</sup></p>\n</td>\n<td>\n<p>-0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>50<sup>th</sup></p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>75<sup>th</sup></p>\n</td>\n<td>\n<p>0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>90<sup>th</sup></p>\n</td>\n<td>\n<p>1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>95<sup>th</sup></p>\n</td>\n<td>\n<p>1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>97.5<sup>th</sup></p>\n</td>\n<td>\n<p>1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>99<sup>th</sup></p>\n</td>\n<td>\n<p>2.326</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9654",
+      "difficulty": "medium"
+    },
+    {
+      "text": "For a given set of values, mean = 20, median = 24 and mode = 26. The distribution would be _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Symmetric"
+        },
+        {
+          "id": 2,
+          "text": "Left skewed"
+        },
+        {
+          "id": 3,
+          "text": "Right skewed"
+        },
+        {
+          "id": 4,
+          "text": "Either symmetric or skewed"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In the given example, <strong>mean &lt; median &lt; mode. </strong>Such a&nbsp; relationship of these variables is seen in a <strong>left-skewed </strong>or<strong> negatively skewed</strong> distribution.</p>\n<p>The relationship among the three measures of central tendency depends on the shape of the distribution. In an unimodal symmetrical distribution (such as the normal distribution), all three measures are identical so Mean=Median =Mode. In a skewed distribution, the three variables of central tendency are not equal.</p>\n<p>In a <strong>positively skewed/ right-skewed distribution,</strong> the mode is simply the most frequently occurring score (the highest point on the curve); the mean is pulled up by the influence of a relatively small number of very high scores; and the median lies between the two, dividing the distribution into two equal areas under the curve. On the curve <strong>mean &gt; median &gt; mode.</strong></p>\n<p>Conversely,<strong> In a Negatively skewed/ left-skewed distribution</strong>, The mode is again the most frequently occurring score (the highest point on the curve); the mean is pulled down by the influence of a relatively small number of very low scores; and the median lies between the two. On the curve, we find <strong>mean &lt; median &lt; mode.</strong></p>\n<p>The mathematical relation between these variables in a skewed distribution is given by: <strong>Mode = 3 median &ndash; 2 mean</strong>&nbsp;(or)&nbsp;<strong>Mean = &frac12; (3 median &ndash; mode).</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1799",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The given ROC(Reciever Operating Characteristic)graph shows three tests A, B, and D. Arrange the tests in the sequence of worst to best.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Test D<Test B<Test A"
+        },
+        {
+          "id": 2,
+          "text": "Test A<Test B<Test D"
+        },
+        {
+          "id": 3,
+          "text": "Test A=Test B= Test D"
+        },
+        {
+          "id": 4,
+          "text": "Test B<Test D<Test A"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Test D </strong>is the<strong> worst </strong>test<strong>&nbsp;</strong>among the given three tests, Test B is better than Test D and <strong>Test A </strong>is the <strong>best </strong>as it has the highest sensitivity and the lowest false positive rate (100-specificity).</p>\n<p>The curve shown is a <strong>Receiver operating characteristic curve(ROC). </strong>It can <strong>compare tests</strong> based on sensitivity and specificity.</p>\n<p>A receiver operating characteristic curve<strong>(ROC)</strong> is obtained by plotting a test's true positive rate (<strong>sensitivity</strong>) against its false-positive rate ( <strong>100- specificity</strong>) for different diagnostic cut-off&nbsp;points.&nbsp;</p>\n<p>The shape of the curve reflects the quality of the test. The <strong>better</strong>&nbsp;the <strong>test</strong>, the more it <strong>moves to the upper left</strong>&nbsp;(more the area under the curve).<strong>&nbsp;</strong>For a good test, <strong>sensitivity</strong> comes close to <strong>100%</strong> on the y-axis, and the <strong>false positive rate</strong> comes close to <strong>0%</strong> on the x-axis.&nbsp;</p>\n<p>Among the three tests, <strong>Test A</strong> has its curve closest to the <strong>Top left point(Ideal point)</strong> on the graph. It will have the highest AUC(Area under the curve).</p>\n<p>Test B is second best as it is a little farther from the ideal point and has a lesser AUC.</p>\n<p>Test D is the worst as it never goes towards the ideal point as it is a straight line. In the case of test D, as the Sensitivity of the test increases, the false positive rate also increases linearly. It will have an AUC of 0.5. Such a test is considered worthless.</p>\n<p>The higher the AUC(AREA under the curve) of the ROC curve, the better the test. An Ideal test will have an AUC of 1.</p>\n<p>As a rule of thumb, an AUC of 0.5 to 0.6 is almost useless, 0.6 to 0.7 is poor, 0.7 to 0.8 is fair, and 0.8 to 0.9 is very good.&nbsp;</p>\n<p>&nbsp;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/7c9bc56b241f4c94836f4d50347fad96.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9658",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a given population, the chance of developing a particular cancer was found to be 40%. What is the probability that all 4 randomly selected people from the population would have cancer?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1.6"
+        },
+        {
+          "id": 2,
+          "text": "0.0004"
+        },
+        {
+          "id": 3,
+          "text": "0.0008"
+        },
+        {
+          "id": 4,
+          "text": "0.0256"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this scenario, the probability of all 4 randomly selected people getting cancer would be<strong> 0.0256.</strong></p>\n<p>The probability of a person developing cancer in the population is given by p (developing cancer) = 40/100 = 0.4</p>\n<p>If 4 people are randomly selected in a population, the <strong>chance</strong> of the<strong> first</strong> person having cancer is <strong>independent</strong> of the second/third/fourth also having it and vice-versa. This satisfies the condition for the <strong>multiplication rule</strong> of <strong>probability</strong>. It states that the <strong>probability</strong> of <strong>two or more statistically independent events</strong> all occurring is equal to the <strong>product</strong> of their <strong>individual probabilities</strong>.</p>\n<p>Hence in this scenario, the<strong> probability</strong> that <strong>all 4 randomly selected people</strong> from the population would have cancer = 0.4 x 0.4 x 0.4 x 0.4 =<strong> 0.0256</strong></p>\n<p>Note: The (p) of <strong>any one of the 4</strong> randomly selected people from the population having cancer = <strong>the sum of their individual probabilities</strong> = 0.4 + 0.4 + 0.4 + 0.4 = 1.6</p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1543",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following explains the Alpha error?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Accepting the alternate hypothesis when it is true"
+        },
+        {
+          "id": 2,
+          "text": "Accepting the null hypothesis when it is true"
+        },
+        {
+          "id": 3,
+          "text": "Accepting the null hypothesis when it is false"
+        },
+        {
+          "id": 4,
+          "text": "Accepting the alternate hypothesis when it is false"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>&nbsp;<strong>Accepting</strong> the <strong>alternate hypothesis </strong>even <strong>when it is false</strong> is an <strong>Alpha error.</strong> It is also known as a <strong>Type 1 error</strong> or <strong>false positive error.</strong>&nbsp;It leads to acceptance of a new drug or treatment over a pre-existing treatment, even when in reality the new treatment is not superior to the existing treatment.</p>\n<p>Two types of errors can occur while drawing a conclusion from a statistical test.</p>\n<p><strong>Type 1 error</strong>: Accepting a false alternative hypothesis. It is also called the <strong>alpha error. </strong>It is a<strong> false positive</strong> error.<strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong><strong>Type 2 error</strong>: Rejecting a true alternative hypothesis or accepting a false null hypothesis. It is also called the <strong>beta error.</strong>&nbsp;It is a <strong>false negative</strong> error. (Option-D).&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>&nbsp;Actual Situation</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n<p><em>Test Results:</em></p>\n</td>\n<td>\n<p><strong>Null Hypothesis True</strong></p>\n<p><strong>Alternate Hypothesis is False</strong></p>\n</td>\n<td>\n<p><strong>Null Hypothesis False</strong></p>\n<p><strong>Alternate Hypothesis is True</strong></p>\n</td>\n</tr>\n<tr>\n<td><em>The Null Hypothesis is accepted</em></td>\n<td>Correct</td>\n<td>Beta/Type 2 error</td>\n</tr>\n<tr>\n<td><em>The Alternate Hypothesis is accepted</em></td>\n<td>Alpha/Type 1 error</td>\n<td>Correct</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Type 1 error</strong> can be <strong>reduced by</strong> taking higher confidence intervals or <strong>keeping the value of p as low</strong> as possible. (p value&lt; 0.05 is the minimum requirement for hypothesis testing). <strong>Type 2 error </strong>is <strong>reduced by increasing the sample size</strong> for hypothesis testing.</p><hr><h3>Related Pearl: Concepts in Hypothesis Testing</h3><p><strong>Probability value (</strong><em>p</em><strong> value)</strong></p>\n<ul>\n<li>A&nbsp;<strong>probability value</strong>&nbsp;is the&nbsp;<strong>probability of an outcome given the hypothesis</strong>.</li>\n<li>It is not the probability of the hypothesis given the outcome, although the probability of the given hypothesis is not ignored.</li>\n<li>If the&nbsp;<strong>probability of an outcome is sufficiently low</strong>, we have&nbsp;<strong>evidence that the hypothesis is false</strong>.</li>\n<li>It is also called the&nbsp;<em>p</em><strong> value</strong>.</li>\n</ul>\n<p><strong>The Null Hypothesis and Alternative Hypothesis</strong></p>\n<ul>\n<li>The <strong>hypothesis that an apparent effect or outcome is only due to chance is a null hypothesis</strong>.</li>\n<li>In other words, a null hypothesis is one where there is <strong>no difference between the specified sample and population</strong> and any observed difference is due to chance or some other error.</li>\n<li>A null hypothesis is represented by <strong>H<sub>0</sub></strong>.</li>\n<li>If the <strong>null hypothesis</strong> is <strong>rejected</strong> as false, then there is an <strong>alternative</strong> or <strong>experimental hypothesis (H<sub>A</sub>)</strong>, which is logically accepted.</li>\n</ul>\n<p><strong>Criterion or Significance Level</strong> <strong>(&alpha;) </strong></p>\n<ul>\n<li>If the probability value of an outcome is sufficiently low, then the null hypothesis is rejected.</li>\n<li>This <strong>point below which we would define the probability value as being low enough</strong> to reject the null hypothesis is called the <strong>criterion</strong> or <strong>significance level </strong>or<strong> &alpha; (alpha) level</strong>.</li>\n<li>When the null hypothesis is rejected, the effect or outcome is said to be <strong>statistically significant</strong>.</li>\n<li>By <strong>convention</strong> (but not always), the <strong>level of &alpha; is 0.05</strong>, i.e., if the probability value of an outcome is <strong>less than or equal to 0.05 (</strong><em>p</em><strong> value &le; 0.05)</strong>, then the null hypothesis is <strong>rejected</strong>.</li>\n<li>If it is <strong>greater than 0.05</strong>, then the null hypothesis is <strong>accepted</strong>.</li>\n<li>Although by convention the level of <strong>&alpha; is 0.05</strong>, it can be lower but cannot be any higher.</li>\n</ul>\n<p><strong>Type I Error</strong></p>\n<ul>\n<li>The interpretation of <strong><em>p</em> value &le; 0.05 </strong>is that an investigator can be 95% sure that the result was not obtained by chance.</li>\n<li>It also means that there is a 5% probability that the result was obtained by chance.</li>\n<li>From this, we can deduce that the <strong>null hypothesis might indeed be true even though we rejected it</strong>.</li>\n<li>This is <strong>a type I error</strong>. In other words, <strong>when an alternative hypothesis is accepted even when it is false and the null hypothesis is true</strong>, it is a <strong>type I error</strong> or <strong>false positive error</strong>.</li>\n<li>It is also called an <strong>alpha (&alpha;) error</strong> as it is <strong>related to the criterion &alpha;</strong>.</li>\n<li>The <strong>lower the &alpha; level</strong>, the <strong>lower the rate of a type I error</strong> being made.</li>\n<li>Thus, it can be said that <strong>&alpha; is the maximum tolerable probability that a type I error is being made</strong> and that the <strong>p value is the probability that a significant difference is declared when there is none</strong>.</li>\n</ul>\n<p><strong>Type II Error</strong></p>\n<ul>\n<li>The error that is made by <strong>rejecting an alternative hypothesis when it is true</strong> or <strong>failing to reject a null hypothesis when it is false</strong> is called a <strong>type II error</strong>.</li>\n<li>It is also called a <strong>false negative error </strong>and more commonly, as a <strong>beta (&beta;) error</strong>.</li>\n<li>If the null hypothesis is false, then the <strong>probability of a type II error</strong> is <strong>&beta;</strong>.</li>\n<li>The <strong>power of a statistical test</strong> is indicated by <strong>1&ndash;&beta;.</strong></li>\n</ul>\n<p><strong>Power of a Test</strong></p>\n<ul>\n<li>The <strong>power of a test</strong> is the <strong>ability</strong> of a statistical test to <strong>avoid a type II error</strong>, which depends on its <strong>ability to detect a false null hypothesis</strong>.</li>\n<li>It is <strong>equal to 1&ndash;&beta;</strong>, which is the <strong>probability that a false null hypothesis will be rejected</strong>.</li>\n<li>By <strong>convention</strong>, a test is required to have a <strong>power of 0.8</strong> (or a <strong>&beta; of 0.2</strong>) to be <strong>acceptable</strong>. This is to say that a study that has less than 80% chance of detecting a false null hypothesis is unacceptable.</li>\n<li><strong>Type I errors are easily reduced by reducing the criterion &alpha;</strong>.</li>\n<li>A <strong>test's power will increase</strong> in the following conditions:\n<ul>\n<li>If <strong>&alpha; increases</strong>, but this will increase the chance of a type I error.</li>\n<li>If the <strong>difference between </strong>the <strong>sample mean </strong>and<strong> hypothesized mean increases</strong>. This is also called <strong>effect size</strong>.</li>\n<li>If <strong>sampling error decreases</strong>.</li>\n<li>If the <strong>sample size (n) increases</strong>.</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9665",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following are representatives of interval scale data?<div class='question-desc-html'><ol>\n<li aria-level=\"1\">Child-Pugh Score</li>\n<li aria-level=\"1\">Temperature in Kelvin</li>\n<li aria-level=\"1\">Intelligence Quotient</li>\n<li aria-level=\"1\">Temperature in celsius&nbsp;</li>\n<li aria-level=\"1\">Blood groups</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1,3, & 4"
+        },
+        {
+          "id": 2,
+          "text": "3 & 4"
+        },
+        {
+          "id": 3,
+          "text": "3& 5"
+        },
+        {
+          "id": 4,
+          "text": "2,3,4  & 5"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Intelligence Quotient</strong>(3) and the <strong>temperature in Celsius</strong>(<span>4)</span><span>are measured on the </span><strong>Interval Scale.</strong></p>\n<p><span><strong>Interval scale data </strong>can be placed in a <strong>meaningful order</strong>. Additionally, they have <strong>meaningful intervals</strong> between the items, usually measurable quantities. For example, the difference between 100&deg; and 90&deg; is the same as that between 50&deg; and 40&deg; on the Celsius temperature scale. But these scales <strong>do not have absolute zeroes,</strong> which makes ratios between the items meaningless.</span></p>\n<p><span> Data will always fall into one of the four scales- Nominal, Ordinal, Interval and Ratio scales. <strong>Nominal scale data</strong> can be divided into qualitative categories or groups. <strong>No order or ratio</strong> from the data is implied. An example includes <strong>Types of blood groups</strong>(5). Other examples are groups like male/female, black/white and urban/suburban/rural.</span></p>\n<p><span><strong> Ordinal scale data</strong> holds meaning when it is<strong> placed in a particular order</strong>. But, there is <strong>no information about the interval size</strong>. An example is the <strong>Child-Pugh score</strong>(1). Other examples are TNM staging of tumours and Glasgow Coma Score. </span></p>\n<p><span><strong>Ratio scale data</strong> have similar properties to interval scale data. In addition, they <strong>have an absolute zero </strong>and <strong>meaningful ratios exist</strong>. Most biomedical variables can be measured on a ratio scale like Blood pressure, Heart Rate and weight. Another example is the <strong>temperature scale in Kelvin</strong>(2).</span></p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9668",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What will happen to the sensitivity and the specificity of a screening test, if the cutoff value is changed from Point B to Point A?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sensitivity decreases and Specificity increases"
+        },
+        {
+          "id": 2,
+          "text": "Sensitivity increases and Specificity decreases"
+        },
+        {
+          "id": 3,
+          "text": "Both Sensitivity and specificity decreases"
+        },
+        {
+          "id": 4,
+          "text": "Both Sensitivity and Specificity increase"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>As the <strong>cutoff</strong> point for the test changes from <strong>Point B to Point A</strong>, the <strong>test's sensitivity increases </strong>and the test's <strong>specificity decreases.</strong></p>\n<p>In clinical practice, <strong>sensitivity and specificity are inversely related</strong>: an increase in one causes a decrease in the other. This is because test results for people with and without a given disease typically lie on a continuum, overlapping each other, rather than forming two discrete groups. Therefore, the clinician must select a “cutoff point” to make a diagnostic decision. This can be seen in the graph showing cutoff values in the question, where point B is the preferred cutoff.</p>\n<p>When the <strong>cutoff value is decreased </strong>by changing the cutoff from Point B to Point A, The test will now identify everyone with the disease and thus will have a <strong>very high sensitivity</strong>. But at this point, the test would also incorrectly diagnose many healthy individuals as diseased. Therefore the number of <strong>false positive results</strong> would be also <strong>high </strong>and thus the <strong>Specificity will decrease</strong>.</p>\n<p>Opposite trends will be seen when the <strong>cutoff point</strong> is changed <strong>from B to C</strong>, leading to <strong>higher specificity</strong> but <strong>low sensitivity.</strong> Thus the cutoff points of Screening tests are very meticulously chosen to maintain high enough specificity and sensitivity both for clinical practice.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fd3edf675b3f4e30a140e2ff769dc087x1200x1109.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Cut-off points in diagnostic tests</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/77956c061f8a417f980dc92fa3b56592x1199x1136.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Highly <strong>sensitive</strong> test, when <strong>negative</strong>, <strong>rules out</strong> a disease. <strong>(Screening test)</strong></li>\n<li>Highly <strong>specific</strong> test, when <strong>positive</strong>, <strong>rules in</strong> a disease. <strong>(Confirmatory test)</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fd3edf675b3f4e30a140e2ff769dc087x1200x1109.JPEG\" alt=\"Pearl Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/94e48ae863c74fbea0b8bfed13733accx1280x1199.JPEG\" alt=\"Pearl Image\"><p><strong>Sensitivity</strong> (True-positive rate): High sensitivity indicates low false-negative rate.</p>\n<p><strong>Specificity</strong>&nbsp;(True-negative rate): High specificity indicates low false-positive rate.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/8bb13a6ac99841038cee7303a234d0e2.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9671",
+      "difficulty": "medium"
+    },
+    {
+      "text": "For an epidemiological study, sampling was done as shown below. What is this type of sampling known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cluster sampling"
+        },
+        {
+          "id": 2,
+          "text": "Homogenous sampling"
+        },
+        {
+          "id": 3,
+          "text": "Stratified random sampling"
+        },
+        {
+          "id": 4,
+          "text": "Simple random sampling"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The given image shows <strong>Simple Random Sampling.</strong></p>\n<p>In <strong>Simple random sampling,</strong> samples are drawn in such a way that <strong>every element</strong> in a population has an <strong>equal chance </strong>of being included.&nbsp;Randomness here refers to the <strong>method of picking the sample</strong> and not the outcome. The picking of the elements happens through a lottery system.</p>\n<p>In <strong>stratified random sampling</strong>, the&nbsp;<strong>population is first divided into homogeneous groups</strong>&nbsp;or&nbsp;<strong>strata</strong>. From these&nbsp;<strong>strata,</strong> random samples are drawn. In this image, no strata or groups are seen.</p>\n<p>In <strong>cluster sampling</strong>, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a&nbsp;<strong>simple random sampling is done of these clusters</strong> and taken as the samples. Here no such clusters are seen. Also in cluster sampling equal number of cases are taken from each cluster.</p>\n<p>In<strong> systematic sampling</strong>, there is a&nbsp;<strong>systematic pattern</strong> for selecting the elements of a sample, like every fifth individual is selected. No such pattern is seen in the image.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Sampling</h3><p><strong>1. Simple random sampling</strong></p>\n<ul>\n<li>In simple random sampling, samples are drawn in such a way that <strong>every element in a population has equal chances</strong> of being included.</li>\n<li>Randomness refers to the <strong>method of picking the sample</strong> and not the outcome.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eab4b31aa4f24e689e44c4ccf3abf443x1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>2. Stratified random sampling</strong></p>\n<ul>\n<li>In stratified random sampling, the <strong>population is first divided into homogeneous groups</strong>, or <strong>strata</strong>. From these <strong>strata,</strong> random samples are drawn.</li>\n<li>For example, dividing a population into the strata of men, women, and children and then picking samples randomly from these strata.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c86c4e0efdea496487723728f004de8ex1280x1523.JPEG\" alt=\"Pearl Image\"><p><strong>3. Cluster sampling</strong></p>\n<ul>\n<li>In cluster sampling, the <strong>population is divided into internally heterogeneous groups.</strong>&nbsp;Then a <strong>simple random sampling is done of these clusters</strong> and taken as the samples.</li>\n<li>In other words, the <strong>clusters</strong> are the <strong>sampling unit.</strong></li>\n<li>This is usually done when large-scale simple random sampling or stratified sampling is laborious or expensive.</li>\n<li>This is the method used in assessing the&nbsp;<strong>immunization status of children</strong>.</li>\n<li>Cluster sampling involves a&nbsp;<strong>design effect</strong>, which is an adjustment to allow for design structure. It aids in the correlation between clusters.</li>\n<li><strong>Multistage sampling</strong> is a form of cluster sampling, where sampling clusters are chosen from the already divided clusters.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/711b7580f9604a5d8a05eab99ce199ebx1280x1225.JPEG\" alt=\"Pearl Image\"><p><strong>4. Systematic random sampling</strong></p>\n<ul>\n<li>In systematic sampling, there is a <strong>systematic pattern</strong> to selecting the elements of a sample.</li>\n<li>For example, every 3<sup>rd</sup> baby to be born can be selected.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6e085576b4f04e5784a9a2773def8601x1280x978.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/0ea8b4dc0ddb4e3ea029d0f39c8fbcd2.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9675",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study shows a strong positive correlation between smoking and lung cancer. What is the probable correlation coefficient (r) in this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "-0.8"
+        },
+        {
+          "id": 2,
+          "text": "+0.8"
+        },
+        {
+          "id": 3,
+          "text": "3"
+        },
+        {
+          "id": 4,
+          "text": "0"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>A <strong>strong </strong>or positive correlation means <strong>r is positive</strong>&nbsp;and <strong>closer to 1,</strong> hence <strong>r= +0.8 </strong>is the most appropriate option.</p>\n<p>&nbsp;The correlation coefficient <strong>(r)</strong> helps us find out whether there is a <strong>significant association</strong> or not between <strong>two variables</strong>. r tends to lie between - 1.0 and + 1.0. In the given scenario there is a strong association between smoking and the development of lung cancer. Thus the plausible value closest to 1 is 0.8.</p>\n<p>If r is <strong>near + 1</strong>, it indicates a <strong>strong positive association</strong> i.e., when one variable increases the other variable also increases.&nbsp;A value <strong>near - 1 </strong>indicates a <strong>strong negative association </strong>i.e. when one variable increases the other decreases. In option 1, where the value of r is -0.8, indicates a strong negative correlation.&nbsp; <strong>r = 0</strong>, it indicates there is <strong>no association </strong>between x and y(option 4.). The value of r cannot be 3(option 3.) as it stays between -1 to +1 only.</p>\n<p>The value of<strong> r </strong>indicates only the relationship between two variables and never the causation.</p>\n<p>&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9678",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Results of various studies carried out to study the role of smoking in breast cancer are plotted below. Which of these studies are statistically insignificant?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "D, E"
+        },
+        {
+          "id": 2,
+          "text": "B only"
+        },
+        {
+          "id": 3,
+          "text": "A, B, C"
+        },
+        {
+          "id": 4,
+          "text": "A, B, C, D, E"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shown is that of a <strong>forest plot</strong> used for plotting the results of a <strong>meta-analysis. </strong>Any <strong>study </strong>whose confidence intervals <strong>touch</strong> the \"<strong>line of no effect</strong>\" is considered <strong>statistically insignificant. </strong>In this given plot <strong>Studies A, B, and C </strong>are touching the line of no effect and hence are statistically insignificant.</p>\n<p>A <strong>forest plot/blobbogram </strong>is used to present the results of a <strong>meta-analysis.</strong> It allows the results to be seen at a glance, with ready identification of outliers. Each study is represented as a rectangle and a horizontal line. The size of the rectangle represents the sample size of the study. The horizontal line on either side of the result shows the 95% confidence interval surrounding the point estimate.</p>\n<p>The vertical solid line is the <strong>“line of no effect,”</strong> where there is no difference between having the risk factor and the absence of the risk factor. (<strong>i.e., a risk ratio of zero</strong>). If any study touches this line such a study is statistically insignificant.</p>\n<p>In other words, when the confidence intervals of a <strong>study include an Odds Ratio of 1.0</strong>, that study is <strong>statistically insignificant</strong>. A forest plot also compares individual studies, for deciding whether a drug is significantly better than a placebo or not.</p><hr><h3>Related Pearl: Forest Plot</h3><ul>\n<li>A <strong>forest plot</strong> is used to present the results of a <strong>meta-analysis.</strong></li>\n<li>It is also called <strong>blobbogram.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/01f09b9b2dbb44fc90c6a6bb84df981ax1125x727.PNG\" alt=\"Pearl Image\"><p>Interpretation of forest plots:&nbsp;</p>\n<ul>\n<li aria-level=\"1\">The <strong>rectangles</strong> represent the single studies</li>\n<li aria-level=\"1\">The <strong>size of the rectangle</strong> is proportional to the sample size</li>\n<li aria-level=\"1\">The <strong>horizontal line on either side</strong> - confidence interval, the longer the lines, the wider the confidential interval, the less reliable the study results</li>\n<li aria-level=\"1\">The <strong>vertical solid line</strong> - the &ldquo;line of no effect\", which represents the odds ratio or relative risk. If it is the odds ratio, then the vertical line would be at 1. No difference between the intervention and the placebo (i.e., <strong>a risk ratio of 1</strong>).&nbsp;</li>\n<li aria-level=\"1\">The <strong>location of the result</strong> - whether it favours the intervention (the statin drug) or not</li>\n<li aria-level=\"1\">A <strong>diamond</strong> shows the overall pooled result where all the individual studies are combined together and averaged</li>\n<li aria-level=\"1\"><strong>Lateral corners</strong> of the diamond represent the confidence interval, if these corners do not cross 'the line of no effect', then there is an overall statistically significant effect. If the diamond touches the vertical line, the overall result is not statistically significant.</li>\n<li>The <strong>vertical dashed line</strong> represents the <strong>overall pooled estimate</strong> which represents the <strong>meta-analysed measure of effect</strong>.</li>\n</ul>\n<p>Let's understand with an example -&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5b5dee4fbd514313a94da59b6f5366a4x1280x1200.JPEG\" alt=\"Pearl Image\"><ul>\n<li aria-level=\"1\">For <strong>study A</strong>- it has a wide horizontal line that crosses the line of null effect with a black box that is to the right of the vertical line. This most likely demonstrates a small scale study with few participants where the point estimate result favours the control used in the study. But because the study contains the null value in its 95% confidence interval, it is likely to have a p-value &gt;0.05 and not be statistically significant.</li>\n<li aria-level=\"1\">For <strong>study B</strong>- it has quite a narrow line that does not cross the line of null effect with a black box that is to the left of the vertical line and is bigger than study A. This most likely demonstrates a larger study with more participants compared to study A, where the result favours the intervention used. Because the 95% confidence interval does not contain the null value, this study is likely to have a p-value &lt;0.05 and hence the differences observed in the study can be regarded as statistically significant.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/7e5200be4acc47749527e8dc8e7a39fa.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9680",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following removes unknown confounders in a study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Blinding"
+        },
+        {
+          "id": 2,
+          "text": "Randomization"
+        },
+        {
+          "id": 3,
+          "text": "Deletion"
+        },
+        {
+          "id": 4,
+          "text": "Matching"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div><strong>Randomisation</strong> removes both known and unknown confounders in an experimental study.</div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>A confounding factor&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">is defined as one </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>associated with both exposure and disease&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">and is distributed </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>unequally&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">in study and control groups.</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">For example, a prospective study is being conducted to know the effect of </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>alcohol&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">on the development of </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>lung&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>cancer</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">.&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">However, individuals who drink alcohol are most likely to smoke. So, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>smoking&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">is </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>associated with exposure</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">. Also, smoking is an&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>independent causative factor </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">for lung cancer. Thus, smoking is a </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>confounding&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>factor</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">.</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">If the study is conducted without eliminating the confounding factor, then the result may falsely suggest that alcohol is a causative factor for lung cancer.&nbsp;</span></div>\n<div>&nbsp;</div>\n<div>To eliminate the confounding factors while conducting the study: <strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Randomization, </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Matching, </span></strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Stratified randomization and Restriction </strong>are used.</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Randomization </strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">is the random allocation of the participants in&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>experimental&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>studies&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(Randomised</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"> control trial) into the study group and control group. True randomization means that the groups should be similar with respect to race, gender, disease severity, age, occupation, and any other variable (including variables that we do not even recognize- <strong>unknown confounders</strong>) that may affect the response to the experimental intervention.</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Matching</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">, which is usually done in </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>analytical&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>studies&nbsp;</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(for example, case control </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">and cohort studies), is the process where the participants in two groups are matched based on factors such as age, gender, race, smoking status, etc. to eliminate the potential confounders. Thus, It can <strong>remove only the known confounders.</strong></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Stratified randomization</strong>, which is also known as&nbsp;<strong>pre-</strong><strong>stratification&nbsp;</strong>or blocking, is the process that combines both randomization and matching techniques</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Restriction</strong>: This method restricts the study to only those participants with particular characteristics like participants of only one gender are taken in a study.</span></div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Other options:</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Blinding does not eliminate confounding factors</strong>. Blinding is done to eliminate bias <span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(such as subject&nbsp;</span>bias, observer bias, or investigator bias).</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>Deletion </strong>is not a method to reduce confounding.</span></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9686",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A researcher wants to study the association between high smoking and Acute Myocardial Infarction(AMI). He noticed that due to the higher frequency of deaths in smokers who suffered an AMI, the living cases show a lower frequency of smoking. This has undervalued the association between smoking and AMI.\nThis kind of Bias is known as:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hawthorne bias"
+        },
+        {
+          "id": 2,
+          "text": "Berkesonian bias"
+        },
+        {
+          "id": 3,
+          "text": "Interviewer's bias"
+        },
+        {
+          "id": 4,
+          "text": "Neyman's bias"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The given scenario is suggestive of&nbsp;<strong>Neyman's bias.</strong></p>\n<p>A <strong>Bias&nbsp;</strong>is a systemic <strong>error in the determination of an association </strong>between an exposure and a disease. <strong>Neyman&rsquo;s</strong> or <strong>prevalence-incidence bias</strong> occurs in case-control studies when <strong>exposure affects</strong> both the <strong>disease</strong> and the <strong>disease-induced mortality.&nbsp;</strong>In the given question, the cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI.&nbsp; It has been shown that Neyman's bias occurs only in&nbsp;<strong>fatal diseases.</strong></p>\n<p>Other options:</p>\n<p>Option A:&nbsp;<strong>Hawthorne</strong>&nbsp;<strong>bias</strong> occurs due to a <strong>change</strong>&nbsp;<strong>in</strong>&nbsp;<strong>attitude </strong>or<strong>&nbsp;</strong>actions of the subjects&nbsp;when they are <strong>aware</strong> they are under&nbsp;<strong>observation</strong>.</p>\n<p>Option B: <strong>Berkesonian bias</strong> applies to <strong>hospital-based</strong>&nbsp;<strong>case-control studies.</strong> Occurs due to differential hospital admission rates of the cases and the controls.</p>\n<p>Option C: The<strong> interviewer's&nbsp;bias</strong> occurs when the person conducting the case-control study knows the hypothesis and who the cases are. This may lead to the <strong>interviewer questioning the Cases more thoroughly</strong> than the Controls regarding the history of the causal factor.</p>\n<p>&nbsp;</p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9698",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Match the following study designs with their respective units of study.<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td><strong>Study Designs</strong></td>\n<td><strong>Unit of study</strong></td>\n</tr>\n<tr>\n<td>1. Cohort Study</td>\n<td> a. Healthy people</td>\n</tr>\n<tr>\n<td>2. Ecological Study</td>\n<td> b. Individual</td>\n</tr>\n<tr>\n<td>3. Randomized control trial</td>\n<td> c. Population</td>\n</tr>\n<tr>\n<td>4. Field trial</td>\n<td> d. Patients</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1-b, 2-c, 3-d, 4-a"
+        },
+        {
+          "id": 2,
+          "text": "1-b, 2-c, 3-a, 4-d"
+        },
+        {
+          "id": 3,
+          "text": "1-a, 2-c, 3-b, 4-d"
+        },
+        {
+          "id": 4,
+          "text": "1-a, 2-b, 3-d, 4-c"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The correct match is <strong>1-b, 2-c, 3-d, 4-a.</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Study Designs</strong></td>\n<td><strong>Unit of study</strong></td>\n</tr>\n<tr>\n<td>1. Cohort Study</td>\n<td>b. Individual</td>\n</tr>\n<tr>\n<td>2. Ecological Study</td>\n<td>c. Population</td>\n</tr>\n<tr>\n<td>3. Randomized control trial</td>\n<td>d. Patients</td>\n</tr>\n<tr>\n<td>4. Field trial</td>\n<td>a. Healthy people</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p><p>A <strong>cohort study</strong> is an analytical study involving the follow-up of a cohort (a group of people) with risk factors to check if they develop an outcome or disease. It uses <strong>individuals </strong>(exposed and non-exposed) <strong>as a unit</strong> of study.</p>\n<p>An <strong>ecological study</strong> is a type of analytical study that analyzes the health status and its relation with other variables. It is also called a <strong>correlational study</strong>, and it uses the <strong>population</strong> as a <strong>unit of study.</strong></p>\n<p>A <strong>randomized control trial</strong> is an experimental study in which an intervention is given to a group of patients participating in the study and compared to another group of patients with similar characteristics who are not given that intervention to be studied. It uses <strong>patients </strong>as the <strong>unit of study.</strong></p>\n<p><strong>Field tria</strong>l is an interventional type of study, done to evaluate preventional strategies. It is done on the ground/in the field with <strong>healthy people </strong>as the<strong> unit of study.</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Type of epidemiological study</strong></td>\n<td><strong>Unit of study</strong></td>\n</tr>\n<tr>\n<td>\n<p><strong>Analytical studies (hypothesis testing)</strong></p>\n</td>\n<td>   </td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Cohort study/ Follow up study</li>\n</ul>\n</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Case-control study</li>\n</ul>\n</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Cross-sectional study/ Prevalence study</li>\n</ul>\n</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Ecological study/ Correlational study</li>\n</ul>\n</td>\n<td>Population</td>\n</tr>\n<tr>\n<td>\n<p><strong>Experimental studies (hypothesis confirmation)</strong></p>\n</td>\n<td> </td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Randomized control trial/ Clinical trials</li>\n</ul>\n</td>\n<td>Patients</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Field trial</li>\n</ul>\n</td>\n<td>Healthy people</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Community trial</li>\n</ul>\n</td>\n<td>Community</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Types of Epidemiological Study Designs</h3><p><strong>Types of Epidemiological Study Designs</strong></p>\n<p>The flow chart below gives a glance into the types of epidemiological study designs and where they are generally used.</p>\n<p><strong>Note:</strong>&nbsp;<strong>Descripitve study</strong> is used to <strong>formulate</strong> aetiological hypothesis of a disease. Whereas <strong>analytical study</strong> is used to <strong>test</strong> the hypothesis (i.e to accept or reject the hypothesis).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8bf47c838ad64276ab706c700cc1758cx1280x2995.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9699",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The formula given below corresponds to:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Population Variance"
+        },
+        {
+          "id": 2,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 3,
+          "text": "Sample Variance"
+        },
+        {
+          "id": 4,
+          "text": "Standard Error of the Mean"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The formula given above is used to calculate the <strong>Variance.</strong></p>\n<p><strong>Variance (&sigma;<sup>2</sup>) </strong>or <strong>Mean square</strong> is the <strong>mean&nbsp;of</strong> the&nbsp;<strong>squares&nbsp;of </strong>all the&nbsp;<strong>deviation scores</strong>&nbsp;of the distribution. It is numerically equal to the <strong>square of the standard deviation. </strong>The <strong>deviation score </strong>(symbolized by the letter x )of an element is found by <strong>subtracting the distribution&rsquo;s mean from the element</strong>.</p>\n<p>Data clustered around the mean have a low variance, while more spread out data have a high variance. The units of Variance are the same units of measurement as the original data.</p>\n<p><strong>Standard deviation</strong> (option B) is a measure of <strong>how dispersed the data is</strong> in relation to the mean. It is the square root of the variance.</p>\n<p><strong>Standard error of the mean</strong> (Option D) measures how far the data's sample mean is likely to be from the true mean of the population.&nbsp;</p>\n<p>&nbsp;</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d4ff51c7072640d993d0a827108816f4.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9710",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A researcher wants to calculate the point prevalence of a disease in the state. Which of the following study designs would she prefer?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Retrospective Cohort"
+        },
+        {
+          "id": 2,
+          "text": "Prospective Cohort"
+        },
+        {
+          "id": 3,
+          "text": "Cross-Sectional"
+        },
+        {
+          "id": 4,
+          "text": "Randomised Control trial"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The&nbsp;<strong>study design </strong>which can be used to calculate the <strong>point prevalence</strong> of a disease is a <strong>Cross-Sectional study.</strong></p>\n<p>The <strong>point prevalence </strong>of a disease is defined as the <strong>number of all current cases </strong>at a <strong>point in time</strong>. It can be calculated using cross-sectional studies. A <strong>cross-sectional study</strong> Is an observational study used to <strong>calculate a disease's distribution and</strong> prevalence. <strong>Prevalence</strong> helps to estimate the <strong>magnitude of health/ disease problems </strong>in the community and identify potential high-risk populations.</p>\n<p>A&nbsp;<strong>cohort study</strong>(options A &amp; B) is an analytical study involving the follow-up of a cohort (a group of people) with risk factors to check if they develop an outcome or disease. It can be used to <strong>calculate incidence</strong>.</p>\n<p>A&nbsp;<strong>randomized control trial</strong>( option D) is an experimental study in which an intervention is given to a group of patients participating in the study and compared to another group of patients with similar characteristics who are not given that intervention to be studied. It is used to calculate the effect of an intervention.</p><hr><h3>Related Pearl: Incidence and Prevalence</h3><ul>\n<li><strong>Incidence</strong> <strong>in Epidemiology:</strong></li>\n</ul>\n<p><strong>Incidence</strong> is the number of <strong>new</strong> <strong>cases</strong> occurring in a defined population during a period of time. The incidence rate is expressed in <strong>person-time</strong> units, usually per 1000 per year. It is given by the following formula:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6f6cc8bc207d4585865b98fbe2659e6ax1280x274.JPEG\" alt=\"Pearl Image\"><p>It is generally used for <strong>acute illnesses. </strong>It provides insight into the <strong>effectiveness of health services and programs. </strong>Incidence can be determined from <strong>cohort studies and longitudinal studies.</strong></p>\n<p>The incidence rate of <strong>spells of sickness</strong> =  (Number of spells of sickness starting in the specified period/Mean number of people exposed to that risk in the specified time) x <strong>1000.</strong></p>\n<p>Special types of incidence rates:</p>\n<p>1.<strong> Attack rate: </strong>It is used when there is a risk for a limited period of time.</p>\n<p>2.<strong> Secondary attack rate: </strong>It is the number of exposed persons developing the disease within the range of incubation period following exposure to a primary case.</p>\n<ul>\n<li><strong>Prevalence in Epidemiology:</strong></li>\n</ul>\n<p>Prevalence is the proportion of all cases, <strong>old and new</strong>, of a particular disease at a given point in time or over a period of time in a given population. It is a <strong>proportion,</strong> not a rate or ratio. Prevalence is always expressed in <strong>percentage.</strong></p>\n<p>It is given by the formula:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e91eaa37efa84edd8f721ab2d87a9a13x1280x274.JPEG\" alt=\"Pearl Image\"><p>It is useful to determine the <strong>magnitude </strong>of health problems. It can be determined from <strong>cross-sectional studies.</strong></p>\n<p>Types:</p>\n<p>1. <strong>Point </strong>prevalence is the prevalence at a point in time. Usually, prevalence is point prevalence unless <strong>otherwise specified</strong>.</p>\n<p>2. <strong>Period</strong> prevalence is the prevalence over a period of time.</p>\n<p><strong>Relationship</strong> between<strong> Incidence</strong> and<strong> Prevalence:</strong></p>\n<p>Prevalence depends upon <strong>incidence and duration</strong>.</p>\n<p><strong>Prevalence</strong> = <strong>Incidence x Mean Duration</strong></p>\n<p><strong>Longer the duration</strong> of the disease, the greater the prevalence.</p>\n<p>Few examples:</p>\n<ul>\n<li>In acute diseases, because of rapid recovery/death prevalence will be relatively <strong>lower</strong> than incidence. This is because, in some diseases (eg. food poisoning), the disease is so short-lived, there are no \"old cases\".</li>\n<li>In chronic diseases like TB, prevalence will be <strong>higher</strong> than incidence.</li>\n<li>If a new treatment for a disease is effective, incidence does not change but <strong>prevalence decreases</strong> as the duration of disease decreases.</li>\n<li>If the treatment only prevents death but doesn’t cure the disease, it may cause a <strong>paradoxical increase</strong> in prevalence.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9714",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is not a measure of position in statistics?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Percentiles"
+        },
+        {
+          "id": 2,
+          "text": "Quartiles"
+        },
+        {
+          "id": 3,
+          "text": "Range"
+        },
+        {
+          "id": 4,
+          "text": "z-score"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>range </strong>is not a Measure of Position in statistics. Rather it is a <strong>measure of Dispersion/Variability.</strong></p>\n<p>Three types of Measures are mainly used in Statistics. They are</p>\n<ol>\n<li>Measures of Central Tendency</li>\n<li>Measures of Dispersion or Variability or Spread</li>\n<li>Measures of Position</li>\n</ol>\n<p><strong>Measures of Central Tendency:</strong>&nbsp;These measures summarize the data by defining the&nbsp;<strong>centre or the middle</strong>. An entire distribution can be&nbsp;characterized&nbsp;by these measures&nbsp;representing all the observations. They include-<strong> Mean, Median, and Mode.</strong></p>\n<p><strong>Measures of Dispersion:&nbsp;</strong>These measures help determine the <strong>extent to which data is stretched or spread.&nbsp;</strong>They include <strong>Range, Interquartile range, Variance, and Standard deviation.</strong></p>\n<p><strong>Measures of Position: </strong>These measures give the&nbsp;<strong>position of specific data</strong> in relation to other data in the set. These include percentiles, quartiles, centiles, and z scores.</p><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9717",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was conducted on the effectiveness of a keto diet for weight loss. Weight of the participants was measured before starting the keto diet and after 1 month of the keto diet.  Which of the following is the most appropriate test to test the statistical significance of the change in weight?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paired t test"
+        },
+        {
+          "id": 2,
+          "text": "Unpaired t test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Chi square test"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Since the effect of keto diet is checked on the <strong>same individuals</strong>, before and after the keto diet, therefore the test used is <strong>paired t test.</strong></p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4955",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A new drug that has been discovered is said to have the potential to bring down stress levels. The psychiatry department of your medical college decides to conduct a study comparing the effects of a placebo and the experimental drug in a group of students. The lead investigator conducting the study includes more exam-going students with a higher level of stress in the control group than in the experimental group. What is the type of bias introduced here?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Neyman bias"
+        },
+        {
+          "id": 2,
+          "text": "Selection bias"
+        },
+        {
+          "id": 3,
+          "text": "Interviewer’s bias"
+        },
+        {
+          "id": 4,
+          "text": "Hawthorne bias"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The type of bias introduced in the given scenario is <strong>selection bias</strong>. This type of bias occurs when the investigator does not select the subjects of a study or group randomly and when group assignment is done without randomization.&nbsp;</p>\n<p>Hence, the cases and controls in the sample may not be representative of those in the general population. The case group and control group may show systematic differences; in the given example, the control group has a higher number of stressed-out, exam-going students than the case group.&nbsp;</p>\n<p>Other options:</p>\n<p>The <strong>Hawthorne effect</strong> describes a <strong>change</strong> in the<strong> behavior</strong> of an <strong>individual</strong> that <strong>results</strong> from their<strong> awareness</strong> of <strong>being observed.</strong></p>\n<p><strong>Neyman</strong>&nbsp;<strong>bias</strong> or prevalence-incidence bias is due to&nbsp;<strong>selective survival</strong> in<strong> prevalent cases</strong>; it is usually seen in <strong>fatal diseases.</strong></p>\n<p><strong>Interviewer bias </strong>is a bias in which&nbsp;the interviewer is aware of the hypothesis and the identity of the cases and, therefore, conducts more thorough&nbsp;<strong>interviews for</strong>&nbsp;<strong>cases</strong>&nbsp;than the<strong> controls.</strong></p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD8039",
+      "difficulty": "easy"
+    }
+  ]
+}

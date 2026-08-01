@@ -1,0 +1,953 @@
+{
+  "meta": {
+    "title": "Systemic_Microbiology"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stool culture</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stool for ova and cyst</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">PCR to detect tox B GENE</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hanging drop for identifying darting motility</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 56-year-old male presents to the emergency department with 6-7 episodes of watery diarrhoea per day for the last 4 days, associated with abdominal cramps, fever, and chills. He was hospitalised 10 days ago for cellulitis of the left thigh and treated with clindamycin. Stool culture on XLD medium showed no growth. What is the next best investigation?</span></p>",
+      "unique_key": "DT1216574",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216574,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The clinical scenario of recent hospitalisation, antibiotic use (clindamycin), and profuse watery diarrhoea points toward a diagnosis of <strong>pseudomembranous colitis</strong> due to Clostridioides difficile. <strong>PCR testing for the toxin B gene</strong> is used to confirm C. difficile infection.</p>\n<p><strong>Pseudomembranous Colitis:</strong></p>\n<ul>\n<li>Caused by <strong>Clostridioides difficile</strong> (formerly <em>Clostridium difficile</em>), typically after antibiotic use.</li>\n<li>Antibiotics disrupt normal gut flora &rarr; proliferation of drug-resistant <strong> difficile</strong>.</li>\n<li><strong>Toxins Produced</strong>:\n<ul>\n<li><strong>Toxin A</strong>: Potent <strong>enterotoxin</strong> with cytotoxic activity; binds to brush border receptors.</li>\n<li><strong>Toxin B</strong>: <strong>Potent cytotoxin</strong>; can be found even when Toxin A is absent.</li>\n<li>Both toxins have <strong>glycosyltransferase activity</strong>, modifying signalling molecules &rarr; apoptosis, capillary leakage, cytokine release &rarr; <strong>colitis</strong>.</li>\n</ul>\n</li>\n<li><strong>Clinical Features:</strong>\n<ul>\n<li>Watery or bloody <strong>diarrhoea</strong></li>\n<li><strong>Abdominal cramps</strong></li>\n<li><strong>Fever</strong></li>\n<li><strong>Leukocytosis</strong></li>\n</ul>\n</li>\n<li><strong>Diagnosis:</strong>\n<ul>\n<li><strong>Clinical suspicion</strong>: Diarrhoea following recent antibiotic use.</li>\n<li><strong>Stool tests</strong> for toxins:\n<ul>\n<li><strong>Enzyme immunoassay (EIA)</strong></li>\n<li><strong>Anaerobic toxigenic culture</strong></li>\n<li><strong>PCR tests</strong> for toxin genes (Toxin A and/or B)</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Stool culture (Option A):</strong> Routine culture does not detect C. difficile, and specific anaerobic culture is slow and not preferred for acute diagnosis.</p>\n<p><strong>Stool for ova and cyst (Option B):</strong> Used to detect parasitic infections (e.g., Giardia, Entamoeba), not appropriate here given the post-antibiotic context.</p>\n<p><strong>Hanging drop for identifying darting motility (Option D):</strong> This is used for motile bacteria like Vibrio cholerae or Campy<em>lobacter</em>, which are not likely in this clinical setting.<br /> </p>",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral azithromycin</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intravenous ceftriaxone</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral metronidazole</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Supportive care only</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 42-year-old man with HIV presents with a 1-day history of nausea, vomiting, watery diarrhoea, and fever after eating a hamburger at a local bakery. His fever worsens, and blood cultures turn positive for Salmonella enteritidis. What is the most appropriate treatment for this patient?</span></p>",
+      "unique_key": "DT1216575",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216575,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Since the patient has positive blood cultures for Salmonella enteritidis, this indicates <strong>non-typhoidal Salmonella bacteremia</strong>, which requires <strong>systemic antibiotic therapy</strong>. <strong>Intravenous ceftriaxone</strong> is the treatment of choice, especially in immunocompromised patients like those with HIV.</p>\r\n<p><strong>Treatment of Salmonella Infections:</strong></p>\r\n<ul>\r\n<li><strong>Uncomplicated Enteric Fever:</strong>\r\n<ul>\r\n<li>Treated on an outpatient basis.</li>\r\n<li><strong>Oral azithromycin</strong>: 1mg once, then 500mg daily &times; 7 days.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Complicated Enteric Fever:</strong>\r\n<ul>\r\n<li>Requires <strong>hospitalisation</strong>.</li>\r\n<li>Treated with <strong>parenteral third-generation cephalosporin</strong> or <strong>fluoroquinolone</strong> for at least <strong>10 days</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Non-typhoidal Salmonella Bacteremia:</strong>\r\n<ul>\r\n<li>Empirically treated with:\r\n<ul>\r\n<li><strong>Third-generation cephalosporin</strong> (e.g., ceftriaxone) <strong>+ fluoroquinolone</strong>.</li>\r\n</ul>\r\n</li>\r\n<li>Adjust treatment based on <strong>antimicrobial susceptibility testing (AST)</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Non-typhoidal Salmonella Gastroenteritis:</strong>\r\n<ul>\r\n<li>Supportive care with <strong>fluid and electrolyte replacement</strong> is key.</li>\r\n<li><strong>Antibiotics may prolong symptoms and shedding</strong>.</li>\r\n<li><strong>Self-limiting illness</strong>: no antibiotics usually needed.</li>\r\n</ul>\r\n</li>\r\n<li><strong>When to Consider Antibiotics for Gastroenteritis:</strong>\r\n<ul>\r\n<li><strong>Neonates</strong></li>\r\n<li><strong>Immunosuppressed patients</strong> (e.g., HIV, chemotherapy)</li>\r\n<li><strong>Age &gt;50 years</strong> with:\r\n<ul>\r\n<li>Suspected or confirmed <strong>atherosclerosis</strong></li>\r\n<li><strong>Valvular or endovascular disease</strong></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Antibiotic Choices for Susceptible Organisms:</strong>\r\n<ul>\r\n<li>Amoxicillin</li>\r\n<li>Trimethoprim-sulfamethoxazole</li>\r\n<li>Fluoroquinolones</li>\r\n</ul>\r\n</li>\r\n<li><strong>Duration of Treatment: </strong>\r\n<ul>\r\n<li><strong>Immunocompromised patients</strong>: <strong>7-14 days</strong> of therapy.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Oral azithromycin (Option A):</strong> Azithromycin is used for uncomplicated typhoidal Salmonella (Salmonella Typhi/Paratyphi), not for non-typhoidal bacteremia.</p>\r\n<p><strong>Oral metronidazole (Option C):</strong> Metronidazole is effective against anaerobic bacteria and protozoa, not against Salmonella species, which are facultative anaerobic Gram-negative bacilli.</p>\r\n<p><strong>Supportive care only (Option D):</strong> Supportive care alone is sufficient for self-limiting gastroenteritis, but not for bacteremia, especially in immunocompromised patients. Bloodstream infection requires prompt systemic antibiotic therapy.</p>",
+      "correct_choice_id": 12,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">MYPA media</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">PALCAM agar</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">BCYE agar</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Skirrow's media</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 47-year-old woman presents with a 5-day history of abdominal cramps, fever, and bloody diarrhoea. She reports consuming undercooked chicken 3 days prior. Stool microscopy reveals curved, Gram-negative rods showing darting motility. A stool sample is cultured under microaerophilic conditions at 42&deg;C for 7 days. Which of the following culture media is most appropriate for isolating the causative organism?</span></p>",
+      "unique_key": "DT1216576",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216576,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The clinical scenario of bloody diarrhoea, recent consumption of undercooked chicken, and darting motility of curved Gram-negative rods suggests <strong>Campylobacter jejuni</strong> infection. The appropriate culture medium for its isolation is <strong>Skirrow's medium</strong>.</p>\r\n<p><strong>Diagnostic Laboratory Tests for Campylobacter jejuni:</strong></p>\r\n<ul>\r\n<li><strong>Specimens:</strong>\r\n<ul>\r\n<li><strong>Preferred specimen</strong>: Diarrheal stool</li>\r\n<li><strong>Alternative specimen</strong>: Rectal swabs are also acceptable.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Smears:</strong>\r\n<ul>\r\n<li><strong>Gram stain</strong>:\r\n<ul>\r\n<li>May reveal typical \"gull wing\"-shaped rods.\r\n  <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250911f49c96c1-e86f-45d3-82c9-f50984852b5b.png\"></li>\r\n</ul>\r\n</li>\r\n<li><strong>Dark-field/Phase-contrast microscopy</strong>:\r\n<ul>\r\n<li>Shows characteristic <strong>darting motility</strong> of Campylobacter organisms.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Culture:</strong>\r\n<ul>\r\n<li><strong>Growth characteristics</strong>:\r\n<ul>\r\n<li>Campylobacter grows more slowly than other Gram-negative enteric bacteria.</li>\r\n<li>Requires <strong>selective media</strong> for isolation.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Common selective media</strong>:\r\n<ul>\r\n<li><strong>Campy-Blood agar</strong></li>\r\n<li><strong>Skirrow's medium</strong> (contains vancomycin, polymyxin B, trimethoprim)\r\n   <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250911f49c96c1-e86f-45d3-82c9-f50984852b6b.png\"></li>\r\n</ul>\r\n</li>\r\n<li><strong>Temperature requirements</strong>:\r\n<ul>\r\n<li>Optimal growth: <strong>42&deg;C</strong></li>\r\n<li>Growth range: <strong>36&deg;C to 42&deg;C</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Colony appearance:</strong>\r\n<ul>\r\n<li>Colourless or grey</li>\r\n<li><strong>Types:</strong>\r\n<ul>\r\n<li>Watery and spreading</li>\r\n<li>Round and convex</li>\r\n</ul>\r\n</li>\r\n<li>Both types may appear on a single plate</li>\r\n<li><strong>No hemolysis </strong>on blood-containing agar</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>MYPA media (Option A)</strong> is not used for Campylobacter; it is typically used for fungi or specific bacterial species, not fastidious enteric pathogens.</p>\r\n<p><strong>PALCAM agar (Option B)</strong> is a selective medium for Listeria monocytogenes, not for Campylobacter species.</p>\r\n<p><strong>BCYE agar (Option C)</strong> is used for Legionella pneumophila, not suitable for isolating Campylobacter jejuni.</p>",
+      "correct_choice_id": 24,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Salmonella enterica</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Shigella dysenteriae</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Enterotoxigenic Escherichia coli (ETEC)</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Campylobacter jejuni</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old man presents with 4 days of watery diarrhoea occurring about 5 times per day, associated with abdominal cramping and nausea. He recently returned from a 2-week educational trip to Sudan. There is no blood in the stool, and no history of antibiotic use or food poisoning from dairy or poultry products. Based on the clinical presentation and travel history, which of the following organisms is the most likely cause?</span></p>",
+      "unique_key": "DT1216578",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216578,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>This patient presents with <strong>watery traveller's diarrhoea</strong>, a hallmark of <strong>ETEC infection</strong>, which is prevalent in developing countries like Sudan. ETEC produces <strong>heat-labile and/or heat-stable toxins</strong>, leading to fluid secretion and diarrhoea without blood or invasive symptoms.</p>\r\n<p><strong>Enterotoxigenic E. coli (ETEC):</strong></p>\r\n<ul>\r\n<li>Common cause of <strong>traveller's diarrhoea</strong>.</li>\r\n<li>The major cause of diarrhoea in <strong>children &lt;5 years</strong> in <strong>developing countries</strong>.</li>\r\n<li><strong>Pathogenesis:</strong>\r\n<ul>\r\n<li><strong>Colonisation Factors (CFAs)</strong>:\r\n<ul>\r\n<li>Pili (colonisation factor antigens) facilitate adherence to small bowel epithelium.</li>\r\n<li>CFAs are often encoded on plasmids and associated with specific <strong>serotypes</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Heat-labile toxin (LT)</strong>:\r\n<ul>\r\n<li><strong>Subunit B</strong>:\r\n<ul>\r\n<li>Binds to GM1 ganglioside on enterocyte apical membrane.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Subunit A</strong>:\r\n<ul>\r\n<li>Enters the cell and <strong>activates adenylyl cyclase</strong>.</li>\r\n<li>&uarr; cAMP &rarr; Activates CFTR &rarr; &uarr; Secretion of <strong>chloride and water</strong>, &darr; Na<sub>2</sub> absorption.</li>\r\n</ul>\r\n</li>\r\n<li>Results in:\r\n<ul>\r\n<li><strong>Fluid distention</strong>, <strong>hypermotility</strong>, and <strong>watery diarrhoea</strong>.</li>\r\n<li>Diarrhoea lasts for several days.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Heat-stable toxin (ST)</strong>:\r\n<ul>\r\n<li>Activates <strong>guanylyl cyclase</strong> in enterocytes &rarr; &uarr; cGMP &rarr; Fluid secretion.</li>\r\n<li>Strains may produce both ST and LT &rarr; <strong>More severe diarrhoea</strong>.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Diagnosis:</strong>\r\n<ul>\r\n<li><strong>Faecal culture + serotyping</strong> for fimbrial antigens <strong>K99 and F41</strong>.</li>\r\n<li><strong>Nonpathogenic E. coli</strong> are normal gut flora; growth alone may be insignificant.</li>\r\n<li><strong>Negative serotyping</strong> does <strong>not rule out ETEC</strong>, as some strains may not express fimbrial antigens in culture.</li>\r\n<li><strong>Histopathologic evidence</strong> of small intestinal colonisation can support diagnosis.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Treatment:</strong>\r\n<ul>\r\n<li><strong>Antibiotic therapy</strong>: Effective in shortening the duration of diarrhoea if it occurs.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Salmonella enterica (Option A):</strong> Salmonella typically causes inflammatory diarrhoea, often with fever and blood or mucus in stool, and is more commonly associated with undercooked poultry or eggs, not with travel-related watery diarrhoea alone.</p>\r\n<p><strong>Shigella dysenteriae (Option B):</strong> Shigella causes dysentery, characterised by bloody, mucoid stools, high fever, and tenesmus. It is invasive, unlike ETEC, which causes a non-invasive watery diarrhoea.</p>\r\n<p><strong>Campylobacter jejuni (Option D):</strong> Campylobacter usually causes bloody diarrhoea, fever, and is associated with ingestion of contaminated poultry. It is less likely in this case due to the absence of blood and the presence of classic travel-related watery diarrhoea.</p>\r\n<p><strong>Reference</strong>:</p>\r\n<p><a href=\"https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/enterotoxigenic-escherichia-coli\" target=\"_blank\">https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/enterotoxigenic-escherichia-coli</a></p>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wagatsuma agar</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chocolate agar</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">XLD agar</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">RCM medium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 25-year-old man presents with diarrhoea, abdominal cramps, and low-grade fever for 5 days. He reports consuming undercooked crabs and oysters during a recent trip to Bangkok. Stool culture on TCBS agar shows green colonies, and a specialised blood agar reveals beta-hemolytic colonies. What is the most appropriate culture medium that aids in identifying the causative organism?</span></p>",
+      "unique_key": "DT1216579",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216579,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The clinical features of watery diarrhoea, abdominal cramps, low-grade fever, and seafood ingestion, along with green colonies on TCBS agar, suggest<strong> Vibrio parahaemolyticus,</strong> a halophilic organism associated with raw seafood consumption. <strong>Wagatsuma agar</strong> (high-salt blood agar) detects <strong>beta-hemolysis</strong> (Kanagawa phenomenon), confirming the diagnosis.</p>\n<p><strong>Diagnostic Laboratory Tests for Cholera:</strong>I</p>\n<ul>\n<li><strong>Specimens:</strong>\n<ul>\n<li>noculate the specimen <strong>within 24 hours</strong> onto appropriate agar media.</li>\n<li>Stool specimens should be collected <strong>early</strong> in the course of diarrheal illness.</li>\n</ul>\n</li>\n<li><strong>Smears:</strong>\n<ul>\n<li>Direct smears from stool <strong>do not reliably identify</strong> cholerae and are <strong>not routinely recommended</strong>.</li>\n<li><strong>Dark-field or phase-contrast microscopy</strong>:\n<ul>\n<li>Can detect V. cholerae O1 motility from stool or enrichment broth.</li>\n<li>If motility is lost after adding <strong>polyvalent O1 antiserum</strong>, it confirms <strong> cholerae O1.</strong></li>\n<li>If there is <strong>no motility</strong> or motility does <strong>not change</strong> after antiserum, the organism is <strong>not V. cholera<em>e</em> O1</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Culture:</strong>\n<ul>\n<li>cholerae grows well on:\n<ul>\n<li><strong>Blood agar</strong></li>\n<li><strong>MacConkey agar</strong> (though some strains may be inhibited)</li>\n<li><strong>Thiosulfate-citrate-bile salts-sucrose (TCBS) agar</strong>, preferred for selective recovery</li>\n</ul>\n</li>\n<li>On <strong>TCBS agar</strong>:\n<ul>\n<li>cholerae produces <strong>yellow colonies</strong> (sucrose fermenter).</li>\n<li>Non-sucrose fermenters (e.g., V. parahaemolyticus, V. vulnificus) produce <strong>green colonies</strong>.\n  <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509116b036209-865b-4bda-ba23-8ab8d8df31ed.png\"></li>\n</ul>\n</li>\n<li>Enrichment:\n<ul>\n<li>Use <strong>alkaline peptone water</strong> (pH 8.0-9.0, 1% NaCl).</li>\n<li>Incubate a few drops of stool for <strong>6-8 hours</strong> before subculturing.</li>\n</ul>\n</li>\n<li>v.parahaemolyticus shows <strong>beta-hemolysis on Wagatsuma agar</strong>, indicating the <strong>Kanagawa phenomenon</strong>.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509116b036209-865b-4bda-ba23-8ab8d8df31e1d.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Chocolate agar (Option B):</strong> Used to grow fastidious organisms such as Haemophilus influenzae and Neisseria spp. It is not selective for Vibrio species and does not show salt-dependent hemolysis.</p>\n<p><strong>XLD agar (Option C):</strong> Primarily used for isolating Salmonella and Shigella species. It contains xylose, lysine, and deoxycholate and is not suitable for detecting Vibrio.</p>\n<p><strong>RCM medium (Option D):</strong> Reinforced Clostridial Medium is used for cultivating Clostridium species under anaerobic conditions. It is not used in Vibrio isolation or identification.</p>",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bismuth Sulfite Agar</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">TCBS agar</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">XLD agar</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mannitol salt agar</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the medium used for the isolation of Salmonella Typhi.<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d19tx39t2q3u48.cloudfront.net/NEETPGMCQ/202309018e3698c8-3c69-42aa-a516-f2190e74a0a4.png\"></span></p>",
+      "unique_key": "DT1216580",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216580,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Bismuth sulfite agar</strong> is a selective medium used for isolating <strong>Salmonella Typhi,</strong> which produces characteristic black colonies due to hydrogen sulfide (H<sub>2</sub>S) production.</p>\r\n<p><strong>Culture Media for Salmonella Typhi and Paratyphi:</strong></p>\r\n<ul>\r\n<li><strong>Non-selective Media:</strong>\r\n<ul>\r\n<li><strong>Blood Agar</strong>:\r\n<ul>\r\n<li>s.typhi and S. paratyphi typically produce <strong>non-hemolytic, smooth white colonies</strong>.<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091106149f0c-9dc0-416b-8cac-c3bf653d0ba6.png\"></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Selective and Differential Media:</strong>\r\n<ul>\r\n<li><strong>MacConkey Agar</strong>:\r\n<ul>\r\n<li>Colonies appear <strong>pale and smooth</strong> due to <strong>non-lactose fermentation</strong>.\r\n  <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091106149f0c-9dc0-416b-8cac-c3bf653d0bb6.png\"></li>\r\n</ul>\r\n</li>\r\n<li><strong>Deoxycholate Citrate Agar (DCA)</strong>:\r\n<ul>\r\n<li>Colonies appear <strong>pale</strong>, indicating <strong>non-lactose fermenting</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Xylose Lysine Deoxycholate (XLD) Agar</strong>: <strong>(Option C)</strong>\r\n<ul>\r\n<li>Colonies appear <strong>pink</strong> with <strong>black centres</strong> from <strong>hydrogen sulfide (H<sub>2</sub>S) production</strong>.\r\n  <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091106149f0c-9dc0-416b-8cac-c3bf653d0bb7.png\"></li>\r\n</ul>\r\n</li>\r\n<li><strong>Salmonella-Shigella (SS) Agar</strong>:\r\n<ul>\r\n<li>Colonies are <strong>non-lactose fermenting</strong> with <strong>black centres</strong>.</li>\r\n<li><strong>s.paratyphi A</strong> often forms colonies <strong>without black centres</strong> due to a lack of H<sub>2</sub>S production.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Wilson-Blair Medium</strong>:\r\n<ul>\r\n<li><strong>s.typhi</strong> forms <strong>large black colonies with a metallic sheen</strong>.</li>\r\n<li><strong>s.paratyphi A</strong> forms <strong>green colonies</strong>, as it does <strong>not produce H<sub>2</sub>S</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Bismuth Sulfite Agar</strong>:\r\n<ul>\r\n<li>Colonies are <strong>black</strong>, due to <strong>H<sub>2</sub>S production</strong>.  <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091106149f0c-9d-416b-8cac-c3bf653d0bb7.png\"></li>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Enrichment Media:</strong>\r\n<ul>\r\n<li><strong>Selenite F Broth</strong>:\r\n<ul>\r\n<li>Used to <strong>enrich stool specimens</strong> before plating.</li>\r\n<li>Faeces is incubated for <strong>12-18 hours</strong> before subculture.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Tetrathionate Broth</strong>:\r\n<ul>\r\n<li>Also serves as a <strong>selective enrichment broth</strong> for <em>Salmonella</em> from faecal samples.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>TCBS agar (Option B)</strong> is a selective medium for Vibrio species, not Salmonella. It contains thiosulfate, citrate, bile salts, and sucrose and is mainly used to isolate Vibrio cholerae and V. parahaemolyticus.</p>\r\n<p><strong>Mannitol salt agar (Option D)</strong> is used for isolating Staphylococcus species, particularly S. aureus. Its high salt concentration inhibits most Gram-negative organisms, including Salmonella.</p>\r\n<p><strong>Reference</strong>:</p>\r\n<p><a href=\"https://microbeonline.com/media-used-culture-identification-salmonella/\" target=\"_blank\">https://microbeonline.com/media-used-culture-identification-salmonella/#</a> <br /> </p>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Giardia</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Entamoeba histolytica</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acantamoeba</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Trichomonas vaginalis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 10-year-old child is brought to the pediatric department with loose stools, epigastric pain, and flatulence. On investigation, the child is found to have folic acid and vitamin A deficiencies. Stool examination reveals excess mucus and fat, and culture is negative. However, cysts and trophozoites are observed on microscopic examination, and the trophozoites show falling leaf motility. Which of the following is the most likely organism?</span></p>",
+      "unique_key": "DT1216581",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216581,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The presence of steatorrhea, vitamin deficiencies, and falling leaf motility of trophozoites on stool microscopy is characteristic of<strong> Giardia lamblia infection.</strong></p>\r\n<p><strong>Giardia lamblia:</strong></p>\r\n<ul>\r\n<li>Also known as Giardia duodenalis or Giardia intestinalis is the causative agent of <strong>giardiasis</strong>.</li>\r\n<li>It is the <strong>only common pathogenic protozoan</strong> found in the <strong>duodenum and jejunum</strong> of humans.</li>\r\n<li>Exists in <strong>two forms</strong>: trophozoite and cyst.</li>\r\n<li><strong>Morphology:</strong><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091101c3299f-253f-4f82-93bc-2a40692e3780.png\"></li>\r\n<ul>\r\n<li><strong>Trophozoite</strong>:\r\n<ul>\r\n<li><strong>Heart-shaped</strong></li>\r\n<li>Has <strong>4 pairs of flagella</strong>.</li>\r\n<li>Possesses a <strong>ventral sucking disk</strong> that helps adhere to intestinal villi.</li>\r\n<li>Exhibits <strong>\"falling leaf\" motility</strong> under wet mount microscopy.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Cyst</strong>:\r\n<ul>\r\n<li><strong>Ellipsoid</strong>, thick-walled, and <strong>highly resistant</strong>.</li>\r\n<li>Contains <strong>2 nuclei</strong> in immature cysts and <strong>4 nuclei</strong> in mature cysts.</li>\r\n<li>Cysts are passed in faeces.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Transmission</strong>:\r\n<ul>\r\n<li>Ingestion of <strong>fecally contaminated water/food</strong>.</li>\r\n<li><strong>Direct faecal-oral contact</strong> (e.g., day-care centres, institutions, oral-anal sex).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathogenesis:</strong>\r\n<ul>\r\n<li>Cysts may be found in <strong>asymptomatic individuals</strong>.</li>\r\n<li>In symptomatic cases:\r\n<ul>\r\n<li><strong>Attachment of trophozoites</strong> to the intestinal mucosa causes:\r\n<ul>\r\n<li><strong>Duodenal/jejunal irritation</strong>, <strong>low-grade inflammation</strong></li>\r\n<li><strong>Crypt hypertrophy</strong>, <strong>villous atrophy</strong>, <strong>epithelial cell damage</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical features</strong>:\r\n<ul>\r\n<li>Diarrhoea (watery, semisolid, greasy, bulky, foul-smelling)</li>\r\n<li>Malaise, weakness, weight loss</li>\r\n<li>Abdominal cramps, distention, flatulence</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Entamoeba histolytica (Option B):</strong> Causes bloody diarrhoea (amoebic dysentery), not greasy or fatty stools; motility is directional, not \"falling leaf.\"</p>\r\n<p><strong>Acanthamoeba (Option C):</strong> Does not cause intestinal infection; associated with keratitis (especially in contact lens users) or granulomatous amoebic encephalitis.</p>\r\n<p><strong>Trichomonas vaginalis (Option D):</strong> Infects the urogenital tract, not the intestines; also shows jerky motility, not falling leaf pattern.</p>",
+      "correct_choice_id": 61,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sorbitol Mac Conkey agar</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mac conkey agar</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">TCBS agar</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">XLD agar</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 23-year-old male presents with bloody diarrhoea after eating undercooked meat. Stool culture is ordered to differentiate Enterohemorrhagic E. coli (EHEC) from other E. coli strains. Which of the following media is most commonly used for this purpose?</span></p>",
+      "unique_key": "DT1216583",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216583,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>EHEC O157:H7 does <strong>not ferment sorbitol</strong>, forming <strong>colourless colonies</strong> on Sorbitol MacConkey agar, unlike other <em>E. coli</em> strains that ferment sorbitol and appear pink.</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025091196e31c6f-4e81-40a1-9bcc-261d7e648139.png\">\r\n<p><strong>Enterohemorrhagic E. coli (EHEC)</strong> / <strong>Shiga toxin-producing E. coli (STEC)</strong>:</p>\r\n<ul>\r\n<li><strong>EHEC/STEC</strong> are named for their <strong>Shiga toxins</strong> (cytotoxins).</li>\r\n<li>Common sources: <strong>Undercooked ground beef</strong>, <strong>unpasteurized cider/dairy</strong></li>\r\n<li>Two antigenic forms of the toxin:\r\n<ul>\r\n<li><strong>Shiga-like toxin 1</strong>: Identical to Shigella dysenteriae type 1 toxin.</li>\r\n<li><strong>Shiga-like toxin 2</strong>: Similar but <strong>antigenically and genetically distinct</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Manifestations:</strong>\r\n<ul>\r\n<li><strong>Mild non-bloody diarrhoea</strong></li>\r\n<li><strong>Hemorrhagic colitis</strong> (bloody diarrhoea, abdominal cramps)</li>\r\n<li><strong>Hemolytic uremic syndrome (HUS)</strong>:\r\n<ul>\r\n<li>Acute renal failure</li>\r\n<li>Microangiopathic hemolytic anaemia</li>\r\n<li>Thrombocytopenia</li>\r\n</ul>\r\n</li>\r\n<li><strong>Culture &amp; Identification:</strong>\r\n<ul>\r\n<li><strong>Sorbitol MacConkey Agar (SMAC)</strong>:\r\n<ul>\r\n<li>O157:H7 strains: <strong>Do not ferment sorbitol</strong> &rarr; <strong>colourless colonies</strong></li>\r\n<li>Other E. coli: Usually sorbitol <strong>positive</strong> &rarr; pink colonies</li>\r\n</ul>\r\n</li>\r\n<li><strong>MUG test</strong>: O157:H7 is <strong>negative</strong>.</li>\r\n<li><strong>Specific antisera</strong> used for serotyping O157:H7.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>MacConkey agar (Option B):</strong> Used for identifying lactose fermenters among Gram-negative enteric bacteria, but cannot differentiate EHEC O157:H7 from other E. coli strains since most E. coli ferment lactose.</p>\r\n<p><strong>TCBS agar (Option C):</strong> Thiosulfate-citrate-bile salts-sucrose (TCBS) agar is selective for Vibrio species, especially V. cholerae, not for E. coli.</p>\r\n<p><strong>XLD agar (Option D):</strong> Xylose Lysine Deoxycholate (XLD) agar is designed for Salmonella and Shigella isolation, not specifically for detecting EHEC or sorbitol fermentation.</p>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clostridium tetani</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Botulism</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Campylobacter Jejuni</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clostridium perfringens</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old man presents with severe abdominal pain, vomiting, and bloody diarrhoea after consuming undercooked beef during a local festival in a tropical region. Which of the following is most likely the cause of his gastrointestinal symptoms?</span></p>",
+      "unique_key": "DT1216584",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216584,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Type C strains of<strong> Clostridium perfringens</strong>, associated with poorly cooked meat, can cause <strong>enteritis necroticans (pig-bel disease)</strong>, leading to hemorrhagic necrosis of the intestine.</p>\r\n<p><strong>Clostridium perfringens</strong>:</p>\r\n<ul>\r\n<li>perfringens is the most common Clostridium causing invasive infections (90%).</li>\r\n<li>Causes <strong>gas gangrene</strong>, <strong>myonecrosis</strong>, and <strong>food poisoning</strong>.</li>\r\n<li>Produces multiple toxins with <strong>lethal, necrotising, and hemolytic</strong></li>\r\n<li><strong>Pathogenesis:</strong>\r\n<ul>\r\n<li>Infection occurs via <strong>wound contamination</strong> or translocation from the GI tract.</li>\r\n<li>Germination of spores in <strong>anaerobic</strong> conditions &rarr; gas production.</li>\r\n<li><strong>Mixed infections</strong> are common in gas gangrene (with cocci, Gram-negatives, and proteolytic clostridia).</li>\r\n<li><strong> perfringens type C</strong> causes <strong>necrotising enteritis </strong>(pig-bel disease)<strong>.</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li><strong>Gas gangrene</strong>:\r\n<ul>\r\n<li>Rapid onset (1-3 days).</li>\r\n<li>Symptoms: crepitus, foul discharge, tissue necrosis, hemolysis, shock, death.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Food poisoning</strong>:\r\n<ul>\r\n<li>Incubation: 7-30 hours post ingestion of contaminated meat.</li>\r\n<li>Symptoms: diarrhoea without vomiting/fever.</li>\r\n<li>Duration: 1-2 days.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other manifestations</strong>: Anaerobic cellulitis, fasciitis, necrotising enterocolitis in infants.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Clostridium tetani (Option A)</strong> causes tetanus, characterised by muscle rigidity and spasms due to a neurotoxin (tetanospasmin); it does not cause gastrointestinal symptoms or diarrhoea.</p>\r\n<p><strong>Botulism (Option B):</strong> Clostridium botulinum causes foodborne botulism through a neurotoxin that leads to flaccid paralysis and cranial nerve palsies, not abdominal pain with bloody diarrhoea.</p>\r\n<p><strong>Campylobacter jejuni (Option C):</strong> Although it can cause diarrhoea and abdominal cramps (sometimes bloody), it is more commonly associated with poultry rather than undercooked beef, and symptoms are usually less severe compared to C. perfringens type C enteritis necroticans.</p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clostridium botulinum</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bacillus anthracis</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bacillus cereus</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vibrio cholera</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old woman develops symptoms of sweating, chest pain, and a tingling sensation in her neck and arms shortly after eating Chinese takeout. She reports consuming rice and a meat dish. The symptoms, commonly referred to as \"Chinese restaurant syndrome,\" are often linked to toxins produced by an organism found in improperly stored rice. Which of the following organisms is most likely responsible?</span></p>",
+      "unique_key": "DT1216585",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216585,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Bacillus cereus </strong>can cause an emetic form of food poisoning associated with reheated rice dishes, often termed <strong>\"Chinese restaurant syndrome.\"</strong></p>\r\n<p><strong>Bacillus cereus</strong>:</p>\r\n<ul>\r\n<li>Bacillus cereus is a <strong>Gram-positive</strong>, <strong>spore-forming</strong>, <strong>soil-dwelling</strong></li>\r\n<li>Commonly contaminates <strong>rice</strong>, <strong>milk</strong>, <strong>pasta</strong>, <strong>meat dishes</strong>, and <strong>sauces</strong>.</li>\r\n<li>Causes both <strong>foodborne intoxication</strong> and <strong>non-foodborne infections</strong>.</li>\r\n<li><strong>Forms of Food Poisoning:</strong></li>\r\n<li><strong>Emetic Form:</strong>\r\n<ul>\r\n<li><strong>Associated foods</strong>: Fried rice, milk, pasta.</li>\r\n<li><strong>Toxin</strong>: Plasmid-encoded <strong>preformed cyclic peptide (emetic toxin)</strong>.</li>\r\n<li><strong>Onset</strong>: 1-5 hours after ingestion.</li>\r\n<li><strong>Symptoms</strong>:\r\n<ul>\r\n<li>Nausea</li>\r\n<li>Vomiting</li>\r\n<li>Abdominal cramps</li>\r\n<li>Occasionally diarrhea</li>\r\n</ul>\r\n</li>\r\n<li><strong>Course</strong>: Self-limiting; recovery within 24 hours.</li>\r\n<li><strong>Pathogenesis</strong>:\r\n<ul>\r\n<li>Spores survive cooking.</li>\r\n<li>Germinate when cooked rice is cooled slowly.</li>\r\n<li>Vegetative cells produce toxin during the log phase/sporulation.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Diarrheal Form:</strong>\r\n<ul>\r\n<li><strong>Associated foods</strong>: Meat dishes, sauces.</li>\r\n<li><strong>Onset</strong>: 1-24 hours.</li>\r\n<li><strong>Symptoms</strong>:\r\n<ul>\r\n<li>Profuse watery diarrhoea</li>\r\n<li>Abdominal pain and cramps</li>\r\n<li>Fever and vomiting are <strong>uncommon</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Toxins</strong>: One of three <strong>enterotoxins</strong> produced by vegetative cells in the <strong>small intestine</strong>.</li>\r\n<li><strong>Mechanism</strong>: Toxins cause <strong>fluid secretion</strong> and other physiological changes in the gut.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Clostridium botulinum (Option A) </strong>causes descending flaccid paralysis due to a neurotoxin, not rapid-onset GI symptoms like vomiting and tingling soon after eating. Incubation is usually 12-36 hours.</p>\r\n<p><strong>Bacillus anthracis (Option B) </strong>causes anthrax (cutaneous, inhalational, or gastrointestinal), not food poisoning or acute symptoms linked to Chinese restaurant food.</p>\r\n<p><strong>Vibrio cholerae (Option D) </strong>leads to profuse watery diarrhoea (\"rice water stools\") without vomiting or neurological symptoms; more common in areas with contaminated water.</p>",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">ETEC</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vibro cholerae</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Salmonella</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Shigella</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 5-year-old child presents with high-grade fever, bloody diarrhoea, abdominal cramps, and develops seizures shortly after the onset of gastrointestinal symptoms. There is a recent history of travel to an area endemic for bacillary dysentery. Based on this presentation, which of the following pathogens is most likely associated with Ekiri syndrome?</span></p>",
+      "unique_key": "DT1216586",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216586,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The clinical picture of bloody diarrhoea, seizures, and travel to a dysentery-endemic area strongly suggests <strong>Shigella infection</strong>, specifically linked to <strong>Ekiri syndrome</strong>, a rare but severe toxic encephalopathy seen in pediatric Shigella cases.</p>\r\n<p><strong>Ekiri Syndrome (Lethal Toxic Encephalopathy):</strong></p>\r\n<ul>\r\n<li><strong>Cause:</strong> Rare, severe complication of <strong>Shigella infection (shigellosis).</strong></li>\r\n<li><strong>Primarily Affects:</strong> Young children.</li>\r\n<li><strong>Key Features:</strong>\r\n<ul>\r\n<li>Rapid onset of <strong>neurological symptoms</strong>:\r\n<ul>\r\n<li>High fever</li>\r\n<li>Seizures</li>\r\n<li>Altered consciousness</li>\r\n<li>Coma</li>\r\n</ul>\r\n</li>\r\n<li>Often, <strong>minimal gastrointestinal symptoms</strong> (e.g., mild or absent diarrhoea).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Neurological Finding:</strong> <strong>Diffuse brain oedema</strong> is commonly observed.</li>\r\n<li><strong>Mortality:</strong> High; <strong>death may occur within 8-48 hours</strong> due to cerebral oedema and neurological deterioration, even with treatment.</li>\r\n<li><strong>Toxin Association:</strong> Not directly caused by <strong>Shiga toxin</strong>.</li>\r\n<li><strong>Urgency:</strong> Medical emergency requiring intensive care.</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>ETEC (Option A) </strong>causes watery (non-bloody) traveller's diarrhoea; not associated with seizures or CNS involvement.</p>\r\n<p><strong>Vibrio cholerae (Option B) </strong>produces profuse watery diarrhoea (rice-water stools); it does not cause bloody stools or encephalopathy.</p>\r\n<p><strong>Salmonella (Option C) </strong>can cause gastroenteritis or typhoid fever; not typically linked to seizures or Ekiri syndrome.</p>\r\n<p><strong>Reference</strong>:</p>\r\n<p><a href=\"https://www.sciencedirect.com/science/article/pii/S1684118211001605\" target=\"_blank\">https://www.sciencedirect.com/science/article/pii/S1684118211001605</a></p>",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Blood cultures</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bone marrow aspirate</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Widal test</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Duodenal aspirate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old patient presents with a 10-day history of fever, abdominal pain, and malaise. The patient has recently returned from a region endemic for enteric fever. On examination, the patient is febrile, has relative bradycardia and reports constipation. Blood culture results are inconclusive at this stage. Which of the following is the most appropriate diagnostic test for confirming enteric fever during the second to third week of illness?</span></p>",
+      "unique_key": "DT1216587",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216587,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation of Answer:</strong></p>\r\n<p>In the <strong>second to third week</strong> of enteric fever, <strong>Widal test</strong> becomes useful as antibody titers against <strong>Salmonella Typhi</strong> (O and H antigens) begin to rise.</p>\r\n<p><strong>Diagnostic Laboratory Tests for Salmonella:</strong></p>\r\n<ul>\r\n<li><strong>Specimen Collection:</strong>\r\n<ul>\r\n<li><strong>Non-typhoidal Salmonella:</strong>\r\n<ul>\r\n<li>Preferred specimen: Freshly passed stool.</li>\r\n<li>Best yield during early stages of enteric illness.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Enteric Fever (Salmonella Typhi/Paratyphi):</strong>\r\n<ul>\r\n<li>Requires culture isolation for definitive diagnosis.</li>\r\n<li><strong>Appropriate specimens:</strong>\r\n<ul>\r\n<li>Blood (most common): Blood cultures are often positive in the first week.</li>\r\n<li>Bone marrow (highest sensitivity: 80-95%)</li>\r\n<li>Urine: Urine cultures may become positive after the second week.</li>\r\n<li>Intestinal secretions (duodenal drainage in carriers)</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Bacteriologic Methods for Isolation:</strong>\r\n<ul>\r\n<li><strong>Differential Media:</strong>\r\n<ul>\r\n<li>EMB, MacConkey, or deoxycholate medium:\r\n<ul>\r\n<li>Detect lactose nonfermenters (e.g., Salmonella, Shigella).</li>\r\n<li>Inhibit Gram-positive organisms.</li>\r\n</ul>\r\n</li>\r\n<li>Bismuth sulfite medium:\r\n<ul>\r\n<li>Detects H<sub>2</sub>S-producing salmonellae (black colonies).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Selective Media:</strong>\r\n<ul>\r\n<li>SS agar, HE agar, XLD agar, Desoxycholate-citrate agar:\r\n<ul>\r\n<li>Favour Salmonella/Shigella growth.</li>\r\n</ul>\r\n</li>\r\n<li>Chromogenic agars: Specifically designed for Salmonella recovery.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Enrichment Media:</strong>\r\n<ul>\r\n<li>Selenite F or tetrathionate broth:\r\n<ul>\r\n<li>Promote Salmonella multiplication.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Serologic Methods:</strong>\r\n<ul>\r\n<li><strong>Agglutination Test:</strong>\r\n<ul>\r\n<li>Mix known sera with an unknown culture.</li>\r\n<li>Rapid (clumping observed in minutes).</li>\r\n<li>Used for preliminary identification.</li>\r\n<li>Commercial kits are available for O-antigen groups (A, B, C, CD, E).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Tube Dilution Agglutination (Widal Test):</strong>\r\n<ul>\r\n<li>Detects antibodies to O and H antigens of S. Typhi.</li>\r\n<li>Titers rise during the 2nd and 3rd weeks of illness.</li>\r\n<li>Requires two serum samples (7&ndash;10 days apart) to demonstrate rising titer.</li>\r\n<li><strong>Positive criteria (single sample):</strong>\r\n<ul>\r\n<li>O antigen &gt;1:320</li>\r\n<li>H antigen &gt;1:640</li>\r\n<li>Vi antigen may be elevated in carriers.</li>\r\n</ul>\r\n</li>\r\n<li>False positives and false negatives are common.</li>\r\n<li>Alternatives: Rapid colourimetric and EIA tests.</li>\r\n<li><strong>Limitations:</strong> Not definitive; used mainly in resource-limited settings.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Blood cultures (Option A):</strong> Most sensitive during the first week of enteric fever; by week 2-3, sensitivity significantly declines.</p>\r\n<p><strong>Bone marrow aspirate (Option B):</strong> Most sensitive test overall, but it is invasive and typically reserved when blood cultures and other tests fail.</p>\r\n<p><strong>Duodenal aspirate (Option D):</strong> Used for identifying chronic carriers, especially in late stages or asymptomatic individuals, not typically used in acute diagnosis during the 2nd or 3rd week.</p>",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rifampicin</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cephalosporins</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tetracycline</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Metronidazole</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old traveller presents to the clinic after returning from a trip to a cholera-endemic region. The patient has no symptoms but is seeking advice on how to prevent the disease. After assessing the patient's travel history and risk of exposure, you decide to recommend chemoprophylaxis for cholera. What is the drug of choice for chemoprophylaxis of cholera?</span></p>",
+      "unique_key": "DT1216588",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216588,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Tetracycline</strong> is the drug of choice for cholera chemoprophylaxis in high-risk individuals due to its effectiveness against <strong>Vibrio cholerae</strong> in endemic regions.</p>\r\n<p><strong>Treatment of Cholera:</strong></p>\r\n<ul>\r\n<li><strong>Primary Treatment: Rehydration</strong></li>\r\n<li>\r\n<ul>\r\n<li><strong>Mainstay of treatment</strong>: Prompt <strong>water and electrolyte replacement</strong>.</li>\r\n<li>Aims to correct:\r\n<ul>\r\n<li><strong>Severe dehydration</strong></li>\r\n<li><strong>Salt (electrolyte) depletion</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Rehydration guidelines are available from organizations such as the <strong>World Health Organization (WHO)</strong>.</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Antimicrobial Therapy:</strong>\r\n<ul>\r\n<li><strong>Role</strong>: Secondary to rehydration but helps by:\r\n<ul>\r\n<li><strong>Reducing duration of illness</strong></li>\r\n<li><strong>Decreasing stool shedding of Vibrio cholerae</strong></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Choice of Antibiotics:</strong>\r\n<ul>\r\n<li>Should be based on <strong>local antimicrobial resistance patterns</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Commonly Used Antibiotics:</strong>\r\n<ul>\r\n<li><strong>Tetracycline:</strong>\r\n<ul>\r\n<li>Highly effective</li>\r\n<li>Superior efficacy compared to furazolidone and chloramphenicol</li>\r\n</ul>\r\n</li>\r\n<li><strong>Erythromycin / Azithromycin:</strong>\r\n<ul>\r\n<li>Preferred in <strong>children and pregnant women</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Other effective options:</strong>\r\n<ul>\r\n<li>Trimethoprim-sulfamethoxazole</li>\r\n<li>Fluoroquinolones</li>\r\n<li>Doxycycline</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Rifampicin (Option A) </strong>is primarily used to treat tuberculosis and as prophylaxis against Neisseria meningitidis or Haemophilus influenzae type b; it has no established role in cholera prophylaxis.</p>\r\n<p><strong>Cephalosporins (Option B):</strong> Although effective against various bacterial infections, cephalosporins are not preferred for cholera prevention or treatment due to limited activity against Vibrio cholerae and lack of efficacy as a prophylactic agent.</p>\r\n<p><strong>Metronidazole (Option D)</strong> is used mainly for anaerobic and protozoal infections (e.g., amoebiasis, giardiasis), not for Vibrio cholerae, which is a facultative anaerobic gram-negative bacterium.</p>",
+      "correct_choice_id": 123,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Schistosoma haematobium</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Echinococcus granulosus</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Parogonimus westermani</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clonorchis sinensis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 58-year-old man from Southeast Asia presents with progressive jaundice, weight loss, and right upper quadrant abdominal pain. Imaging reveals dilated intrahepatic bile ducts, and a biopsy confirms cholangiocarcinoma. He reports a long-standing habit of consuming undercooked freshwater fish. Which of the following parasites is most strongly associated with the development of this malignancy?</span></p>",
+      "unique_key": "DT1216589",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216589,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Clonorchis sinensis</strong>, acquired through ingestion of undercooked freshwater fish, is strongly associated with chronic biliary inflammation and the development of <strong>cholangiocarcinoma</strong>, particularly in endemic regions like Southeast Asia.</p>\r\n<p><strong>Clonorchis sinensis</strong> (Chinese liver fluke):</p>\r\n<ul>\r\n<li><strong>Modes of Transmission:</strong>\r\n<ul>\r\n<li>Acquired by eating <strong>raw or undercooked freshwater fish</strong> (e.g., carp) with <strong>encysted metacercariae</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathology &amp; Pathogenesis:</strong>\r\n<ul>\r\n<li><strong>Excyst in intestine</strong>, migrate to <strong>common bile ducts</strong>.</li>\r\n<li>Heavy infections may involve <strong>500-1000 adult worms</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathological effects:</strong>\r\n<ul>\r\n<li>Mechanical irritation of bile ducts &rarr; <strong>fibrosis</strong> and <strong>epithelial hyperplasia</strong></li>\r\n<li>Symptoms: <strong>Fever</strong>, <strong>chills</strong>, <strong>epigastric pain</strong>, <strong>eosinophilia</strong></li>\r\n<li>Complications:\r\n<ul>\r\n<li><strong>Chronic cholangitis</strong></li>\r\n<li><strong>Liver atrophy</strong>, <strong>portal fibrosis</strong>, <strong>jaundice</strong>, <strong>cirrhosis</strong></li>\r\n<li>Associated with <strong>cholangiocarcinoma</strong> (bile duct cancer)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathological effects:</strong>\r\n<ul>\r\n<li>Inflammatory reaction &rarr; <strong>granulomas</strong> around eggs in lung tissue</li>\r\n<li>Worms may also migrate to <strong>ectopic sites</strong>: brain, liver, intestinal wall</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Schistosoma haematobium (Option A):</strong> Primarily affects the urinary tract and is associated with squamous cell carcinoma of the bladder, not cholangiocarcinoma.</p>\r\n<p><strong>Echinococcus granulosus (Option B) </strong>causes hydatid cyst disease, typically affecting the liver or lungs, but it is not associated with bile duct cancer.</p>\r\n<p><strong>Paragonimus westermani (Option C)</strong>, known as the lung fluke, it causes pulmonary symptoms and may mimic tuberculosis, but it does not cause cholangiocarcinoma.</p>",
+      "correct_choice_id": 134,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Entamoeba histolytica</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Entamoeba dispar</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Entamoeba coli</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Entamoeba bangladeshi</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old man presents with abdominal pain, diarrhoea, and occasional passage of blood in the stools. He recently returned from travel to a region with inadequate sanitation. Stool microscopy reveals trophozoites containing ingested red blood cells. Which of the following organisms is most likely responsible for his condition?</span></p>",
+      "unique_key": "DT1216590",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216590,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The clinical features of abdominal pain, bloody diarrhoea, and the presence of trophozoites containing ingested RBCs strongly point towards <strong>Entamoeba histolytica</strong> infection.</p>\r\n<p><strong>Invasive Amebiasis:</strong></p>\r\n<ul>\r\n<li>Disease occurs when <strong>Entamoeba histolytica trophozoites</strong> invade the <strong>intestinal epithelium</strong>.</li>\r\n<li><strong>Initial ulcers</strong>: Pinhead-sized center with raised edges, exuding <strong>mucus, necrotic cells, and trophozoites</strong>.</li>\r\n<li>Trophozoites <strong>multiply above the muscularis mucosae</strong>, often <strong>spreading laterally</strong>.</li>\r\n<li>Classic lesion: <strong>Flask-shaped ulcer</strong> with:\r\n<ul>\r\n<li>Small mucosal entry point</li>\r\n<li>Narrow neck</li>\r\n<li>Wider necrotic cavity in the submucosa</li>\r\n</ul>\r\n</li>\r\n<li>Caused by <strong>rapid lateral spread</strong> and <strong>lytic necrosis</strong>.</li>\r\n<li><strong>Clinical Symptoms:</strong>\r\n<ul>\r\n<li><strong>Severe disease</strong>:\r\n<ul>\r\n<li>Extreme abdominal tenderness</li>\r\n<li>Fulminant dysentery</li>\r\n<li>Dehydration and incapacitation</li>\r\n</ul>\r\n</li>\r\n<li><strong>Less acute/chronic cases</strong>:\r\n<ul>\r\n<li>Gradual onset of <strong>diarrhea</strong>, <strong>cramps</strong>, <strong>nausea</strong>, <strong>urgency</strong></li>\r\n<li><strong>Weeks of discomfort</strong>, <strong>malaise</strong>, <strong>weight/appetite loss</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Incubation</strong>: Symptoms may appear <strong>within 4 days</strong> to <strong>1 year</strong>, or may be <strong>asymptomatic</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Diagnostic Findings:</strong>\r\n<ul>\r\n<li><strong>Trophozoites with ingested RBCs</strong> in liquid/semi-formed stool are <strong>pathognomonic</strong>.</li>\r\n<li>Identification of Entamoeba histolytica remains <strong>challenging</strong>.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Entamoeba dispar (Option B):</strong> Though morphologically identical to <em>E. histolytica</em>, it is non-pathogenic and does not ingest RBCs, hence cannot cause invasive disease.</p>\r\n<p><strong>Entamoeba coli (Option C):</strong> A non-pathogenic intestinal commensal that does not ingest RBCs and is not associated with any invasive symptoms like bloody diarrhoea.</p>\r\n<p><strong>Entamoeba bangladeshi (Option D):</strong> A newer species with uncertain pathogenicity, and RBC ingestion has not been reported, making it unlikely in this clinical scenario.</p>",
+      "correct_choice_id": 141,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Taenia solium</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Taenia saginata</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Toxocara canis </span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Echinococcus granulosus</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old woman presents with abdominal pain, nausea, and unintended weight loss. Imaging reveals a liver cyst with a characteristic \"water lily sign.\" She reports consuming undercooked lamb and recent travel to a region endemic for hydatid disease. Which of the following parasites is most likely responsible for this finding?</span></p>",
+      "unique_key": "DT1216591",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216591,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The <strong>\"water lily sign\"</strong> is a hallmark radiological feature of <strong>hydatid cysts</strong> caused by <strong>Echinococcus granulosus</strong>, resulting from the floating detached endocyst membrane within the fluid-filled cyst.</p>\r\n<p><strong>Echinococcus granulosus (Hydatid Cyst):</strong></p>\r\n<ul>\r\n<li><strong>E.granulosus</strong> is a <strong>small, three-segmented tapeworm</strong>.</li>\r\n<li>Found <strong>only in the intestines of dogs and other canids</strong> (definitive hosts).</li>\r\n<li><strong>Eggs passed in dog feces</strong> &rarr; ingested by <strong>intermediate hosts</strong> (grazing animals like sheep, cattle, goats).</li>\r\n<li>In humans (accidental intermediate hosts), infection occurs by <strong>ingestion of eggs</strong> via <strong>contaminated dog feces</strong>.</li>\r\n<li><strong>Structure of Hydatid Cyst:</strong>\r\n<ul>\r\n<li><strong>Fluid-filled</strong> cyst lined by <strong>germinal epithelium</strong>.</li>\r\n<li>Inside:\r\n<ul>\r\n<li><strong>Thousands of protoscolices</strong></li>\r\n<li>Protoscolices are enclosed in <strong>brood capsules</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Rupture of cyst</strong>:\r\n<ul>\r\n<li>Brood capsules and protoscolices spill &rarr; can <strong>metastasize</strong> and form <strong>secondary cysts</strong>.</li>\r\n<li>A <strong>single ingested egg</strong> can lead to <strong>multiple cysts</strong> throughout the body.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Imaging and Diagnosis:</strong>\r\n<ul>\r\n<li><strong>Ultrasound / CT / MRI</strong>: Key diagnostic tools.</li>\r\n<li><strong>Water lily sign</strong>:\r\n<ul>\r\n<li>Occurs when <strong>endocyst membrane detaches and floats</strong> in hydatid fluid.</li>\r\n<li>Characteristic radiologic finding suggesting <strong>hydatid cyst rupture or degeneration</strong>.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250120fbb47037-a963-4aa1-bc90-7ed66e7be420.jpg\">\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Taenia solium (Option A) </strong>causes neurocysticercosis when larvae invade the central nervous system; it forms small cysticerci, not large liver cysts with floating membranes or a water lily sign.</p>\r\n<p><strong>Taenia saginata (Option B) </strong>infects humans as an adult tapeworm in the intestine (from undercooked beef), but does not form cysts in human tissues or cause liver lesions.</p>\r\n<p><strong>Toxocara canis (Option C) </strong>causes visceral larva migrans, often affecting the liver or lungs, but presents as migratory eosinophilic granulomas, not fluid-filled cysts or the water lily sign.</p>",
+      "correct_choice_id": 154,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acute hepatitis B infection</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic hepatitis B infection</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Resolved past infection with hepatitis B</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Superinfection with hepatitis D</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old man presents with fatigue, loss of appetite, dark urine, and low-grade fever for the past 10 days. He admits to recent unprotected sexual exposure. Physical examination reveals scleral icterus and mild right upper quadrant tenderness. Laboratory testing shows markedly elevated transaminases. Serology reveals positive HBsAg, positive anti-HBc IgM, and negative anti-HBs. Which of the following is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1216592",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216592,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation of Answer:</strong></p>\r\n<p>The presence of <strong>HBsAg</strong> and <strong>anti-HBc IgM</strong>, along with <strong>absence of anti-HBs</strong>, is diagnostic of <strong>acute HBV infection.</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250911e7f4ab40-a1df-4a82-8f37-b055b2c73814.png\"><br>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250911e7f4ab40-a1df-4a82-8f37-b055b2c73824.png\">\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Superinfection with hepatitis D (Option D): </strong>Requires evidence of HDV antibodies or HDV RNA, and usually occurs in someone with chronic HBV, not acute.</p>",
+      "correct_choice_id": 161,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">HBV vaccine only</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">HBIG only</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Defer vaccination</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">HBV vaccine + HBIG within 12 hrs</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old woman who is HBsAg-positive delivers a healthy term infant via vaginal delivery. What is the most appropriate next step to prevent perinatal transmission of hepatitis B to the newborn?</span></p>",
+      "unique_key": "DT1216593",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216593,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Administering both the <strong>hepatitis B vaccine </strong>and<strong> hepatitis B immunoglobulin (HBIG) within 12 hours </strong>of birth provides protection against vertical transmission from an HBsAg-positive mother.</p>\r\n<p><strong>Vertical Transmission of HBV:</strong></p>\r\n<ul>\r\n<li>Vertical transmission = HBV spread from mother to child during pregnancy, delivery, or breastfeeding.</li>\r\n<li>Confirmed if infant is <strong>HBsAg or HBV DNA positive at 6-12 months</strong>.</li>\r\n<li><strong>Routes of Vertical Transmission:</strong>\r\n<ul>\r\n<li>Transplacental / Intrauterine</li>\r\n<li>Perinatal (during delivery)</li>\r\n<li>Postnatal (during care or breastfeeding)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Prevention Strategies:</strong>\r\n<ul>\r\n<li><strong>Universal HBsAg screening</strong> for all pregnant women.\r\n<ul>\r\n<li>If HBsAg positive &rarr; check <strong>HBeAg</strong> and <strong>HBV DNA</strong> to assess transmission risk.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Immunoprophylaxis (Newborn):</strong>\r\n<ul>\r\n<li>Consists of:\r\n<ul>\r\n<li><strong>HBIG (Hepatitis B Immunoglobulin)</strong> within <strong>24 hours</strong> of birth.</li>\r\n<li><strong>Hepatitis B vaccine</strong> (first dose also within 24 hours).</li>\r\n</ul>\r\n</li>\r\n<li>Given at <strong>two different sites</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Antiviral Therapy (Mother):</strong>\r\n<ul>\r\n<li>For mothers with <strong>high viral load (&gt;1000 mEq/mL)</strong>.</li>\r\n<li>Example: <strong>Lamivudine 100 mg/day</strong> from week 32 of pregnancy to week 4 postpartum.</li>\r\n<li>Lamivudine reduces maternal viral load.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>HBV vaccine only (Option A):</strong> Vaccine alone offers long-term protection but lacks immediate passive immunity, which is crucial in high-risk newborns.</p>\r\n<p><strong>HBIG only (Option B):</strong> Provides short-term passive protection but no long-term immunity, so infection risk remains without vaccination.</p>\r\n<p><strong>Defer vaccination (Option C):</strong> Delaying vaccination increases the risk of neonatal infection, especially from an HBsAg-positive mother.</p>\r\n<p><strong>Reference:</strong>&nbsp;</p>\r\n<p><a href=\"https://www.researchgate.net/publication/370346318_Vertical_Transmission_of_Hepatitis_B_Virus-An_Update\" target=\"_blank\">https://www.researchgate.net/publication/370346318_Vertical_Transmission_of_Hepatitis_B_Virus-An_Update</a> <br /> </p>",
+      "correct_choice_id": 174,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis A</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis C</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis B</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis E</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old patient presents with fatigue, joint pain, and a palpable purpuric rash. Laboratory tests reveal the presence of serum cryoglobulins. The patient also has a history of chronic liver disease. Which hepatitis virus is most commonly associated with cryoglobulinemia?</span></p>",
+      "unique_key": "DT1216594",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216594,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Hepatitis C virus </strong>is the most common cause of<strong> mixed cryoglobulinemia (MC) </strong>due to chronic immune stimulation and formation of immune complexes.</p>\r\n<p><strong>Cryoglobulinemia (associated with HCV):</strong></p>\r\n<ul>\r\n<li>Caused by <strong>clonal expansion of rheumatoid factor (RF)-expressing B cells</strong>.</li>\r\n<li>Leads to formation of <strong>cryoglobulins</strong>: immune complexes of <strong>RF, polyclonal IgG, and HCV RNA</strong>.</li>\r\n<li>These immune complexes <strong>precipitate in cold temperatures</strong> and deposit on vascular endothelium.</li>\r\n<li>Results in <strong>systemic vasculitis</strong> involving skin, kidneys, and peripheral nerves.</li>\r\n</ul>\r\n<p><strong>Cryoglobulinemic Vasculitis (HCV-MC Vasculitis):</strong></p>\r\n<ul>\r\n<li>Involves <strong>small and medium-sized vessels</strong>.</li>\r\n<li><strong>Skin Involvement:</strong>\r\n<ul>\r\n<li><strong>Palpable purpura</strong> on lower legs in &gt;90% of cases.</li>\r\n<li>May progress to <strong>chronic ulcers</strong> or <strong>gangrene</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Renal Involvement:</strong>\r\n<ul>\r\n<li>Commonly presents as <strong>Type I membranoproliferative glomerulonephritis (MPGN)</strong>.</li>\r\n<li>Manifestations range from <strong>proteinuria to nephritic syndrome</strong>.</li>\r\n<li>Associated with <strong>poor prognosis</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Neurological Involvement:</strong>\r\n<ul>\r\n<li>Due to cryoglobulin deposition in <strong>vasa vasorum</strong>.</li>\r\n<li>Can cause:\r\n<ul>\r\n<li><strong>Painful paresthesias</strong></li>\r\n<li><strong>Lower limb weakness</strong></li>\r\n<li><strong>Mononeuritis</strong> (e.g., foot or wrist drop)</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Reference</strong>:</p>\r\n<p><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2755598/\" target=\"_blank\">https://pmc.ncbi.nlm.nih.gov/articles/PMC2755598/</a></p>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis B</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis C</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis A</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatitis E</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old woman in her third trimester presents with jaundice, altered sensorium, and bleeding tendencies. She had a recent episode of acute gastroenteritis, followed by a rapid deterioration in liver function. Labs show elevated transaminases, hyperbilirubinemia, and prolonged prothrombin time. Fulminant hepatic failure is suspected. Which of the following hepatitis viruses is most commonly implicated in fulminant hepatitis during pregnancy?</span></p>",
+      "unique_key": "DT1216596",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216596,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Hepatitis E virus (HEV) </strong>infection, especially during the third trimester of pregnancy, carries a high risk of <strong>fulminant hepatitis</strong> and maternal mortality.</p>\r\n<p><strong>Fulminant Hepatitis:</strong></p>\r\n<ul>\r\n<li><strong>Causes:</strong>\r\n<ul>\r\n<li><strong>Hepatitis B virus (HBV):</strong> Can cause fulminant hepatitis; ~50% of cases involve <strong>coinfection with hepatitis D (HDV)</strong>. <strong>(Option A)</strong></li>\r\n<li><strong>Hepatitis A virus (HAV):</strong> Rare cause; risk increased in <strong>preexisting liver disease</strong>. <strong>(Option C)</strong></li>\r\n<li><strong>Hepatitis E virus (HEV):</strong> Occasional cause; <strong>especially severe in pregnant women</strong> (&rarr; liver failure, fetal loss, death). <strong>(Option D)</strong></li>\r\n<li><strong>Hepatitis C virus (HCV):</strong> Role is <strong>uncertain</strong>. <strong>(Option B)</strong></li>\r\n<li><strong>Alcoholic hepatitis:</strong> May cause fulminant liver failure; usually in context of <strong>chronic liver disease</strong> due to heavy drinking.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Symptoms and Signs:</strong>\r\n<ul>\r\n<li>Rapid onset and progression:\r\n<ul>\r\n<li><strong>Jaundice</strong></li>\r\n<li><strong>Portosystemic encephalopathy &rarr; coma, cerebral edema</strong></li>\r\n<li><strong>Coagulopathy</strong> (due to liver failure or DIC)</li>\r\n<li><strong>Hepatorenal syndrome (renal failure)</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Ominous signs:</strong>\r\n<ul>\r\n<li>Rising <strong>PT/INR</strong></li>\r\n<li>Worsening <strong>encephalopathy</strong></li>\r\n<li>Development of <strong>renal failure</strong></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Treatment:</strong>\r\n<ul>\r\n<li><strong>Supportive ICU care</strong> + manage complications</li>\r\n<li><strong>Antivirals</strong> (e.g., nucleoside/nucleotide analogs) for <strong>HBV-related</strong> cases</li>\r\n<li><strong>Liver transplantation:</strong>\r\n<ul>\r\n<li><strong>Best hope for survival</strong></li>\r\n<li>Adults: Poor survival without transplant</li>\r\n<li>Children: Better outcomes than adults without transplant</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Reference:</strong>&nbsp;</p>\r\n<p><a href=\"https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/hepatitis/fulminant-hepatitis#Treatment_v21347031\" target=\"_blank\">https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/hepatitis/fulminant-hepatitis#Treatment_v21347031</a></p>",
+      "correct_choice_id": 194,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aedes mosquito</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sand fly</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tse Tse fly</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">Anopheles mosquito</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old man presents with fever, chills, myalgia, and jaundice after returning from a trip to West Africa. He recalls multiple mosquito bites during his stay in the tropical region. Laboratory results suggest hepatic dysfunction. Which of the following vectors is most likely responsible for transmitting the causative agent of his illness?</span></p>",
+      "unique_key": "DT1216597",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216597,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Yellow fever virus is transmitted by the <strong>Aedes mosquito</strong>, primarily <strong>Aedes aegypti.</strong></p>\r\n<p><strong>Yellow Fever Virus:</strong></p>\r\n<ul>\r\n<li>Belongs to <strong>Flaviviridae</strong></li>\r\n<li><strong>Mosquito-borne</strong>: Transmitted by <strong>Aedes aegypti </strong></li>\r\n<li><strong>Pathogenesis:</strong>\r\n<ul>\r\n<li>Entry: Mosquito bite &rarr; virus replicates in skin &rarr; spreads to <strong>lymph nodes, liver, kidney, heart, spleen</strong>.</li>\r\n<li>Viremia early in illness &rarr; source of infection for mosquitoes.</li>\r\n<li>Severe disease involves <strong>hepatic necrosis</strong>, renal failure, <strong>hemorrhage</strong>, and <strong>shock</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li><strong>Incubation</strong>: 3-6 days.</li>\r\n<li><strong>Early symptoms</strong>: Fever, chills, headache, myalgia, nausea, bradycardia.</li>\r\n<li><strong>Toxic phase</strong> (in 15%): Jaundice, <strong>renal failure</strong>, <strong>black vomitus</strong>, hemorrhage.</li>\r\n<li><strong>Mortality</strong> in severe cases: ~20% or higher.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Diagnosis:</strong>\r\n<ul>\r\n<li><strong>Early (first 4 days)</strong>: Virus isolation from blood, PCR, ELISA antigen capture.</li>\r\n<li><strong>Serology</strong>:</li>\r\n<li><strong>IgM ELISA</strong> (1st week) &rarr; presumptive diagnosis.</li>\r\n<li><strong>Neutralizing antibodies</strong> confirm past infection.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Treatment:</strong>\r\n<ul>\r\n<li><strong>No antiviral therapy</strong></li>\r\n<li>Supportive care only.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Prevention &amp; Vaccine:</strong>\r\n<ul>\r\n<li>Live-attenuated 17D vaccine</li>\r\n<li>Mosquito control</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Sand fly (Option B)</strong> transmit Leishmania species, not yellow fever virus.</p>\r\n<p><strong>Tse Tse fly (Option C)</strong> transmit Trypanosoma brucei, the causative agent of African sleeping sickness, which primarily affects the central nervous system, not associated with jaundice or liver dysfunction.</p>\r\n<p><strong>Anopheles mosquito (Option D)</strong> are vectors for Plasmodium species, causing malaria.</p>",
+      "correct_choice_id": 201,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Schistosoma mansoni</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Echinococcus granulosus</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Parogonimus westermani</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clonorchis sinensis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old man from an endemic area presents with abdominal pain, hepatomegaly, and splenomegaly. Laboratory findings reveal eosinophilia, and stool microscopy shows ova with a characteristic lateral spine. Imaging reveals periportal fibrosis in the liver giving a \"pipestem\" appearance, along with signs of portal hypertension. He reports frequent contact with freshwater sources. Which of the following parasitic infections is most likely responsible for his condition?</span></p>",
+      "unique_key": "DT1216598",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1216598,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The clinical features of abdominal pain, hepatosplenomegaly, and periportal \"pipestem\" fibrosis with portal hypertension point to a diagnosis of <strong>Schistosoma mansoni infection</strong>.</p>\r\n<p><strong>Schistosoma mansoni:</strong></p>\r\n<ul>\r\n<li>Reside in <strong>inferior mesenteric veins of the large intestine</strong>.</li>\r\n<li><strong>Transmission:</strong>\r\n<ul>\r\n<li>Infection acquired through contact with <strong>freshwater</strong> containing <strong>infectious cercariae</strong>.</li>\r\n<li>Cercariae penetrate <strong>intact skin</strong>, transform into <strong>schistosomules</strong>, enter circulation.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Life Cycle:</strong>\r\n<ul>\r\n<li>Eggs released <strong>5-8 weeks after infection</strong>.</li>\r\n<li>Adults migrate to hepatoportal system where egg production occurs.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathogenesis:</strong>\r\n<ul>\r\n<li><strong>Eggs</strong>, not adult worms, cause the major pathology.</li>\r\n<li>Eggs trapped in <strong>liver</strong> induce <strong>granulomatous inflammation</strong> leading to:\r\n<ul>\r\n<li><strong>Fibrosis</strong></li>\r\n<li>Portal hypertension</li>\r\n<li>Ascites</li>\r\n<li>Hepatosplenomegaly</li>\r\n<li>Esophageal varices</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Presentation:</strong>\r\n<ul>\r\n<li><strong>Chronic symptoms</strong> result from hepatic involvement.</li>\r\n<li><strong>Acute schistosomiasis (Katayama fever)</strong> in travelers:\r\n<ul>\r\n<li>Rash, fever, chills, diarrhea, <strong>eosinophilia</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Diagnosis:</strong>\r\n<ul>\r\n<li><strong>Ova in stool</strong>: Characteristic <strong>lateral spine</strong> visible on microscopy.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Echinococcus granulosus (Option B) </strong>causes hydatid cysts in organs like the liver or lungs, but does not produce periportal fibrosis or pipestem appearance.</p>\r\n<p><strong>Paragonimus westermani (Option C) </strong>primarily affects the lungs, causing cough and hemoptysis, not liver pathology or portal hypertension.</p>\r\n<p><strong>Clonorchis sinensis (Option D) </strong>infects the biliary tract and predisposes to cholangiocarcinoma, but does not cause periportal fibrosis or hepatosplenic disease</p>",
+      "correct_choice_id": 211,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

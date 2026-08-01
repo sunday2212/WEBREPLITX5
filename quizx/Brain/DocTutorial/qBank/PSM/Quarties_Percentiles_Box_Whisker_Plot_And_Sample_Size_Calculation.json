@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "title": "Quarties_Percentiles_Box_Whisker_Plot_And_Sample_Size_Calculation"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">25%</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">50%</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">75%</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">100%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The interquartile range covers what proportion of a distribution?</span></p>",
+      "unique_key": "DT1231758",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231758,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>interquartile range (IQR)</strong> measures the <strong>spread of the middle 50%</strong> of values in a dataset.</p>\n<ul>\n<li>It spans from the <strong>first quartile (Q1 or 25th percentile)</strong> to the <strong>third quartile (Q3 or 75th percentile)</strong>.</li>\n<li>The IQR excludes the <strong>lowest 25%</strong> and <strong>highest 25%</strong> of the data, focusing on the central values.<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092387a52435-e423-461e-b2cc-9c9f079c71bc.png\"></li>\n<li>The <strong>box</strong> represents the IQR (middle 50%)</li>\n<li>The <strong>whiskers</strong> represent the 25% on either end</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923d3c3a6ca-3139-45e5-8280-9a4c697f766b.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>25% (Option A):</strong> Only represents data below Q1 or above Q3-not the IQR itself.</p>\n<p><strong>75% (Option C) :</strong> Includes more than the IQR-it would include data from the minimum to Q3, which is incorrect.</p>\n<p><strong>100% (Option D):</strong> Represents the full data range, not just the middle 50%.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>interquartile range (IQR)</strong> spans from <strong>Q1 to Q3</strong> and includes the <strong>middle 50%</strong> of the distribution.</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Arithmetic mean</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Geometric mean</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Midrange</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The measure of central location most commonly used with the interquartile range is the:</span></p>",
+      "unique_key": "DT1231759",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231759,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>interquartile range (IQR)</strong> is a measure of spread that captures the <strong>middle 50% of the data</strong>, ranging from the first quartile (Q1) to the third quartile (Q3). It is often paired with the <strong>median</strong> because both focus on the central tendency and are <strong>resistant to outliers</strong>.</p>\n<ul>\n<li>The <strong>median</strong> is the <strong>middlemost value</strong> in an ordered dataset, splitting it into two equal halves.</li>\n<li>Since the IQR spans from Q1 to Q3, the median naturally lies within this range, making it the most appropriate central location measure to accompany the IQR.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Arithmetic mean (Option A):</strong></p>\n<p>Sensitive to extreme values; not ideal when describing central tendency in skewed data.</p>\n<p><strong>Geometric mean (Option B):</strong></p>\n<p>Used for rates and multiplicative data, not suitable with IQR which is based on rank-order.</p>\n<p><strong>Midrange (Option D):</strong></p>\n<p>Calculated as (Min + Max)/2; highly sensitive to outliers and not robust.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>median</strong> is most commonly used with the <strong>interquartile range</strong>, as both describe the center and spread of the <strong>middle 50%</strong> of data.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">7.5</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">150</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">225</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">300</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A chest physician observed that, the distribution of Forced Expiratory Volume (FEV) in 300 smokers had a median value of 2.5 liters with the first and third quartiles being 1.5 and 4.5 liters respectively. How many persons in the sample are expected to have a FEV between 1.5 and 4.5 liters</span></p>",
+      "unique_key": "DT1231760",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231760,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>To determine the number of persons in the sample expected to have a Forced Expiratory Volume (FEV) between 1.5 and 4.5 litres, we utilize the information provided about the quartiles.</p>\n<p>The interquartile range (IQR) is the range between the first quartile (Q1) and the third quartile (Q3). In this case:</p>\n<ul>\n<li>Q1 = 1.5 litres</li>\n<li>Q3 = 4.5 litres</li>\n</ul>\n<p>To calculate the IQR:</p>\n<ul>\n<li>IQR = Q3 - Q1 = 4.5 - 1.5 = 3 litres</li>\n</ul>\n<p>The IQR represents the range of values that encompass the middle 50% of the data. Therefore, any value falling within this range is expected to be within the 25th to 75th percentiles.</p>\n<p>Since the median value (Q2) is 2.5 litres, which lies between Q1 and Q3, we know that half of the data (150 persons out of 300) fall below 2.5 litres and half fall above 2.5 litres.</p>\n<p>Given that the quartiles divide the data into four equal parts, each representing 25% of the data, and the IQR covers the middle 50% of the data, we can infer that 50% of the data lie within the IQR.</p>\n<p>Therefore, 50% of 300 persons, which is 150 persons, are expected to have a FEV between 1.5 and 4.5 litres.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923f96fb98b-4680-49e7-be1c-d03b5246d81a.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>7.5 (Option A) :</strong> Represents 2.5% of the sample; not related to IQR.</p>\n<p><strong>225 (Option C):</strong> Implies 75% of the population; exceeds the coverage of IQR.</p>\n<p><strong>300 (Option D):</strong> Represents the entire population; the IQR only covers the middle 50%.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Interquartile range (Q1-Q3) always includes 50% of the dataset.</strong></p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">7th </span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">40th </span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">100th </span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">140th </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">For a group of n = 250 subjects, the 40th percentile would correspond to which of the following values?</span></p>",
+      "unique_key": "DT1231761",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231761,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The 40th percentile of a dataset is the value below which 40% of the data falls. In other words, if you were to arrange the data in ascending order, the 40th percentile would be the value that separates the lowest 40% of the data from the highest 60%.</p>\n<p>Given a group of n = 250 subjects, the 40th percentile would be the value such that 40% of the subjects have values lower than this value.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509230e91af84-c706-4b43-badf-b4b8751f1e0d.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>7th (Option A):</strong> Represents the ~3rd percentile, not the 40th.</p>\n<p><strong>40th (Option B):</strong> Represents the 16th percentile approximately.</p>\n<p><strong>140th (Option D):</strong> Represents the 56th percentile approximately.</p>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">c, e</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">a, b</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">a, b, c</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">a, c, d</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Select all of the following statements which you believe to be true.<br>a. The first percentile has 99% of the observations in the ordered set below it.<br>b. The first decile is equal to the 90th percentile and has 10% of the observations in the ordered set below it.<br>c. The median is equal to the 50th percentile.<br>d. The range is the difference between the 1st and 99th percentiles<br>e. The interquartile range lies between the 1st and 3rd quartiles.</span></p>",
+      "unique_key": "DT1231762",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231762,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Statement c. The median is equal to the 50th percentile:</strong></li>\n<li>This statement is true. By definition, the median is the middle value of a dataset when the data are arranged in ascending or descending order. It divides the dataset into two equal halves, with 50% of the observations falling below the median and 50% above it. Therefore, the median is equivalent to the 50th percentile.</li>\n</ul>\n<p><strong>Statement e. The interquartile range lies between the 1st and 3rd quartiles:</strong></p>\n<ul>\n<li>This statement is true. The interquartile range (IQR) is defined as the range between the first quartile (Q1, 25th percentile) and the third quartile (Q3, 75th percentile) of a dataset. It represents the middle 50% of the data and is less sensitive to outliers compared to the range or standard deviation. Therefore, the IQR spans from the 1st to the 3rd quartiles.</li>\n</ul>\n<p><strong>Explanation of other statement:</strong></p>\n<p><strong>Statement a. The first percentile has 99% of the observations in the ordered set below it:</strong></p>\n<ul>\n<li>This statement is not true. The first percentile represents the value below which 1% of the observations in the dataset fall, not 99%. It divides the dataset into two parts, with 1% of the observations below the first percentile and 99% above it.</li>\n</ul>\n<p><strong>Statement b. The first decile is equal to the 90th percentile and has 10% of the observations in the ordered set below it:</strong></p>\n<ul>\n<li>This statement is not true. The first decile represents the value below which 10% of the observations in the dataset fall, not the 90th percentile. It divides the dataset into two parts, with 10% of the observations below the first decile and 90% above it.</li>\n</ul>\n<p><strong>Statement d. The range is the difference between the 1st and 99th percentiles:</strong></p>\n<ul>\n<li>This statement is not true. The range is the difference between the maximum and minimum values in a dataset, not between the 1st and 99th percentiles. While the range provides a measure of the spread of the entire dataset, it is not specific to percentiles</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>Only the <strong>median as 50th percentile</strong> and <strong>IQR spanning Q1 to Q3</strong> are correct in this context.</p>",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Outliers</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Interquartile range</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Difference of means</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Difference of proportions</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Q test can be used for detecting </span></p>",
+      "unique_key": "DT1231763",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231763,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>Q test</strong>, also known as <strong>Dixon's Q test</strong>, is a statistical tool specifically designed to <strong>detect outliers</strong> in small datasets. It is useful when a single data point appears suspiciously far from the rest and you want to test if it is significantly different.</p>\n<ul>\n<li>The data must be arranged in <strong>ascending order</strong>.</li>\n<li>The <strong>Q value</strong> is calculated using the formula:</li>\n<li>Q = {(X i) - X (i-1)} / {X n - X 1}</li>\n<li>The calculated Q value is then <strong>compared to a critical value from the Q table</strong> (based on sample size and significance level).</li>\n<li>If the calculated Q &gt; critical Q value &rarr; the value is considered an <strong>outlier</strong> and may be discarded.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Interquartile range (Option B):</strong> Measured using Q1 and Q3; not related to the Q test.</p>\n<p><strong>Difference of means (Option C):</strong> Evaluated using <strong>t-tests</strong> or <strong>ANOVA</strong>, not the Q test.</p>\n<p><strong>Difference of proportions (Option D):</strong> Tested using <strong>z-test</strong> or <strong>chi-square test</strong>, not applicable here.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Dixon's Q test is a statistical method to detect and eliminate outliers</strong> in small datasets, ensuring accuracy and reliability of analysis.</p>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">50%</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">68%</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">95%</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">99.7%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The mean value of marks in a distribution of 100 students in a class is 105 and SD is 10. How many students will have marks in the range 85-125?</span></p>",
+      "unique_key": "DT1231768",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231768,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>To solve this problem, we can use the empirical rule, also known as the 68-95-99.7 rule, which applies to normal distributions. According to this rule:</p>\n<ul>\n<li>Approximately 68% of the data falls within one standard deviation (SD) of the mean.</li>\n<li>Approximately 95% of the data falls within two standard deviations (SDs) of the mean.</li>\n<li>Approximately 99.7% of the data falls within three standard deviations (SDs) of the mean</li>\n</ul>\n<p>Given that the mean value of marks in the distribution is 105 and the standard deviation is 10, we can calculate the range of marks within one, two, and three standard deviations from the mean:</p>\n<p>Within one standard deviation from the mean:</p>\n<ul>\n<li>Lower bound: Mean - SD = 105 - 10 = 95</li>\n<li>Upper bound: Mean + SD = 105 + 10 = 115</li>\n</ul>\n<p>Within two standard deviations from the mean:</p>\n<ul>\n<li>Lower bound: Mean - 2*SD = 105 - 2*10 = 85</li>\n<li>Upper bound: Mean + 2*SD = 105 + 2*10 = 125</li>\n</ul>\n<p>Within three standard deviations from the mean:</p>\n<ul>\n<li>Lower bound: Mean - 3*SD = 105 - 3*10 = 75</li>\n<li>Upper bound: Mean + 3*SD = 105 + 3*10 = 135</li>\n</ul>\n<p>Since we are interested in the range of marks from 85 to 125, which falls within two standard deviations from the mean, approximately 95% of the students' marks will be in this range.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>In a normal distribution, <strong>95% of observations lie within &plusmn;2 SD</strong> from the mean.</p>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chance</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Central tendency</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deviation from the mean value</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">None </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation is the measure of </span></p>",
+      "unique_key": "DT1231800",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231800,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Standard deviation quantifies the <strong>amount of variation or dispersion</strong> of a set of data points from their <strong>mean</strong>. A small standard deviation means that most data points are close to the mean, while a large standard deviation indicates more spread out data.</p>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Chance (Option A):</strong> Refers to probability, not data dispersion.</p>\n<p><strong>Central tendency (Option B):</strong> Includes mean, median, and mode-not standard deviation.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Standard deviation reflects how much individual values deviate from the mean, indicating the spread of data.</p>",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Quota sampling</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Simple random sampling</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stratified sampling</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cluster sampling</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following does not fall under a random sampling method?</span></p>",
+      "unique_key": "DT1231812",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231812,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Quota sampling is a <strong>non-random</strong> sampling technique that involves selecting participants based on specific quotas set for various subgroups.</p>\n<ul>\n<li>In <strong>quota sampling</strong>, individuals are chosen <strong>non-randomly</strong> until a fixed number (quota) for each category is met.</li>\n<li>It <strong>does not ensure equal probability</strong> of selection, introducing <strong>selection bias</strong>.</li>\n<li>It relies on <strong>judgmental or convenience sampling</strong>, which can lead to non-representative samples.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Simple random sampling (Option B):</strong> True random method where every individual has equal probability.</p>\n<p><strong>Stratified sampling (Option C):</strong> Random selection within homogeneous strata.</p>\n<p><strong>Cluster sampling (Option D):</strong> Entire clusters selected at random; useful for large populations.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Quota sampling is a <strong>non-random</strong> method that lacks equal probability of selection and hence is <strong>not considered a random sampling method</strong>.</p>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">99 equal parts</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">100 equal parts</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">4 equal parts</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 equal parts</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Centile divides data into</span></p>",
+      "unique_key": "DT1231817",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231817,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>A centile (or percentile) divides the dataset into <strong>100 equal parts</strong>. Each centile indicates the percentage of data below a specific value. For instance, the 75th centile implies that 75% of the data lies below that value.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Centiles (percentiles) divide the data into 100 equal parts, helping assess the relative position of a data point within the distribution.</p>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Validity</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reliability</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Cronbach's alpha is a test used for </span></p>",
+      "unique_key": "DT1231818",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231818,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Cronbach's alpha is a measure of <strong>internal consistency</strong>, which indicates how well a set of items in a test measures a single unidimensional latent construct.</p>\n<ul>\n<li>It is widely used in <strong>psychometrics, questionnaires, and surveys</strong> to assess <strong>reliability</strong>.</li>\n<li>A higher Cronbach's alpha (generally &gt;0.7) suggests that the items have relatively high internal consistency.</li>\n<li>It does <strong>not measure accuracy</strong> or whether the test is measuring the correct construct - only the <strong>consistency</strong> among items.</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923193cf5a9-eeeb-4403-9f95-89aa40c10e5b.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Validity (Option A):</strong> Refers to accuracy, not internal consistency; measured using content, construct, or criterion validity.</p>\n<p><strong>Sensitivity (Option C):</strong> Diagnostic test parameter-not related to internal consistency.</p>\n<p><strong>Specificity (Option D):</strong> Also a diagnostic accuracy metric-not relevant to Cronbach's alpha.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Cronbach's alpha is a <strong>reliability</strong> measure used to assess the <strong>internal consistency</strong> of items within a scale.</p>",
+      "correct_choice_id": 102,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fig A- symmetrical with outliers,Fig B- right sided skewing without outliers, Fig C- left sided skewing with outliers and far outliers</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fig A- symmetrical without outliers,Fig B- right sided skewing with outliers and far outliers, Fig C- left sided skewing with outliers and far outliers</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fig A- symmetrical without outliers,Fig B- left sided skewing with outliers and far outliers, Fig C- right sided skewing with outliers and far outliers</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fig A- symmetrical with outliers,Fig B- right sided skewing without outliers and far outliers, Fig C- left sided skewing without outliers and far outliers</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Box and whisker plot interpretation<br>Answer <br>\r\n<ul>\r\n<li><strong>Fig A- symmetrical without outliers</strong></li>\r\n<li><strong>Fig B- right sided skewing with outliers and far outliers</strong></li>\r\n<li><strong>Fig C- left sided skewing with outliers and far outliers</strong></li>\r\n</ul><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032659890955-3bfa-43f7-a252-16bc96d8dffc.jpg\"></span></p>",
+      "unique_key": "DT1231826",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231826,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Fig A: Symmetrical without outliers</strong>\n<ul>\n<li>The box is centered between the whiskers.</li>\n<li>Median is approximately in the middle of the box.</li>\n<li>No points lie outside the whiskers &rarr; no outliers.</li>\n</ul>\n</li>\n<li><strong>Fig B: Right-sided (positive) skew with outliers and far outliers</strong>\n<ul>\n<li>Longer whisker on the right side, suggesting high-end values.</li>\n<li>Data is clustered on the lower side.</li>\n<li>Dots beyond whiskers &rarr; outliers and far outliers.</li>\n</ul>\n</li>\n<li><strong>Fig C: Left-sided (negative) skew with outliers and far outliers</strong>\n<ul>\n<li>Longer whisker on the left side, showing more data on the higher range.</li>\n<li>Data is skewed toward the lower end.</li>\n<li>Left side shows multiple outlier dots.</li>\n</ul>\n</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509230a6c52b7-5c2c-48eb-82e8-161238f2f13d.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>Box plots visually represent skewness and outliers; skew direction is judged by tail length and outliers lie beyond whiskers.</p>",
+      "correct_choice_id": 112,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decrease sample size </span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase sample size</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased Confidence interval</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased variability</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Increased width of a confidence interval is caused by all of the following except:</span></p>",
+      "unique_key": "DT1231828",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231828,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Increasing sample size reduces the width of a confidence interval</strong> by improving the precision of the estimate.</p>\n<ul>\n<li>Confidence intervals (CIs) reflect the range within which the true population parameter is expected to lie.</li>\n<li>The width of a CI depends on:\n<ul>\n<li><strong>Sample size (n)</strong>: Larger sample size &rarr; <strong>narrower CI</strong></li>\n<li><strong>Variability (&sigma;)</strong>: Higher variability &rarr; <strong>wider CI</strong></li>\n<li><strong>Confidence level (e.g., 95%, 99%)</strong>: Higher level &rarr; <strong>wider CI</strong></li>\n</ul>\n</li>\n</ul>\n<p>Hence, increasing the <strong>sample size</strong> <strong>decreases</strong> the width of the confidence interval.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092310532c77-2914-4476-aa6b-c059a1a78cef.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Decrease sample size (Option A):</strong> Reduces precision &rarr; increases CI width.</p>\n<p><strong>Increased confidence level (Option C):</strong> Leads to a broader range &rarr; increases CI width.</p>\n<p><strong>Increased variability (Option D):</strong> Higher spread in data &rarr; increases CI width.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Larger sample sizes lead to more precise estimates and narrower confidence intervals.</strong></p>",
+      "correct_choice_id": 122,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

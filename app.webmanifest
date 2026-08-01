@@ -1,0 +1,25 @@
+
+{
+  "name": "NEXTPULSE",
+  "short_name": "NEXTPULSE",
+  "description": "A complete Progressive Web App wit install prompt",
+  "start_url": "./app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101826",
+  "theme_color": "#182434",
+  "icons": [
+    {
+      "src": "./iconss-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./iconss-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

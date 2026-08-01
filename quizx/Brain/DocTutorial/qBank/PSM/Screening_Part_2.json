@@ -1,0 +1,1082 @@
+{
+  "meta": {
+    "title": "Screening_Part_2"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Screening time</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead time</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lag time</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Generation time</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In the following natural history of disease flowchart, point A to C is called-<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d1mobye7msb5bl.cloudfront.net/1NewQBImages/a1f369be-68d2-4d96-8beb-74aad9f71eab.png\">\r\n</span></p>",
+      "unique_key": "DT1159582",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1159582,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The period between point A and point C is known as <strong>lead time</strong>.</li>\n<li>In the diagram, point A represents the earliest possible time a disease can be detected by a screening test.</li>\n<li>Point C represents the time when the disease would typically be diagnosed due to the onset of clinical signs and symptoms.</li>\n<li>Therefore, the interval from A to C is the amount of time by which the diagnosis is advanced by a screening program, which is the definition of lead time.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d1mobye7msb5bl.cloudfront.net/1NewQBImages/d1786dd9-721f-4d41-8938-95b054834879.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Screening time (Option A):</strong> This is not a standard epidemiological term. While screening takes time, \"screening time\" doesn't refer to the interval between points A and C.</p>\n<p><strong>Lag time (Option C):</strong> Lag time typically refers to the period between exposure to a causal factor and the initiation of the disease process. It is a different concept from the lead time gained through screening.</p>\n<p><strong>Generation time (Option D):</strong> Generation time is a term used in infectious disease epidemiology to describe the time between the acquisition of an infection and the point at which an individual can transmit the infection to others.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Lead time</strong> is a key concept in screening programs, representing the amount of time a diagnosis is advanced by early detection compared to the usual time of clinical diagnosis.</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diabetics correctly classified as the same</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non diabetics correctly classified a as the same</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non diabetics indirectly classified as diabetics</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diabetics incorrectly classified as non-diabetics</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The fasting blood glucose levels of a hypothetical population form two overlapping distributions, one of the people with diabetes (B), and another one of the people without diabetes (A) resembling those in the figure shown below. A test was done with the cutoff for diagnosing diabetes at 120 mg/dl, what does the area D represent?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d1mobye7msb5bl.cloudfront.net/1NewQBImages/c78cf032-9e1a-4a16-81e6-32f5aaa1a167.png\">\r\n</span></p>",
+      "unique_key": "DT1159585",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1159585,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The graph shows two overlapping distributions of blood glucose levels. Curve A represents the population without diabetes, and curve B represents the population with diabetes. The vertical line at 120 mg/dl is the <strong>cutoff point</strong> for a positive test result.</li>\n<li>A positive test result is defined as a blood glucose level of 120 mg/dl or higher. A person without diabetes who tests positive is a <strong>false positive</strong>.</li>\n<li>Area D is the section of curve A (the non-diabetic population) that falls to the right of the 120 mg/dl cutoff. This represents individuals who do not have diabetes but have been classified as diabetic by the test. This is the definition of a <strong>false positive</strong>.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Diabetics correctly classified as the same (Option A):</strong> This refers to <strong>true positives</strong>, which would be represented by the area of curve B to the right of the cutoff point.</p>\n<p><strong>Non diabetics correctly classified a as the same (Option B):</strong> This refers to <strong>true negatives</strong>, which are the people in curve A to the left of the cutoff point.</p>\n<p><strong>Diabetics incorrectly classified as non-diabetics (Option D):</strong> This refers to <strong>false negatives</strong>, which are the people in curve B to the left of the cutoff point.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>In a screening test with overlapping distributions, the area representing <strong>false positives</strong> is the portion of the healthy population's curve that falls beyond the diagnostic <strong>cutoff</strong>.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">A</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">B</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">C</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">D</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the below shown receiver operator characteristic curves reflects a better test?<br><img src=\"https://d1mobye7msb5bl.cloudfront.net/1NewQBImages/bceab4af-2b89-450f-946c-bb61fdbb8e7b.png\"></span></p>",
+      "unique_key": "DT1159587",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1159587,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>A <strong>receiver operating characteristic (ROC)</strong> curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It plots the <strong>true positive rate (sensitivity)</strong> on the y-axis against the <strong>false positive rate (1 - specificity)</strong> on the x-axis.</li>\n<li>A test with perfect accuracy would have a curve that goes straight up the y-axis and across the top to the right, sitting in the top-left corner. Therefore, a test is considered \"better\" or more accurate the closer its curve is to this top-left corner.</li>\n<li>Among the options, <strong>Curve A</strong> is the closest to the top-left corner of the graph, indicating that it achieves the highest sensitivity for a given false positive rate. This makes it the most effective diagnostic test among the choices.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>B (Option B):</strong> Curve B is a good test, but it is less accurate than Curve A because it is further from the top-left corner. It has a lower sensitivity for any given false positive rate compared to A.</p>\n<p><strong>C (Option C):</strong> Curve C is a poor test, as it is much closer to the line of no discrimination. This indicates a low sensitivity and a high false positive rate.</p>\n<p><strong>D (Option D):</strong> The dashed diagonal line (D) represents a test with no diagnostic value. This means it performs no better than random chance at classifying individuals.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>On a <strong>receiver operating characteristic (ROC)</strong> curve, a test with higher accuracy is represented by a curve that is located closer to the top-left corner of the graph.</p>",
+      "correct_choice_id": 21,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Search for unrecognised diseases</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Undertaken among persons who have very early symptoms of a diseases</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Undertaken by means of tests which can be rapidly applied</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Undertaken to sort out those who probably have the disease from those who do not have</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not a component of the concept of screening?</span></p>",
+      "unique_key": "DT1230702",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230702,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The fundamental principle of <strong>screening</strong> is to identify a disease or risk factor in an apparently <strong>asymptomatic</strong> or healthy population.</li>\n<li>A screening test is not a diagnostic tool; its purpose is to sort a population into those who are likely to have the disease and those who are not.</li>\n<li>Therefore, screening is not undertaken among individuals who already have symptoms, even if they are very early. Once symptoms appear, a person would undergo a diagnostic evaluation rather than a screening procedure.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Search for unrecognised diseases (Option A):</strong> This is a core component of screening. The primary goal is to find diseases in people who are unaware they have them.</p>\n<p><strong>Undertaken by means of tests which can be rapidly applied (Option C):</strong> This is a key practical requirement for screening. The tests must be simple, inexpensive, and quick to apply to large populations.</p>\n<p><strong>Undertaken to sort out those who probably have the disease from those who do not have (Option D):</strong> This is the direct objective of any screening test. The test divides the population into a \"screen-positive\" group (who need further diagnostic testing) and a \"screen-negative\" group.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Screening</strong> is performed on a population that is apparently healthy and <strong>asymptomatic</strong>. The presence of symptoms, even early ones, moves an individual from a screening context to a diagnostic one.</p>",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Positive predictive value</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Negative predictive value</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Usefulness of a screening test is given by</span></p>",
+      "unique_key": "DT1230703",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230703,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The primary goal of a <strong>screening test</strong> is to detect potential cases of a disease in a large, apparently healthy population.</li>\n<li>Therefore, its usefulness is best measured by its ability to correctly identify everyone who has the disease. This metric is known as <strong>sensitivity</strong>.</li>\n<li>A test with high sensitivity will have a low number of <strong>false negatives</strong>, meaning it is unlikely to miss a person with the disease.</li>\n<li>In a screening context, it is often considered more important not to miss a case than to have a few false positives.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Specificity (Option B):</strong> While very important, specificity measures the test's ability to correctly identify people who do not have the disease. A test with high specificity has a low rate of false positives but might miss many people who have the disease.</p>\n<p><strong>Positive predictive value (Option C):</strong> This value indicates the probability that a person with a positive test result actually has the disease. It is influenced by the disease prevalence, making it less of an intrinsic measure of the test's general usefulness.</p>\n<p><strong>Negative predictive value (Option D):</strong> This value indicates the probability that a person with a negative test result is truly disease-free. Like PPV, it is heavily influenced by the disease prevalence and does not reflect the test's inherent ability to find all cases.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Sensitivity</strong> is the most crucial characteristic for a screening test's usefulness because it directly measures the test's ability to correctly identify all individuals who have the disease, thus ensuring that potential cases are not missed.</p>",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Predictive accuracy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Diagnostic accuracy of a test is determined by</span></p>",
+      "unique_key": "DT1230704",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230704,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The term <strong>diagnostic accuracy</strong> refers to a test's overall ability to correctly classify individuals, whether they have the disease or not.</li>\n<li>While <strong>sensitivity</strong> and <strong>specificity</strong> are crucial components of a test's performance, they represent only one part of the picture.</li>\n<li>Sensitivity measures the test's ability to find true positives, and specificity measures its ability to find true negatives.</li>\n<li><strong>Predictive accuracy</strong>, also known as diagnostic efficiency, is the most comprehensive measure because it combines both sensitivity and specificity to give a single metric for the test's overall correctness. It reflects the proportion of all test results (both positive and negative) that were correct.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Prevalence (Option A):</strong> Prevalence is the proportion of a population with a disease. It does not measure the test's accuracy but rather influences the test's predictive values.</p>\n<p><strong>Sensitivity (Option B):</strong> This measures the test's ability to correctly identify those with the disease. While a vital metric, it only reflects one aspect of the test's performance.</p>\n<p><strong>Specificity (Option C):</strong> This measures the test's ability to correctly identify those without the disease. It, like sensitivity, is only one part of the overall diagnostic picture.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Predictive accuracy</strong> is the most comprehensive measure of a diagnostic test's overall ability to correctly classify individuals. It is calculated by considering both true positives and true negatives, providing a single metric for the test's performance.</p>",
+      "correct_choice_id": 54,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chest X-ray for TB in a large population</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Annual health check-ups</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pap smear in old females</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mammography in all young females</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Example of multiphasic screening is</span></p>",
+      "unique_key": "DT1230705",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230705,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li><strong>Annual health check-ups</strong> are a classic example of this because they typically involve a battery of tests, such as blood pressure measurement, cholesterol screening, blood glucose testing, and possibly other evaluations, all performed together to assess a person's overall health status.</li>\n<li><strong>Multiphasic screening</strong> is the process of applying two or more screening tests to an individual or population at the same time.</li>\n<li>The goal is to screen for multiple diseases or risk factors in a single, comprehensive session.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Chest X-ray for TB in a large population (Option A):</strong> This is an example of a single-test mass screening for one specific disease (tuberculosis).</p>\n<p><strong>Pap smear in old females (Option C):</strong> This is a single screening test used to detect cervical cancer, not a multiphasic approach.</p>\n<p><strong>Mammography in all young females (Option D):</strong> This is a single screening test for breast cancer. The recommendation for mammography also varies by age and risk factors, so it is not typically applied to all young females.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Multiphasic screening</strong> is defined by the simultaneous use of multiple tests to screen for various conditions, whereas single-test screening programs focus on a single disease.</p>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">TP</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">TN</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">FP</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">FN</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In assessing the validity of screening test, those subjects who test positive with the screening test but test negative by the gold standard test are called</span></p>",
+      "unique_key": "DT1230706",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230706,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The correct answer is <strong>FP</strong>, which stands for <strong>False Positive</strong>.</li>\n<li>This refers to a subject who tests positive on a screening test but is shown to be negative for the disease by the definitive <strong>gold standard</strong> diagnostic test.</li>\n<li>This is an incorrect result and is often referred to as a \"false alarm.\" A high rate of false positives can lead to unnecessary anxiety, additional diagnostic procedures, and increased healthcare costs.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>TP (Option A):</strong> This stands for <strong>True Positive</strong>. This refers to a subject who tests positive on the screening test and is also confirmed to have the disease by the gold standard test.</p>\n<p><strong>TN (Option B):</strong> This stands for <strong>True Negative</strong>. This refers to a subject who tests negative on the screening test and is also confirmed to be free of the disease by the gold standard test.</p>\n<p><strong>FN (Option D):</strong> This stands for <strong>False Negative</strong>. This refers to a subject who tests negative on the screening test but is confirmed to have the disease by the gold standard test. This is a critical error, as it can lead to delayed treatment.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>In the evaluation of a screening test, comparing its results to a gold standard diagnostic test is essential. Subjects who receive a positive result from the screening test but a negative result from the gold standard are classified as <strong>false positives (FP)</strong>.</p>",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">PPV</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">NPV</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Diagnostic power of a test to correctly exclude a disease is given by</span></p>",
+      "unique_key": "DT1230707",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230707,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The diagnostic power of a test to correctly exclude a disease is given by the <strong>Negative Predictive Value (NPV)</strong>.</li>\n<li>NPV measures the probability that a person with a negative test result truly does not have the disease.</li>\n<li>Therefore, a high NPV indicates that a test is very effective at ruling out the disease in those who test negative.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Sensitivity (Option A):</strong> Sensitivity measures a test's ability to correctly identify people who have the disease. It is used to detect, not to exclude, a disease.</p>\n<p><strong>Specificity (Option B):</strong> Specificity measures a test's ability to correctly identify people who do not have the disease among all those who are truly healthy. While it's related to correctly identifying healthy individuals, it doesn't directly measure the probability of a negative result being correct in a clinical setting.</p>\n<p><strong>PPV (Option C):</strong> Positive Predictive Value (PPV) measures the probability that a person with a positive test result actually has the disease. It is a measure of the test's power to confirm a disease, not to exclude it.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Negative Predictive Value (NPV)</strong> is the metric that directly reflects a test's power to correctly exclude a disease, as it measures the reliability of a negative test result.</p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Yield of a test depends upon</span></p>",
+      "unique_key": "DT1230708",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230708,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The <strong>yield</strong> of a test refers to its overall effectiveness in a given population. It is the number of true positives found by the test.</li>\n<li>The yield is directly dependent on <strong>all three</strong> of the factors listed. The test's inherent characteristics, <strong>sensitivity</strong> and <strong>specificity</strong>, determine how well it can correctly identify people with and without the disease. However, the number of people with the disease in the population, or its <strong>prevalence</strong>, is equally crucial.</li>\n<li>A test with high sensitivity and specificity will have a higher yield in a population with high prevalence because there are more cases to find.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>yield</strong> of a test is a measure of its overall effectiveness and is a function of the test's intrinsic properties (<strong>sensitivity</strong> and <strong>specificity</strong>) and the characteristics of the population being tested (<strong>prevalence</strong>).</p>",
+      "correct_choice_id": 94,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">90%</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">99%</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Average of 90 and 99</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cannot calculate from data</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A drug company is developing a new pregnancy test kit for use on an op basis. The company used pregnancy tests on 100 women who are known to be pregnant. Out of 100 women 99 showed a positive test. Upon using the same test on 100 non pregnant women, 90 showed negative results. What is the specificity of the test?</span></p>",
+      "unique_key": "DT1230709",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230709,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The <strong>specificity</strong> of the test is <strong>90%</strong>. This is calculated based on the test's ability to correctly identify individuals who do not have the condition. In this case, we are looking at the test's performance among the 100 non-pregnant women. Of these 100 women, 90 had a negative result, which means they were correctly identified as not being pregnant. This makes them <strong>true negatives (TN)</strong>. The remaining 10 women showed a positive result, which are <strong>false positives (FP)</strong>.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923a00b553a-9d92-4f03-af58-a6615f8f6430.PNG\">\n<p><strong>Specificity = TN / (TN + FP) &times; 100</strong></p>\n<p>= 90 / (90 + 10) &times; 100</p>\n<p>= 90 / 100 &times; 100</p>\n<p>= <strong>90%</strong></p>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>99% (Option B):</strong> This value represents the <strong>sensitivity</strong> of the test, which is the ability to correctly identify those with the condition. It is calculated as 99/100=99% among the pregnant women.</p>\n<p><strong>Average of 90 and 99 (Option C):</strong> Specificity is a specific calculation, not an average of the test's sensitivity and specificity.</p>\n<p><strong>Cannot calculate from data (Option D):</strong> All the necessary data to calculate the specificity is provided in the question.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Specificity</strong> measures a test's ability to correctly identify those who do not have the disease. It is calculated by dividing the number of <strong>true negatives</strong> by the total number of individuals who are actually disease-free.</p>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">40% and 55%</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">55% and 40%</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">40% and 84%</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">84% and 40%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A physical examination was used to screen for breast cancer in 2500 women with biopsy proven adenocarcinoma of breast and in 5000 age and race matched control women. The results of the physical examination were positive in 1000 cases and 800 control women. The sensitivity and positive predictive value of physical examination was respectively</span></p>",
+      "unique_key": "DT1230710",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230710,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The sensitivity and positive predictive value of the test are <strong>40% and 55%</strong>, respectively.</li>\n<li>This is determined by using the specific formulas for each metric with the data provided.</li>\n<li>The <strong>sensitivity</strong> measures the ability of the test to correctly identify those with the disease, and the <strong>positive predictive value (PPV)</strong> measures the probability that a positive test result is a true positive.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923edd75aaa-ded0-44bc-bd1f-5d633fb00be9.PNG\">\n<ul>\n<li><strong>Sensitivity = TP / (TP + FN) &times; 100<br /> </strong>= 1,000 / (1,000 + 1,500) &times; 100<br />  = 1,000 / 2,500 &times; 100<br />  = <strong>40%</strong></li>\n<li><strong>Positive Predictive Value (PPV) = TP / (TP + FP) &times; 100<br /> </strong>= 1,000 / (1,000 + 800) &times; 100<br />  = 1,000 / 1,800 &times; 100<br />  = <strong>5% &asymp; 55%</strong></li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Sensitivity</strong> and <strong>positive predictive value (PPV)</strong> are two different metrics. Sensitivity is an intrinsic measure of the test's ability to find disease, while PPV is a predictive value that depends on both the test's performance and the disease's prevalence in the population being tested.</p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence rate will increase</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence rate will decrease</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence rate remain constant</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cannot predict</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A new screening program was instituted in a certain country. The program used a screening test that is effective in detecting cancer Z at an early stage. Assume that there is no effective treatment for this cancer, therefore the program results in no change in the usual course of the disease. Assume also that the rates noted are calculated from all known cases of cancer Z and there were no changes in the quality of death certification of this disease. What will happen to the apparent incident rates of cancer Z in the country during the first year of this program?</span></p>",
+      "unique_key": "DT1230711",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230711,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The apparent <strong>incidence rate</strong> of cancer Z will increase during the first year of the program because the screening test is designed to detect the disease at an early, asymptomatic stage.</li>\n<li>By implementing a new screening program, many existing but previously undiagnosed cases will be found, artificially inflating the number of new diagnoses during the initial period.</li>\n<li>This phenomenon is a well-known effect of screening and is a form of <strong>lead time bias</strong>.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Incidence rate will decrease (Option B):</strong> This is incorrect. Screening programs are designed to find more cases, not fewer, which would lead to an increase in the apparent incidence rate.</p>\n<p><strong>Incidence rate remains constant (Option C):</strong> This is incorrect. The screening program will detect prevalent, asymptomatic cases, adding them to the newly diagnosed cases and causing a temporary increase in the apparent incidence rate. The true rate of new cases may not change, but the apparent rate will.</p>\n<p><strong>Cannot predict (Option D):</strong> This is incorrect because the effect of a new screening program on the apparent incidence rate is a predictable outcome.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The introduction of a new screening program typically causes a temporary increase in the apparent <strong>incidence rate</strong> of a disease because it identifies a backlog of existing, undiagnosed cases. This is a form of <strong>lead time bias</strong>.</p>",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence rate will increase</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence rate will decrease</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence rate remain constant</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cannot predict</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What will happen to the apparent prevalence rate of cancer Z in the country during the first year of this program?</span></p>",
+      "unique_key": "DT1230712",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230712,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The apparent <strong>prevalence rate</strong> of cancer Z will increase during the first year of the program.</li>\n<li>This is because the screening test is designed to find existing cases of the disease that had not yet been clinically diagnosed.</li>\n<li>These newly identified cases are added to the total number of people living with the disease in the population, thus increasing the prevalence.</li>\n<li>Since the scenario states there is no effective treatment, these cases will persist and contribute to the higher prevalence.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Prevalence rate will decrease (Option B):</strong> This is incorrect. A new screening program finds more cases, not fewer, which would lead to an increase in prevalence.</p>\n<p><strong>Prevalence rate remains constant (Option C):</strong> This is incorrect. The screening program will identify new cases, causing a change in the total number of individuals with the disease and therefore altering the prevalence rate.</p>\n<p><strong>Cannot predict (Option D):</strong> This is incorrect. Based on the established principles of epidemiology, the effects of a new screening program on the apparent prevalence rate are predictable.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The introduction of a new screening program leads to an increase in the apparent <strong>prevalence rate</strong> because it detects a greater number of existing, undiagnosed cases of the disease.</p>",
+      "correct_choice_id": 131,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mortality rate will increase</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mortality rate will decrease</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mortality rate remain constant</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cannot predict</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What will happen to the apparent mortality rate from cancer Z in the country during the first year of this program?</span></p>",
+      "unique_key": "DT1230713",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230713,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The apparent mortality rate from cancer Z will remain constant because the screening program does not affect the ultimate outcome of the disease.</li>\n<li>The scenario explicitly states that there is <strong>no effective treatment</strong> for this cancer, meaning that while the disease is being detected earlier, the natural progression to death remains unchanged.</li>\n<li>Screening programs only reduce mortality rates if there is an effective intervention that can be applied at an earlier stage.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Mortality rate will increase (Option A):</strong> This is incorrect. The screening program does not make the disease more lethal, so there is no reason for the mortality rate to increase.</p>\n<p><strong>Mortality rate will decrease (Option B):</strong> This is incorrect. A decrease in mortality would be the goal of an effective screening program, but since there is no effective treatment, the program cannot alter the death rate.</p>\n<p><strong>Cannot predict (Option D):</strong> This is incorrect. Based on the fundamental principles of epidemiology and the specific details of the scenario, the outcome is predictable.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>A screening program alone does not reduce the <strong>mortality rate</strong>. A reduction in mortality is only possible if early detection through screening is followed by an effective treatment that improves survival.</p>",
+      "correct_choice_id": 143,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Case fatality rate will increase</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Case fatality rate will decrease</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Case fatality rate remain constant</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cannot predict</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What will happen to the apparent case fatality rate from cancer Z in the country during the first year of this program?</span></p>",
+      "unique_key": "DT1230714",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230714,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The apparent <strong>case fatality rate</strong> will decrease during the first year of the program. This is a statistical artifact known as <strong>lead time bias</strong>.</li>\n<li>The case fatality rate is calculated by dividing the number of deaths from the disease by the number of people diagnosed with the disease.</li>\n<li>From the previous questions, we know that the number of deaths (the numerator) remains constant because there is no effective treatment. However, the number of diagnosed cases (the denominator) increases due to the early detection of asymptomatic cases by the screening program. A constant numerator and an increasing denominator lead to a lower rate.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Case fatality rate will increase (Option A):</strong> An increasing number of diagnosed cases with a constant number of deaths will cause the rate to decrease, not increase.</p>\n<p><strong>Case fatality rate will remain constant (Option C):</strong> The number of diagnosed cases (the denominator) changes with the introduction of screening, so the rate cannot remain constant.</p>\n<p><strong>Cannot predict (Option D):</strong> The effect of a new screening program on the apparent case fatality rate is a predictable outcome based on the scenario's parameters.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>A screening program can cause the apparent <strong>case fatality rate</strong> to decrease, even when there is no effective treatment. This is a statistical artifact caused by <strong>lead time bias</strong>, as the number of diagnosed cases increases while the number of deaths remains unchanged.</p>\n<p>&nbsp;</p>",
+      "correct_choice_id": 152,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dr. Kidd will correctly identify more people with streptococcal infection than Dr. Childs</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dr. Kidd will correctly identify fewer people with streptococcal infection than Dr. Childs</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dr. Kidd will correctly identify more people without streptococcal infection than Dr. Childs</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">The prevalence of streptococcal infection is needed to determine which pediatrician will correctly identify the larger number of people with disease</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Two pediatricians want to investigate a new laboratory test that identifies streptococcal infections. Dr. Kidd uses the standard culture test, which has a sensitivity of 90% and specificity of 96%. Dr. Childs uses the new test with 96% sensitivity and 96% specificity. If 200 patients undergo culture with both tests, which of the following is correct</span></p>",
+      "unique_key": "DT1230715",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230715,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>Kidd will correctly identify fewer people with the streptococcal infection than Dr. Childs because his test has a lower <strong>sensitivity</strong>.</li>\n<li><strong>Sensitivity</strong> is the measure of a test's ability to correctly identify all individuals who have a disease (true positives).</li>\n<li>Since Dr. Kidd's test has a sensitivity of 90% and Dr. Childs' test has a sensitivity of 96%, Dr. Childs' test will correctly identify a larger proportion of the people who are actually infected.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Dr. Kidd will correctly identify more people with streptococcal infection than Dr. Childs (Option A):</strong> A lower sensitivity means Dr. Kidd's test will miss more cases, leading to fewer correct identifications of people with the infection.</p>\n<p><strong>Dr. Kidd will correctly identify more people without streptococcal infection than Dr. Childs (Option C):</strong> The ability to correctly identify people without the disease is measured by <strong>specificity</strong>. Both tests have a specificity of 96%, so they would perform equally in this regard.</p>\n<p><strong>The prevalence of streptococcal infection is needed to determine which pediatrician will correctly identify the larger number of people with disease (Option D):</strong> While prevalence would be needed to calculate the <em>exact number</em> of people correctly identified, the relative performance of the two tests is already clear from their sensitivity values.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>When comparing two tests, the one with the higher <strong>sensitivity</strong> will correctly identify a greater proportion of the individuals who have the disease.</p>",
+      "correct_choice_id": 162,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">90%</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">81%</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">50%</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">91%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A diagnostic test for a particular disease has a sensitivity of 0.90 and specificity of 0.90. A single test is applied to each subject in the population in which the diseased population is 10%. What is the probability that a person positive to this test has the disease?</span></p>",
+      "unique_key": "DT1230716",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230716,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The probability that a person who tests positive actually has the disease is <strong>50%</strong>. This value is known as the <strong>positive predictive value (PPV)</strong> of the test. The PPV is highly dependent on the <strong>prevalence</strong> of the disease in the population, in addition to the test's sensitivity and specificity.</li>\n<li>To calculate the PPV, we can imagine a hypothetical population of 1000 people. With a disease prevalence of 10%, there are 100 people with the disease and 900 people without the disease.</li>\n</ul>\n<ol>\n<li><strong>Calculate True Positives (TP):</strong> The number of people with the disease who test positive. With a sensitivity of 0.90, this is 0.90&times;100=90.</li>\n<li><strong>Calculate False Positives (FP):</strong> The number of people without the disease who test positive. With a specificity of 0.90, 90% of the healthy population will test negative (0.90&times;900=810 true negatives). The remaining 10% will test positive, so 0.10&times;900=90.</li>\n</ol>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923a4a531ff-4f89-42e9-8b7d-da83f11ae2d1.PNG\">\n<p><strong>PPV = TP / (TP + FP) &times; 100</strong></p>\n<p>= 90 / (90 + 90) &times; 100</p>\n<p>= 90 / 180 &times; 100</p>\n<p>= <strong>50%</strong></p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>positive predictive value (PPV)</strong> is the probability that a positive test result is a true positive. It is a clinical measure that is heavily influenced by the disease <strong>prevalence</strong> in the population.</p>",
+      "correct_choice_id": 173,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity of a temperature &gt; 37.50C as a marker for appendicitis is 21/49</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity of a temperature &gt; 37.50C as a marker for appendicitis is 42/70</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">PPV of   temperature &gt; 37.50C as a marker for appendicitis is 21/30</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity of test will depend upon the prevalence of appendicitis in the population to which it is applied</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a group of patients presenting to a hospital emergency with abdominal pain, 30% of patients have acute appendicitis. 70% of patients with appendicitis have a temperature &gt; 37.50C and 40% of patients without appendicitis have temperature &gt; 37.50C. Considering these findings, which of the following statement is true</span></p>",
+      "unique_key": "DT1230717",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230717,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The correct statement is that the <strong>specificity</strong> of the temperature marker is <strong>42/70</strong>. <strong>Specificity</strong> is the ability of a test to correctly identify individuals who do not have the disease. From the problem, 70% of the patients do not have appendicitis. Of these, 40% have the marker (a temperature &gt; 37.5&deg;C), making them <strong>false positives</strong>.</li>\n<li>This means that 60% of them do not have the marker, making them <strong>true negatives</strong>. Therefore, the specificity is 60%, which can be represented as the fraction of true negatives (0.60 * 70) over the total number of people without the disease (70), which is 42/70.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Sensitivity of a temperature &gt; 37.50C as a marker for appendicitis is 21/49 (Option A):</strong>The sensitivity is given as 70%. Based on a population of 100, there are 30 people with appendicitis, and 70% of them (21 people) have the marker. The sensitivity is therefore 21/30, not 21/49.</p>\n<p><strong>PPV of temperature &gt; 37.50C as a marker for appendicitis is 21/30 (Option C):</strong> The PPV is calculated as true positives over all positive results. The true positives are 21. The total positive results are the sum of true positives (21) and false positives (0.40&times;70=28), which equals 49. Therefore, the PPV is 21/49, not 21/30.</p>\n<p><strong>Specificity of test will depend upon the prevalence of appendicitis in the population to which it is applied (Option D):</strong> Specificity is an intrinsic property of a test and does not depend on the prevalence of the disease in the population.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Specificity</strong> measures a test's ability to correctly identify individuals who are free of a disease and is calculated as the number of <strong>true negatives</strong> divided by the total number of healthy individuals. This metric is independent of the disease's prevalence</p>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">100%</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">95%</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">90%</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">75%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient in your op has a one in four chance of having a serious disease. You order a diagnostic test with sensitivity of 95% and specificity of 90%. The result comes back positive. Based on all the information available, the chance your patient really has the disease is closest to</span></p>",
+      "unique_key": "DT1230718",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230718,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The chance the patient really has the disease is approximately 76%, which is closest to <strong>75%</strong>.</li>\n<li>This value represents the <strong>positive predictive value (PPV)</strong> of the test.</li>\n<li>The PPV is the probability that a person with a positive test result actually has the disease, and it is a function of the test's sensitivity and specificity as well as the disease's <strong>prevalence</strong> in the population.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403231a4e69b2-e178-4ee3-b8ee-e7550a2d8520.jpg\">\n<p>Probability of disease given positive result={(Prevalence&times;Sensitivity)+((1-Prevalence)&times;(1-Specificity))Prevalence&times;Sensitivity} *100</p>\n<p>Given a prevalence of one in four (25%), sensitivity of 95%, and specificity of 90%, the calculation would yield:</p>\n<p>={0.25&times;0.95(0.25&times;0.95)+(0.75&times;0.10)} *100</p>\n<p>= {(0.25&times;0.95)+(0.75&times;0.10)0.25&times;0.95} *100</p>\n<p>=(0.23750.2375+0.075)* 100 &asymp;76%</p>\n<p>So, the chance the patient truly has the disease given a positive test result is closest to 76%, which is approximately 75%.</p>",
+      "correct_choice_id": 194,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">1%</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">2%</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">5%</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">10%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient in your op has a one in four chance of having a serious disease. You order a diagnostic test with sensitivity of 95% and specificity of 90%. The result comes back negative. Based on all the information now available, the chance your patient really has the disease is closest to</span></p>",
+      "unique_key": "DT1230719",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230719,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul style=\"list-style-type: disc;\">\n<li>The chance that the patient really has the disease, given a negative test result, is approximately <strong>2%</strong>. This value is the probability of a <strong>false negative</strong> and is calculated using Bayes' theorem. It is not the same as the pre-test probability (prevalence) or the false negative rate (1 - sensitivity), as it takes into account all the available information.</li>\n<li>To find this value, we can use a hypothetical population of 1000 people and a contingency table.\n<ul>\n<li><strong>Prevalence:</strong> 1 in 4, or 25% (0.25). So, there are 250 people with the disease and 750 without it.</li>\n<li><strong>False negatives (FN):</strong> The number of people with the disease who test negative. This is calculated as the total number with the disease multiplied by the false negative rate, which is 1&minus;sensitivity. So, 250&times;(1&minus;0.95)=250&times;0.05=12.5.</li>\n<li><strong>True negatives (TN):</strong> The number of people without the disease who test negative. This is the total number without the disease multiplied by the specificity. So, 750&times;0.90=675.</li>\n</ul>\n</li>\n<li>The total number of negative test results is the sum of <strong>FN</strong> and <strong>TN</strong>: 12.5+675=687.5.</li>\n<li>The probability of a false negative is the number of false negatives divided by the total number of negative results:<br /> P(Disease-Negative)=Total Negative ResultsFalse Negatives=687.512.5&asymp;0.0182</li>\n<li>This translates to a probability of approximately <strong>82%</strong>, which is closest to 2%.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>The probability of having a disease after a negative test result is the <strong>false negative probability</strong>. This value is influenced by prevalence, sensitivity, and specificity, and is not the same as the false negative rate (1 - sensitivity).</p>",
+      "correct_choice_id": 202,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity and Specificity are directly proportional to each other</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity and Specificity are inversely proportional to each other</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity and Specificity are not related to each other</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">All are false</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is true regarding the relationship between sensitivity and specificity</span></p>",
+      "unique_key": "DT1230722",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230722,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Sensitivity</strong> and <strong>specificity</strong> have an <strong>inverse relationship</strong>. This means that as one increases, the other tends to decrease.</li>\n<li>A test's threshold can be adjusted to make it more sensitive (better at detecting true positives), but this often comes at the cost of classifying more healthy individuals as having the disease, thus lowering its specificity.</li>\n<li>Conversely, making a test more specific (better at correctly identifying healthy individuals) may cause it to miss more true cases, thereby lowering its sensitivity. This <strong>trade-off</strong> is a fundamental concept in evaluating diagnostic tests.</li>\n</ul>\n<p><strong>Explanation of Other Options</strong></p>\n<p><strong>Sensitivity and Specificity are directly proportional to each other (Option A):</strong> This is incorrect because increasing one typically leads to a decrease in the other due to the inherent trade-off in setting a diagnostic threshold.</p>\n<p><strong>Sensitivity and Specificity are not related to each other (Option C):</strong> This is incorrect. While they measure different aspects of a test's performance, they are related through the test's cut-off point. Adjusting the cut-off to improve one will impact the other.</p>\n<h3><strong>Key Takeaway</strong></h3>\n<p><strong>Sensitivity</strong> and <strong>specificity</strong> are inversely related. The more a test is optimized to be sensitive, the less specific it becomes, and vice versa. This is a crucial concept in understanding the performance of a diagnostic test.</p>",
+      "correct_choice_id": 212,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">False positives</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">All the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If we decide to keep 200mg/dl as the cut-off for distinguishing between diabetes and non-diabetes instead of 126mg/dl for fasting blood sugar then there will be an increase in</span></p>",
+      "unique_key": "DT1230738",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230738,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<ul style=\"list-style-type: disc;\">\n<li>Raising the cut-off point for a diagnostic test makes the criteria for a positive result stricter, which increases the test's <strong>specificity</strong>.</li>\n<li>Specificity measures the ability of a test to correctly identify individuals who do not have the disease.</li>\n<li>By increasing the cut-off for diabetes from 126 mg/dL to 200 mg/dL, fewer people who are truly non-diabetic will be incorrectly classified as having the disease (fewer <strong>false positives</strong>).</li>\n<li>This reduction in false positives directly improves the test's specificity. This change comes with a trade-off: <strong>sensitivity</strong> will decrease because the test will now miss some true cases of diabetes, classifying them as <strong>false negatives</strong>.</li>\n</ul>\n<p><strong>Explanation of Other Options</strong></p>\n<p><strong>Sensitivity (Option A):</strong> Sensitivity refers to the ability of a test to correctly identify individuals with the condition. Changing the cutoff to a higher value will cause some people with true diabetes (whose blood sugar is between 126 and 200 mg/dL) to be classified as non-diabetic, thus increasing the number of false negatives and decreasing sensitivity.</p>\n<p><strong>False positives (option C):</strong> False positives occur when an individual without the disease is incorrectly identified as having it. By raising the cut-off, it becomes more difficult to get a positive result, reducing the number of false positives.</p>\n<p><strong>All the above (option D):</strong> This is incorrect because, as explained, sensitivity and false positives will likely decrease, while specificity increases.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Raising a diagnostic test's cut-off point increases its <strong>specificity</strong> (better at ruling out disease) but decreases its <strong>sensitivity</strong> (worse at detecting disease). The opposite is true when lowering the cut-off.</p>",
+      "correct_choice_id": 222,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 24,
+      "choices": [
+        {
+          "id": 231,
+          "text": "<p><span style=\"font-size:12.0pt;\">More sensitive more specific</span></p>"
+        },
+        {
+          "id": 232,
+          "text": "<p><span style=\"font-size:12.0pt;\">Less sensitive more specific</span></p>"
+        },
+        {
+          "id": 233,
+          "text": "<p><span style=\"font-size:12.0pt;\">More sensitive less specific</span></p>"
+        },
+        {
+          "id": 234,
+          "text": "<p><span style=\"font-size:12.0pt;\">Less sensitive less specific</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A scientist discovered a serum marker for carcinoma ovary which helps in early identification of a disease. In comparison with the green line the red line is?A scientist discovered a serum marker for carcinoma ovary which helps in early identification of a disease. In comparison with the green line the red line is?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240614d2b9bc79-8513-4bc6-a1f8-47165e610375.jpg\"></span></p>",
+      "unique_key": "DT1230739",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230739,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The red line, representing the newly discovered serum marker, has less false positive and false negative results compared to the green line, and is therefore more sensitive and more specific.</p>\n<p>The new serum marker is likely more sensitive and more specific compared to the existing marker (green line), indicating its effectiveness in early identification of ovarian carcinoma. This aligns with option A, as a test that is both more sensitive and more specific has superior performance in detecting true positives and true negatives, making it an overall better diagnostic tool.</p>\n<p><strong>Explanation of Other Options</strong>:</p>\n<p><strong>Less sensitive more specific (Option B):</strong> This is incorrect because a marker with less sensitivity may miss detecting cases, especially in the early stages, which contradicts the purpose of early identification.</p>\n<p><strong>More sensitive less specific (Option C):</strong> This is incorrect because a marker with high sensitivity but low specificity may result in a higher rate of false positives, which doesn't align with the idea of effective early identification that requires both high sensitivity and high specificity.</p>\n<p><strong>Less sensitive, less specific (option D):</strong> This is incorrect because if both markers were less sensitive and less specific, they would likely be ineffective in accurately identifying cases of ovarian carcinoma.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>An effective diagnostic marker for early identification should ideally be both more sensitive and more specific, which means it is better at correctly identifying individuals with and without the disease.</p>",
+      "correct_choice_id": 231,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 25,
+      "choices": [
+        {
+          "id": 241,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence of depression</span></p>"
+        },
+        {
+          "id": 242,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 243,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 244,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both B & C</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A general practitioner decides to use a screening test for his patients. The prevalence of depression among his patients is estimated to be 5%. The following measures are identical whether the test is applied to general practice patients or to the psychiatric outpatients:</span></p>",
+      "unique_key": "DT1230741",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230741,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The correct answer is <strong>Both sensitivity and specificity</strong> are inherent properties of a screening test and remain constant regardless of the population to which the test is applied.</p>\n<ul>\n<li><strong>Sensitivity</strong> measures the test's ability to correctly identify those with the disease (true positives).</li>\n<li><strong>Specificity</strong> measures the test's ability to correctly identify those without the disease (true negatives).</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Prevalence of depression (Option A):</strong> The prevalence of a disease is a measure of its frequency within a specific population at a given time. This value will change depending on the population being tested, such as the difference between a general practice and a psychiatric outpatient clinic.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Sensitivity and specificity</strong> are intrinsic properties of a test and do not change with the population being tested. <strong>Prevalence</strong> is a characteristic of the population and is therefore variable.</p>",
+      "correct_choice_id": 244,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "title": "Z_Score_And_Skewing"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">9</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">10</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">2</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">1</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The Hb level in healthy woman has the mean 13.5g/dl and SD 1.5g/dl. What is the Z score for a woman with Hb 15g/dl?</span></p>",
+      "unique_key": "DT1231750",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231750,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>Z-score</strong> is a standardized value that tells us <strong>how many standard deviations</strong> a given data point is from the mean. It is calculated using the formula:</p>\n<p>Z = (X - &mu;)/ &sigma;</p>\n<p><u>Where:</u></p>\n<ul>\n<li>X is the value we want to standardize (in this case, the Hb level of the woman, which is 15 g/dl),</li>\n<li>&mu; is the mean of the population (13.5 g/dl), and</li>\n<li>&sigma; is the standard deviation of the population (1.5 g/dl).</li>\n</ul>\n<p>Z = (15 - 13.5)/ 1.5 = 1.5/1.5 =1</p>\n<p>So, the Z-score for a woman with an Hb level of 15 g/dl is 1.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923c87144b4-f79b-45e0-8fa4-4ffef085bfed.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>Z-score tells how many <strong>standard deviations</strong> a value is <strong>above or below the mean</strong>, and is calculated as:<br /><strong>Z = (X - Mean) / SD</strong></p>",
+      "correct_choice_id": 4,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Symmetric</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Right skewed </span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left skewed\t</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Either symmetric or skewed</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">For a given set of values, Mean = 20, Median = 24, and Mode = 26. The given distribution is:</span></p>",
+      "unique_key": "DT1231752",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231752,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>A distribution is said to be <strong>left-skewed (negatively skewed)</strong> when:</p>\n<ul>\n<li><strong>Mean &lt; Median &lt; Mode</strong></li>\n</ul>\n<p>This indicates that the <strong>tail of the distribution extends to the left</strong>, pulling the mean lower than the median and mode.</p>\n<p>In this case:</p>\n<ul>\n<li>Mean = 20</li>\n<li>Median = 24</li>\n<li>Mode = 26</li>\n</ul>\n<p>&rarr; So, <strong>mean &lt; median &lt; mode</strong>, confirming <strong>left (negative) skewness</strong>.</p>\n<p><strong>Visual Aid:</strong></p>\n<p>Left-Skewed (Negatively Skewed) Curve</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509233e06800d-7b72-4091-ac26-72947e8cc366.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Symmetric (Option A):</strong> Symmetric implies <strong>mean = median = mode</strong></p>\n<p><strong>Right skewed (Option B):</strong> Would require <strong>mean &gt; median</strong></p>\n<p><strong>Either symmetric or skewed (Option D):</strong> Too vague; this dataset <strong>clearly shows skewness</strong></p>\n<p><strong>Key Takeaway:</strong></p>\n<p>When <strong>mean &lt; median &lt; mode</strong>, the distribution is <strong>negatively skewed (left-skewed)</strong>.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Skewed to the right</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Skewed to the left</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Symmetrical</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">None </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">State whether the data reflecting the age at death of individuals in the general population are likely to be skewed to the right, skewed to the left, or symmetrical:</span></p>",
+      "unique_key": "DT1231754",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231754,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Age at death is <strong>negatively (left) skewed</strong> because a majority of people die in old age, but a small number die prematurely, pulling the tail to the left.</p>\n<ul>\n<li><strong>Left-skewed distribution</strong> has a <strong>longer tail on the left</strong> (lower values) and most data clustered toward higher values.</li>\n<li><strong>Natural upper limit</strong>: Most deaths occur after a certain age (e.g., 60-80), and very few people die at extremely low ages in a general population.</li>\n<li><strong>Early mortality</strong> due to accidents, congenital disorders, or diseases occurs less frequently but affects the left side of the curve.</li>\n<li>Therefore, the data is not symmetric and the <strong>mean &lt; median &lt; mode</strong>, characteristic of a <strong>left-skewed curve</strong>.</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923e8f7a812-3172-4334-82f6-28d87408892e.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Skewed to the right (Option A):</strong> Applies to data like income or housing prices, not applicable here.</p>\n<p><strong>Symmetrical (Option C):</strong> Would imply equal distribution around the mean, which is not true for age at death.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>In general population data, <strong>age at death follows a left-skewed distribution</strong>, with a long tail toward younger ages and clustering around older ages.</p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Positively skewed</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Skewed to the right</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asymmetrical</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following terms accurately describe the distribution shown in the figure?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241105f5a93494-6ea3-4923-94b2-a89ef4bd3006.jpeg\"></span></p>",
+      "unique_key": "DT1231755",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231755,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>A distribution that shows a long tail towards higher values is:</p>\n<ul>\n<li><strong>Positively skewed (Option A):</strong>\n<ul>\n<li>The tail is stretched toward the right (higher values), with more data clustered on the lower side. The <strong>mean &gt; median &gt; mode</strong>.</li>\n</ul>\n</li>\n<li><strong>Skewed to the right (Option B):</strong>\n<ul>\n<li>This is a synonymous term with \"positively skewed.\" Both describe a distribution that has a <strong>long right tail</strong>.</li>\n</ul>\n</li>\n<li><strong>Asymmetrical (Option C):</strong>\n<ul>\n<li>The curve is <strong>not mirror-image</strong> around the center. Skewed distributions are inherently asymmetrical.</li>\n</ul>\n</li>\n</ul>\n<p>Since all three terms correctly describe the same type of distribution shown in the figure, the correct answer is <strong>All of the above (Option D).</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923e6870fd7-544f-4198-a3b6-0deb1b90c08c.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>A right-tailed distribution is <strong>positively skewed</strong>, <strong>skewed to the right</strong>, and <strong>asymmetrical</strong>-all of which apply.</p>",
+      "correct_choice_id": 34,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Interquartile range</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Range</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following are considered measures of spread?</span></p>",
+      "unique_key": "DT1231757",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231757,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Measures of spread (or dispersion) reflect how much the values in a dataset vary around the central tendency:</p>\n<ul>\n<li><strong>Interquartile Range (Option A):</strong>\n<ul>\n<li>Measures the range within the <strong>middle 50%</strong> of the data (between Q1 and Q3).</li>\n<li><strong>Less sensitive to outliers</strong>, making it useful in skewed distributions.</li>\n</ul>\n</li>\n<li><strong>Range (Option B):</strong>\n<ul>\n<li><strong>Simple difference</strong> between maximum and minimum values.</li>\n<li>It reflects total spread but is <strong>highly affected by outliers</strong>.</li>\n</ul>\n</li>\n<li><strong>Standard Deviation (Option C):</strong>\n<ul>\n<li>Quantifies <strong>average distance</strong> of data points from the mean.</li>\n<li>A <strong>commonly used measure</strong> for normally distributed data.</li>\n</ul>\n</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509234ec4f5e3-d3b5-4f91-ac00-65fa4686ca82.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>All three-range, interquartile range, and standard deviation-are recognized measures of spread in statistics.</p>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean - Mode / SD</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mode - Mean / SD</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">SD / Mean - Mode</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">SD / Median - Mode</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Pearson's skewness coefficient is given by:</span></p>",
+      "unique_key": "DT1231767",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231767,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Pearson's first coefficient of skewness quantifies the direction and magnitude of asymmetry in a distribution using:</p>\n<p><strong>Skewness = (Mean - Mode) / Standard Deviation</strong></p>\n<ul>\n<li>If <strong>Mean &gt; Mode</strong>, the distribution is <strong>positively skewed</strong></li>\n<li>If <strong>Mean &lt; Mode</strong>, the distribution is <strong>negatively skewed</strong></li>\n</ul>\n<p>This method is most appropriate for unimodal and roughly symmetric distributions.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509235d8b76d7-d826-41c4-86b8-94661d617563.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>Pearson's first skewness coefficient = (Mean - Mode) / Standard Deviation; used to assess symmetry in data.</p>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Qualitative data</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Quantitative continuous data</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Discrete data</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nominal data</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Histogram is used as a method of presentation for:</span></p>",
+      "unique_key": "DT1231783",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231783,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Histograms are graphical representations primarily used for <strong>quantitative continuous data</strong>.</p>\n<ul>\n<li>The <strong>x-axis</strong> shows continuous intervals (bins), and the <strong>y-axis</strong> shows frequency.</li>\n<li>Unlike bar charts, the bars in a histogram <strong>touch each other</strong>, reflecting the continuity of the data.</li>\n</ul>\n<p>They are ideal for:</p>\n<ul>\n<li>Displaying the shape (e.g., normal, skewed) of data</li>\n<li>Observing central tendency and dispersion</li>\n<li>Identifying outliers or modes in continuous datasets</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509238e2883c0-d2fc-46e2-bae2-bf77b62f6d5e.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Qualitative data (Option A):</strong> Presented using <strong>bar charts or pie charts</strong>, not histograms, because categories have no numerical scale.</p>\n<p><strong>Discrete data (Option C):</strong> While histograms <em>can</em> be adapted for discrete data, <strong>bar charts</strong> are typically preferred since the values are countable and not continuous.</p>\n<p><strong>Nominal data (Option D):</strong> Also qualitative, with no inherent order - best displayed using <strong>bar or pie charts</strong>, not histograms.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Histograms are best used to represent the frequency distribution of continuous quantitative data.</strong></p>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Original standard deviation &times; 10</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Original standard deviation &divide;10</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Original standard deviation  - 10</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Original standard deviation itself</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If each value of a given group of observations is multiplied by 10, what will be the standard deviation of the resulting dataset?</span></p>",
+      "unique_key": "DT1231801",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231801,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>When every observation in a dataset is <strong>multiplied by a constant (k)</strong>:</p>\n<ul>\n<li>The <strong>mean</strong> becomes &mu;&prime;=k&mu;\\mu' = k\\mu&mu;&prime;=k&mu;</li>\n<li>The <strong>standard deviation</strong> becomes &sigma;&prime;=k&sigma;\\sigma' = k\\sigma&sigma;&prime;=k&sigma;</li>\n</ul>\n<p>Thus, multiplying all values by <strong>10</strong> will result in:</p>\n<ul>\n<li>New standard deviation = <strong>10 &times; original SD</strong></li>\n</ul>\n<p>This is because <strong>standard deviation is a measure of spread</strong>, and stretching the data by a constant factor stretches the spread by the same factor.</p>\n<p><strong>Related Important Points:</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509233b770b72-75f4-4dcf-9cfb-8dff9460fab8.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>When a dataset is <strong>multiplied by a constant</strong>, the <strong>standard deviation is scaled by the same constant</strong>.</p>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Since both mean and standard deviation are equal it should be a symmetric distribution</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">The distribution is likely to be positively skewed</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">The distribution is likely to be negatively skewed</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nothing can be said conclusively</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The distribution of random blood glucose measurements from 50 first-year medical students was found to have a mean of 3.0 mmol/litre with a standard deviation of 3.0 mmol/litre. Which of the following is a correct statement about the shape of distribution of random blood glucose in these first-year medical students?</span></p>",
+      "unique_key": "DT1231804",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231804,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Knowing only the <strong>mean</strong> and <strong>standard deviation</strong> is <strong>insufficient to determine the shape</strong> of a distribution. These two parameters provide information about the <strong>central tendency</strong> and <strong>spread</strong> of the data, but <strong>not about skewness or symmetry</strong>.</p>\n<ul>\n<li>A <strong>mean = standard deviation</strong> does <strong>not imply</strong> symmetry or any specific skew.</li>\n<li>The shape of the distribution (normal, skewed, bimodal, etc.) depends on <strong>higher-order moments</strong> like <strong>skewness</strong> and <strong>kurtosis</strong>, which are not given in this scenario.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Since both mean and standard deviation are equal it should be a symmetric distribution</strong> <strong>(Option A) :</strong> Equal mean and SD doesn't confirm symmetry; it's not a mathematical criterion.</p>\n<p><strong>The distribution is likely to be positively skewed (Option B):</strong> In a positively skewed distribution, the mean is usually <strong>greater than</strong> the median-not always equal to SD.</p>\n<p><strong>The distribution is likely to be negatively skewed (Option C):</strong> In a negatively skewed distribution, the mean is typically <strong>less than</strong> the median-not linked to SD.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923f59f924c-7c47-407e-9004-42dd52fda462.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Without skewness or data visualization, the shape of a distribution cannot be inferred solely from mean and SD.</strong></p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">99%</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">95%</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">68%</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">65%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a normal distribution, how much of the sample is included within 1.95 standard deviations of the mean?</span></p>",
+      "unique_key": "DT1231805",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231805,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<h3><strong>Explanation:</strong></h3>\n<p>According to the <strong>Empirical Rule (68-95-99.7 rule)</strong>:</p>\n<ul>\n<li>Approximately <strong>68%</strong> of values lie within <strong>&plusmn;1 SD</strong></li>\n<li>Approximately <strong>95%</strong> of values lie within <strong>&plusmn;2 SD</strong></li>\n<li>Approximately <strong>7%</strong> of values lie within <strong>&plusmn;3 SD</strong></li>\n</ul>\n<p>Since <strong>1.95 SD</strong> is very close to <strong>2 SD</strong>, the percentage of the data included is approximately <strong>95%</strong>.</p>\n<p>This rule applies only to <strong>normal distributions</strong>, and is used to interpret <strong>Z scores</strong> and <strong>confidence intervals</strong>.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509231690652e-7a48-43ab-b017-ce454f6a1619.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>In a <strong>normal distribution</strong>, <strong>95%</strong> of the values lie within <strong>&plusmn;1.95 to &plusmn;2 SD</strong> from the mean.</p>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">8.6 gm/dl</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">7.31 gm/dl</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">6.6 gm/dl</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">5.0 gm/dl</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Mean haemoglobin of a group of pregnant females is found to be 10.6 gm/dl with standard deviation of 2 gm/dl. 5% pregnant females in this group will have their hemoglobin below</span></p>",
+      "unique_key": "DT1231806",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231806,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>To find the haemoglobin level below which 5% of pregnant females in this group will have their haemoglobin, we need to use the concept of z-scores and the standard normal distribution.</p>\n<p>Given:</p>\n<ul>\n<li>Mean (&mu;) = 10.6 gm/dl</li>\n<li>Standard deviation (&sigma;) = 2 gm/dl</li>\n<li>Desired percentile = 5%</li>\n</ul>\n<p>We will first find the z-score corresponding to the 5th percentile using the standard normal distribution table or a calculator:</p>\n<p>z=Inverse Normal CDF (0.05)</p>\n<p>Once we have the z-score, we can use it to find the corresponding haemoglobin level (x) using the formula:</p>\n<p>Z = (X - &mu;)/ &sigma;</p>\n<p>X = (Z * &sigma;) + &mu;</p>\n<p>z=Inverse Normal CDF (0.05)</p>\n<p>z &asymp; -1.645</p>\n<p>X = (-1.645 * 2) + 10.6 =</p>\n<p>X &asymp; -3.29 + 10.6</p>\n<p>X &asymp; 7.31 gm/d</p>\n<p>So, the haemoglobin level below which 5% of pregnant females in this group will have their haemoglobin is approximately 7.31 gm/dl.</p>",
+      "correct_choice_id": 102,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data is symmetrical</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data is negatively skewed</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data is positively skewed</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data is symmetrically skewed</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An obstetrician used the APGAR score to assess the health of 30 newborn infants. The results showed most of them with scores >7. What is the correct interpretation of the data distribution?</span></p>",
+      "unique_key": "DT1231807",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231807,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>When the <strong>majority of data points are clustered toward the higher end</strong> of a scale (e.g., scores &gt;7 in this case), the <strong>distribution has a longer tail on the left side</strong>. This is known as a <strong>negatively skewed distribution</strong>.</p>\n<ul>\n<li>The APGAR score ranges from 0 to 10.</li>\n<li>Scores &gt;7 are considered <strong>normal and healthy</strong>, so if most newborns score &gt;7, the bulk of the data is on the <strong>right side</strong>.</li>\n<li>Therefore, the <strong>tail</strong> (i.e., fewer values) would be on the <strong>left</strong>, which defines <strong>negative skewness</strong>.<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092357fe3915-8015-48c3-a1c4-221e99ce2c89.png\"></li>\n<li>The <strong>peak is on the right</strong> (scores &gt;7).</li>\n<li>The <strong>left tail is longer</strong>, indicating <strong>negative skew</strong>.</li>\n</ul>\n<h3><strong>Explanation of other options:</strong></h3>\n<p><strong>Data is symmetrical (Option A):</strong> Symmetry implies equal distribution around the center. Since most scores are high (&gt;7), the distribution is skewed, not symmetrical.</p>\n<p><strong>Data is positively skewed (Option C) :</strong> Positive skew has a long <strong>right</strong> tail and concentration of values on the <strong>left</strong>. This is opposite to the scenario.</p>\n<p><strong>Data is symmetrically skewed (Option D) : </strong>No such statistical term exists. Skewness is directional - either <strong>positive</strong> or <strong>negative</strong>.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923d1151197-7769-4103-96fe-bd8be203cf3b.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>If most values in a dataset are <strong>high</strong>, the distribution will have a <strong>negative skew</strong> (tail on the left).</p>",
+      "correct_choice_id": 112,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

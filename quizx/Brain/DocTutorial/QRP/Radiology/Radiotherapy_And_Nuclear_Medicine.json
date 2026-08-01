@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "title": "Radiotherapy_And_Nuclear_Medicine"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Away from the patient</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">In proximity to the patient or within the patient</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">In the adjacent room</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Approximately 1 m away from the patient</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Where is the radiation source kept in brachytherapy?</span></p>",
+      "unique_key": "DT1290588",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290588,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Brachytherapy, also known as sealed source radiotherapy or endocurietherapy, is a targeted form of radiotherapy where a radioactive source is placed directly within or near the treatment area.</strong></p>\r\n<h3><strong>Indications for Brachytherapy</strong></h3>\r\n<p>Brachytherapy is utilized for various types of cancer and benign conditions, including:</p>\r\n<ul>\r\n<li><strong>Prostate Cancer</strong></li>\r\n<li><strong>Breast Cancer</strong>(often post-lumpectomy)</li>\r\n<li><strong>Cervical Cancer</strong></li>\r\n<li><strong>Head and Neck Cancers</strong></li>\r\n<li><strong>Endoluminal Tumors</strong></li>\r\n<li><strong>Esophageal Cancer</strong></li>\r\n<li><strong>Endobronchial Tumors</strong></li>\r\n<li><strong>Cutaneous and Ocular Cancers</strong></li>\r\n<li><strong>Meningioma</strong></li>\r\n<li><strong>Benign Conditions</strong>(e.g., pterygium, keloid scarring)</li>\r\n</ul>\r\n<h3><strong>Radiographic Features</strong></h3>\r\n<p>On plain radiography and CT imaging, brachytherapy seeds appear as multiple small linear metallic density radiopacities, commonly seen within the prostate in cases of prostate cancer treatment.</p>\r\n<h3><strong>Side Effects</strong></h3>\r\n<p>The treatment can be associated with various side effects, particularly in prostate cancer:</p>\r\n<ul>\r\n<li><strong>Urinary Symptoms</strong>: Often short-lived, including frequency, urgency, or dysuria.</li>\r\n<li><strong>Infertility or Impotence</strong></li>\r\n<li><strong>Migration of Seeds</strong>: Seeds may migrate out of the treatment region, necessitating urine filtration to recover radioactive seeds.</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY: Brachytherapy allows for localized radiation delivery.</strong></p>\r\n<p><strong>It minimizes exposure to surrounding healthy tissues</strong>.</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">It delivers radiotherapy over a wide range of area</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">It delivers radiotherapy to a precise point of lesion</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">It delivers radiotherapy according to the shape of the tumor</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">It delivers radiotherapy according to size of tumor</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is IMRT?</span></p>",
+      "unique_key": "DT1290592",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290592,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Intensity-Modulated Radiation Therapy (IMRT) is an advanced form of conformal radiation therapy that enhances treatment precision by not only shaping the radiation beams to fit the tumor but also varying the intensity (or fluence) of each beam</strong>.</p>\r\n<p><strong>Key Features of IMRT</strong></p>\r\n<ol>\r\n<li><strong>Fluence Profile</strong>: This profile is achieved by dividing the radiation beam into smaller segments, allowing for a customized delivery of radiation.</li>\r\n<li><strong>Early Techniques</strong>:\r\n<ul>\r\n<li>Initial methods involved turning off the beam while the multi-leaf collimator (MLC) leaves moved to create the desired fluence pattern. The beam would then be activated to deliver radiation for a specific duration.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Modern Techniques</strong>:\r\n<ul>\r\n<li>The <strong>sliding-window technique</strong> is a more advanced approach where MLCs are calibrated to slide across the beam path while the beam remains continuously on. This allows for a smoother transition between different intensity levels and enhances the treatment's effectiveness.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<h3><strong>Advantages of IMRT</strong></h3>\r\n<ul>\r\n<li><strong>Precision</strong>: IMRT provides high precision in targeting tumors, reducing exposure to surrounding healthy tissues.</li>\r\n<li><strong>Complex Geometries</strong>: It is particularly beneficial for tumors located near critical structures, enabling high doses to be delivered to irregularly shaped tumors.</li>\r\n<li><strong>Dose Escalation</strong>: Allows for higher doses of radiation to be administered to the tumor while minimizing risks to adjacent healthy tissues.</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY: IMRT allows for better dose distribution, sparing healthy tissues while effectively targeting cancer cells, making it superior to traditional 3D Conformal Radiation Therapy (3D-CRT).</strong></p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deep tumors</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Superficial and subcutaneous tumors</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intraluminal tumors</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\"> None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Electron beam therapy is used for?</span></p>",
+      "unique_key": "DT1290593",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290593,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Electron Therapy, or electron beam therapy, is a specialized form of radiotherapy primarily used for treating superficial lesions</strong>.</p>\r\n<p><strong>Characteristics of Electron Therapy</strong></p>\r\n<ul>\r\n<li><strong>Superficial Penetration</strong>: Electron beams have limited penetration in tissue, typically treating depths of 0 to 3 cm. This makes them ideal for superficial tumors or conditions.</li>\r\n<li><strong>Rapid Attenuation</strong>: Electron beams lose energy quickly as they pass through soft tissue, allowing for precise targeting of superficial lesions while minimizing exposure to deeper tissues.</li>\r\n</ul>\r\n<h3><strong>Suitable Targets</strong></h3>\r\n<p>Electron therapy is effective for treating:</p>\r\n<ul>\r\n<li><strong>Cutaneous Cancer</strong>: Such as basal cell carcinoma and squamous cell carcinoma.</li>\r\n<li><strong>Total Skin Irradiation</strong>: Used in conditions like mycosis fungoides, a type of cutaneous T-cell lymphoma.</li>\r\n<li><strong>Keloid Scarring</strong>: To reduce recurrence after surgical removal.</li>\r\n</ul>\r\n<h3><strong>Administration</strong></h3>\r\n<ul>\r\n<li><strong>Medical Linear Accelerator</strong>: Electron therapy is typically performed using a linear accelerator (LINAC) specifically configured for electron beams.</li>\r\n<li><strong>Withdrawn X-ray Target</strong>: The x-ray target is retracted from the beam path, allowing the production of electron beams.</li>\r\n<li><strong>Electron Applicators</strong>: Due to the scattering of electrons in the air, special <strong>electron applicators</strong>(designed diaphragms) are used to collimate the electron beam at the skin surface. This ensures accurate delivery of the radiation dose to the intended area.</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY:Electron beams have limited penetration in tissue therefore used in treating  superficial lesions like cutaneous cancers, keloid recurrence</strong>.</p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Keeping the radioactive source on the skin</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Keeping the radioactive source in the lumen</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inserting the radioactive source into the tissue</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Any of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Interstitial brachytherapy consists of?</span></p>",
+      "unique_key": "DT1290594",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290594,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong> Interstitial Brachytherapy is a specialized form of internal radiation therapy that involves placing radioactive sources directly into or near a tumor during surgical procedures.</strong></p>\r\n<h3><strong>Benefits</strong></h3>\r\n<ul>\r\n<li><strong>Localized Treatment</strong>: Brachytherapy allows for the delivery of a high radiation dose to a smaller area compared to external beam radiation therapies.</li>\r\n<li><strong>Reduced Risk to Healthy Tissue</strong>: Because the radiation is localized, there is a lower risk of damaging surrounding healthy tissue.</li>\r\n<li><strong>Shorter Treatment Duration</strong>: Treatment can often be completed in a shorter time frame than traditional radiation therapies.</li>\r\n</ul>\r\n<h3><strong>Uses</strong></h3>\r\n<ul>\r\n<li><strong>Monotherapy or Combination Therapy</strong>: Interstitial brachytherapy can be used alone or in conjunction with other cancer treatments, such as external beam radiation or chemotherapy.</li>\r\n<li><strong>Standard for Early Stage Oral Tongue Cancer</strong>: It is commonly used for treating early-stage oral tongue cancer, where it is often preferred over surgery due to its ability to preserve function and minimize side effects.</li>\r\n</ul>\r\n<h3><strong>Imaging Guidance</strong></h3>\r\n<ul>\r\n<li><strong>MRI and PET Scans</strong>: Imaging techniques like MRI and PET scans can be employed to guide the placement of radioactive sources, ensuring accurate targeting of the tumor.</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY: Radioactive seeds or sources are implanted directly into the tumor or the surrounding tissue.</strong></p>\r\n<ul>\r\n<li><strong>These sources emit radiation over a specified distance, allowing for targeted treatment</strong></li>\r\n<li><strong>It minimizes exposure to adjacent healthy tissues.</strong></li>\r\n</ul>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-Radioactive material used in nuclear medicine</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radioactive material used in nuclear medicine</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-Radioactive material used in non-nuclear medicine</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radioactive material used in non-nuclear medicine</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is radiopharmaceutical?</span></p>",
+      "unique_key": "DT1290596",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290596,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Radiopharmaceuticals are specialized drugs that combine radioactive substances with pharmaceutical agents, used for both diagnostic imaging and therapeutic applications.</strong></p>\r\n<h3><strong>Key Characteristics</strong></h3>\r\n<ul>\r\n<li><strong>Radionuclides</strong>: The most commonly used radionuclide in radiopharmaceuticals is <strong>Technetium-99m (Tc-99m)</strong>, known for its favorable properties in imaging. Other examples include <strong>Iodine-123 (I-123)</strong>, which has a physiological distribution suitable for imaging specific organs, and <strong>I-123 MIBG</strong>, which is used for tagging and imaging.</li>\r\n<li><strong>Detection Methods</strong>: The emitted particles from these radiopharmaceuticals can be detected directly or indirectly using specialized equipment such as:\r\n<ul>\r\n<li><strong>SPECT (Single Photon Emission Computed Tomography)</strong></li>\r\n<li><strong>PET (Positron Emission Tomography)</strong></li>\r\n<li><strong>Gamma Cameras</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Therapeutic Use</strong>: Some radiopharmaceuticals, like <strong>Ra-223 dichloride</strong>, are used primarily for therapeutic purposes, such as treating symptomatic bone metastases, rather than for imaging.</li>\r\n</ul>\r\n<h3><strong>Measurement of Radioactivity</strong></h3>\r\n<p>Radioactivity in radiopharmaceuticals is typically measured in:</p>\r\n<ul>\r\n<li><strong>milliCurie (mCi)</strong></li>\r\n<li><strong>megaBecquerel (MBq)</strong></li>\r\n</ul>\r\n<h3><strong>Properties of an Ideal Diagnostic Radiopharmaceutical</strong></h3>\r\n<ol>\r\n<li><strong>Short Physical Half-Life</strong>: Minimizes radiation exposure to the patient.</li>\r\n<li><strong>Effective Half-Life</strong>: Should be approximately equal to the examination time to ensure rapid elimination from the body.</li>\r\n<li><strong>Pure Gamma Emitter</strong>: Ideally, it should emit gamma radiation solely through isomeric transition.</li>\r\n<li><strong>Monoenergetic Gamma Rays</strong>: Emission energy should be around 150 keV for optimal detection.</li>\r\n<li><strong>High Specific Activity</strong>: Ensures sufficient activity for imaging with minimal mass.</li>\r\n<li><strong>Rapid Localization</strong>: Should localize quickly and predominantly at the target site.</li>\r\n<li><strong>Stable Decay</strong>: Decay into a more stable daughter nucleus is preferable.</li>\r\n<li><strong>Ease of Attachment</strong>: Should easily attach to the chemical compound at room temperature.</li>\r\n<li><strong>Cost-Effectiveness</strong>: Low cost per patient dose to improve accessibility.</li>\r\n<li><strong>Production and Storage</strong>: Should be easily produced or stored at hospital sites for convenience.</li>\r\n</ol>\r\n<p><strong>Key TAKEAWAY: Radiopharmaceuticals used for both diagnostic imaging and therapeutic applications.</strong></p>\r\n<p><strong>Technetium-99m (Tc-99m), Iodine-123, I-123 MIBG are used in imaging while Ra-223 dichloride, are used primarily for therapeutic purposes.</strong></p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Technetium labelled colloid</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">18F-FDG</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">20 F-FDG</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is used in glucose imaging in the brain?</span></p>",
+      "unique_key": "DT1290598",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290598,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>F-18 Fluorodeoxyglucose (FDG)</strong> is the most commonly used radiotracer in Positron Emission Tomography (PET) imaging.</p>\r\n<h3><strong>Structure</strong></h3>\r\n<ul>\r\n<li><strong>Chemical Structure</strong>: F-18 FDG is a modified form of glucose where the hydroxyl group at the C-2 position is substituted with a fluorine-18 radionuclide. Its IUPAC name is <strong>2-deoxy-2-[F-18] fluoroglucose</strong>.</li>\r\n</ul>\r\n<h3><strong>Physiological Activity</strong></h3>\r\n<p>F-18 FDG uptake is commonly observed in various organs, including:</p>\r\n<ol>\r\n<li><strong>Brain</strong>: High uptake, particularly in <strong>the basal ganglia, posterior cingulate cortex, and visual cortex.</strong></li>\r\n<li><strong>Heart</strong>: Increased activity in the <strong>left ventricular myocardium</strong>.</li>\r\n<li><strong>Kidneys and Bladder</strong>: Uptake due to urinary excretion.</li>\r\n<li><strong>Liver</strong>: Often used as an internal reference standard during whole-body scans.</li>\r\n</ol>\r\n<h3><strong>Other Sites of Physiological Uptake</strong></h3>\r\n<ul>\r\n<li><strong>Skeletal Muscle</strong>: Increased uptake in extremities after strenuous activity or insulin administration; also in the mouth and larynx after speech or chewing.</li>\r\n<li><strong>Brown Fat</strong>: Notable uptake in the neck and mediastinum.</li>\r\n<li><strong>Gastrointestinal Mucosa</strong>: Associated with metformin use.</li>\r\n<li><strong>Hematopoietic/Lymphoid Tissue</strong>: Including Waldeyer's ring, thymus, spleen, and bone marrow.</li>\r\n<li><strong>Salivary Glands</strong>.</li>\r\n<li><strong>Breast Tissue</strong>: Increased activity during lactation.</li>\r\n<li><strong>Spinal Cord</strong>: Most commonly at T11-L1 and C4 levels.</li>\r\n</ul>\r\n<h3><strong>Clinical Uses</strong></h3>\r\n<ol>\r\n<li><strong>Brain Imaging</strong>:\r\n<ul>\r\n<li><strong>Epilepsy</strong>: Identifying foci associated with seizures.</li>\r\n<li><strong>Alzheimer's Disease</strong>: Evaluating suspected Alzheimer dementia.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Whole Body Imaging</strong>:\r\n<ul>\r\n<li><strong>Cancer Staging and Surveillance</strong>: Assessing the presence and progression of tumors.</li>\r\n<li><strong>Fever of Unknown Origin</strong>: Evaluating patients with unexplained fevers.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Cardiac Imaging</strong>:\r\n<ul>\r\n<li><strong>Viable and Ischemic Myocardium</strong>: Identifying areas of the heart muscle that are still viable versus those that are ischemic.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key TAKEAWAY: </strong><strong>F-18 FDG is a modified form of glucose</strong> where the hydroxyl group at the C-2 position is substituted with a fluorine-18 radionuclide.</p>\r\n<p><strong>Its uptake is commonly seen in organs like Brain, heart, kidney, liver.</strong></p>",
+      "correct_choice_id": 52,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tc-99m MDP</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tc-99m IOD</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tc-99m Na</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is used in bone scan?</span></p>",
+      "unique_key": "DT1290599",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290599,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Bone Scintigraphy</strong> (commonly referred to as a bone scan) is a nuclear medicine imaging technique that utilizes technetium-99m, specifically <strong>Tc-99m-methylene diphosphonate (MDP)</strong>, as the radiotracer. This study is particularly useful for assessing various bone conditions.</p>\r\n<h3><strong>Overview</strong></h3>\r\n<ul>\r\n<li><strong>Radiotracer Uptake</strong>: Approximately 50% of the injected dose of the radiotracer is absorbed by the bones within 2 to 6 hours post-injection.</li>\r\n</ul>\r\n<h3><strong>Phases of the Study</strong></h3>\r\n<p>Bone scintigraphy typically consists of three main phases, with a potential fourth phase added in some cases:</p>\r\n<ol>\r\n<li><strong>Flow Phase</strong>:\r\n<ul>\r\n<li><strong>Timing</strong>: 2 to 5 seconds after injection, with images obtained for the first 60 seconds.</li>\r\n<li><strong>Purpose</strong>: Demonstrates perfusion and characterizes blood flow to specific areas of bone.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Blood Pool Phase</strong>:\r\n<ul>\r\n<li><strong>Timing</strong>: Images are obtained 5 minutes post-injection.</li>\r\n<li><strong>Purpose</strong>: Shows the blood pool, reflecting the balance between plasma and interstitial fluid rather than direct blood flow.</li>\r\n<li><strong>Clinical Relevance</strong>: Inflammation can cause capillary dilation and increased blood flow, which may be noted in this phase.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Delayed Phase</strong>:\r\n<ul>\r\n<li><strong>Timing</strong>: Typically performed 2 to 4 hours after injection.</li>\r\n<li><strong>Purpose</strong>: By this time, urinary excretion has reduced the radiotracer in soft tissues, allowing clearer visualization of bone uptake.</li>\r\n<li><strong>Mechanism of Uptake</strong>: Although the exact mechanism is not fully understood, it is proposed that the radiotracer binds to hydroxyapatite crystals in bone through a process called chemisorption. The degree of uptake reflects blood flow and new bone formation rates.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>KEY TAKEAWAY:</strong></p>\r\n<p>Bone scintigraphy is indicated for various conditions, including:</p>\r\n<ul>\r\n<li><strong>Malignancy</strong>: Detection and monitoring of skeletal metastases.</li>\r\n<li><strong>Fractures</strong>: Identifying radiographically occult fractures, such as stress or insufficiency fractures.</li>\r\n<li><strong>Osteomyelitis</strong>: Evaluating bone infections.</li>\r\n<li><strong>Complex Regional Pain Syndrome</strong>: Assisting in diagnosis and management.</li>\r\n<li><strong>Hip Joint Prosthesis</strong>: Assessing for infection or loosening.</li>\r\n<li><strong>Paget Disease</strong>: Monitoring the progression of this bone Disorder</li>\r\n</ul>",
+      "correct_choice_id": 61,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Parathyroid adenoma</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypoparathyroidism</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pseudo hypoparathyroidism</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pseudo pseudo hypoparathyroidism</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Tc-99m Sestamibi in parathyroid is used for?</span></p>",
+      "unique_key": "DT1290600",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290600,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Tc-99m Sestamibi</strong> is a widely used radiopharmaceutical in nuclear medicine. <strong>It has a unique uptake mechanism, primarily targeting tissues with high mitochondrial activity, such as the myocardium, parathyroid adenomas, and certain cancers.</strong></p>\r\n<h3><strong>Clinical Applications</strong></h3>\r\n<ol>\r\n<li><strong>Parathyroid Scanning</strong>:\r\n<ol>\r\n<li><strong>Adult Dose</strong>: 740 MBq (20 mCi) administered intravenously.</li>\r\n<li><strong>Timing</strong>:\r\n<ul>\r\n<li><strong>Early Scan</strong>: 15 minutes post-injection.</li>\r\n<li><strong>Delayed Scan</strong>: 2 hours post-injection.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Imaging Process</strong>: Immediate and delayed imaging of the neck and mediastinum is conducted. Parathyroid adenomas show enhanced uptake on delayed imaging, making it the most effective method for their identification.</li>\r\n<li><strong>Thyroid Imaging</strong>: A subsequent thyroid scan using Tc-99m pertechnetate is performed. Parathyroid adenomas typically do not take up this tracer, distinguishing them from normal thyroid tissue.</li>\r\n</ol>\r\n</li>\r\n<li><strong>Myocardial Perfusion Scintigraphy</strong>:\r\n<ol>\r\n<li><strong>Use</strong>: Tc-99m Sestamibi is the most common agent for evaluating myocardial perfusion, helping to identify areas of the heart with reduced blood flow or ischemia.</li>\r\n</ol>\r\n</li>\r\n</ol>\r\n<p><strong>Key TAKEAWAY: </strong></p>\r\n<p><strong>1.scintimammography provides high specificity for cancer detection, it involves a significant radiation dose</strong>.</p>\r\n<p>2.Tc-99m Sestamibi is preferentially taken up by highly cellular and metabolically active tissues, including:</p>\r\n<ol>\r\n<li><strong>Myocardium</strong>: Used for assessing cardiac function and perfusion.</li>\r\n<li><strong>Abnormal Tissues</strong>: Such as oxyphil cell parathyroid adenomas, multiple myeloma, and breast cancer (scintimammography).</li>\r\n</ol>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Milliseconds</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Seconds</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Minutes</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hours - years</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Time for manifestation of gross biological effect of ionizing radiation</span></p>",
+      "unique_key": "DT1290602",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290602,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>The gross biological effects of ionizing radiation can be classified into several categories based on the exposure level, type of radiation, and the biological systems affected. Here's an overview of the key effects:</p>\r\n<h3><strong>1. Cellular Effects</strong></h3>\r\n<ul>\r\n<li><strong>Cell Death</strong>: High doses of ionizing radiation can lead to direct cell death, particularly in rapidly dividing cells, such as those in bone marrow and gastrointestinal lining.</li>\r\n<li><strong>Mutations</strong>: Ionizing radiation can cause DNA damage, leading to mutations that may result in cancer or hereditary effects.</li>\r\n</ul>\r\n<h3><strong>2. Tissue and Organ Effects</strong></h3>\r\n<ul>\r\n<li><strong>Acute Radiation Syndrome (ARS)</strong>: Exposure to high doses over a short period can cause ARS, which affects multiple organ systems. Symptoms include nausea, vomiting, diarrhea, and potentially death.</li>\r\n<li><strong>Radiation-Induced Fibrosis</strong>: Long-term exposure can lead to fibrosis in tissues such as lung, skin, or connective tissues, affecting their function.</li>\r\n<li><strong>Cataracts</strong>: Exposure to ionizing radiation can lead to the formation of <strong>cataracts</strong>in the eyes.</li>\r\n</ul>\r\n<h3><strong>3. Systemic Effects</strong></h3>\r\n<ul>\r\n<li><strong>Hematopoietic Effects</strong>: Radiation can affect bone marrow, leading to decreased blood cell production, <strong>resulting in anemia, leukopenia, and thrombocytopenia</strong>.</li>\r\n<li><strong>Gastrointestinal Effects</strong>: Damage to the lining of the gastrointestinal tract can lead to severe gastrointestinal distress, malabsorption, and increased susceptibility to infections.</li>\r\n</ul>\r\n<h3><strong>4. Long-term Effects</strong></h3>\r\n<ul>\r\n<li><strong>Cancer</strong>: Ionizing radiation is a known carcinogen. Long-term exposure, even at low doses, increases the risk of various cancers, including leukemia, thyroid cancer, and solid tumors.</li>\r\n<li><strong>Heritable Effects</strong>: Genetic mutations caused by radiation can potentially be passed onto future generations, leading to hereditary conditions.</li>\r\n</ul>\r\n<h3><strong>5. Environmental Effects</strong></h3>\r\n<ul>\r\n<li><strong>Ecosystem Impact</strong>: Ionizing radiation can affect entire ecosystems, leading to changes in species diversity, population dynamics, and ecosystem health.</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY: It takes hours to years for manifestation of biological effect of ionizing radiation. </strong></p>\r\n<p><strong>Long-term exposure, even at low doses, increases the risk of various cancers, including leukemia, thyroid cancer, and solid tumors.</strong></p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">PRUNE syndrome</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">SMART syndrome</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">PIPG</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">NARP syndrome</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient presented with history of seizures. He has a history of taking radiotherapy for left sided low grade glioma 15 years ago. He underwent an MRI which is shown below. What is the diagnosis?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024121011bdb4b5-952b-43e3-8a11-067487f87356.jpg\"></span></p>",
+      "unique_key": "DT1290603",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290603,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>SMART Syndrome</strong> (Stroke-like Migraine Attacks after Radiation Therapy) is a rare but significant delayed complication following cerebral radiation therapy. It is characterized by a set of clinical and imaging features that typically manifest years after treatment. Here's a detailed overview of the syndrome:</p>\r\n<h3><strong>Diagnosis Criteria</strong>: The diagnosis of SMART syndrome is largely one of exclusion and requires specific clinical and imaging criteria:</h3>\r\n<ol>\r\n<li><strong>Patient History</strong>:\r\n<ul>\r\n<li>A history of cranial irradiation, often years prior, with no evidence of residual or recurrent tumor.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Symptoms</strong>:\r\n<ul>\r\n<li>Prolonged symptoms that are usually reversible and referable to a unilateral cortical area that was irradiated. These symptoms may resemble those of a migraine or stroke.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Imaging Findings</strong>:\r\n<ul>\r\n<li>MRI is the preferred modality for evaluation.</li>\r\n<li><strong>Gyral Enhancement</strong>: Prominent, often transient gyral enhancement within the previously irradiated brain area, typically occurring 2-7 days after the onset of symptoms.</li>\r\n<li><strong>Imaging Timing</strong>: If an MRI is performed early, a repeat scan is advisable after a week to capture the expected imaging abnormalities.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<h3><strong>Imaging Characteristics</strong></h3>\r\n<h4><strong>CT Findings</strong></h4>\r\n<ul>\r\n<li><strong>Initial Imaging</strong>: May show a region of relatively minor low density with associated mass effect.</li>\r\n<li><strong>Later Findings</strong>: Features of laminar necrosis, such as cortical calcifications, may become apparent after the initial episode.</li>\r\n</ul>\r\n<h4><strong>MRI Findings</strong></h4>\r\n<ul>\r\n<li><strong>T1-weighted Imaging</strong>:\r\n<ul>\r\n<li>Initial low signal intensity.</li>\r\n<li>Hyperintense signals may appear later if associated with cortical reparative changes.</li>\r\n</ul>\r\n</li>\r\n<li><strong>T2/FLAIR Imaging</strong>:\r\n<ul>\r\n<li>Hyperintense signals often accompanied by cortical thickening.</li>\r\n</ul>\r\n</li>\r\n<li><strong>DWI/ADC</strong>:\r\n<ul>\r\n<li>Minor and variable diffusion restriction, typically influenced by T2 shine-through effects.</li>\r\n</ul>\r\n</li>\r\n<li><strong>SWI (Susceptibility Weighted Imaging)</strong>:\r\n<ul>\r\n<li>Foci of susceptibility artifacts may be seen, likely due to cavernous malformations induced by previous radiation rather than being a direct consequence of SMART syndrome.</li>\r\n</ul>\r\n</li>\r\n<li><strong>T1C+ (Gadolinium-enhanced T1)</strong>:\r\n<ul>\r\n<li>Characteristic prominent gyral enhancement (both cortical and leptomeningeal).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key TAKEAWAY: The diagnosis of SMART syndrome is mainly based on exclusion</strong></p>\r\n<p><strong>CT Findings</strong></p>\r\n<ul>\r\n<li><strong>Initial Imaging</strong>: May show a region of relatively minor low density with associated mass effect.</li>\r\n<li><strong>Later Findings</strong>: Features of laminar necrosis, such as cortical calcifications, may become apparent after the initial episode.</li>\r\n</ul>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "meta": {
+    "title": "56_Descriptive_Statistics_Iii_-_Measures_Of_Dispersion"
+  },
+  "questions": [
+    {
+      "text": "Which of the following is not a measure of dispersion?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 2,
+          "text": "Range"
+        },
+        {
+          "id": 3,
+          "text": "Variance"
+        },
+        {
+          "id": 4,
+          "text": "Z scores"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Z scores</strong> are not a measure of dispersion, they are measures of <strong>position</strong>. It indicates the&nbsp;<strong>position</strong> of any<strong> element</strong>&nbsp;in a distribution in terms of how many&nbsp;<strong>standard deviations </strong>it lies from the<strong> mean </strong>of the <strong>distribution.</strong>&nbsp;</p>\n<p>The most common measures of <strong>spread/dispersion</strong> are <strong>range, standard deviation</strong> and <strong>variance.&nbsp;</strong>They help in determining the extent to which data is stretched/scattered or squeezed/clustered.</p>\n<p>They are also called measures of <strong>spread</strong> or <strong>scatter</strong> or <strong>variability.</strong></p><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1948",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is standard deviation a measure of?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Central tendency"
+        },
+        {
+          "id": 2,
+          "text": "Spread"
+        },
+        {
+          "id": 3,
+          "text": "Position"
+        },
+        {
+          "id": 4,
+          "text": "Range"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Standard deviation</strong> is a measure of <strong>spread </strong>or<strong> dispersion </strong>or<strong> variability.</strong></p>\n<p><strong>Range </strong>and<strong> variability </strong>are other measures of <strong>spread</strong>.</p><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1949",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is the correct relationship between variance and standard deviation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Variance = square root of standard deviation"
+        },
+        {
+          "id": 2,
+          "text": "Standard deviation = square root of variance"
+        },
+        {
+          "id": 3,
+          "text": "Variance = 2 x standard deviation"
+        },
+        {
+          "id": 4,
+          "text": "Variance = standard deviation / 2"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Standard deviation is the square root of variance.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1950",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You are conducting a study on chronic kidney disease in a population. Your sample size is 28. What formula for standard deviation will you use here?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "√∑(x - x̄)/n"
+        },
+        {
+          "id": 2,
+          "text": "√∑(x - x̄)/n-1"
+        },
+        {
+          "id": 3,
+          "text": "√∑(x - x̄)²/n"
+        },
+        {
+          "id": 4,
+          "text": "√∑(x - x̄)²/n-1"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this scenario, the sample size is 28, which is &lt;30. For a small sample, usually <strong>less than 30</strong>, the formula for <strong>standard deviation </strong>used is:</p><img src=\"https://cdn1.dailyrounds.org/uploads/9a6f83d50ec440ec9734635fa69e0071x101x55.JPEG\" alt=\"Explanation Image\"><p>It is better to use<strong> n-1</strong> in the <strong>denominator </strong>in the case of a <strong>small sample</strong>. But in the case of a very <strong>large sample</strong> subtracting 1 from a huge number will not make much of a significant correction. In those cases, we may choose to <strong>ignore subtracting 1</strong>.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1952",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which among the following is true about standard deviation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "One standard deviation covers 95% of the values"
+        },
+        {
+          "id": 2,
+          "text": "Indicates distribution of variables"
+        },
+        {
+          "id": 3,
+          "text": "It can be used only in normal distributions"
+        },
+        {
+          "id": 4,
+          "text": "It is a measure of central tendency"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>standard deviation</strong> (S.D) indicates the <strong>distribution </strong>of<strong> variables</strong>. It is a measure of <strong>dispersion</strong>.</p>\n<p>It can be used in <strong>normal</strong> and <strong>skewed distributions</strong>, but it is particularly useful in normal distributions.</p>\n<p><strong>1 S.D</strong> covers <strong>68%</strong> of the values. <strong>2 S.D</strong> covers <strong>95%</strong> of the values.</p>\n<p>Measures of central tendency are mean, median and mode.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1953",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You are using the Kuppuswamy scale to calculate the socio-economic status of 10 families in the railway staff quarters. You find that every family has a total monthly income of Rs. 73,355. What is the standard deviation of this sample?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "73,355"
+        },
+        {
+          "id": 2,
+          "text": "0"
+        },
+        {
+          "id": 3,
+          "text": "1"
+        },
+        {
+          "id": 4,
+          "text": "733.55"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In this scenario,<strong> </strong>the<strong> standard deviation </strong>will be<strong> zero</strong>.</p>\n<p>The monthly income of every family is Rs. 73,355. So, all the <strong>elements </strong>in this distribution are the <strong>same.</strong> Hence, there is <strong>no variability</strong>. Both the standard deviation and <strong>variance</strong> which is the square of standard deviation will be <strong>zero</strong>.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1954",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Each value of a study sample is multiplied by 10. What would be the new standard deviation of the observations?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Original standard deviation x 10"
+        },
+        {
+          "id": 2,
+          "text": "Original standard deviation x100"
+        },
+        {
+          "id": 3,
+          "text": "Original standard deviation /10"
+        },
+        {
+          "id": 4,
+          "text": "Original standard deviation itself"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>When each element of a sample is multiplied by 10, the new standard deviation= <strong>10 x original standard deviation.</strong></p>\n<p>The formula for standard deviation, <strong>SD = &radic;&sum;(x - x̄)<sup>2</sup>/<em>n</em>-1.</strong></p>\n<p>If each element of the distribution is multiplied by 10, the new mean will become 10 times the original mean.</p>\n<p>If all observations are multiplied by 10, then the <strong>new SD</strong> = &radic;&sum;(10x-10x̄)<sup>2</sup>/<em>n</em>-1</p>\n<p>= <strong>10 &radic;&sum;(x - x̄)<sup>2</sup>/<em>n</em>-1</strong></p>\n<p>= 10 x Original SD</p>\n<p>Change in variance: variance = square of standard deviation, so when SD becomes 10 times,&nbsp;</p>\n<p><strong>the variance</strong> will be&nbsp; 10&sup2; =&nbsp;<strong>100 times</strong> the <strong>original</strong> variance.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1962",
+      "difficulty": "hard"
+    },
+    {
+      "text": "On plotting the blood pressure values of a population on a graph, you obtain the curve given below. Which of the following is true?<div class='question-desc-html'><ol class=\"ol1\">\n<li class=\"li1\">It is a Gaussian distribution</li>\n<li class=\"li1\">Mean = median &ne; mode</li>\n<li class=\"li1\">It is defined by the mean and standard deviation</li>\n<li class=\"li1\">There is no skew in the distribution</li>\n<li class=\"li1\">The area under the curve depends on the mean</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1, 2 & 5"
+        },
+        {
+          "id": 2,
+          "text": "1 & 3"
+        },
+        {
+          "id": 3,
+          "text": "2 & 4"
+        },
+        {
+          "id": 4,
+          "text": "1, 3 & 4"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The given image shows a <strong>normal</strong> distribution, also called <strong>bell curve </strong>or <strong>Gaussian distribution. </strong>It has <strong>no skew.&nbsp;</strong>It is defined by the<strong> mean </strong>and<strong> standard deviation. </strong>In a normal distribution,<strong>&nbsp;mean = median = mode.</strong></p>\n<p>The total <strong>area</strong> under the curve of a <strong>normal distribution</strong> is<strong> 1.&nbsp;</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/e1b57ca57cc64abd92639fb3dade6da1.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1965",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is true about the standard normal distribution?<div class='question-desc-html'><ol>\n<li>It has a mean of 1.0</li>\n<li>It is bell shaped</li>\n<li>It has a standard deviation of 0.0</li>\n<li>It has a variance of 1.0</li>\n<li>Standard deviation = variance</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1,2 and 3"
+        },
+        {
+          "id": 2,
+          "text": "1 and 3"
+        },
+        {
+          "id": 3,
+          "text": "2 and 5"
+        },
+        {
+          "id": 4,
+          "text": "2, 4 and 5"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>A <strong>standard normal distribution</strong>&nbsp;is a type of<strong>&nbsp;</strong>normal distribution. It is <strong>bell-shaped</strong>, has a <strong>mean</strong> of <strong>0</strong> and a <strong>standard deviation </strong>of<strong> 1.</strong>&nbsp;Thus the <strong>variance, </strong>the square of standard deviation is also<strong> 1 = the standard deviation.</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1970",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a normal curve, what is the percentage of distribution of one standard deviation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "68%"
+        },
+        {
+          "id": 2,
+          "text": "34%"
+        },
+        {
+          "id": 3,
+          "text": "99%"
+        },
+        {
+          "id": 4,
+          "text": "95%"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p class=\"p1\">Approximately<strong> 68%</strong> of a normal distribution falls within <strong>&plusmn;</strong><span class=\"s1\"><strong>1 standard deviations</strong> of the mean. This is as per the <strong>empirical rule</strong> of a normal distribution.</span></p>\n<p class=\"p1\">Approximately <strong>95%</strong> of the distribution falls within <strong>&plusmn;</strong><span class=\"s1\"><strong>2 standard deviations</strong> of the mean.</span></p>\n<p class=\"p1\">Approximately <strong>99.7%</strong> of the distribution falls within <strong>&plusmn;</strong><span class=\"s1\"><strong>3 standard deviations</strong> of the mean.</span></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7547",
+      "difficulty": "easy"
+    },
+    {
+      "text": "During a study on anaemia in a population, a normal distribution curve with a mean of 13.5 g% is obtained. What proportion of the population constitutes people with haemoglobin values above 13.5 g%?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.25"
+        },
+        {
+          "id": 2,
+          "text": "0.50"
+        },
+        {
+          "id": 3,
+          "text": "1"
+        },
+        {
+          "id": 4,
+          "text": "0.34"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In this scenario, <strong>0.50</strong>, i.e., <strong>50%</strong> of the population would have haemoglobin more than the mean, i.e., 13.5 gm%.<strong>&nbsp;</strong>In a<strong> normal distribution, 50% </strong>of the values lie<strong> above </strong>the<strong> mean.</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1982",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The IQ scores of your study population form a bell-shaped curve. How much of the population falls between the median (Mdn) and Mdn + 1 S.D?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.34"
+        },
+        {
+          "id": 2,
+          "text": "0.68"
+        },
+        {
+          "id": 3,
+          "text": "0.17"
+        },
+        {
+          "id": 4,
+          "text": "0.95"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>34%</strong> or <strong>0.34</strong> of the population in a normal distribution falls between the median and median plus one standard deviation.</p>\n<p>The IQ values form a <strong>bell-shaped</strong> curve, which is seen in <strong>normal</strong> symmetric distributions.</p>\n<p>According to the empirical rule of normal distributions, 68% of the distribution falls within 1 standard deviation of the mean, i.e., <strong>mean &plusmn; 1 SD </strong>covers<strong> 68% </strong>of the distribution.</p>\n<p>Now, in a normal distribution, <strong>mean = median.&nbsp;</strong>Therefore, this 68% includes values from&nbsp;<strong>median -1SD </strong>to&nbsp;<strong>median +1SD.</strong></p>\n<p>The question asks about the percentage that falls under median +1SD, which would be half of 68%, that is 34% or 0.34.</p>\n<p>Below is the graphical representation&nbsp;of the question. The question is asking to calculate the shaded region in the graph.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b32ac872b5424e9e9fffe579e87fb1d4x1280x1055.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1979",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The fasting blood glucose levels of adults in a population forms a normal distribution. The statistical measures obtained are given below. Within what limits would 95% of the population have their blood glucose values?<div class='question-desc-html'><p>Mean- 105 mg per 100 ml</p>\n<p>Standard deviation- 10mg per 100 ml</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "75 and 135 mg"
+        },
+        {
+          "id": 2,
+          "text": "85 and 125 mg"
+        },
+        {
+          "id": 3,
+          "text": "95 and 115 mg"
+        },
+        {
+          "id": 4,
+          "text": "80 and 120 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In this scenario, 95% of the population would have their blood sugar within the limits of <strong>85 and 125 mg</strong>. Here, the mean blood sugar is 105 mg and the standard deviation is 10 mg.</p>\n<p>According to the empirical rule of normal distribution, <strong>95%</strong> of the distribution falls within <strong>two standard deviations </strong>of the mean.&nbsp;</p>\n<p>In this question, 2 S.D = 10 x 2 = 20. We do,&nbsp;<strong>+</strong> and <strong>-&nbsp;</strong><strong>2 S.D</strong>&nbsp;from the mean to arrive at the limits within which <strong>95%</strong> of the population would have their blood sugar, i.e., <strong>85 and 125 mg</strong>.</p>\n<p><strong>+</strong> and <strong>-</strong> <strong>1 S.D</strong> = 10 from the mean, we get the limits within which <strong>68%</strong> of the population would have their blood sugar value, i.e., <strong>95 and 115 mg.</strong></p>\n<p><strong>+</strong> and <strong>-</strong><strong>&nbsp;3 S.D&nbsp;</strong>=&nbsp;30, from the mean, we get limits within which <strong>99%</strong> would have their values, i.e., <strong>75 and 135 mg.</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1984",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While conducting a study on malnutrition, you record the following data. If it forms a normal distribution curve, which of the following is true for this sample?<div class='question-desc-html'><p>No. of children: 100</p>\n<p>Mean weight: 15kg</p>\n<p>Standard deviation: 1.5kg</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Weight of 95 children is between 12 and 18 kg"
+        },
+        {
+          "id": 2,
+          "text": "Weight of 95 children is between 10.5 and 19.5 kg"
+        },
+        {
+          "id": 3,
+          "text": "Weight of 99 children is between 10 and 19 kg"
+        },
+        {
+          "id": 4,
+          "text": "Weight of 34 children is between 13.5 and 16.5 kg"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In this scenario, the weight of<strong> 95 children </strong>will be<strong> between 12 </strong>and <strong>18 kg</strong>&nbsp;as the <strong>mean is 15 kg</strong>&nbsp;and the <strong>standard deviation</strong> is<strong> 1.5 kg</strong>.</p>\n<p>According to the empirical rule of normal distribution, <strong>95%</strong> of the distribution falls within <strong>two standard deviations </strong>of the mean. Two standard deviations = 2 x 1.5 =&nbsp;<strong>3 kg</strong></p>\n<p>The weight of 99.7% of children will be between 10.5-19.5 Kg, i.e., within three standard deviations.</p>\n<p>The weight of 68% of children will be between 13.5 to 16.5 Kg, i.e., within one standard deviation. Half will weigh between 13.5 and 15kg and the other half between 15 and 16.5kg</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1986",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The distribution of intraocular pressure (IOP) in 100 glaucoma patients form a normal distribution curve. It has a mean of 30 mm of Hg with a standard deviation (SD) of 1 mm of Hg. 97.5% of patients would have an IOP more than what value?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "28"
+        },
+        {
+          "id": 2,
+          "text": "26"
+        },
+        {
+          "id": 3,
+          "text": "32"
+        },
+        {
+          "id": 4,
+          "text": "29"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In this scenario, <strong>97.5%</strong> of patients would have an IOP of <strong>more</strong> than <strong>28 mm of Hg.</strong></p>\n<p>The&nbsp;<strong>mean </strong>IOP is <strong>30mm of Hg</strong>&nbsp;and <strong>SD</strong> is <strong>1.0 mm of Hg</strong>. According to the empirical rule of the normal distribution, <strong>95%</strong> of the distribution falls within <strong>two standard deviations </strong>of the mean, i.e., <strong>mean &plusmn; 2 SD. </strong>So<strong> 95% </strong>of patients will have their<strong> IOP </strong>between 30&nbsp;&plusmn; 2<strong> = 28 to 32 mm of Hg.&nbsp;</strong></p>\n<p>Out of the remaining 5%, half will have IOP &lt; 28 and the other half will have &gt; 32. So half of 5%= 2.5% has IOP &lt;28mm Hg. Thus the <strong>remaining 97.5%</strong> has IOP <strong>&gt; 28mm of Hg.</strong></p>\n<p>This is shown in the image given below</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6f9d650d06b14a07b7e419a9d76e3a18x1280x1415.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1988",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study is being conducted on anaemia in pregnancy. A normal distribution curve with a mean haemoglobin level of 10.6 gm/dL with a standard deviation of 2 gm/dL is obtained. Below what level would 5% of the women in the group have their haemoglobin values?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "8.6 g/dL"
+        },
+        {
+          "id": 2,
+          "text": "7.31 g/dL"
+        },
+        {
+          "id": 3,
+          "text": "6.6 g/dL"
+        },
+        {
+          "id": 4,
+          "text": "5.0 g/dL"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>5%</strong> of the pregnant women in this group will have their haemoglobin levels below&nbsp;<strong>7.31 g/dL</strong>.</p>\n<p>Solution:<br />Given Data :</p>\n<ul>\n<li><strong>Mean:</strong> 10.6 g/dL</li>\n<li><strong>Standard deviation</strong> <strong>:</strong> 2 g/dL</li>\n</ul>\n<p>Step 1:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/993dd8a1554d4076b27720cfeb085f55x1280x979.JPEG\" alt=\"Explanation Image\"><p>According to the empirical rule of a normal distribution, <strong>95%</strong> of the population fall within <strong>2 standard deviations&nbsp;</strong>of the mean, i.e.,&nbsp;<strong>mean &plusmn; 2SD.</strong>&nbsp;<br />This implies that the remaining <strong>5% lie outside 2 SD,</strong>&nbsp;i.e. <strong>2.5% below 2 SD</strong> and <strong>2.5% above 2 SD.</strong>&nbsp;<br />Therefore , <strong>Mean - 2SD =&nbsp;</strong>10.6 &minus; 2 (2)&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 10.6&nbsp;&minus; 4&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = <strong>6.6 g/dL</strong>&nbsp;<br />Thus,<strong> 2.5%</strong> of pregnant women have Hb levels <strong>below 6.6 g/dL</strong>.</p>\n<p>However, the question asks about 5% and not 2.5%. So <strong>options C and D </strong>have been <strong>ruled out</strong>.</p>\n<p>Now Let's move to the next step.</p>\n<p>Step 2:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3be6dcba99de4b9da9d25d64a480a8f4x1280x979.JPEG\" alt=\"Explanation Image\"><p>According to the empirical rule of a normal distribution, <strong>68%</strong> of the population fall within <strong>1 standard deviation&nbsp;</strong>of the mean, i.e.,&nbsp;<strong>mean&plusmn;1SD</strong>.&nbsp;<br />This implies that the remaining <strong>32% lie outside 1 SD,&nbsp;</strong>i.e.,&nbsp;<strong>16% below 1 SD</strong> and <strong>16% above 1 SD</strong>.&nbsp;<br />The value of mean&minus;1 SD is <strong>8.6 g/dL </strong>(i.e. 10.6 &minus; 2)&nbsp;<br />Thus,<strong> 16%</strong> of pregnant women have Hb levels <strong>below 8.6 g/dL.</strong></p>\n<p>so now <strong>option A is ruled out&nbsp;</strong></p>\n<p>Step 3:</p>\n<p>The value for <strong>5%</strong> must lie&nbsp;<strong>between</strong> the <strong>values</strong> where <strong>2.5%</strong> and <strong>16% of the population</strong> lie, i.e., <strong>between 6.6g/dL </strong>and <strong>8g/dL</strong>. Only option B,&nbsp;<strong>7.31 g/dL,</strong>&nbsp;satisfies this condition.</p>\n<p>Hence, <strong>5%</strong> of pregnant women have their Hb levels below <strong>7.31 g/dL</strong>.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1998",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The peak expiratory flow rate (PEFR) values of a group of 11-year-old girls have a mean of 300 l/min and a standard deviation of 20 l/min. What are the deviation scores for the PEFR values of two girls recorded as 280 l/min and 330 l/min respectively?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "-20 and 30"
+        },
+        {
+          "id": 2,
+          "text": "20 and 30"
+        },
+        {
+          "id": 3,
+          "text": "20 and -30"
+        },
+        {
+          "id": 4,
+          "text": "-20 and -30"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The deviation scores for PEFR values 280 l/min and 330 l/min are -20 and 30 respectively.</p>\n<p>The<strong> Deviation score&nbsp;</strong>of an element in a distribution is the&nbsp;<strong>difference </strong>between the<strong> mean of the distribution </strong>and<strong> the element </strong>itself, i.e., it is obtained by <strong>subtracting </strong>the <strong>distribution&rsquo;s mean</strong> from the<strong> element</strong>.</p>\n<p>Applying this here, deviation score of the value <strong>280 l/min</strong> = <strong>the element - the mean</strong> = 280 - 300 = <strong>-20.</strong>&nbsp;</p>\n<p>For the value <strong>330 l/min</strong>, deviation score = 330 - 300 = <strong>30.</strong></p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1993",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The shape of a normal distribution curve depends on?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean only"
+        },
+        {
+          "id": 2,
+          "text": "Standard deviation and variance"
+        },
+        {
+          "id": 3,
+          "text": "Mean and standard deviation"
+        },
+        {
+          "id": 4,
+          "text": "Mean and median"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>shape</strong> of a normal distribution curve depends upon its <strong>mean</strong> and <strong>standard deviation. </strong></p>\n<p>For example, for a particular mean value, a smaller standard deviation value gives a taller and narrower curve whereas, a larger value gives a flatter curve. </p>\n<p>The curve is centered at the mean μ which coincides with the median and the mode and is located at the point beneath the peak of the curve. The mean, median and mode are equal.</p>\n<p> </p>\n<p> </p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1967",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is a property of a normal distribution curve?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean = 2 standard deviations"
+        },
+        {
+          "id": 2,
+          "text": "Mean = median"
+        },
+        {
+          "id": 3,
+          "text": "mean > median"
+        },
+        {
+          "id": 4,
+          "text": "mean < median"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In a normal distribution curve, <strong>mean = median.</strong></p>\n<p><strong>mean &gt; median</strong> in positively/ rightward skewed distribution.</p>\n<p><strong>mean &lt; median</strong> in negatively/ leftward skewed distribution.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1969",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is incorrect about the standard normal distribution?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Area under curve = 1"
+        },
+        {
+          "id": 2,
+          "text": "Standard deviation = 1"
+        },
+        {
+          "id": 3,
+          "text": "It is bell shaped"
+        },
+        {
+          "id": 4,
+          "text": "Mean and median = 1"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In a standard normal distribution, <strong>mean = 0</strong>.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1973",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A population study showed a mean glucose of 86 mg/dL. In a sample of 100 showing normal distribution, what percentage of people will have blood glucose above 86 mg/dL?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "34"
+        },
+        {
+          "id": 2,
+          "text": "50"
+        },
+        {
+          "id": 3,
+          "text": "95"
+        },
+        {
+          "id": 4,
+          "text": "68"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In a <strong>normal distribution, 50% of the values lie above the mean</strong>.</p>\n<p>In this scenario, 50% of the people will have a blood glucose level of more than 86 mg/dL.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1991",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The mean value of marks in a distribution of 100 students in a class is 105 and standard deviation is 10. How many students will have their marks between 85 and 125?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "68%"
+        },
+        {
+          "id": 2,
+          "text": "50%"
+        },
+        {
+          "id": 3,
+          "text": "99.7%"
+        },
+        {
+          "id": 4,
+          "text": "95%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>According to the empirical rule of normal distribution, 95% of the distribution falls within <strong>two standard deviations </strong>of the mean, i.e., <strong>mean &plusmn; 2 SD.</strong></p>\n<p>In this scenario, the marks between 85 and 125 fall within 2 standard deviation of the mean which is 105. Thus <strong>95%</strong> of the students will have the marks in this range.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1996",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The systolic blood pressure of a group of normal people between the ages of 25–27 years was taken and a mean of 120 mmHg was found. What will be the expected number of individuals among a group of 100 people taken for the study whose BP will be below 120 mmHg?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "25"
+        },
+        {
+          "id": 2,
+          "text": "50"
+        },
+        {
+          "id": 3,
+          "text": "99.7"
+        },
+        {
+          "id": 4,
+          "text": "95"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In a <strong>normal distribution, 50% of the values lie below the mean</strong>.</p>\n<p>In this scenario, 50%, i.e., <strong>50</strong> of the 100 people will have a <strong>systolic BP of less than 120 mmHg</strong>.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1999",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a normal distribution, what percentage of the distribution falls within 2 standard deviations of the mean?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "68%"
+        },
+        {
+          "id": 2,
+          "text": "95%"
+        },
+        {
+          "id": 3,
+          "text": "99%"
+        },
+        {
+          "id": 4,
+          "text": "47.5%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>According to the <strong>empirical rule</strong> of normal distributions, <strong>95%</strong> of the distribution falls within <strong>2 standard deviations</strong> of the mean, i.e., <strong>mean &plusmn; 2 SD </strong>covers<strong> 95% </strong>of the<strong> distribution</strong>.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1976",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a population study, the value of the mean is 200. If the standard deviation is 20, 68% of the population will lie between?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "180- 220"
+        },
+        {
+          "id": 2,
+          "text": "160- 240"
+        },
+        {
+          "id": 3,
+          "text": "170- 230"
+        },
+        {
+          "id": 4,
+          "text": "190- 210"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>68%</strong> of the population will lie between <strong>180- 220</strong>.</p>\n<p>In a normal distribution curve, <strong>68%</strong> of the values lie within the <strong>mean +/- 1 standard deviation </strong>and the mean=median=mode<strong>.</strong> Since the mean = 200 and the standard deviation = 20:</p>\n<p><strong>68%</strong> of population will lie between <strong>Mean +/- 1SD</strong>, that is, 200 +/- 20 = 180-220</p>\n<p>95% of population lies between Mean+/-2SD, 200+/- 2*20 = 160- 240</p>\n<p>99% of population lies between Mean+/-3SD, 200+/- 3*20 = 140- 260</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD0808",
+      "difficulty": "easy"
+    }
+  ]
+}

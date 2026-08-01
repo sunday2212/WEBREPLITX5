@@ -1,0 +1,571 @@
+{
+  "meta": {
+    "title": "Bayes_Theorem_Roc_Precision_Accuracy_Lr"
+  },
+  "questions": [
+    {
+      "id": 1622,
+      "choices": [
+        {
+          "id": 6483,
+          "text": "<p><span style=\"font-size:12pt;\">Sensitivity and specificity</span></p>"
+        },
+        {
+          "id": 6484,
+          "text": "<p><span style=\"font-size:12pt;\">Negative predictive value and (1-Sensitivity)</span></p>"
+        },
+        {
+          "id": 6485,
+          "text": "<p><span style=\"font-size:12pt;\">Sensitivity and (1-specificity)</span></p>"
+        },
+        {
+          "id": 6486,
+          "text": "<p><span style=\"font-size:12pt;\">Positive predictive value and specificity</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">In a lecture on biostatistics and diagnostic testing, the concept of the Receiver Operator Characteristic (ROC) curve is introduced. The ROC curve is a graphical representation used to assess the diagnostic ability of a test across various thresholds. It is a tool commonly used to evaluate the performance of diagnostic tests in medicine. What are the two parameters between which the ROC curve is usually drawn?</span></p>",
+      "unique_key": "Q3551079",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34147,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Ans. C. Sensitivity and (1-specificity)</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>RECEIVER OPERATOR CHARACTERISTIC (ROC) CURVE</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Is a <strong>graphical representation</strong> between <strong>sensitivity </strong>and <strong>specificity</strong> of a <strong>diagnostic test</strong></span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">ROC curve is drawn between<strong> Sensitivity and (1 – Specificity)</strong></span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">ROC curve is drawn between<strong> True positives and False positive error rate</strong></span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">In clinical tests, ROC curve is used to determine a cut-off point</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">ROC curve is equivalent to Likelihood ratio for a positive result (LR+)</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Types of ROC curves:</span></p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">&nbsp;Straight line at 45º: No benefit by this test/cut-off</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">&nbsp;Straight lines above 45º line: Fair, Good results by this test/cut-off</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Uppermost line touching Y-axis and then horizontal line: Excellent results by this test/cut-off (Perfect ROC: 100% sensitivity &amp; 100% specificity).</span></p></li></ul></li></ul><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:16px;\">&nbsp; <img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image.png\" width=\"554\" height=\"581\"></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>USES OF ROC CURVES</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Determining the threshold for screening/diagnosis of a positive test</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Comparison of two or more screening/diagnosis tests of a disease with each other</span></p></li></ul><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>ROC curve&nbsp;</strong>is drawn between <strong>Sensitivity</strong> and (1 – Specificity)</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Ref</u>: AFMC Textbook, pg 167</strong></span></p>",
+      "correct_choice_id": 6485,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "ClinicalVignette",
+        "DiagnosisBased"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1576,
+      "choices": [
+        {
+          "id": 6299,
+          "text": "<p><span style=\"font-size:12pt;\">True positive</span></p>"
+        },
+        {
+          "id": 6300,
+          "text": "<p><span style=\"font-size:12pt;\">False positive</span></p>"
+        },
+        {
+          "id": 6301,
+          "text": "<p><span style=\"font-size:12pt;\">True negative</span></p>"
+        },
+        {
+          "id": 6302,
+          "text": "<p><span style=\"font-size:12pt;\">False negative</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">In a clinical statistics training, you are presented with a scenario to enhance your understanding of diagnostic test calculations. You're given the task of determining a key component in the calculation of a diagnostic test's negative predictive value (NPV). The scenario involves a new diagnostic test for a specific disease, and you are reviewing the test results to calculate the NPV. To do this, you need to identify which element from the test results serves as the numerator in the NPV formula. Which of these test result components would you select as the numerator for calculating the NPV?</span></p><p style=\"text-align:justify;\">&nbsp;</p>",
+      "unique_key": "Q4562078",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34139,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Ans. C. True negative</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:16px;\">&nbsp;<img src=\"https://media.cerebellumacademy.com/media/public/images/2024/08/05/screenshot-2024-08-05-124001.png\" alt=\"\" width=\"1000\" height=\"429\"></span></p><p style=\"text-align:justify;\">&nbsp;</p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Sensitivity = a / (a + c) x 100</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Specificity = d / (b + d) x 100</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Predictive value of a positive test = a / (a + b) x 100</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Predictive value of a negative test = d / (c + d) x 100</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Percentage of false negatives = c / (a + c) x 100</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Percentage of false-positive = b / (b + d) x 100&nbsp;&nbsp;</span></p></li></ul><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Some Important Pointers -&nbsp;</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Diagnostic power of the test is reflected by - Predictive value</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Which one of the following relationships shown between different parameters of a performance of a test is correct -&nbsp;Sensitivity is inversely proportional to specificity</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">If prevalence is increased, which of the following will be seen -&nbsp;Increase positive predictive value</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">True negatives in a screening test is - d/b+d</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Usefulness is - True positive/True positive + false negative</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Epidemiological survey of ‘at risk’ is called - Screening</span></p></li></ul><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Numerator&nbsp;</strong>for <strong>calculating negative predictive value</strong> is - <strong>True Negative</strong>&nbsp;</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>NPV&nbsp;</strong>is <strong>calculated</strong> as the <strong>ratio of true negatives</strong> to the <strong>sum of true negatives</strong> and <strong>false negatives</strong>, reflecting the <strong>probability</strong> that a <strong>person with a negative test</strong> result is <strong>truly disease-free</strong>.</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Ref</u>: Park 27<sup>th</sup> ed pg. 155</strong></span></p>",
+      "correct_choice_id": 6301,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1603,
+      "choices": [
+        {
+          "id": 6407,
+          "text": "<p><span style=\"font-size:12pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 6408,
+          "text": "<p><span style=\"font-size:12pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 6409,
+          "text": "<p><span style=\"font-size:12pt;\">Predictive value</span></p>"
+        },
+        {
+          "id": 6410,
+          "text": "<p><span style=\"font-size:12pt;\">Population attributable risk</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">In a training session on screening and diagnostic tests, the focus is on understanding the concept of diagnostic power. Diagnostic power refers to the test's ability to accurately distinguish between those who have and do not have a disease. When considering the effectiveness of a screening test, which of the following best reflects the diagnostic power of the test?</span></p>",
+      "unique_key": "Q2623115",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34137,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt;\"><strong>Ans. C. Predictive value.</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>&nbsp;Option C:</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">The <strong>performance&nbsp;</strong>of a <strong>screening test</strong> is measured by its <strong>“predictive value\"</strong> which reflects the <strong>diagnostic power of the test</strong>.&nbsp;The predictive value of a <strong>screening test </strong>shows the <strong>probability</strong> that a patient with a <strong>positive test</strong>, has the disease. It <strong>depends</strong> on the <strong>prevalence </strong>of the <strong>disease in that geographic location</strong> in that <strong>period</strong>.&nbsp;<strong>Higher the prevalence</strong>, higher will be the predictive value of the screening test.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Diagnostic power of a screening test: Predictive accuracy</strong></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly identify a disease: Positive predictive value (PPV)</span></li><li><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly exclude a disease: Negative predictive value (NPV)</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:12pt;\">Parameters are used to denote the performance of the screening test –&nbsp;&nbsp;Sensitivity, Specificity and Predictive Value.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option A. Sensitivity:</strong>&nbsp;<strong>Usefulness&nbsp;</strong>of a <strong>screening test’</strong> is given by <strong>Sensitivity</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option B. Specificity</strong>:&nbsp;<strong>Statistical index</strong> of <strong>diagnostic accuracy</strong> is <strong>Sensitivity</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option D. PAR:</strong>&nbsp;<strong>Estimated amount of disease</strong> that can be <strong>reduced</strong> if risk factor is modified/eliminated</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Educational Objective:&nbsp;</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">If <strong>prevalence</strong> of <strong>disease increases</strong>, predictive value of a <strong>positive test</strong> will&nbsp;- <strong>Increase&nbsp;</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Diagnostic power&nbsp;</strong>of the <strong>screening test</strong> is reflected by - <strong>Predictive Value</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Ref</u>: Park 27<sup>th</sup> ed, pg 156</strong></span></p>",
+      "correct_choice_id": 6409,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1589,
+      "choices": [
+        {
+          "id": 6351,
+          "text": "<p><span style=\"font-size:12pt;\">78%</span></p>"
+        },
+        {
+          "id": 6352,
+          "text": "<p><span style=\"font-size:12pt;\">90%</span></p>"
+        },
+        {
+          "id": 6353,
+          "text": "<p><span style=\"font-size:12pt;\">82%</span></p>"
+        },
+        {
+          "id": 6354,
+          "text": "<p><span style=\"font-size:12pt;\">94%</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">A healthcare team in a large hospital introduces a new screening test for cervical cancer. This test has a sensitivity of 90% and a specificity of 99%. In a recent screening program, 1000 women were tested. The prevalence of cervical cancer in this population is known to be 50 per 1000. Based on this information, what is the Positive Predictive Value (PPV) of the screening test?</span></p>",
+      "unique_key": "Q6564097",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34145,
+      "difficulty_level": "difficult",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Ans. C. 82%</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2024/08/05/screenshot-2024-08-05-124038.png\" alt=\"\" width=\"1000\" height=\"166\"></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">True positives (TP) = Sensitivity × Prevalence × Total population = 0.90 × (50/1000) × 1000 = 45</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">False positives (FP) = (1 - Specificity) × (1 - Prevalence) × Total population = 0.01 × (950/1000) × 1000 ≈ 9.5</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">PPV = TP / (TP + FP) &nbsp;=&nbsp;(45 / 55) * 100 = 81.8%</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Positive Predictive Value&nbsp;</strong>(PPV) of a <strong>screening test</strong>, which measures the <strong>proportion of positive test</strong> results that are <strong>true positives</strong>, depends on the <strong>sensitivity</strong>, <strong>specificity</strong>, and <strong>prevalence</strong> of the <strong>disease</strong> in the <strong>population</strong>.</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Ref</u>: Park 26<sup>th</sup> ed pg. 155</strong></span></p>",
+      "correct_choice_id": 6353,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1555,
+      "choices": [
+        {
+          "id": 6215,
+          "text": "<p><span style=\"color:black;font-size:12pt;\">PPV increases.</span></p>"
+        },
+        {
+          "id": 6216,
+          "text": "<p><span style=\"color:black;font-size:12pt;\">PPV decreases.</span></p>"
+        },
+        {
+          "id": 6217,
+          "text": "<p><span style=\"color:black;font-size:12pt;\">PPV remains unaffected.</span></p>"
+        },
+        {
+          "id": 6218,
+          "text": "<p><span style=\"color:black;font-size:12pt;\">PPV will be zero.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a discussion on epidemiology and diagnostic testing, the influence of disease prevalence on the predictive value of a test is a key topic. The positive predictive value (PPV) of a diagnostic test is affected by the prevalence of the disease in the population being tested. Understanding this relationship is crucial for interpreting test results accurately. What happens to the positive predictive value of a diagnostic test if the prevalence of the disease in the population is low?</span></p>",
+      "unique_key": "Q9779986",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34144,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"color:black;font-size:12pt;\"><strong>Ans. B. PPV decreases.</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">If the <strong>prevalence of the disease</strong> in the <strong>target population is low</strong>, the <strong>PPV will be low</strong>.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Positive Predictive Value (PPV)</strong></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Ability&nbsp;</strong>of a <strong>screening test</strong> to <strong>identify correctly</strong> all those <strong>who have the disease</strong>, out of all those who test positive on a screening test</span></li><li><span style=\"font-size:12pt;\">PPV = a/(a + b) × 100 = TP/(TP + FP) × 100</span></li><li><span style=\"font-size:12pt;\"><strong>PPV&nbsp;</strong>of a <strong>screening test</strong> depends on&nbsp;– <strong>Sensitivity</strong>,&nbsp;<strong>Specificity</strong> and&nbsp;<strong>Prevalence</strong> of disease in the population</span></li><li><span style=\"font-size:12pt;\">PPV of a screening test is directly proportional to prevalence of disease in the population</span><ul><li><span style=\"font-size:12pt;\">PPV α Prevalence of disease</span></li><li><span style=\"font-size:12pt;\">As the prevalence of a disease increases in a population, PPV increases for the screening test</span></li></ul></li></ul><p style=\"margin-left:40px;\">&nbsp;</p><p style=\"margin-left:40px;\"><span style=\"font-size:16px;\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/14/image_swx4uQd.png\" width=\"540\" height=\"223\"></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>PPV&nbsp;</strong>of a <strong>screening test</strong> is <strong>directly proportional</strong> to <strong>prevalence of disease</strong> in the <strong>population</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>PPV&nbsp;</strong>of a <strong>screening test</strong> depends on&nbsp;– <strong>Sensitivity</strong>,&nbsp;<strong>Specificity</strong> and&nbsp;<strong>Prevalence of disease</strong> in the population</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Ref</u>: AFMC textbook, pg. 161.</strong></span></p>",
+      "correct_choice_id": 6216,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual",
+        "InvestigationBased"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1686,
+      "choices": [
+        {
+          "id": 6739,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">90% and 89%</span></p>"
+        },
+        {
+          "id": 6740,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">89.1% and 89.9%</span></p>"
+        },
+        {
+          "id": 6741,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">90% and 94%</span></p>"
+        },
+        {
+          "id": 6742,
+          "text": "<p><span style=\"font-size:12pt;\">89.9% and 78%</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">In a study evaluating ELISA as a screening test for HIV, where PCR was used as the confirmatory diagnostic test, it was found that ELISA was positive in 90 out of 100 confirmed HIV patients. Additionally, ELISA showed positive results in 11 out of 100 individuals without HIV. Based on this information, what are the positive predictive value (PPV) and negative predictive value (NPV) of the ELISA test?</span></p>",
+      "unique_key": "Q6600218",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34148,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt;\"><strong>Ans. B. 89.1% and 89.9%</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p>&nbsp;</p><p><img src=\"https://media.cerebellumacademy.com/media/public/images/2024/08/05/screenshot-2024-08-05-154244.png\" alt=\"\" width=\"1000\" height=\"327\"></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Positive predictive&nbsp;</strong>value of the <strong>test</strong>= True positive/ Total positives = 90*100/101= 89.1%</span></li><li><span style=\"font-size:12pt;\"><strong>Negative predictive value</strong>= True negatives/ Total negatives = 89*100/ 99= 89.9%</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Some important Pointers -&nbsp;</strong></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\">If <strong>prevalence of disease increases</strong>, predictive value of a <strong>positive test</strong> will - <strong>Increase</strong></span></li><li><span style=\"font-size:12pt;\"><strong>PPV of a screening test</strong> is <strong>directly proportional</strong> to <strong>prevalence of disease</strong> in the population</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:16px;\">&nbsp;<img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image_AnsSIS9.png\" width=\"500\" height=\"302\"></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:16px;\">Diagnostic power of a screening test: Predictive accuracy</span><ul><li><span style=\"font-size:16px;\">Diagnostic power of a screening test to correctly identify a disease: Positive predictive value (PPV)</span></li></ul></li></ul><p>&nbsp;</p><p><span style=\"font-size:16px;\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image_fLfh0K8.png\" width=\"400\" height=\"66\"></span></p><p>&nbsp;</p><p><span style=\"font-size:16px;\">​​​​​​<img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image_yoslrbi.png\" width=\"400\" height=\"41\"></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Diagnostic power&nbsp;</strong>of a <strong>screening test</strong> to <strong>correctly exclude a disease</strong>: <strong>Negative predictive value</strong> (NPV)</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:16px;\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image_kjpsiU7.png\" width=\"400\" height=\"75\"></span></p><p>&nbsp;</p><p><span style=\"font-size:16px;\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/15/image_yPIAA2J.png\" width=\"400\" height=\"41\"></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Predictive value&nbsp;</strong>of a <strong>screening test</strong> depends on – <strong>Sensitivity;&nbsp;Specificity;&nbsp;Prevalence</strong> of <strong>disease in the population</strong></span></li><li><span style=\"font-size:12pt;\"><strong>PPV&nbsp;</strong>is also known as <strong>‘post-test probability of a disease’</strong> or ‘precision rate’</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Positive predictive value of the test= True positive/ Total positives&nbsp;</strong></span></li><li><span style=\"font-size:12pt;\"><strong>Negative predictive value= True negatives/ Total negatives</strong></span></li><li><span style=\"font-size:12pt;\"><strong>Predictive value of a screening test depends on – Sensitivity;&nbsp;Specificity;&nbsp;Prevalence of disease in the population</strong></span></li></ul><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Ref</u>: park 26<sup>th</sup> ed pg.</strong></span></p>",
+      "correct_choice_id": 6740,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual",
+        "InvestigationBased"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1610,
+      "choices": [
+        {
+          "id": 6435,
+          "text": "<p><span style=\"font-size:12pt;\">The test in invalid</span></p>"
+        },
+        {
+          "id": 6436,
+          "text": "<p><span style=\"font-size:12pt;\">Prevalence of the diseases is less in City B</span></p>"
+        },
+        {
+          "id": 6437,
+          "text": "<p><span style=\"font-size:12pt;\">Prevalence of the disease is more in City A</span></p>"
+        },
+        {
+          "id": 6438,
+          "text": "<p><span style=\"font-size:12pt;\">Prevalence of the diseases is less in city A</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">A healthcare research team conducts a screening test for a specific disease in two different cities, A and B. The results show a higher number of false positives in city A compared to city B. What does the higher rate of false positives in city A indicate about the screening test or the population in city A compared to city B?</span></p>",
+      "unique_key": "Q9010278",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34140,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Ans. D. Prevalence of the diseases is less in city A</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">More the <strong>prevalence</strong>, more the <strong>predictive value</strong>. More the <strong>predictive value</strong>, <strong>less the false positives/False negatives.</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Some important Pointers -&nbsp;</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Usefulness&nbsp;</strong>of a <strong>screening test</strong> is given by: <strong>Sensitivity</strong></span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Statistical index</strong>&nbsp;of <strong>diagnostic accuracy</strong>: <strong>Sensitivity</strong></span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Diagnostic power of a screening test: Predictive accuracy&nbsp;</span></p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly identify a disease: Positive predictive value (PPV)</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly exclude a disease: Negative predictive value (NPV)</span></p></li></ul></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Predictive value of a screening test depends on:</span></p><ul><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Sensitivity</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Specificity</span></p></li><li><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">&nbsp;Prevalence of disease in the population</span></p></li></ul></li></ul><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Predictive value&nbsp;</strong>of a <strong>screening test</strong> depends on&nbsp;– <strong>Sensitivity,&nbsp;Specificity &amp;&nbsp;Prevalence</strong> of disease in the population</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Ref</u>: AFMC textbook, pg 163.</strong></span></p>",
+      "correct_choice_id": 6438,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1675,
+      "choices": [
+        {
+          "id": 6695,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Specificity will increase</span></p>"
+        },
+        {
+          "id": 6696,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Sensitivity will increase</span></p>"
+        },
+        {
+          "id": 6697,
+          "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">Positive predictive value will increase</span></p>"
+        },
+        {
+          "id": 6698,
+          "text": "<p><span style=\"font-size:12pt;\">No change</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">A patient's blood glucose level is being tested for impaired glucose tolerance. According to WHO criteria, the cutoff for impaired glucose level is 110 mg/dl, while the International Diabetes Federation suggests a cutoff of 100 mg/dl. If the reduced cutoff of 100 mg/dl is used, what is the most likely effect on the test?</span></p>",
+      "unique_key": "Q6232793",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34142,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt;\"><strong>Ans. B. Sensitivity will increase</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option B:</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">The <strong>sensitivity of a diagnostic test</strong> is the <strong>ability to correctly identify individuals</strong> with the <strong>condition</strong> (true positives). In this case, <strong>lowering the cutoff value</strong> from <strong>110 mg/dl to 100 mg/dl </strong>means that <strong>more individuals</strong> with <strong>impaired glucose tolerance</strong> will be correctly identified as <strong>positive for the condition</strong>. This will result in an increase in sensitivity, as the test is now better at detecting true cases of impaired glucose tolerance.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option</strong>&nbsp;<strong>A. Specificity will increase:&nbsp;</strong>Is incorrect because <strong>lowering the cutoff</strong> generally <strong>decreases specificity</strong>. The test will be more likely to incorrectly identify healthy individuals as having impaired glucose tolerance.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option&nbsp;C.&nbsp;Positive predictive value will increase:</strong>&nbsp;Is incorrect. The <strong>positive predictive</strong> value <strong>depends on both the sensitivity of the test</strong> and the <strong>prevalence </strong>of the condition in the population. Lowering the cutoff and potentially increasing false positives may actually decrease the positive predictive value, especially in populations with low prevalence of the condition.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option&nbsp;D. No change:</strong>&nbsp;Is incorrect because <strong>changing the cutoff value</strong> will possibly affect the characteristics of test.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">If <strong>cut off is lowered</strong>, the <strong>test</strong> will have <strong>higher sensitivity value &amp; low specificity</strong>; if the <strong>cut - off level is raised</strong>, it will result in <strong>high specificity</strong> and <strong>low sensitivity</strong>.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Ref</u>: AFMC textbook, pg 167</strong></span></p>",
+      "correct_choice_id": 6696,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1558,
+      "choices": [
+        {
+          "id": 6227,
+          "text": "<p><span style=\"font-size:12pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 6228,
+          "text": "<p><span style=\"font-size:12pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 6229,
+          "text": "<p><span style=\"font-size:12pt;\">Prevalence</span></p>"
+        },
+        {
+          "id": 6230,
+          "text": "<p><span style=\"font-size:12pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify;\"><span style=\"font-size:12.0pt;\">In a training module on the principles of screening and diagnostic testing in public health, a significant topic of discussion is the factors that influence the predictive value of a screening test. Understanding these factors is essential for correctly interpreting test results and making informed clinical decisions. What does the predictive value of a screening test depend on?</span></p>",
+      "unique_key": "Q5726317",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34146,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt;\"><strong>Ans. C. Prevalence</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>&nbsp;Option C:</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\">The <strong>predictive values</strong> are <strong>largely dependent</strong> on the <strong>prevalence of the disease</strong> in the <strong>population</strong> in which the diagnostic test is being applied.</span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Some important Pointers -&nbsp;</strong></span></p><p>&nbsp;</p><ul><li><span style=\"font-size:12pt;\"><strong>Usefulness&nbsp;</strong>of a <strong>screening test’</strong> is given by: <strong>Sensitivity</strong></span></li><li><span style=\"font-size:12pt;\"><strong>Statistical index&nbsp;</strong>of <strong>diagnostic accuracy</strong>: <strong>Sensitivity</strong></span></li><li><span style=\"font-size:12pt;\">Diagnostic power of a screening test: Predictive accuracy</span></li><li><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly identify a disease: Positive predictive value (PPV)</span></li><li><span style=\"font-size:12pt;\">Diagnostic power of a screening test to correctly exclude a disease: Negative predictive value (NPV)</span></li><li><span style=\"font-size:12pt;\">Predictive value of a screening test depends on – Sensitivity,&nbsp;Specificity, Prevalence of disease in the population</span></li></ul><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option&nbsp;A. Sensitivity:</strong>&nbsp;Out of those disease in a population, few are correctly picked as positive by a screening test, this is <strong>Sensitivity of a screening test</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Option</strong>&nbsp;<strong>B. Specificity:</strong>&nbsp;Out of those healthy in a population, few are correctly picked as not having the disease by a screening test, this is <strong>Specificity of a screening test</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong>Predictive value&nbsp;</strong>of the <strong>screening test</strong> depends on -&nbsp; <strong>Prevalence&nbsp;</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:12pt;\"><strong><u>Ref</u>: AFMC textbook, pg 161.</strong></span></p>",
+      "correct_choice_id": 6229,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual",
+        "InvestigationBased"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1579,
+      "choices": [
+        {
+          "id": 6311,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Antenatal cases</span></span></span></p>"
+        },
+        {
+          "id": 6312,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Voluntary blood donors</span></span></span></p>"
+        },
+        {
+          "id": 6313,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Diabetes mellitus patients</span></span></span></p>"
+        },
+        {
+          "id": 6314,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Female sex workers</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span style=\"font-size:12.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">In a workshop on the interpretation of diagnostic test results in various populations, a discussion arises about the positive predictive value (PPV) of a single ELISA test, commonly used for screening certain infectious diseases. The PPV of a test can vary significantly based on the prevalence of the disease in the population being tested. Among the following groups, in which would a single ELISA test likely have the highest positive predictive value?</span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>",
+      "unique_key": "Q8442835",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34141,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. D. Female sex workers</span></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:Calibri,sans-serif\"><strong>Positive predictive</strong>&nbsp;</span><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"><strong>value</strong> depends <strong>directly on the prevalence</strong>. <strong>More</strong> the <strong>prevalence</strong> <strong>more</strong> the <strong>PPV</strong>. </span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Positive predictive value (PPV): </span></strong><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ability&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> to identify <strong>correctly</strong> all those who <strong>have the disease</strong>, out of all those who <strong>test positive</strong> on a <strong>screening test</strong></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">PPV of a screening test depends on:</span></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Sensitivity</span></span></span></li>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Specificity</span></span></span></li>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Prevalence of disease in the population</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective</span></u></strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">:</span></u></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">PPV&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> is <strong>directly proportional</strong> to <strong>prevalence of disease</strong> in the <strong>population</strong>&nbsp;&ndash;&nbsp;As the <strong>prevalence of disease increases</strong> in a <strong>population</strong>, <strong>PPV increases</strong> for the <strong>screening test</strong>&nbsp;</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: AFMC textbook, pg 163.</span></strong></span></span></p>",
+      "correct_choice_id": 6314,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1637,
+      "choices": [
+        {
+          "id": 6543,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Positive predictive value</span></span></span></p>"
+        },
+        {
+          "id": 6544,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Negative predictive value</span></span></span></p>"
+        },
+        {
+          "id": 6545,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Sensitivity</span></span></span></p>"
+        },
+        {
+          "id": 6546,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Specificity</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">You are a resident physician reviewing the laboratory results of a 45-year-old male patient who recently underwent a screening test for colorectal cancer. The patient appears healthy with no significant family history of colorectal cancer. The patient&#39;s test result came back negative. Given the characteristics of the test, the probability that this case, whose result is negative on a screening test, really does not have the disease?</span></span></span></p>",
+      "unique_key": "Q3959972",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34138,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. B. Negative predictive value </span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option B:</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Negative predictive value</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> - This is the <strong>probability</strong> that a <strong>person who has tested negative</strong> really does not have the disease.&nbsp;</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:16px\"><span dir=\"ltr\" lang=\"EN-US\"><img alt=\"\" src=\"https://media.cerebellumacademy.com/media/public/images/2023/08/23/screenshot-2023-08-11-1921039033.jpg\" style=\"height:74px; width:500px\" /></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option&nbsp;A.&nbsp;</span></strong><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Positive predictive value&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">(PPV): <strong>Ability</strong> of a <strong>screening test</strong> to <strong>identify correctly</strong> all those <strong>who have the disease</strong>, out of all those who test positive on a screening test<br />\r\nPPV = TP/(TP + FP) &times; 100</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:Calibri,sans-serif\"><strong>Option&nbsp;C.</strong>&nbsp;</span><span style=\"font-family:&quot;Calibri&quot;,sans-serif\"><strong>Sensitivity</strong>: Ability of a <strong>screening test</strong> to identify <strong>correctly all those</strong> who have the <strong>disease </strong>(cases)<br />\r\nSensitivity = TP/(TP + FN) &times; 100</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option&nbsp;D.&nbsp;</span></strong><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Specificity</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">: Ability of a <strong>screening test</strong> to identify <strong>correctly all those </strong>who do not have the <strong>disease</strong> (healthy)<br />\r\nSpecificity = TN/(TN + FP) &times; 100</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective:</span></u></strong><u>&nbsp;</u></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ability&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> to identify <strong>correctly all those</strong> who <strong>do not have the disease</strong>, out of all those who <strong>test negative</strong> on a <strong>screening test</strong> known as -&nbsp;</span><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Negative predictive value</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">; while,&nbsp;</span><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ability&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> to identify <strong>correctly all those</strong> who have the <strong>disease,</strong> out of all those who <strong>test positive</strong> on a <strong>screening test</strong> known as <strong>Positive&nbsp;</strong></span><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">predictive value</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: AFMC textbook, pg 162.</span></strong></span></span></p>",
+      "correct_choice_id": 6544,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1678,
+      "choices": [
+        {
+          "id": 6707,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">{(Specificity)/ (1- Sensitivity)}</span></span></span></p>"
+        },
+        {
+          "id": 6708,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">{(Sensitivity)/ (1- Specificity)}</span></span></span></p>"
+        },
+        {
+          "id": 6709,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">{(1- Specificity)/ (Sensitivity)}</span></span></span></p>"
+        },
+        {
+          "id": 6710,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">{(1- Sensitivity)/Specificity}</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span style=\"font-size:12.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">A 50-year-old man with a family history of colorectal cancer undergoes a screening colonoscopy. The result of his colonoscopy is positive for precancerous polyps. Given this scenario, how is the positive likelihood ratio (LR+) of this screening test measured?</span></span></p>",
+      "unique_key": "Q1575073",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34143,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. B. {(Sensitivity)/ (1- Specificity)}</span></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">The <strong>positive likelihood ratio</strong> (LR+) is a measure used to <strong>assess the usefulness</strong> of a <strong>diagnostic test</strong>.&nbsp; A <strong>higher LR+</strong> indicates that a <strong>positive test</strong> result is more likely to be <strong>found in someone with the disease</strong> than in someone without it, making the test more useful for ruling in the disease.</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Likelihood Ratio&nbsp;</span></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Incorporates&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">both the <strong>sensitivity</strong> and <strong>specificity of the test</strong> and <strong>provides a direct estimate</strong> of how much a <strong>test result will change</strong> the <strong>odds of having a disease</strong>.&nbsp;</span></span></span></li>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Likelihood ratio&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">for a <strong>positive</strong> result (LR+) tells you how much the odds of the disease increase when a test is positive</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/27/image_oYnOsIK.png\" style=\"height:92px; width:400px\" /></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Likelihood ratio&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">for a <strong>negative result</strong> (LR&ndash;) tells you how much the <strong>odds of the disease decrease</strong> when a <strong>test is&nbsp;negative</strong>&nbsp;</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><img src=\"https://media.cerebellumacademy.com/media/public/images/2023/11/27/image_GWsIfsq.png\" style=\"height:128px; width:400px\" /></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Post-test odds</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\"> (the chances that patient has a disease): Once you have <strong>specified the</strong> <strong>pre-test odds</strong> (the likelihood that the patient would have a specific disease prior to testing), you <strong>multiply them by the likelihood ratio </strong><br />\r\n\tOdds (post) = Odds (pre) &times; Likelihood ratio</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><span dir=\"ltr\" lang=\"EN-US\"><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective:</span></u></strong></span></span></span></strong></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><span dir=\"ltr\" lang=\"EN-US\"><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong>&nbsp;</strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">LR+ = Sensitivity/(1 &ndash; Specificity)</span></span></span></span></strong></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><span dir=\"ltr\" lang=\"EN-US\"><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">LR - = (1- Sensitivity)/ Specificity</span></span></span></span></strong></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:16px\"><strong><span dir=\"ltr\" lang=\"EN-US\"><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref:</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> AFMC textbook,1<sup>st</sup> ed.&nbsp; pg 164</span></strong></span></span></span></strong></span></p>",
+      "correct_choice_id": 6708,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual",
+        "InvestigationBased"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 1694,
+      "choices": [
+        {
+          "id": 6771,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Sensitivity</span></span></span></p>"
+        },
+        {
+          "id": 6772,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Specificity</span></span></span></p>"
+        },
+        {
+          "id": 6773,
+          "text": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Prevalence</span></span></span></p>"
+        },
+        {
+          "id": 6774,
+          "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">All of the above</span></span></span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">A research team is evaluating a new screening test for early detection of pancreatic cancer. When considering the factors that will influence the predictive accuracy of this screening test, which of the following is the most important?</span></span></span></p>\r\n\r\n<p>&nbsp;</p>",
+      "unique_key": "Q6125455",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34149,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. D. All of the above</span></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">The predictive accuracy depends upon <strong>sensitivity (Option A), specificity (constant) (Option B) and disease prevalence (Option C).</strong></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Diagnostic power&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong>: <strong>Predictive accuracy</strong> (it tells the actual no. of people having the disease or not having the disease out of those shown positive or negative by a screening test, respectively)</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Diagnostic power&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> to <strong>correctly identify a disease</strong>: <strong>Positive predictive value</strong> (PPV)</span></span></span></li>\r\n\t<li><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Diagnostic power&nbsp;</span></strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">of a <strong>screening test</strong> to <strong>correctly exclude a disease</strong>: <strong>Negative predictive value</strong> (NPV)</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><u><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective:&nbsp;&nbsp;</span></u></strong></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">The <strong>predictive accuracy</strong> of the <strong>screening test</strong> depends upon -&nbsp;<strong>sensitivity, specificity</strong> (constant) and <strong>disease prevalence</strong>.</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\"><strong><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref: Park 26<sup>th</sup> ed pg 155</span></strong></span></span></p>",
+      "correct_choice_id": 6774,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "meta": {
+    "title": "61_Correlational_And_Predictive_Techniques"
+  },
+  "questions": [
+    {
+      "text": "A study is conducted to find the relationship between the height and weight of school students. Which of the following would be useful in this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Coefficient of variation"
+        },
+        {
+          "id": 2,
+          "text": "Coefficient of correlation"
+        },
+        {
+          "id": 3,
+          "text": "Coefficient of regression"
+        },
+        {
+          "id": 4,
+          "text": "Coefficient of mean deviation"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The<strong> coefficient of correlation</strong>&nbsp;can be used to determine the relationship between both variables in this scenario.&nbsp;It is used to express the <strong>strength</strong> and <strong>direction</strong> of the relationship between <strong>two variables.</strong></p>\n<p>It is <strong>represented</strong> by the letter <strong>'r'</strong>.&nbsp;Its <strong>value</strong> ranges from <strong>-1 to +1</strong>.&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3149",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which among the following is false about correlation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It indicates the strength of relationship between 2 variables"
+        },
+        {
+          "id": 2,
+          "text": "Correlation coefficient of 1 indicates a linear relationship"
+        },
+        {
+          "id": 3,
+          "text": "Correlation cannot measure risk"
+        },
+        {
+          "id": 4,
+          "text": "Correlation implies a causal relationship"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>A<strong> correlation</strong> between 2 variables only indicates the <strong>strength</strong> of the <strong>relationship</strong> between two variables, <strong>not causation</strong>.&nbsp;</p>\n<p>A correlation coefficient of 1 indicates a linear relationship.&nbsp;It cannot measure the risk.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3152",
+      "difficulty": "medium"
+    },
+    {
+      "text": "During a study conducted to assess the effect of smoking on life expectancy, the correlation coefficient was found to be 0.60. Calculate the coefficient of determination for this study.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.6"
+        },
+        {
+          "id": 2,
+          "text": "0.36"
+        },
+        {
+          "id": 3,
+          "text": "0.4"
+        },
+        {
+          "id": 4,
+          "text": "1.2"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>coefficient of determination</strong>&nbsp;(CD) for this study is <strong>0.36 </strong>(36%).</p>\n<p>It is<strong>&nbsp;</strong>calculated by <strong>r<sup>2</sup></strong>, where r is the correlation coefficient. In this study, the correlation coefficient (r) is 0.6.</p>\n<p>Hence CD = (0.6)<sup>2&nbsp;</sup>= 0.36</p>\n<p>The coefficient of determination&nbsp;refers to the <strong>percentage variability</strong> in one variable due to a change in the other variable. In the above study, a coefficient of determination of 0.36 means that&nbsp;36% of the variation in life expectancy is accounted for by smoking.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5722",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is the best way to study relationship between two variables?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Forest plot"
+        },
+        {
+          "id": 2,
+          "text": "Scattergram"
+        },
+        {
+          "id": 3,
+          "text": "Funnel plot"
+        },
+        {
+          "id": 4,
+          "text": "Frequency polygon"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>A <strong>scattergram/ scatter plot&nbsp;</strong>is the best way to study the <strong>relationship</strong> between <strong>2 variables</strong>.</p>\n<p>The following image shows a scatter plot.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dd35479bcb574ae39a487f5d921d4e95x395x258.PNG\" alt=\"Explanation Image\"><p>The following image shows a forest plot.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/319c8cebbadb4cae9bb4808c4a3b572ax1125x727.PNG\" alt=\"Explanation Image\"><p>The following image shows a funnel plot.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/65a98493301c4887896776940d8c45d2x720x588.PNG\" alt=\"Explanation Image\"><p>The following image shows a frequency polygon.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fb5ad135d4a1451289658b7f8d599749x720x540.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3154",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A psychiatry resident is conducting a study to assess the relationship between prefrontal blood flow under cognitive load and the severity of psychotic symptoms in schizophrenic patients. He calculates the correlation coefficient as -1.24. You can therefore conclude that:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Prefrontal blood flow is a good predictor of the severity of psychotic symptoms"
+        },
+        {
+          "id": 2,
+          "text": "Prefrontal blood flow accounts for most of the variance in symptoms"
+        },
+        {
+          "id": 3,
+          "text": "Schizophrenia causes low prefrontal blood flow"
+        },
+        {
+          "id": 4,
+          "text": "The correlation coefficient has been calculated incorrectly"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this scenario, the <strong>correlation coefficient</strong> (r) of -1.24 is <strong>incorrect,</strong> as 'r' can only lie between&nbsp;<strong>-1 to +1</strong>.&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3157",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a random sample of 5000 corporate workers, the correlation coefficient of work satisfaction and life expectancy was found to be +0.7 with a p-value of 0.01. What is your interpretation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Work satisfaction does not improve life expectancy"
+        },
+        {
+          "id": 2,
+          "text": "Strong statistically significant positive association between the variables"
+        },
+        {
+          "id": 3,
+          "text": "70% people who enjoy work will live longer"
+        },
+        {
+          "id": 4,
+          "text": "30% people who do not enjoy work will have a shorter life expectancy"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The above study is <strong>statistically significant</strong> (p-value = 0.01) and indicates a <strong>strong&nbsp;positive correlation&nbsp;</strong>(correlation coefficient = +0.7) between work satisfaction and life expectancy.</p>\n<p>Correlation is a measure of the statistical association of the variables, not a causal relationship.</p>\n<p>Here, the <strong>coefficient of determination (r<sup>2</sup>)&nbsp;</strong>= 0.7 x 0.7 = 0.49. This means that <strong>49%</strong> of the variation in life expectancy can be explained by satisfaction at work.&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3161",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A group of cardiologists found a correlation coefficient of 0.90  (p-value = 0.01) between the systolic BP and serum cholesterol levels of patients attending their clinics. Which of the following statements is an incorrect interpretation of this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The magnitude of systolic BP and serum cholesterol levels are closely related"
+        },
+        {
+          "id": 2,
+          "text": "A patient with a high systolic BP is likely to have high serum cholesterol"
+        },
+        {
+          "id": 3,
+          "text": "A patient with a low systolic BP is likely to have low serum cholesterol"
+        },
+        {
+          "id": 4,
+          "text": "80% of the variation in BP can be explained by serum cholesterol and vice versa"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correlation</strong> is an indicator of the <strong>strength</strong> and <strong>direction</strong> of the relationship between 2 variables, not the magnitude.</p>\n<p>The given study is&nbsp;<strong>statistically significant </strong>(p-value&nbsp;= 0.01) with a&nbsp;<strong>strong positive correlation</strong>&nbsp;(r = +0.90) between systolic BP and cholesterol levels. Thus, it is likely that patients with&nbsp;high systolic BP will have<strong>&nbsp;</strong>high cholesterol levels and those with low BP will have low cholesterol levels.</p>\n<p>The <strong>coefficient of determination </strong>(r<sup>2</sup>)here is 0.9 x 0.9 =<strong> 0.81</strong>. This indicates that around 80% of the variation in systolic BP among the patients can be explained by serum cholesterol levels.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3165",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Among the given options, what can be the likely value of the coefficient of correlation between infant mortality rate and economic status?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "+1"
+        },
+        {
+          "id": 2,
+          "text": "-1"
+        },
+        {
+          "id": 3,
+          "text": "+0.22"
+        },
+        {
+          "id": 4,
+          "text": "-0.8"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Among the given options, the coefficient of correlation between infant mortality rate and economic status <strong>(r)</strong>&nbsp;is likely to be <strong>-0.8</strong>.&nbsp;</p>\n<p>It is known that<strong>&nbsp;low economic status </strong>is associated with a&nbsp;<strong>high infant mortality </strong>rate. This indicates a <strong>negative correlation</strong>. However, the infant mortality rate is also influenced by other factors, indicating a <strong>moderate correlation </strong>(not equal to 1). This makes -0.8 the most likely value of correlation.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3168",
+      "difficulty": "hard"
+    },
+    {
+      "text": "High salt intake in individuals is associated with high blood pressure. What type of correlation is this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negative correlation"
+        },
+        {
+          "id": 2,
+          "text": "Positive correlation"
+        },
+        {
+          "id": 3,
+          "text": "Non-linear correlation"
+        },
+        {
+          "id": 4,
+          "text": "Zero correlation"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>An increase in blood pressure with salt intake&nbsp;is an example of a <strong>positive correlation</strong>.</p>\n<p>The association of decreased life expectancy with increased smoking is an example of&nbsp;negative correlation.&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3174",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A scattergram was plotted as shown below to study the relationship between two variables. What is the correct interpretation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "There is correlation between both variables and the Pearson’s coefficient is 1"
+        },
+        {
+          "id": 2,
+          "text": "There is correlation between both variables and the Pearson’s coefficient is – 1"
+        },
+        {
+          "id": 3,
+          "text": "There is non-linear correlation between both variables"
+        },
+        {
+          "id": 4,
+          "text": "There is no association between both variables"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given scattergram depicts a <strong>non-linear correlation</strong> between the two variables.&nbsp;</p>\n<p><strong>Correlation</strong>&nbsp;expresses the strength and direction of the relationship between two variables in terms of a<strong> correlation coefficient</strong>. There are two types of&nbsp;correlation coefficients:</p>\n<table>\n<tbody>\n<tr>\n<td>Pearson coefficient</td>\n<td>Spearman coefficient</td>\n</tr>\n<tr>\n<td>Used for data with&nbsp;<strong>continuous </strong>intervals</td>\n<td>Used for data with <strong>discrete ordered</strong><strong>&nbsp;</strong>intervals</td>\n</tr>\n<tr>\n<td>\n<p>Used to find&nbsp;<strong>linear</strong> relationships</p>\n<p>(e.g. salt intake vs blood pressure)</p>\n</td>\n<td>\n<p>Used to find&nbsp;<strong>linear</strong> or <strong>non-linear</strong> relationships</p>\n<p>(e.g. socioeconomic status vs parity)</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/c0efdba1c9b94f8099e9ec072ccd4fe5.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3178",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What conclusion can be drawn from the following scattergram?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "There is a perfect negative correlation between the two variables"
+        },
+        {
+          "id": 2,
+          "text": "There is a high positive correlation between the two variables"
+        },
+        {
+          "id": 3,
+          "text": "There is a high negative correlation between the two variables"
+        },
+        {
+          "id": 4,
+          "text": "There is a perfect positive correlation between the two variables"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given scattergram shows a<strong>&nbsp;high negative correlation</strong> between the two variables.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6c32b798c9814526ac720ca4983c538f.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3181",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The value of one parameter can be estimated from another related parameter by:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 2,
+          "text": "Correlation"
+        },
+        {
+          "id": 3,
+          "text": "Scattergram"
+        },
+        {
+          "id": 4,
+          "text": "Regression"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The value of one parameter can be estimated from another related parameter by using <strong>regression</strong> techniques.</p><hr><h3>Related Pearl: Regression</h3><p>When <strong>two variables</strong> are <strong>correlated</strong>, the value of<strong> one </strong>of the<strong> variables </strong>can be<strong> predicted&nbsp;</strong>from the value of the other using <strong>regression techniques.</strong></p>\n<ul>\n<li><strong>Independent variable:</strong>&nbsp;The <strong>variable from which</strong> the other variable is calculated.</li>\n<li><strong>Dependent variable: </strong>The&nbsp;variable for which the <strong>value is calculated</strong>.</li>\n</ul>\n<p>Types of regression:</p>\n<p><strong>1. Simple linear regression</strong></p>\n<ul>\n<li>In this,&nbsp;the <strong>value </strong>of <strong>one</strong> variable<strong> (y)</strong> is used to<strong> predict</strong> the value of another variable<strong>&nbsp;(x)</strong>.</li>\n<li>The<strong> regression equation </strong>is used for this purpose. It gives a <strong>straight-line</strong> relationship&nbsp;between the two variables.</li>\n<li>It is given by the equation<strong>&nbsp;y = a + bx</strong>, where,&nbsp;a is a constant called the intercept constant and b is the regression coefficient.</li>\n<li>The intercept constant is the point where the Y-axis is intercepted by the regression line.&nbsp;</li>\n</ul>\n<p>&nbsp;<strong>2. Multiple linear regression</strong></p>\n<ul>\n<li>In this, <strong>more than one </strong>variable is used to <strong>predict </strong>the expected <strong>value </strong>of another variable<strong> (y)</strong>.</li>\n<li>Here, the expected value of <strong>y = a + b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n&nbsp;</sub></strong>where b<sub>1</sub> and b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients and x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represents the known variables.</li>\n</ul>\n<p>&nbsp;<strong>3. Logistic regression</strong></p>\n<ul>\n<li>&nbsp;In some situations, we are <strong>not interested in a numerical outcome</strong> (like risk, etc) but we want a<strong> nominal or categorical one</strong> (like death/survival, developing a disease/not developing a disease)</li>\n<li>Here, the relationship between the variables will <strong>not be a linear</strong> one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus <strong>these outcomes</strong> are represented by <strong>0 and 1.</strong></li>\n<li>Using a mathematical <strong>logistic function</strong> we can transform linear regression data, such that the values of a variable y are limited to the range of 0 to 1, which would give us the <strong>probability of y occurring for the given values of</strong> variable <strong>x</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3186",
+      "difficulty": "hard"
+    },
+    {
+      "text": "If correlation is given by the equation y = a + bx, what would be the nature of the graph?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Straight line"
+        },
+        {
+          "id": 2,
+          "text": "Parabola"
+        },
+        {
+          "id": 3,
+          "text": "Hyperbola"
+        },
+        {
+          "id": 4,
+          "text": "Sigmoid curve"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The equation, y = a + bx indicates a&nbsp;<strong>straight line</strong>.&nbsp;</p><hr><h3>Related Pearl: Regression</h3><p>When <strong>two variables</strong> are <strong>correlated</strong>, the value of<strong> one </strong>of the<strong> variables </strong>can be<strong> predicted&nbsp;</strong>from the value of the other using <strong>regression techniques.</strong></p>\n<ul>\n<li><strong>Independent variable:</strong>&nbsp;The <strong>variable from which</strong> the other variable is calculated.</li>\n<li><strong>Dependent variable: </strong>The&nbsp;variable for which the <strong>value is calculated</strong>.</li>\n</ul>\n<p>Types of regression:</p>\n<p><strong>1. Simple linear regression</strong></p>\n<ul>\n<li>In this,&nbsp;the <strong>value </strong>of <strong>one</strong> variable<strong> (y)</strong> is used to<strong> predict</strong> the value of another variable<strong>&nbsp;(x)</strong>.</li>\n<li>The<strong> regression equation </strong>is used for this purpose. It gives a <strong>straight-line</strong> relationship&nbsp;between the two variables.</li>\n<li>It is given by the equation<strong>&nbsp;y = a + bx</strong>, where,&nbsp;a is a constant called the intercept constant and b is the regression coefficient.</li>\n<li>The intercept constant is the point where the Y-axis is intercepted by the regression line.&nbsp;</li>\n</ul>\n<p>&nbsp;<strong>2. Multiple linear regression</strong></p>\n<ul>\n<li>In this, <strong>more than one </strong>variable is used to <strong>predict </strong>the expected <strong>value </strong>of another variable<strong> (y)</strong>.</li>\n<li>Here, the expected value of <strong>y = a + b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n&nbsp;</sub></strong>where b<sub>1</sub> and b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients and x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represents the known variables.</li>\n</ul>\n<p>&nbsp;<strong>3. Logistic regression</strong></p>\n<ul>\n<li>&nbsp;In some situations, we are <strong>not interested in a numerical outcome</strong> (like risk, etc) but we want a<strong> nominal or categorical one</strong> (like death/survival, developing a disease/not developing a disease)</li>\n<li>Here, the relationship between the variables will <strong>not be a linear</strong> one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus <strong>these outcomes</strong> are represented by <strong>0 and 1.</strong></li>\n<li>Using a mathematical <strong>logistic function</strong> we can transform linear regression data, such that the values of a variable y are limited to the range of 0 to 1, which would give us the <strong>probability of y occurring for the given values of</strong> variable <strong>x</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3190",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Look at the image below and select the linear regression equation corresponding to the graph.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "y=10-x"
+        },
+        {
+          "id": 2,
+          "text": "x=10+y"
+        },
+        {
+          "id": 3,
+          "text": "y=11+2x"
+        },
+        {
+          "id": 4,
+          "text": "x=11+2y"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">Among the given options, the equation&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>y=11+2x</strong>&nbsp;corresponds to the <strong>linear regression</strong></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>&nbsp;equation</strong> of the form </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><strong>y=&alpha; + &beta;x.</strong></span></div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">When 2 variables are correlated, such that the <strong>dependent</strong> variable is represented on the <strong>y-axis</strong> and the <strong>independent</strong> variable on the <strong>x-axis</strong>, then the value of y can be obtained by using the </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">linear regression equation&nbsp;</span><span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><em>y </em></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">= &alpha; + &beta;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><em>x,&nbsp;</em></span></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">where:</span></div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">y -</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">dependent variable</span></div>\n<div><span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">&alpha; - intercept</span></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">&beta;&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">- </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">slope&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">of the line</span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">x&nbsp;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">- </span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">independent variable</span></div>\n<div>&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">In the equation <strong>y=11+2x</strong>, the <strong>intercept</strong><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">(</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\"><strong>&alpha;</strong>)<strong>&nbsp;</strong>= <strong>11</strong>,<strong>&nbsp;</strong>while the &nbsp;<strong>slope </strong>of the line&nbsp;<strong>(&beta;)</strong> = <strong>2</strong>.</span></span></div>\n<div>&nbsp;&nbsp;</div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">Option A: y=10-x, represents an intercept of 10, and a slope of -1 indicating a negative correlation. However, the given image shows a positive correlation.<br /><br /></span></div>\n<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z h-lparen\">Options B and D: They do not fit the linear regression equation of the form <span class=\"ace-all-bold-hthree\"><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><em>y </em></span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\">= &alpha; + &beta;</span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxwyy7z90zx1z73zz86z8z72z3z70zvjbz81zz122znz90zz74z1z78zz67zz66zz122zz83zjz73ziz69z\"><em>x.</em></span></span></span></div><hr><h3>Related Pearl: Regression</h3><p>When <strong>two variables</strong> are <strong>correlated</strong>, the value of<strong> one </strong>of the<strong> variables </strong>can be<strong> predicted&nbsp;</strong>from the value of the other using <strong>regression techniques.</strong></p>\n<ul>\n<li><strong>Independent variable:</strong>&nbsp;The <strong>variable from which</strong> the other variable is calculated.</li>\n<li><strong>Dependent variable: </strong>The&nbsp;variable for which the <strong>value is calculated</strong>.</li>\n</ul>\n<p>Types of regression:</p>\n<p><strong>1. Simple linear regression</strong></p>\n<ul>\n<li>In this,&nbsp;the <strong>value </strong>of <strong>one</strong> variable<strong> (y)</strong> is used to<strong> predict</strong> the value of another variable<strong>&nbsp;(x)</strong>.</li>\n<li>The<strong> regression equation </strong>is used for this purpose. It gives a <strong>straight-line</strong> relationship&nbsp;between the two variables.</li>\n<li>It is given by the equation<strong>&nbsp;y = a + bx</strong>, where,&nbsp;a is a constant called the intercept constant and b is the regression coefficient.</li>\n<li>The intercept constant is the point where the Y-axis is intercepted by the regression line.&nbsp;</li>\n</ul>\n<p>&nbsp;<strong>2. Multiple linear regression</strong></p>\n<ul>\n<li>In this, <strong>more than one </strong>variable is used to <strong>predict </strong>the expected <strong>value </strong>of another variable<strong> (y)</strong>.</li>\n<li>Here, the expected value of <strong>y = a + b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n&nbsp;</sub></strong>where b<sub>1</sub> and b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients and x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represents the known variables.</li>\n</ul>\n<p>&nbsp;<strong>3. Logistic regression</strong></p>\n<ul>\n<li>&nbsp;In some situations, we are <strong>not interested in a numerical outcome</strong> (like risk, etc) but we want a<strong> nominal or categorical one</strong> (like death/survival, developing a disease/not developing a disease)</li>\n<li>Here, the relationship between the variables will <strong>not be a linear</strong> one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus <strong>these outcomes</strong> are represented by <strong>0 and 1.</strong></li>\n<li>Using a mathematical <strong>logistic function</strong> we can transform linear regression data, such that the values of a variable y are limited to the range of 0 to 1, which would give us the <strong>probability of y occurring for the given values of</strong> variable <strong>x</strong>.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/44898db7a0bc451caf193096846ae019.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7617",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study, the total cholesterol was calculated as a + b₁x₁ + b₂x₂ + b₃ x₃, where x₁ indicates calorie intake, x₂ indicates physical activity, and x₃ indicates body mass index. What is this an example of?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Simple linear regression"
+        },
+        {
+          "id": 2,
+          "text": "Simple curvilinear regression"
+        },
+        {
+          "id": 3,
+          "text": "Multiple linear regression"
+        },
+        {
+          "id": 4,
+          "text": "Logistic regression"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given equation of <strong>y = a + b<sub>1</sub>x<sub>1</sub> +b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n</sub></strong>&nbsp;is an example of <strong>multiple linear regression</strong>.</p>\n<p>In this equation:</p>\n<p>b<sub>1,&nbsp;</sub>b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients</p>\n<p>x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represent the known variables</p><hr><h3>Related Pearl: Regression</h3><p>When <strong>two variables</strong> are <strong>correlated</strong>, the value of<strong> one </strong>of the<strong> variables </strong>can be<strong> predicted&nbsp;</strong>from the value of the other using <strong>regression techniques.</strong></p>\n<ul>\n<li><strong>Independent variable:</strong>&nbsp;The <strong>variable from which</strong> the other variable is calculated.</li>\n<li><strong>Dependent variable: </strong>The&nbsp;variable for which the <strong>value is calculated</strong>.</li>\n</ul>\n<p>Types of regression:</p>\n<p><strong>1. Simple linear regression</strong></p>\n<ul>\n<li>In this,&nbsp;the <strong>value </strong>of <strong>one</strong> variable<strong> (y)</strong> is used to<strong> predict</strong> the value of another variable<strong>&nbsp;(x)</strong>.</li>\n<li>The<strong> regression equation </strong>is used for this purpose. It gives a <strong>straight-line</strong> relationship&nbsp;between the two variables.</li>\n<li>It is given by the equation<strong>&nbsp;y = a + bx</strong>, where,&nbsp;a is a constant called the intercept constant and b is the regression coefficient.</li>\n<li>The intercept constant is the point where the Y-axis is intercepted by the regression line.&nbsp;</li>\n</ul>\n<p>&nbsp;<strong>2. Multiple linear regression</strong></p>\n<ul>\n<li>In this, <strong>more than one </strong>variable is used to <strong>predict </strong>the expected <strong>value </strong>of another variable<strong> (y)</strong>.</li>\n<li>Here, the expected value of <strong>y = a + b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n&nbsp;</sub></strong>where b<sub>1</sub> and b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients and x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represents the known variables.</li>\n</ul>\n<p>&nbsp;<strong>3. Logistic regression</strong></p>\n<ul>\n<li>&nbsp;In some situations, we are <strong>not interested in a numerical outcome</strong> (like risk, etc) but we want a<strong> nominal or categorical one</strong> (like death/survival, developing a disease/not developing a disease)</li>\n<li>Here, the relationship between the variables will <strong>not be a linear</strong> one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus <strong>these outcomes</strong> are represented by <strong>0 and 1.</strong></li>\n<li>Using a mathematical <strong>logistic function</strong> we can transform linear regression data, such that the values of a variable y are limited to the range of 0 to 1, which would give us the <strong>probability of y occurring for the given values of</strong> variable <strong>x</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3192",
+      "difficulty": "easy"
+    },
+    {
+      "text": "An epidemiologist has determined five independent factors influencing the outcome of a particular disease. Which of the following statistical methods can he use to compare these factors?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ANOVA"
+        },
+        {
+          "id": 2,
+          "text": "Multiple linear regression"
+        },
+        {
+          "id": 3,
+          "text": "T-test"
+        },
+        {
+          "id": 4,
+          "text": "Logistic regression"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this scenario, the outcome to be determined (<strong>dependent variable)</strong> is the occurrence of the disease,&nbsp;which is <strong>categorical</strong> (qualitative) in nature. <strong>Logistic regression</strong>&nbsp;can be used when a categorical dependent variable is being compared with either a categorical or numerical independent variable.</p>\n<p><strong>Linear</strong>&nbsp;<strong>regression</strong> is used when the outcome is <strong>numerical</strong>.</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td colspan=\"3\"><strong>Dependent variable (outcome)</strong></td>\n</tr>\n<tr>\n<td rowspan=\"3\">\n<p><strong>Independent variable&nbsp;</strong></p>\n<p><strong>(risk factors, exposure)</strong></p>\n</td>\n<td>&nbsp;</td>\n<td>\n<p>Qualitative (categorical)</p>\n</td>\n<td>\n<p>Quantitative (numerical)</p>\n</td>\n</tr>\n<tr>\n<td>Qualitative (categorical)</td>\n<td>\n<p>Logistic regression</p>\n<p>Chi-square</p>\n</td>\n<td>\n<p>Linear regression</p>\n<p>T-test</p>\n<p>ANOVA&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Quantitative (numerical)</td>\n<td>Logistic regression</td>\n<td>&nbsp;\n<p>Linear regression</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Regression</h3><p>When <strong>two variables</strong> are <strong>correlated</strong>, the value of<strong> one </strong>of the<strong> variables </strong>can be<strong> predicted&nbsp;</strong>from the value of the other using <strong>regression techniques.</strong></p>\n<ul>\n<li><strong>Independent variable:</strong>&nbsp;The <strong>variable from which</strong> the other variable is calculated.</li>\n<li><strong>Dependent variable: </strong>The&nbsp;variable for which the <strong>value is calculated</strong>.</li>\n</ul>\n<p>Types of regression:</p>\n<p><strong>1. Simple linear regression</strong></p>\n<ul>\n<li>In this,&nbsp;the <strong>value </strong>of <strong>one</strong> variable<strong> (y)</strong> is used to<strong> predict</strong> the value of another variable<strong>&nbsp;(x)</strong>.</li>\n<li>The<strong> regression equation </strong>is used for this purpose. It gives a <strong>straight-line</strong> relationship&nbsp;between the two variables.</li>\n<li>It is given by the equation<strong>&nbsp;y = a + bx</strong>, where,&nbsp;a is a constant called the intercept constant and b is the regression coefficient.</li>\n<li>The intercept constant is the point where the Y-axis is intercepted by the regression line.&nbsp;</li>\n</ul>\n<p>&nbsp;<strong>2. Multiple linear regression</strong></p>\n<ul>\n<li>In this, <strong>more than one </strong>variable is used to <strong>predict </strong>the expected <strong>value </strong>of another variable<strong> (y)</strong>.</li>\n<li>Here, the expected value of <strong>y = a + b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub>&hellip;..b<sub>n</sub>x<sub>n&nbsp;</sub></strong>where b<sub>1</sub> and b<sub>2</sub>&hellip;..b<sub>n</sub> represent different regression coefficients and x<sub>1</sub>, x<sub>2</sub>&hellip;&hellip;.x<sub>n</sub> represents the known variables.</li>\n</ul>\n<p>&nbsp;<strong>3. Logistic regression</strong></p>\n<ul>\n<li>&nbsp;In some situations, we are <strong>not interested in a numerical outcome</strong> (like risk, etc) but we want a<strong> nominal or categorical one</strong> (like death/survival, developing a disease/not developing a disease)</li>\n<li>Here, the relationship between the variables will <strong>not be a linear</strong> one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus <strong>these outcomes</strong> are represented by <strong>0 and 1.</strong></li>\n<li>Using a mathematical <strong>logistic function</strong> we can transform linear regression data, such that the values of a variable y are limited to the range of 0 to 1, which would give us the <strong>probability of y occurring for the given values of</strong> variable <strong>x</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3194",
+      "difficulty": "hard"
+    },
+    {
+      "text": "What test is used to compare Kaplan-Meier survival curves?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ANOVA"
+        },
+        {
+          "id": 2,
+          "text": "Bland-Altman analysis"
+        },
+        {
+          "id": 3,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 4,
+          "text": "Cox proportional hazards test"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>Cox proportional hazards test</strong> is used to compare<strong>&nbsp;Kaplan-Meier survival curves</strong>.</p>\n<p><strong>Survival analysis</strong> is used for&nbsp;analyzing the <strong>expected duration</strong> of time until one event occurs, such as death. The following methods are used for this are:</p>\n<ul>\n<li><strong>Life table</strong> analysis&nbsp;</li>\n<li>Kaplan-Meier analysis - it involves calculating the <strong>survival function </strong>(the probability that a person will survive past a certain time)</li>\n</ul>\n<p>Life tables and survival functions are graphically represented in a Kaplan-Meier plot or curve.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3196",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following is not used to compare survival curves?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mantel-Haenszel test"
+        },
+        {
+          "id": 2,
+          "text": "Log-rank test"
+        },
+        {
+          "id": 3,
+          "text": "Cox regression"
+        },
+        {
+          "id": 4,
+          "text": "Fisher’s exact test"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Fisher&rsquo;s exact test is not used to compare survival curves. The following tests are used to <strong>compare</strong> the<strong> survival curves</strong> or <strong>Kaplan-Meier curves</strong>:</p>\n<ul>\n<li>Mantel-Haenszel test&nbsp;</li>\n<li>Log-rank test&nbsp;&nbsp;</li>\n<li>Cox regression or Cox proportional hazards analysis</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3198",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the Spearman coefficient used to determine?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Regression"
+        },
+        {
+          "id": 2,
+          "text": "Correlation"
+        },
+        {
+          "id": 3,
+          "text": "Comparison of variation"
+        },
+        {
+          "id": 4,
+          "text": "Standard deviation comparison"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Spearman coefficient </strong>is used to determine&nbsp;<strong>correlation</strong>.&nbsp;It is used to find&nbsp;<strong>linear</strong> or <strong>non-linear </strong>relationships for data with&nbsp;discrete ordered intervals.&nbsp;</p>\n<p><strong>Pearson </strong>correlation coefficient is used to find&nbsp;<strong>linear</strong> relationships for data with&nbsp;continuous intervals.&nbsp;</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3200",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A researcher wants to compare a newly developed test for COVID with the gold standard test. Which of the following methods can he use?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Regression analysis"
+        },
+        {
+          "id": 2,
+          "text": "Bland-Altmann Test"
+        },
+        {
+          "id": 3,
+          "text": "Cox regression"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The&nbsp;<strong>Bland-Altmann analysis</strong> is used for comparing a <strong>newly developed test </strong>with another test, which usually is the <strong>gold standard</strong>. This method involves the graphical construction of a Bland-Altmann plot which is used to compare the measurements from both methods.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB3202",
+      "difficulty": "medium"
+    }
+  ]
+}

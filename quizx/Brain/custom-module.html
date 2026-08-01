@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Module - Nextpulse</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../qbank-main.css">
+  <link rel="stylesheet" href="brain-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../../theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../supabase-config.js"></script>
+  <script src="../../access-control.js"></script>
+  <script src="../../block.js"></script>
+  <style>
+    :root {
+      --p: #2c5282; --pl: #ebf4ff; --g: #38a169; --gl: #f0fff4;
+      --bd: #e2e8f0; --mt: #718096; --tx: #2d3748; --bg: #f7fafc;
+    }
+    body { background: var(--bg); }
+    .cm-page { max-width: 640px; margin: 0 auto; padding: 1rem 1rem 6rem; }
+    header { background: linear-gradient(135deg,#553c9a,#7c3aed); }
+
+    /* ── Saved Modules ─────────────────────────────── */
+    .sec-title { font-size:.95rem;font-weight:700;color:var(--tx);margin:1.25rem 0 .75rem;display:flex;align-items:center;gap:.5rem; }
+    .mod-card { background:white;border-radius:14px;padding:1rem 1.25rem;box-shadow:0 2px 8px rgba(0,0,0,.07);margin-bottom:.75rem;display:flex;align-items:center;gap:1rem;border:1px solid var(--bd);transition:all .2s; }
+    .mod-card:hover { box-shadow:0 4px 16px rgba(0,0,0,.12);transform:translateY(-1px); }
+    .mod-icon { width:46px;height:46px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem; }
+    .mod-info { flex:1;min-width:0; }
+    .mod-name { font-weight:700;font-size:.95rem;color:var(--tx); }
+    .mod-meta { font-size:.78rem;color:var(--mt);margin-top:3px; }
+    .mod-actions { display:flex;gap:.5rem;flex-shrink:0; }
+    .ic-btn { width:34px;height:34px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:all .15s; }
+    .ic-play { background:#f0fff4;color:#38a169; } .ic-play:hover { background:#c6f6d5; }
+    .ic-del  { background:#fff5f5;color:#e53e3e; } .ic-del:hover  { background:#fed7d7; }
+    .new-btn { width:100%;padding:.875rem;border-radius:12px;background:linear-gradient(135deg,#553c9a,#7c3aed);color:white;font-weight:700;font-size:1rem;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;box-shadow:0 4px 14px rgba(109,40,217,.3);transition:all .2s;margin:1rem 0; }
+    .new-btn:hover { transform:translateY(-2px);box-shadow:0 6px 20px rgba(109,40,217,.4); }
+    .new-btn:disabled { opacity:.5;cursor:not-allowed;transform:none; }
+    .empty-box { text-align:center;padding:2rem 1rem;color:var(--mt);background:white;border-radius:14px;border:2px dashed var(--bd); }
+    .empty-box i { font-size:2.5rem;margin-bottom:.75rem;display:block;opacity:.4; }
+
+    /* ── Wizard Modal ───────────────────────────────── */
+    .overlay { position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;display:flex;align-items:flex-end;justify-content:center;opacity:0;visibility:hidden;transition:all .3s; }
+    .overlay.open { opacity:1;visibility:visible; }
+    .wizard { background:white;border-radius:24px 24px 0 0;width:100%;max-width:640px;max-height:93vh;overflow:hidden;transform:translateY(100%);transition:transform .35s cubic-bezier(.32,.72,0,1);display:flex;flex-direction:column; }
+    .overlay.open .wizard { transform:translateY(0); }
+    .wiz-head { position:sticky;top:0;background:white;z-index:10;padding:1rem 1.25rem .75rem;border-bottom:1px solid var(--bd);flex-shrink:0; }
+    .wiz-title { font-size:1.05rem;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:.5rem;padding-right:2rem; }
+    .wiz-close { position:absolute;right:1rem;top:1rem;width:32px;height:32px;border:none;background:var(--bg);border-radius:8px;cursor:pointer;color:var(--mt);display:flex;align-items:center;justify-content:center; }
+    .wiz-close:hover { background:var(--bd);color:var(--tx); }
+    .steps { display:flex;gap:6px;margin-top:.75rem; }
+    .dot { height:4px;border-radius:2px;flex:1;background:var(--bd);transition:background .3s; }
+    .dot.a { background:var(--p); } .dot.d { background:var(--g); }
+    .wiz-body { flex:1;overflow-y:auto;padding:1.25rem; }
+    .wiz-step { display:none; } .wiz-step.active { display:block; }
+    .slabel { font-size:.76rem;font-weight:700;color:var(--mt);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem; }
+    .shead  { font-size:1.1rem;font-weight:700;color:var(--tx);margin-bottom:1.1rem; }
+
+    /* Input */
+    .cm-input { width:100%;padding:.875rem 1rem;border:2px solid var(--bd);border-radius:10px;font-size:1rem;color:var(--tx);outline:none;transition:border-color .2s;box-sizing:border-box; }
+    .cm-input:focus { border-color:var(--p); }
+
+    /* Radio pills */
+    .rpills { display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.1rem; }
+    .rpill { display:flex;align-items:center;gap:.4rem;padding:.55rem .95rem;border:2px solid var(--bd);border-radius:8px;cursor:pointer;font-size:.88rem;color:var(--tx);transition:all .15s;user-select:none;background:white; }
+    .rpill.on { border-color:var(--p);background:var(--pl);color:var(--p);font-weight:700; }
+    .rpill i { font-size:.8rem; }
+
+    /* Platform checkboxes */
+    .plat-grid { display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-bottom:1.1rem; }
+    .plat-pill { display:flex;align-items:center;gap:.6rem;padding:.65rem .875rem;border:2px solid var(--bd);border-radius:10px;cursor:pointer;transition:all .15s;user-select:none;background:white; }
+    .plat-pill.on { border-color:var(--p);background:var(--pl); }
+    .cbox { width:18px;height:18px;border:2px solid var(--bd);border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-size:.6rem;flex-shrink:0;transition:all .15s; }
+    .plat-pill.on .cbox { background:var(--p);border-color:var(--p); }
+    .plat-pill .pname { font-size:.86rem;color:var(--tx);font-weight:500; }
+    .plat-pill.on .pname { color:var(--p);font-weight:700; }
+
+    /* ── Tree (accordion) ──────────────────────────── */
+    .tree-root { margin-top:.5rem; }
+    .tree-node { }
+    .tree-row {
+      display:flex;align-items:center;gap:.5rem;
+      padding:.45rem .5rem;border-radius:8px;
+      cursor:default;transition:background .12s;
+      user-select:none;
+    }
+    .tree-row:hover { background:var(--bg); }
+    .tree-toggle {
+      width:22px;height:22px;border:none;background:none;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;
+      color:var(--mt);font-size:.7rem;flex-shrink:0;border-radius:4px;
+      transition:all .15s;
+    }
+    .tree-toggle:hover { background:var(--bd);color:var(--tx); }
+    .tree-spacer { width:22px;flex-shrink:0; }
+    .tree-cb {
+      width:20px;height:20px;border:2px solid var(--bd);border-radius:5px;
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-size:.65rem;flex-shrink:0;cursor:pointer;
+      transition:all .15s;position:relative;
+    }
+    .tree-cb > i { opacity:0; transition:opacity .1s; }
+    .tree-cb.full { background:var(--p);border-color:var(--p); }
+    .tree-cb.full > i { opacity:1; }
+    /* Partial: purple border + small filled square in centre — no minus sign */
+    .tree-cb.part { background:transparent;border-color:var(--p); }
+    .tree-cb.part > i { display:none; }
+    .tree-cb.part::after {
+      content:'';position:absolute;
+      width:8px;height:8px;background:var(--p);border-radius:2px;
+      top:50%;left:50%;transform:translate(-50%,-50%);
+    }
+    .tree-label { flex:1;font-size:.88rem;color:var(--tx);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+    .tree-count { font-size:.72rem;color:var(--mt);white-space:nowrap;flex-shrink:0; }
+    .tree-children { display:none;border-left:2px solid var(--bd);margin-left:11px;padding-left:6px; }
+    .tree-children.open { display:block; }
+
+    /* ── File nodes in the topic tree ─────────────────────────── */
+    .tree-file-row { background:transparent; }
+    .tree-file-row:hover { background:var(--bg); }
+    .tree-file-icon {
+      font-size:.7rem; color:var(--mt); flex-shrink:0; margin-right:3px; opacity:.7;
+    }
+    .tree-file-label {
+      font-size:.82rem; color:var(--mt); font-weight:400;
+    }
+    .tree-file-row .tree-cb {
+      width:17px; height:17px; border-radius:4px;
+    }
+    /* Q-count row */
+    .qcount-row { display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.1rem; }
+    .qc-btn { padding:.5rem .875rem;border:2px solid var(--bd);border-radius:8px;font-size:.88rem;color:var(--tx);background:white;cursor:pointer;font-weight:500;transition:all .15s; }
+    .qc-btn.on { border-color:var(--p);background:var(--pl);color:var(--p);font-weight:700; }
+
+    /* Review */
+    .rev-card { background:var(--bg);border-radius:12px;padding:1rem 1.25rem;margin-bottom:.75rem;border:1px solid var(--bd); }
+    .rev-row { display:flex;gap:.75rem;margin-bottom:.45rem;align-items:flex-start; }
+    .rev-row:last-child { margin-bottom:0; }
+    .rev-lbl { font-size:.78rem;color:var(--mt);min-width:80px;flex-shrink:0;padding-top:2px; }
+    .rev-val { font-size:.88rem;color:var(--tx);font-weight:600;flex:1; }
+    .rtag { display:inline-block;background:var(--pl);color:var(--p);font-size:.72rem;padding:2px 8px;border-radius:20px;margin:2px;font-weight:600; }
+
+    /* Footer */
+    .wiz-foot { flex-shrink:0;background:white;padding:1rem 1.25rem;border-top:1px solid var(--bd);display:flex;gap:.75rem; }
+    .btn-back { padding:.8rem 1.1rem;border-radius:10px;border:2px solid var(--bd);background:white;color:var(--tx);font-size:.9rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:.4rem; }
+    .btn-back:hover { background:var(--bg); }
+    .btn-next { flex:1;padding:.8rem;border-radius:10px;border:none;background:linear-gradient(135deg,#553c9a,#7c3aed);color:white;font-size:.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;box-shadow:0 4px 12px rgba(109,40,217,.3);transition:all .2s; }
+    .btn-next:hover { transform:translateY(-1px); }
+    .btn-next:disabled { opacity:.5;cursor:not-allowed;transform:none; }
+    .btn-save { flex:1;padding:.8rem;border-radius:10px;border:none;background:linear-gradient(135deg,#38a169,#48bb78);color:white;font-size:.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;box-shadow:0 4px 12px rgba(56,161,105,.3);transition:all .2s; }
+    .btn-save:hover { transform:translateY(-1px); }
+
+    /* Info box */
+    .info-box { background:var(--pl);border:1px solid #bee3f8;border-radius:10px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.83rem;color:#2c5282;display:flex;gap:.5rem;align-items:flex-start; }
+    .info-box i { margin-top:2px;flex-shrink:0; }
+
+    /* Toast */
+    .toast { position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:#2d3748;color:white;padding:.7rem 1.2rem;border-radius:10px;font-size:.85rem;z-index:9999;opacity:0;transition:all .3s;white-space:nowrap; }
+    .toast.show { opacity:1;transform:translateX(-50%) translateY(0); }
+
+    /* Sel counter badge */
+    .sel-badge { display:inline-flex;align-items:center;background:#553c9a;color:white;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:.4rem; }
+    .tree-sel-all-btn { font-size:.72rem;color:var(--p);background:none;border:none;cursor:pointer;padding:0 4px;font-weight:600;flex-shrink:0; }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+<script src="../../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+  <script>
+    if (!accessControl.initProtectedPage()) throw new Error('Access denied');
+  </script>
+
+  <header>
+    <div class="header-content">
+      <button onclick="history.back()" class="back-button" style="display:block;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1>Custom Modules</h1>
+      <p class="header-subtitle">Build your personal quiz sets</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="cm-page">
+      <div class="info-box">
+        <i class="fas fa-info-circle"></i>
+        <span>Up to <strong>3 modules</strong> — each picks random MCQs from your chosen topics, saved to your profile.</span>
+      </div>
+      <p class="sec-title"><i class="fas fa-layer-group"></i> Your Modules</p>
+      <div id="modulesList"></div>
+      <button class="new-btn" id="newBtn" onclick="openWizard()">
+        <i class="fas fa-plus"></i> Create New Module
+      </button>
+    </div>
+  </main>
+
+  <!-- Wizard -->
+  <div class="overlay" id="overlay">
+    <div class="wizard">
+      <div class="wiz-head">
+        <div class="wiz-title"><i class="fas fa-cog" style="color:#7c3aed"></i><span id="wizTitle">New Custom Module</span></div>
+        <button class="wiz-close" onclick="closeWizard()"><i class="fas fa-times"></i></button>
+        <div class="steps" id="dots">
+          <div class="dot a" id="d0"></div>
+          <div class="dot" id="d1"></div>
+          <div class="dot" id="d2"></div>
+        </div>
+      </div>
+
+      <div class="wiz-body" id="wizBody">
+        <!-- STEP 0: Basics -->
+        <div class="wiz-step active" id="s0">
+          <p class="slabel">Step 1 of 3</p>
+          <p class="shead">Name & Setup</p>
+
+          <p style="font-weight:600;color:var(--tx);font-size:.9rem;margin-bottom:.5rem;">Module Name</p>
+          <input class="cm-input" id="modName" placeholder="e.g. Surgery Rapid Revision" maxlength="40" style="margin-bottom:1.1rem;">
+
+          <p style="font-weight:600;color:var(--tx);font-size:.9rem;margin-bottom:.5rem;">No. of Questions</p>
+          <div class="qcount-row" id="qcRow">
+            <button class="qc-btn on" data-v="10" onclick="setQC(this)">10</button>
+            <button class="qc-btn" data-v="20" onclick="setQC(this)">20</button>
+            <button class="qc-btn" data-v="30" onclick="setQC(this)">30</button>
+            <button class="qc-btn" data-v="50" onclick="setQC(this)">50</button>
+            <button class="qc-btn" data-v="100" onclick="setQC(this)">100</button>
+            <button class="qc-btn" data-v="200" onclick="setQC(this)">200</button>
+          </div>
+
+          <p style="font-weight:600;color:var(--tx);font-size:.9rem;margin-bottom:.5rem;">Platforms</p>
+          <div class="rpills">
+            <label class="rpill on" id="pAll" onclick="setPM('all',this)"><i class="fas fa-check-circle"></i>All</label>
+            <label class="rpill" id="pRnd" onclick="setPM('rnd',this)"><i class="fas fa-random"></i>Random</label>
+            <label class="rpill" id="pPick" onclick="setPM('pick',this)"><i class="fas fa-list-check"></i>Choose</label>
+          </div>
+          <div class="plat-grid" id="platGrid" style="display:none;"></div>
+        </div>
+
+        <!-- STEP 1: Topic Tree -->
+        <div class="wiz-step" id="s1">
+          <p class="slabel">Step 2 of 3</p>
+          <p class="shead">Select Topics <span id="selCount" class="sel-badge">0</span></p>
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap;">
+            <button onclick="selectAllTree(true)" style="font-size:.8rem;padding:.4rem .8rem;border-radius:7px;border:none;background:var(--pl);color:var(--p);cursor:pointer;font-weight:600;">✓ Select All</button>
+            <button onclick="selectAllTree(false)" style="font-size:.8rem;padding:.4rem .8rem;border-radius:7px;border:1px solid var(--bd);background:white;color:var(--mt);cursor:pointer;">✕ Deselect All</button>
+            <span style="font-size:.78rem;color:var(--mt);">Expand ▶ to drill down into sub-topics</span>
+          </div>
+          <div id="treeRoot" class="tree-root"></div>
+        </div>
+
+        <!-- STEP 2: Review -->
+        <div class="wiz-step" id="s2">
+          <p class="slabel">Step 3 of 3</p>
+          <p class="shead">Review & Save</p>
+          <div id="reviewBox"></div>
+        </div>
+      </div>
+
+      <div class="wiz-foot">
+        <button class="btn-back" id="btnBack" onclick="prevStep()" style="display:none;"><i class="fas fa-arrow-left"></i>Back</button>
+        <button class="btn-next" id="btnNext" onclick="nextStep()">Next <i class="fas fa-arrow-right"></i></button>
+        <button class="btn-save" id="btnSave" onclick="saveModule()" style="display:none;"><i class="fas fa-save"></i>Save Module</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+let manifest = null;
+let modules  = [];
+let _sb = null, uid = null;
+let step = 0;
+
+// Wizard state
+let ws = { name:'', qCount:'10', pm:'all', picks:[], selPaths: new Set() };
+
+// Tree structure: { [name]: { _p: path, _f: fileCount, _ch: {children...} } }
+let treeRoot = {};
+// All leaf paths (individual JSON files)
+let allLeafPaths = [];
+
+// ── Init ───────────────────────────────────────────────────────────────────
+async function init() {
+  await loadManifest();
+  await initSB();
+  renderModules();
+  renderPlatGrid();
+}
+
+async function loadManifest() {
+  const r = await fetch('./file-manifest.json');
+  manifest = await r.json();
+}
+
+async function initSB() {
+  try {
+    const { createClient } = supabase;
+    _sb = createClient(SUPABASE_URL, SUPABASE_KEY);
+    const { data:{ session } } = await _sb.auth.getSession();
+    if (session?.user) { uid = session.user.id; await loadFromSB(); return; }
+  } catch(e) {}
+  loadFromLS();
+}
+async function loadFromSB() {
+  try {
+    const { data, error } = await _sb.from('custom_modules').select('modules').eq('user_id',uid).single();
+    if (!error && data?.modules) { modules = data.modules; return; }
+  } catch(e) {}
+  loadFromLS();
+}
+function loadFromLS() {
+  try { modules = JSON.parse(localStorage.getItem('cm_v3') || '[]'); } catch(e) { modules=[]; }
+}
+async function persist() {
+  try { localStorage.setItem('cm_v3', JSON.stringify(modules)); } catch(e) {}
+  if (_sb && uid) {
+    try { await _sb.from('custom_modules').upsert({ user_id:uid, modules }, { onConflict:'user_id' }); } catch(e){}
+  }
+}
+
+// ── Render saved modules ───────────────────────────────────────────────────
+function renderModules() {
+  const c = document.getElementById('modulesList');
+  document.getElementById('newBtn').disabled = modules.length >= 3;
+  if (!modules.length) {
+    c.innerHTML = `<div class="empty-box"><i class="fas fa-plus-circle"></i><p>No modules yet. Create your first one.</p></div>`;
+    return;
+  }
+  const grads = ['linear-gradient(135deg,#553c9a,#7c3aed)','linear-gradient(135deg,#276749,#38a169)','linear-gradient(135deg,#744210,#d69e2e)'];
+  const icons = ['fas fa-layer-group','fas fa-stethoscope','fas fa-brain'];
+  c.innerHTML = modules.map((m,i) => {
+    const pLabel = m.pm==='all'?'All Platforms':m.pm==='rnd'?'Random Platform':m.picks.join(', ')||'None';
+    const leafCt = (m.selPaths||[]).length;
+    return `<div class="mod-card">
+      <div class="mod-icon" style="background:${grads[i]}"><i class="${icons[i]}"></i></div>
+      <div class="mod-info">
+        <div class="mod-name">${esc(m.name)}</div>
+        <div class="mod-meta">${m.qCount} Qs · ${esc(pLabel)} · ${leafCt} files selected</div>
+      </div>
+      <div class="mod-actions">
+        <button class="ic-btn ic-play" onclick="startMod(${i})" title="Start"><i class="fas fa-play"></i></button>
+        <button class="ic-btn ic-del" onclick="delMod(${i})" title="Delete"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function startMod(i) {
+  sessionStorage.setItem('cm_active', JSON.stringify(modules[i]));
+  window.location.href = 'custom-quiz.html';
+}
+async function delMod(i) {
+  if (!confirm(`Delete "${modules[i].name}"?`)) return;
+  modules.splice(i,1); await persist(); renderModules(); toast('Deleted');
+}
+
+// ── Wizard ─────────────────────────────────────────────────────────────────
+function openWizard() {
+  if (modules.length>=3) { toast('Max 3 modules. Delete one first.'); return; }
+  resetWizard();
+  document.getElementById('overlay').classList.add('open');
+}
+function closeWizard() { document.getElementById('overlay').classList.remove('open'); }
+function resetWizard() {
+  step=0; ws={ name:'', qCount:'10', pm:'all', picks:[], selPaths:new Set() };
+  document.getElementById('modName').value='';
+  document.querySelectorAll('.qc-btn').forEach((b,i)=>b.classList.toggle('on',i===0));
+  ['pAll','pRnd','pPick'].forEach((id,i)=>{ const el=document.getElementById(id); el.classList.toggle('on',i===0); el.querySelector('i').className=i===0?'fas fa-check-circle':i===1?'fas fa-random':'fas fa-list-check'; });
+  document.getElementById('platGrid').style.display='none';
+  showStep(0);
+}
+function showStep(s) {
+  step=s;
+  document.querySelectorAll('.wiz-step').forEach((el,i)=>el.classList.toggle('active',i===s));
+  for(let i=0;i<3;i++) { const d=document.getElementById(`d${i}`); d.className='dot'+(i<s?' d':i===s?' a':''); }
+  document.getElementById('btnBack').style.display = s===0?'none':'flex';
+  document.getElementById('btnNext').style.display = s===2?'none':'flex';
+  document.getElementById('btnSave').style.display = s===2?'flex':'none';
+}
+
+function nextStep() {
+  if (step===0) {
+    const n = document.getElementById('modName').value.trim();
+    if (!n) { toast('Enter a module name'); return; }
+    if (ws.pm==='pick' && !ws.picks.length) { toast('Select at least one platform'); return; }
+    ws.name = n;
+    buildTree();
+    buildTreeUI();
+    updateSelCount();
+    showStep(1);
+  } else if (step===1) {
+    if (!ws.selPaths.size) { toast('Select at least one file to continue'); return; }
+    buildReview();
+    showStep(2);
+  }
+  document.getElementById('wizBody').scrollTop=0;
+}
+function prevStep() { if(step>0){ showStep(step-1); document.getElementById('wizBody').scrollTop=0; } }
+
+// ── Step 0: Platform ────────────────────────────────────────────────────────
+function setQC(el) {
+  ws.qCount = el.dataset.v;
+  document.querySelectorAll('.qc-btn').forEach(b=>b.classList.toggle('on',b===el));
+}
+function setPM(mode, el) {
+  ws.pm = mode;
+  ['pAll','pRnd','pPick'].forEach(id=>{ const b=document.getElementById(id); b.classList.remove('on'); });
+  el.classList.add('on');
+  document.getElementById('platGrid').style.display = mode==='pick'?'grid':'none';
+}
+function renderPlatGrid() {
+  const platforms = Object.keys(getQuizPlatforms()).sort();
+  const g = document.getElementById('platGrid');
+  g.innerHTML = platforms.map(p => `
+    <div class="plat-pill" id="pp_${eid(p)}" onclick="togglePick('${ej(p)}',this)">
+      <div class="cbox"><i class="fas fa-check"></i></div>
+      <span class="pname">${esc(p)}</span>
+    </div>`).join('');
+}
+function togglePick(p, el) {
+  const i = ws.picks.indexOf(p);
+  if (i>-1) { ws.picks.splice(i,1); el.classList.remove('on'); }
+  else { ws.picks.push(p); el.classList.add('on'); }
+}
+function getQuizPlatforms() {
+  const out={};
+  for(const [k,v] of Object.entries(manifest?.folders||{})) {
+    if(v.type==='article') continue;
+    const p=k.split('/')[0]; out[p]=1;
+  }
+  return out;
+}
+
+// ── Step 1: Tree ───────────────────────────d��─────────────────────────────
+function getActivePlatforms() {
+  if(ws.pm==='all') return Object.keys(getQuizPlatforms());
+  if(ws.pm==='rnd') { const all=Object.keys(getQuizPlatforms()); return [all[Math.floor(Math.random()*all.length)]]; }
+  return ws.picks;
+}
+
+function buildTree() {
+  treeRoot = {};
+  allLeafPaths = [];
+  const activePlats = new Set(getActivePlatforms());
+
+  for(const [folderPath, info] of Object.entries(manifest.folders||{})) {
+    if(info.type==='article') continue;
+    const files = (info.files||[]).filter(f=>f.endsWith('.json'));
+    if(!files.length) continue;
+
+    const parts = folderPath.split('/');
+    if(!activePlats.has(parts[0])) continue;
+
+    // Insert folder path into tree
+    let node = treeRoot;
+    for(let i=0;i<parts.length;i++) {
+      const name = parts[i];
+      const nodePath = parts.slice(0,i+1).join('/');
+      if(!node[name]) node[name] = { _p: nodePath, _fc: 0, _ch: {} };
+      node[name]._fc += files.length;
+      if(i===parts.length-1) {
+        node[name]._leaf = true;
+        node[name]._ownFiles = files.length;
+        // Add individual file nodes as children
+        for(const file of files) {
+          const filePath = folderPath + '/' + file;
+          const displayName = file.replace(/\.json$/i,'').replace(/_/g,' ');
+          node[name]._ch[file] = {
+            _p: filePath,
+            _fc: 1,
+            _ch: {},
+            _fileNode: true,
+            _displayName: displayName
+          };
+          allLeafPaths.push({ path: filePath, fileCount: 1 });
+        }
+      }
+      node = node[name]._ch;
+    }
+  }
+
+  // Default: select ALL file leaves
+  ws.selPaths = new Set(allLeafPaths.map(l=>l.path));
+}
+
+function buildTreeUI() {
+  const container = document.getElementById('treeRoot');
+  container.innerHTML = renderChildren(treeRoot, 0);
+}
+
+function renderChildren(nodes, depth) {
+  return Object.entries(nodes)
+    .sort(([a],[b])=>a.localeCompare(b))
+    .map(([name, node])=>renderNode(name, node, depth))
+    .join('');
+}
+
+function renderNode(name, node, depth) {
+  const isFileNode = node._fileNode === true;
+  const hasChildren = !isFileNode && Object.keys(node._ch).length > 0;
+  const nodeId = eid(node._p);
+  const state = getNodeState(node);
+  const cbClass = state==='full'?'full':state==='part'?'part':'';
+  const cbIcon = 'fas fa-check';
+  const indent = depth * 14;
+
+  const displayName = isFileNode
+    ? (node._displayName || name.replace(/\.json$/i,'').replace(/_/g,' '))
+    : name;
+
+  const toggleBtn = hasChildren
+    ? `<button class="tree-toggle" id="tog_${nodeId}" onclick="toggleExpand('${ej(node._p)}','${nodeId}')" title="Expand/Collapse"><i class="fas fa-chevron-right"></i></button>`
+    : `<span class="tree-spacer"></span>`;
+
+  const fileIcon = isFileNode
+    ? `<i class="fas fa-file-alt tree-file-icon"></i>`
+    : '';
+
+  const countBadge = isFileNode
+    ? ''
+    : `<span class="tree-count">${node._fc} files</span>`;
+
+  const row = `<div class="tree-row${isFileNode?' tree-file-row':''}" style="padding-left:${indent}px;" id="row_${nodeId}">
+    ${toggleBtn}
+    <div class="tree-cb ${cbClass}" id="cb_${nodeId}" onclick="toggleNode('${ej(node._p)}')" title="${state==='full'?'Deselect':'Select'}">
+      <i class="${cbIcon}"></i>
+    </div>
+    ${fileIcon}<span class="tree-label${isFileNode?' tree-file-label':''}" title="${esc(displayName)}">${esc(displayName)}</span>
+    ${countBadge}
+  </div>`;
+
+  const children = hasChildren
+    ? `<div class="tree-children" id="ch_${nodeId}">${renderChildren(node._ch, depth+1)}</div>`
+    : '';
+
+  return `<div class="tree-node" id="tn_${nodeId}">${row}${children}</div>`;
+}
+
+function toggleExpand(path, nodeId) {
+  const chEl = document.getElementById('ch_'+nodeId);
+  const togEl = document.getElementById('tog_'+nodeId);
+  if(!chEl || !togEl) return;
+  const open = chEl.classList.toggle('open');
+  togEl.querySelector('i').className = open?'fas fa-chevron-down':'fas fa-chevron-right';
+}
+
+function getNode(path) {
+  const parts = path.split('/');
+  let cur = treeRoot;
+  for(let i=0;i<parts.length;i++) {
+    if(!cur[parts[i]]) return null;
+    if(i===parts.length-1) return cur[parts[i]];
+    cur = cur[parts[i]]._ch;
+  }
+  return null;
+}
+
+function getAllLeavesUnder(node) {
+  const leaves = [];
+  if(node._fileNode) {
+    leaves.push(node._p);
+    return leaves;
+  }
+  for(const child of Object.values(node._ch)) {
+    leaves.push(...getAllLeavesUnder(child));
+  }
+  return leaves;
+}
+
+function getNodeState(node) {
+  const leaves = getAllLeavesUnder(node);
+  if(!leaves.length) return 'none';
+  const selCount = leaves.filter(p=>ws.selPaths.has(p)).length;
+  if(selCount===0) return 'none';
+  if(selCount===leaves.length) return 'full';
+  return 'part';
+}
+
+// Save which tree-children divs are currently expanded
+function saveExpanded() {
+  const exp = new Set();
+  document.querySelectorAll('.tree-children.open').forEach(el => exp.add(el.id));
+  return exp;
+}
+// Restore expanded state after a tree re-render
+function restoreExpanded(exp) {
+  exp.forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.classList.add('open');
+    const nodeId = id.replace(/^ch_/, '');
+    const tog = document.getElementById('tog_'+nodeId);
+    if(tog) { const i=tog.querySelector('i'); if(i) i.className='fas fa-chevron-down'; }
+  });
+}
+
+function toggleNode(path) {
+  const node = getNode(path);
+  if(!node) return;
+  const leaves = getAllLeavesUnder(node);
+  if(!leaves.length) return;
+  const state = getNodeState(node);
+  if(state==='full') { leaves.forEach(p=>ws.selPaths.delete(p)); }
+  else               { leaves.forEach(p=>ws.selPaths.add(p)); }
+  // Full re-render so ALL checkboxes (children + ancestors) visually update
+  const exp = saveExpanded();
+  buildTreeUI();
+  restoreExpanded(exp);
+  updateSelCount();
+}
+
+function selectAllTree(sel) {
+  if(sel) { allLeafPaths.forEach(l=>ws.selPaths.add(l.path)); }
+  else    { ws.selPaths.clear(); }
+  buildTreeUI(); // re-render tree with updated states
+  updateSelCount();
+}
+
+function updateSelCount() {
+  const el = document.getElementById('selCount');
+  if(el) el.textContent = ws.selPaths.size + ' files selected';
+}
+
+// ── Step 2: Review ─────────────────────────────────────────────────────────
+function buildReview() {
+  const pLabel = ws.pm==='all'?'All Platforms':ws.pm==='rnd'?'Random Platform each time':ws.picks.join(', ');
+  // Group selected paths by platform
+  const byPlat = {};
+  for(const p of ws.selPaths) {
+    const plat = p.split('/')[0];
+    if(!byPlat[plat]) byPlat[plat]=0;
+    const leaf = allLeafPaths.find(l=>l.path===p);
+    byPlat[plat]+= leaf?leaf.fileCount:0;
+  }
+  const platRows = Object.entries(byPlat).map(([p,c])=>`<span class="rtag">${esc(p)}: ${c} files</span>`).join('');
+  document.getElementById('reviewBox').innerHTML = `
+    <div class="rev-card">
+      <div class="rev-row"><span class="rev-lbl">Name</span><span class="rev-val">${esc(ws.name)}</span></div>
+      <div class="rev-row"><span class="rev-lbl">Questions</span><span class="rev-val">${ws.qCount} (random each session)</span></div>
+      <div class="rev-row"><span class="rev-lbl">Platforms</span><span class="rev-val">${esc(pLabel)}</span></div>
+      <div class="rev-row"><span class="rev-lbl">Files</span><span class="rev-val">${ws.selPaths.size} selected</span></div>
+      <div class="rev-row"><span class="rev-lbl">By Platform</span><span class="rev-val" style="flex-wrap:wrap;display:flex;">${platRows||'<em style="color:var(--mt)">None selected</em>'}</span></div>
+    </div>
+    <div class="info-box"><i class="fas fa-shuffle"></i><span>Every session picks <strong>${ws.qCount} random MCQs</strong> from the <strong>${ws.selPaths.size}</strong> selected file(s) — so each quiz is unique.</span></div>`;
+}
+
+// ── Save ───────────────────────────────────────────────────────────────────
+async function saveModule() {
+  const btn = document.getElementById('btnSave');
+  btn.disabled=true; btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Saving…';
+  const mod = {
+    name: ws.name,
+    qCount: ws.qCount,
+    pm: ws.pm,
+    picks: [...ws.picks],
+    selPaths: [...ws.selPaths],
+    createdAt: Date.now()
+  };
+  if(modules.length>=3) {
+    const oldest = modules.reduce((mi,m,i)=>m.createdAt<modules[mi].createdAt?i:mi,0);
+    modules[oldest]=mod;
+  } else {
+    modules.push(mod);
+  }
+  await persist();
+  closeWizard();
+  renderModules();
+  toast('Module saved!');
+  btn.disabled=false; btn.innerHTML='<i class="fas fa-save"></i>Save Module';
+}
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function ej(s) { return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+function eid(s){ return String(s||'').replace(/[^a-z0-9]/gi,'_'); }
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2500); }
+
+document.getElementById('overlay').addEventListener('click',e=>{ if(e.target===document.getElementById('overlay')) closeWizard(); });
+
+init();
+</script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

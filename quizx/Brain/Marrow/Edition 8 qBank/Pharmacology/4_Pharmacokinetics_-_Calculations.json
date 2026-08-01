@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "title": "4_Pharmacokinetics_-_Calculations"
+  },
+  "questions": [
+    {
+      "text": "The elimination after 3 half-lives in first-order kinetics is around:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "12.5%"
+        },
+        {
+          "id": 2,
+          "text": "75%"
+        },
+        {
+          "id": 3,
+          "text": "87.5%"
+        },
+        {
+          "id": 4,
+          "text": "94%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>After <strong>each half-life, 50%</strong> of the drug is <strong>eliminated</strong> or the plasma concentration becomes half the original value.</p>\n<p>Therefore, after,&nbsp;</p>\n<ul>\n<li>1 half-life = 50% drug is eliminated</li>\n<li>2 half-lives = 75% drug is eliminated</li>\n<li>3 half-lives = <strong>87.5%</strong>&nbsp;is eliminated</li>\n<li>4 half-lives = 93% is eliminated</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4491",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You have to give 180 mg of ceftriaxone to a patient in a 2 ml syringe that has 10 divisions per ml. The concentration of the drug in the vial is 500 mg/5 ml. How many divisions should be filled in 2 ml of the syringe to give 180 mg?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "18"
+        },
+        {
+          "id": 2,
+          "text": "1.8"
+        },
+        {
+          "id": 3,
+          "text": "2"
+        },
+        {
+          "id": 4,
+          "text": "20"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The syringe should be filled up to <strong>18 divisions</strong> to deliver 180 mg ceftriaxone to the patient.&nbsp;</p>\n<p>Concentration of drug: 500 mg/5 mL &rarr; 100 mg/1 mL</p>\n<p>The syringe has 10 divisions per mL.</p>\n<p>Hence, each division corresponds to 1/10 = 0.1 mL</p>\n<p>The required dosage for the patient is 180 mg that is present in 1.8 mL.&nbsp;&nbsp;</p>\n<p>0.1mL =1 division, 1.8mL = 18 divisions.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4514",
+      "difficulty": "medium"
+    },
+    {
+      "text": "500mg of a drug was administered to a patient. 100mg was cleared in 1 hour. How much of the drug would be left in his body after 3 hours if the excretion of the drug follows zero-order kinetics?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "300 mg"
+        },
+        {
+          "id": 2,
+          "text": "200 mg"
+        },
+        {
+          "id": 3,
+          "text": "400 mg"
+        },
+        {
+          "id": 4,
+          "text": "100 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In <strong>zero-order kinetics</strong>, a <strong>constant amount</strong> of drug is <strong>eliminated</strong> in <strong>unit time.</strong>&nbsp;</p>\n<p>In this question, 100 mg of the drug is eliminated in 1 hour.</p>\n<p>After 3 hours,</p>\n<p>3 x 100 = 300 mg would be eliminated.</p>\n<p>500-300 =<strong> 200 mg</strong> will be the <strong>remaining drug</strong> in the body.&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4517",
+      "difficulty": "easy"
+    },
+    {
+      "text": "200 mg of a drug is administered to a patient, of which 20 mg is excreted in 90 minutes. How much of the drug will remain after 3 hours if it follows first-order kinetics?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "162 mg"
+        },
+        {
+          "id": 2,
+          "text": "145.8 mg"
+        },
+        {
+          "id": 3,
+          "text": "50 mg"
+        },
+        {
+          "id": 4,
+          "text": "40 mg"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>After 3 hours, <strong>162</strong><strong>mg</strong> of the drug will remain.</p>\n<p>In first-order&nbsp;kinetics, a <strong>constant fraction</strong> of the drug is <strong>excreted</strong> in a <strong>given time.</strong>&nbsp;</p>\n<p>In the given question,</p>\n<p>20mg out of 200mg is excreted in 90 minutes,&nbsp;</p>\n<p>20/200 = 0.1 fraction<strong>&nbsp;</strong>is eliminated every 90 minutes.</p>\n<p>After 90 minutes, 200mg - 20 mg = 180 mg remains&nbsp;</p>\n<p>The next 90 minutes (i.e. after 180 minutes) = 180 x 0.1 = 18 mg is eliminated.</p>\n<p>Therefore, 180 - 18 = <strong>162 mg remains.&nbsp;&nbsp;</strong></p>\n<p>&nbsp;</p>\n<p><strong>Simpler way:&nbsp;</strong></p>\n<p>1/10 fraction of the drug is excreted in 90 minutes&nbsp;&rarr; 9/10 remains after 90 minutes.</p>\n<p>3 hours (180 min) is 2 times 90 minutes.</p>\n<p>So 200 x (9/10)(9/10) = 162 mg remains after 180 minutes&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4515",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate the half-life of a drug X administered to a patient if it has a volume of distribution of 50 liters and clearance of 0.1 L/min.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "500 minutes"
+        },
+        {
+          "id": 2,
+          "text": "440 minutes"
+        },
+        {
+          "id": 3,
+          "text": "420 minutes"
+        },
+        {
+          "id": 4,
+          "text": "350 minutes"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>half-life</strong> of this drug is <strong>350 minutes.</strong></p>\n<p>In first-order kinetics:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b90167f94b3b478fb3d9bdf163b48edfx1280x361.JPEG\" alt=\"Explanation Image\"><p>Therefore, </p>\n<p>t1/2 ~ 0.7 x 50/0.1 = 0.7 x 500</p>\n<p><strong>t1/2 ~ 350 minutes</strong> </p>\n<p>Where,</p>\n<ul>\n<li>t1/2 - Plasma half-life</li>\n<li>Vd - Volume of distribution (50)</li>\n<li>CL - Clearance (0.1)</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4516",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate hepatic clearance of a drug with hepatic blood flow of 2000 mL/min and hepatic extraction ratio of 0.5.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "4000 mL/min"
+        },
+        {
+          "id": 2,
+          "text": "2000 mL/min"
+        },
+        {
+          "id": 3,
+          "text": "1500 mL/min"
+        },
+        {
+          "id": 4,
+          "text": "1000 mL/min"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p class=\"p1\">The hepatic clearance is <strong>1000 mL/min</strong>.</p>\n<p class=\"p1\"><strong>Clearance</strong> of a drug by an organ is the <strong>difference between</strong> the <strong>rate</strong> of <strong>presentation</strong> of the drug<strong> to</strong> the <strong>organ</strong> and the <strong>rate</strong> of <strong>exit</strong> of the drug<strong> from</strong> the <strong>organ.</strong> It&nbsp;is calculated by the equation:</p>\n<p class=\"p1\"><strong>CL<sub>organ</sub> = Q x E</strong></p>\n<p class=\"p1\">Where,&nbsp;</p>\n<ul>\n<li class=\"p1\">Q - Organ blood flow&nbsp;</li>\n<li class=\"p1\">E - Extraction ratio (organ-specific)</li>\n</ul>\n<p class=\"p1\">In the question, it is given that the hepatic blood flow (Q) is 2000 mL/min and the hepatic extraction ratio (E) is 0.5.</p>\n<p class=\"p1\">Substituting the values in the above equation,&nbsp;</p>\n<p class=\"p1\"><strong>CL<sub>organ</sub> = </strong>2000 X 0.5&nbsp;<strong>= 1000 mL/min</strong></p>\n<p class=\"p1\">Note:&nbsp;The <strong>extraction ratio&nbsp;(E)</strong> is the fraction of the drug that is removed from the blood by the eliminating&nbsp;organ.</p>\n<p class=\"p1\">Extraction ratio (E) =&nbsp;C<sub>A</sub>-C<sub>V</sub>/C<sub>A</sub></p>\n<p class=\"p1\">Where,&nbsp;</p>\n<ul>\n<li class=\"p1\">C<sub>A</sub> is the concentration of drug presented to the organ</li>\n<li class=\"p1\">C<sub>A</sub>-C<sub>V</sub> is the drug removed by the organ</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4518",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient is administered drug X that follows first-order kinetics.  40 mg intravenous dose results in a plasma concentration of 2mg/L initially and 1mg/L, 4 hours later. What is the clearance of drug X?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5 L/hr"
+        },
+        {
+          "id": 2,
+          "text": "10 L/hr"
+        },
+        {
+          "id": 3,
+          "text": "3.5 L/hr"
+        },
+        {
+          "id": 4,
+          "text": "7 L/hr"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Time taken</strong> for the <strong>plasma concentration</strong> to drop <strong>to half,</strong></p>\n<p>2 mg/L to 1mg/L = 4 hours (plasma half life-t1/2)</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/59ac4b5998694ff49b010e93aeede415x1280x362.JPEG\" alt=\"Explanation Image\"><p>Amount of drug in the body = 40<br />Initial plasma concentration = 2<br /><br />Therefore,<br /><br />Vd = 40/2 = 20 L </p>\n<p><strong>Clearance = 0.693 x Vd / t1/2</strong></p>\n<p>Clearance ~ 0.7 x 20/4</p>\n<p><strong>Clearance ~ 3.5 L/hour </strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4519",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A male patient weighing 50 kg has acute severe asthma, for which theophylline infusion is planned. The target plasma concentration is 10 mg/L. The volume of distribution of theophylline is  0.6 L/kg. What will be the loading dose in this patient for intravenous administration?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "200 mg"
+        },
+        {
+          "id": 2,
+          "text": "250 mg"
+        },
+        {
+          "id": 3,
+          "text": "300 mg"
+        },
+        {
+          "id": 4,
+          "text": "350 mg"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>loading dose</strong> in this patient for intravenous administration is <strong>300mg. </strong></p>\n<p>Target plasma concentration (Cp) = 10 mg/L</p>\n<p>Volume of distribution (Vd) = 0.6 L/kg </p>\n<p>In the above patient, total Vd = 0.6 x 50 = 30 L</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2daab0c99dbc4a309b3638916161d3dbx1280x361.JPEG\" alt=\"Explanation Image\"><p>For intravenous route; F=1</p>\n<p>Where, </p>\n<ul>\n<li>Vd - Volume of distribution (liters) </li>\n<li>Cp - target serum level (mcg/L)</li>\n<li>F - bioavailability factor</li>\n</ul>\n<p><strong>Loading dose</strong> = 10 mg/L x 30L = <strong>300 mg</strong> </p>\n<p><strong>Note</strong>: The loading dose of 300 mg is usually not given as a single intravenous injection; it would be given as an infusion or as divided doses administered over a short period to reduce the toxicity associated with high plasma levels. </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4530",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Calculate maintenance dose for a drug M with 100% oral bioavailability, which needs a target concentration of 2 mg/L and clearance of 20L/hr and dosed QID.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "300 mg"
+        },
+        {
+          "id": 2,
+          "text": "160 mg"
+        },
+        {
+          "id": 3,
+          "text": "250 mg"
+        },
+        {
+          "id": 4,
+          "text": "240 mg"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p class=\"p1\">The <strong>maintenance dose</strong> of the drug is <strong>240 mg</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/41b2b6037db546789cb27ecb131fc3afx1280x407.JPEG\" alt=\"Explanation Image\"><p>Target plasma concentration (Cp) = 2 mg/L</p>\n<p>Clearance (CL) = 20L/hr</p>\n<p>Assuming dosing interval for QID = every 6th hour = x 6 (since the clearance stated is per hour)</p>\n<p>Bioavailability (100%), F= 1</p>\n<p class=\"p1\">Maintenance dose = 2 x 20 x 6/ 1 = <strong>240 mg </strong></p>\n<p class=\"p1\">Note: QID corresponds to 4 times a day. Hence, the dosing interval is 24/4 = 6 hours.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4531",
+      "difficulty": "hard"
+    },
+    {
+      "text": "You have started an infusion of drug Y in a patient at a rate of 200 mg/hr. Drug Y has Vd of 100 liters and clearance of 100 ml/min. What will be the drug concentration at a steady state?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 mg/h"
+        },
+        {
+          "id": 2,
+          "text": "25 mg/h"
+        },
+        {
+          "id": 3,
+          "text": "36.66 mg/L"
+        },
+        {
+          "id": 4,
+          "text": "33.33 mg/L"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Steady state concentration </strong>(C<sub>ss</sub>) for this drug is<strong> 33.33mg/L.</strong></p>\n<p>Steady state concentration (<strong>C<sub>ss</sub></strong>) = <strong>Rate of infusion / clearance.</strong></p>\n<p>Rate of infusion = 200 mg/h</p>\n<p>V<sub>d</sub> = 100 L</p>\n<p>Clearance = 100 mL/min</p>\n<p>Clearance = 100 x 60 mL/hr = 6000 mL/hr = 6L/h (converted to L/h)</p>\n<p>C<sub>ss</sub> = (200 mg/hr) / (6L/hr) = 100/3 = <strong>33.33 mg/L</strong>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4532",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The clearance of a drug which follows first-order kinetics (in one compartment model) is 0.2 L/min and volume of distribution is 40 L. What is the t1/2 of that drug?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "140 min"
+        },
+        {
+          "id": 2,
+          "text": "220 min"
+        },
+        {
+          "id": 3,
+          "text": "240 min"
+        },
+        {
+          "id": 4,
+          "text": "180 min"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>t<sub>1/2</sub></strong> of the drug would be <strong>140 minutes.</strong></p>\n<p>t<sub>1/2</sub> is the <strong>time</strong> required for the <strong>plasma concentration</strong> or the amount of a drug in the <strong>body</strong> to be <strong>reduced</strong> by <strong>50%.</strong> It depends on its&nbsp;<strong>clearance</strong>&nbsp;and&nbsp;<strong>volume</strong> of <strong>distribution.</strong>&nbsp;</p>\n<p><strong>t<sub>1/2</sub> = 0.693 x V<sub>d</sub>/Cl</strong></p>\n<p>where,&nbsp;</p>\n<ul>\n<li>V<sub>d</sub>&nbsp;- volume of distribution</li>\n<li>Cl - clearance.</li>\n</ul>\n<p>We can take 0.693 approximately as 0.7</p>\n<p>Substituting,</p>\n<p>t<sub>1/2</sub> = 0.7 x 40 /0.2</p>\n<p>t<sub>1/2</sub> = 0.7 x 200</p>\n<p>t<sub>1/2</sub> = <strong>140 minutes</strong></p>\n<p>Clinical implications: Half-life determines the duration of the drug effect. It also indicates whether the accumulation of the drug will occur under multiple dosage regimens&nbsp;thereby making it is essential to decide on the appropriate dosing interval.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6482",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A drug was given IV at a rate of 1.6mg/min. The clearance of the drug is 640ml/min. The half life of the drug is 1.8 hour. Calculate the plasma concentration of the drug at steady state.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.88mg/ml"
+        },
+        {
+          "id": 2,
+          "text": "0.004mg/ml"
+        },
+        {
+          "id": 3,
+          "text": "3.55mg/ml"
+        },
+        {
+          "id": 4,
+          "text": "0.002mg/ml"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Plasma steady-state concentration</strong> is achieved when the amount of <strong>drug</strong> being <strong>administered equals</strong> the amount of <strong>drug</strong> being <strong>excreted</strong> from the body.</p>\n<p>The amount of drug being administered = 1.6mg/min</p>\n<p><strong>Amount of drug being excreted = Clearance (CL) x Plasma concentration of the drug (C)</strong></p>\n<p>Clearance = 640ml/min</p>\n<p>Therefore,</p>\n<p>1.6mg/min = 640ml /min ( clearance) x Plasma concentration of the drug</p>\n<p>Hence,</p>\n<p><strong>Plasma concentration</strong> of the drug = 1.6 mg/min / 640 ml/min = <strong>0.002 mg/ml.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9513",
+      "difficulty": "hard"
+    }
+  ]
+}

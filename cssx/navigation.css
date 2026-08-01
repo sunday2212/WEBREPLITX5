@@ -1,0 +1,10 @@
+
+/* DARK MODE */
+html:not([data-theme="light"]) .breadcrumb,
+html:not([data-theme="light"]) .tab-bar {
+  background: #1a1d2e;
+  border-color: #2a3045;
+}
+html:not([data-theme="light"]) .breadcrumb a { color: #63b3ed; }
+html:not([data-theme="light"]) .tab-item { color: #8892a4; }
+html:not([data-theme="light"]) .tab-item.active { color: #63b3ed; }

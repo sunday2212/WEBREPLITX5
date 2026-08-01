@@ -1,0 +1,781 @@
+{
+  "meta": {
+    "title": "Mch_Indicator"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">14.5</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\"> 13.8</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">20</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">5</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A community has a population of 10,000 and a crude birth rate (CBR) of 36 per 1,000. If 5 maternal deaths were reported in the current year, what is the Maternal Mortality Ratio (MMR)?</span></p>",
+      "unique_key": "DT1230906",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230906,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>MMR</strong> is calculated as the number of maternal deaths per 1,000 or 100,000 live births; here, it is 13.8 per 1,000 live births.</p>\n<ul>\n<li>Maternal Mortality Ratio (MMR) is defined as:</li>\n</ul>\n<p>MMR = (Number of maternal deaths in a year/Number of live births in the same year) X 1000</p>\n<ul>\n<li>Given:\n<ul>\n<li>Population = 10,000</li>\n<li>Crude Birth Rate (CBR) = 36 per 1,000</li>\n<li>&rarr; Number of live births = (36/1000) X 10000 = 360</li>\n<li>Maternal deaths = 5</li>\n</ul>\n</li>\n<li>Now applying the formula:</li>\n</ul>\n<p>MMR = (5/360) X 1000 = 13.88 approx. 13.8</p>\n<ul>\n<li>So, the MMR = 13.8 per 1,000 live births.</li>\n</ul>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">50</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">25</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">10</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">5</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a town with a population of 36,000, there were 1,200 live births and 60 infant deaths in the current year. What is the Infant Mortality Rate (IMR)?</span></p>",
+      "unique_key": "DT1230907",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230907,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>IMR</strong> is calculated as the number of infant deaths per 1,000 live births; here it is 60 per 1,200 live births = 50 per 1,000.</p>\n<ul>\n<li>Infant Mortality Rate (IMR) is defined as:</li>\n</ul>\n<p>IMR = (Number of infant deaths(&lt;1 yr of age)/ Number of live births) X 1000</p>\n<ul>\n<li>Given:\n<ul>\n<li>Live births = 1,200</li>\n<li>Infant deaths = 60</li>\n</ul>\n</li>\n</ul>\n<p>IMR = (60/1200) X 1000 = 50</p>\n<ul>\n<li>So, the Infant Mortality Rate is 50 per 1,000 live births.</li>\n</ul>",
+      "correct_choice_id": 11,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">CPR</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">IMR</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">MMR</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">CDR</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is considered the best determinant of the health status of a country?</span></p>",
+      "unique_key": "DT1230908",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230908,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Infant Mortality Rate (IMR)</strong> is the most sensitive and widely accepted indicator of a nation's health status.</p>\n<ul>\n<li>IMR reflects the number of deaths of infants under one year of age per 1,000 live births in a given year.</li>\n<li>It is influenced by a wide range of factors such as maternal health, quality of and access to medical care, socioeconomic conditions, and public health practices.</li>\n<li>It is considered the best single indicator of the overall health status of a population because it reflects not just child health but also maternal health, nutritional status, sanitation, and effectiveness of health services.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>CPR (Option A):</strong> Contraceptive Prevalence Rate indicates the extent of family planning use but does not reflect overall health status.</p>\n<p><strong>MMR (Option C): </strong>Maternal Mortality Rate is important but limited to maternal health and less sensitive compared to IMR.</p>\n<p><strong>CDR (Option D):</strong> Crude Death Rate includes all deaths, regardless of cause or age, and is less specific or sensitive to healthcare differences.</p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stillborn and death within 7 days of birth</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Neonatal deaths within 30 days of birth</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Abortions and death within 7 days of birth</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deaths between 7 days and 28 days of birth</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Perinatal Mortality Rate (PMR) includes which of the following?</span></p>",
+      "unique_key": "DT1230910",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230910,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Perinatal Mortality Rate</strong> includes late fetal deaths (stillbirths) and early neonatal deaths (within the first 7 days of life).</p>\n<ul>\n<li>The Perinatal Mortality Rate (PMR) is a critical indicator that reflects the health care provided during late pregnancy and around delivery.</li>\n<li>It includes:\n<ul>\n<li>Stillbirths (fetal deaths after 28 weeks of gestation), and</li>\n<li>Early neonatal deaths are deaths of live-born infants within the first 7 completed days of life.</li>\n</ul>\n</li>\n<li>It is expressed as the number of such deaths per 1,000 total births (live births + stillbirths).</li>\n<li>PMR provides insight into maternal care, quality of obstetric and neonatal services, and socioeconomic conditions affecting both mother and child.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Neonatal deaths within 30 days of birth (Option B):</strong> This defines neonatal mortality, not perinatal mortality.</p>\n<p><strong>Abortions and death within 7 days of birth (Option C):</strong> Abortions (before viability) are not included in PMR; only stillbirths (&ge;28 weeks) are considered.</p>\n<p><strong>Deaths between 7 days and 28 days of birth (Option D):</strong> This refers to late neonatal mortality, which is not part of PMR.</p>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">12.5</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">50</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">49.4</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">62.5</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a given population, total births in a year are 4050. There are 50 stillbirths, 50 neonates die within the first 7 days of life, and 150 deaths occur between 8-28 days of life. What is the Neonatal Mortality Rate (NMR) in the population?</span></p>",
+      "unique_key": "DT1230925",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230925,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Neonatal Mortality Rate (NMR)</strong> is calculated using neonatal deaths (0-28 days) per 1000 live births; here, it's (200/400) X 1000 = 50.</p>\n<ul>\n<li>Neonatal Mortality Rate (NMR) =</li>\n<li>(Number of neonatal deaths (0-28 days)/ Number of live births) X 1000</li>\n<li>From the question:\n<ul>\n<li>Total births = 4050</li>\n<li>Stillbirths = 50</li>\n<li>&rArr; Live births = 4050 - 50 = 4000</li>\n<li>Neonatal deaths = 50 (within 0-7 days) + 150 (within 8-28 days) = 200</li>\n</ul>\n</li>\n<li>So,</li>\n</ul>\n<p>NMR = (200/400) X 1000 = 50</p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">1000 - IMR / 10</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">IMR - 1000 / 10</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">1000 - U5MR / 10</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">U5MR - 1000 / 10</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Child Survival Index is calculated by which of the following formulas?</span></p>",
+      "unique_key": "DT1230927",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230927,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Child Survival Index</strong> is derived by subtracting one-tenth of the Under-5 Mortality Rate (U5MR) from 1000.</p>\n<ul>\n<li>The Child Survival Index (CSI) is a simple indicator to reflect the health status of children under 5 years of age in a given population.</li>\n<li>It is calculated using the formula:</li>\n</ul>\n<p>CSI = 1000 - (Under-5 Mortality Rate(U5MR) / 10)</p>\n<ul>\n<li>For example, if U5MR = 70,</li>\n</ul>\n<p>CSI = 1000 - (70/10) = 993</p>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Seven days</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">28 days</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">0-2 months</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Six months</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">According to the IMNCI (Integrated Management of Neonatal and Childhood Illness), a young infant is defined as a child below what age?</span></p>",
+      "unique_key": "DT1230932",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230932,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>IMNCI</strong> defines <strong>young infants</strong> as children from birth up to 28 days of life.</p>\n<ul>\n<li>In the IMNCI guidelines, age classification is crucial for assessing and managing sick children.</li>\n<li>The term \"young infant\" specifically refers to children aged 0 to 28 days.</li>\n<li>This age group is distinct because neonates are physiologically and clinically different from older infants and require different diagnostic and treatment approaches.</li>\n<li>Children aged 29 days to 2 months fall into the \"infant\" category, and those aged 2 months to 5 years are considered older children under IMNCI.</li>\n<li>IMNCI protocols offer tailored case management strategies for young infants due to their high vulnerability to infections and rapid deterioration.</li>\n<li>Seven days refers to the early neonatal period. <strong>(Option A ruled out)</strong></li>\n<li>Though 0-2 months is used in some contexts, IMNCI classifies \"young infants\" strictly as those below 28 days. <strong>Option C ruled out)</strong></li>\n<li>Six months falls in the older infant category. <strong>(Option D ruled out)</strong></li>\n</ul>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">8</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">15</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">50</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">75</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the target neonatal mortality rate (NMR) to be achieved by the year 2030, as per national and international health goals?</span></p>",
+      "unique_key": "DT1230957",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230957,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The target <strong>neonatal mortality rate (NMR)</strong> to be achieved by 2030 is 8 per 1000 live births.</p>\n<ul>\n<li>The Sustainable Development Goals (SDGs) adopted by the United Nations aim to reduce the neonatal mortality rate to at least as low as 12 per 1000 live births by 2030 globally.</li>\n<li>However, India has set a more ambitious national target under its National Health Policy and India Newborn Action Plan (INAP) to achieve a single-digit NMR of 8 per 1000 live births by 2030.</li>\n<li>This target aligns with efforts to reduce preventable newborn deaths through interventions such as skilled birth attendance, improved neonatal care, and strengthened health systems.</li>\n</ul>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">197.4</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">320</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">125</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">100</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a village with a population of 20,000, there were 456 births in a year, including 56 still births. During the same year, 20 children died within the first month, and 30 died in the remaining 11 months. The total number of deaths in the population that year was 500. What is the Infant Mortality Rate (IMR)?</span></p>",
+      "unique_key": "DT1230959",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230959,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>IMR is calculated as the number of infant deaths (&lt;1 year) per 1000 live births; here, IMR = (50/400) &#xd7; 1000 = 125.</p>\n<ul>\n<li>Infant Mortality Rate (IMR) is defined as the number of deaths of infants below one year of age per 1000 live births in a given year.</li>\n<li>Given data:\n<ul>\n<li>Total births = 456</li>\n<li>Stillbirths = 56 &rarr; Live births = 456 - 56 = 400</li>\n<li>Infant deaths (&lt;1 year) = Deaths in first month (20) + deaths in next 11 months (30) = 50</li>\n</ul>\n</li>\n</ul>\n<p>IMR = (Number of infant deaths / Number of live births) &#xd7; 1000 = (50 / 400) &#xd7; 1000 = 125</p>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">25</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">50</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">75</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">100</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An Auxiliary Nurse Midwife (ANM) is responsible for the registration of all pregnancies in her sub-centre area. If the expected number of pregnancies in her area in a year is 100, approximately how many pregnancies should be registered at any given point in time?</span></p>",
+      "unique_key": "DT1230962",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230962,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>At any given time, about one-fourth (25%) of the annual expected pregnancies will be ongoing and thus should be registered.</p>\n<ul>\n<li>In community health, the expected number of pregnancies in a year is used for planning and tracking maternal and child health services.</li>\n<li>Since a pregnancy lasts approximately 9 months, at any point in time, the number of currently pregnant women in the area will be about three-fourths of a year's worth of pregnancies, divided over 12 months.</li>\n<li>This averages to about 1/4th of the annual expected pregnancies being pregnant and requiring registration at a particular point in time.</li>\n<li>Thus, if 100 pregnancies are expected in a year, approximately 25 would be registered at any given point in time.</li>\n</ul>",
+      "correct_choice_id": 91,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">C > B > A > D</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">A > B > C > D</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">D > C > B > A</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">D > A > B > C</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is the correct order of the most common causes of neonatal mortality in India, starting from the most frequent to the least frequent?<br>A) Sepsis<br>B) Asphyxia<br>C) Preterm complications<br>D) Congenital anomaly</span></p>",
+      "unique_key": "DT1231011",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231011,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Preterm birth complications are the leading cause of neonatal mortality in India, followed by birth asphyxia, sepsis, and congenital anomalies.</p>\n<ul>\n<li>The major causes of neonatal mortality in India follow a consistent pattern, reflecting both biological vulnerability and healthcare gaps.</li>\n<li>According to current data:\n<ul>\n<li>Preterm complications -\n<ul>\n<li>Account for the largest proportion of neonatal deaths due to immature organ systems, especially the lungs and immune system.</li>\n</ul>\n</li>\n<li>Birth asphyxia -\n<ul>\n<li>Results from inadequate oxygen supply during or just after birth; a preventable cause with better intrapartum care.</li>\n</ul>\n</li>\n<li>Sepsis -\n<ul>\n<li>Due to poor hygiene and infection control practices, especially in rural and low-resource settings.</li>\n</ul>\n</li>\n<li>Congenital anomalies -\n<ul>\n<li>Although important, they contribute less compared to the above causes.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>This ranking reflects both clinical and public health importance and helps in targeting interventions.</li>\n</ul>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Maternal Mortality Rate</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Maternal Mortality Ratio</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Infant Mortality Rate</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Perinatal Mortality Rate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The number of maternal deaths per 1,00,000 live births is referred to as:</span></p>",
+      "unique_key": "DT1231021",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231021,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Maternal Mortality Ratio (MMR)</strong> is defined as the number of maternal deaths per 1,00,000 live births in a given time period.</p>\n<ul>\n<li>The Maternal Mortality Ratio (MMR) is an important indicator of maternal health and the quality of maternal care services in a region.</li>\n<li>It reflects the risk of death associated with pregnancy and childbirth.</li>\n<li>It is calculated using the formula:</li>\n</ul>\n<p>MMR = (Number of maternal deaths during a given time period/ Number of live births during same period) X 1,00,000</p>\n<ul>\n<li>This ratio allows for comparison across regions and time frames, independent of population size.</li>\n<li>The use of 1,00,000 as the denominator (instead of 1,000) helps highlight even small changes in maternal deaths, which are comparatively rare events.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Maternal Mortality Rate (Option A):</strong> This refers to maternal deaths per 1,00,000 women of reproductive age, not per live births.</p>\n<p><strong>Infant Mortality Rate (Option C):</strong> Refers to the number of deaths of infants under 1 year of age per 1,000 live births.</p>\n<p><strong>Perinatal Mortality Rate (Option D):</strong> Refers to the number of stillbirths plus deaths within the first 7 days of life per 1,000 total births.</p>",
+      "correct_choice_id": 112,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Infant Mortality Rate (IMR)</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Perinatal Mortality Rate</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Under-5 Mortality Rate (U5MR)</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Still birth Rate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the best indicator to evaluate obstetric and neonatal care given around the time of birth?</span></p>",
+      "unique_key": "DT1231038",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231038,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Perinatal Mortality Rate (PMR)</strong> reflects the quality of both obstetric and immediate neonatal care around the time of delivery.</p>\n<ul>\n<li>Perinatal Mortality Rate (PMR) is the best indicator for assessing care provided during late pregnancy, labor, delivery, and the early neonatal period.</li>\n<li>It includes:\n<ul>\n<li>Stillbirths (fetal deaths after 28 weeks of gestation), and</li>\n<li>Early neonatal deaths (within the first 7 days of life).</li>\n</ul>\n</li>\n</ul>\n<p>PMR = (Stillbirths+Early neonatal deaths / Total births (live+stillbirths)) X 1000</p>\n<ul>\n<li>Because it captures deaths occurring close to the time of birth, it effectively reflects the quality of antenatal, intrapartum, and immediate newborn care.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Infant Mortality Rate (Option A):</strong> IMR includes all deaths within the first year, not just those related to birth or the immediate neonatal period.</p>\n<p><strong>Under-5 Mortality Rate (Option C):</strong> U5MR includes deaths up to age 5 and reflects broader child health services and social conditions, not just birth-related care.</p>\n<p><strong>Stillbirth Rate (Option D):</strong> It accounts for fetal deaths only and doesn't include neonatal deaths, so it gives an incomplete picture of perinatal care quality.</p>",
+      "correct_choice_id": 122,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Following abortion</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">During lactation 1st month</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">During lactation, 8th month</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">During the last trimester, due to APH</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All of the following deaths are included as causes of maternal death except:</span></p>",
+      "unique_key": "DT1231039",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231039,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Maternal deaths are counted up to 42 days (6 weeks) after termination of pregnancy; death during the 8th month of lactation is not included.</p>\n<ul>\n<li>According to the WHO definition, maternal death is defined as the death of a woman while pregnant or within 42 days of termination of pregnancy, irrespective of the duration and site of pregnancy, from any cause related to or aggravated by the pregnancy or its management.</li>\n<li>This includes:\n<ul>\n<li>Death due to abortion (spontaneous or induced)</li>\n<li>Deaths during pregnancy or within the first 42 days of the postpartum period</li>\n<li>Deaths from obstetric complications such as antepartum hemorrhage (APH)</li>\n</ul>\n</li>\n<li>However, deaths beyond 42 days (i.e., after 6 weeks postpartum) - such as in the 8th month of lactation - are not considered maternal deaths, unless directly due to pregnancy or childbirth-related causes and classified separately as late maternal deaths.</li>\n</ul>",
+      "correct_choice_id": 133,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Anaemia</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Haemorrhage</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Life expectancy</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Neonatal mortality rate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The leading cause of maternal deaths in India is:</span></p>",
+      "unique_key": "DT1231040",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231040,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Haemorrhage</strong>, especially postpartum haemorrhage (PPH), is the leading direct cause of maternal deaths in India.</p>\n<ul>\n<li>According to the Sample Registration System (SRS) and National Health Mission (NHM) reports, the most common cause of maternal mortality in India is haemorrhage, particularly postpartum haemorrhage (PPH).</li>\n<li>It accounts for approximately 25-30% of all maternal deaths.</li>\n<li>Other major causes include:\n<ul>\n<li>Hypertensive disorders</li>\n<li>Sepsis</li>\n<li>Unsafe abortion</li>\n<li>Anaemia (as an indirect cause) <strong>(Option A ruled out)</strong></li>\n</ul>\n</li>\n<li>Haemorrhage remains a preventable cause, and improved antenatal care, skilled birth attendance, and emergency obstetric services are key to reducing its impact.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Life expectancy (Option C):</strong> Not a cause of maternal death; it's a general demographic indicator.</p>\n<p><strong>Neonatal mortality rate (Option D):</strong> Refers to deaths of newborns; not related to maternal death causes.</p>",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">MMR</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">IMR</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mortality between 1 to 4 years </span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Under-5 mortality</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is mainly included in the Child Survival Index?</span></p>",
+      "unique_key": "DT1231041",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231041,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>Child Survival Index</strong> is calculated using the Under-5 Mortality Rate (U5MR) as its core component.</p>\n<ul>\n<li>The Child Survival Index is a health indicator that reflects the proportion of children surviving up to the age of five.</li>\n<li>It is derived using the Under-5 Mortality Rate (U5MR), which includes neonatal, infant, and child (1-4 years) mortality.</li>\n<li>The formula used is:</li>\n</ul>\n<p>Child Survival Index = (1000 - U5MR) / 10</p>\n<ul>\n<li>A lower U5MR implies a higher child survival index, indicating better child health and healthcare delivery.</li>\n<li>This index is considered a comprehensive and sensitive measure of child well-being and effectiveness of public health interventions.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>MMR (Option A):</strong> Refers to maternal mortality, not child survival; not used in the child survival index.</p>\n<p><strong>IMR (Option B):</strong> A component of U5MR but not sufficient alone to define the index.</p>\n<p><strong>Mortality between 1 to 4 years (Option C):</strong> Also part of U5MR, but not the only component; hence, not used alone.</p>",
+      "correct_choice_id": 154,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Height</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Head circumference</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Weight</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Developmental milestones</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The most sensitive measure of growth is:</span></p>",
+      "unique_key": "DT1231049",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231049,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Weight</strong> is the most sensitive and earliest indicator of changes in a child's growth and nutritional status.</p>\n<ul>\n<li>Among all anthropometric parameters, weight changes rapidly in response to alterations in health and nutrition, making it the most sensitive indicator of growth.</li>\n<li>It is useful for the early detection of growth faltering due to malnutrition or illness.</li>\n<li>Height and head circumference are more stable and reflect long-term growth trends, while weight fluctuates more quickly; hence, it is ideal for monitoring acute changes in a child's condition.</li>\n<li>Regular weight monitoring helps in timely intervention in cases of undernutrition or illness.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Height (Option A):</strong> Indicates long-term nutritional status; not as rapidly responsive as weight.</p>\n<p><strong>Head circumference (Option B):</strong> Reflects brain growth, especially in infancy, but not a general marker of growth.</p>\n<p><strong>Developmental milestones (Option D):</strong> Assess neurological and cognitive development, not direct physical growth.</p>",
+      "correct_choice_id": 163,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">500g</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">1000g</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">1500g</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">2000g</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-week-old foetus normally weighs:</span></p>",
+      "unique_key": "DT1231050",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231050,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>At 28 weeks of gestation, a fetus typically weighs around 1000 grams (1 kg).</p>\n<ul>\n<li>Foetal growth follows a predictable pattern in terms of weight gain.</li>\n<li>By the end of the second trimester (around 28 weeks), the average foetal weight is approximately 1000 grams (1 kg).</li>\n<li>This period marks the beginning of the third trimester, during which fetal weight increases rapidly, especially between 30-36 weeks.</li>\n<li>An approximate weight across gestation:\n<ul>\n<li>24 weeks: ~600 g</li>\n<li>28 weeks: ~1000 g</li>\n<li>32 weeks: ~1600-1800 g</li>\n<li>36 weeks: ~2500-2700 g</li>\n<li>Term (40 weeks): ~3000-3200 g</li>\n</ul>\n</li>\n<li>Understanding normal foetal weights is essential for assessing intrauterine growth and identifying conditions like IUGR or macrosomia.</li>\n</ul>",
+      "correct_choice_id": 172,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

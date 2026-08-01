@@ -1,0 +1,134 @@
+/* Not Updated Page Specific Styles */
+.not-updated-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.not-updated-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(44, 82, 130, 0.1);
+  border: 1px solid rgba(44, 82, 130, 0.1);
+}
+
+.icon-container {
+  margin-bottom: 2rem;
+}
+
+.icon-container i {
+  font-size: 4rem;
+  color: #2c5282;
+  opacity: 0.8;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.not-updated-content h2 {
+  font-size: 1.8rem;
+  color: #2c5282;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.not-updated-content p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.action-btn.primary {
+  background-color: #2c5282;
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background-color: #2a4a7a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+}
+
+.action-btn.secondary {
+  background-color: #e2e8f0;
+  color: #2c5282;
+  border: 1px solid #cbd5e0;
+}
+
+.action-btn.secondary:hover {
+  background-color: #cbd5e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .not-updated-container {
+    min-height: 50vh;
+    padding: 1rem;
+  }
+  
+  .not-updated-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .icon-container i {
+    font-size: 3rem;
+  }
+  
+  .not-updated-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

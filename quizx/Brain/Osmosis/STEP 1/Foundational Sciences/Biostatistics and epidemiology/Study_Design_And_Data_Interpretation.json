@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "title": "Study_Design_And_Data_Interpretation"
+  },
+  "questions": [
+    {
+      "text": "A study examined the relationship between asbestos exposure and the incidence of lung cancer. It was found that greater than 4 hours of exposure to industrial asbestos per day is associated with a 10-fold increased risk of developing lung cancer when compared to the general population. The relative risk (RR) is 10.2 and p-value is 0.03. Since most studies suggest that smoking increases the risk of lung cancer by up to 20-folds, it was decided to divide the participants into two arms: smokers and non-smokers. Stratified analysis showed that in smokers, the RR is 64 and p-value is 0.02, as compared to non-smokers wherein the RR is 3 and p-value is 0.45. The results of this study can be explained by which of the following? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Measurement bias"
+        },
+        {
+          "id": 2,
+          "text": "Confounding"
+        },
+        {
+          "id": 3,
+          "text": "Effect modification"
+        },
+        {
+          "id": 4,
+          "text": "Observer bias"
+        },
+        {
+          "id": 5,
+          "text": "Recall bias"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<strong>Effect modification</strong> (also termed statistical interaction) occurs when an <strong>external variable</strong> positively or negatively <strong>impacts</strong> the observed <strong>effect </strong>of a <strong>risk factor</strong> on <strong>disease </strong>factor (e.g., incidence, progression). When stratified analysis is performed based upon this external variable, there will be a <strong>significant difference</strong> in risk between the stratified groups. Unlike confounding, effect modification is a biological phenomenon in which the exposure has a different impact in different circumstances.<br><br>In this vignette, the risk of <strong>lung cancer</strong> is found to be 10-folds higher in individuals with <strong>chronic asbestos exposure</strong>. However, when the participants were <strong>stratified </strong>into two groups based on their <strong>smoking </strong>status (<strong>third variable</strong>), the results were modified. The arm with non-smokers showed an increase in the risk of lung cancer by only <strong>3-folds</strong>. Most studies suggest that smoking increases the risk of lung cancer by about <strong>20-folds</strong>. However, smokers with chronic asbestos exposure had about a <strong>64-folds</strong> increased risk of lung cancer. In other words, the effects of smoking and asbestos exposure were more than multiplicative (3*20=60). This suggests synergism or <strong>interaction</strong>, meaning that the effect of smoking is somehow magnified in individuals who have also been exposed to asbestos. Multivariable methods can also be used to assess for effect modification. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Measurement bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Measurement bias occurs when information collected for use as a study variable (e.g., exposure, disease outcome) is inaccurate. However, this vignette does not describe any issues that could affect the classification process. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Confounding:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Confounding is when a third variable that has not been factored into the study (the confounder) has an association with the dependent variable (outcome). It can suggest a causal association between the outcome and independent variable, when in fact, there is none. In this case, smoking synergized (modified) the effect of asbestos exposure, which is more suggestive of effect modification. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Effect modification:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Observer bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Observer bias occurs when measurement of a variable or classification is influenced by the researcher&#8217;s knowledge of which group a participant is in. It is minimized by performing a blinded experiment. However, bias in the classification of participants is not discussed in the above vignette. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Recall bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Recall bias results from inaccurate recollection of past exposure by individuals participating in the study. Recall bias typically occurs in retrospective studies (e.g. case-control study). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to better understand correlational risk factors for hyperlipidemia. He obtains data on approximately 30,000 patients in a small city in the United States and finds a higher prevalence of hyperlipidemia in patients with a high meat intake when compared to those who identify as vegetarians. Which of the following best describes this type of study design? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cross-sectional study"
+        },
+        {
+          "id": 2,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Case series study &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Retrospective cohort study"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Cross-sectional studies</strong> examine the frequency of disease and frequency of risk factors in the present moment in a given group of individuals. These types of studies ask questions such as, &#8220;what is the <strong>prevalence </strong>of the disease and exposure at this moment in time?&#8221;. Since these types of studies only demonstrate correlations and not causation, they are often referred to as <strong>correlational studies</strong>. Nonetheless, cross-sectional studies are excellent at generating information to assist in hypothesis formation. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Cross-sectional study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A prospective cohort study follows patients over time to determine if there is an association between exposure and development of a particular disease. In contrast, this study evaluates the prevalence of hyperlipidemia between groups of individuals at a single point in time. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares therapeutic benefits between different treatments, or treatment and placebo. This study does not involve comparison of different treatments. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A retrospective cohort study begins after the exposure and outcomes have already occurred. In this type of study, patients are classified based on exposure. The relative risk of developing a particular outcome is then compared between the two groups. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 30-year-old male with no past medical history finds an ad online recruiting participants for a clinical trial of Bamlanivimab, a monoclonal antibody against the SARS-CoV-2 virus that causes coronavirus disease 19 (COVID-19). The trial is evaluating the pharmacokinetic profile of the drug and its metabolites as well as the incidence of adverse effects for the various dosages in healthy subjects. The man fulfills participation criteria and successfully enrolls in the study. A total of 25 healthy male and female volunteers participate in the study. Which of the following best describes this type of study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phase I clinical trial &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Phase II clinical trial &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Phase III clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Phase IV clinical trial &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Preclinical study"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>clinical trials process</strong> assesses whether new treatments (e.g., drugs, vaccines, procedures) are effective and safe for their intended use in the target population. The treatment testing and regulatory approval process can be divided into <strong>four phases</strong>.<br><br>A <strong>phase I trial</strong> is the first step and involves collecting data on the drug's <strong>pharmacokinetic </strong>profile, metabolism, and <strong>pharmacodynamic </strong>response (i.e. how it affects the body). It usually includes only a <strong>small number of healthy subjects</strong>. Different routes (e.g., oral, intravenous) may also be investigated. Human safety is assessed by gradually increasing doses to find out the maximum tolerated dose (MTD) while maintaining an acceptable level of side effects. Once the safety and dosing of the drug has been confirmed, the drug is then ready to move on for further clinical trials.<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Phase I clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase II clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase II trial involves assessment of the treatment efficacy, optimal dosing, and adverse effects on a small number of participants with the disease in question (rather than healthy subjects). For instance, a phase II trial would assess Bamlanivimab's efficacy, optimal dosing, and side effect profile in subjects with COVID-19 pneumonia. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase III clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase III trial assesses the safety and efficacy of a new treatment as compared to that of a standard treatment (or placebo). Hence, it involves at least two groups of affected subjects. For example, a phase III study would evaluate the effectiveness of Bamlanivimab compared to placebo among subjects with COVID-19 pneumonia. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase IV clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase IV trial studies the adverse effects caused over time by a new treatment after it has been approved and is in the market. Phase IV trials are also known as postmarketing surveillance trials. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Preclinical study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Preclinical studies do not involve human subjects. These are used to develop and study a drug on a basic science level and in animal models. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted to determine the long term effects of a novel vaccine against the SARS-CoV-2 virus, which causes coronavirus disease 19 (COVID-19). To do so, researchers followed individuals who had received the vaccine for one year. They discovered the vaccine is associated with an increased incidence of fever of unknown origin and new-onset heart failure with reduced ejection fraction in 25 patients out of the 1 million total patients who were followed. Based on these results, an additional warning about these adverse events is added to the investigator brochure for the vaccine. Which of the following clinical phases does this study most likely belong to? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Preclinical study &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Phase I trial &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Phase II &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Phase III &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Phase IV &#160;"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "The <strong>clinical trials process</strong> assesses whether new treatments (e.g., drugs, vaccines, procedures) are effective and safe for their intended use in the target population. The treatment testing and regulatory approval process can be divided into <strong>four phases</strong>. The given case is an example of a phase IV clinical trial.<br><br>A <strong>phase IV trial</strong> studies the <strong>rare adverse effects</strong> caused over time by a new treatment/intervention after it has been approved and is in the market. Phase IV trials are also known as <strong>postmarketing surveillance</strong> trials. In this clinical vignette, rare adverse events of the COVID-19 vaccine are determined by following-up on a large number of individuals who had received the vaccine. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Preclinical study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Preclinical studies do not involve human subjects. These are used to develop and study a drug on a basic science level and in animal models. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase I trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase I trial assesses the pharmacokinetics, pharmacodynamics, and safety profile (e.g., adverse events, toxicity) of a new treatment/intervention in a small number of healthy subjects. The side effects of rare occurrence are usually missed in this phase due to the small sample size and short study duration. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase II &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Phase II studies involve a small number of diseased patients and seek to determine efficacy and side effects of treatment. This study, by contrast, involves 1 million patients to monitor for rare events. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase III &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase III trial assesses the safety and efficacy of a new treatment as compared to that of a standard treatment (or placebo). Phase III studies typically involve a large number of diseased patients (thousands). It is the final step before approval of the treatment to be used in the general population. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Phase IV &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to study the prevalence of type II diabetes mellitus amongst different countries. He finds that Western countries (e.g. the United States, Canada, Europe) tend to have higher rates of type II diabetes when compared to countries in Asia or Africa. Which of the following best describes this type of study design? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ecologic study"
+        },
+        {
+          "id": 2,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Cross-sectional study"
+        },
+        {
+          "id": 4,
+          "text": "Case-control study"
+        },
+        {
+          "id": 5,
+          "text": "Retrospective cohort study &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "An <strong>ecologic study</strong> refers to a study that focuses on the <strong>comparisons of groups rather than individuals</strong>--in contrast to case-control, cohort, and cross-sectional studies. Examples of ecologic studies include comparisons of common diseases amongst whole populations. <br><br>The most common issue with ecologic studies is the <strong>ecological fallacy</strong>, which poses the assumption that characteristics at the population level also apply at the individual level. An example of an ecological fallacy is as follows: A particular country has high rates of liver cirrhosis (due to extensive alcohol use), an individual lives in that country; therefore, that individual has a higher risk of developing cirrhosis by default of residing in that country (regardless of how much alcohol he/she drinks). &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Ecologic study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A cohort study is a type of observational study that compares a group with a given exposure or risk factor to a group without such an exposure. In particular, a prospective cohort study follows patients over time into the future to determine the rates of developing a particular outcome (e.g., disease, mortality). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Cross-sectional study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A cross-sectional study examines the frequency of disease and frequency of risk factors in the present moment in a group of individuals. Ecologic studies, such as the one described in the question stem, differ in that they study groups (rather than individuals). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case-control study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Case-control studies start with a group that already has the disease and compares it to another group without the disease to determine if odds of a prior exposure or risk factor differ by disease state. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A retrospective cohort study looks back in time at two cohorts of patients, one with a given exposure and another without such exposure, and examines the disease outcome. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A randomized controlled trial is carried out to assess the efficacy and toxicities of two different regimens used in the treatment of multiple myeloma. A total of 750 patients with newly diagnosed multiple myeloma are enrolled. 400 patients are assigned to the first group that will receive the combination of carfilzomib, lenalidomide, and dexamethasone (KRd). 350 patients are assigned to the group receiving the other combination containing bortezomib, pomalidomide, and dexamethasone (VPd). During the study, the patients will not know which treatment regimen they are receiving. Likewise, the physicians and statisticians will not be aware of which treatment regimen each participant is assigned to. The study setup described is most effective in preventing which of the following? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Lead-time bias"
+        },
+        {
+          "id": 2,
+          "text": "Recall bias"
+        },
+        {
+          "id": 3,
+          "text": "Observer bias"
+        },
+        {
+          "id": 4,
+          "text": "Confounding bias &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Selection bias &#160;"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "Clinical trials are scientific research studies that help determine the safety and effectiveness of an intervention. There are multiple ways to design a clinical trial (e.g., factorial design, pre-post study). The <strong>gold standard</strong> is the <strong>randomized, controlled clinical trial</strong>. It involves <strong>randomly assigning</strong> patients to either the experimental group or the control group (or standard treatment). The idea is to <strong>reduce selection and allocation bias</strong>, balancing both known and unknown prognostic factors, in the assignment of treatments.<br><br>Study quality further improves when the study is <strong>double blinded</strong> (i.e. neither patient nor physician knows whether the patient is in the treatment or control group). <strong>Triple-blinding</strong> refers to the additional blinding of the researchers analyzing the data (as in this clinical vignette). The main purpose of blinding is to prevent patients' or researchers&#8217; expectancy from interfering with the determination of an outcome. For instance, a researcher's belief in a positive outcome in treated patients can potentially result in <strong>observer bias</strong>, which is a form of detection bias originating at a study&#8217;s stage of observing or recording information. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Lead-time bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This study uses blinding to prevent physicians, patients, and researchers from knowing which treatment each participant is receiving. These precautions will reduce the risk of observer bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Recall bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Recall bias results from the inaccurate recollection of previous exposure by the subjects. It comes into play mostly in case-control studies. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Observer bias:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Confounding bias &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Confounding is a type of systematic error in which a third variable that has not been factored into the study (the confounder) has an association with both the dependent variable (outcome) as well as the independent variable (e.g. exposure to a risk factor). The confounder can suggest a causal association of the outcome with the independent variable, when, in fact, there is none. Blinding does not directly prevent the confounding bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Selection bias &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Selection bias results from the manner in which individuals are selected for the study or from selective losses to follow-up. Randomization and controlling of the subjects is performed to eliminate selection bias. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A randomized controlled trial is conducted to study the effects of baseline BMI on the incidence of gestational hypertension in pregnant women. Initial analysis shows an attributable risk (AR) of 12% in individuals with a BMI of &gt;30 kg/m<sup>2</sup> at baseline. Multiparity is considered an important covariable, so a stratified analysis is conducted. Among multiparas with BMI &lt;30 kg/m<sup>2</sup>, the AR is 6%. Finally, the attributable risk for multiparous women with BMI &gt;30 kg/m<sup>2</sup> is 72%. Considering the absolute risk of gestational hypertension to be 3% in nulliparous women with BMI &lt;30 kg/m<sup>2</sup>, which of the following is the most likely cause of the observed findings? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Synergistic multiplicative interaction &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Synergistic additive interaction"
+        },
+        {
+          "id": 3,
+          "text": "Confounding bias &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Measurement bias"
+        },
+        {
+          "id": 5,
+          "text": "Antagonistic interaction"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "Statistical interaction, also called <strong>effect modification</strong>, occurs when an <strong>external variable</strong> positively or negatively <strong>impacts&#160;</strong>the observed <strong>effect&#160;</strong>of a risk factor on disease factor (e.g., incidence, progression). <br><br>In the vignette, <strong>attributable risks</strong> are provided to calculate the <strong>net effect of exposures</strong> (BMI &gt;30 kg/m<sup>2</sup> and multiparity) on the outcome (incidence of gestational hypertension), as shown below.<br>&#160;&#160;<ul><li>&#160;AR with a BMI of &gt;30 kg/m<sup>2</sup> at baseline = 12% &#160;</li><li>&#160;AR with multiparity = 6%&#160;</li></ul>&#160;<ul><li>&#160;Additive AR of the two groups: <strong>12+6 = 18</strong>&#160;</li></ul>In other words, it is expected that multiparous women with a BMI of &gt;30 kg/m<sup>2</sup> would have an 18-times higher risk of gestational hypertension, when compared to nulliparous women with a BMI of &lt;30 kg/m<sup>2</sup>. However, the <strong>observed </strong>attributable risk in this group is <strong>72%</strong>, which is <strong>higher than the expected</strong> attributable risk of 18%, meaning there is a <strong>synergistic interaction</strong> between the risk factors. Furthermore, since 12 x 6 is 72, this vignette illustrates an example of synergistic <strong>multiplicative interaction</strong>. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Synergistic multiplicative interaction &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Synergistic additive interaction:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The threshold for synergistic additive interaction in this case is only 18% (12+6). The observed AR by combining the two exposures was found to be 72%. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Confounding bias &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Confounding is when a third variable that has not been factored into the study (the confounder) has an association with the dependent variable (outcome). It can suggest a causal association between the outcome and independent variable, when in fact, there is none. In this case, having a BMI greater than 30 kg/m<sup>2</sup> synergized (modified) the effect of multiparity exposure, which is more suggestive of statistical interaction (also termed effect modification). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Measurement bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Measurement bias occurs when information collected for use as a study variable (e.g., exposure, disease outcome) is inaccurate. However, this vignette does not describe any issues that could affect the classification process. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Antagonistic interaction:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: If the observed effect is lower than the expected effect, then an antagonistic interaction has taken place, which implies that the two variables work together to decrease the risk. In contrast, the effect was amplified in this vignette. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A randomized controlled trial is designed to assess the potential clinical benefit of semaglutide, the first oral glucagon-like peptide agonist, in combination with metformin for patients with diabetes mellitus type II with a hemoglobin A1c of 7.5-8.0%. A total of 620 patients are enrolled in the study. 300 patients are assigned to the first group receiving semaglutide with metformin while 320 patients are assigned to receive the metformin alone. It is found that patients receiving the combination treatment are able to achieve a decline in HbA1c of up to 1.8% after controlling for possible confounders. Moreover, the study found a decline in the incidence of diabetic microvascular complications in the combined treatment group. Which of the following best describes this type of study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Preclinical phase"
+        },
+        {
+          "id": 2,
+          "text": "Phase I clinical trial &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Phase II clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Phase III clinical trial &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Phase IV clinical trial &#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "The <strong>clinical trials process</strong> assesses whether new treatments (e.g., drugs, vaccines, procedures) are effective and safe for their intended use in the target population. The treatment testing and regulatory approval process can be divided into <strong>four phases</strong>.<br><br>A <strong>phase III trial</strong> is the third step that involves assessing the safety and efficacy of a <strong>new treatment</strong> as <strong>compared </strong>to the <strong>standard of care</strong> treatment (or <strong>placebo</strong>). Hence phase III trials typically involve at least two groups of affected subjects. In the given case, the treatment arm (experimental group) consists of patients receiving metformin in combination with semaglutide and the control arm consists of patients receiving the standard treatment (metformin in the case). The effectiveness and toxicity of the treatments are then compared <strong>to determine the superior</strong> option. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Preclinical phase:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Preclinical studies do not involve human subjects. These are used to develop and study a drug on a basic science level and in animal models. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase I clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase I trial assesses the pharmacokinetics, pharmacodynamics, and safety profile (e.g., adverse events, toxicity) of a new treatment in a small number of healthy subjects. Though uncommon, cancer-related phase I trials may involve subjects with cancer due to the inherent toxicity of treatment. However, drug effectiveness is not typically assessed during this phase &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase II clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase II trial involves assessment of the treatment efficacy, optimal dosing, and adverse effects on a small number of participants with the disease in question (rather than healthy subjects). For instance, a phase II trial would assess semaglutide's efficacy, optimal dosing, and side effects profile in subjects with diabetes mellitus type II. However, phase II trials do not typically have a control group and do not directly compare the treatment with the current standard of care. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Phase III clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase IV clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase IV trial studies the adverse effects caused over time by a new treatment after it has been approved and is in the market. Phase IV trials are also known as postmarketing surveillance trials. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "Clinical signs and symptoms are notoriously unreliable indicators of venous thromboembolism. Thus, using the Homan sign to evaluate for deep venous thrombosis would be inappropriate. Venous thromboembolism is better diagnosed using objective tests with high sensitivity and specificity, such as duplex ultrasound. The above scenario reduces the probability of which of the following biases and what study design can help reduce the chance of this particular type of bias? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": ""
+        },
+        {
+          "id": 2,
+          "text": ""
+        },
+        {
+          "id": 3,
+          "text": ""
+        },
+        {
+          "id": 4,
+          "text": ""
+        },
+        {
+          "id": 5,
+          "text": ""
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Measurement bias</strong> occurs when information is gathered in a systematically distorted manner. This type of bias results in the <strong>misclassification </strong>of outcome and/or exposure. An example would be survey interviewers measuring deaths that occurred before the time period of interest while trying to calculate the mortality rate associated with a particular condition. Measurement bias can be reduced by using <strong>standardized </strong>and <strong>previously tested methods</strong> of data collection. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Observer bias occurs when the observer is aware of which arm of the study the subject is in, and the observer interprets results in light of this awareness. A double-blind study can help reduce observer bias. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Lead time bias occurs when earlier detection of a disorder makes the prognosis seem better whereas in reality, the disease is simply detected earlier. However, addition of a placebo control group to the study would not help reduce lead time bias. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Selection bias can arise in studies because groups of participants may differ in ways other than the interventions or exposures under investigation. It can be reduced by randomization as well as by choosing the correct reference group or population of interest. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ :</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ :</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A confounder is a third factor that is either positively or negatively associated with both the exposure and outcome of interest. Confounders can distort the true association between exposure and outcome. Implementation of a crossover study design is an important tool to help reduce or remove confounding bias. However, the study described in this vignette is more likely affected by measurement bias. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A rheumatologist is evaluating the long-term risk of venous thromboembolism in patients with newly diagnosed rheumatoid arthritis. The study sample size consists of 20 participants. The hazard ratio for venous thromboembolism was found to be 1.7 with a 95% confidence interval of 1.2-3.9. When the size sample of the study is increased, which of the following parameters will change? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The results will be statistically insignificant &#160;"
+        },
+        {
+          "id": 2,
+          "text": "The power of the study will increase"
+        },
+        {
+          "id": 3,
+          "text": "The precision of the study results will decrease &#160;"
+        },
+        {
+          "id": 4,
+          "text": "The likelihood of type II error will increase &#160;"
+        },
+        {
+          "id": 5,
+          "text": "The confidence interval will increase &#160;"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<strong>Statistical power</strong> is the probability of correctly rejecting the null hypothesis, or in other words, the ability to detect a difference between two groups when there truly is a difference. <strong>Increasing the sample size</strong> of a study will <strong>increase its statistical power</strong>. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ The results will be statistically insignificant &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This study is statistically significant as the 95% confidence interval of the hazard ratio (HR) does not include 1.0. Moreover, a larger sample size will increase a study&#8217;s power, which is the likelihood that the study finds a significant result when one indeed exists. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ The power of the study will increase:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The precision of the study results will decrease &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: As the sample size increases, the standard error decreases and the results become more precise. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The likelihood of type II error will increase &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: An increase in sample size translates into increased statistical power, which is the main determinant for type II errors. The higher the statistical power, the higher the probability of rejecting the null hypothesis when it is truly false. Hence, the likelihood of type II error is decreased. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The confidence interval will increase &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: As the sample size increases, the confidence interval narrows. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is currently underway examining the effects of smoking on COVID-19 disease severity in a medium-sized city. 2,321 individuals who are active smokers and 3,679 individuals who are non-smokers are identified via retrospective chart review. After the relevant data has been collected, a relative risk assessment determines that patients identified as smokers had longer-hospital lengths of stay, increased need for supplemental oxygen, and higher mortality when compared with their non-smoking counterparts. Which of the following best describes this type of study design? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Meta analysis"
+        },
+        {
+          "id": 3,
+          "text": "Case-control study"
+        },
+        {
+          "id": 4,
+          "text": "Case series study"
+        },
+        {
+          "id": 5,
+          "text": "Clinical trial &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "A <strong>cohort study</strong> is a type of observational study that compares a group with a given exposure or risk factor to a group without such an exposure or risk factor. Cohort studies can be either <strong>prospective</strong>&#8212;that is, following patients over time into the future&#8212;or <strong>retrospective</strong>&#8212;looking back at patients, exposure, and disease outcome via chart review. <br><br>Cohort studies use <strong>relative risk</strong> to understand the risk between exposure and disease outcome. This value is calculated by the risk of the developing disease in the exposed group divided by the risk in the unexposed group. Values greater than 1 are associated with an increased risk, whereas values less than 1 are associated with a decreased risk of disease. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Cohort study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See main explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Meta analysis:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Meta-analysis involves pooling of data from several studies to perform an analysis with greater statistical power than the individual studies alone. In contrast, the study design described in this clinical vignette is more consistent with that of a cohort study. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case-control study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case-control study compares a group of individuals with disease to those without disease, to identify prior risk factors that may contribute to the disease state. For instance, a case-control study may identify one group of patients with emphysema and another group without emphysema and subsequently compare cigarette use rates between the two groups. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares the therapeutic benefits between different treatments, or of treatment and placebo. This study does not involve a comparison of treatments. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted to assess the potential clinical benefit and treatment-related toxicities of a novel agent, BY-164, for patients with coronavirus disease 19 (COVID-19) pneumonia. Forty BY-164-naive patients infected by COVID-19 are recruited for the study. Treatment consists of BY-164 200 mg twice daily. Study results show that patients suffered treatment-related toxicities, including pruritic erythematous rash (18%), bone marrow suppression (17%), high blood pressure (15%), and anaphylactic reaction (9%). Researchers then compared the data with results from previous trials assessing the clinical benefit of Remdesivir monotherapy (current standard of care). They conclude BY-164 is as effective but more toxic than Remdesivir monotherapy. Which of the following best describes this type of study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phase I clinical trial"
+        },
+        {
+          "id": 2,
+          "text": "Phase II clinical trial &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Phase III clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Phase IV clinical trial &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Preclinical study &#160;"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "The <strong>clinical trials process</strong> assesses whether new treatments (e.g., drugs, vaccines, procedures) are effective and safe for their intended use in the target population. The treatment testing and regulatory approval process can be divided into <strong>four phases</strong>.<br><br>A <strong>phase II trial</strong> is the second step that involves assessing <strong>treatment efficacy, toxicity, adverse effects</strong>, and optimal dosing strategies in a <strong>small number of subjects with the disease</strong> in question. The results are usually compared with <strong>historic </strong>controls (e.g. data obtained in prior studies investigating other treatments) to establish preliminary evidence regarding relative efficacy and adverse effect profile.<br><br>In the above case, the study evaluated the potential clinical benefits and treatment-related adverse effects of the new treatment (i.e. BY-164) in a small sample of affected subjects (i.e. those with COVID-19 pneumonia). The results were then compared to prior clinical trials testing conventional therapy (i.e. Remdesivir monotherapy). Therefore, the example best describes a phase II trial. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Phase I clinical trial:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase I trial assesses the pharmacokinetics, pharmacodynamics, and safety profile (e.g., adverse events, toxicity) of a new treatment in a small number of healthy subjects. Though uncommon, cancer-related phase I trials may involve subjects with cancer due to the inherent toxicity of treatment. However, drug effectiveness is not typically assessed during this phase. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Phase II clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase III clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase III trial assesses the safety and efficacy of a new treatment as compared to that of a standard treatment (or placebo). Hence, it involves at least two groups of affected subjects. For example, a phase III trial would have a treatment arm (experimental group) receiving BY-164 and a control arm receiving Remdesivir alone. The effectiveness and toxicity of the treatments would then be compared to determine the superior option. In contrast, this study did not have its own control group. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Phase IV clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A phase IV trial studies the adverse effects caused over time by a new treatment after it has been approved and is in the market. Phase IV trials are also known as postmarketing surveillance trials. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Preclinical study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Preclinical studies do not involve human subjects. These are used to develop and study a drug on a basic science level and in animal models. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to understand the prevalence of hypertension in a small island population. The researcher enrolls approximately 15,000 patients and contemplates which study design is best suited, to determine what (if any) exposures result in a high or low prevalence of hypertension at a single point in time. Which of the following types of studies is best suited to answer this researcher&#8217;s question? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cross-sectional study &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Case series study &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Retrospective cohort study &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Cross-sectional studies</strong> examine the frequency of disease and risk factors in the present moment in a group of individuals. These types of studies ask the question, &#8220;What is the <strong>prevalence </strong>of the disease and exposure at this moment in time?&#8221;. Cross-sectional studies demonstrate correlation but not causation. Hence, they are often referred to as <strong>correlational studies</strong>. Nonetheless, cross-sectional studies are excellent at generating hypotheses for future research.<br><br>Of note, unlike ecologic studies, cross-sectional studies <strong>look at individuals</strong> rather than groups or large populations. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Cross-sectional study &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A prospective cohort study follows patients over time to determine if there is an association between exposure and disease development. In contrast, this researcher is attempting to take a &#8220;snapshot&#8221; of the prevalence of disease at a single point in time. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares the therapeutic benefits of different treatments, or treatment and placebo. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A retrospective cohort study begins after the exposure and outcomes have already occurred. The exposure and disease outcome for each patient can be determined via chart review or interviewing the patients. In contrast, this researcher is trying to obtain data for a single point in time, which can be better achieved via a cross-sectional study. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is investigating the effects of a new anti-diabetic drug. He is aware of which participants are in the experimental group and receiving the new drug. He performs diagnostic tests and physical exams more frequently in the experimental group, when compared to the control group. At the end of this study, participants in the experimental group had lower fasting blood sugars and subjectively felt more energetic. The type of bias introduced into this study can be eliminated via which of the following strategies? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Randomization"
+        },
+        {
+          "id": 2,
+          "text": "Standardization"
+        },
+        {
+          "id": 3,
+          "text": "Crossover studies &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Blinding"
+        },
+        {
+          "id": 5,
+          "text": "Matching"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Procedure bias</strong> happens when one group of subjects in an experiment (for example, a control group or a treatment group) gets more attention from investigators than another group. The <strong>difference in care</strong> <strong>levels </strong>result in systematic differences between groups, making it difficult or impossible to conclude that a drug or other intervention caused an effect, as opposed to the level of care received. Procedure bias can also refer to the fact that participants can change their responses or behavior if they know which group they are allocated in. <br><br>It can be reduced by <strong>blinding </strong>(masking) and <strong>placebos</strong>, which decrease the influence of participants and researchers on procedures and interpretation of outcomes since neither is aware of group assignments. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Randomization:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Randomization helps eliminate selection bias; however, procedure bias is present within this experiment, which can be reduced via blinding. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Standardization:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Measurement bias can be reduced by using standardized and previously tested methods of data collection that are planned ahead of time. It does not eliminate procedure bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Crossover studies &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In crossover studies, subjects act as their own controls. This type of study can help eliminate confounding bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Blinding:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Matching:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Matching patients with similar characteristics in both treatment and control groups can help eliminate confounding bias. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A clinical trial is conducted to determine the efficacy of ginkgo biloba in the treatment of Parkinson disease. A change in the Movement Disorder Society-Unified Parkinson Disease Rating Scale (MDS-UPDRS) score is used as the primary endpoint for the study. While the trial is being conducted, the patients' demographics and their allocated treatment groups are disclosed to the investigators, but not to the participants or data analysts. The study concludes there is a significant decrease in MDS-UPDRS scores in patients treated with ginkgo biloba. Which of the following is most likely to have affected the validity of this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Recall bias"
+        },
+        {
+          "id": 2,
+          "text": "Hawthorne effect &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Ascertainment bias"
+        },
+        {
+          "id": 4,
+          "text": "Lead-time bias"
+        },
+        {
+          "id": 5,
+          "text": "Observer-expectancy bias &#160;"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<strong>Observer-expectancy bias</strong> (also known as the Pygmalion effect) occurs when the experimenter's expectation influences the outcome of the study. In this scenario, patient information was disclosed to the investigators during the trial. The investigators' belief in the efficacy of treatment with ginkgo biloba may have influenced data collection and analysis. To avoid this type of bias, study designs should include placebo groups and experimenters should be blinded throughout the study. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Recall bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Recall bias typically occurs in retrospective studies when subjects with a particular adverse outcome (e.g. cancer, myocardial infarction) are more likely than control subjects to report certain exposures. There is no evidence of recall bias in this scenario. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Hawthorne effect &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Hawthorne effect describes how subjects alter their behavior when they know they are being observed. In contrast, this study is more concerning for observer-expectancy bias since the investigators were aware of which group each participant was in before the study had ended. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Ascertainment bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Ascertainment bias occurs when certain individuals are more likely to be selected for a study group, which results in a nonrandomized, unrepresentative sample of the population. While patient information was disclosed to the investigators, this occurred after treatment groups were established. As a result, there is little evidence that the study group allocation was subject to sampling bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Lead-time bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Lead-time bias occurs when a new test detects a condition earlier than conventional studies; thereby, causing an apparent increase in survival time. There is no evidence of lead-time bias in this scenario. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Observer-expectancy bias &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to better understand the risk factors contributing to the development of breast cancer. The researcher wants to study the effects of exposure to mercury in fish and onset of breast cancer in ten years in a population of 20,000 individuals in the Pacific Northwest. Which of the following types of studies is best suited to answer this researcher's clinical question? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Retrospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Case-control study"
+        },
+        {
+          "id": 4,
+          "text": "Case series study"
+        },
+        {
+          "id": 5,
+          "text": "Clinical trial &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "A <strong>cohort study</strong> is a type of observational study that compares a group with a given exposure or risk factor to a group without such exposure. Cohort studies can be either <strong>prospective</strong>&#8212;that is, following patients over time into the future&#8212;or <strong>retrospective</strong>&#8212;looking back at patients, exposure, and disease outcome via chart review. <br><br>Cohort studies use <strong>relative risk</strong> to understand the risk between exposure and disease outcome. This value is calculated by dividing the risk of developing disease in the exposed group by risk in the unexposed group. Values greater than 1 are associated with an increased risk, whereas values less than 1 are associated with a decreased risk of disease. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Prospective cohort study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A retrospective cohort study looks back at two groups of patients (cohorts) and determines if an exposure resulted in a disease. In contrast, this researcher is hoping to perform a study that looks into the future. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case-control study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case-control study compares a group of individuals with disease to a group of individuals without disease to identify prior risk factors that may contribute to a disease state. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares therapeutic benefits of different treatments, or treatment and placebo. This study does not involve comparison of treatments. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "After claims that the measles-mumps-rubella (MMR) vaccine causes autism began circulating, parents of children diagnosed with autism were more likely to report that their children had received the MMR vaccine, when compared with the parents of children who were diagnosed with autism before these claims began circulating. Which type of bias is described in this scenario? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Lead-time bias"
+        },
+        {
+          "id": 2,
+          "text": "Hawthorne effect &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Recall bias"
+        },
+        {
+          "id": 4,
+          "text": "Pygmalion effect &#160;"
+        },
+        {
+          "id": 5,
+          "text": "This scenario is free of potential bias"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<strong>Recall bias</strong> results from study participants inaccurately recalling past exposures and most often occurs in retrospective studies. In general, individuals who are positive for a particular outcome (e.g. disease) have a higher likelihood of reporting exposure than individuals without the outcome. Recall bias can be reduced by <strong>decreasing time to follow-up</strong> in retrospective studies. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Lead-time bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Lead-time bias occurs when a new test detects a condition earlier than conventional studies; thereby, causing an apparent increase in survival time. Lead-time bias is not applicable to this scenario. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Hawthorne effect &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Hawthorne effect describes how subjects alter their behavior when they know they are being observed. In contrast, in this scenario, parents of children with autism were more likely to report that &#160;their children had gotten the MMR vaccine after claims began circulating that the vaccine caused autism. This scenario is more suggestive of recall bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Recall bias:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Pygmalion effect &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Pygmalion effect is when the researcher's beliefs about the efficacy of an intervention leads to behavioral changes that produce a self-fulfilling prophecy. In contrast, in this scenario, parents of children with autism were more likely to report that their children had gotten the MMR vaccine after claims began circulating that the vaccine caused autism. This scenario is more suggestive of recall bias. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ This scenario is free of potential bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Retrospective studies, such as the one described in this vignette, are susceptible to recall bias. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An outbreak of a rare, novel flavivirus is currently being examined in Latin America. A researcher wants to compare patients who have the disease to those who do not, to better understand the possible vector(s) of exposure that may lead to the acquisition of this virus. Which of the following types of study design would be best suited for this researcher to undertake? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Case-control study"
+        },
+        {
+          "id": 2,
+          "text": "Prospective cohort study &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Case series study"
+        },
+        {
+          "id": 5,
+          "text": "Retrospective cohort study &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Case-control studies</strong> are well suited to investigating <strong>rare diseases</strong> or outcomes as well as <strong>outbreaks of new diseases</strong>. In a case-control study, which is a type of observational study, individuals with a disease are compared to those without the disease to see if the odds of a prior exposure or risk factor differ by disease state. In this study design, a researcher starts with a group of individuals who fit the case-definition of a disease and then identifies a group of individuals without the case-definition (the control group). Case-control studies thus use the <strong>odds ratio</strong> when comparing the risk of exposure and disease outcome.<br><br>In contrast to cohort studies, case-control studies start with <strong>a group that already has the disease</strong>--as opposed to following two groups that do not have the disease, either prospectively or retrospectively. Case-control studies are also much less expensive as patients do not have to be followed over a long period of time as with cohort studies. However, a limiting factor of case-control studies is their susceptibility to both <strong>recall and selection bias</strong>. <br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/N2-d77ThTJSg0q4Q9_Su4PWNTg_BsPn6/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Case-control study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prospective cohort study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A prospective cohort study, groups patients based on exposure and follows them over time to look for disease occurrence. The goal of a prospective cohort study is to determine if there is an association between exposure and disease. In contrast, this study is starting off with patients who already have the disease. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares therapeutic benefits between different treatments, or treatment and placebo. This study does not involve comparison of treatments. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A retrospective cohort study begins after the exposure and outcomes have already occurred. In this type of study, patients are classified based on exposure. In contrast, in the study described in this vignette, patients are classified based on the outcome (i.e. disease vs. disease-free), which is more consistent with the design of a case-control study. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is attempting to understand the relationship between seatbelt use and risk for traumatic brain injury (TBI), following a motor vehicle collision (MVC) in a small set of patients presenting to a large urban emergency department. The researcher identifies 200 patients who sustained traumatic brain injury following a MVC and 200 patients with similar characteristics who did not have TBI following a MVC. The researcher then calculates the odds ratio of having TBI in patients who were wearing seatbelts versus those who did not. Which of the following best describes this study design? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Case-control study"
+        },
+        {
+          "id": 2,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Clinical trial &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Case series study"
+        },
+        {
+          "id": 5,
+          "text": "Retrospective cohort study"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Case-control studies</strong> are well suited to investigating <strong>rare diseases</strong> or outcomes as well as <strong>outbreaks&#160;</strong><strong>of new diseases</strong>. In a case-control study, which is a type of observational study, individuals with a disease are compared to those without the disease to determine if odds of a prior exposure or risk factor differ by disease state.<br><br>In this study design, the researcher starts with a group of individuals who fit the case-definition of a disease and then searches out similar individuals without the case-definition (the control group). The results of a case-control study are reported as the <strong>odds ratio</strong>.<br><br>In contrast to cohort studies, case-control studies start with <strong>a group that already has the disease</strong>--as opposed to following two groups that do not have the disease either prospectively or retrospectively. Case-control studies are generally less expensive as patients do not have to be followed over a long period of time. However, a limiting factor of case-control studies is their susceptibility to both <strong>recall and selection bias.</strong>&#160;<br>&#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/i1eP0DkYQWGPmyBiFv15vKwTSxWNLQhv/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Case-control study:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A prospective cohort study follows patients over time to determine if there is an association between exposure and subsequently developing a particular disease. In contrast, this study is starting with patients whose disease outcome (TBI versus no TBI) is already known. The study design described in this question stem is more consistent with a case-control study. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical trial &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A clinical trial is an experimental study involving humans that compares the therapeutic benefits of different treatments, or of treatment and placebo. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case series study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A case series study is a type of observational study that describes a novel disease state by identifying and describing a group of common clinical cases. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Retrospective cohort study:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Cohort studies start with two groups of individuals classified according to exposure and the risk of developing a particular disease outcome is determined for each group. In contrast, the patients in this study are classified according to disease outcome, which is more consistent with the design of a case-control study. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is investigating the effects of an experimental drug on the duration and intensity of exercise. In the treatment group participants are instructed to exercise as much as they would like on the facility's exercise equipment. Due to an insufficient number of exercise units at the main treatment center, the control subjects are given free access to an outside, private gym. The duration and intensity of exercise in both groups is measured with a pedometer. A data analyst points out that the treatment group may be motivated to exercise harder and longer because their exercise can be directly observed by the investigators. Which of the following is most likely to have affected the validity of this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Recall bias &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Attrition bias"
+        },
+        {
+          "id": 3,
+          "text": "Pygmalion effect"
+        },
+        {
+          "id": 4,
+          "text": "Hawthorne effect &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Lead-time bias"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "The phenomenon in which study participants <strong>alter their behavior</strong> when they are aware they are <strong>being observed</strong> is termed the <strong>Hawthorne effect</strong>. It is commonly seen in studies with behavioral outcomes or outcomes that can be changed with behavioral modifications. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Recall bias &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Recall bias typically occurs in retrospective studies when subjects with a particular adverse outcome (e.g. cancer, myocardial infarction) are more likely than control subjects to report certain exposures. Recall bias leads to misclassification of the exposure status; thereby, falsely magnifying the effects of exposure. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Attrition bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Attrition bias refers to the unequal loss of participants from different groups in a trial. This vignette does not mention differences in attrition between the experimental and control groups. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Pygmalion effect:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Pygmalion effect is when the researcher's beliefs about the efficacy of an intervention leads to behavioral changes that produce a self-fulfilling prophecy. In this study, the participants, rather than the researcher, are likely to alter their behavior since they know they are being observed. This phenomenon illustrates the Hawthorne effect. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Hawthorne effect &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Lead-time bias:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Lead-time bias occurs when a new test detects a condition earlier than conventional studies; thereby, causing an apparent increase in survival time. Lead-time bias is not applicable to this scenario. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A novel anti-viral therapy is currently under study for use in patients hospitalized with COVID-19 infection. The head of the research committee enrolls 200 patients hospitalized with COVID-19 at a large urban tertiary care center. Of these patients, the therapeutic agent is administered only to patients requiring respiratory support (e.g. mechanical ventilation) while a placebo drug is administered to the other trial participants. The head of the research committee blinds both the treatment arm, control arm, and clinical investigators. Application of which of the following effects would best increase the internal validity of this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Randomization of trial participants &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Replication of trial in a similar population &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Increasing the number of trial participants &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Decreasing the number of trial participants &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Segmentation of patient population according to comorbidities"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "A clinical trial examines the effects of therapeutic agents when compared to placebo in human subjects. One of the hallmarks that enhances the internal validity (degree to which the relationship between variables being studied is trustworthy and not influenced by other factors) of a clinical trial is randomization of trial participants. <br><br>In the study described above, only the sickest patients (e.g. those requiring mechanical ventilation) are provided with the therapeutic agent, resulting in selection bias. This limitation ultimately decreases the internal validity of the study, as lack of randomization prevents a fair assessment of the therapeutic agent. Additional factors that enhance the internal validity of clinical trials include blinding (the patients, researchers, and data analyzers are unaware of who received the treatment), adherence to study protocol, and performing an intention to treat analysis. <br><br>External validity refers to the extent to which a study can be applied in other settings. Factors that improve external validity include how well the initial study was conducted (internal validity), replicability of the initial study, and population matching.<br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/UiR9QNCjS-ysZhfsAb99xmZeRd_spGd9/_.png\"></div>&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Randomization of trial participants &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Replication of trial in a similar population &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Replicating this study in a similar population affects the external validity of this study, but does not address the inherent problem of lack of randomization in this controlled trial. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Increasing the number of trial participants &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This change will not increase the internal validity of this study since the trial participants are still not randomized. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Decreasing the number of trial participants &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This change will not increase the internal validity of this study since the trial participants are still not randomized. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Segmentation of patient population according to comorbidities:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Breaking down the patient population according to comorbidities (e.g. underlying pulmonary disease) can potentially eliminate confounding variables. However, the limitation that most significantly limits this study&#8217;s internal validity is the lack of subject randomization. Only the sickest patients (e.g. those requiring mechanical ventilation) are included in the experimental group, which in turn prevents an accurate assessment of the new therapeutic agent. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted in patients with acute myocardial infarction but no history of diabetes mellitus. The study examines the relationship between blood glucose level at admission and the number of episodes of ventricular arrhythmia during the first 24 hours after admission. Analysis of the results reveal a correlation coefficient of r = 0.85 (p &lt;0.05). Which of the following is true about the relationship between blood glucose level and the number of episodes of ventricular arrhythmia? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "There is a positive linear correlation between blood glucose level and the number of episodes of ventricular arrhythmia &#160;"
+        },
+        {
+          "id": 2,
+          "text": "There is a negative linear correlation between blood glucose level and the number of episodes of ventricular arrhythmia &#160;"
+        },
+        {
+          "id": 3,
+          "text": "There is no correlation between blood glucose levels and the number of episodes of ventricular arrhythmia"
+        },
+        {
+          "id": 4,
+          "text": "An increase in blood glucose level causes an increase in the number of episodes of ventricular arrhythmia"
+        },
+        {
+          "id": 5,
+          "text": "The association in not statistically significant &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>correlation coefficient</strong> (r) represents the <strong>strength of a linear relationship</strong> between two variables (i.e., how close the data points are to a straight line of regression) as well as the <strong>polarity </strong>of the relationship. A correlation coefficient of 0.85 suggests a strong positive linear correlation between blood glucose level and the number of episodes of ventricular arrhythmia during the first 24 hours after admission.<br><br>However, even if there is a correlation between two variables, it does not necessarily suggest <strong>causation</strong>. The relationship could be coincidental or due to a third factor that is causing change in both variables. A causal relationship is established only when changes in one variable are responsible (either directly or indirectly) for the changes in the other.<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ There is a positive linear correlation between blood glucose level and the number of episodes of ventricular arrhythmia &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ There is a negative linear correlation between blood glucose level and the number of episodes of ventricular arrhythmia &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice would be true if the correlation coefficient is less than 0. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ There is no correlation between blood glucose levels and the number of episodes of ventricular arrhythmia:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The correlation coefficient of 0.85 indicates a strong positive linear relationship between blood glucose level and the number of episodes of ventricular arrhythmia within the first 24 hours after admission. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ An increase in blood glucose level causes an increase in the number of episodes of ventricular arrhythmia:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: While a correlation coefficient of 0.85 indicates a strong positive linear relation between blood glucose level and the number of episodes of ventricular arrhythmia, it does not necessarily suggest causation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The association in not statistically significant &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The association between blood glucose level at admission and the number of episodes of ventricular arrhythmia is statistically significant since p &lt; 0.05. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A novel compound is currently being studied to potentially treat pancreatic cancer. The compound is being tested in pancreatic cell cultures for efficacy and in rats to evaluate for adverse effects. Which of the following phases of development is this medication currently undergoing? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Preclinical research"
+        },
+        {
+          "id": 2,
+          "text": "Discovery phase"
+        },
+        {
+          "id": 3,
+          "text": "Clinical development"
+        },
+        {
+          "id": 4,
+          "text": "Regulatory approval&#160;"
+        },
+        {
+          "id": 5,
+          "text": "Post-marketing surveillance&#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "There are several stages of medication development, including d<strong>rug discovery, pre-clinical research, clinical development, regulatory approval,&#160;</strong>and<strong>&#160;post-marketing surveillance.</strong> When a compound is tested in <strong>animal models</strong> (in vivo) or <strong>cell cultures</strong> (in vitro) to evaluate efficacy and safety, it is in the pre-clinical development stage. It helps in deciding whether the drug should be tested in people. Details regarding each stage are outlined in the table below. &#160; <br><br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/vU5Qg8yURrKXTVP9E7jAPiijRy2S0U7j/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Preclinical research:</strong><br><span style='opacity:0.9'><strong>Correct: </strong>See Main Explanation. </span></div><div style='margin-bottom: 12px;'><strong>❌ Discovery phase:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The discovery phase of medication development refers to the time frame where a compound undergoes testing for target selection and pharmacological profiling for a specific disease. Multiple compounds may be potential candidates for development. After early testing, however, only a small number looks promising and calls for further study. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Clinical development:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The clinical development phase refers to the time frame in which a compound is tested in both healthy human subjects to monitor for adverse effects and in patients with the disease to evaluate for effectiveness through clinical trials. Clinical trials are divided into four distinct phases. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Regulatory approval&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: </strong>The regulatory approval phase refers to the period where a compound undergoes review by regulatory agencies following clinical development. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Post-marketing surveillance&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect: &#160;</strong>Post-marketing surveillance occurs after regulatory approval and seeks to monitor for continued adverse effects and efficacy in human subjects following the dispersal of the medication. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    }
+  ]
+}

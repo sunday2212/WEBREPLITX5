@@ -1,0 +1,200 @@
+{
+  "chapter": "Inferential_Statistics",
+  "questions": 
+[
+  {
+    "q_no": 1,
+    "question": "Question 1: The statistical methods that go further than merely summarizing data are a part of:",
+    "options": {
+      "a": "Descriptive statistics",
+      "b": "Inferential statistics",
+      "c": "Observational statistics",
+      "d": "Analytical statistics"
+    },
+    "correct_answer": "b",
+    "explanation": "Inferential statistics are those statistical methods that go further than just summarizing data. They involve inductive reasoning and using a statistic to estimate a parameter. E.g., the expected \nsuccess rate of vasectomy or mean blood pressure of all Indians. One of the most common problems faced in research is using information gathered by researching \na sample and then drawing conclusions about the population from which the sample is drawn. \nHere, sample statistics (sample mean and SD) are known and population parameters (population \nmean and SD) are unknown. Inferential statistical methods are used to draw conclusions about the population parameters from \nsample statistics.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 2,
+    "question": "Question 2: Which of the following measures relative variation between two different units?",
+    "options": {
+      "a": "Variance",
+      "b": "Coefficient of variation",
+      "c": "Standard deviation",
+      "d": "Standard error"
+    },
+    "correct_answer": "b",
+    "explanation": "Co-efficient of variation (CV) measures the relative variability between two different units, by \nusing the mean and standard deviation.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 3,
+    "question": "Question 3: The weight of the 100 children that presented in the pediatric OPD in the last week was \nanalyzed. The median weight was 12 kg and the standard deviation was 3. This data formed a \nnormal distribution. What is the coefficient of variation?",
+    "options": {
+      "a": "25%",
+      "b": "35%",
+      "c": "40%",
+      "d": "45%"
+    },
+    "correct_answer": "a",
+    "explanation": "In the given scenario, coefficient of variance (CV) = 25%. Coefficient of variation, CV = standard deviation x 100/ mean = 3 x 100/12 = 25%. In a normal distribution, mean = median.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 4,
+    "question": "Question 4: The means of all possible samples from a population are plotted on a linear graph. What is \nthis called?",
+    "options": {
+      "a": "Population Distribution",
+      "b": "Parametric Distribution",
+      "c": "Sampling distribution",
+      "d": "Exponential distribution"
+    },
+    "correct_answer": "c",
+    "explanation": "The random sampling distribution of means is the distribution formed when all possible sample \nmeans from a population are plotted in a frequency distribution.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 5,
+    "question": "Question 5: Central limit theorem is related to:",
+    "options": {
+      "a": "Random sampling distribution",
+      "b": "Skewness of a distribution",
+      "c": "Graphical representation of nominal data",
+      "d": "Statistical tests between two groups"
+    },
+    "correct_answer": "a",
+    "explanation": "The central limit theorem is related to the random sampling distribution of means. According to this theorem, as the sample size increases: • The sampling distribution tends towards a normal distribution curve (bell curve) • Regardless of the population's actual distribution shape • Assuming all samples are identical in size • The sample mean and standard deviations become closer to the population mean and standard \ndeviations 846 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 6,
+    "question": "Question 6: A researcher wanted to calculate the mean age of onset of type II diabetes mellitus in a \npopulation. He got a sample mean of 45. To measure the extent of deviation from the \npopulation mean, which of the following should he use?",
+    "options": {
+      "a": "Geometric mean",
+      "b": "Range",
+      "c": "Deviation scores",
+      "d": "Standard error"
+    },
+    "correct_answer": "d",
+    "explanation": "The standard error is a measure of the extent to which the sample means deviate from the true \npopulation means.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 7,
+    "question": "Question 7: Standard deviation of mean measures variations caused by:",
+    "options": {
+      "a": "Non-sampling errors",
+      "b": "Sampling errors",
+      "c": "Random errors",
+      "d": "Observational errors"
+    },
+    "correct_answer": "b",
+    "explanation": "The standard deviation of mean or standard error of means measures variations caused by \nsampling errors.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 8,
+    "question": "Question 8: Consider a sample of 100 women with an average Hb of 10 g% and standard deviation of 1. \nWhat is the standard error of this sample? 843 \nSold by @itachibot",
+    "options": {
+      "a": "0.01",
+      "b": "0.1",
+      "c": "1",
+      "d": "10"
+    },
+    "correct_answer": "b",
+    "explanation": "In this scenario, the standard error SE = 0.1. The formula for standard error: SE = Standard deviation/ sample size =1/100 = 1/10 = 0.1",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 9,
+    "question": "Question 9: All of the following are true about standard error except:",
+    "options": {
+      "a": "It increases as the sample size increases.",
+      "b": "It is based on a normal distribution",
+      "c": "It depends on the standard deviation of means",
+      "d": "It is used to estimate confidence limits"
+    },
+    "correct_answer": "a",
+    "explanation": "As the sample size increases, the standard error will decrease, not increase. The standard error is inversely related to the square root of the sample size.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 10,
+    "question": "Question 10: The incubation period for measles in a group of 25 children was calculated. Following \nfindings were recorded. What is the standard error?",
+    "options": {
+      "a": "0.4",
+      "b": "1.0",
+      "c": "2.0",
+      "d": "0.5"
+    },
+    "correct_answer": "a",
+    "explanation": "In this scenario, the standard error = 0.4. The formula for standard error: SE = Standard deviation/sample size = 2/25 = 2/5 = 0.4",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 11,
+    "question": "Question 11: The uppermost and lowermost values of standard errors within which a parameter value is \nexpected to lie are called the:",
+    "options": {
+      "a": "Confidence interval",
+      "b": "Precision levels",
+      "c": "Confidence limits",
+      "d": "Range"
+    },
+    "correct_answer": "c",
+    "explanation": "The uppermost and lowermost limits of standard errors within which a parameter value is \nexpected to lie are called the confidence limits. The difference between upper and lower confidence limits is called the confidence interval. 847 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 12,
+    "question": "Question 12: Which of the following parameters are used to calculate the confidence limit? 844 \nSold by @itachibot",
+    "options": {
+      "a": "èean and standard error",
+      "b": "èean and standard deviation",
+      "c": "èedian and standard deviation",
+      "d": "èedian and standard error"
+    },
+    "correct_answer": "a",
+    "explanation": "Confidence limits are calculated with the sample mean and standard error.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  },
+  {
+    "q_no": 13,
+    "question": "Question 13: During screening of a population, the mean cholesterol levels were found to be 230mg/dL. \nThe standard error was 10. Calculate the ‘5% confidence limits.",
+    "options": {
+      "a": "It is equal to the probability of committing a type I error",
+      "b": "It is equal to 1–beta",
+      "c": "It is the chance that the presence of difference is concluded when actually there may be none",
+      "d": "Probability of not declaring a significant difference when actually it is present"
+    },
+    "correct_answer": "a",
+    "explanation": "In the given scenario, ‘5% confidence limits are 210 – 250. In inferential statistics, ‘5% confidence limits = Sample mean (x■) ± 2 standard errors. In this case, mean is 230 and the standard error is 10. Hence, confidence limits are 210-250. 848 \nSold by @itachibot Concepts in Hypothesis Testing",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Inferential Statistics"
+  }
+]}

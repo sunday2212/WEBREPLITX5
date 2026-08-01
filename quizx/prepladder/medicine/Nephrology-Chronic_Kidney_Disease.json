@@ -1,0 +1,245 @@
+{
+  "chapter": "Nephrology-Chronic Kidney Disease",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "A 55-year-old female with a history of chronic kidney diseases (CKD) and diabetes mellitus for the past 15 years presents for routine kidney function evaluation. To assess renal function accurately, which of the following is considered the best method to measure her GFR in a clinical setting?",
+      "options": {
+        "A": "Creatinine clearance",
+        "B": "Cockroft Gault equation",
+        "C": "Inulin clearance",
+        "D": "CKD-EPI equation"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) CKD - EPI equation Explanation: The CKD—EPI equation is the best method for clinically estimating GFR as it considers the patient's age, race, and gender, thus providing an accurate value. GFR = 141 × min(Scr/ κ , 1) α × max(Scr/ κ , 1)-1.209 × 0.993Age SCr is serum creatinine in mg/dL, κ is 0.7 for females and 0.9 for males, α is –0.329 for females and –0.411 for males, min indicates the minimum of SCr/ κ or 1, and max indicates the maximum of SCr/ κ or 1. Multiply by 1.018 if the patient is a woman Multiply by 1.159 for people with African ancestry Creatinine clearance (Option A) can be used to estimate GFR, but it is not a reliable measure on its own due to variability based on age, sex, muscle mass, and other factors. Moreover, in CKD, the body has increased catabolic activity, thus causing a false rise in creatinine levels. The Cockcroft-Gault formula (Option B) estimates creatinine clearance (CrCl) based on serum creatinine, age, weight, and sex. While commonly used, it tends to overestimate GFR, especially in patients with lower muscle mass or obesity, and does not consider the patient's race. Inulin clearance (Option C) is the gold standard for measuring GFR. The glomerulus freely filters Inulin and is neither reabsorbed, secreted, nor metabolized, making its clearance the most accurate measure of GFR. However, its complexity and cost limit its routine use in clinical settings. Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2311",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 2,
+      "question": "A 65-year-old male patient weighs 80 kg, is 175 cm tall, and has a serum creatinine level of 1.1 mg/dL. Using the Cockcroft-Gault equation, what is this patient's estimated Glomerular filtration rate?",
+      "options": {
+        "A": "83.2 mL/min",
+        "B": "75.7 mL/min",
+        "C": "71.5 mL/min",
+        "D": "69.2 mL/min"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) 75.7 mL/min Explanation: Creatinine Clearance (CrCl) Calculation using the Cockcroft-Gault Equation: CrCl = (140 - age in years) × weight in kg / (72 × serum creatinine in mg/dL) × 0.85 (if female, as they have less muscle mass) Creatinine clearance gives estimated GFR ( eGFR ) levels Given patient details: Age: 65 years Weight: 80 kg Serum creatinine: 1.1 mg/dL Sex: Male (no need for 0.85 multiplier) Step-by-step calculation: CrCl = (140 - 65) × 80 / (72 × 1.1) CrCl = 75 × 80 / 79.2 = 6000 / 79.2 ≈ 75.7 mL/min The eGFR of this patient using the Cockcroft-Gault equation is 75.7 mL/min. Reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2879308/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 3,
+      "question": "A 66-year-old male with a history of hypertension and type 2 diabetes mellitus is admitted to the ICU following major cardiac surgery. Post-operatively, his urine output has decreased significantly, raising concerns about acute kidney injury (AKI). Which of the following investigations would be most useful for early detection of AKI in this patient?",
+      "options": {
+        "A": "Serum BUN",
+        "B": "Serum Creatinine",
+        "C": "Neutrophil gelatinase-associated lipocalin",
+        "D": "Urine granular cast detection"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Neutrophil gelatinase-associated lipocalin Explanation: Neutrophil gelatinase-associated lipocalin (NGAL) is rapidly upregulated after kidney injury and inflammation. It can be detected in plasma and urine within hours, making it a sensitive marker for early AKI diagnosis. BIOMARKERS for early detection of AKI NGAL Neutrophil gelatinase-associated lipocalin Useful for early detection of acute kidney injury (AKI), particularly following cardiopulmonary bypass surgery. It can be measured in both urine and plasma, providing a rapid and sensitive indication of kidney damage before significant changes in traditional markers like serum creatinine are observed. KIM-1 Kidney injury molecule - 1 Type 1 transmembrane protein in the proximal convoluted tubule (PCT) of the kidney, upregulated in response to injury. Tested in urine and plasma suPAR Soluble urokinase plasminogen-activating receptor Signalling glycoprotein. Tested in only plasma. IGFBP7 Insulin-like growth factor binding protein 7 and tissue inhibitor of metalloproteinase-2 are being used as predictive biomarkers for the high risk of development of moderate to severe AKI in critically ill patients. TIMP-2 Blood urea nitrogen (BUN) (Option A) is a traditional marker for kidney function, but it usually increases only after significant kidney damage. Moreover, BUN levels can be influenced by non-renal factors such as dehydration, protein intake, and liver function, making it less reliable for early detection of acute kidney injury (AKI). Serum Creatinine (Option B) is widely used to assess kidney function, but it is not an effective early marker for acute kidney injury (AKI). Its levels increase only after significant kidney damage, making it a suboptimal choice for early diagnosis. Granular casts (Option D) and renal tubular epithelial cells in urine microscopy can indicate ongoing kidney injury, particularly when AKI is already established, but it does not help in detecting early AKI. Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2305",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 4,
+      "question": "A 78-year-old female patient with a history of diabetes mellitus presents to the outpatient department for her annual checkup. She reports no new complaints and appears to be in good health. Routine investigations reveal the following results: Glomerular Filtration Rate (GFR): 50 mL/min Urine Albumin Levels: 12 mg/g Based on the kidney disease improving global outcome classification of CKD, what is the risk of kidney failure in this patient?",
+      "options": {
+        "A": "Low risk",
+        "B": "Moderate risk",
+        "C": "High risk",
+        "D": "Very high risk"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Moderate risk Explanation: The patient has a glomerular filtration rate (GFR) of 50 mL/min and an albuminuria level of 12 mg/g. According to the Kidney Disease: Improving Global Outcomes (KDIGO) classification for chronic kidney disease (CKD): GFR: A GFR of 50 mL/min falls into Stage 3 CKD (G3a), defined as 30–59 mL/min. Albuminuria: An albuminuria level of 12 mg/g is categorised as A1 (normal to mildly increased), which is <30 mg/g. Combining these classifications: GFR Stage: G3a (Stage 3) Albuminuria Category: A1 G F R Prognosis of CKD, according to KDIGO 2012 classification Persistent albuminuria A1 A2 A3 Normal to mild increase Moderate increase Severe increase <30mg/g 30-300 mg/g >300mg/g G1 Normal or high >=90 Low risk Moderate risk High risk G2 Mildly decreased 60-89 Low risk Moderate risk High risk G3a Mild to moderate decrease 45-59 Moderate risk High risk Very high risk G3b Moderate to severe decrease 30-44 High risk Very high risk Very high risk G4 Severe decrease 15-29 Very high risk Very high risk Very high risk G5 Kidney failure <15 Very high risk Very high risk Very high risk Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2309",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 5,
+      "question": "A 40-year-old male presents with worsening fatigue, leg swelling, and occasional shortness of breath. He has a 15-year history of hypertension and type 2 diabetes mellitus. Laboratory tests show elevated serum creatinine and a reduced glomerular filtration rate (GFR). Which of the following diseases is least likely to have caused his condition?",
+      "options": {
+        "A": "Autosomal dominant polycystic kidney disease",
+        "B": "Diabetic nephropathy",
+        "C": "Glomerulonephritis",
+        "D": "Pyelonephritis"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) Pyelonephritis Explanation: Pyelonephritis is not one of the leading causes of chronic kidney disease (CKD). While recurrent infections may lead to chronic pyelonephritis, it is not the leading cause of CKD. CHRONIC KIDNEY DISEASE Risk factors Chronic systemic diseases Diabetes and metabolic syndromes Autoinflammatory disorders: SLE, Vasculitis Infections: HIV, HBV, HCV Toxic exposure: Antineoplastic agents Hypertension Lifestyle Smoking Diet Physical activity Leading causes Diabetic nephropathy (Most common) Glomerulonephritis Hypertension Ischemic heart disease (Cardiorenal syndrome) Autosomal dominant polycystic kidney disease Tubulointerstitial kidney disease Manifestation Weight loss Nausea Hiccups (urea irritates gastric mucosa) Pedal oedema Muscle cramping and twitching Pruritus and skin pigmentation Uremic fetor Restless leg syndrome Uremic pericarditis Hypertension Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2312-2313",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 6,
+      "question": "A 74-year-old male with stage 3 chronic kidney disease presents with fatigue, muscle weakness, and palpitations. His current medications include losartan and spironolactone for hypertension. ECG findings are normal. Serum electrolyte levels are given below. Sodium - 129 mEq/L Potassium - 5.6 mEq/L Bicarbonate - 20 mEq/L Which of the following is the most appropriate initial management of this patient’s electrolyte abnormalities?",
+      "options": {
+        "A": "Water restriction",
+        "B": "Start the patient on hemodialysis",
+        "C": "Stop spironolactone and start on patiromer",
+        "D": "Administer intravenous calcium gluconate"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Stop spironolactone and start on patiromer Explanation: A potassium level of 5.6 (normal 3.5–5.5) with symptoms of fatigue, muscle weakness, and palpitations indicates hyperkalemia. Potassium correction is needed by discontinuing spironolactone and starting patiromer . Spironolactone, a potassium-sparing diuretic, contributes to hyperkalemia, while patiromer is a potassium-binding resin that promotes potassium excretion via the GIT, thus reducing the serum potassium level. Fluid and serum electrolytes in CKD Electrolyte Imbalances Management Hypervolemic hyponatremia: High circulating aldosterone levels. Increase in water > sodium retention. Water restriction Hyperkalemia Patiromer (Option C) Calcium resonium Sodium polystyrene Hypokalemia (rare): Usually due to overuse of diuretics Increase dietary intake and reduce the dose of diuretics Hyperphosphatemia Sevelamer Calcium acetate or carbonate Hypocalcemia Paricalcitol Water restriction (Option A) helps to manage hyponatremia, particularly when it is due to water overload. In this case, the hyponatremia is mild (129 mEq/L), and there is no indication of volume overload or a need for acute fluid management. Hemodialysis (Option B) is indicated for severe, refractory hyperkalemia or life-threatening electrolyte imbalances unresponsive to medical management. The patient's potassium level is 5.6 mEq/L, which is elevated but does not typically require immediate hemodialysis. Intravenous calcium gluconate (Option D) stabilizes the cardiac membrane and is indicated when ECG finding are abnormal (tall t waves /arrhythmias) due to hyperkalemia or severe hyperkalemia (K+ > 6.5). Since ECG findings are within normal limits, addressing the cause of hyperkalemia (drug-induced) with a potassium-lowering agent (e.g., Patiromer ) should be prioritized. Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2312, 2313",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 7,
+      "question": "A 72-year-old woman with a history of type 2 diabetes, hypertension, and chronic kidney disease presents for routine follow-up. Her HbA1c is 5.6%, blood pressure is 152/88 mmHg, serum creatinine is 1.8 mg/dL, and urinalysis shows microalbuminuria. She is currently taking Canagliflozin and hydrochlorothiazide. Which medication should be added to her treatment?",
+      "options": {
+        "A": "Diltiazem",
+        "B": "Lisinopril",
+        "C": "Regular insulin",
+        "D": "Metformin"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Lisinopril Explanation: Lisinopril, an ACE inhibitor, is commonly used to manage hypertension in patients with diabetes and chronic kidney disease (CKD). It reduces blood pressure, decreases proteinuria, and slows CKD progression by lowering intraglomerular pressure, providing nephroprotective benefits. Management of Chronic kidney disease Blood glucose control HbA1c < 7% Metformin may be given if eGFR>30ml/min, or else lactic acidosis may occur SGLT-2 inhibitors ( Canagliflozin, Dapagliflozin) can prevent diabetic nephropathy. Insulin should be given to achieve the HbA1c target. Blood pressure control Target BP <130/80 mm hg ACEi : Lisinopril, Captopril (Option B) ARB’s : Losartan, Telmisartan ACEi and ARB have nephroprotective activity and thus should be used as the preferred drug of choice to control BP (Option B). Calcium channel blockers can be used if ACEi are contraindicated. Cholesterol T arget LDL<70 mg% Statins : Atorvastatin 40 to 80 mg Anemia IV iron Erythropoietin stimulating agents: Darbepoetin and epoetin Coagulopathies Desmopressin Cryoprecipitate Conjugated estrogen Blood transfusion Vitamin D deficiency Vitamin D3 supplements Phosphate binders Sevelamer Calcium carbonate and acetate Cinacalcet Renal replacement therapy Decision is made at grade 4 CKD Allogeneic kidney transplant Hemodialysis: 4 hours per session, three times a week. Peritoneal dialysis Diltiazem (Option A) is a non-dihydropyridine calcium channel blocker useful for hypertension but not a first-line agent for CKD with proteinuria. Calcium channel blockers are often adjunctive therapy when additional blood pressure control is needed. Regular insulin (Option C) is effective in reducing HbA1c levels, but in this patient, adequate control has been attained with an SGLT-2 inhibitor; thus, regular insulin is not necessary. Metformin (Option D) is usually avoided in patients with renal disorders to reduce the risk of lactic acidosis. Moreover, monotherapy with Canagliflozin is sufficient for controlling serum HbA1c levels in this patient. Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2315-2320",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 8,
+      "question": "A 78-year-old male patient presented to the emergency department in a semi-conscious state with no available medical history. Physical examination revealed a foul-smelling, pungent breath, an arteriovenous (AV) fistula in the left arm, bilateral lower limb oedema, multiple bruises and abrasions on the body, and Kussmaul respirations. A bedside blood glucose measurement showed a level of 200 mg/dL. Based on these findings, what is the most likely diagnosis?",
+      "options": {
+        "A": "Diabetic ketoacidosis",
+        "B": "Uremic acidosis",
+        "C": "Lactic acidosis",
+        "D": "Aspirin overdose"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Uremic acidosis Explanation: The most likely diagnosis is uremic acidosis, indicated by uremic fetor , an AV fistula suggesting hemodialysis , bilateral lower limb oedema from fluid retention, and Kussmaul respirations compensating for severe metabolic acidosis. Complications of Chronic Kidney Disease Fluid and electrolytes Hyperkalemia Pitting oedema ( Due to fluid and salt retention) Uremic acidosis It occurs due to the build-up of uremic toxins in the body due to reduced renal function. Features: Uremic fetor, Kussmaul breathing, reduced cognitive ability, confusion/coma. Cardiovascular system Uremic pericarditis Cardiac failure occurs due to salt and water retention, left ventricular hypertrophy, diastolic dysfunction, frank cardiomyopathy and myocardial ischemia. Vascular calcifications occur due to hyperphosphatemia. Haematological system Abnormal hemostasis Coagulopathies Thromboembolism (in cases of hypoalbuminemia) Anemia occurs due to reduced EPO secretion: Normocytic normochromic anemia Skin changes Nephrogenic fibrosing dermopathy (Progressive subcutaneous induration) Calciphylaxis - build up of calcium in small arterioles of skin and fat tissue . Painful livedo reticularis and subcutaneous nodules Ischemic necrosis patches, especially over the legs, thighs, abdomen and breast Pruritus and easy bruisability. Calciphylaxis Nephrogenic fibrosing dermopathy Musculoskeletal Osteitis fibrosa cystica ( Due to secondary hyperparathyroidism) Osteomalacia (Due to reduced levels of Vitamin D and low bone turnover) Nervous system Hyperuremic encephalopathy Peripheral neuropathy Restless leg syndrome Diabetic ketoacidosis (Option A) is a metabolic acidosis characterized by Kussmaul breathing, confusion, and fruity-smelling breath. However, a glucose level of 200 mg/dL is lower than the expected range for DKA, which is typically above 250 mg/dL. Lactic acidosis (Option C) can occur in states of shock or hypoxia, but there is no direct evidence of shock or tissue hypoxia in this patient. Additionally, it does not explain the features such as the AV fistula and uremic fetor. Aspirin overdose (Option D) can lead to metabolic acidosis and may present with features like Kussmaul breathing and altered mental status; however, it is not associated with any type of peculiar-smelling breath.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 9,
+      "question": "A 38-year-old male with end-stage renal disease is being evaluated for kidney transplantation. Which of the following investigations is essential to perform on the recipient to list him for transplantation?",
+      "options": {
+        "A": "Cytomegalovirus serology",
+        "B": "Hepatitis B and C serology",
+        "C": "USG doppler KUB",
+        "D": "CT angiography"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) CT angiography Explanation: CT angiography of the recipient should be performed to visualise the iliac artery to rule out the presence of any calcification in the artery to prevent ischemia of the newly transplanted kidney. The prerequisites for renal transplantation are HLA matching Blood group matching For donor: Serology - HIV, HCV, HBV and CMV (Option A and B) USG Doppler KUB - to rule out unilateral renal artery stenosis (Option C) For recipient: CT angiography to visualise and rule out the presence of calcification in the iliac artery. (Option D) Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2315-2320",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 10,
+      "question": "Which of the following statements are true regarding HLA matching for renal transplants? Only HLA - A and HLA - DR needs to be matched Life-long immunosuppressive therapy is essential post-transplant I HLA match required no induction therapy Tacrolimus and Basiliximab are used for induction therapy",
+      "options": {
+        "A": "1 and 3",
+        "B": "2 and 3",
+        "C": "1, 2 and 4",
+        "D": "3 and 4"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) 2 and 3 Explanation: Before the transplantation of organs, HLA matching between the donor and recipient is essential to prevent organ rejection. Loci of HLA - A, B, C, DP, DQ and DR. HLA - A, B and DR should be matched (Statement 1) Syngeneic transplantation can only occur in monozygotic twins. Induction therapy: a type of intense prophylactic immunosuppressive therapy given at time of transplant to reduce risk of acute rejection Requirement of induction therapy depends on the HLA match. 1/6 or 2/6 match: Anti-thymocyte globulin 3/6 match: Basiliximab (Statement 4) 4/6 or 5/6 match: No induction needed (Statement 3) Life-long immunosuppressive maintenance therapy is essential (Statement 2) Steroid Tacrolimus / Cyclosporine Mycophenolate mofetil Azathioprine Reference: Harrison’s Principle of Internal Medicine, 21st edition, Page 2326-2328",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 11,
+      "question": "Which type of graft rejection is resistant to therapy and, hence, is the leading cause of graft failure?",
+      "options": {
+        "A": "Hyperacute Rejection",
+        "B": "Acute Rejection",
+        "C": "Acute Cellular Rejection",
+        "D": "Chronic Rejection"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) Chronic Rejection Explanation: Chronic rejection is the principal cause of long-term graft failure and it is characterized by progressive damage to the graft over time and is often resistant to most therapies , becoming the leading cause of graft failure. Types of Graft Rejection: Hyperacute Rejection (Type-2 Hypersensitivity reaction): It occurs immediately after graft implantation or during blood flow restoration of graft in the recipient Antibodies bind to endothelial antigens, activating the complement system, which leads to endothelial injury, thrombosis, and ischemic necrosis. Mediated by preformed antibodies targeting antigens on graft endothelial cells. Hyperacute rejection is uncommon due to blood type matching and cross-matching tests that identify recipient antibodies against potential donors. Acute Rejection: (Type-4 Hypersensitivity reaction) Typically, it occurs within days to weeks post-transplant and can happen later if immunosuppression is reduced or stopped. Prevented by maintaining accurate immunosuppression Types: Cellular Rejection : This involves CD8+ cytotoxic T lymphocytes (CTLs) directly destroying graft cells and CD4+ T cells, inducing inflammation that damages the graft. Antibody-Mediated Rejection : Antibodies bind to vascular endothelium, activating the complement, leading to inflammation and graft failure. Chronic Rejection: (Type-4 Hypersensitivity reaction) It develops over months to years . It is primarily mediated by T cells reacting against graft alloantigens, which secrete cytokines that stimulate fibroblast and vascular smooth muscle cell proliferation. While acute rejection management has improved, chronic rejection remains resistant to most therapies, becoming the leading cause of graft failure. Reference: Robbins & Cotran Pathologic Basis of Disease, 10th Edition, Page 236,237 Harrison’s Principle of Internal Medicine, 21st Edition, Page 2330",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 12,
+      "question": "During a hemodialysis session, the dialysis nurse notices the patient experiencing hypotension. Which of the following strategies might be employed to help manage this condition?",
+      "options": {
+        "A": "Increase the blood flow rate through the dialyser",
+        "B": "Reduce the dialysate sodium concentration gradually",
+        "C": "Reduce the concentration of potassium in the dialysate",
+        "D": "Decrease the duration of the dialysis session"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Reduce the dialysate sodium concentration gradually. Explanation: Gradually lowering the dialysate sodium concentration can help counteract intradialytic hypotension by reducing osmotic gradients that lead to fluid shifts & help maintain blood pressure stability during dialysis sessions & is called “Sodium modeling” . Hemodialysis is a renal replacement therapy that removes waste products, excess fluid, and electrolytes from the blood using a dialyser and a dialysis machine when the kidneys fail. Principle: Solute diffusion through a semipermeable membrane. Due to a concentration gradient, metabolic waste products move from the bloodstream into the dialysate. The efficiency of this diffusive transport is influenced by: Concentration Gradient : A larger difference enhances clearance. Membrane Surface Area : Greater area facilitates more exchange. Mass Transfer Coefficient : Depends on membrane characteristics like porosity, thickness, and solute size. Components: Dialyser: A plastic chamber that allows simultaneous blood and dialysate flow at high rates. Most common type: Hollow-fiber dialyser Modern dialysers use a biocompatible synthetic membrane (polysulfone) instead of older cellulose membranes that could trigger immune responses. Dialysate: Composition can be adjusted based on the patient's needs: Potassium Levels : Ranges from 0–4 mmol/L, with lower potassium dialysate linked to increased risk of arrhythmias (Option C) Calcium : Typically set at 1.25 mmol/L. Sodium : Usually 136–140 mmol/L; “sodium modeling” can be applied to manage intradialytic hypotension. Water for dialysate undergoes extensive treatment, including filtration, softening, deionisation, and reverse osmosis to eliminate contaminants. Blood Delivery System: This system consists of the extracorporeal circuit and dialysis access. The dialysis machine includes a blood pump, solution delivery system, and safety monitors. Blood flow rates are typically between 250 and 450 mL/min, with the dialysate flowing counter currently at 500 to 800 mL/min. Dialysis Access: Refers to the fistula, graft, or catheter through which blood is obtained for hemodialysis and types include : Arteriovenous Fistula (AVF): Created by anastomosing an artery to a vein ( Brescia-Cimino fistula - Cephalic vein is connected end-to-side to the radial artery), resulting in arterialisation of the vein and offers the highest long-term patency rate. Arteriovenous Graft (AVG): Used when fistulas fail to mature or are not feasible due to poor vasculature and involves interposing a prosthetic material (usually polytetrafluoroethylene) between an artery and a vein. fistula vs arteriovenous graft\" data-author=\"NA\" data-hash=\"8732\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"672\" src=\"https://image.prepladder.com/notes/YJLIDQdbWMGrHEFd5APn1744300929.png\" width=\"672\" /> Tunneled Hemodialysis Catheter: Route: A double-lumen catheter is inserted via Internal jugular vein Subclavian vein Femoral vein Used when both fistulas and grafts are unsuitable. Tunneled under the skin to reduce bacterial translocation, resulting in lower infection rates compared to non-tunneled temporary catheters. It is commonly placed in internal jugular veins. Increasing the blood flow rate (Option A) can sometimes enhance solute clearance",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 13,
+      "question": "A 65-year-old patient with end-stage renal disease (ESRD) is evaluated for hemodialysis. The patient presents with fluid overload, hyperkalemia, and significant lethargy. Which of the following is not an indication for initiating hemodialysis in this patient?",
+      "options": {
+        "A": "Acute pulmonary edema",
+        "B": "Hyperkalemia >5 mmol/L",
+        "C": "Uremic encephalopathy",
+        "D": "[H+] > 85 mmol/L"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Hyperkalemia >5 mmol/L Explanation: Acute pulmonary edema, uremic encephalopathy, and a high [H+] (indicating severe metabolic acidosis) are clear indications for initiating hemodialysis. While hyperkalemia above 5 mmol/L is monitored closely, it does not always require immediate dialysis unless accompanied by ECG changes or severe symptoms. Levels exceeding 6.5 mmol/L are critical thresholds for intervention. Indications of Hemodialysis: Indication Acute (AKI) Chronic(CKD) Fluid Overload Pulmonary edema Pulmonary Edema Severe Hypertension Edema resistant to diuretics Hyperkalemia >6.5 mmol/L with ECG changes (Broad QRS) Potassium resistant to treatment Uraemia Pericarditis Encephalopathy Uremic syndrome (anorexia, nausea, lethargy, etc.), typically when eGFR < 10 mL/min/1.73 m² Metabolic Acidosis Severe acidosis ( H+ > 79 nmol/L ; pH < 7.1) Chronic acidosis resistant to bicarbonate therapy Relative indications Bleeding diathesis due to uremia-induced platelet dysfunction Intractable anemia despite erythropoietin and iron supplementation Hyperphosphatemia despite phosphate binders Reference: Davidson’s Principles and Practice of Medicine, 24th Edition, Page 422",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 14,
+      "question": "A 72-year-old patient undergoing hemodialysis suddenly develops symptoms of dizziness, significant leg cramps, and chest pain during the treatment session. Which of the following is the most common acute complication occurring in patients undergoing dialysis?",
+      "options": {
+        "A": "Cardiac arrhythmias",
+        "B": "Hypotension",
+        "C": "Anaphylactoid reactions",
+        "D": "Muscle cramps"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Hypotension Explanation: Hypotension is the most common acute complication during hemodialysis. It often results from rapid fluid shifts and changes in blood volume during the dialysis session. While cardiac arrhythmias (Option A), Anaphylactoid reactions (Option C) and muscle cramps (Option D) are also potential complications, they are less frequently encountered than hypotension. Types of Hemodialysis Intermittent Hemodialysis Continuous Hemodialysis Commonly used for acute kidney injury (AKI). Blood is on one side of the dialysis machine, and dialysate is on the other side. Transfer of substances occurs by diffusion and ultrafiltration. Common complication: Hypotension. Used in hemodynamically unstable patients. Types: Convective Clearance: Water and dissolved solutes pass through a semipermeable membrane; physiologic crystalloid solution is added to circulation. Diffusive Clearance: Dialysis with a lower flow rate. Hybrid Therapy: Combines both convective and diffusive clearance . Complications associated with Hemodialysis During treatment Between treatment Hypotension: The most common acute complication during hemodialysis , especially in patients with diabetes mellitus. Muscle cramps . Anaphylactoid reactions: These reactions, particularly to the dialyser, are most common during its first use and are often associated with bio incompatible cellulosic-containing membranes. Cardiac arrhythmias: D/t potassium & acid-base shifts. Hemorrhage: D/t anticoagulation & venous needle disconnection. Air embolism: D/t faulty lines & equipment malfunction. Pulmonary oedema (D/t fluid overload). Systemic sepsis: Usually involves vascular access devices (catheter or fistula). Dialysis disequilibrium syndrome typically occurs during or after a patient's first dialysis session. It presents with confusion, restlessness, headache, and muscle twitching. It is caused by a urea gradient between the CSF and blood that raises intracranial pressure. Amyloidosis ( D/t beta 2 microglobulin ) Carpal tunnel syndrome ( due to amyloid deposition in the flexor retinaculum). Peripheral neuropathy",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxmedicine/Nephrology-Chronic_Kidney_Disease_Q14_exp.jpg",
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 15,
+      "question": "Which is the most common opportunistic infection post kidney transplant and the time during which it occurs?",
+      "options": {
+        "A": "Oral candidiasis - within 1 month of transplantation",
+        "B": "Cytomegalovirus - within 1- 6 months of transplantation",
+        "C": "Listeria monocytogenes - within 1- 6 months of transplantation",
+        "D": "BK virus - after 6 months of transplantation"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Cytomegalovirus - within 1- 6 months of transplantation Explanation: Cytomegalovirus infection if the most common opportunistic infection post renal transplantation, and it usually occurs within 1- 6 months of transplantation Complications following Renal transplant Graft rejection Hyperacute, acute and chronic Opportunistic infections < 1 Month: Wound infection, HSV, UTI, Oral candidiasis 1-6 Months: CMV (most common), HBV, HCV, Pneumocystis carinii, Listeria >6 Months: BK Virus , Aspergillus, Nocardia, HBV, HCV, HZV Hypercalcemia This may indicate failure of parathyroid gland regression post-transplant. Anemia Common post-transplant, often due to immunosuppressive medications. Gastrointestinal bleeding can occur from steroid use. Chronic hepatitis Particularly from hepatitis B virus, which can progress over time. Skin and lip cancers Most common malignancy The leading causes of death among kidney transplant recipients include: Cardiovascular events (29%) Infections (18%) Malignancies (17%) Reference: Harrison’s Principle of Internal Medicine, 21st Edition, Page 2330",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    },
+    {
+      "q_no": 16,
+      "question": "What is the cause of hyperacute graft rejection?",
+      "options": {
+        "A": "Cellular rejection",
+        "B": "Granuloma formation",
+        "C": "Preformed antibodies",
+        "D": "Pre-existing infections"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Preformed antibodies Explanation: Hyperacute graft rejection occurs due to the presence of preformed antibodies that target antigens on the graft endothelial cells Causes of graft rejection Hyperacute rejection (Option C) Occurs due to the presence of preformed antibodies targeting antigens on graft endothelial cells - Type-2 Hypersensitivity reaction It can occur immediately after graft implantation or during blood flow restoration of the graft Acute Rejection Occurs due to ( Type-4 Hypersensitivity reaction) Types Cellular Rejection (Option A) CD8+ cytotoxic T lymphocytes (CTLs) directly destroy graft cells CD4+ T cells induce inflammation that damages the graft. Antibody-Mediated Rejection : Antibodies bind to vascular endothelium, activating the complement, leading to inflammation and graft failure. It can occur within days to weeks of transplantation. Chronic Rejection Occurs due to T cells reacting against graft alloantigens, which secrete cytokines that stimulate fibroblast and vascular smooth muscle cell proliferation. Granuloma formation (Option B) occurs as a focal aggregate of immune cells that forms in response to a persistent inflammatory stimulus and is an example of type 4 hypersensitivity reaction while hyperacute graft rejection is an example of type 2 hypersensitivity reaction. Pre-existing infections (Option D) with CMV, BK virus and adenoviruses are associated with graft rejection but none of them can lead to hyperacute graft rejections, they are associated with acute and chronic graft rejections. Reference: Robbins & Cotran Pathologic Basis of Disease, 10th Edition, Page 236,237 Harrison’s Principle of Internal Medicine, 21st Edition, Page 2330 Infection, Rejection, and the Connection - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Nephrology-Chronic Kidney Disease"
+    }
+  ]
+}

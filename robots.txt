@@ -1,0 +1,48 @@
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /app.html
+Allow: /00x1234.html
+Allow: /search.html
+Allow: /page2.html
+Allow: /platforms/
+Allow: /quiz/
+Allow: /src/
+Allow: /css/
+Allow: /js/
+Allow: *.json
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.ico
+Allow: *.webp
+Allow: *.woff
+Allow: *.woff2
+Allow: *.ttf
+Allow: *.eot
+
+Sitemap: https://nextpulse.lovable.app/sitemap.xml
+
+# Allow all search engines and ad crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Google-Ads-Overview
+Allow: /
+
+User-agent: Google-Adwords
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /

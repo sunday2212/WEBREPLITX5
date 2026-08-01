@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "title": "Statistical_Measures_Probability_And_Data_Distribution"
+  },
+  "questions": [
+    {
+      "text": "A researcher is currently studying the health characteristics of a small Alaskan town, including baseline health metrics, vital signs, and risk factors for common diseases. During this study, the researcher notes that the average systolic blood pressure for the population is 137 mmHg. Which of the following best describes this type of data? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ratio data &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Ordinal data &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Normally-distributed data &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Nominal data &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Binary data &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Numerical data </strong>(also termed quantitative data) refers to data expressed as numbers. Numerical data can be categorized into either interval or ratio data. &#160; <br><br><strong>Interval data </strong>describes data wherein there is a meaningful quantitative difference between two values, and all the values can be placed in a clear, logical order. Common examples of interval data include the Centigrade scale, Fahrenheit scale, and height. &#160; <br><br>However, ratios cannot be calculated using interval data. For instance, stating that 90&#176;F is three times as hot as 30&#176;F (90 = 3*30) is inaccurate. This limitation exists since data must be measured on a scale that includes an absolute value for 0 in order to make relational statements involving multiplication or division. Temperature data, measured in Celsius or Fahrenheit, do not have a meaningful value for 0 since 0&#176;F or 0&#176;C does not imply that there is no temperature. &#160; <br><br><strong>Ratio data</strong>, on the other hand, is similar to interval data but the zero point is now meaningful. As a result, numerical relationships between numbers are also meaningful. Examples of ratio data include the Kelvin temperature scale, respiratory rate, and blood pressure. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Ratio data &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Ordinal data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Ordinal data describes categorical data that has an order, but the difference between values is not consistent or quantifiable. Examples of ordinal data include the staging of chronic kidney disease, stages of cancer, or subjective pain levels. In contrast, average systolic blood pressure is an example of numerical data. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Normally-distributed data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Although the average systolic blood pressure is 137 mmHg, no information is provided regarding the data&#8217;s distribution. As a result, not enough information is available to conclude whether or not this data set is normally distributed. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Nominal data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Nominal data describes categorical data that cannot be logically ordered. Examples of nominal data include blood type, hair color, or eye color. In contrast, average systolic blood pressure is an example of numerical data. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Binary data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Binary data refers to &#8220;either/or&#8221; data (e.g. yes or no, 0 or 1, pain or no pain). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted to measure the body weight of high school students. A total of 60 students are included in this study. The mean body weight is 78 kg and the variance is 30 kg2. Which of the following best describes the meaning of variance? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It is a measure of how far the data points are from the average value &#160;"
+        },
+        {
+          "id": 2,
+          "text": "It represents the difference between the largest and smallest values in the study &#160;"
+        },
+        {
+          "id": 3,
+          "text": "It represents the most frequent observation in the study &#160;"
+        },
+        {
+          "id": 4,
+          "text": "It is a measure of central tendency &#160;"
+        },
+        {
+          "id": 5,
+          "text": "It represents the observation that lies in the middle when the data is arranged in ascending order &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Variance&#160;</strong>is one of the measures of dispersion, along with standard deviation and rage. Variance measures how <strong>spread out</strong> the results are. In other words, it is a measure of how far the data points are from the mean. When the observations are far from the mean, the variance is expected to be large. In contrast, if the observations are close to the mean, then the variance will be small. &#160; <br><br>However, it is difficult to use the variance in conjugation with the mean and the median, given variance has a different unit (since it is in squared units). As a result, the <strong>standard deviation</strong>, which is the square root of the variance, is more commonly used to measure the dispersion of results around the mean. The standard deviation, unlike variance, has the same unit as the mean and the median and, therefore, can be more easily utilized. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ It is a measure of how far the data points are from the average value &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ It represents the difference between the largest and smallest values in the study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The range describes the difference between the highest and lowest values. In contrast, variance is a measure of how spread out the results are. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ It represents the most frequent observation in the study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The mode describes the most frequent observation in the study. In contrast, variance is a measure of how spread out the results are. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ It is a measure of central tendency &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Variance is a measure of dispersion, not central tendency. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ It represents the observation that lies in the middle when the data is arranged in ascending order &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the median, not the variance. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted to determine the number of hours medical students spend volunteering each week. A group of 10 students are included in the study. The students spend a mean of 5 hours and a median of 4 hours per week volunteering. A new student, who spends around 30 hours per week volunteering, is added to the study. Which of the following values will demonstrate the greatest change after the new student has been added? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean"
+        },
+        {
+          "id": 2,
+          "text": "Median"
+        },
+        {
+          "id": 3,
+          "text": "Mode"
+        },
+        {
+          "id": 4,
+          "text": "Mean, median, and mode are affected to the same extent &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Neither mean, median, or mode will be affected &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The mean (average) of a set of values can be calculated by finding the sum of all values and dividing it by the number of values. The mean, along with the median and mode, are measures of central tendency. &#160; <br><br>Among the measures of central tendency, the mean is most affected by outliers (i.e. extreme values). For example, if a data set consisted of the values 4, 4, 5, 6, 6, 7, then the mean will be (4+4+5+6+6+7)/6= 5.3. Now if another value of 40 is added, then the mean will be (4+4+5+6+6+7+40)/7=10.29. In contrast, the addition of this outlier will have far lesser impacts on the median, which goes from 5.5 to 6, and mode, which remains unchanged and consists of the values 4 and 6. This example illustrates that the mean can be significantly affected by the addition of one extreme value. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Mean:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Median:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The median is the middle value in a data set. Although the median is also affected by outliers, the mean is more affected than the median.</span></div><div style='margin-bottom: 12px;'><strong>❌ Mode:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The mode is the most common value in a data set. The addition of an outlier will affect the mean more than the mode. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Mean, median, and mode are affected to the same extent &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The mean will be most affected when an outlier is added to the data set, whereas the mode will be the least affected. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Neither mean, median, or mode will be affected &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: An outlier was added to this data set. This change will almost certainly lead to an increase in the mean. The median and mode may (or may not) change, depending on the exact values within the data set. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A 26-year-old woman comes to the office with her husband for prenatal counseling. She has a 3-year-old boy with cystic fibrosis from a previous marriage. The patient remarried last year and recently became pregnant. The patient and her current husband are healthy. However, they are worried their unborn child may develop cystic fibrosis. Paternal genetic analysis reveals mutation in only one copy of the <em>CFTR </em>gene. What is the probability this couple&#8217;s child will have cystic fibrosis? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1/4 &#160;"
+        },
+        {
+          "id": 2,
+          "text": "1/2"
+        },
+        {
+          "id": 3,
+          "text": "2/3"
+        },
+        {
+          "id": 4,
+          "text": "0"
+        },
+        {
+          "id": 5,
+          "text": "1"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Cystic fibrosis</strong> is an autosomal recessive disease caused by mutations in the <strong><em>CFTR&#160;</em>gene</strong>. In this vignette, the patient is healthy, but her first child has cystic fibrosis. These findings suggest that the patient and her former husband are carriers of the mutated <em>CFTR </em>gene. &#160; <br><br>The patient&#8217;s new husband is also a carrier since his genetic testing revealed a mutated copy of the <em>CFTR </em>gene. The probability of them each passing on the mutated allele to the unborn child is <strong>1/2 * 1/2 = 1/4</strong>. Therefore, the probability the child will have cystic fibrosis is 1/4. &#160; Of note, autosomal recessive diseases are usually seen in only one generation (since many of these conditions are severe and prevent affected individuals from successful reproduction), and their risk is increased in consanguineous marriages. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ 1/4 &#160;:</strong><br><span style='opacity:0.9'>Correct: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 1/2:</strong><br><span style='opacity:0.9'>Incorrect: The patient is most likely a carrier of cystic fibrosis since her first child has the condition. Therefore, the first child received a mutated copy of the <em>CFTR </em>gene from both the patient and her former husband. The patient&#8217;s current husband is also a carrier for the mutated <em>CFTR </em>gene. With two carrier parents, the probability of the unborn child having cystic fibrosis is 1/4. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 2/3:</strong><br><span style='opacity:0.9'>Incorrect: The patient is most likely a carrier of cystic fibrosis since her first child has the condition. Therefore, the first child received a mutated copy of the <em>CFTR </em>gene from both the patient and her former husband. The patient&#8217;s current husband is also a carrier for the mutated <em>CFTR </em>gene. With two carrier parents, the probability of the unborn child developing cystic fibrosis is 1/4. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0:</strong><br><span style='opacity:0.9'>Incorrect: The unborn child will have 1/4 probability of having cystic fibrosis since both parents are carriers. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 1:</strong><br><span style='opacity:0.9'>Incorrect: The absolute probability of having cystic fibrosis would only be 1 in the rare instance when both parents are homozygous for the mutation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study is conducted to measure the average blood pressure in a certain population. According to the study, the mean systolic blood pressure is 160 mmHg, and standard deviation is 20 mmHg. Which of the following is true about the standard deviation? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It is a measure of the variation amongst observations in a study &#160;"
+        },
+        {
+          "id": 2,
+          "text": "It is not affected by outliers &#160;"
+        },
+        {
+          "id": 3,
+          "text": "If the sample size increases, the standard deviation increases &#160;"
+        },
+        {
+          "id": 4,
+          "text": "It represents the most frequent observation in the study &#160;"
+        },
+        {
+          "id": 5,
+          "text": "It represents the difference between the highest and lowest values &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>standard deviation</strong> (SD) is a measure of <strong>dispersion </strong>or variability, and it shows to what extent the results are dispersed from the sample mean. In other words, SD shows how much variability exists among the data points in a given data set. If the SD is small, it means that the data points have little variability and are close to the mean. On the other hand, if the SD is large, it means that the results are widely dispersed. &#160; &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ It is a measure of the variation amongst observations in a study &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ It is not affected by outliers &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The standard deviation is a measure of dispersion and is affected by the presence of outliers. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ If the sample size increases, the standard deviation increases &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Standard deviation is a measure of data dispersion and shows to what extent the results are dispersed from the sample mean. An increase in sample size does not necessarily guarantee an increase in standard deviation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ It represents the most frequent observation in the study &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The mode describes the most common value in a data set. In contrast, standard deviation is a measure of data dispersion and shows to what extent the results are dispersed from the sample mean.</span></div><div style='margin-bottom: 12px;'><strong>❌ It represents the difference between the highest and lowest values &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The range describes the difference between the highest and lowest values. In contrast, standard deviation is a measure of data dispersion and shows to what extent the results are dispersed from the sample mean. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An epidemiologist is attempting to better understand the health characteristics of the population of Indonesia. To achieve this goal, the epidemiologist surveys a small island within the country with a population of five-hundred individuals. Which of the following accurately describes an example of descriptive statistics in relation to this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Average weight of the population of the island &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Percentage of Indonesians at risk for developing melanoma &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Average height of all Indonesians &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Regression analysis of hypertension &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Male to female ratio in Indonesia &#160;&#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Descriptive statistics</strong> examine the <strong>characteristics of a sample population</strong> but do not make inferences that go beyond the scope of the sample population. Height, weight, percentage of smokers, eye color, and shoe size of a sample population are all examples of descriptive statistics. The tools of descriptive statistics may include measures of central tendency (e.g., mean, median, mode), measures of dispersion (e.g., standard deviation, standard error), normal distribution, and distributions of skew. &#160; <br><br>Descriptive statistics should ideally have a <strong>high internal validity</strong>, which is the extent to which the observed results represent the truth in the population being studied. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Average weight of the population of the island &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Percentage of Indonesians at risk for developing melanoma &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a form of inferential statistics, which is when data obtained from a sample of subjects is used to make generalizations about a larger group of individuals. In this case, the study population&#8217;s risk of developing melanoma is used to make inferences regarding the country&#8217;s general population. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Average height of all Indonesians &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a form of inferential statistics, which is when data obtained from a sample of subjects is used to make generalizations about a larger group of individuals. In this case, the study population&#8217;s height is used as a surrogate to predict the average height of all Indonesians. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Regression analysis of hypertension &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a form of inferential statistics, which is when data obtained from a sample of subjects is used to make generalizations about a larger group of individuals. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Male to female ratio in Indonesia &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a form of inferential statistics, which is when data obtained from a sample of subjects is used to make generalizations about a larger group of individuals. In this case, data from the island population is used to make predictions regarding the country&#8217;s general population. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An epidemiologist is attempting to better understand the health characteristics of the population of Indonesia. To achieve this goal, the epidemiologist surveys a small island within the country with a population of five-hundred individuals. Which of the following accurately describes an example of inferential statistics in relation to this study population? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Confidence interval regarding height for all Indonesians &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Average weight of the sample population &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Median heart rate of the island population &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Most common eye color of the island population &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Standard deviation of blood pressure amongst island&#8217;s inhabitants &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The primary goal of<strong> inferential statistics</strong> is to estimate population parameters. Using this model of statistics, a<strong> sample population</strong> (e.g. inhabitants of the small island) is used to make inferences regarding the population at large (e.g. population of Indonesia). This method of statistics proves useful when attempting to study large populations, such as that of an entire country or continent. The tools of inferential statistics may include <strong>hypothesis testing,</strong><strong> confidence intervals,</strong> and <strong>regression analysis. &#160;&#160;</strong><br><br>Inferential statistics should ideally have a<strong> high external validity</strong>, which is the extent to which findings made about the sample population can also be extrapolated to the population at large. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Confidence interval regarding height for all Indonesians &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Average weight of the sample population &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Inferential statistics use data obtained from a sample of subjects to make generalizations about a larger group of individuals. In contrast, this answer choice does not make inferences or extrapolations that go beyond the study group. It is therefore a descriptive statistics. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Median heart rate of the island population &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Inferential statistics use data obtained from a sample of subjects to make generalizations about a larger group of subjects. In contrast, this answer choice does not make inferences or extrapolations that go beyond the study group. It is therefore a descriptive statistics. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Most common eye color of the island population &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Inferential statistics use data obtained from a sample of subjects to make generalizations about a larger group of subjects. In contrast, this answer choice does not make inferences or extrapolations that go beyond the study group. It is therefore a descriptive statistics. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Standard deviation of blood pressure amongst island&#8217;s inhabitants &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Inferential statistics use data obtained from a sample of subjects to make generalizations about a larger group of individuals. In contrast, this answer choice does not make inferences or extrapolations that go beyond the study group. It is therefore a descriptive statistics. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is currently studying the health characteristics of a small Alaskan town, including baseline health metrics, vital signs, and risk factors for common diseases. During this study, the researcher notes the majority of the population has blood type A. Which of the following best describes this type of data? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Nominal data &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Ordinal data &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Interval data &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Ratio data &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Binary data &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Categorical data </strong>(also termed qualitative data) is data that can only take on a fixed number of possible values and often does not have a specific numeric value. Categorical data can be classified into either nominal or ordinal data. &#160; <br><br><strong>Nominal data</strong> describes categorical data that cannot be logically ordered. Examples of nominal data include blood type, hair color, or eye color. <strong>Ordinal data </strong>describes categorical data that has an order, but the difference between values is not consistent or quantifiable. Examples of ordinal data include staging of chronic kidney disease, stages of cancer, or subjective pain levels (e.g., mild, moderate, severe). &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Nominal data &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Ordinal data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Ordinal data refers to data that has an order, but the numerical difference between different values is not consistent or quantifiable (e.g., cancer staging, subjective pain level). In contrast, there is no particular order for the different blood types. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Interval data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Blood type is an example of categorical data since it cannot be represented using numbers and can only take on a limited set of possible values. In contrast, interval data (e.g., Celsius temperature scale, Fahrenheit temperature scale) is a type of numeric data. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Ratio data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Blood type is an example of categorical data since it cannot be represented using numbers and can only take on a limited set of possible values. In contrast, ratio data (e.g., Celsius temperature scale, Fahrenheit temperature scale) is a type of numeric data. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Binary data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Binary data refers to &#8220;either/or&#8221; data (e.g., yes or no, 0 or 1, pain or no pain). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of students is trying to determine the average height of 9th graders at their high school. The students survey the entire 9<sup>th </sup>grade student population and are calculating a parameter that measures how spread out the data points are from the average. Which of the following best describes this parameter? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Standard deviation &#160;&#160;"
+        },
+        {
+          "id": 2,
+          "text": "Standard error &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Z-score &#160;&#160;"
+        },
+        {
+          "id": 4,
+          "text": "Correlation"
+        },
+        {
+          "id": 5,
+          "text": "Variance"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Standard deviation</strong> (&#963;) describes the variability or <strong>dispersion of data</strong> in relation to its mean. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Standard deviation &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Standard error &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Standard error is a measure of how spread out the sample means are from the true population mean. It is calculated by dividing the standard deviation of the population by the square root of the sample size. However, since the entire population was surveyed in this study, standard deviation should be used as a measure of spread. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Z-score &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Z-score is the number of standard deviations by which the value of a single raw score (i.e., an observed value or data point) is above or below the mean value of what is being observed or measured. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Correlation:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Correlation is the measure of the extent to which variables are related. Correlation does not directly reflect how spread out data points are from a given average. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Variance:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Since the entire population was surveyed in this study, standard deviation should be used as a measure of how spread out data points are from the average. In contrast, variance is the square of the standard deviation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An investigator is evaluating how many books high school students read each year. Ten students are asked and answered as follows: 4, 3, 7, 8, 6, 13, 2, 10, 12, 16. What is the median number of books read by high school students included in this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "7.5"
+        },
+        {
+          "id": 2,
+          "text": "8.5"
+        },
+        {
+          "id": 3,
+          "text": "8.0"
+        },
+        {
+          "id": 4,
+          "text": "8.1"
+        },
+        {
+          "id": 5,
+          "text": "9.0"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>median </strong>is a measure of central tendency that describes the value that lies in the<strong> middle of the data set</strong> (when arranged in ascending order). In other words, the median is the number that divides the data set into two equal halves when the values are arranged in ascending order. If the number of values is odd, then the median will be a <strong>single value</strong>. For example, if the values are 1, 2, 3, 4, 5, 6, and 7, then the median is 4. &#160; <br><br>However, if the number of values is <strong>even </strong>(like this question) then two numbers will be in the middle. In this question, when the data is arranged in ascending fashion, the sequence is as follows: 2, 3, 4, 6, 7, 8, 10, 12, 13, 16. The numbers that lie in the middle (underlined) are 7 and 8. Hence, the median is the<strong> average of these two values</strong>, which is 7.5. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ 7.5:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ 8.5:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The median is the number that lies in the middle when the data is arranged in order. In this set, there are ten numbers and the two in the middle are 7 and 8, so the median is 7.5. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 8.0:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The median is the number that lies in the middle when the data is arranged in order. In this set, there are ten numbers and the two in the middle are 7 and 8, so the median is 7.5 &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 8.1:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: 8.1 is the mean, which is calculated by dividing the sum of all values in the data set (81) by the number of values (10). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 9.0:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The median is the number that lies in the middle when the data is arranged in order. In this set, there are ten numbers and the two in the middle are 7 and 8, so the median is 7.5. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    }
+  ]
+}

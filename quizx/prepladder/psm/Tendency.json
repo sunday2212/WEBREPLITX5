@@ -1,0 +1,155 @@
+{
+  "chapter": "Tendency",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following is an example of a qualitative variable?",
+      "options": {
+        "A": "Blood Pressure",
+        "B": "Heart Rate",
+        "C": "Blood group",
+        "D": "Cholesterol Level"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Blood group Explanation: Blood Type is a qualitative variable because it describes a characteristic, typically categorised as A, B, AB, or O, without numerical measurement. Variables: Properties that can take on different values. Essential for conducting research, analysing data, and understanding population health patterns and outcomes. There are two types: Qualitative & quantitative. Qualitative Variable Quantitative Variable Definition Describe categories or qualities. It cannot be measured or compared. Describes numerical quantities. It can be measured or compared. Data type Non-numeric Numeric Subtypes Nominal, Ordinal Discrete, Continuous Examples Gender Eye Color Type of Car Blood group Race Height (cm) Weight (kg) Age (years) Blood Pressure (mm Hg) Heart Rate (bpm) Body Temperature (°C) Cholesterol Level (mg/dl) Blood Glucose Level (mg/dl) Reference: High Yield Biostatistics, 4th Edition, Page 3 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4763618/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 2,
+      "question": "A continuous variable is best described as?",
+      "options": {
+        "A": "A variable that can only take on whole numbers.",
+        "B": "A variable that can take on any value within a specified range.",
+        "C": "A variable whose value is obtained by counting.",
+        "D": "A variable that represents distinct, separate values."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) A variable that can take on any value within a specified range. Explanation: Continuous variables can take on any value within a range and are often measured using real numbers. Discrete Variable Continuous Variable Definition It is a variable whose value is obtained by counting. It can take on only specific, separate values. It is a variable whose value is obtained by measuring. It can take on any value within a given range. Data Type Integer values Distinct, separate values (e.g., 0, 1, 2, 3, ...) Decimal or fractional values Any value within a range (e.g., 1.5, 2.3, 3.1416) Nature of Values Countable , finite Measurable , infinite possibilities Representation Whole numbers Real numbers Examples Number of students in a class Number of cars Height Weight Temperature Reference: High Yield Biostatistics, 4th Edition, Page 3",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 3,
+      "question": "The presence or absence of a disease is an example of?",
+      "options": {
+        "A": "Continuous variable",
+        "B": "Discrete variable",
+        "C": "Dichotomous variable",
+        "D": "Polytomous variable"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Dichotomous variable Explanation: Dichotomous Variable Polytomous Variable Definition Variable with two possible outcomes or categories. Variable with more than two possible outcomes or categories. Characteristics Represents binary choices. Has multiple distinct categories or levels. Examples Gender (male/female) Presence of a disease (yes/no) True/false response Blood type (A, B, AB, O) Educational level (high school, college, graduate school) Pain severity (mild, moderate, severe) Usage Common in binary classification tasks (e.g., disease diagnosis). Used in surveys, scales, and assessments for detailed categorisation. Reference: High Yield Biostatistics, 4th Edition, Page 3",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 4,
+      "question": "An investigator studies the life expectancy of IV drug abusers and divides a sample of patients into HIV-positive and HIV-negative groups. What type of data does this division constitute?",
+      "options": {
+        "A": "Ratio",
+        "B": "Ordinal",
+        "C": "Nominal",
+        "D": "Interval"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Nominal Explanation: In the scenario provided, the division of patients into HIV-positive and HIV-negative groups constitutes nominal data because it categorises individuals into distinct, non-quantitative groups based solely on their HIV status. Nominal Scale Ordinal Scale Definition Can be expressed in Categories without order or ranking Can be arranged in Ordered categories with ranking Examples Gender (male, female, non-binary) Marital status (single, married, divorced) Blood type (A, B, AB, O) Type of delivery (Cesarean and Non cesarean) HIV Status (Positive, Negative, Indeterminate) Education level (primary, secondary, tertiary) Likert scale responses (strongly agree, agree, etc.) Stages of disease (mild, moderate, severe) Cancer Staging (Stage I, Stage II, Stage III, Stage IV) Reference: High Yield Biostatistics, 4th Edition, Page 3 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3469943/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 5,
+      "question": "America uses Fahrenheit (°F) in temperature measurement, and India uses Celsius (°C). Which type of scale is this an example of?",
+      "options": {
+        "A": "Nominal scale",
+        "B": "Ordinal scale",
+        "C": "Interval scale",
+        "D": "Ratio scale"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Interval scale Explanation: An interval scale is used for data ordered with equal intervals between values but without a true zero point. Temperature measurements in Fahrenheit and Celsius are classic examples of interval scales because the difference between each degree is the same. Still, there is no absolute zero that represents the absence of temperature. Both Fahrenheit and Celsius scales have arbitrary zero points (0°C and 32°F). Interval Scale Ratio Scale Definition Ordered categories with equal intervals but no true zero point Ordered categories with equal intervals and a True Zero point or Absolute Zero point. Examples Temperature in Celsius or Fahrenheit Calendar years (e.g. 2000, 2020) IQ Scores (eg. 90, 100, 110) Temperature in Kelvin Height Weight Age Blood Pressure Reference: High Yield Biostatistics, 4th Edition, Page 3",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 6,
+      "question": "Which of the following is the most commonly used statistical average?",
+      "options": {
+        "A": "Weighted mean",
+        "B": "Geometric mean",
+        "C": "Arithmetic mean",
+        "D": "Harmonic mean"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Arithmetic mean Explanation: The arithmetic mean or simply mean is the most commonly used statistical average, especially when assessing data quantitatively. Advantage : Easier to understand and calculate. Disadvantage : Affected by extreme values and outliers. Weighted Mean (Option A) Similar to arithmetic mean; considers only specified values Geometric Mean (Option B) Used when the given data differs exponentially Harmonic Mean (Option D) Used for fractional variables or inverse relationships Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 975",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 7,
+      "question": "A patient who presented yesterday with occasional chest pain on & off for quite a while was found to have a blood pressure of 160/100 mmHg. An ambulatory blood pressure monitoring has been set up and the readings today are 130/90, 158/98, 140/80, 160/90, 150/100 and 138/88 mmHg. What is his mean blood pressure?",
+      "options": {
+        "A": "139/85mmHg",
+        "B": "146/91mmHg",
+        "C": "150/89mmHg",
+        "D": "154/95 mmHg"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) 146/91 mmHg Explanation: Mean is calculated by summing all the variables and dividing the same by the total number of variables. Statistically mean is the best measure of central tendency as it includes sum of all observations Blood pressure has two values : systolic and diastolic , individual averages of both of these should be taken into consideration. Mean systolic pressure = (130+158+140+160+150+138)/6 = 146 Mean diastolic pressure = (90+98+80+90+100+88)/6 = 91 Hence, his mean blood pressure is 146/91 mmHg. Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 975",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 8,
+      "question": "TSH values taken from a few antenatal mothers from an area where iodine deficiency is suspected are 4.5, 3.0, 1.9, 6.2, 8.0, 8.4, 2.4 and 9.2 IU/L. Calculate the median TSH in these mothers.",
+      "options": {
+        "A": "4.12",
+        "B": "6.33",
+        "C": "5.35",
+        "D": "4.78"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) 5.35 Explanation: The median is calculated by arranging the variables in ascending order and taking up the middle value. In case of odd number of observations, median is the middle value when data is arranged in ascending/descending order. In case of even number of observations, median is average no of two middle values when data is arranged in ascending/descending order. This applies when an odd number of variables are given, which is given by The median is given for variables in even numbers by averaging the two middle variables. In the given question, arranging the given variables: 1.9, 2.4, 3.0, 4.5, 6.2, 8.0, 8.2, 9.2 (n=8) Hence, median = (4th variable + 5th variable) / 2 = (4.5+6.2) / 2 = 5.35 (which is >5 suggesting possible hypothyroidism) Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 975",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Tendency_Q8_exp.png",
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 9,
+      "question": "The malaria cases reported in the last 10 years are 270, 300, 200, 310, 6000, 110, 250, 320, 330 and 120. An epidemiologist wants to determine the average number of malaria cases reported during these 10 years. Which of the following is the most appropriate measure of average for this data?",
+      "options": {
+        "A": "Weighted mean",
+        "B": "Median",
+        "C": "Mean",
+        "D": "Geometric mean"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Median Explanation: The advantage of calculating average by median is that it is least affected by extreme values or outliers , the latter are called skewed observations/variables. Outliers are too high or too low values in a data set. Presence of outliers in a data set makes the data set skewed. In the given example, the variables are arranged as: 110, 120, 200, 250, 270, 300, 310, 320, 330, 6000 (n=10) and the median = (270+300)/2 = 285 matching annual incidence; not affected by the extreme value/outlier (which is 6000 here, most probably a mistaken value). The arithmetic mean (Option C) would be 821 which doesn't match the annual incidence in that population.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Tendency"
+    },
+    {
+      "q_no": 10,
+      "question": "In the case of a bimodal distribution, calculate the mode if the median is 2 and the mean is 3.",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "0",
+        "D": "2"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) 0 Explanation: When two values repeat twice in a data set, it is called bimodal (two modes) distribution . In the case of a bimodal distribution, Mode = 3×Median − 2×Mean Given: Median = 2 Mean = 3 Substituting: Mode = 3(2) − 2(3) = 6 - 6 = 0 Mode is defined as the frequently occurring value in a given data. Advantage: Not affected by extreme values/outliers. Disadvantage: It is not suitable for medical statistics because just because occurring in increased frequency doesn’t clearly define anything. Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 975",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Tendency_Q10_exp.png",
+      "chapter_heading": "Tendency"
+    }
+  ]
+}

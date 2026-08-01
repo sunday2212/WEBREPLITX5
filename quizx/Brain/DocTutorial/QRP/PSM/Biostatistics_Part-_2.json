@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "title": "Biostatistics_Part-_2"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Analysis of variance</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chi-square test</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Meta-analysis</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Multiple logistic regression</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A study is conducted to assess the relationship between smoking status and forced expiratory volume in one second (FEV1)- Subjects are randomly selected and categorized based on smoking status. Group A consists of 200 nonsmokers, group B consists of 200 light smokers (1-7 cigarettes per day), group C consists of 200 moderate smokers (8-22 cigarettes per day), and group D consists of 200 heavy smokers (23+ cigarettes per day). FEV1 is quantitatively measured in all participants using properly calibrated office spirometers. Which of the following is the most appropriate statistical method to compare the mean FEV1 results among all 4 groups?</span></p>",
+      "unique_key": "DT1292921",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292921,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122017a167d3-d42c-417d-adb8-6506780f1b85.jpg\">\n<ul>\n<li><strong>Analysis of variance (ANOVA):</strong>\n<ul>\n<li><strong>Appropriate for comparing means</strong> of three or more independent groups.</li>\n<li>Used in this study for the four groups categorized by smoking status (nonsmokers, light smokers, moderate smokers, heavy smokers).</li>\n<li><strong>Determines if there are significant differences</strong> in mean FEV1 values among the groups.</li>\n<li>Assesses variability between group means relative to variability within each group.</li>\n<li><strong>Rejects the null hypothesis</strong> if at least two means are significantly different.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Why Not Others:</strong></p>\n<ul>\n<li><strong>B. Chi-square test:</strong>\n<ul>\n<li>Evaluates association between two categorical variables.</li>\n<li><strong>Inappropriate for quantitative variables</strong> like FEV1.</li>\n</ul>\n</li>\n<li><strong>C. Meta-analysis:</strong>\n<ul>\n<li>Combines data from multiple studies.</li>\n<li><strong>Not applicable for a single study's mean comparison.</strong></li>\n</ul>\n</li>\n<li><strong>D. Multiple logistic regression:</strong>\n<ul>\n<li>Predicts probability of a binary outcome.</li>\n<li><strong>Not suitable for comparing means of continuous variables</strong> like FEV1.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>ANOVA is essential</strong> for comparing means of multiple independent groups, especially with continuous data like FEV1.</li>\n<li>Effectively assesses significant differences among group means, critical for studies with multiple categories.</li>\n<li><strong>Understanding correct statistical methods</strong> is crucial for accurately interpreting results and ensuring valid research conclusions.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122095395ebf-321f-4571-83e8-334acbfb2916.jpg\">",
+      "correct_choice_id": 1,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">A Kappa statistics test</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">A Wilcoxon rank sum test</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">A chi-square test</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">A correlation analysis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A clinical training program wishes to evaluate the reliability of selfassessment of clinical skills as a tool for measuring improvement. After a teaching session, students are asked to rank themselves (on a scale of 1 to 5) on 10 examination procedures. The preceptor also ranks the students according to the same scale. The results of the two assessments are then compared. The most appropriate test statistic to compare results is</span></p>",
+      "unique_key": "DT1292922",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292922,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Correlation analysis:</strong>\r\n<ul>\r\n<li><strong>Measures the strength and direction of the relationship</strong> between two sets of rankings, helping assess agreement between student self-assessments and preceptor evaluations.</li>\r\n<li><strong>Spearman's rank correlation coefficient</strong> is particularly useful here, as it accounts for ordinal data, allowing for a non-parametric analysis.</li>\r\n<li>This analysis enables the identification of <strong>patterns in rankings</strong>, indicating whether students' self-assessments align with the preceptor's evaluations.</li>\r\n<li>A high correlation would suggest that the self-assessment tool is <strong>reliable</strong> for measuring improvements in clinical skills.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Others:</strong></p>\r\n<ul>\r\n<li><strong> Kappa statistics test:</strong>\r\n<ul>\r\n<li>Measures agreement between two raters for categorical data.</li>\r\n<li><strong>Not suitable for ranked data</strong> like the assessments in this scenario.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Wilcoxon rank sum test:</strong>\r\n<ul>\r\n<li>Compares medians of two independent groups.</li>\r\n<li><strong>Does not assess correlation</strong> between two sets of rankings.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Chi-square test:</strong>\r\n<ul>\r\n<li>Used for categorical data analysis.</li>\r\n<li><strong>Inappropriate for ranked or ordinal data</strong> in this context.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>Correlation analysis is essential</strong> for determining the relationship between two ranked sets of data, particularly in evaluating self-assessment reliability.</li>\r\n<li>Understanding the correct statistical method is crucial for valid interpretations in research, ensuring accurate conclusions about the effectiveness of self-assessment tools.</li>\r\n<li>This analysis helps educators and clinicians improve training programs by aligning self-assessment with objective evaluations, enhancing student learning outcomes.</li>\r\n</ul>",
+      "correct_choice_id": 14,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean&plusmn; 1.96 x SD</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean&plusmn; 1.96 x (SD/&radic;n)</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean &plusmn; 2.58 x SD</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean&plusmn; 2.58 x (SD/&radic;n)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A researcher is interested in assessing the blood folate level of women who live in a population with a high incidence of neural tube defects. She takes a large random sample (n) of women age 18-45 and measures their blood folate levels. The researcher finds that the data are normally distributed, and she reports the mean and standard deviation (SD) of the sample. To account for sampling variation, she decides to calculate a 95% confidence interval to estimate the mean of the entire population. The researcher concludes that 2.4 to 4.6 ng/ml might be a likely range for the true, unknown population mean. Which of the following calculations was most likely used to compute this interval estimate of the population mean?</span></p>",
+      "unique_key": "DT1292923",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292923,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>95% Confidence Interval (CI)</strong> is crucial in estimating the <strong>true population mean</strong> based on a sample, offering a range where the mean is likely to fall.</li>\n<li><strong>Formula</strong>: <strong>Mean &plusmn; 1.96 &times; (SD/&radic;n)</strong>:\n<ul>\n<li><strong>1.96 z-score</strong> corresponds to capturing 95% of data in a normal distribution.</li>\n<li><strong>Standard Error (SE)</strong> = <strong>SD/&radic;n</strong> adjusts for sample size, indicating how much the sample mean varies from the population mean.</li>\n</ul>\n</li>\n<li><strong>Larger sample size (n)</strong> decreases SE, making the confidence interval <strong>narrower</strong> and more <strong>precise</strong>.</li>\n<li><strong>Smaller sample size</strong> increases SE, leading to a <strong>wider CI</strong> and less precision in estimating the population mean.</li>\n<li><strong>Standard deviation (SD)</strong> indicates the <strong>spread of individual data points</strong>. A larger SD increases SE, widening the CI, implying more data variability.</li>\n<li><strong>CI interpretation</strong>: If a study is repeated multiple times, <strong>95% of the CIs</strong> will contain the true population mean.</li>\n<li>The confidence interval does not guarantee the exact location of the true mean but gives a <strong>range of certainty</strong> based on the sample data.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412202d0aebe1-42fb-4581-b1c6-4853d1fdd488.jpg\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122053f1e4bd-f299-4b21-9a86-29157991d349.jpg\">\n<p><strong>Why not other options:</strong></p>\n<ul>\n<li><strong>A. Mean &plusmn; 1.96 x SD</strong>: Ignores sample size, leading to an inaccurate CI because SE isn't calculated.</li>\n<li><strong>C. Mean &plusmn; 2.58 x SD</strong>: Uses wrong z-score (2.58 is for <strong>99% CI</strong>) and doesn't include sample size, causing incorrect calculation.</li>\n<li><strong>D. Mean &plusmn; 2.58 x (SD/&radic;n)</strong>: Uses the incorrect <strong>z-score of 2.58</strong> instead of 1.96, which is valid only for <strong>99% CI</strong>.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Correct formula for <strong>95% CI</strong> is <strong>Mean &plusmn; 1.96 &times; (SD/&radic;n)</strong>.</li>\n<li><strong>Larger sample sizes</strong> lead to <strong>smaller SE</strong> and more <strong>precise CIs</strong>, while a <strong>larger SD</strong> results in a <strong>wider CI</strong>, reflecting more variability in data.</li>\n</ul>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Two-sample t test</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Linear regression</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Correlation coefficient</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chi-square test</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Plasma homocysteine levels are measured in patients with acute coronary syndrome who are treated at a large community hospital. The mean plasma homocysteine level in this group is determined to be 11.1 &mu;mol/L with a standard deviation of 1.2 &mu;mol/L. In a separate group of patients hospitalized on the general ward in the same hospital, the mean plasma level is 9.5 &mu;mol/L and the standard deviation is 1.3 &mu;mol/L. Which of the following statistical methods should be used to compare the mean homocysteine levels of these 2 groups of patients?</span></p>",
+      "unique_key": "DT1292924",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292924,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Two-sample t-test</strong>: Compares the means of two independent groups to assess whether the difference is statistically significant.\n<ul>\n<li>It requires <strong>mean values</strong>, <strong>standard deviations</strong>, and <strong>sample sizes</strong> of the two groups.</li>\n<li><strong>Null hypothesis</strong>: Assumes there is no difference between the group means.</li>\n<li><strong>T-statistic</strong> is calculated based on the difference in means, and the <strong>p-value</strong> determines statistical significance (commonly p &lt; 0.05 to reject the null hypothesis).</li>\n<li>It is appropriate when comparing <strong>continuous data</strong> (like plasma homocysteine levels) from two groups.</li>\n</ul>\n</li>\n<li><strong>Assumptions</strong>:\n<ul>\n<li>The data should be <strong>normally distributed</strong>.</li>\n<li>The two groups should be <strong>independent</strong> of each other.</li>\n<li><strong>Homogeneity of variance</strong>: The variances in the two groups should be similar (although Welch's t-test can be used if they aren't).</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412200d0e85aa-f2fd-45a1-80ce-7eeacded5b36.jpg\">\n<p><strong>Why not other options:</strong></p>\n<ul>\n<li><strong>B. Linear Regression</strong>: Used for predicting the relationship between a <strong>dependent variable</strong> and one or more <strong>independent variables</strong>, not comparing group means.</li>\n<li><strong>C. Correlation Coefficient</strong>: Measures the <strong>strength and direction of a linear relationship</strong> between two continuous variables but does not compare means.</li>\n<li><strong>D. Chi-Square Test</strong>: Suitable for comparing <strong>categorical variables</strong> (e.g., frequencies or proportions), not for continuous data like homocysteine levels.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>The <strong>two-sample t-test</strong> is the correct method for comparing the <strong>means of two independent groups</strong> of continuous data.</li>\n<li>It checks for <strong>statistical significance</strong> and helps determine if the observed difference in means is due to chance or reflects a true difference.</li>\n</ul>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">The observed mean difference in body weight change of -3.5 kg is not statistically significant</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">The probability of observing a mean difference in body weight change of -3.5 kg is 0.01</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">There is a 1 % chance of observing a mean difference in body weight change of at least -3.5 kg when no difference between groups is assumed</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">There is a 1 % chance that an adult on a low-carbohydrate diet will have a body weight change of at least -3.5 kg at 12 months after starting the diet</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A study is conducted examining the effect of a low-carbohydrate diet compared to a low-fat diet on body weight. Researchers enroll 150 overweight but otherwise healthy adults from a large city in the study and randomly assign them in a 1:1 ratio to either the low-carbohydrate (40 g/d) or the low-fat (<7&deg;/o saturated fat) diet. At 12 months, a greater body weight change was reported in the low-carbohydrate diet group compared to the low-fat diet group, with a mean difference in body weight change of -3.5 kg (p = 0.01, predetermined significance level= 0.05). Which of the following is the most accurate interpretation of the results of this study?</span></p>",
+      "unique_key": "DT1292925",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292925,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Statistical Power</strong>: The study's design allows for sufficient power to detect differences between the two diet groups. Given the sample size of <strong>150 participants</strong>, there is a higher likelihood of finding a true effect if it exists. This helps to ensure that the observed difference in body weight change is not a result of random variability.</li>\r\n<li><strong>Assumptions of the Test</strong>: The two-sample t-test assumes that:\r\n<ul>\r\n<li>The two groups are <strong>independent</strong> (the participants in one group do not influence those in the other).</li>\r\n<li>The homogeneity of variance exists (the variances of the two groups are approximately equal).</li>\r\n<li>The data follows a <strong>normal distribution</strong>. Although the sample sizes are moderate, which increases robustness to these assumptions.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Significance</strong>: Beyond statistical significance, the mean difference of <strong>-3.5 kg</strong> may also have clinical implications for weight management strategies. Understanding whether this weight change is meaningful in a real-world context is essential for practical applications.</li>\r\n<li><strong>Confidence Intervals</strong>: In addition to the p-value, researchers might calculate a <strong>confidence interval (CI)</strong> for the mean difference in weight change. A <strong>95% CI</strong> around the mean difference would provide a range within which we can be <strong>95% confident</strong> the true mean difference lies. This adds more depth to understanding the effect size and reliability of the findings.</li>\r\n<li><strong>Type I and Type II Errors</strong>:\r\n<ul>\r\n<li><strong>Type I Error (&alpha;)</strong>: Rejecting the null hypothesis when it is true (false positive). Given the low p-value, the risk of committing a Type I error is minimized but not eliminated.</li>\r\n<li><strong>Type II Error (&beta;)</strong>: Failing to reject the null hypothesis when it is false (false negative). Sufficient power reduces the likelihood of this error.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why not other options:</strong></p>\r\n<ul>\r\n<li>Incorrect because the difference is indeed statistically significant with a p-value of <strong>0.01</strong>.</li>\r\n<li>Incorrect because the p-value quantifies the probability of observing a result at least as extreme as -3.5 kg, not the probability of that specific difference occurring.</li>\r\n<li>Incorrect since the p-value applies to the group mean difference, not individual observations, making this statement misleading.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<p><strong>The p-value is the probability of obtaining a result (ie, sample estimate) at least as large as the one observed when the population value claimed in the null hypothesis is assumed to be true. Ap-value &lt;0.05 typically indicates that results are statistically significant.</strong></p>",
+      "correct_choice_id": 43,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">One standard deviation includes 95% of the values</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median is the middle most value</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean, median and mode coincide</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mode is most commonest recurring value</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All are true regarding normal standard distribution curve, EXCEPT:</span></p>",
+      "unique_key": "DT1292926",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292926,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>In a <strong>normal standard distribution curve</strong> (also called a Gaussian distribution), the following statements are true, except for <strong>Option A</strong>:</p>\n<ul>\n<li><strong>A. One standard deviation includes 95% of the values:</strong> <strong>Incorrect.</strong> According to the <strong>68-95-99.7 rule</strong>:\n<ul>\n<li><strong>68%</strong> of the values lie within <strong>1 standard deviation</strong> of the mean.</li>\n<li><strong>95%</strong> of the values lie within <strong>2 standard deviations</strong> of the mean.</li>\n<li><strong>99.7%</strong> of the values lie within <strong>3 standard deviations</strong> of the mean.</li>\n<li>Therefore, one standard deviation includes only <strong>68%</strong>, not <strong>95%</strong>, of the values.</li>\n</ul>\n</li>\n<li><strong>B. Median is the middle most value:</strong> <strong>True.</strong> The median is defined as the middle value in a dataset, ensuring that <strong>50%</strong> of the data points lie below it and <strong>50%</strong> above.</li>\n<li><strong>C. Mean, median, and mode coincide:</strong> <strong>True.</strong> In a perfectly normal distribution, the <strong>mean</strong>, <strong>median</strong>, and <strong>mode</strong> are all located at the center of the distribution, making them equal.</li>\n<li><strong>D. Mode is the most commonly recurring value:</strong> <strong>True.</strong> The mode is the value that appears most frequently in a dataset and coincides with the mean and median in a normal distribution.</li>\n</ul>\n<p><strong>Why Not Other Options:</strong></p>\n<ul>\n<li><strong>B:</strong> Correctly identifies the median's role in a normal distribution.</li>\n<li><strong>C:</strong> Accurately describes the equality of mean, median, and mode.</li>\n<li><strong>D:</strong> Correctly defines the mode, which is true for normal distributions.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Option A</strong> is incorrect because <strong>1 standard deviation</strong> includes only <strong>68%</strong> of values, not <strong>95%</strong>.</li>\n<li>Understanding the properties of the normal distribution is crucial for proper statistical analysis and interpretation.</li>\n</ul>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Venn diagram</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pie diagram</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Scatter diagram</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Component bar diagram</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following pictorial method of data presentation shows the degree of overlaps and exclusivities for two or more characteristics in the same population?</span></p>",
+      "unique_key": "DT1292927",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292927,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>A. Venn diagram</strong>:\n<ul>\n<li><strong>Visual Clarity</strong>: Venn diagrams provide a clear visual representation of how different groups intersect and differ, making it easy to understand complex relationships.</li>\n<li><strong>Multiple Sets</strong>: They can effectively represent relationships among more than two sets, showcasing all possible intersections.</li>\n<li><strong>Comparison</strong>: Venn diagrams facilitate direct comparison between characteristics, highlighting shared and unique features, which can be crucial in various fields like statistics, logic, and probability.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220ee842bab-12db-44e0-b7ac-36f208239532.jpg\">\n<ul>\n<li><strong>B. Pie diagram</strong>:\n<ul>\n<li><strong>Proportional Representation</strong>: Pie charts excel at displaying parts of a whole, allowing for easy interpretation of proportions. However, they cannot depict how categories may overlap or share common elements.</li>\n<li><strong>Limited Insight</strong>: They offer limited analytical insight regarding the relationships between different groups, making them less suitable for comparative analysis of characteristics.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412206a5c0117-ebb9-4d72-9748-fb3b492204c1.jpg\">\n<ul>\n<li><strong>C. Scatter diagram</strong>:\n<ul>\n<li><strong>Correlation Focus</strong>: Scatter plots are useful for examining the relationship between two continuous variables, allowing researchers to identify trends and correlations. Yet, they do not provide information on the exclusivity or overlap between distinct categories.</li>\n<li><strong>No Group Relationship</strong>: They focus solely on the relationship between data points, without indicating how groups may share characteristics.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412205af5fe8d-a9fd-423a-b4f4-f114a8a03770.jpg\">\n<ul>\n<li><strong>D. Component bar diagram</strong>:\n<ul>\n<li><strong>Total Contributions</strong>: This type of diagram is effective for visualizing how different segments contribute to a total, making it useful for showing component breakdowns. However, it does not highlight the interrelations between categories.</li>\n<li><strong>Lack of Overlap Visualization</strong>: It does not allow for the illustration of overlaps or exclusivities, as the focus is on individual contributions rather than on shared</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412200c55bc27-f4bb-4ada-bcce-62775b5c7c2d.jpg\">\n<p><strong>Why Not Other Options:</strong></p>\n<ul>\n<li><strong>B</strong>: Pie charts, while visually appealing, do not illustrate overlaps or exclusive relationships among categories, limiting their effectiveness for this question.</li>\n<li><strong>C</strong>: Scatter diagrams prioritize correlation over exclusivity, failing to represent how different groups may share or differ in characteristics.</li>\n<li><strong>D</strong>: Component bar diagrams emphasize totality and breakdowns but do not showcase how groups might intersect, making them inadequate for displaying overlapping relationships.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>A <strong>Venn diagram</strong> is the most effective tool for visually representing overlaps and exclusivities among multiple characteristics, providing clarity and facilitating comparative analysis.</li>\n<li>Other visual methods like pie charts, scatter plots, and component bar diagrams serve specific purposes, but do not adequately convey the relationships between distinct groups or characteristics, making them less suitable for this analysis.</li>\n</ul>",
+      "correct_choice_id": 61,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean to decrease</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard error of the mean to decrease</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation to increase</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sample variance to increase</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If the size of the random sample is increased, we would expect the</span></p>",
+      "unique_key": "DT1292928",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292928,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>A. Mean to decrease</strong>:\n<ul>\n<li><strong>Incorrect</strong>: The sample mean serves as an estimate of the population mean. Increasing the sample size does not inherently cause the mean to decrease; instead, it typically brings the sample mean closer to the population mean as the sample size increases.</li>\n</ul>\n</li>\n<li><strong>B. Standard error of the mean to decrease</strong>:\n<ul>\n<li><strong>Correct</strong>: The standard error of the mean (SE) is calculated as:</li>\n<li>where sss is the sample standard deviation and nnn is the sample size. As nnn increases, the denominator increases, resulting in a smaller standard error. This indicates that the estimate of the population mean becomes more precise with a larger sample size.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220df410cd4-1ee2-4810-af29-f4258fd04bbd.jpg\">\n<ul>\n<li><strong>C. Standard deviation to increase</strong>:\n<ul>\n<li><strong>Incorrect</strong>: The standard deviation measures the spread of data in the sample. It is a property of the data itself and does not directly change with the sample size; it remains relatively stable as the sample size increases.</li>\n</ul>\n</li>\n<li><strong>D. Sample variance to increase</strong>:\n<ul>\n<li><strong>Incorrect</strong>: The variance measures data dispersion, and while larger samples can yield more reliable estimates, they do not guarantee that the sample variance will increase. Variance is influenced by the inherent variability in the data rather than the sample size.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Why Not Other Options:</strong></p>\n<ul>\n<li><strong>A</strong>: The mean does not decrease simply due to an increase in sample size; it may converge toward the true population mean instead.</li>\n<li><strong>C</strong>: Standard deviation remains a characteristic of the data; it does not inherently increase with sample size.</li>\n<li><strong>D</strong>: Sample variance is influenced by the data's variability, not directly by sample size, so it does not necessarily increase.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Increasing the sample size primarily leads to a <strong>decrease in the standard error of the mean</strong>, enhancing the precision of population mean estimates.</li>\n<li>Other metrics like mean, standard deviation, and sample variance are less directly affected by sample size and may not demonstrate a predictable pattern with changes in sample size.</li>\n</ul>",
+      "correct_choice_id": 72,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Simple random sampling without replacement</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Simple random sampling with replacement</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stratified sampling</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Systemic sampling</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a community of 3000 people 80% are Hindus, 10% are Muslims, 5% are Sikhs, 4% are Christian and rest others, if you wish to know the food habits of 300 people you will have to do</span></p>",
+      "unique_key": "DT1292929",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292929,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Stratified sampling</strong> ensures <strong>accurate representation</strong> of different subgroups (strata), which in this case are the religious groups.</li>\n<li>The population is divided into <strong>strata based on religion</strong>, and samples are taken <strong>proportionally</strong> from each stratum.</li>\n<li>This method reduces <strong>sampling bias</strong> by ensuring all groups are represented according to their actual proportions in the population.</li>\n<li>Helps in producing a <strong>more accurate and reliable conclusion</strong> about the food habits in the community because the sample reflects the population structure.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220ca471ebb-4243-4e8b-9ba1-caf3043c7348.jpg\">\n<p><strong>Why not other options?</strong></p>\n<ul>\n<li><strong>A. Simple random sampling without replacement:</strong>\n<ul>\n<li>Every individual has an <strong>equal chance of being selected</strong>, but it <strong>may not reflect the population proportions</strong> of religious groups.</li>\n<li>There's a possibility that smaller groups (e.g., Christians or Sikhs) could be <strong>underrepresented or missed entirely</strong>.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220318ec76c-27af-4924-ab59-f4d174fa216d.jpg\">\n<ul>\n<li><strong>B. Simple random sampling with replacement:</strong>\n<ul>\n<li>Similar to option A, but with the added chance of <strong>selecting the same person multiple times</strong>, which could distort the sample and still <strong>doesn't guarantee proportional representation</strong>.</li>\n</ul>\n</li>\n<li><strong>D. Systematic sampling:</strong>\n<ul>\n<li>Selects individuals at <strong>fixed intervals</strong>, but it does not account for the proportions of subgroups, so <strong>overrepresentation</strong> or <strong>underrepresentation</strong> of certain religious groups could occur.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412203bf83849-ce54-4942-b60e-693d8a5ddffb.jpg\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220abb4b94c-891c-4832-aa1a-e923f70abe80.jpg\">\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Stratified sampling</strong> is the <strong>most effective</strong> method to maintain the <strong>proportions</strong> of subgroups (religions) in the population.</li>\n<li>Ensures <strong>fair representation</strong> of all groups, providing a <strong>balanced and accurate</strong> study result.</li>\n<li><strong>Simple random sampling</strong> and <strong>systematic sampling</strong> are <strong>less reliable</strong> in this scenario due to the lack of control over subgroup representation.</li>\n</ul>\n<p><strong>Conclusion</strong>: In the case of ensuring proportional representation of religious groups when studying food habits, <strong>Stratified Sampling (Option C)</strong> is the most suitable method.</p>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

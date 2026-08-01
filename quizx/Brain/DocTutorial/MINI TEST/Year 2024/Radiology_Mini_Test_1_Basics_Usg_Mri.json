@@ -1,0 +1,652 @@
+{
+  "meta": {
+    "title": "Radiology_Mini_Test_1_Basics_Usg_Mri"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">William Roentgen</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Godfrey Hounsfield</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Paul Christian Lauterbur</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Charles Theodore Dotter</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Who discovered Xrays?</span></p>",
+      "unique_key": "Q244988",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244988,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p><strong>Wilhelm Roentgen (1845-1923)</strong> was a German physicist who discovered X-rays in <strong>1895</strong>, a groundbreaking achievement in medical imaging and physics. His discovery, made while experimenting with cathode rays, revealed a new type of radiation that could pass through solid objects, allowing for the internal structure of objects and the human body to be seen without surgery. For this discovery, he was awarded the <strong>first-ever Nobel Prize in Physics in 1901.</strong></p><p><strong>Option B: Godfrey Hounsfield</strong> helped in developing the <strong>CT scan</strong> and the unit for CT scan is named after him.</p><p><strong>Option C: Paul Christian Lauterber</strong> is credited for his work in <strong>magnetic resonance imaging</strong></p><p><strong>Option D: Charles Theodore Dotter</strong> is the <strong>father of interventional radiology.</strong></p><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number:1</p>",
+      "correct_choice_id": 1,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silver</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Copper</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tungsten</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Carbon</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What metal is used in production of Xrays?</span></p>",
+      "unique_key": "Q244989",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244989,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p><strong>Tungsten (chemical symbol W)</strong> plays a crucial role in X-ray production, particularly in X-ray tubes. Tungsten is commonly used as the material for <strong>the anode</strong> (target) in these tubes due to its high atomic number (<strong>74</strong>), which enhances X-ray production efficiency, and its high melting point <strong>(about 3,422&deg;C),</strong> allowing it to withstand the intense heat generated during the process.</p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/2E.jpg\"><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number 11</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aluminium titanate</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead zirconium titanate</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silver nitrate</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Copper tungstate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which crystal is used in making of ultrasound transducers?</span></p>",
+      "unique_key": "Q244990",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244990,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p><strong>PZT (lead zirconate titanate)</strong> is a piezoelectric ceramic material widely used in various applications. It generates an electric charge when mechanically stressed and changes shape when subjected to an electric field. This phenomenon is known as <strong>piezoelectric effect.</strong> This makes it ideal for use in ultrasound transducers, sensors, actuators, and other devices requiring precise control of mechanical and electrical energy conversion. PZT's high efficiency and sensitivity make it a key material in <strong>medical imaging, sonar, and industrial applications.</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/3E.jpg\"><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number:327</p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Post acoustic shadowing</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reverberation</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Post acoustic enhancement</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ring down</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the phenomenon called in which the ultrasound ray passes easily through the cystic structures and as a result the returning echoes are brighter from the structures below?</span></p>",
+      "unique_key": "Q244991",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244991,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li><strong>Posterior acoustic enhancement</strong> (also known as through transmission) is an ultrasound phenomenon that occurs when sound waves pass through a structure with low attenuation, such as <strong>fluid-filled areas</strong> (e.g., cysts, the urinary bladder, or gallbladder).</li><li>As the sound waves travel through these structures, they lose very little energy.</li><li>On the ultrasound image, this results in an area of increased brightness or echogenicity immediately posterior (deeper) to the low-attenuating structure.</li><li>This phenomenon helps differentiate fluid-filled structures from solid masses, as solid masses tend to attenuate sound waves more and would not exhibit posterior enhancement.</li><li>In clinical practice, this finding can be an important clue in identifying cystic lesions or fluid-filled spaces during ultrasound exams.</li></ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/4E.jpg\"><p>Fig. Posterior acoustic enhancement</p><p><strong>Reference:</strong> Diagnostic Ultrasound, sixth edition, page number 29</p>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Post acoustic enhancement</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reverberation</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ring down</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Post acoustic shadowing</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following features on ultrasound help in identifying the gall bladder calculi?</span></p>",
+      "unique_key": "Q244992",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244992,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li><strong>Posterior acoustic shadowing (or simply acoustic shadowing)</strong> is an ultrasound artifact that occurs when sound waves encounter a structure that strongly attenuates or blocks the transmission of sound.</li><li>This typically happens with dense structures such as bone, calcifications, or stones (e.g., gallstones or kidney stones).</li><li>Because the sound waves are either absorbed or reflected by these structures, very little or no sound energy reaches deeper tissues, resulting in a dark or hypoechoic shadow on the ultrasound image behind (posterior to) the attenuating structure.</li><li>This shadowing effect is useful in diagnostic imaging, as it can help identify and characterize solid, dense objects, such as stones, calcifications, or foreign bodies.</li></ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/5E.jpg\"><p>Fig. Posterior acoustic shadowing of GB stone</p><p><strong>Reference:</strong> Diagnostic Ultrasound, sixth edition, page number 27</p>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Iodinated</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non iodinated</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Barium</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gadolinium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following agent is used as contrast in CT scan?</span></p>",
+      "unique_key": "Q244993",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244993,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Iodinated contrast agents are commonly used in CT (Computed Tomography) scans to enhance the visibility of certain tissues and blood vessels. These contrast agents contain iodine, which is highly radiopaque, meaning it absorbs X-rays effectively. This makes structures with the contrast agent appear brighter on the CT images, improving differentiation between normal and abnormal tissues.</p><p><strong>Types:</strong></p><ul><li>Non-ionic contrast (commonly used due to fewer side effects).</li><li>Ionic contrast (less commonly used, can have more side effects).</li></ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/6E.jpg\"><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number:323</p>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allergic reaction</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Contrast induced nephropathy</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary edema</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nephrogenic systemic fibrosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not a side effect of iodinated contrast medium?</span></p>",
+      "unique_key": "Q244994",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244994,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>CT contrast agents (specifically iodinated contrast agents) are generally safe but can have side effects, which range from mild to severe. These side effects are typically related to the body's response to the iodine in the contrast material.</p><p><strong>Common Side Effects (usually mild and temporary):</strong></p><ol><li><strong>Warmth or Flushing:</strong> A sensation of warmth or heat that spreads through the body after injection.</li><li><strong>Metallic Taste:</strong> A temporary metallic or salty taste in the mouth.</li><li><strong>Nausea or Vomiting:</strong> Mild gastrointestinal discomfort, though these symptoms usually resolve quickly.</li><li><strong>Itching or Rash:</strong> Some patients may develop mild itching or skin rashes.</li></ol><p><strong>Moderate Side Effects:</strong></p><ol><li><strong>Urticaria (Hives):</strong> Red, raised welts on the skin, which can be accompanied by itching.</li><li><strong>Mild Bronchospasm:</strong> Mild constriction of the airways, leading to slight difficulty in breathing.</li><li><strong>Dizziness:</strong> Some patients might feel light-headed or dizzy shortly after the injection.</li></ol><p><strong>Serious (but rare) Side Effects:</strong></p><ol><li><strong>Allergic Reactions (Anaphylactoid reactions):</strong><ul><li>Symptoms can range from mild itching or hives to more severe reactions like swelling of the face, throat, or difficulty breathing (angioedema).</li><li>Severe reactions can be life-threatening, but are very rare, and immediate medical treatment (e.g., epinephrine) is usually effective.</li></ul></li><li><strong>Contrast-Induced Nephropathy (CIN):</strong><ul><li>A rare complication where the contrast agent can affect kidney function, particularly in patients with pre-existing kidney disease or dehydration. This may lead to a temporary or permanent decline in kidney function.</li></ul></li><li><strong>Anaphylaxis:</strong> A severe, life-threatening allergic reaction that involves a rapid drop in blood pressure, difficulty breathing, and possibly shock.</li><li><strong>Cardiovascular Reactions:</strong> Although very rare, serious reactions like heart arrhythmias, hypotension, or even cardiac arrest can occur in some cases.</li></ol><p><strong>Nephrogenic systemic fibrosis is a reaction seen with gadolinium contrast agents used in MRI.</strong></p><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number:327</p>",
+      "correct_choice_id": 64,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">T1WI</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">T2WI</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">FLAIR</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">SWI</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the image shown in the image below?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/8Q.jpg\"></span></p>",
+      "unique_key": "Q244995",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244995,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p><strong>T1-weighted imaging (T1WI)</strong> is a fundamental type of MRI sequence that provides information about tissue properties.</p><ol><li><strong>Appearance:</strong><ul><li><strong>Fat:</strong> Appears bright (high signal intensity) because fat has a short T1 relaxation time.</li><li><strong>Water and fluid</strong> (e.g., cerebrospinal fluid, cysts): Appears dark (low signal intensity) due to a longer T1 relaxation time.</li><li><strong>Muscle, soft tissue, and gray matter:</strong> Intermediate signal intensity.</li><li><strong>White matter:</strong> Slightly brighter than gray matter due to its fat content.</li></ul></li><li><strong>Purpose:</strong><ul><li>Used for anatomical detail and structural imaging because it provides high contrast between different tissues.</li><li>Particularly useful for visualizing fat-containing tissues, detecting hemorrhage, and assessing the integrity of brain structures.</li></ul></li><li><strong>Clinical Applications:</strong><ul><li><strong>Brain MRI:</strong> Good for detecting anatomical abnormalities, brain structure, and some tumors (especially those with fat content).</li><li><strong>Spine MRI:</strong> Helpful for assessing spinal anatomy and detecting changes in spinal cord structure.</li><li><strong>Musculoskeletal MRI:</strong> Used to differentiate fat from other tissues and evaluate bone marrow, muscles, and tendons.</li></ul></li><li><strong> Contrast Enhancement:</strong><ul><li>When gadolinium-based contrast agents are used, T1-weighted imaging is excellent for detecting areas of enhancement, which often correspond to regions of increased blood flow, inflammation, or breakdown of the blood-brain barrier (e.g., tumors, infections, active demyelinating lesions).</li></ul></li></ol><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/8E.jpg\"><p><strong>d. Susceptibility Weighted Imaging (SWI)</strong> is a specialized MRI sequence used to enhance the visibility of various tissues and abnormalities based on their magnetic susceptibility differences.</p><p><strong>Key Features of SWI:</strong></p><ol><li><strong>Contrast Mechanism:</strong><ul><li>SWI utilizes differences in magnetic susceptibility between tissues. It enhances signals from substances like deoxygenated blood, iron, and calcium, making it sensitive to small venous structures, hemorrhages, and calcifications.</li><li>It combines phase and magnitude data to create images that highlight magnetic susceptibility effects.</li></ul></li><li><strong>Applications:</strong><ul><li><strong>Detection of Microbleeds:</strong> Highly sensitive for identifying small brain hemorrhages, especially in trauma, stroke, or cerebral amyloid angiopathy.</li><li><strong>Venous Anatomy Visualization:</strong> Helps in visualizing veins and venous abnormalities, including venous malformations and thrombosis.</li><li><strong>Iron Deposition:</strong> Useful in detecting iron accumulation in conditions like multiple sclerosis (MS), Parkinson's disease, and other neurodegenerative disorders.</li><li><strong>Tumor Characterization:</strong> Differentiates between calcification and hemorrhage in brain tumors.</li><li><strong>Stroke:</strong> Assists in identifying areas of infarction or hemorrhage.</li></ul></li></ol><p><strong>Reference:</strong> MRI made easy, second edition, page number:14</p>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">T1WI</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">T2WI</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">FLAIR</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">SWI</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following image best depicts the edematous changes in the brain parenchyma?</span></p>",
+      "unique_key": "Q244996",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244996,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p><strong>FLAIR (Fluid-Attenuated Inversion Recovery)</strong> is a specialized MRI sequence designed to suppress the signals from fluids, such as cerebrospinal fluid (CSF), making it particularly useful in brain imaging. It is a type of T2-weighted imaging with modifications that \"null\" or remove the bright signal from free fluid, making abnormal areas stand out more clearly.</p><ol><li><strong>Appearance:</strong><ul><li><strong> CSF and free fluids:</strong> Appears dark (signal is suppressed).</li><li>A<strong>bnormal fluid or pathology</strong> (e.g., edema, inflammation): Appears bright, helping to identify lesions near or within fluid-filled spaces.</li><li><strong>Gray and white matter:</strong> Intermediate signal intensities similar to T2-weighted images.</li><li><strong>Lesions:</strong> Pathological tissues like tumors, infections, and demyelinating lesions typically appear bright against a darker background.</li></ul></li><li><strong>Purpose:</strong><ul><li>FLAIR is particularly useful for detecting lesions that are near or adjacent to CSF-filled areas, such as those in the brain parenchyma.</li><li>It is excellent for evaluating white matter diseases, such as multiple sclerosis (MS) or areas of edema, ischemia, or gliosis.</li></ul></li><li><strong>Clinical Applications:</strong><ul><li><strong> Brain MRI:</strong> FLAIR is commonly used to identify abnormalities that are hard to detect with conventional T2-weighted images because of interference from bright CSF. It is especially useful for:</li><li>Detecting subtle white matter lesions (e.g., in MS).</li><li>Identifying infarcts and stroke regions.</li><li>Evaluating brain tumors and the associated edema or infiltration.</li><li>Detecting subarachnoid hemorrhage (SAH) after the acute phase.</li><li><strong>Spinal Cord MRI:</strong> FLAIR can also be used to detect inflammatory or demyelinating lesions within the spinal cord, though its use is more limited in the spine.</li></ul></li><li><strong>Suppression of CSF:</strong><ul><li>The primary feature of FLAIR is its ability to null the bright signal of free-flowing fluids, which helps in <strong>focusing on brain tissue pathology</strong> by eliminating the interference of bright CSF seen in traditional T2-weighted images.</li></ul></li></ol><p><strong>Reference:</strong> MRI made easy, second edition, page number:44</p>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Unicornuate uterus</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bicornuate uterus</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Uterine agenesis</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Septate uterus</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient was undergoing infertility treatment. The physician advised to undergo a HSG examination which is shown below. What is the diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10Q.jpg\"></span></p>",
+      "unique_key": "Q244997",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244997,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Uterine anomalies are congenital malformations of the uterus that arise from abnormal development of the M&uuml;llerian ducts during embryogenesis. These anomalies can affect the size, shape, and structure of the uterus and are often associated with reproductive issues, such as infertility, recurrent pregnancy loss, and complications during pregnancy.</p><p><strong>Classification of Uterine Anomalies:</strong></p><p>The American Society for Reproductive Medicine (ASRM) classifies uterine anomalies into several categories based on the type of developmental defect:</p><ol><li><strong>Arcuate Uterus:</strong> Mild indentation of the uterine fundus, typically with minimal reproductive impact.</li><li><strong>Septate Uterus:</strong> A fibrous or muscular septum dividing the uterine cavity, increasing risk of miscarriage.</li><li><strong>Bicornuate Uterus:</strong> Two uterine horns due to incomplete fusion, linked to miscarriage and preterm labor.</li><li><strong> Unicornuate Uterus:</strong> A single, underdeveloped uterine horn, associated with miscarriage and ectopic pregnancy.</li><li><strong>Didelphys Uterus:</strong> Two separate uterine cavities with two cervices, often causing reproductive complications.</li><li><strong>Agenesis/Hypoplasia:</strong> Absence or underdevelopment of the uterus, typically leading to infertility and amenorrhea.</li></ol><p>Refer to the table for the classification for uterine malformations:</p><p><strong>Class:</strong></p><p>I</p><p><strong>Mullerian anomaly:</strong></p><p>Mullerian agenesis</p><p><strong>Characteristic Features:</strong></p><p>Both mullerian ducts absent, only ovaries present</p><p><strong>Class:</strong></p><p>II</p><p><strong>Mullerian anomaly:</strong></p><p>Unicornuate uterus</p><p><strong>Characteristic Features:</strong></p><p>1 Fallopian tube, 1/2 uterus, 1/2 cervix, 1/2 vagina</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E1.jpg\"><p><strong>Class:</strong></p><p>III</p><p><strong>Mullerian anomaly:</strong></p><p>Didelphic uterus</p><p><strong>Characteristic Features:</strong></p><p>2 Fallopian tubes, 2 uterus, 2 cervix, 1 vagina</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E2.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E3.jpg\"><p><strong>Class:</strong></p><p>IV</p><p><strong>Mullerian anomaly:</strong></p><p>Bicornuate uterus</p><p><strong>Characteristic Features:</strong></p><p>2 fallopian tube, 2 uterus, 1 cervix, 1 vagina, abnormal external contour.</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E4.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E5.jpg\"><p><strong>Class:</strong></p><p>V</p><p><strong>Mullerian anomaly:</strong></p><p>Septate uterus</p><p><strong>Characteristic Features:</strong></p><p>2 uterine cavities divided by septum, 2 fallopian tubes, 1 cervix, normal external contour</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E6.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E7.jpg\"><p><strong>Class:</strong></p><p>VI</p><p><strong>Mullerian anomaly:</strong></p><p>Arcuate uterus</p><p><strong>Characteristic Features:</strong></p><p>Everything is normal except the fundus has a dimple in the centre.</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E8.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E9.jpg\"><p><strong>Class:</strong></p><p>VII</p><p><strong>Mullerian anomaly:</strong></p><p>DES(Diethylstillbesterone) related</p><p><strong>Characteristic Features:</strong></p><p>Hypoplastic uterus, T shaped uterus, cervical collars, Adenocarcinoma cervix and clear cell carcinoma of vagina</p><p><strong>HSG findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E10.jpg\"><p><strong>Gross findings:</strong></p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/10E11.jpg\"><p><strong>Reference:</strong> Grainger and Allison's Diagnostic Radiology, A Textbook of Medical Imaging, seventh edition, Page number:1862</p>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian hyperstimulation</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">PCOS</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian torsion</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian detorsion</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient presented with severe abdominal pain. On doing a USG, the right ovary was found to be normal and the left ovary appeared enlarged and did not show vascularity. What is the diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/11Q.jpg\"></span></p>",
+      "unique_key": "Q244998",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244998,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Ovarian torsion is the twisting of the ovary around its supporting ligaments, leading to a reduction or complete loss of blood flow to the ovary. It is a gynecological emergency that requires prompt diagnosis and treatment to prevent ovarian damage or necrosis.</p><ol><li><strong>Causes:</strong><ul><li>Usually associated with an enlarged ovary, often due to ovarian cysts, tumors, or hyperstimulation (as in fertility treatments).</li><li>Can also occur in normal ovaries, particularly in younger women or during pregnancy.</li></ul></li><li><strong>Symptoms:</strong><ul><li>Sudden onset of severe, sharp pelvic pain (typically unilateral).</li><li>Nausea and vomiting.</li><li>Abdominal tenderness, sometimes with a palpable mass.</li></ul></li><li><strong>Diagnosis:</strong><ul><li>Ultrasound with Doppler is commonly used to assess blood flow to the ovary, although normal Doppler findings do not completely exclude torsion. Doppler usually shows absent vascularity to the ovaries.</li><li>Clinical presentation is crucial in diagnosis, as imaging may not always be conclusive.</li></ul></li><li><strong>Treatment:</strong><ul><li>Surgical intervention (laparoscopy or laparotomy) to untwist the ovary and restore blood flow.</li><li>Oophorectomy (removal of the ovary) may be necessary if the ovary is necrotic.</li></ul></li><li><strong>Complications:</strong><ul><li>If untreated, ovarian torsion can lead to loss of the ovary, infertility, and severe infection (peritonitis).</li></ul></li></ol><p><strong>Reference:</strong> Grainger and Allison's Diagnostic Radiology, A Textbook of Medical Imaging, seventh edition, Page number:1879</p>",
+      "correct_choice_id": 103,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">PCOD</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian hyperstimulation syndrome</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian cyst</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Endometriosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Diagnose the condition based on the image given below:<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/12Q.jpg\"></span></p>",
+      "unique_key": "Q244999",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244999,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>String of pearls appearance of the ovaries on USG is suggestive of PCOD.</p><p>Polycystic ovarian disease (PCOD) is a complex endocrinological disorder characterized by hormonal imbalances and multiple cystic formations in the ovaries.</p><p><strong>Clinical Features:</strong></p><ul><li><strong>Menstrual Irregularities:</strong> Chronic anovulation leading to amenorrhea or oligomenorrhea.</li><li><strong>Infertility:</strong> Difficulty in conceiving due to hormonal imbalances.</li><li><strong>Hirsutism:</strong> Excess hair growth in areas where males typically grow hair, due to increased androgen levels.</li><li><strong>Obesity:</strong> Many patients exhibit weight gain or obesity.</li></ul><p><strong>Hormonal Imbalance:</strong></p><ul><li>Elevated <strong>LH to FSH ratio</strong> (greater than 2) is a hallmark feature, along with increased androgen levels.</li><li><strong>Hormonal Dynamics</strong>:<ul><li>Estrogen is cyclically produced, leading to increased LH and decreased FSH.</li><li>Elevated LH stimulates ovarian theca and stroma, while decreased FSH contributes to chronic anovulation.</li></ul></li></ul><p><strong>Imaging Characteristics:</strong></p><ul><li><strong>Transvaginal Sonography (TVS):</strong> The preferred imaging modality to differentiate between polycystic and healthy ovaries.</li><li><strong>Classic Sonographic Features:</strong><ul><li><strong>Bilateral Ovarian Enlargement:</strong> Enlarged ovaries with characteristic cystic changes.</li><li><strong>Multiple Small Follicles:</strong> Presence of 10 or more small peripheral follicles, typically measuring 2-8 mm in diameter.</li></ul></li><li><strong>Cyst Distribution Patterns:</strong><ul><li><strong>Peripheral Cystic Pattern:</strong> Follicles located beneath the ovarian capsule, often described as a \"string of pearls\" appearance.</li><li><strong>General Cystic Pattern:</strong> Cysts distributed throughout the subcapsular and stromal areas.</li></ul></li><li><strong>Ovarian Stroma:</strong><ul><li>Polycystic ovaries contain a greater number of antral follicles (typically less than 4 mm).</li><li>High signal intensity on T2-weighted MRI images.</li><li>Hypertrophied ovarian stroma appears as broad central areas of low T1 and T2 signal intensity and is echogenic on ultrasound.</li></ul></li><li><strong>Ovarian Stroma to Ovarian Area Ratio:</strong> This ratio is a key predictor of polycystic ovaries on ultrasound, but there can be significant overlap with normal ovarian morphology.</li></ul><p><strong>Diagnostic Considerations:</strong></p><ul><li>It's important to note that in approximately one-third of patients with clinical and endocrinological evidence of PCOD, the ovaries may appear normal in morphology and volume. This variability can complicate diagnosis.</li></ul><p><strong>Other options:</strong></p><p>B. Ovarian hyperstimulation syndrome</p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/12E.jpg\"><p>C. Ovarian cyst</p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/12E1.jpg\"><p><strong>Reference:</strong> Callen's Ultrasonography in Obstetrics and Gynecology, sixth edition, page number:957</p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Polycystic Ovarian syndrome</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Granulosa cell tumor</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ovarian Hyperstimulation syndrome</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Theca lutein cyst</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A female with infertility, the following ultrasound image is shown probable diagnosis:<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/13Q.jpg\"></span></p>",
+      "unique_key": "Q245000",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 245000,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Multiple cystic areas of various sizes in both the ovaries is suggestive of Ovarian hyperstimulation syndrome(OHSS).</p><p>Ovarian hyperstimulation syndrome (OHSS) is a serious complication that can arise from ovulation induction or ovarian stimulation treatments. It can occur during the luteal phase of the menstrual cycle or in early pregnancy, primarily following the administration of endogenous or exogenous LH or hCG.</p><p><strong>Risk Factors:</strong></p><ul><li>Occurs more frequently in patients with a high number of immature follicles and elevated serum estradiol levels.</li><li>Women with polycystic ovarian morphology are at a greater risk of developing OHSS.</li></ul><p><strong>Pathophysiology:</strong> OHSS results from an imbalance in fluid regulation due to hyperstimulation of the ovaries, leading to fluid accumulation in the third space (e.g., abdominal cavity) and electrolyte imbalances.</p><p><strong>Imaging Features:</strong></p><ul><li><strong>Ultrasound Findings:</strong><ul><li><strong>Bilateral Ovarian Enlargement:</strong> Symmetric enlargement of both ovaries is observed, with multiple cystic areas of varying sizes, indicative of enlarged follicles or corpus luteal cysts.</li><li><strong>Ascites:</strong> Fluid accumulation in the abdominal cavity is often present.</li><li><strong>\"Spoke Wheel\" Appearance:</strong> This characteristic imaging feature is noted with peripherally located follicles surrounding a central core of ovarian stroma.</li><li>The cysts are typically anechoic but may also exhibit internal hemorrhage.</li></ul></li></ul><p><strong>Reference:</strong> Callen's Ultrasonography in Obstetrics and Gynecology, sixth edition, page number:919</p>",
+      "correct_choice_id": 123,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Roentgen</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hounsfield</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gilbert</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Radian</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the unit of measurement in CT scan?</span></p>",
+      "unique_key": "Q245001",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 245001,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>The<strong> Hounsfield unit (HU) is</strong> a measurement used in computed tomography (CT) to quantify radiodensity. It is named after Sir Godfrey Hounsfield, who contributed to the development of CT scanning.</p><p>The <strong>Hounsfield scale is standardized with:</strong></p><ul><li>Air: -1000 HU</li><li>Water: 0 HU</li><li>Fat: around -100 to -50 HU</li><li>Muscle: approximately +40 to +60 HU</li><li>Bone: ranges from +300 to +3000 HU, depending on the type of bone.</li></ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/14E.jpg\"><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, fourth edition, page number 308</p>",
+      "correct_choice_id": 132,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bone</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mucosa</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">CNS</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Muscle</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Most radiosensitive structure:</span></p>",
+      "unique_key": "Q245002",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 245002,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Radio-sensitivity of Tissues</p><p><strong>Key Cell Types:</strong></p><ul><li><strong>Lymphocytes and Hematopoietic Cells:</strong><ul><li>These white blood cells and blood-forming cells in the bone marrow are continuously regenerating, making them highly sensitive to radiation damage.</li></ul></li><li><strong>Gastrointestinal Tract Cells:</strong><ul><li>Cells in the GI tract also undergo rapid regeneration, contributing to their sensitivity to radiation.</li></ul></li><li><strong>Radio-resistance:</strong><ul><li><strong>Highly Differentiated Cells:</strong><ul><li>Neurons and other highly differentiated cells have low proliferation rates, making them relatively resistant to radiation damage. Their decreased sensitivity is due to their infrequent cell division.</li></ul></li><li><strong>Law of Bergonie and Tribandeau:</strong> This principle states that:<ul><li><strong>Radio-sensitivity</strong> of a tissue is <strong>directly proportional</strong> to its growth rate (i.e., the faster the cells divide, the more sensitive they are to radiation).</li><li><strong>Radio-sensitivity</strong> is <strong>indirectly proportional</strong> to the degree of differentiation (i.e., the more specialized and differentiated the cells, the more resistant they are to radiation).</li></ul></li></ul></li></ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V3/LBNEETPG/QuizDec2024/RadioMiniI23122024/15E.jpg\"><p><strong>Reference:</strong> Christenson's physics for diagnostic radiology, page number 372</p>",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

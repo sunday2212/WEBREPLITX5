@@ -1,0 +1,605 @@
+{
+  "meta": {
+    "title": "Radiographs_Mini_Test_-_Tmt"
+  },
+  "questions": [
+    {
+      "text": "Match the following MRI images with their respective imaging sequence.<div class='question-desc-html'><ol>\n<li>T1-weighted MRI</li>\n<li>T2-weighted MRI</li>\n<li>Susceptibility weighted MRI</li>\n<li>FLAIR</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1-C, 2-B, 3-C, 4-A"
+        },
+        {
+          "id": 2,
+          "text": "1-C, 2-D, 3-A, 4-B"
+        },
+        {
+          "id": 3,
+          "text": "1-D, 2-C, 3-B, 4-A"
+        },
+        {
+          "id": 4,
+          "text": "1-C, 2-B, 3-A, 4-C"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The correct match is <strong>1-C, 2-D, 3-A, 4-B</strong>.</p>\n<p>The simple way to classify the image would be using the following rule of thumb:</p>\n<table>\n<tbody>\n<tr>\n<td>Sequence</td>\n<td>White Matter</td>\n<td>Grey Matter</td>\n<td>CSF</td>\n</tr>\n<tr>\n<td>T1</td>\n<td><strong>Brighter</strong></td>\n<td><strong>Darker</strong></td>\n<td>Dark</td>\n</tr>\n<tr>\n<td>T2</td>\n<td><strong>Darker</strong></td>\n<td><strong>Brighter</strong></td>\n<td>Bright</td>\n</tr>\n<tr>\n<td>FLAIR</td>\n<td>Darker</td>\n<td>Brighter</td>\n<td><strong>Dark</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p><strong>T1 weighting</strong> is one of the basic MRI pulse sequences. The difference in the appearance of various tissues is due to their different T1 relaxation times. CSF has a long T1 time and <strong>appears dark. </strong><strong>T2 weighting</strong> is also a basic MRI pulse sequence. It is based on the T2 relaxation time of the tissues. <strong>CSF appears bright</strong> in these images.</p>\n<p>The MRI image below is a <strong>susceptibility-weighted image(SWI)</strong> as it clearly demonstrates <strong>microhemorrhages as hypointense foci.</strong></p>\n<p>SWI is a form of MRI sequence that is especially sensitive to substances that <strong>distort the local magnetic field</strong>. Compounds with <strong>diamagnetic, paramagnetic, and ferromagnetic</strong> properties will interact with the local magnetic field and produce distraction. This would lead to a loss of signal in these areas.</p>\n<p><strong>Deoxyhemoglobin, hemosiderin</strong>, and <strong>ferritin</strong> are paramagnetic. <strong>Bone minerals</strong> and <strong>dystrophic calcifications</strong> are diamagnetic in nature. The main clinical use is the identification of microhemorrhages/blood products or calcium that are not detected in other MRI sequences.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4241e6e94e5a4602b6d9979b66bc0ea4x720x835.JPEG\" alt=\"Explanation Image\"><p><strong>Inversion recovery sequences:</strong></p>\n<p>This MRI sequence is used to selectively null certain tissues. It can be:</p>\n<ul>\n<li><strong>Short tau inversion recovery (STIR),</strong> where fat is nulled. Fluids appear bright and fat appears dark in these images.</li>\n<li><strong>Fluid attenuated inversion recovery (FLAIR)</strong> or double inversion recovery (DIR), where fluid is nulled. The fluid (CSF) normally appears dark and lesions appear to be brighter in these images.</li>\n</ul>\n<p>FLAIR image-</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/aba533b9ffc54180be8c46ea2692d2cfx512x512.JPEG\" alt=\"Explanation Image\"><p>Other imaging sequences:</p>\n<p><strong>Proton density image:</strong></p>\n<p>It is based on the <strong>number of nuclei</strong> in the area that is imaged. In a PD-weighted image, tissues with a higher density of protons produce stronger signals and appear brighter. PD weighted image can be identified by comparing fluid with the fat signal. <strong>Fluids</strong> in these images <strong>appear greyish white</strong> similar or the appearance of fat in the body.</p>\n<p> </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/df4d30ae9e2e4896ad833a363362c0ecx512x590.PNG\" alt=\"Explanation Image\"><p><strong>Gradient echo sequences(GRE):</strong> </p>\n<p>It uses gradient fields to generate transverse magnetization. In areas of hemorrhage, the iron that is present in the hemoglobin, produces its own local magnetic field and dephases the spinning nuclei. This is useful to identify hemorrhagic contusions in the brain and pigmented villonodular synovitis.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b5e21cf3e2bc4873bc0cde15d1120611x140x160.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: T1 vs T2 MRI</h3><table>\n<tbody>\n<tr>\n<td>\n<div><strong>Structure</strong></div>\n</td>\n<td>\n<div><strong>T1 image</strong></div>\n</td>\n<td>\n<div><strong>T2 image</strong></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Grey matter</strong></div>\n</td>\n<td>\n<div>Darker</div>\n</td>\n<td>Lighter</td>\n</tr>\n<tr>\n<td>\n<div><strong>White matter</strong></div>\n</td>\n<td>Lighter </td>\n<td>Darker</td>\n</tr>\n<tr>\n<td>\n<div><strong>CSF/ Fluids</strong></div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n<td>\n<div>Bright</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Fat</strong></div>\n</td>\n<td>\n<div>White</div>\n</td>\n<td>\n<div>Less white</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Air</strong></div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Cortical bone</strong></div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Tendons and ligaments</strong></div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Calcification</strong></div>\n</td>\n<td>Variable</td>\n<td>\n<div>Dark</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Flowing blood and hemosiderin</strong></div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n<td>\n<div>Dark</div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/c79335d451254cc58b08c78786261add.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF5707",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 60-year-old woman who was operated for a femur fracture complains of shortness of breath on the fourth postoperative day. She has chest pain and tachycardia as well. Her chest X-ray is shown below. This finding is most probably suggestive of ________.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pulmonary embolism"
+        },
+        {
+          "id": 2,
+          "text": "Pneumothorax"
+        },
+        {
+          "id": 3,
+          "text": "Emphysema"
+        },
+        {
+          "id": 4,
+          "text": "Pneumonic consolidation"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The<strong>&nbsp;</strong>given clinical features and the X-ray showing <strong>Hampton's hump</strong> is suggestive of <strong>pulmonary embolism</strong>.</p>\n<p><strong>Pulmonary embolism:</strong></p>\n<p>Pulmonary embolism&nbsp;refers to embolic occlusion of the pulmonary arterial system.</p>\n<p>Most patients present with pleuritic chest pain, dyspnoea, and tachypnoea. The classical clinical triad of sudden onset of chest pain, dyspnoea, and hemoptysis is present in only a few cases.</p>\n<p>Chest x-ray signs related to pulmonary embolism include:</p>\n<ul>\n<li><strong>Hampton's hump</strong> is a pleural-based, wedge-shaped opacity with the apex of the triangle pointed towards the occluding vessel or hilum and implies lung infarction.&nbsp;</li>\n<li><strong>Westermark sign</strong> is a chest X-ray finding in pulmonary embolism. It is defined by a hyperlucent area with decreased vascularity due to oligemia of the involved part of the lung.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ec6967c1bec24a58899a16d107d9a194x402x371.PNG\" alt=\"Explanation Image\"><ul>\n<li>Chest x-ray: A large part of the right hemithorax is hypodense due to oligaemia, secondary to vasoconstriction distal to an embolus.</li>\n<li>Fleishner sign: Enlarged pulmonary artery.</li>\n</ul><ul>\n<li><strong>Knuckle or sausage sign</strong>, describing a dilatation of a central pulmonary artery due to occlusion by the embolus with collapse or constriction of the distal arteries resulting in an abrupt tapering of these arteries.</li>\n<li><strong>Palla&rsquo;s sign</strong>: Dilated right descending pulmonary artery (Image below):</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/71e560a4564a4b7b90d6697a8a5eec22x804x598.PNG\" alt=\"Explanation Image\"><ul>\n<li><strong>Melting sign</strong>: infarct shows rapid clearing in contrast to pneumonic consolidation.</li>\n<li>Elevated hemidiaphragm.</li>\n<li>The best known indirect sign of PE on transthoracic echo is <strong>McConnell's</strong> sign. That is <strong>hypokinesis</strong> of the right ventricular free wall with the&nbsp;<strong>normal motion</strong> of the right ventricle apex.</li>\n</ul><hr><h3>Related Pearl: Chest X Ray signs in pulmonary embolism</h3><p><strong>Westermark's sign:&nbsp;</strong>Focal area of oligemia (decreased vascular markings) distal to the embolism.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/1320503c26a8431b903e7e15089c8ed4x720x655.JPEG\" alt=\"Pearl Image\"><p><strong>Hampton's hump:&nbsp;</strong>Peripherally placed wedge-shaped or dome-shaped opacity due to infarction of lung tissue.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5faac4b6986f4b6da649d4ca027f99b3x1063x874.JPEG\" alt=\"Pearl Image\"><p><strong>Palla's sign:&nbsp;</strong>Increased size of the right descending pulmonary artery with a sausage-like appearance.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9d6849e258104848bfc976a72abaae15x1069x804.JPEG\" alt=\"Pearl Image\"><p><strong>Fleishner sign</strong>: enlarged pulmonary artery.</p>\n<p><strong>Melting sign</strong>:&nbsp;an infarct shows rapid clearing in contrast to pneumonic consolidation.</p>\n<p><strong>McConnell's</strong>&nbsp;<strong>sign</strong> (indirect sign of PE seen in transthoracic echo):&nbsp;<strong>hypokinesis</strong>&nbsp;of the right ventricular free wall with&nbsp;<strong>normal motion</strong>&nbsp;of the right ventricle apex.</p>\n<p><strong>Knuckle&nbsp;</strong>or<strong>&nbsp;sausage&rsquo; sign:&nbsp;</strong>dilatation of the pulmonary artery,&nbsp;proximal to the embolus with collapse or constriction of the distal arteries resulting in an abrupt tapering of these arteries. &nbsp;</p>\n<p>Note - A normal chest X-ray does not rule out pulmonary embolism in a patient with unexplained acute tachypnea or hypoxemia.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/3acaeb582e454eb49a5f0b36ad896346.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD3096",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Match the following X-rays and their diagnoses.<div class='question-desc-html'><p>A.&nbsp;Monteggia fracture<br />B.&nbsp;Torus fracture<br />C.&nbsp;Greenstick fracture<br />D. Galeazzi fracture</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1 - C, 2 - D, 3 - A, 4 - B"
+        },
+        {
+          "id": 2,
+          "text": "1 - C, 2 - A, 3 -D , 4 -B"
+        },
+        {
+          "id": 3,
+          "text": "1 - B, 2 - A, 3 - D, 4 - C"
+        },
+        {
+          "id": 4,
+          "text": "1 - B, 2 - D, 3 - A, 4 - C"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The correct option is <strong>1 - B, 2 - D, 3 - A, 4 - C.&nbsp;</strong></p>\n<p><strong>Torus fractures</strong> occur due to 'buckling' of the metaphyseal cortex as a result of compression. Due to the presence of malleable bone and a thick protective periosteum, long bone injuries result in deformation without a break in the cortex.&nbsp;</p>\n<p>The X-ray will appear as bulging of the cortex.&nbsp;</p>\n<p>The following image shows a torus fracture.&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/48f4345f6da2478b829e26a069fd93b5x1024x700.jpeg\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Galeazzi fracture-dislocation</strong> involves a fracture of the lower third of the radius with dislocation or subluxation of the distal radioulnar joint.&nbsp;</p>\n<p>The following image shows a&nbsp;Galeazzi fracture-dislocation.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a837fbe61f784aefbaf2430760f1a779x1096x1200.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Monteggia fracture-dislocation</strong> involves a fracture of the upper third of the ulna with dislocation of the head of the radius.&nbsp;</p>\n<p>The following image shows a&nbsp;Monteggia fracture-dislocation</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/657ae88acb334065bb02cf9b5c611553x240x559.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p>Greenstick fractures are <strong>partial-thickness fractures.</strong> They mostly occur in the <strong>pediatric</strong> population. Here, the cortex and periosteum are interrupted only on one side, but are intact on the other side. This is because children's bones are not yet ossified and mostly consist of pliable cartilage that is able to bow and bend under stress that would normally cause fractures in adult bones. In addition, the periosteum is thicker and more active which reduces the chances of open fractures.&nbsp;</p>\n<p>They usually occur in long bones, particularly the upper limb due to falling on an outstretched hand.</p>\n<p>The below image depicts both forearm bone (radius and ulna) fractures. The cortex and periosteum are interrupted on one side but are uninterrupted on the other side. &nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/db68e26c6bf84ac39cc952ee819ac9a6x720x1367.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Named fractures of the upper limb</h3><p><strong>Colle's fracture</strong>: Extra-articular fracture of the distal radius with dorsal angulation of the distal bone fragment.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/65a93223993740c495daa155786048ccx1280x1420.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Galeazzi fracture-dislocation</strong>: Fracture of the lower third of the radius and subluxation of the distal radio-ulnar joint.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/46eff51c35a54ce08988149eed8e8e96x1279x1421.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Monteggia fracture-dislocation</strong>:<strong>&nbsp;</strong>Fracture of the shaft of the ulna with dislocation of a proximal radio-ulnar joint.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8cf2fa6ca59d47d79f5eed22bbb29c38x1280x2778.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Barton&rsquo;s fracture</strong>: Intra-articular fracture of the distal radius. Barton's fracture can be dorsal or volar (reverse Barton's).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/811391f8302644efb808c405e35235efx1280x1891.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Rolando's fracture</strong>: Intra-articular comminuted fracture of the base of the first metacarpal with a T or Y configuration.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c3bec28a9c1a41b1bc3d923a6dd0cd96x1280x1316.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Smith's fracture</strong>: Reverse Colles' fracture. Extra-articular fracture of the distal one-third of the radius with palmar or ventral displacement (Image below).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/92ac8de8dac8499a8f31180cc8e83371x1280x1133.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Chauffeur's fracture or the Hutchinson fracture</strong>: Fracture of the radial styloid.</p>\n<p><strong>Essex&ndash;Lopresti lesion</strong>: Fracture of the radial head with disruption of the interosseous membrane and distal&nbsp;radial ulnar joint ligaments.</p>\n<p><strong>Nightstick fracture</strong>: Isolated fracture of radial or ulnar bone.&nbsp;&nbsp;</p><hr><h3>Related Pearl: Named fractures of the lower limb</h3><table>\n<tbody>\n<tr>\n<td><strong>Fracture</strong></td>\n<td><strong>Location</strong></td>\n</tr>\n<tr>\n<td>Hoffa fracture</td>\n<td>Coronal fracture of femoral condyles</td>\n</tr>\n<tr>\n<td>Bumper fracture</td>\n<td>Comminuted fracture of lateral condyle of tibia&nbsp;</td>\n</tr>\n<tr>\n<td>Pilon fracture</td>\n<td>Comminuted intra-articular fracture of the distal end of the tibia&nbsp;</td>\n</tr>\n<tr>\n<td>Tillaux fracture</td>\n<td>Avulsion fracture of the tibia by the anterior tibiofibular ligament</td>\n</tr>\n<tr>\n<td>Runner's fracture</td>\n<td>Fracture of the distal shaft of fibula&nbsp;</td>\n</tr>\n<tr>\n<td>Pott&rsquo;s fracture</td>\n<td>Bimalleolar ankle fracture</td>\n</tr>\n<tr>\n<td>Cotton&rsquo;s fracture</td>\n<td>Trimalleolar ankle fracture</td>\n</tr>\n<tr>\n<td>Aviator's fracture</td>\n<td>Fracture of neck of talus</td>\n</tr>\n<tr>\n<td>Chopart&rsquo;s fracture</td>\n<td>Fracture between talonavicular and calcaneocuboid joints&nbsp;</td>\n</tr>\n<tr>\n<td>Lisfranc&rsquo;s fracture-dislocation</td>\n<td>Fracture of metatarsal bases with associated tarsometatarsal dislocation</td>\n</tr>\n<tr>\n<td>March fracture</td>\n<td>Fracture of the neck of 2<sup>nd</sup> or 3<sup>rd</sup> metatarsal</td>\n</tr>\n<tr>\n<td>Jone's fracture</td>\n<td>\n<p>Extra-articular fracture at the base of the 5th metatarsal</p>\n</td>\n</tr>\n<tr>\n<td>Dancer&rsquo;s fracture</td>\n<td>Fracture of distal shaft of the fifth metatarsal</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/0dd4ec1bb0df482184e998a1d8306221.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF3178",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 70-year-old man presented with chronic cough, loss of weight, lower abdominal pain, and diarrhea for the past 6 months. Barium studies show the following finding. What is the probable diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ileocecal TB"
+        },
+        {
+          "id": 2,
+          "text": "Carcinoma colon"
+        },
+        {
+          "id": 3,
+          "text": "Crohn's disease"
+        },
+        {
+          "id": 4,
+          "text": "Ulcerative colitis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario and the barium study showing the '<strong>string</strong>' <strong>sign</strong> are suggestive of <strong>ileocaecal tuberculosis.&nbsp;</strong></p>\n<p><strong>Intestinal tuberculosis</strong>&nbsp;is caused by&nbsp;<em>Mycobacterium tuberculosis</em> either secondary to pulmonary tuberculosis or by&nbsp;<em>M.bovine&nbsp;</em>as a primary GI infection.</p>\n<p>The&nbsp;<strong>ileocaecal junction</strong>&nbsp;is the most common site of&nbsp;<strong>tuberculosis</strong>&nbsp;in the gastrointestinal tract. The liver, spleen, and peritoneum may also be involved in the abdomen.</p>\n<p>Ieocaecal tuberculosis can be ulcerative or hyperplastic.</p>\n<div class=\"page\" title=\"Page 594\">\n<div class=\"section\">\n<table><colgroup><col /><col /><col /><col /> </colgroup>\n<tbody>\n<tr>\n<td colspan=\"4\" rowspan=\"1\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Differences between ulcerative and hyperplastic types of ileocaecal tuberculosis</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Ulcerative type (60%)</p>\n</div>\n</div>\n</td>\n<td>&nbsp;</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Hyperplastic type (10%)</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>1.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Secondary</strong> to <strong>pulmonary</strong> tuberculosis</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>1.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Primary GIT</strong> tuberculosis, could be due to bovine bacilli</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>2.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Virulent organism</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>2.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Less virulent organism</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>3.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Poor body resistance, <strong>old</strong> people</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>3.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Good body resistance, <strong>young</strong> individual</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>4.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Multiple transverse ulcers are common in the ileum, often in the <strong>caecum</strong></p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>4.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>A chronic granulomatous lesion in the <strong>ileocaecal</strong> region</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>5.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Clinically presents with <strong>diarrhea, bleeding</strong> P/R, loss of appetite, and reduced weight</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>5.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Presents as a <strong>mass</strong> in the right iliac fossa</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>6.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Complications: Stricture, intestinal obstruction</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>6.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Complication: Subacute intestinal obstruction</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>7.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Chest X-ray shows a primary lesion</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>7.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>No primary lesion in chest X-ray</p>\n</div>\n</div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>8.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Barium study shows <strong>ileal strictures</strong> with hypermotility</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>8.</p>\n</div>\n</div>\n</td>\n<td>\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Barium study-&nbsp;<strong>pulled-up caecum,</strong> obtuse ileocaecal angle</p>\n</div>\n</div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n</div>\n</div>\n<p>Patients typically present with&nbsp;<strong>cough, evening rise in temperature, weight loss,</strong>&nbsp;malaise, abdominal pain with distension, and alternating diarrhea and constipation. On palpation, the abdomen feels doughy and a<strong>&nbsp;mass</strong>&nbsp;may be palpated in the&nbsp;<strong>right iliac fossa</strong>.</p>\n<p>Barium meal follow-through study findings in&nbsp;<strong>ileocaecal tuberculosis</strong>&nbsp;include:</p>\n<ul>\n<li>Narrowing of the terminal ileum, known as&nbsp;<strong>string sign,</strong>&nbsp;and ileocaecal&nbsp;junction</li>\n<li><strong>Gooseneck ileum&nbsp;</strong></li>\n<li>The ileocaecal angle becomes&nbsp;<strong>obtuse</strong></li>\n<li><strong>Caecum appears pulled up</strong> and hepatic flexure is pulled down</li>\n<li>Conical caecum</li>\n<li><strong>Fleischner sign</strong>-<strong>&nbsp;</strong>refers to a widely gaping, thickened, patulous ileocaecal valve and a narrowed, ulcerated terminal ileum</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e5278bb94a73491da55eadd28a9f2495x1200x1493.JPEG\" alt=\"Explanation Image\"><p>Treatment includes <strong>anti-tubercular therapy</strong> and nutritional support. Surgery may be indicated in complications like intestinal obstruction, perforation, hemorrhage, intra-abdominal abscess formation, or fistula formation.</p>\n<div class=\"page\" title=\"Page 597\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Option B:<strong> Apple core sign</strong> is characteristically seen in the barium enema of carcinoma colon as shown below.</p>\n</div>\n</div>\n</div>\n</div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e2a15a5309bd464e897e95931b682c2ax720x714.JPEG\" alt=\"Explanation Image\"><p>Option C:&nbsp;<strong>Crohn's disease</strong>&nbsp;is an inflammatory bowel disease that shows the&nbsp;<strong>string sign of Kantor</strong>&nbsp;on<strong>&nbsp;barium enema</strong>&nbsp;as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7207c48878c64ddd808a22719a8c4fe9x720x844.JPEG\" alt=\"Explanation Image\"><p>Option D:&nbsp;The image below shows&nbsp;the&nbsp;<strong>lead-pipe appearance</strong> of the<strong> colon</strong> on the barium enema. This finding is seen in ulcerative colitis&nbsp;due to the loss of haustra in the diseased colonic segment.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f0ac85482e304fd2b075bde73f12e0dex485x592.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Barium studies in GI tuberculosis</h3><ul>\n<li><strong>Earliest feature </strong>is <strong>spasm </strong>and <strong>hypermotility,&nbsp;</strong>with <strong>edema of the valve.</strong></li>\n<li><strong>Thickening of the valve lips,&nbsp;</strong>with <strong>narrowing </strong>of the <strong>terminal ileum:&nbsp;</strong><strong>Fleischner </strong>or <strong>inverted</strong>&nbsp;<strong>umbrella sign </strong>is <strong>characteristic of TB</strong>.</li>\n<li>In advance disease, the characteristic deformity includes <strong>symmetric, annular, napkin-ring stenosis </strong>and obstruction or shortening and pouch formation.</li>\n<li><strong>The cecum is</strong>&nbsp;<strong>shrunken </strong>and <strong>retracts&nbsp;</strong>out of the iliac fossa due to contraction of the mesocolon: <strong>Pulled-up cecum</strong></li>\n<li><strong>Loss of ileocecal angle </strong>with <strong>dilated terminal ileum:</strong>&nbsp;<strong>Gooseneck deformity </strong></li>\n<li><strong>Narrowing of the terminal ileum </strong>due to irritability, along with shortened rigid cecum: <strong>Sterlein sign</strong></li>\n<li><strong>Persistent narrow stream </strong>of <strong>barium </strong>in the bowel indicates stenosis:&nbsp;<strong>String sign</strong></li>\n</ul><hr><h3>Related Pearl: Inflammatory Bowel Disease (IBD)</h3><p> </p>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td><strong>Crohn's disease</strong></td>\n<td><strong>Ulcerative colitis</strong></td>\n</tr>\n<tr>\n<td><strong>Age of onset </strong></td>\n<td>2nd-4th decades &amp; 7th-9th decades</td>\n<td>2nd-4th decades &amp; 7th-9th decades </td>\n</tr>\n<tr>\n<td><strong>Most common presentation</strong></td>\n<td>Ileocolitis with rectal sparing</td>\n<td>Proctitis (rectum)</td>\n</tr>\n<tr>\n<td><strong>Protective factors</strong></td>\n<td> None </td>\n<td>\n<p>Smoking </p>\n<p>Appendicectomy</p>\n</td>\n</tr>\n<tr>\n<td><strong>Risk factors</strong></td>\n<td>\n<p>OCP</p>\n<p>Smoking</p>\n<p>Antibiotic during first year of life </p>\n</td>\n<td>\n<p>α-Methyldopa</p>\n<p>Antibiotic during first year of life</p>\n</td>\n</tr>\n<tr>\n<td><strong>T cell involved</strong></td>\n<td>TH1 </td>\n<td>TH2</td>\n</tr>\n<tr>\n<td><strong>Gross findings/ endoscopic findings</strong></td>\n<td>\n<p>Transmural involvement</p>\n<p>Segmental involvement</p>\n<p>Skip lesions</p>\n<p>Cobblestone appearance</p>\n<p>Creeping fat</p>\n<p>Longitudinal ulcers</p>\n</td>\n<td>\n<p>Mucosal and superficial submucosal involvement </p>\n<p>Continuous involvement</p>\n<p>Pseudopolyps </p>\n<p>Backwash ileitis </p>\n<p>Collar button ulcers</p>\n</td>\n</tr>\n<tr>\n<td><strong>Earliest finding</strong></td>\n<td>Aphthous ulcer</td>\n<td>Erythematous mucosa with a fine granular surface</td>\n</tr>\n<tr>\n<td><strong>Microscopic findings </strong></td>\n<td>\n<p class=\"p1\">Deep, knife-like ulcers</p>\n<p>Granulomas</p>\n<p>Pyloric metaplasia  </p>\n</td>\n<td>\n<p class=\"p1\">Superficial, broad-based</p>\n<p>Cryptitis and crypt abscess </p>\n<p> </p>\n</td>\n</tr>\n<tr>\n<td><strong>Complications </strong></td>\n<td>\n<p>Fistulas </p>\n<p>Strictures</p>\n</td>\n<td>\n<p>Hemorrhage</p>\n<p>Toxic megacolon</p>\n</td>\n</tr>\n<tr>\n<td><strong>Recurrence after resection</strong></td>\n<td>\n<p>Common</p>\n</td>\n<td>\n<p>Uncommon, curative after resection</p>\n</td>\n</tr>\n<tr>\n<td><strong>Radiological findings </strong></td>\n<td>\n<p>Aphthous ulcer</p>\n<p>Rose thorn appearance</p>\n</td>\n<td>\n<p>Mucosal granularity</p>\n<p>Lead pipe appearance</p>\n</td>\n</tr>\n<tr>\n<td><strong>Extraintestinal manifestations</strong></td>\n<td colspan=\"2\">\n<div class=\"page\" title=\"Page 807\">\n<div class=\"page\" title=\"Page 807\">\n<div class=\"page\" title=\"Page 807\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Episcleritis, uveitis </p>\n<p>Migratory polyarthritis</p>\n<p>Ankylosing spondylitis, sacroiliitis</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"page\" title=\"Page 807\">\n<div class=\"page\" title=\"Page 807\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Erythema nodosum</p>\n<p>Pyoderma gangrenosum- MC in UC</p>\n<p>Primary sclerosing cholangitis- MC in UC</p>\n<p>Renal Calculi- MC in CD</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><br /><br /></p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/7b6cb87e8a87414d8a3bce7e6a2903af.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF4979",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Match the following mammogram images with their diagnoses.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1- Duct ectasia  2- Malignancy  3- Traumatic fat necrosis   4- Fibroadenoma"
+        },
+        {
+          "id": 2,
+          "text": "1- Traumatic fat necrosis   2- Fibroadenoma  3- Malignancy  4-Duct ectasia"
+        },
+        {
+          "id": 3,
+          "text": "1- Fibroadenoma   2- Traumatic fat necrosis   3- Duct ectasia   4- Malignancy"
+        },
+        {
+          "id": 4,
+          "text": "1- Malignancy  2- Duct ectasia  3- Fibroadenoma   4-Traumatic fat necrosis"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The correct match is:</p>\n<p><strong>1- Traumatic fat necrosis&nbsp; </strong><br /><strong>2- Fibroadenoma&nbsp; </strong><br /><strong>3- Malignancy </strong><br /><strong>4- Duct ectasia</strong></p>\n<p><strong>Egg-shell calcification</strong>&nbsp;or&nbsp;lead pipe calcification is seen in <strong>traumatic fat necrosis</strong>. Usually seen with a&nbsp; previous history of <strong>surgery</strong> or <strong>trauma.</strong> There are <strong>egg-shell calcifications</strong> in the <strong>wall</strong> of an <strong>oil cyst</strong> or as <strong>coarse dystrophic calcifications</strong> with <strong>scarring.&nbsp;</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7c86610d202947dc9de0d074955aef8fx1280x1125.JPEG\" alt=\"Explanation Image\"><p><br /><strong>Popcorn calcification</strong> is seen in <strong>fibroadenoma</strong>. These are the most <strong>common benign</strong> masses of the breast. On <strong>mammograms,</strong> they present as <strong>rounded</strong> or <strong>oval</strong> masses with <strong>coarse calcifications </strong>(popcorn calcifications) as shown in the image below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/20bb3ad0fe3f41919f69bfb665032ec4x1024x700.jpeg\" alt=\"Explanation Image\"><p><br /><strong>Breast malignancies </strong>appear as<strong> ill-defined spiculated masses </strong>with<strong> microcalcifications</strong> as shown in the image below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/62a1c0029973463aaf883df317766d1fx1024x700.jpeg\" alt=\"Explanation Image\"><p><br /><strong>Duct ectasias</strong> present with <strong>broken needle calcifications.</strong> This occurs due to the&nbsp;<strong>calcification</strong> of <strong>debris</strong> within <strong>dilated ducts.</strong> Most of the time, these are <strong>bilateral.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a9f69ad11ce49d3b3cfd81f93c4d9f1x1024x700.jpeg\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/eacc2333413d4d5593bbc63442aa5d64.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "ME5723",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A mother with polyhydramnios delivered a baby at term gestation. She was unable to feed the baby as it choked on the milk. She also noticed the baby's abdomen appeared distended. Vesicular breath sounds in bilateral lung fields and abdominal distension were noted on examination. An attempt to pass a nasogastric tube fails. An X-ray is ordered and appears as shown. What is the most likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Foreign body in the trachea"
+        },
+        {
+          "id": 2,
+          "text": "Gastric volvulus"
+        },
+        {
+          "id": 3,
+          "text": "Tracheo-esophageal fistula"
+        },
+        {
+          "id": 4,
+          "text": "Congenital diaphragmatic hernia"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given symptoms of choking and abdominal distention with a failure to pass a nasogastric tube and an X-ray showing NG tube in proximal esophagus and stomach distended with gas suggests the presence of a <strong>tracheoesophageal fistula (TEF).</strong></p>\n<p>A tracheoesophageal fistula is an abnormal fistula communication between the esophagus and trachea. Among the different types, <strong>Type C</strong> is the <strong>most common</strong> type. It consists of <strong>proximal esophageal atresia and distal TEF.</strong> With each breath, the air enters the distal esophagus and the stomach causing gastric distention which presents as abdominal distention. </p>\n<p>Inability to pass a nasogastric (NG) tube is a crucial pointer in the diagnosis of esophageal atresia. </p>\n<p>Tracheoesophageal fistula is associated with <strong>VACTERL</strong> (vertebral, anorectal, cardiac, tracheal, esophageal, renal, and limb) anomalies.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/95bd74f95fb84cd58124c38bb727e041x1280x1964.JPEG\" alt=\"Explanation Image\"><p><br />Other options:</p>\n<p>Option A - <strong>Foreign body in the trachea</strong> will present with decreased air entry bilaterally in the lungs and stridor.</p>\n<p>Option B - <strong>Gastric volvulus</strong> may also be associated with abdominal distension and difficulty in passing the NG tube into the stomach. However, in this case, the tube is seen stuck in the proximal esophagus itself making the diagnosis of TEF more likely.</p>\n<p>Option D - <strong>Congenital diaphragmatic hernia</strong> is usually left-sided and presents with respiratory distress. On examination, bowel sounds are heard in the chest field as abdominal contents herniate into the chest. There is a scaphoid abdomen rather than a distended abdomen as in this case.</p><hr><h3>Related Pearl: Types of Tracheo-esophageal Fistula/Esophageal Atresia</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/929f21e3f8ba4eec990b14eb9f20428ax1280x1250.JPEG\" alt=\"Pearl Image\"><p><strong>Abbreviations</strong>:</p>\n<ul>\n<li>EA: Esophageal atresia</li>\n<li>TEF: Tracheo-esophageal Fistula</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6186625538554df19a16ac2a41aa29c2x1280x3561.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/324d5494d12f46969790126c2c4e10bb.jpg"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD8287",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The sign shown in the given ultrasound image of the lung is seen in:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pneumothorax"
+        },
+        {
+          "id": 2,
+          "text": "Pleural effusion"
+        },
+        {
+          "id": 3,
+          "text": "Consolidation"
+        },
+        {
+          "id": 4,
+          "text": "Collapse"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given ultrasound image of the lung shows the <strong>barcode sign </strong>or<strong> stratosphere sign</strong> which is seen in <strong>pneumothorax.</strong></p>\n<p>On M mode, classical signs for the grayscale imaging are seen:<br />• Seashore sign: normal lung <br />• Barcode/stratosphere sign: pneumothorax</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7c64761fc8cf46f3a5cb55b960e94332x1280x1522.JPEG\" alt=\"Explanation Image\"><p><br />The given M-mode image in the question demonstrates a linear, laminar pattern in the tissue superficial to the pleural line and a similar linear pattern deep to the pleural line. This phenomenon, known as the <strong>stratosphere sign</strong> or <strong>barcode sign</strong> indicates <strong>absent lung sliding</strong> and suggests the presence of <strong>pneumothorax </strong>at this.</p>\n<p>The M-mode image of a normal lung demonstrates a linear, laminar pattern in the tissue superficial to the pleural line and a granular or <strong>sandy</strong> appearance deep to the pleural line. This phenomenon is known as the <strong>seashore sign </strong>and it indicates <strong>normal lung sliding</strong> and excludes pneumothorax at this interspace.</p>\n<p><strong>Other options:</strong></p>\n<p>Option B: <strong>Pleural effusion</strong> on ultrasound appears anechoic with an echogenic line at the fluid-lung interface if it is transudate. Exudative and hemorrhagic effusions may appear echogenic with pleural thickening. The fluid shows movement and changes in shape with breathing, along with the presence of septa and fibrous strands.</p>\n<p>Option C: <strong>Consolidation</strong> on ultrasound appears hypoechoic with heterogeneous echotexture. It is isoechoic with the liver and is referred to as lung hepatization. </p>\n<p>Option D: A <strong>collapsed</strong> lung under a large effusion will be seen as a hyperechoic wedge-shaped area.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/fdf7c0de5b24488b89ea1b4fd7998218.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD3083",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient presented with a 3-week history of dry cough and dyspnea on exertion. Gallium-67 nuclear scan of this patient showed the lambda sign. This sign involves all the following structures except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Right hilar nodes"
+        },
+        {
+          "id": 2,
+          "text": "Left hilar nodes"
+        },
+        {
+          "id": 3,
+          "text": "Left paratracheal nodes"
+        },
+        {
+          "id": 4,
+          "text": "Right paratracheal nodes"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The<strong> </strong>given clinical scenario and the <strong>lambda sign</strong> on the gallium-67 scan suggest that the patient has <strong>sarcoidosis</strong>. Gallium-67 scan does not involve the <strong>left paratracheal nodes</strong>.</p>\n<p>The image given below shows the panda sign (A) and the lambda sign (B) on the gallium-67 scan seen in sarcoidosis.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/cc00f738a7a44d5fb5b68d2f7084d94bx491x507.PNG\" alt=\"Explanation Image\"><p>The <strong>lambda sign </strong>seen on gallium-67 scans is the gallium equivalent of the <strong>1-2-3 sign</strong> or <strong>Pawnbrokers sign</strong> seen in the setting of thoracic sarcoidosis. It involves:</p>\n<ul>\n<li>Right paratracheal nodes</li>\n<li>Right hilar nodes</li>\n<li>Left hilar nodes</li>\n</ul>\n<p><strong>1-2-3 sign</strong> or <strong>Pawnbrokers sign</strong> is a lymph node enlargement pattern on chest X-rays. It is also known as the Garland triad and involves the same three groups of lymph nodes. It is shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/83a10567b9af4116b803084a66895cacx616x562.PNG\" alt=\"Explanation Image\"><p>The chest radiograph is the preferred tool used to stage sarcoidosis.</p>\n<table>\n<tbody>\n<tr>\n<td>Stage 1</td>\n<td>Bilateral hilar lymphadenopathy (usually symmetrical); right paratracheal nodes often enlarged</td>\n</tr>\n<tr>\n<td>Stage 2 </td>\n<td>Bilateral hilar <strong>lymphadenopathy and parenchymal infiltrates</strong></td>\n</tr>\n<tr>\n<td>Stage 3</td>\n<td>Parenchymal infiltrates <strong>without</strong> bilateral hilar lymphadenopathy</td>\n</tr>\n<tr>\n<td>Stage 4</td>\n<td> Pulmonary fibrosis</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/046ce7ca126e4b17bcf758c665420929x1280x5233.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD7450",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A young farmer on a hike developed sudden shortness of breath, chest pain, and cough with salty phlegm. He was rushed to the emergency and stabilized. A CT scan showed the following. What is the likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ruptured hydatid cyst"
+        },
+        {
+          "id": 2,
+          "text": "Acute pulmonary edema"
+        },
+        {
+          "id": 3,
+          "text": "Acute respiratory distress syndrome"
+        },
+        {
+          "id": 4,
+          "text": "Acute mountain sickness"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario and the CT image showing<strong>&nbsp;</strong>the<strong> 'water lily sign'</strong>&nbsp;is suggestive of a <strong>ruptured</strong>&nbsp;<strong>pulmonary</strong>&nbsp;<strong>hydatid cyst</strong><strong>.</strong></p>\n<p><strong>Hydatid disease</strong>&nbsp;or echinococcosis is a&nbsp;zoonotic infection&nbsp;caused by the&nbsp;<strong><em>Echinococcus</em>&nbsp;</strong>species of&nbsp;flatworms. Its life cycle consists of <strong>dogs</strong> as <strong>definitive hosts</strong> and <strong>humans</strong> as <strong>intermediate hosts</strong>.</p>\n<p>Primary hydatid cysts <strong>most commonly</strong> occur in the<strong>&nbsp;liver.&nbsp;</strong>Most patients are asymptomatic but when symptomatic, the patient presents with hepatomegaly, pain, and obstructive jaundice.</p>\n<p>The<strong> 2nd most common site</strong> is the&nbsp;<strong>lung</strong>, specifically the lower lobe of the right lung. Symptomatic patients present with<strong> cough</strong> with<strong> salty</strong> <strong>phlegm</strong>, fever, <strong>chest pain,</strong> and, hemoptysis. <strong>Silent cysts</strong> may present as an <strong>emergency</strong> due to <strong>rupture.</strong></p>\n<p><strong>Computed tomography</strong>&nbsp;(CT) scan is accurate for detecting<strong>&nbsp;</strong>hydatid cysts. If there is disruption of the inner layers of the cyst, the following signs may be noted:</p>\n<ul>\n<li><strong>Water lily sign/ camalote sign</strong>&nbsp;- air-fluid level with a floating membrane (as shown below)</li>\n<li><strong>Rising sun sign/ serpent</strong>&nbsp;<strong>sign</strong> - a&nbsp;double-wall, dry cyst with crumpled membranes lying at its bottom&nbsp;</li>\n<li><strong>Empty cyst sign -&nbsp;</strong>when all the contents are removed&nbsp;</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0c6767ecf5d447ab963e1e0dc7b590eex720x961.JPEG\" alt=\"Explanation Image\"><p><strong>Ultrasound</strong> is the <strong>most commonly</strong> <strong>used</strong> modality to diagnose echinococcus. The ultrasound&nbsp;of an <strong>active hydatid cyst</strong>&nbsp;shows multiple septations and a rosette or&nbsp;<strong>honeycomb appearance&nbsp;</strong>(as shown below)</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0e9cc0fd93074ad1a32ef86427734ffax720x477.JPEG\" alt=\"Explanation Image\"><p>Serology: <strong>Detection</strong> of serum <strong>anti-echinococcal</strong>&nbsp;<strong>antibodies</strong> using indirect hemagglutination <strong>(IHA),</strong>&nbsp;indirect immunofluorescence, <strong>ELISA,</strong> and slide latex agglutination test can be used to support the clinical diagnosis.</p>\n<p>Treatment&nbsp;:</p>\n<p>Pulmonary hydatid disease the <strong>mainstay</strong> of treatment is <strong>surgery.</strong> Various surgeries that may be performed are cystotomy, segmentectomy, pneumonectomy, etc.&nbsp;</p>\n<div class=\"page\" title=\"Page 88\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Hepatic hydatid disease in the&nbsp;<strong>early stages</strong>&nbsp;can be treated with puncture, aspiration, injection, and re-aspiration <strong>(PAIR).</strong>&nbsp;<strong>Albendazole</strong> 4 days before the procedure, continued till 4 weeks afterward. Surgery is the treatment of choice when PAIR is not possible. The preferred surgical approach is <strong>pericystectomy</strong>. Since recurrence is common, pre and postoperative <strong>albendazole</strong> for 2 years is recommended.</p>\n</div>\n</div>\n</div>\n</div>\n<p>Other options:&nbsp;</p>\n<p>Option B: A CT scan in acute <strong>pulmonary edema</strong> would show <strong>peribronchial opacities</strong> (<strong>batwing</strong> <strong>distribution</strong>) and thickening of interlobular septae in the lung base and apex (corresponds to Kerley lines on X-ray).</p>\n<p>Option C: A CT scan in <strong>acute respiratory distress syndrome</strong> (ARDS) is likely to show <strong>bilateral pulmonary infiltrates</strong>.&nbsp;</p>\n<p>Option D: A CT scan in <strong>acute mountain sickness</strong> (AMS) is likely to reveal <strong>patchy opacities</strong>, most often in the <strong>right middle lobe</strong>.&nbsp;The common presenting features are cyanosis, tachypnoea, tachycardia, and elevated body temperature. AMS may also lead to the development of non-cardiogenic high-altitude pulmonary edema.</p><hr><h3>Related Pearl: Indications and contraindications of puncture, aspiration, injection, and re-aspiration (PAIR) in hydatid cyst</h3><p><strong>Indications:</strong></p>\n<ul>\n<li>Relapse cyst, infected cyst, cyst &gt;5 cm in different liver segments</li>\n<li>Patients who refuse surgery or where surgery is contraindicated</li>\n<li>Pregnant women, children &lt; 3 years of age</li>\n<li>WHO - type CE1 and type CE3a (transitional cyst)</li>\n</ul>\n<p><strong>Contraindications:</strong></p>\n<ul>\n<li>Cysts in lung</li>\n<li>Cysts communicating with bile duct</li>\n<li>Cysts with multiple septae&mdash;honeycomb cysts</li>\n<li>Inaccessible cysts</li>\n<li>Hyperechogenic cysts</li>\n<li>Calcified cysts</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/512ea5cd21fd4f2cb65989afcb7eac19.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF4634",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 3-day old neonate of a diabetic mother presents with progressively deepening cyanosis and tachypnea since birth. The chest X-ray of the neonate is shown below. What is the probable diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Total anomalous pulmonary venous connection"
+        },
+        {
+          "id": 2,
+          "text": "Ebstein's anomaly"
+        },
+        {
+          "id": 3,
+          "text": "Tetralogy of Fallot"
+        },
+        {
+          "id": 4,
+          "text": "Transposition of great arteries"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>A clinical scenario of an<strong> infant</strong> born to a<strong> diabetic mother</strong>, presenting with <strong>progressive cyanosis</strong> and tachypnea with an X-ray showing the <strong>egg-on-side</strong> appearance is suggestive of<strong> transposition of great arteries</strong>. </p>\n<p>TGA is the <strong>most specific heart disease</strong> in infants of<strong> diabetic mothers</strong> and is more common in <strong>males</strong>. The deoxygenated blood returning from the body goes inappropriately out the aorta and back to the body again, while oxygenated pulmonary venous blood is returned directly to the lungs. Survival in the immediate neonatal period is due to the mixture of oxygenated and deoxygenated blood provided by the foramen ovale and the ductus arteriosus. 50% of patients also have a ventricular septal defect (VSD).</p>\n<p>Chest X-rays show mild cardiomegaly, a <strong>narrow mediastinum</strong> (the classic<strong> egg-shaped heart</strong> or <strong>egg-on-string appearance</strong>) shown in the image below with normal to increased pulmonary blood flow. Egg-on-string or globular-shaped heart is due to an abnormal convexity of the right atrial border and left atrial enlargement, and therefore appears like an egg.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c1aca6f3e7a544e891bf04c9eb42dc57x1024x667.JPEG\" alt=\"Explanation Image\"><p>An <strong>ECHO</strong> confirms the transposed ventricular-arterial connection and is <strong>diagnostic</strong>. A color doppler examination is used to visualize the size of the interatrial communication and the ductus arteriosus. It also assesses the degree of mixing, and presence of any associated ventricular outflow tract obstruction, or a septal defect. </p>\n<p>Other options:</p>\n<p>Option A: <strong>Total anomalous pulmonary venous return</strong> (TAPVC) occurs due to the anomalous connection of pulmonary veins instead of joining to the left atrium resulting in pulmonary venous blood reaching the right atrium. </p>\n<p>In supracardiac (TAPVC) <strong> </strong>the configuration of the heart and the superior mediastinal borders resemble a <strong>snowman</strong>. It is also referred to as the<strong> figure of 8 sign </strong>as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c085fe926a9e440eb53993deb5a9bf16x510x628.GIF\" alt=\"Explanation Image\"><p>Option B: <strong>Ebstein anomaly</strong> is a rare cyanotic congenital heart disease with diminished pulmonary blood flow due to abnormality of the tricuspid valve. </p>\n<p>In the <strong>Ebstein anomaly, </strong>there is severe right-sided cardiomegaly due to an elongated and enlarged right atrium which leads to an elevated apex giving a <strong>box-shaped heart</strong> as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3651148edf32400ab62f7291f87aa826x1200x1429.GIF\" alt=\"Explanation Image\"><p>Option C: <strong>Tetralogy of Fallot</strong> (TOF)  is the most common cyanotic heart disease encountered beyond the age of 1 year. It is characterized by tetrad of:</p>\n<ul>\n<li>Severe right ventricle outflow obstruction</li>\n<li>Large ventricular septal defect (VSD)</li>\n<li>Aorta overriding VSD</li>\n<li>Right ventricular hypertrophy</li>\n</ul>\n<p>In the TOF,<strong> </strong>the hypertrophied right ventricle causes the rounded apical shadow to be uptilted so that it is situated higher above the diaphragm than normal. This on X-rays appears as a <strong>boot-shaped heart</strong> or <strong>Coeur en sabot </strong>as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7367f50defb1464495935d7d8756660cx1200x1419.GIF\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Radiological Signs in Congenital Heart Diseases</h3><div>\n<table>\n<tbody>\n<tr>\n<td><strong>Anomaly</strong></td>\n<td><strong>Sign</strong></td>\n</tr>\n<tr>\n<td>Tetralogy of Fallot</td>\n<td>Coeur en sabot</td>\n</tr>\n<tr>\n<td>Transposition of great vessels (TGV)</td>\n<td>Egg on string</td>\n</tr>\n<tr>\n<td>Partial anomalous pulmonary venous return</td>\n<td>Scimitar sign</td>\n</tr>\n<tr>\n<td>Total anomalous pulmonary venous return</td>\n<td>Snowman sign</td>\n</tr>\n<tr>\n<td>Endocardial cushion defects</td>\n<td>Gooseneck sign</td>\n</tr>\n<tr>\n<td>Ebstein anomaly</td>\n<td>Box-shaped heart</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n</div><hr><h3>Related Pearl: Radiological findings in some congenital heart defects</h3><p><strong>Boot shaped heart - Tetralogy of Fallot (TOF)</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b8d455f894f24e8e9c147e7c3a178428x510x558.GIF\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Egg on string appearance - Transposition of Great Arteries (TGA)</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ad3fe6b6422548c8856299317c3e47c5x510x522.GIF\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Snowman's heart appearance or figure of 8 appearance</strong> -&nbsp;<strong>Supracardiac TAPVC</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c4d273d1af7445fdad02e659555c9e69x510x494.GIF\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Box Shaped Heart - Ebstein's Anomaly</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d07d5041004645849e8cce1dd37bd092x510x640.GIF\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d2825766d6734a1296065a1425f90acc.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF2701",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Match the following characteristic X-Ray appearances with their corresponding conditions.<div class='question-desc-html'><ol>\n<li>Large Bowel Obstruction</li>\n<li>Jejunal Obstruction</li>\n<li>Sigmoid Volvulus</li>\n<li>Caecal Volvulus</li>\n</ol>\n<p>&nbsp;</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1-C, 2-D, 3-A, 4-B"
+        },
+        {
+          "id": 2,
+          "text": "1-D, 2-C, 3-B, 4-A"
+        },
+        {
+          "id": 3,
+          "text": "1-D, 2-C, 3-A, 4-B"
+        },
+        {
+          "id": 4,
+          "text": "1-C, 2-D, 3-B, 4-A"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>&nbsp;The correct match is&nbsp;1-D, 2-C, 3-B, 4-A.</p>\n<p>&nbsp;In <strong>small bowel</strong> obstructions like <strong>jejunal obstruction</strong>, the<strong>&nbsp;</strong>obstructed bowel loops are <strong>central in location and lie transversely</strong>. The <strong>jejunal</strong> obstruction shows&nbsp;<strong>valvulae conniventes&nbsp;</strong>(mucosal folds that cross the entire diameter of the bowel). It gives it a <strong>ladder effect.</strong>&nbsp;The distended cecum may show the presence of gas shadow in the right iliac fossa.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9cc573641ef94774b249856b6a829424x1280x1662.JPEG\" alt=\"Explanation Image\"><p>In&nbsp;<strong>large bowel obstruction,</strong> the presence of <strong>haustrations</strong> is a feature. Haustral folds are irregular and do not cross the entire diameter of the bowel. These are absent in the caecum. The given image shows haustrations in large bowel obstruction</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6977312d05e04163a0fb9d10853b4c62x1280x1642.JPEG\" alt=\"Explanation Image\"><p>On X-ray abdomen, the <strong>apex</strong> of the <strong>cecal volvulus</strong> points towards the <strong>left upper quadrant</strong>&nbsp;vs the&nbsp;<strong>apex </strong>pointing towards the<strong> right upper quadrant </strong>in<strong> sigmoid volvulus.</strong></p>\n<p>Other radiological findings in caecal volvulus include caecal dilatation, single air-fluid level, and absence of gas in the distal colon. CECT abdomen is the investigation of choice that shows a <strong>whirl sign</strong> (also seen in the midgut volvulus).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d26b01db251e4f41819f35c6aa3d320dx720x608.JPEG\" alt=\"Explanation Image\"><p><strong>Sigmoid volvulus&nbsp;</strong>occurs when the sigmoid colon twists on the sigmoid mesocolon. <strong>X-ray abdomen</strong>&nbsp;shows a large, dilated loop of the colon, often with a few air-fluid levels. Specific signs include the&nbsp;<strong>coffee bean sign&nbsp;</strong>(seen below)<strong>&nbsp;</strong>and<strong>&nbsp;</strong>the<strong> absence of rectal gas. On X-ray abdomen, </strong>the apex of the <strong>sigmoid volvulus</strong> points towards the right upper quadrant.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f994536b80b943789f4f6fe14f80e0a8x720x840.PNG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/30d1b7012e22411dab734bab8aea2d13.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF5709",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 16-year-old patient visits the OPD with progressive deformity in the left lower limb. The x-ray of the patient is given below. Which of the following is the most probable diagnosis in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Osteoid osteoma"
+        },
+        {
+          "id": 2,
+          "text": "Fibrous dysplasia"
+        },
+        {
+          "id": 3,
+          "text": "Chondrosarcoma"
+        },
+        {
+          "id": 4,
+          "text": "Ewing's sarcoma"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The clinical presentation and the x-ray showing<strong> Shepherd's crook deformity</strong> are both suggestive of <strong>fibrous dysplasia </strong>of the proximal femur. </p>\n<p>Fibrous dysplasia is a condition that affects bone development and is characterized by the replacement of the bone with fibrous tissue. It is commonly monostotic (involves a single bone), but in 20% of cases, it can be polyostotic.</p>\n<p>Clinical features:</p>\n<p>The patient presents with a progressive limb deformity or a fracture through a previously asymptomatic lesion. Presentation is often in the <strong>second decade</strong>. Other symptoms include nonspecific bone pain, tenderness, and swelling in the affected area. The commonly involved sites are the <strong>proximal femur, tibia, pelvis, and foot</strong>.</p>\n<p><strong>McCune-Albright syndrome</strong>: It is characterized by <strong>polyostotic fibrous dysplasia, precocious puberty</strong>, and <strong>cafe-au-lait spots</strong> with irregular borders.</p>\n<p>Radiological findings:</p>\n<ul>\n<li>Well-defined, expansile intramedullary lesions</li>\n<li>Hazy, <strong>ground-glass appearance</strong> is seen in the majority of cases</li>\n<li><strong>Shepherd's crook deformity</strong> - Expansion with marked varus in the proximal femur</li>\n</ul>\n<p>Treatment:</p>\n<p>Bisphosphonates are used to manage bone pain. Surgical stabilization and realignment are done when there is a progressive deformity or pathological fracture. </p>\n<p>Other options: </p>\n<p>Option A: <strong>Osteoid osteoma</strong> is a benign tumor formed of osteoid and woven bone surrounded by a halo of reactive bone. It is most commonly seen in the <strong>diaphysis</strong> of the <strong>proximal femur</strong>. They most often present with <strong>pain</strong> that is classically <strong>worse at night</strong> and relieved by <strong>non-steroidal anti-inflammatory drugs (NSAIDs)</strong>. Plain X-ray demonstrates an area of dense sclerosis with a small rounded area of osteolysis. The preferred treatment is <strong>CT-guided radiofrequency ablation</strong>.</p>\n<p>Option C: <strong>Chondrosarcoma</strong> is the second most common primary malignant bone tumor after osteosarcoma. It can present between the 3rd and 8th decades of life. They are <strong>slow-growing tumors</strong> that produce deep pain with an enlarging mass and arise in any bone derived from enchondral ossification. Radiographically, they appear as large, intraosseous, osteolytic tumors with irregular, granular calcifications, giving a <strong>honeycomb </strong>or <strong>popcorn </strong>appearance. CT and MRI are useful in the diagnosis. Chondrosarcoma is <strong>resistant</strong> to both <strong>chemotherapy and radiation</strong>. Surgical excision is the only treatment.</p>\n<p>Option D: <strong>Ewing sarcoma</strong> is related to <strong>neuroectodermal tumors</strong> and arises from the mesenchymal stem cells from the bone marrow. The characteristic translocation involved is <strong><em>t(11:22). </em></strong>The tumor<strong> </strong>usually develops between 10 and 20 years of age and is usually located in the diaphysis of the long bones (<strong>femur-most common</strong>). Pain is followed by swelling and a low-grade fever. On radiography, a periosteal reaction with an '<strong>onion peel'</strong> appearance is seen. Treatment includes preoperative chemotherapy, wide excision, and radiotherapy, if required.</p><hr><h3>Related Pearl: Classical Radiological Appearance of Bone Tumors</h3><table>\n<tbody>\n<tr>\n<td><strong>RADIOLOGICAL APPEARANCE&nbsp;</strong></td>\n<td>\n<p><strong>TUMORS</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Sunray appearance / Codman&rsquo;s triangle</p>\n</td>\n<td>\n<p>Osteosarcoma (but can be seen in any malignant lesion)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Onion peel appearance&nbsp;</p>\n</td>\n<td>\n<p>Ewing&rsquo;s sarcoma (but can be seen in any malignant lesion or chronic osteomyelitis)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Soap bubble appearance&nbsp;</p>\n</td>\n<td>\n<p>Giant cell tumor, adamantinoma&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Ground glass appearance / Shepherd's</p>\n<p>crook deformity&nbsp;</p>\n</td>\n<td>\n<p>Fibrous dysplasia&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Patchy calcification&nbsp;</p>\n</td>\n<td>\n<p>Chondrogenic tumors (chondrosarcoma and chondroblastoma)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Popcorn, punctate or comma-shaped calcification</p>\n</td>\n<td>\n<p>Chondrosarcoma&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Stippled or Punctate calcification</p>\n</td>\n<td>\n<p>Chondroblastoma&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Homogeneous calcification&nbsp;</p>\n</td>\n<td>\n<p>Osteogenic tumors (osteosarcoma)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fallen fragment / Trap door sign</p>\n</td>\n<td>\n<p>Simple bone cyst</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Double-density fluid levels and intra-lesional septation</p>\n</td>\n<td>\n<p>Aneurysmal bone cyst</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Winking owl sign</p>\n</td>\n<td>\n<p>Vertebral metastasis&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Polka dot sign / Corduroy / Jailhouse sign</p>\n</td>\n<td>\n<p>Vertebral hemangioma</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Moth eaten bone</p>\n</td>\n<td>\n<p>Multiple myeloma</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Summary of Bone Tumors</h3><table>\n<tbody>\n<tr>\n<td><strong>Bone tumor</strong></td>\n<td><strong>Most common site</strong></td>\n<td><strong>Age</strong></td>\n</tr>\n<tr>\n<td>Simple bone cyst</td>\n<td>Proximal Humeral Metaphysis</td>\n<td>&lt;20years</td>\n</tr>\n<tr>\n<td>Enchondroma</td>\n<td>\n<p>Hand bones</p>\n<p>(Metaphysis of small bones of hand)</p>\n</td>\n<td>\n<p>4<sup>th</sup>&nbsp;&amp; 5<sup>th</sup></p>\n<p>Decade</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Osteochondroma</p>\n<p>(Exostosis)</p>\n</td>\n<td>Distal Femoral Metaphysis</td>\n<td>&lt;18years</td>\n</tr>\n<tr>\n<td>Osteoid osteoma</td>\n<td>Diaphysis of Femur</td>\n<td>\n<p>2<sup>nd</sup>&nbsp;&amp; 3<sup>rd</sup></p>\n<p>decade</p>\n</td>\n</tr>\n<tr>\n<td>Osteoblastoma</td>\n<td>Posterior column of vertebra</td>\n<td>\n<p>2<sup>nd</sup>&nbsp;&amp; 3<sup>rd</sup></p>\n<p>decade</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Osteoclastoma (GCT)</p>\n</td>\n<td>Distal femoral epiphysis</td>\n<td>\n<p>2<sup>nd</sup> -4<sup>th</sup></p>\n<p>Decade</p>\n</td>\n</tr>\n<tr>\n<td>Aneurysmal Bone Cyst</td>\n<td>Long bone Metaphysis</td>\n<td>&lt;18years</td>\n</tr>\n<tr>\n<td>Osteosarcoma</td>\n<td>Distal Femoral Metaphysis</td>\n<td>\n<p>BIMODAL</p>\n<p>Primary- 2<sup>nd</sup> Decade Secondary-6<sup>th</sup> and 7<sup>th</sup> Decade</p>\n</td>\n</tr>\n<tr>\n<td>Ewings sarcoma</td>\n<td>Diaphysis of Femur</td>\n<td>5-25 years</td>\n</tr>\n<tr>\n<td>Chondrosarcoma</td>\n<td>Any site in the bone - mc in proximal femur</td>\n<td>3<sup>rd</sup>-5<sup>th</sup> decade</td>\n</tr>\n<tr>\n<td>Clear cell chondrosarcoma</td>\n<td>Proximal femoral epiphysis</td>\n<td>&nbsp;3<sup>rd</sup>-5<sup>th</sup> decade</td>\n</tr>\n<tr>\n<td>Adamantinoma</td>\n<td>Diaphysis of Tibia</td>\n<td>&nbsp;20-40 years</td>\n</tr>\n<tr>\n<td>&nbsp;Fibrous dysplasia</td>\n<td>&nbsp;The upper end of femur &gt; tibia</td>\n<td>&nbsp;1st to 3rd decade</td>\n</tr>\n<tr>\n<td>&nbsp;Chordoma</td>\n<td>&nbsp;Sacrum</td>\n<td>&nbsp;5th to 7th decade</td>\n</tr>\n<tr>\n<td>Multiple myeloma</td>\n<td>Vertebrae</td>\n<td>5th to 7th decade</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/cb391754ef52488a942e11be398f1b6d.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1631",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A neonate is brought to the hospital with complaints of projectile non-bilious vomiting after feeding. An ultrasound study was done and the image is given below. Which of the following barium study signs can be seen in this condition?<div class='question-desc-html'><ol>\n<li>Shoulder sign</li>\n<li>Coffee bean sign </li>\n<li>String sign</li>\n<li>Double-track sign</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2,4"
+        },
+        {
+          "id": 2,
+          "text": "1,3,4"
+        },
+        {
+          "id": 3,
+          "text": "1,4"
+        },
+        {
+          "id": 4,
+          "text": "2,3,4"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The clinical features and the USG findings are suggestive of <strong>congenital hypertrophic pyloric stenosis (CHPS). </strong>The <strong>coffee bean sign</strong> is <strong>not seen</strong> in CHPS. It is seen in sigmoid volvulus. The USG image in the question shows the <strong>cervix sign</strong> and the <strong>antral nipple sign</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/68e2e42cadac4c668cf5cc077d77482ex1279x1328.PNG\" alt=\"Explanation Image\"><p>Contrast studies :</p>\n<ul>\n<li><strong>String sign</strong> - It refers to the string-like appearance produced by the elongated pylorus with a narrow lumen as shown in the image.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b075fc30713b40b483bb33ebe3065bb4x381x399.PNG\" alt=\"Explanation Image\"><ul>\n<li><strong>Double-track sign</strong> - The puckering of the mucosa produces a duplicated appearance of the pylorus.</li>\n<li><strong>Caterpillar sign</strong> - Gastric hyperperistaltic waves.</li>\n<li>Shoulder sign - It is produced due to the indentation of pylorus into the fluid-filled antrum.</li>\n<li>Mushroom sign - It is produced due to the indentation of pylorus into the base of the duodenal bulb.</li>\n</ul>\n<p>Congenital hypertrophic pyloric stenosis (CHPS) refers to the idiopathic thickening of gastric py­loric musculature which then results in progressive gastric outlet obstruction. It is more common in <strong>first-born male</strong> babies. The common age of presentation is <strong>2-8 weeks.</strong></p>\n<p>The infants present with progressively worsening <strong>non-bilious</strong> projectile vomiting. The presence of an <strong>olive-shaped </strong>mass in the upper abdomen is pathognomonic. Characteristic metabolic abnormality includes <strong>hypokalemic hypochloremic metabolic alkalosis </strong>due to recurrent vomiting. </p>\n<p>Ultrasound is the first investigation of choice. A pyloric length greater than 16 mm and the transverse diameter of the pyloric muscle greater than 4 mm is diagnostic. Findings seen in ultrasound of CHPS are:</p>\n<ul>\n<li>Antral nipple sign - It is produced by the double-layered pyloric mucosa protruding into the gastric antrum.</li>\n<li>Cervix sign - It refers to the uterine cervix-like appearance produced due to the hypertrophic pyloric mucosa.</li>\n</ul>\n<p>The child should be rehydrated and the <strong>metabolic abnormality</strong> has to be corrected preoperatively. The <strong>Ramstedt pyloromyotomy</strong> is the standard surgical procedure for its treatment.</p><hr><h3>Related Pearl: Radiological findings in various GI disorders</h3><p><strong>Duodenal atresia:&nbsp;</strong>Double bubble sign</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a8e78c140797481eb09e4bcef9106cd8x720x910.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Jejunal and ileal atresia:&nbsp;</strong>Multiple air-fluid levels (plain erect X-ray abdomen) presenting as&nbsp;<strong>triple bubble sign.&nbsp;</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9513fa34bce3499088a9a4601ae434c4x834x1186.PNG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Congenital hypertrophic pyloric stenosis: </strong>Single enlarged gastric gas bubble&nbsp;- <strong>single bubble</strong> sign</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/20dd99dfcb3e4ffa8728b296b69b5556x284x383.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Sigmoid volvulus:&nbsp;</strong>Coffee bean sign&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/81240b80138a476d8f5ca2b40d19c68bx490x600.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Achalasia cardia:&nbsp;</strong>Bird-beak sign</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fdcc40d8b70549d4b0c489b623ab32c8x720x1526.PNG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Small bowel obstruction</strong>: The obstructed bowel loops are central in location and show <strong>valvulae conniventes</strong> (mucosal folds that cross the entire diameter of the bowel) characteristic of jejunal involvement.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c32bbb60d2824af6b74fbd5585c9bb98x1279x1662.JPEG\" alt=\"Pearl Image\"><p><strong>Large bowel obstruction</strong>: The presence of <strong>haustrations</strong> is a feature of large bowel obstruction. Haustral folds are irregular and do not cross the entire diameter of the bowel. These are absent in the caecum.&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6bf0090dbba54d08bf6d460f3f8c3a01x1279x1642.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Caecal volvulus</strong>: Presence of caecal dilatation, single air-fluid level extending into the left upper quadrant, and absence of gas in the distal colon. The colonic haustrations are well maintained.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/cee8aa378b1148b198c0d8a7c9f23822x720x608.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Midgut volvulus</strong>: Corkscrew appearance showing the duodenum and jejunum spiraling around the mesenteric vessels in upper GI contrast studies.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/300e1080a96d4fe19194df39a503fef0x660x476.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p><strong>Necrotizing enterocolitis (NEC)</strong>: Abdominal X-ray findings include pneumatosis intestinalis (air in the bowel wall).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/13531a6af0434a64bf763df3a4c61fb8x479x600.JPEG\" alt=\"Pearl Image\"><p><strong>Cystic fibrosis</strong> (CF): Abdominal x-ray with contrast enema reveals a microcolon with several meconium plugs.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6d13f1689c1141ed93c2e447931546f0x512x683.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d026902653894d948517302035da30db.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1112",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A child was brought to the clinic for evaluation of recurrent urinary tract infections. An intravenous urogram was obtained, as shown below. What is the most likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Duplicated collecting system"
+        },
+        {
+          "id": 2,
+          "text": "Ureterocele"
+        },
+        {
+          "id": 3,
+          "text": "Autosomal recessive polycystic kidney disease"
+        },
+        {
+          "id": 4,
+          "text": "Horseshoe kidney"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The above clinical scenario and the intravenous urogram showing the <strong>drooping lily sign</strong> suggest the presence of a <strong>duplicated collecting system</strong>.</p>\n<p>In a duplicated collecting system often, the ureter that supplies the upper half of the kidney becomes obstructed. Suppose the upper pole collecting system of the kidney is completely obstructed. In that case, only the normally draining lower pole collecting system is visualized on the <strong>intravenous urogram</strong> and looks like a <strong>drooping lily</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/08f87dc6251b4560aa4d195399680284x1280x912.JPEG\" alt=\"Explanation Image\"><p>The duplicated collecting system is a common <strong>congenital anomaly</strong> of the urinary tract. It occurs due to the division of the ureter as it ascends upwards from the bladder to the renal parenchyma during the embryological period of life. Thus, the person might have two collecting systems for one kidney.</p>\n<p>The&nbsp;<strong>Weigert-Meyer law</strong>&nbsp;describes the relationship of the upper and lower renal moieties in duplicated collecting systems to their drainage inferiorly: When there are abnormalities associated with duplicating collecting systems,</p>\n<ul>\n<li>The upper pole moiety drains <strong>inferomedially</strong> and is most commonly associated with <strong>obstruction</strong></li>\n<li>The lower pole moiety drains <strong>superolaterally</strong> and is most commonly associated with <strong>vesicoureteral reflux</strong>.<strong><br /></strong></li>\n</ul>\n<p>The illustration given below shows the Weigert-Meyer law.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dff6af70f8514f4684bef0404f80a2e9x1280x2007.JPEG\" alt=\"Explanation Image\"><p>The <strong>lower</strong> pole <strong>ureter</strong> is <strong>normally</strong> inserted into the bladder. However, the <strong>upper</strong> pole <strong>ureter</strong>&nbsp;might have an <strong>ectopic</strong> insertion in the bladder, urethra, or, vagina.&nbsp;</p>\n<p>Ureteropelvic junction obstruction in a patient with duplicated collecting system can be managed with laparoscopic procedures such as <strong>pyeloplasty</strong>.</p>\n<p>Other options:</p>\n<p>Option B: <strong>Ureterocele</strong> is caused due to the dilatation of the ureter as it passes through the bladder wall. It is visualized as a <strong>cobra head</strong> deformity on a pyelogram.</p>\n<p>The image given below shows the cobra head sign.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ebc2091aebe344efbe5346ac1e1c89a4x516x630.JPEG\" alt=\"Explanation Image\"><p>Option C:&nbsp;<strong>Autosomal recessive polycystic kidney</strong> disease is best visualized on ultrasounds and CT scans where the cyst is usually <strong>hypodense</strong> in contrast to the renal parenchyma. It may appear hyperdense if there is a hemorrhage present.</p>\n<p>The image given below shows CT findings seen in childhood polycystic kidney disease.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/bdd7ecd8523a4bca9b034199f6899e21x876x821.JPEG\" alt=\"Explanation Image\"><p>Option D:&nbsp;<strong>Horseshoe kidney</strong> is a common congenital anomaly in which there is a fusion of the inferior poles of both kidneys. It is common in patients with Turner's syndrome.</p>\n<p>The image shown below shows CT findings seen in the horseshoe kidney.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3517c78d64a347f6b3f97b2609c503c3x720x609.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: IVU signs and associated conditions</h3><p dir=\"ltr\"><strong>Medullary sponge kidney</strong>&nbsp;</p>\n<ul>\n<li>Bouquet of flowers/ paintbrush appearance</li>\n<li dir=\"ltr\" role=\"presentation\">It refers to the cystic dilatation of the distal collecting tubules</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f2786a330a940aaa19ecbbf32156f4dx510x542.GIF\" alt=\"Pearl Image\"><p><strong>Duplex kidney</strong></p>\n<ul>\n<li aria-level=\"1\">Drooping lily sign</li>\n<li aria-level=\"1\">It refers to the inferolateral displacement of the lower pole due to an obstructed upper pole in a duplicated collecting system</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/05ef8241719949f8a3949f3fdd38676ax510x514.GIF\" alt=\"Pearl Image\"><p><strong>Horseshoe kidney</strong></p>\n<ul>\n<li>Handshake sign - due to the position of the lower poles closer to the spine, and the lower calyces closer to each other</li>\n<li>Flower vase sign - due to medially rotated calyces</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c72498faeb6a49d19adfabbc4b79e00bx510x615.GIF\" alt=\"Pearl Image\"><p><strong>Retroperitoneal fibrosis</strong></p>\n<ul>\n<li aria-level=\"1\">Maiden waist deformity&nbsp;</li>\n<li aria-level=\"1\">It refers to the medially drawn ureters caused by fibrosis at the lumbosacral junction</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/12454083a31f4e26b5ef692f0ea8de70x1280x827.JPEG\" alt=\"Pearl Image\"><p><strong>Retrocaval ureter&nbsp;</strong></p>\n<ul>\n<li aria-level=\"1\">Fish hook / Reverse J deformity&nbsp;</li>\n<li aria-level=\"1\">Right ureter hooks behind the IVC as it passes posterior to it</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f9fbf9d4e5544ea9a2ce4ebddc1adfeax510x610.GIF\" alt=\"Pearl Image\"><p><strong>Ureterocele</strong></p>\n<ul>\n<li aria-level=\"1\">Cobra/ Adder head appearance</li>\n<li aria-level=\"1\">It refers to the dilation of the distal ureter</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/903af92cf55f4e3aa983cf7e7e256e3ax1280x827.JPEG\" alt=\"Pearl Image\"><p><strong>Transitional cell carcinoma of the ureter</strong></p>\n<ul>\n<li aria-level=\"1\">Goblet sign</li>\n<li aria-level=\"1\">It is due to the focal dilation of the ureter by an intraluminal mass</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0f65ba8b0a8943e2ade74d16de10d077x510x542.GIF\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/627ea2080eb44124b659053532130fe7.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1921",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 13-year old boy presents to you with limitation of abduction and internal rotation of the left hip. The X-ray appearance of his left hip joint is shown in the below image. What is the diagnosis of this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Slipped capital femoral epiphysis"
+        },
+        {
+          "id": 2,
+          "text": "Perthes disease"
+        },
+        {
+          "id": 3,
+          "text": "Developmental Dysplasia of hip"
+        },
+        {
+          "id": 4,
+          "text": "Ankylosing spondylitis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Trethowan's sign</strong> is seen in the x-ray and the diagnosis is <strong>slipped capital femoral epiphysis</strong> (SCFE).</p>\n<p>The <strong>Klein line</strong> is a line along the superior aspect of the femoral neck which normally intersects the epiphysis.</p>\n<p>In SCFE, Klein's line does not intersect the epiphysis and passes superior to it. This is known as Trethowan's sign.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/36d68f0d17ec4d609106778933139f66x1024x700.jpeg\" alt=\"Explanation Image\"><p><strong>Slipped femoral capital epiphysis:</strong></p>\n<p>SCFE occurs during the period of rapid growth with the average age of presentation around 12 years.</p>\n<p>Risk factors: <strong>Obesity, hypothyroidism</strong>, growth hormone excess, and chronic renal failure are all-important associations of SCFE.</p>\n<p>Clinical features:</p>\n<ul>\n<li><span data-preserver-spaces=\"true\">Patients with SCFE typically present in the rapid growth phase of adolescence with pain in the thigh, groin, or knee.</span></li>\n<li><span data-preserver-spaces=\"true\"> On examination, the affected limb is shortened and externally rotated. </span></li>\n<li><span data-preserver-spaces=\"true\">There is</span> a limitation in abduction, flexion, and internal rotation on the affected side.</li>\n<li>Flexion of the hip might lead to obligate external rotation and abduction - positive <strong>Drehmann’s sign</strong>.</li>\n<li>Patients may have an antalgic or Trendelenburg gait.</li>\n</ul>\n<p>Other radiological findings include:</p>\n<ul>\n<li><span data-preserver-spaces=\"true\">Wide or irregular physis with l</span><span data-preserver-spaces=\"true\">oss of the anterior head-neck concavity</span></li>\n<li><span data-preserver-spaces=\"true\">Sharp metaphyseal border of the head</span></li>\n<li><span data-preserver-spaces=\"true\">Loss of total epiphyseal height</span></li>\n<li><strong>Steel sign</strong> (Metaphyseal blanch sign) - The posteriorly displaced femoral epiphysis overlaps over the metaphysis causing a crescent-shaped <strong>area of increased density</strong> on the <strong>AP radiograph</strong>.</li>\n<li><strong>Capener’s sign</strong> –the metaphysis displaces laterally, worsening the slip and causes a <strong>reduction in the double-density</strong> crescent created by the overlap of the posterior acetabulum and proximal metaphysis on the <strong>AP radiograph</strong>.</li>\n<li><strong>Southwick angle</strong> – The angle between the line drawn perpendicular to the physis and a line parallel to the femoral shaft. As slip worsens, the Southwick angle will increase. It is measured on the <strong>frog lateral X-ray view</strong>.</li>\n</ul>\n<p>Other options:</p>\n<p><strong>Perthes disease:</strong></p>\n<p>It is characterized by idiopathic avascular necrosis of the proximal femoral epiphysis. This condition commonly affects children of <strong>4-8 years</strong> of age. The child has pain in the hip while performing passive movements. The radiograph shows features of bone necrosis followed by remodeling.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/22636c459bc543449bc93ef7c30abf54x720x513.PNG\" alt=\"Explanation Image\"><p><strong>Developmental Dysplasia of the hip: </strong>It is characterized by spontaneous dislocation of the hip joint before, during, or shortly after birth. This condition is more common in<strong> females</strong>. Children with this condition have a waddling gait and on examination <strong>abduction</strong> and <strong>lateral rotation</strong> of the hip is decreased. X-ray shows a broken<strong> Shenton's line</strong> and the femoral head lies in the upper and outer quadrant formed by the <strong>Hilgenreiner’s line</strong> and the <strong>Perkin’s line.</strong></p>\n<p>The image given below shows the vertical Perkin's line and the horizontal Hilgenreiner’s line. Normally the femoral head lies in the inner and lower quadrant formed by these lines. But in DDH the femoral head is in the upper and outer quadrant.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/13d85a2c20a74fec8221e2dd17722672x1024x1024.JPEG\" alt=\"Explanation Image\"><p><strong>Ankylosing spondylitis: </strong>It is a chronic progressive inflammatory condition affecting the <strong>sacroiliac joints</strong> and the <strong>axial</strong> <strong>skeleton</strong>. It is commonly seen in <strong>young male adults</strong> and they typically present with an insidious onset back pain that improves with exercise. The earliest radiological finding is erosion and fuzziness of the sacroiliac joints and the characteristic late sign is the <strong>bamboo-spine</strong> appearance.</p>\n<p>X-ray showing bamboo-spine appearance-</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c0e68d30b02a4962b2ae47e88c96def2x419x659.PNG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/da45d579d1c14b48a352a4c6accf3b54.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "ME9517",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Shown below is the pelvic ultrasound image of a 28-year-old female patient with a positive urine pregnancy test. She gave a history of recent treatment for infertility. Identify the classical radiological finding shown in her right adnexa.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Lambda sign"
+        },
+        {
+          "id": 2,
+          "text": "Bagel sign"
+        },
+        {
+          "id": 3,
+          "text": "Double decidual sac sign"
+        },
+        {
+          "id": 4,
+          "text": "T sign"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The image shows the <strong>bagel sign</strong> seen in <strong>tubal</strong> <strong>ectopic pregnancy</strong>.</p>\n<p>The bagel sign is also known as the <strong>tubal ring sign</strong> or the <strong>blob sign. </strong>It refers to the appearance of a gestational sac in the adnexa with a hyperechoic ring. It is characteristic of tubal ectopic pregnancy. This sign has a positive predictive value of 95% in ectopic pregnancy. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e5cd5f438bc94502bb0cc2a9cd5793fdx1280x1623.JPEG\" alt=\"Explanation Image\"><p>A normal corpus luteum can also mimic this sign but can be differentiated by a bimanual pelvic examination.</p>\n<p>A <strong>ring of fire appearance</strong> is seen on the <strong>colour doppler</strong> in <strong>ectopic pregnancy</strong> on the periphery of the adnexal mass.  It is shown in the image below:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50f52dce5a294e5f947287f0c832c0d0x501x414.PNG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option A, <strong>Lambda sign:</strong> It is also known as the <strong>twin-peak sign </strong>and is seen in <strong>dichorionic pregnancy</strong>. The below image shows a schematic diagram of the twin-peak sign. A triangular portion of the placenta is seen insinuating between the amniochorion layers.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/74999d716f844ebca19c4debd9f738e7x1000x864.GIF\" alt=\"Explanation Image\"><p>Option C:<strong> Double decidual sac sign</strong> on ultrasound is seen in <strong>early intrauterine pregnancy</strong>, as two concentric echogenic rings surrounding the gestational sac. It is shown in the image below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9c3f02ad21694d8d9363e0f7ff96a095x498x342.PNG\" alt=\"Explanation Image\"><p> Option D: <strong>T sign</strong> is a USG finding in <strong>monochorionic</strong> <strong>gestation</strong>. It is thin and is T-shaped because there is no extension of placental tissue or chorion in between the intertwin membrane. It is as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/555254f97ce148aa9ef8d1090497b333x480x365.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Important radiological signs in OBG</h3><table>\n<tbody>\n<tr>\n<td>\n<div><span><strong>Sign</strong></span></div>\n</td>\n<td>\n<div><span><strong>Significance</strong></span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Bagel sign</strong></span></div>\n</td>\n<td>\n<div><span>Gestational sac in the adnexa with a hyperechoic ring.</span></div>\n<div><span>USG sign in <strong>tubal ectopic</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Ball Sign</strong></span></div>\n</td>\n<td>\n<div><span>X-ray shows a crumpled up spine of the fetus.</span></div>\n<div><span>Radiological sign of <strong>intrauterine fetal death</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Banana Sign</strong></span></div>\n</td>\n<td>\n<div><span>Abnormal anterior curvature of the cerebellum due to the associated <strong>Arnold-Chiari</strong> malformation.</span></div>\n<div><span>USG sign in <strong>open spina bifida</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Double decidual sac Sign</strong></span></div>\n</td>\n<td>\n<div><span>Two concentric echogenic rings separated by a hyperechoic space.</span></div>\n<div><span><strong>Normal</strong> USG appearance of an intrauterine gestational sac.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Lambda Sign</strong></span></div>\n</td>\n<td>\n<div><span>The chorionic tissue in between the two layers of the membrane between the twins.</span></div>\n<div><span>USG sign seen in <strong>di-chorionic pregnancies</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>&lsquo;T&rsquo; Sign</strong></span></div>\n</td>\n<td>\n<div><span>USG sign seen in <strong>monochorionic twins</strong>. As the intertwin membrane does not have any chorionic tissue it gives rise to &lsquo;T&rsquo; sign in ultrasound.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Bunch of grapes sign</strong></span></div>\n</td>\n<td>\n<div><span>USG appearance of multiple cystic spaces or lesions in a <strong>complete mole</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Butterfly sign</strong></span></div>\n</td>\n<td>\n<div><span>Normal appearance of the choroid plexuses on axial imaging of the fetal brain. An<strong> absence</strong>&nbsp;of this sign suggests <strong>holoprosencephaly</strong>.</span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Cloverleaf skull</strong></span></div>\n</td>\n<td>\n<div><span>Seen in <strong>craniosynostosis</strong></span></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><span><strong>Empty amnion sign</strong></span></div>\n</td>\n<td>\n<div><span>Visualization of an amniotic sac without concomitant visualization of an embryo. It is an indicator of <strong>pregnancy failure</strong>.</span></div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/5f133f0b11894882b3cdfea92a6e6c1d.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF0468",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the mode in USG.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "A mode"
+        },
+        {
+          "id": 2,
+          "text": "B mode"
+        },
+        {
+          "id": 3,
+          "text": "M mode"
+        },
+        {
+          "id": 4,
+          "text": "Doppler"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The USG image represents<strong> the M-mode</strong> used for <strong>echocardiography</strong>. Echo intensity is represented as brightness and a trace is swept across the screen so that the x-axis represents time.</p>\n<p>Ultrasonography is a versatile imaging modality known for its <strong>portability</strong> and <strong>safety,</strong> particularly as it does <strong>not</strong> involve <strong>radiation </strong>exposure. As the safest radiological investigation for<strong> pregnancy</strong>, it provides crucial information without posing any risks to the mother or fetus, making it indispensable in obstetric care. </p>\n<p>Different modes in USG and its uses are as follows:</p>\n<ol>\n<li><strong>A</strong> (amplitude) <strong>mode</strong>: Used in <strong>ophthalmology</strong> and orbital biometry (option A).</li>\n<li><strong>B </strong>(brightness) <strong>mode</strong>: Used for all routine applications, with brightness encoded as grayscale value (option B).</li>\n<li><strong>M</strong> (motion) <strong>mode</strong>: In echocardiography. </li>\n</ol>\n<p><strong>HIFU </strong>(high-intensity focussed USG) is a <strong>therapeutic</strong> application of USG. It is useful for the treatment of <strong>fibroids</strong>. HIFU exploits the thermal effects of high-powered, tightly focused ultrasound beams so that very small target tissues can be heated and coagulated.</p>\n<p>The image below depicts a duplex scan, which is a combination of<strong> B-mode</strong> imaging and <strong>pulsed Doppler</strong> data acquisition.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/81e963c9f1bf4e558babb893c222fcc0x1012x825.JPEG\" alt=\"Explanation Image\"><p><strong>Doppler ultrasound </strong>(option D) is used in diagnosing <strong>peripheral arterial disease</strong>. It uses a handheld Doppler ultrasound probe placed at an arterial site. A normal arterial wave has a <strong>triphasic signal</strong>. A triphasic wave has three waveforms consisting of a sharp systolic wave with a forward uprise and fall, a second wave with reverse flow occurring in diastole, and the last wave with a forward flow taking place during diastole. </p>\n<p>Doppler ultrasound can detect moving blood. However, it does not provide information on whether the blood flow is sufficient for the maintenance of limb viability. </p>\n<p>The image below shows triphasic signal on doppler ultrasound: </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ed910462cb6c43bbbb5c0fedbe75988bx512x559.PNG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/dff4d46f280b486dbc52e516df0f5a80.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA8676",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient is undergoing Doppler ultrasonographic assessment for varicose veins. When the probe was placed inferior to the inguinal crease, the sign shown in the below image was seen on the transverse view in the B-mode. What does it indicate?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Normal anatomy of femoral vessels"
+        },
+        {
+          "id": 2,
+          "text": "Thrombosis of common femoral vein"
+        },
+        {
+          "id": 3,
+          "text": "Incompetence of saphenofemoral valve"
+        },
+        {
+          "id": 4,
+          "text": "Thrombosis of great saphenous vein"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The sign in the image&nbsp;given above is the <strong>Mickey mouse sign</strong>,<strong>&nbsp;</strong>which represents the <strong>normal anatomy of the femoral vessels</strong>.</p>\n<div class=\"page\" title=\"Page 998\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>The Mickey mouse sign is seen on the transverse B-mode of USG.</p>\n<p>It includes&nbsp;</p>\n<ul>\n<li>Great saphenous vein (GSV),</li>\n<li>Common femoral vein (CFV), and</li>\n<li>Common femoral artery (CFA)</li>\n</ul>\n<p>Normally, the GSV and CFV lie medial to the common femoral artery, which gives rise to the sign.</p>\n</div>\n</div>\n</div>\n</div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8e5752ff1fd34c59aa1fb2ca284338a4x1280x1750.JPEG\" alt=\"Explanation Image\"><p>Mickey mouse in medicine:</p>\n<ul>\n<li>Mickey mouse appearance - seen on antenatal ultrasound, due to absent cranial bone/brain and bulging orbits in <strong>anencephaly</strong></li>\n<li>Mickey mouse appearance - seen on MRI in <strong>progressive supranuclear palsy</strong></li>\n<li>The Mickey Mouse sign also represents the <strong>configuration of the portal triad</strong> - the portal vein, common bile duct, and the hepatic artery on biliary ultrasound.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/9e68622cfa7c4b289b9e5ae0e0b7b97e.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "ME9790",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 58-year-old male patient presented to the outpatient department with complaints of heaviness of head, swelling on the forehead, and dull headache throughout the day. The image shows a CT scan of the skull. Biochemical tests show raised alkaline phosphatase and normal serum calcium. The most likely diagnosis is?<div class='question-desc-html'><p>CT - Computed tomography</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paget's disease"
+        },
+        {
+          "id": 2,
+          "text": "Hyperparathyroidism"
+        },
+        {
+          "id": 3,
+          "text": "Osteopetrosis"
+        },
+        {
+          "id": 4,
+          "text": "Osteomyelitis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given image shows <strong>Tam o'Shanter sign</strong> and clinical findings suggest <strong>Paget's disease of bone</strong> or <strong>osteitis deformans.</strong></p>\n<div class=\"page\" title=\"Page 176\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Paget's disease</strong> is characterized by <strong>increased osteoclastic activity</strong> leading to increased bone turnover. This causes localized sites of lysis and excavations in bone. This is followed by enlargement and thickening of the bone because of <strong>increased osteoblastic activity</strong>. The internal architecture is abnormal and the bone is unusually brittle. Raised levels of plasma alkaline phosphatase is seen. Serum calcium and phosphate levels are usually normal</p>\n<p>The radiological signs seen are:</p>\n<ul>\n<li><strong>Osteoporosis circumscripta</strong>: large, well-defined lytic lesion of the involved bone.</li>\n<li><strong>Cotton wool appearance</strong>: mixed lytic and sclerotic lesions of the skull</li>\n<li><strong>Diploic widening</strong>: both inner and outer calvarial tables are involved, with the former usually more extensively affected.</li>\n<li><strong>Tam o'Shanter sign</strong>: frontal bone enlargement, with the appearance of the skull falling over the facial bones, like a Tam o' Shanter hat.</li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<p>Image shows cotton wool appearance of skull seen in Paget's disease.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/00125f11309f4ce2a41aca620101003bx618x458.JPEG\" alt=\"Explanation Image\"><p>Tam o'Shanter hat sign in skull radiograph resembling the Scottish Tam o'Shanter hat.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0d68d7e2391a42cf95e636026266e0b7x630x630.JPEG\" alt=\"Explanation Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8c30a2b1ce204a899388623cc95d468fx406x268.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option B: <strong>Hyperparathyroidism</strong> is caused due to increased parathyroid hormone. It causes osteoclastic resorption of bone leading to <strong>raised calcium</strong> levels and complications of <strong>hypercalcemia</strong> like renal stones, abdominal pain, depression.<strong> Sub-periosteal resorption</strong> of the phalanges is a diagnostic feature of hyperparathyroidism. The x-ray skull shows a <strong>salt pepper</strong> appearance showing a well-marked stippling, but the opaque areas are small pinhead size.</p>\n<p>Image shows salt and pepper appearance seen in hyperparathyroidism.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69c0c0c9c8044e74b326b89f42162f36x1024x801.JPEG\" alt=\"Explanation Image\"><p>Option C: <strong>Osteopetrosis</strong> occurs due to a defect in the genes that control the <strong>osteoclastic </strong>activity and hence usually presents <strong>much earlier in life</strong>. Plain radiographs are usually diagnostic. The bones appear sclerotic and the skull base is uniformly radiodense. Radiolucent bands through sclerotic vertebrae are often seen and referred to as the ‘<strong>rugger-jersey</strong>’ sign. The skull base shows uniform radiodensity<br /> </p>\n<p>An X-ray image showing dense bones seen in osteopetrosis is shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/bb642cdec2984c908980358afb5d3227x720x621.JPEG\" alt=\"Explanation Image\"><p>Option D: <strong>Osteomyelitis</strong> can occur in the frontal bone is associated with forehead swelling and redness. It usually results from acute frontal sinusitis but can also occur as sequelae of trauma or surgery. Pus can be formed under the periosteum as soft boggy swelling called<strong> pott's puffy tumor</strong>. ESR and CRP are elevated with leukocytosis, serum <strong>calcium</strong> and <strong>ALP</strong> are usually <strong>unchanged.</strong> X-ray is done initially but a CT scan clinches the diagnosis. Radionuclide scanning, MRI are other radiological investigations that are used.</p>\n<p>Image shows MRI, T1, sagittal, gadolinium contrast showing pott's puffy tumor, spreading towards patients' brain. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/33804260167948f6804d1b2cb9ec4b20x600x569.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Biochemical parameters in metabolic bone diseases</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Metabolic bone disease</strong></p>\n</td>\n<td><strong>Calcium</strong></td>\n<td><strong>PTH</strong></td>\n<td><strong>Phosphate</strong></td>\n<td><strong>ALP</strong></td>\n</tr>\n<tr>\n<td>\n<p>Rickets / Osteomalacia</p>\n</td>\n<td>&nbsp;&darr;/N</td>\n<td>&nbsp; &nbsp;&uarr;</td>\n<td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&darr;</td>\n<td>&nbsp; &nbsp;&uarr;</td>\n</tr>\n<tr>\n<td>\n<p>Primary</p>\n<p>hyperparathyroidism</p>\n</td>\n<td>&nbsp; &nbsp; &nbsp;&uarr;</td>\n<td>&nbsp;&nbsp;&nbsp;&uarr;</td>\n<td>&nbsp; &nbsp; &nbsp; &nbsp;&darr;</td>\n<td>&nbsp;&uarr;</td>\n</tr>\n<tr>\n<td>\n<p>Secondary</p>\n<p>hyperparathyroidism</p>\n</td>\n<td>&nbsp; &nbsp; &nbsp;&darr;</td>\n<td>&nbsp;&nbsp; &uarr;</td>\n<td>&nbsp; &nbsp; &nbsp; &nbsp;&uarr;</td>\n<td>&nbsp; &nbsp; &uarr;</td>\n</tr>\n<tr>\n<td>\n<p>Tertiary hyperparathyroidism</p>\n</td>\n<td>&nbsp; &nbsp; &nbsp;&uarr;</td>\n<td>&nbsp; &nbsp; &uarr;</td>\n<td>&nbsp; &nbsp; &nbsp; &nbsp;&uarr;</td>\n<td>&nbsp; &nbsp;&uarr;</td>\n</tr>\n<tr>\n<td>Osteoporosis</td>\n<td>&nbsp; &nbsp; &nbsp;N</td>\n<td>&nbsp; &nbsp;N</td>\n<td>&nbsp; &nbsp; &nbsp; N</td>\n<td>&nbsp; N</td>\n</tr>\n<tr>\n<td>\n<p>Paget's&nbsp;disease</p>\n</td>\n<td>&nbsp; &nbsp; &nbsp;N</td>\n<td>&nbsp; &nbsp;N</td>\n<td>&nbsp; &nbsp; &nbsp; N</td>\n<td>&nbsp; &uarr;</td>\n</tr>\n<tr>\n<td>\n<p>Osteopetrosis</p>\n</td>\n<td>&nbsp; &darr;/N</td>\n<td>&uarr;/N</td>\n<td>&nbsp; &nbsp; &darr;/N</td>\n<td>&nbsp; N</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;&uarr;: Increased,&nbsp;&nbsp;&darr;: Decreased, N: Normal</p><hr><h3>Related Pearl: Pathological fracture</h3><p><strong>Pathological f</strong><span class=\"fontstyle0\"><strong>ractures</strong> occur with normal stresses in the bones that have been weakened by a change in its structure or through a lytic lesion.</span></p>\n<p><strong>Factors suggestive of a pathologic fracture:</strong></p>\n<ul>\n<li>Fracture after minor trauma</li>\n<li>Pain at the site before the fracture</li>\n<li>Multiple recent fractures</li>\n<li>History of primary malignancy</li>\n</ul>\n<p><strong>Causes:</strong></p>\n<p><strong>1. Generalized bone disease:</strong>&nbsp;</p>\n<ul>\n<li>Osteoporosis</li>\n<li>Metabolic bone diseases</li>\n<li>Osteogenesis imperfecta</li>\n<li>Paget's disease</li>\n<li>Polyostotic fibrous dysplasia</li>\n<li>Myelomatosis</li>\n</ul>\n<p><strong>2. Local benign conditions:</strong></p>\n<ul>\n<li>Chronic infection</li>\n<li>Solitary bone cyst</li>\n<li>Aneurysmal bone cyst</li>\n<li>Chondroma</li>\n</ul>\n<p><strong>3. Primary malignant tumors:</strong></p>\n<ul>\n<li>Chondrosarcoma</li>\n<li>Osteosarcoma</li>\n<li>Ewing's tumor</li>\n</ul>\n<p><strong>4. Metastatic tumors</strong></p>\n<ul>\n<li>Mets from breast, lung, kidney, thyroid, colon and prostate</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/52a54efb1e38436199f48172bdefc987.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF2166",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Hysterosalpingography was done in a patient to evaluate the patency of fallopian tubes, and the following finding is seen. What is the likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mycobacterium tuberculosis"
+        },
+        {
+          "id": 2,
+          "text": "Neisseria gonorrhoea"
+        },
+        {
+          "id": 3,
+          "text": "Chlamydia trachomatis"
+        },
+        {
+          "id": 4,
+          "text": "Mycoplasma hominis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given hysterosalpingography image shows the typical \"<strong>tobacco pouch</strong>\" appearance of the fallopian tube, which is highly suggestive of <strong>tuberculous salpingitis</strong> caused by <em>Mycobacterium tuberculosis</em>.</p>\n<div class=\"page\" title=\"Page 361\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Genital tuberculosis: </strong>The leading presenting complaints include infertility, menstrual irregularities, abdominal pain, vaginal discharge, and suspicion of neoplasm. 10-15% of women are found to be <strong>asymptomatic</strong> as well.</p>\n<p>Investigation:</p>\n<p>1. Complete blood count, erythrocyte sedimentation rate (ESR), enzyme-linked immunoabsorbent assay (ELISA) tests - lgG and IgM, and Mantoux tests are done to evaluate the case of genital tuberculosis. The nucleic acid amplification technique (NAAT) can detect tuberculosis within a few hours compared to culture.</p>\n</div>\n</div>\n</div>\n<p><strong>2. Hysterosalpingography- </strong>If genital tuberculosis is suspected, it<strong> </strong>should not be performed because of the risk of spread of infection.</p>\n<p>If performed in an asymptomatic woman, the following patterns may be seen:</p>\n<ul>\n<li>Rigid non-peristaltic pipe-like tube (lead-pipe appearance)</li>\n<li>Beading and variation in filling defect</li>\n<li>Calcification of the tube</li>\n<li>Cornual block</li>\n<li>Jagged fluffiness of the tubal outline</li>\n<li><strong>Tobacco-pouch appearance</strong> of hydrosalpinx and pyosalpinx with blocked fimbrial end</li>\n<li>Golf club appearance with slight or moderate dilatation of the ampullary portion of the fallopian tube.</li>\n<li>Rosette-type of appearance secondary to multiple small diverticular-like outpouchings surrounding the ampulla produced by caseous ulceration.</li>\n</ul>\n<p>3. Endometrial histology and PCR testing: Endometrium tissue is obtained by D&amp;C/hystroscopy-directed biopsy. The late premenstrual phase is the ideal time to schedule this procedure. The endometrial scrapings are used for <strong>histopathology, PCR testing, and AFB smear and culture</strong>. PCR is a rapid, sensitive, and specific method of detecting mycobacterial DNA.</p>\n<p>4. Laparoscopy: Diagnostic laparoscopy is widely used to establish the diagnosis of genital tuberculosis/ abdominal pelvic tuberculosis. Tuberculous lesions can be seen on the parietal peritoneum, intestinal serosa, omentum, surface of the uterus, and fallopian tubes.</p><p>The image below shows the \"<strong>pipe stem</strong>\" or \"<strong>lead pipe</strong>\" appearance. There is an absence of normal tortuosity and a curved or straight pipe-like appearance shows the fibrotic stage of tuberculous salpingitis. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2d28ccaf220c4411950f9133d25bc24fx630x630.JPEG\" alt=\"Explanation Image\"><p>The image below shows multiple constrictions along the fallopian tube giving rise to a \"<strong>beaded</strong>\" appearance.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39f3dd4499bc47528b4ea4f7876eb049x512x512.PNG\" alt=\"Explanation Image\"><p>Image below shows sacculation of both tubes in distal portion with an associated hydrosalpinx giving a <strong>Golf club</strong>-like appearance.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e09a21cf6114482a9238cd8931e123edx512x512.PNG\" alt=\"Explanation Image\"><p>Image below shows <strong>\" Tobacco pouch\"</strong> appearance of the fallopian tube.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3482cbeab4c84815a317d136224c604bx100x100.PNG\" alt=\"Explanation Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7c36d5557b174916b859a3f6e0e47228x1279x974.JPEG\" alt=\"Explanation Image\"><p>All the other options - <em>N. gonorrhea, C. trachomatis</em>, and <em>Mycoplasma hominis</em> are causative agents for pelvic inflammatory disease (PID). Acute PID presents with abdominal pain and tenderness where sonography is a primary imaging tool. Normal fallopian tubes are rarely imaged. Characteristic acute findings include: a distended, ovoid-shaped tube filled with anechoic or echogenic fluid, fallopian tube wall thickening, incomplete internal septa, and a \"cogwheel\" appearance when inflamed tubes are imaged in cross-section.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/bf64fd8e274249efbd009695fd8a6261.png"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF0981",
+      "difficulty": "easy"
+    }
+  ]
+}

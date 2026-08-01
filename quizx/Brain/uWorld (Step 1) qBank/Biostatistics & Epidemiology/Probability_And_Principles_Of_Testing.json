@@ -1,0 +1,771 @@
+{
+  "meta": {
+    "title": "Probability_And_Principles_Of_Testing"
+  },
+  "questions": [
+    {
+      "text": "<p>Results of a recent study on the association between levels of glycosylated hemoglobin (HbA1c) and levels of high-sensitivity C-reactive protein (hs-CRP) in patients with type II diabetes mellitus (T2DM) read as follows:</p><div><p>&#x22;The results of our study show that levels of HbA1c positively correlated with the levels of hs-CRP (<em>r</em> = 0.80).&nbsp; The probability that these results were due to chance alone is 3%, with a 10% chance of concluding no relationship between HbA1c and hs-CRP when one truly exists.&#x22;</p></div><p>Based on this information, which of the following most likely represents the <em>p</em>-value and the power of the correlation test in the study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.03\n\t\t\t\n\t\t\t\n\t\t\t\t0.10"
+        },
+        {
+          "id": 2,
+          "text": "0.03\n\t\t\t\n\t\t\t\n\t\t\t\t0.80"
+        },
+        {
+          "id": 3,
+          "text": "0.03\n\t\t\t\n\t\t\t\n\t\t\t\t0.90"
+        },
+        {
+          "id": 4,
+          "text": "0.05\n\t\t\t\n\t\t\t\n\t\t\t\t0.10"
+        },
+        {
+          "id": 5,
+          "text": "0.05\n\t\t\t\n\t\t\t\n\t\t\t\t0.80"
+        },
+        {
+          "id": 6,
+          "text": "0.05\n\t\t\t\n\t\t\t\n\t\t\t\t0.90"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > P-value and confidence interval</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img  draggable=\"false\" id=\"40273\" src=\"https://www.uworld.com/media/L66330.png\"  ></p><p>Power and <em>p</em>-value are related to the process of hypothesis testing.&nbsp; Research studies generally compare a null hypothesis (H<font size=\"2\"><sub>0</sub></font>) (typically of no difference or no association [eg, no correlation between glycosylated hemoglobin and high-sensitivity C-reactive protein levels]) against an alternative hypothesis (H<font size=\"2\"><sub>a</sub></font>) (typically of a difference or an association).&nbsp; Hypothesis testing may result in 1 of 4 possible outcomes:</p><ul><li>2 correct decisions:<ul><li>Fail to reject a true H<font size=\"2\"><sub>0</sub></font>&nbsp;(ie, determine there is no correlation when one truly doesn&#39;t exist)</li><li><strong>Reject a false H</strong><font size=\"2\"><strong><sub>0</sub></strong></font>&nbsp;(ie, determine there is a correlation when one truly exists)</li></ul></li><li>2 incorrect decisions:<ul><li>Type I error: reject a true H<font size=\"2\"><sub>0</sub></font>&nbsp;(ie, determine there is a correlation when one truly doesn&#39;t exist)</li><li><strong>Type II error: fail to reject a false H<font size=\"2\"><sub>0</sub></font></strong>&nbsp;(ie, determine there is no correlation when one truly exists)</li></ul></li></ul><p>The <strong>power of a test</strong> is the probability of making the correct decision of <strong>rejecting a false H<font size=\"2\"><sub>0</sub></font></strong>.&nbsp; It is the complement of the <strong>probability of a type II error (&#946;)</strong>, which is the probability of failing to reject a false H<font size=\"2\"><sub>0</sub></font>; in other words, <strong>power = (1 &#8722; &#946;)</strong>.&nbsp; This study reported a <strong>10% chance</strong> (ie, 0.10 probability) of concluding that there is no relationship (ie, no correlation) between the 2 variables under study when one truly exists: this is the probability of a type II error (&#946;).&nbsp; Therefore, the power of the test (ie, probability of rejecting a false H<font size=\"2\"><sub>0</sub></font>: stating there is a correlation when one truly exists) is <strong>1 &#8722; 0.10 = 0.90</strong>.</p><p>One way to determine whether to reject H<font size=\"2\"><sub>0</sub></font> is to calculate the <strong><em>p</em>-value</strong>, the probability of obtaining the observed result (or results more extreme) when H<font size=\"2\"><sub>0</sub></font> is assumed to be true.&nbsp; The <em>p</em>-value is also informally interpreted as the <strong>probability</strong> that the <strong>observed results are due to chance</strong> (although this is not technically correct).&nbsp; In this case, researchers concluded that the probability that results were due to chance is 0.03; therefore, the <strong><em>p</em>-value = 0.03</strong>.</p><p><strong>Educational objective:</strong><br>The power of a test is the probability of making the correct decision of rejecting a false H<font size=\"2\"><sub>0</sub></font> (ie, determining&nbsp;there is a correlation when one truly exists).&nbsp; The <em>p</em>-value is the probability of obtaining the observed result (or results more extreme) when H<font size=\"2\"><sub>0</sub></font> is assumed to be true; it is informally interpreted as the probability that the observed results are due to chance.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "18332",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A study was conducted to assess the age at menarche among young female gymnasts.&nbsp; Based on commitment to the sport, gymnasts were divided into two groups: competitive gymnasts and recreational gymnasts.</p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td><strong>&nbsp;</strong></td><td colspan=\"3\"><strong>Age at menarche</strong></td></tr><tr><td><strong>&nbsp;</strong></td><td><strong>Sample size (n)</strong></td><td><strong>Mean, y</strong></td><td><strong>Standard deviation, y</strong></td></tr><tr><td><strong>Competitive</strong></td><td>16</td><td>13.4</td><td>1.3</td></tr><tr><td><strong>Recreational</strong></td><td>22</td><td>12.3</td><td>0.8</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>Assuming that age at menarche is normally distributed, which of the following is closest to the probability that a randomly chosen competitive gymnast will have onset of menarche at age &#8805;16?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.997"
+        },
+        {
+          "id": 2,
+          "text": "0.950"
+        },
+        {
+          "id": 3,
+          "text": "0.680"
+        },
+        {
+          "id": 4,
+          "text": "0.160"
+        },
+        {
+          "id": 5,
+          "text": "0.025"
+        },
+        {
+          "id": 6,
+          "text": "0.0015"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"14232\" src=\"https://www.uworld.com/media/L38991.jpg\" ></p><p>A normal (Gaussian) distribution is a symmetrical, bell-shaped distribution with a fixed percentage of observations lying within a certain distance of the mean.&nbsp; This distance is called the standard deviation (SD) and represents the degree of dispersion from the mean.&nbsp; The <strong>68-95-99.7</strong> rule for normal distributions states that 68% of all observations lie within 1 SD of the mean, 95% of all observations lie within 2 SDs of the mean, and 99.7% of all observations lie within 3 SDs of the mean.</p><p>For competitive gymnasts in this sample, the <strong>mean age at menarche is 13.4</strong> years, with a <strong>SD of 1.3</strong> years.&nbsp; Based on the 68-95-99.7 rule:</p><ul><li><p>68% of observations lie within 1 SD: 13.4 &plusmn; 1.3 = 12.1-14.7.</p></li><li><p><strong>95%</strong> of observations lie within <strong>2 SDs</strong>: 13.4 &plusmn; 2.6 = <strong>10.8-16.0</strong>.</p></li><li><p>99.7% of observations lie within 3 SDs: 13.4 &plusmn; 3.9 = 9.5-17.3.</p></li></ul><p>An onset of menarche at <strong>age &#8805;16 years is 2 SDs</strong> from the mean; therefore, <strong>2.5%</strong> of the observations must lie <strong>above 16 years</strong> (with 2.5% of observations below 10.8 years).&nbsp; The probability that a random competitive gymnast will have an onset of menarche at age &#8805;16 years is 0.025.</p><p><strong>(Choices A, B, and C)</strong>&nbsp; The 68-95-99.7 rule states that 99.7% of observations lie within 3 SDs; therefore, 0.997 is the probability that a random competitive gymnast will have an onset of menarche between age 9.5 and 17.3 years.&nbsp; Similarly, 0.95 is the probability that a random competitive gymnast will have an onset of menarche between age 10.8 and 16.0 years (ie, within &plusmn; 2 SDs from the mean), and 0.68 is the probability that a random competitive gymnast will have an onset of menarche between age 12.1 and 14.7 years (ie, within &plusmn; 1 SD from the mean).</p><p><strong>(Choices D and F)</strong>&nbsp; Based on the 68-95-99.7 rule, 32% (ie, 100% &#8722; 68%) of observations lie outside 1 SD from the mean, with half (ie, 32/2 = 16%) above and half (16%) below 1 SD from the mean.&nbsp; Therefore, 0.160 is the probability that a random competitive gymnast will have an onset of menarche at either age &#8804;12.1 years (ie, &#8805;1 SD below the mean) or at age &#8805;14.7 years (ie, &#8805;1 SD above the mean).&nbsp; Similarly, 0.0015 is the probability that a random competitive gymnast will have an onset of menarche at either age &#8804;9.5 years (ie, &#8805;3 SDs below the mean) or at age &#8805;17.3 years (ie, &#8805;3 SDs above the mean).</p><p><strong>Educational objective:</strong><br>In a normal (bell-shaped) distribution, 68% of all values are within 1 standard deviation (SD) of the mean; 95% are within 2 SDs of the mean; and 99.7% are within 3 SDs of the mean.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17854",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A research group conducted a placebo-controlled clinical trial to assess whether a new drug to treat acute migraine with or without aura in adults is more effective than standard therapy.&nbsp; A total of 3,500 patients with acute migraine were enrolled in the study and randomly assigned to either the new drug or standard treatment.&nbsp; During the data analysis phase, the researchers decide to set alpha at 0.01 rather than 0.05.&nbsp; Which of the following is the most likely result of this change?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Any significant findings will be reported with greater confidence"
+        },
+        {
+          "id": 2,
+          "text": "There will be a higher probability of a type I error"
+        },
+        {
+          "id": 3,
+          "text": "There will be a higher probability of finding statistically significant results"
+        },
+        {
+          "id": 4,
+          "text": "There will be a lower probability of a type II error"
+        },
+        {
+          "id": 5,
+          "text": "The study will have more statistical power"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Hypothesis testing</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"6810\" src=\"https://www.uworld.com/media/L23287.jpg\" ></p><p><strong>Alpha (<em>&#945;</em>) is the significance level</strong> used to establish the <strong>statistical significance</strong> of study results.&nbsp; It is usually predetermined by investigators as the threshold to reject a null hypothesis (<em>H</em><font size=\"2\"><sub>0</sub></font>).&nbsp; The results of a study are considered statistically significant when the <em>p</em>-value (ie, probability of obtaining results as extreme as the observed results when <em>H</em><font size=\"2\"><sub>0</sub></font> is true) is less than the significance level (ie, <strong><em>p</em>-value &lt; &#945;</strong>).&nbsp; Alpha is also the probability of making a <strong>type I error</strong>, which is rejecting a true <em>H</em><font size=\"2\"><sub>0</sub></font> (ie, a false positive: finding&nbsp;a statistically significant difference when one does not truly exist).&nbsp; The <strong>complement</strong> of alpha/significance level is the <strong>confidence level</strong> (1 &#8722; <em>&#945;</em>), which represents the probability of not rejecting a true <em>H</em><font size=\"2\"><sub>0</sub></font> (ie, a true negative, or&nbsp;not finding a statistically significant difference when one does not truly exist).</p><p>The lower the significance level, the lower the probability of a type I error.&nbsp; However, this means that the threshold to attain statistical significance is more stringent.&nbsp; Therefore, <strong>reducing the significance level</strong> (eg, from <em>&#945;</em> = 5% to <em>&#945;</em> = 1%) <strong>decreases</strong> the probability of a <strong>type I error</strong> along with the probability of <strong>finding statistical significance</strong> (eg, <em>p</em>-value &lt; 0.05 to <em>p</em>-value &lt; 0.01) <strong>(Choices B and C)</strong>.&nbsp; A decreased significance level also means an <strong>increased confidence level</strong> (1 &#8722; <em>&#945;</em>); therefore, any statistically significant findings can be reported with a greater level of confidence.</p><p><strong>(Choices D and E)</strong>&nbsp; A type II error occurs when a false <em>H</em><font size=\"2\"><sub>0</sub></font> is not rejected (ie, a false negative: not finding a statistically significant difference when one truly exist).&nbsp; The probability of a type II error (known as beta [<em>&#946;</em>]) is the complement of power (1 &ndash; <em>&#946;</em>).&nbsp; Statistical power is the probability of rejecting a false <em>H</em><font size=\"2\"><sub>0</sub></font>.&nbsp; That is, the power to find a statistically significant difference when one truly exists (ie, true positive).&nbsp; Reducing the significance level from 0.05 to 0.01 makes the threshold to attain statistical significance more stringent.&nbsp; Consequently, the study will have less statistical power to detect a statistically significant difference when one truly exists and will have a higher probability of a type II error (the complement of power).</p><p><strong>Educational objective:</strong><br>Reducing the significance level alpha (<em>&#945;</em>) in a study allows researchers to report any significant findings with greater confidence.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17802",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A new biomarker has been identified that allows for the early detection of invasive gastric carcinoma.&nbsp; It has a sensitivity of 89% and a specificity of 85% when compared to endoscopy with multiple biopsies.&nbsp; The test is used in 2 groups: a population in the United States, where 5 out of 100,000 people have gastric cancer, and a population in China, where 100 out of 100,000 people have been diagnosed with the disease.&nbsp; Which of the following is the most accurate statement concerning this new test?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negative predictive value of the test is lower in the American population"
+        },
+        {
+          "id": 2,
+          "text": "Positive predictive value of the test is higher in the Chinese population"
+        },
+        {
+          "id": 3,
+          "text": "Sensitivity of the test is higher in the American population"
+        },
+        {
+          "id": 4,
+          "text": "Specificity of the test is higher in the Chinese population"
+        },
+        {
+          "id": 5,
+          "text": "The test is not reliable in the American population"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><div id=\"div_t32272\"><table class=\"table-default-style table-header-footer-style\"><tbody><tr><td></td><td><p align=\"center\"><strong>Positive condition</strong></p></td><td><p align=\"center\"><strong>Negative condition</strong></p></td><td></td></tr><tr><td><p align=\"center\"><strong>Positive test result</strong></p></td><td><p align=\"center\">TP</p></td><td><p align=\"center\">FP</p></td><td><p align=\"center\">PPV =<br />TP / (TP + FP)</p></td></tr><tr><td><p align=\"center\"><strong>Negative test result</strong></p></td><td><p align=\"center\">FN</p></td><td><p align=\"center\">TN</p></td><td><p align=\"center\">NPV =<br />TN / (TN + FN)</p></td></tr><tr><td></td><td><p align=\"center\">Sensitivity =</p><p align=\"center\">TP / (TP + FN)</p></td><td><p align=\"center\">Specificity =</p><p align=\"center\">TN / (TN + FP)</p></td><td></td></tr><tr><td colspan=\"4\"><p><strong>FN</strong> = false negative; <strong>FP</strong> = false positive; <strong>NPV</strong> = negative predictive value; <strong>PPV</strong> = positive predictive value; <strong>TN</strong> = true negative; <strong>TP</strong> = true positive.</p></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div></p><p>The <strong>positive predictive value</strong> (PPV) is defined as the proportion of individuals with positive test results who actually have the disease.&nbsp; This concept can be understood in terms of probability: given that a patient has a positive test result, what is the likelihood that he or she actually has the disease?&nbsp; PPV depends not only on the sensitivity and specificity of a test, but also on the <strong>prevalence</strong> of the disease in the population being tested.&nbsp; The more common the disease in the population, the more likely it is that a patient with a positive test result actually has the disease.</p><p>If the disease is relatively common (eg, gastric cancer in China), there is a higher probability that a patient who tests positive actually has the disease (ie, more likely to be a true positive).&nbsp; However, if the disease is relatively uncommon (eg, gastric cancer in the United States), a patient who tests positive will have a lower probability of actually having the disease (ie, more likely to be a false positive).</p><p><strong>(Choice A)</strong>&nbsp; Like PPV, the <a href=\"1305\">negative predictive value</a> (NPV) depends on disease prevalence.&nbsp; However, NPV is inversely associated with the prevalence: NPV increases as the disease prevalence decreases.&nbsp; This is because the probability of a true negative result is higher in a population with low disease prevalence (eg, gastric cancer in the United States).</p><p><strong>(Choices C and D)</strong>&nbsp; Sensitivity and specificity are intrinsic test parameters that do not depend on the prevalence of disease in the tested population.</p><p><strong>(Choice E)</strong>&nbsp; Reliability is a measure of the consistency (reproducibility) of a diagnostic test result (ie, if the test is taken multiple times, will the results be the same?).&nbsp; No information is provided to suggest that the gastric cancer biomarker is unreliable.</p><p><strong>Educational objective:</strong><br>Positive and negative predictive values depend on disease prevalence in the tested population.&nbsp; The sensitivity and specificity of a diagnostic test are not affected by disease prevalence.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1169",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A 45-year-old woman comes to the office with a palpable thyroid node.&nbsp; Medical history reveals that she was diagnosed with medulloblastoma during childhood and treated with chemotherapy and external beam radiation.&nbsp; Fine-needle aspiration of the thyroid shows no malignant cells.&nbsp; As the test results are explained to the patient, she asks, &#x22;What are the chances that I really do not have thyroid cancer?&#x22;&nbsp; Which of the following diagnostic test parameters would be most useful for answering this patient&#39;s question?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negative predictive value"
+        },
+        {
+          "id": 2,
+          "text": "Positive predictive value"
+        },
+        {
+          "id": 3,
+          "text": "Sensitivity"
+        },
+        {
+          "id": 4,
+          "text": "Specificity"
+        },
+        {
+          "id": 5,
+          "text": "Validity"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><strong>Negative predictive value</strong> (NPV) is defined as the probability of not having a disease when the test result is negative.&nbsp; NPV is calculated as the proportion of <strong>true negatives</strong> divided by the total number of <strong>negative tests</strong> (true and false negatives); therefore, it varies with the prevalence of disease in the target population.</p><p>The prevalence of a disease in a population may be used as an estimate for the <strong>pretest probability</strong> of having the disease in patients who <strong>closely resemble</strong> the population.&nbsp; A patient with a high pretest probability will have a low NPV with a negative test, whereas a patient with a low pretest probability will have a high NPV with a negative test.</p><p>This patient has a high pretest probability for having thyroid cancer since she most likely received significant radiation exposure to the thyroid during childhood.&nbsp; As such, her negative cytology results would have a lower NPV when compared to another patient with no risk factors for thyroid malignancy who also tests negative.</p><p><strong>(Choice B)</strong>&nbsp; Positive predictive value also varies according to the pretest probability but applies to positive test results.</p><p><strong>(Choices C and D)</strong>&nbsp; Sensitivity and specificity of a test are intrinsic characteristics of a test; their values are fixed and do not vary with the pretest probability of a disease.&nbsp; An ideal diagnostic test should be both highly sensitive and highly specific.&nbsp; In this case, fine-needle aspiration has a high sensitivity and specificity; however, the NPV is a better parameter for addressing the patient&#39;s question (ie, how likely is she to not have thyroid cancer given her negative test result?); in this case her NPV might be low given her prior radiation exposure.</p><p><strong>(Choice E)</strong>&nbsp; Validity represents the accuracy of the test (ie, the test measures what it is supposed to measure).&nbsp; It does not depend on the pretest probability of the disease.</p><p><strong>Educational objective:</strong><br>Negative predictive value (NPV) is the probability of not having a disease when the test result is negative.&nbsp; The NPV will vary with the pretest probability of a disease.&nbsp; A patient with a high probability of having a disease will have a low NPV with a negative test, but a patient with a low probability of having a disease will have a high NPV with a negative test.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1190",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Researchers are developing an enzyme-linked immunosorbent assay test for diagnosing rheumatoid arthritis.&nbsp; The test is designed to detect the presence of serum antibodies against citrullinated proteins.&nbsp; Two test populations with a differing prevalence of rheumatoid arthritis are selected.&nbsp; The researchers plan to assess the test&#39;s performance in the 2 populations by comparing a number of diagnostic test parameters.&nbsp; Which of the following performance measures is most likely to be different between the 2 test populations?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negative likelihood ratio"
+        },
+        {
+          "id": 2,
+          "text": "Positive likelihood ratio"
+        },
+        {
+          "id": 3,
+          "text": "Positive predictive value"
+        },
+        {
+          "id": 4,
+          "text": "Sensitivity"
+        },
+        {
+          "id": 5,
+          "text": "Specificity"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"12165\" src=\"https://www.uworld.com/media/L36481.png\" ></p><p><a href=\"1305\">Predictive values</a> are performance measures of diagnostic tests that are <strong>dependent on the prevalence</strong> of disease in a population of interest.&nbsp; The positive predictive value (<strong>PPV</strong>) is the probability that someone who tests positive actually has the disease.&nbsp; It is calculated by dividing the number of true-positive results by the total number of positive results (ie, <strong>TP / [TP + FP]</strong>).&nbsp; The number of true-positive results depends on the sensitivity, and the number of false-positive results depends on the specificity; the relative proportion of each is determined by the prevalence of disease in the population.</p><p>Populations with a lower disease prevalence have fewer true-positive results and higher numbers of false positives, so the PPV decreases.&nbsp; As disease <a href=\"12309\">prevalence increases</a>, the number of true positives also increases, while the number of false positives decreases, resulting in a <strong>higher PPV</strong>.&nbsp; Similarly, the negative predictive value increases as the disease prevalence decreases.</p><p><strong>(Choices A and B)</strong>&nbsp; Positive and negative likelihood ratios indicate how a particular positive or negative test result influences the pretest probability of having a disease.&nbsp; Likelihood ratios &gt;1 indicate that the test result is associated with the presence of the disease; likelihood ratios &lt;1 mean that the test result is associated with the absence of the disease.&nbsp; Because positive and negative likelihood ratios are based on sensitivity and specificity, they are not affected by disease prevalence.</p><p><strong>(Choices D and E)</strong>&nbsp; Sensitivity and specificity are not affected by disease prevalence.&nbsp; This is because sensitivity is calculated using true positives and false negatives (only people with the disease), and specificity is calculated using true negatives and false positives (only people without the disease).&nbsp; In this case, the same test (with the same sensitivity and specificity characteristics) has been used on 2 different populations with a differing prevalence.</p><p><strong>Educational objective:</strong><br>Various parameters are used to evaluate the accuracy and usefulness of diagnostic tests.&nbsp; Positive and negative predictive values are influenced by disease prevalence in the target population; sensitivity, specificity, and likelihood ratios are not prevalence-dependent.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1271",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A research laboratory is evaluating a new dipstick test for diagnosing urinary tract infections (UTIs).&nbsp; The new test is compared to urinalysis of a midstream urine specimen (considered the diagnostic gold standard) to establish diagnostic test parameters.&nbsp; The study enrolls 300 patients, of which 100 have a UTI as determined by urinalysis.&nbsp; The new dipstick test is determined to be 70% sensitive and 90% specific for the diagnosis of UTIs.&nbsp; How many false positives are present in the study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "20"
+        },
+        {
+          "id": 2,
+          "text": "30"
+        },
+        {
+          "id": 3,
+          "text": "70"
+        },
+        {
+          "id": 4,
+          "text": "120"
+        },
+        {
+          "id": 5,
+          "text": "180"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity and specificity</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><div id=\"div_t34185\"><table class=\"table-default-style\"><tbody><tr><td><p><a name=\"_GoBack\"></a></p></td><td><p align=\"center\"><strong>Disease positive </strong></p></td><td><p align=\"center\"><strong>Disease negative </strong></p></td><td></td></tr><tr><td><p><strong>Test positive </strong></p></td><td><p align=\"center\">a<br>True positive</p></td><td><p align=\"center\">b<br>False positive</p></td><td><p align=\"center\">a + b</p></td></tr><tr><td><p><strong>Test negative </strong></p></td><td><p align=\"center\">c<br>False negative</p></td><td><p align=\"center\">d<br>True negative</p></td><td><p align=\"center\">c + d</p></td></tr><tr><td></td><td><p align=\"center\">a + c</p></td><td><p align=\"center\">b + d</p></td><td></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>Sensitivity = a/(a + c); Specificity = d/(b + d)</p></div><p><strong>False positives</strong> describe people who <strong>test positive</strong> for a disease but <strong>do not actually have it</strong>.</p><p>The number of false positives can be calculated using the test&#39;s specificity and total number of patients without urinary tract infections (UTIs).&nbsp; The <strong>specificity</strong>&nbsp;of a test refers to the number of true negatives (d) divided by the total number of patients without the disease (b + d).&nbsp; In this case, the specificity is 90% (ie, 0.9) and the total number of patients without UTIs (b + d) equals 300 &ndash; 100 = 200.&nbsp; Using this information, the number of <strong>true negatives</strong> (d) can be calculated:</p><blockquote>Specificity = d/(b + d)<br>0.9 = d/200<br>d = 180</blockquote><p>The total number of patients without the disease (b + d) equals 200, and the number of true negatives (d) equals 180.&nbsp; Using this information, the number of false positives (b) can be calculated:</p><blockquote>False positives = (b + d) &#8722; d = 200 &ndash; 180 = 20</blockquote><p>For the sake of thoroughness, the 2 &times; 2 table can be completed as follows.&nbsp; <strong>Sensitivity</strong> refers to the number of true positives (a) divided by all people with the disease (a + c).&nbsp; Repeating the same exercise as above gives the completed table:</p><blockquote>Sensitivity = a/(a + c)<br>0.7 = a/100<br>a = 70<br>c = (a + c) &ndash; a = 100 &#8722; 70 = 30</blockquote><table class=\"table-default-style\"><tbody><tr align=\"center\"><td><p><a name=\"_GoBack\"></a></p></td><td><p align=\"center\"><strong>+ UTI</strong></p></td><td><p align=\"center\"><strong>- UTI</strong></p></td><td></td></tr><tr align=\"center\"><td><p><strong>Test positive </strong></p></td><td><p align=\"center\">70</p></td><td><p align=\"center\">20</p></td><td><p align=\"center\">90</p></td></tr><tr align=\"center\"><td><p><strong>Test negative </strong></p></td><td><p align=\"center\">30</p></td><td><p align=\"center\">180</p></td><td><p align=\"center\">210</p></td></tr><tr align=\"center\"><td></td><td><p align=\"center\">100</p></td><td><p align=\"center\">200</p></td><td></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>The number of true negatives and false positives can be more quickly calculated using the following equations:</p><blockquote>True negatives = (Specificity) * (Number of patients confirmed without the disease)<br>False positives = (1 &#8722; Specificity) * (Number of patients confirmed without the disease)</blockquote><p><strong>Educational objective:</strong><br>Specificity is the number of true negatives divided by the total number of subjects confirmed as not having the disease.</p><blockquote>True negatives = (Specificity) * (Number of patients confirmed without the disease)<br>False positives = (1 &#8722; Specificity) * (Number of patients confirmed without the disease)</blockquote>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1230",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A study investigating a new test for diagnosing acute myocardial infarction (AMI) has just been initiated.&nbsp; The sensitivity of the test is estimated at 75% and the specificity at 80%.&nbsp; The study enrolls 600 patients, of whom 200 are confirmed AMI cases as determined by the diagnostic gold standard.&nbsp; How many false negatives are to be expected in the study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50"
+        },
+        {
+          "id": 2,
+          "text": "80"
+        },
+        {
+          "id": 3,
+          "text": "120"
+        },
+        {
+          "id": 4,
+          "text": "150"
+        },
+        {
+          "id": 5,
+          "text": "400"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity and specificity</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"12241\" src=\"https://www.uworld.com/media/L36677.jpg\" ></p><p>The <strong>sensitivity</strong> of a test determines how well the test categorizes patients who <strong>have the disease</strong> of interest.&nbsp; Tests with higher sensitivity have an increased probability of assigning a positive test result to those patients who truly have the disease; these are considered true positives (rightmost part of the curve).&nbsp; Conversely, patients who <strong>test negative</strong> even though they have the disease are considered <strong>false negatives</strong> (leftmost part of the curve).</p><p>True positives (TP) and false negatives (FN) are complementary (ie, an increase in one parameter is exactly offset by a decrease in the other, such that the total is always equal to the number of confirmed patients).&nbsp; As such, the test sensitivity and number of patients with the disease can be used to calculate the number of each:</p><ul><li>TP = (Sensitivity) &times; (Number of patients with the disease)</li><li>FN = (1 &#8722; Sensitivity) &times; (Number of patients with the disease)</li></ul><p>In this case, the sensitivity of the test is 75% and the total number of patients with confirmed acute myocardial infarction is 200.&nbsp; Therefore, a test that is 75% sensitive will correctly classify 75% of the patients as positive (TP) and incorrectly classify 25% of the patients (1 &#8722; Sensitivity) as negative (FN).</p><p>Using this information, the number of FN can be calculated as follows (<a href=\"12242\">alternate method</a>):</p><ul><li>FN = (1 &#8722; Sensitivity) &times; (Number of patients with the disease) = (1 &#8722; 0.75) &times; 200 = <strong>50</strong></li></ul><p><strong>Educational objective:</strong><br>When undergoing diagnostic testing, patients with the disease can test positive (true positive, TP) or negative (false negative, FN).&nbsp; The sensitivity of a test determines the proportion of patients that are correctly classified:</p><ul><li>TP = (Sensitivity) &times; (Number of patients with the disease)</li><li>FN = (1 &#8722; Sensitivity) &times; (Number of patients with the disease)</li></ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1229",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A new serologic test has been developed for the detection of active pulmonary tuberculosis and is compared to the gold standard of sputum mycobacterial culture.&nbsp; A total of 1000 subjects are randomly selected for testing from a population with a high prevalence of tuberculosis.&nbsp; Results of the study are given below:</p><blockquote><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td></td><td align=\"center\">Sputum culture positive</td><td align=\"center\">Sputum culture negative</td><td></td></tr><tr><td>Serologic test positive</td><td align=\"center\">130</td><td align=\"center\">60</td><td align=\"center\">190</td></tr><tr><td>Serologic test negative</td><td align=\"center\">50</td><td align=\"center\">760</td><td align=\"center\">810</td></tr><tr><td></td><td align=\"center\">180</td><td align=\"center\">820</td><td align=\"center\">1000</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></blockquote><p>Which of the following is the positive predictive value of the test under study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "130/180"
+        },
+        {
+          "id": 2,
+          "text": "130/190"
+        },
+        {
+          "id": 3,
+          "text": "180/1000"
+        },
+        {
+          "id": 4,
+          "text": "760/810"
+        },
+        {
+          "id": 5,
+          "text": "760/820"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>The <strong>positive predictive value (PPV)</strong> of a test answers the question: If the test result is positive, what is the probability that a patient has the disease?&nbsp; PPV is calculated as the proportion of subjects who truly have the disease among all those with a positive test result.&nbsp; In contrast, the <strong>negative predictive value (NPV)</strong> of a test answers the question: If the test result is negative, what is the probability that a patient does not have the disease?&nbsp; It is calculated as the proportion of subjects who are truly free of disease among all those with a negative test result.&nbsp; Predictive values are of prime importance to physicians because, in clinical practice, patients will present more often with a positive or negative test than with a defined diseased or disease-free state.</p><p>Consider the following 2 &times; 2 (contingency) table:</p><p><div id=\"div_t32272\"><table class=\"table-default-style table-header-footer-style\"><tbody><tr><td></td><td><p align=\"center\"><strong>Positive condition</strong></p></td><td><p align=\"center\"><strong>Negative condition</strong></p></td><td></td></tr><tr><td><p align=\"center\"><strong>Positive test result</strong></p></td><td><p align=\"center\">TP</p></td><td><p align=\"center\">FP</p></td><td><p align=\"center\">PPV =<br />TP / (TP + FP)</p></td></tr><tr><td><p align=\"center\"><strong>Negative test result</strong></p></td><td><p align=\"center\">FN</p></td><td><p align=\"center\">TN</p></td><td><p align=\"center\">NPV =<br />TN / (TN + FN)</p></td></tr><tr><td></td><td><p align=\"center\">Sensitivity =</p><p align=\"center\">TP / (TP + FN)</p></td><td><p align=\"center\">Specificity =</p><p align=\"center\">TN / (TN + FP)</p></td><td></td></tr><tr><td colspan=\"4\"><p><strong>FN</strong> = false negative; <strong>FP</strong> = false positive; <strong>NPV</strong> = negative predictive value; <strong>PPV</strong> = positive predictive value; <strong>TN</strong> = true negative; <strong>TP</strong> = true positive.</p></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div></p><p>PPV = TP / (TP + FP), where TP is true positives and FP is false positives.</p><p>NPV = TN / (TN + FN), where TN is true negatives and FN is false negatives.</p><p>In this case, PPV = 130 / (130 + 60) = 130/190.</p><p><strong>(Choices A and E)</strong>&nbsp; Sensitivity is a test&#39;s ability to correctly identify individuals with the disease.&nbsp; Sensitivity = TP / (TP + FN) = 130 / (130 + 50) = 130/180.&nbsp; Specificity is a test&#39;s ability to correctly identify individuals without the disease.&nbsp; Specificity = TN / (TN + FP) = 760 / (760 + 60) = 760/820.</p><p><strong>(Choice C)</strong>&nbsp; The total number of individuals who have tuberculosis (based on the gold standard of positive sputum culture) is 180.&nbsp; The total number of individuals in this sample is 1000.&nbsp; Therefore, the prevalence of tuberculosis in this sample is 180/1000.</p><p><strong>(Choice D)</strong>&nbsp; NPV = 760 / (760 + 50) = 760/810.</p><p><strong>Educational objective:</strong><br>The positive predictive value (PPV) of a test answers the question: If the test result is positive, what is the probability that a patient has the disease?&nbsp; PPV = true positives / (true positives + false positives).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1192",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Carbamoyl phosphate synthetase I deficiency is an inherited disorder characterized by accumulation of ammonia in the blood.&nbsp; The most severe form occurs in the first 24-72 hours following birth, after feeding begins and milk proteins start to be broken down in the liver.&nbsp; If left untreated, affected neonates often die due to severe metabolic derangements; survivors often develop permanent neurologic injury.&nbsp; The estimated incidence of carbamoyl phosphate synthetase I deficiency is about 1 in 800,000 newborns.&nbsp; If a decision is made to test all newborns for this disease, then this initial test should be designed to have a high:</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cutoff value"
+        },
+        {
+          "id": 2,
+          "text": "Number of true negatives"
+        },
+        {
+          "id": 3,
+          "text": "Positive predictive value"
+        },
+        {
+          "id": 4,
+          "text": "Sensitivity"
+        },
+        {
+          "id": 5,
+          "text": "Specificity"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity and specificity</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>Carbamoyl phosphate synthetase I deficiency is a rare disorder (incidence 1 in 800,000 newborns) with serious and possible irreversible consequences if not detected and treated early.&nbsp; Therefore, it is important to identify all individuals who potentially have the disease using a <strong>screening test</strong> that can be performed on a large number of newborns.</p><p>Although an ideal screening test would be highly sensitive and specific, developing a test that has both of these properties is often not possible, and so a compromise must be made.&nbsp; The sensitivity of a test refers to its ability to correctly identify those with the disease:&nbsp; it is the probability of the test returning a positive result in a person with the disease.&nbsp; A <strong>highly sensitive test</strong> will ensure that most patients with the disease will have a positive test result (leading to few false negative results); therefore, <strong>fewer cases of disease are missed</strong>.&nbsp; Given a test with high <u>s</u>e<u>n</u>sitivity, a <u>n</u>egative result would help to rule <u>out</u>&nbsp;a diagnosis (SnNout).&nbsp; This is important during screening for <strong>life-threatening diseases</strong>, even if obtaining a high sensitivity causes an increased numbers of false positives (ie, reduced specificity).</p><p><strong>(Choice A)</strong>&nbsp; Setting a high cutoff value typically (but not always) produces higher specificity and lower sensitivity.</p><p><strong>(Choices B and E)</strong>&nbsp; Specificity represents the ability of a test to correctly identify those without the disease.&nbsp; A very specific test has a low rate of false positives, so most healthy patients will have a negative test result (true negative).&nbsp; Given a test with high <u>sp</u>ecificity, a <u>p</u>ositive result would help to rule <u>in</u> a diagnosis (SpPin).&nbsp; Confirmatory tests with high specificity are often used on patients who test positive on a screening test to ensure that a patient actually has the disease.</p><p><strong>(Choice C)</strong>&nbsp; Positive predictive value refers to the probability that a disease is present given a positive test result.&nbsp; Positive predictive value depends on disease prevalence.&nbsp; When screening patients for a rare disorder, positive predictive value will often be low due to a high number of false positives.</p><p><strong>Educational objective:</strong><br>The sensitivity of a test refers to its ability to correctly identify those with the disease.&nbsp; A highly sensitive test should always be considered over a highly specific test when screening for life-threatening diseases, where identification of every person with the disease is important.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1300",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A 54-year-old man with hypertension and hyperlipidemia who came to the emergency department with chest pain wants to know if he is having a heart attack.&nbsp; Test A is newly available for diagnosing myocardial infarction (MI).&nbsp; In a recent study, the results of test A (compared to a gold standard diagnosis of MI) were as follows:</p><blockquote><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td></td><td align=\"center\">MI</td><td align=\"center\">No MI</td></tr><tr><td>Test A positive</td><td align=\"center\">200</td><td align=\"center\">50</td></tr><tr><td>Test A negative</td><td align=\"center\">120</td><td align=\"center\">80</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></blockquote><p>The patient has a positive result on test A.&nbsp; Assuming his pre-test probability is equivalent to the prevalence of MI in the study, what is the probability that the patient has an MI?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "40%"
+        },
+        {
+          "id": 2,
+          "text": "50%"
+        },
+        {
+          "id": 3,
+          "text": "60%"
+        },
+        {
+          "id": 4,
+          "text": "80%"
+        },
+        {
+          "id": 5,
+          "text": "90%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>The <strong>positive predictive value (PPV)</strong> of a diagnostic test answers the following question: Given a positive test result, what is the probability that a patient has the disease?&nbsp; PPV corresponds to the number of people with the disease who test positive among all those who test positive.&nbsp; Using a standard contingency (2 &times; 2) table, PPV = a / (a + b).</p><p><img id=\"6800\"  src=\"https://www.uworld.com/media/L21577.jpg\" draggable=\"false\" ></p><p>Unlike specificity and sensitivity, PPV varies with disease prevalence.&nbsp; If disease prevalence increases, PPV increases; similarly, PPV decreases with decreasing prevalence.&nbsp; In this question, the patient&#39;s pre-test probability (which takes into account clinical judgment regarding how likely it is that he has an MI) is assumed to be equivalent to the prevalence of MI in the study, making the results directly translatable.&nbsp; Therefore, PPV = 200 / (200+50) = 200/250 = 0.8 or 80%.&nbsp; In other instances, clinicians may assume that pre-test prevalence equals disease prevalence in the population.</p><p><strong>Educational objective:</strong><br>Positive predictive value represents the probability of truly having a disease given a positive test result.&nbsp; It increases with increasing disease prevalence and decreases with decreasing disease prevalence.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1232",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Plasma homocysteine levels are measured in patients with acute coronary syndrome who are treated at a large community hospital.&nbsp; The mean plasma homocysteine level in this group is determined to be 11.1 &micro;mol/L with a standard deviation of 1.2 &micro;mol/L. &nbsp;In a separate group of patients hospitalized on the general ward in the same hospital, the mean plasma level is 9.5 &micro;mol/L and the standard deviation is 1.3 &micro;mol/L.&nbsp; Which of the following statistical methods should be used to compare the mean homocysteine levels of these 2 groups of patients?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Two-sample t test"
+        },
+        {
+          "id": 2,
+          "text": "Linear regression"
+        },
+        {
+          "id": 3,
+          "text": "Correlation coefficient"
+        },
+        {
+          "id": 4,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 5,
+          "text": "Meta-analysis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Statistical tests</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img id=\"6805\"  src=\"https://www.uworld.com/media/L10473.jpg\" draggable=\"false\" ></p><p>The two-sample t test is commonly employed to determine if the means of 2 populations are equal.&nbsp; Several statistical approaches can be used, but the basic numerical requirements needed to perform this test are the 2 mean values, the sample variances (eg, standard deviations), and the sample sizes.&nbsp; The t statistic is then calculated, from which the p value can be determined.&nbsp; If p &lt; 0.05, the null hypothesis (which assumes that there is no difference between 2 groups) is rejected and the 2 means are assumed to be statistically different.</p><p><strong>(Choice B)</strong>&nbsp; Linear regression is used to model the linear relationship between a dependent variable and an independent variable.&nbsp; For example, linear regression could be used to determine the relationship (described in terms of a trend line) between the number of cigarettes smoked per day and the number of yearly hospitalizations in COPD patients.</p><p><strong>(Choice C)</strong>&nbsp; The correlation coefficient is a measure of the strength and direction of a linear relationship between 2 variables.&nbsp; For example, a study may report a correlation coefficient describing the association between estrogen levels and breast cancer risk in postmenopausal women.&nbsp; It is different from linear regression in that a single number is reported describing the strength and magnitude of the association.</p><p><strong>(Choice D)</strong>&nbsp; The chi-square test is most appropriate for use with categorical data.&nbsp; It can be used to evaluate whether the expected frequency of an occurrence is consistent with the observed frequency of that occurrence (&#x93;goodness of fit&#x94;).&nbsp; For instance, a study evaluating Mendelian inheritance of red and green seed colors would use a chi-square test to compare the observed and expected proportions of each seed type.</p><p><strong>(Choice E)</strong>&nbsp; Meta-analysis is an epidemiologic method of analyzing pooled data from several studies, thereby increasing the statistical power beyond that of the individual studies.</p><p><strong>Educational objective:</strong><br>The two-sample t test is a statistical method commonly employed to compare the means of 2 groups of subjects.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1283",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A 34-year-old man is admitted to the hospital with acute chest pain.&nbsp; An ECG is obtained in the emergency department and shows ST segment elevation in leads II, III, and aVF.&nbsp; A sample of blood is taken from the patient, and a new test is used to measure plasma homocysteine levels.&nbsp; The test is repeated 3 times with his blood sample, and the results are 11.8 &micro;mol/L, 9.2 &micro;mol/L, and 13.7 &micro;mol/L (laboratory reference range: 4-14).&nbsp; Which of the following parameters is most likely to be low based on the results of the new test?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Accuracy"
+        },
+        {
+          "id": 2,
+          "text": "Precision"
+        },
+        {
+          "id": 3,
+          "text": "Sensitivity"
+        },
+        {
+          "id": 4,
+          "text": "Specificity"
+        },
+        {
+          "id": 5,
+          "text": "Validity"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Validity And Reliability</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"10561\" src=\"https://www.uworld.com/media/L34793.jpg\" ></p><p>A measurement tool should be precise and accurate to be useful in the clinical setting.&nbsp; Precision and accuracy are defined as follows:</p><ul><li><p><strong>Precision</strong> (reliability) is the ability of a test to reproduce identical or similar results with repeated measurements (bottom half of figure).</p></li><li><p><strong>Accuracy</strong> (validity) is the ability of a test to measure what it is supposed to measure.&nbsp; For a new test to be accurate, its results should be equivalent to the results obtained with a &#x22;gold standard&#x22; (eg, best conventional test available) on the same individual (right half of figure).</p></li></ul><p>A precise test gives similar or very close results on repeat measurements.&nbsp; In this example, repeat measurements of the same sample yielded different results; therefore, the new test has low precision.</p><p><strong>(Choices A and E)</strong>&nbsp; To evaluate the accuracy of a new test, its results should be compared to those obtained with the gold standard test on the same individual.&nbsp; A test can be highly precise (ie, gives very similar results on repeat measurements) but inaccurate (ie, the measurements are all incorrect compared to the gold standard).&nbsp; A test that is highly imprecise is also highly inaccurate.&nbsp; In this case, as there were no test results obtained using the &#x22;gold standard&#x22;, the accuracy/validity of the test cannot be determined.</p><p><strong>(Choices C and D)</strong>&nbsp; Sensitivity is defined as a test&#39;s ability to identify the true presence of disease, whereas specificity is defined as a test&#39;s ability to identify the true absence of disease.&nbsp; Poor reliability can limit the sensitivity or specificity of a test if the results from healthy and diseased populations are close in value.</p><p><strong>Educational objective:</strong><br>A precise/reliable test is reproducible in that it gives similar results on repeat measurements.&nbsp; Reliability is maximal when random error is minimal.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1278",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A novel serum biomarker, UWRLD99, is being evaluated for early detection of pancreatic cancer.&nbsp; The concentration of UWRLD99 (measured in international units [IU] per dL) has been found to be elevated in patients with pancreatic adenocarcinoma.&nbsp; Test results in 200 volunteers (&#x22;healthy&#x22;) and 190 patients with biopsy-proven pancreatic cancer (&#x22;diseased&#x22;) are given in the figure below.&nbsp; The investigators determined the sensitivity and specificity of UWRLD99 for pancreatic cancer using a cutoff of 200 IU/dL (indicated by the solid vertical line).</p><p><img id=\"8887\" src=\"https://www.uworld.com/media/U32506.jpg\"  draggable=\"false\" ></p><p>If they had instead used a lower cutoff as indicated by the dashed vertical line, which of the following would most likely be seen?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Higher number of false negatives"
+        },
+        {
+          "id": 2,
+          "text": "Higher positive predictive value"
+        },
+        {
+          "id": 3,
+          "text": "Higher sensitivity"
+        },
+        {
+          "id": 4,
+          "text": "Lower number of false positives"
+        },
+        {
+          "id": 5,
+          "text": "Lower number of true positives"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Quantitative diagnostic tests</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img id=\"8888\" src=\"https://www.uworld.com/media/L32506.jpg\"  draggable=\"false\" ></p><p>Important parameters of diagnostic tests include the following:</p><ul><li>True positives (TP) represent diseased individuals with positive test results.</li><li>True negatives (TN) represent healthy individuals with negative test results.</li><li>False positives (FP) represent healthy individuals with positive test results.</li><li>False negatives (FN) represent diseased individuals with negative test results.</li><li><strong>S</strong>e<strong>n</strong>sitivity (TP/ [TP + FN]) represents a test&#39;s ability to correctly identify diseased individuals from among all individuals.&nbsp; A test with high sensitivity has a low FN rate (important for screening purposes).&nbsp; With a highly sensitive test, most diseased patients will have a positive test result (and a <strong>n</strong>egative test result would help rule <strong>out</strong> the disease [<strong>SnNOut</strong>]).</li><li><strong>Sp</strong>ecificity (TN/ [TN + FP]) represents the ability of a test to exclude those without the disease.&nbsp; A very specific test has a low FP rate (important for confirmatory tests).&nbsp; With a highly specific test, most healthy patients will have a negative test result (and a <strong>p</strong>ositive test result would help rule <strong>in</strong> the disease <strong>[SpPIn</strong>]).</li></ul><p>The <strong>cutoff value</strong> of a quantitative diagnostic test determines whether a given result is interpreted as <strong>positive or negative</strong>.&nbsp; Depending on the disease or condition being tested for, sensitivity or specificity may be preferred and the cutoff value adjusted accordingly.&nbsp; A cutoff value just outside the overlapping region of the curves can maximize the sensitivity or specificity at 100% by correctly classifying all diseased or healthy individuals, respectively.</p><p>In the above example, changing the cutoff point to a <strong>lower value</strong> (shift to the left) would cause more patients with the disease to test positive (&#8593;TP, &#8595;FN), <strong>increasing the sensitivity</strong> of the test.&nbsp; However, as a consequence, more patients without the disease would also test positive (&#8595;TN, &#8593;FP), resulting in <strong>decreased specificity</strong>.</p><p><strong>(Choices A, D, and E)</strong>&nbsp; Raising the cutoff value (shift to the right) would cause fewer individuals with the disease to have a positive test result (&#8595;TP, &#8593;FN), so sensitivity would decrease.&nbsp; Fewer individuals without the disease would also test positive (&#8593;TN, &#8595;FP), so specificity would increase.</p><p><strong>(Choice B)</strong>&nbsp; Positive predictive value (PPV = TP / [TP + FP]) represents the probability that a patient with a positive test result actually has the disease.&nbsp; In this case, the lower cutoff value would increase both TP and FP; how this affects the PPV depends on <strong>disease prevalence</strong>, which is not provided.&nbsp; In a population with very low disease prevalence, the number of FP would be expected to increase proportionately more than the number of TP, which would lower the PPV.</p><p><strong>Educational objective:</strong><br>The cutoff value of a quantitative diagnostic test determines whether a given result is interpreted as positive or negative.&nbsp; Lowering the cutoff point typically causes more patients with the disease to test positive, decreasing the number of false negatives and increasing test sensitivity.&nbsp; Consequently, more patients without the disease will also test positive, resulting in an increased number of false positives and decreased specificity.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1191",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A research laboratory develops a new serologic test for detecting prostate cancer.&nbsp; The new assay is compared to transrectal ultrasound-guided prostate biopsy to determine sensitivity and specificity parameters.&nbsp; It is found that the test result is negative in 95% of patients who do not have the disease.&nbsp; If the new assay is used on 8 blood samples taken from patients without prostate cancer, what is the probability of all 8 test results coming back negative?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.05 &times; 8"
+        },
+        {
+          "id": 2,
+          "text": "0.95 &times; 8"
+        },
+        {
+          "id": 3,
+          "text": "0.058"
+        },
+        {
+          "id": 4,
+          "text": "0.958"
+        },
+        {
+          "id": 5,
+          "text": "1 &#8722; 0.058"
+        },
+        {
+          "id": 6,
+          "text": "1 &#8722; 0.958"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Probability theory</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>Each of the 8 blood sample results is an <strong>independent event</strong> (ie, one patient&#39;s result has no impact on another&#39;s) with a 0.95 (95%) probability of correctly testing negative and a 0.05 (5%) probability of incorrectly testing positive.&nbsp; To calculate the chance of all 8 tests testing negative, <strong>multiply the probability</strong> of each test returning a negative result:</p><blockquote>0.95 &times; 0.95 &times; 0.95 &times; 0.95 &times; 0.95 &times; 0.95 &times; 0.95 &times; 0.95 = <strong>0.95<font size=\"2\"><sup>8</sup></font></strong></blockquote><p><strong>(Choices A and B)</strong>&nbsp; The value 0.05 &times; 8 is equivalent to adding the probability of a sample testing positive 8 times, and 0.95 &times; 8 is equivalent to adding the probability of a sample testing negative 8 times.&nbsp; However, the combined probability for a series of independent events is calculated using multiplication, not addition.&nbsp; For instance, when flipping a coin twice the probability of getting 2 heads in a row is not 0.5 + 0.5 = 0.5 &times; 2 = 1 (100%) but rather 0.5 &times; 0.5 = 0.25 (25%).</p><p><strong>(Choice C)</strong>&nbsp; The probability of all 8 samples incorrectly testing positive is given by 0.05<font size=\"2\"><sup>8</sup></font>.</p><p><strong>(Choices E and F)</strong>&nbsp; Overall, 2 outcomes are possible:&nbsp; either all 8 samples will return the same test result or at least 1 sample will test differently.&nbsp; Because the total probability must add up to 1 (100%) and the probability that all 8 samples will return negative is given by 0.95<font size=\"2\"><sup>8</sup></font>, the probability of at least 1 sample testing positive is 1 - 0.95<font size=\"2\"><sup>8</sup></font>.&nbsp; Conversely, the probability that all 8 samples will return positive is 0.05<font size=\"2\"><sup>8</sup></font> while the probability of at least 1 sample testing negative is 1 - 0.05<font size=\"2\"><sup>8</sup></font>.</p><p><strong>Educational objective:</strong><br>If events are independent, the probability that all events will turn out the same is the product of the separate probabilities for each event.&nbsp; The probability of at least 1 event turning out differently is given as 1 - P(all events being the same).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1284",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A new test to diagnose urinary tract infections in women is being evaluated.&nbsp; The comparison gold standard is positive urine dipstick plus urine culture.&nbsp; Results of the study are given below.</p><blockquote><table border=\"1\" cellpadding=\"5\" cellspacing=\"0\"><tbody><tr><td></td><td align=\"center\">Positive urine dipstick &amp; culture</td><td align=\"center\">Negative urine dipstick &amp; culture</td></tr><tr><td align=\"center\">Test positive</td><td align=\"center\">60</td><td align=\"center\">20</td></tr><tr><td align=\"center\">Test negative</td><td align=\"center\">140</td><td align=\"center\">180</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></blockquote><p>What is the new test&#39;s specificity?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "10%"
+        },
+        {
+          "id": 2,
+          "text": "30%"
+        },
+        {
+          "id": 3,
+          "text": "50%"
+        },
+        {
+          "id": 4,
+          "text": "70%"
+        },
+        {
+          "id": 5,
+          "text": "90%"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><div id=\"div_t32272\"><table class=\"table-default-style table-header-footer-style\"><tbody><tr><td></td><td><p align=\"center\"><strong>Positive condition</strong></p></td><td><p align=\"center\"><strong>Negative condition</strong></p></td><td></td></tr><tr><td><p align=\"center\"><strong>Positive test result</strong></p></td><td><p align=\"center\">TP</p></td><td><p align=\"center\">FP</p></td><td><p align=\"center\">PPV =<br />TP / (TP + FP)</p></td></tr><tr><td><p align=\"center\"><strong>Negative test result</strong></p></td><td><p align=\"center\">FN</p></td><td><p align=\"center\">TN</p></td><td><p align=\"center\">NPV =<br />TN / (TN + FN)</p></td></tr><tr><td></td><td><p align=\"center\">Sensitivity =</p><p align=\"center\">TP / (TP + FN)</p></td><td><p align=\"center\">Specificity =</p><p align=\"center\">TN / (TN + FP)</p></td><td></td></tr><tr><td colspan=\"4\"><p><strong>FN</strong> = false negative; <strong>FP</strong> = false positive; <strong>NPV</strong> = negative predictive value; <strong>PPV</strong> = positive predictive value; <strong>TN</strong> = true negative; <strong>TP</strong> = true positive.</p></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div></p><p>The <strong>specificity</strong> of a test refers to its ability to correctly identify individuals without the disease; it is the number of true negatives (TN) divided by all those without the disease.&nbsp; Specificity should be high in <strong>confirmatory</strong> tests to decrease the number of false positives (FP).&nbsp; Using a generic 2&times;2 (contingency) table, specificity can be calculated from: TN / (TN + FP).&nbsp; In this case:</p><blockquote>Specificity = TN / (TN + FP) = 180 / (180 + 20) = 180/200 = 0.90 (or 90%)</blockquote><p><strong>(Choice A)</strong>&nbsp; In this example, FP / (TN + FP) = 20 / (180 + 20) = 20/200 = 10%.&nbsp; This value is called the false positive rate, which is equal to (1 &ndash; specificity).&nbsp; It represents the probability of a false positive test result in a patient who in reality is free of disease.</p><p><strong>(Choices B and D)</strong>&nbsp; Sensitivity (a test&#39;s ability to correctly identify individuals with the disease) can be given by TP / (TP + FN), where TP is true positives and FN is false negatives.&nbsp; In this example, sensitivity = TP / (TP + FN) = 60 / (60 + 140) = 60/200 = 0.30 (or 30%).&nbsp; The false negative rate (= 1 &ndash; sensitivity) is given by FN / (TP + FN) = 140 / (60 + 140) = 140/200 = 0.70 (or 70%).&nbsp; It is the probability of a false negative test result in a patient who in reality has the disease.</p><p><strong>(Choice C)</strong>&nbsp; From a total of 400 patients (= 60 + 140 + 20 + 180), there are 200 patients (= 60 + 140) who have a urinary tract infection (UTI) based on the gold standard.&nbsp; The prevalence of UTIs is therefore 200/400 = 0.50 (or 50%).</p><p><strong>Educational objective:</strong><br>The specificity of a test is its ability to correctly identify individuals without the disease.&nbsp; Specificity should be high in confirmatory tests to decrease false positives.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1178",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>An 89-year-old man is brought to a geriatric clinic by family members who are concerned that he is developing dementia due to recent worsening of his memory.&nbsp; The attending physician uses a new cognitive test (test X) to help rule out the possibility of dementia.&nbsp; The patient&#39;s test result is negative.&nbsp; A study evaluating the efficacy of test X in a sample of 200 individuals age <u>&gt;</u>85, in which the prevalence of dementia is 50%, has determined that the test has a specificity of 80% and a sensitivity of 90%.&nbsp; Assuming that this patient&#39;s pretest probability of having dementia is equivalent to the disease prevalence in the study population, what is the probability that this patient truly does not have dementia?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "18%"
+        },
+        {
+          "id": 2,
+          "text": "53%"
+        },
+        {
+          "id": 3,
+          "text": "66%"
+        },
+        {
+          "id": 4,
+          "text": "82%"
+        },
+        {
+          "id": 5,
+          "text": "89%"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>The <strong>negative predictive value</strong> (NPV) of a diagnostic test is the probability that a patient truly <strong>does not have the disease</strong> when the patient receives a <strong>negative test</strong> result.&nbsp; It can be calculated from study data as follows:</p><p align=\"center\">NPV = number of true negatives / total number of negative tests</p><p>To determine the NPV in this case, it helps to summarize the results of the efficacy study in a <a href=\"1063\">2 &times; 2 table</a>.&nbsp; The study evaluated 200 individuals in a population with a 50% prevalence of dementia (ie, 100 patients had dementia while 100 did not).&nbsp; Knowing that specificity (ie, true negatives/total disease negatives) and sensitivity (ie, true positives/total disease positives) are 80% and 90%, respectively, the following 2 &times; 2 table can be created:</p><p><img draggable=\"false\" id=\"10557\" src=\"https://www.uworld.com/media/L34817.png\" ></p><p>The NPV can now be estimated as follows:</p><p align=\"center\">NPV = number of true negatives (d) / total number of negative tests (c + d)</p><p align=\"center\">NPV = d / (c + d) = 80 / (10 + 80) = 0.889 = ~ <strong>89%</strong></p><p>Unlike sensitivity and specificity, positive and negative predictive values vary based on the prevalence of the disease.&nbsp; In fact, the NPV is inversely proportional to the prevalence of a disease (eg, NPV &#8595; as disease prevalence &#8593;).&nbsp; For the NPV to be applicable to an individual patient, that patient&#39;s <strong>pretest probability</strong> (eg, probability of having the disease before testing) must be <strong>similar</strong> to the <strong>prevalence of disease</strong> in the population where the study was conducted.&nbsp; The question says to assume that the patient&#39;s pretest probability is equivalent to the disease prevalence in the study population, so the NPV calculated in the study is generalizable to this patient.</p><p><strong>Educational objective:</strong><br>Negative predictive value (NPV) represents the probability of not having a disease given a negative test result.&nbsp; NPV is inversely proportional to the prevalence of a disease.&nbsp; When a patient has characteristics similar to the overall population (eg, age, sex, risk factor status), the disease prevalence is a valid estimate of the pretest probability of disease.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1233",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A new tumor marker is being investigated for its usefulness in diagnosing ovarian cancer.&nbsp; A sample of 400 women is stratified into 2 groups based on the presence or absence of <em>BRCA</em> mutations.&nbsp; Serum levels of the new marker are obtained in the 2 groups; in addition, both groups of women undergo conventional screening to determine their disease status.&nbsp; The curves on the top represent the distribution of the new serum marker in women with <em>BRCA</em> mutations, and the curves on the bottom represent the distribution of the new serum marker in women without the <em>BRCA</em> mutations.</p><p><img draggable=\"false\" id=\"10555\" src=\"https://www.uworld.com/media/U34833.jpg\" ></p><p>The proposed serum marker cutoff value for both populations is shown.&nbsp; Use of the new serum marker in women with <em>BRCA</em> mutations, compared with those without <em>BRCA</em> mutations, is associated with which of the following?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Higher sensitivity and higher specificity"
+        },
+        {
+          "id": 2,
+          "text": "Higher sensitivity and lower specificity"
+        },
+        {
+          "id": 3,
+          "text": "Higher sensitivity and same specificity"
+        },
+        {
+          "id": 4,
+          "text": "Lower sensitivity and higher specificity"
+        },
+        {
+          "id": 5,
+          "text": "Lower sensitivity and lower specificity"
+        },
+        {
+          "id": 6,
+          "text": "Lower sensitivity and unchanged specificity"
+        },
+        {
+          "id": 7,
+          "text": "Unchanged sensitivity and unchanged specificity"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity and specificity</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"10556\" src=\"https://www.uworld.com/media/L34833.jpg\" ></p><p>The cutoff value of a quantitative diagnostic test determines whether a given result is interpreted as positive or negative.&nbsp; When there is <strong>overlap between</strong> the serum values of the <strong>healthy and diseased populations</strong>, a cutoff value that correctly categorizes all individuals in both populations cannot be chosen.&nbsp; This <strong>limits the sensitivity and specificity</strong> of the test due to the presence of false positive (FP) and/or false negative (FN) individuals.</p><p>Sensitivity represents the ability of a test to correctly identify those with a given disease.&nbsp; It is calculated as the number of patients correctly testing positive (TP) divided by the total number of patients with the disease (TP / [TP + FN]).&nbsp; Specificity represents the ability of a test to correctly identify those without a given disease.&nbsp; It is calculated as the number of patients correctly testing negative (TN) divided by the total number of patients without the disease (TN / [TN + FP]).</p><p>In this case, values of the serum marker in women with <em>BRCA</em> mutations show <strong>decreased overlap</strong> between the healthy and diseased curves of women with <em>BRCA</em> mutations (curves on the top) compared with women without <em>BRCA</em> mutations (curves on the bottom).&nbsp; The corresponding decrease in the number of FPs and FNs means the new serum marker has <strong>higher sensitivity and specificity</strong> (ie, better performance) in women with <em>BRCA</em> mutations.</p><p><strong>Educational objective:</strong><br>The degree of overlap between the healthy and the diseased population curves limits the maximum combined sensitivity and specificity of a quantitative diagnostic test.&nbsp; The degree to which sensitivity or specificity is affected depends on the chosen cutoff value.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1285",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Researchers want&nbsp;to study the effects of labyrinthectomy with cochlear implantation on hearing, vertigo, and tinnitus.&nbsp; A random sample of medical charts is selected from a cohort of patients who had undergone labyrinthectomy with cochlear implantation in the same ear for intractable vertigo and hearing loss and who had documentation of both preoperative and postoperative audiometric evaluations.&nbsp; Tinnitus is quantified using the Tinnitus Handicap Inventory (THI) before and after the interventions.&nbsp; The THI score ranges from 0 to 100, with higher values indicating greater tinnitus severity.&nbsp; Which of the following statistical tests is most appropriate for comparing preoperative and postoperative THI scores?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Analysis of variance"
+        },
+        {
+          "id": 2,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 3,
+          "text": "Correlation analysis"
+        },
+        {
+          "id": 4,
+          "text": "Meta-analysis"
+        },
+        {
+          "id": 5,
+          "text": "Paired t-test"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Statistical tests</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><div id=\"div_t35860\"><table class=\"table-default-style table-footer-only-style\"><tbody><tr><td></td><td></td><td colspan=\"2\"><p align=\"center\"><strong>Dependent variable</strong></p></td></tr><tr><td></td><td></td><td><p align=\"center\"><em>Qualitative (categorical)</em></p></td><td><p align=\"center\"><em>Quantitative </em></p></td></tr><tr><td rowspan=\"2\"><p align=\"center\"><strong>Independent variable</strong></p></td><td><p align=\"center\"><em>Qualitative (categorical)</em></p></td><td><p align=\"center\">Chi-square, logistic regression*</p></td><td><p align=\"center\"><em>t</em> test, ANOVA, linear regression</p></td></tr><tr><td><p align=\"center\"><em>Quantitative</em></p></td><td><p align=\"center\">Logistic regression*</p></td><td><p align=\"center\">Correlation, linear regression</p></td></tr><tr><td colspan=\"4\"><p>*Dependent variable must be dichotomous.</p><p><strong>ANOVA</strong> = &nbsp;analysis of variance.</p></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div><p>Variables are broadly classified as qualitative (ie, categorical) or quantitative (ie, continuous) based on their scale of measurement.&nbsp; <strong>Qualitative variables</strong> (eg, type of treatment, blood type) represent categories or groups, whereas <strong>quantitative variables</strong> (eg, temperature, glucose levels) represent numerical values.&nbsp; The scale of measurement of the dependent (eg, outcome) and independent (eg, exposures, risk factors) variables in a study determines the correct statistical test for any given situation.</p><p>A <em><strong>t</strong></em><strong>-test</strong> compares the <strong>mean of 2 groups</strong>.&nbsp; It requires that a quantitative dependent variable (ie, outcome) be evaluated in 2 groups that are classified based upon a categorical independent variable (ie, exposure).</p><p>In this study:</p><ul><li><p>The quantitative dependent variable was the <strong>Tinnitus Handicap Inventory (THI) score</strong>.</p></li><li><p>The categorical independent variable was the <strong>audiometric evaluation</strong> (with categories &#x22;preoperative&#x22; and &#x22;postoperative&#x22;).</p></li></ul><p>A <em>t</em>-test will determine whether there is a statistically significant difference in mean THI scores between the preoperative and postoperative audiometric evaluations.&nbsp; A large, statistically significant difference in mean scores indicates that labyrinthectomy with cochlear implantation is associated with changes in tinnitus (ie, the null hypothesis is rejected).</p><p>There are 2 types of <em>t</em>-tests: the independent samples <em>t</em>-test (used when 2 groups are independent)&nbsp;and the&nbsp;<strong>paired <em>t</em>-test</strong> (used with 2 related groups with matched pairs).&nbsp; Matched groups are formed when each observation in one group is paired with an observation from the other group.&nbsp; Examples include a study in which individuals have been assessed twice (eg, before and after an intervention) and one in which 2 groups of individuals have been matched based on certain attributes (eg, age, severity of disease).&nbsp; In this case, THI scores are assessed twice for each patient (preoperative and postoperative audiometric evaluations); therefore, a paired <em>t</em>-test is used.</p><p><strong>(Choice A)</strong>&nbsp; The analysis of variance (ANOVA) test compares the mean of &#8805;3 independent groups, as in a study comparing serum ferritin concentrations (ie, quantitative variable) in children (age 0-17), adults (age 18-59), and seniors (age &#8805;60).</p><p><strong>(Choice B)</strong>&nbsp; The chi-square test evaluates the association between 2 categorical variables, as in a study evaluating the association between sex (ie, &#x22;male&#x22; and &#x22;female&#x22;) and myocardial infarction (ie, presence or absence).</p><p><strong>(Choice C)</strong>&nbsp; A correlation analysis uses the <a href=\"7183\">correlation coefficient</a> to describe the linear relationship between 2 quantitative variables, as in a study evaluating the <a href=\"19814\">linear relationship</a> between hours of sleep and irritability score.</p><p><strong>(Choice D)</strong>&nbsp; Meta-analysis is a statistical technique used to combine and analyze data from several studies to conduct an analysis with a greater statistical power than that of the individual studies.</p><p><strong>Educational objective:</strong><br>The paired <em>t</em>-test compares the mean of 2 related groups.&nbsp; The test requires that a quantitative dependent variable (ie, outcome) be evaluated in 2 related (ie, matched, paired) groups.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17779",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A group of researchers wants to identify factors related to hospital-acquired bacteremia caused by methicillin-resistant <em>Staphylococcus aureus</em> (MRSA).&nbsp; A total of 45 patients were enrolled in the study after MRSA was isolated from a blood sample taken from them on the third or subsequent day after admission.&nbsp; In addition, 90 patients admitted to the hospital over the same period with a length of stay &gt;2 days who did not have bacteremia were randomly selected.&nbsp; The frequency of factors such as insertion of a central line or urinary catheter and surgical site infection were then compared between the 2 groups.&nbsp; Which of the following is the most appropriate null hypothesis for this study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hazard ratio is equal to 1"
+        },
+        {
+          "id": 2,
+          "text": "Hazard ratio is not equal to 1"
+        },
+        {
+          "id": 3,
+          "text": "Odds ratio is equal to 1"
+        },
+        {
+          "id": 4,
+          "text": "Odds ratio is not equal to 1"
+        },
+        {
+          "id": 5,
+          "text": "Relative risk is equal to 1"
+        },
+        {
+          "id": 6,
+          "text": "Relative risk is not equal to 1"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Hypothesis testing</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>A statistical hypothesis is an initial assumption (that&nbsp;may or may not be true) regarding population parameters (eg, mean values in two different groups) or the relationship between variables within a population (eg, association between an exposure and a disease).&nbsp; The <strong>null hypothesis (<em>H</em><font size=\"2\"><sub>0</sub></font>)</strong> is a statement of no difference or <strong>no association</strong>.&nbsp; The alternative hypothesis (<em>H</em><font size=\"2\"><sub>a</sub></font>) is a statement of difference or association.</p><p>In this case, patients are <strong>initially identified</strong> based on their <strong>disease status</strong> (ie, cases: patients with methicillin-resistant <em>Staphylococcus aureus</em> [MRSA] bacteremia, controls: patients without MRSA bacteremia).&nbsp; The <strong>frequency of factors</strong> (ie, exposure to insertion of a central line or urinary catheter, surgical site infection) is <strong>subsequently compared</strong> between cases and controls.&nbsp; Therefore, this is a <strong>case-control study</strong>;&nbsp;the most appropriate&nbsp;measure of association between an exposure and a disease in case-control studies is the <strong>odds ratio (OR)</strong>, which represents the odds of disease among exposed patients relative to nonexposed patients.</p><p>The OR may be interpreted as follows:</p><ul><li><p><strong>OR = 1.0 (null value)</strong> indicates that the odds of exposure among cases are the same as the odds of exposure among controls; therefore, <strong>exposure is not associated with the disease</strong>.</p></li><li><p>OR &#8800; 1.0 indicates that the odds of exposure are lower (ie, OR &lt;1) or higher (ie, OR &gt;1) among cases than among controls; therefore, exposure is associated with the disease.</p></li></ul><p>Because H<font size=\"2\"><sub>0</sub></font> is a statement of no association, the most appropriate <em>H</em><font size=\"2\"><sub>0</sub></font> for the study is that the OR = 1 <strong>(Choice D)</strong>.</p><p><strong>(Choices A, B, E, and F)</strong>&nbsp; Measures of association based on risk/incidence (eg, relative risk, hazard ratio) are calculated in cohort studies and experimental designs, in which participants are initially selected based on exposure status (ie, exposed or nonexposed to a risk factor or treatment) and then are followed over time to assess development of disease.&nbsp; However, in case-control studies, <em>cases</em>&nbsp;(by definition)&nbsp;<em>already have the disease</em>. Therefore, case-control studies cannot calculate and compare the risk/incidence of disease between the case and control groups.&nbsp; Instead, case-control studies must compare the odds of exposure (to a risk modifier) between cases and controls.</p><p><strong>Educational objective:</strong><br>The odds ratio (OR) is a measure of association used in case-control studies.&nbsp; It quantifies the relationship between an exposure and a disease; its null value (ie, null hypothesis value) is always 1 (ie, OR = 1).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "18153",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A group of psychiatrists has noticed an unusual number of older individuals with depression in the surrounding community.&nbsp; A decision is taken to conduct a cross-sectional study to estimate the prevalence of depression in this specific population.&nbsp; Estimates for the prevalence of depression (cases per 100 individuals) in the community are as follows:</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td align=\"center\"><strong>Age group</strong></td><td align=\"center\"><strong>Women</strong></td><td align=\"center\"><strong>Men</strong></td></tr><tr><td align=\"center\"><strong>60-69</strong></td><td align=\"center\">9.1</td><td align=\"center\">8.4</td></tr><tr><td align=\"center\"><strong>70-79</strong></td><td align=\"center\">11.9</td><td align=\"center\">10.4</td></tr><tr><td align=\"center\"><strong>80-89</strong></td><td align=\"center\">13.5</td><td align=\"center\">12.4</td></tr><tr><td align=\"center\"><strong>90+</strong></td><td align=\"center\">13.3</td><td align=\"center\">12.1</td></tr><tr><td align=\"center\"><strong>Total</strong></td><td align=\"center\">11.9</td><td align=\"center\">10.8</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>Suppose during an afternoon clinic, a psychiatrist sees a 65-year-old woman, a 72-year-old man, and an 84-year-old woman from this community.&nbsp; Assuming no relation between the 3 patients, what is the probability that none of them has depression?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.001"
+        },
+        {
+          "id": 2,
+          "text": "0.011"
+        },
+        {
+          "id": 3,
+          "text": "0.295"
+        },
+        {
+          "id": 4,
+          "text": "0.705"
+        },
+        {
+          "id": 5,
+          "text": "0.999"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Probability theory</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td align=\"center\"><strong>Patient</strong></td><td align=\"center\"><strong>Probability of having</strong><br><strong>depression</strong></td><td align=\"center\"><strong>Probability of <em>NOT</em> having</strong><br><strong>depression</strong></td></tr><tr><td align=\"center\"><strong>65-year-old woman</strong></td><td align=\"center\">0.091</td><td align=\"center\">1 &#8722; 0.091</td></tr><tr><td align=\"center\"><strong>72-year-old man</strong></td><td align=\"center\">0.104</td><td align=\"center\">1 &#8722; 0.104</td></tr><tr><td align=\"center\"><strong>84-year-old woman</strong></td><td align=\"center\">0.135</td><td align=\"center\">1 &#8722; 0.135</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>The age- and gender-specific prevalence of depression in the community is a good estimator of the probability that a corresponding individual from community has the disease.&nbsp; Because each of the 3 patients is <strong>unrelated</strong> to the others, each of the diagnoses is an <strong>independent event</strong> (ie, a patient&#39;s diagnosis has no impact on another&#39;s).&nbsp; When events are independent of each other, the probability that all the events occur is calculated by <strong>multiplying together</strong> the probability of each individual event.</p><p>In this case, to calculate the probability that none of the 3 patients has depression, multiply the probability of each <strong>complementary event</strong> (ie, the probability of <em>not</em> having depression):</p><p align=\"center\">(1 &#8722; 0.091) &times; (1 &#8722; 0.104) &times; (1 &#8722; 0.135) = 0.909 &times; 0.896 &times; 0.865 = 0.705</p><p><strong>(Choices A and E)</strong>&nbsp; The probability that all 3 patients have depression can be calculated by multiplying the probability of each event, (0.091) &times; (0.104) &times; (0.135) = 0.001.&nbsp; The complementary event (ie, the probability that at least 1 patient does not have depression) can be calculated by subtracting the probability that all 3 patients have depression from 1, or 1 &#8722; [(0.091) &times; (0.104) &times; (0.135)] = 0.999.</p><p><strong>(Choice B)</strong>&nbsp; The probability that only the women have depression can be calculated by multiplying together the probability of each woman having the disorder along with the probability of the man <em>not</em>&nbsp;having the disorder, (0.091) &times; (0.135) &times; (1 &#8722; 0.104) = 0.011.</p><p><strong>(Choice C)</strong>&nbsp; The probability that at least 1 patient has depression is complementary to the probability of none of the 3 patients having depression.&nbsp; It can be calculated by subtracting the probability that none of the 3 patients has depression from 1, or 1 &#8722; [(1 &#8722; 0.091) &times; (1 &#8722; 0.104) &times; (1 &#8722; 0.135)] = 0.295.</p><p><strong>Educational objective:</strong><br>The multiplication law of probability states that the probability of 2 or more independent events occurring together can be calculated by multiplying the individual probabilities of each event.&nbsp; The multiplication law of probability can be extended to complementary events (1 &#8722; probability of event) in the same manner.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "11685",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A study is conducted examining&nbsp;the effect of a low-carbohydrate diet compared to a low-fat diet on body weight.&nbsp; Researchers enroll 150 overweight but otherwise healthy adults from a large city in the study and randomly assign them in a 1:1 ratio to either the low-carbohydrate (40 g/d) or the low-fat (&lt;7% saturated fat) diet.&nbsp; At 12 months, a greater body weight change was reported in the low-carbohydrate diet group compared to the low-fat diet group, with a mean difference in body weight change of &#8722;3.5 kg (<em>p</em> = 0.01, predetermined significance level = 0.05).&nbsp; Which of the following is the most accurate interpretation of the results of this study?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The observed mean difference in body weight change of &#8722;3.5 kg is not statistically significant"
+        },
+        {
+          "id": 2,
+          "text": "The probability of observing a mean difference in body weight change of &#8722;3.5 kg is 0.01"
+        },
+        {
+          "id": 3,
+          "text": "There is a 1% chance of observing a mean difference in body weight change of at least &#8722;3.5 kg when no difference between groups is assumed"
+        },
+        {
+          "id": 4,
+          "text": "There is a 1% chance that an adult on a low-carbohydrate diet will have a body weight change of at least &#8722;3.5 kg at 12 months after starting the diet"
+        },
+        {
+          "id": 5,
+          "text": "There is a 1% chance that the mean difference in body weight change is biased in favor of the low-carbohydrate diet group"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > P-value and confidence interval</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>Statistical tests contrast a null hypothesis (<em>H</em><font size=\"2\"><sub>0</sub></font>) and an alternative hypothesis (<em>H</em><font size=\"2\"><sub>a</sub></font>), in this case:</p><ul><li><p><strong><em>H</em><font size=\"2\"><sub>0</sub></font></strong> is a claim of <strong>no difference</strong> between populations (eg, no difference in mean body weight between the low-carbohydrate population and the low-fat population).</p></li><li><p><strong><em>H</em><font size=\"2\"><sub>a</sub></font></strong> is a claim of a <strong>difference</strong> between populations (eg, difference in mean body weight between the 2 populations).</p></li></ul><p>Statistical inference uses data from <strong>samples</strong> (eg, 75 adults in the low-carbohydrate sample, 75 adults in the low-fat sample) to draw conclusions about underlying <strong>populations</strong>.&nbsp; Sample estimates or differences (eg, sample mean, difference in mean between 2 samples) generally vary with distinct samples (eg, if a different sample of 75 adults was chosen for each group) and may be close but not equal to the underlying population value.</p><p>One way to account for <strong>sampling variation</strong> is to calculate the <strong><em>p</em>-value</strong>, which is the <strong>probability of obtaining a sample value at least as large as the one observed</strong> when the population value claimed in <strong><em>H</em><font size=\"2\"><sub>0</sub></font> is assumed to be true</strong>.&nbsp; The magnitude of the <em>p</em>-value compared to a predetermined significance level (eg, 0.05 [or 5%] commonly used as the threshold) determines whether there is convincing evidence against <em>H</em><font size=\"2\"><sub>0</sub></font>.</p><ul><li><p>A low <em>p</em>-value (eg, &lt;0.05) occurs when the sample value significantly disagrees with the population value claimed in <em>H</em><font size=\"2\"><sub>0</sub></font> and provides convincing evidence against <em>H</em><font size=\"2\"><sub>0</sub></font> (ie, <em>H</em><font size=\"2\"><sub>0</sub></font> is probably wrong).&nbsp; Results are considered statistically significant.</p></li><li><p>A high <em>p</em>-value (eg, &#8805;0.05) occurs when the sample value is close to the population value claimed in <em>H</em><font size=\"2\"><sub>0</sub></font> and provides convincing evidence in favor of <em>H</em><font size=\"2\"><sub>0</sub></font> (ie, <em>H</em><font size=\"2\"><sub>0</sub></font> might be correct).&nbsp; Results are considered not statistically significant.</p></li></ul><p>In this case, the given <strong><em>p</em>-value = 0.01</strong>; therefore, there is a <strong>1% chance</strong> (ie, 0.01) of observing a mean difference in body weight change (ie, sample estimate) of <strong>at least &#8722;3.5 kg</strong> between the low-fat and the low-carbohydrate samples when <strong>no difference between the populations is assumed</strong> (ie, <em>H</em><font size=\"2\"><sub>0</sub></font> is assumed to be true) <strong>(Choice B)</strong>.</p><p><strong>(Choices A, D, and E)</strong>&nbsp; The <em>p</em>-value of 0.01 is less than 0.05; therefore, the observed mean difference is statistically significant at the 5% level.&nbsp; The <em>p</em>-value is not associated with individual observations in a sample.&nbsp; It accounts for sampling variation (ie, random variation) not bias (ie, systematic variation).</p><p><strong>Educational objective:</strong><br>The <em>p</em>-value is the probability of obtaining a result (ie, sample estimate) at least as large as the one observed when the population value claimed in the null hypothesis is assumed to be true.&nbsp; A <em>p</em>-value &lt;0.05 typically indicates that results are statistically significant.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "18155",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>The results of a study investigating a new diagnostic test for acute myocardial infarction (MI) are given in the table below.</p><blockquote><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td></td><td align=\"center\">MI</td><td align=\"center\">No MI</td></tr><tr><td align=\"center\">Test positive</td><td align=\"center\">75</td><td align=\"center\">20</td></tr><tr><td align=\"center\">Test negative</td><td align=\"center\">25</td><td align=\"center\">80</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></blockquote><p>What is the sensitivity of the new diagnostic test?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "25%"
+        },
+        {
+          "id": 2,
+          "text": "37.5%"
+        },
+        {
+          "id": 3,
+          "text": "50%"
+        },
+        {
+          "id": 4,
+          "text": "75%"
+        },
+        {
+          "id": 5,
+          "text": "79%"
+        },
+        {
+          "id": 6,
+          "text": "80%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Sensitivity, specificity, NPV, PPV</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><div id=\"div_t32272\"><table class=\"table-default-style table-header-footer-style\"><tbody><tr><td></td><td><p align=\"center\"><strong>Positive condition</strong></p></td><td><p align=\"center\"><strong>Negative condition</strong></p></td><td></td></tr><tr><td><p align=\"center\"><strong>Positive test result</strong></p></td><td><p align=\"center\">TP</p></td><td><p align=\"center\">FP</p></td><td><p align=\"center\">PPV =<br />TP / (TP + FP)</p></td></tr><tr><td><p align=\"center\"><strong>Negative test result</strong></p></td><td><p align=\"center\">FN</p></td><td><p align=\"center\">TN</p></td><td><p align=\"center\">NPV =<br />TN / (TN + FN)</p></td></tr><tr><td></td><td><p align=\"center\">Sensitivity =</p><p align=\"center\">TP / (TP + FN)</p></td><td><p align=\"center\">Specificity =</p><p align=\"center\">TN / (TN + FP)</p></td><td></td></tr><tr><td colspan=\"4\"><p><strong>FN</strong> = false negative; <strong>FP</strong> = false positive; <strong>NPV</strong> = negative predictive value; <strong>PPV</strong> = positive predictive value; <strong>TN</strong> = true negative; <strong>TP</strong> = true positive.</p></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div></p><p>The data is presented in the standard 2 &times; 2 (contingency) table format.&nbsp; The <strong>sensitivity</strong> of a test refers to its ability to correctly identify individuals affected with a disease.&nbsp; It is the number of true positives divided by the total number of patients with the disease.&nbsp; Sensitivity should be high in screening tests in order to pick up all cases of a disease (decrease false negatives).&nbsp; Using the generic 2 &times; 2 (contingency) table:</p><p>Sensitivity = TP / (TP + FN), where TP is true positives and FN is false negatives.&nbsp; In this case:</p><blockquote>Sensitivity = 75 / (75 + 25) = 75/100 = 0.75 (or 75%)</blockquote><p><strong>(Choice A)</strong>&nbsp; The false negative rate is (1 &ndash; sensitivity) = 1 &ndash; 0.75 = 0.25 (or 25%).&nbsp; The false negative rate is not affected by disease prevalence.</p><p><strong>(Choice B)</strong>&nbsp; The value 37.5% is obtained by dividing the TP (75) by the total number of patients in the study (75 + 25 + 20 + 80 = 200).</p><p><strong>(Choice C)</strong>&nbsp; The number of patients with myocardial infarction (MI) based on the gold standard is 100 (= 75 + 25).&nbsp; The total number of patients in the study is 200 (= 75 + 25 + 20 + 80).&nbsp; Therefore, the prevalence of MI in this sample is 100/200 = 0.5 (or 50%).</p><p><strong>(Choice E)</strong>&nbsp; The positive predictive value (PPV) of the test (the probability that a person has the disease given a positive test result) is given by: PPV = TP / (TP + FP), where FP is false positives.&nbsp; In this case, PPV = 75 / (75 + 20) = 75/95 = 0.79 (or 79%).</p><p><strong>(Choice F)</strong>&nbsp; The test specificity (its ability to correctly identify individuals without the disease) is 80 / (80 + 20) = 80/100 = 0.80 (or 80%).</p><p><strong>Educational objective:</strong><br>Sensitivity = true positives / (true positives + false negatives).&nbsp; Screening tests should have high sensitivity.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1177",
+      "difficulty": "N/A"
+    }
+  ]
+}

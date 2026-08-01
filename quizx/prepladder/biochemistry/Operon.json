@@ -1,0 +1,275 @@
+{
+  "chapter": "Operon",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following best describes a mechanism involved in epigenetic changes that lead to heterochromatin formation?",
+      "options": {
+        "A": "Histone acetylation and DNA methylation of adenine residues",
+        "B": "Histone deacetylation and methylation in CG islands",
+        "C": "DNA replication",
+        "D": "Histone phosphorylation"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Histone deacetylation and methylation in CG islands Explanation: Epigenetic changes that lead to heterochromatin formation are primarily driven by histone deacetylation and methylation of cytidine residues in CG islands. Epigenetic changes involve stable alterations in gene expression that do not involve changes in the nucleotide sequence. Epigenetic Modifications: DNA Methylation: Represses gene expression by methylation of CpG islands. Involved in ageing, cancer, genomic imprinting, X chromosome inactivation, and dysregulation linked to diseases like Fragile X syndrome. Histone Methylation: Suppress or activate transcription depending on the location of methyl groups. Methylation of lysine and arginine residues on histones. Histone Acetylation: Activates transcription (Option A) The addition of acetyl groups neutralises histone charges, relaxing DNA coiling. Generally increases gene expression; affects processes like thyroid hormone synthesis. Histone Deacetylation: Represses transcription. Removal of acetyl groups tightens DNA coiling. Typically, it decreases gene expression and is linked to diseases such as Huntington's disease. DNA replication and Histone phosphorylation( Option C & D): Not associated with Epigenetic modification. Reference: Harper’s Illustrated Biochemistry 32nd Edition Pg - 92",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following statements about the lac operon is/are correct? Lac I is constitutively expressed. Lac Y is responsible for lactose transport into the cell. The structural genes are expressed when the CAP site is free. The ZYA genes are expressed when the operator site is free.",
+      "options": {
+        "A": "1 and 2",
+        "B": "1, 2, and 3",
+        "C": "1, 2, and 4",
+        "D": "1, 2, 3, and 4"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) 1, 2, and 4 Explanation: The structural genes are expressed when the CAP site is Occupied. Lac Operon: The lac operon enables E. coli to metabolise lactose by producing enzymes necessary for lactose uptake and breakdown in the absence of glucose. Components: Structural Genes: lacZ: Encodes β -galactosidase (Breaks down lactose into glucose and galactose) lacY: Encodes lactose permease ( Helps lactose enter the cell) (Statement 2) lacA: Encodes thiogalactoside transacetylase Regulatory Elements : lacI Gene: Encodes the LacI repressor, which binds to the operator to block transcription when lactose is absent. (Lactose unbinds repressor from Operator site) Constitutively Expressed (Statement 1) Promoter (P) : The binding site for RNA polymerase, which initiates transcription of the lac genes. Operator (O) : A DNA sequence that the lac repressor protein binds to, blocking transcription when lactose is absent. CAP (Catabolite Activator Protein): Bind to the CAP binding site near the promoter and enhance transcription (Statement 3). This requires requires cAMP ( Glucose inhibits Adenylate cyclase which converts ATP to cAMP) Mechanism: Lactose unbinds repressor from Operator site § Operator site becomes free § Increases Transcription (Statement 4)",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q2_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 3,
+      "question": "Which of the following statements about cloning vectors is correct? Plasmids can carry DNA inserts up to 10 kilobases in size. Phage vectors can carry DNA inserts up to approximately 50 kilobases. Cosmids are hybrid vectors that combine features of plasmids and phages. Artificial chromosomes are used to clone very large DNA fragments.",
+      "options": {
+        "A": "1, 2, and 3",
+        "B": "1 and 4",
+        "C": "All of the above",
+        "D": "1, 3, and 4"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) 1, 3, and 4 Explanation: Phage vectors can carry DNA inserts up to approximately 20 kilobases, not 50 kilobases. Cloning Vectors are DNA molecules that carry and replicate foreign DNA segments within host cells. They are useful in molecular biology for gene cloning and manipulation. Vector Size (Kb) Features Plasmids <10 Small, circular DNA molecules found in Bacteria Commonly used for cloning and expressing small DNA fragments Replicate independently of the bacterial chromosome. Bacteriophages 10-20 Bacterial viruses with linear DNA genomes Useful for cloning slightly larger DNA fragments Infect bacterial cells to propagate the cloned DNA Bacterial Artificial Chromosomes (BACs) 50-250 BACs are vectors based on the F-plasmid of E. coli. They can accommodate large DNA inserts Used for constructing genomic libraries Yeast Artificial Chromosomes (YACs) >500 YACs are vectors that can accommodate very large DNA inserts, even larger than BACs More prone to chimerism and instability compared to BACs Cosmids 35 - 50 Hybrid vectors combining plasmid and phage features Viral Vectors Derived from viruses that infect mammalian cells Include adenoviral, adenovirus-associated viral (AAV), and retroviral vectors. Reference: Harper’s Biochemistry, 32nd edition, Pg 448",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 4,
+      "question": "In their CRISPR-Cas9 experiment with a mammalian cell line, the research team observes the repair of DNA double-strand breaks. Which repair mechanisms are they most likely observing? Non-Homologous End Joining (NHEJ) Homologous End Joining (HEJ) Nucleotide Excision Repair (NER) Base Excision Repair (BER)",
+      "options": {
+        "A": "1 and 2",
+        "B": "1, 2, 3",
+        "C": "1 and 4",
+        "D": "All of the above"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer: A) 1 and 2 Explanation: NHEJ and HEJ are the two mechanisms employed by the CRISPR-Cas9 System. It is a powerful tool for inducing precise double-stranded breaks in DNA. CRISPR-Cas9 System Components: Guide RNA (gRNA): Directs the Cas9 enzyme to a specific DNA sequence. Cas9 Enzyme: Induces double-stranded breaks (DSBs) at the target site. Repair Mechanisms: Non-homologous end Joining (NHEJ): This technique directly ligates broken DNA ends without a template, often leading to small insertions or deletions. It can also cause gene knockout by disrupting the coding sequence. Homologous End Joining (HEJ): Uses a homologous template for precise repair of Double strand breaks and enables accurate gene knock-in or correction of mutations. Other DNA repair mechanism are: Base Excision Repair: BER is used to repair small, non-helix-distorting base lesions, not double-stranded breaks. It is not related to CRISPR-Cas9 break repair. Nucleotide Excision Repair: NER repairs bulky DNA lesions (like those caused by UV light), not double-stranded breaks. It is not involved in the repair of CRISPR-Cas9-induced breaks. Reference: Harper’s Illustrated Biochemistry 32nd Edition - 454",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 5,
+      "question": "Which of the following is the feature of the ‘M’ phase in the image of the Cell cycle?",
+      "options": {
+        "A": "DNA replication occurs to duplicate the genome.",
+        "B": "Chromosomes are highly condensed to facilitate segregation.",
+        "C": "Cell growth and preparation for DNA synthesis take place.",
+        "D": "Proofreading and repair of DNA replication errors are conducted."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Chromosomes are highly condensed to facilitate segregation. Explanation: This is a key feature of the M phase, where chromosomes become highly condensed to ensure proper segregation during mitosis . They are compressed to about 8000 fold during metaphase in M-Phase. Cell Cycle: The cell cycle is a series of stages that a cell goes through to divide and produce two daughter cells. Phases of the Cell Cycle: Phases Chromosome State Features Gap 1 (G1) Phase Pre-synthetic phase Uncondensed Cell growth and synthesis of proteins and organelles. (Option C) DNA proofreading and repair. Synthesis (S) Phase DNA replication occurs (Option A) Uncondensed Replication of the entire genome and formation of sister chromatids. Increase in the levels of DNA polymerases and other replication enzymes. Gap 2 (G2) Phase Post-synthetic or pre-mitotic phase Uncondensed Final proofreading and repair. (Option D) Mitosis (M) Phase Division of the nucleus and cytoplasm to produce two daughter cells. Condensed (ensure proper segregation). Chromosome condensation, alignment, and segregation. Cytokinesis, where the cytoplasm divides, resulting in two separate cells. Interphase The combined phases of G1, S, and G2 are where the cell grows, duplicates its DNA and prepares for division. Gap 0 (G0) Phase (Resting phase) Condensed Permanent or Temporary phase based on Cell type. Reference: Harper’s Illustrated Biochemistry 32nd Edition Pg - 365,379",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q5_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 6,
+      "question": "A 32-year-old patient presents with a family history of progressive muscle weakness, cognitive decline, and involuntary movements. Genetic testing reveals a specific type of microsatellite instability disorder. Which of the following trinucleotide repeat sequences is most likely associated?",
+      "options": {
+        "A": "CAG",
+        "B": "CTG",
+        "C": "CGG",
+        "D": "GAA"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer: A) CAG Explanation: The clinical presentation is consistent with Huntington's Disease, which is characterised by progressive muscle weakness, cognitive decline, and involuntary movements (chorea). The specific trinucleotide repeat expansion associated with this condition is CAG. Microsatellite instability (MSI) Disorders: Genetic conditions are characterised by the accumulation of mutations in microsatellite regions of DNA due to failure in the DNA mismatch repair system. Anticipation is seen (Disease severity increases in successive generations) Trinucleotide Repeat Sequences and Associated Disorders: Trinucleotide repeat sequences are short DNA sequences in which a specific set of three nucleotides is repeated multiple times in tandem beyond a normal range, resulting in instability and dysfunction. Disease Trinucleotide Repeats Mode of Inheritance Huntington’s Disease CAG AD Myotonic Dystrophy CTG (Option B) AD Fragile X Syndrome CGG (Option C) XLD Friedreich’s Ataxia GAA (Option D) AR Note: AD: Autosomal Dominant; AR: Autosomal Recessive; XLD: X-Linked Dominant Reference: Harper’s Illustrated Biochemistry 32nd Edition Pg - 36",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 7,
+      "question": "A 5-year-old boy presents with frequent falls, difficulty climbing stairs, and an unusual way of getting up from the floor. Genetic testing reveals a mutation in a gene associated with a severe muscle disorder. Which of the following statements about the involved gene is true?",
+      "options": {
+        "A": "Located on chromosome 7",
+        "B": "Largest in the human genome.",
+        "C": "Associated with a condition that primarily affects females",
+        "D": "The Gene’s product is a component of the sarcomere."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Largest in the human genome Explanation: The clinical presentation with frequent falls, difficulty climbing stairs and unusual way of getting up (Gower sign) points towards Duchenne muscular Dystrophy. Inherited in X-linked Recessive pattern - Primarily affects males (Option C). The gene affected is Dystrophin , which is the largest gene in the human genome, located on the X chromosome (Option A). Dystrophin is a crucial protein found in muscle cells that helps maintain the muscle fibre's structural integrity. It acts as a bridge between sarcolemma and the internal cytoskeleton, which helps in stabilization. Option D: Dystrophin is not a component of the sarcomere but is crucial for anchoring the cytoskeleton to the muscle cell membrane. Sarcomere components involved in contraction include actin and myosin. Reference: Vasudevan Textbook of Biochemistry 7th Edition Pg - 637 https://www.ncbi.nlm.nih.gov/pmc/articles/P MC4767260/#:~:text=The%20dystrophin%20gene%20is%20the,spanning%20one%20or%20multiple%20exons .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 8,
+      "question": "Satellite DNA has various applications due to its unique repetitive sequences. Which of the following is not an application of satellite DNA?",
+      "options": {
+        "A": "Forensic identification and criminal investigations",
+        "B": "Determining genetic susceptibility to cardiovascular diseases",
+        "C": "Resolving paternal dispute cases",
+        "D": "Studying evolutionary relationships and genetic diversity"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Determining genetic susceptibility to cardiovascular diseases Explanation: Satellite DNA is not used to identify susceptibility to cardiovascular diseases, as it mainly provides information about repetitive DNA sequences rather than disease susceptibility. Satellite DNA refers to repetitive DNA sequences that are found in specific regions of the genome, notably in centromeric and telomeric regions. Types: Highly Repetitive Sequences (HRS) : These sequences repeats >1,000,000 times. Simple Sequence Repeats (SSR) : Also known as microsatellites, these are short, repetitive sequences. Minisatellite Repeats : Known as Variable Number Tandem Repeats (VNTR), these are longer repetitive sequences compared to microsatellites. Applications: Forensic Identification : Satellite DNA is used in forensic science to identify individuals due to its high variability between people uniquely. Paternal Dispute Resolution : It helps resolve paternal disputes by matching genetic profiles through repetitive DNA sequences. Genetic Studies : To study evolutionary relationships and genetic diversity among different species. Reference: Vasudevan Textbook of Biochemistry 7th Edition Pg - 578 https://www.ncbi.nlm.nih.gov/pmc/articles/P MC5219911/#:~:text=Microsatellites%20or%20simple%20sequence%20repeats%20(SSRs)%20are%20short%20re petitive%20elements,smaller%20than%20100bp%20%5B4%5D . https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8122249/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 9,
+      "question": "Which of the following statements is not accurate regarding post-transcriptional modifications of eukaryotic RNA? ′ end. ′ capping involves a 5 ′ to 5 ′ triphosphate bridge.",
+      "options": {
+        "A": "The addition of a poly-A tail at the 3",
+        "B": "The 5",
+        "C": "Methylation of the N6 position of adenine.",
+        "D": "Introns are removed, and exons are spliced within the cytoplasm."
+      },
+      "correct_answer": "D",
+      "explanation": "Correct Answer: D) Introns are removed, and exons are spliced within the cytoplasm. Explanation: Introns are removed, and exons are spliced together in the nucleus, not the cytoplasm. Post-Transcriptional Modification of Eukaryotic RNA: Primary Transcript (hnRNA): Newly synthesised mRNA directly from DNA; includes both coding (exons) and non-coding (introns) regions. Key Modifications: Poly-A Tailing (3 ′ End) Addition of a poly-A tail (20-250 nucleotides) in the nucleoplasm. Protects mRNA from degradation. 5 ′ Capping Addition of a 7-methyl guanosine cap at the 5 ′ end. Involves a 5 ′ to 5 ′ triphosphate bridge. Enhances mRNA stability and translation initiation. Splicing Introns (non-coding regions) are removed, and exons (coding regions) are joined together. This splicing occurs in the nucleus and requires energy. Methylation Methylation of adenine residues and ribose 2 ′ -hydroxyl groups. Primarily occurs in the cytoplasm for tRNA and rRNA. Bacterial mRNA: Not subject to extensive post-transcriptional modifications. Translation can begin before transcription is complete. Reference: Vasudevan Textbook of Biochemistry 7th Edition Pg - 591",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q9_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 10,
+      "question": "A researcher aims to clone a large eukaryotic gene fragment (~600 kb) for use in functional genomics studies. Which of the following cloning vectors is the most appropriate for this purpose? λ",
+      "options": {
+        "A": "Plasmid",
+        "B": "Bacteriophage",
+        "C": "Yeast Artificial Chromosome (YAC)",
+        "D": "Cosmid"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Yeast Artificial Chromosome (YAC) Explanation: Yeast Artificial Chromosomes (YACs) are ideal for cloning large DNA fragments (100–1000 kb), making them suitable for large eukaryotic gene fragments (~600 kb) Cloning Type Key Features Insert Size Applications Plasmid-Based Cloning (Option A) Small, circular DNA in bacteria, independent replication, antibiotic resistance genes ~10 kb Gene cloning, bacterial expression Phage-Based Cloning (Option B) Uses bacteriophage (e.g., λ phage), foreign DNA inserted into phage genome ~20 kb High-efficiency cloning, phage display Cosmid-Based Cloning (Option D) Hybrid of plasmid & phage λ , contains cos sites for efficient packaging ~100-300 kb Genome sequencing, gene mapping Yeast Artificial Chromosome (YAC) Functions as a eukaryotic chromosome, contains centromere & telomere ~100-1000 kb Cloning large eukaryotic DNA fragments Mammalian Viral Vectors Used in gene therapy, adenoviral (DNA-based), retroviral (RNA-based) Varies Gene expression in mammalian cells, stable integration Reference: Harper’s Biochemistry, 32nd edition, Pages 447, 448",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 11,
+      "question": "In human somatic cells, which of the following statements accurately describes the chromatin and its characteristics?",
+      "options": {
+        "A": "Constitutive heterochromatin is always active",
+        "B": "Facultative heterochromatin includes the Barr body",
+        "C": "Euchromatin is found in centromeric regions",
+        "D": "Heterochromatin is active and less stained"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Facultative heterochromatin includes the Barr body Explanation: Facultative heterochromatin includes the Barr body. In somatic cells of females, one of the two X-chromosomes is transcriptionally active while the other is transcriptionally inactive and highly condensed, known as a Barr body. Chromatin is a complex of DNA and proteins found in the nucleus of eukaryotic cells. It plays a crucial role in packaging DNA into a more compact, dense structure, allowing it to fit within the cell nucleus and regulating gene expression. Types of Chromatin: Euchromatin (Transcriptionally Active) Heterochromatin (Transcriptionally Inactive) Reference: Harper’s Illustrated Biochemistry 32nd Edition Pg - 364",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q11_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 12,
+      "question": "In a laboratory setting, E. coli bacteria are cultured in a medium where glucose and lactose is available. To increase the expression of the lac operon, which levels of lactose and cAMP would you expect to be present?",
+      "options": {
+        "A": "High lactose and low cAMP",
+        "B": "Low lactose and high cAMP",
+        "C": "High lactose and high cAMP",
+        "D": "Low lactose and low cAMP"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) High lactose and high cAMP Explanation: In a laboratory setting aiming to maximise the expression of the lac operon, optimal transcription would be expected under conditions with high lactose and high cAMP. Lac Operon: The lac operon enables E. coli to metabolise lactose by producing enzymes necessary for lactose uptake and breakdown in the absence of glucose. Basic components: lacZ: Encodes β -galactosidase, which breaks down lactose into glucose and galactose. lacY: Encodes lactose permease, which helps lactose enter the cell. lacA: Encodes thiogalactoside transacetylase. lacI: Encodes the LacI repressor, which binds to the operator to block transcription when lactose is not present. (Lactose unbinds repressor from Operator site) CAP (Catabolite Activator Protein): Requires cAMP to bind to the CAP binding site (CRE) near the promoter and enhance transcription. ( Glucose inhibits Adenylate cyclase, which converts ATP - - - - > cAMP) Regulation:",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q12_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 13,
+      "question": "Which of the following techniques is specifically designed to introduce specific genetic modifications, such as gene knock-ins or knock-outs, into the genome of an organism?",
+      "options": {
+        "A": "FISH (Fluorescence In Situ Hybridization)",
+        "B": "CRISPR-Cas",
+        "C": "Recombinant DNA Technology",
+        "D": "Comparative Genomic Hybridization"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) CRISPR-Cas Explanation: CRISPR-Cas is a genome-editing tool that can be used to introduce specific genetic modifications, including gene knock-ins (adding new genetic material) and gene knock-outs (disrupting or deleting existing genes). CRISPR-Cas Mechanism: Guide RNA : Directs the Cas enzyme to the specific DNA sequence. Cas Enzyme : Cuts the DNA at the target location. DNA Repair : NHEJ (Non-Homologous End Joining) : Repairs the break by directly ligating the DNA ends, often leading to gene knockout. HDR (Homologous Directed Repair) : Uses a template to repair the break accurately, allowing for gene knock-in. FISH (Fluorescence In Situ Hybridization) is used for detecting and visualizing specific nucleic acid sequences in cells but does not modify genes ( Option A). Recombinant DNA Technology involves creating new DNA combinations but is not as precise as CRISPR-Cas for making specific gene knock-ins or knock-outs ( Option C). Comparative Genomic Hybridization (CGH) is used to detect chromosomal abnormalities and does not involve gene editing (Option D). Reference: Harper’s Illustrated Biochemistry 32nd Edition - 454",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 14,
+      "question": "Which of the following is true about the significance of technology in the following image?",
+      "options": {
+        "A": "Used to study multiple gene expressions simultaneously",
+        "B": "Not used to deciding the course of treatment",
+        "C": "They have been completely replaced by next-generation sequencing.",
+        "D": "Not used in proteomics and genotyping."
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer: A) Used to study multiple gene expressions simultaneously Explanation; The given image represents Microarray Technique which can analyze thousands of genes at once facilitating multiple gene expression studies. Microarray consist of thousands of microscopic DNA spots (probes) on a slide, used for hybridizing cDNA or cRNA samples. Each spot on the microarray chip represents a specific gene, and by measuring the intensity of the signal at each spot, researchers can determine how much of each gene is expressed in the sample. Microarrays are crucial for gene expression profiling and can assist in making treatment decisions by helping us to understand the pathogenesis of a disorder (Option B) Types: DNA Microarray cDNA Microarray Protein Microarray Array comparative genomic hybridisation (CGH) Applications of Microarray Technique: Genotyping Gene sequencing Gene Expression Profiling: Used for cancer treatment decisions (e.g., identifying need for chemotherapy). Protein Detection by monoclonal antibody or aptamer microarrays, useful in personalised medicine and Proteomics (Option D) Clinical Uses: Diagnosing cancer, infectious diseases, and allergies. Microarrays are still being used alongside next-generation sequencing ( Option C). Reference: Vasudevan Textbook of Biochemistry 7th Edition Pg - 635",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q14_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 15,
+      "question": "Which of the following vectors is most suitable for cloning large DNA fragments up to 300 kb in size?",
+      "options": {
+        "A": "Plasmids",
+        "B": "Bacteriophages",
+        "C": "Bacterial Artificial Chromosomes (BACs)",
+        "D": "Yeast Artificial Chromosomes (YACs)"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Bacterial Artificial Chromosomes (BACs) Explanation: Vector Size Description Plasmids (Option A) Up to 10 kb Plasmids are small, circular DNA molecules commonly used in recombinant DNA technology. They are easy to manipulate and introduce into bacterial cells. However, they typically can only accommodate small to medium-sized DNA inserts. They are not suitable for very large DNA fragments. Bacteriophages (Option B) 10-20 kb Bacteriophages, particularly lambda phage vectors, are used for cloning DNA fragments. While larger than plasmids, they are still not suitable for very large DNA fragments of 300 kb. Bacterial Artificial Chromosomes (BACs) (Option C) 50-250 kb BACs are vectors based on the F-plasmid of E. coli. They can accommodate large DNA inserts and are widely used for constructing genomic libraries. Yeast Artificial Chromosomes (YACs) (Option D) >500 YACs are vectors that can accommodate very large DNA inserts, even larger than BACs. While they can certainly handle 300 kb inserts, they are more prone to chimerism and instability compared to BACs. Reference: Harper’s Biochemistry, 32nd edition, Pg 448",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 16,
+      "question": "Which type of blotting technique is used to detect specific RNA sequences within a sample?",
+      "options": {
+        "A": "Southern Blotting",
+        "B": "Northern Blotting",
+        "C": "Western Blotting",
+        "D": "Eastern blotting"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Northern Blotting Explanation: Types Target Features Southern blotting (Option A) DNA sequences It involves separating DNA fragments by gel electrophoresis, transferring them to a membrane, and then using labelled probes to identify specific sequences Northern blotting (Option B) RNA sequences The process is similar to DNA blotting but focuses on RNA. Western blotting (Option C) Proteins This technique specifically detects and analyses proteins in a complex mixture. It involves separating proteins by gel electrophoresis, transferring them to a membrane, and then using specific antibodies to detect the proteins. Eastern blotting (Option D) Post-translational modifications It refers to specialised Western blotting techniques that detect specific post-translational modifications of proteins, such as phosphorylation or glycosylation.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q16_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 17,
+      "question": "Which type of restriction endonuclease creates staggered cuts in the DNA, producing \"sticky ends\"?",
+      "options": {
+        "A": "Type I restriction enzymes",
+        "B": "Type II restriction enzymes",
+        "C": "Type III restriction enzymes",
+        "D": "Type IV restriction enzymes"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Type II restriction enzymes Explanation: Restriction endonucleases are enzymes that cut DNA at specific recognition sequences. Characteristic Type I Type II Subunit structure Complex (3 subunits) Simple (1-2 subunits) ATP requirement Yes No Cleavage site Random, far from recognition site At or near the recognition site Recognition sequence Asymmetric Usually symmetric Type II Restriction Enzyme Subtypes : Sticky End Blunt End Cuts both the DNA strands at two different sites. Cuts both the strands at the same site. Forms two complexes with overhanging ends. Forms two complexes with blunt ends. Type III restriction enzymes(Option C): Recognise specific DNA sequences but cut at a short distance from the recognition site. They do not produce sticky ends and also require ATP. Type IV restriction enzymes(Option D): Target modified DNA, such as methylated DNA, rather than specific sequences. They do not produce sticky ends and are involved in the recognition of modified bases rather than sequence-specific cleavage. Reference: Textbook of Biochemistry by DM Vasudevan, 7th edition, Pg 625",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q17_exp.jpg",
+      "chapter_heading": "Operon"
+    },
+    {
+      "q_no": 18,
+      "question": "Which of the following represents the correct sequence of steps in recombinant DNA technology? → Insertion of recombinant DNA into host → Ligation → Cutting of DNA with restriction enzymes → Selection and screening. → Ligation → Isolation of DNA → Insertion of recombinant DNA into host → Selection and screening. → Cutting of DNA with restriction enzymes → Ligation → Insertion of recombinant DNA into host → Selection and screening. → Isolation of DNA → Cutting of DNA with restriction enzymes → Insertion of recombinant DNA into host → Selection and screening.",
+      "options": {
+        "A": "Isolation of DNA",
+        "B": "Cutting of DNA with restriction enzymes",
+        "C": "Isolation of DNA",
+        "D": "Ligation"
+      },
+      "correct_answer": "C",
+      "explanation": "→ Cutting of DNA with restriction enzymes → Ligation → Insertion of recombinant DNA into host → Selection and screening. Correct Answer: C) Isolation of DNA → Cutting of DNA with restriction enzymes → Ligation → Insertion of recombinant DNA into host → Selection and screening Steps of recombinant DNA Technology",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxbiochemistry/Operon_Q18_exp.png",
+      "chapter_heading": "Operon"
+    }
+  ]
+}

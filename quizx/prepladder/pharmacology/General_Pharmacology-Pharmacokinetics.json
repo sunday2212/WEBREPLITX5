@@ -1,0 +1,300 @@
+{
+  "chapter": "General Pharmacology-Pharmacokinetics",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following drugs is not metabolised by the CYP2C19 enzyme?",
+      "options": {
+        "A": "Clopidogrel",
+        "B": "Omeprazole",
+        "C": "Voriconazole",
+        "D": "Warfarin"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct answer : D) Warfarin Explanation : Warfarin is metabolised by CYP2C9. Drugs metabolised by CYP2C19: PPI: Omeprazole (Option B) & lansoprazole. Amitriptyline. Citalopram. Phenytoin. Diazepam. Voriconazole and other Antifungal Azoles (Option C). Clopidogrel (Option A). CYP-450 enzymes: Essential for phase 1 reactions (oxidation and reduction). Genetic polymorphism is present. Nomenclature of a CYP enzyme: Eg, CYP3A4. CYP: Cytochrome P450 superfamily 3: Family of CYP (number of the gene making CYP enzyme) A: Isoform/Subfamily of CYP 4: Individual enzyme Reference: Goodman and Gilman's The Pharmacological Basis of Therapeutics, 14th Edition, Page106 KD Tripathi-Essentials of Medical Pharmacology, 8th edition, Page 30",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following is true about the elimination kinetics of phenytoin?",
+      "options": {
+        "A": "The rate of elimination is proportional to plasma concentration",
+        "B": "Half-life remains constant irrespective of plasma concentration",
+        "C": "The clearance is independent of plasma concentration throughout",
+        "D": "Kinetics changes from first order to zero order at higher doses"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct answer: D) Kinetics changes from first order to zero order at higher doses. Explanation: Phenytoin follows a different elimination pattern, where it initially follows first-order kinetics but the metabolising enzymes get saturated above therapeutic concentration and the pattern changes from first to zero order kinetics. Such pattern shows a curved plot and is called non-linear elimination. Common drugs that follow a non-linear elimination: Phenytoin. Tolbutamide. Theophylline. Warfarin. The rate of elimination is proportional to plasma concentration (Options A) & half-life remains constant irrespective of plasma concentration (Option B) : They are properties of drugs that purely follow first-order kinetics. The clearance is independent of plasma concentration throughout (Option C) : It purely follow zero-order kinetics. Reference: KD Tripathi- Essentials of Medical Pharmacology, 8th Edition, Page 39",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 3,
+      "question": "A patient is given a 300 mg dose of a drug. After 1 hour, 75 mg of the drug is excreted. Assuming the drug is eliminated from the system by following first-order kinetics, how much of the drug will remain after 4 hours of starting the drug?",
+      "options": {
+        "A": "72 mg",
+        "B": "94 mg",
+        "C": "122 mg",
+        "D": "148 mg"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) 94 mg Explanation The given drug follows a first-order kinetic elimination; hence, its clearance rate remains constant and proportional to the plasma concentration per unit of time. Initial dose: 300 mg After 1 hour: 75 mg excreted So, 225 mg remains → this means 75% (¾) remains after 1 hour Drug follows first-order kinetics , so the fraction eliminated per unit time remains constant Therefore, the remaining drug after each hour is: After 1 hour: 300×3/4=225 mg After 2 hours: 225×3/4=168.75 mg After 3 hours: 168.75×3/4=126.56 mg After 4 hours: 126.56×3/4= 94.92 mg Reference: Goodman & Gillman’s Pharmacological Basis of Therapeutics, 14th Edition, Page 30.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 4,
+      "question": "A drug given to a patient is known to follow a capacity-limited elimination pattern. Which of the following is incorrect about this mode of drug elimination?",
+      "options": {
+        "A": "The amount of the drug eliminated per unit of time will remain constant",
+        "B": "Clearance of the drug will be less at higher concentrations.",
+        "C": "The half-life of the drug will be longer at lower concentrations",
+        "D": "The rate of elimination of the drug is independent of plasma concentration."
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) The half-life of the drug will be longer at lower concentrations. Explanation: The half-life of a drug that follows a capacity-limited elimination/Michaelis Menton elimination/zero order kinetics will be less at lower concentrations and more at higher concentrations. The key differences between drugs following zero and first-order kinetics are below. First-order kinetics Zero-order kinetics Description A constant fraction of the drug is eliminated per unit of time. A constant amount of the drug is eliminated per unit of time. Rate of clearance Constant More at lower concentrations and less at higher concentrations. Half-life Constant Less at lower concentrations and more at higher concentrations. Rate of elimination Proportional to its plasma concentration. Independent of plasma concentration. Examples Most of the drugs. Alcohol, aspirin, theophylline, tolbutamide, and warfarin. (Options A, B, and D ruled out) Reference: KD Tripathi- Essentials of medical pharmacology, 8th Edition, Pages 38, 39.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpharmacology/General_Pharmacology-Pharmacokinetics_Q4_exp.png",
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 5,
+      "question": "The target concentration of a drug given to a patient should be 5 mg/L. Assuming the drug's bioavailability is 0.5 and it gets cleared out of the system at a rate of 2L/hr, what is the maintenance dose to be given twice daily?",
+      "options": {
+        "A": "190 mg",
+        "B": "240 mg",
+        "C": "300 mg",
+        "D": "330 mg"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) 240 mg Explanation: The maintenance dose of a drug is the dose that has to be repeated at specified intervals to maintain the target plasma concentration of a drug, and it's given by the equation- Here, Cp = 5 mg/L ; CL = 2 L/hr ; F = 0.5 ; dosing interval is twice daily (BD). Hence, 5 * 2 / 0.5 = 20 mg/hr * 12 hours = 240 mg BD Reference: Goodman & Gillman’s Pharmacological Basis of Therapeutics, 14th edition, Page 39.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpharmacology/General_Pharmacology-Pharmacokinetics_Q5_exp.png",
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 6,
+      "question": "A 70 kg patient is administered 2 mg of warfarin. If its plasma concentration is 200 mcg/L, calculate the apparent volume of distribution of the drug.",
+      "options": {
+        "A": "0.25 L/kg",
+        "B": "0.10 L/kg",
+        "C": "0.15 L/kg",
+        "D": "0.20 L/kg"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) 0.15 L/kg Explanation: The apparent volume of distribution (V d ) of a drug is calculated by the formula below : V d = Dose of drug administered/plasma concentration Here, the total dose administered is 2mg, i.e., 2000 mcg, and the plasma concentration is 200 mcg/L. Hence, 2000/200 = 10 Since the patient weighs 70 kg, 10/70 = 0.143, approximating 0.15 L/kg. The volume of distribution refers to the apparent volume that would accommodate the entire drug in the body if the concentration is the same as in plasma. Low V d High V d A larger portion of a drug is in the intravascular compartment. A larger portion of a drug is in the extravascular compartment. It is easily removed by haemodialysis. It can be difficult to remove by haemodialysis. Factors responsible: Extensive plasma protein binding Hydrophilic nature Factors responsible: Extensive body tissue binding Lipophilic nature Examples: warfarin, diclofenac Examples: Digoxin, propranolol, morphine Reference: KD Tripathi- Essentials of medical pharmacology, 8th Edition, Pages 23,24.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 7,
+      "question": "Which of the following statements regarding elimination characteristics of \"hit and run\" drugs are incorrect? These drugs are eliminated quickly and have short half-lives. These drugs produce a prolonged effect even after they are eliminated from the body. These drugs require continuous administration to maintain their therapeutic effect. Omeprazole and reserpine are classified under these drugs. Regular blood samples are needed to monitor plasma concentration.",
+      "options": {
+        "A": "1, 3 and 5",
+        "B": "2, 3 and 5",
+        "C": "3 and 4",
+        "D": "1,2 and 3"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer : A) 1, 3 and 5 Explanation: Hit-and-run drugs are not defined by their rate of elimination, do not require continuous administration, and monitoring of plasma concentration has no value. Hit and Run drugs: Create lasting effects by irreversibly binding to targets, initiating a cascade that persists even after the drug is eliminated (Statement 2). The effect lasts much longer than the drug itself. Do not require continuous administration due to prolonged effect. Plasma concentration monitoring is of no value. Examples include reserpine, guanethidine, MAO inhibitors, and omeprazole (Statement 4). Reference: KDT-Essentials of Medical Pharmacology, 8th Edition, Page 42.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 8,
+      "question": "A 32-year-old female on oral contraceptives containing estrogen is prescribed a course of ampicillin for a urinary tract infection. A few weeks later, she experiences an unexpected breakthrough bleeding and is concerned about the efficacy of her contraceptive. Which of the following describes the potential failure of her oral contraceptive?",
+      "options": {
+        "A": "Antibiotics induce hepatic enzymes that increase estrogen metabolism",
+        "B": "Antibiotics inhibit the absorption of estrogen in the stomach",
+        "C": "Antibiotics destroy gut flora, reducing enterohepatic circulation of estrogen",
+        "D": "Antibiotics increase renal excretion of estrogen"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer : C) Antibiotics destroy gut flora, reducing enterohepatic circulation of estrogen oestrogen. This can potentially lead to decreased estrogen levels and contraceptive failure. Metabolism of estrogen/oral contraceptives: CYP3A4 Enzyme for Estrogen Hydroxylation. Absorption occurs in the small intestine (Option B) Mechanism: Induction CYP450 enzymes in the liver: (Option A) Rifampicin induces CYP3A4, resulting in increased estrogen metabolism, leading to contraceptive failure. Interruption with enterohepatic cycling: Seen with penicillins , cephalosporins, tetracyclines, macrolides, antifungals, and sulphonamides.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 9,
+      "question": "A 45-year-old male is undergoing treatment for latent tuberculosis with a standard regimen. After a few weeks of therapy, he develops peripheral neuropathy. His doctor explains that this side effect is related to the metabolism of isoniazid. Which type of phase II metabolism is responsible for this patient’s symptoms?",
+      "options": {
+        "A": "Slow glucuronidation",
+        "B": "Fast glucuronidation",
+        "C": "Fast acetylation",
+        "D": "Slow acetylation"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct answer : D) Slow acetylation Explanation : Isoniazid is metabolised primarily in the liver through acetylation , a phase II metabolic process . The rate at which isoniazid is acetylated depends on the genetic polymorphism of the NAT2 enzyme , leading to two major phenotypes: slow acetylators and fast acetylators (Option C ruled out) Fast Acetylators Slow Acetylators NAT2 enzyme activity High Low Drug concentrations Low High Increased risk for Reduced microbial cure. Increased relapse. Acquired drug resistance. Hepatotoxicity. Peripheral neuropathy/neuritis. Acetylation: Compounds having amino or hydrazine residues are conjugated with the help of acetyl coenzyme A. Drugs undergoing acetylation (Mnemonic is C-SHIPPeD ): C lonazepam. S ulphonamides. H ydralazine. I soniazid. P rocainamide. P ara-amino-salicylic acid. D apsone. Slow glucuronidation (Option A) and fast glucuronidation (Option B): Glucuronidation is not the primary phase II pathway for isoniazid. It is seen in clonazepam, diazepam, amitriptyline etc. Reference: KDT- Essentials of Medical Pharmacology, 8th Edition, Pages 31, 756, 817. Goodman and Gilman's The Pharmacological Basis of Therapeutics, 14th Edition, Pages 112-114, 1273.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 10,
+      "question": "Match the following CYP450 enzymes with the drugs they primarily metabolise: CYP450 Enzyme Drug 1. CYP1A2 A. Phenytoin 2. CYP2C9 B. Midazolam 3. CYP2C19 C. Clopazine 4. CYP2D6 D. Pantoprazole 5. CYP3A4 E. Codeine",
+      "options": {
+        "A": "1:D, 2:C, 3:A, 4:E, 5:B",
+        "B": "1:C, 2:A, 3:D, 4:E, 5:B",
+        "C": "1:C, 2:A, 3:E, 4:B, 5:D",
+        "D": "1:A, 2:C, 3:B, 4:E, 5:D"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer : B) 1:C, 2:A, 3:D, 4:E, 5:B Explanation : Types of CYP enzymes and their substrates. CYP Enzymes Substrates/Drugs CYP1A2 Theophylline Clozapine CYP2C9 (earlier CYP2C8) (Saturation kinetics is seen) Phenytoin Warfarin CYP2C19 Clopidogrel (see note below) Azoles: Voriconazole, Ketoconazole PPI: Omeprazole, Pantoprazole CYP2D6 Propranolol Quinidine Tamoxifen TCA SSRIs Opioids (Codeine) Antipsychotics (all except clozapine) CYP2E1 Paracetamol CYP3A4 Astemizole Midazolam Cyclosporine/Tacrolimus Diltiazem/ verapamil Oral contraceptive pills Fexofenadine/Terfenadine Note: Clopidogrel metabolism and antiplatelet effects. Bioactivated through phase 2 conjugation by CYP2C19 enzyme to 2-oxo-clopidogrel, metabolised to an irreversible inhibitor of platelet ADP P2Y12 receptors. Omeprazole inhibits CYP2C19, reducing the activation of clopidogrel and potentially decreasing its antiplatelet effect. Reference: Goodman and Gilman's The Pharmacological Basis of Therapeutics, 14th Edition , Pages 103, 106-107, 137.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 11,
+      "question": "In drug mechanisms observed in cancer cells, which of the following accurately describes the role of the P-glycoprotein pump (Pgp)?",
+      "options": {
+        "A": "Pgp facilitates drug uptake into tumour cells",
+        "B": "Pgp reduces drug elimination from tumour cells",
+        "C": "Pgp is involved in drug efflux from tumour cells",
+        "D": "Pgp has no significant impact on drug transport within tumour cells"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Pgp is involved in drug efflux from tumour cells Explanation: P-glycoprotein (P-gp), also known as ATP-binding cassette sub-family B member 1 ( ABCB1 ) or multidrug resistance protein 1 ( MDR1 ), is an efflux transporter protein. Its primary function is to pump out a wide range of substances, including drugs, from inside the cell to outside the cell (drug efflux). (Options: A, B, and D ruled out). When Pgp is overexpressed or hyperactive in cancer cells, it leads to increased efflux of chemotherapeutic drugs out of the cells (leads to drug resistance). Location of Pgp in various body tissues: GIT: Decreases absorption of the drug. Kidney: Increases urinary excretion of the drug. Liver: Increases bile excretion of the drug. Blood-brain-barrier/Placenta: Decreases drug entry into the brain/placental cells. Substrate of p-glycoprotein transporter: E.g. Digoxin. P-glycoprotein Inducer P-glycoprotein Inhibitor Activity Increases the activity of Pgp Decreases the activity of Pgp Drugs Rifampicin. Phenobarbitone. Mnemonic: QVACKER Quinidine Verapamil Amiodarone Clarithromycin Ketoconazole Erythromycin Ritonavir Combined with Substrate of p-glycoprotein (Digoxin) Increases the activity of P-gp. Increased urinary excretion. Digoxin is excreted. Reduces the activity of P-gp. Reduced urinary excretion. Increased plasma concentration of the drug. Toxicity of digoxin: Arrhythmias. Reference: KDT- Essentials of Medical Pharmacology, 8th Edition, Pages 19, 21, 25",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 12,
+      "question": "Diazepam undergoes which of the following metabolic reactions?",
+      "options": {
+        "A": "Glycination",
+        "B": "Glucuronide conjugation",
+        "C": "Sulfation",
+        "D": "Methylation"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Glucuronide conjugation Explanation: Diazepam undergoes glucuronide conjugation. Phase 2 reactions: These reactions involve the conjugation of the drug or its phase I metabolite with an endogenous substrate, usually derived from carbohydrates or amino acids, to form a polar, highly ionised organic acid that is easily excreted in urine or bile. Conjugation reactions have high energy requirements and are generally faster than phase l reactions. Glucuronide conjugation: This is the most important phase II reaction carried out by a group of UDP-glucuronyl transferases. Compounds with a hydroxyl or carboxylic acid group are easily conjugated with glucuronic acid derived from glucose. Substances undergoing glucuronide conjugation: Drugs Endogenous substances Chloramphenicol. Paracetamol. Aspirin. Benzodiazepines: Diazepam, lorazepam. Morphine. Metronidazole. Bilirubin. Thyroxine. Steroidal hormones. Options Reaction Examples Glycination (Option A) Glycination: The drugs are conjugated with glycine. Salicylates. Nicotinic acid. Sulfation (Option C) Sulfation: The phenolic compounds and steroids are sulfated by sulfotransferases. Chloramphenicol. Methyldopa. Adrenal & sex steroids. Methylation(Option D) Methylation: The amines and phenols are methylated by methyl transferases. Chloramphenicol. Methyldopa. Captopril. Mercaptopurine. Reference: KDT-Essentials of Medical Pharmacology, 8th Edition, Page 31,32.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 13,
+      "question": "All of the following are phase 1 reactions except?",
+      "options": {
+        "A": "Oxidation",
+        "B": "Reduction",
+        "C": "Methylation",
+        "D": "Hydrolysis"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Methylation Explanation: Methylation is a phase 2 reaction. Drugs undergo two types of reactions in the liver: Phase 1 and Phase 2. Phase 1 (Exposes Functional group on Drug) Phase 2 (Makes drug Water Soluble) The activity of the drug Drugs convert into active & inactive forms. The drug converts into active form only, except morphine & minoxidil. Enzymes transfer polar groups. Types of reaction and their site Microsomal reactions: Oxidation (Most Common) & Reduction (mediated by CYP450 enzymes). Hydrolysis. Deamination. Dehydrogenation. Cyclisation. Decyclisation (Options A, B and D ruled out). Microsomal reaction: Glucuronide conjugation. Non-microsomal reactions: Acetylation. Methylation. Sulfation. Glycination. Glutathionation. Ribonucleoside/nucleotide synthesis. M/C reaction Oxidation & reduction. Glucuronide conjugation. (Microsomes- Smooth endoplasmic reticulum). Reference: KDT-Essentials of Medical Pharmacology, 8th Edition, Page 31,32",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 14,
+      "question": "Match the following: Route Percentage Bioavailability 1) a) 100 2) b) 30-90 3) c) 75-100 4) d) 5-100",
+      "options": {},
+      "correct_answer": "",
+      "explanation": "",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 15,
+      "question": "What is the effect of hypoalbuminemia on drugs with high plasma protein binding?",
+      "options": {
+        "A": "Decreased drug efficacy",
+        "B": "Increased drug efficacy",
+        "C": "Increased risk of drug toxicity",
+        "D": "Decreased risk of drug toxicity"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Increased risk of drug toxicity Explanation: Drugs with high plasma protein binding rely heavily on albumin for transportation in the bloodstream. Hypoalbuminemia (low levels of albumin in the blood) reduces the available binding sites for these drugs, leading to higher concentrations of free, unbound drugs in the bloodstream. This can result in increased drug potency and a higher risk of adverse effects or toxicity (Options A, B and D ruled out). Examples include phenytoin and furosemide. The clinically significant implications of plasma protein binding are: Highly plasma protein-bound drugs are restricted to the vascular compartment as they do not cross membranes → smaller volumes of distribution. The drug's bound fraction is not available for action but is in equilibrium with the free drug in plasma, which is available for metabolism and elimination, causing the bound fraction to dissociate as free drug concentration decreases. High protein binding generally prolongs the drug's action as the bound fraction is not readily metabolised or excreted. Glomerular filtration does not significantly reduce the concentration of free drugs in the efferent vessels. Highly protein-bound drugs are not removed by haemodialysis. A single drug can bind to multiple sites on the albumin molecule. Multiple drugs can bind to the same site on albumin, leading to potential displacement interactions. Reference: KDT-Essentials of Medical Pharmacology, 8th Edition, Pages 26,27.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 16,
+      "question": "Which statement regarding pharmacokinetics is incorrect? unchanged",
+      "options": {
+        "A": "The volume of distribution (Vd) is a measure of drug distribution in the body",
+        "B": "Clearance (Cl) represents the rate at which a drug is eliminated from the body",
+        "C": "Bioavailability (F) is the fraction of an administered dose that reaches systemic circulation",
+        "D": "The half-life (T1/2) is unaffected by liver metabolism"
+      },
+      "correct_answer": "D",
+      "explanation": "Correct answer: D) The half-life (T1/2) is unaffected by liver metabolism. Explanation: The Plasma half-life (t½) of a drug is the time taken for its plasma concentration to be reduced to half of its original value. It is influenced by various factors, including metabolism. Drugs metabolised by the liver can have their half-life altered by changes in liver function or enzyme activity. Liver metabolism can either increase or decrease the half-life of a drug, depending on whether the metabolites are active or inactive and how rapidly they are eliminated from the body. The volume of distribution (Vd) is a measure of drug distribution in the body (Option A): Once a drug has gained access to the bloodstream, it gets distributed to other tissues that initially had no drug, concentration gradient being in the direction of plasma to tissues. The extent of distribution of a drug and its pattern of tissue distribution depends on its: Lipid solubility. Ionisation at physiological pH (a function of its pKa). The extent of binding to plasma and tissue proteins. The presence of tissue-specific transporters. Differences in regional blood flow. Clearance (Cl) represents the rate at which a drug is eliminated from the body (Option B): The clearance of a drug is the theoretical volume of plasma from which the drug is completely removed in a unit of time. It can be calculated as: CL = Rate of elimination/C Where C is the plasma concentration. Bioavailability (F) is the fraction of an administered dose that reaches systemic circulation unchanged (Option C): Bioavailability refers to the rate and extent of a drug's absorption from a dosage form administered by any route, as determined by its concentration-time curve in blood or excretion in urine. It measures the fraction (F) of the administered drug dose that reaches the systemic circulation in the unchanged form. Reference: KDT-Essentials of Medical Pharmacology, 8th Edition, Pages 22,23,38,39.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 17,
+      "question": "A 25-year-old patient presents with agitation, confusion, hyperthermia, and mydriasis. Urine toxicology confirms amphetamine use. What is the most appropriate management strategy for this patient?",
+      "options": {
+        "A": "Benzodiazepines",
+        "B": "Beta-blockers",
+        "C": "Ammonium chloride",
+        "D": "Sodium bicarbonate"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Ammonium chloride Explanation: The patient presents with acute amphetamine toxicity , which typically causes CNS stimulation (agitation, confusion), autonomic hyperactivity (hyperthermia, mydriasis), and can lead to seizures or cardiovascular complications. The most appropriate management for acute amphetamine toxicity is urinary acidification with ammonium chloride to enhance the elimination of the drug. Amphetamine Toxicity: CNS Effects Restlessness, dizziness, tremor, hyperactive reflexes Talkativeness, tenseness, irritability, insomnia Euphoria, confusion, aggressiveness Anxiety, changes in libido, delirium, hallucinations (paranoid), panic states Suicidal or homicidal tendencies (especially in mentally ill) Fatigue and depression follow stimulation Cardiovascular Effects Headache, chilliness, pallor/flushing Palpitations, arrhythmias, anginal pain Hypertension or hypotension Circulatory collapse Gastrointestinal Effects Dry mouth, metallic taste, anorexia Nausea, vomiting, diarrhea, abdominal cramps Other Symptoms Fever, excessive sweating Fatal cases: convulsions, coma, cerebral hemorrhages Dose-related Toxicity Idiosyncratic reaction can occur with as little as 2 mg Severe reactions reported at 30 mg 400–500 mg not uniformly fatal; chronic users tolerate higher doses Treatment Urinary acidification with ammonium chloride to enhance excretion Sedatives for CNS symptoms Sodium nitroprusside or alpha-adrenergic blocker for severe hypertension Benzodiazepines (Option A) are used mainly to control CNS symptoms like agitation and seizures but do not enhance drug elimination. Beta-blockers (Option B): Incorrect because non-selective beta-blockers can worsen hypertension via unopposed alpha-adrenergic stimulation . Sodium bicarbonate (Option D): Incorrect unless there is a wide QRS complex arrhythmia due to sodium channel blockade, which is not indicated in this scenario. Reference: Goodman & Gilman's, The Pharmacological Basis of Therapeutics, 14th Edition, Page 265",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 18,
+      "question": "Which of the following statements is correct regarding drug absorption and excretion?",
+      "options": {
+        "A": "Highly polar drugs are readily absorbed through the lipid membranes",
+        "B": "Non-polar drugs are readily absorbed",
+        "C": "Maximum unionisation of an acidic drug occurs in the small intestine",
+        "D": "Non-ionized forms of drugs are less likely to be absorbed than ionised forms."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Non-polar drugs are readily absorbed Explanation: Cell membranes are primarily composed of lipids. Lipophilic or non-polar drugs can dissolve in lipids and cross these lipid-rich barriers. Due to their affinity for lipid components, lipophilic substances can passively diffuse through cell membranes. This passive diffusion is a common mechanism by which drugs are absorbed. Highly polar drugs are readily absorbed through the lipid membranes (Option A) : Highly polar drugs are less likely to pass through the lipid membranes due to their low solubility. Polar or hydrophilic drugs are water-soluble, lack lipid solubility , and require specialised transporters or channels for absorption across cell membranes. Maximum unionisation of an acidic drug occurs in the small intestine (Option C): A drug's degree of ionisation is influenced by its pKa (the pH at which it is 50% ionised) and the pH of its environment. Acidic drugs tend to be ionised in basic environments (higher pH) and non-ionised in acidic environments (lower pH) and vice versa. Accordingly, the maximum unionisation of acidic drugs occurs in the stomach , not the small intestine. Non-ionized forms of drugs are less likely to be absorbed than ionised forms (Option D): Non-ionized drugs are more lipid-soluble and more readily absorbed through lipid membranes. Reference: KD Tripathi, Essentials of Medical Pharmacology, 8th Edition, Pages 16-25",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 19,
+      "question": "A 55-year-old male with chronic obstructive pulmonary disease (COPD) is being treated with theophylline. He is prescribed erythromycin for a respiratory tract infection. Which of the following outcomes is most likely due to the interaction between these two drugs?",
+      "options": {
+        "A": "Decreased plasma concentration of theophylline",
+        "B": "Increased risk of theophylline toxicity",
+        "C": "No significant interaction",
+        "D": "Decreased efficacy of erythromycin"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Increased risk of theophylline toxicity Explanation: Erythromycin is an inhibitor of the cytochrome P450 enzyme CYP1A2 , which metabolises theophylline. Inhibition of this enzyme leads to higher plasma levels of theophylline , increasing the risk of toxicity. Theophylline toxicity: It has a narrow margin of safety , and dose-dependent toxicity starts from the upper half of the therapeutic concentration range. The image below shows the effects of theophylline toxicity. Enzyme inhibitors: (leads to drug toxicity) Drugs (Mnemonic- COKE i n G allon C ontain A rtificial P reser v atives): C imetidine. G rapefruit juice (Furano coumarins). O meprazole. C larithromycin & C iprofloxacin. K etoconazole. A cute alcoholism. E rythromycin. P rotease inhibitor (Ritonavir). I soniazid (inhibits all CYP enzymes except CYP2E1). V alproate. Reference: KD Tripathi, Essentials of Medical Pharmacology, 8th Edition, Page 246",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpharmacology/General_Pharmacology-Pharmacokinetics_Q19_exp.png",
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    },
+    {
+      "q_no": 20,
+      "question": "A patient with epilepsy is prescribed both Phenytoin and lamotrigine for seizure control. The patient reports worsening seizures despite adhering to the prescribed regimen. Which of the following best explains the potential reason for the failure of the regimen?",
+      "options": {
+        "A": "Increased absorption of lamotrigine",
+        "B": "Toxicity of lamotrigine",
+        "C": "Increased metabolism of lamotrigine",
+        "D": "Inhibition of transport of lamotrigine"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Increased metabolism of lamotrigine Explanation: Lamotrigine is primarily metabolized by glucuronidation via the enzyme UGT1A4 . Phenytoin is a potent enzyme inducer , especially of UGT and CYP450 enzymes. When given together, phenytoin induces the metabolism of lamotrigine , leading to: Faster clearance of lamotrigine Lower plasma levels Subtherapeutic effect , resulting in worsening seizures despite compliance Enzyme Inducers and Inhibitors Enzyme Inducers : These increase drug metabolism → ↓ Drug effect Mnemonic – GRAASS: Inducer Effect Griseofulvin Antifungal – induces CYP enzymes Rifampicin Strong CYP3A4 inducer Antiepileptics Phenytoin, Carbamazepine, Phenobarbital – all induce metabolism Alcohol (Chronic) Induces CYP2E1 Smoking Induces CYP1A2 St. John’s Wort Induces CYP3A4 and P-gp Enzyme Inhibitors : These decrease metabolism → ↑ Drug levels (toxicity risk) Mnemonic – G-PACMAN: Inhibitor Notes Grapefruit juice Inhibits intestinal CYP3A4 Protease inhibitors e.g., ritonavir – inhibits CYP3A4 Azoles e.g., ketoconazole – potent CYP inhibitors Cimetidine H2 blocker – inhibits multiple CYPs Macrolides e.g., erythromycin – inhibits CYP3A4 Amiodarone Inhibits CYP2C9, CYP3A4 Non-DHP CCBs Verapamil, Diltiazem – inhibit CYP3A4 Increased absorption of lamotrigine (Option A): Phenytoin does not affect lamotrigine's absorption significantly. The issue lies in its metabolism , not uptake. Toxicity of lamotrigine (Option B): Toxicity occurs when metabolism is inhibited (e.g., by valproate), not when induced. Here, levels drop. Inhibition of transport of lamotrigine (Option D): There’s no major known effect of phenytoin on lamotrigine transporters. Reference: KD Tripathi, Essentials of Medical Pharmacology, 8th Edition, Page 30",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "General Pharmacology-Pharmacokinetics"
+    }
+  ]
+}

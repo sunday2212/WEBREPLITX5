@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "title": "28_Study_Design"
+  },
+  "questions": [
+    {
+      "id": 92735,
+      "choices": [
+        {
+          "id": 227248,
+          "text": "Sample size is more in study A"
+        },
+        {
+          "id": 227249,
+          "text": "Sample size is less in study A"
+        },
+        {
+          "id": 227250,
+          "text": "P value for study B is > 0.05"
+        },
+        {
+          "id": 227251,
+          "text": "Results in study B are not accurate"
+        }
+      ],
+      "text": "Researchers want to assess association between consumption of OCP and incidence of stroke. For this purpose studies were conducted in Delhi and Mumbai. Study A, which was conducted in Delhi, reports RR of 1.4 (95% CI 0.9-2.1) among women consuming OCPs and Study B from Mumbai reports RR of 1.3 (95% CI 1.2-1.5) among women consuming OCPs. Which of the following best describes about the studies?",
+      "unique_key": "Q1552895",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34067354,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Sample size is less in Study A) The studies assess the association between oral contraceptive pills (OCP) use and stroke incidence in Delhi (Study A) and Mumbai (Study B), reporting the Relative Risk (RR) and 95% Confidence Interval (CI). Step 1: Understanding Confidence Intervals (CI) and Sample Size The width of the confidence interval (CI) depends on the sample size: Larger sample size ? Narrower CI (more precise estimate) Smaller sample size ? Wider CI (less precise estimate) Study A (Delhi) reports RR = 1.4 (95% CI: 0.9–2.1) The wide CI suggests more variability and lower precision, meaning the sample size was smaller. The CI includes 1, so the association is not statistically significant. Study B (Mumbai) reports RR = 1.3 (95% CI: 1.2–1.5) The narrow CI suggests higher precision, meaning the sample size was larger. The CI does not include 1, so the association is statistically significant. Thus, Study A likely had a smaller sample size, making option B correct. Incorrect Options: A. Sample size is more in Study A A larger sample size would produce a narrower CI, but Study A has a wider CI, indicating a smaller sample size. C. P-value for Study B is >0.05 In Study B, the 95% CI (1.2–1.5) does not include 1, meaning the association is statistically significant (p 0.05, the CI would have included 1, which is not the case here. D. Results in Study B are not accurate A narrow CI means Study B has a more precise estimate with a larger sample size. The results are statistically significant and reliable.",
+      "correct_choice_id": 227249,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/32327261699349580/32327261699349580.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/32327261699349580/32327261699349580.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92736,
+      "choices": [
+        {
+          "id": 227252,
+          "text": "Study is significant"
+        },
+        {
+          "id": 227253,
+          "text": "P value is > 0.05"
+        },
+        {
+          "id": 227254,
+          "text": "Sample size of study is large"
+        },
+        {
+          "id": 227255,
+          "text": "None of the above"
+        }
+      ],
+      "text": "A cohort study was conducted to assess the relationship between smoking and oral cancer. The study shows that relative risk of developing oral cancer is 3.2 (0.2-8.1) among smokers. Which of the following is true?",
+      "unique_key": "Q4803061",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34612107,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) P-value is > 0.05) A cohort study was conducted to evaluate the association between smoking and oral cancer, reporting a relative risk (RR) of 3.2 with a 95% confidence interval (CI) of 0.2–8.1. Step 1: Understanding Confidence Intervals (CI) and Statistical Significance A study is considered statistically significant if the 95% CI does not include 1. In this case, the CI (0.2–8.1) includes 1, meaning that smoking may not be significantly associated with oral cancer. If a confidence interval includes 1, the p-value is greater than 0.05, indicating that the association is not statistically significant. Thus, p > 0.05, making option B correct. Incorrect Options: A. Study is significant – Incorrect The CI (0.2–8.1) includes 1, meaning the results are not statistically significant. If the CI did not include 1, we could conclude a significant association. C. Sample size of study is large – Incorrect A wide confidence interval (0.2–8.1) suggests high variability in estimates, likely due to a small sample size. A larger sample size would produce a narrower CI, improving precision. D. None of the above – Incorrect Option B (P-value > 0.05) is correct, so this option is not valid.",
+      "correct_choice_id": 227253,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/15755251699349593/15755251699349593.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/15755251699349593/15755251699349593.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92737,
+      "choices": [
+        {
+          "id": 227256,
+          "text": "Analysis of variance (ANOVA)"
+        },
+        {
+          "id": 227257,
+          "text": "Students t-test"
+        },
+        {
+          "id": 227258,
+          "text": "Paired t-test"
+        },
+        {
+          "id": 227259,
+          "text": "Chi Square test"
+        }
+      ],
+      "text": "A study is conducted to assess association of lithium with respiratory depression. Results are shown below. Choose appropriate statistical test.<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/57(1).jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q6884818",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34961846,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) Identifying the Type of Data Independent Variable (Exposure): Lithium use (Categorical: Yes/No) Dependent Variable (Outcome): Presence of respiratory depression (Categorical: Yes/No) Since both variables are categorical (binary data: presence/absence), the Chi-Square test is the correct test to determine whether there is a significant association between lithium use and respiratory depression. Incorrect Options: A. Analysis of Variance (ANOVA) – Incorrect ANOVA is used to compare the means of three or more groups. Since this study involves categorical data, ANOVA is not applicable. B. Student’s t-test – Incorrect A t-test is used to compare the means of two groups, but this study does not involve mean values. The dependent variable (respiratory depression) is categorical, not continuous. C. Paired t-test – Incorrect A paired t-test is used when comparing pre-test and post-test measurements in the same group (e.g., before and after lithium treatment in the same patients). This study is looking at an association between two independent categorical variables, so a paired t-test is not appropriate.",
+      "correct_choice_id": 227259,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/34967761699349608/34967761699349608.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/34967761699349608/34967761699349608.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92738,
+      "choices": [
+        {
+          "id": 227260,
+          "text": "Hyperkalemia is associated with cardiac arrhythmias"
+        },
+        {
+          "id": 227261,
+          "text": "Hyperkalemia is not associated with cardiac arrhythmias"
+        },
+        {
+          "id": 227262,
+          "text": "Hypokalemia is associated with cardiac arrhythmias"
+        },
+        {
+          "id": 227263,
+          "text": "Hypokalemia is not associated with cardiac arrhythmias"
+        }
+      ],
+      "text": "A group of researchers believe that hyperkalemia is associated with cardiac arrythmias and they want to conduct a study to prove this association. What should be the null hypothesis statement regarding this study?",
+      "unique_key": "Q8033126",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34905343,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Hyperkalemia is not associated with cardiac arrhythmias) Understanding the Null Hypothesis (H?) The null hypothesis (H?) is a statement that assumes no relationship or no effect between variables. Researchers test this assumption to either reject or fail to reject it based on study findings. In this case: Researchers want to study the association between hyperkalemia and cardiac arrhythmias. The null hypothesis must state that there is NO association between these two variables. Thus, the correct null hypothesis is: \"Hyperkalemia is not associated with cardiac arrhythmias.\" So, the correct answer is B. Incorrect Options: A. Hyperkalemia is associated with cardiac arrhythmias – Incorrect This represents the alternative hypothesis (H?), which states that an association does exist. The null hypothesis always assumes no association, making this choice incorrect. C. Hypokalemia is associated with cardiac arrhythmias – Incorrect The study is about hyperkalemia (high potassium levels), not hypokalemia (low potassium levels). This hypothesis is unrelated to the study objective. D. Hypokalemia is not associated with cardiac arrhythmias – Incorrect Again, this statement refers to hypokalemia (low potassium), but the researchers are studying hyperkalemia. The null hypothesis should be specific to the actual research question, making this choice irrelevant.",
+      "correct_choice_id": 227261,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/41658831699349666/41658831699349666.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/41658831699349666/41658831699349666.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92739,
+      "choices": [
+        {
+          "id": 227264,
+          "text": "Mean"
+        },
+        {
+          "id": 227265,
+          "text": "Median"
+        },
+        {
+          "id": 227266,
+          "text": "Mode"
+        },
+        {
+          "id": 227267,
+          "text": "Standard deviation"
+        }
+      ],
+      "text": "Which of the following parameter is most likely to be affected when data values are skewed?",
+      "unique_key": "Q3503800",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34634760,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (A) (Mean) Effect of Skewed Data on Measures of Central Tendency When data is skewed (i.e., not symmetrically distributed), the mean is the most affected measure of central tendency. The mean is sensitive to extreme values because it is calculated by summing all values and dividing by the total count. In a positively skewed distribution (right-skewed), where there are extreme high values, the mean shifts right (higher than the median and mode). In a negatively skewed distribution (left-skewed), where there are extreme low values, the mean shifts left (lower than the median and mode). Thus, the mean is most affected by skewed data, making A the correct answer. Incorrect Options: B. Median The median is resistant to outliers and skewed data because it represents the middle value when data is arranged in order. While skewed data can slightly shift the median, it is less affected than the mean. C. Mode The mode is the most frequently occurring value and is least affected by skewness. Even in highly skewed distributions, the mode remains unchanged unless the frequency distribution changes significantly. D. Standard Deviation Standard deviation measures the spread of data but does not define central tendency. While extreme values increase standard deviation, it is not a measure of central tendency and is not the most affected by skewness.",
+      "correct_choice_id": 227264,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/758981699349679/758981699349679.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/758981699349679/758981699349679.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92740,
+      "choices": [
+        {
+          "id": 227268,
+          "text": "Student \"t\" test"
+        },
+        {
+          "id": 227269,
+          "text": "Paired \"t\" test"
+        },
+        {
+          "id": 227270,
+          "text": "Chi square test"
+        },
+        {
+          "id": 227271,
+          "text": "McNemar test"
+        }
+      ],
+      "text": "Which of the following is used to compare the statistical significance of reduction in mean blood pressure between treatment and placebo group :",
+      "unique_key": "Q9589015",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34028140,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (A) (Student’s \"t\" test) The question requires a statistical test to compare the reduction in mean blood pressure between a treatment group and a placebo group. Here, we are comparing mean blood pressure values between two independent groups (treatment vs. placebo). The Student's t-test (also called the independent t-test) is used to compare the means of two independent groups to determine whether the difference between them is statistically significant. Since the treatment and placebo groups are independent and not related, the Student’s t-test is the correct choice. Thus, the correct answer is A (Student’s \"t\" test). Incorrect Options: B. Paired \"t\" test – Incorrect A paired t-test is used when the same subjects are measured before and after an intervention (e.g., pre-treatment vs. post-treatment in the same individuals). In this case, we are comparing two different groups (treatment vs. placebo), not the same individuals before and after treatment. Therefore, a paired t-test is not appropriate. C. Chi-Square Test – Incorrect The Chi-Square test is used for categorical data, not continuous variables like blood pressure. Since blood pressure is a continuous variable, Chi-Square is not applicable. D. McNemar Test – Incorrect The McNemar test is used for paired categorical data (e.g., pre- and post-treatment proportions in the same individuals). Since blood pressure is a continuous variable and we are comparing two independent groups, McNemar's test is not suitable.",
+      "correct_choice_id": 227268,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/8011391699349732/8011391699349732.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/8011391699349732/8011391699349732.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92741,
+      "choices": [
+        {
+          "id": 227272,
+          "text": "Sample random"
+        },
+        {
+          "id": 227273,
+          "text": "Stratified random"
+        },
+        {
+          "id": 227274,
+          "text": "Systematic random"
+        },
+        {
+          "id": 227275,
+          "text": "Inverse sampling"
+        }
+      ],
+      "text": "In a community of 3000 people, 80% are Hindus, 10% Muslims, 5% Sikh, 4% Christians and y 1% Jains. To select a sample of 300 people to analyze food habits and its association with non communicable disease, ideal sample would be",
+      "unique_key": "Q4553313",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34982878,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (Stratified Random Sampling) In stratified random sampling, the population is divided into homogeneous subgroups (strata) based on a specific characteristic (e.g., religion in this case), and then a random sample is taken from each stratum proportionally to its representation in the total population. Here, the population consists of different religious groups, with varying proportions (80% Hindus, 10% Muslims, etc.). To ensure that the sample of 300 people accurately represents the community, we must sample each group proportionally to its population size. This method ensures that minority groups are not underrepresented and improves the validity of the study on food habits and non-communicable diseases. Thus, Stratified Random Sampling is the ideal method. Incorrect Options: Option A (Simple Random Sampling) – Incorrect In simple random sampling, each individual has an equal chance of being selected. However, this method may lead to overrepresentation of majority groups (e.g., Hindus) and underrepresentation of minorities (e.g., Jains, Christians), making it less suitable for this study. Option C (Systematic Random Sampling) – Incorrect In systematic random sampling, individuals are selected at regular intervals from a list (e.g., every 10th person). This method does not ensure proportional representation of different religious groups, making it unsuitable for this study. Option D (Inverse Sampling) – Incorrect Inverse sampling is used when a specific number of positive cases (e.g., cases of a disease) need to be found, and sampling continues until the required number is reached. Since we are selecting a fixed sample size (300 people) rather than looking for specific cases, inverse sampling is not applicable.",
+      "correct_choice_id": 227273,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/24922651699349881/24922651699349881.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/24922651699349881/24922651699349881.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92742,
+      "choices": [
+        {
+          "id": 227276,
+          "text": "100"
+        },
+        {
+          "id": 227277,
+          "text": "200"
+        },
+        {
+          "id": 227278,
+          "text": "300"
+        },
+        {
+          "id": 227279,
+          "text": "400"
+        }
+      ],
+      "text": "The prevalence of diabetes mellitus in a population is expected to be 50%. An investigator is interested in assessing the prevalence in the 95 % confidence. The minimum sample size required for the study is",
+      "unique_key": "Q2989113",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34587761,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) • Sample size calculation • MC formula for cross sectional studies at 95% confidence • = 4 pq/ d2. • p = prevalence. • q = 1 - q or 100 - q. • d = absolute precision is 5% • 4*50*50/5*5 • =400 Incorrect Options: Option A (100) – Incorrect A sample size of 100 would provide a very wide confidence interval, making the estimate unreliable. Option B (200) – Incorrect This is too small and would not provide the desired precision for a 95% confidence interval. Option C (300) – Incorrect While closer, it is still below the minimum required for accurate estimation with 95% confidence.",
+      "correct_choice_id": 227279,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/3913151699349908/3913151699349908.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/3913151699349908/3913151699349908.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92743,
+      "choices": [
+        {
+          "id": 227280,
+          "text": "There is a significant association between passive smoking and cervical cancer"
+        },
+        {
+          "id": 227281,
+          "text": "The null hypothesis is rejected"
+        },
+        {
+          "id": 227282,
+          "text": "A 90% confidence interval would result in a narrower confidence interval"
+        },
+        {
+          "id": 227283,
+          "text": "The ? was set at 0.10"
+        }
+      ],
+      "text": "You are assigned a project to conduct a prospective cohort study examining the association between passive smoking and cervical cancer which reveals an odd ratio of 1.3 (95% confidence interval 0.8–5.6). The most appropriate conclusion is that ?",
+      "unique_key": "Q3542018",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34422364,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (A 90% confidence interval would result in a narrower confidence interval) A confidence interval (CI) represents the range within which the true odds ratio (OR) is expected to fall, given a certain level of confidence (e.g., 95%). If we decrease the confidence level from 95% to 90%, the interval will become narrower because we are allowing for more uncertainty in our estimation. A wider CI (e.g., 95%) indicates more variability in the data, while a narrower CI (e.g., 90%) reduces the range but may increase the risk of missing the true population value. Since the width of a confidence interval decreases as the confidence level decreases, option C is correct. Incorrect Options: A. There is a significant association between passive smoking and cervical cancer The odds ratio (OR) = 1.3 suggests a possible association, but the 95% confidence interval (0.8–5.6) includes 1, meaning the association is not statistically significant. Since the CI includes 1, we cannot conclude a significant association between passive smoking and cervical cancer. B. The null hypothesis is rejected The null hypothesis (H?) states that there is no association between passive smoking and cervical cancer (OR = 1). Since the confidence interval (0.8–5.6) includes 1, we fail to reject the null hypothesis. To reject H?, the entire CI must be above 1 (for a positive association) or below 1 (for a protective effect). D. The ? was set at 0.10 The alpha (?) level represents the probability of rejecting a true null hypothesis (Type I error). The confidence level and alpha are related: 95% confidence interval ? ? = 0.05 90% confidence interval ? ? = 0.10 However, this study used a 95% confidence interval, meaning ? was 0.05, not 0.10. Since the question does not specify using a 90% confidence level, this option is incorrect.",
+      "correct_choice_id": 227282,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/40438861699350422/40438861699350422.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/40438861699350422/40438861699350422.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92744,
+      "choices": [
+        {
+          "id": 227284,
+          "text": "Chi-square analysis"
+        },
+        {
+          "id": 227285,
+          "text": "Student t test"
+        },
+        {
+          "id": 227286,
+          "text": "Paired t test"
+        },
+        {
+          "id": 227287,
+          "text": "Analysis of variance"
+        }
+      ],
+      "text": "A study is being conducted for comparison of serum cholesterol before and after ingestion of fries and burgers in a sample of fast-food patrons. Choose the most appropriate statistical test to analyze this data.",
+      "unique_key": "Q9832057",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34108751,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (Paired t-test) A paired t-test is used when comparing the means of two related (paired) groups—in this case, the same individuals before and after ingestion of fries and burgers. Each participant acts as their own control, meaning the test evaluates the difference in serum cholesterol levels within the same subjects before and after eating fast food. The paired t-test accounts for the fact that observations are not independent but rather linked (i.e., pre-test and post-test measurements from the same individuals). Thus, a paired t-test is the most appropriate statistical test for this scenario. Incorrect Options: A. Chi-square analysis The Chi-square test is used for categorical data (e.g., presence vs. absence of disease, male vs. female) rather than continuous data like serum cholesterol levels. Since cholesterol levels are numerical (continuous) variables, Chi-square is not suitable for this analysis. B. Student t-test A Student’s t-test (independent t-test) compares the means between two independent groups (e.g., cholesterol levels in two different groups of people, such as fast-food eaters vs. non-fast-food eaters). However, in this study, the same individuals are measured before and after eating—making it a paired analysis rather than an independent comparison. D. Analysis of variance (ANOVA) ANOVA (Analysis of Variance) is used when comparing more than two groups (e.g., cholesterol levels in people consuming different types of diets). Since this study only has two measurements per subject (before and after eating fast food), ANOVA is not needed.",
+      "correct_choice_id": 227286,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/20069361699350449/20069361699350449.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/20069361699350449/20069361699350449.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 92745,
+      "choices": [
+        {
+          "id": 227288,
+          "text": "Systematic sampling"
+        },
+        {
+          "id": 227289,
+          "text": "Paired sampling"
+        },
+        {
+          "id": 227290,
+          "text": "Simple random sampling"
+        },
+        {
+          "id": 227291,
+          "text": "Stratified sampling"
+        }
+      ],
+      "text": "In a study individuals are initially assembled according to some order in a group and then individuals are selected according to some constant determinant; for instance, every fourth subject is selected. Which type of sampling procedure is being followed ?",
+      "unique_key": "Q5483948",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34906053,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (A) (Systematic Sampling) Systematic sampling is a method where individuals are selected from an ordered population at regular intervals determined by a fixed constant (sampling interval). In this study, individuals are first arranged in a specific order, and then every fourth subject is selected. This follows the principle of systematic sampling, where the researcher picks a random starting point and then selects every nth individual according to a pre-determined interval (in this case, every 4th person). This method is easier and more structured than simple random sampling while maintaining randomness and representation of the population. Incorrect Options: B. Paired Sampling Paired sampling is used when two related observations (e.g., before-and-after measurements in the same individuals or matched pairs in case-control studies) are compared. The given scenario does not involve pairing subjects for direct comparison, so paired sampling is not applicable. C. Simple Random Sampling In simple random sampling (SRS), every individual in the population has an equal chance of being selected, often using methods like lottery or computer-generated randomization. This study does not use pure random selection but follows a systematic pattern (every 4th person), so it is not SRS. D. Stratified Sampling Stratified sampling involves dividing a population into subgroups (strata) based on characteristics like age, gender, or income, and then randomly selecting individuals within each stratum. This study does not divide participants into different strata before selecting them, so stratified sampling is not the correct choice.",
+      "correct_choice_id": 227288,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/12647791699350517/12647791699350517.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/12647791699350517/12647791699350517.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "title": "54_Descriptive_Statistics_I_-_Probability_And_Data"
+  },
+  "questions": [
+    {
+      "text": "You are conducting a study to determine the mean height of children visiting the local PHC. Which type of statistical study is being done here?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Descriptive"
+        },
+        {
+          "id": 2,
+          "text": "Analytical"
+        },
+        {
+          "id": 3,
+          "text": "Inferential"
+        },
+        {
+          "id": 4,
+          "text": "Observational"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>A study to <strong>determine</strong> the <strong>mean height</strong> of children is an example of a&nbsp;<strong>descriptive statistical</strong> study.</p>\n<p><strong>Descriptive statistics</strong> are the statistical methods that merely <strong>organize, describe </strong>or<strong> summarize</strong> the actual data available. For example, a study determining the mean blood pressure of patients visiting a PHC on a single day.</p>\n<p><strong>Analytical statistics </strong>are&nbsp;the second major category of epidemiological studies, after descriptive statistics. The objective of an analytical study is to <strong>test </strong>the<strong> hypothesis</strong>.</p>\n<p>An<strong> observational study</strong>&nbsp;is an empiric investigation in which the objective is to <strong>establish</strong> a relationship between&nbsp;<strong>cause and effect</strong>. It falls under the category of analytical statistics.</p>\n<p>It is performed when&nbsp;controlled experimentation cannot be feasibly used to determine a hypothesis. For example, in the case of cigarette smoking causing lung cancer, it would be unethical and not feasible to conduct a controlled experiment. So, an observational study is preferred.</p>\n<p><strong>Inferential statistics</strong>&nbsp;involve inductive reasoning i.e.,<strong> generalizing observations&nbsp;</strong>to a population after having observed only a sample. An example of such a study would be a study determining the expected success rate of vasectomy&nbsp;</p>\n<p><strong>Theoretical statistics</strong> is a <strong>mathematical</strong> <strong>approach</strong> to describe something, predict events, or analyze the relationship between things. Some of the concepts of theoretical statistics are mean, median, mode, standard deviation and correlation.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1331",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements about statistical terms is incorrect?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Population is the universe about which an investigator wishes to draw conclusions"
+        },
+        {
+          "id": 2,
+          "text": "A sample is a representative subset of the population that is being studied"
+        },
+        {
+          "id": 3,
+          "text": "An element is a group of observations in the population"
+        },
+        {
+          "id": 4,
+          "text": "A population need not be only people but can be measurements too"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>An <strong>element</strong> is a <strong>single observation</strong> in a study. For example, in a study of blood pressure values, the blood pressure value of one person is an element.</p>\n<p>In a statistical study, the <strong>population</strong>&nbsp;refers to the group about which <strong>information</strong> is to be <strong>gathered</strong>. The composition of the population in terms of its age, sex, occupation, cultural characters, etc need to be defined before a study is conducted. The population need not consist of just people but <strong>can also be</strong> made of <strong>measurements</strong>. For example, in a study of blood glucose measurements in Indians, the population consists of the blood glucose measurements.</p>\n<p>The <strong>part/subset </strong>of the<strong> population</strong>, which is being <strong>studied</strong> is known as a <strong>sample</strong>. For example, in a questionnaire-based study on cervical cancer in a population, the sample would include females attending the out-patient departments of a hospital. This is a subset of the entire population.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/860fed9eefaa4b0bbad9ae7906601edfx600x489.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1332",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements about probability is true? (Probability of event occurring is p)<div class='question-desc-html'><ol>\n<li aria-level=\"1\">p=1 means absolute certainty of event occurring</li>\n<li aria-level=\"1\">p can be positive or negative</li>\n<li aria-level=\"1\">The addition rule can be used to calculate probability </li>\n<li aria-level=\"1\">The probability of the event not occurring (q ) = p + 1</li>\n<li aria-level=\"1\">The multiplication rule can be used to calculate probability </li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2,3,4 & 5"
+        },
+        {
+          "id": 2,
+          "text": "1,3 & 5"
+        },
+        {
+          "id": 3,
+          "text": "1,2 & 3"
+        },
+        {
+          "id": 4,
+          "text": "2 & 4"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>If the <strong>probability</strong> of an event occurring is <strong>1</strong>, it means there is an <strong>absolute certainty </strong>that the event will occur.</p>\n<p>The addition rule and multiplication rule can be used to calculate the probability of an event. The <strong>addition rule</strong> is used to calculate the <strong>combined probability</strong> of the occurrence of two or more <strong>mutually exclusive</strong> events. The <strong>multiplication rule</strong> is used to calculate the combined probability of two or more<strong> statistically independent</strong> events occurring <strong>together</strong>.</p>\n<p>Probability values <strong>range</strong> from <strong>0</strong> (no probability) <strong>to 1</strong> (absolute certainty). So negative value of p is not possible.</p>\n<p>Since p is the probability of an event occurring and q is the probability of the event not occurring,</p>\n<p><strong>q = 1 - p</strong></p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1333",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In which of the following processes is binomial distribution widely used?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Marriage counseling"
+        },
+        {
+          "id": 2,
+          "text": "Genetic counseling"
+        },
+        {
+          "id": 3,
+          "text": "Treatment counseling"
+        },
+        {
+          "id": 4,
+          "text": "Differential diagnosis"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Binomial distribution</strong> is widely used in <strong>genetic counseling</strong>.</p>\n<p>Binomial distribution helps <strong>determine</strong> the <strong>probability </strong>of occurance of a specific combination of<strong> mutually exclusive independent </strong>events. In a binomial distribution, there are only <strong>two possible events</strong> like Yes/No or Male/Female or Alive/Dead. The results of the distribution gives the probabilities of obtaining an exact number of successes in a series of independent trials.</p>\n<p>For example, the inheritence of cystic fibrosis follows a binomial distribution. There are:</p>\n<p>a. <strong>Two</strong> possible<strong> events</strong> - inheriting the disease/ not inheriting it</p>\n<p>b. Events are <strong>mutually exclusive</strong> - one person cannot both have the disease and not have it</p>\n<p>c. <strong>Independent</strong> possibilities - if one child has inherited it, this will not affect if the other child will inherit it.</p>\n<p>The physician using this technique can explain to the patients the probabilities of their children suffering from the disease.</p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1334",
+      "difficulty": "medium"
+    },
+    {
+      "text": "If the events A and B are mutually exclusive events, what is the probability of either A or B occurring?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "p (A) + p (B)"
+        },
+        {
+          "id": 2,
+          "text": "p (A) x p (B)"
+        },
+        {
+          "id": 3,
+          "text": "p (A)+p (B)-p (A and B)"
+        },
+        {
+          "id": 4,
+          "text": "1 - [p (A) + p (B)]"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>If the events A and B are <strong>mutually exclusive</strong>, then the probability of <strong>either A or B occuring</strong> is given by,</p>\n<p>p (A or B) =<strong> p (A) + p (B)</strong></p>\n<p>This is as per<strong> </strong>the<strong> addition rule </strong>of probability. </p>\n<p>The probability of both the mutually exclusive events happening at the same time is given by,</p>\n<p>p (A and B) =<strong> p (A) x p (B)</strong></p>\n<p>The probability of any of two mutually non-exclusive events occuring at a point of time is given by,</p>\n<p>p (A or B) = <strong>p (A) + p (B) - p (A and B)</strong></p>\n<p>If p(A) and p(B) are the only two outcomes possible in a given event then,</p>\n<p><strong>p (A) + p (B) = 1</strong></p>\n<p>For example, probability of patient suffering from lung cancer dying within 5 years and probability of patient suffering from lung cancer surviving these 5 years adds upto 1.</p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1335",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You are conducting a study on birth weight. As per your data, the probability of a baby having birth weight <2500 grams is 0.50 and of having birth weight of 2500-2999 grams is 0.20. What is the probability that a baby will have a birth weight of < 3kg?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.70"
+        },
+        {
+          "id": 2,
+          "text": "0.60"
+        },
+        {
+          "id": 3,
+          "text": "0.10"
+        },
+        {
+          "id": 4,
+          "text": "0.3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The probability that a baby will have a birth weight of &lt; 3kg is <strong>0.70.</strong></p>\n<p>In this scenario, the probability of having a baby with BW &lt; 2500 grams, <strong>p (A) = 0.50</strong> and that of having a baby with BW between 2500 – 2999 grams, <strong>p (B) = 0.20.</strong></p>\n<p>Since both events are mutually exclusive, i.e., they cannot happen together, it satisfies the condition for the <strong>addition rule </strong>of probability.</p>\n<p>Thus, the probability of having a baby that weighs less than 3 kilos is,</p>\n<p><strong>p (A or B) = p (A) + p (B) </strong>= 0.50 + 0.20 =<strong> 0.70.</strong></p>\n<p>If p(A) and p(B) were <strong>non-mutually exclusive</strong> events, then the probability would have been calculated by</p>\n<p><strong>p(A or B)</strong> =<strong> p(A) + p(B) - p(A and B).</strong></p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1336",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You select 3  people from a population where the prevalence of anemia is 20% .What is the probability that all the three randomly selected people from the population would have anemia?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.002"
+        },
+        {
+          "id": 2,
+          "text": "0.004"
+        },
+        {
+          "id": 3,
+          "text": "0.6"
+        },
+        {
+          "id": 4,
+          "text": "0.008"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the probability of <strong>all 3</strong> randomly selected individuals <strong>having anemia</strong> is <strong>0.008</strong>.</p>\n<p>In this scenario, the <strong>prevalence</strong> of anemia is <strong>20%</strong>.</p>\n<p>So, the <strong>probability</strong> of a person <strong>having anemia</strong> in the given population (p) = 20/100 = <strong>0.</strong><strong>2</strong>.</p>\n<p>If selecting 3 people from the population randomly, the chance of the first person having anemia is <strong>independent</strong> of the second or third person also having it and vice versa. This satisfies the condition for the <strong>multiplication rule </strong>of probability which states that the <strong>probability </strong>of two or more<strong> statistically independent events</strong> all <strong>occurring together</strong> is equal to the <strong>product of </strong>their<strong> individual probabilities. </strong></p>\n<p>Thus, here the probability that all the 3 randomly selected people from the population would have anemia = 0.2 x 0.2 x 0.2 = 0.008.</p>\n<p> </p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1337",
+      "difficulty": "medium"
+    },
+    {
+      "text": "There are 50 patients admitted in a ward of your medical college. Here 20 are girls and 30 are boys. Out of this, 10 girls and 20 boys require surgery. What is the probability that a randomly selected boy and girl both require surgery?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1/6"
+        },
+        {
+          "id": 2,
+          "text": "3/5"
+        },
+        {
+          "id": 3,
+          "text": "6/25"
+        },
+        {
+          "id": 4,
+          "text": "1/3"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the <strong>probability</strong> that a randomly selected <strong>boy and girl both require surgery</strong> is <strong>1/3</strong>.</p>\n<p>First, we have to calculate the <strong>probability</strong> of picking the boys requiring surgery and the girls requiring surgery<strong> separately</strong>. These are <strong>mutually exclusive</strong> events.</p>\n<p>In this scenario, the probability of correctly picking a girl requiring surgery is p(A)=10/20= 1/2</p>\n<p>The probability of correctly picking a boy requiring surgery is p(B)=20/30= 2/3</p>\n<p>Next, we apply the <strong>multiplication rule</strong> of probability.</p>\n<p>The probability of picking boys and girls that require surgery,</p>\n<p><strong>p(A and B)</strong>= p(A) x p(B)= ½ x ⅔ = 2/6= <strong>1/3</strong>.</p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1338",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The chance of passing a genetic disease X by affected parents to their first child is 0.16. If they plan to have two children, what is the probability that both the children will have the disease?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.2944"
+        },
+        {
+          "id": 2,
+          "text": "0.32"
+        },
+        {
+          "id": 3,
+          "text": "0.0032"
+        },
+        {
+          "id": 4,
+          "text": "0.0256"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>probability</strong> of <strong>both children</strong> having the disease is <strong>0.0256</strong>.</p>\n<p>In this scenario, the <strong>chance of each child</strong> having the disease is <strong>0.16.</strong> The second child having the disease is independent of the first child having it. So, the events are<strong> statistically independent</strong>.</p>\n<p>Applying the <strong>multiplication rule </strong>of probability, the probability of <strong>both</strong> children having the disease is,</p>\n<p>0.16 x 0.16 = <strong>0.0256</strong>. <br />These are <strong>non-mutually exclusive</strong> events as the first child having the trait does not rule out the chance of the second child having it.   </p>\n<p>On the other hand, the <strong>probability</strong> of <strong>one</strong> <strong>of the two</strong> children having the disease is given by,</p>\n<p>p(A or B)= <strong>p(A) + p(B) - p(A and B)</strong>= 0.16 + 0.16 -(0.16 x 0.16)= 0.32- 0.0256= <strong>0.2944</strong></p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1339",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not a measurement scale for data?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Nominal"
+        },
+        {
+          "id": 2,
+          "text": "Ordinal"
+        },
+        {
+          "id": 3,
+          "text": "Ratio"
+        },
+        {
+          "id": 4,
+          "text": "Proportion"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>A <strong>proportion</strong> is not a measurement scale for data. It is a ratio, where the <strong>numerator</strong> is always a <strong>part of</strong> the<strong> denominator</strong>. It indicates a value as a part of the whole. It is usually <strong>expressed as</strong> a <strong>percentage</strong>.</p>\n<p>The four <strong>scales of measurement</strong> used for data can be remembered with the mnemonic NOIR. This stands for <strong>nominal, ordinal, interval </strong>and<strong> ratio</strong> data scales.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1349",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following scales of data measurement do blood groups belong?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Interval scale data"
+        },
+        {
+          "id": 2,
+          "text": "Ratio scale data"
+        },
+        {
+          "id": 3,
+          "text": "Categorical data"
+        },
+        {
+          "id": 4,
+          "text": "Ordinal Data"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Bloods groups</strong> are <strong>nominal </strong>scale data or <strong>categorical data.</strong> This is because they are just labels and have no numerical value or meaningful order.&nbsp;</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1362",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following are examples of nominal scale data?<div class='question-desc-html'><ol>\n<li aria-level=\"1\">Genders</li>\n<li aria-level=\"1\">Types of hospitals</li>\n<li aria-level=\"1\">Height</li>\n<li aria-level=\"1\">Kuppuswamy scale</li>\n<li aria-level=\"1\">Types of anemia</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1 & 3"
+        },
+        {
+          "id": 2,
+          "text": "4 & 5"
+        },
+        {
+          "id": 3,
+          "text": "1,2 & 5"
+        },
+        {
+          "id": 4,
+          "text": "1,2 & 3"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Genders</strong>, <strong>types </strong>of<strong> anemia</strong> and types of<strong> hospitals</strong> come under <strong>nominal scale</strong> data.</p>\n<p>There is no meaningful order or quantifiable variable in this kind of data. It is arranged on the basis of<strong> labels, titles</strong> or<strong> categories.</strong></p>\n<p><strong>Kuppuswamy scale</strong> is an <strong>ordinal scale</strong> data. It is a scale representing socio-economic data.</p>\n<p><strong>Height</strong> is a <strong>ratio scale </strong>data as it can be arranged in a meaningful order with a well-defined size interval.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1352",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A physician classifies a group of patients based on disease severity as normal, mild, moderate and severe. Which of the following scales of data does this classification system belong to?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Nominal"
+        },
+        {
+          "id": 2,
+          "text": "Ordinal"
+        },
+        {
+          "id": 3,
+          "text": "Ratio"
+        },
+        {
+          "id": 4,
+          "text": "Interval"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The classification of this disease as normal, mild, moderate and severe belongs to the <strong>ordinal scale.</strong>&nbsp;This is because this arrangement is not only <strong>qualitative</strong> but also has a <strong>meaningful order</strong> with <strong>no interval</strong> in between.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1358",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following are representative of ordinal scale data?<div class='question-desc-html'><ol>\n<li aria-level=\"1\">Hemoglobin level</li>\n<li aria-level=\"1\">TNM staging</li>\n<li aria-level=\"1\">Likert scale</li>\n<li aria-level=\"1\">HIV positive or negative&nbsp;</li>\n<li aria-level=\"1\">Severity of pain</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1,2,3,4 & 5"
+        },
+        {
+          "id": 2,
+          "text": "2,3 & 5"
+        },
+        {
+          "id": 3,
+          "text": "1 & 4"
+        },
+        {
+          "id": 4,
+          "text": "2,3,4  & 5"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>TNM</strong> staging, <strong>Likert</strong> scale and <strong>severity of pain</strong> are measured on the <strong>ordinal scale</strong>.</p>\n<p>In such cases, the arrangement is <strong>qualitative</strong>, with a <strong>meaningful order&nbsp;</strong>but&nbsp;there is no way of quantifying the difference between the individual variables. For example, grading of pain as mild, moderate, and severe.</p>\n<p>The <strong>Likert scale</strong> is used in collecting <strong>self-reported</strong> data in questionnaire-based research. It is a <strong>psychometric scale</strong> used to understand people&rsquo;s <strong>attitudes from responses</strong>. Usually, a 5-point scale of agreement is used which includes:</p>\n<ul>\n<li>1 &ndash; Strongly disagree</li>\n<li>2 &ndash; Disagree</li>\n<li>3 &ndash; Neither agree nor disagree</li>\n<li>4 &ndash; Agree</li>\n<li>5 &ndash; Strongly agree</li>\n</ul>\n<p><strong>TNM staging&nbsp;</strong>is done for the staging of <strong>cancer</strong>. It is&nbsp;based on tumor size, lymph node status and metastasis.&nbsp;<strong>Lower stages</strong> indicate <strong>better prognosis</strong> than higher stages.</p>\n<p><strong>Hemoglobin level</strong> is an example of <strong>ratio scale</strong> data.</p>\n<p><strong>HIV</strong> positive or negative <strong>status</strong> falls under the category of <strong>nominal scale</strong> data.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1353",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is not a continuous variable?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Blood glucose value of a diabetic patient"
+        },
+        {
+          "id": 2,
+          "text": "Mid-arm circumference of a child"
+        },
+        {
+          "id": 3,
+          "text": "Number of visits to the hospital in a year"
+        },
+        {
+          "id": 4,
+          "text": "Birth weight of a baby"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The<strong> number of visits</strong> to the hospital in a year is a<strong> discrete</strong> variable. The only values it can take are&nbsp;<strong>whole numbers</strong> and none in between. For example, you can&rsquo;t visit the hospital 2.5 times.</p>\n<p>Blood glucose value, mid-arm circumference and birth weight are <strong>continuous</strong> variables. They can have <strong>any value within a limit</strong> or a range.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1372",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Match the following.<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>Data</td>\n<td>Scale of data</td>\n</tr>\n<tr>\n<td>1) Number of cancer patients in a hospital </td>\n<td>a) Discrete data</td>\n</tr>\n<tr>\n<td>2) Height and weight</td>\n<td>b) Interval scale data</td>\n</tr>\n<tr>\n<td>3) Blood pressure measurements</td>\n<td>c) Ratio scale data</td>\n</tr>\n<tr>\n<td>4) Temperature measurement in Celsius</td>\n<td> </td>\n</tr>\n<tr>\n<td>5) Temperature measurement in Kelvin</td>\n<td> </td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1-a, 2-b, 3-c, 4-b, 5-c"
+        },
+        {
+          "id": 2,
+          "text": "1-a, 2-c, 3-b, 4-c, 5-b"
+        },
+        {
+          "id": 3,
+          "text": "1-a, 2-c, 3-c, 4-b, 5-c"
+        },
+        {
+          "id": 4,
+          "text": "1-b, 2-c, 3-b, 4-c, 5-a"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>number of</strong> cancer <strong>patients</strong> in a hospital is an example of <strong>discrete</strong> data. They can <strong>only take certain values</strong> and none in between.</p>\n<p>The <strong>temperature</strong> measured in the <strong>Celsius</strong> scale is an example of <strong>interval</strong> scale data. Such data are arranged in a meaningful order but they can not have an absolute zero value. For example, 80 degree celcius to not twice as hot as 40 degree celcius and 0 degree celcius does not indicate an absolute abscence of heat. </p>\n<p><strong>Height</strong> and <strong>weight</strong>, <strong>blood</strong> <strong>pressure</strong> and <strong>temperature</strong> in the <strong>Kelvin</strong> scale are examples of <strong>ratio</strong> scale data. Such data are arranged in a meaningful order and the scales they are measured in <strong>have</strong> <strong>absolute zero</strong> value. For example, a temperature of 0 kelvin indicates an absolute abscense of heat. </p>\n<p>Height and weight, blood pressure, and temperature are examples of <strong>continuous</strong> <strong>data</strong> as they can take <strong>any values between limits</strong> or a range.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1355",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the following representation of data.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pictogram"
+        },
+        {
+          "id": 2,
+          "text": "Boxplot"
+        },
+        {
+          "id": 3,
+          "text": "Histogram"
+        },
+        {
+          "id": 4,
+          "text": "Stem and leaf plot"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The image shown is of a <strong>boxplot</strong>.<strong>&nbsp;</strong>This&nbsp;is a method for <strong>graphically depicting</strong> groups of <strong>numerical data</strong> through their&nbsp;<strong>quartiles</strong>.</p>\n<p>Box plots may also have lines extending vertically from the boxes (i.e.,&nbsp;<strong>whiskers</strong>)<strong> indicating variability</strong> outside the upper and lower quartiles. Hence, they are also known as&nbsp;<strong>box-and-whisker plots</strong>&nbsp;and&nbsp;box-and-whisker diagrams.</p>\n<p>The below image shows a boxplot depicting a series of experiments done to calculate the velocity of light.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/27523b711dc046da90b267fa5521d60fx432x432.PNG\" alt=\"Explanation Image\"><p>A <strong>stem and leaf plot</strong> is used to <strong>depict frequency distribution</strong> and individual values for numerical data. The stem is are usually arranged in ascending or descending order vertically, and a vertical line is drawn to separate it from the leaf. The number of leaf items total up to the number of observations. It is difficult to represent a large number of observations using this method.</p>\n<p>The below image shows a stem and leaf plot.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4be233b11beb4e7cb8e2ceb28eecf8b5x350x350.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/27becc7338004bfbba5fab4c7c3d19e8.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1383",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The following diagram charts the population change over years from 1983 to 1989 in a given place. What is the statistical diagram used here?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Histogram"
+        },
+        {
+          "id": 2,
+          "text": "Line diagram"
+        },
+        {
+          "id": 3,
+          "text": "Component bar graph"
+        },
+        {
+          "id": 4,
+          "text": "Multiple bar graphs"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image shows a&nbsp;<strong>component bar graph.&nbsp;</strong>It is&nbsp;used to represent data in which the<strong> total magnitude</strong> is<strong> divided into </strong>different subsets or<strong> components.</strong></p>\n<p>A<strong> bar chart&nbsp;</strong>or bar graph is used mainly for<strong> nominal</strong> or <strong>ordinal scale</strong> data. They can be simple, multiple or component bar graphs.</p>\n<p>The image given below shows a <strong>multiple bar graph&nbsp;</strong>showing the human losses of world war II by country. In a multiple bar chart,&nbsp;<strong>2 or more sets of data</strong> are shown <strong>simultaneously</strong>.&nbsp;&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/cdb62d9d756f4238b5f103941d61c2c6x524x519.PNG\" alt=\"Explanation Image\"><p>A <strong>bar chart&nbsp;</strong>can be distinguished from a histogram<strong>&nbsp;</strong>because the <strong>rectangles</strong>&nbsp;are <strong>separated&nbsp;by</strong> the <strong>spaces</strong>. This indicates that the data forms&nbsp;<strong>discrete categories</strong>.</p>\n<p>In a <strong>histogram</strong>, the <strong>rectangles</strong> are <strong>not separated</strong> by spaces as the data represented forms a&nbsp;<strong>continuous&nbsp;set</strong>&nbsp;instead of discrete groups.</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/9fb633302d514883b7d7f79ebfbcd8be.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7444",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Identify the following graphical representation of data.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ogive"
+        },
+        {
+          "id": 2,
+          "text": "Scattergram"
+        },
+        {
+          "id": 3,
+          "text": "Frequency polygon"
+        },
+        {
+          "id": 4,
+          "text": "Line diagram"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image is of a <strong>frequency polygon</strong>. It is obtained by<strong> joining</strong> the <strong>midpoints</strong> of <strong>histogram</strong> blocks. It is used to diagrammatically represent frequency distribution.</p>\n<p><strong>Scattergram</strong> is a graph in which the values of two variables are plotted along two axes. The pattern of the resulting points <strong>reveals</strong> any <strong>correlation</strong> that may be present. The below image shows a scattergram.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dc84f3f9581946019d2c80c9ba604b39x630x629.PNG\" alt=\"Explanation Image\"><p>A<strong> line diagram</strong> is a type of chart that displays information as a series of data points called 'markers' connected by straight line segments. It is usually used to <strong>study time trends</strong>.</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/bd198f80a5e34b089f0a67ae00b50387.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1385",
+      "difficulty": "medium"
+    },
+    {
+      "text": "During a cholera outbreak, you are asked to map the geographical distribution of the disease. What is the best method of doing this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Dot-density map"
+        },
+        {
+          "id": 2,
+          "text": "Bar diagram"
+        },
+        {
+          "id": 3,
+          "text": "Line diagram"
+        },
+        {
+          "id": 4,
+          "text": "Pie chart"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Dot-density maps</strong> are the <strong>best way</strong> to plot the <strong>geographical distribution</strong> of diseases.</p>\n<p>The image given below shows a dot-density map of London that was plotted during the 1854 outbreak of cholera.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/79fa51303d1740e995a889d28869a854x800x746.JPEG\" alt=\"Explanation Image\"><p>A dot-density map was used by Dr John Snow when a large outbreak of cholera occurred in&nbsp;London&nbsp;in 1854. Initially, it was believed that bad smells/ air from rotting organic matter spread the disease. He demonstrated the link between contaminated drinking water and cholera. He mapped the disease and identified the source to be a contaminated public water pump in Broad street, London.&nbsp;</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1386",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is the best way to plot the changes in incidence of a disease in a given area over time?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Line graph"
+        },
+        {
+          "id": 2,
+          "text": "Histogram"
+        },
+        {
+          "id": 3,
+          "text": "Ogive"
+        },
+        {
+          "id": 4,
+          "text": "Tree diagram"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Line graphs </strong>or line diagrams are the best way to plot the <strong>changes in the incidence</strong> of a disease in a given area <strong>over time</strong>.</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1388",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A doctor is taking history from a diabetic patient and decides to make a chart to assess joint involvement. Which chart should he make to explain this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Histogram"
+        },
+        {
+          "id": 2,
+          "text": "Line diagram"
+        },
+        {
+          "id": 3,
+          "text": "Pie chart"
+        },
+        {
+          "id": 4,
+          "text": "Tree diagram"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this case, a<strong> tree diagram</strong> would help the doctor in <strong>explaining</strong> the <strong>possible outcomes</strong> to the patient&rsquo;s diabetes, with the perspective of joint involvement.</p>\n<p>A tree diagram is used mainly to <strong>chart </strong>the<strong> possible outcomes</strong> of a sample event.</p>\n<p>The following image shows the outline of a tree diagram.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8b7be39116a74ccf9e4523fb63e42d8cx600x518.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1387",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What type of data does the image given below represent?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Nominal"
+        },
+        {
+          "id": 2,
+          "text": "Discrete"
+        },
+        {
+          "id": 3,
+          "text": "Continuous"
+        },
+        {
+          "id": 4,
+          "text": "Ordinal"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image is of a <strong>histogram.&nbsp;</strong>It<strong>&nbsp;</strong>is used to represent frequency distributions of <strong>continuous quantitative </strong>data.</p>\n<p><strong>Nominal</strong> and <strong>ordinal</strong> data can be represented by a <strong>bar chart</strong>.</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/224146f7ce754c6da63e7613f1119843.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1381",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following can be used to represent quantitative data?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Only C"
+        },
+        {
+          "id": 2,
+          "text": "B and D"
+        },
+        {
+          "id": 3,
+          "text": "A, C and D"
+        },
+        {
+          "id": 4,
+          "text": "A, B and C"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>An <strong>ogive</strong>, a <strong>line diagram</strong> and a <strong>histogram</strong> can be used to represent <strong>quantitative</strong> data.</p>\n<p>The images shown above are:</p>\n<p>A &ndash; Ogive</p>\n<p>B &ndash; Bar graph</p>\n<p>C &ndash; Line diagram</p>\n<p>D &ndash; Histogram</p>\n<p>Quantitative data cannot be represented by a&nbsp;<strong>bar graph</strong>. It is used mostly for&nbsp;<strong>nominal scale </strong>or <strong>qualitative</strong>&nbsp;data.</p><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/29a6eaba5f8f4bd19855b7e3fe2ff065.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6566",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "meta": {
+    "title": "103_Community_Medicine_Ini-Cet_2023"
+  },
+  "questions": [
+    {
+      "text": "All of the following statements are true for descriptors of central tendency except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mode is affected by extreme values"
+        },
+        {
+          "id": 2,
+          "text": "Mean is affected by extreme values"
+        },
+        {
+          "id": 3,
+          "text": "Median is calculated by overall observation"
+        },
+        {
+          "id": 4,
+          "text": "Mode can be used as a qualitative data descriptor"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Mode</strong> is <strong>not affected</strong> <strong>by</strong> <strong>extreme values</strong> in a given set of data.</p>\n<p>The mean of a given set of data is responsive to each and every value in the distribution. Thus, the <strong>mean</strong> is the measure of central tendency which is <strong>maximally affected by extreme values</strong> (option B). It is usually an <strong>inappropriate</strong> measure <strong>for describing skewed distributions</strong>. However, <strong>repeated</strong> <strong>samples</strong> from the <strong>same population</strong> will always tend to have <strong>similar</strong> <strong>means</strong>. Mean is able to <strong>resist fluctuations</strong> between different samples drawn from the same population better than mode or median.</p>\n<p>To obtain the median of a given set of data, the<strong> values are first arranged in ascending or descending order</strong> of magnitude, and then the value of the <strong>middle observation</strong> is noted. Since the data has to be first arranged in order before the median can be determined, an <strong>overall observation</strong> is necessary for its calculation (option C).</p>\n<p><strong>Mode</strong> is the <strong>observed value</strong> in the frequency distribution that occurs with the<strong> greatest frequency</strong>. It is completely <strong>uninfluenced by extreme values</strong> in the distribution. The mode can be used to describe <strong>qualitative data</strong> (option D).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9314",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The formula given below corresponds to:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 2,
+          "text": "Variance"
+        },
+        {
+          "id": 3,
+          "text": "Mean"
+        },
+        {
+          "id": 4,
+          "text": "Median"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The formula given above is used to calculate the <strong>standard deviation</strong>.</p>\n<p><strong>Standard deviation</strong>&nbsp;(or &sigma;) is a measure of <strong>how dispersed the data is</strong> in relation to the mean. Data clustered around the mean have a low standard deviation, while data that are more spread out have a high standard deviation. A standard deviation close to zero indicates that data points are close to the mean, whereas a high or low standard deviation indicates data points are respectively above or below the mean.</p>\n<p><strong>Variance</strong>&nbsp;(option B) is the&nbsp;<strong>mean&nbsp;</strong>of the<strong>&nbsp;squares&nbsp;</strong>of all the<strong>&nbsp;deviation scores</strong>&nbsp;of the distribution. It is numerically equal to the<strong> square of the standard deviation</strong>.</p>\n<p><strong>Mean</strong> (option C) is obtained by <strong>adding</strong> together the individual observations and then <strong>dividing</strong> by the total number of observations.&nbsp;</p>\n<p><strong>Median</strong>&nbsp;(option D) divides the<strong>&nbsp;frequency distribution</strong>&nbsp;in<strong>&nbsp;half</strong>&nbsp;when all the scores are&nbsp;<strong>listed</strong>&nbsp;in&nbsp;<strong>order</strong>. When a distribution has an odd number of elements, the median is the middle value. When the distribution has an even number of elements, the median is&nbsp;the average of the two middle scores.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/5dba7a68e1d84b68bdb0cd6ee3f7a3f5.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9311",
+      "difficulty": "easy"
+    },
+    {
+      "text": "All of the following may be used to find the normalcy of data except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Plot histogram"
+        },
+        {
+          "id": 2,
+          "text": "Mantel-Haenszel test"
+        },
+        {
+          "id": 3,
+          "text": "Box whisker"
+        },
+        {
+          "id": 4,
+          "text": "Shapiro Wilk test"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Mantel-Haenszel method</strong> is used to calculate <strong>adjusted odds ratio</strong> during <strong>stratified analysis</strong>. It is <strong>not</strong> a test <strong>to detect normalcy of data</strong>.</p>\n<p>A <strong>plot histogram</strong> and a <strong>box whisker plot</strong> are <strong>visual methods</strong> to assess if a given set of data is <strong>distributed normally</strong>. A <strong>normal distribution curve</strong> is an example of a <strong>plot histogram</strong>.</p>\n<p>Sometimes just the visual representation of the data might not be enough to tell whether the data is normally distributed. This is where <strong>Shapiro-Wilk test</strong> comes in. It examines <strong>how closely a given set of data fits a normal distribution</strong>. The sample data is first ordered and standardized. An assessment is then made how the sample quantiles fit the standard normal quantiles. Shapiro-Wilk test is commonly used on <strong>small samples</strong>.</p>\n<p><strong>Stratified analysis</strong> of the data is done to <strong>reduce confounding</strong>. In such a scenario, multiple odds ratios are obtained — one for each stratum of the data. These have to be combined to give an <strong>adjusted odds ratio</strong>. This represents the effect of the exposure adjusted for the confounding factor. Mantel-Haenszel method is used for this purpose.</p><hr><h3>Related Pearl: Box and Whisker Plot</h3><ul>\n<li>A box and whisker plot is used to show <strong>variation in a set of data</strong>.</li>\n<li>They can summarize data from various sources and display it in a single graph.</li>\n<li>A box and whisker plot is usually based on <strong>median, quartiles and percentiles</strong>.</li>\n<li>It is also called a <strong>box plot.</strong></li>\n<li>In the box plot as shown in the image, a simple box is divided into two by the <strong>median value</strong>. Above and below it are the <strong>whiskers</strong>. The top and bottom ends of the whiskers are the <strong>highest and lowest value of that group</strong>.&nbsp;</li>\n</ul><ul>\n<li>A box plot can help in identifying <strong>outliers</strong> and the <strong>interquartile range (IQR), </strong>as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/557efa950e5f407ca148010054728d60x314x146.PNG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9317",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In Kaplan Meier survival curve, the bands used for the confidence interval is?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Unequal precision band"
+        },
+        {
+          "id": 2,
+          "text": "Hirshberg band"
+        },
+        {
+          "id": 3,
+          "text": "Holmes band"
+        },
+        {
+          "id": 4,
+          "text": "Hall-Wellner Band"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The bands used for confidence interval in the Kaplan-Meier survival curve are&nbsp;<strong>Hall-Wellner bands</strong>.</p>\n<p>When using standard statistical software, at each point in time, the upper and lower limits of the confidence interval are also obtained. <strong>Hall-Wellner</strong>&nbsp;bands, <strong>Gill</strong> bands, and&nbsp;<strong>Nair's Equal Precision</strong> confidence bands are used for this purpose.</p>\n<p>Kaplan-Meier plot is a <strong>graphical representation</strong> of the number of <strong>people surviving</strong> during a given length of time. Often there are <strong>two or more groups</strong> represented in the plot, such as those treated versus those not treated. The graph often has a <strong>number of steps</strong> as the number of people surviving is a discrete variable. The image given below shows a Kaplan-Meier plot. The dotted lines represent the upper and lower limits of the 95% confidence interval.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/97e3ffccc1d24e97b92580ecaf936461x1280x1029.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9319",
+      "difficulty": "hard"
+    },
+    {
+      "text": "30,000 women were followed up for 10 years for the development of breast cancer. 1200 women developed cancer and were given a questionnaire to assess possible risk factors. Additionally, 2000 women from the same study were used as controls and were also given the questionnaire. What is this type of study called?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Case cohort"
+        },
+        {
+          "id": 2,
+          "text": "Retrospective cohort"
+        },
+        {
+          "id": 3,
+          "text": "Nested case control"
+        },
+        {
+          "id": 4,
+          "text": "Cross control cohort"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The type of study described in the question is a <strong>nested case-control study</strong>.&nbsp;</p>\n<p>A nested case-control study is essentially a <strong>case-control study that is present inside a cohort study</strong>. The <strong>cases</strong> are all the cohort members who <strong>developed the disease</strong>&nbsp;being studied at a given point in time during the follow-up period. However, each case is <strong>matched to</strong> one or more <strong>controls</strong>&nbsp;&mdash; individuals who <strong>did not develop the disease</strong> but are otherwise comparable to cases in terms of age and gender. Cases and controls are then compared in terms of their respective exposures to the risk factor. <strong>Nested case-control studies</strong> thus represent an <strong>interim analysis</strong> of the exposure and outcome data of a cohort study.</p>\n<p>A <strong>case-cohort study</strong> (option A) involves <strong>selecting a subset of the entire cohort</strong> at the beginning of the study. This <strong>sub-cohort acts as the control</strong> <strong>group</strong> for making comparisons with <strong>multiple case groups</strong>. For example, if a cohort study is being done to assess smoking as a risk factor for ischemic heart disease and lung cancer, the same sub-cohort can be used as the control group for both outcomes. If it was a <strong>nested case-control study</strong>, it would require two <strong>separate control groups</strong>. <strong>Case-cohort studies</strong> are <strong>more efficient</strong> than nested case-control studies when multiple outcomes are being studied.</p>\n<p>In a <strong>retrospective cohort study</strong> (option B), the <strong>outcomes have already occurred</strong> before the study begins. The investigator has to analyze the history of prior exposures and the duration of such exposures. Even though the exposure and the outcome have already occurred, the investigator goes from the <strong>exposure &rarr; outcome</strong> in a <strong>retrospective cohort study</strong>. This is in contrast to <strong>case-control studies</strong>, where the investigator goes from <strong>outcome &rarr; exposure</strong>.</p>\n<p>Cross control cohort (option D) is not a type of study design.&nbsp;</p><hr><h3>Related Pearl: Cohort Study</h3><ul>\n<li>A <strong>cohort study</strong> progresses from <strong>cause</strong> (exposure) <strong>to effect</strong> (disease).</li>\n<li>It is also known as <strong>forward-looking </strong>study, <strong>incidence </strong>study,<strong> prospective </strong>study, and<strong> longitudinal </strong>study.</li>\n<li><strong>Design of a cohort study:</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2ea236bdd083460eaa50179f47f0948dx1280x1373.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Types of cohort study:</strong>\n<ul>\n<li>Prospective (concurrent) cohort studies</li>\n<li>Retrospective (historical) cohort studies</li>\n<li>Combination cohort studies</li>\n</ul>\n</li>\n<li><strong>Steps of cohort study:</strong>\n<ul>\n<li>Selection of study subjects</li>\n<li>Obtaining data on exposure</li>\n<li>Selection of comparison groups</li>\n<li>Follow-up</li>\n<li>Analysis in terms of incidence rates and estimation of risk</li>\n</ul>\n</li>\n<li><strong>Advantages of cohort study:</strong>\n<ul>\n<li>Incidence can be calculated</li>\n<li>Several possible outcomes related to exposure can be studied at the same time</li>\n<li>Provides direct estimate of relative risk</li>\n<li>Calculation of dose-response ratio</li>\n<li>Minimization of certain biases</li>\n</ul>\n</li>\n<li><strong>Disadvantages of cohort study:</strong>\n<ul>\n<li>Cannot use for uncommon diseases</li>\n<li>Expensive, requires a large population and&nbsp;longer time</li>\n<li>Many common administrative and ethical problems</li>\n<li>High attrition and selection of subjects is difficult</li>\n<li>Dynamism of diagnostics is difficult to incorporate</li>\n<li>Tends to alter the behaviour of subjects known as&nbsp;<strong>Hawthorne effect</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><hr><h3>Related Pearl: Case Control Study</h3><p>In a <strong>case-control</strong> study, progression is from <strong>effect </strong>(disease) to<strong> cause</strong>&nbsp;(exposure) as the outcome or disease has already occurred. It is also called a&nbsp;<strong>retrospective</strong> study.</p>\n<p><strong>Design </strong>of case-control study:</p>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/54361314f5e0423d9bef0e4acae144a0x1280x1242.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Steps of case control study:</strong>\n<ul>\n<li>Selection of cases and controls</li>\n<li>Matching</li>\n<li>Measurement of exposure</li>\n<li>Analysis in the form of exposure rates, risk ratio, and odds ratio</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Advantages of case control study:</strong>\n<ul>\n<li>Easy to carry out, rapid and inexpensive</li>\n<li>Requires few subjects, no risk to subjects</li>\n<li>Used to investigate rare diseases</li>\n<li>Different etiological factors can be studied and risk factors can be identified</li>\n<li>No attrition problems, minimal ethical problems</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Disadvantages&nbsp;of case control study:</strong>\n<ul>\n<li>Relies on memory or past records giving rise to bias</li>\n<li>Selection of appropriate control groups is difficult</li>\n<li>Incidence cannot be measured</li>\n<li>Does not distinguish between causes and associated factors</li>\n<li>Not suited for evaluation of therapy or prophylaxis</li>\n<li>Representativeness of the cases and controls is often inadequate</li>\n</ul>\n</li>\n</ul><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9298",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A person had a dog bite. Vaccination is up to date for both the dog and the man. The person's history is significant for having undergone splenectomy five years ago. What is the best management in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Observation"
+        },
+        {
+          "id": 2,
+          "text": "Amoxiclav"
+        },
+        {
+          "id": 3,
+          "text": "Metronidazole"
+        },
+        {
+          "id": 4,
+          "text": "Ciprofloxacin"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Amoxicillin</strong>-<strong>clavulanate</strong> (Amoxiclav) is the <strong>drug of choice</strong> in this patient.</p>\n<p>Antibiotic prophylaxis is indicated in:</p>\n<ul>\n<li><strong>High-risk animal bites</strong>: <strong>cat bites</strong> in any location and <strong>hand bites</strong> by any animals, including humans. <strong>Cat</strong> and <strong>human bites</strong> have a <strong>higher risk of infection</strong> versus dog bites. Moreover, <strong>hand bites</strong> have a risk of developing an <strong>infection</strong> <strong>in the closed spaces</strong> of the hand.</li>\n<li><strong>High-risk patients</strong>: <strong>comorbidities</strong> such as <strong>diabetes</strong>, <strong>liver disease</strong>, and <strong>absence of functional spleen</strong>. Patients without a functional spleen are at an increased risk for overwhelming <strong>sepsis</strong> primarily due to <em>Capnocytophaga</em> species. </li>\n</ul>\n<p><em>Pasteurella</em> species is the <strong>most common</strong> isolate from<strong> cat and dog bites</strong>. <em>Streptococci</em>, <em>S. aureus</em> and <em>Eikenella corrodens</em> are found in <strong>human bites</strong>. <strong>Amoxicillin-clavulanate</strong> is the <strong>first-line drug</strong> of choice for prophylaxis. In patients with penicillin allergy, clindamycin plus doxycycline/co-trimoxazole/fluoroquinolone can be used.</p><hr><h3>Related Pearl: Rabies vaccines and immunoglobulins schedules</h3><p>According to the Ministry of Health and Family Welfare, Government of India:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f49dfa01d9bd424db725e4ebf600cb98x1280x3397.JPEG\" alt=\"Pearl Image\"><p>WHO category <strong>II</strong> or <strong>III</strong> exposures should receive&nbsp;<strong>post-exposure prophylaxis&nbsp;</strong>(PEP)<strong>&nbsp;immediately.</strong></p>\n<p>One <strong>intradermal&nbsp;</strong>(ID)&nbsp;dose is <strong>0.1 mL</strong> of vaccine and one <strong>intramuscular</strong> (IM) dose is an <strong>entire vial</strong> of vaccine, irrespective of the vial size.</p>\n<p>Should a vaccine dose be delayed for any reason, the PEP schedule should be resumed (not restarted).</p>\n<p><strong>Rabies Immunoglobulin(RIG):&nbsp;</strong></p>\n<ul>\n<li>Passive immunization</li>\n<li><strong>Single-dose</strong>; after initiation of PEP and not beyond 7 days after the first dose of vaccine</li>\n<li>Max dose: <strong>hRIG - 20IU/kg ,&nbsp;</strong><strong>eRIG</strong><strong>&nbsp;- 40IU/kg </strong>body weight</li>\n<li>Vaccines should never be withheld regardless of the availability of RIG.</li>\n<li><strong>Alternatives</strong> for RIG- WHO recommends&nbsp;<strong>m</strong><strong>onoclonal antibodies&nbsp;</strong>(mAb)&nbsp;as a 'cocktail' containing at least <strong>two antibodies</strong> against the rabies virus.</li>\n</ul>\n<p>Administration of RIG:</p>\n<ul>\n<li>RIG should be administered&nbsp;<strong>into</strong> or <strong>around</strong> the <strong>wound site</strong> or sites.</li>\n<li>The&nbsp;<strong>remaining</strong> RIG, if any, should be injected <strong>IM</strong> at a site <strong>distant</strong> from the <strong>site</strong> of vaccine administration.</li>\n<li>RIG may be diluted to a volume sufficient for all wounds to be effectively and safely infiltrated.</li>\n</ul>\n<p>Prioritization&nbsp;of RIG allocation (numbered according to priority order):</p>\n<ol>\n<li>Multiple bites</li>\n<li>Deep wounds</li>\n<li>Bites to head, neck, and hands</li>\n<li>Patients with severe immunodeficiency</li>\n<li>Confirmed/probable rabies in biting animal</li>\n<li>Bites, scratches, and exposure of mucous membranes caused by a bat</li>\n</ol>\n<p><strong>Pre-exposure prophylaxis&nbsp;(PrEP)</strong></p>\n<p>PrEP is considered in the following conditions:</p>\n<ul>\n<li>High-risk groups- laboratory staff, wildlife wardens, veterinarians, animal handlers, and travelers to endemic regions.</li>\n<li>Remote, rabies-endemic areas where access to PEP is difficult</li>\n<li>Areas where&nbsp;dog bite incidence is &gt;5% per year</li>\n<li>Areas where vampire bat rabies is known to be present.</li>\n</ul>\n<p>Pre-exposure rabies vaccination consists of <strong>3&nbsp;intramuscular (IM) or 3 intradermal (ID)</strong>&nbsp;doses. These are given on <strong>days 0, 7 and 21 or 28.</strong></p>\n<ul>\n<li>Adults - the vaccine should always be administered in the deltoid area of the arm</li>\n<li>Young children (under 1 year of age)- Administration into the anterolateral area of the thigh is recommended.</li>\n<li><strong>Rabies vaccine </strong>should<strong> never</strong> be administered in the<strong> gluteal area.</strong>&nbsp;Administration in this manner will result in <strong>lower neutralizing antibody titers.</strong></li>\n</ul>\n<p>For exposed or re-exposed patients who can document previous completion of PEP or PrEP the following guidelines would be applicable:</p>\n<ul>\n<li>Proper wound management should be done.</li>\n<li>There is no need for the administration of RIG.</li>\n<li>One site ID or IM vaccine administration on days 0 and 3.</li>\n</ul>\n<p>Only adequate wound washing would be required in case of re-exposure where the animal bite victim has documented proof of complete PEP&nbsp;<strong>within the last three months.</strong></p>\n<p>The following cases are treated as fresh cases and given full PEP:</p>\n<ul>\n<li>Those who have previously received full post-exposure treatment with neural tissue vaccines (NTV) or vaccines of unproven potency</li>\n<li>Those who cannot document complete PEP or PrEP treatment&nbsp;</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9327",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A child came for DPT vaccination at 10 weeks. He has a history of fever of more than 40°C and an inconsolable cry at 6 weeks of age following vaccination. What should be done next?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Avoid DPT vaccination"
+        },
+        {
+          "id": 2,
+          "text": "Give DT vaccine"
+        },
+        {
+          "id": 3,
+          "text": "Give DPT vaccine"
+        },
+        {
+          "id": 4,
+          "text": "Defer by 4 weeks"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The next step for this patient should be to administer <strong>DPT vaccine</strong>.</p>\n<p>Events such as <strong>persistent inconsolable crying</strong> (more than <strong>3 hours</strong> in duration), <strong>hyperpyrexia</strong> (fever &gt; 40°C), <strong>hypotonic-hyporesponsive episodes</strong> within 48 hours of DTwP administration, and seizures, with or without fever, within 72 hours DTwP administration are considered precautions but <strong>not contraindications to future doses of DTwP</strong>. These events <strong>don't recur</strong> with the next dose and have been shown to have <strong>no permanent sequelae</strong>. </p>\n<p><strong>Absolute contraindications</strong> to any pertussis vaccination are a <strong>history of anaphylaxis</strong> or <strong>development of encephalopathy</strong> within 7 days following previous DTwP vaccination. In case of <strong>anaphylaxis</strong>, further immunization with <strong>diphtheria, tetanus, and pertussis vaccines are contraindicated</strong> as it cannot be said with certainty which component caused anaphylaxis. For patients with a history of <strong>encephalopathy</strong> following vaccination, any <strong>pertussis vaccine is contraindicated</strong>, and only<strong> diphtheria and tetanus vaccines</strong> may be <strong>used</strong>.</p>\n<p><strong>Note</strong>: This answer might be controversial. The above answer is as per the IAP Guidebook on Immunization. </p><hr><h3>Related Pearl: Adverse Events following Immunization</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Vaccine</strong></p>\n</td>\n<td>\n<p><strong>Common, Minor Reactions</strong></p>\n</td>\n<td>\n<p><strong>Rare, Serious Reactions</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>BCG</p>\n</td>\n<td>\n<p>Local pain and swelling</p>\n</td>\n<td>\n<p>Suppurative lymphadenitis</p>\n<p>BCG osteitis</p>\n<p>Disseminated BCG infection</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Hepatitis B</p>\n</td>\n<td>\n<p>Local reaction, fever</p>\n</td>\n<td>\n<p>Anaphylaxis</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Inactivated influenza</p>\n</td>\n<td>\n<p>Local reaction</p>\n</td>\n<td>\n<p>Guillain-Barre syndrome (GBS)</p>\n<p>Oculo-respiratory syndrome</p>\n<p>Anaphylaxis</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>JE vaccine</p>\n</td>\n<td>\n<p>Local reaction, low-grade fever, myalgia</p>\n</td>\n<td>\n<p>Neurologic events like encephalitis</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Measles/MMR</p>\n</td>\n<td>\n<p>Local reactions, fever, malaise, irritability</p>\n</td>\n<td>\n<p>Febrile seizures, arthralgia, thrombocytopenia</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Yellow fever</p>\n</td>\n<td>\n<p>Headache, flu like symptoms, local reactions</p>\n</td>\n<td>\n<p>Vaccine-associated viscerotropic disease</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Oral Polio</p>\n</td>\n<td>\n<p>None</p>\n</td>\n<td>\n<p>Vaccine associated paralytic poliomyelitis</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>DPT</p>\n</td>\n<td>\n<p>Local reaction, fever</p>\n</td>\n<td>\n<p>Neurologic events like encephalitis, seizures, HHE (hypotonic hyporesponsive episode), anaphylaxis, persistent inconsolable screaming</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9330",
+      "difficulty": "medium"
+    },
+    {
+      "text": "High fat intake according to FDA is?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Diet should contain 400 kcal from carbohydrates"
+        },
+        {
+          "id": 2,
+          "text": "Diet should contain total 1000 kcal"
+        },
+        {
+          "id": 3,
+          "text": "Diet should contain 800 kcal from fat"
+        },
+        {
+          "id": 4,
+          "text": "Diet should contain 80% fats"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>High fat intake according to FDA is a <strong>diet that should contain a total of 1000 kcal</strong>. </p>\n<p>High fat diets have <strong>low carbohydrates</strong>, <strong>&lt;50 grams/day</strong>. This equates to <strong>&lt;250 kcal/day</strong> in the form of carbohydrates, not 400 kcal (option A). The percentage of <strong>calories from fat</strong> is <strong>&gt;50%</strong> (option D), which would equate to about<strong> 500-</strong><strong>600 kcal</strong> from fats (option C). The diet should contain a total of <strong>800 - 1000 kcal</strong>.</p>\n<p>Ketogenic diets mainly incorporate low carbohydrates (&lt;50 grams/day), low protein, and high fats. Gluconeogenesis from the glucogenic amino acids in the diet and fat oxidation are utilized to meet the metabolic demands of the body. Ketogenic diets are especially useful for the treatment of intractable epilepsy.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9332",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The slogan coined by WHO 'Do it Right' in the first aid of a snake bite includes all of the following except?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Reassurance"
+        },
+        {
+          "id": 2,
+          "text": "Tell sequence of events in detail after the bite"
+        },
+        {
+          "id": 3,
+          "text": "Go to hospital"
+        },
+        {
+          "id": 4,
+          "text": "Incisions"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Incisions</strong> are <strong>not a part</strong> of the management of a snake bite.</p>\n<p>The first aid following a snake bite consists of the mnemonic: <strong>carry no right</strong>.&nbsp;</p>\n<p><strong>Carry</strong>: The victim is <strong>not allowed to walk</strong>, even for a short distance. Walking generates muscle-pumping activity which disperses the venom into the systemic circulation.</p>\n<p><strong>No</strong>: <strong>No</strong> <strong>tourniquet</strong>, no electrotherapy, <strong>no</strong> <strong>cutting</strong>, no pressure immobilization, <strong>no suction</strong> to the bite site</p>\n<p><strong>R</strong>: <strong>Reassure</strong> the patient since 70% of the bites are from non-venomous species.</p>\n<p><strong>I</strong>: <strong>Immobilize</strong> in the same way as a fractured limb. A splint can be applied to the bitten extremity to limit the movement and assist with positioning. The extremity should be maintained in a neutral position at approximately heart level.</p>\n<p><strong>GH</strong>: <strong>Get to a hospital</strong> immediately. The most important step is to rapidly transport the patient to a medical facility equipped to provide supportive management.</p>\n<p><strong>T</strong>: Tell the doctor of any systemic symptoms which may have appeared on the way to the hospital.</p>\n<p>Note that <strong>elapid envenomations</strong> that are primarily <strong>neurotoxic</strong> and have no significant effects on local tissue may be managed by <strong>pressure immobilization</strong>. In this technique, the entire limb is immediately wrapped with a bandage and then immobilized. This technique restricts lymphatic drainage and has been shown to delay the absorption of venom into the systemic circulation. However, the <strong>offending snake</strong> should have been reliably identified as <strong>neurotoxic</strong> and the <strong>rescuer</strong> should be <strong>trained</strong> in applying this pressure bandage.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9323",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Calculate the kappa statistics for the following data set comparing IGRA and Mantoux test.<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>IGRA (+)</td>\n<td>IGRA (&ndash;)</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Mantoux (+)</td>\n<td>80</td>\n<td>40</td>\n<td>120</td>\n</tr>\n<tr>\n<td>Mantoux (&ndash;)</td>\n<td>20</td>\n<td>60</td>\n<td>80</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>100</td>\n<td>100</td>\n<td>200</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.4"
+        },
+        {
+          "id": 2,
+          "text": "0.6"
+        },
+        {
+          "id": 3,
+          "text": "0.8"
+        },
+        {
+          "id": 4,
+          "text": "0.5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Kappa statistic is used to evaluate the agreement between IGRA and TST test results.</p>\n<p>Kappa is calculated as:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/113ed9d65c554f3393e6c3e929a1cbb5x232x108.JPEG\" alt=\"Explanation Image\"><p>where, <strong>p<sub>O</sub></strong> is <strong>observed agreement</strong> and <strong>p<sub>E</sub></strong> is <strong>expected agreement</strong>.</p><p>The table in the question has been redrawn with alphabets in the cells to better illustrate the formulae:</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>IGRA (+)</td>\n<td>IGRA (&ndash;)</td>\n</tr>\n<tr>\n<td>Mantoux (+)</td>\n<td>80 <strong>(a)</strong></td>\n<td>40 <strong>(b)</strong></td>\n</tr>\n<tr>\n<td>Mantoux (&ndash;)</td>\n<td>20 <strong>(c)</strong></td>\n<td>60 <strong>(d)</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>&nbsp;</p>\n<p>In this question, the <strong>p<sub>O</sub></strong> will be all the situations in which <strong>both IGRA and Mantoux tests</strong> <strong>are positive or negative</strong>&nbsp;&mdash; that is, both of them are in agreement with one another.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8d6a359f949148818e1217859e88d8d2x618x91.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p>p<sub>E</sub> represents the <strong>probability of random agreement</strong> between the tests. It is calculated as a sum of both the tests being positive together at random and negative together at random.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/aabaa5e9980a4e1c852a5cff0fa15e55x672x767.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p>Substituting the calculated values in the formula for kappa:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/04858fd57fc3414b955959eabf389a29x514x122.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p>Strength of agreement varies with kappa coefficient as follows:</p>\n<ul>\n<li>0.81 to 1: perfect agreement between the two tests/methods</li>\n<li>0.61 to 0.80: substantial agreement</li>\n<li>0.41 to 0.60: moderate agreement</li>\n<li>0.21 to 0.40: fair agreement</li>\n<li>0.10 to 0.20: slight agreement</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9335",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following is not correctly matched?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Observational study — MOOSE"
+        },
+        {
+          "id": 2,
+          "text": "Systematic review — PRISMA"
+        },
+        {
+          "id": 3,
+          "text": "Diagnostic Study - CONSORT"
+        },
+        {
+          "id": 4,
+          "text": "Case report — CARE"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The guidelines used for reporting the results of <strong>RCT</strong> are <strong>CONSORT</strong> (consolidated standards of reporting trials).&nbsp;</p>\n<p>To improve the quality of reporting of health research, certain standards have been developed. These standards vary according to the type of study in question. Many journals now require the authors to complete the relevant checklist according to these standards prior to submitting their paper for publication. These standards include:</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Guideline</strong></td>\n<td><strong>Expansion</strong></td>\n<td><strong>Area</strong></td>\n</tr>\n<tr>\n<td>CONSORT</td>\n<td>Consolidated standards of reporting trials</td>\n<td>Randomized controlled trials</td>\n</tr>\n<tr>\n<td>TREND</td>\n<td>Transparent reporting of non-randomized designs</td>\n<td>Behavioural and public health interventions with non-randomized designs</td>\n</tr>\n<tr>\n<td>STROBE&nbsp;</td>\n<td>Strengthening the reporting of observational studies in epidemiology</td>\n<td>Cohort, case-control, and cross-sectional studies</td>\n</tr>\n<tr>\n<td>STRAEGA</td>\n<td>Strengthening the reporting of genetic association studies</td>\n<td>Modification of STROBE for genetic studies</td>\n</tr>\n<tr>\n<td>STARD</td>\n<td>Standards for the reporting of diagnostic accuracy studies</td>\n<td>Diagnostic tests</td>\n</tr>\n<tr>\n<td>CARE</td>\n<td>Case reporting</td>\n<td>Clinical case reports and reports of patient encounters</td>\n</tr>\n<tr>\n<td>SAMPL</td>\n<td>&nbsp;Statistical analyses and methods in published literature</td>\n<td>Basic statistical reporting for articles published in biomedical journals</td>\n</tr>\n<tr>\n<td>PRISMA</td>\n<td>Preferred reporting items for systematic reviews and meta-analyses</td>\n<td>Meta-analyses of randomized controlled trials</td>\n</tr>\n<tr>\n<td>MOOSE</td>\n<td>Meta-analysis of observational studies in epidemiology</td>\n<td>Meta-analyses of observational studies</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Many of these guidelines are available via the EQUATOR network.</p><hr><h3>Related Pearl: Meta-analysis in Research</h3><ul>\n<li><strong>Meta-analysis</strong> is a set of <strong>statistical techniques</strong> for combining <strong>quantitative results</strong> from multiple studies to produce a summary <strong>of empirical knowledge</strong> on a given topic.</li>\n<li>It refers to a method of systematic review.</li>\n<li>It is one of the most relevant methods in evidence-based medicine and ranks high on the evidence pyramid.</li>\n<li>Limitations\n<ul>\n<li>When testing is done before hypothesis generation, spurious results are found.</li>\n<li>Sample size may be misrepresentative.</li>\n<li>Publication bias due to suppression of some important information leading to <strong>file drawer effect</strong>.</li>\n<li>Heterogeneity of studies may force mashing together of disparate effects and lead to selection bias. This is also called <strong>apples and oranges effect.</strong></li>\n<li>Dissimilarities in control groups.</li>\n<li>Its <strong>validity</strong> is dependent on the <strong>quality of the systematic review</strong> and the original data used.</li>\n</ul>\n</li>\n</ul><hr><h3>Related Pearl: Randomized Controlled Trials</h3><p><strong>Randomized controlled trials</strong> are a type of <strong>experimental studies</strong>.</p>\n<p><strong>Types</strong></p>\n<ul>\n<li>Clinical trials</li>\n<li>Preventive trials</li>\n<li>Risk factor trials</li>\n<li>Cessation experiments</li>\n<li>Trial of etiological agents</li>\n<li>Evaluation of health services</li>\n</ul>\n<p><strong>General Design of an RCT</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b18b067a5846405b95d6bb11b2e1546fx1280x1482.JPEG\" alt=\"Pearl Image\"><p><strong>Steps of an RCT</strong></p>\n<ul>\n<li>Drawing up a <strong>protocol</strong></li>\n<li>Selecting <strong>reference and experimental</strong> population</li>\n<li><strong>Randomization</strong></li>\n<li>Manipulation or <strong>intervention</strong></li>\n<li><strong>Follow-up</strong></li>\n<li><strong>Assessment</strong> of outcome.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9301",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following best represents the definition of culture?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It is static and not related to health and disease"
+        },
+        {
+          "id": 2,
+          "text": "A set of beliefs which are static"
+        },
+        {
+          "id": 3,
+          "text": "Socially acquired learned behaviour"
+        },
+        {
+          "id": 4,
+          "text": "Rules set according to religion which are dynamic"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Culture</strong> is the<strong> socially acquired learned behaviour</strong>. It is passed onto generations through formal and informal learning. It is the representation of customs, beliefs, laws, arts, and moral values of a society. Cultural factors have a large part to play in health.</p>\n<p>Other closely related terms include:</p>\n<p><strong>Customs</strong> are the <strong>traditionally</strong> <strong>accepted</strong> ways of behaving that are <strong>specific</strong> <strong>to</strong> <strong>a</strong> <strong>society</strong>. They can be folkways, which are referred to as the right ways of doing things in less vital areas of human conduct. Mores are stringent customs followed by a society.</p>\n<p><strong>Socialization</strong> is the process by which a person in a society <strong>imbibes</strong> <strong>its</strong> <strong>beliefs</strong>, <strong>customs</strong>, etc. through daily interaction with its members.</p>\n<p>A <strong>community</strong> is a social group determined by <strong>geographical boundaries</strong> and/or common values and interests.</p>\n<p><strong>Acculturation</strong> is the process by which there is the <strong>diffusion</strong> <strong>of</strong> <strong>cultures</strong> between two culturally different groups of people. Acculturation does not take place by folklore.</p>\n<p><strong>Folklore</strong> is the <strong>passage</strong> <strong>of</strong> <strong>customs</strong> <strong>and</strong> <strong>beliefs</strong> of a community <strong>through</strong> <strong>generations</strong>, merely by word of mouth.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1117",
+      "difficulty": "medium"
+    },
+    {
+      "text": "According to National Programme for Control of Blindness and Visual Impairment which of the following is incorrect about the reach in approach?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "People with cataract are treated in a makeshift operation centre"
+        },
+        {
+          "id": 2,
+          "text": "IOL placement by small incision cataract surgery is preferred"
+        },
+        {
+          "id": 3,
+          "text": "Reach in approach has lesser post operative complications"
+        },
+        {
+          "id": 4,
+          "text": "People with cataract are identified and sent to higher centre"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Patients with cataract are <strong>not</strong> <strong>operated</strong> in <strong>makeshift</strong> <strong>operation</strong> <strong>centres</strong> but are rather <strong>shifted</strong> to base hospitals (<strong>reach</strong>-<strong>in</strong> <strong>approach</strong>) as the visual acuity results indicate that the Base Hospital had significantly <strong>higher</strong> <strong>final</strong> <strong>corrected</strong> <strong>visual</strong> <strong>acuity</strong> <strong>compared</strong> <strong>to</strong> the <strong>Peripheral</strong> <strong>Eye</strong> <strong>Camps.</strong></p>\n<p>The <strong>Base</strong> <strong>Hospital</strong> approach, also known as the <strong>reach-in</strong> <strong>approach</strong>, and the <strong>Peripheral</strong> <strong>Eye</strong> Camp approach, also known as the reach-out approach, are two community-oriented strategies implemented within the framework of the National Programme for the Control of Blindness. These techniques aim to address the existing backlog of cataract-related blindness. Both methods have demonstrated efficacy and possess distinct advantages and disadvantages. Both community participation and intersectoral coordination, together with the utilization of suitable technology at an affordable price, are essential components for both endeavours.</p>\n<p>Based on recent developments, there is a shift in emphasis <strong>from</strong> the '<strong>Reach</strong>-<strong>out</strong>' approach <strong>to</strong> the '<strong>Reach</strong>-<strong>in</strong>' approach. The <strong>Reach</strong>-<strong>in</strong> <strong>Approach</strong> involves the organization of <strong>screening</strong> <strong>camps</strong> in <strong>rural</strong> <strong>and</strong> <strong>remote</strong> <strong>locations</strong> that lack access to eye-care institutions. Comprehensive eye care treatments, including refraction, are offered to patients. Subsequently, <strong>those</strong> <strong>requiring</strong> <strong>cataract surgery</strong> are <strong>conveyed</strong> to the <strong>nearest</strong> <strong>hospitals</strong> that <strong>possess</strong> <strong>adequate</strong> <strong>resources</strong> and facilities, following the <strong>base</strong> <strong>hospital</strong> <strong>strategy</strong>. To conduct ocular surgery, it is imperative to comply with the guidelines established by the Government of India.</p>\n<ul>\n<li>It is imperative to have at least <strong>one</strong> <strong>anesthesiologist</strong> who is well prepared to address typical crises to ensure patient safety and optimal care.</li>\n<li>It is recommended that a minimum of <strong>one</strong>, <strong>ideally</strong> <strong>two</strong>, operating <strong>surgeons</strong> be present, with each surgeon limiting their daily caseload to <strong>no more than 30 procedures.</strong></li>\n<li>Currently, the preferred approach for cataract extraction is extracapsular surgery, with a <strong>preference</strong> <strong>for</strong> manual small incision cataract surgery (<strong>SICS</strong>) or phacoemulsification, together with the implantation of a posterior chamber intraocular lens.</li>\n<li>It is ideal to limit the number of surgical procedures conducted in a day to no more than 50.</li>\n<li><strong>Simultaneous</strong> surgery on <strong>both</strong> <strong>eyes</strong> should be avoided.</li>\n<li>Patients who have a high surgical risk due to conditions such as severe diabetes, severe hypertension, and cardiac issues should not undergo surgery in camp settings. Cases related to such issues should be appropriately referred to the base hospitals.</li>\n</ul>\n<p>National Programme for the Control of Blindness and Visual Impairment (<strong>NPCBVI</strong>). The levels of eye care, according to NPCBVI are:</p>\n<p><strong>Primary level:</strong> Sub-district level hospitals, community health centres, mobile ophthalmic units, upgraded PHCs, link workers, and Panchayats.<br /><strong>Secondary</strong> <strong>level</strong>: District hospitals, NGO eye hospitals<br /><strong>Tertiary levels:</strong> Regional institutes of Ophthalmology, medical colleges.<br />The goal is to reduce the prevalence of blindness to 0.3% by 2020.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3132e6be286b4c1b8a35016a9eec2fffx378x378.PNG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1107",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 68-year-old lady was brought to the hospital by her daughter, with episodes of falls, confusion, chronic diarrhea, and cough. The intern decided to conduct a geriatric assessment. Which of the following factors indicated such an examination?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Age, sex, falls"
+        },
+        {
+          "id": 2,
+          "text": "Age, cough, chronic diarrhoea"
+        },
+        {
+          "id": 3,
+          "text": "Age, fall, confusion"
+        },
+        {
+          "id": 4,
+          "text": "Age, sex, cough, chronic diarrhea"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>This patient's <strong>age</strong>, history of <strong>falls</strong> and episodes of <strong>confusion</strong> necessitate a comprehensive geriatric assessment.</p>\n<p>Various comprehensive geriatric assessment programs use the following before performing a full-fledged assessment:</p>\n<ul>\n<li><strong>Age</strong></li>\n<li>The presence of concurrent medical conditions, such as heart failure or cancer.</li>\n<li>The presence of psychosocial illnesses like depression or isolation.</li>\n<li>Diseases unique to the elderly, include cognitive decline, mobility issues, and <strong>falls</strong></li>\n<li>Prior or anticipated high health-care utilization</li>\n<li>Changes in living situation (for example, from independent living to assisted living, nursing facility, or in-home caretakers)</li>\n</ul>\n<p>The inclusion of geriatric evaluation is imperative within the broader framework of the patient's health trajectory, taking into account their future care objectives and personal preferences. Functional status refers to the comprehensive assessment of an individual's health effect within the framework of their surroundings and social support network. It encompasses the individual's capacity to do the physical and social tasks required for their typical activities and duties. The constituents of functional status encompass <strong>activities</strong> of <strong>daily</strong> <strong>living</strong> (ADLs), <strong>instrumental</strong> <strong>activities</strong> of <strong>daily</strong> <strong>living</strong> (IADLs), and <strong>advanced</strong> <strong>activities</strong> of <strong>daily</strong> <strong>living</strong> (AADLs). Two often employed measures in the field are the <strong>Katz</strong> <strong>index</strong>, which assesses activities of daily living (<strong>ADLs</strong>), and the <strong>Lawton</strong> scale, which evaluates <strong>instrumental</strong> activities of <strong>daily</strong> <strong>living</strong> (IADLs). The most effective approach for ascertaining AADLS involves the utilization of <strong>open</strong>-<strong>ended</strong> inquiries, such as \"In what manner do you allocate your time throughout the day?\" or \"What activities do you find enjoyable?\"</p>\n<p>There is a growing trend in geriatric assessment to integrate perspectives from non-clinical office workers, patients, and their relatives or loved ones. This collaborative approach may encompass the use of standing orders, forms, and questionnaires. An advisable strategy involves doing an annual evaluation of functional status, <strong>commencing</strong> at the age of <strong>65</strong> <strong>years</strong>, using the <strong>Medicare</strong> <strong>Annual</strong> <strong>Wellness</strong> <strong>Visit</strong>. For individuals below the age of 75 years with multiple comorbidities or those aged 75 years and above, it is recommended to augment this assessment with supplementary components. Furthermore, it is recommended that some components of geriatric assessment, such as evaluating activities of daily living (ADLs) and instrumental activities of daily living (IADLs), measuring gait, balance, and the risk of falls, evaluating mood and affect, as well as assessing cognition, be conducted following significant illnesses, particularly those necessitating hospitalization.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1151",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following best helps assess the quality of healthcare provided?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Multiple logistic regression model"
+        },
+        {
+          "id": 2,
+          "text": "Bar graph"
+        },
+        {
+          "id": 3,
+          "text": "Scattergram"
+        },
+        {
+          "id": 4,
+          "text": "Ishikawa diagram/ Fish bone diagram"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Ishikawa</strong> <strong>diagram</strong> or else better known as the <strong>fishbone</strong> <strong>diagram</strong> helps sketch out problems that affect healthcare in a community and thus uses those as pointers to better address them in the community.</p>\n<p>The <strong>Ishikawa</strong> <strong>diagram</strong>, often known as the <strong>fishbone</strong> <strong>diagram</strong>, is employed by teams <strong>aiming</strong> to <strong>comprehend the numerous potential factors</strong> that contribute to a <strong>quality of care issue</strong>. This tool enables teams to concentrate their development endeavours on these identified causes. The utilization of this tool is applicable across several phases of the quality improvement framework, with its primary application commonly observed within the context of <strong>root cause analysis</strong>.</p>\n<p>The <strong>fishbone</strong> graphic bears a resemblance to the <strong>skeletal</strong> <strong>structure</strong> <strong>of</strong> <strong>a</strong> <strong>fish</strong>. To depict the diagram about a quality of care issue, the <strong>problem</strong> (<strong>effect</strong>) is encapsulated within a box positioned on the extreme right of the diagram. A vertical line, referred to as the <strong>centre</strong> <strong>line</strong> or <strong>spine</strong>, is then <strong>positioned</strong> to the left of the box where the problem is documented. Subsequently, <strong>diagonal</strong> <strong>lines</strong> resembling fish <strong>bones</strong> are sketched <strong>emanating</strong> from the <strong>central</strong> <strong>line</strong>, also known as the spine. The <strong>diagonal</strong> <strong>lines</strong> depicted in the diagram signify <strong>distinct</strong> <strong>categorizations</strong> of the underlying factors contributing to the issue. <strong>Supplementary</strong> <strong>branches</strong> may also be delineated from the primary skeletal structure to symbolize <strong>underlying</strong> <strong>factors</strong> leading to the causes.</p>\n<p>The groupings are typically <strong>structured into</strong> <strong>categories</strong>, commonly known as the <strong>five Ps</strong> (patients/clients, providers, policies, processes and procedures, and place/equipment), the <strong>six Ms </strong>(machine, method, materials, measurement, man, and Mother Nature), and the<strong> four Ss</strong> (surroundings, suppliers, systems, and skills). Nevertheless, the groupings need to be tailored to the organization and problem being investigated. The responsibility for ensuring this specificity lies with the quality improvement team. Once the categories have been delineated, the quality improvement team proceeds to partake in a brainstorming session to <strong>identify</strong> <strong>causes</strong> that are specific to each respective grouping. The aforementioned procedure persists until the team reaches a point where they are unable to ascertain any further underlying factors.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d9849f51c2dd4db6afdb2eb6bb03f414x1280x941.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option A: <strong>Logistic</strong> <strong>regression</strong> may be used in some situations where we are <strong>not interested</strong> in a <strong>numerical</strong> <strong>outcome</strong> (like risk, etc) but we want a <strong>nominal</strong> or <strong>categorical</strong> one (like death/survival, developing a disease/not developing a disease). Here, the relationship between the variables will not be a linear one as the outcome from survival to death in relationship with the risk factor can change suddenly. Thus these outcomes are represented by 0 and 1.</p>\n<p>Option B: A<strong> bar graph i</strong>s a pictorial way of presenting a set of <strong>numbers</strong>, the magnitudes of which are proportional to the length of the bars in the graph. It can be simple, multiple, or component bar graphs and enable values to be compared visually. They are used to <strong>compare</strong> <strong>a</strong> <strong>single</strong> <strong>variable</strong> <strong>value</strong> between several groups.</p>\n<p>Option C: A <strong>scatter</strong> <strong>plot</strong> is a statistical map used to study the <strong>correlation</strong> <strong>between</strong> <strong>two</strong> <strong>given</strong> <strong>variables</strong>. In scatter plots or scatter diagrams, the pattern made by plotted points along the two axes indicates the possible relationship. If the dots cluster along a straight line, then the relationship is linear. If there is <strong>no cluster</strong>, then there might be <strong>no relationship</strong>. Below is an example of a scatter diagram without a linear relation.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b829b4fa4c1a4adb81560358f598acd2x720x470.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1097",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A mother brought her 6 month old infant baby to an Anganwadi worker Lata for advice regarding the vaccination of her child. The last vaccines he had received were OPV3, PENTA 3, IPV2, and ROTA3 at 14 weeks of age. BCG and Hep B were given at birth. When is the next vaccination due?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "MR vaccine at left arm intramuscularly and Vitamin A drops at the end of 9 months"
+        },
+        {
+          "id": 2,
+          "text": "MR vaccine at right arm subcutaneously and Vitamin A drops at the end of 8 months"
+        },
+        {
+          "id": 3,
+          "text": "MR vaccine at left arm intramuscularly and Vitamin A drops at the end of 8 months"
+        },
+        {
+          "id": 4,
+          "text": "MR vaccine at right arm subcutaneously and Vitamin A drops at the end of 9 months"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>According to the <strong>National</strong> <strong>Immunization</strong> <strong>Schedule</strong>, the <strong>Measles</strong>/<strong>MR</strong> <strong>vaccine</strong> is given at <strong>9 completed months</strong> (1st dose), and a <strong>second</strong> dose is given at <strong>16</strong>-<strong>24</strong> <strong>months.</strong> Measles vaccine can be given till 5 years of age. A dose of <strong>0.5</strong> <strong>mL</strong> is administered subcutaneously in the <strong>right</strong> <strong>upper</strong> <strong>arm</strong>.</p>\n<p><strong>Vitamin A schedule</strong> in the National Immunisation Schedule(NIS) </p>\n<ul>\n<li><strong>1 lakh IU </strong>at <strong>9</strong> <strong>completed</strong> <strong>months</strong> along with the <strong>Measles-Rubella vaccine</strong></li>\n<li><strong>2 lakh IU </strong>is administered bi-annually for children between <strong>1-5 years of age</strong></li>\n</ul>\n<p>Total number of doses administered- <strong>9</strong> <strong>doses</strong>,<strong>17</strong> <strong>lakhs</strong> <strong>IU</strong> </p><hr><h3>Related Pearl: Measles vaccine</h3><p>Measles vaccine:&nbsp;</p>\n<ul>\n<li>\n<p>Type: Live attenuenated, lyophilized (freeze dried), vaccine (Tissue culture vaccine- chick embryo or Human diploid cell line).</p>\n</li>\n<li>\n<p>Strains used: 1. Edmonston Zagreb strain (most common).&nbsp;</p>\n</li>\n</ul>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. Schwartz strain.</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3. Moraten strain.</p>\n<ul>\n<li>\n<p>Dose: 0.5ml.</p>\n</li>\n<li>\n<p>Route: Subcutaneous.</p>\n</li>\n<li>\n<p>Site: Right arm (usually).</p>\n</li>\n<li>\n<p>Age of administration in National immunization schedule (India): 9 months (can be lowered to 6-9 months in epidemics and malnutrition) and 16-24 months.</p>\n</li>\n<li>\n<p>Diluent for reconstitution: Distilled water or sterile water. (To be used within 4 hours after reconstitutuion).</p>\n</li>\n<li>\n<p>Measles (and MMR) vaccine can lead to Toxic shock syndrome.</p>\n</li>\n<li>\n<p>Measles vaccine is contraindicated in pregnancy.</p>\n</li>\n<li>\n<p>Cold chain temperature for storage: +2 to +8 degree Celcius.</p>\n</li>\n<li>\n<p>Protective efficacy: &gt;90% with one dose; &gt;99% with two doses.</p>\n</li>\n<li>\n<p>Duration of protection: Life long.</p>\n</li>\n<li>\n<p>IP of vaccine induced measles: 7 days.</p>\n</li>\n<li>\n<p>Ideal gap between two successive doses: 6 months.</p>\n</li>\n</ul><hr><h3>Related Pearl: Vitamin-A supplementation & treatment of Vitamin-A deficiency</h3><table>\n<tbody>\n<tr>\n<td colspan=\"3\">\n<div><strong>Vitamin A supplementation</strong></div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Target group</strong></div>\n</td>\n<td>\n<div>6 to 11 months age</div>\n</td>\n<td>\n<div>12 to 59 month of age (1yr to 5yr)</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Dose</strong></div>\n</td>\n<td>\n<div>100,000 IU (oral)</div>\n</td>\n<td>\n<div>200,000 IU (oral)</div>\n</td>\n</tr>\n<tr>\n<td>\n<div><strong>Frequency</strong></div>\n</td>\n<td>\n<div>Once</div>\n</td>\n<td>\n<div>Every 4&ndash;6 months</div>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p><strong>Note</strong>: A total dose of&nbsp;<strong>17 lakh IU</strong> given as per the following schedule:</p>\n<ul>\n<li>100,000 IU is given with measles vaccine at 9 months</li>\n<li>200,000 IU is given with DPT booster at 15&ndash;18 months</li>\n<li>200,000 IU is given every 6 months (till 5years of age)</li>\n</ul>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td colspan=\"4\"><strong>Treatment </strong>of vitamin A<strong> deficiency</strong></td>\n</tr>\n<tr>\n<td><strong>Age</strong></td>\n<td>&lt; 6 months</td>\n<td>6-12 months</td>\n<td>&gt; 1 year</td>\n</tr>\n<tr>\n<td><strong>Dose</strong></td>\n<td>50,000 IU</td>\n<td>100,000 IU</td>\n<td>200,000 IU</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p><strong>Note:</strong> Route of administration is <strong>oral</strong>, in the form of retinyl palmitate.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1104",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements is true about palliative care?<div class='question-desc-html'><p>A. Disease is the centre of concern<br />B. The patient is sovereign<br />C. Death should neither be prolonged nor hastened<br />D. The aim is to improve the quality of life<br />E. The intention is to cure<br />F. Imperative to do something than passively observe</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "A,B,C,D"
+        },
+        {
+          "id": 2,
+          "text": "C,E,F"
+        },
+        {
+          "id": 3,
+          "text": "B,D"
+        },
+        {
+          "id": 4,
+          "text": "A,B,E,F"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>True </strong>statements<strong> </strong>are<strong>: </strong></p>\n<ul>\n<li>The patient is sovereign</li>\n<li>The aim is to improve the quality of life</li>\n</ul>\n<p><strong>Palliative</strong> <strong>care</strong> helps patients and their families cope with physical, psychological, social, and spiritual obstacles of life-threatening disease. It is interesting to note that even the <strong>quality of life</strong> of the <strong>caregiver</strong> also improves. Palliative care is needed by 56.8 million individuals annually, including 25.7 million in their final year according to WHO, while only 14% of palliative care patients worldwide receive it.</p>\n<p>Palliative care <strong>improves</strong> the<strong> quality of life of life</strong>-<strong>threatening</strong> <strong>illness</strong> patients <strong>and</strong> their <strong>families</strong>. Early detection, assessment, and treatment of physical, psychosocial, and spiritual suffering and additional concerns diminish discomfort. <strong>Addressing</strong> <strong>suffering</strong> goes beyond physical symptoms. Palliative care supports <strong>patients</strong> <strong>and</strong> <strong>caregivers</strong> collaboratively. This includes practical assistance and bereavement counselling. It supports patients to live as fully as possible till death.</p>\n<p>The human right to health includes palliative care. <strong>Patient-centred</strong> and integrated health services should focus on individual needs and preferences. </p>\n<p>Many diseases require palliative care. Most palliative care patients have <strong>chronic</strong> <strong>conditions</strong> like cardiovascular disease (38.5%), cancer (34%), respiratory disease (10.3%), AIDS (5.7%), and diabetes (4.6%). Kidney failure, chronic liver illness, multiple sclerosis, Parkinson's, rheumatoid arthritis, neurological disease, dementia, congenital defects, and drug-resistant TB may require palliative care.</p>\n<p>Most common and serious symptoms that patients undergoing palliative care experience are pain and respiratory difficulties. Almost 80% of AIDS, cancer, and 67% of cardiovascular and COPD patients would experience moderate to severe agony at death.</p>\n<p>Opioids also <strong>relieve</strong> <strong>dyspnea</strong> and <strong>diminish</strong> the increased <strong>pain</strong> experienced by patients. <strong>Early symptom</strong> control is ethical to reduce suffering and respect the dignity of the patient.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1121",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is the highest level of community participation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Considering their ideas"
+        },
+        {
+          "id": 2,
+          "text": "Felt needs of community considered"
+        },
+        {
+          "id": 3,
+          "text": "Contribution of resources"
+        },
+        {
+          "id": 4,
+          "text": "Involving in planning of health related campaigns"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>highest</strong> <strong>level</strong> of community participation is for the community to be <strong>involved</strong> <strong>in</strong> the <strong>planning</strong> of health-related campaigns.</p>\n<p><strong>Engaging</strong> in the strategic <strong>planning</strong> of health-related campaigns signifies a substantial degree of community involvement, surpassing the mere contemplation of ideas or the provision of resources. The process of planning campaigns necessitates proactive <strong>participation</strong> and <strong>cooperation</strong>, signifying a heightened level of engagement in decision-making procedures that have a direct influence on the welfare of the community. This level of participation <strong>also</strong> <strong>includes</strong> <strong>engaging</strong> with the community's <strong>perceived</strong> <strong>needs</strong> through actively contributing to the strategic design and implementation of initiatives that aim to enhance health outcomes.</p>\n<p>Earlier <strong>socialisation</strong> was envisaged as an idea for the utilisation of services but recently WHO and UNICEF deemed <strong>community</strong> <strong>participation</strong> would be of even greater help. They have defined it as ''<em>the process by which individuals and families assume responsibility for their health and welfare for those of the community and develop the capacity to contribute to their and the community's development</em>.'' It also signifies the involvement of the community in the process of planning, organizing, and managing their healthcare services. This concept is commonly referred to as \"<strong>Health by the People</strong>.\" </p>\n<p>There are <strong>three ways</strong> in which a <strong>community</strong> would be able to <strong>participate</strong>:</p>\n<p>1) The community can <strong>offer</strong> various <strong>resources</strong> such as facilities, human resources, logistical assistance, and maybe financial help.</p>\n<p>2) Active community engagement is crucial in the processes of planning, management, and assessment.</p>\n<p>3) Another significant contribution that individuals may make is by actively participating in and utilizing healthcare services.</p>\n<p>Other options:</p>\n<p>Options A, B and C are also methods by which a community will be able to participate but planning of health-related campaigns is considered the highest form of community participation. </p><hr><h3>Related Pearl: Elements and Principles of Primary Health Care</h3><p><strong>A. Elements of Primary Health Care</strong></p>\n<p>(Mnemonic: <strong>ELEMENTS</strong>)</p>\n<ul>\n<li><strong>E</strong>ducation about health problems and their prevention and control</li>\n<li><strong>L</strong>ocally endemic diseases &ndash; prevention and control</li>\n<li><strong>E</strong>ssential drugs</li>\n<li><strong>M</strong>aternal and child health care</li>\n<li><strong>E</strong>xpanded programme of immunization against vaccine preventable diseases</li>\n<li><strong>N</strong>utrition and proper food supply</li>\n<li><strong>T</strong>reatment of common diseases and injuries</li>\n<li><strong>S</strong>afe water and sanitation</li>\n</ul>\n<p><strong>B. Principles/Pillars of Primary Health Care</strong></p>\n<ul>\n<li>Equitable distribution</li>\n<li>Community participation</li>\n<li>Intersectoral coordination</li>\n<li>Appropriate technology</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1149",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A patient hailing from an area infested with mosquitoes presents with fever, chills, and myalgias. WBC count was 4000 cells/cu.mm, RBC was normal, and platelets were 90000 cells/cu.mm. He also had a maculopapular rash. What is the likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Dengue"
+        },
+        {
+          "id": 2,
+          "text": "Typhoid"
+        },
+        {
+          "id": 3,
+          "text": "Ebola haemorrhagic fever"
+        },
+        {
+          "id": 4,
+          "text": "Rift valley fever"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given clinical scenario with a patient hailing from a <strong>mosquito-infested</strong> area with fever and <strong>decreased platelet</strong> counts is diagnostic of<strong> dengue</strong>. </p>\n<p>Symptoms of severe dengue are headache, myalgias, retroorbital pain<strong>,</strong> end-organ damage, pleural &amp; ascitic effusions and <strong>thrombocytopenia</strong> (&lt;100,000/ uL). Complications include mild hepatic injury, seizures, arrythmias and acute kidney injury.</p>\n<p>Diagnosis is made by <strong>NS1 antigen detection</strong> and <strong>IgM antibody assays</strong>. Treatment includes <strong>crystalloid infusion</strong> in mild cases and colloid infusion in severe cases, oxygen administration and close monitoring.</p>\n<p>Dengue is classified into <strong>dengue with or without warning signs</strong> and <strong>severe dengue</strong>. Dengue is to be suspected when a <strong>high fever</strong> (40°C/104°F) is accompanied by <strong>any two</strong> of the following symptoms during the febrile phase (2-7 days) which include severe headache, retro-orbital pain, arthralgia or myalgia, nausea, vomiting and maculopapular rash.</p>\n<p>Warning signs in dengue are:</p>\n<ul>\n<li aria-level=\"1\">severe abdominal pain</li>\n<li aria-level=\"1\">persistent vomiting</li>\n<li aria-level=\"1\">tachypnea</li>\n<li aria-level=\"1\">bleeding gums or nose </li>\n<li aria-level=\"1\">fatigue</li>\n<li aria-level=\"1\">restlessness</li>\n<li aria-level=\"1\">hepatomegaly</li>\n<li aria-level=\"1\">malena or hematemesis</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF7164",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following statements are correctly matched?<br><br><div class='question-desc-html'><p>1. Pre-contemplation phase - A person is thinking about commencing morning walks due to their increased health benefits.</p>\n<p>2. Contemplation phase - A smoker is considering giving up his habit of smoking.</p>\n<p>3. Maintenance phase - A person who quit smoking one year back and has abstained from smoking ever since</p>\n<p>4. Action -  A person who is overweight says he can't do anything as his entire family is overweight</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Statement 1,2"
+        },
+        {
+          "id": 2,
+          "text": "Statement 3,4"
+        },
+        {
+          "id": 3,
+          "text": "Statement 2,3"
+        },
+        {
+          "id": 4,
+          "text": "Statement 1,2,3"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>True statements </strong>are<strong>:</strong></p>\n<ul>\n<li><strong>Contemplation</strong> phase - A smoker is considering giving up his habit of smoking. (<strong>Recognizes</strong> <strong>his</strong> <strong>problem</strong> and <strong>thinks</strong> about to <strong>bring</strong> <strong>about</strong> a <strong>change</strong>)</li>\n<li><strong>Maintenance</strong> phase - A person who quit smoking one year back and has abstained from smoking ever since. (He has <strong>sustained</strong> <strong>his</strong> <strong>abstinence</strong> <strong>from</strong> <strong>smoking</strong>)</li>\n</ul>\n<p><strong>Motivation</strong> <strong>enhancement</strong> <strong>therapy</strong> (MET) is a systematic intervention approach for bringing about change in the addictive behaviour seen in people with substance use disorders. It is based on the principle of <strong>motivational</strong> <strong>psychology</strong> and aims to enable the patient to deal with his addiction by producing internally motivated change.</p>\n<p>Addictive behaviors do not change abruptly, and go through gradual stages. The stages of motivation enhancement therapy (MET) include:</p>\n<p><strong>Precontemplation</strong> - individuals in this stage are often <strong>unaware</strong> that their behaviour (eg. alcohol abuse) is problematic or is producing negative consequences. </p>\n<p><strong>Contemplation</strong> - individuals in this stage <strong>recognize</strong> their problems and begin to think about changing their behaviour. They weigh the pros and cons of change. They may still feel ambivalent about changing their behaviour. </p>\n<p><strong>Preparation</strong> or <strong>determination</strong> - individuals in this stage make decisions to change their habits and are ready to take action. They start to take small steps toward behaviour change.</p>\n<p><strong>Action</strong> - individuals in this stage change their behaviour and intend to keep moving forward with this change in behaviour</p>\n<p><strong>Maintenance</strong> - individuals in this stage <strong>sustain</strong> <strong>their</strong> <strong>change</strong> <strong>in</strong> <strong>behaviour</strong> for a while and intend to maintain this change going forward. People work to prevent relapse to earlier stages.</p>\n<p>Other statements:</p>\n<p>Statement <strong>1:</strong> This statement is <strong>false</strong> as people in the <strong>pre</strong>-<strong>contemplation</strong> <strong>stage </strong>are <strong>unaware </strong>that their behaviour is problematic.</p>\n<p>Statement <strong>4</strong>: This statement is also <strong>false</strong> as people in the action stage <strong>make strides to change their behaviour.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1144",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Two doctors examined 100 chest X - Rays of patients. The kappa statistic was found to be 0.71. What does it mean?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Good agreement"
+        },
+        {
+          "id": 2,
+          "text": "Perfect agreement"
+        },
+        {
+          "id": 3,
+          "text": "Poor agreement"
+        },
+        {
+          "id": 4,
+          "text": "No agreement"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>A kappa statistic of <strong>0.71</strong> indicates a <strong>good</strong> <strong>agreement</strong> between the two doctors who collected the data.</p>\n<p>The <strong>strength</strong> of agreement varies with the kappa coefficient as follows:</p>\n<p>0.81 to 1: perfect agreement between the two tests/methods<br /><strong>0.61 to 0.80: substantial agreement/ good agreement</strong><br />0.41 to 0.60: moderate agreement<br />0.21 to 0.40: fair agreement<br />0.10 to 0.20: slight agreement</p>\n<p>Most of the studies test the association between an exposure variable and the disease. In certain cases, it is anticipated that there will be a correlation <strong>between</strong> <strong>the</strong> <strong>variables</strong>, and the challenge is to determine the <strong>extent</strong> <strong>of</strong> <strong>this</strong> <strong>correlation or association. </strong>This assertion holds special significance in the realm of reliability studies, wherein the <strong>researcher</strong> seeks to <strong>quantitatively assess</strong> the extent to which a given variable (such as a particular finding on a chest X-ray ) can be reproduced through several measurements which is the <strong>utility</strong> of the <strong>kappa</strong> <strong>statistic</strong>. It is also important to note that a <strong>chi</strong>-<strong>square</strong> test <strong>can also be used</strong> but would only <strong>qualitatively</strong> assess the <strong>data</strong> and <strong>not</strong> <strong>quantitatively</strong> which of course is accomplished by the use of kappa statistic.</p>\n<p>Kappa statistic can be <strong>calculated</strong> as:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/365f4d81c2724109bdd9f1f68f25e664x232x108.JPEG\" alt=\"Explanation Image\"><p>where <strong>p<sub>O</sub></strong> is <strong>observed</strong> agreement and <strong>p</strong><sub><strong>E</strong> </sub>is <strong>expected</strong> agreement.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1092",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is an example of a longitudinal observational and analytical study? ",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Case control Study "
+        },
+        {
+          "id": 2,
+          "text": "Cohort Study"
+        },
+        {
+          "id": 3,
+          "text": "Randomized Controlled Trial"
+        },
+        {
+          "id": 4,
+          "text": "Ecological Study"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Cohort</strong> <strong>study</strong> is an example of a <strong>longitudinal</strong> <strong>observational</strong> and <strong>analytical</strong> study.</p>\n<p>A <strong>cohort study</strong> is a type of <strong>analytical</strong> study, which progresses from cause to effect, as exposure has occurred but not disease. It is also known as a forward-looking study, incidence study, <strong>prospective</strong> study, and <strong>longitudinal study. </strong>A well-designed cohort study is considered the <strong>most</strong> <strong>reliable</strong> means of showing an <strong>association</strong> between a <strong>cause</strong> or suspected <strong>risk</strong> <strong>factor</strong> <strong>and</strong> subsequent <strong>disease</strong> (or effect).</p>\n<p>Types of epidemiological studies:</p>\n<ul>\n<li><strong>Observational</strong> <strong>studies</strong> - allow nature to take its course, the investigator measures but does not intervene.</li>\n</ul>\n<ol>\n<li><strong>Descriptive</strong> <strong>studies</strong> - limited to the description of the occurrence of a disease in a population- (<strong>hypothesis</strong> <strong>formulation</strong>).</li>\n<li><strong>Analytical</strong> <strong>studies</strong> - go further by analyzing the relationship between health status and other variables- (<strong>hypothesis testing).</strong></li>\n</ol>\n<ul>\n<li>Ecological studies</li>\n<li>Cross-sectional studies</li>\n<li>Case-control studies</li>\n<li><strong>Cohort studies</strong></li>\n</ul>\n<ul>\n<li><strong>Experimental</strong> <strong>studies</strong> or intervention studies involve an active attempt to change a disease determinant or the progress of a disease and are similar in design to experiments in other sciences- (hypothesis confirmation).</li>\n</ul>\n<ol>\n<li><strong>Randomized</strong> <strong>controlled</strong> <strong>trials</strong></li>\n<li>Field trials</li>\n<li>Community trials      </li>\n</ol>\n<p>Other options:</p>\n<p>Option A: Although <strong>case</strong>-<strong>control studies</strong> are inherently analytical, they are <strong>not</strong> <strong>longitudinal</strong>. <strong>Longitudinal</strong> <strong>studies</strong> involve the collection of variables about a subject over an extended duration.</p>\n<p>Option C: A <strong>randomized</strong> <strong>control</strong> <strong>trial</strong> is an <strong>experimental study</strong> in which an intervention is given to a group of patients participating in the study and compared to another group of patients with similar characteristics who are not given that intervention to be studied. It uses <strong>patients</strong> as the <strong>unit</strong> of study.</p>\n<p>Option D: An <strong>ecological</strong> <strong>study</strong> is a type of <strong>analytical</strong> <strong>study</strong> that analyzes the health status and its relation with other variables. It is also called a <strong>correlational</strong> <strong>study</strong>, and it uses the <strong>population</strong> as a <strong>unit</strong> <strong>of</strong> <strong>study</strong>. <strong>Longitudinal</strong> <strong>studies</strong> involve the collection of variables about a subject over an extended duration.</p><hr><h3>Related Pearl: Types of Epidemiological Study Designs</h3><p><strong>Types of Epidemiological Study Designs</strong></p>\n<p>The flow chart below gives a glance into the types of epidemiological study designs and where they are generally used.</p>\n<p><strong>Note:</strong>&nbsp;<strong>Descripitve study</strong> is used to <strong>formulate</strong> aetiological hypothesis of a disease. Whereas <strong>analytical study</strong> is used to <strong>test</strong> the hypothesis (i.e to accept or reject the hypothesis).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8bf47c838ad64276ab706c700cc1758cx1280x2995.JPEG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Cohort Study</h3><ul>\n<li>A <strong>cohort study</strong> progresses from <strong>cause</strong> (exposure) <strong>to effect</strong> (disease).</li>\n<li>It is also known as <strong>forward-looking </strong>study, <strong>incidence </strong>study,<strong> prospective </strong>study, and<strong> longitudinal </strong>study.</li>\n<li><strong>Design of a cohort study:</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2ea236bdd083460eaa50179f47f0948dx1280x1373.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Types of cohort study:</strong>\n<ul>\n<li>Prospective (concurrent) cohort studies</li>\n<li>Retrospective (historical) cohort studies</li>\n<li>Combination cohort studies</li>\n</ul>\n</li>\n<li><strong>Steps of cohort study:</strong>\n<ul>\n<li>Selection of study subjects</li>\n<li>Obtaining data on exposure</li>\n<li>Selection of comparison groups</li>\n<li>Follow-up</li>\n<li>Analysis in terms of incidence rates and estimation of risk</li>\n</ul>\n</li>\n<li><strong>Advantages of cohort study:</strong>\n<ul>\n<li>Incidence can be calculated</li>\n<li>Several possible outcomes related to exposure can be studied at the same time</li>\n<li>Provides direct estimate of relative risk</li>\n<li>Calculation of dose-response ratio</li>\n<li>Minimization of certain biases</li>\n</ul>\n</li>\n<li><strong>Disadvantages of cohort study:</strong>\n<ul>\n<li>Cannot use for uncommon diseases</li>\n<li>Expensive, requires a large population and&nbsp;longer time</li>\n<li>Many common administrative and ethical problems</li>\n<li>High attrition and selection of subjects is difficult</li>\n<li>Dynamism of diagnostics is difficult to incorporate</li>\n<li>Tends to alter the behaviour of subjects known as&nbsp;<strong>Hawthorne effect</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1091",
+      "difficulty": "medium"
+    }
+  ]
+}

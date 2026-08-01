@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14243a">
+    <meta name="description" content="Medical Education News - Afrahtafreeh">
+    <!-- Fixed CSP: added https://cdn.jsdelivr.net for Supabase script -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://pagead2.googlesyndication.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://securepubads.g.doubleclick.net https://www.googletagservices.com https://fundingchoicesmessages.google.com https://www.google.com https://cmp.gatekeeperconsent.com https://the.gatekeeperconsent.com https://www.ezojs.com https://ezoicanalytics.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; frame-src https://tpc.googlesyndication.com https://googleads.g.doubleclick.net https://www.google.com; connect-src 'self' https:;">
+    <title>Afrahtafreeh | Medical Education News</title>
+    <script>
+        (function () {
+            var h = window.location.hash;
+            if (h && (h.includes('access_token') || h.includes('error_description'))) {
+                window.location.replace('./auth.html' + h);
+                return;
+            }
+            var s = window.location.search;
+            if (s && s.includes('code=')) {
+                window.location.replace('./auth.html' + s);
+            }
+        })();
+    </script>
+    <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+    window.ezstandalone = window.ezstandalone || {};
+    ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --ink: #16233a;
+            --ink-soft: #56606f;
+            --ink-muted: #7b8493;
+            --paper: #f1f3ee;
+            --card: #ffffff;
+            --card-alt: #f9faf7;
+            --teal: #1c6e63;
+            --teal-deep: #0e4a43;
+            --teal-light: #e6f4f1;
+            --teal-glow: rgba(28, 110, 99, 0.15);
+            --maroon: #7a2333;
+            --maroon-deep: #5c1a26;
+            --maroon-soft: #9a4356;
+            --maroon-light: #fdf2f4;
+            --gold: #a9814a;
+            --gold-light: #fbf6ef;
+            --amber-bg: #fbf1de;
+            --amber-line: #b4802e;
+            --amber-ink: #6b4a13;
+            --line: rgba(22, 35, 58, 0.1);
+            --line-strong: rgba(22, 35, 58, 0.18);
+            --shadow-sm: 0 2px 8px rgba(20, 30, 48, 0.05);
+            --shadow: 0 8px 28px rgba(20, 30, 48, 0.07);
+            --shadow-lg: 0 16px 48px rgba(20, 30, 48, 0.09);
+            --shadow-xl: 0 24px 60px rgba(20, 30, 48, 0.12);
+            --radius-sm: 8px;
+            --radius: 14px;
+            --radius-lg: 18px;
+            --radius-xl: 22px;
+            --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px 40px;
+            line-height: 1.6;
+            background-image:
+                radial-gradient(ellipse at 50% 0%, rgba(28, 110, 99, 0.03) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(122, 35, 51, 0.02) 0%, transparent 50%);
+        }
+
+        a {
+            color: var(--teal-deep);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        a:hover {
+            color: var(--teal);
+        }
+
+        :focus-visible {
+            outline: 2.5px solid var(--teal);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 920px;
+            width: 100%;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+        }
+
+        .masthead {
+            padding: 36px 0 28px;
+            text-align: center;
+        }
+
+        .masthead-rule {
+            height: 3px;
+            background: var(--ink);
+            width: 100%;
+            border-radius: 1px;
+        }
+
+        .masthead-rule--thin {
+            height: 1px;
+            background: var(--ink);
+            opacity: 0.5;
+            margin-top: 14px;
+            border-radius: 0.5px;
+        }
+
+        .masthead-inner {
+            padding: 20px 10px 0;
+        }
+
+        .masthead .eyebrow {
+            color: var(--maroon);
+            margin-bottom: 4px;
+        }
+
+        .brand-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: clamp(2.5rem, 7.5vw, 3.8rem);
+            letter-spacing: -0.015em;
+            color: var(--ink);
+            margin: 8px 0 4px;
+            line-height: 1.15;
+        }
+
+        .brand-title .accent-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--maroon);
+            margin: 0 6px;
+            vertical-align: middle;
+            position: relative;
+            top: -0.3em;
+        }
+
+        .brand-tagline {
+            font-family: 'Fraunces', serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+            color: var(--ink-soft);
+            letter-spacing: 0.01em;
+        }
+
+        .cadaver-paper {
+            background-color: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 28px;
+            overflow: hidden;
+            position: relative;
+            padding: 30px 0 42px 0;
+            border-top: 4px solid var(--maroon);
+            transition: var(--transition);
+        }
+
+        .cadaver-paper::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0.5;
+        }
+
+        .cadaver-header {
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 0 24px;
+        }
+
+        .cadaver-eyebrow {
+            color: var(--maroon-soft);
+        }
+
+        .cadaver-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: var(--maroon);
+            font-size: clamp(28px, 5.5vw, 42px);
+            font-weight: 700;
+            margin-top: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .cadaver-rule {
+            width: 56px;
+            height: 2px;
+            background: var(--gold);
+            margin: 18px auto 0;
+            border-radius: 1px;
+        }
+
+        .cadaver-content {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 28px 30px 0;
+            align-items: flex-end;
+            position: relative;
+            gap: 28px;
+        }
+
+        .cadaver-img-container {
+            flex: 0 1 270px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background: #fafaf8;
+            border-radius: var(--radius);
+            padding: 14px;
+            border: 1px solid #eee;
+        }
+
+        .cadaver-img {
+            max-width: 100%;
+            height: auto;
+            mix-blend-mode: multiply;
+            filter: contrast(1.08) brightness(1.04) saturate(0.92);
+            display: block;
+            border-radius: 4px;
+        }
+
+        .cadaver-poem {
+            flex: 1;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-style: italic;
+            font-size: clamp(15px, 3.8vw, 17px);
+            color: #3a3d44;
+            line-height: 1.7;
+            padding: 8px 0;
+            word-wrap: break-word;
+        }
+
+        .cadaver-stanza {
+            margin-bottom: 22px;
+        }
+        .cadaver-stanza p {
+            margin: 2px 0;
+        }
+
+        .cadaver-author {
+            text-align: right;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+            color: var(--ink-soft);
+            margin-top: 22px;
+            padding-right: 22px;
+        }
+
+        .free-edu-section {
+            background: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            margin-bottom: 26px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            position: relative;
+        }
+        .free-edu-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--teal), var(--teal-deep), var(--gold));
+            opacity: 0.85;
+        }
+        .free-edu-inner {
+            padding: 28px 28px 32px;
+            text-align: center;
+        }
+        .free-edu-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--teal-light);
+            color: var(--teal-deep);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .free-edu-inner h2 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 4vw, 1.9rem);
+            color: var(--ink);
+            margin-bottom: 8px;
+            letter-spacing: -0.015em;
+        }
+        .free-edu-inner .subtitle {
+            color: var(--ink-soft);
+            font-size: 0.95rem;
+            margin-bottom: 26px;
+            font-weight: 500;
+        }
+        .free-edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            text-align: left;
+        }
+        .free-edu-card {
+            background: var(--card-alt);
+            border-radius: var(--radius);
+            padding: 22px 20px;
+            border: 1px solid var(--line);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .free-edu-card:hover {
+            box-shadow: var(--shadow);
+            border-color: #d5dcd6;
+            transform: translateY(-3px);
+        }
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 14px;
+            flex-shrink: 0;
+        }
+        .card-icon--lectures { background: #e6f4f1; color: var(--teal); }
+        .card-icon--notes { background: #fdf2f4; color: var(--maroon); }
+        .card-icon--qbank { background: #fbf6ef; color: var(--gold); }
+        .free-edu-card h4 {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--ink);
+            margin-bottom: 4px;
+        }
+        .free-edu-card p {
+            font-size: 0.85rem;
+            color: var(--ink-soft);
+            line-height: 1.5;
+            margin: 0;
+        }
+        .free-edu-highlight {
+            display: inline-block;
+            background: linear-gradient(180deg, transparent 60%, rgba(28, 110, 99, 0.15) 60%);
+            padding: 0 4px;
+        }
+
+        .notice-section {
+            background: var(--amber-bg);
+            border: 1px solid var(--amber-line);
+            border-left: 5px solid var(--amber-line);
+            color: var(--amber-ink);
+            padding: 22px 24px;
+            border-radius: 10px;
+            margin-bottom: 26px;
+            position: relative;
+            overflow: hidden;
+        }
+        .notice-section::after {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid rgba(180, 128, 46, 0.12);
+            pointer-events: none;
+            animation: noticePulse 3s ease-in-out infinite;
+        }
+        @keyframes noticePulse {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.5); opacity: 0; }
+        }
+        .notice-section h3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--amber-ink);
+            position: relative;
+            z-index: 1;
+        }
+        .notice-content {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 16px 18px;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: left;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        .important-step {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.82);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        .important-step:hover {
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+        }
+        .step-number {
+            background: var(--maroon);
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .install-section {
+            background: var(--card);
+            padding: 34px 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .install-section::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--teal-light), var(--teal), var(--teal-deep));
+            opacity: 0.7;
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+        }
+        .install-icon {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 0 14px var(--teal-glow);
+            transition: var(--transition-spring);
+        }
+        .install-section:hover .install-icon {
+            box-shadow: 0 0 0 22px var(--teal-glow);
+            transform: scale(1.04);
+        }
+        .install-section h2 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            color: var(--ink);
+            font-size: clamp(1.35rem, 4vw, 1.7rem);
+            margin-bottom: 10px;
+        }
+        .install-section>p.lede {
+            color: var(--ink-soft);
+            margin-bottom: 24px;
+            line-height: 1.7;
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.95rem;
+        }
+        #installBtn {
+            background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+            color: white;
+            border: none;
+            padding: 16px 44px;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin: 10px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 22px rgba(14, 74, 67, 0.3);
+        }
+        #installBtn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(14, 74, 67, 0.4);
+        }
+        .instructions {
+            color: var(--ink-soft);
+            font-size: 0.88rem;
+            margin-top: 18px;
+            line-height: 1.6;
+            background: #f9faf7;
+            padding: 14px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            border: 1px solid var(--line);
+        }
+
+        /* Video / image tutorials */
+        .video-tutorials {
+            margin-top: 32px;
+            border-top: 1px solid var(--line);
+            padding-top: 28px;
+        }
+        .video-tutorials h3 {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            color: var(--ink);
+            font-size: 1.1rem;
+        }
+        .video-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .video-item {
+            flex: 1 1 280px;
+            max-width: 400px;
+            text-align: left;
+            background: var(--card-alt);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 16px;
+            transition: var(--transition);
+        }
+        .video-item:hover {
+            box-shadow: var(--shadow);
+            border-color: #d5dcd6;
+        }
+        .video-item h4 {
+            color: var(--teal-deep);
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .video-item img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e8ecf0;
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+            background: #e9e9e5;
+        }
+        .video-caption {
+            color: var(--ink-soft);
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        .site-footer {
+            width: 100%;
+            max-width: 920px;
+            text-align: center;
+            padding-top: 48px;
+            margin-top: 40px;
+            border-top: 2px solid var(--line-strong);
+        }
+        .site-footer .masthead-rule--thin {
+            margin-top: 0;
+            margin-bottom: 28px;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .footer-nav a {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--teal-deep);
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all var(--transition);
+        }
+        .footer-nav a:hover {
+            color: var(--teal);
+            background: var(--teal-light);
+            transform: translateY(-2px);
+        }
+        .footer-legal {
+            background: var(--card-alt);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .footer-legal p {
+            font-size: 0.75rem;
+            color: var(--ink-soft);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        .site-footer p {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+            margin-top: 16px;
+        }
+
+        #notification {
+            position: fixed;
+            bottom: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+            color: white;
+            padding: 1rem 1.8rem;
+            border-radius: 50px;
+            box-shadow: 0 14px 44px rgba(14, 74, 67, 0.4);
+            display: none;
+            align-items: center;
+            gap: 0.8rem;
+            z-index: 1000;
+            max-width: 92%;
+            animation: slideUp 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+            font-weight: 500;
+            font-size: 0.92rem;
+        }
+        @keyframes slideUp {
+            from { bottom: -80px; opacity: 0; transform: translateX(-50%) scale(0.9); }
+            to { bottom: 22px; opacity: 1; transform: translateX(-50%) scale(1); }
+        }
+        #notification button {
+            background: white;
+            color: var(--teal-deep);
+            border: none;
+            padding: 0.5rem 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.83rem;
+            transition: var(--transition);
+        }
+        #dismissBtn {
+            background: transparent !important;
+            color: white !important;
+            border: 1.5px solid rgba(255,255,255,0.5) !important;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 0 14px 32px; }
+            .container { max-width: 100%; }
+            .masthead { padding: 26px 0 20px; }
+            .brand-title { font-size: 2rem; }
+            .cadaver-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 26px;
+                padding: 22px 18px 0;
+            }
+            .cadaver-img-container { order: 2; width: 75%; max-width: 220px; }
+            .cadaver-poem { order: 1; width: 100%; }
+            .free-edu-grid { grid-template-columns: 1fr; }
+            .video-grid { flex-direction: column; align-items: center; }
+            .video-item { max-width: 100%; width: 100%; }
+            .footer-nav { gap: 1rem; flex-direction: column; align-items: center; }
+            .footer-nav a { display: block; width: 100%; text-align: center; }
+        }
+    </style>
+<script src="./ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+    <div class="container">
+        <header class="masthead">
+            <div class="masthead-rule"></div>
+            <div class="masthead-inner">
+                <span class="eyebrow">The White Army · Clinical Education Series</span>
+                <h1 class="brand-title">Afrahtafreeh<span class="accent-dot"></span></h1>
+                <p class="brand-tagline">Medical Education News</p>
+            </div>
+            <div class="masthead-rule--thin"></div>
+        </header>
+
+        
+
+        <article class="cadaver-paper">
+            <div class="cadaver-header">
+                <span class="eyebrow cadaver-eyebrow">In Memoriam</span>
+                <h2 class="cadaver-title">Thus spoke the cadaver</h2>
+                <div class="cadaver-rule"></div>
+            </div>
+            <div class="cadaver-content">
+                <div class="cadaver-poem">
+                    <div class="cadaver-stanza">
+                        <p>Handle me with little love and care</p>
+                        <p>As I had missed it in my life affair</p>
+                        <p>Was too poor for cremation or burial</p>
+                        <p>That is why am lying in dissection hall</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>You dissect me, cut me, section me</p>
+                        <p>But your learning anatomy should be precise</p>
+                        <p>Worry not, you would not be taken to court</p>
+                        <p>As I am happy to be with the bright lot</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>Couldn't dream of a fridge for cold water</p>
+                        <p>Now my body parts are kept in refrigerator</p>
+                        <p>Young students sit around me with friends</p>
+                        <p>A few dissect, rest talk, about food, family and movies</p>
+                        <p>How I enjoy the dissection periods</p>
+                        <p>Don't you? Unless you are interrogated by a teacher</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>When my parts are buried post-dissection</p>
+                        <p>Bones are taken out for the skeleton</p>
+                        <p>Skeleton is the crown glory of the museum</p>
+                        <p>Now I am being looked up by great enthusiasm</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>If not as skeletons as loose bones</p>
+                        <p>I am in their bags and in their hostel rooms</p>
+                        <p>At times, I am on their beds as well</p>
+                        <p>Oh, what a promotion to heaven from hell</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>I won't leave you, even if you pass anatomy</p>
+                        <p>Would follow you in forensic medicine and pathology</p>
+                        <p>Would be with you even in clinical teaching</p>
+                        <p>Medicine line is one where dead teach the living</p>
+                    </div>
+                    <div class="cadaver-stanza">
+                        <p>One humble request I'd make</p>
+                        <p>Be sympathetic to persons with disease</p>
+                        <p>Don't panic, you'll have enough money</p>
+                        <p>And I bet, you'd be singularly happy</p>
+                    </div>
+                    <div class="cadaver-author">—Krishna Garg</div>
+                </div>
+                <div class="cadaver-img-container">
+                    <img src="cadaver.jpg" alt="Skeleton Illustration" class="cadaver-img"
+                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Skeleton_kneeling_side_view.jpg/440px-Skeleton_kneeling_side_view.jpg'">
+                </div>
+            </div>
+        </article>
+
+        <div class="notice-section">
+            <h3><i class="fas fa-exclamation-triangle"></i> Important Update</h3>
+            <p><strong>Our site has moved to a new URL!</strong> Please follow these steps:</p>
+            <div class="notice-content">
+                <div class="important-step">
+                    <div class="step-number">1</div>
+                    <div><strong>New Site:</strong> www.afrahtafreeh.site</div>
+                </div>
+                <div class="important-step">
+                    <div class="step-number">2</div>
+                    <div><strong>Delete Old App:</strong> remove previous installation</div>
+                </div>
+                <div class="important-step">
+                    <div class="step-number">3</div>
+                    <div><strong>Reinstall:</strong> install from the new site</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="install-section">
+            <div class="install-icon"><i class="fas fa-stethoscope"></i></div>
+            <h2>Install Our Updated App</h2>
+            <p class="lede">Get the best experience by installing our updated Progressive Web App. Enjoy faster loading, offline access, and notifications.</p>
+            <button id="installBtn"><i class="fas fa-download"></i> Install Updated App</button>
+            <p class="instructions">
+                <strong>Chrome:</strong> ⋮ menu → "Install App"<br>
+                <strong>Safari:</strong> share icon → "Add to Home Screen"<br>
+                <strong>Note:</strong> Access <strong>www.afrahtafreeh.site</strong>
+            </p>
+
+            <!-- Replaced videos with images (static guides) -->
+            <div class="video-tutorials">
+                <h3><i class="fas fa-film"></i> Quick Installation Guides</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <h4><i class="fab fa-android"></i> Android (Chrome)</h4>
+                        <img src="./img/android.png" alt="Android install steps"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\' viewBox=\'0 0 400 225\'%3E%3Crect width=\'400\' height=\'225\' fill=\'%23e2e8f0\'/%3E%3Ctext x=\'200\' y=\'118\' text-anchor=\'middle\' fill=\'%23475569\' font-family=\'sans-serif\' font-size=\'18\'%3EAndroid Guide Image%3C/text%3E%3C/svg%3E'">
+                        <p class="video-caption">Step-by-step: menu → Install App → Add to home screen.</p>
+                    </div>
+                    <div class="video-item">
+                        <h4><i class="fab fa-apple"></i> iOS (Safari)</h4>
+                        <img src="./img/iphone.png" alt="iOS install steps"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\' viewBox=\'0 0 400 225\'%3E%3Crect width=\'400\' height=\'225\' fill=\'%23e2e8f0\'/%3E%3Ctext x=\'200\' y=\'118\' text-anchor=\'middle\' fill=\'%23475569\' font-family=\'sans-serif\' font-size=\'18\'%3EiOS Guide Image%3C/text%3E%3C/svg%3E'">
+                        <p class="video-caption">Step-by-step: Share icon → Add to Home Screen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="masthead-rule--thin"></div>
+            <nav class="footer-nav">
+                <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="./about.html"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="./privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                <a href="./disclaimer.html"><i class="fas fa-gavel"></i> Disclaimer</a>
+            </nav>
+            <div class="footer-legal">
+                <p><strong>© 2025 Afrahtafreeh - The White Army</strong></p>
+                <p>Medical Education News & Resources</p>
+                <p>All content is for educational purposes only.</p>
+            </div>
+            <p><i class="fas fa-lock"></i> Secure & trusted medical education platform</p>
+        </footer>
+    </div>
+
+    <div id="notification">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Install this updated app?</span>
+        <button id="installPromptBtn">Install Now</button>
+        <button id="dismissBtn">Dismiss</button>
+    </div>
+
+    <script>
+        (function () {
+            try {
+                const ref = new URLSearchParams(window.location.search).get('ref');
+                if (ref && ref.trim().length > 0) localStorage.setItem('pendingReferral', ref.trim());
+            } catch (_) {}
+        })();
+
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        const installPromptBtn = document.getElementById('installPromptBtn');
+        const dismissBtn = document.getElementById('dismissBtn');
+        const notification = document.getElementById('notification');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.style.display = 'inline-flex';
+            setTimeout(() => { if (deferredPrompt) notification.style.display = 'flex'; }, 5000);
+        });
+
+        installBtn.addEventListener('click', showInstallPrompt);
+        installPromptBtn.addEventListener('click', () => { showInstallPrompt(); notification.style.display = 'none'; });
+        dismissBtn.addEventListener('click', () => { notification.style.display = 'none'; });
+
+        function showInstallPrompt() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        installBtn.style.display = 'none';
+                        notification.style.display = 'none';
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        }
+
+        window.addEventListener('appinstalled', () => {
+            installBtn.style.display = 'none';
+            notification.style.display = 'none';
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', { scope: './' })
+                    .catch(err => console.log('SW registration failed:', err));
+            });
+        }
+
+        window.addEventListener('load', () => {
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                if (!window.location.href.includes('www.afrahtafreeh.site')) {
+                    const warn = document.createElement('div');
+                    warn.className = 'notice-section';
+                    warn.innerHTML = '<h3><i class="fas fa-exclamation-circle"></i> Update Required</h3><p>Access <strong>www.afrahtafreeh.site</strong> to update.</p>';
+                    document.querySelector('.container').prepend(warn);
+                }
+            }
+        });
+    </script>
+    <script src="theme.js"></script>
+    <!-- Supabase script now allowed by CSP -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./supabase-config.js"></script>
+    <script>
+        (function () {
+            function setCookie(name, value, maxAge) {
+                document.cookie = name + '=' + encodeURIComponent(value) + '; max-age=' + maxAge + '; path=/; SameSite=Lax';
+            }
+            window.addEventListener('DOMContentLoaded', async function () {
+                const params = new URLSearchParams(window.location.search);
+                const refCode = params.get('ref');
+                if (!refCode) return;
+                let token = localStorage.getItem('vt');
+                if (!token) token = crypto.randomUUID();
+                localStorage.setItem('vt', token);
+                setCookie('vt', token, 60 * 60 * 24 * 30);
+                localStorage.setItem('pending_ref', JSON.stringify({ ref: refCode, token: token }));
+                try {
+                    const { createClient } = supabase;
+                    const _supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+                    await _supabase.from('pending_referrals').insert({
+                        referral_code: refCode,
+                        visitor_token: token
+                    });
+                } catch (_) {}
+            });
+        })();
+    </script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

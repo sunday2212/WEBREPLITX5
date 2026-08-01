@@ -1,0 +1,305 @@
+{
+  "chapter": "Errors",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following correctly describes Type I and Type II errors in hypothesis testing?",
+      "options": {
+        "A": "Type I rejects a true null hypothesis; Type II accepts a false null hypothesis.",
+        "B": "Type I accepts a false null hypothesis; Type II rejects a true null hypothesis.",
+        "C": "Type I rejects a true alternative hypothesis; Type II accepts a false alternative hypothesis.",
+        "D": "Type I: Accepting a true null hypothesis; Type II: Rejecting a false null hypothesis."
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) Type I rejects a true null hypothesis; Type II accepts a false null hypothesis. hypothesis Also Known As False positive. False-negative. Implication Concluding there is an effect when there is none. Concluding there is no effect when there is one. Probability Notation Alpha ( α ) Beta ( β ) Consequences Believing a result is significant when it is not. Missing a significant result. Example Concluding a drug has an effect when it does not. Concluding a drug does not have an effect when it does. Testing Goal Minimise α to reduce the Type I error rate. Minimise β to reduce the Type II error rate. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 978 An Introduction to Statistics: Understanding Hypothesis Testing and Statistical Errors - PMC Biostatistics Series Module 2: Overview of Hypothesis Testing - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following is statistically significant?",
+      "options": {
+        "A": "RR of 2.5 with a 95% CI of 2.0 to 3.1",
+        "B": "OR of 0.9 with a 95% CI of 0.5 to 8",
+        "C": "p-value of 0.5 and a RR of 2.5.",
+        "D": "RR of 5.0 with a 95% CI of 0.1 to 9.8"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) RR of 2.5 with a 95% CI of 2.0 to 3.1 Explanation: A 95% Confidence interval (CI) of 2.0 to 3.1 suggests that the relative risk of 2.5 is statistically significant because the CI does not include 1. Level of significance: Null hypothesis is accepted / results are not statistically significant when 95% CI for the mean difference between 2 variables includes 0 95% CI for odds ratio or relative risk includes 1 CI between 2 groups do not overlap → statistically significant difference exists. Option B) An odd’s ratio of 0.9 with a 95% Confidence interval of 0.5 to 8: The CI includes 1, meaning there is no significant difference and hence not statistically significant. Option C) A p-value of 0.5 and a relative risk of 2.5: The p-value is >0.05 hence it is not statistically significant. Option: D) A relative risk of 5.0 with a 95% Confidence interval of 0.1 to 9.8: The CI includes 1, meaning the results are not statistically significant. Reference: Hypothesis Testing, P Values, Confidence Intervals, and Significance - StatPearls - NCBI Bookshelf",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 3,
+      "question": "A biostatistician studies adults' average systolic blood pressure (SBP) in a certain population. A sample of 40 adults was taken, and the mean systolic blood pressure was 130 mmHg with a standard deviation of 15 mmHg. Which is the correct 95% confidence interval for the true mean systolic blood pressure?",
+      "options": {
+        "A": "(125.25 mmHg, 134.75 mmHg)",
+        "B": "(138.36 mmHg, 131.64 mmHg)",
+        "C": "(128.00 mmHg, 127.00 mmHg)",
+        "D": "(127.36 mmHg, 132.64 mmHg)"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) (125.25 mmHg, 134.75 mmHg) Explanation: Sample Mean (X I )= 130 mmHg. Standard Deviation (SD)= 15 mmHg. Sample Size (n)= 40 Formula of the confidence interval: 95% Confidence interval for mean = mean ± 1.96 * standard error of mean (SEM) This can be considered mean ± 2 * standard error of the mean (SEM). SEM =SD/ √ n SEM = 15/ √ 40 = 2.37 Confidence interval = 130 ± 2x2.37 = 130 ± 4.75 CI = (125.25, 134.75) Reference: Using the confidence interval confidently - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 4,
+      "question": "A public health researcher is studying the average weight of newborns in a specific region. The researcher collects a random sample of 100 newborns and calculates a 95% confidence interval for the mean weight (3.2 kg, 3.8 kg). Which of the following statements correctly interprets the 95% confidence level? 3.8 kg interval.",
+      "options": {
+        "A": "There is a 95% chance that the mean weight of all newborns in the region falls between 3.2 kg and",
+        "B": "95% of the newborns in the sample weigh between 3.2 kg and 3.8 kg.",
+        "C": "95 % of the intervals will include the true mean if we calculate CI for multiple samples",
+        "D": "Mean weight of all newborns in the region is exactly 3.5 kg, which is the midpoint of the confidence"
+      },
+      "correct_answer": "C",
+      "explanation": "samples Correct answer: C) 95 % of the intervals will include the true mean if we calculate CI for multiple samples Explanation: Confidence interval: The confidence interval is the range of values within which the true mean of the population is expected to fall with a specified probability. Confidence Level: A 95% confidence level means that if we take many random samples and compute a confidence interval for each, we expect 95% of those intervals to contain the true population mean. Formula to calculate the confidence interval: 95% Confidence interval for mean = mean ± 2 x standard error of mean 95% Confidence interval for proportion = p ± 2 x standard error of proportion Option A: There is a 95% chance that the mean weight of all newborns in the region falls between 3.2 kg and 3.8 kg. This is incorrect because the confidence interval does not give the probability of the population mean being within the interval. Option B: 95% of the newborns in the sample have weights between 3.2 kg and 3.8 kg. This is incorrect because the confidence interval pertains to the mean weight, not the distribution of individual weights within the sample. Option D: The mean weight of all newborns in the region is exactly 3.5 kg, the midpoint of the confidence interval. This is incorrect because the confidence interval indicates a range of values for the population mean, not a specific value. Reference: How do I interpret a confidence interval?",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 5,
+      "question": "A study was conducted to determine the effectiveness of a new antihypertensive. The study is designed with a significance level (alpha) of 0.05 and a sample size of 50 participants. The type II error is calculated as 0.25. Which of the following is the power of this study, and how can it be increased?",
+      "options": {
+        "A": "The power of the study is 75% and can be increased by decreasing the sample size.",
+        "B": "The power of the study is 70%, and it can be increased by increasing the sample size.",
+        "C": "The power of the study is 75% and it can be increased by increasing the sample size.",
+        "D": "The power of the study is 95% and it can be increased by increasing the sample size."
+      },
+      "correct_answer": "C",
+      "explanation": "size. Correct answer: C) The power of the study is 75%, and it can be increased by increasing the sample size. Explanation: The power of a study is calculated as: Power = 1- β From the above result, β (Type II error) = 0.25 Hence power = 1 - 0.25 = 0.75 or 75% Power and type II error: Type II error (beta) occurs when the null hypothesis is false but accepted. The power of a test can be increased by decreasing the Type II error, i.e. by increasing the sample size. Reference: Type I and Type II Errors and Statistical Power - StatPearls - NCBI Bookshelf",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 6,
+      "question": "A health researcher is testing the effectiveness of a new drug in reducing blood pressure. The null hypothesis (H0) is that the drug does not affect blood pressure, while the alternative hypothesis (H1) is that the drug does reduce blood pressure. After conducting the study and analysing the data, the researcher calculates a p-value of 0.03. Based on this information, which of the following is true?",
+      "options": {
+        "A": "Probability of the null hypothesis being accepted is 3%.",
+        "B": "Observed effect has a less than 3% chance of occurring by random chance.",
+        "C": "Probability of the null hypothesis being rejected is 3%.",
+        "D": "Observed effect has a 97% chance of occurring due to the new drug"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer: A) Probability of the null hypothesis being accepted is 3%. Explanation: There is less than 3% chance that the observed effect is due to random variation. A p-value of 0.03 means that there is a less than 3% probability that the observed effect occurred by chance, which suggests that the outcome of the study is statistically significant p-value: It is the probability of committing a Type 1 error Maximum threshold for committing a Type 1 error is set at 5% When the p-value is less than α , the result is statistically significant. (p<0.05) It only tells us about the strength of evidence against the null hypothesis based on the observed data. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 980 P – VALUE, A TRUE TEST OF STATISTICAL SIGNIFICANCE? A CAUTIONARY NOTE - PMC The P Value and Statistical Significance: Misunderstandings, Explanations, Challenges, and Alternatives - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 7,
+      "question": "What does the p-value represent in hypothesis testing?",
+      "options": {
+        "A": "Probability that a Type 2 error is being made.",
+        "B": "Probability of declaring a significant difference when there is none in reality.",
+        "C": "Probability of declaring a significant difference when it is present.",
+        "D": "It represents power and is equal to 1 - Beta."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B. Probability of declaring a significant difference when there is none in reality extreme results, assuming that the null hypothesis is true. It helps researchers determine the strength of the evidence against the null hypothesis; a lower p-value indicates stronger evidence. The maximum value for committing a Type 1 error is 5%. This is known as the α level of significance p-value can be less, equal or more than I , but the p-value has to be less than I (p < 0.05) to be statistically significant. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 980 The P Value and Statistical Significance: Misunderstandings, Explanations, Challenges, and Alternatives - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 8,
+      "question": "A weighing scale consistently adds 10% to each weight. A true weight of 10 kg is 11 kg, while a true weight of 40 kg is 44 kg. Which type of error is exhibited in this scenario?",
+      "options": {
+        "A": "Random error",
+        "B": "Non-random error",
+        "C": "Human error",
+        "D": "Operator error"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Non-random error Explanation: Criteria Random Error Non Random Error Definition Unpredictable variations in measurements due to chance factors Consistent or predictable deviations from the true value Nature of Variation Causes measurements to fluctuate randomly around the true value Causes measurements to deviate in one direction consistently. Cause Typically due to Random chance Environmental factors Sampling variability Often due Instrumental error Methodological error Calibration error Effect on Measurements Increases measurement variability across repeated trials. Introduces a consistent bias or offset from the true value. Reduction Strategy This can be reduced by increasing sample size or conducting more trials Requires adjustments to measurement tools, recalibration, or procedural changes Examples Fluctuations in experimental readings despite controlled conditions. A scale consistently adding 10% to all weights measured. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 978 Error of the method: what is it for? - PMC .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 9,
+      "question": "A new drug designed to lower cholesterol levels is being tested. The testing involved 1000 participants. The null hypothesis is that \"the new drug does not affect cholesterol levels\". After analysing the data, the researchers conclude that the drug doesn't work, but in reality, it does have a small but clinically significant effect. What type of error has occurred?",
+      "options": {
+        "A": "Type I error",
+        "B": "Type II error",
+        "C": "No error has occurred",
+        "D": "Both Type I and Type II errors"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Type II error Explanation: This scenario describes a Type II error, also known as a \"false negative.\" The null hypothesis states the drug has no effect. In reality, the drug does have an effect (the null hypothesis is false). The researchers fail to reject the null hypothesis Key points: Type II error occurs when we fail to reject a false null hypothesis. It results in missing a real effect or relationship. In this case, a potentially beneficial drug might be overlooked. Type II errors are particularly important in medical research, as they can lead to overlooking potentially beneficial treatments. The power of a statistical test (1 - probability of Type II error) is crucial in designing studies to minimise this risk. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pages 978, 980 An Introduction to Statistics: Understanding Hypothesis Testing and Statistical Errors - PMC Biostatistics Series Module 2: Overview of Hypothesis Testing - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 10,
+      "question": "In a clinical trial for a new hypertension drug, the null hypothesis states: \"The new drug does not affect blood pressure.\" If researchers commit a Type 1 error, which of the following is true?",
+      "options": {
+        "A": "Drug lower BP, but it was concluded that it has no effect.",
+        "B": "Drug has no effect, but it was concluded as it lowers BP.",
+        "C": "Drug raises BP, but it was concluded that it has no effect.",
+        "D": "Drug has no effect, and it was correctly concluded."
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Drug has no effect, but it was concluded as it lowers BP Explanation: A Type 1 error, also known as a \"false positive,\" occurs when we reject the null hypothesis when it is true. In this case: Null hypothesis : The drug does not affect blood pressure. Type 1 error : Rejecting this true null hypothesis and accepting an alternative hypothesis. Key points: In a Type 1 error, the truth aligns with the null hypothesis (the drug truly has no effect). The error lies in the researchers' conclusion, which incorrectly rejects the null hypothesis. This error leads to a false claim of a significant effect when there isn't one. Criteria Type I Error Type II Error Definition Rejecting a true null hypothesis Accepting a false null hypothesis Also Known As False positive. False-negative. Implication Concluding there is an effect when there is none. Concluding there is no effect when there is one. Probability Notation Alpha ( α ) Beta ( β ) Consequences Believing a result is significant when it is not. Missing a significant result. Example Concluding a drug has an effect when it does not. Concluding a drug does not have an effect when it does. Testing Goal Minimise α to reduce the Type I error rate. Minimise β to reduce the Type II error rate. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 980 An Introduction to Statistics: Understanding Hypothesis Testing and Statistical Errors - PMC Biostatistics Series Module 2: Overview of Hypothesis Testing - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 11,
+      "question": "Which measure of dispersion is considered the most comprehensive and widely used in statistical analysis?",
+      "options": {
+        "A": "Range",
+        "B": "Standard deviation",
+        "C": "Mean deviation",
+        "D": "Variance"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Standard deviation Explanation: Standard deviation is considered the most comprehensive and widely used measure of dispersion in statistical analysis. Measures of dispersion Definition Calculation Standard deviation Measures the variation or dispersion of a set of values around the mean. σ = √ ( ∑ (x − x I ) 2 /n) Range The difference between the highest and lowest values in a dataset. Range = Maximum value - Minimum value Mean deviation Measures the average absolute deviation of data points from the mean. Mean deviation = ∑ X - x I / n Variance Measures the average of the squared differences from the mean. Variance = σ 2 Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, pg 976",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 12,
+      "question": "Which of the following statements regarding Poisson’s distribution is NOT true?",
+      "options": {
+        "A": "It measures the probability of the occurrence of discrete events.",
+        "B": "The average rate of events is denoted by lambda.",
+        "C": "Poisson's distribution is skewed to the left when the rate of occurrence is small.",
+        "D": "The distribution approaches symmetry as its rate of occurrence increases."
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C) Poisson's distribution is skewed to the left when the rate of occurrence is small. not the left. Poisson’s distribution measures the probability of a discrete event happening in a fixed interval of time or space. (Option A) The average rate of event distribution is denoted by lambda ( I ) (Option B) When the I is small, the distribution is skewed to the right, and as the I increases, the distribution approaches symmetry (Options C and Option D) Example of a Possion’s distribution graph Reference: Poisson Distribution - an overview | ScienceDirect Topics",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 13,
+      "question": "In the right-sided skewed distribution graph given below, what is the correct order of the measures of central tendency?",
+      "options": {
+        "A": "Mean < median < mode",
+        "B": "Mean > median > mode",
+        "C": "Mean = median > mode",
+        "D": "Mean = median = mode"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Mean > median > mode Explanation: For a right-sided / Positively skewed curve, Mean > median > mode An asymmetric curve forms when the mean, median, and mode are not equal at the coincidence point, leading to a skewed distribution. Skewness of the curve is determined by the direction of the tail. If the tail is right-sided, it is positively skewed. If the tail is left-sided, it is negatively skewed. Mean is the most affected central tendency in a skewed distribution. Option A: If Mean < median < mode , it leads to the formation of a negatively skewed /left-sided curved Option C: Mean = median > mode This observation is not possible in a skewed distribution, as for the mean to be equal to the median, the distribution must be symmetrical and not skewed. Option D : Mean = median = mode If all the values of measures of central tendency are equal, this leads to a symmetrical distribution rather than a skewed distribution.",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Errors_Q13_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 14,
+      "question": "Based on the Gaussian curve, which ranges under the curve cover 95% of the observations?",
+      "options": {
+        "A": "Range A",
+        "B": "Range B",
+        "C": "Range C",
+        "D": "Range D"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct answer: C. Range C Explanation: If we consider the area under the curve in range C, it is equal to mean +/- 2SD, which covers 95% of observations in a Gaussian/bell-shaped curve. A Gaussian/bell-shaped curve showing normal distribution forms when the point of coincidence is equal to Mean = Median = Mode ~ Normal distribution In a standard normal distribution Mean = Median = Mode = 0 Standard deviation = 1 Total area under the curve = 1 If we draw the following line Redline cuts the base at the distance of 1 standard deviation. Pink line at +/- 2 standard deviation. Green line at +/- 3 standard deviation. The tail of the curve never touches the baseline. Area under the curve Observation covered Mean +/- 1 SD 68.3% ~ 68% of observation Mean +/- 2 SD 95.4% ~ 95% of observation Mean +/- 3 SD 99.7% ~ 99% of observation Mean +/- ∞ SD 100% of observation",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Errors_Q14_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 15,
+      "question": "The blood pressure measurement of 120 patients was conducted in a health camp. The first quartile systolic blood pressure was 108 mm Hg, and the third quartile was 136 mm Hg. How many people will have their BP between the 1st and 3rd quartile?",
+      "options": {
+        "A": "30 patients",
+        "B": "60 patients",
+        "C": "90 patients",
+        "D": "75 patients"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) 60 patients Explanation: Total number of patients = 120 Q1= 108 mm hg Q3= 136 mm hg We know, Quartiles divide the data set into 4 equal parts. Q1 is the point below which 25% of the data falls, and Q3 is below which 75% falls. If, 25 % of people have systolic BP less than 108 mm Hg = 30 people 75% of people have systolic BP less than or equal to 136 mm Hg = 90 people 25% of people have systolic BP more than 136 mm Hg = 30 people Thus The number of people with BP between 108 and 136 mm Hg (i.e., between the 1st and 3rd quartile) is 75% - 25% = 50% of the total patients. Hence, 50% * 120 = 60 patients will have their BP between the 1st and 3rd quartiles. Reference: Measures of dispersion - PMC",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Errors_Q15_exp.png",
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 16,
+      "question": "Where does the data point fall if the Z score equals zero in a normal distribution graph?",
+      "options": {
+        "A": "Between mean and +1 SD",
+        "B": "Exactly at the mean",
+        "C": "Between mean and -1 SD",
+        "D": "Less than -3 SD"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Exactly at the mean Explanation: In a normal distribution curve, the data point falls exactly on the mean if the Z score equals zero. The Z-score of a data point measures how many standard deviations it is above or below the mean. If a data set follows a normal distribution, the mean is at the centre, and a Z score of zero indicates that the data point is exactly at the mean. A positive Z score indicates the data point is above the mean, while a negative Z score indicates it is below the mean. The formula for the calculation of the Z score: Z = (x- µ ) / σ X - observed value µ - mean σ - standard deviation Z score Standard deviation -2 -2 -1 -1 0 Mean +1 +1 +2 +2 Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 977",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Errors_Q16_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 17,
+      "question": "In a survey, 100 individuals were randomly sampled to estimate the mean age of a population. The sample mean age was 35, with a standard deviation of 5 years. What is the standard error of the mean (SE of mean) for this survey?",
+      "options": {
+        "A": "0.5 years",
+        "B": "0.05 years",
+        "C": "5 years",
+        "D": "0.25 years"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) 0.5 years Explanation: To solve this question, use the formula for the standard error of the mean: Standard error of the mean = standard deviation / √ sample size SE = 5 / √ 100 = 5 / 10 = 0.5 years Standard error provides a measure of the precision of sample estimates. A smaller SE indicates less variability in sample means, suggesting more precise estimates. Standard error of the mean Standard error of proportion Quantifies the variability of sample means around the true population mean . Measures how much sample proportions vary around the population proportion SE mean = σ / √ N SE proportion = √ (pq/N) Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, pg 978",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 18,
+      "question": "The heights (in centimetres) of students in the two classes are summarised as follows: Class A: Mean height = 170 cm, Standard Deviation = 7.5 cm Class B: Mean height = 162.5 cm, Standard Deviation = 8.2 cm Calculate the coefficient of variation (COV) for both classes and determine which class shows greater relative variability in heights.",
+      "options": {
+        "A": "Class A",
+        "B": "Class B",
+        "C": "Both classes have the same coefficient of variation",
+        "D": "Cannot be determined from the given information"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct answer: B) Class B Explanation: To solve this question, use the formula for COV: COV = (Standard Deviation / Mean)×100 Calculate COV for Class A: COV A = (7.5 / 170)×100 ≈ 4.41% Calculate COV for Class B: COV B = (8.2 / 162.5)×100 ≈ 5.05 Therefore, Class B has a higher coefficient of variation (COV) than Class A, indicating that Class B shows greater relative variability in heights. Reference: https://pubmed.ncbi.nlm.nih.gov/32547779/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 19,
+      "question": "Which of the following is not true regarding the coefficient of variation (COV)?",
+      "options": {
+        "A": "COV compares the relative variability of datasets with different means.",
+        "B": "Higher COV signifies greater dispersion relative to the mean, indicating lower reliability",
+        "C": "Lower COV suggests data points are closer to the mean, indicating higher reliability.",
+        "D": "COV can be negative if the standard deviation is smaller than the mean."
+      },
+      "correct_answer": "D",
+      "explanation": "Correct answer: D) COV can be negative if the standard deviation is smaller than the mean. and both the standard deviation and the mean are non-negative quantities. Therefore, COV values are always non-negative and cannot be negative. COV = σ / mean x 100 The coefficient of variation (COV) is specifically designed to compare the variability of datasets with different means. (Option A) It standardises the measure of dispersion by expressing the standard deviation as a percentage of the mean, allowing for meaningful comparison even when the datasets have different scales. A higher COV signifies that the standard deviation is relatively larger than the mean, indicating greater variability or spread of data points around the mean and less reliable (Option B). A lower COV indicates that the standard deviation is smaller than the mean, suggesting that data points are closer to the mean. This typically implies more consistency and less variability, which can indicate higher reliability of the dataset for analysis or decision-making. (Option C). Reference: https://pubmed.ncbi.nlm.nih.gov/32547779/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    },
+    {
+      "q_no": 20,
+      "question": "A small sample of students' weights (in pounds) is recorded to analyse their distribution. The weights are 120,125,130,122,128. Calculate the standard deviation for the weights of students.",
+      "options": {
+        "A": "4.12",
+        "B": "4.00",
+        "C": "4.51",
+        "D": "5.20"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct answer: A) 4.12 Explanation: To find the standard deviation for the weights: 1. Calculate the mean: = 120+125+130+122+128/5 = 625/5 = 125 2. Calculate the deviations from the mean: Deviation for 120: 120 − 125= − 5 Deviation for 125: 125 − 125=0 Deviation for 130: 130 − 125=5 Deviation for 122: 122 − 125= − 3 Deviation for 128: 128 − 125=3 3. Calculate the sum of squared deviations: ∑ (xi − x I ) 2 =25+0+25+9+9=68 Use n − 1 since the sample size is less than 30 and calculate the standard deviation: S = √∑ (xi − x I ) 2 /n − 1 = √ 68/5 − 1 = √ 68/4 = √ 17 ≈ 4.12 Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, pg 976",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Errors"
+    }
+  ]
+}

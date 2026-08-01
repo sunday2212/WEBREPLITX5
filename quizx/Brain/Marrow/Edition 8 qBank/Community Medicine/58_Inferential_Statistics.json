@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "title": "58_Inferential_Statistics"
+  },
+  "questions": [
+    {
+      "text": "The statistical methods that go further than merely summarizing data are a part of:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Descriptive statistics"
+        },
+        {
+          "id": 2,
+          "text": "Inferential statistics"
+        },
+        {
+          "id": 3,
+          "text": "Observational statistics"
+        },
+        {
+          "id": 4,
+          "text": "Analytical statistics"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Inferential statistics</strong> are those statistical methods that go <strong>further</strong> than just <strong>summarizing data</strong>.</p>\n<p>They involve inductive reasoning and using a statistic to estimate a parameter. E.g., the expected success rate of vasectomy or mean blood pressure of all Indians.</p>\n<p>One of the most common problems faced in research is using information gathered by researching a <strong>sample</strong> and then drawing conclusions about the <strong>population</strong> from which the sample is drawn. Here, sample statistics (sample mean and SD) are known and population parameters (population mean and SD) are unknown.</p>\n<p>Inferential statistical methods are used to draw conclusions about the population parameters from sample statistics.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2602",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following measures relative variation between two different units?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Variance"
+        },
+        {
+          "id": 2,
+          "text": "Coefficient of variation"
+        },
+        {
+          "id": 3,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 4,
+          "text": "Standard error"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Co-efficient of variation</strong> (CV) measures the <strong>relative variability</strong> between two different units, by using the mean and standard deviation.</p><hr><h3>Related Pearl: Coefficient of Variation</h3><ul>\n<li>The coefficient of variation (<strong>CV</strong>) is a statistical measure of the relative dispersion of data points in a data series around the mean.</li>\n<li>It is done to measure of relative variability and it is also known as <strong>relative standard deviation (RSD).</strong></li>\n<li>It is expressed as a <strong>percentage of the mean</strong> and its formulas are given in the image below:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/53c3609dccfd4f39a6baf16fe1cf5c97x1280x904.JPEG\" alt=\"Pearl Image\"><p>where σ and s = standard deviation; and μ and x = mean</p>\n<ul>\n<li>In simpler terms, <strong>coefficient of variation (CV) = standard deviation x 100/mean</strong>.</li>\n<li>CV usually gives an idea into the performance of a test or method. A CV of 5% gives the general idea that the method is good in its performance but a CV of more than 10% gives an idea that the method isn’t very good.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2603",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The weight of the 100 children that presented in the pediatric OPD in the last week was analyzed. The median weight was 12 kg and the standard deviation was 3. This data formed a normal distribution. What is the coefficient of variation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "25%"
+        },
+        {
+          "id": 2,
+          "text": "35%"
+        },
+        {
+          "id": 3,
+          "text": "40%"
+        },
+        {
+          "id": 4,
+          "text": "45%"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given scenario, coefficient of variance (CV) =&nbsp;<strong>25%.</strong></p>\n<p>Coefficient of variation, CV = standard deviation x 100/ mean = 3 x 100/12 = <strong>25%.</strong></p>\n<p>In a <strong>normal</strong> distribution, <strong>mean = median.</strong></p><hr><h3>Related Pearl: Coefficient of Variation</h3><ul>\n<li>The coefficient of variation (<strong>CV</strong>) is a statistical measure of the relative dispersion of data points in a data series around the mean.</li>\n<li>It is done to measure of relative variability and it is also known as <strong>relative standard deviation (RSD).</strong></li>\n<li>It is expressed as a <strong>percentage of the mean</strong> and its formulas are given in the image below:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/53c3609dccfd4f39a6baf16fe1cf5c97x1280x904.JPEG\" alt=\"Pearl Image\"><p>where σ and s = standard deviation; and μ and x = mean</p>\n<ul>\n<li>In simpler terms, <strong>coefficient of variation (CV) = standard deviation x 100/mean</strong>.</li>\n<li>CV usually gives an idea into the performance of a test or method. A CV of 5% gives the general idea that the method is good in its performance but a CV of more than 10% gives an idea that the method isn’t very good.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2604",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The means of all possible samples from a population are plotted on a linear graph. What is this called?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Population Distribution"
+        },
+        {
+          "id": 2,
+          "text": "Parametric Distribution"
+        },
+        {
+          "id": 3,
+          "text": "Sampling distribution"
+        },
+        {
+          "id": 4,
+          "text": "Exponential distribution"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The random<strong> sampling distribution </strong>of means is the distribution formed when all <strong>possible sample means</strong> from a<strong> population</strong> are plotted in a <strong>frequency distribution</strong>.</p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2605",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Central limit theorem is related to:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Random sampling distribution"
+        },
+        {
+          "id": 2,
+          "text": "Skewness of a distribution"
+        },
+        {
+          "id": 3,
+          "text": "Graphical representation of nominal data"
+        },
+        {
+          "id": 4,
+          "text": "Statistical tests between two groups"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>central limit theorem</strong> is related to the <strong>random sampling distribution </strong>of means.</p>\n<p>According to this theorem, as the <strong>sample size increases:</strong></p>\n<ol>\n<li aria-level=\"3\">The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)</li>\n<ul>\n<li aria-level=\"4\">Regardless of the population's actual distribution shape</li>\n<li aria-level=\"4\">Assuming all samples are identical in size</li>\n</ul>\n<li aria-level=\"3\">The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ol><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2606",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A researcher wanted to calculate the mean age of onset of type II diabetes mellitus in a population. He got a sample mean of 45. To measure the extent of deviation from the population mean, which of the following should he use?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Geometric mean"
+        },
+        {
+          "id": 2,
+          "text": "Range"
+        },
+        {
+          "id": 3,
+          "text": "Deviation scores"
+        },
+        {
+          "id": 4,
+          "text": "Standard error"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>standard error</strong> is a measure of the extent to which the <strong>sample</strong> means<strong> deviate</strong> from the true <strong>population</strong> means.</p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2607",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Standard deviation of mean measures variations caused by:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Non-sampling errors"
+        },
+        {
+          "id": 2,
+          "text": "Sampling errors"
+        },
+        {
+          "id": 3,
+          "text": "Random errors"
+        },
+        {
+          "id": 4,
+          "text": "Observational errors"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>standard deviation</strong> of mean or standard error of means measures variations caused by <strong>sampling errors.</strong></p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2608",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Consider a sample of 100 women with an average Hb of 10 g% and standard deviation of 1. What is the standard error of this sample?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.01"
+        },
+        {
+          "id": 2,
+          "text": "0.1"
+        },
+        {
+          "id": 3,
+          "text": "1"
+        },
+        {
+          "id": 4,
+          "text": "10"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In this scenario, the standard error <strong>SE</strong> = <strong>0.1.</strong></p>\n<p>The formula for standard error:</p>\n<p>SE&nbsp;= <strong>Standard deviation/ &radic;sample size&nbsp;</strong>=1/&radic;100 = 1/10 = 0.1<strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2609",
+      "difficulty": "easy"
+    },
+    {
+      "text": "All of the following are true about standard error except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It increases as the sample size increases."
+        },
+        {
+          "id": 2,
+          "text": "It is based on a normal distribution"
+        },
+        {
+          "id": 3,
+          "text": "It depends on the standard deviation of means"
+        },
+        {
+          "id": 4,
+          "text": "It is used to estimate confidence limits"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>As the sample <strong>size increases</strong>, the standard error will <strong>decrease,</strong> not increase.</p>\n<p>The standard<strong>&nbsp;error</strong> is <strong>inversely related</strong> to the square root of the sample size.</p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2610",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The incubation period for measles in a group of 25 children was calculated. Following findings were recorded. What is the standard error?<div class='question-desc-html'><p>Standard deviation = 2.</p>\n<p>Median incubation period = 8 days.</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.4"
+        },
+        {
+          "id": 2,
+          "text": "1.0"
+        },
+        {
+          "id": 3,
+          "text": "2.0"
+        },
+        {
+          "id": 4,
+          "text": "0.5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In this scenario, the <strong>standard error</strong>&nbsp;= <strong>0.4</strong>.</p>\n<p>The formula for standard error:</p>\n<p>SE = Standard deviation/&radic;sample size&nbsp;= 2/&radic;25 = 2/5 = 0.4</p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2611",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The uppermost and lowermost values of standard errors within which a parameter value is expected to lie are called the:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Confidence interval"
+        },
+        {
+          "id": 2,
+          "text": "Precision levels"
+        },
+        {
+          "id": 3,
+          "text": "Confidence limits"
+        },
+        {
+          "id": 4,
+          "text": "Range"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The uppermost and lowermost <strong>limits</strong> of standard errors within which a parameter value is expected to lie are called the <strong>confidence limits.</strong></p>\n<p>The <strong>difference </strong>between upper and lower confidence limits is called the <strong>confidence interval.</strong></p><hr><h3>Related Pearl: Confidence Limits and Interval</h3><p><strong>Confidence limits</strong> are the upper and lower limits of standard errors within which a parameter value is expected to lie.</p>\n<p>Generally, 95% confidence limits are used and they are approximately equal to the sample mean plus or minus two standard errors, i.e., <strong>95% confidence limits =</strong> <strong>Sample mean</strong> <strong>(</strong><strong>x̄) &plusmn; 2 standard errors.</strong></p>\n<p>The <strong>general formula </strong>is <strong>confidence limits = x̄ &plusmn; z</strong><strong>&sigma; </strong><strong><sub>x̄</sub></strong><strong>.&nbsp;</strong></p>\n<ul>\n<li>Where z is 3 for 99.7% Cl</li>\n<li>z is 2 for 95% Cl</li>\n<li>z is 1 for 68% Cl</li>\n</ul>\n<p>The <strong>difference </strong>between<strong> upper</strong> and <strong>lower confidence limits </strong>is called the <strong>confidence interval.&nbsp;</strong>Since the standard error will decrease in proportion to the square root of the sample size, the<strong> width </strong>of the<strong> confidence interval </strong>will also <strong>decrease</strong> in <strong>proportion </strong>to the<strong> square root </strong>of the<strong> sample size.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2612",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following parameters are used to calculate the confidence limit?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean and standard error"
+        },
+        {
+          "id": 2,
+          "text": "Mean and standard deviation"
+        },
+        {
+          "id": 3,
+          "text": "Median and standard deviation"
+        },
+        {
+          "id": 4,
+          "text": "Median and standard error"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Confidence limits are calculated with the <strong>sample mean </strong>and<strong> standard error</strong>.</p><hr><h3>Related Pearl: Confidence Limits and Interval</h3><p><strong>Confidence limits</strong> are the upper and lower limits of standard errors within which a parameter value is expected to lie.</p>\n<p>Generally, 95% confidence limits are used and they are approximately equal to the sample mean plus or minus two standard errors, i.e., <strong>95% confidence limits =</strong> <strong>Sample mean</strong> <strong>(</strong><strong>x̄) &plusmn; 2 standard errors.</strong></p>\n<p>The <strong>general formula </strong>is <strong>confidence limits = x̄ &plusmn; z</strong><strong>&sigma; </strong><strong><sub>x̄</sub></strong><strong>.&nbsp;</strong></p>\n<ul>\n<li>Where z is 3 for 99.7% Cl</li>\n<li>z is 2 for 95% Cl</li>\n<li>z is 1 for 68% Cl</li>\n</ul>\n<p>The <strong>difference </strong>between<strong> upper</strong> and <strong>lower confidence limits </strong>is called the <strong>confidence interval.&nbsp;</strong>Since the standard error will decrease in proportion to the square root of the sample size, the<strong> width </strong>of the<strong> confidence interval </strong>will also <strong>decrease</strong> in <strong>proportion </strong>to the<strong> square root </strong>of the<strong> sample size.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2613",
+      "difficulty": "medium"
+    },
+    {
+      "text": "During screening of a population, the mean cholesterol levels were found to be 230mg/dL. The standard error was 10. Calculate the 95% confidence limits.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "210–250"
+        },
+        {
+          "id": 2,
+          "text": "250–290"
+        },
+        {
+          "id": 3,
+          "text": "290–330"
+        },
+        {
+          "id": 4,
+          "text": "190–210"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given scenario, <strong>95% confidence limits</strong> are <strong>210 &ndash; 250</strong>.</p>\n<p>In inferential statistics,&nbsp;95% confidence limits = Sample <strong>mean</strong> (x̄) <strong>&plusmn; 2 standard errors.</strong>&nbsp;</p>\n<p>In this case, mean is 230 and the standard error is 10. Hence, confidence limits are 210-250.</p><hr><h3>Related Pearl: Confidence Limits and Interval</h3><p><strong>Confidence limits</strong> are the upper and lower limits of standard errors within which a parameter value is expected to lie.</p>\n<p>Generally, 95% confidence limits are used and they are approximately equal to the sample mean plus or minus two standard errors, i.e., <strong>95% confidence limits =</strong> <strong>Sample mean</strong> <strong>(</strong><strong>x̄) &plusmn; 2 standard errors.</strong></p>\n<p>The <strong>general formula </strong>is <strong>confidence limits = x̄ &plusmn; z</strong><strong>&sigma; </strong><strong><sub>x̄</sub></strong><strong>.&nbsp;</strong></p>\n<ul>\n<li>Where z is 3 for 99.7% Cl</li>\n<li>z is 2 for 95% Cl</li>\n<li>z is 1 for 68% Cl</li>\n</ul>\n<p>The <strong>difference </strong>between<strong> upper</strong> and <strong>lower confidence limits </strong>is called the <strong>confidence interval.&nbsp;</strong>Since the standard error will decrease in proportion to the square root of the sample size, the<strong> width </strong>of the<strong> confidence interval </strong>will also <strong>decrease</strong> in <strong>proportion </strong>to the<strong> square root </strong>of the<strong> sample size.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2614",
+      "difficulty": "easy"
+    }
+  ]
+}

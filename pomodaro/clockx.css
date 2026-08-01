@@ -1,0 +1,228 @@
+:root {
+    --bg-color: #f4f7f6;
+    --primary-color: #4CAF50;
+    --accent-color: #2196F3;
+    --text-color: #333;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('attached_assets/stock_images/photo-stone-texture-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+}
+
+.top-bar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+
+.icon-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+
+.icon-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.timer-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.timer-container {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.progress-ring {
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+    stroke: white;
+    stroke-dasharray: 1005.3;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s linear, opacity 0.3s linear;
+}
+
+.progress-ring__circle-bg {
+    stroke: rgba(255, 255, 255, 0.1);
+}
+
+.timer-display {
+    text-align: center;
+    z-index: 2;
+}
+
+#timerLabel {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#countdownDisplay {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.4);
+}
+
+.controls {
+    margin-top: 0;
+}
+
+.controls button {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Theme Classes */
+body.theme-stone { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/photo-stone-texture-pattern.jpg'); }
+body.theme-smoke { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/elegant-smoke-wallpaper-background-dark-design.jpg'); }
+body.theme-mountain { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/mountain_forest_natu_8755ecdd.jpg'); }
+body.theme-forest { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/forest_trees_morning_76ed6310.jpg'); }
+body.theme-snow { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/snow_mountains_winte_b69c477d.jpg'); }
+body.theme-beach { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('attached_assets/stock_images/beach_ocean_sunset_p_be7f8892.jpg'); }
+
+.setting-item select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    width: 150px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: #333;
+}
+
+.setting-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-item input {
+    width: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .timer-container {
+        width: 300px;
+        height: 300px;
+    }
+    .progress-ring {
+        width: 300px;
+        height: 300px;
+    }
+    .progress-ring circle {
+        r: 140;
+        cx: 150;
+        cy: 150;
+    }
+    .progress-ring__circle {
+        stroke-dasharray: 879.6;
+    }
+    #countdownDisplay {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #countdownDisplay {
+        font-size: 3rem;
+    }
+}

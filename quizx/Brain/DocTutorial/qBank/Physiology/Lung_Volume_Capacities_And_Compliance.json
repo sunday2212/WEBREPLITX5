@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "title": "Lung_Volume_Capacities_And_Compliance"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">7220 ml/min</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">4750 ml/min</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">2470 ml/min</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">8000 ml/min</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 33 year old female patient went to the hospital with increased respiratory rate and shallow respiration. Her respiratory rate is 19 per minute. Tidal volume is 380 ml/ breath. And dead space air is 250 ml. The alveolar ventilation of this female patient is?</span></p>",
+      "unique_key": "DT1320621",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320621,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Alveolar ventilation is the amount of air that reaches the gas exchange area in a minute.</li>\n<li>Pulmonary ventilation is the amount of air exchanged between the atmosphere and lungs.</li>\n<li>In a tidal volume of air the air that reaches the gas exchange area is alveolar air that is 380-250 ml = 130 ml per breath.</li>\n<li>Respiratory rate is 19 per minute. Thus the Alveolar Ventilation is:\n<ul>\n<li><strong>19 X 130 = 2470 ml/min</strong></li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<ul>\n<li><strong>Alveolar Ventilation = [Tidal volume - dead space ]&times; Respiratory rate.</strong></li>\n</ul>",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asthma</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic Bronchitis</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pneumonia</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Emphysema</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old male presents with shortness of breath and wheezing. A pressure-volume loop is recorded during pulmonary function testing. The loop shows increased work of breathing primarily during inspiration, with a decreased lung compliance curve. Which of the following conditions is most consistent with these findings?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGMCQ/202503177e75a873-4102-48bd-b258-01bda997f72e.jpg\"></span></p>",
+      "unique_key": "DT1320625",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320625,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<ul>\n<li>Pneumonia is a restrictive lung disease that decreases lung compliance due to fluid accumulation and inflammation in alveoli. This leads to increased inspiratory effort and a leftward-shifted pressure-volume curve, as seen in the image.</li>\n<li>Asthma and Chronic Bronchitis are obstructive diseases that affect expiration more than inspiration.(<strong>Option A and Option B ruled out)</strong></li>\n<li>Emphysema increases lung compliance due to loss of elastic tissue, but it results in difficulty with expiration, not inspiration.(<strong>Option D ruled out)</strong></li>\n<li>In the graph:\n<ul>\n<li>The right-shifted and steep curve (AE) corresponds to a restrictive lung disease like pneumonia or pulmonary fibrosis.</li>\n</ul>\n</li>\n<li>This curve (AE) reflects:\n<ul>\n<li>Increased pressure required to generate a given volume &rarr; &darr; compliance</li>\n</ul>\n</li>\n</ul>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Static spirometry</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dynamic spirometry</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Compliance curve</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 37-year-old chronic smoker visited the physician for breathlessness and tachypnoea.Pulmonary function testing is performed and the following graph is obtained. The graph shows changes in lung volume over time, including FEV<sub>1</sub>and FVC measurements. What type of pulmonary assessment is depicted?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGMCQ/202503177c33c242-5e2e-40bf-a8cd-d77bdd2bba0e.jpg\"></span></p>",
+      "unique_key": "DT1320628",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320628,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The given graph is a volume vs time,that traces airflow over time.</li>\n<li>Dynamic Spirometry assesses airflow rates and lung function during forced breathing.</li>\n<li>Used to diagnose between Obstructive and Restrictive lung disease:\n<ul>\n<li>Obstructive disease &rarr; &darr; FEV<sub>1</sub>, &darr; FEV<sub>1</sub>/FVC (e.g., COPD, Asthma, Bronchiectasis)</li>\n<li>Restrictive disease &rarr; &darr; FVC, but normal or &uarr; FEV<sub>1</sub>/FVC (e.g., fibrosis, ILD)<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250819e99f636e-f876-4ff7-bb34-928bd52393b4.png\"></li>\n</ul>\n</li>\n<li>In <strong>static spirometry we measure lung volumes and capacities but not in relation with the time</strong>.(<strong>Option A ruled out</strong>)</li>\n<li>In Compliance curve lung volume changes are measured with pleural pressure changes.<strong>(Option C ruled out)</strong></li>\n</ul>\n<p><strong>Key Takeaway: </strong></p>\n<ul>\n<li>In dynamic spirometry lung volumes and capacities are measured in relation to time</li>\n</ul>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">High surface tension due to lack of surfactant</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administering the steroids may reduce the problem with respiratory distress</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">The above problem is categorized into restrictive lung disease.</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A preterm female infant was delivered at 31 weeks of gestation due to immediate complications and the baby developed respiratory distress immediately after delivery. Which of the following statements regarding her condition is most likely true?</span></p>",
+      "unique_key": "DT1320630",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320630,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<ul>\n<li>The clinical condition mentioned is most likely neonatal respiratory distress syndrome (NRDS) which occurs in preterm (&lt;34weeks) neonate due to surfactant deficiency.It decreases the distensibility of the lung by increasing elastic resistance producing restrictive lung type disorder.(<strong>Option C ruled out)</strong></li>\n<li>Normally the surfactants are formed at around 8 months of pregnancy (32 weeks).</li>\n<li>Before that if the baby is delivered due to lack of surfactant, it leads to high surface tension producing respiratory distress.(<strong>Option A ruled out)</strong></li>\n<li>Steroids increase the speed of maturation of lungs by increasing the surfactant production.(<strong>Option B ruled out)</strong></li>\n</ul>\n<p><strong>Key Takeaway: </strong></p>\n<ul>\n<li>Respiratory distress syndrome (RDS) is a serious lung condition that affects premature babies. It happens when the lungs aren't fully developed and don't produce enough surfactant</li>\n</ul>",
+      "correct_choice_id": 34,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Total lung capacity</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vital capacity</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Functional residual capacity</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Residual volume</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old male is undergoing a routine respiratory fitness test using ordinary spirometry. Which of the following volume/capacity can be measured by it?</span></p>",
+      "unique_key": "DT1320633",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320633,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Ordinary spirometry is a non-invasive test that measures lung volumes and capacities involving air that can be inhaled or exhaled. It can not measure the residual volume in the lungs. FRC and total lung capacity includes residual volume.It can measure only\n<ul>\n<li>Tidal Volume (TV)</li>\n<li>Inspiratory Reserve Volume (IRV)</li>\n<li>Expiratory Reserve Volume (ERV)</li>\n<li><strong>Vital Capacity (VC)</strong> = IRV + TV + ERV</li>\n<li>Forced Vital Capacity (FVC)</li>\n<li>FEV<sub>1</sub> (Forced Expiratory Volume in 1 second)</li>\n</ul>\n</li>\n<li><strong>Total lung capacity</strong>: It is the volume of air present in the lungs after maximal inspiration (Sum of inspiratory and expiratory reserve volumes plus the tidal volume and residual volume). It is nearly 5800 ml.(<strong>Option A ruled out)</strong></li>\n<li><strong>Vital capacity</strong> : The maximum amount of air a person can expel from lungs after deepest possible inspiration. (Sum of inspiratory reserve volume, tidal volume, and expiratory reserve volume) Its value is around 4600 ml.</li>\n<li><strong>Functional residual capacity (FRC) : </strong>Amount of air that remains in the lungs at the end of normal expiration. (Expiratory reserve volume plus the residual volume). It is approx. 2300 ml.(<strong>Option C ruled out)</strong></li>\n<li><strong>Residual volume (RV):</strong>Volume of air remaining in the respiratory passages and lungs after the most forceful expiration (1200 ml).(<strong>Option D ruled out)</strong></li>\n<li><strong>Helium dilution</strong>or <strong>nitrogen washout method</strong> is used for Residual volume measurement.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<ul>\n<li>Ordinary spirometry can not measure the residual volume in the lungs. FRC and total lung capacity includes residual volume. So, it is not possible to measure RV, FRC, TLC with spirometry.</li>\n<li>Helium dilution or nitrogen washout method is used for RV measurement.</li>\n</ul>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Breath holding is possible due to FRC</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Effect of toxic gases is reduced because of FRC</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">FRC reduces the load on respiratory muscles</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">FRC is reduced in emphysema</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not true about functional residual capacity of the lung?</span></p>",
+      "unique_key": "DT1320635",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320635,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Functional residual capacity (FRC) is the amount of air that remains in the lungs at the end of normal expiration. (<strong>Expiratory reserve volume plus the residual volume</strong>). It is approximately 2300 ml.</li>\n<li>If there is no air that remains in the lungs at the end of expiration, there is no exchange of air occurring at the end of expiration. But presence of FRC makes breath holding possible as the air is exchanged even at the end of expiration and it reduces the load on respiratory muscles.(<strong>Option A and Option C ruled out)</strong></li>\n<li>If by chance 500 ml of toxic gas is inhaled (normal tidal volume), it mixes with 2300 ml of air and the toxic effect of this gas is reduced.(<strong>Option B ruled out)</strong></li>\n<li>Because of FRC alveoli do not collapse completely at the end of expiration. Some amount of air is always there in alveolus. Then it is easier to expand alveoli with some air than alveoli without air.</li>\n<li>In emphysema there is hyperinflation of the lungs causing increase in FRC in the lungs.</li>\n</ul>\n<p><strong>Key Takeaway: </strong></p>\n<ul>\n<li>In emphysema, the functional residual capacity (FRC) typically increases. This is due to the loss of elastic recoil in the lungs, which causes them to become more compliant and expand more easily.</li>\n</ul>",
+      "correct_choice_id": 54,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Less than 40%</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">40 to 60 %</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">70 to 90%</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">More than 90%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The following is a dynamic spirometry tracing. Estimate the FEV1/FVC ratio from the graph.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGMCQ/20250317c83331d7-7072-4486-8e46-bcaddd1ef572.jpg\"></span></p>",
+      "unique_key": "DT1320646",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320646,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Forced vital capacity (FVC) is the volume of air in liters that can be forcefully and maximally exhaled after a maximal inspiration.</li>\n<li>From the graph we can depict the forced vital capacity is approximately :\n<ul>\n<li><strong>7-2 =5 liters.</strong></li>\n</ul>\n</li>\n<li>Forced expiratory volume 1 is the volume of air a person can forcefully exhale in the <strong>first second</strong> of a forced breath:\n<ul>\n<li><strong>7- 2.8 = 4.2 liters .</strong></li>\n</ul>\n</li>\n<li>The ratio of <strong>FEV1/FVC is 4.2/5 X 100= 0.84 X 100 = 84 %</strong></li>\n</ul>\n<p><strong>Key Takeaway: </strong></p>\n<ul>\n<li>Forced vital capacity (FVC)-It is the volume of air in liters that can be forcefully and maximally exhaled after a maximal inspiration.</li>\n</ul>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Elastic resistance.</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Viscous resistance.</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Airway resistance.</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">During quiet normal respiration, respiratory muscles must overcome various opposing forces to expand the lungs. Which of the following contributes the greatest resistance to muscle work under normal conditions?</span></p>",
+      "unique_key": "DT1320655",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320655,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The elastic work of breathing is the work done to overcome the elastic recoil of the chest wall and the pulmonary parenchyma and the work done to overcome the surface tension of the alveoli.</li>\n<li>The resistive work of breathing is the work done to overcome the tissue resistance and the airways resistance</li>\n<li>Following are the components of work of breathing\n<ul>\n<li>Work done to overcome elastic resistance (65%)</li>\n<li>Work done to overcome viscous resistance (7%)(<strong>Option B ruled out)</strong></li>\n<li>Work done to overcome airway resistance ( 28%)(<strong>Option C ruled out)</strong></li>\n</ul>\n</li>\n<li>Maximum work is to be done against elastic resistance that is mainly surface tension.</li>\n<li>Surface tension without surfactant: 50 dynes/cm<sup>2</sup></li>\n<li>ST with surfactant: between 5 and 30 dynes/cm<sup>2</sup></li>\n</ul>\n<p><strong>KeyTakeaway: </strong></p>\n<ul>\n<li>Maximum work is to be done against elastic resistance that is mainly surface tension.</li>\n</ul>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deficient activity of Na+ channels</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deficient activity of Cl- channels</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduced level of surfactant</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A term newborn has difficulty in breathing due to the fluid retention in the lungs. The doctor diagnosed the patient and treated it well. The probable reason for fluid retention in the newborn is?</span></p>",
+      "unique_key": "DT1320657",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1320657,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>In the fetal period, the pulmonary epithelial cells secrete Cl<sup>-</sup> ions into the alveolar space. This secretion draws water osmotically, resulting in the presence of fluid-filled lungs during intrauterine life, an essential component for lung development.</li>\n<li>At birth, there is a <strong>physiological shift</strong> from <strong>Cl<sup>-</sup>secretion to Na<sup>+</sup> absorption</strong> in the pulmonary epithelium. This shift is mediated by the activation of <strong>ENaC (epithelial sodium channels)</strong> located on the apical membrane of alveolar epithelial cells.</li>\n<li>These ENaC channels absorb Na<sup>+</sup> from the alveolar space into the interstitium.</li>\n<li>Water follows sodium osmotically, leading to clearance of lung fluid and preparing the alveoli for air inflation as the baby takes its first breaths.</li>\n<li>If there is deficient ENaC activity, this fluid is not adequately reabsorbed, resulting in retention of alveolar fluid, impaired gas exchange, and respiratory distress. This mechanism is a key contributor to Transient Tachypnea of the Newborn (TTN).</li>\n</ul>\n<p><strong>Key Takeaway: </strong></p>\n<ul>\n<li>The Na+ channels present on the membrane of pulmonary epithelial cells are called ENaC (epithelial Na+ channels).</li>\n<li>ENaC channels cause absorption of Na+. Along with Na+ fluid is also absorbed from the alveoli allowing the lungs to easily expand as the baby cries.</li>\n</ul>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

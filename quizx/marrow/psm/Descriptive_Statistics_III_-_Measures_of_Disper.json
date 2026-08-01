@@ -1,0 +1,380 @@
+{
+  "chapter": "Descriptive_Statistics_III_-_Measures_of_Disper",
+  "questions": 
+[
+  {
+    "q_no": 1,
+    "question": "Question 1: Which of the following is not a measure of dispersion?",
+    "options": {
+      "a": "Standard deviation",
+      "b": "Range",
+      "c": "Variance",
+      "d": "Z scores"
+    },
+    "correct_answer": "d",
+    "explanation": "825 \nSold by @itachibot Z scores are not a measure of dispersion, they are measures of position. It indicates the position of \nany element in a distribution in terms of how many standard deviations it lies from the mean of \nthe distribution. The most common measures of spread/dispersion are range, standard deviation and \nvariance. They help in determining the extent to which data is stretched/scattered or \nsqueezed/clustered. They are also called measures of spread or scatter or variability.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 2,
+    "question": "Question 2: What is standard deviation a measure of?",
+    "options": {
+      "a": "Central tendency",
+      "b": "Spread",
+      "c": "Position",
+      "d": "Range"
+    },
+    "correct_answer": "b",
+    "explanation": "Standard deviation is a measure of spread or dispersion or variability. Range and variability are other measures of spread.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 3,
+    "question": "Question 3: Which of the following is the correct relationship between variance and standard deviation?",
+    "options": {
+      "a": "Variance = square root of standard deviation",
+      "b": "Standard deviation = square root of variance",
+      "c": "Variance = 2 x standard deviation",
+      "d": "Variance = standard deviation / 2"
+    },
+    "correct_answer": "b",
+    "explanation": "Standard deviation is the square root of variance.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 4,
+    "question": "Question 4: You are conducting a study on chronic kidney disease in a population. Your sample size is 28. \nWhat formula for standard deviation will you use here?",
+    "options": {
+      "a": "(x - x■)/n",
+      "b": "(x - x■)/n-1",
+      "c": "(x - x■)²/n",
+      "d": "(x - x■)²/n-1"
+    },
+    "correct_answer": "d",
+    "explanation": "In this scenario, the sample size is 28, which is &lt;30. For a small sample, usually less than 30, \nthe formula for standard deviation used is: It is better to use n-1 in the denominator in the case of a small sample. But in the case of a very \nlarge sample subtracting 1 from a huge number will not make much of a significant correction. In \nthose cases, we may choose to ignore subtracting 1. 826 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 5,
+    "question": "Question 5: Which among the following is true about standard deviation?",
+    "options": {
+      "a": "…ne standard deviation covers 95% of the values",
+      "b": "Indicates distribution of variables",
+      "c": "It can be used only in normal distributions",
+      "d": "It is a measure of central tendency"
+    },
+    "correct_answer": "b",
+    "explanation": "The standard deviation (S.D) indicates the distribution of variables. It is a measure of dispersion. It can be used in normal and skewed distributions, but it is particularly useful in normal \ndistributions. 1 S.D covers 68% of the values. 2 S.D covers 95% of the values. Measures of central tendency are mean, median and mode.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 6,
+    "question": "Question 6: You are using the ‰uppuswamy scale to calculate the socio-economic status of 10 families in \nthe railway staff quarters. You find that every family has a total monthly income of Rs. \n‹3,355. What is the standard deviation of this sample?",
+    "options": {
+      "a": "‹3,355",
+      "b": "0",
+      "c": "1",
+      "d": "‹33.55"
+    },
+    "correct_answer": "b",
+    "explanation": "In this scenario, the standard deviation will be zero. The monthly income of every family is Rs. ‹3,355. So, all the elements in this distribution are \nthe same. Hence, there is no variability. Both the standard deviation and variance which is the \nsquare of standard deviation will be zero.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 7,
+    "question": "Question 7: çach value of a study sample is multiplied by 10. What would be the new standard deviation \nof the observations?",
+    "options": {
+      "a": "…riginal standard deviation x 10",
+      "b": "…riginal standard deviation x100",
+      "c": "…riginal standard deviation /10",
+      "d": "…riginal standard deviation itself"
+    },
+    "correct_answer": "a",
+    "explanation": "When each element of a sample is multiplied by 10, the new standard deviation= 10 x original \nstandard deviation. The formula for standard deviation, SD = (x - x■)2/n-1. If each element of the distribution is multiplied by 10, the new mean will become 10 times the \noriginal mean. If all observations are multiplied by 10, then the new SD = (10x-10x■)2/n-1 = 10 (x - x■)2/n-1 = 10 x …riginal SD Change in variance: variance = square of standard deviation, so when SD becomes 10 times, the variance will be 10² = 100 times the original variance.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 8,
+    "question": "Question 8: …n plotting the blood pressure values of a population on a graph, you obtain the curve given \nbelow. Which of the following is true? 819 \nSold by @itachibot",
+    "options": {
+      "a": "1, 2 &amp; 5",
+      "b": "1 &amp; 3",
+      "c": "2 &amp; 4",
+      "d": "1, 3 &amp; 4"
+    },
+    "correct_answer": "d",
+    "explanation": "The given image shows a normal distribution, also called bell curve or ™aussian distribution. It \nhas no skew. It is defined by the mean and standard deviation. In a normal distribution, mean = \nmedian = mode. The total area under the curve of a normal distribution is 1. 827 \nSold by @itachibot",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Descriptive_Statistics_III_-_Measures_of_Disper_Q8_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 9,
+    "question": "Question 9: Which of the following is true about the standard normal distribution?",
+    "options": {
+      "a": "1,2 and 3",
+      "b": "1 and 3",
+      "c": "2 and 5",
+      "d": "2, 4 and 5"
+    },
+    "correct_answer": "d",
+    "explanation": "A standard normal distribution is a type of normal distribution. It is bell-shaped, has a mean of 0 \nand a standard deviation of 1. Thus the variance, the square of standard deviation is also 1 = the \nstandard deviation.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 10,
+    "question": "Question 10: In a normal curve, what is the percentage of distribution of one standard deviation?",
+    "options": {
+      "a": "68%",
+      "b": "34%",
+      "c": "99%",
+      "d": "95%"
+    },
+    "correct_answer": "a",
+    "explanation": "Approximately 68% of a normal distribution falls within ±1 standard deviations of the mean. This \nis as per the empirical rule of a normal distribution. Approximately 95% of the distribution falls within ±2 standard deviations of the mean. Approximately 99.‹% of the distribution falls within ±3 standard deviations of the mean.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 11,
+    "question": "Question 11: During a study on anaemia in a population, a normal distribution curve with a mean of 13.5 \ng% is obtained. What proportion of the population constitutes people with haemoglobin \nvalues above 13.5 g%?",
+    "options": {
+      "a": "0.25",
+      "b": "0.50",
+      "c": "1",
+      "d": "0.34"
+    },
+    "correct_answer": "b",
+    "explanation": "In this scenario, 0.50, i.e., 50% of the population would have haemoglobin more than the mean, \ni.e., 13.5 gm%. In a normal distribution, 50% of the values lie above the mean.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 12,
+    "question": "Question 12: The I’ scores of your study population form a bell-shaped curve. How much of the \npopulation falls between the median (Mdn) and Mdn + 1 S.D?",
+    "options": {
+      "a": "0.34",
+      "b": "0.68",
+      "c": "0.1‹",
+      "d": "0.95"
+    },
+    "correct_answer": "a",
+    "explanation": "34% or 0.34 of the population in a normal distribution falls between the median and median plus \none standard deviation. The I’ values form a bell-shaped curve, which is seen in normal symmetric distributions. According to the empirical rule of normal distributions, 68% of the distribution falls within 1 \nstandard deviation of the mean, i.e., mean ± 1 SD covers 68% of the distribution. šow, in a normal distribution, mean = median. Therefore, this 68% includes values from median \n-1SD to median +1SD. The question asks about the percentage that falls under median +1SD, which would be half of \n68%, that is 34% or 0.34. Below is the graphical representation of the question. The question is asking to calculate the \nshaded region in the graph. 828 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 13,
+    "question": "Question 13: The fasting blood glucose levels of adults in a population forms a normal distribution. The \nstatistical measures obtained are given below. Within what limits would 95% of the \npopulation have their blood glucose values?",
+    "options": {
+      "a": "‹5 and 135 mg",
+      "b": "85 and 125 mg",
+      "c": "95 and 115 mg",
+      "d": "80 and 120 mg"
+    },
+    "correct_answer": "b",
+    "explanation": "In this scenario, 95% of the population would have their blood sugar within the limits of 85 and \n125 mg. Here, the mean blood sugar is 105 mg and the standard deviation is 10 mg. According to the empirical rule of normal distribution, 95% of the distribution falls within two \nstandard deviations of the mean. In this question, 2 S.D = 10 x 2 = 20. We do, + and - 2 S.D from the mean to arrive at the limits \nwithin which 95% of the population would have their blood sugar, i.e., 85 and 125 mg. + and - 1 S.D = 10 from the mean, we get the limits within which 68% of the population would \nhave their blood sugar value, i.e., 95 and 115 mg. + and - 3 S.D = 30, from the mean, we get limits within which 99% would have their values, i.e., \n‹5 and 135 mg.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 14,
+    "question": "Question 14: While conducting a study on malnutrition, you record the following data. If it forms a normal \ndistribution curve, which of the following is true for this sample?",
+    "options": {
+      "a": "Weight of 95 children is between 12 and 18 kg",
+      "b": "Weight of 95 children is between 10.5 and 19.5 kg",
+      "c": "Weight of 99 children is between 10 and 19 kg",
+      "d": "Weight of 34 children is between 13.5 and 16.5 kg"
+    },
+    "correct_answer": "a",
+    "explanation": "In this scenario, the weight of 95 children will be between 12 and 18 kg as the mean is 15 kg and \nthe standard deviation is 1.5 kg. According to the empirical rule of normal distribution, 95% of the distribution falls within two \nstandard deviations of the mean. Two standard deviations = 2 x 1.5 = 3 kg The weight of 99.‹% of children will be between 10.5-19.5 ‰g, i.e., within three standard \ndeviations. The weight of 68% of children will be between 13.5 to 16.5 ‰g, i.e., within one standard deviation. \nHalf will weigh between 13.5 and 15kg and the other half between 15 and 16.5kg 829 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 15,
+    "question": "Question 15: The distribution of intraocular pressure (I…P) in 100 glaucoma patients form a normal \ndistribution curve. It has a mean of 30 mm of Hg with a standard deviation (SD) of 1 mm of \nHg. 9‹.5% of patients would have an I…P more than what value?",
+    "options": {
+      "a": "28",
+      "b": "26",
+      "c": "32",
+      "d": "29"
+    },
+    "correct_answer": "a",
+    "explanation": "In this scenario, 9‹.5% of patients would have an I…P of more than 28 mm of Hg. The mean I…P is 30mm of Hg and SD is 1.0 mm of Hg. According to the empirical rule of the \nnormal distribution, 95% of the distribution falls within two standard deviations of the mean, i.e., \nmean ± 2 SD. So 95% of patients will have their I…P between 30 ± 2 = 28 to 32 mm of Hg. …ut of the remaining 5%, half will have I…P &lt; 28 and the other half will have &gt; 32. So half of \n5%= 2.5% has I…P &lt;28mm Hg. Thus the remaining 9‹.5% has I…P &gt; 28mm of Hg. This is shown in the image given below",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 16,
+    "question": "Question 16: A study is being conducted on anaemia in pregnancy. A normal distribution curve with a \nmean haemoglobin level of 10.6 gm/dL with a standard deviation of 2 gm/dL is obtained. \nBelow what level would 5% of the women in the group have their haemoglobin values?",
+    "options": {
+      "a": "8.6 g/dL",
+      "b": "‹.31 g/dL",
+      "c": "6.6 g/dL",
+      "d": "5.0 g/dL"
+    },
+    "correct_answer": "b",
+    "explanation": "5% of the pregnant women in this group will have their haemoglobin levels below ‹.31 g/dL. Solution: ™iven Data : • Mean: 10.6 g/dL • Standard deviation : 2 g/dL Step 1: 830 \nSold by @itachibot According to the empirical rule of a normal distribution, 95% of the population fall within 2 \nstandard deviations of the mean, i.e., mean ± 2SD. This implies that the remaining 5% lie outside 2 SD, i.e. 2.5% below 2 SD and 2.5% above 2 SD. Therefore , Mean - 2SD = 10.6  2 (2) = 10.6  4 = 6.6 g/dL Thus, 2.5% of pregnant women have Hb levels below 6.6 g/dL. However, the question asks about 5% and not 2.5%. So options C and D have been ruled out. šow Let's move to the next step. Step 2: 831 \nSold by @itachibot According to the empirical rule of a normal distribution, 68% of the population fall within 1 \nstandard deviation of the mean, i.e., mean±1SD. This implies that the remaining 32% lie outside 1 SD, i.e., 16% below 1 SD and 16% above 1 SD. The value of mean1 SD is 8.6 g/dL (i.e. 10.6  2) Thus, 16% of pregnant women have Hb levels below 8.6 g/dL. so now option A is ruled out Step 3: The value for 5% must lie between the values where 2.5% and 16% of the population lie, i.e., \nbetween 6.6g/dL and 8g/dL. …nly option B, ‹.31 g/dL, satisfies this condition. Hence, 5% of pregnant women have their Hb levels below ‹.31 g/dL.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 17,
+    "question": "Question 17: The peak expiratory flow rate (PçFR) values of a group of 11-year-old girls have a mean of \n300 l/min and a standard deviation of 20 l/min. What are the deviation scores for the PçFR \nvalues of two girls recorded as 280 l/min and 330 l/min respectively?",
+    "options": {
+      "a": "-20 and 30",
+      "b": "20 and 30",
+      "c": "20 and -30",
+      "d": "-20 and -30"
+    },
+    "correct_answer": "a",
+    "explanation": "The deviation scores for PçFR values 280 l/min and 330 l/min are -20 and 30 respectively. The Deviation score of an element in a distribution is the difference between the mean of the \ndistribution and the element itself, i.e., it is obtained by subtracting the distribution’s mean from \nthe element. Applying this here, deviation score of the value 280 l/min = the element - the mean = 280 - 300 = \n-20. For the value 330 l/min, deviation score = 330 - 300 = 30.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 18,
+    "question": "Question 18: 822 \nSold by @itachibot The shape of a normal distribution curve depends on?",
+    "options": {
+      "a": "Mean only",
+      "b": "Standard deviation and variance",
+      "c": "Mean and standard deviation",
+      "d": "Mean and median"
+    },
+    "correct_answer": "c",
+    "explanation": "The shape of a normal distribution curve depends upon its mean and standard deviation. For example, for a particular mean value, a smaller standard deviation value gives a taller and \nnarrower curve whereas, a larger value gives a flatter curve. The curve is centered at the mean  which coincides with the median and the mode and is located \nat the point beneath the peak of the curve. The mean, median and mode are equal.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 19,
+    "question": "Question 19: Which of the following is a property of a normal distribution curve?",
+    "options": {
+      "a": "Mean = 2 standard deviations",
+      "b": "Mean = median",
+      "c": "mean &gt; median",
+      "d": "mean &lt; median"
+    },
+    "correct_answer": "b",
+    "explanation": "In a normal distribution curve, mean = median. mean &gt; median in positively/ rightward skewed distribution. mean &lt; median in negatively/ leftward skewed distribution. 832 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 20,
+    "question": "Question 20: Which of the following is incorrect about the standard normal distribution?",
+    "options": {
+      "a": "Area under curve = 1",
+      "b": "Standard deviation = 1",
+      "c": "It is bell shaped",
+      "d": "Mean and median = 1"
+    },
+    "correct_answer": "d",
+    "explanation": "In a standard normal distribution, mean = 0.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 21,
+    "question": "Question 21: A population study showed a mean glucose of 86 mg/dL. In a sample of 100 showing normal \ndistribution, what percentage of people will have blood glucose above 86 mg/dL?",
+    "options": {
+      "a": "34",
+      "b": "50",
+      "c": "95",
+      "d": "68"
+    },
+    "correct_answer": "b",
+    "explanation": "In a normal distribution, 50% of the values lie above the mean. In this scenario, 50% of the people will have a blood glucose level of more than 86 mg/dL.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 22,
+    "question": "Question 22: 823 \nSold by @itachibot The mean value of marks in a distribution of 100 students in a class is 105 and standard \ndeviation is 10. How many students will have their marks between 85 and 125?",
+    "options": {
+      "a": "68%",
+      "b": "50%",
+      "c": "99.‹%",
+      "d": "95%"
+    },
+    "correct_answer": "d",
+    "explanation": "According to the empirical rule of normal distribution, 95% of the distribution falls within two \nstandard deviations of the mean, i.e., mean ± 2 SD. In this scenario, the marks between 85 and 125 fall within 2 standard deviation of the mean which \nis 105. Thus 95% of the students will have the marks in this range.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 23,
+    "question": "Question 23: The systolic blood pressure of a group of normal people between the ages of 25–2‹ years was \ntaken and a mean of 120 mmHg was found. What will be the expected number of individuals \namong a group of 100 people taken for the study whose BP will be below 120 mmHg?",
+    "options": {
+      "a": "25",
+      "b": "50",
+      "c": "99.‹",
+      "d": "95"
+    },
+    "correct_answer": "b",
+    "explanation": "In a normal distribution, 50% of the values lie below the mean. In this scenario, 50%, i.e., 50 of the 100 people will have a systolic BP of less than 120 mmHg.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 24,
+    "question": "Question 24: In a normal distribution, what percentage of the distribution falls within 2 standard \ndeviations of the mean?",
+    "options": {
+      "a": "68%",
+      "b": "95%",
+      "c": "99%",
+      "d": "4‹.5%"
+    },
+    "correct_answer": "b",
+    "explanation": "According to the empirical rule of normal distributions, 95% of the distribution falls within 2 \nstandard deviations of the mean, i.e., mean ± 2 SD covers 95% of the distribution.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  },
+  {
+    "q_no": 25,
+    "question": "Question 25: In a population study, the value of the mean is 200. If the standard deviation is 20, 68% of \nthe population will lie between?",
+    "options": {
+      "a": "80th",
+      "b": "40th",
+      "c": "99",
+      "d": "10"
+    },
+    "correct_answer": "a",
+    "explanation": "68% of the population will lie between 180- 220. In a normal distribution curve, 68% of the values lie within the mean +/- 1 standard deviation and \nthe mean=median=mode. Since the mean = 200 and the standard deviation = 20: 68% of population will lie between Mean +/- 1SD, that is, 200 +/- 20 = 180-220 95% of population lies between Mean+/-2SD, 200+/- 2*20 = 160- 240 99% of population lies between Mean+/-3SD, 200+/- 3*20 = 140- 260 833 \nSold by @itachibot Descriptive Statistics IV - Measures of Position",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Descriptive_Statistics_III_-_Measures_of_Disper_Q25_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Descriptive Statistics III - Measures of Disper"
+  }
+]}

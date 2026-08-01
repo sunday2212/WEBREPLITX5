@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - NEXTPULSE | Find Medical Lectures & Content</title>
+  <meta name="description" content="Search across all NEET PG preparation platforms. Find specific lectures, topics, and subjects from Marrow, DAMS, and PrepLadder.">
+  <meta name="keywords" content="search medical lectures, NEET PG search, find medical content, lecture search">
+  <link rel="stylesheet" href="ott-search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="./access-control.js"></script>
+  <script src="./block.js"></script>
+  
+  <link rel="stylesheet" crossorigin href="/assets/styles-DQxNABfx.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+  <script>
+      // Initialize access control for protected page
+      if (!accessControl.initProtectedPage()) {
+        throw new Error('Access denied - redirecting to index.html');
+      }
+  </script>
+  <header>
+    <div class="header-content">
+      <button onclick="history.back()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1>MedTube</h1>
+    </div>
+  </header>
+  
+  <main>
+    <div class="ott-container">
+      <!-- Search Bar with Auto-suggestions -->
+      <div class="ott-search-container">
+        <input 
+          type="text" 
+          class="ott-search-bar" 
+          id="ottSearchInput" 
+          placeholder="Search for lectures, topics, subjects..."
+          autocomplete="off"
+          data-testid="input-search"
+        >
+        <i class="fas fa-search search-icon" id="searchIcon" data-testid="button-search" style="cursor: pointer;"></i>
+        <div class="suggestions-dropdown" id="suggestionsDropdown"></div>
+      </div>
+
+      <!-- Search Results Grid (Hidden by default) -->
+      <div id="searchResultsSection" style="display: none;">
+        <h2 class="section-heading" data-testid="text-search-results">Search Results</h2>
+        <div class="search-results-grid" id="searchResultsGrid"></div>
+      </div>
+
+      <!-- Platform-wise Sections -->
+      <div id="platformSections"></div>
+
+      <!-- Loading State -->
+      <div id="loadingState" class="loading">
+        <i class="fas fa-spinner fa-spin"></i> Loading lectures...
+      </div>
+    </div>
+  </main>
+  
+
+  <script>
+    let allLectures = [];
+    let platformLectures = {};
+
+    // Local Storage Manager - Keep only for saving watched history
+    const LocalStorageManager = {
+      addToLastWatched(lecture) {
+        let lastWatched = [];
+        try {
+          lastWatched = JSON.parse(localStorage.getItem('lastWatched') || '[]');
+        } catch {
+          lastWatched = [];
+        }
+        
+        // Remove if already exists
+        lastWatched = lastWatched.filter(item => 
+          !(item.title === lecture.title && item.platform === lecture.platform)
+        );
+        
+        // Add to beginning
+        lastWatched.unshift({
+          title: lecture.title,
+          subject: lecture.subject,
+          platform: lecture.platform,
+          streamingUrl: lecture.streamingUrl,
+          thumbnailUrl: lecture.thumbnailUrl,
+          duration: lecture.duration
+        });
+        
+        // Keep only last 20 items
+        lastWatched = lastWatched.slice(0, 20);
+        
+        localStorage.setItem('lastWatched', JSON.stringify(lastWatched));
+      }
+    };
+
+    // Load lecture data from 1234xx folder with progressive rendering
+    async function loadLectureData() {
+      try {
+        const manifestResponse = await fetch('1234xx/manifest.json');
+        if (!manifestResponse.ok) {
+          console.error('Could not load 1234xx/manifest.json');
+          return;
+        }
+        
+        const manifest = await manifestResponse.json();
+        
+        // Hide loading state immediately and show platform container
+        document.getElementById('loadingState').style.display = 'none';
+        
+        // Load platforms progressively
+        for (const platformConfig of manifest) {
+          const { platform: originalPlatform, subfolder, files } = platformConfig;
+          
+          // Keep original platform name for file paths
+          const platformDisplay = formatPlatformName(originalPlatform);
+          
+          if (!platformLectures[platformDisplay]) {
+            platformLectures[platformDisplay] = {};
+          }
+          
+          // Load files for this platform asynchronously
+          const filePromises = files.map(async (jsonFile) => {
+            try {
+              const filePath = subfolder === 'non' 
+                ? `1234xx/${originalPlatform}/${jsonFile}` 
+                : `1234xx/${originalPlatform}/${subfolder}/${jsonFile}`;
+              
+              const response = await fetch(filePath);
+              if (response.ok) {
+                const data = await response.json();
+                if (data.lectures && Array.isArray(data.lectures)) {
+                  const subjectName = data.subjectName || jsonFile.replace('.json', '');
+                  
+                  // Pick a random lecture from this subject for display
+                  const randomIndex = Math.floor(Math.random() * data.lectures.length);
+                  const randomLecture = data.lectures[randomIndex];
+                  
+                  const lectureData = {
+                    title: randomLecture.title,
+                    subject: subjectName,
+                    platform: platformDisplay,
+                    streamingUrl: randomLecture.streamingUrl || randomLecture.streamUrl || '',
+                    downloadUrl: randomLecture.downloadUrl || '',
+                    thumbnailUrl: randomLecture.thumbnailUrl || getDefaultThumbnail(),
+                    duration: randomLecture.duration || 'N/A',
+                    folderPath: `1234xx/${originalPlatform}/${subfolder !== 'non' ? subfolder + '/' : ''}`
+                  };
+                  
+                  // Store only one random lecture per subject for platform display
+                  platformLectures[platformDisplay][subjectName] = lectureData;
+                  
+                  // Add all lectures to search index in background
+                  data.lectures.forEach(lecture => {
+                    allLectures.push({
+                      title: lecture.title,
+                      subject: subjectName,
+                      platform: platformDisplay,
+                      streamingUrl: lecture.streamingUrl || lecture.streamUrl || '',
+                      downloadUrl: lecture.downloadUrl || '',
+                      thumbnailUrl: lecture.thumbnailUrl || getDefaultThumbnail(),
+                      duration: lecture.duration || 'N/A',
+                      folderPath: `1234xx/${originalPlatform}/${subfolder !== 'non' ? subfolder + '/' : ''}`
+                    });
+                  });
+                }
+              }
+            } catch (error) {
+              console.log(`Could not load ${filePath}:`, error);
+            }
+          });
+          
+          // Wait for this platform's files to load
+          await Promise.all(filePromises);
+          
+          // Render this platform immediately
+          renderPlatformSection(platformDisplay);
+        }
+        
+        console.log('Total lectures loaded:', allLectures.length);
+        console.log('Platforms displayed:', Object.keys(platformLectures));
+      } catch (error) {
+        console.error('Error loading lecture data:', error);
+        document.getElementById('loadingState').innerHTML = '<p class="no-results">Error loading lecture data</p>';
+      }
+    }
+
+    // Format platform name
+    function formatPlatformName(platform) {
+      const mapping = {
+        'prepladder6': 'PrepLadder 6.0',
+        'prepladder6x': 'PrepLadder 6X',
+        'prepladder5': 'PrepLadder 5.0',
+        'marrow': 'Marrow',
+        'marrow6': 'Marrow 6.0',
+        'ma00xrow': 'Marrow',
+        'dams': 'DAMS',
+        'egurukul': 'E-Gurukul',
+        'physicswala': 'Physics Wallah',
+        'cerebellum': 'Cerebellum',
+        'doctut': 'Doctut',
+        'mist': 'MIST',
+        'specific': 'Special Lectures',
+        'test': 'Test',
+        'test2': 'Test 2',
+        'test3': 'Test 3'
+      };
+      return mapping[platform.toLowerCase()] || platform.charAt(0).toUpperCase() + platform.slice(1);
+    }
+
+    // Get default thumbnail
+    function getDefaultThumbnail() {
+      return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="280" height="157" viewBox="0 0 280 157"%3E%3Crect fill="%23000" width="280" height="157"/%3E%3Ctext x="50%25" y="50%25" fill="%23666" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle"%3ENo Thumbnail%3C/text%3E%3C/svg%3E';
+    }
+
+    // Create video card
+    function createVideoCard(lecture) {
+      const card = document.createElement('div');
+      card.className = 'video-card';
+      card.dataset.testid = `card-video-${lecture.title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}`;
+      
+      card.innerHTML = `
+        <img src="${lecture.thumbnailUrl}" alt="${lecture.title}" class="video-card-thumbnail" loading="lazy" onerror="this.src='${getDefaultThumbnail()}'">
+        <div class="video-card-info">
+          <div class="video-card-title" data-testid="text-video-title">${lecture.title}</div>
+          <div class="video-card-meta">
+            <span><i class="fas fa-book-medical"></i>${lecture.subject}</span>
+            <span><i class="fas fa-building"></i>${lecture.platform}</span>
+          </div>
+        </div>
+      `;
+      
+      card.addEventListener('click', () => openVideo(lecture));
+      
+      return card;
+    }
+
+    // Render a single platform section (called progressively)
+    function renderPlatformSection(platform) {
+      const subjects = platformLectures[platform];
+      const lectures = [];
+      
+      // Get the random lecture from each subject
+      Object.keys(subjects).forEach(subject => {
+        const lecture = subjects[subject];
+        if (lecture) {
+          lectures.push(lecture);
+        }
+      });
+      
+      if (lectures.length === 0) return;
+      
+      const container = document.getElementById('platformSections');
+      const section = document.createElement('div');
+      section.className = 'carousel-container';
+      section.innerHTML = `
+        <h2 class="section-heading" data-testid="text-platform-${platform.replace(/[^a-z0-9]/gi, '-').toLowerCase()}">${platform} Lectures</h2>
+        <div class="carousel" data-testid="carousel-${platform.replace(/[^a-z0-9]/gi, '-').toLowerCase()}"></div>
+      `;
+      
+      const carousel = section.querySelector('.carousel');
+      lectures.forEach(lecture => {
+        carousel.appendChild(createVideoCard(lecture));
+      });
+      
+      container.appendChild(section);
+    }
+    
+    // Render all platform sections (for compatibility)
+    function renderPlatformSections() {
+      const container = document.getElementById('platformSections');
+      container.innerHTML = '';
+      
+      Object.keys(platformLectures).forEach(platform => {
+        renderPlatformSection(platform);
+      });
+    }
+
+    // Search functionality with auto-suggestions
+    const searchInput = document.getElementById('ottSearchInput');
+    const suggestionsDropdown = document.getElementById('suggestionsDropdown');
+    const searchResultsSection = document.getElementById('searchResultsSection');
+    const searchResultsGrid = document.getElementById('searchResultsGrid');
+    let searchTimeout;
+
+    searchInput.addEventListener('input', function(e) {
+      const query = e.target.value.trim();
+      
+      clearTimeout(searchTimeout);
+      
+      if (query.length < 2) {
+        suggestionsDropdown.classList.remove('active');
+        searchResultsSection.style.display = 'none';
+        document.getElementById('platformSections').style.display = 'block';
+        return;
+      }
+      
+      searchTimeout = setTimeout(() => {
+        showSuggestions(query);
+        // Also perform search automatically after debounce
+        if (query.length >= 2) {
+          performSearch(query);
+        }
+      }, 300);
+    });
+    
+    // Add Enter key handler
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        const query = e.target.value.trim();
+        suggestionsDropdown.classList.remove('active');
+        if (query.length >= 2) {
+          performSearch(query);
+        }
+      }
+    });
+
+    function showSuggestions(query) {
+      const lowerQuery = query.toLowerCase();
+      const words = lowerQuery.split(/\s+/).filter(w => w.length > 0);
+      const firstWord = words[0] || '';
+      
+      // Get matching titles with scores
+      const titleMatches = new Map();
+      
+      allLectures.forEach(lecture => {
+        const titleLower = lecture.title.toLowerCase();
+        const subjectLower = lecture.subject.toLowerCase();
+        
+        // Calculate relevance score
+        let score = 0;
+        
+        // Exact title match - highest score
+        if (titleLower === lowerQuery) {
+          score = 10000;
+        }
+        // Title starts with query - very high priority
+        else if (titleLower.startsWith(lowerQuery)) {
+          score = 5000;
+        }
+        // Subject starts with query
+        else if (subjectLower.startsWith(lowerQuery)) {
+          score = 2500;
+        }
+        // Title starts with first word (e.g., "g" matches "gastro...")
+        else if (titleLower.startsWith(firstWord)) {
+          score = 1000;
+        }
+        // Subject starts with first word
+        else if (subjectLower.startsWith(firstWord)) {
+          score = 800;
+        }
+        // Title contains complete query
+        else if (titleLower.includes(lowerQuery)) {
+          score = 100;
+        }
+        // Subject contains complete query
+        else if (subjectLower.includes(lowerQuery)) {
+          score = 80;
+        }
+        // All words present
+        else if (words.every(word => titleLower.includes(word) || subjectLower.includes(word))) {
+          score = 50;
+        }
+        // Some words present
+        else {
+          const matchingWords = words.filter(word => 
+            titleLower.includes(word) || subjectLower.includes(word)
+          ).length;
+          if (matchingWords > 0) {
+            score = matchingWords * 10;
+          }
+        }
+        
+        if (score > 0) {
+          if (!titleMatches.has(lecture.title) || titleMatches.get(lecture.title) < score) {
+            titleMatches.set(lecture.title, score);
+          }
+        }
+      });
+      
+      // Sort by score and get top suggestions
+      const suggestions = Array.from(titleMatches.entries())
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15)
+        .map(([title]) => title);
+      
+      if (suggestions.length === 0) {
+        suggestionsDropdown.classList.remove('active');
+        return;
+      }
+      
+      suggestionsDropdown.innerHTML = suggestions.map(title => `
+        <div class="suggestion-item" data-testid="suggestion-${title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}">${title}</div>
+      `).join('');
+      
+      suggestionsDropdown.classList.add('active');
+      
+      // Add click handlers
+      suggestionsDropdown.querySelectorAll('.suggestion-item').forEach(item => {
+        item.addEventListener('click', function() {
+          searchInput.value = this.textContent;
+          suggestionsDropdown.classList.remove('active');
+          performSearch(this.textContent);
+        });
+      });
+    }
+
+    function performSearch(query) {
+      const lowerQuery = query.toLowerCase();
+      const words = lowerQuery.split(/\s+/).filter(w => w.length > 0);
+      const firstWord = words[0] || '';
+      
+      // Find all matching lectures with relevance scores
+      const results = allLectures.map(lecture => {
+        const titleLower = lecture.title.toLowerCase();
+        const subjectLower = lecture.subject.toLowerCase();
+        const platformLower = lecture.platform.toLowerCase();
+        
+        let score = 0;
+        
+        // Perfect title match
+        if (titleLower === lowerQuery) {
+          score = 10000;
+        }
+        // Title starts with query - highest priority
+        else if (titleLower.startsWith(lowerQuery)) {
+          score = 5000;
+        }
+        // Subject exact match
+        else if (subjectLower === lowerQuery) {
+          score = 2500;
+        }
+        // Title starts with first word (e.g., "g" matches "gastro...")
+        else if (titleLower.startsWith(firstWord)) {
+          score = 1000;
+        }
+        // Subject starts with first word
+        else if (subjectLower.startsWith(firstWord)) {
+          score = 800;
+        }
+        // Title contains full query
+        else if (titleLower.includes(lowerQuery)) {
+          score = 100;
+        }
+        // Subject contains query
+        else if (subjectLower.includes(lowerQuery)) {
+          score = 80;
+        }
+        // Platform match
+        else if (platformLower.includes(lowerQuery)) {
+          score = 40;
+        }
+        // Multi-word matching
+        else if (words.length > 1) {
+          const matchingWords = words.filter(word => 
+            titleLower.includes(word) || subjectLower.includes(word)
+          ).length;
+          if (matchingWords === words.length) {
+            score = 50; // All words present
+          } else if (matchingWords > 0) {
+            score = matchingWords * 10; // Some words present
+          }
+        }
+        
+        return { lecture, score };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(item => item.lecture);
+      
+      displaySearchResults(results);
+    }
+
+    function displaySearchResults(results) {
+      // Hide platform sections when showing search results
+      document.getElementById('platformSections').style.display = 'none';
+      
+      // Show search results
+      searchResultsSection.style.display = 'block';
+      searchResultsGrid.innerHTML = '';
+      
+      if (results.length === 0) {
+        searchResultsGrid.innerHTML = '<p class="no-results">No lectures found</p>';
+        return;
+      }
+      
+      results.forEach(lecture => {
+        searchResultsGrid.appendChild(createVideoCard(lecture));
+      });
+    }
+
+    // Close suggestions when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.ott-search-container')) {
+        suggestionsDropdown.classList.remove('active');
+      }
+    });
+
+    // Open video (redirect to stream-player.html)
+    function openVideo(lecture) {
+      // Save to last watched
+      LocalStorageManager.addToLastWatched(lecture);
+      
+      if (!lecture.streamingUrl) {
+        alert('Video URL not available for this lecture');
+        return;
+      }
+      
+      // Redirect to stream-player.html with video data
+      const params = new URLSearchParams({
+        title: lecture.title,
+        url: lecture.streamingUrl,
+        subject: lecture.subject,
+        platform: lecture.platform
+      });
+      
+      // Add download URL if available
+      if (lecture.downloadUrl) {
+        params.append('download', lecture.downloadUrl);
+      }
+      
+      // Add Server 2 URLs if available (streamingUrlx and downloadUrlx)
+      if (lecture.streamingUrlx) {
+        params.append('streamx', lecture.streamingUrlx);
+      }
+      if (lecture.downloadUrlx) {
+        params.append('downloadx', lecture.downloadUrlx);
+      }
+      
+      window.location.href = `stream-player.html?${params.toString()}`;
+    }
+
+    // Make search icon clickable
+    document.getElementById('searchIcon').addEventListener('click', function() {
+      const query = searchInput.value.trim();
+      suggestionsDropdown.classList.remove('active');
+      if (query.length >= 2) {
+        performSearch(query);
+      } else if (query.length === 0) {
+        // If empty, show all platforms
+        searchResultsSection.style.display = 'none';
+        document.getElementById('platformSections').style.display = 'block';
+      }
+    });
+
+    // Initialize data on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadLectureData();
+    });
+  </script>
+<script src="../theme.js"></script>
+<nav class="bottom-nav">
+      <a href="../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+      <a href="../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+      <a href="../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+      <a href="../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    </nav>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

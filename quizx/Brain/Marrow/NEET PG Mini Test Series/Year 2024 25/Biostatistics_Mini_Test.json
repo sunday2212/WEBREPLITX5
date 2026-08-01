@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "title": "Biostatistics_Mini_Test"
+  },
+  "questions": [
+    {
+      "text": "If the systolic BP in a population has a mean of 130 mmHg and a median of 140 mmHg, the distribution is said to be:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negatively skewed"
+        },
+        {
+          "id": 2,
+          "text": "Positively skewed"
+        },
+        {
+          "id": 3,
+          "text": "Symmetrical"
+        },
+        {
+          "id": 4,
+          "text": "Either negatively or positively skewed depending upon the standard deviation"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>This is a negatively skewed distribution.</p>\n<p>In any skewed distribution (i.e., positive or negative), the median will always fall in between the mean and the mode.</p>\n<p>For a<strong> positively skewed distribution</strong>, the <strong>mean</strong> will always be the <strong>highest</strong> estimate of central tendency, and the <strong>mode</strong> will always be the<strong> lowest</strong> estimate of central tendency (assuming that the distribution has only one mode).</p>\n<p>For <strong>negatively skewed distributions</strong>, the <strong>mean</strong> will always be the <strong>lowest</strong> estimate of central tendency, and the<strong> mode</strong> will be the <strong>highest</strong> estimate of central tendency.</p>\n<p>In this scenario, the median is greater than the mean. As the median lies at a point in between the mean and the mode, this indicates a negatively skewed distribution.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA6393",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following tests of significance and data group for which it is used, is incorrectly paired?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ANOVA - test difference between 3 different groups"
+        },
+        {
+          "id": 2,
+          "text": "Student's t test - test difference between 2 independent groups"
+        },
+        {
+          "id": 3,
+          "text": "Chi square test - test difference between two quantitative variables"
+        },
+        {
+          "id": 4,
+          "text": "Paired t test - test before and after data"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Chi-square test is a nonparametric test that assesses the significance of association between two<strong> qualitative </strong>variables.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF5845",
+      "difficulty": "easy"
+    },
+    {
+      "text": "As an intern in the community medicine department , you are asked to study about the various graphical representation of data. What is the following graph best used for ?<br><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Calculate line of best fit "
+        },
+        {
+          "id": 2,
+          "text": "Survival time analysis "
+        },
+        {
+          "id": 3,
+          "text": "Correlating risk factors of a disease  "
+        },
+        {
+          "id": 4,
+          "text": "Studying the periodic trends of disease over time"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The graph depicted is a <strong>Kaplan-Meier plot,</strong> and the graph is used for <strong>survival time analysis</strong>.</p>\n<p>Survival time analysis includes the study of:</p>\n<ul>\n<li>What is the <strong>survival time </strong>of patients with a <strong>given disease</strong></li>\n<li>How does this survival time <strong>compare</strong> between <strong>two groups of patients</strong> given <strong>different treatments</strong> for the same disease</li>\n<li>Among those who survive up to a certain time, at what <strong>time </strong>or<strong> rate</strong> can they be <strong>expected to die</strong></li>\n<li>What factors, such as <strong>risk factors </strong>or<strong> treatments</strong>, affect the survival time</li>\n</ul>\n<p>Despite its name, survival analysis can be used to help answer questions of this kind about <strong>any</strong> <strong>kind of event</strong>,<strong> </strong>not just death—such as how long it takes before a hip replacement fails, how long it takes before a patient has a second heart attack, or how long it takes for coronary stents to become re-stenosed.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/abe0cb8530534f39821033e560e89347x1280x1438.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option A and C - Scatter diagrams <strong>correlate risk factors</strong> of a disease and present as a <strong>positive </strong>correlation, <strong>negative </strong>correlation, or <strong>no</strong> correlation. The <strong>line of best fit</strong> is used to express a relationship in a scatter plot of different data points as a <strong>straight line</strong> rather than multiple dots. It is an output of <strong>regression analysis</strong> and can be used as a prediction tool.</p>\n<p>Option D - <strong>Line diagram </strong>is used to study the <strong>periodic trends </strong>of a disease over time.</p><img src=\"https://cdn1.dailyrounds.org/uploads/d6aa028cd30946338ffa23d13698eb3a.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Graphical Representation of Data</h3><p>1.<strong> Histogram</strong></p>\n<ul>\n<li>A histogram, by definition, is a <strong>graphical representation </strong>of frequency distribution that contains rectangles and shows the underlying <strong>frequency</strong> of a set of <strong>continuous,</strong> <strong>quantitative data.</strong></li>\n<li>The <strong>X or horizontal axis</strong> is called the <strong>abscissa</strong> which usually has the group scores or class intervals of the variables/data and the <strong>Y or vertical axis</strong> is called the <strong>ordinate</strong> which usually shows the <strong>frequencies </strong>at which these variables appear.</li>\n<li>The following image shows a histogram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4a7878d951f54990a67a0c8de11a1bb7x563x438.PNG\" alt=\"Pearl Image\"><p>2. <strong>Bar Chart</strong></p>\n<ul>\n<li>It is also called a <strong>bar graph.</strong></li>\n<li>It is used mainly for <strong>nominal or ordinal scale data</strong> as they are not quantitative and usually <strong>qualitative</strong>.</li>\n<li>The difference between a bar graph and a histogram is that the rectangles are separated by spaces representing data that forms <strong>discrete categories</strong> instead of continuous groups.</li>\n<li>Bar graphs can be <strong>simple, multiple or component</strong> bar graphs.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8f58ed9550a74b54a669177f5cf4d95ex320x320.PNG\" alt=\"Pearl Image\"><p><strong>3. Pie Charts</strong></p>\n<ul>\n<li>Pie charts are also used for <strong>nominal or ordinal data.</strong></li>\n<li>The categorical data are represented as <strong>segments of a circle.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/50e3eef6a816413fa1848c834d7bad36x556x516.JPEG\" alt=\"Pearl Image\"><p><strong>4. Frequency polygons</strong></p>\n<ul>\n<li>Frequency polygons are used for mainly ratio and interval scale data.</li>\n<li>In a frequency polygon, the mid-points of each class interval are joined together by straight lines.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/094f9b92f79940e4a3f57c4f9a732b58x590x424.PNG\" alt=\"Pearl Image\"><p><strong>5. Ogive</strong></p>\n<ul>\n<li>A frequency polygon which is drawn to represent cumulative frequency distributions form a typical S-shaped curve which is called an ogive. It referred to as a cumulative frequency diagram.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5444b851ed95409bb25a180767a73d91x1280x740.PNG\" alt=\"Pearl Image\"><p><strong>6. Line chart</strong></p>\n<ul>\n<li>It is also called a <strong>line diagram or line graph.</strong></li>\n<li>Its best use is to show the <strong>trend of events</strong> or <strong>change over passage of time</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/515d36ccf06c4781960d8bc846ce5063x412x430.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d02246edf1784b01a26c032aa7edb25b.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG2808",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the plots with the maximum interquartile range and the least median respectively.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2, 3"
+        },
+        {
+          "id": 2,
+          "text": "1, 2"
+        },
+        {
+          "id": 3,
+          "text": "3, 4"
+        },
+        {
+          "id": 4,
+          "text": "4, 1"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The graph shown is a boxplot where Plot 1 has the maximum interquartile range and Plot 2 has the least median.</p>\n<p>A <strong>b</strong><strong>oxplot</strong> is a method for graphically depicting groups of numerical data through their quartiles. Box plots may also have lines extending vertically from the boxes (whiskers), indicating variability outside the upper and lower quartiles, hence the terms <strong>box-and-whisker plot. </strong></p>\n<p>It shows the five-number summary of a set of data as shown below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ae47617f3ad445079ab98f54a215a138x1279x1345.JPEG\" alt=\"Explanation Image\"><p>In the box plot, a simple box extends from the 25th percentile (lower limit of the box) to the 75th percentile (upper limit of the box) and represents the <strong>interquartile range</strong>. The interquartile range is maximum in Plot 1 and least in Plot 4. The line through the box indicates the <strong>median value </strong>(50th percentile). The median is highest in Plot 3 and least in Plot 2.</p>\n<p><strong>Interpreting</strong> the box plot:</p>\n<ul>\n<li>When the median is in the middle of the box and the whiskers are about the same on both sides of the box, i.e when each quartile is of the same length, then the distribution is <strong>symmetric or normal</strong> (as shown in <strong>box plot-1</strong>)</li>\n<li>When the median is closer to the bottom of the box, and if the whisker is shorter on the lower end of the box, then the distribution is <strong>positively skewed </strong>(<strong>skewed right</strong>, as shown in <strong>box plot-2</strong>)</li>\n<li>When the median is closer to the top of the box, and if the whisker is shorter on the upper end of the box, then the distribution is <strong>negatively skewed </strong>(<strong>skewed left, </strong>as shown in <strong>box plot-3</strong>)</li>\n<li><strong>Small circles</strong> or unfilled dots are drawn on the chart to indicate where suspected <strong>outliers</strong> lie. Filled circles are used for known outliers (as shown in <strong>box plot-4)</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e3b7494c46a54f7985be235269bf7681x1280x1233.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Box and Whisker Plot</h3><ul>\n<li>A box and whisker plot is used to show <strong>variation in a set of data</strong>.</li>\n<li>They can summarize data from various sources and display it in a single graph.</li>\n<li>A box and whisker plot is usually based on <strong>median, quartiles and percentiles</strong>.</li>\n<li>It is also called a <strong>box plot.</strong></li>\n<li>In the box plot as shown in the image, a simple box is divided into two by the <strong>median value</strong>. Above and below it are the <strong>whiskers</strong>. The top and bottom ends of the whiskers are the <strong>highest and lowest value of that group</strong>.&nbsp;</li>\n</ul><ul>\n<li>A box plot can help in identifying <strong>outliers</strong> and the <strong>interquartile range (IQR), </strong>as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/557efa950e5f407ca148010054728d60x314x146.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6ac3bd5123aa44c4a9491f928faaf64e.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF9436",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The results of a meta-analysis of studies comparing a novel drug for diabetes to a reference drug are given below. Which of the following conclusions can be drawn from it?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Study E has the lowest sample size."
+        },
+        {
+          "id": 2,
+          "text": "Studies A and C are statistically significant."
+        },
+        {
+          "id": 3,
+          "text": "The novel drug is better than the reference drug."
+        },
+        {
+          "id": 4,
+          "text": "Studies D and E cross the line of no effect."
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shown is that of a <strong>forest plot</strong>. It is used for plotting the results of a <strong>meta-analysis. </strong>Since the <strong>diamond </strong>at the bottom, which represents the<strong> overall pooled results</strong> of all the studies, corresponds to<strong> </strong>a <strong>risk ratio of 2.2</strong>, it indicates that the <strong>novel drug </strong>is<strong> better </strong>than the reference drug.</p>\n<p>In the plot for each study, the<strong> size </strong>of the<strong> rectangle</strong> represents<strong> </strong>the <strong>sample size</strong>. In this case, study 'E' has the largest sample size (option A). The<strong> horizontal line on either side </strong>of the rectangle <strong>represents </strong>the <strong>95% confidence interval </strong>for that study.</p>\n<p>The solid <strong>vertical line</strong> that corresponds to the <strong>odds ratio</strong> of <strong>1</strong> is called the<strong> line of no effect</strong>. It <strong>indicates</strong> that there is <strong>no significant difference</strong> between the reference and the novel drug. Any<strong> </strong>study line that <strong>crosses</strong> the line of no effect becomes an<strong> insignificant study</strong>. So studies A, B, and C are statistically insignificant (option B).</p>\n<p>The dotted vertical line in the center represents the <strong>aggregate risk ratio</strong> and is not the line of no effect. Studies D and E do not cross the line of no effect (option D).</p><hr><h3>Related Pearl: Forest Plot</h3><ul>\n<li>A <strong>forest plot</strong> is used to present the results of a <strong>meta-analysis.</strong></li>\n<li>It is also called <strong>blobbogram.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/01f09b9b2dbb44fc90c6a6bb84df981ax1125x727.PNG\" alt=\"Pearl Image\"><p>Interpretation of forest plots:&nbsp;</p>\n<ul>\n<li aria-level=\"1\">The <strong>rectangles</strong> represent the single studies</li>\n<li aria-level=\"1\">The <strong>size of the rectangle</strong> is proportional to the sample size</li>\n<li aria-level=\"1\">The <strong>horizontal line on either side</strong> - confidence interval, the longer the lines, the wider the confidential interval, the less reliable the study results</li>\n<li aria-level=\"1\">The <strong>vertical solid line</strong> - the &ldquo;line of no effect\", which represents the odds ratio or relative risk. If it is the odds ratio, then the vertical line would be at 1. No difference between the intervention and the placebo (i.e., <strong>a risk ratio of 1</strong>).&nbsp;</li>\n<li aria-level=\"1\">The <strong>location of the result</strong> - whether it favours the intervention (the statin drug) or not</li>\n<li aria-level=\"1\">A <strong>diamond</strong> shows the overall pooled result where all the individual studies are combined together and averaged</li>\n<li aria-level=\"1\"><strong>Lateral corners</strong> of the diamond represent the confidence interval, if these corners do not cross 'the line of no effect', then there is an overall statistically significant effect. If the diamond touches the vertical line, the overall result is not statistically significant.</li>\n<li>The <strong>vertical dashed line</strong> represents the <strong>overall pooled estimate</strong> which represents the <strong>meta-analysed measure of effect</strong>.</li>\n</ul>\n<p>Let's understand with an example -&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5b5dee4fbd514313a94da59b6f5366a4x1280x1200.JPEG\" alt=\"Pearl Image\"><ul>\n<li aria-level=\"1\">For <strong>study A</strong>- it has a wide horizontal line that crosses the line of null effect with a black box that is to the right of the vertical line. This most likely demonstrates a small scale study with few participants where the point estimate result favours the control used in the study. But because the study contains the null value in its 95% confidence interval, it is likely to have a p-value &gt;0.05 and not be statistically significant.</li>\n<li aria-level=\"1\">For <strong>study B</strong>- it has quite a narrow line that does not cross the line of null effect with a black box that is to the left of the vertical line and is bigger than study A. This most likely demonstrates a larger study with more participants compared to study A, where the result favours the intervention used. Because the 95% confidence interval does not contain the null value, this study is likely to have a p-value &lt;0.05 and hence the differences observed in the study can be regarded as statistically significant.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/80aef7ea46774a89a4d2677f218bb4da.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG0005",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A chi-square test contingency table has 5 rows and 4 columns. What would be the degree of freedom in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "9"
+        },
+        {
+          "id": 2,
+          "text": "12"
+        },
+        {
+          "id": 3,
+          "text": "16"
+        },
+        {
+          "id": 4,
+          "text": "20"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The degrees of freedom in this case would be <strong>12.</strong></p>\n<p>A chi-square <strong>contingency table</strong> has one variable in rows and another in columns. In such cases, the <strong>degrees of freedom (df) = (r-1) (c-1)</strong>, where <strong>r </strong>is the<strong> number of rows</strong> and <strong>c </strong>is the<strong> number of columns</strong>.</p>\n<p>As the above contingency table has <strong>5 rows</strong> and <strong>4 columns</strong>, the degree of freedom in this case is given as:</p>\n<p>df = (5 – 1) (4 – 1) = 12</p>\n<p>The degree of freedom is an expression of sample size for t tables. df is given as<strong> n-1</strong>, where n refers to the sample size.</p><hr><h3>Related Pearl: Degrees of Freedom</h3><ul>\n<li>In general, <strong>degrees of freedom</strong> (<strong>df</strong>) is equal to the <strong>number of values minus the numbers of parameters estimated</strong> on the way to the obtaining a particular estimate. For example, if we want to estimate the variance between the heights of two people A and B, we would use the values of 2 heights to estimate 1 parameter. Thus, the degrees of freedom in this case would be 2 &ndash; 1 = 1.</li>\n<li>For a Chi-square contingency table, the <strong>df = (r-1) (c-1)</strong>, where <strong>r </strong>is the <strong>number of rows</strong> and <strong>c</strong> is the <strong>number of columns</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2767",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A standard normal distribution is a normal distribution with:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean of 1 and a standard deviation of 0"
+        },
+        {
+          "id": 2,
+          "text": "Mean of 0 and a standard deviation of 1"
+        },
+        {
+          "id": 3,
+          "text": "Area under the curve = 100"
+        },
+        {
+          "id": 4,
+          "text": "Area under the curve = 0"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>A standard normal distribution is a normal distribution with a <strong>mean of 0 </strong>and a<strong> standard deviation of 1.</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC8920",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A narrow confidence interval corresponds to all of the following, except _________.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Larger standard error"
+        },
+        {
+          "id": 2,
+          "text": "Large sample size"
+        },
+        {
+          "id": 3,
+          "text": "Decreased variability in the sample"
+        },
+        {
+          "id": 4,
+          "text": "More precision"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>A <strong>narrow confidence interval</strong> corresponds to a <strong>smaller standard error</strong> and not a larger standard error. </p>\n<p>Confidence interval = Mean <strong>± </strong>2 standard error. Therefore, a smaller standard error results in a narrower confidence interval.</p>\n<p>Research is usually done with samples drawn from a population rather than by using the entire population. In order to get a fair idea of the population parameters, sample statistics and estimates of error in the sample are used to get a range of values. This range is the <strong>confidence interval (CI)</strong>. It is estimated based on a desirable confidence level.</p>\n<p>The<strong> confidence interval</strong> is calculated as the <strong>difference </strong>between<strong> upper </strong>and <strong>lower confidence limits. </strong></p>\n<p>The width of the CI is an indication of the utility of our population parameter estimation. Factors affecting the width of the confidence interval include:</p>\n<ul>\n<li>Desired confidence level: the width of the CI is directly proportional to the confidence level</li>\n<li><strong>Variability</strong> in the sample: the width of the CI is <strong>directly proportional</strong> to the variability in the data </li>\n<li><strong>Sample size:</strong> the width of the CI is <strong>inversely</strong> related to the sample size</li>\n</ul>\n<p>Therefore, <strong>increases</strong> in <strong>variability</strong> and <strong>confidence levels </strong>and<strong> decreases in sample size</strong> lead to <strong>wider confidence intervals.</strong> </p>\n<p><strong>Standard error</strong> = SD/√ n, where SD is the standard deviation and n is the sample size. The standard error will reduce when the sample size is increased. Thus, the confidence interval will decrease in proportion to the square root of the sample size. </p>\n<p class=\"p1\"><strong>Precision</strong> is the degree to which a particular value (such as an estimate of a population mean) is immune from random variation. A <strong>narrow confidence interval</strong> indicates <strong>more precision,</strong> while a wider confidence interval indicates less precision.</p><hr><h3>Related Pearl: Confidence Limits and Interval</h3><p><strong>Confidence limits</strong> are the upper and lower limits of standard errors within which a parameter value is expected to lie.</p>\n<p>Generally, 95% confidence limits are used and they are approximately equal to the sample mean plus or minus two standard errors, i.e., <strong>95% confidence limits =</strong> <strong>Sample mean</strong> <strong>(</strong><strong>x̄) &plusmn; 2 standard errors.</strong></p>\n<p>The <strong>general formula </strong>is <strong>confidence limits = x̄ &plusmn; z</strong><strong>&sigma; </strong><strong><sub>x̄</sub></strong><strong>.&nbsp;</strong></p>\n<ul>\n<li>Where z is 3 for 99.7% Cl</li>\n<li>z is 2 for 95% Cl</li>\n<li>z is 1 for 68% Cl</li>\n</ul>\n<p>The <strong>difference </strong>between<strong> upper</strong> and <strong>lower confidence limits </strong>is called the <strong>confidence interval.&nbsp;</strong>Since the standard error will decrease in proportion to the square root of the sample size, the<strong> width </strong>of the<strong> confidence interval </strong>will also <strong>decrease</strong> in <strong>proportion </strong>to the<strong> square root </strong>of the<strong> sample size.</strong></p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF7122",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a statistical analysis, the following scatter plot is obtained. What is the inference about the correlation coefficient according to the plot?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "There is a linear negative correlation with correlation coefficient equal to -1"
+        },
+        {
+          "id": 2,
+          "text": "There is a linear positive correlation with correlation coefficient equal to +1"
+        },
+        {
+          "id": 3,
+          "text": "There is a linear positive correlation with correlation coefficient equal to zero"
+        },
+        {
+          "id": 4,
+          "text": "There is a linear negative correlation with correlation coefficient equal to zero"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The above scatter plot shows a linear <strong>positive correlation</strong>, with the<strong> correlation coefficient</strong> +1 [rise in the value of (X) proportionately raises the value of (Y)]</p>\n<p>The correlation coefficient can be determined using the appearance of the scatter plot. In the given scatter plot, <strong>all the plotted points</strong> can fit a <strong>straight line</strong> perfectly. Hence the <strong>correlation coefficient is +1</strong>. Conversely, if it is <strong>not possible</strong> to draw a <strong>straight line</strong> that would fit the plotted points, the <strong>correlation coefficient</strong> would be <strong>zero</strong>.</p><hr><h3>Related Pearl: Correlation</h3><p><strong>Correlation</strong> expresses the <strong>strength</strong> and <strong>direction</strong> of the relationship between two variables in terms of a <strong>correlation coefficient</strong>. It is represented by&nbsp;<strong>r</strong>.</p>\n<ul>\n<li>Values of r vary from <strong>-1</strong> (perfect negative correlation) to <strong>+1</strong> (perfect positive correlation).</li>\n<li>Value (size) of the coefficient: Indicates the strength of relationship</li>\n<li>Sign of the coefficient: Indicates direction of relationship</li>\n</ul>\n<p>Coefficients between &plusmn;0.5 and 1 are regarded as strong whereas those between &plusmn;0.5 and 0 are regarded as weak.</p>\n<p>The data is plotted in a <strong>scattergram</strong> as shown in the examples given below</p>\n<p>Examples:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/333f39128051444e8f62260f161639ebx1280x2998.JPEG\" alt=\"Pearl Image\"><p><strong>Types of correlation coefficients</strong></p>\n<ol>\n<li>Pearson coefficient</li>\n<li>Spearman coefficient</li>\n</ol><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/69ce1962b6b64f638b91fe579a829ac4x1280x1675.JPEG\" alt=\"Pearl Image\"><p><strong>Coefficient of Determination (CD) =&nbsp;&nbsp;r<sup>2</sup></strong></p>\n<p>It is simply the percentage variability in one factor due to change in another variable.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/623c895c038d4aa4be82e7bf5e847b9f.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6162",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following sampling technique is depicted in the image below:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Simple random sampling"
+        },
+        {
+          "id": 2,
+          "text": "Stratified random sampling"
+        },
+        {
+          "id": 3,
+          "text": "Snowball sampling"
+        },
+        {
+          "id": 4,
+          "text": "Cluster sampling"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The above image depicts the technique of stratified random sampling. A <strong>stratified random sample</strong> is obtained by:</p>\n<ol>\n<li><strong>Separating the population</strong> into non-overlapping groups called strata</li>\n<li>Then obtaining a<strong> proportional simple random sample</strong> from each group</li>\n<li>The individuals within each group should be similar in some way</li>\n</ol>\n<p>This method of sampling avoids bias for being discriminatory for a particular group.</p>\n<p>Option A) <strong>Simple random sampling:</strong> Sample drawn in such a way that every element in the population has an equal probability of being included.</p>\n<p>Option C) <strong>Snowball sampling:</strong> This method is used when the population cannot be located in a specific place, and therefore, it is difficult to access this population.</p>\n<p>Option D) <strong>Cluster sampling:</strong> This method is used when creating a sampling frame is nearly impossible due to the large size of the population. In this approach, the population is divided into clusters based on geographic location. A list of all clusters is created, and investigators randomly select a number of clusters to be included. Next, they list all individuals within these selected clusters and conduct another round of random selection to obtain a final random sample, similar to simple random sampling. This method is called multistage sampling because the selection process occurs in two stages: first, the selection of eligible clusters, and second, the selection of individuals from within those clusters.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/fcb62416c35f4362b1694ff4137708bd.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA8385",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following statistical tests will you use to compare the C-reactive protein (CRP) levels in 3 patient groups treated with different drugs: remdesivir (Group 1), hydroxychloroquine (Group 2), and systemic steroids (Group 3)?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Unpaired t-test"
+        },
+        {
+          "id": 2,
+          "text": "Paired t-test"
+        },
+        {
+          "id": 3,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>An analysis of variance test (<strong>ANOVA)</strong> is used to compare the means among <strong>three or more groups</strong>. </p>\n<p>The <em>t</em>-test and analysis of variance (ANOVA) are statistical methods used in the testing of hypotheses for the comparison between the means of groups.</p>\n<p>The independent <em>t</em> test, also called the <strong>unpaired <em>t-</em>test</strong>, is a statistical test that determines whether there is a statistically significant difference between the means in two unrelated (independent) groups. A comparison between BMI in males and in females of a population is an example of a case where an unpaired <em>t</em>-test is used.</p>\n<p>The <strong>paired <em>t</em>-test</strong> compares paired data, or pre-intervention and post-intervention data, of the same group. If a study were to compare BP in a group of patients before and after treatment, then a paired t-test would be used.</p>\n<p><strong>Chi-Square test (χ<sup>2</sup>)</strong> is a <strong>non-parametric (non-numeric) test, </strong>and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data. </strong>In the given study,<strong> </strong>if CRP levels in each group were categorized as high and low and the three groups were then compared, then the chi-square test would be used.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF7797",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Hemoglobin (Hb) levels were measured in 200 pregnant women and a mean value of 10.5 g/dL was obtained with a standard deviation of 0.5 g/dL. Assuming a normal distribution, what is the percentage of the study population with Hb <10g/dL?<br><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "32%"
+        },
+        {
+          "id": 2,
+          "text": "16%"
+        },
+        {
+          "id": 3,
+          "text": "68%"
+        },
+        {
+          "id": 4,
+          "text": "95%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>16% </strong>of the study population would have a <strong>Hb &lt;10 g/dL.</strong></p>\n<p>Assuming a normal distribution, if the mean is 10.5 g/dL, <strong>68%</strong> of the study population would have an <strong>Hb between 10-11 g/dL</strong>, being within <strong>1 standard deviation. </strong></p>\n<p>This means that, of the remaining population of <strong>32% (100-68=32) </strong>falling outside 1 standard deviation, half of them, i.e., ½ of 32% = <strong>16%, </strong>would have a <strong>Hb &lt;10 g/dL</strong> and <strong>16% </strong>would have a <strong>Hb &gt;11 g/dL.</strong></p>\n<p>In a normal distribution, the distribution of values around the mean is as follows:</p>\n<ul>\n<li>68% of the distribution falls within <strong>±1 SD</strong> of the mean</li>\n<li>95% of the distribution falls within <strong>±2 SD</strong> of the mean</li>\n<li>99.7% of the distribution falls within <strong>±3 SD</strong> of the mean</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3fa0722f02234f549d26688e42a86a5bx1280x1219.JPEG\" alt=\"Explanation Image\"><p>Other Options:</p>\n<p>Option A: 32%<strong> </strong>of the population would represent all those falling <strong>outside 1 standard deviation</strong> of the mean value of 10.5, i.e., the group that has a<strong> Hb&lt;10 g/dL </strong>and<strong> Hb&gt;11 g/dL.</strong></p>\n<p>Option C: 68% of the population would represent all those falling <strong>within 1 standard deviation </strong>of the mean value of 10.5, i.e., the group that has a <strong>Hb&gt;10 g/dL </strong>and<strong> Hb&lt;11 g/dL.</strong></p>\n<p>Option D: 95% of the population would represent all those falling <strong>within 2 standard deviations</strong> of the mean value of 10.5, i.e., the group that has a<strong> Hb &lt; 9.5 g/dL </strong>and<strong> Hb&gt;10.5 g/dL.</strong></p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1329",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following leads to an increase in the power of a statistical test?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Increasing sampling error"
+        },
+        {
+          "id": 2,
+          "text": "Increasing beta"
+        },
+        {
+          "id": 3,
+          "text": "Decreasing alpha"
+        },
+        {
+          "id": 4,
+          "text": "Increasing sample size"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Increasing</strong> the <strong>sample size</strong> will<strong> increase</strong> the <strong>power</strong> of a study. In fact, increasing the sample size is the most practical and most <strong>important</strong> way of increasing the power of a study.</p>\n<p>Other factors that increase the power of a study are:</p>\n<ul>\n<li>Increasing <strong>alpha</strong></li>\n<li>Decreasing <strong>beta</strong></li>\n<li>Decreasing <strong>sampling error</strong></li>\n<li>Increasing<strong> effect size </strong>(increase in difference between sample mean and hypothesized population mean)</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD1471",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following concepts in the hypothesis testing is incorrect?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Alpha is the maximum tolerable probability of a type 1 error being made"
+        },
+        {
+          "id": 2,
+          "text": "Beta is the probability of a type II error"
+        },
+        {
+          "id": 3,
+          "text": "When the null hypothesis is true but rejected, it is a type II error"
+        },
+        {
+          "id": 4,
+          "text": "P value can be more or less than alpha"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>When the null hypothesis is true but is yet rejected, it is a <strong>type I error</strong>.</p>\n<p><strong>Type II errors</strong> are when an <strong>alternative hypothesis </strong>is<strong> rejected </strong>even though it is<strong> true</strong>.</p><hr><h3>Related Pearl: Concepts in Hypothesis Testing</h3><p><strong>Probability value (</strong><em>p</em><strong> value)</strong></p>\n<ul>\n<li>A&nbsp;<strong>probability value</strong>&nbsp;is the&nbsp;<strong>probability of an outcome given the hypothesis</strong>.</li>\n<li>It is not the probability of the hypothesis given the outcome, although the probability of the given hypothesis is not ignored.</li>\n<li>If the&nbsp;<strong>probability of an outcome is sufficiently low</strong>, we have&nbsp;<strong>evidence that the hypothesis is false</strong>.</li>\n<li>It is also called the&nbsp;<em>p</em><strong> value</strong>.</li>\n</ul>\n<p><strong>The Null Hypothesis and Alternative Hypothesis</strong></p>\n<ul>\n<li>The <strong>hypothesis that an apparent effect or outcome is only due to chance is a null hypothesis</strong>.</li>\n<li>In other words, a null hypothesis is one where there is <strong>no difference between the specified sample and population</strong> and any observed difference is due to chance or some other error.</li>\n<li>A null hypothesis is represented by <strong>H<sub>0</sub></strong>.</li>\n<li>If the <strong>null hypothesis</strong> is <strong>rejected</strong> as false, then there is an <strong>alternative</strong> or <strong>experimental hypothesis (H<sub>A</sub>)</strong>, which is logically accepted.</li>\n</ul>\n<p><strong>Criterion or Significance Level</strong> <strong>(&alpha;) </strong></p>\n<ul>\n<li>If the probability value of an outcome is sufficiently low, then the null hypothesis is rejected.</li>\n<li>This <strong>point below which we would define the probability value as being low enough</strong> to reject the null hypothesis is called the <strong>criterion</strong> or <strong>significance level </strong>or<strong> &alpha; (alpha) level</strong>.</li>\n<li>When the null hypothesis is rejected, the effect or outcome is said to be <strong>statistically significant</strong>.</li>\n<li>By <strong>convention</strong> (but not always), the <strong>level of &alpha; is 0.05</strong>, i.e., if the probability value of an outcome is <strong>less than or equal to 0.05 (</strong><em>p</em><strong> value &le; 0.05)</strong>, then the null hypothesis is <strong>rejected</strong>.</li>\n<li>If it is <strong>greater than 0.05</strong>, then the null hypothesis is <strong>accepted</strong>.</li>\n<li>Although by convention the level of <strong>&alpha; is 0.05</strong>, it can be lower but cannot be any higher.</li>\n</ul>\n<p><strong>Type I Error</strong></p>\n<ul>\n<li>The interpretation of <strong><em>p</em> value &le; 0.05 </strong>is that an investigator can be 95% sure that the result was not obtained by chance.</li>\n<li>It also means that there is a 5% probability that the result was obtained by chance.</li>\n<li>From this, we can deduce that the <strong>null hypothesis might indeed be true even though we rejected it</strong>.</li>\n<li>This is <strong>a type I error</strong>. In other words, <strong>when an alternative hypothesis is accepted even when it is false and the null hypothesis is true</strong>, it is a <strong>type I error</strong> or <strong>false positive error</strong>.</li>\n<li>It is also called an <strong>alpha (&alpha;) error</strong> as it is <strong>related to the criterion &alpha;</strong>.</li>\n<li>The <strong>lower the &alpha; level</strong>, the <strong>lower the rate of a type I error</strong> being made.</li>\n<li>Thus, it can be said that <strong>&alpha; is the maximum tolerable probability that a type I error is being made</strong> and that the <strong>p value is the probability that a significant difference is declared when there is none</strong>.</li>\n</ul>\n<p><strong>Type II Error</strong></p>\n<ul>\n<li>The error that is made by <strong>rejecting an alternative hypothesis when it is true</strong> or <strong>failing to reject a null hypothesis when it is false</strong> is called a <strong>type II error</strong>.</li>\n<li>It is also called a <strong>false negative error </strong>and more commonly, as a <strong>beta (&beta;) error</strong>.</li>\n<li>If the null hypothesis is false, then the <strong>probability of a type II error</strong> is <strong>&beta;</strong>.</li>\n<li>The <strong>power of a statistical test</strong> is indicated by <strong>1&ndash;&beta;.</strong></li>\n</ul>\n<p><strong>Power of a Test</strong></p>\n<ul>\n<li>The <strong>power of a test</strong> is the <strong>ability</strong> of a statistical test to <strong>avoid a type II error</strong>, which depends on its <strong>ability to detect a false null hypothesis</strong>.</li>\n<li>It is <strong>equal to 1&ndash;&beta;</strong>, which is the <strong>probability that a false null hypothesis will be rejected</strong>.</li>\n<li>By <strong>convention</strong>, a test is required to have a <strong>power of 0.8</strong> (or a <strong>&beta; of 0.2</strong>) to be <strong>acceptable</strong>. This is to say that a study that has less than 80% chance of detecting a false null hypothesis is unacceptable.</li>\n<li><strong>Type I errors are easily reduced by reducing the criterion &alpha;</strong>.</li>\n<li>A <strong>test's power will increase</strong> in the following conditions:\n<ul>\n<li>If <strong>&alpha; increases</strong>, but this will increase the chance of a type I error.</li>\n<li>If the <strong>difference between </strong>the <strong>sample mean </strong>and<strong> hypothesized mean increases</strong>. This is also called <strong>effect size</strong>.</li>\n<li>If <strong>sampling error decreases</strong>.</li>\n<li>If the <strong>sample size (n) increases</strong>.</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9470",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study on mood stabilizers shows that a new drug X works faster to stabilize mood than the standard drug Y. The results are statistically significant. The study is carried out 100 different times and shows such significant differences 95 times. Which of the following accurately characterizes the probability of not detecting a correlation between X and Y in this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5%"
+        },
+        {
+          "id": 2,
+          "text": "95%"
+        },
+        {
+          "id": 3,
+          "text": "80%"
+        },
+        {
+          "id": 4,
+          "text": "10%"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The likelihood of not detecting a correlation between X and Y is nothing but a <strong>type II error</strong> or a <strong>beta</strong> <strong>error</strong> which is 5%.</p>\n<p>A<strong> type II error</strong> is the probability of <strong>rejecting</strong> the <strong>alternate</strong> hypothesis when it is <strong>true</strong>. It is also known as a <strong>beta</strong> <strong>error</strong>.</p>\n<p>In this case, it is the chance of saying the experimental <strong>drug does not work</strong> better than the standard drug, <strong>while it does</strong>. This happened in 5/100 studies, hence the likelihood of a type II error (beta) is 5%.</p>\n<p>Note: <strong>Power = 1- beta. </strong>Here, the power of the study is 95%.</p><hr><h3>Related Pearl: Concepts in Hypothesis Testing</h3><p><strong>Probability value (</strong><em>p</em><strong> value)</strong></p>\n<ul>\n<li>A&nbsp;<strong>probability value</strong>&nbsp;is the&nbsp;<strong>probability of an outcome given the hypothesis</strong>.</li>\n<li>It is not the probability of the hypothesis given the outcome, although the probability of the given hypothesis is not ignored.</li>\n<li>If the&nbsp;<strong>probability of an outcome is sufficiently low</strong>, we have&nbsp;<strong>evidence that the hypothesis is false</strong>.</li>\n<li>It is also called the&nbsp;<em>p</em><strong> value</strong>.</li>\n</ul>\n<p><strong>The Null Hypothesis and Alternative Hypothesis</strong></p>\n<ul>\n<li>The <strong>hypothesis that an apparent effect or outcome is only due to chance is a null hypothesis</strong>.</li>\n<li>In other words, a null hypothesis is one where there is <strong>no difference between the specified sample and population</strong> and any observed difference is due to chance or some other error.</li>\n<li>A null hypothesis is represented by <strong>H<sub>0</sub></strong>.</li>\n<li>If the <strong>null hypothesis</strong> is <strong>rejected</strong> as false, then there is an <strong>alternative</strong> or <strong>experimental hypothesis (H<sub>A</sub>)</strong>, which is logically accepted.</li>\n</ul>\n<p><strong>Criterion or Significance Level</strong> <strong>(&alpha;) </strong></p>\n<ul>\n<li>If the probability value of an outcome is sufficiently low, then the null hypothesis is rejected.</li>\n<li>This <strong>point below which we would define the probability value as being low enough</strong> to reject the null hypothesis is called the <strong>criterion</strong> or <strong>significance level </strong>or<strong> &alpha; (alpha) level</strong>.</li>\n<li>When the null hypothesis is rejected, the effect or outcome is said to be <strong>statistically significant</strong>.</li>\n<li>By <strong>convention</strong> (but not always), the <strong>level of &alpha; is 0.05</strong>, i.e., if the probability value of an outcome is <strong>less than or equal to 0.05 (</strong><em>p</em><strong> value &le; 0.05)</strong>, then the null hypothesis is <strong>rejected</strong>.</li>\n<li>If it is <strong>greater than 0.05</strong>, then the null hypothesis is <strong>accepted</strong>.</li>\n<li>Although by convention the level of <strong>&alpha; is 0.05</strong>, it can be lower but cannot be any higher.</li>\n</ul>\n<p><strong>Type I Error</strong></p>\n<ul>\n<li>The interpretation of <strong><em>p</em> value &le; 0.05 </strong>is that an investigator can be 95% sure that the result was not obtained by chance.</li>\n<li>It also means that there is a 5% probability that the result was obtained by chance.</li>\n<li>From this, we can deduce that the <strong>null hypothesis might indeed be true even though we rejected it</strong>.</li>\n<li>This is <strong>a type I error</strong>. In other words, <strong>when an alternative hypothesis is accepted even when it is false and the null hypothesis is true</strong>, it is a <strong>type I error</strong> or <strong>false positive error</strong>.</li>\n<li>It is also called an <strong>alpha (&alpha;) error</strong> as it is <strong>related to the criterion &alpha;</strong>.</li>\n<li>The <strong>lower the &alpha; level</strong>, the <strong>lower the rate of a type I error</strong> being made.</li>\n<li>Thus, it can be said that <strong>&alpha; is the maximum tolerable probability that a type I error is being made</strong> and that the <strong>p value is the probability that a significant difference is declared when there is none</strong>.</li>\n</ul>\n<p><strong>Type II Error</strong></p>\n<ul>\n<li>The error that is made by <strong>rejecting an alternative hypothesis when it is true</strong> or <strong>failing to reject a null hypothesis when it is false</strong> is called a <strong>type II error</strong>.</li>\n<li>It is also called a <strong>false negative error </strong>and more commonly, as a <strong>beta (&beta;) error</strong>.</li>\n<li>If the null hypothesis is false, then the <strong>probability of a type II error</strong> is <strong>&beta;</strong>.</li>\n<li>The <strong>power of a statistical test</strong> is indicated by <strong>1&ndash;&beta;.</strong></li>\n</ul>\n<p><strong>Power of a Test</strong></p>\n<ul>\n<li>The <strong>power of a test</strong> is the <strong>ability</strong> of a statistical test to <strong>avoid a type II error</strong>, which depends on its <strong>ability to detect a false null hypothesis</strong>.</li>\n<li>It is <strong>equal to 1&ndash;&beta;</strong>, which is the <strong>probability that a false null hypothesis will be rejected</strong>.</li>\n<li>By <strong>convention</strong>, a test is required to have a <strong>power of 0.8</strong> (or a <strong>&beta; of 0.2</strong>) to be <strong>acceptable</strong>. This is to say that a study that has less than 80% chance of detecting a false null hypothesis is unacceptable.</li>\n<li><strong>Type I errors are easily reduced by reducing the criterion &alpha;</strong>.</li>\n<li>A <strong>test's power will increase</strong> in the following conditions:\n<ul>\n<li>If <strong>&alpha; increases</strong>, but this will increase the chance of a type I error.</li>\n<li>If the <strong>difference between </strong>the <strong>sample mean </strong>and<strong> hypothesized mean increases</strong>. This is also called <strong>effect size</strong>.</li>\n<li>If <strong>sampling error decreases</strong>.</li>\n<li>If the <strong>sample size (n) increases</strong>.</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG1557",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study is conducted to assess the blood pressures of people in different cities. Sample sizes of different cities 1, 2, and 3 are 1000, 800, and 600 respectively.  Three normal distribution curves of different sample sizes of the three cities are given below in the image. The X-axis shows the standard deviation from the mean blood pressure. The order of margin of error will be ____________.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "3 >2>1"
+        },
+        {
+          "id": 2,
+          "text": "3>1>2"
+        },
+        {
+          "id": 3,
+          "text": "1>2>3"
+        },
+        {
+          "id": 4,
+          "text": "1=2=3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Curve 1 has the least margin of error, followed by curve 2 and then curve 3. So the order is<strong> 3&gt;2&gt;1.</strong></p>\n<p>The image shows three normal distribution curves of different sample sizes, having the same mean but different standard deviation.</p>\n<p>As the sample size is decreasing, the peak decreases and the curve becomes flatter, implying a <strong>wider confidence interval</strong> for the given mean.</p>\n<p>The <strong>margin of error</strong> is a statistic expressing the amount of random sampling error in the results of a survey. The larger the margin of error, the less confidence.</p>\n<p>The<strong> width of the base</strong> of the curve is <strong>directly proportional </strong>to the<strong> margin of error.</strong> </p>\n<ul>\n<li>Many data such as blood pressure, heights, IQ scores, etc., form a normal distribution</li>\n<li>A standard<strong> normal distribution</strong> is a normal distribution with a <strong>mean of 0</strong> and a <strong>standard deviation of 1</strong></li>\n</ul><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/fc3fa7fb17dd48dd9fe32c76f181ab57.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD8259",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is depicted in a tree diagram?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Possible outcomes of an event"
+        },
+        {
+          "id": 2,
+          "text": "Relationship between two quantitative variables"
+        },
+        {
+          "id": 3,
+          "text": "Trend of events"
+        },
+        {
+          "id": 4,
+          "text": "Overlapping events"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>A <strong>tree diagram</strong> is used mainly to chart the <strong>possible outcomes</strong> of a <strong>sample event</strong>.</p>\n<p>The following image shows the outline of a tree diagram.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8b7be39116a74ccf9e4523fb63e42d8cx600x518.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option B: <strong>Scatter plots</strong> are types of <strong>statistical maps</strong> that are used to study the <strong>relationship </strong>between<strong> two quantitative variables</strong>.</p>\n<p>Below is an example of a scatter diagram:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/02d7cf24c12a4f94b05a2167e02a2fc5x630x629.PNG\" alt=\"Explanation Image\"><p><br />Option C: A <strong>line diagram</strong> or <strong>line graph</strong> is used to show the <strong>trend of events</strong> or changes in the incidence of a disease in a given area over time.</p>\n<p>Option D: A <strong>Venn diagram</strong> is a circle-based illustration that depicts the <strong>relationships</strong> <strong>between things</strong> where overlapping circles share certain characteristics, while non-overlapping circles do not.</p>\n<p>Below is an example of a Venn diagram:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4241cc91948a405c882b51a0e59fbabfx1024x1024.PNG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MG2757",
+      "difficulty": "medium"
+    },
+    {
+      "text": "An epidemiologist is calculating the incubation period for measles in children aged 2 to 14 years. He was assigned a rural area with a sizeable portion of unvaccinated children and adolescents. He takes the sample size as 100. The median incubation period is 10 days, and the standard deviation he obtains is 4. What will be the standard error in this scenario?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.4"
+        },
+        {
+          "id": 2,
+          "text": "1.0"
+        },
+        {
+          "id": 3,
+          "text": "2.0"
+        },
+        {
+          "id": 4,
+          "text": "0.5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The formula for standard error is <strong>SE = standard deviation/ square root of sample size.</strong></p>\n<p>In this scenario, the standard error = 4/10 = <strong>0.4</strong>.</p><hr><h3>Related Pearl: The Standard Error and Related Aspects</h3><ol>\n<li><strong>Sampling Errors:&nbsp;</strong>They refer to <strong>natural, expected, random variations</strong> in the data. They are not errors per se. Hence, the mean of the sample always differs from the mean of the total population.&nbsp;<strong>For example</strong>, consider a population with a mean weight of 75. If we take a sample of 500 people from this population, the mean weight of this sample will not be exactly 75.</li>\n<li><strong>Random Sampling Distribution of Means</strong> (or Sampling Distribution):\n<ul>\n<li aria-level=\"1\">This refers to the distribution formed when <strong>all possible sample means from a population</strong> are plotted in a <strong>frequency distribution.</strong></li>\n<li aria-level=\"1\">Sampling distributions provide information into how <strong>different the samples are from each other and from the population mean.</strong></li>\n</ul>\n<strong>For example,</strong> the hemoglobin levels of 100 randomly selected women in a city are measured and their sample mean is calculated. This is done every day for a year with the same sample size but different women each time.&nbsp;<strong>If all the sample means</strong> of hemoglobin levels of all women are plotted on frequency distribution, the resulting distribution would be called the <strong>sampling distribution</strong>. It would resemble a <strong>normal distribution.</strong></li>\n<li><strong>Central Limit Theorem:&nbsp;</strong>According to this theorem, as the <strong>sample size increases:</strong>\n<ul>\n<li>The sampling distribution tends towards a <strong>normal distribution</strong> curve (bell curve)\n<ol>\n<li>Regardless of the population's actual distribution shape</li>\n<li>Assuming all samples are identical in size</li>\n</ol>\n</li>\n<li>The <strong>sample mean</strong> and standard deviations become <strong>closer</strong> to the <strong>population mean</strong> and standard deviations&nbsp;</li>\n</ul>\n</li>\n<li><strong>Standard Error of Mean</strong> (SE or &sigma; x̄ ):\n<ul>\n<li aria-level=\"1\">The standard error is a <strong>measure</strong> of the<strong> extent</strong> to which the <strong>sample means deviate</strong> from the true <strong>population mean</strong>. It is nothing but the standard deviation of the sampling distribution.</li>\n<ol>\n<li aria-level=\"2\">Sample means closer to the population mean lead to a lower SE and a narrower and thinner distribution curve&nbsp;</li>\n<li aria-level=\"2\">More variation in sample means leads to a higher SE and a broader curve&nbsp;</li>\n</ol>\n</ul>\nSE = Standard deviation / &radic;Sample size</li>\n</ol>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &sigma; x̄ = &sigma;/&radic;n</p>\n<p>Hence, <strong>SE</strong> is <strong>inversely related</strong> to <strong>&radic;sample size.&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD7797",
+      "difficulty": "easy"
+    },
+    {
+      "text": "An association between ordinal position on one ranking and ordinal position on another ranking can be determined by which of the following techniques?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 2,
+          "text": "Paired t-test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Spearman's rank-order correlation"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p class=\"p1\"><strong>Spearman's rank-order correlation </strong>is used to determine the <strong>association between</strong> <strong>ordinal</strong> <strong>position</strong> on one ranking and ordinal position on another ranking.</p>\n<p class=\"p1\">It is one of the two most commonly used correlation coefficients. It is used for <strong>ordinal scale data</strong>. The other one is <strong>Pearson product-moment correlation</strong>, which is used for <strong>interval or ratio scale data.</strong></p>\n<p>The <strong>Chi-Square test (χ<sup>2</sup>)</strong> is a non-parametric (non-numeric) test,<strong> </strong>and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></p>\n<ul>\n<li>It is a test of proportions and associations.</li>\n<li>A Chi-square distribution is usually<strong> positively skewed, </strong>but it approaches a normal distribution as its degrees of freedom increase.</li>\n<li>If the frequency of any of the cells of the categorical table is&lt;5, then <strong>Fisher’s exact test</strong> is used.</li>\n</ul>\n<p>A<strong> paired t-test</strong> compares paired data, or pre-intervention and post-intervention data, of the same group.</p>\n<p>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means), </strong>and here, the inferences are made by analyzing the variances.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF5504",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following variables is measured on the nominal scale?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "A, B, O blood groups"
+        },
+        {
+          "id": 2,
+          "text": "Glasgow coma scale"
+        },
+        {
+          "id": 3,
+          "text": "Intelligence quotient"
+        },
+        {
+          "id": 4,
+          "text": "Respiratory rate"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Among the given options, the <strong>A, B, O blood groups</strong> can be measured on a<strong> nominal</strong> scale.</p>\n<p>Data will always fall into one of the following four scales:</p>\n<ul>\n<li>Nominal</li>\n<li>Ordinal</li>\n<li>Interval</li>\n<li>Ratio</li>\n</ul>\n<p><strong>Nominal scale data</strong> can be divided into <strong>qualitative</strong> categories or groups. Examples include <strong>male/female</strong>, black/white, or red/green. No order or ratio from the data is implied. Nominal data that falls exclusively into two groups is known as <strong>dichotomous data</strong>. A, B, O blood groups can be clearly divided into qualitative groups and hence can be measured on a nominal scale.</p>\n<p><strong>Ordinal scale data</strong> holds meaning when it is placed in a <strong>particular order</strong>. An example is the ranking of students in a class. But, there is no information about the interval size. This means that the difference between the marks of the first and second students may or may not be the same as the difference between the second and third. An example is the <strong>Glasgow coma scale </strong>and <strong>Child-Pugh score</strong>.</p>\n<p><strong>Interval scale data</strong> is similar to ordinal data because it can be placed in a meaningful order. Additionally, they have meaningful <strong>intervals</strong> between the items, usually <strong>measurable quantities</strong>. For example, the difference between 100° and 90° is the same as that between 50° and 40° on the temperature scale. But these scales do not have absolute zeroes, which makes ratios between the items meaningless. </p>\n<p><strong>Ratio scale data</strong> have similar properties to interval scale data. In addition, they have an <strong>absolute zero</strong>. Most biomedical variables can be measured on a ratio scale. Examples are weight in pounds or grams, pulse rate in beats/minute, and blood pressure in millimeters of mercury. A pulse rate of 0 indicates a lack of pulse, and a rate of 120/minute is twice as fast as a rate of 60/minute. This means it is possible to calculate <strong>meaningful ratios</strong>. </p>\n<p>Other options:</p>\n<p>Option B: Glasgow coma scale can be measured on the <strong>ordinal</strong> scale.</p>\n<p>Option C: Intelligence quotient can be measured on the <strong>interval</strong> scale.</p>\n<p>Option D: Respiratory rate<strong> </strong>can be measured with the <strong>ratio</strong> scale.</p><hr><h3>Related Pearl: Scales of data measurement</h3><p>Data can be <strong>quantitative</strong> (numerical values) or <strong>qualitative</strong> (types, labels).</p>\n<p>Quantitative data can be <strong>discrete variables </strong>or<strong> continuous variables.</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>&nbsp;</strong></p>\n</td>\n<td>\n<p>Description</p>\n</td>\n<td>\n<p>Example</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Discrete data</strong></p>\n</td>\n<td>\n<p>Can take&nbsp;<strong>certain values and none in between</strong></p>\n</td>\n<td>\n<p>Number of cancer patients in a hospital.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Continuous data</strong></p>\n</td>\n<td>\n<p>Can <strong>take any value </strong>usually in between limits or a range.&nbsp;</p>\n</td>\n<td>\n<p>Most biomedical data is continuous.</p>\n<p>Height, weight, blood pressure, etc.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>Data always forms one of four <strong>scales of measurement</strong> &ndash; <strong>nominal, ordinal, interval, or ratio</strong> scales (mnemonic: <strong>NOIR):</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>&nbsp;</p>\n</td>\n<td>\n<p><strong>Nominal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ordinal Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Interval Scale Data</strong></p>\n</td>\n<td>\n<p><strong>Ratio Scale Data</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Example</p>\n</td>\n<td>\n<p>Male/female; red/green; sub-urban/rural</p>\n</td>\n<td>\n<p>Students ranked 1st/2nd/3rd in their class.&nbsp;</p>\n<p>A customer feedback survey using terms like very good, good, poor and very poor or the <strong>Likert Scale.</strong></p>\n<p>Severity of a disease as mild, moderate, severe</p>\n<p>&nbsp;</p>\n</td>\n<td>Measurements on the celsius scale.</td>\n<td>Pulse rate;&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Notes</p>\n</td>\n<td>\n<p>Have <strong>no quantitative value</strong>.</p>\n<p>They have no order or ratio.&nbsp;</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order.</strong></p>\n<p><strong>No size interval is defined</strong></p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Example: Temperature in Celsius. If temperature in A is 40 deg Celsius and that in B is 20 deg Celsius, then A is 20 deg Celsius hotter than B (taking difference)</p>\n<p><strong>Does not have an absolute zero.</strong></p>\n<p>For example, Celsius scale has no such thing as &ldquo;no temperature&rdquo;. So the value cannot be zero.</p>\n</td>\n<td>\n<p>Arranged in a <strong>meaningful order </strong>with a<strong> well defined size interval</strong>.</p>\n<p>Eg: A pulse rate has well defined intervals and is meaningful in comparison. A 100/min pulse is exactly twice of 50 beats/min.</p>\n<p>&nbsp;</p>\n<p><strong>Has an absolute zero.</strong></p>\n<p>Eg: There can be a value of zero for pulse.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Type</p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Qualitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n<td>\n<p><strong>Quantitative</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2983",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "meta": {
+    "title": "Frequency_Measurement"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 per 1000</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">5 per 1000</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 per 1000</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">20 per 100</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Fifty people are suffering from cholera in a population of 5000. Out of 50 cholera patients, 10 died. The total deaths are 50. Calculate Death Rate</span></p>",
+      "unique_key": "DT1220764",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220764,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>CFR is usually for acute diseases, </strong>and the <strong>Survival rate is for chronic diseases</strong></li>\n<li>Here, the question is about the crude death rate<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403288c8df730-ea3a-4f52-ab84-5e50b7c1fa15.png\"><br></li>\n<li>Total number of deaths: 50</li>\n<li>Mid-year population: 5000</li>\n<li><strong>Crude death rate: 50/5000 x 1000= 10/1000</strong></li>\n</ul>\n<p><strong>Crude death rate:</strong></p>\n<ul>\n<li>The number of <strong>deaths (from all causes)</strong> occurring in a year per <strong>1,000</strong> estimated mid-year population is defined as the <strong>Crude death rate.</strong></li>\n<li>It is the simplest measure of mortality</li>\n<li><strong>General indicator of mortality burden</strong></li>\n<li>The population assessed for the calculation of the <strong>crude death rate</strong> is done on <strong>july 1st</strong></li>\n<li><strong>Limitation: </strong>Affected by population composition (age, sex), so not ideal for comparing populations with different structures</li>\n</ul>\n<p><strong>Mortality Rates:</strong></p>\n<ul>\n<li><strong>Specific Death rate:</strong> The specific death rate is the mortality rate for a specific cause, age group, sex, or other subgroup within the population.<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328f0e8240d-0f9b-46f0-b95d-67c9ea83bfd3.png\"><br></li>\n<li><strong>Proportional Mortality </strong><strong>Rate: </strong>PMR is the proportion of deaths due to a specific cause out of total deaths from all causes in a given period.<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328843fd3b5-e8fb-40ea-8e25-32ee9921f28a.png\"><br></li>\n<li><strong>Case Fatality Rate: </strong>CFR is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified period.<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328b29745b7-f53b-4a53-806b-c1c5a3750fe0.png\"><br></li>\n<li><strong>Survival rate: </strong>The proportion of patients alive at a specified time after diagnosis or treatment of a disease (usually cancer or other serious illnesses).<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032865796322-ebaf-4094-a3be-aa65007d7020.png\"><br></li>\n</ul>",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Severity of disease</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Communicability of disease</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Burden of disease</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">None</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following best describes what the Case Fatality Rate (CFR) measures?</span></p>",
+      "unique_key": "DT1220765",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220765,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Case Fatality Rate: </strong>CFR is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified period.<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328b29745b7-f53b-4a53-806b-c1c5a3750fe0.png\"><br></p>\r\n<ul>\r\n<li>CFR gives the killing power of the disease</li>\r\n<li>It is related to <strong>virulence</strong></li>\r\n<li><strong>The time interval is not fixed.</strong></li>\r\n<li>CFR is usually for <strong>acute diseases</strong>, and the Survival rate is for chronic diseases</li>\r\n</ul>\r\n<p>Explanation of Other Options:</p>\r\n<p>Communicability of a disease(Option B): This is measured by the basic reproduction number (R<sub>o</sub>) and, secondary attack rate. CFR does not tell how easily a disease spreads. For example, Measles is highly communicable (high R<sub>o<sub>), but has a low CFR.</p>\r\n<p>Burden of a disease(Option C): Burden is measured by Prevalence, Incidence, DALYs (Disability-Adjusted Life Years), YLL (Years of Life Lost), YLD (Years Lived with Disability). CFR does not reflect the overall burden in the population. For example, Diabetes has a high burden (many people affected long-term) but low</p>",
+      "correct_choice_id": 11,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proportional mortality</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">CFR</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">At the end of the year 2010, the population of a tribal district was 200000, and the number of cases of TB was 800. At the end of the year 2001, the population was 2,10000, and 200 new TB cases were detected, and 12 cases died. All the following can be calculated except</span></p>",
+      "unique_key": "DT1220766",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220766,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>PMR expresses the <strong>proportion of all deaths</strong> that are due to a particular cause (e.g., cancer) or occurring in a specific age group (e.g., above 50 years) during a given period.It is generally expressed per <strong>100</strong> or <strong>1,000 total deaths</strong><br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328843fd3b5-e8fb-40ea-8e25-32ee9921f28a.png\"><br></p>\n<p><strong>So, this needs the total number of deaths from all causes in the particular year, which is not mentioned.</strong></p>\n<p><strong>The measurement that can be calculated by the given data area:</strong></p>\n<p><strong>Prevalence: Prevalence </strong>is defined as the total number of all individuals who have an attribute or disease at a particular time (or during a particular period) divided by the population at risk of having the attribute or disease at this point or midway through the period. <strong>(Option A ruled out)</strong><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930cbdb3641-6ff0-4c3c-b10b-a093429dd509.png\"><br></p>\n<p><strong>Incidence: </strong>Incidence rate is defined as the number of new cases occurring in a defined population during a specified period. <strong>(Option B ruled out)</strong><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509303db816f2-e1b1-4603-a4a3-6fc301eb6aac.png\"><br></p>\n<p><strong>Crude Death Rate: </strong>CFR is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified period. <strong>(Option C ruled out)</strong><br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403288c8df730-ea3a-4f52-ab84-5e50b7c1fa15.png\"><br></p>",
+      "correct_choice_id": 23,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specific death rate</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Case fatality rate</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proportional mortality rate</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Survival rate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following can be used as a yardstick for the assessment of standards of therapy?</span></p>",
+      "unique_key": "DT1220769",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220769,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Survival rate</strong> measures the proportion of individuals who remain alive after a specified time following diagnosis or initiation of treatment.</li>\n<li>It reflects <strong>prognosis</strong> and is a direct indicator of the effectiveness of therapy, making it a valuable yardstick for assessing treatment standards.</li>\n</ul>\n<p><strong>Survival rate: </strong></p>\n<ul>\n<li><strong>Survival rate</strong> refers to the proportion of individuals in a specific group (e.g., patients with a certain disease) who remain alive after being observed for a defined period, such as 5 years.</li>\n<li>It is an important measure for describing the <strong>prognosis</strong> of a disease and is widely used as a <strong>yardstick to assess the standards of therapy</strong>.</li>\n<li>The survival period is usually calculated from the date of diagnosis or the start of treatment.</li>\n<li>Survival rates are especially important in evaluating outcomes in <strong>cancer studies</strong>, where they help compare the effectiveness of different treatment modalities.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025093026ba5599-228f-4578-a1e3-e4fa6d060c78.png\"><br></li>\n</ul>\n<p><strong>Kaplan-Meier Survival Analysis: </strong>A non-parametric statistical method used to estimate the survival function from lifetime data, that is, the probability of surviving for a certain length of time after treatment or diagnosis.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509307bde414b-8561-4218-8ca2-bb8f149de1c7.png\"><br></p>\n<h3>Explanation of Other Options:</h3>\n<p><strong>Specific Death Rate(Option A):</strong> Death rate in a specific population group (by age, sex, occupation, etc.) or from a specific cause. Describes mortality patterns, not therapy effectiveness.</p>\n<p><strong>Case Fatality Rate (Option B): </strong>Proportion of individuals with a disease who die from it within a specified period. Reflects <strong>severity</strong> and lethality of disease, not necessarily therapy standards.</p>\n<p><strong>Proportional Mortality Rate(Option C): </strong>Proportion of all deaths due to a particular cause in a given population.Shows <strong>relative importance of a cause of death</strong> in the community, not therapy outcomes.</p>",
+      "correct_choice_id": 34,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">30% and 5/1000</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">5/1000 and 30%</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">30/1000 and 5%</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">5% and 30/1000</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In an Asian country with a population of 6 million people, 60000 deaths occurred during the year 2005. These included 30,000 deaths from cholera in 100000 people who were sick with cholera. The cause-specific mortality rate and Case Fatality Rate from cholera in 2005 are respectively</span></p>",
+      "unique_key": "DT1220770",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220770,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Given values,</strong></p>\n<ul>\n<li>Mid-year population: 60,00,000</li>\n<li>Total no of cholera cases: 1,00,000</li>\n<li>Total no of deaths: 60,000</li>\n<li>Total no of cholera deaths: 30,000</li>\n</ul>\n<p><strong>Specific mortality rate: </strong>Specific Death Rate is the mortality rate restricted to a specific group in the population or due to a specific cause.<br> <img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240523d452d2ba-5023-4fd4-ac84-180c568df7c1.jpg\"> <br></p>\n<ul>\n<li>It is more precise than the crude death rate because it focuses on a defined subgroup or cause.</li>\n<li>Used to compare mortality <strong>between subgroups, Tracks trends in specific diseases or age groups, identifies priority groups for interventions</strong></li>\n</ul>\n<p><strong>Case Fatality Rate: </strong>CFR is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified period.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930f9a81f29-78fb-43c4-a31e-377d3c9685d0.png\"><br></p>\n<ul>\n<li>CFR gives the killing power of the disease</li>\n<li>It is related to <strong>virulence</strong></li>\n<li><strong>The time interval is not fixed.</strong></li>\n<li>CFR is usually for <strong>acute diseases</strong>, and the Survival rate is for chronic diseases</li>\n</ul>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">10%</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">50%</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">75%</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">None </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A community of 500000 people had 100 deaths in a year. Out of 100 deaths, 10 individuals died due to pulmonary TB. What's the proportional mortality rate from TB?</span></p>",
+      "unique_key": "DT1220771",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220771,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Given values,</p>\n<p>Population: 500000</p>\n<p>Total no of deaths: 100</p>\n<p>Total no of deaths due to pulmonary TB: 10</p>\n<p><strong>Proportional mortality rate: </strong>PMR expresses the <strong>proportion of all deaths</strong> that are due to a particular cause (e.g., cancer) or occurring in a specific age group (e.g., above 50 years) during a given period. It is generally expressed per <strong>100</strong> or <strong>1,000 total deaths</strong>.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509306d10af6b-2dd1-4006-94dd-3356d4f9a6a7.png\"><br></p>\n<p><strong>Proportional mortality rate from TB = 10/100x100 = 10%</strong></p>\n<h3>Key Features:</h3>\n<ul>\n<li>Usually calculated for <strong>broad disease groups</strong> (e.g., communicable diseases) or specific major <strong>public health problems</strong> (e.g., cancer, coronary heart disease).</li>\n<li>Useful when <strong>population data</strong> is not available.</li>\n<li>Indicates the relative importance of a disease or age group as a cause of death in a given population.</li>\n</ul>\n<h3>Limitations:</h3>\n<ul>\n<li>Depends on <strong>two variables</strong> (cause-specific deaths and total deaths), both of which may vary between places or periods.</li>\n<li>Not suitable for comparing risk between different populations or periods.</li>\n<li>Does not measure the actual risk of contracting or dying from the disease.</li>\n</ul>\n<h3>Public Health Significance:</h3>\n<ul>\n<li>Helps in <strong>priority setting</strong> within the same population (e.g., high proportionate mortality from communicable diseases signals the need for preventive action).</li>\n<li>It can be calculated <strong>separately by age and sex</strong> to guide targeted interventions.<br /> </li>\n</ul>",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Only c</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">a and b</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">a, b, and d</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">c and d</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which one is not true of the case fatality rate? <br>a.\tIt is a ratio<br> b.\tIt is useful in chronic diseases <br>c.\tIt may vary from the same disease in different epidemics <br>d.\tThe killing power of a disease in a time</span></p>",
+      "unique_key": "DT1220774",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220774,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Case Fatality Rate: </strong>CFR is the proportion of individuals diagnosed with a particular disease who die from that disease within a specified period.<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240328b29745b7-f53b-4a53-806b-c1c5a3750fe0.png\"><br></p>\n<ul>\n<li>The numerator is part of the So it's not a ratio<strong>(</strong><strong>Statement a)</strong></li>\n<li>CFR gives the killing power of the disease in no time interval <strong>(Statement d)</strong></li>\n<li>It is related to virulence</li>\n<li>It may vary from the same disease in different epidemics<strong>(Statement c)</strong></li>\n<li>CFR is good for acute diseases, and for chronic diseas,e survival analysis is used<strong>(statement b)</strong></li>\n</ul>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Life expectancy</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Notification rate</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">DALY</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bed turnover ratio</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is a mortality indicator?</span></p>",
+      "unique_key": "DT1220777",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220777,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Life expectancy:</strong></p>\n<ul>\n<li>The average number of years that a person is expected to live from a given age, if the age-specific mortality rates of the given period continue throughout the person's life.</li>\n<li><strong>Life expectancy</strong> is a positive mortality indicator and part of <strong>life table analysis</strong>.</li>\n<li>It can be calculated <strong>at birth</strong> (most common) or from any other age.</li>\n<li>Computed from <strong>current age-specific death rates</strong>.</li>\n<li><strong>Higher life expectancy &rarr; lower mortality</strong> in the population.</li>\n<li>Used for <strong>health planning</strong> and to compare health status between countries or over time.</li>\n<li>India's <strong>life expectancy at birth</strong> is given using <strong>SRS (Sample Registration System) data</strong>, around <strong>69-70 years</strong></li>\n</ul>\n<h3>Explanation of Other Options:</h3>\n<p><strong>Notification rate(Option B): </strong>Measures how many cases of a particular disease are officially reported in a population per period<strong>. </strong>The notification rate is a morbidity indicator</p>\n<p><strong>DALY(</strong><strong>Option C):</strong> Disability Adjusted Life Year, Combines <strong>Years of Life Lost (YLL)</strong> due to premature death <strong>+ Years Lived with Disability (YLD)</strong>. It is a disability indicator</p>\n<p><strong>Bed </strong><strong>turnover ratio(Option D): </strong>Measures the number of times a hospital bed is used by different patients during a given period. It is a Health utilization indicator</p>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Crude death rate</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cause-specific death rate</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proportional mortality rate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is most commonly used as an indicator for measuring the burden of disease in a community?</span></p>",
+      "unique_key": "DT1220780",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220780,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Prevalence</strong> is a measure of the <strong>burden of disease</strong> in a population in a given location and at a particular time, as represented in a count of the number of people affected. Counts of the number of people affected by a disease are required to plan appropriately for their health care needs<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/20231258c25622e-8aaa-4a92-b443-f7de7dff9b6d.png\"><br></p>\n<p>Types of Prevalence:</p>\n<ul>\n<li>Point Prevalence: Defined as all existing cases at a single point in time.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930f3037e8a-ae25-4cc7-b88f-f01947609747.png\"><br></li>\n<li>Period Prevalence: Defined as all existing cases during a defined period (e.g., a year), including cases that started before the period but continued into it.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930f30df09ed7d-bdce-4eeb-818a-c670ab797fd7.png\"><br></li>\n</ul>\n<p>Uses of Prevalence:</p>\n<ul>\n<li>Estimates the <strong>magnitude</strong> of health/disease problems.</li>\n<li>Identifies <strong>high-risk groups</strong>.</li>\n<li><strong>Health planning</strong>: hospital beds, manpower, rehabilitation facilities.</li>\n<li>Monitoring <strong>chronic diseases</strong> where the duration is long.</li>\n</ul>\n<h2>Limitations:</h2>\n<ul>\n<li>Not ideal for studying <strong>disease causation</strong> (confounded by duration).</li>\n<li>Better for <strong>planning &amp; burden estimation</strong> than for identifying risk factors.</li>\n<li><strong>Incidence</strong> is preferred for etiological studies.</li>\n</ul>\n<p>Explanation of Other Options:<p>\n<p><strong>Crude Death Rate(Option A):</strong> Total number of deaths in a year per 1000 mid-year population. Measures overall mortality, not disease-specific burden.</p>\n<p><strong>Cause-specific Death Rate(Option C): </strong>Number of deaths due to a specific cause in a year per 100,000 (or 1,000) population. Compares mortality between diseases (e.g., deaths due to TB vs cancer). Reflects fatality, not total burden (doesn't count non-fatal cases).</p>\n<p><strong>Proportional Mortality Rate(Option D): </strong>Percentage of deaths due to a specific disease out of total deaths in a given year. Shows the relative contribution of a disease to overall mortality.</p>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence = prevalence x duration</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence = incidence x duration</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence = prevalence + duration</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence = incidence + duration</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a stable population with no net migration and where incidence and recovery/death rates are constant, the relationship between incidence, prevalence, and duration of disease is best described by:</span></p>",
+      "unique_key": "DT1220782",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220782,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<h2>Relationship Between Prevalence and Incidence</h2>\n<p>In a stable population (no net migration, constant incidence, and constant duration of illness), the relationship is:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930d5a17aef-c5ee-4999-b034-e52c534f7a22.png\"><br></p>\n<p>Where:</p>\n<ul>\n<li>P = Prevalence</li>\n<li>I = Incidence</li>\n<li>D = Mean duration of disease<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930dd36d808-5e6b-4343-9944-505284c86895.png\"><br></li>\n</ul>\n<p>Effect of Duration on Prevalence:</p>\n<ul>\n<li>Longer duration &rarr; higher prevalence (e.g., <strong>tuberculosis</strong>: persists for months or years)</li>\n<li>Short duration &rarr; lower prevalence (e.g., <strong>food poisoning</strong>, <strong>homicide</strong>: no \"old\" cases)</li>\n<li>Rapid recovery or death &rarr; reduces prevalence even if incidence is high</li>\n</ul>\n<h3>Limitations of Prevalence Rate</h3>\n<ul>\n<li>Not ideal for studying <strong>disease causation</strong> (incidence is better for this)</li>\n<li>Influenced by both <strong>occurrence</strong> (incidence) and <strong>course of disease</strong> (duration)</li>\n<li>When incidence data is unavailable, prevalence may be used, but must be interpreted considering duration</li>\n</ul>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Years of potential life lost</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Life expectancy</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">IMR</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which is not a mortality indicator</span></p>",
+      "unique_key": "DT1220784",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220784,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Prevalence is a morbidity indicator, not a mortality indicator.</strong></p>\r\n<ul>\r\n<li>Years of Potential Life Lost (YPLL) - Mortality indicator(Option A ruled out)\r\n<ul>\r\n<li>Measures premature mortality by estimating the years a person would have lived if they had not died early.</li>\r\n<li>High YPLL &rarr; higher premature death burden.</li>\r\n</ul>\r\n</li>\r\n<li>Life Expectancy - Mortality Indicator(Option B ruled out)\r\n<ul>\r\n<li>Average number of years a newborn is expected to live under current mortality conditions.</li>\r\n<li>Inversely related to overall mortality rates.</li>\r\n</ul>\r\n</li>\r\n<li>Infant Mortality Rate (IMR) - Mortality indicator(Option C ruled out)\r\n<ul>\r\n<li>Deaths of infants (&lt;1 year) per 1000 live births in a year.</li>\r\n<li>A sensitive indicator of a community's health and healthcare quality.</li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standardization allows comparison to be made between two different populations</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">The National population can be taken as the standard population</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">For direct standardization, age-specific rates of the study population are applied to those of the standard population</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">For indirect standardization, age-specific rates of the study population are applied to those of the standard population</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All the following are true about standardization except</span></p>",
+      "unique_key": "DT1220786",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220786,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Indirect standardization </strong>apply age-specific rates of the <strong>standard population</strong> to the <strong>study population's</strong> age distribution.</p>\r\n<p><strong>Standardization:</strong></p>\r\n<ul>\r\n<li>Method of removing age disparity in populations before comparing</li>\r\n<li>Removes the confounding effect of age structures, yielding a single standardized or adjusted rate by which mortality experiences can be compared</li>\r\n<li>Yield Standardized or Adjusted rate for comparing mortality</li>\r\n<li>Standardization allows comparison to be made between two different populations<strong>(Option A ruled out)</strong></li>\r\n<li>Standardization is of two types- <strong>Direct and Indirect</strong></li>\r\n</ul>\r\n<p><strong>Direct Standardization:</strong></p>\r\n<h3>Purpose is to compare rates (e.g., mortality) between populations with different age structures and Removes the effect of age distribution differences.<br /> Steps in Direct Standardization:</h3>\r\n<ul>\r\n<li>Select a standard population\r\n<ul>\r\n<li>Known numbers in each age/sex group.</li>\r\n<li>Can be a real population (e.g., national population). A combined/created population (sum of compared groups).</li>\r\n</ul>\r\n</li>\r\n<li>Obtain age-specific rates for the study population. Example: death rates per 1,000 in each age group.</li>\r\n<li>Apply the study population's age-specific rates to the standard population &rarr; gives expected deaths in each age group.</li>\r\n<li>Sum the expected deaths for all age groups.</li>\r\n<li>Divide total expected deaths by total standard population gives standardized rate.</li>\r\n</ul>\r\n<h3>Note: Apply age-specific rates of the study population to the standard population's age distribution.(Option C ruled out)</h3>\r\n<p><strong>Indirect standardization:</strong></p>\r\n<p>Produces <strong>Standardized Mortality Ratio </strong></p>\r\n<p><strong>Standardized Mortality Ratio: </strong>Ratio of <strong>observed deaths</strong> in study group to <strong>expected deaths</strong> (if study group had same age-specific rates as standard pop.).<br /><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025093084b595e8-5ea3-44d8-b2ea-d052cf6d2372.png\" alt=\"\" /></p>\r\n<p>Advantages of Indirect Method:</p>\r\n<ul>\r\n<li>Works when age-specific rates in study group are unavailable or unstable (small numbers).</li>\r\n<li>Only need Population in each age group (study pop.) and Age-specific rates from standard population.</li>\r\n<li>Can be used for disease occurrence, not just death.</li>\r\n</ul>\r\n<h3>Note: Apply age-specific rates of the standard population to the study population's age distribution.</h3>\r\n<p><strong>The standard population used is:</strong></p>\r\n<ul>\r\n<li>Segi world population</li>\r\n<li>European standard population</li>\r\n<li>National population<strong>(Option B ruled out)</strong></li>\r\n<li>The available population may be used</li>\r\n</ul>",
+      "correct_choice_id": 114,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Causes of death</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Numerators</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Denominators</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Age distribution</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Direct standardisation is used to compare the mortality data of two countries. This is done because of a difference in</span></p>",
+      "unique_key": "DT1220787",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220787,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Standardisation:</strong></p>\n<ul>\n<li>Method of removing <strong>age disparity</strong> in populations before comparing</li>\n<li>Removes the confounding effect of age structures, yielding a single standardized or adjusted rate by which mortality experiences can be compared</li>\n<li>Yield Standardized or Adjusted rate for comparing mortality</li>\n<li>Standardization is of two types- Direct and Indirect</li>\n<li>Both Direct and Indirect require a standard population for comparison</li>\n<li>Standard population is one for which the number in each age and sex in group is known</li>\n<li>The standard population used is-\n<ul>\n<li>Segi world population</li>\n<li>European standard population</li>\n<li>National population</li>\n<li>The available population may be used</li>\n</ul>\n</li>\n</ul>\n<p><strong>Direct Standardization:</strong></p>\n<h3>Purpose is to compare rates (e.g., mortality) between populations with different age structures and Removes the effect of age distribution differences.<br /> Steps in Direct Standardization:</h3>\n<ul>\n<li>Select a standard population\n<ul>\n<li>Known numbers in each age/sex group.</li>\n<li>Can be a real population (e.g., national population). A combined/created population (sum of compared groups).</li>\n</ul>\n</li>\n<li>Obtain age-specific rates for the study population. Example: death rates per 1,000 in each age group.</li>\n<li>Apply the study population's age-specific rates to the standard population &rarr; gives expected deaths in each age group.</li>\n<li>Sum the expected deaths for all age groups.</li>\n<li>Divide total expected deaths by total standard population gives standardized rate.</li>\n</ul>\n<p><strong>Note:</strong> Apply age-specific rates of the <strong>study population</strong> to the <strong>standard population's</strong> age distribution.</p>\n<h3>Explanation of Other Options:</h3>\n<p><strong>Causes of death(Option A): </strong>Different countries may have different disease patterns (e.g., infections vs. heart disease), but <strong>direct standardization</strong> doesn't specifically adjust for cause-of-death differences, it adjusts for age (and sometimes sex or other demographics).</p>\n<p><strong>Numerators(Option B): </strong>In epidemiology, the numerator is <strong>number of events</strong> (e.g., deaths). While standardization uses death counts, the key reason for applying it is not differences in raw numerators, but differences in <strong>population structure</strong>.</p>\n<p><strong>Denominators(Option C): </strong>The denominator is <strong>population at risk</strong>. Again, differences in denominators exist, but the problem being solved is that these denominators are distributed differently by <strong>age</strong>.</p>",
+      "correct_choice_id": 124,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Investigators made a calculation error</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">No inferences can be made about the comparative age of the populations from these data</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">The population of Community A is, on average, older than that of Community B</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">The population of Community B is, on average, older than that of Community A</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The crude mortality rate in Community A was higher than the crude mortality rate in Community B, but the age-adjusted mortality rate was higher in Community B than in Community A. This indicates that:</span></p>",
+      "unique_key": "DT1220790",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220790,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The crude mortality rate in Community A was higher than the crude mortality rate in Community B because old age people were more in Community A. But after standardisation, which removed age disparity, making age structure in Population A and B comparable, age age-adjusted rate (Age standardised rate) was higher in Population B</p>\n<p><strong>Understanding crude vs. age-adjusted mortality rate:</strong></p>\n<ul>\n<li>Crude mortality rate is total deaths / total population (not accounting for age structure).</li>\n<li>Age-adjusted mortality rate is rate calculated after adjusting for differences in age distribution between populations. This removes the effect of having more elderly or more young people.</li>\n</ul>\n<p>A high <strong>crude mortality</strong> in Community A may be due to a larger proportion of older people (who naturally have higher death rates), not because the age-specific death rates are worse.</p>\n<p>After <strong>age adjustment</strong>, the effect of having more elderly in A is removed. If B's adjusted rate becomes higher, it means B actually has worse age-specific mortality rates, but A's crude rate looked worse initially due to an older age distribution.</p>",
+      "correct_choice_id": 133,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">40</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">250</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">2.5</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">25</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In 1990, there were 4500 deaths due to lung diseases in miners aged 20-64 years. The expected no. of deaths in the occupational group, based on age-specific death rates from lung disease in all males aged 20 to 64 years, was 1800 during 1990. Which of the following will be the Standardized Mortality Ratio for lung diseases in miners</span></p>",
+      "unique_key": "DT1220792",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220792,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Standardized Mortality Ratio(SMR)</strong> is a type of Indirect Standardisation. It measures the excess mortality risk of an occupation<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403288de5ebe4-ad21-488a-b49d-5e29e8479d25.png\"><br></p>\n<p><strong>Given values,</strong></p>\n<p><strong>Observed deaths:</strong> 4500</p>\n<p><strong>Expected deaths:</strong> 1800<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/202312569e7807d-ff2e-4c66-bfbe-2b5a48bab2e4.png\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509307ec54186-b79f-41ea-b1a5-88a5fe66ff42.png\"><br></p>\n<ul>\n<li>If SMR<strong> &gt;100, </strong>Occupation carries <strong>greater mortality</strong> than the population</li>\n<li>If SMR<strong> &lt;100, </strong>Occupation carries a <strong>lesser mortality</strong> than the population</li>\n</ul>",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">It is a form of direct standardization</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">It is calculated as observed deaths/expected deaths X 100</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Permits adjustment for age</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Can be used as an event of occurrence</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All are true for the standardized mortality rate (SMR) except</span></p>",
+      "unique_key": "DT1220793",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220793,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Standardized Mortality Ratio(SMR) </strong>is a type of<strong> Indirect Standardisation</strong><strong>. </strong>It measures the excess mortality risk of an occupation<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930cbcac943-cd3d-4922-8314-98bb4b814f64.png\"><br></p>\n<p>(<strong>(Option B ruled out)</strong></p>\n<ul>\n<li>If SMR &gt;100, Occupation carries greater mortality than the population</li>\n<li>If SMR &lt;100, Occupation carries a lesser mortality than the population</li>\n</ul>\n<h3>Advantages of Indirect Method:</h3>\n<ul>\n<li>Works when age-specific rates in study group are unavailable or unstable (small numbers).(Option C ruled out)</li>\n<li>Only need Population in each age group (study pop.) and Age-specific rates from standard population.</li>\n<li>Can be used for disease occurrence, not just death.<strong>(Option D ruled out)</strong></li>\n</ul>",
+      "correct_choice_id": 151,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">60%</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">38%</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">67%</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">50%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A family consists of 2 parents and 6 children susceptible to measles. There occurs a primary case of measles and 3 secondary cases within a short period. Secondary attack rate is</span></p>",
+      "unique_key": "DT1220816",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220816,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Secondary attack rate: </strong>Defined as the number of exposed persons who develop the disease within the incubation period after exposure to a primary case. Reflects the spread of the disease among contacts of primary cases. It is a Special Incidence Rates<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025093008ad8087-0657-46c6-ba30-e45087a1105b.png\"><br></p>\n<p><strong>Given:</strong></p>\n<ul>\n<li>Total family members: 2 parents + 6 children = <strong>8</strong></li>\n<li>Susceptible population: 6</li>\n<li><strong>Primary case: </strong>1</li>\n<li><strong>Secondary cases:</strong> 3</li>\n<li>Susceptible contacts exposed (excluding the primary case):<strong> 6- 1= 5<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025093054ae8d07-a104-451e-9a3d-9f8a96de8cc2.png\"><br></strong></li>\n</ul>\n<p><strong>Other Special Incidence Rates:</strong></p>\n<ul>\n<li>Attack Rate (case rate): An incidence rate (usually in %) used when the population is exposed to a risk for a limited period (e.g., during an epidemic). Measures the extent of an outbreak in a population at risk.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930379f0984-d484-4963-ad58-9c08b4ea59c6.png\"><br></li>\n<li>Hospital Admission Rate</li>\n</ul>",
+      "correct_choice_id": 161,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">The Crude Death Rate is greater in women</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">The Case Fatality rate for this disease is greater in women</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">The Case Fatality rate for this disease is lower in women</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Disease duration is shorter in men</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The incidence rate of a disease is 5 times greater in women than in men, but the prevalence rate shows no sex difference. The best explanation is that</span></p>",
+      "unique_key": "DT1220819",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220819,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Given:</p>\n<ul>\n<li>Incidence rate: 5 times higher in women than men</li>\n<li>Prevalence rate: No difference between sexes<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509301104f30a-711a-464f-b0c3-58347123725e.png\"><br></li>\n<li>If <strong>incidence is much higher in women</strong> but <strong>prevalence is the same</strong> in both sexes, it means <strong>duration must be shorter in women</strong> to offset the higher incidence.</li>\n<li>Shorter duration can occur if Women recover faster Or women die faster from the disease (i.e., <strong>higher case fatality rate</strong>)</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>The Crude Death Rate is greater in women(Option A): </strong>Crude death rate is total deaths from all causes per 1000 population per year. It's <strong>not disease-specific</strong>, so even if women have higher crude death rate, it doesn't explain why prevalence of this particular disease is the same.</p>\n<p><strong>The Case Fatality rate for this disease is lower in women(Option C): </strong>Lower case fatality means women survive longer with the disease which implies longer duration. Given women already have <strong>higher incidence</strong>, a longer duration would make prevalence in women much higher, not equal.</p>\n<p><strong>Disease duration is shorter in men(Option D): </strong>Shorter duration in men means prevalence in men would be lower than women (since women have both higher incidence and longer duration in that case).</p>",
+      "correct_choice_id": 172,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">80</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">7.4</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">60</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">8</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A cohort of 10 smokers was followed up for 10 years for lung cancer. 2 smokers developed cancer at the end of 5 years, 1 smoker developed disease at the end of 7 years, and 3 other smokers developed disease at the end of 8 years. Calculate the incidence rate (in person years)</span></p>",
+      "unique_key": "DT1220826",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220826,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Incidence rate</strong> is also known as;<strong>Incidence Density<br><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930691c0aac-b082-4320-895f-9d35c81ca99a.png\"><br></strong><strong>;</strong></p>\n<p>We have 10 smokers followed for 10 years, but once someone develops lung cancer, they stop contributing further person-time.</p>\n<p><strong>Calculate person-years for each group</strong></p>\n<ul>\n<li><strong>Case 1 &amp; 2</strong> developed at <strong>5 years, </strong>Each contributed <strong>5 person-years</strong> total = 2&times;5=10</li>\n<li><strong>Case 3</strong> developed at <strong>7 years, </strong>Contributed <strong>7 person-years</strong></li>\n<li><strong>Case 4 &amp; 5 &amp; 6</strong> developed at <strong>8 year,</strong> Each contributed 8 years total = 3&times;8=24</li>\n<li><strong>Remaining smokers without disease</strong>:<br /> Total smokers = 10, diseased = 6, so 4 remained disease-free for the full 10 years.<br /> <strong>;Each contributed 10 years, total = 4&times;10=40 </strong></li>\n</ul>\n<p><strong>Total person-years: </strong>10+7+24+40= 81</p>\n<p><strong>Incidence rate:</strong> no. of new cases are 6<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930edfe17c9-632e-406f-896b-64fd73997299.png\"><br></p>\n<p>Convert to <strong>per 100 person-years</strong>:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025093025fe1779-5073-4391-bbb0-4728a4ab6e29.png\"><br></p>\n<p><strong>Incidence rate:</strong></p>\n<p>The incidence rate measures the occurrence of <strong>new cases</strong> of a disease in a specified population during a defined period of time.</p>\n<ul>\n<li>Refers <strong>only to new cases</strong>.</li>\n<li>Measured <strong>over a specific time period</strong> (commonly 1 year).</li>\n<li>Calculated in a <strong>specified population at risk</strong> (unless another denominator is chosen).</li>\n<li>Can also measure <strong>new episodes or spells</strong> of diseases that may occur more than once in a person during the period. Example: If a person suffers from the common cold twice in a year, both episodes are counted separately.</li>\n</ul>\n<h2>Uses of Incidence Rate:</h2>\n<ul>\n<li><strong>Disease Control:</strong>\n<ul>\n<li>Rising incidence may indicate failure or ineffectiveness of current control programs.</li>\n<li>May suggest the need for new preventive or therapeutic interventions.</li>\n</ul>\n</li>\n<li><strong>Research Purposes:</strong>\n<ul>\n<li>Study aetiology (causes) and pathogenesis.</li>\n<li>Evaluate efficacy of preventive and therapeutic measures.</li>\n<li>Understand distribution of disease in populations.</li>\n</ul>\n</li>\n<li><strong>Surveillance &amp; Planning:</strong>\n<ul>\n<li>Comparing incidence rates across socio-economic groups or geographical areas can reveal health service gaps.</li>\n<li>Changes in incidence may indicate:\n<ul>\n<li>Shift in disease-causing agents</li>\n<li>Change in host factors</li>\n<li>Change in environmental conditions</li>\n<li>Improved disease reporting systems</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence is the probability that a healthy individual will develop the disease during the specified period</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence will decrease if a new drug is effective in reducing deaths from the disease</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence measures the absolute risk of developing the disease</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Incidence decreases if a particular prevention program is effective</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All the statements are true about the disease except</span></p>",
+      "unique_key": "DT1220862",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220862,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Incidence</strong> is the number of new cases developing, which is not affected by treatment</p>\n<p><strong>Incidence:</strong></p>\n<p>Incidence rate is the number of new cases of a specific disease occurring in a defined population during a specified time period.<strong>(Option A ruled out)</strong><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509302357ad8c-b475-4a3a-96c3-b7ad4d2f5a66.png\"><br></p>\n<p><strong>K</strong> is a multiplier (e.g., 1,000 or 100,000) to express the rate conveniently.</p>\n<ul>\n<li><strong>Includes only new cases</strong>, measures risk of developing the disease<strong>(Option C ruled out)</strong></li>\n<li><strong>Specific time period</strong>, often one year, but can be shorter or longer.</li>\n<li><strong>Population at risk</strong>, people who are <em>susceptible</em> to the disease (excludes those already affected or immune).</li>\n<li>Useful for evaluating <strong>effectiveness of prevention programs</strong>.<strong>(Option D ruled out)</strong></li>\n</ul>",
+      "correct_choice_id": 192,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">30</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">75</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">750</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">7500</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the person years of observation when 25 people are studied in a study group for 30 years?</span></p>",
+      "unique_key": "DT1220863",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220863,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Person Years: </strong>Person-years is a unit that combines the number of people in a study with the length of time each person is followed.</p>\n<p>Given values,</p>\n<p><strong>Number of people:</strong> 25</p>\n<p><strong>Duration per person:</strong> 30 years<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930172d7c36-2330-426b-a2ed-841db397525e.png\"><br></p>\n<p>&nbsp;So, the total observation time is 750 person-years.</p>\n<p><strong>Significance of Person Years: </strong>Incidence rate often needs person-time in the denominator. This helps compare populations even if they have different sizes or follow-up durations.</p>",
+      "correct_choice_id": 203,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">46 %</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">56 %</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">78 %</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">50 %</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A party was attended by 110 people, out of which 40 did not eat the fruit salad. Of the rest who ate fruit salad, 55 developed food poisoning. What is the attack rate?</span></p>",
+      "unique_key": "DT1220864",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1220864,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Given values, </strong></p>\n<ul>\n<li>Total people at the party = 110</li>\n<li>Those who did not eat fruit salad = 40</li>\n<li>Therefore, those who ate fruit salad = 110 &minus; 40 = 70(These 70 are the population at risk for fruit-salad-related food poisoning.)</li>\n<li>Of the 70 who ate fruit salad, 55 developed food poisoning.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250930776f8642-4230-4f97-8506-717d6388c515.png\">\n<p><strong>Food Specific Attack rate of fruit salad is 78%</strong></p>",
+      "correct_choice_id": 213,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "title": "Liver_Disease_Part_1"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonalcoholic Steatohepatitis (NASH)</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Alcoholic Hepatitis</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoimmune Hepatitis</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Viral Hepatitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old male presents with jaundice, malaise, and abdominal pain. He reports heavy alcohol consumption of 8-10 drinks daily for the past 15 years. His laboratory findings show an AST/ALT ratio >2, elevated serum bilirubin, and low albumin levels. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295126",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295126,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Key Clinical Features:</strong> Chronic heavy alcohol consumption, jaundice, and symptoms such as malaise and abdominal pain are hallmark features of alcoholic hepatitis.</li>\r\n<li><strong>AST/ALT Ratio:</strong> Alcoholic hepatitis is typically associated with an AST/ALT ratio &gt;2. AST levels are elevated but rarely exceed 300 IU/L, and ALT levels are typically lower due to alcohol's effects on mitochondrial function.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ol>\r\n<li>NASH (A) is related to metabolic syndrome and would show <strong>ALT &gt; AST</strong>.</li>\r\n<li>Autoimmune Hepatitis (C) presents with elevated IgG and autoantibodies, often seen in younger females.</li>\r\n<li>Viral Hepatitis (D) would show significantly <strong>elevated ALT and AST</strong> without a disproportionate ratio (&gt;2 is not typical).</li>\r\n</ol>\r\n</li>\r\n<li><strong>Supporting Laboratory Findings:</strong> Elevated bilirubin and low albumin levels suggest significant liver dysfunction, typical of advanced alcoholic liver disease.</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>AST/ALT Ratio &gt;2</strong> is strongly indicative of <strong>alcohol-related liver damage</strong>.</li>\r\n<li>Alcohol cessation is the primary intervention to halt disease progression.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver Biopsy</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Abdominal Ultrasound</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Serum Anti-Mitochondrial Antibodies (AMA)</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Magnetic Resonance Cholangiopancreatography (MRCP)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 38-year-old woman presents with fatigue, pruritus, and jaundice. Physical examination reveals spider angiomas, palmar erythema, and hepatomegaly. Laboratory tests show elevated bilirubin, alkaline phosphatase, and &gamma;-glutamyl transpeptidase (GGT). What is the next best diagnostic step?</span></p>",
+      "unique_key": "DT1295128",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295128,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Presentation:</strong> Fatigue, pruritus, and jaundice with physical findings such as spider angiomas and hepatomegaly are suggestive of primary biliary cholangitis (PBC).</li>\r\n<li><strong>Key Laboratory Findings:</strong> Elevated alkaline phosphatase and GGT indicate a cholestatic pattern of liver disease, which aligns with PBC.</li>\r\n<li><strong>Role of AMA Testing:</strong> Antimitochondrial antibodies are highly specific for PBC, present in ~95% of cases. This test is crucial for confirming the diagnosis.</li>\r\n<li><strong>Other Options:</strong>\r\n<ul>\r\n<li><strong>Liver Biopsy (A):</strong> Rarely needed for PBC diagnosis unless AMA is negative or clinical features are atypical.</li>\r\n<li><strong>Abdominal Ultrasound (B):</strong> Useful for ruling out extrahepatic obstruction but not specific for PBC.</li>\r\n<li><strong>MRCP (D):</strong> Valuable for diagnosing sclerosing cholangitis but not first-line in PBC.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Primary biliary cholangitis (PBC) is a chronic cholestatic liver disease most commonly diagnosed via AMA testing.</li>\r\n<li>Symptom triad includes fatigue, pruritus, and jaundice.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatic Encephalopathy</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spontaneous Bacterial Peritonitis</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Alcohol Withdrawal</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wernicke's Encephalopathy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 52-year-old male with known cirrhosis presents with confusion and drowsiness. He has asterixis on examination. Laboratory tests show elevated ammonia levels. What is the most likely cause of his symptoms?</span></p>",
+      "unique_key": "DT1295129",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295129,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Context:</strong> Confusion, drowsiness, and asterixis in a patient with cirrhosis strongly suggest hepatic encephalopathy (HE).</li>\r\n<li><strong>Pathophysiology:</strong> Elevated ammonia levels due to impaired hepatic metabolism are the hallmark of HE.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ul>\r\n<li><strong>Spontaneous Bacterial Peritonitis (B):</strong> Would present with fever, abdominal pain, and leukocytosis.</li>\r\n<li><strong>Alcohol Withdrawal (C):</strong> Characterized by tremors, agitation, and hallucinations, not confusion with asterixis.</li>\r\n<li><strong>Wernicke's Encephalopathy (D):</strong> Associated with ataxia, ophthalmoplegia, and confusion, but no asterixis.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Management:</strong> Lactulose to reduce ammonia levels and rifaximin as adjunct therapy.</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Hepatic encephalopathy is a reversible complication of cirrhosis triggered by precipitating factors such as infections or GI bleeding.</li>\r\n<li>Treatment aims to lower ammonia levels.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 21,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatocellular Carcinoma</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Portal Hypertension Leading to Ascites</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spontaneous Bacterial Peritonitis</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Budd-Chiari Syndrome</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man with cirrhosis presents with following findings on examinations. What is the most likely cause of his symptoms?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106cdf02140-88fb-4394-9c10-bf6ada27ee08.jpg\"></span></p>",
+      "unique_key": "DT1295131",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295131,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Clues:</strong> Abdominal distension with shifting dullness is diagnostic of ascites.</li>\r\n<li><strong>Pathophysiology:</strong> Portal hypertension increases hydrostatic pressure in the splanchnic circulation, leading to fluid accumulation in the peritoneal cavity.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ul>\r\n<li><strong>Hepatocellular Carcinoma (A):</strong> Presents with a liver mass and systemic symptoms, not isolated ascites.</li>\r\n<li><strong>Spontaneous Bacterial Peritonitis (C):</strong> May complicate ascites but typically presents with fever and abdominal pain.</li>\r\n<li><strong>Budd-Chiari Syndrome (D):</strong> Features hepatic vein thrombosis with painful hepatomegaly, ascites, and jaundice.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Diagnosis:</strong> Ascitic fluid analysis to evaluate the cause and exclude infection.</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Portal hypertension is the leading cause of ascites in cirrhosis.</li>\r\n<li><strong>SAAG (Serum-Ascites Albumin Gradient) &gt;1.1 g/dL confirms portal hypertension as the etiology.</strong></li>\r\n</ul>\r\n",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Alcoholic Hepatitis</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary Biliary Cholangitis</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoimmune Hepatitis</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-alcoholic Fatty Liver Disease</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 34-year-old woman presents with fatigue and vague right upper quadrant pain. Her liver enzymes show an AST ratio of 1:1, elevated &gamma;-globulins, and positive test given below<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2025010655f8a777-3d30-4c1e-ac9a-2c62c6dd0350.jpg\"><br>What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295134",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295134,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\n<li><strong>Key Features:</strong> Autoimmune hepatitis is suggested by elevated liver enzymes, high &gamma;-globulins, and positive ANA test as given in the image<br><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106c1a3071d-6fcf-48f0-8466-c8176146a1d6.jpg\"></li>\n<li><strong>Supporting Evidence:</strong> Female predominance, chronic symptoms, and absence of significant alcohol intake.</li>\n<li><strong>Differentiation:</strong>\n<ul>\n<li><strong>Alcoholic Hepatitis (A):</strong> Shows AST ratio &gt;2 and history of heavy alcohol use.</li>\n<li><strong>Primary Biliary Cholangitis (B):</strong> Associated with cholestasis (elevated alkaline phosphatase and AMA-positive).</li>\n<li><strong>NAFLD (D):</strong> Typically occurs with metabolic syndrome and shows ALT &gt; AST.</li>\n</ul>\n</li>\n<li><strong>Next Step:</strong> Confirm with a liver biopsy showing interface hepatitis and exclude other causes of liver injury.</li>\n</ol>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Autoimmune hepatitis often requires lifelong immunosuppressive therapy (steroids and azathioprine).</li>\n<li>Early diagnosis is crucial to prevent progression to cirrhosis.</li>\n</ul>",
+      "correct_choice_id": 43,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Endoscopic Band Ligation</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonselective Beta-Blockers</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Trans jugular Intrahepatic Portosystemic Shunt (TIPS)</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proton Pump Inhibitors</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 58-year-old man with cirrhosis is found to have esophageal varices during routine endoscopy.What is the first-line therapy to prevent variceal bleeding?</span></p>",
+      "unique_key": "DT1295136",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295136,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Prophylaxis Strategy:</strong> Nonselective beta-blockers (e.g., propranolol, nadolol) are the first-line therapy to reduce portal hypertension and prevent bleeding.</li>\r\n<li><strong>Mechanism:</strong> Beta-blockers decrease cardiac output and splanchnic blood flow, lowering portal pressure.</li>\r\n<li><strong>Other Options:</strong>\r\n<ul>\r\n<li><strong>Band Ligation (A):</strong> Used for acute bleeding or as an alternative when beta-blockers are contraindicated.</li>\r\n<li><strong>TIPS (C):</strong> Reserved for refractory variceal bleeding or ascites.</li>\r\n<li><strong>PPIs (D):</strong> Do not address portal hypertension and are not indicated for variceal prevention.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Nonselective beta-blockers are essential for primary prophylaxis in cirrhosis with varices.</li>\r\n<li>Regular surveillance with endoscopy is critical.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 52,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cholangiocarcinoma</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatocellular Carcinoma</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver Abscess</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Metastatic Liver Cancer</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 47-year-old man presents with a 3-month history of progressive jaundice, weight loss, and abdominal pain. Imaging shows<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106fcb47b0c-c1a8-4d89-9fcb-fd2c2c8c7b07.jpg\"><br>Serum alpha-fetoprotein is elevated. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295140",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295140,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li><strong>Progressive jaundice, weight loss, and abdominal pain</strong> are hallmark features of advanced liver disease, often seen in hepatocellular carcinoma (HCC).</li>\r\n<li>The presence of a liver lesion on imaging and elevated <strong>serum alpha-fetoprotein (AFP)</strong> strongly supports the diagnosis of HCC.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Pathophysiology:</strong>\r\n<ul>\r\n<li>HCC typically arises in the setting of chronic liver disease or cirrhosis caused by risk factors such as:\r\n<ul>\r\n<li>Chronic hepatitis B or C infections.</li>\r\n<li>Alcoholic liver disease.</li>\r\n<li>Non-alcoholic fatty liver disease (NAFLD).</li>\r\n<li>Aflatoxin exposure.</li>\r\n</ul>\r\n</li>\r\n<li>HCC develops from chronic inflammation, hepatocyte injury, and subsequent dysregulated cell proliferation.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Differentiation from Other Conditions:</strong></li>\r\n</ol>\r\n<p><strong>A. Cholangiocarcinoma:</strong></p>\r\n<ul>\r\n<li>Primary cancer of the bile ducts.</li>\r\n<li>Typically presents with <strong>painless jaundice</strong> and bile duct strictures on imaging.</li>\r\n<li>Normal AFP levels (in contrast to elevated AFP in HCC).</li>\r\n<li>Diagnosis is confirmed with <strong>MRCP</strong> or biopsy.</li>\r\n</ul>\r\n<p><strong>B. Liver Abscess:</strong></p>\r\n<ul>\r\n<li>Presents with <strong>fever, chills, right upper quadrant pain</strong>, and leukocytosis.</li>\r\n<li>Imaging shows fluid-filled lesions, not solid masses.</li>\r\n<li>Managed with antibiotics and drainage.</li>\r\n</ul>\r\n<p><strong>C. Metastatic Liver Cancer:</strong></p>\r\n<ul>\r\n<li>Commonly involves <strong>multiple liver lesions</strong> originating from primary cancers (e.g., colorectal, breast, or lung).</li>\r\n<li>Diagnosis depends on identifying the primary tumor via imaging and histopathology.</li>\r\n<li>Normal or mildly elevated AFP levels unless associated with a specific primary tumor.</li>\r\n</ul>\r\n<p><strong>D. Hepatocellular Carcinoma (Correct Answer):</strong></p>\r\n<ul>\r\n<li><strong>Imaging Features:</strong> Solitary or multiple liver masses, arterial enhancement with portal washout on contrast-enhanced CT or MRI.</li>\r\n<li><strong>AFP Elevation:</strong> Seen in &gt;50% of cases (AFP &gt;400 ng/mL is strongly suggestive of HCC).</li>\r\n<li>Occurs almost exclusively in patients with underlying <strong>chronic liver disease</strong> or cirrhosis.</li>\r\n</ul>\r\n<ol start=\"5\">\r\n<li><strong> Diagnostic Steps:</strong>\r\n<ol>\r\n<li><strong>Serum AFP Measurement:</strong> Elevated AFP (&gt;400 ng/mL) is diagnostic in high-risk populations.</li>\r\n<li><strong>Imaging Studies:</strong>\r\n<ul>\r\n<li><strong>Contrast-enhanced CT or MRI:</strong> Detects arterial enhancement with venous washout, a hallmark of HCC.</li>\r\n<li><strong>Ultrasound:</strong> Useful for initial screening and detecting lesions.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Biopsy:</strong> Typically, unnecessary when imaging and AFP levels are diagnostic but may be performed if the diagnosis is uncertain.</li>\r\n</ol>\r\n</li>\r\n<li><strong>Management:</strong>\r\n<ul>\r\n<li><strong>Curative Treatment Options:</strong>\r\n<ol>\r\n<li><strong>Surgical Resection:</strong> Indicated in patients with preserved liver function and no extrahepatic spread.</li>\r\n<li><strong>Liver Transplantation:</strong> Ideal for patients with cirrhosis and tumors meeting Milan criteria (single lesion &le;5 cm or &le;3 lesions &le;3 cm each).</li>\r\n</ol>\r\n</li>\r\n<li><strong>Palliative Options:</strong>\r\n<ol>\r\n<li><strong>Trans-arterial Chemoembolization (TACE):</strong> For intermediate-stage disease.</li>\r\n<li><strong>Systemic Therapy:</strong> Sorafenib, lenvatinib, or other targeted therapies in advanced HCC.</li>\r\n</ol>\r\n</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ol>\r\n<li><strong>HCC Surveillance:</strong>\r\n<ul>\r\n<li>Regular surveillance in cirrhotic patients with <strong>ultrasound and AFP every 6 months</strong> improves early detection.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Imaging Criteria:</strong>\r\n<ul>\r\n<li>Contrast-enhanced imaging (CT/MRI) demonstrating arterial enhancement and venous washout is diagnostic of HCC.</li>\r\n</ul>\r\n</li>\r\n<li><strong>AFP Role:</strong>\r\n<ul>\r\n<li>AFP is a useful but non-specific marker; elevated levels support the diagnosis, especially when combined with imaging findings.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Treatment Pathway:</strong>\r\n<ul>\r\n<li>Early diagnosis allows for curative interventions (resection or transplantation). Advanced cases require palliative therapies.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intravenous Cefotaxime</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral Metronidazole</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intravenous Vancomycin</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Broad-spectrum Antifungals</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 63-year-old woman with cirrhosis presents with fever and abdominal pain. Paracentesis reveals cloudy fluid with a polymorphonuclear leukocyte count of 300 cells/&mu;L. What is the most appropriate treatment?</span></p>",
+      "unique_key": "DT1295142",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295142,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Context:</strong> Fever, abdominal pain, and cloudy ascitic fluid in cirrhosis suggest spontaneous bacterial peritonitis (SBP).</li>\r\n<li><strong>Diagnostic Criteria:</strong> PMN count &ge;250 cells/&mu;L in ascitic fluid confirms SBP.</li>\r\n<li><strong>Preferred Antibiotic:</strong> Third-generation cephalosporins (e.g., cefotaxime) are highly effective against common organisms (E. coli, Klebsiella).</li>\r\n<li><strong>Other Options:</strong>\r\n<ol>\r\n<li><strong>Metronidazole (B):</strong> Effective for anaerobic infections, not first-line for SBP.</li>\r\n<li><strong>Vancomycin (C):</strong> Targets gram-positive bacteria but is not routinely used for SBP.</li>\r\n<li><strong>Antifungals (D):</strong> Not indicated unless fungal infection is suspected.</li>\r\n</ol>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>SBP is a life-threatening complication of cirrhosis requiring prompt antibiotic therapy.</li>\r\n<li>Prophylaxis with oral norfloxacin is recommended in high-risk patients.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">NAFLD</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonalcoholic Steatohepatitis</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary Biliary Cholangitis</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wilson's Disease</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old obese woman with type 2 diabetes and hyperlipidemia presents with vague right upper quadrant pain. Ultrasound reveals a fatty liver. Her AST and ALT are mildly elevated, with ALT > AST. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295146",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295146,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Key Features:</strong>\r\n<ul>\r\n<li>The patient is a <strong>40-year-old obese woman</strong> with a history of <strong>type 2 diabetes</strong> and <strong>hyperlipidemia</strong>, which are key components of <strong>metabolic syndrome</strong>.</li>\r\n<li><strong>Vague right upper quadrant (RUQ) pain</strong> and an ultrasound showing <strong>fatty liver</strong> suggest <strong>nonalcoholic fatty liver disease (NAFLD)</strong>.</li>\r\n<li>Mildly elevated <strong>AST and ALT</strong>, with <strong>ALT &gt; AST</strong>, is typical of <strong>nonalcoholic steatohepatitis (NASH)</strong>.</li>\r\n<li><strong>NASH</strong> is a more progressive form of NAFLD associated with liver inflammation and damage.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Differentiation Between Options:</strong>\r\n<ol>\r\n<li><strong>A. NAFLD:</strong>\r\n<ul>\r\n<li>NAFLD includes a spectrum of disorders, from simple steatosis (fatty liver) to <strong>NASH</strong>, which is more severe.</li>\r\n<li>Simple NAFLD typically shows minimal or no inflammation, and liver enzyme abnormalities are mild.</li>\r\n<li>While NAFLD is the broader term, the patient's presentation with elevated liver enzymes and metabolic syndrome strongly supports <strong>NASH</strong>, not isolated NAFLD.</li>\r\n</ul>\r\n</li>\r\n<li><strong>B. Nonalcoholic Steatohepatitis (NASH):</strong>\r\n<ul>\r\n<li><strong>NASH</strong> represents the inflammatory and progressive form of NAFLD.</li>\r\n<li>It is characterized by:\r\n<ul>\r\n<li>Liver fat accumulation.</li>\r\n<li>Inflammation (steatohepatitis).</li>\r\n<li>Hepatocyte injury, which may lead to fibrosis and cirrhosis over time.</li>\r\n</ul>\r\n</li>\r\n<li>ALT &gt; AST is a classic finding in NASH and NAFLD (opposite to alcoholic liver disease).</li>\r\n</ul>\r\n</li>\r\n<li><strong>C. Primary Biliary Cholangitis (PBC):</strong>\r\n<ul>\r\n<li>PBC is a chronic autoimmune liver disease affecting the bile ducts.</li>\r\n<li>Typically presents in <strong>middle-aged women</strong> with fatigue, pruritus, and <strong>elevated alkaline phosphatase (ALP)</strong>, not ALT or AST predominance.</li>\r\n<li>The absence of these features makes PBC unlikely in this case.</li>\r\n</ul>\r\n</li>\r\n<li><strong>D. Wilson's Disease:</strong>\r\n<ul>\r\n<li>Wilson's disease is an autosomal recessive disorder of copper metabolism, presenting in <strong>younger patients (&lt;40 years)</strong>.</li>\r\n<li>Features include:\r\n<ul>\r\n<li>Neurological symptoms (e.g., tremors, psychiatric disturbances).</li>\r\n<li>Kayser-Fleischer rings (corneal copper deposits).</li>\r\n<li><strong>Low serum ceruloplasmin</strong> and elevated 24-hour urinary copper.</li>\r\n</ul>\r\n</li>\r\n<li>The patient's metabolic syndrome and absence of these findings exclude Wilson's disease.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n</li>\r\n<li><strong> Next Steps in Diagnosis and Management:</strong>\r\n<ol>\r\n<li><strong>Diagnostic Workup:</strong>\r\n<ul>\r\n<li>NASH is largely a clinical diagnosis based on history, risk factors, and imaging findings.</li>\r\n<li>Advanced cases may require:\r\n<ul>\r\n<li><strong>Liver Biopsy:</strong> Gold standard for diagnosing NASH and assessing fibrosis.</li>\r\n<li><strong>Fibroscan or MRI Elastography:</strong> Non-invasive tools to evaluate liver stiffness and fibrosis.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Management Approach:</strong>\r\n<ul>\r\n<li><strong>Lifestyle Modification:</strong> Cornerstone of treatment, focusing on:\r\n<ul>\r\n<li>Weight loss (7-10% of body weight significantly improves histology).</li>\r\n<li>Exercise and dietary changes (e.g., low-fat, low-sugar diet).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pharmacologic Therapy:</strong>\r\n<ul>\r\n<li>Vitamin E (in non-diabetic patients) and pioglitazone may be used for histologic improvement.</li>\r\n<li>No FDA-approved drugs are specifically available for NASH.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Monitoring Progression:</strong>\r\n<ul>\r\n<li>Regular monitoring of liver enzymes and imaging to detect progression to fibrosis or cirrhosis.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ol>\r\n<li><strong>ALT &gt; AST</strong> is characteristic of <strong>NASH</strong>, in contrast to alcoholic liver disease (AST &gt; ALT).</li>\r\n<li>NASH is strongly associated with <strong>metabolic syndrome</strong>, including obesity, diabetes, and hyperlipidemia.</li>\r\n<li>Without intervention, NASH can progress to <strong>cirrhosis</strong> and hepatocellular carcinoma (HCC).</li>\r\n<li><strong>Weight loss and lifestyle changes</strong> are the most effective treatment options.</li>\r\n</ol>\r\n",
+      "correct_choice_id": 82,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Metronidazole</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rifaximin</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Neomycin</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ciprofloxacin</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 59-year-old man with cirrhosis presents with increasing confusion and lethargy. He is on lactulose therapy. His ammonia level is elevated. Which additional medication is recommended for treatment?</span></p>",
+      "unique_key": "DT1295147",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295147,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Clinical Context:</strong> This patient has hepatic encephalopathy, as evidenced by confusion and elevated ammonia levels.Lactulose is first-line, but rifaximin is added for better ammonia control.</li>\r\n<li><strong>Mechanism:</strong> Rifaximin is a nonabsorbable antibiotic that reduces ammonia-producing gut flora.</li>\r\n<li><strong>Other Options:</strong>\r\n<ul>\r\n<li><strong>Metronidazole (A)</strong> and <strong>Neomycin (C):</strong> Alternatives but less commonly used due to side effects.</li>\r\n<li><strong>Ciprofloxacin (D):</strong> Not indicated for hepatic encephalopathy.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Combination therapy with lactulose and rifaximin is the standard for recurrent hepatic encephalopathy.</li>\r\n<li>Ammonia levels may not always correlate with symptom severity.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intravenous Octreotide</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Proton Pump Inhibitors</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Endoscopic Band Ligation</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Transjugular Intrahepatic Portosystemic Shunt (TIPS)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 47-year-old male with cirrhosis presents with melena and hypotension. Endoscopy reveals bleeding esophageal varices. What is the next best step in management?</span></p>",
+      "unique_key": "DT1295149",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295149,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>First-Line Therapy:</strong> Octreotide reduces splanchnic blood flow and portal pressure, providing immediate control of bleeding.</li>\r\n<li><strong>Next Step:</strong> Endoscopic band ligation (C) is performed once the patient is stabilized.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ul>\r\n<li><strong>PPIs (B):</strong> Used for peptic ulcers, not variceal bleeding.</li>\r\n<li><strong>TIPS (D):</strong> Reserved for refractory cases when endoscopic therapy fails.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Initial management includes IV fluids, blood transfusion if needed, and octreotide.</li>\r\n<li>Antibiotic prophylaxis (e.g., ceftriaxone) is essential in variceal bleeding.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wilson's Disease</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Alpha-1 Antitrypsin Deficiency</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hemochromatosis</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonalcoholic Steatohepatitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old man presents with abdominal pain, hepatomegaly, and hyperpigmentation of the skin. Laboratory findings show elevated ferritin and transferrin saturation. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295151",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295151,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Key Features:</strong> Skin hyperpigmentation, hepatomegaly, and elevated ferritin and transferrin saturation suggest hereditary hemochromatosis.</li>\r\n<li><strong>Pathophysiology:</strong> Excessive iron deposition in organs leads to liver disease, diabetes, and skin pigmentation.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ul>\r\n<li><strong>Wilson's Disease (A):</strong> Involves copper metabolism, presenting with low ceruloplasmin and Kayser-Fleischer rings.</li>\r\n<li><strong>Alpha-1 Antitrypsin Deficiency (B):</strong> Presents with early-onset emphysema and liver dysfunction.</li>\r\n<li><strong>NASH (D):</strong> Related to obesity and metabolic syndrome, not iron overload.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Early diagnosis through HFE genetic testing and phlebotomy prevents complications.</li>\r\n<li>Common in individuals of Northern European descent.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary Biliary Cholangitis (PBC)</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary Sclerosing Cholangitis (PSC)</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Autoimmune Hepatitis</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wilson's Disease</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 42-year-old woman presents with fatigue, jaundice, and generalized itching. Laboratory findings show elevated alkaline phosphatase, normal aminotransferases, and positive antimitochondrial antibodies. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295152",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295152,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Key Features:</strong> Fatigue, jaundice, pruritus, and elevated alkaline phosphatase with normal transaminases suggest a cholestatic liver disease. Positive AMA confirms PBC.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ol>\r\n<li><strong>PSC (B):</strong> More common in men and associated with inflammatory bowel disease; diagnosed with MRCP showing bile duct strictures.</li>\r\n<li><strong>Autoimmune Hepatitis (C):</strong> Elevated transaminases, &gamma;-globulins, and positive ANA.</li>\r\n<li><strong>Wilson's Disease (D):</strong> Low ceruloplasmin and copper metabolism defects, not cholestatic pattern.</li>\r\n</ol>\r\n</li>\r\n<li><strong>Management:</strong> Ursodeoxycholic acid is the first-line treatment to slow disease progression.</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>PBC primarily affects middle-aged women and is characterized by AMA positivity.</li>\r\n<li>Pruritus is a hallmark symptom due to bile acid accumulation.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106f91f6f1b-0506-415a-a142-7bfd46490e3f.jpg\">\r\n",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatocellular Carcinoma</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cholangiocarcinoma</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gallstone Disease</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary Biliary Cholangitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old man presents with painless jaundice, weight loss, with Imaging shows.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2025010645f0a7de-29d8-4d89-9d7f-63a4e0314a70.jpg\"><br>What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295155",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295155,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\n<li><strong>Key Features:</strong> Painless jaundice, weight loss, and a palpable gallbladder (Courvoisier's sign) suggest malignancy of the bile ducts.\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2025010626202879-3384-460e-ae24-d5b8bef08cc2.jpg\"></li>\n<li><strong>Differentiation:</strong>\n<ul>\n<li><strong>Hepatocellular Carcinoma (A):</strong> Associated with chronic liver disease and elevated AFP.</li>\n<li><strong>Gallstone Disease (C):</strong> Causes colicky pain, not painless jaundice.</li>\n<li><strong>PBC (D):</strong> Leads to chronic cholestasis, not obstruction.</li>\n</ul>\n</li>\n<li><strong>Next Step:</strong> Imaging (MRCP/CT) and biopsy to confirm diagnosis and guide management.</li>\n</ol>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Cholangiocarcinoma is rare but aggressive; early detection is critical for surgical intervention.</li>\n<li>Risk factors include PSC and biliary infections.</li>\n</ul>",
+      "correct_choice_id": 132,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low Priority</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Moderate Priority</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">High Priority</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Not Eligible for Transplantation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old male with cirrhosis is evaluated for liver transplantation. His MELD score is 25. What does this indicate about his priority for transplantation?</span></p>",
+      "unique_key": "DT1295156",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295156,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Key Features:</strong> A MELD score &gt;20 indicates a high risk of mortality without transplantation and prioritizes the patient for liver allocation.</li>\r\n<li><strong>MELD Score Components:</strong> Based on INR, serum bilirubin, creatinine, and sodium levels, predicting 3-month survival.</li>\r\n<li><strong>Differentiation:</strong>\r\n<ul>\r\n<li><strong>Low Priority (A):</strong> MELD &lt;15.</li>\r\n<li><strong>Moderate Priority (B):</strong> MELD 15-20.</li>\r\n<li><strong>Not Eligible (D):</strong> Contraindications include uncontrolled infections or malignancy.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Next Step:</strong> Evaluate for transplant candidacy and manage complications of cirrhosis.</li>\r\n</ol>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>MELD score is the primary criterion for liver transplantation prioritization.</li>\r\n<li>Incorporates sodium (MELD-Na) for better mortality prediction.</li>\r\n</ul>\r\n",
+      "correct_choice_id": 143,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gilbert's Syndrome</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Crigler-Najjar Syndrome</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hemolysis</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rotor Syndrome</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old male presents with recurrent episodes of abdominal pain, jaundice, and dark urine. His family history includes a sibling with similar symptoms. Labs show unconjugated hyperbilirubinemia. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1295159",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295159,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Key Features of Gilbert's Syndrome:</strong></p>\r\n<ul>\r\n<li><strong>Definition:</strong> A benign, inherited disorder caused by <strong>reduced activity of the enzyme UDP-glucuronosyltransferase 1A1 (UGT1A1)</strong>, leading to impaired conjugation of bilirubin.</li>\r\n<li><strong>Clinical Presentation:</strong>\r\n<ul>\r\n<li>Intermittent episodes of <strong>jaundice</strong> triggered by <strong>stress, fasting, illness, or strenuous exercise</strong>.</li>\r\n<li>Occurs in <strong>adolescents or young adults</strong>.</li>\r\n<li>Typically, asymptomatic apart from jaundice.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Laboratory Findings:</strong>\r\n<ul>\r\n<li><strong>Isolated unconjugated hyperbilirubinemia</strong> (total bilirubin &lt;4 mg/dL).</li>\r\n<li>Normal liver enzymes (ALT, AST, ALP) and complete blood count (CBC).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Management:</strong>\r\n<ul>\r\n<li>No treatment required. <strong>Reassurance</strong> is the mainstay, as the condition is benign and does not cause liver damage.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Differentiation Between Options:</strong></p>\r\n<p><strong>Option A. Gilbert's Syndrome (Correct Answer):</strong></p>\r\n<ul>\r\n<li><strong>Hallmark Features:</strong>\r\n<ul>\r\n<li>Episodic <strong>unconjugated hyperbilirubinemia</strong>.</li>\r\n<li>Normal liver function and no hemolysis.</li>\r\n<li>Onset in adolescence or adulthood.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Triggers:</strong> Stress, fasting, infection, or physical exertion.</li>\r\n</ul>\r\n<p>Option <strong>B. Crigler-Najjar Syndrome:</strong></p>\r\n<ul>\r\n<li><strong>Definition:</strong> A rare inherited disorder caused by near-complete or complete absence of <strong>UGT1A1 activity</strong>, leading to severe unconjugated hyperbilirubinemia.</li>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li><strong>Type I:</strong> Severe jaundice and kernicterus (bilirubin encephalopathy) in neonates.\r\n<ul>\r\n<li><strong>Total bilirubin &gt;20-50 mg/dL</strong>.</li>\r\n<li>Fatal if untreated.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Type II:</strong> Milder form, may respond to <strong>phenobarbital therapy</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Distinction from Gilbert&rsquo;s Syndrome:</strong>\r\n<ul>\r\n<li>Much higher bilirubin levels.</li>\r\n<li>Onset in infancy rather than adolescence/adulthood.</li>\r\n<li>Requires treatment (e.g., phototherapy, liver transplantation for Type I).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>C. Hemolysis:</strong></p>\r\n<ul>\r\n<li><strong>Definition:</strong> Destruction of red blood cells (RBCs), leading to <strong>increased production of unconjugated bilirubin</strong>.</li>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li>Anemia with pallor and fatigue.</li>\r\n<li><strong>Reticulocytosis</strong> (increased reticulocyte count) and elevated lactate dehydrogenase (LDH).</li>\r\n<li>Decreased haptoglobin and elevated indirect bilirubin.</li>\r\n<li>Splenomegaly may be present.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Distinction from Gilbert's Syndrome:</strong>\r\n<ul>\r\n<li>Associated with <strong>anemia</strong> and other hemolytic markers (e.g., reticulocytosis, elevated LDH).</li>\r\n<li>Unconjugated hyperbilirubinemia is secondary to RBC destruction, not impaired conjugation.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>D. Rotor Syndrome:</strong></p>\r\n<ul>\r\n<li><strong>Definition:</strong> A rare, benign inherited disorder causing <strong>conjugated hyperbilirubinemia</strong> due to impaired bilirubin storage and excretion.</li>\r\n<li><strong>Clinical Features:</strong>\r\n<ul>\r\n<li>Chronic, mild jaundice without progression to liver disease.</li>\r\n<li>Normal liver function tests except for elevated conjugated bilirubin.</li>\r\n<li>May see <strong>bilirubinuria</strong> (conjugated bilirubin in urine).</li>\r\n</ul>\r\n</li>\r\n<li><strong>Distinction from Gilbert's Syndrome:</strong>\r\n<ul>\r\n<li><strong>Conjugated hyperbilirubinemia</strong> vs. unconjugated hyperbilirubinemia in Gilbert's.</li>\r\n<li>No specific triggers for jaundice in Rotor Syndrome.</li>\r\n<li>Urine bilirubin is <strong>positive</strong> in Rotor Syndrome (absent in Gilbert's).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Differentiating Points in a Table:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106c37a7ce7-8902-4812-a217-80916b46a09b.jpg\">\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ol>\r\n<li><strong>Gilbert's Syndrome</strong> is a benign condition caused by reduced bilirubin conjugation and does not require treatment.</li>\r\n<li>It is differentiated from other causes of jaundice by its <strong>isolated unconjugated hyperbilirubinemia</strong>, lack of anemia, and normal liver function.</li>\r\n<li>Understanding bilirubin metabolism and associated clinical features is crucial for accurate diagnosis.</li>\r\n</ol>\r\n",
+      "correct_choice_id": 151,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Discontinue aspirin and enoxaparin 5-7 days before the procedure and ensure platelet count >100,000/&mu;L</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Continue aspirin and enoxaparin, administer fresh frozen plasma, and proceed with the biopsy</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Discontinue only enoxaparin 24 hours before the procedure and perform the biopsy with platelet transfusion</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">No need to stop any medications; proceed with the biopsy as planned since the INR is within the normal range</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old man with chronic hepatitis C is scheduled for a percutaneous liver biopsy. His medications include aspirin for coronary artery disease, enoxaparin for deep vein thrombosis prophylaxis, and a daily multivitamin. His most recent lab results are as follows:<br>Platelet count: 120,000/&mu;L<br>INR: 1.3<br>ALT: 76 IU/L<br>AST: 82 IU/L<br>Which of the following is the best set of precautions and drug modifications to take prior to the procedure?</span></p>",
+      "unique_key": "DT1295162",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295162,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong>Importance of Precautions Before Liver Biopsy:</strong>\r\n<ul>\r\n<li>Liver biopsy is an <strong>invasive procedure</strong> with risks of <strong>bleeding, infection, and pain</strong>.</li>\r\n<li>Adequate hemostasis is critical as the liver is a highly vascular organ.</li>\r\n<li>Common complications include <strong>hemorrhage</strong> and <strong>puncture of adjacent organs</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Key Risk Factors for Bleeding:</strong>\r\n<ol>\r\n<li><strong>Thrombocytopenia:</strong>\r\n<ul>\r\n<li>Platelet counts &lt;100,000/&mu;L increase the risk of post-procedure bleeding.</li>\r\n<li>If platelets &lt;50,000/&mu;L, a transfusion is recommended before the procedure.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Coagulopathy:</strong>\r\n<ul>\r\n<li>An <strong>INR &gt;1.5</strong> significantly increases bleeding risk.</li>\r\n<li>If INR &gt;1.5, consider fresh frozen plasma (FFP) or vitamin K before biopsy.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Antithrombotic Medications:</strong>\r\n<ul>\r\n<li><strong>Aspirin and NSAIDs:</strong> Inhibit platelet aggregation; discontinue 5-7 days before biopsy.</li>\r\n<li><strong>Enoxaparin (Low-Molecular-Weight Heparin):</strong> Prolongs bleeding time; discontinue at least 24 hours prior.</li>\r\n<li><strong>Warfarin or DOACs (Direct Oral Anticoagulants):</strong> Typically discontinued 3-5 days before biopsy.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n</li>\r\n<li><strong> Why Option A is Correct:</strong>\r\n<ul>\r\n<li><strong>Aspirin:</strong> Discontinuing aspirin 5-7 days prior allows platelet function to recover since aspirin irreversibly inhibits platelet cyclooxygenase-1 (COX-1).</li>\r\n<li><strong>Enoxaparin:</strong> Stopping 24 hours before ensures clearance of the anticoagulant effect, minimizing bleeding risk.</li>\r\n<li><strong>Platelet Count:</strong> The patient's platelet count is 120,000/&mu;L, which is safe for biopsy. If &lt;100,000/&mu;L, platelet transfusion should be considered.</li>\r\n</ul>\r\n</li>\r\n<li><strong> Incorrect Options:</strong></li>\r\n</ol>\r\n<p><strong>B. Continue aspirin and enoxaparin, administer FFP, and proceed with biopsy:</strong></p>\r\n<ul>\r\n<li>Incorrect because continuing aspirin and enoxaparin increases bleeding risk despite FFP administration. FFP corrects INR, but it does not mitigate the effects of antiplatelet drugs.</li>\r\n</ul>\r\n<p><strong>C. Discontinue only enoxaparin 24 hours before the procedure and perform the biopsy with platelet transfusion:</strong></p>\r\n<ul>\r\n<li>Partially correct, but aspirin must also be stopped to restore normal platelet function. Platelet transfusion is unnecessary here as the platelet count is &gt;100,000/&mu;L.</li>\r\n</ul>\r\n<p><strong>D. No need to stop any medications; proceed with the biopsy as planned:</strong></p>\r\n<ul>\r\n<li>Incorrect as continuing aspirin and enoxaparin exposes the patient to a significantly higher risk of bleeding, even with a normal INR.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Aspirin, NSAIDs, and anticoagulants must be <strong>appropriately timed for discontinuation</strong> to minimize bleeding risks.</li>\r\n<li>Ensure platelet count &gt;100,000/&mu;L and INR &le;1.5 before proceeding.</li>\r\n<li>Use <strong>platelet transfusions</strong> or FFP correction only in specific cases of severe thrombocytopenia or coagulopathy.</li>\r\n</ul>\r\n<p><strong>References:</strong></p>\r\n<ul>\r\n<li>AASLD Guidelines for Percutaneous Liver Biopsy.</li>\r\n</ul>",
+      "correct_choice_id": 161,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Norfloxacin</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ceftriaxone</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ciprofloxacin</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vancomycin</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 50-year-old man with cirrhosis presents with abdominal pain, fever, and hypotension. Paracentesis reveals neutrophil count >250 cells/&mu;L and a positive culture for Escherichia coli. What is the recommended prophylactic antibiotic to prevent recurrence?</span></p>",
+      "unique_key": "DT1295164",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295164,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\r\n<li><strong> Key Features of the Clinical Case:</strong>\r\n<ul>\r\n<li><strong>Spontaneous Bacterial Peritonitis (SBP):</strong>\r\n<ul>\r\n<li>SBP is a bacterial infection of ascitic fluid without an evident intra-abdominal source of infection.</li>\r\n<li>Diagnostic criteria include:\r\n<ul>\r\n<li><strong>Polymorphonuclear leukocyte (PMN) count &ge;250 cells/&mu;L</strong> in ascitic fluid.</li>\r\n<li>Positive bacterial culture (e.g., Escherichia coli, Klebsiella).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Prophylaxis Need:</strong>\r\n<ul>\r\n<li>Patients with a history of SBP are at high risk of recurrence (approximately 70% within 1 year).</li>\r\n<li>Antibiotic prophylaxis reduces the risk of recurrence and improves survival.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong> Role of Norfloxacin (Correct Answer):</strong>\r\n<ul>\r\n<li><strong>Norfloxacin:</strong>\r\n<ul>\r\n<li>A <strong>quinolone antibiotic</strong>, effective against gram-negative bacteria commonly implicated in SBP (e.g., E. coli).</li>\r\n<li><strong>Mechanism:</strong> Prevents translocation of gut bacteria into the bloodstream or ascitic fluid.</li>\r\n<li><strong>Dosing for Prophylaxis:</strong>\r\n<ul>\r\n<li><strong>Secondary Prophylaxis:</strong> 400 mg once daily orally.</li>\r\n<li>Indicated in <strong>cirrhotic patients with low protein ascites (&lt;1.5 g/dL)</strong> or prior SBP.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<p><strong>Incorrect Options:</strong></p>\r\n<p><strong>B. Ceftriaxone:</strong></p>\r\n<ul>\r\n<li><strong>Primary Use:</strong> First-line antibiotic for <strong>treatment</strong> of active SBP.</li>\r\n<li><strong>Not used for prophylaxis</strong> due to risks of resistance and lack of long-term effectiveness in preventing recurrence.</li>\r\n</ul>\r\n<p><strong>C. Ciprofloxacin:</strong></p>\r\n<ul>\r\n<li><strong>Alternative to Norfloxacin:</strong> Effective in SBP prophylaxis but not the first-line agent.</li>\r\n<li>Used if norfloxacin is unavailable or contraindicated.</li>\r\n</ul>\r\n<p><strong>D. Vancomycin:</strong></p>\r\n<ul>\r\n<li>Targets <strong>gram-positive organisms</strong>, which are rarely implicated in SBP.</li>\r\n<li>Not recommended for either treatment or prophylaxis of SBP.</li>\r\n</ul>\r\n<ol start=\"4\">\r\n<li><strong> Prophylaxis Guidelines for SBP:</strong>\r\n<ol>\r\n<li><strong>Indications for Prophylaxis:</strong>\r\n<ul>\r\n<li>History of SBP (secondary prophylaxis).</li>\r\n<li>Low-protein ascitic fluid (&lt;1.5 g/dL) with one of the following:\r\n<ul>\r\n<li>Severe liver dysfunction (Child-Pugh &ge;9).</li>\r\n<li>Renal dysfunction (serum creatinine &ge;1.2 mg/dL).</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>First-Line Prophylaxis:</strong>\r\n<ul>\r\n<li><strong>Norfloxacin 400 mg daily.</strong></li>\r\n</ul>\r\n</li>\r\n<li><strong>Alternative Prophylaxis Options:</strong>\r\n<ul>\r\n<li>Ciprofloxacin 500 mg daily.</li>\r\n<li>Bactrim (trimethoprim-sulfamethoxazole) in some cases.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Treatment of Active SBP:</strong>\r\n<ul>\r\n<li>Initial therapy with <strong>ceftriaxone or ceftazidime</strong> (3rd-generation cephalosporins).</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n</li>\r\n<li><strong> Key Takeaways:</strong>\r\n<ul>\r\n<li><strong>SBP Prophylaxis:</strong>\r\n<ul>\r\n<li>Norfloxacin is the <strong>first-line choice</strong> for secondary prophylaxis in patients at high risk of SBP recurrence.</li>\r\n<li>Ciprofloxacin is an acceptable alternative.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Management of Active SBP:</strong>\r\n<ul>\r\n<li>Requires empiric therapy with <strong>ceftriaxone</strong>, followed by tailored therapy based on culture results.</li>\r\n</ul>\r\n</li>\r\n<li>Long-term <strong>norfloxacin prophylaxis</strong> significantly improves outcomes in cirrhotic patients.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+      "correct_choice_id": 171,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chelation Therapy</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Phlebotomy</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver Transplantation</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Corticosteroids</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old man presents with fatigue, hepatomegaly, and elevated liver enzymes. Genetic testing reveals the HFE mutation. What is the most appropriate treatment?</span></p>",
+      "unique_key": "DT1295166",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295166,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\n<li><strong> Key Features of Hereditary Hemochromatosis (HFE Mutation):</strong>\n<ul>\n<li><strong>Definition:</strong> An autosomal recessive disorder caused by mutations in the <strong>HFE gene</strong>, leading to excessive absorption of dietary iron.</li>\n<li><strong>Pathophysiology:</strong>\n<ul>\n<li>Increased intestinal iron absorption causes iron overload, which deposits in various organs, including the liver, pancreas, heart, and skin.</li>\n<li>Chronic iron overload results in <strong>cirrhosis</strong>, <strong>diabetes mellitus</strong> (\"bronze diabetes\"), <strong>cardiomyopathy</strong>, and other complications.</li>\n</ul>\n</li>\n<li><strong>Clinical Features:</strong>\n<ul>\n<li>Early: Fatigue, arthralgia, nonspecific symptoms.</li>\n<li>Advanced:\n<ul>\n<li><strong>Hepatic:</strong> Hepatomegaly, cirrhosis, hepatocellular carcinoma (HCC).</li>\n<li><strong>Endocrine:</strong> Diabetes, hypogonadism.</li>\n<li><strong>Cardiac:</strong> Heart failure, arrhythmias.</li>\n<li><strong>Dermatologic:</strong> Skin hyperpigmentation (\"bronze diabetes\").</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Laboratory Findings:</strong>\n<ul>\n<li>Elevated <strong>serum ferritin</strong> and <strong>transferrin saturation</strong> (&gt;45%).</li>\n<li>HFE mutation analysis confirms the diagnosis.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20250106b38a0adf-539e-40a8-a4c8-c4d2fc195bef.jpg\"></li>\n<li><strong> Management of Hereditary Hemochromatosis:</strong>\n<ul>\n<li><strong>Phlebotomy (Correct Answer):</strong></li>\n<li><strong>Mechanism:</strong>\n<ul>\n<li>Regular removal of blood reduces body iron stores, preventing further organ damage.</li>\n<li>Each unit of blood removed contains approximately <strong>200-250 mg of iron</strong>.</li>\n</ul>\n</li>\n<li><strong>Indication:</strong>\n<ul>\n<li>All symptomatic patients or those with evidence of iron overload.</li>\n</ul>\n</li>\n<li><strong>Schedule:</strong>\n<ul>\n<li><strong>Initial Phase (Iron Depletion):</strong> Weekly phlebotomy until serum ferritin &lt;50 ng/ml.</li>\n<li><strong>Maintenance Phase:</strong> Phlebotomy every 2-4 months to maintain ferritin &lt;100 ng/mL.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong> Incorrect Options:</strong></li>\n</ol>\n<p><strong>A. Chelation Therapy:</strong></p>\n<ul>\n<li><strong>Example:</strong> Deferoxamine.</li>\n<li><strong>Use:</strong> Reserved for patients who cannot tolerate phlebotomy (e.g., severe anemia or poor venous access).</li>\n<li>Not the first-line treatment due to higher cost, limited availability, and side effects.</li>\n</ul>\n<p><strong>C. Liver Transplantation:</strong></p>\n<ul>\n<li>Indicated only for <strong>end-stage liver disease</strong> or <strong>hepatocellular carcinoma</strong> resulting from advanced iron overload.</li>\n<li>Preventable with early diagnosis and management via phlebotomy.</li>\n</ul>\n<p><strong>D. Corticosteroids:</strong></p>\n<ul>\n<li>Not indicated in hereditary hemochromatosis as it does not involve immune-mediated mechanisms.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ol>\n<li><strong>Phlebotomy</strong> is the first-line treatment for hereditary hemochromatosis, effectively reducing iron levels and preventing complications.</li>\n<li>Alternative therapies, such as chelation, are used only in specific situations where phlebotomy is contraindicated.</li>\n<li>Early diagnosis and treatment significantly improve long-term outcomes by preventing irreversible organ damage.</li>\n</ol>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Serum Ceruloplasmin</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">24-Hour Urinary Copper</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver Biopsy for Copper Quantification</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Genetic Testing for ATP7B Mutation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 29-year-old woman presents with fatigue, mood changes, and a history of jaundice. Examination shows Kayser-Fleischer rings. What test is most specific for the diagnosis?</span></p>",
+      "unique_key": "DT1295168",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1295168,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ol>\n<li><strong> Key Features of Wilson's Disease:</strong>\n<ul>\n<li><strong>Definition:</strong> An autosomal recessive disorder caused by mutations in the <strong>ATP7B gene</strong>, leading to defective copper metabolism.</li>\n<li><strong>Pathophysiology:</strong>\n<ul>\n<li>Impaired copper excretion into bile and reduced incorporation into ceruloplasmin.</li>\n<li>Excess copper accumulates in the liver, brain (especially the basal ganglia), cornea, and other organs.</li>\n</ul>\n</li>\n<li><strong>Clinical Presentation:</strong>\n<ul>\n<li><strong>Neurological Symptoms:</strong> Tremors, dysarthria, dystonia, mood changes, or behavioral disturbances.</li>\n<li><strong>Ophthalmic Signs:</strong> Kayser-Fleischer (KF) rings-copper deposition in Descemet's membrane of the cornea.</li>\n<li><strong>Hepatic Symptoms:</strong> Jaundice, hepatomegaly, and progression to cirrhosis or fulminant hepatic failure.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong> Diagnostic Tests:</strong></li>\n</ol>\n<p><strong>A. Serum Ceruloplasmin:</strong></p>\n<ul>\n<li><strong>Role:</strong> A screening test, often reduced (&lt;20 mg/dL) in Wilson's disease.</li>\n<li><strong>Limitations:</strong>\n<ul>\n<li>Low specificity-other conditions (e.g., liver disease, protein-losing conditions) can also lower ceruloplasmin levels.</li>\n<li>Normal levels may occur in acute liver failure due to inflammation or hemolysis.</li>\n</ul>\n</li>\n</ul>\n<p><strong>B. 24-Hour Urinary Copper Excretion:</strong></p>\n<ul>\n<li><strong>Role:</strong> Measures copper excretion, typically elevated (&gt;100 &micro;g/day) in Wilson&rsquo;s disease.</li>\n<li><strong>Limitations:</strong>\n<ul>\n<li>Increased levels can occur in other liver diseases.</li>\n<li>Requires careful collection for accuracy.</li>\n</ul>\n</li>\n</ul>\n<p><strong>C. Liver Biopsy for Copper Quantification (Correct Answer):</strong></p>\n<ul>\n<li><strong>Role:</strong> Gold standard for diagnosing Wilson's disease.</li>\n<li><strong>Findings:</strong>\n<ul>\n<li>Hepatic copper content &gt;250 &micro;g/g dry weight confirms Wilson's disease.</li>\n</ul>\n</li>\n<li><strong>Advantages:</strong>\n<ul>\n<li>Directly measures copper deposition in the liver.</li>\n</ul>\n</li>\n<li><strong>Limitations:</strong>\n<ul>\n<li>Invasive procedure with risks, but provides definitive diagnosis.</li>\n</ul>\n</li>\n</ul>\n<p><strong>D. Genetic Testing for ATP7B Mutation:</strong></p>\n<ul>\n<li><strong>Role:</strong> Identifies ATP7B mutations to confirm the diagnosis.</li>\n<li><strong>Limitations:</strong>\n<ul>\n<li>Not always readily available or necessary.</li>\n<li>Used in family screening or cases with equivocal findings.</li>\n</ul>\n</li>\n</ul>\n<ol start=\"4\">\n<li><strong> Differential Diagnosis:</strong>\n<ul>\n<li><strong>Hemochromatosis:</strong> Associated with iron overload, hyperpigmentation, diabetes, and liver dysfunction. Diagnosed via ferritin, transferrin saturation, or genetic testing.</li>\n<li><strong>Primary Biliary Cholangitis (PBC):</strong> Presents with pruritus, jaundice, and elevated alkaline phosphatase; antimitochondrial antibodies (AMA) are diagnostic.</li>\n<li><strong>Autoimmune Hepatitis:</strong> Characterized by elevated IgG, ANA, or SMA positivity, and hepatocellular injury on liver biopsy.</li>\n</ul>\n</li>\n<li><strong> Management of Wilson's Disease:</strong>\n<ol>\n<li><strong>Chelation Therapy:</strong>\n<ul>\n<li><strong>D-Penicillamine:</strong> Increases urinary copper excretion but may cause side effects (e.g., nephrotoxicity).</li>\n<li><strong>Trientine:</strong> Alternative chelator with fewer side effects.</li>\n</ul>\n</li>\n<li><strong>Zinc Therapy:</strong>\n<ul>\n<li>Reduces copper absorption by inducing metallothionein in enterocytes.</li>\n</ul>\n</li>\n<li><strong>Dietary Restrictions:</strong>\n<ul>\n<li>Avoid copper-rich foods (e.g., shellfish, liver, nuts).</li>\n</ul>\n</li>\n<li><strong>Liver Transplantation:</strong>\n<ul>\n<li>Reserved for advanced cases with fulminant liver failure or decompensated cirrhosis.</li>\n</ul>\n</li>\n</ol>\n</li>\n</ol>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Gold Standard Test:</strong> Liver biopsy for hepatic copper quantification (&gt;250 &micro;g/g dry weight).</li>\n<li><strong>Supportive Tests:</strong> Serum ceruloplasmin (low), 24-hour urinary copper (elevated), and genetic testing for ATP7B mutations.</li>\n<li><strong>Classic Feature:</strong> Kayser-Fleischer rings and neuropsychiatric symptoms strongly suggest Wilson's disease.</li>\n<li><strong>Early Diagnosis:</strong> Crucial to prevent irreversible organ damage through timely initiation of chelation therapy.</li>\n</ul>",
+      "correct_choice_id": 193,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

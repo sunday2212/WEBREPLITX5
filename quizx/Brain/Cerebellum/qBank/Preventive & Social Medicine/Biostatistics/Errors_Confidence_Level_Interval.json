@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Errors_Confidence_Level_Interval"
+  },
+  "questions": [
+    {
+      "id": 3220,
+      "choices": [
+        {
+          "id": 12861,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard error of mean is estimated.</span></p>"
+        },
+        {
+          "id": 12862,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation is used for calculation.</span></p>"
+        },
+        {
+          "id": 12863,
+          "text": "<p><span style=\"font-size:12.0pt;\">Student’s t test table is required for calculation.</span></p>"
+        },
+        {
+          "id": 12864,
+          "text": "<p><span style=\"font-size:12.0pt;\">Three groups are compared.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Dr. Ahmed is conducting a study comparing the mean blood pressure of two independent groups: one on a new antihypertensive drug and another on a placebo. He collects data from both groups and plans to analyze the difference in means between the two. He considers using the student's t-test but recalls some characteristics associated with it. Which of the following statements regarding the student's t-test is NOT true?</span></p>",
+      "unique_key": "Q4279989",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34910,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Ans. D. Three groups are compared.</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Option D:</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">The statement that is <strong>not true</strong> about the <strong>Student's t-test</strong> is that it is used to compare <strong>three groups</strong>. The <strong>Student's t-test</strong> is specifically designed to <strong>compare</strong> the <strong>means</strong> of <strong>two independent groups</strong>. When comparing the means of <strong>three</strong> or <strong>more groups</strong>, other <strong>statistical methods</strong>, such as <strong>ANOVA</strong> (Analysis of Variance), are <strong>more appropriate</strong>.</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\">The<strong> student's t-test</strong> is a <strong>parametric test</strong> used to <strong>determine</strong> if there is a significant <strong>difference between</strong> the <strong>means</strong> of <strong>two independent groups</strong>. It assumes that the <strong>data</strong> follows a <strong>normal distribution</strong> and that the <strong>variances</strong> of the <strong>two groups</strong> are <strong>equal</strong> (homogeneity of variances). <strong>Non-parametric tests</strong> are used when these <strong>assumptions</strong> are <strong>not</strong> met.&nbsp;</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Explanation:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Option A. Standard error of mean is estimated:&nbsp;</strong>This is <strong>true</strong>. The Student's t-test involves estimating the <strong>standard error</strong> of the mean to understand the <strong>variability</strong> of the <strong>sample</strong> <strong>mean </strong>from the <strong>population mean.</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Option B. Standard deviation is used for calculation:&nbsp;</strong>This is also <strong>true.</strong> The calculation of the <strong>t-test</strong> involves using the <strong>standard deviation</strong> of the <strong>sample data.</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Option C. Student’s t-test table is required for calculation:&nbsp;</strong>This is <strong>correct</strong>. The <strong>t-test</strong> involves comparing the <strong>calculated t-statistic</strong> to <strong>values</strong> in the <strong>Student's t-test</strong> table to determine <strong>statistical significance</strong>.</span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Educational Objective:</u></strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong>Means&nbsp;</strong>of <strong>two groups</strong> are compared in a <strong>student’s t test</strong>. <strong>ANOVA</strong> is used for <strong>comparison </strong>of <strong>three groups.</strong></span></p><p style=\"text-align:justify;\">&nbsp;</p><p style=\"text-align:justify;\"><span style=\"font-size:12pt;\"><strong><u>Ref</u>: Essentials of Biostatistics- Indranil Saha- 2<sup>nd</sup> edition (page 118)</strong></span></p>",
+      "correct_choice_id": 12864,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "ClinicalVignette"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3213,
+      "choices": [
+        {
+          "id": 12833,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Student t test</span></span></span></p>"
+        },
+        {
+          "id": 12834,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Fisher&rsquo;s test</span></span></span></p>"
+        },
+        {
+          "id": 12835,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Wilcoxon signed rank test</span></span></span></p>"
+        },
+        {
+          "id": 12836,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Paired t test</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Dr. Kapoor is analyzing data from a clinical study in which he&#39;s comparing the efficacy of two treatments for a rare disease. Given the small number of patients in his study, he&#39;s considering a statistical test which is an alternative to the standard Chi square test, especially when sample sizes are small. Which of the following tests is a variant of the Chi square test and might be more appropriate for Dr. Kapoor&#39;s analysis?</span></span></p>",
+      "unique_key": "Q1502453",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34911,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. B. Fisher&rsquo;s test</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option B:</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Fisher&rsquo;s Exact Test&nbsp;</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">is the appropriate <strong>alternative</strong> to the<strong> Chi-square test</strong> for <strong>small sample sizes</strong>. It is specifically designed for <strong>categorical data</strong> in <strong>contingency tables</strong>, particularly when the <strong>sample sizes</strong> are <strong>too small</strong> to meet the <strong>assumptions</strong> of the <strong>Chi-square test</strong>. Fisher&rsquo;s Exact Test <strong>calculates</strong> the exact <strong>probability</strong> of observing the <strong>distribution</strong> of the <strong>data,</strong> given the <strong>marginal totals</strong>, making it <strong>more reliable</strong> than the <strong>Chi-square test</strong> for <strong>small samples</strong>.</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option A. Student t-test:&nbsp;</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">This test is used for <strong>comparing</strong> the means of <strong>two groups,</strong> typically with <strong>continuous data,</strong> and is <strong>not</strong> a variant of the <strong>Chi-square test</strong>.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option C. Wilcoxon signed-rank test:&nbsp;</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">This is a <strong>non-parametric test</strong> used for comparing <strong>two related samples</strong> or <strong>repeated measurements</strong> on a <strong>single sample</strong>, <strong>not</strong> a variant of the <strong>Chi-square test.</strong></span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:Calibri,sans-serif\"><strong>Option D. Paired t-test:</strong>&nbsp;</span><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"><strong>Similar</strong> to the <strong>Student t-test,</strong> this is used for comparing the means of <strong>two related groups</strong>, <strong>not</strong> a <strong>direct alternative</strong> to the <strong>Chi-square test.</strong></span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Chi-square test</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> - Comparing <strong>percentage, proportions &amp; fractions</strong> in <strong>two</strong> or <strong>more different group</strong> of individuals</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Fischer&rsquo;s test</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: Is a <strong>variant </strong>of <strong>Chi-square test</strong> when <strong>sample size is &lt; 30.</strong>&nbsp;In a <strong>2 x 2</strong> <strong>contingency table</strong> of the <strong>expected value</strong> in any cell is <strong>less than 5,</strong> Fisher&rsquo;s exact test is done.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: Essentials of Biostatistics- Indranil Saha- 2<sup>nd</sup> edition (page 97)</span></strong></span></span></p>",
+      "correct_choice_id": 12834,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "ClinicalVignette"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3204,
+      "choices": [
+        {
+          "id": 12797,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Conceptual error</span></span></span></p>"
+        },
+        {
+          "id": 12798,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Observer error</span></span></span></p>"
+        },
+        {
+          "id": 12799,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Instrumental error</span></span></span></p>"
+        },
+        {
+          "id": 12800,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Sampling error</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">A medical student named Arjun is presenting his research findings on the effects of a new dietary supplement on cholesterol levels to his peers. One of his colleagues, Priya, inquires about the variability of the estimated mean cholesterol level reduction due to the dietary supplement from sample to sample. Arjun realizes he&#39;s discussing a specific statistical measure that quantifies this variability. Which of the following best describes the measure that Arjun is referring to?</span></span></p>",
+      "unique_key": "Q1278288",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34908,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. D. Sampling error</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option D:</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Sampling error refers to the variability in statistical estimates that occurs purely by chance because the data is collected from a sample of the population rather than the entire population. In the context of Arjun&#39;s research, the sampling error would be the difference in the estimated mean reduction in cholesterol levels that could occur if a different sample from the same population were used. This type of error is a natural part of sample-based research and does not imply a mistake; rather, it reflects the inherent uncertainty when using samples to estimate population parameters.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option A. Conceptual Error:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> This refers to errors due to a misunderstanding or misapplication of statistical concepts, not relevant to the variability in sample estimates.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option B. Observer Error:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> This involves variability in measurements due to differences in the person making the observations, not directly relevant to Priya&#39;s question.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option C. Instrumental Error:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> Refers to inaccuracies in measurements due to faults or limitations in the instruments used, not to the variability between samples.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational Objective:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">SAMPLING ERRORS/ Random errors &ndash; Is &lsquo;divergence due to chance alone&rsquo; of an observation on a sample from true population value, leading to &lsquo;lack of precision&rsquo; in measurement. Random error &lsquo;cannot be completely eliminated&rsquo;</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Best way of reducing sampling errors (increasing precision): Increase the sample size in the study</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: Essentials of Biostatistics- Indranil Saha- 2<sup>nd</sup> edition (page 85)</span></strong></span></span></p>",
+      "correct_choice_id": 12800,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "ClinicalVignette"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3241,
+      "choices": [
+        {
+          "id": 12945,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Students t test</span></span></span></p>"
+        },
+        {
+          "id": 12946,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">ANOVA</span></span></span></p>"
+        },
+        {
+          "id": 12947,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Paired t test</span></span></span></p>"
+        },
+        {
+          "id": 12948,
+          "text": "<p><span style=\"font-size:11pt\"><span style=\"font-family:Calibri,sans-serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\">Chi square test</span></span></span></p>"
+        }
+      ],
+      "text": "<p style=\"text-align:justify\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-size:12.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Dr. Aman is a cardiology fellow at AIIMS, New Delhi. He is conducting a study to assess the impact of three different dietary interventions (A, B, &amp; C) on blood pressure. After a few months of closely monitoring his participants, he calculates the mean blood pressure for each group and notices that the means are different. During a departmental meeting, he presents his findings and contemplates the next steps for his analysis. In your opinion, which test should be choose ?</span></span></p>",
+      "unique_key": "Q8786757",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34909,
+      "difficulty_level": "beginner",
+      "subjects_id": [
+        7
+      ],
+      "solution": "<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ans. B. ANOVA</span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option&nbsp;B<span style=\"font-family:&quot;Calibri&quot;,sans-serif\">:</span></span></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Analysis of Variance is used to compare the means of three or more groups. These groups must be mutually exclusive.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Explanation:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option A. Student&#39;s t-test:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> This test is used for comparing the means between two groups, not three.&nbsp;</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option C. Paired t-test:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> This test is used for comparing means from the same group at two different times or under two different conditions, not suitable for three independent groups.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Option D. Chi-square test:</span></strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\"> This test is used for categorical data to assess the relationship between two categorical variables or to compare the observed frequency with the expected frequency, not for comparing means.</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Educational objective:</span></u></strong></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">ANOVA test (F-test/F-ratio): Parametric test used to compare means (+ SD) in more than two different group of individuals</span></span></span></p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;</p>\r\n\r\n<p style=\"text-align:justify\"><span style=\"font-size:12pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><strong><u><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">Ref</span></u></strong><strong><span dir=\"ltr\" lang=\"EN-US\" style=\"font-family:&quot;Calibri&quot;,sans-serif\">: Essentials of Biostatistics- Indranil Saha- 2<sup>nd</sup> edition (page 112)</span></strong></span></span></p>",
+      "correct_choice_id": 12946,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "ClinicalVignette"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

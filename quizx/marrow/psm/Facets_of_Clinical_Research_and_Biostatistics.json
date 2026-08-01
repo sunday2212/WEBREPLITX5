@@ -1,0 +1,275 @@
+{
+  "chapter": "Facets_of_Clinical_Research_and_Biostatistics",
+  "questions": 
+[
+  {
+    "q_no": 1,
+    "question": "Question 1: Which of the following is true about simple random sampling?",
+    "options": {
+      "a": "It is the sampling method of choice for heterogenous population",
+      "b": "Members are selected without specifying any criteria for selection",
+      "c": "Every 5th or 10th member is picked at regular interval",
+      "d": "Population is first divided into strata then sampled randomly"
+    },
+    "correct_answer": "b",
+    "explanation": "In simple random sampling, samples are drawn in such a way that every element in a population \nhas equal chances of being included. In other words, the members are selected without specifying \nany criteria for selection.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 2,
+    "question": "Question 2: A study on the prevalence of diabetes was conducted and the sampling method shown below \nwas used. Identify the sampling method used.",
+    "options": {
+      "a": "Simple random",
+      "b": "Cluster",
+      "c": "Systematic",
+      "d": "Stratified random"
+    },
+    "correct_answer": "d",
+    "explanation": "In this study, the population is separated into homogenous sub-groups and from these, random \nsamples are drawn. This sampling method is called stratified random sampling.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q2_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 3,
+    "question": "Question 3: 881 \nSold by @itachibot Which of the following is incorrect about cluster sampling?",
+    "options": {
+      "a": "Clusters are created based on similarities",
+      "b": "It is a two stage sampling",
+      "c": "It is cheaper than most other methods",
+      "d": "It is a method used for rapid assessment"
+    },
+    "correct_answer": "a",
+    "explanation": "In cluster sampling, the clusters are created randomly. On the contrary, in stratified random \nsampling, the strata or groups are created based on similarities.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 4,
+    "question": "Question 4: Which sampling method is used for assessing the immunization status of children under the \nimmunization program?",
+    "options": {
+      "a": "Systematic sampling",
+      "b": "Cluster sampling",
+      "c": "Group sampling",
+      "d": "Stratified random sampling"
+    },
+    "correct_answer": "b",
+    "explanation": "Cluster sampling is the method of sampling done in immunization programs for assessing the \nimmunization status of children.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 5,
+    "question": "Question 5: A research is being conducted to assess the nutritional status of the children in a particular \ndistrict. For this purpose, 2 children are randomly selected from every school in the district. \nWhat is this type of sampling known as?",
+    "options": {
+      "a": "Simple random",
+      "b": "Systematic random",
+      "c": "Stratified random",
+      "d": "Cluster"
+    },
+    "correct_answer": "d",
+    "explanation": "In the cluster sampling technique, the sub-groups of the population/ clusters are naturally \noccurring. These clusters are randomly made rather than based on any particular characteristic. \nThe population of children here is naturally divided into various schools without being based on \nany characteristics.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 6,
+    "question": "Question 6: In which of the following sampling techniques is design effect used?",
+    "options": {
+      "a": "Simple random",
+      "b": "Stratified random",
+      "c": "Cluster",
+      "d": "Systematic random"
+    },
+    "correct_answer": "c",
+    "explanation": "890 \nSold by @itachibot The design effect is used in cluster sampling to allow for design structure and correlation between \nclusters. The design effect (DEFF) is used to decide the sample size needed for cluster sampling. This is \ndone by calculating the difference in sampling variability to the variability expected with simple \nrandom sampling (SRS). It can more simply be stated as the actual sample size divided by the effective sample size (what \nyou would expect if you were using SRS). For example, let’s say you were using cluster sampling. \nA DEFF of 2 means the variance is twice as large as you would expect with SRS. It also means that \nif you used cluster sampling, you’d have to use twice the sample size.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 7,
+    "question": "Question 7: Simple random sampling is ideal for which of the following study groups?",
+    "options": {
+      "a": "A study being conducted on all vaccinated people of an area",
+      "b": "A study on occupational exposure in all workers of the same factory",
+      "c": "A study being conducted on prevalence of acute gastroenteritis in all school children of an area",
+      "d": "A study on prevalence of hypertension in men aged 50-75 years in an area"
+    },
+    "correct_answer": "b",
+    "explanation": "Simple random sampling is ideal for a homogeneous population as the sample would be \ncompletely representative of the population and it would eliminate the need for systematization or \nstratification. Here, workers of the same factory form a homogeneous population. Option A: For a vaccinated population - cluster sampling Options C and D: For a heterogeneous population - stratified sampling",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 8,
+    "question": "Question 8: In a study, first schools were sampled, then sections and finally students. What is this type of \nsampling known as?",
+    "options": {
+      "a": "Stratified sampling",
+      "b": "Snowball sampling",
+      "c": "Systematic sampling",
+      "d": "Multistage sampling"
+    },
+    "correct_answer": "d",
+    "explanation": "Multistage sampling is the taking of samples in stages using smaller and smaller sampling units at \neach stage. It involves dividing the population into groups (or clusters). Then, one or more \nclusters are chosen at random and everyone within the chosen cluster is sampled. Snowball sampling is a type of non-random sampling preferred in case of diseases with social \nstigma (eg., alcoholism, iv drug abuse etc).",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 9,
+    "question": "Question 9: For an epidemiological study, sampling was done as shown below. What is this type of \nsampling known as?",
+    "options": {
+      "a": "Cluster sampling",
+      "b": "Simple random sampling",
+      "c": "Stratified random sampling",
+      "d": "Systematic sampling"
+    },
+    "correct_answer": "d",
+    "explanation": "Systematic sampling involves a systematic pattern to sampling, like choosing every 3rd person \nfrom an area or hospital, etc.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q9_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 10,
+    "question": "Question 10: In a study, subjects were assigned according to the potential factor that will influence the \noutcome of the study. What is this type of sampling known as?",
+    "options": {
+      "a": "Stratified",
+      "b": "Systematic",
+      "c": "Simple",
+      "d": "Cluster"
+    },
+    "correct_answer": "a",
+    "explanation": "In stratified random sampling, the population is first divided into homogeneous groups or strata. \nFrom these strata, random samples are drawn. For example: If a researcher wants to conduct a research study to determine if alcohol \nconsumption is a risk factor for lung cancer. He must first stratify the population into smokers \nand non-smokers because smoking is a known risk factor and also smoking is associated with 891 \nSold by @itachibot alcohol consumption.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 11,
+    "question": "Question 11: Identify the given statistical plot.",
+    "options": {
+      "a": "Forest plot",
+      "b": "Funnel plot",
+      "c": "Stem-and-leaf plot",
+      "d": "Box and Whisker plot"
+    },
+    "correct_answer": "c",
+    "explanation": "The given image shows a stem-and-leaf plot. To construct the above stem-and leaf plot, the given data is first arranged in ascending order. E.g., \n44, 46, 47, 49, 63, 64, 66, 68, 68, 72, 72, 75, 76, 81, 84, 88, 106 While constructing the plot, the leaf contains the last digit of the number and the stem contains \nall of the other digits. For example, for the number 106 the stem contains 10 and the leaf contains \n6; similarly for the number 46 stem contains 4 and the leaf contains 6. Following this, the whole \nstem-and-leaf plot is given below.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q11_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 12,
+    "question": "Question 12: Identify the type of statistical plot shown below.",
+    "options": {
+      "a": "Funnel plot",
+      "b": "Forest plot",
+      "c": "McNemar plot",
+      "d": "Spot map"
+    },
+    "correct_answer": "a",
+    "explanation": "The image shown is of a symmetric funnel plot.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q12_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 13,
+    "question": "Question 13: The plot from the data obtained from a study is shown below. Which of the following results \nin this type of plot? 885 \nSold by @itachibot",
+    "options": {
+      "a": "Sampling error",
+      "b": "Berkesonian bias",
+      "c": "Large sample size of people",
+      "d": "Publication bias"
+    },
+    "correct_answer": "d",
+    "explanation": "The image shown is that of an asymmetric funnel plot. This usually occurs in meta-analysis due to \npublication bias or other reporting bias.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q13_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 14,
+    "question": "Question 14: Results of various studies carried out to study the role of smoking in breast cancer are plotted \nbelow. Identify the plot.",
+    "options": {
+      "a": "McNemar plot",
+      "b": "Box-and-whisker plot",
+      "c": "Forest plot",
+      "d": "Fisher’s exact plot"
+    },
+    "correct_answer": "c",
+    "explanation": "The image shown is that of a forest plot used for plotting the results of a meta-analysis. 892 \nSold by @itachibot",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q14_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 15,
+    "question": "Question 15: A study was done to assess the risk factors for breast cancer in 100 females from urban cities. \nA statistical group and analysis are shown below. The values indicate the odds ratio and the \n95% confidence interval. How many risk factors may be ascertained from the statistical \nanalysis of the research?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "correct_answer": "a",
+    "explanation": "Among the factors shown in the above statistical group, the odds ratio of early menarche, \nBRCA mutation, and obesity show positive association and are statistically significant. Hence \nthese 3 factors can be ascertained as risk factors. High socioeconomic status is not a risk factor. Even though there is a positive association, it is not \nstatistically significant. Any association that has a 95% confidence interval range that includes the \nvalue of 1.0 is considered to be non-significant. The value of 1.0 in the range means that the two \nfactors may co-exist together but one is not causing the other to happen. Odds ratio (OR) is the key parameter in case-control studies to assess the strength of association \nbetween the exposure and outcome. The interpretation of the odds ratio can be done as below: • OR &gt; 1 indicates a positive association. If both upper and lower limits of the 95% confidence \nlimits are also &gt;1, it suggests that the odds ratio is significant and the factor can be ascertained \nas a risk factor. • OR = 1indicates no association. Irrespective of the odds ratio, if the lower limit of 95% CI is &lt;1 \nand the upper limit of 95% CI &gt;1, the OR is non-significant and cannot be ascertained either as \na protective or a risk factor. • OR &lt; 1 indicates a negative association. If both upper and lower limits of the 95% confidence \nlimits are also &lt;1, it suggests that the odds ratio is significant and the factor can be ascertained \nas a protective factor. Interpretation of the individual factors given in the question: Factor \nOdds ratio(95%confidence li \nmits) Interpretation Early menarche \n1.3(1.2-1.9) \nPositive association, significa \nnt,risk factor Age <50 years \n0.04 (0.01-0.32) \nNegative association, signific \nant, protective factor Smoking \n0.5 (0.02-0.9) \nNegative association, signific \nant, protective factor BRCA mutation \n1.9 (1.1-2.8) \nPositive association, significa \nnt,risk factor Alcohol \n1.0 (0.8-1.8) \nNo association, non-significa \nnt High socioeconomic status \n1.4 (0.5-3.5) \nPositive association, non-sign \nificant Obesity \n1.24 (1.1-1.7) \nPositive association, significa \nnt,risk factor 0.3 (0.01-0.9) \nNegative association, signific \nant, protective factor No family history of Ca. brea \nst 893 \nSold by @itachibot",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q15_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 16,
+    "question": "Question 16: Identify the following statistical plot. 887 \nSold by @itachibot",
+    "options": {
+      "a": "Fisher’s box plot",
+      "b": "Stem and leaf plot",
+      "c": "Box-and-whisker plot",
+      "d": "McNemar’s plot"
+    },
+    "correct_answer": "c",
+    "explanation": "The image shown is that of a box-and-whisker plot. McNemar's test is a statistical test used on paired nominal data. It is used as a transmission \ndisequilibrium test for detecting linkage disequilibrium.",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q16_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 17,
+    "question": "Question 17: What is Dixon’s Q test used for?",
+    "options": {
+      "a": "Outliers",
+      "b": "Interquartile range",
+      "c": "Difference of proportions",
+      "d": "Medians"
+    },
+    "correct_answer": "a",
+    "explanation": "The Dixon’s Q test is used for identification and rejection of outliers. It is usually used in normal \ndistributions.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  },
+  {
+    "q_no": 18,
+    "question": "Question 18: Regarding the given box-whisker plot, the true statement is: 888 \nSold by @itachibot",
+    "options": {
+      "a": "Improving social environment",
+      "b": "Early diagnosis",
+      "c": "First 5 years of life",
+      "d": "Perinatal period"
+    },
+    "correct_answer": "a",
+    "explanation": "The given box-whisker plot represents a positively (or right) skewed distribution. In a positively \nskewed distribution, the mean &gt; median &gt; mode. To further understand and correlate the fact, have a look at the following images: 894 \nSold by @itachibot 895 \nSold by @itachibot Mental Health",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q18_q.jpg",
+    "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Facets_of_Clinical_Research_and_Biostatistics_Q18_exp.jpg",
+    "chapter_heading": "Facets of Clinical Research and Biostatistics"
+  }
+]}

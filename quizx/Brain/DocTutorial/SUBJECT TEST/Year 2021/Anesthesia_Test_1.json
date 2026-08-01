@@ -1,0 +1,2157 @@
+{
+  "meta": {
+    "title": "Anesthesia_Test_1"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 to 15 mm Hg</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">15 to 20 mm Hg</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">25 to 30 mm Hg</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">35 to 40 mm Hg</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Normal tracheal capillary pressure is</span></p>",
+      "unique_key": "Q116488",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116488,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Tracheal capillary arteriolar pressure (25-35 mm Hg). Higher pressure may lead to tissue necrosis</p>",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Continue both up to the day of surgery</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stop both 7 to 10 days before surgery</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stop aspirin and continue clopidogrel</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stop clopidogrel and continue aspirin</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 62-year-old patient with a bare-metal stent at LAD has to undergo a major surgery under general anaesthesia. The stent was placed 6 weeks before surgery, and the patient is on dual therapy (aspirin and clopidogrel). Which of the paradigms below would be best for managing his anticoagulation before surgery?</span></p>",
+      "unique_key": "Q116489",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116489,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Patients undergone PCI with and without stents require lifetime dual antiplatelet therapy (usually aspirin and clopidogrel) to prevent restenosis. Then the clopidogrel is stopped and restarted as soon as possible after the surgery (aspirin is usually continued).</p><p>if the elective surgical procedure involve bleeding, the elective procedure is delayed for 2 weeks after balloon angioplasty without a stent, 6 weeks after a bare-metal stent, and 12 months after a drug-eluting stent.</p><p>In an emergency situation and when the patient is taking clopidogrel, platelet transfusion may be needed (effectiveness of platelets depends on the last dose of clopidogrel&mdash;platelets are effective after 4 hours but much better 24 hours after the last dose of clopidogrel)</p>",
+      "correct_choice_id": 14,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Strabismus</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Open eye injury</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glaucoma</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Severe myopia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient with which of the following eye diseases would be at greatest risk for retinal damage from hypotension during surgery?</span></p>",
+      "unique_key": "Q116490",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116490,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Hypotension produces reduced blood flow to eye and o top of that an increase in IOP cause more ischemia</p>",
+      "correct_choice_id": 23,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ventilation/perfusion mismatch</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypoventilation</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypoxic gas mixture</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intracardiac shunt</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following mechanisms is the most common cause of hypoxia in the recovery room?</span></p>",
+      "unique_key": "Q116491",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116491,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>In the recovery room, the most common cause of postoperative hypoxemia is an uneven ventilation/perfusion distribution caused by loss of lung volume resulting from small airway collapse and atelectasis.</p>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 to 2 hours postoperatively</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">3 to 12 hours postoperatively</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">12 to 24 hours postoperatively</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">24 to 72 hours postoperatively</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Hypoparathyroidism secondary to the inadvertent removal during thyroidectomy can manifest airway symptoms by</span></p>",
+      "unique_key": "Q116492",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116492,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Although theoretically, the airway symptoms of hypocalcaemia can develop as early as 1 to 3 hours after surgery, they typically do not develop until 24 to 72 hours postoperatively. Because the laryngeal muscles are particularly sensitive to hypocalcaemia, early symptoms may include inspiratory stridor, laboured breathing, and laryngospasm. IV administration of calcium gluconate or calcium chloride is the treatment</p>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">ASA I</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">ASA II</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">ASA III</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">ASA IV</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A lady with a body mass index (BMI) 42 kg/m2 is to be anesthetized for laparoscopic bariatric surgery. She has a history of knee pain while walking. She has no medication allergies and takes multivitamins and an oral contraceptive. Her American Society of Anaesthesiologists (ASA) status is</span></p>",
+      "unique_key": "Q116493",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116493,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>morbid obesity, takes it to class 3</p>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dantrolene</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diazepam</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glycopyrrolate</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diphenhydramine</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 6-year-old post tonsillectomy child, anesthetized  with isoflurane, fentanyl, and N2 O. Twenty  minutes before emergence and tracheal extubation, Droperidol was administered. The anaesthesiologist is called to the recovery room because the patient is 'making strange eye movements'. The patient's eyes are rolled back into his head, and his neck is twisted and rigid. The most appropriate drug for treatment of these symptoms is</span></p>",
+      "unique_key": "Q116494",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116494,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Drugs that block dopamine receptors may cause acute dystonic reactions in some patients. The incidence with Droperidol is about 1%. Treatment is the administration of a drug that crosses the blood-brain barrier with anticholinergic properties, such as diphenhydramine or benztropine.</p>",
+      "correct_choice_id": 64,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Insulinoma</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pituitary adenoma</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary hyperaldosteronism (Conn syndrome)</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Medullary carcinoma of the thyroid</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Pheochromocytoma would be MOST likely to coexist with which of the following?</span></p>",
+      "unique_key": "Q116495",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116495,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Pheochromocytoma is an endocrine tumour in which 90% of patients are hypertensive, 90% of the tumours originate in one adrenal medulla, and 90% of all pheochromocytomas are benign.</p><p>Death as a result of pheochromocytoma is due to cardiac conditions (e.g., MI, CHF) or an intracranial bleed. 5% of cases, pheochromocytomas are ADTHEY coexist with other endocrine diseases, such as medullary carcinoma of the thyroid and hyperparathyroidism. This combination is called multiple endocrine neoplasia (MEN) type II or IIA (Sipple syndrome).</p><p>MEN type IIB consists of pheochromocytoma, medullary carcinoma of the thyroid, and neuromas of the oral mucosa. The von Hippel-Lindau disease consists of hemangiomas of the nervous system (i.e., retina or cerebellum), and 10% to 25% of these patients also have a pheochromocytoma.</p>",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glyburide (Micronase)</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glipizide (Glucotrol)</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tolbutamide (Orinase)</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Metformin (Glucophage)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following oral antidiabetic drugs is unique in that it does NOT produce hypoglycemia when administered to a fasting patient?</span></p>",
+      "unique_key": "Q116496",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116496,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Drugs that decrease hepatic gluconeogenesis (hypoglycemia not a risk) a. biguanides (metformin)</p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">8 to 24 hours</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">24 to 48 hours</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">2 to 4 days</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">4 to 7 days</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">After trauma, an alcoholic admitted in ICU starts having symptoms of  onset of delirium tremens which mostly develops after abstinence from alcohol by</span></p>",
+      "unique_key": "Q116497",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116497,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Although early mild symptoms of alcohol withdrawal can be seen within 6 to 8 hours after a substantial drop in the serum alcohol levels, DTs, which is seen in about 5% of patients, is a life-threatening medical emergency that develops 2 to 4 days after the cessation of alcohol in alcoholics.</p>",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">8 kg</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 kg</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">12 kg</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">14 kg</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A normal, healthy 3-year-old child was involved in a motor vehicle accident and is coming emergently to the OR. while planning for a general anaesthesia his weight, which is approximated to ?</span></p>",
+      "unique_key": "Q116498",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116498,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>A normal 40-week term newborn weighs about 3.5 kg. Infants then double their birth weight by 5 months and triple their weight by 1 year. Therefore the average 1-year-old weighs 10 kg</p><p>From the age of 1 to 6 years, children gain about 2 kg per year.</p><p>From age 6 to 10 years, children gain about 3 kg per year</p>",
+      "correct_choice_id": 104,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Coughing</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Voluntary deep breathing</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Performing a forced vital capacity (FVC)</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Use of incentive spirometry</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 28-year-old obese patient has diminished breath sounds bilaterally at the lung bases 18 hours after an emergency appendectomy under general anesthesia. Which of the following maneuvers would be LEAST effective in preventing postoperative pulmonary complications in this patient?</span></p>",
+      "unique_key": "Q116499",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116499,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Therapies aimed at increasing FRC of the lungs are useful in reducing the incidence of postoperative pulmonary complications. Forced expiratory manoeuvres may lead to airway closure, which would be of no benefit for this patient</p>",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tension pneumothorax</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decreased venous return to the heart</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased afterload on the right side of the heart</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased afterload on the left side of the heart</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient is mechanically ventilated in the ICU 2 days after repair of a ruptured abdominal aortic aneurysm. To maintain PaO2 in the 80 to 85 range, 10 cm H2 O positive end-expiratory pressure (PEEP) is added to the ventilator cycle. The patients blood pressure 110/65 before addition of PEEP. After addition of PEEP, the blood pressure is noted toslowly fall to an average of approximately 95/50. The best explanation for thisdecrease in blood pressure is</span></p>",
+      "unique_key": "Q116500",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116500,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>PEEP is the maintenance of positive airway pressure during the entire ventilator cycle.</p><p>PEEP is thought to increase arterial oxygenation, pulmonary compliance, and FRC by expanding previously collapsed but perfused alveoli, thereby decreasing shunt and improving ventilation/perfusion matching. An important adverse effect of PEEP is a decrease in arterial blood pressure caused by a decrease in venous return, left ventricular filling and stroke volume, and cardiac output.</p>",
+      "correct_choice_id": 122,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Blood/gas partition coefficient</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oil/gas partition coefficient</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vapor pressure</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Brain/blood partition coefficient</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is most closely associated with minimum alveolar concentration (MAC)?</span></p>",
+      "unique_key": "Q116501",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116501,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The fact that anaesthetics with a high oil/gas partition coefficient (i.e., lipid soluble agents) have lower MACs supports the Meyer-Overton theory (critical volume hypothesis)</p>",
+      "correct_choice_id": 132,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pooling of urine in the dome of the bladder</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased central venous pressure</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased antidiuretic hormone (ADH) production from surgical stimulation</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypovolemia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 53-year-old woman with endometrial cancer is undergoing an abdominal hysterectomy under general anesthesia with desflurane. During the first hour of anesthesia, urine output is 100 mL. Blood loss is minimal. When the patient is placed in the Trendelenburg position, the urine output declines to virtually zero. The most likely explanation for this sudden decrease in urine output in this patient is</span></p>",
+      "unique_key": "Q116502",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116502,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Complete or almost complete cessation of urine flow suggests a postrenal obstruction. However, at times, pooling of the urine in the dome of the bladder should be considered as a possible cause of oliguria in this patient, in the absence of significant bleeding</p>",
+      "correct_choice_id": 141,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tachycardia</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypertension</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fever</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased end-expiratory CO2 tension (PECO<sub>2</sub)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The MOST sensitive early sign of malignant hyperthermia (MH) during general anaesthesia is</span></p>",
+      "unique_key": "Q116503",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116503,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>MH is a clinical syndrome that may develop rapidly or take hours to manifest, sometimes not occurring until the patient is in the recovery room.</p><p>Clinical signs include hypertension, tachycardia, respiratory acidosis, metabolic acidosis, muscle rigidity, myoglobinuria, and fever One of the first sensitive signs is an increase in the production of CO2 and concomitant respiratory acidosis. This is the most reliable early sign of the syndrome</p>",
+      "correct_choice_id": 154,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Drinking</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ambulation</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Absence of nausea and vomiting</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pain control</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is NOT a component of the post anaesthesia discharge scoring system (PADSS) used to evaluate the suitability of a patient to be discharged from an ambulatory surgical facility?</span></p>",
+      "unique_key": "Q116504",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116504,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Guidelines for safe discharge of patients from ambulatory surgical centers</p><p>include stable</p><ul><li>Vital signs,</li><li>Ability to walk without dizziness,</li><li>Controlled pain,</li><li>Absence of nausea and vomiting,</li><li>minimal surgical bleeding.</li></ul><p>The PADSS is a tool for objectively assessing a patient&rsquo;s readiness for discharge from the surgical centre and includes these five criteria. Requirements to drink fluids and to void before home discharge are controversial and are not parameters included in the PADSS</p>",
+      "correct_choice_id": 161,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypovolemia</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Direct myocardial depression from ketamine</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vasovagal response to direct laryngoscopy</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Arteriolar vasodilation from succinylcholine-mediated histamine release 461</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man is brought to the OR for repair of a ruptured abdominal aortic aneurysm. Anaesthesia is induced with ketamine 2 mg/kg IV,and relaxed  with succinylcholine 1.5 mg/kg IV. Immediately after tracheal intubation, the patients BP falls from 110/80 to 50/20 mm Hg. What is the MOST likely cause of the sudden severe hypotension in this patient?</span></p>",
+      "unique_key": "Q116505",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116505,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Ketamine produces increase in heart rate, mean arterial pressure and cardiac output. But ketamine has been demonstrated to produce myocardial depression. Clinically, however, the myocardial depressant properties of ketamine are overridden by its sympathetic nervous system stimulating properties. When systemic catecholamines have been depleted or when the patient is under deep anesthesia, the myocardial depressant properties of ketamine may predominate causing hypotension and cardiac arrest.</p>",
+      "correct_choice_id": 172,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diffusion hypoxia</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decreased functional residual capacity (FRC)</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">endobronchial  intubation</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decreased cardiac output</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An obese woman undergoes an laparoscopic abdominal hysterectomy under general anaesthesia.  During the surgery surgeon request for Trendelenburg position to improve surgical exposure, and then the SpO2 falls to 90%. The MOST likely explanation for this desaturation is</span></p>",
+      "unique_key": "Q116506",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116506,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The Trendelenburg position causes a cephalad shift of the mediastinum and can cause the endotracheal tube to migrate distally</p>",
+      "correct_choice_id": 183,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 hour</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">24 hours</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 days</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 month</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">How long after intravitreal injection of sulfurhexafluoride and air, the patient can undergo N2 O anaesthesia without risk of increasing intraocular pressure?</span></p>",
+      "unique_key": "Q116507",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116507,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>If these patients are anesthetized with general anesthesia within 10 days, N2 O should not be given because N2 O can diffuse into the gas bubble, increasing intraocular pressure, and may result in blindness</p>",
+      "correct_choice_id": 193,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administration of 100% O<sub>2</sub> with a close-fitting mask</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administration of 35% O<sub>2</sub> with a Venturi mask</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administer 1 ampule of HCO<sub>3</sub></span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">Transfuse with 2 units of packed red blood cells (RBCs)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 70-year-old patient with a history of COPD and CAD undergoes a laparoscopic nephrectomy uneventfully under general desflurane anaesthesia. In the recovery room, ABGs are as follows: PaO<sub>2</sub> 60 mm Hg, PaCO2 50 mm Hg, pH 7.35, and haemoglobin 8.1 g/dL. Which step would produce maximum O2 delivery to the myocardium?</span></p>",
+      "unique_key": "Q116508",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116508,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>One gram of haemoglobin can combine with 1.34 mL of O<sub>2</sub>.The best method&nbsp; to increase the O<sub>2</sub> -carrying capacity of this patient&rsquo;s blood as a transfusion</p>",
+      "correct_choice_id": 204,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Muscle relaxants</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Local anesthetics</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Antibiotics</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Opioids</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Allergic reactions occurring during the immediate perioperative period are MOST commonly attributable to administration of</span></p>",
+      "unique_key": "Q116509",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116509,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Greater than 60% of all drug-induced allergic reactions observed during the perioperative period are attributable to muscle relaxants. Latex allergy is thought to be responsible for 15% of allergic reactions under anesthesia Although most drug-induced allergic reactions develop within 5 to 10 minutes of exposure, latex signs typically take more than 30 minutes to develop</p>",
+      "correct_choice_id": 211,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">They are at increased risk for MH</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">Potassium release may be excessive</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">They may have a decreased concentration of pseudocholinesterase</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">There may be adverse interactions between succinylcholine and phenothiazine</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Caution is advised when using succinylcholine in patients with Huntington chorea because</span></p>",
+      "unique_key": "Q116510",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116510,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Decreased levels of pseudocholinesterase have been reported in patients with Huntington chorea. For this reason, the effects of succinylcholine may be prolonged</p>",
+      "correct_choice_id": 223,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 24,
+      "choices": [
+        {
+          "id": 231,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase in PaCO<sub>2</sub> from 35 to 40 mm Hg</span></p>"
+        },
+        {
+          "id": 232,
+          "text": "<p><span style=\"font-size:12.0pt;\">100 mg intramuscular (IM) succinylcholine</span></p>"
+        },
+        {
+          "id": 233,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acute rise in venous pressure from coughing</span></p>"
+        },
+        {
+          "id": 234,
+          "text": "<p><span style=\"font-size:12.0pt;\">100 mg IV succinylcholine in a patient in whom eye muscles have been detached from the globe</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following would NOT result in an increase in intraocular pressure?</span></p>",
+      "unique_key": "Q116511",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116511,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Normal intraocular pressure is 10 to 22 mm Hg. It may not change much in physiologic ranges in arterial blood pressure or PaCO<sub>2</sub>. With exception of ketamine, all IV agents decrease intraocular pressure</p>",
+      "correct_choice_id": 231,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 25,
+      "choices": [
+        {
+          "id": 241,
+          "text": "<p><span style=\"font-size:12.0pt;\">Generalized muscular rigidity</span></p>"
+        },
+        {
+          "id": 242,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hyperthermia</span></p>"
+        },
+        {
+          "id": 243,
+          "text": "<p><span style=\"font-size:12.0pt;\">Effectively treated with dantrolene</span></p>"
+        },
+        {
+          "id": 244,
+          "text": "<p><span style=\"font-size:12.0pt;\">Flaccid paralysis after administration of vecuronium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">MH and neuroleptic malignant syndrome share each of the following characteristics EXCEPT</span></p>",
+      "unique_key": "Q116512",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116512,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The difference between neuroleptic malignant syndrome and MH is the fact that nondepolarizing muscle relaxants such as vecuronium or cisatracurium will cause flaccid paralysis in patients with neuroleptic malignant syndrome but not in patients with MH</p>",
+      "correct_choice_id": 244,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 26,
+      "choices": [
+        {
+          "id": 251,
+          "text": "<p><span style=\"font-size:12.0pt;\">It has a potent vasopressor effect at high doses in normal subjects</span></p>"
+        },
+        {
+          "id": 252,
+          "text": "<p><span style=\"font-size:12.0pt;\">Plasma levels are inappropriately high in patients immediately after cardiopulmonary bypass</span></p>"
+        },
+        {
+          "id": 253,
+          "text": "<p><span style=\"font-size:12.0pt;\">Plasma levels are inappropriately low in the setting of septic shock</span></p>"
+        },
+        {
+          "id": 254,
+          "text": "<p><span style=\"font-size:12.0pt;\">It causes pulmonary vasoconstriction secondary to inhibition of endothelial nitric oxide release</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What of the following statements about vasopressin is true?</span></p>",
+      "unique_key": "Q116513",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116513,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>In the setting of vasodilatory shock states (e.g., septic shock, post cardiopulmonary bypass, late stages of haemorrhagic shock), exogenous vasopressin is the key potent vasopressor</p>",
+      "correct_choice_id": 253,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 27,
+      "choices": [
+        {
+          "id": 261,
+          "text": "<p><span style=\"font-size:12.0pt;\">Kidneys</span></p>"
+        },
+        {
+          "id": 262,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver</span></p>"
+        },
+        {
+          "id": 263,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nonspecific esterases</span></p>"
+        },
+        {
+          "id": 264,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pseudocholinesterase</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Remifentanil is metabolized primarily by</span></p>",
+      "unique_key": "Q116514",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116514,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Pseudocholinesterase deficiency or renal or hepatic failure does not affect remifentanil's rapid metabolism</p>",
+      "correct_choice_id": 263,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 28,
+      "choices": [
+        {
+          "id": 271,
+          "text": "<p><span style=\"font-size:12.0pt;\">Venous air embolism</span></p>"
+        },
+        {
+          "id": 272,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pneumothorax</span></p>"
+        },
+        {
+          "id": 273,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypotension with regional anesthesia at the end of the procedure</span></p>"
+        },
+        {
+          "id": 274,
+          "text": "<p><span style=\"font-size:12.0pt;\">Postdural puncture headache with spinal anesthesia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Patients who undergo extracorporeal shock wave lithotripsy are at increased risk for</span></p>",
+      "unique_key": "Q116515",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116515,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Anaesthesia for extracorporeal shock wave lithotripsy is done under&nbsp; general anesthesia or epidural anesthesia. When a patient is submerged in the stainless steel tub, the peripheral vasculature becomes compressed by the hydrostatic pressure, resulting in an increase in preload. Removing the patient from the tank has the opposite effect</p>",
+      "correct_choice_id": 273,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 29,
+      "choices": [
+        {
+          "id": 281,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nausea and vomiting</span></p>"
+        },
+        {
+          "id": 282,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inability to void</span></p>"
+        },
+        {
+          "id": 283,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inability to ambulate</span></p>"
+        },
+        {
+          "id": 284,
+          "text": "<p><span style=\"font-size:12.0pt;\">Surgical pain</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The most common reason for admitting outpatients to the hospital following general anesthesia is</span></p>",
+      "unique_key": "Q116516",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116516,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The most common reason for unexpected hospital admission after outpatient general anesthesia, as well as a prolonged recovery-room stay (for both adults and children), is nausea and vomiting. the other reasons for a prolonged recovery-room stay are pain and drowsiness</p>",
+      "correct_choice_id": 281,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 30,
+      "choices": [
+        {
+          "id": 291,
+          "text": "<p><span style=\"font-size:12.0pt;\">Risk of sleep apnea</span></p>"
+        },
+        {
+          "id": 292,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intraoperative awareness</span></p>"
+        },
+        {
+          "id": 293,
+          "text": "<p><span style=\"font-size:12.0pt;\">Postoperative nausea and vomiting (PONV)</span></p>"
+        },
+        {
+          "id": 294,
+          "text": "<p><span style=\"font-size:12.0pt;\">Suitability for postanesthesia care unit (PACU) discharge</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Brice Questionnaire is used to estimate</span></p>",
+      "unique_key": "Q116517",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116517,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "",
+      "correct_choice_id": 292,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 31,
+      "choices": [
+        {
+          "id": 301,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cardiac output is the same</span></p>"
+        },
+        {
+          "id": 302,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cardiac output is increased by 10%</span></p>"
+        },
+        {
+          "id": 303,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cardiac output is increased by 15%</span></p>"
+        },
+        {
+          "id": 304,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cardiac output is doubled</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An otherwise healthy 24-year-old obese man of 140 kg, is scheduled for general anaesthesia. Which of the following statements is correct about his Cardiac Output</span></p>",
+      "unique_key": "Q116518",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116518,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Cardiac output increases by about 100 mL/min for each kilogram of weight gained. It is estimated that every kilogram of adipose tissue contains nearly 3000 m of additional blood vessels. The additional cardiac output is due to ventricular dilation and increased stroke volume, as resting heart rates are not increased in obese patients</p>",
+      "correct_choice_id": 304,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 32,
+      "choices": [
+        {
+          "id": 311,
+          "text": "<p><span style=\"font-size:12.0pt;\">The peak plasma concentration is reached in < 1 minute</span></p>"
+        },
+        {
+          "id": 312,
+          "text": "<p><span style=\"font-size:12.0pt;\">The peak plasma concentration of propofol is 7 to 8 &mu;g/mL</span></p>"
+        },
+        {
+          "id": 313,
+          "text": "<p><span style=\"font-size:12.0pt;\">The therapeutic plasma concentration range for propofol is 1.5-5 &mu;g/mL</span></p>"
+        },
+        {
+          "id": 314,
+          "text": "<p><span style=\"font-size:12.0pt;\">It takes about 15 to 20 minutes for the drug level to fall to a subtherapeutic level</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">After a single 150-mg dose of propofol to a 75-kg healthy patient, which of the following statements is FALSE ?</span></p>",
+      "unique_key": "Q116519",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116519,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>After a 2 mg/kg bolus dose of propofol into a healthy adult, the peak plasma concentration of 7 to 8 &mu;g/mL is reached in less than 1 minute. The blood level then falls to the therapeutic range of 1.5 to 5 &mu;g/mL by about 2 minutes. Then it takes about 8 minutes to become subtherapeutic.</p>",
+      "correct_choice_id": 314,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 33,
+      "choices": [
+        {
+          "id": 321,
+          "text": "<p><span style=\"font-size:12.0pt;\">Circumflex coronary artery</span></p>"
+        },
+        {
+          "id": 322,
+          "text": "<p><span style=\"font-size:12.0pt;\">Right coronary artery</span></p>"
+        },
+        {
+          "id": 323,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left main coronary artery</span></p>"
+        },
+        {
+          "id": 324,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left anterior descending coronary artery</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A man is undergoing a general anaesthesia. The patient has no history of cardiac disease. During the operation, 5-mm ST-segment elevation is noted on lead II, and the patient develops complete heart block. The coronary artery most likely affected is</span></p>",
+      "unique_key": "Q116520",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116520,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Inferior ischemia is associated with blockage or spasm of the right coronary artery. The right coronary artery supplies blood to the atrioventricular node in 90% of patients. Complete heart block therefore is not unexpected in patients with severe CAD involving the right coronary artery</p>",
+      "correct_choice_id": 322,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 34,
+      "choices": [
+        {
+          "id": 331,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cocaine</span></p>"
+        },
+        {
+          "id": 332,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hyperthyroidism</span></p>"
+        },
+        {
+          "id": 333,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypernatremia</span></p>"
+        },
+        {
+          "id": 334,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tricyclic antidepressants</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Each of the following may increase MAC for volatile anaesthetics EXCEPT</span></p>",
+      "unique_key": "Q116521",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116521,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>MAC is influenced by a variety of disease states, conditions, drugs, and other factors</p><p><strong>No Change in MAC in the following situations</strong></p><ul><li>Duration of anesthesia</li><li>Type of surgery</li><li>Hyperthyroidism</li><li>Hypothyroidism</li><li>Gender</li><li>Hyperkalemia</li></ul>",
+      "correct_choice_id": 332,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 35,
+      "choices": [
+        {
+          "id": 341,
+          "text": "<p><span style=\"font-size:12.0pt;\">0</span></p>"
+        },
+        {
+          "id": 342,
+          "text": "<p><span style=\"font-size:12.0pt;\">1</span></p>"
+        },
+        {
+          "id": 343,
+          "text": "<p><span style=\"font-size:12.0pt;\">2</span></p>"
+        },
+        {
+          "id": 344,
+          "text": "<p><span style=\"font-size:12.0pt;\">3</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient has been in the ICU on a ventilator for 24 hours after an MVA. The patient does not open his eyes to any stimulus and has no verbal or motor response. The Glasgow Coma Scale corresponding to this patient would be</span></p>",
+      "unique_key": "Q116522",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116522,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The Glasgow Coma Scale has three categories: eye opening, for which a maximum of 4 points can be received; best verbal response, for a maximum of 5 points; and best motor response, for a maximum of 6 points. The higher the score, the better the response; the minimal score for each category is 1.</p><p>Mild head injury scores are 13 to 15, moderate are 9 to 12, and severe are 3 to 8. This severe head-injured patient is totally unresponsive and would receive a score of 3</p>",
+      "correct_choice_id": 344,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 36,
+      "choices": [
+        {
+          "id": 351,
+          "text": "<p><span style=\"font-size:12.0pt;\">Renal disease</span></p>"
+        },
+        {
+          "id": 352,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rheumatoid arthritis requiring high-dosage prednisone</span></p>"
+        },
+        {
+          "id": 353,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic obstructive lung disease treated with a terbutaline inhaler and aminophylline</span></p>"
+        },
+        {
+          "id": 354,
+          "text": "<p><span style=\"font-size:12.0pt;\">Manic-depressive disorder treated with lithium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Under General Anaesthesia, Hypoglycaemia need to be taken care more strictly when a diabetic surgical patient has any of the following diseases?</span></p>",
+      "unique_key": "Q116523",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116523,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Insulin metabolism involves both the liver and kidneys. Renal dysfunction, however, has a greater impact on insulin metabolism than hepatic. In fact, unexpected prolonged effects of insulin sometimes are seen in patients with renal disease</p>",
+      "correct_choice_id": 351,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 37,
+      "choices": [
+        {
+          "id": 361,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hemoglobin F</span></p>"
+        },
+        {
+          "id": 362,
+          "text": "<p><span style=\"font-size:12.0pt;\">Carboxyhemoglobin</span></p>"
+        },
+        {
+          "id": 363,
+          "text": "<p><span style=\"font-size:12.0pt;\">Methylene blue dye</span></p>"
+        },
+        {
+          "id": 364,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fluorescein dye</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is most likely to be associated with a falsely elevated SaO2 as measured by pulse oximetry (dual wave)?</span></p>",
+      "unique_key": "Q116524",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116524,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<ul><li>Most pulse oximeters illuminate tissue with two wavelengths of light: 660-nm red light and 940-nm infrared light.</li><li>Because carboxyhemoglobin has an absorbance at 660 nm, very similar to O2 hemoglobin, it produces a falsely elevated SaO2 when present in the blood.</li><li>Hemoglobin F, bilirubin, and fluorescein dye have no effect on pulse oximetry. Methylene blue, as well as indigo carmine and indocyanine green, lowers the SaO2 as measured by pulse oximetry.</li><li>Methemoglobin absorbs red and infrared light equally well and gives saturation readings of 85%</li></ul>",
+      "correct_choice_id": 362,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 38,
+      "choices": [
+        {
+          "id": 371,
+          "text": "<p><span style=\"font-size:12.0pt;\">It may increase metabolism and oxygen consumption significantly</span></p>"
+        },
+        {
+          "id": 372,
+          "text": "<p><span style=\"font-size:12.0pt;\">It may be treated with meperidine</span></p>"
+        },
+        {
+          "id": 373,
+          "text": "<p><span style=\"font-size:12.0pt;\">It may be treated with droperidol</span></p>"
+        },
+        {
+          "id": 374,
+          "text": "<p><span style=\"font-size:12.0pt;\">It does not occur in the absence of hypothermia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Each of the following statements regarding postoperative shivering is true EXCEPT</span></p>",
+      "unique_key": "Q116525",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116525,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<ul><li>shivering can increase metabolic rate and O2 consumption (100%-200%) with an associated increase in cardiac output and minute ventilation.</li><li>Although shivering usually occurs in patients with decreased body temperature, it also may occur in patients with normal body temperature after anaesthesia.</li><li>Postanaesthetic shivering is best treated by a combination of supplemental oxygen, rewarming the patient, and/or administering IV meperidine.</li></ul>",
+      "correct_choice_id": 374,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 39,
+      "choices": [
+        {
+          "id": 381,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased P-wave amplitude</span></p>"
+        },
+        {
+          "id": 382,
+          "text": "<p><span style=\"font-size:12.0pt;\">Shortened PR interval</span></p>"
+        },
+        {
+          "id": 383,
+          "text": "<p><span style=\"font-size:12.0pt;\">Narrowed and peaked T waves</span></p>"
+        },
+        {
+          "id": 384,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase in U-wave amplitude</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">ECG changes associated with hyperkalemia include</span></p>",
+      "unique_key": "Q116526",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116526,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The ECG signs of hyperkalemia include narrowed and peaked T waves (earliest manifestation of hyperkalemia), decrease in P-wave amplitude, prolonged PR interval, and a widened QRS interval. In extreme cases, the ECG can appear as a sine wave as well as cardiac arrhythmias. These changes are potentiated by hypocalcemia, and IV calcium can rapidly correct some of these ECG changes.</p><p>An increase in U-wave amplitude suggests hypokalemia, not hyperkalemia</p>",
+      "correct_choice_id": 383,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 40,
+      "choices": [
+        {
+          "id": 391,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tryptase</span></p>"
+        },
+        {
+          "id": 392,
+          "text": "<p><span style=\"font-size:12.0pt;\">Laudanosine</span></p>"
+        },
+        {
+          "id": 393,
+          "text": "<p><span style=\"font-size:12.0pt;\">Histamine</span></p>"
+        },
+        {
+          "id": 394,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bradykinin</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">During Anaesthesia an Evidence of an anaphylactic reaction to atracurium 1 to 2 hours after the episode could be best established by measuring blood levels of</span></p>",
+      "unique_key": "Q116527",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116527,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Tryptase is a neutral protease normally stored in mast cells but is released into systemic circulation during anaphylactic but not anaphylactoid reactions. Tryptase levels would need to be measured within 1 to 2 hours of the suspected allergic reaction. Plasma histamine levels return to baseline within 30 to 60 minutes of an anaphylactic reaction.</p>",
+      "correct_choice_id": 391,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 41,
+      "choices": [
+        {
+          "id": 401,
+          "text": "<p><span style=\"font-size:12.0pt;\">PaCO<sub>2</sub> 150 mm Hg</span></p>"
+        },
+        {
+          "id": 402,
+          "text": "<p><span style=\"font-size:12.0pt;\">MVO<sub>2</sub> 50 mm Hg</span></p>"
+        },
+        {
+          "id": 403,
+          "text": "<p><span style=\"font-size:12.0pt;\">pH 6.9</span></p>"
+        },
+        {
+          "id": 404,
+          "text": "<p><span style=\"font-size:12.0pt;\">Onset of symptoms an hour after end of operation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following findings is NOT consistent with a diagnosis of MH?</span></p>",
+      "unique_key": "Q116528",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116528,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Signs of MH reflect the hypermetabolic state (include tachycardia, tachypnea, arterial hypoxemia, hypercarbia (e.g., PaCO2 100-200 mm Hg), metabolic and respiratory acidosis (e.g., pH 6.80-7.15), hyperkalemia, hypotension, muscle rigidity, trismus after succinylcholine administration, and increased body temperature.</p><p>Mixed venous oxygen tension would be very low.</p>",
+      "correct_choice_id": 402,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 42,
+      "choices": [
+        {
+          "id": 411,
+          "text": "<p><span style=\"font-size:12.0pt;\">Female gender</span></p>"
+        },
+        {
+          "id": 412,
+          "text": "<p><span style=\"font-size:12.0pt;\">History of PONV</span></p>"
+        },
+        {
+          "id": 413,
+          "text": "<p><span style=\"font-size:12.0pt;\">History of migraines</span></p>"
+        },
+        {
+          "id": 414,
+          "text": "<p><span style=\"font-size:12.0pt;\">History of cigarette smoking</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the factors in adults listed below is the strongest independent predictor of PONV in most studies?</span></p>",
+      "unique_key": "Q116529",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116529,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>female gender is the strongest predictor for PONV and the need for postoperative antiemetic rescue treatments. Other predictors of PONV include non-smokers, previous history of PONV, history of migraine headaches, use of postoperative narcotics, lengthy surgical procedures, use of nitrous oxide, and the use of volatile anaesthetics</p>",
+      "correct_choice_id": 411,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 43,
+      "choices": [
+        {
+          "id": 421,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administer more vecuronium</span></p>"
+        },
+        {
+          "id": 422,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administer bicarbonate</span></p>"
+        },
+        {
+          "id": 423,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase minute ventilation</span></p>"
+        },
+        {
+          "id": 424,
+          "text": "<p><span style=\"font-size:12.0pt;\">Administer dantrolene</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Near the end of a 3-hour colectomy in General anaesthesia, the surgeon complains that the patient is not relaxed. Two twitch monitors placed at different locations show only one twitch of a train-of-four. Blood gases are reported to be pH 6.9, CO2 82, K 4.6. The most appropriate action would be</span></p>",
+      "unique_key": "Q116530",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116530,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Rare muscle diseases can have dramatic anesthetic implications. MH is among the most important manifestations of a muscular disorder. Acidosis is the clue</p>",
+      "correct_choice_id": 424,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 44,
+      "choices": [
+        {
+          "id": 431,
+          "text": "<p><span style=\"font-size:12.0pt;\">Renal effects</span></p>"
+        },
+        {
+          "id": 432,
+          "text": "<p><span style=\"font-size:12.0pt;\">Risk of postoperative hemorrhage</span></p>"
+        },
+        {
+          "id": 433,
+          "text": "<p><span style=\"font-size:12.0pt;\">Effects on bone healing</span></p>"
+        },
+        {
+          "id": 434,
+          "text": "<p><span style=\"font-size:12.0pt;\">Effects on pulmonary function</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Ketorolac as an analgesic under anaesthesia, is contraindicated in patients undergoing scoliosis surgery because of</span></p>",
+      "unique_key": "Q116531",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116531,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Ketorolac is one of the few nonsteroidal anti-inflammatory drugs (NSAIDs) approved for parenteral use. NSAIDs are CI in patients undergoing spinal fusion, where bone healing is essential to a successful surgical procedure, however there is no significant association with NSAID's and poor bone healing in orthopedic procedure not involving the spine.</p>",
+      "correct_choice_id": 433,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 45,
+      "choices": [
+        {
+          "id": 441,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypotension</span></p>"
+        },
+        {
+          "id": 442,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bradycardia</span></p>"
+        },
+        {
+          "id": 443,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tachycardia</span></p>"
+        },
+        {
+          "id": 444,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bigeminy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The most common adverse cardiac event in the paediatric population under anaesthesia is</span></p>",
+      "unique_key": "Q116532",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116532,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>The most common adverse cardiac event in the paediatric population is bradycardia. The most common causes of bradycardia were cardiac disease or surgery and inhalation anaesthesia, followed by hypoxemia.</p>",
+      "correct_choice_id": 442,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 46,
+      "choices": [
+        {
+          "id": 451,
+          "text": "<p><span style=\"font-size:12.0pt;\">Presence of beard</span></p>"
+        },
+        {
+          "id": 452,
+          "text": "<p><span style=\"font-size:12.0pt;\">BMI greater than 26</span></p>"
+        },
+        {
+          "id": 453,
+          "text": "<p><span style=\"font-size:12.0pt;\">Presence of teeth</span></p>"
+        },
+        {
+          "id": 454,
+          "text": "<p><span style=\"font-size:12.0pt;\">Age greater than 55</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Each of the following is a predictor of difficulty with mask ventilation EXCEPT</span></p>",
+      "unique_key": "Q116533",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116533,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>obese patients with a BMI &gt; 26, patients without teeth (i.e., tongue is closer to the roof of the mouth, and face conformity may not fit the mask well), and patients who snore (i.e., already have reason for airway obstruction). Mask ventilation can also be more difficult in patients who have a beard (i.e., harder to get a good mask seal), patients whose age is older than 55 years, patients with facial tumours, and patients with facial trauma are all difficult to mask ventilate</p>",
+      "correct_choice_id": 453,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 47,
+      "choices": [
+        {
+          "id": 461,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulselessness</span></p>"
+        },
+        {
+          "id": 462,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pain</span></p>"
+        },
+        {
+          "id": 463,
+          "text": "<p><span style=\"font-size:12.0pt;\">Paresthesia</span></p>"
+        },
+        {
+          "id": 464,
+          "text": "<p><span style=\"font-size:12.0pt;\">Paralysis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient with traumatic limb injury is posted for emergency anaesthesia, the JR on duty examined the  patient with compartment syndrome. Which of the following signs would be the last to appear?</span></p>",
+      "unique_key": "Q116534",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116534,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Extensive rhabdomyolysis may develop, as well as permanent nerve and muscle injury in the compartment. Because the problem is at the tissue level, pulses and capillary refill may still be present.</p>",
+      "correct_choice_id": 461,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 48,
+      "choices": [
+        {
+          "id": 471,
+          "text": "<p><span style=\"font-size:12.0pt;\">6-mm internal diameter (ID)</span></p>"
+        },
+        {
+          "id": 472,
+          "text": "<p><span style=\"font-size:12.0pt;\">6-mm external diameter</span></p>"
+        },
+        {
+          "id": 473,
+          "text": "<p><span style=\"font-size:12.0pt;\">6-mm external circumference</span></p>"
+        },
+        {
+          "id": 474,
+          "text": "<p><span style=\"font-size:12.0pt;\">6-mm internal circumference</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A number 6 endotracheal tube indicates which size?</span></p>",
+      "unique_key": "Q116535",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116535,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>Endotracheal tube sizes are measured according to the ID. They are available in 0.5-mm ID increments</p>",
+      "correct_choice_id": 471,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 49,
+      "choices": [
+        {
+          "id": 481,
+          "text": "<p><span style=\"font-size:12.0pt;\">infusion during resuscitation of a hypovolemic patient cause osmotic diuresis and increased urine output</span></p>"
+        },
+        {
+          "id": 482,
+          "text": "<p><span style=\"font-size:12.0pt;\">Of the 1 litre transfused only 83 ml stays in the vascular compartment causing it a poor choice in hypovolemia</span></p>"
+        },
+        {
+          "id": 483,
+          "text": "<p><span style=\"font-size:12.0pt;\">One bottle (500 ml) of 5% dextrose contain 50 grams of dextrose</span></p>"
+        },
+        {
+          "id": 484,
+          "text": "<p><span style=\"font-size:12.0pt;\">It is contraindicated in Neurosurgical procedure</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All the following are true with 5% Dextrose solution EXCEPT</span></p>",
+      "unique_key": "Q116536",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116536,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>1 litre, not 500 ml, contains 50grams of dextrose</p><p>Blood should not be mixed with 5%D as it can cause haemolysis.</p>",
+      "correct_choice_id": 483,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 50,
+      "choices": [
+        {
+          "id": 491,
+          "text": "<p><span style=\"font-size:12.0pt;\">sodium 130mEq</span></p>"
+        },
+        {
+          "id": 492,
+          "text": "<p><span style=\"font-size:12.0pt;\">potassium 4 mEq</span></p>"
+        },
+        {
+          "id": 493,
+          "text": "<p><span style=\"font-size:12.0pt;\">chloride 109 mEq</span></p>"
+        },
+        {
+          "id": 494,
+          "text": "<p><span style=\"font-size:12.0pt;\">calcium 20 mEq</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not the correct constituent of one litre of Ringer's lactate.</span></p>",
+      "unique_key": "Q116537",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 116537,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000014
+      ],
+      "solution": "<p>It contains 3 mEq of calcium and 28mEq of Bicarbonate</p>",
+      "correct_choice_id": 494,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

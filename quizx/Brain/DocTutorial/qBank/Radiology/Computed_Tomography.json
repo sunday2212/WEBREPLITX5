@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "title": "Computed_Tomography"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Glass</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tungsten</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Iron</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Walls of the CT scanner room are coated with:</span></p>",
+      "unique_key": "DT1282704",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282704,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The walls of a CT scanner room are coated with <strong>Lead</strong>.</p>\n<ul>\n<li><strong>Lead is used because of its ability to provide effective radiation shielding</strong>.</li>\n<li>Due to its <strong>high density and atomic number</strong>, lead can effectively attenuate (reduce the intensity of) various kinds of radiation, thereby protecting personnel and the general public from harmful X-rays produced by the CT scanner.</li>\n<li>In contrast, an <strong>MRI room</strong> is typically made of a <strong>copper-containing cage called a Faraday Cage</strong>, which is designed to <strong>avoid radiofrequency interference</strong>, not primarily for radiation shielding from X-rays.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Glass (Option A):</strong> Glass does not provide adequate radiation shielding for X-rays.</p>\n<p><strong>Tungsten (Option C):</strong> Tungsten is used as the target material in the X-ray tube itself (in the anode) due to its high melting point and atomic number, but it is <strong>not used to coat the walls of the room for shielding</strong>.</p>\n<p><strong>Iron (Option D):</strong> While iron can provide some shielding, <strong>lead is significantly more effective</strong> for X-ray attenuation due to its higher atomic number and density, making it the preferred material for CT room shielding.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>walls of a CT scanner room are coated with lead</strong> to provide essential <strong>radiation shielding</strong> due to lead's high density and atomic number, which effectively attenuates X-rays.</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acute Bleed</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Contrast agents</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fat</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Calcifications</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which among the following has the fewest HU units?</span></p>",
+      "unique_key": "DT1282705",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282705,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Fat</strong> has the <strong>lowest Hounsfield Unit (HU) values</strong> among the given options.</p>\n<ul>\n<li>Fat typically has HU values ranging from <strong>-50 to -100 HU</strong>.</li>\n<li>On a CT scan, substances with lower HU values, like fat, appear <strong>hypodense (darker)</strong>.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507211e3725f2-babd-439c-8aac-a74d61ddc472.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<ul>\n<li><strong>Acute Bleed (Option A):</strong> Acute blood (e.g., acute hemorrhage) typically has <strong>high HU units (around +60 to +70 HU)</strong> and appears <strong>hyperdense (bright)</strong> on CT due to its protein content and hemoglobin concentration.</li>\n<li><strong>Contrast agents (Option B):</strong> Iodinated contrast agents used in CT scans have <strong>very high HU units (+130 HU)</strong> because they contain iodine, which strongly attenuates X-rays. They appear <strong>markedly hyperdense</strong>.</li>\n<li><strong>Calcifications (Option D):</strong> Calcifications (e.g., in bone, stones, arterial walls) have the <strong>highest HU units (+200 to +250 HU)</strong> due to their high density and atomic number. They appear <strong>very hyperdense (bright white)</strong> on CT.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Fat</strong> has the <strong>lowest Hounsfield Unit (HU) values</strong> and appears hypodense on CT, while acute bleed, contrast agents, and calcifications all have significantly higher HU values, appearing hyperdense.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Barium meal follow-through</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Enterography</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">CT Enteroclysis</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">3D CT</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the investigation given below:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721c2e8403d-8320-4769-9932-970e9132013f.png\"></span></p>",
+      "unique_key": "DT1282706",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282706,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The image is a <strong>coronal view of a CT scan</strong>, evident by the <strong>bones appearing white</strong> (hyperdense). The distinguishing feature is the <strong>distension of the bowel loops with fluid (likely mannitol)</strong>.</p>\n<ul>\n<li>When mannitol (or another contrast medium) is introduced directly into the small bowel via a tube reaching the duodenojejunal (DJ) flexure, the procedure is specifically called <strong>CT enteroclysis</strong>. This method provides superior bowel distension for detailed evaluation.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Barium meal follow-through (Option A):</strong> This procedure uses X-ray as the imaging modality, typically involving the patient orally consuming barium. The image provided is a CT scan, not a plain X-ray series.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721b7fab6be-364f-4918-ae44-7e4af0eab003.png\">\n<p><strong>Enterography (Option B):</strong> While CT enterography also involves bowel distension with oral contrast, it differs from enteroclysis in the <em>method of contrast delivery</em>. In CT enterography, the patient <strong>drinks the mannitol (or other oral contrast)</strong>, rather than it being delivered via a tube to the DJ jejunum. The image shows excellent, uniform distension more typical of tube delivery.</p>\n<p><strong>3D CT (Option D):</strong> \"3D CT\" refers to a reconstruction of CT data into a three-dimensional view. While the image is derived from CT data that <em>could</em> be used for 3D reconstruction, \"3D CT\" is a post-processing technique, not the name of the specific investigation technique involving bowel contrast distension shown. The image itself is a 2D coronal slice.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025072188ee3486-1578-4254-b34b-dfa684b99e00.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>The presence of a <strong>CT image with fluid-distended bowel loops via a nasojejunal tube</strong> is characteristic of <strong>CT enteroclysis</strong>, a specialized technique for detailed small bowel evaluation.</p>",
+      "correct_choice_id": 23,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dual-source CT</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diffusion-weighted imaging</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spiral CT</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">CT urography</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old male patient presents to the emergency department with severe flank pain radiating to the groin, along with the recent onset of hematuria. The patient describes the pain as colicky and abrupt in onset. On physical examination, there is tenderness over the costovertebral angle. A diagnosis of renal calculi is suspected. Which of the following investigations is useful in the best assessment of the type and chemical composition of the stone?</span></p>",
+      "unique_key": "DT1282707",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282707,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>For the best assessment of the <strong>type and chemical composition of kidney stones</strong>, <strong>Dual-source CT (also known as Dual-energy CT or Spectral CT)</strong> is the most useful investigation.</p>\n<ul>\n<li><strong>Dual-energy multidetector CT (or Dual-source CT)</strong> can enable <strong>accurate in vivo characterization of kidney stone composition</strong>. This is achieved by simultaneously acquiring images at two different X-ray energy levels (e.g., 80 kVp and 140 kVp). The differential attenuation of X-rays at these two energy levels allows for material decomposition, differentiating between various stone types (e.g., uric acid, calcium oxalate, struvite).</li>\n<li>Potential applications of dual-source CT include targeted medical management to prevent stone recurrence and guiding surgical/lithotripsy approaches based on stone hardness.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721d982c162-ebf7-4324-86b2-38f265edd149.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Diffusion-weighted imaging (Option B):</strong> Diffusion-weighted imaging (DWI) is an MRI sequence primarily used to detect and characterize acute stroke, differentiate tumors, and assess cellularity. It is <strong>not used for the assessment of kidney stone type or chemical composition</strong>.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507214ae52175-2b41-45b8-aea7-d129db7c0806.png\">\n<p><strong>Spiral CT (Option C):</strong> Standard <strong>Spiral CT (also known as Helical CT)</strong> without contrast is the <strong>gold standard for detecting renal calculi</strong> and is highly sensitive for identifying their presence, size, and location. However, it <strong>does not provide detailed information about the chemical composition</strong> of the stone as precisely as dual-energy CT.</p>\n<p><strong>CT urography (Option D):</strong> CT urography is a contrast-enhanced CT study primarily used to visualize the urinary tract, including the kidneys, ureters, and bladder. While it's excellent for assessing the anatomy and any obstruction caused by stones, its main purpose is not the <strong>chemical characterization of the stone itself</strong>. The contrast enhancement can sometimes even obscure small stones or make characterization difficult.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507217f3c7952-aaf3-4d6f-ba5e-e078adea63e9.png\">\n<p><strong>Key Takeaway:</strong></p>\n<p>While standard Spiral CT is excellent for detecting renal calculi, <strong>Dual-source CT (Dual-energy CT)</strong> is superior for <strong>determining the chemical composition</strong> of kidney stones, which can guide patient management and prevention strategies.</p>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Multidetector CT</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Triple phase CT</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">USG</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRCP</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the best investigation to evaluate hepatic masses?</span></p>",
+      "unique_key": "DT1282709",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282709,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>best investigation to evaluate hepatic masses is Triple-Phase CT</strong>.</p>\n<ul>\n<li><strong>Triple Phase CT</strong> is a comprehensive CT examination that involves <strong>dedicated acquisition during three distinct phases of contrast enhancement</strong>:\n<ol>\n<li><strong>Late arterial phase:</strong> Optimizes visualization of hypervascular lesions (e.g., hepatocellular carcinoma, some metastases).</li>\n<li><strong>Portal venous phase:</strong> Best for detecting most hepatic metastases and assessing the liver parenchyma as a whole.</li>\n<li><strong>Delayed phase acquisition:</strong> Useful for characterizing certain lesions that show delayed washout or retention of contrast (e.g., hepatocellular carcinoma, hemangiomas).</li>\n</ol>\n</li>\n<li>This multiphasic approach is particularly useful in the <strong>assessment of focal liver lesions, hypervascular liver metastases, and endocrine tumors</strong>.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025072108275fc4-ed9a-4a12-bce7-39900cfb53f9.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<ul>\n<li><strong>Multidetector CT (Option A):</strong> While Triple Phase CT <em>is</em> a type of Multidetector CT (MDCT), \"MDCT\" is a general term for the technology. \"Triple Phase CT\" specifies the comprehensive contrast timing protocol that makes it best for hepatic masses, making it a more precise and accurate answer than the general term \"MDCT\". A basic MDCT scan might not include all three crucial phases.</li>\n<li><strong>USG (Option C):</strong> Ultrasound (USG) is often used as a <strong>first-line screening tool</strong> for hepatic masses due to its availability, low cost, and lack of radiation. However, it is <strong>operator-dependent</strong> and has <strong>limited sensitivity and specificity for definitive characterization</strong> of all masses compared to multiphasic CT or MRI, especially for smaller or subtle lesions.</li>\n<li><strong>MRCP (Option D):</strong> MRCP (Magnetic Resonance Cholangiopancreatography) is an MRI technique specifically designed to visualize the <strong>biliary and pancreatic ducts</strong>. It is <strong>not the primary investigation for evaluating solid hepatic masses</strong> themselves, although it can provide information about biliary obstruction if a mass is pressing on the ducts.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>For a thorough and accurate evaluation of <strong>hepatic masses</strong>, <strong>Triple Phase CT</strong> is considered the best investigation due to its ability to capture specific enhancement patterns in different vascular phases, which are crucial for characterization and diagnosis.</p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Early systole</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mid systole</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mid diastole</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Early diastole</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Cardiac CT is done in which phase?</span></p>",
+      "unique_key": "DT1282711",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282711,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>Cardiac CT is predominantly performed during mid-diastole</strong>, typically assisted by <strong>synchronous ECG gating</strong>.</p>\n<ul>\n<li>The reason for choosing mid-diastole is that it is the phase of the cardiac cycle with the <strong>least cardiac motion</strong> when the ventricles are passively filling. Minimizing motion is crucial for obtaining sharp, artifact-free images of the coronary arteries and other cardiac structures.</li>\n<li><strong>Prospective ECG triggering</strong> uses the ECG signal to control the CT scanner, ensuring that X-rays are generated and projection data are acquired <strong>only during cardiac diastole</strong>.</li>\n<li>Cardiac CT is commonly used for evaluating <strong>Coronary Artery Disease (CAD)</strong> and for <strong>coronary calcium scoring</strong>. Coronary calcium scoring denotes the degree of atherosclerosis and helps determine prognosis in patients with coronary artery disease.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<ul>\n<li><strong>Early systole (Option A), Mid systole (Option B), and Early diastole (Option D):</strong> These phases involve significant cardiac motion (contraction or rapid filling), which would lead to motion artifacts and degraded image quality, making them unsuitable for high-resolution cardiac imaging, especially of the coronary arteries.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>For optimal image quality and to minimize motion artifacts, <strong>Cardiac CT is specifically timed to the mid-diastolic phase of</strong> the cardiac cycle, facilitated by ECG gating.</p>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchography</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">HRCT scan</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Plain CT scan</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">CT scan with contrast</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is the gold standard for the diagnosis of minimal bronchiectasis?</span></p>",
+      "unique_key": "DT1282712",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282712,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>gold standard for the diagnosis of minimal bronchiectasis is a High-Resolution Computed Tomography (HRCT) scan</strong>.</p>\n<ul>\n<li>While a plain CT scan can detect bronchiectasis, <strong>HRCT is preferred because it provides more detailed images of the lung parenchyma and bronchial walls</strong>, making it significantly <strong>more sensitive for detecting minimal bronchiectasis</strong>.</li>\n<li>Volumetric<strong> HRCT</strong> is considered the investigation of choice (IOC) for bronchiectasis, surpassing the diagnostic capabilities of a plain CT. HRCT acquires thin slices (typically &lt;1.5 mm) without intravenous contrast, maximizing spatial resolution to visualize bronchial wall thickening and dilatation.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721146c4d73-8863-4d4c-9d0b-3037ef700e86.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Bronchography (Option A):</strong> Bronchography, an older invasive procedure involving the instillation of contrast material directly into the bronchi, was historically used but has been <strong>largely replaced by HRCT</strong> due to its invasiveness, potential complications, and HRCT's superior diagnostic capabilities.</p>\n<p><strong>Plain CT scan (Option C):</strong> A plain CT scan can identify established bronchiectasis, but it has <strong>lower spatial resolution than HRCT</strong> and may miss subtle or minimal cases.</p>\n<p><strong>CT scan with contrast (Option D):</strong> While CT scans can be done with contrast, contrast is <strong>not typically required or beneficial for diagnosing bronchiectasis itself</strong>. Contrast is more useful for evaluating vascular structures, masses, or inflammatory activity, but the primary diagnosis of bronchial dilatation relies on the high-resolution visualization of airways and surrounding parenchyma, which HRCT excels at without contrast.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>For the precise and sensitive diagnosis of even <strong>minimal bronchiectasis, a High-Resolution CT (HRCT) scan</strong> is the <strong>gold standard</strong>, offering superior detail of the bronchial walls and lung parenchyma.</p>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bone window</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung window</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mediastinal window</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Blood vessel window</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not a commonly used window in a CT Scan of the Chest?</span></p>",
+      "unique_key": "DT1282714",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282714,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The commonly used windows in a CT scan of the chest are the Lung window, Mediastinal window, and Bone window. <strong>\"Blood vessel window\" is not a standard or commonly used window</strong> in CT scanning of the chest.</p>\n<ul>\n<li><strong>Lung Window:</strong> This window setting is optimized to visualize the <strong>lung parenchyma</strong>, including small airways, interstitial markings, and conditions like pneumothorax. It uses a wide window width and a low window level.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507214ccdbd23-166b-4cd0-801e-57a29241068b.png\">\n<ul>\n<li><strong>Mediastinal Window:</strong> This window setting is optimized to visualize the <strong>mediastinal structures</strong>, such as the heart, great vessels (aorta, pulmonary arteries), trachea, esophagus, and lymph nodes. It uses a narrower window width and a higher window level than the lung window.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025072160ee9385-7ac7-4a0f-9c69-e02d1082b053.png\">\n<ul>\n<li><strong>Bone Window:</strong> This window setting is optimized to visualize <strong>bone structures</strong> (ribs, vertebrae, sternum) with high detail, useful for detecting fractures or bone lesions. It uses a very wide window width and a high window level.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025072143a15001-987f-46b5-9d15-0000f34015f3.png\">\n<p>While blood vessels are evaluated on CT, especially with contrast (CT angiography), they are primarily assessed within the <strong>mediastinal window</strong> (for large vessels) or specific reconstructions. There isn't a dedicated \"blood vessel window\" as a distinct display setting like the others.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721cbc46b9f-9465-4d1a-b88a-857de5732e55.png\">\n<p><strong>Brain Window</strong></p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The three commonly used window settings for a CT scan of the chest are the <strong>lung window, mediastinal window, and bone window</strong>. \"Blood vessel window\" is not a standard, distinct display setting.</p>",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRI</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Enhanced: MRI</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">NCCT</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">CECT</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Investigation of choice for acute subarachnoid haemorrhage is:</span></p>",
+      "unique_key": "DT1282715",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282715,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>investigation of choice (IOC) for an acute subarachnoid hemorrhage (SAH) is Non-Contrast CT (NCCT)</strong>.</p>\n<ul>\n<li><strong>NCCT is highly sensitive and rapid</strong> for detecting acute blood in the subarachnoid space. Acute hemorrhage appears as <strong>hyperdense (bright) areas</strong> on NCCT, making it easily identifiable.</li>\n<li><strong>Key indications for NCCT</strong> in the head include:\n<ul>\n<li>Head trauma</li>\n<li>Acute SAH</li>\n<li>Differentiation between hemorrhagic stroke and ischemic stroke</li>\n<li>Intracranial calcifications</li>\n<li>Coronary calcifications (for calcium scoring)</li>\n<li>Renal calculi/ureteric colic (in the abdomen).</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507213e6bae68-3fc9-453f-bc23-2a71be0bbc05.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>MRI (Option A) &amp; Enhanced MRI (Option B):</strong> While MRI can detect subarachnoid hemorrhage, it is <strong>not commonly used in acute hemorrhage cases</strong> requiring immediate management due to its <strong>longer scan time</strong> and lower availability compared to CT. Enhanced MRI (with contrast) is generally not needed for detecting acute SAH, as blood itself provides sufficient signal.</p>\n<p><strong>CECT (Contrast-Enhanced CT) (Option D):</strong> CECT is <strong>not widely used in cases of acute hemorrhage</strong>. Acute blood is already hyperdense on NCCT, so the role of intravenous contrast in detecting the hemorrhage itself is negligible and can even obscure it. CECT is more useful for evaluating tumors, infections, inflammations (e.g., pancreatitis), or vascular abnormalities (e.g., in abdominal trauma or to assess vascular invasion in RCC).</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>For the rapid and accurate diagnosis of <strong>acute subarachnoid hemorrhage, Non-Contrast CT (NCCT)</strong> is the <strong>investigation of choice</strong> due to its high sensitivity to acute blood and quick turnaround time.</p>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gallbladder</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pancreas</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Kidneys</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The abdominal organ best suited for CT scanning is:</span></p>",
+      "unique_key": "DT1282719",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282719,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p><strong>CT scanning is particularly well-suited for imaging the pancreas</strong> and evaluating pancreatic pathologies.</p>\n<ul>\n<li>CT scans excel at providing <strong>detailed cross-sectional images of abdominal organs</strong>, which is crucial for the pancreas due to its deep retroperitoneal location and complex surrounding anatomy.</li>\n<li>CT can effectively visualize the pancreas and its surrounding structures, allowing for the detection of abnormalities such as <strong>pancreatic masses (including tumors), inflammation (pancreatitis), and cysts</strong>.</li>\n<li>Additionally, <strong>contrast-enhanced CT (CECT) scans</strong> can further enhance the visualization of vascular structures and aid significantly in the diagnosis and staging of pancreatic diseases, including the assessment of pancreatic necrosis in severe pancreatitis.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721a585c159-6fd9-4ee0-b564-c1f6982ae691.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Liver (Option A):</strong> The liver is very well evaluated with CT, especially multiphasic CT for masses. However, for initial screening or differentiating cystic vs. solid lesions, ultrasound is often first, and for highly detailed characterization, MRI is frequently superior due to better soft tissue contrast.</p>\n<p><strong>Gallbladder (Option B):</strong> The gallbladder is well visualized by CT, particularly for stones (though ultrasound is usually first-line for gallstones) or masses. However, ultrasound is often superior for real-time visualization of gallstones and wall thickening, and MRCP for biliary tree assessment.</p>\n<p><strong>Kidneys (Option D):</strong> Kidneys are well evaluated with CT for various pathologies (e.g., stones, masses, infections). Non-contrast CT is the gold standard for renal stones, and CECT for masses or infections. However, like the liver, MRI often offers superior soft tissue characterization for certain renal masses.</p>\n<p>While CT is excellent for all these organs, the pancreas, due to its retroperitoneal location and the need for high spatial resolution to delineate its complex anatomy and pathologies, is arguably the organ for which CT (especially CECT) offers a particularly strong and often indispensable diagnostic advantage over other modalities.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Due to its deep location and the need for detailed cross-sectional imaging to assess pathologies like pancreatitis and tumors, the <strong>pancreas is exceptionally well-suited for evaluation by CT scanning</strong>.</p>\n<p><strong>(Choices A, B, and D)</strong>&nbsp;Liver, Gallbladder, and Kidneys can be evaluated with CT, but the best organ to be visualized by CT in the abdomen is&nbsp;the <strong>Pancreas, and CECT is used for the diagnosis of pancreatitis.</strong></p>",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Psoas muscle</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Iliacus muscle</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gluteus medius</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gluteus minimus</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A child was brought to the hospital by his father with a complaint of fever, lower backache, and persistent flexion of the hip joint. He had a history of spine TB in the past. On examination, the child has an inguinal swelling. Identify the marked muscle responsible to be involved.<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507219ecaa601-5810-44db-bad7-58cd0ac24416.png\"></span></p>",
+      "unique_key": "DT1282721",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282721,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The clinical presentation of a child with a history of <strong>spine TB (Pott's disease)</strong>, presenting with <strong>fever, lower backache, persistent hip flexion, and an inguinal swelling</strong>, strongly points to involvement of the <strong>Psoas muscle</strong>.</p>\n<ul>\n<li><strong>Tuberculosis of the spine (Pott's disease) can spread to the psoas muscle</strong>, leading to the formation of a <strong>psoas abscess</strong>.</li>\n<li>This abscess can cause <strong>pain, fever, and swelling</strong>. The <strong>hip flexion contracture</strong> is a classic sign due to <strong>irritation and spasm of the psoas muscle</strong> (a major hip flexor).</li>\n<li>The <strong>inguinal swelling</strong> occurs because the psoas abscess, if large enough, can <strong>track down along the psoas muscle sheath</strong> and present in the inguinal region, often below the inguinal ligament.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Iliacus muscle (Option B):</strong> The iliacus muscle originates from the surface of the iliac fossa and anterior inferior iliac spine, which is inferior to the origin of the psoas muscle. While it forms part of the iliopsoas complex and can be involved in a large psoas abscess, the psoas muscle itself is the primary muscle involved in tracking infection from the spine due to its direct anatomical relationship to the vertebral bodies.</p>\n<p><strong>Gluteus medius (Option C) and Gluteus minimus (Option D):</strong> These muscles originate from the gluteal (posterior) surface of the ilium and are located laterally and posteriorly to the hip joint. They <strong>do not run adjacent to the vertebral column</strong> and therefore would <strong>not be involved in the direct spread of infection from spinal TB</strong> to cause an inguinal swelling or hip flexion contracture in this manner.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The classic triad of <strong>spine TB, hip flexion contracture, and an inguinal swelling</strong> (psoas abscess) is a strong indicator of <strong>Psoas muscle involvement</strong> due to its anatomical proximity and continuity with the lumbar spine.</p>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Right Atrial Myxoma</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left Atrial Myxoma</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Right Ventricular Myxoma</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left Ventricular Myxoma</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 52-year-old woman with exertional dyspnea, recurrent transient ischemic attacks, light-headedness with sudden changes in position, and a 7 kg weight loss over the past 6 months, undergoes a Cardiac CT Scan. The given CT Scan is suggestive of?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025072105283c30-de78-41e8-8545-0b8558d81a14.png\"></span></p>",
+      "unique_key": "DT1282722",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1282722,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The clinical presentation of <strong>exertional dyspnea, recurrent transient ischemic attacks (TIAs), lightheadedness with sudden positional changes, and unexplained weight loss</strong> in a 52-year-old woman is highly suggestive of a cardiac mass causing obstructive symptoms and embolic phenomena. When a <strong>Cardiac CT scan</strong> (which is not provided, but the explanation refers to its findings) confirms a mass, the most likely diagnosis is a <strong>Left Atrial (LA) Myxoma</strong>.</p>\n<ul>\n<li><strong>Left atrial myxoma</strong> is the <strong>most common primary cardiac tumor</strong>. It typically arises <strong>from the left atrium</strong>, often attached to the interatrial septum.</li>\n<li>The symptoms are explained by:\n<ul>\n<li><strong>Dyspnea and lightheadedness:</strong> Caused by intermittent obstruction of the mitral valve orifice, mimicking mitral stenosis.</li>\n<li><strong>TIAs/Embolic phenomena:</strong> Due to fragments of the friable tumor breaking off and traveling systemically.</li>\n<li><strong>Weight loss:</strong> Can be a paraneoplastic symptom associated with myxomas.</li>\n</ul>\n</li>\n<li>CT imaging typically shows a <strong>well-defined, lobulated mass within the left atrium</strong>, attached to the interatrial septum.</li>\n<li>The <strong>left atrium is the most posterior chamber</strong> of the heart.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250721715ca201-587d-476b-a0f1-0d060b5df603.png\">\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Rt Atrial Myxoma (Option A):</strong> While right atrial myxomas occur, they are less common and typically present with symptoms of <strong>right heart failure</strong> (e.g., peripheral edema, hepatomegaly) and <strong>pulmonary embolism</strong> from right-sided emboli, rather than systemic emboli and dyspnea directly related to left-sided outflow obstruction.</p>\n<p><strong>Rt Ventricular Myxoma (Option C):</strong> Right ventricular myxomas are rare and would typically cause right ventricular outflow tract obstruction symptoms. The <strong>right ventricle (RV) is the most anterior chamber</strong>.</p>\n<p><strong>Left Ventricular Myxoma (Option D):</strong> Left ventricular myxomas are also very rare and could cause left ventricular outflow tract obstruction or systemic emboli, but their location and presentation are distinct from the classic LA myxoma.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The combination of <strong>exertional dyspnea, recurrent TIAs, and constitutional symptoms</strong> in a patient with a cardiac mass on CT is classic for a <strong>Left Atrial Myxoma</strong>, given its common origin in the left atrium and its potential to cause both obstruction and systemic embolization.</p>",
+      "correct_choice_id": 112,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

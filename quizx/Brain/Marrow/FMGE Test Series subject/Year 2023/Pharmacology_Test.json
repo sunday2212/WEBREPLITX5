@@ -1,0 +1,865 @@
+{
+  "meta": {
+    "title": "Pharmacology_Test"
+  },
+  "questions": [
+    {
+      "text": "The dose-response curve (DRC) is plotted for drug A both in the presence and absence of drug B.  What type of effect does drug B have on drug A?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Competitive antagonism"
+        },
+        {
+          "id": 2,
+          "text": "Noncompetitive antagonism"
+        },
+        {
+          "id": 3,
+          "text": "Agonism"
+        },
+        {
+          "id": 4,
+          "text": "Partial agonism"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Drug B has a <strong>competitive antagonistic</strong> effect on drug A.</p>\n<p>In <strong>competitive antagonism</strong>, DRC shows a <strong>parallel rightward shift</strong>. Competitive antagonism occurs when the agonist and antagonist compete for the same binding site on the receptor. The response curve for the agonist shifts to the right in a concentration-related manner by the antagonist.</p>\n<p>Other Options:</p>\n<p>Option B: In <strong>non-competitive antagonism</strong>, there is<strong> flattening </strong>of the agonist DRC.<strong> </strong>Non-competitive antagonism effects occur when the agonist and antagonist bind to different sites on the receptor. ( allosteric site) and inhibits the response. The response curve progressively shifts in a <strong>right and downward direction </strong>until it reaches a limiting value when the allosteric site is fully occupied.</p>\n<p>Option C: In <strong>competitive agonism</strong>, the curve shifts to the <strong>left</strong>.</p>\n<p>Option D: In <strong>partial agonism</strong>, the partial agonist which has an affinity for the same receptor, also competes with and antagonizes a full agonist, while producing a submaximal response. </p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/86cce444184c435a9e3d0f9aa175ab1b.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9874",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient was given 200 mg of a drug that follows first-order kinetics. If 75 mg is excreted in 90 minutes, how much drug will remain at the end of 6 hours?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 mg"
+        },
+        {
+          "id": 2,
+          "text": "30.5 mg"
+        },
+        {
+          "id": 3,
+          "text": "12.5 mg"
+        },
+        {
+          "id": 4,
+          "text": "6.25 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>30.5 mg of the drug will remain after 6 hours.</p>\n<p>In <strong>first order kinetics,&nbsp;</strong>a<strong> constant fraction</strong> of the drug is<strong> excreted in </strong>a<strong> given time.</strong>&nbsp;</p>\n<p>75 mg of 200 mg is excreted in 90 minutes</p>\n<p>75/200 = 37.5/100 =&nbsp;<strong>0.375</strong>&nbsp;is eliminated&nbsp;</p>\n<p>After 90 minutes; 200 mg-75 mg = 125 mg remains&nbsp;</p>\n<p>The next 90 minutes (after 180 minutes) = 125 x 0.375&nbsp;= 46.875 mg is eliminated, and 125-46.875 = 78.125 mg remains&nbsp;</p>\n<p>The next 90 minutes (after 270 minutes) = 78.125 x 0.375&nbsp;= 29.297 mg is eliminated, and 78.125-29.297 = 48.828 remains&nbsp;</p>\n<p>The next 90 minutes (after 360 minutes) = 48.828 x 0.375&nbsp;= 18.310 mg is eliminated, 48.828-18.310 =&nbsp;<strong>30.518 mg remains after 6 hours.&nbsp;</strong></p>\n<p>A simpler way to calculate&nbsp;</p>\n<p>3/8 fraction is excreted in 90 minutes&nbsp;&rarr; 5/8 remains after 90 minutes.</p>\n<p>6 hours (360 min) is 4 times of 90 minutes.</p>\n<p>So 200 x (5/8)(5/8)(5/8)(5/8) = <strong>30.518 mg remains after 360 minutes&nbsp;</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9875",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A drug with a half-life of 8 hours is administered orally three times a day. How long will it take for the plasma concentration to reach a steady state?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16 hours"
+        },
+        {
+          "id": 2,
+          "text": "24 hours"
+        },
+        {
+          "id": 3,
+          "text": "30 hours"
+        },
+        {
+          "id": 4,
+          "text": "36 hours"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The time taken to reach steady-state plasma concentration is<strong> 4-5 half-lives. </strong>As the half-life of the given drug is 8 hours, it will take <strong>32-40 hours </strong>to reach a steady state. Hence, <strong>36 hours </strong>will be the most appropriate answer.</p>\n<p><strong>Steady-state: </strong>The amount of drug administered is equal to the amount of drug eliminated within one dosing interval resulting in a plateau or constant drug plasma concentration, with the plasma concentration fluctuating between a minimum and maximum.</p>\n<p>The time taken to reach steady-state plasma concentration is<strong> 4-5 half-lives. </strong></p>\n<p>Drugs with a shorter half-life reach a steady state rapidly, whereas drugs with a longer half-life take days to weeks to attain a steady state.</p>\n<p><strong>Steady-state concentration (Css) = F x Dosing rate/ CL</strong></p>\n<ul>\n<li>where the dosing rate is the dose per time interval and is dose/T</li>\n<li>F is the fractional bioavailability, CL is clearance.</li>\n</ul>\n<p>In the case of intravenous infusion,</p>\n<p><strong>Steady-state concentration (Css) = Rate of infusion/ CL</strong></p>\n<p>Pharmacokinetics of repeated drug dosing:</p>\n<p>Plasma concentration of the drug will increase, reach a maximum, and decline after the first dose. A second dose will be administered before the first dose is eliminated. Consequently, the plasma concentration resulting from the second dose will be higher than from the first dose.</p>\n<p>This increase in plasma concentration of the drug will occur continuously on repeated dosing (<strong>drug accumulation</strong> occurs) until a steady state at which drug elimination is equal to drug administration is reached. This is known as the <strong>plateau principle of drug accumulation.</strong></p>\n<p>A graph is plotted between plasma drug concentration and time as shown below. The given graph depicts the plateau principle of drug accumulation on repeated oral dosing.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a16728452d0c4a8fb6ef7304909a6502x600x618.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9876",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following drugs come under Schedule H of the Drugs and Cosmetics Act, 1945?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Biologicals and special products like insulin, toxin and antitoxins"
+        },
+        {
+          "id": 2,
+          "text": "Bacterial vaccines"
+        },
+        {
+          "id": 3,
+          "text": "Drugs  purchased with the prescription of a qualified doctor"
+        },
+        {
+          "id": 4,
+          "text": "Drugs with a warning label  “Caution: it is dangerous to take this preparation except under medical supervision”"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Schedule H</strong> includes drugs purchased over the counter with the prescription of a qualified doctor.</p>\n<p><strong>The Drugs and Cosmetics Rules</strong>, classify drugs under different schedules based on their potential for abuse, their therapeutic value, and other factors. The rules provide guidelines for the storage, sale, display, and prescription of each schedule.</p>\n<p>Other options:</p>\n<p>Option A- Biological and special products like insulin, toxin, and antitoxins are included under <strong>Schedule C.</strong></p>\n<p>Option B- Bacterial vaccines are included under <strong>Schedule F I.</strong></p>\n<p>Option D- Drugs that should be labelled with the words “Caution: it is dangerous to take this preparation except under medical supervision” are included under <strong>Schedule G.</strong></p><hr><h3>Related Pearl: Drug regulatory schedules 1940: (2016 update)</h3><table>\n<tbody>\n<tr>\n<td><strong>Schedule</strong></td>\n<td><strong>Details</strong></td>\n</tr>\n<tr>\n<td>Schedule C</td>\n<td><strong>Biological</strong> and other special products e.g. <strong>Toxins, Insulin, Sera &amp; Antibiotics</strong>.</td>\n</tr>\n<tr>\n<td>Schedule D</td>\n<td>List of drugs <strong>exempted from the provision of import</strong> of drugs.</td>\n</tr>\n<tr>\n<td>Schedule F</td>\n<td>\n<p><strong>Blood</strong> and blood products</p>\n<p>F I - Production of Bacterial <strong>vaccines, Anti- Sera</strong></p>\n<p>F II - Specification of standards for <strong>Surgical dressing</strong></p>\n<p>FF- Specification of standard <strong>Ophthalmic</strong> preparation</p>\n</td>\n</tr>\n<tr>\n<td>Schedule G</td>\n<td>With a label of <strong>Caution, dangerous</strong> to use except under <strong>medical supervision</strong>.</td>\n</tr>\n<tr>\n<td>Schedule H</td>\n<td><strong>Prescription</strong> drugs.</td>\n</tr>\n<tr>\n<td>Schedule J</td>\n<td>List of diseases that a drug may not prevent or cure. Eg - <strong>HIV &amp; Atherosclerosis</strong></td>\n</tr>\n<tr>\n<td>Schedule M</td>\n<td>Regulations regarding good manufacturing practices</td>\n</tr>\n<tr>\n<td>Schedule P</td>\n<td>Regulations regarding&nbsp;the <strong>life period</strong> and storage of various drugs.</td>\n</tr>\n<tr>\n<td>Schedule W</td>\n<td>Drugs marketed under <strong>generic</strong> names.</td>\n</tr>\n<tr>\n<td>Schedule X</td>\n<td>Drugs having <strong>abuse</strong> and dependence liability.</td>\n</tr>\n<tr>\n<td>Schedule Y</td>\n<td>Requirement and guidelines for<strong> import/ manufacture or Clinical trials</strong> in India</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9894",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A man presents to the casualty with fever and hematuria for 3 days. He also gives a history of recurrent left-sided loin pain radiating to the groin. X-ray KUB done is shown below. Which of the following is false regarding stones seen in his condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Composed of calcium, ammonium, and magnesium phosphate"
+        },
+        {
+          "id": 2,
+          "text": "It is formed in acidic urine"
+        },
+        {
+          "id": 3,
+          "text": "Increased risk with infections by urease producing organisms"
+        },
+        {
+          "id": 4,
+          "text": "Rectangular or coffin lid appearance on microscopy"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given scenario and X-Ray KUB showing <strong>staghorn </strong>appearance&nbsp;points to a diagnosis of <strong>struvite stones</strong>. Struvite stone is produced in <strong>alkaline urine.</strong>&nbsp;</p>\n<p>It is commonly associated with&nbsp;infections with <strong>urea-splitting organisms</strong> like Proteus and Klebsiella species. Increased metabolism of urea results in alkalinity of the urine.</p>\n<p>Struvite is a triple-phosphate calculus (<strong>calcium,</strong>&nbsp;<strong>ammonium</strong>, and <strong>magnesium</strong> phosphate). The calculus may enlarge to fill most of the collecting system, forming a staghorn calculus.&nbsp;</p>\n<p>These stones are <strong>dirty-white</strong> in color, and grossly<strong> smooth</strong> in texture. <strong>Rectangular </strong>or<strong> coffin lid</strong>&nbsp;appearance is seen on microscopic examination.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2bfb4793bd0f45d78606766191ee01b7x1280x2927.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/3c5f5edd3e504c4d9bdd5c0e14b7e9fa.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9901",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You read a news alert that mentions a novel drug has received marketing approval for diabetes mellitus and that it has shown positive results in a pivotal trial. This corresponds to which phase of clinical trials?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phase I"
+        },
+        {
+          "id": 2,
+          "text": "Phase II"
+        },
+        {
+          "id": 3,
+          "text": "Phase III"
+        },
+        {
+          "id": 4,
+          "text": "Phase IV"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Phase III trials </strong>are usually considered&nbsp;<strong>pivotal trials </strong>and<strong>&nbsp;</strong>are <strong>necessary for</strong> the <strong>approval</strong> of the majority of drugs.<strong>&nbsp;</strong>They<strong>&nbsp;</strong>are<strong>&nbsp;</strong>also called <strong>multi-site trials</strong> and are done for <strong>3&ndash;5 years</strong>.</p>\n<p>When the initial Phase III trials are complete, the sponsor (usually a pharmaceutical company) applies to the FDA for approval to market the drug. This application is called either a New Drug Application (NDA) or a Biologics License Application (BLA).</p>\n<p>In some drugs related to rare diseases or malignancies, phase II studies are considered as pivotal, and the drug may be approved on the basis of phase II studies.</p><hr><h3>Related Pearl: Phases of Clinical Trials</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Phase I</strong></p>\n</td>\n<td>\n<p><strong>Phase II</strong></p>\n</td>\n<td>\n<p><strong>Phase III</strong></p>\n</td>\n<td>\n<p><strong>Phase IV</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10&ndash;100&nbsp;</p>\n</td>\n<td>\n<p>50 - 500&nbsp;</p>\n</td>\n<td>\n<p>500 - 3000</p>\n</td>\n<td>\n<p>Large or according to study</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Usually healthy volunteers</p>\n</td>\n<td>\n<p>Patients with the target disease</p>\n</td>\n<td>\n<p>Patients&nbsp; with the target disease</p>\n</td>\n<td>\n<p>Real-world patients</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Open-label study</p>\n</td>\n<td>\n<p>Randomized and controlled trial or blinded</p>\n</td>\n<td>\n<p>Randomized and controlled trial or blinded</p>\n</td>\n<td>\n<p>Usually the observational or open-label</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Human pharmacology and safet</strong>y: The study aims at safety and tolerability; PK parameters</p>\n</td>\n<td>\n<p><strong>Therapeutic exploration and dose-ranging</strong>: Efficacy and dose-ranging</p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p><strong>Therapeutic confirmation/comparison</strong>: Indications&nbsp;are finalized and guidelines for therapeutic use are formulated. Monitoring of adverse reactions</p>\n</td>\n<td>\n<p><strong>Postmarketing surveillance/studies</strong>: Drug interactions; long-term or rare side effects</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Extends from Months to 1year</p>\n</td>\n<td>\n<p>1&ndash;2 years</p>\n</td>\n<td>\n<p>3&ndash;5 years</p>\n</td>\n<td>\n<p>Unending, after drug approval</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9902",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A pregnant woman at 33 weeks of gestation presents to your antenatal clinic with preterm labour.  Which corticosteroid will you administer for stimulation of fetal lung maturation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hydrocortisone"
+        },
+        {
+          "id": 2,
+          "text": "Triamcinolone"
+        },
+        {
+          "id": 3,
+          "text": "Methylprednisolone"
+        },
+        {
+          "id": 4,
+          "text": "Betamethasone"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Betamethasone</strong> is indicated for the stimulation of <strong>fetal lung maturation </strong>in<strong> preterm labor.</strong></p>\n<p>As compared to cortisol, betamethasone <strong>binds to maternal proteins less</strong> and has <strong>less placental metabolism</strong>. This allows increased transfer to the fetus. Additionally, infants exposed to betamethasone are less likely to require postnatal resuscitation.&nbsp;2 doses of 12 mg each are administered 18-24 hours apart when the delivery is anticipated before 34 weeks of gestation.</p>\n<p><strong>Dexamethasone </strong>is&nbsp;another long-acting glucocorticoid that can be given. It has benefits such as <strong>less risk of intraventricular hemorrhage</strong> and a shorter length of stay in the NICU.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9878",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 5-year-old child diagnosed with bronchial asthma requires bronchodilator therapy. Which of the following device will you prescribe for this child, to avoid oropharyngeal adverse effects?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1"
+        },
+        {
+          "id": 2,
+          "text": "2"
+        },
+        {
+          "id": 3,
+          "text": "3"
+        },
+        {
+          "id": 4,
+          "text": "4"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The device in image 3 is a&nbsp;<strong>spacer device </strong>that can be prescribed to<strong>&nbsp;</strong><strong>decrease&nbsp;</strong>the incidence of propellant-mediated <strong>oropharyngeal adverse effects</strong>.</p>\n<p>Spacers reduce the velocity and size of particles entering the upper airways.&nbsp;This<strong>&nbsp;</strong>reduces the amount of drug depositing in the oropharynx and increases the proportion of drugs inhaled into the lower airways. Thus, a less amount of the drug gets swallowed and absorbed from the GI tract and limits local side effects.&nbsp;</p>\n<p>Spacer devices are <strong>useful</strong> in delivering inhaled drugs to <strong>children</strong>&nbsp;who are not able to use a pMDI alone but can also be used by <strong>adults</strong> for better drug delivery. The image below shows the use of a spacer device with a face mask which is preferred in children younger than 3 years of age.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dcf1afee41f64b98a0129246c3cb0a72x720x404.JPEG\" alt=\"Explanation Image\"><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c79334e432384464a4db8f878ca4023bx720x540.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p>The various devices used for the delivery of inhalational drugs are:</p>\n<p><strong>Pressurized metered-dose inhalers (pMDI) -</strong>&nbsp;Drugs are propelled from a canister in the pMDI with the aid of a propellant. These devices are convenient, portable, and can deliver 50&ndash;200 doses of a drug.</p>\n<p><strong>Image 1</strong> in the question stem shows a <strong>pressurized metered-dose inhaler.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/cf3ec9228e96415da2ec3c3932577099x596x600.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Dry powder inhalers -&nbsp;</strong>these devices scatter the drug into a fine powder that is dispersed by air turbulence on inhalation. DPIs have been developed to deliver drugs such as insulin, but the dosing is inconsistent.&nbsp;Children below 7 years find it difficult to use a DPI.&nbsp;</p>\n<p><strong>Image 2</strong> in the question stem shows a&nbsp;<strong>dry powder inhaler.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3fe2da00a2b7445d8a99ec027efeab5ax799x533.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Nebulizers:</strong>&nbsp;Two types of nebulizer are available -</p>\n<ul>\n<li><strong>Jet nebulizers</strong>&nbsp;that are driven by a stream of gas (air or oxygen)</li>\n<li><strong>Ultrasonic nebulizers</strong>&nbsp;that use a rapidly vibrating piezoelectric crystal and thus do not require a source of compressed gas.</li>\n</ul>\n<p>The nebulizers deliver much <strong>higher drug doses</strong> as compared pMDIs. These are useful in:</p>\n<ul>\n<li>Treating acute exacerbations of asthma and COPD</li>\n<li>Extreme airway obstruction (severe COPD)</li>\n<li>Delivering inhaled drugs to infants and small children who cannot use the other inhalation devices</li>\n<li>Administering drugs such as antibiotics in relatively high doses</li>\n</ul>\n<p><strong>Image 4</strong> in the question stem shows a&nbsp;<strong>nebulizer.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2687fee5df024653908a0728befd85afx1024x683.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/0460f2992470419f8716aee458e25b93.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9892",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient presents to the emergency department with diarrhea, sweating, excessive lacrimation, and salivation. His pulse rate is 55/min and his plasma cholinesterase level was 50U/mL. Which of the following can be used to treat this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Neostigmine"
+        },
+        {
+          "id": 2,
+          "text": "Atropine"
+        },
+        {
+          "id": 3,
+          "text": "Epinephrine"
+        },
+        {
+          "id": 4,
+          "text": "Benztropine"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The clinical features are suggestive of <strong>organophosphate poisoning</strong> and <strong>IV atropine</strong> is the treatment of choice.</p>\n<p>The organophosphates commonly used as pesticides are anticholinesterases.&nbsp;Toxicity occurs by excessive inhalation of vapors, ingestion, or percutaneous absorption. It inhibits the cholinesterase activity which results in an increase of acetylcholine, leading to cholinergic symptoms.</p>\n<p>The predominant initial signs are of muscarinic excess which includes:&nbsp;<strong>(DUMBBELSS)</strong></p>\n<ul>\n<li><strong>D</strong>iarrhea</li>\n<li><strong>U</strong>rination</li>\n<li><strong>M</strong>iosis</li>\n<li><strong>B</strong>ronchospasm</li>\n<li><strong>B</strong>radycardia</li>\n<li><strong>E</strong>mesis</li>\n<li><strong>L</strong>acrimation</li>\n<li><strong>S</strong>alivation</li>\n<li><strong>S</strong>weating</li>\n</ul>\n<p>This may be followed by cognitive disturbances, convulsions, and neuromuscular blockade.</p>\n<p>Treatment:</p>\n<ul>\n<li>Maintenance of vital signs particularly respiration</li>\n<li>Removal of clothing and washing of the skin</li>\n<li><strong>IV atropine 2- 5 mg. </strong>If&nbsp;IV administration is&nbsp;not possible, then <strong>2 mg IM</strong>&nbsp;every 5-10 minutes (till muscarinic symptoms disappear)</li>\n<li><strong>Pralidoxime,</strong> a cholinesterase reactivator can also be used for treatment</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9882",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 20-year-old male patient presents to the emergency department with complaints of breathing difficulty, facial swelling, and palpitations following a bee sting. He was immediately given an intramuscular injection of a drug in 1:1000 dilution. The drug acts on which of the following receptor to improve the patient's breathing difficulty?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Beta 2"
+        },
+        {
+          "id": 2,
+          "text": "Beta 1"
+        },
+        {
+          "id": 3,
+          "text": "Alpha 2"
+        },
+        {
+          "id": 4,
+          "text": "Alpha 1"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The patient's complaints of&nbsp;breathing difficulty, facial swelling, and palpitations following a bee sting are suggestive of anaphylactic shock. The <strong>drug&nbsp;of choice</strong> for anaphylaxis is <strong>intramuscular adrenaline</strong> (<strong>0.5ml in 1:1000 dilution</strong>). Activation of <strong>beta 2</strong> receptors causes<strong> bronchodilation</strong>. Hence, adrenaline action on the beta 2 receptors improves the breathing difficulty in this patient. Apart from this, beta 2 receptors also inhibit the secretion from mast cells.</p>\n<p><strong>Other options:</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Receptor</strong></td>\n<td><strong>Action</strong></td>\n<td><strong>Use in anaphylaxis treatment&nbsp;</strong></td>\n</tr>\n<tr>\n<td>Alpha 1 and alpha 2</td>\n<td>Vasoconstriction</td>\n<td>Increase in BP</td>\n</tr>\n<tr>\n<td>Beta 1</td>\n<td>Cardiac stimulation</td>\n<td>Increase in BP</td>\n</tr>\n<tr>\n<td>Beta 2</td>\n<td>Bronchodilation</td>\n<td>Reverse bronchoconstriction&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Adrenaline acts on &alpha;<sub>1</sub>, &alpha;<sub>2</sub>, &beta;<sub>1</sub>, &beta;<sub>2</sub>, and &beta;<sub>3</sub> receptors.</p>\n<ul>\n<li><strong>&alpha;<sub>1</sub></strong> - present in blood vessels - causes vasoconstriction -<strong> increases BP</strong>.</li>\n<li><strong>&beta;<sub>2</sub></strong> - present in blood vessels - causes vasodilatation - <strong>decreases BP</strong>.&nbsp;</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Adrenergic drug</strong></p>\n</td>\n<td>\n<p><strong>Receptors that it acts on</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Adrenaline</p>\n</td>\n<td>\n<p>&alpha;<sub>1</sub> + &alpha;<sub>2</sub>&nbsp;+&beta;<sub>1</sub> + &beta;<sub>2</sub> + weak &beta;<sub>3</sub> action</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Noradrenaline</p>\n</td>\n<td>\n<p>&alpha;<sub>1</sub> +&alpha;<sub>2</sub> +&beta;<sub>1</sub> + &beta;<sub>3</sub> but<strong> no &beta;<sub>2</sub> action</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Isoprenaline</p>\n</td>\n<td>\n<p>&beta;<sub>1</sub> + &beta;<sub>2</sub> + &beta;<sub>3</sub> but <strong>no &alpha; action</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9889",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient who was hospitalized and started on an intravenous antibiotic has developed diarrhea. The findings of the colonoscopy are given below. Which of the following antibiotic is most likely to be responsible?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Daptomycin"
+        },
+        {
+          "id": 2,
+          "text": "Fidaxomicin"
+        },
+        {
+          "id": 3,
+          "text": "Clindamycin"
+        },
+        {
+          "id": 4,
+          "text": "Chloramphenicol"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given clinical vignette of a patient with hospital-acquired diarrhea (nosocomial) following antibiotic administration is suggestive of&nbsp;<strong>pseudomembranous colitis</strong>&nbsp;most likely due to&nbsp;<strong>clindamycin</strong><strong><em>.</em>&nbsp;</strong></p>\n<p><span data-preserver-spaces=\"true\">Pseudomembranous colitis is an advanced form of clostridium difficile infection (CDI) that is visualized at endoscopy. Pseudomembranes are seen as whitish yellow plaques on the mucosa. Clostridium difficile infection is the most commonly diagnosed&nbsp;nosocomial diarrhea. It is commonly seen in individuals who receive a prolonged antibiotic course, that causes a change in the composition of gastrointestinal microbial flora. This leads to the colonization of C. difficile.</span></p>\n<p><span data-preserver-spaces=\"true\">Antibiotics that may cause CDI are:</span></p>\n<ul>\n<li><strong>Clindamycin</strong></li>\n<li><span data-preserver-spaces=\"true\">Ampicillin</span></li>\n<li><span data-preserver-spaces=\"true\">Cephalosporins- cefotaxime, ceftriaxone, cefuroxime, and ceftazidime</span></li>\n<li><span data-preserver-spaces=\"true\">Fluroquinolones-&nbsp;ciprofloxacin, levofloxacin, and moxifloxacin</span></li>\n</ul>\n<p>Clinical features include d<span data-preserver-spaces=\"true\">iarrhea, l</span><span data-preserver-spaces=\"true\">ower abdominal pain, f</span>ever, and leukocytosis.&nbsp;The diagnosis is based on clinical criteria:&nbsp;</p>\n<ul>\n<li>Diarrhea without other recognized causes, and</li>\n<li>Detection of toxin A or B in the stool, toxin-producing C. difficile in the stool&nbsp;</li>\n</ul>\n<p><span data-preserver-spaces=\"true\">Discontinuation of the offending antimicrobial, if possible, is the first step in management. <strong>Oral</strong> <strong>vancomycin</strong>&nbsp;and&nbsp;<strong>fidaxomicin</strong>&nbsp;(Option B) are used for the <strong>treatment</strong> of&nbsp;pseudomembranous colitis,&nbsp;depending on its severity.&nbsp;</span></p>\n<p><span data-preserver-spaces=\"true\">Other options:</span></p>\n<p>Option A:<strong> Daptomycin</strong>&nbsp;may cause<strong>&nbsp;allergic pneumonitis&nbsp;</strong>in patients receiving prolonged therapy for more than 2 weeks.</p>\n<p>Option D:&nbsp;<strong>Chloramphenicol</strong>&nbsp;is mainly associated with adverse effects such as bone marrow suppression, and hypersensitivity reactions. When given to infants, it may cause&nbsp;<strong>grey baby syndrome.</strong></p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/9b54105baee543799b70ec3b535186c4.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9883",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 65-year-old male patient complains of intermittent epigastric pain that is worse with food intake over the past 3 months. On further evaluation, he was found to have peptic ulcer disease caused by H. pylori. Which of the following drugs is not used in H. pylori eradication?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Metronidazole"
+        },
+        {
+          "id": 2,
+          "text": "Omeprazole"
+        },
+        {
+          "id": 3,
+          "text": "Mosapride"
+        },
+        {
+          "id": 4,
+          "text": "Amoxicillin"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Mosapride </strong>is a<strong> gastrokinetic 5-HT4 agonist</strong> and is not indicated in H. pylori eradication.</p>\n<p><strong>Proton pump inhibitors </strong>like omeprazole or<strong> H2 receptor antagonists</strong> like cimetidine are usually present in anti-H. pylori regimens for reducing the pH of gastric secretions.</p>\n<p>Antimicrobials are used in the treatment of H. pylori infections as well. These include</p>\n<ul>\n<li>Clarithromycin</li>\n<li>Metronidazole&nbsp;</li>\n<li>Tetracycline</li>\n<li>Amoxicillin&nbsp;</li>\n</ul>\n<p><span data-preserver-spaces=\"true\">H.pylori is a&nbsp;<strong>gram-negative</strong>&nbsp;motile rod with flagella. It has a unique feature of urease production, which&nbsp;is helpful in diagnosis. The&nbsp;<strong>sole source</strong>&nbsp;of H.pylori is&nbsp;<strong>human gastric mucus.</strong>&nbsp;</span><span data-preserver-spaces=\"true\">In some patients, H.pylori causes&nbsp;<strong>mild acute gastritis</strong>&nbsp;lasting for about two weeks. In others, it can cause&nbsp;<strong>peptic ulcer disease, </strong>which may lead to<strong> chronic atrophic gastritis </strong>in<strong> later stages</strong>. This is a risk factor for gastric malignancies like&nbsp;<strong>adenocarcinoma</strong>&nbsp;and&nbsp;<strong>mucosa-associated lymphoid tissue (MALT) lymphomas</strong>.&nbsp;</span></p>\n<p>Many regimens generally indicated for eradication of H. pylori infections are given below.</p><hr><h3>Related Pearl: H. pylori eradication regimen</h3><p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>1<sup>st</sup> line</strong></p>\n<p><strong>[OCA/OCM - 14 days]</strong></p>\n</td>\n<td>\n<p><strong>2<sup>nd</sup> line</strong></p>\n<p><strong>[TOMB - 14 days]</strong></p>\n</td>\n<td>\n<p><strong>3<sup>rd</sup> line /Clarithromycin-resistant cases </strong></p>\n<p><strong>[LOA - 10 days]</strong></p>\n</td>\n<td>\n<p><strong>Sequential Regimen</strong></p>\n<p><strong>[OA (5days) + OCT (5days)]</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>O</strong>meprazole</p>\n</td>\n<td><strong>T</strong>etracycline</td>\n<td><strong>L</strong>evofloxacin</td>\n<td><strong>O</strong>meprazole</td>\n</tr>\n<tr>\n<td><strong>C</strong>larithromycin</td>\n<td><strong>O</strong>meprazole</td>\n<td><strong>O</strong>meprazole</td>\n<td><strong>C</strong>larithromycin</td>\n</tr>\n<tr>\n<td><strong>A</strong>moxicillin/</td>\n<td><strong>M</strong>etronidazole</td>\n<td><strong>A</strong>moxicillin</td>\n<td><strong>A</strong>moxicillin</td>\n</tr>\n<tr>\n<td><strong>M</strong>etronidazole</td>\n<td><strong>B</strong>ismuth</td>\n<td>&nbsp;</td>\n<td><strong>T</strong>inidazole</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9885",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You are an intern and you see a 67-year-old male patient with a history of liver cirrhosis present to the emergency department with massive hematemesis. He is hemodynamically stable now after the first-line management. Which of the following agents are useful in the medical treatment of variceal bleeding?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Octreotide"
+        },
+        {
+          "id": 2,
+          "text": "Pantoprazole"
+        },
+        {
+          "id": 3,
+          "text": "Somatotropin"
+        },
+        {
+          "id": 4,
+          "text": "Dexamethasone"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Octreotide</strong> is a useful agent in treating <strong>variceal bleeding</strong>.</p>\n<p>Octreotide is a <strong>somatostatin analog</strong> and controls variceal bleeding by</p>\n<ul>\n<li>Reducing hepatic and azygous blood flow</li>\n<li>Reducing hepatic venous wedge pressure</li>\n<li>Constricting splanchnic arterioles: direct action on vascular smooth muscle.</li>\n<li>Decreasing hyperdynamic circulatory syndrome of portal hypertension by inhibiting the release of contributing peptides.</li>\n</ul>\n<p>Initial management of variceal bleeding involves the following:&nbsp;</p>\n<ul>\n<li>Admission to the intensive care unit</li>\n<li>Placement of&nbsp;<strong>two large-bore peripheral cannulae</strong></li>\n<li>Blood transfusion</li>\n<li><strong>Correction of coagulopathy</strong>&nbsp;with Vitamin K and tranexamic acid</li>\n<li><strong>Octreotide</strong>, a somatostatin analog or&nbsp;<strong>terlipressin</strong>, a splanchnic vasoconstrictor</li>\n<li>Prophylactic antibiotic</li>\n<li>Endotracheal intubation for airway protection if bleeding is uncontrolled</li>\n<li>Upper gastrointestinal endoscopy</li>\n</ul>\n<p>Ultimately, liver transplantation is the only way to definitively treat portal hypertension and variceal bleeding.&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9890",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A patient diagnosed with peptic ulcer disease is being treated with sucralfate. Which of the following adverse effects can be seen in the patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Vitamin B12 deficiency"
+        },
+        {
+          "id": 2,
+          "text": "Increased risk of bone fractures"
+        },
+        {
+          "id": 3,
+          "text": "Gastric bezoars"
+        },
+        {
+          "id": 4,
+          "text": "Hypergastrinemia"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Gastric bezoar</strong> can be seen in a patient taking sucralfate. Sucralfate produces a <strong>viscous gel that has a &lsquo;sticky nature&rsquo;</strong>. The sticky nature may be responsible for gastric bezoars, particularly in those with gastroparesis.</p>\n<div class=\"page\" title=\"Page 919\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Sucralfate is composed of a sulfate of sucrose with Al(OH)<sub>3.&nbsp;</sub>It&nbsp;undergoes cross-linking to produce a viscous polymer that sticks to epithelial cells and ulcers in acidic environments. It inhibits hydrolysis of the mucosal proteins by pepsin.</p>\n<p>It is used in the prophylaxis of stress ulcers, and in conditions where mucosal ulceration is not responding to acid suppression.</p>\n<p>Adverse effects of sucralfate include constipation and bezoar formation. It may inhibit absorption of other drugs like digoxin, cimetidine, ketoconazole, and fluoroquinolone antibiotics due to the viscous layer formed in the stomach. Hence it should be taken at least 2 hours after administration if these drugs.</p>\n</div>\n</div>\n</div>\n</div>\n<p>The other options:</p>\n<p><strong>Vitamin B12 deficiency </strong>and<strong> increased risk of bone fractures </strong>are side effects of<strong>&nbsp;proton pump inhibitors </strong>(PPIs). However, their clinical significance has not been proven yet.&nbsp;<strong>Hypergastrinemia</strong> is more commonly seen with<strong> PPIs </strong>than H2 receptor antagonists.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9895",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A young patient was found to have triglyceride levels of 600 mg/ dL. His LDL levels are slightly lower than normal and HDL levels are reduced. His mother too has elevated triglycerides with reduced levels of LDL and HDL cholesterol. The patient appears healthy, has a normal BMI, and has no history of coronary heart disease in his family. Which of the following drugs will be beneficial for this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Fenofibrate"
+        },
+        {
+          "id": 2,
+          "text": "Colestipol"
+        },
+        {
+          "id": 3,
+          "text": "Cholestyramine"
+        },
+        {
+          "id": 4,
+          "text": "Ezetimibe"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given clinical scenario, the patient has elevated levels of triglycerides with low levels of LDL and HDL cholesterol. This pattern is also seen in his mother. Therefore, it is most likely to be <strong>familial hypertriglyceridemia.</strong>&nbsp;Since the patient does not have risk factors for coronary heart disease, <strong>fenofibrate</strong> will be beneficial in reducing triglyceride levels.</p>\n<p>Familial hypertriglyceridemia occurs due to a defect in the lipolysis of the triglyceride-rich lipoproteins (TRLs). As a result of this, the levels of fasting <strong>triglyceride levels are elevated.</strong> Plasma LDL levels are reduced due to the defective conversion of triglyceride-rich lipoproteins to LDL. Identification of hypertriglyceridemia in first-degree relatives helps in the diagnosis.</p>\n<p>Hypertriglyceridemia can also be secondary due to&nbsp;intake of simple carbohydrates, obesity, insulin resistance, alcohol use, and estrogen treatment.</p>\n<p>Initial management involves exercise and dietary management (restriction of fatty food, avoidance of alcohol, estrogen-containing medications, etc)</p>\n<p>If the levels of the triglycerides are <strong>&gt;500 mg/dL</strong> despite lifestyle changes, then <strong>fibrates</strong> and <strong>fish oil</strong> can be used to reduce the levels and decrease the risk of pancreatitis.&nbsp;If the patient has risk factors for coronary heart disease, then <strong>statin</strong> therapy will be beneficial.</p>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Class</strong></td>\n<td><strong>HMG- CoA reductase inhibitors (statins)</strong></td>\n<td><strong>Fibrates</strong></td>\n<td><strong>Niacin</strong></td>\n<td><strong>Bile acid-binding resins</strong></td>\n<td><strong>Ezetimibe</strong></td>\n</tr>\n<tr>\n<td><strong>Important examples</strong></td>\n<td>\n<p class=\"p1\">Lovastatin, atorvastatin, fluvastatin, pravastatin, simvastatin, rosuvastatin, pitavastatin</p>\n</td>\n<td>\n<p class=\"p1\">Gemfibrozil and fenofibrate</p>\n</td>\n<td>Niacin</td>\n<td>&nbsp;\n<p class=\"p1\">Colestipol, cholestyramine, and colesevelam</p>\n</td>\n<td>Ezetimibe</td>\n</tr>\n<tr>\n<td><strong>Mechanism of action</strong></td>\n<td>\n<p class=\"p1\">Inhibits HMG-CoA reductase</p>\n</td>\n<td>\n<p class=\"p1\">PPAR-<span class=\"s1\">&alpha; mediated increased lipolysis</span></p>\n</td>\n<td>Decreases the production of VLDLs and decreases the catabolism of HDLs</td>\n<td>increase the excretion of bile acids. This results in increased conversion of cholesterol mobile acids by the liver&nbsp;</td>\n<td>inhibits intestinal sterol absorption</td>\n</tr>\n<tr>\n<td><strong>Major effects on lipoprotein levels</strong></td>\n<td>\n<p>Reduces LDL levels</p>\n</td>\n<td>\n<p>Reduces triglyceride levels</p>\n<p>A moderate increase in HDL levels</p>\n</td>\n<td>\n<p>Reduces triglycerides,&nbsp; LDL, and lipoprotein a levels</p>\n<p>Significant increase in HDL levels</p>\n</td>\n<td>Reduces LDL levels&nbsp;</td>\n<td>\n<p>Reduces LDL cholesterol</p>\n<p>Minimal increase in HDL level</p>\n<p>Also decreases the absorption of phytosterols</p>\n</td>\n</tr>\n<tr>\n<td><strong>Important side effects</strong></td>\n<td>&nbsp;\n<p class=\"p1\">Elevations of serum aminotransferase activity</p>\n<p class=\"p1\">Elevation of creatine kinase activity</p>\n<p class=\"p1\">Myopathy</p>\n</td>\n<td>\n<p class=\"p1\">rashes, gastrointestinal symptoms, myopathy, arrhythmias, hypokalemia, elevated aminotransferases or alkaline phosphatase</p>\n&nbsp;</td>\n<td>\n<p>Cutaneous vasodilation</p>\n<p>Elevations in aminotransferases levels&nbsp;</p>\n</td>\n<td>\n<p>Constipation</p>\n<p>Bloating&nbsp;</p>\n</td>\n<td>\n<p>reversible hepatic function impairment</p>\n<p>Rarely myositis</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Familial Dyslipidemias</h3><table>\n<tbody>\n<tr>\n<td>Type</td>\n<td>Increased levels&nbsp;</td>\n<td>Manifestation</td>\n</tr>\n<tr>\n<td>1. Hyperchylomicronemia(type I hyperlipoproteinemia)</td>\n<td>Chylomicrons, TG and cholesterol</td>\n<td>Pancreatitis, hepatosplenomegaly, and xanthomas</td>\n</tr>\n<tr>\n<td>2.&nbsp;Familial hypercholesterolemia(type II&nbsp;hyperlipoproteinemia)</td>\n<td>LDL and cholesterol</td>\n<td>Atherosclerosis and xanthomas</td>\n</tr>\n<tr>\n<td>3. Dysbetalipoproteinemia(type III hyperlipoproteinemia)</td>\n<td>Chylomicrons and VLDL</td>\n<td>Atherosclerosis and xanthomas</td>\n</tr>\n<tr>\n<td>4. Hypertriglyceridemia(type IV hyperlipoproteinemia)</td>\n<td>VLDL and TG</td>\n<td>Pancreatitis</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9887",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 60-year-old female patient presented with the following finding. Her medical history includes hypertension for which she has been taking regular medications for the past 3 months. Which of the following medication is most likely to be associated with this finding?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Enalapril"
+        },
+        {
+          "id": 2,
+          "text": "Telmisartan"
+        },
+        {
+          "id": 3,
+          "text": "Amlodipine"
+        },
+        {
+          "id": 4,
+          "text": "Hydrochlorthiazide"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shows<strong> pitting pedal edema</strong> in a hypertensive patient. <strong>Calcium channel blockers (CCBs)</strong> like <strong>amlodipine</strong> are most likely to be associated with peripheral edema.</p>\n<p>The frequency of CCB- induced peripheral edema is both <strong>drug-specific</strong> (i.e more potent drugs like amlodipine will be associated with higher rates of developing edema) and <strong>dose-dependent</strong> (i.e incidence of edema increases with an increase in drug dosage and chronicity of its usage). It is more common among <strong>females.</strong></p>\n<p>CCB-induced peripheral edema occurs due to a disproportionate decrease in the&nbsp;arteriolar resistance than in the venous circulation, resulting in increased&nbsp;hydrostatic pressure in the precapillary circulation. This leads to a fluid shift&nbsp;into the interstitial compartment causing edema.</p>\n<p>Treatment:</p>\n<ul>\n<li>Dose reduction.</li>\n<li>Interclass switching of CCB - switch to non-dihydropyridines like verapamil, and diltiazem.</li>\n<li>Addition of a venodilator - ACE inhibitor, ARBs, Nitrates.</li>\n<li>Others - compression stockings, avoiding prolonged upright position.</li>\n<li>Definitive treatment would be discontinuation of the CCB and switching to another class of antihypertensives.</li>\n</ul>\n<p>Other options:</p>\n<p>Option A: Common side effects of <strong>ACE inhibitors</strong> like <strong>enalapril </strong>include hypotension, hyperkalemia, dry cough, rashes, urticaria, dysgeusia, gastrointestinal upset, headache, and dizziness.</p>\n<p>Option B:<strong>&nbsp;Telmisartan</strong>, an angiotensin receptor blocker (<strong>ARBs)</strong>, causes adverse effects such as hypotension, hyperkalemia, headache, gastrointestinal upset, and dizziness.</p>\n<p>Option D: Adverse effects of <strong>thiazide diuretics</strong> like <strong>hydrochlorothiazide</strong> are hypokalemia, hyponatremia, hyperglycemia, hyperuricemia, hypercalcemia, rashes,&nbsp;headache, gastrointestinal upset, and dizziness.</p><hr><h3>Related Pearl: European society of cardiology guidelines for treatment of hypertension</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Indication</strong></p>\n</td>\n<td>\n<p><strong>Initial treatment of choice&nbsp;</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Hypertension alone or hypertension with diabetes/ cerebrovascular disease</p>\n</td>\n<td>\n<p>ACEi/ARB + CCB/diuretic (A+C or A+D)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Hypertension with coronary artery disease</p>\n</td>\n<td>\n<p>ACEi/ ARB + beta blocker/CCB (A+B or A+C)</p>\n<p>or</p>\n<p>beta-blocker + diuretic (B+D)</p>\n<p>or&nbsp;</p>\n<p>CCB+ diuretic/ beta-blocker (C+B or C+D)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Hypertension with chronic kidney disease</p>\n</td>\n<td>\n<p>ACEi/ARB + CCB/diuretic (A+C or A+D)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Hypertension with heart failure and reduced ejection fraction</p>\n</td>\n<td>\n<p>ACEI/ ARB + diuretic + beta-blocker (A+D+B)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Pregnancy</p>\n</td>\n<td>\n<p>Labetalol, Nifedipine, methyldopa</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>ACEi &ndash; Angiotensin-converting enzyme inhibitors</p>\n<p>ARB &ndash; Angiotensin II receptor blockers</p>\n<p>CCB &ndash; Calcium Channel Blockers</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/0a404cea4a154c8d89713520faedfb97.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9888",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 60-year-old female patient was diagnosed with parkinsonism. She was commenced on combination therapy with co-careldopa. What is the rationale behind this combination therapy?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "To decrease the plasma half life of levodopa"
+        },
+        {
+          "id": 2,
+          "text": "To inhibit the metabolism of levodopa in brain"
+        },
+        {
+          "id": 3,
+          "text": "To promote the metabolism of levodopa in periphery"
+        },
+        {
+          "id": 4,
+          "text": "To reduce the systemic side effects of levodopa"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The rationale behind the combination therapy of<strong> levodopa</strong> with a peripheral DOPA decarboxylase inhibitor like <strong>carbidopa (co-careldopa)</strong> is that inhibition of the metabolism&nbsp;of levodopa (i.e. conversion of levodopa into dopamine) in the peripheral circulation <strong>decreases the systemic side effects</strong> of&nbsp;levodopa, like vomiting.</p>\n<p>Peripheral dopa decarboxylase inhibitors (carbidopa) do not cross the blood-brain barrier. Therefore, they only <strong>inhibit </strong>the<strong> conversion of levodopa</strong> into dopamine in the<strong> periphery</strong> and <strong>not in the brain</strong>. This leads to the increased plasma half-life of levodopa, and therefore, lower doses of levodopa can be prescribed.</p>\n<p>Benefits of combination therapy:</p>\n<ul>\n<li>This therapy inhibits the metabolism of levodopa in the periphery, leading to <strong>increased plasma half-life</strong> of levodopa.</li>\n<li>Combination therapy reduces adverse effects like gastrointestinal side effects, orthostatic hypotension, and cardiac arrhythmias.</li>\n<li>This therapy allows for increased availability of levodopa in the brain.</li>\n<li>Fluctuation in motor control, where the patient is alternately well and disabled, occurs on prolonged therapy with levodopa. This type of \"<strong>on-off</strong>\" effect is <strong>reduced</strong> in combination therapy because of sustained dopamine levels in the brain.</li>\n<li><strong>Pyridoxine</strong> enhances the peripheral metabolism of levodopa. Hence, combination therapy with carbidopa nullifies the interaction of pyridoxine with levodopa metabolism.</li>\n<li><strong>&nbsp;</strong>A<strong> higher&nbsp;degree of improvement</strong> is seen&nbsp;in combination therapy than in monotherapy with levodopa.</li>\n</ul>\n<p>Demerits of combination therapy:</p>\n<p>This therapy decreases the concentration of levodopa in the periphery, but increases the concentration of levodopa reaching the brain.<strong> Involuntary movements </strong>and <strong>behavioral adverse effects</strong> like confusion, hallucinations,&nbsp;nightmares, and delusions are <strong>not reduced </strong>after the addition of carbidopa<strong>. </strong>In fact, they are <strong>increased</strong>&nbsp;in patients who are taking levodopa <strong>with peripheral carboxylase</strong> inhibitors.<strong>&nbsp;</strong>This is because <strong>higher</strong> levels of <strong>dopamine</strong> are formed in CNS.</p><hr><h3>Related Pearl: Medical treatment of Parkinson's disease</h3><table>\n<tbody>\n<tr>\n<td><strong>To </strong><strong>increase dopamine</strong></td>\n<td><strong>Anti cholinergics</strong></td>\n</tr>\n<tr>\n<td>\n<p><strong>Dopamine precursor</strong><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong></p>\n</td>\n<td><strong>Anti muscarinic </strong></td>\n</tr>\n<tr>\n<td>Levodopa</td>\n<td>Benzhexol (trihexyphenidyl)</td>\n</tr>\n<tr>\n<td><strong>Dopa decarboxylase inhibitor </strong></td>\n<td>Benztropine</td>\n</tr>\n<tr>\n<td>Carbedopa</td>\n<td>Procyclidine</td>\n</tr>\n<tr>\n<td>Benserazide</td>\n<td><strong>H1 antagonist </strong></td>\n</tr>\n<tr>\n<td><strong>Dopamine agonist-Ergot derivatives</strong></td>\n<td>Promethazine</td>\n</tr>\n<tr>\n<td>Bromocriptine</td>\n<td>Orphenadrine</td>\n</tr>\n<tr>\n<td>Cabergoline</td>\n<td>Diphenhydramine</td>\n</tr>\n<tr>\n<td>Pergolide</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Lisuride</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Dopamine agonist-Non ergot&nbsp;derivatives</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Ropinirole</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Pramipexole</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Rotigotine</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Apomorphine</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Dopamine facilitator </strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Amantadine</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>MAO-B inhibitor </strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Selegiline</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Rasagiline</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>COMT inhibitor </strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Tolcapone</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Entacapone</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9884",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient with recent-onset primary generalized epilepsy develops a skin reaction due to phenytoin sodium. What is the most appropriate course of action?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Switch to clonazepam"
+        },
+        {
+          "id": 2,
+          "text": "Stop and restart phenytoin sodium after two weeks"
+        },
+        {
+          "id": 3,
+          "text": "Switch to sodium valproate"
+        },
+        {
+          "id": 4,
+          "text": "Switch to ethosuximide"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Hypersensitivity reaction</strong> to<strong> phenytoin&nbsp;</strong>warrants <strong>discontinuation</strong> of the drug.&nbsp;<strong>Switching</strong> to <strong>sodium valproate</strong> is the most appropriate course of action for this patient.&nbsp;</p>\n<p><strong>Sodium valproate</strong> is one of the first-line agents indicated for<strong> GTCS. Clonazepam</strong> and <strong>ethosuximide</strong> are primarily used in <strong>absence seizures</strong> and are not indicated for GTCS.&nbsp;</p>\n<p>Clonazepam is indicated as <strong>adjunctive therapy</strong> in the absence seizures when first-line agents (ethosuximide, sodium valproate, lamotrigine) fail to control the seizures adequately.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9897",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 28-year-old woman gave birth to a child with the features shown in the given image. On examination, the child had brittle bones, and x-ray scans revealed stippled epiphyses. Which of the following drugs is most likely to be implicated in causing this teratogenic condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Alcohol"
+        },
+        {
+          "id": 2,
+          "text": "Topiramate"
+        },
+        {
+          "id": 3,
+          "text": "Warfarin"
+        },
+        {
+          "id": 4,
+          "text": "Lithium"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><span data-preserver-spaces=\"true\">The given image shows a depressed nasal bridge (saddle nose). This image along with the stippling of bone epiphyses points to <strong>fetal warfarin syndrome </strong>or<strong> warfarin embryopathy</strong>.&nbsp;</span></p>\n<p><strong><span data-preserver-spaces=\"true\">Features:</span></strong></p>\n<ul>\n<li><span data-preserver-spaces=\"true\">Repeated abortions</span></li>\n<li><span data-preserver-spaces=\"true\">CNS abnormalities</span></li>\n<li><span data-preserver-spaces=\"true\">Depressed nasal bridge/absent nasal bone/saddle nose at birth</span></li>\n<li><span data-preserver-spaces=\"true\">Bleeding diathesis at birth</span></li>\n<li><span data-preserver-spaces=\"true\">Growth retardation - hypoplasia of nose, eye sockets, and long bones with stippling of epiphyses&nbsp;</span></li>\n</ul>\n<p><span data-preserver-spaces=\"true\"><strong>Anticoagulation in pregnancy:</strong></span></p>\n<ul>\n<li><span data-preserver-spaces=\"true\">Warfarin: Although safe for the mother, it can lead to&nbsp;</span><strong><span data-preserver-spaces=\"true\">warfarin embryopathy</span></strong><span data-preserver-spaces=\"true\">, miscarriage, IUGR, and stillbirths.</span></li>\n<li><span data-preserver-spaces=\"true\">Heparin: It is safe for the fetus</span><span data-preserver-spaces=\"true\">&nbsp;but is less effective than warfarin.</span></li>\n<li><span data-preserver-spaces=\"true\">LMWH: It is inadequate, and ACOG does not recommend its use in pregnant women with prosthetic heart valves.</span></li>\n</ul>\n<table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Period of gestation</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Anticoagulant</strong></p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Till 12 completed weeks</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">LMWH or UFH</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">13 to 36 weeks</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Warfarin</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">36 weeks to 6 hours before delivery</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">LMWH or UFH</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">6 hours after vaginal and 24 hours after cesarian section</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">LMWH or UFH (ACOG recommendation)</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><span data-preserver-spaces=\"true\">If delivery occurs while the anticoagulant is still effective, and excessive bleeding happens, then <strong>protamine sulfate</strong> is given intravenously.&nbsp;</span></p>\n<p><span data-preserver-spaces=\"true\">Anticoagulation of pregnant women:</span></p>\n<ul>\n<li><span data-preserver-spaces=\"true\">The patient taking warfarin should discontinue it as soon as pregnancy is diagnosed and replace it with&nbsp;</span><strong><span data-preserver-spaces=\"true\">heparin 5,000 units twice daily subcutaneously up to the 12th week of gestation</span></strong><span data-preserver-spaces=\"true\">.&nbsp;</span></li>\n<li><span data-preserver-spaces=\"true\">Heparin is then replaced by&nbsp;</span><strong><span data-preserver-spaces=\"true\">a warfarin tablet of 3 mg daily</span></strong><span data-preserver-spaces=\"true\">&nbsp;to be taken at the same time each day and continued&nbsp;</span><strong><span data-preserver-spaces=\"true\">up to 36 weeks </span></strong>in patients with a high risk of thrombosis.</li>\n<li><span data-preserver-spaces=\"true\">Thereafter, warfarin is replaced by&nbsp;</span><strong><span data-preserver-spaces=\"true\">heparin, which is discontinued 6 hours</span></strong><span data-preserver-spaces=\"true\">&nbsp;just before delivery.</span></li>\n<li><span data-preserver-spaces=\"true\">Heparin (unfractionated or LMWH) is restarted 6 hours after vaginal delivery and 24 hours after the cesarean section.</span></li>\n<li><span data-preserver-spaces=\"true\">Unfractionated heparin (UFH), LMWH, and warfarin therapy are&nbsp;</span><strong><span data-preserver-spaces=\"true\">not contraindicated</span></strong><span data-preserver-spaces=\"true\">&nbsp;in breastfeeding.</span></li>\n</ul>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0d669e35bc1e4139bd255e4387c48c61x1280x1476.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Teratogenic drugs and the birth defects</h3><table>\n<tbody>\n<tr>\n<td><strong>Drugs</strong></td>\n<td><strong>Adverse effects</strong></td>\n</tr>\n<tr>\n<td>Penicillamine</td>\n<td>Cutis laxa syndrome</td>\n</tr>\n<tr>\n<td><strong>Lithium</strong></td>\n<td><strong>Ebstein anomaly</strong></td>\n</tr>\n<tr>\n<td>Isotretinoin</td>\n<td>Facial-ear anomalies, heart disease, CNS anomalies</td>\n</tr>\n<tr>\n<td>Progesterone</td>\n<td>Masculinization of the female fetus</td>\n</tr>\n<tr>\n<td>Quinine</td>\n<td>Abortion, thrombocytopenia, deafness</td>\n</tr>\n<tr>\n<td>Topiramate</td>\n<td>Cleft lip</td>\n</tr>\n<tr>\n<td><strong>Valproate</strong></td>\n<td>Spina bifida, limb defects,&nbsp;<strong>autism spectrum disorder</strong>, facial and cardiac anomalies,&nbsp;<strong>Coarctation of the aorta</strong>, Aortic stenosis, Pulmonary atresia, Ventricular Septal Defect.&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Vitamin D</strong></td>\n<td><strong>Supravalvular aortic stenosis</strong></td>\n</tr>\n<tr>\n<td><strong>Warfarin</strong></td>\n<td>Fetal bleeding, <strong>hypoplastic nasal structures</strong></td>\n</tr>\n<tr>\n<td><strong>Statins</strong></td>\n<td>Vertebral, anal, cardiac, tracheoesophageal fistula, renal, arterial, limb (<strong>VACTERAL</strong>) defects</td>\n</tr>\n<tr>\n<td><strong>Phenytoin</strong></td>\n<td>Ventricular septal defect, Atrial Septal Defect, Coarctation of the aorta, Patent Ductus Arteriosus</td>\n</tr>\n<tr>\n<td>Alcohol</td>\n<td>Atrial Septal Defect, Ventricular Septal Defect</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/a62c3ac562af45468086387959c3bfa1.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9886",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient scheduled for a CABG procedure receives preoperative heparin for anticoagulation. During the surgery, the patient starts bleeding massively and there is a drop in BP. Which of the following would you use to manage this patient?<div class='question-desc-html'><p>CABG: Coronary Artery Bypass Graft</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Protamine sulfate"
+        },
+        {
+          "id": 2,
+          "text": "Prothrombin complex concentrate"
+        },
+        {
+          "id": 3,
+          "text": "Aminocaproic acid"
+        },
+        {
+          "id": 4,
+          "text": "Tranexamic acid"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Protamine sulfate </strong>is the drug used to treat life-threatening, <strong>heparin-induced bleeding</strong>.</p>\n<p>It is a mixture of basic polypeptides isolated from <strong>salmon sperm</strong>. It binds to acidic heparin with high affinity and neutralizes anticoagulant activity. The resultant protamine-heparin complexes are cleared. Protamine binds only to <strong>long heparin </strong>molecules (UFH). Therefore, protamine only <strong>partially reverses</strong> the activity of <strong>LMWH</strong> and has <strong>no effect</strong> on <strong>fondaparinux</strong>. </p>\n<p class=\"p1\">It is most commonly used to neutralize heparin-induced anticoagulation after separation from cardiopulmonary bypass. It is also utilized in the setting of dialysis, invasive vascular procedures, and acute ischemic strokes.</p>\n<p class=\"p1\">Note: Protamine sulfate has<strong> anticoagulant activity</strong> at <strong>higher doses</strong> and hence, only small amounts of protamine (1mg/100 units of heparin) are used for heparin-induced bleeding.</p><hr><h3>Related Pearl: Heparin vs. LMWH vs. Fondaparinux</h3><p>Knowing the structural difference (scroll down for the image) between the three drugs is important to know why the three drugs act differently.&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td><span><strong>Features</strong></span></td>\n<td><span><strong>Unfractionated heparin</strong></span></td>\n<td><span><strong>LMWH</strong></span></td>\n<td><span><strong>Fondaparinux</strong></span></td>\n</tr>\n<tr>\n<td><strong><span>Structure</span></strong></td>\n<td>\n<p class=\"p1\"><span>A glycosaminoglycan consisting of long saccharide chains</span></p>\n</td>\n<td><span>A glycosaminoglycan consisting of short saccharide chains</span></td>\n<td><span>A synthetic pentasaccharide</span></td>\n</tr>\n<tr>\n<td><strong><span>Factor Xa inhibition&nbsp;</span></strong></td>\n<td><span>Yes</span></td>\n<td><span>Yes</span></td>\n<td><span>Yes</span></td>\n</tr>\n<tr>\n<td><strong><span>Factor IIa inhibition</span></strong></td>\n<td>\n<p><span>Yes (Xa = IIa)</span></p>\n<p><span>The long chains act Xa and IIa equally.</span></p>\n</td>\n<td>\n<p><span>Yes (Xa &gt; IIa)</span></p>\n<p><span>LMWH contains a mixture of long and short chains.</span></p>\n</td>\n<td>\n<p><span>No</span></p>\n<p><span>The pentasaccharide has no action on factor IIa</span></p>\n</td>\n</tr>\n<tr>\n<td><strong><span>Bioavailability</span></strong></td>\n<td>\n<p><span>Oral: Not absorbed</span></p>\n<p><span>S.C.: Not good&nbsp;<span>(longer chains are not absorbed well)&nbsp;</span></span></p>\n<p><span>I.V.: Good</span></p>\n</td>\n<td>\n<p><span>Oral: Not absorbed</span></p>\n<p><span>S.C.: Good&nbsp;</span></p>\n</td>\n<td>\n<p><span>Oral: Not absorbed</span></p>\n<p><span>S.C.: Very good</span></p>\n</td>\n</tr>\n<tr>\n<td><strong><span>Variable response</span></strong></td>\n<td><span>Yes&nbsp;</span></td>\n<td><span>No</span></td>\n<td><span>No</span></td>\n</tr>\n<tr>\n<td><strong><span>Metabolism</span></strong></td>\n<td><span>(longer chains)</span> <span>Cleared by the reticuloendothelial system</span>&nbsp;</td>\n<td><span>Cleared by the kidneys</span></td>\n<td><span>Cleared by the kidneys</span></td>\n</tr>\n<tr>\n<td><strong><span>Safety in renal disease</span></strong></td>\n<td><span>Safe in renal impairment</span></td>\n<td><span>Used with close monitoring</span></td>\n<td><span>Contraindicated in renal failure</span></td>\n</tr>\n<tr>\n<td><strong><span>Monitoring&nbsp;</span></strong></td>\n<td><span>Required, with <strong>aPTT</strong></span></td>\n<td><span>Required only in <strong>renal impairment</strong>,<strong>&nbsp;</strong>with <strong>anti-factor Xa assay</strong></span></td>\n<td><span>Not required</span></td>\n</tr>\n<tr>\n<td><strong><span>Protamine sulfate as antidote</span></strong></td>\n<td><span>Full reversal</span></td>\n<td><span>Partial reversal</span> <span>(acts only on the longer chains)</span></td>\n<td><span>No&nbsp;reversal</span></td>\n</tr>\n<tr>\n<td><strong><span>Risk of Heparin-induced thrombocytopenia</span></strong></td>\n<td><span>High&nbsp;</span></td>\n<td><span>Lower</span></td>\n<td><span>Least</span></td>\n</tr>\n<tr>\n<td><strong><span>Risk of osteoporosis</span></strong></td>\n<td><span>Occasionally</span></td>\n<td><span>Lower</span></td>\n<td><span>Lower</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/804286e8b58a478caeb89f36ccb6b8fbx1280x2261.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9898",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 54-year-old woman presented to the clinic with difficulty in vision. She is a known case of rheumatoid arthritis for which she has been on medication for many years along with drugs for the management of her diabetes and hypertension. Fundus examination of the patient shows the following finding. Which of the following drug could have caused this finding?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sulfonylurea"
+        },
+        {
+          "id": 2,
+          "text": "Captopril"
+        },
+        {
+          "id": 3,
+          "text": "Hydroxychloroquine"
+        },
+        {
+          "id": 4,
+          "text": "Nonsteroidal anti-inflammatory drugs"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image&nbsp;depicts the<strong> bull&rsquo;s eye maculopathy </strong>which can be caused by<strong> hydroxychloroquine</strong>.<strong>&nbsp;</strong>This patient's history of being treated for rheumatoid arthritis is the most probable reason for the lesion.</p>\n<p>Bull's-eye maculopathy refers to the ophthalmoscopic appearance of a<strong> central area</strong> of<strong> retinal pigment epithelial depigmentation</strong> surrounded by relatively normal retinal pigment epithelium, giving a \"bulls-eye\" appearance to the macula.</p>\n<p><strong>Hydroxychloroquine</strong>, which is generally used for the treatment of rheumatoid arthritis, toxicity causes bull&rsquo;s eye maculopathy. Chloroquine binds to melanin in the retinal pigment epithelium,&nbsp;causing&nbsp;cytotoxic effects.</p>\n<p>Causes of bull&rsquo;s eye maculopathy include:</p>\n<ul>\n<li>Chloroquine</li>\n<li>Hydroxychloroquine</li>\n<li>Congenital cone dystrophy</li>\n</ul>\n<p>Other adverse effects of chloroquine:</p>\n<ul>\n<li>Nail bed and mucosal membrane discoloration</li>\n<li>Irreversible retinopathy</li>\n<li>Ototoxicity</li>\n<li>Toxic myopathy</li>\n<li>Cardiopathy</li>\n<li>Peripheral neuropathy</li>\n</ul>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c699ca5e02ed49288892c025fec28dcfx500x333.PNG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/1a8b96202a0d4910a43d7c1f31323a4b.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9891",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 30-year-old female patient with early morning stiffness and chronic pain over small joints was diagnosed with rheumatoid arthritis. She has been on drugs for the past few years, without any improvement. Now, it has been decided to start her on biological agents. Which of the following will not be used in this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "IL-17A antagonist"
+        },
+        {
+          "id": 2,
+          "text": "IL-1 receptor antagonist"
+        },
+        {
+          "id": 3,
+          "text": "IL-6 receptor antagonist"
+        },
+        {
+          "id": 4,
+          "text": "TNF-alpha antagonist"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>IL-17A antagonist</strong>&nbsp;is not used in the treatment of rheumatoid arthritis.</p>\n<p>IL-17A antagonists<strong>&nbsp;</strong>(secukinumab, ixekizumab) can be used in the treatment of moderate to severe plaque or scalp <strong>psoriasis</strong>.</p>\n<p>All the other 3 are&nbsp;biological <strong>D</strong>isease <strong>M</strong>odifying <strong>A</strong>nti-<strong>R</strong>heumatoid <strong>Drugs</strong>&nbsp;(<strong>DMARDs</strong>) used in the treatment of rheumatoid arthritis. All biological DMARDs <strong>downregulate the immune system</strong> and can lead to adverse effects like <strong>opportunistic infections</strong> and the flaring of latent TB.</p>\n<p>Other options:</p>\n<p>Option B:&nbsp;IL-1 receptor antagonist - anakinra</p>\n<p>Option C:&nbsp;IL-6 receptor antagonist - tocilizumab and sarilumab</p>\n<p>Option D:&nbsp;TNF&nbsp;&alpha; antagonist - adalimumab, golimumab, etanercept, etc.,</p><hr><h3>Related Pearl: Important drugs for rheumatoid arthritis</h3><div dir=\"ltr\">\n<p><strong>NSAIDs -&nbsp;</strong>Analgesic and anti-inflammatory, used as adjunctive agents for the management of uncontrollable symptoms and useful in an acute flare.</p>\n<p dir=\"ltr\"><strong>Glucocorticoids -&nbsp;</strong>Used during an acute flare for&nbsp;rapid disease control and as initial therapy before the onset of the effect of DMARDs.&nbsp;Chronic administration of low doses is needed to control disease in patients with inadequate response to DMARDs.</p>\n<ul>\n<li dir=\"ltr\">Prednisolone- oral&nbsp;</li>\n<li dir=\"ltr\">Triamcinolone - intraarticular<br />&nbsp;</li>\n</ul>\n<strong><span>DMARDs - </span></strong><span>disease-modifying anti-rheumatoid drugs</span>\n<p dir=\"ltr\"><span><strong>Conventional DMARDs:</strong></span></p>\n<ul>\n<li dir=\"ltr\">Methotrexate (MTX): It is an antifolate drug. The DMARD of choice and the anchor drug for combination therapy. Regular LFT monitoring is required.</li>\n<li dir=\"ltr\">Hydroxychloroquine: It used as monotherapy for early and mild disease and&nbsp;in combination with other DMARDs for severe cases.</li>\n<li dir=\"ltr\">Sulfasalazine: A salicylate. It reduces the radiographic progression of the disease.</li>\n<li dir=\"ltr\">Leflunomide: A pyrimidine synthase inhibitor used as an alternative to MTX.</li>\n</ul>\n</div>\n<div dir=\"ltr\">\n<p>&nbsp;</p>\n<p><span><strong>Biologicals:</strong></span></p>\n<ul>\n<li>TNF-&alpha; antagonists: Used in combination with MTX. Has a risk of serious bacterial infections, opportunistic fungal infection &amp; reactivation of latent TB. The TNF-&alpha; inhibitors are adalimumab, golimumab, etanercept, infliximab, and certolizumab.</li>\n<li>Abatacept: A T-cell costimulation inhibitor, used in combination with MTX, leflunomide, etc.</li>\n<li>Rituximab: An anti-CD20 antibody. Used in refractory disease in combination with MTX.</li>\n<li>Anakinra: An IL-1 receptor antagonist. It should not be combined with an anti-TNF alpha.</li>\n<li>IL-6 receptor antagonists: Tocilizumab and sarilumab are used as monotherapy&nbsp;or combination therapy in moderate to severe disease.&nbsp;&nbsp;</li>\n</ul>\n</div>\n<div dir=\"ltr\">\n<p>&nbsp;</p>\n<p><span><strong>Small molecules:&nbsp;</strong></span>Janus kinase inhibitors:&nbsp;Tofacitinib, barcitinib, and upadacitinib are used as monotherapy or combination therapy.</p>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9896",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A pregnant female at 36 weeks gestation, presents with palpitations, protrusion of the eyeball, and heat intolerance. On blood investigations, it was found that she had increased T3 and T4 levels and decreased TSH levels.  Which of the following should be the next step in the management of this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Methimazole"
+        },
+        {
+          "id": 2,
+          "text": "Thyroidectomy"
+        },
+        {
+          "id": 3,
+          "text": "Propylthiouracil"
+        },
+        {
+          "id": 4,
+          "text": "Radioactive iodine"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given clinical scenario, the most likely diagnosis is <strong>thyrotoxicosis</strong>. As she is in her third trimester, the drug of choice for the treatment of thyrotoxicosis is <strong>methimazole.</strong></p>\n<p>Thyrotoxicosis during pregnancy is usually&nbsp;controlled by thionamide drugs. Propylthiouracil was&nbsp;preferred previously because it partially inhibits the conversion of T4 to T3 and crosses the placenta less readily than methimazole. However, since it has a higher risk of causing <strong>propylthiouracil-associated liver failure in pregnancy</strong>, methimazole is prescribed according to guidelines from the second trimester.&nbsp;Methimazole is usually avoided in the first trimester due to <strong>methimazole-associated embryopathy.</strong>&nbsp;</p>\n<p>Other options:</p>\n<p>Option B: A <strong>subtotal thyroidectomy</strong> is done once the hyperthyroidism is medically controlled. It is usually avoided during pregnancy, however, may be done in some cases where it can't be controlled via medication.</p>\n<p>Option D: Radioactive iodine is contraindicated in pregnant women as it may cause <strong>fetal thyroid gland destruction</strong>.</p><hr><h3>Related Pearl: Drug of choice for hyperthyroidism/thyrotoxicosis in pregnancy</h3><p>In the 1st trimester: <strong>Propylthiouracil</strong></p>\n<p>In the 2nd and 3rd trimester: <strong>Methimazole</strong></p><hr><h3>Related Pearl: Classification of anti-thyroid drugs</h3><p>Drugs <strong>inhibiting hormone synthesis</strong>:</p>\n<ul>\n<li>Propylthiouracil</li>\n<li>Methimazole</li>\n<li>Carbimazole</li>\n</ul>\n<p>Drugs <strong>inhibiting iodide trapping</strong>:</p>\n<ul>\n<li>Thiocyanates</li>\n<li>Perchlorates</li>\n<li>Nitrates</li>\n</ul>\n<p>Drugs <strong>inhibiting hormone release</strong>:</p>\n<ul>\n<li>Iodine</li>\n<li>Sodium iodide</li>\n<li>Potassium iodide</li>\n<li>Organic iodide</li>\n</ul>\n<p>Drugs that <strong>destroy thyroid tissue</strong>:</p>\n<ul>\n<li>Radioactive iodine</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9893",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 62-year-old woman presents with complaints of fatigue. She is a known case of type 2 diabetes mellitus on treatment. On examination, there is pallor and knuckle pigmentation. Which of the following drugs could have caused her condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Gliclazide"
+        },
+        {
+          "id": 2,
+          "text": "Acarbose"
+        },
+        {
+          "id": 3,
+          "text": "Metformin"
+        },
+        {
+          "id": 4,
+          "text": "Rosiglitazone"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Metformin</strong> can cause <strong>vitamin B12 deficiency</strong> which manifests as <strong>megaloblastic anemia</strong>&nbsp;(pallor, fatigue) with <strong>knuckle pigmentation</strong>.</p>\n<p>The most common side effect of metformin is <strong>GI intolerance</strong> as nausea, bloating, abdominal cramps and diarrhoea.</p>\n<p>Note: The exact reason why metformin causes vitamin B12 deficiency is not known.&nbsp;</p>\n<p>The proposed mechanisms include:</p>\n<ul>\n<li>Alterations in small bowel motility, which stimulates bacterial overgrowth and consequential vitamin B12 deficiency</li>\n<li>Competitive inhibition or inactivation of vitamin B12 absorption</li>\n<li>Alterations in intrinsic factor (IF) levels and interaction with the cubilin endocytic receptor.</li>\n<li>Inhibition of the calcium-dependent absorption of the vitamin B12-IF complex at the terminal ileum.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9899",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements about oral contraceptive pills is true?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Progesterone is resposible for thromboembolism"
+        },
+        {
+          "id": 2,
+          "text": "It is protective against ovarian cancer"
+        },
+        {
+          "id": 3,
+          "text": "OCP are used in treatment mastalgia"
+        },
+        {
+          "id": 4,
+          "text": "Rifamipicin decreases the metabolism of OCP"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Oral contraceptive pills (<strong>OCP</strong>) protect against <strong>ovarian cancer.</strong> </p>\n<p>This benefit is thought to be due to the prolonged <strong>suppression</strong> <strong>of gonadotropin stimulation</strong> of the ovary on long-term use of OCPs. </p>\n<p>Other benefits of oral contraceptive pills:</p>\n<ul>\n<li><strong>Lesser</strong> incidence of<strong> endometrial carcinoma</strong> due to progestin component in OCP</li>\n<li>Regularisation of menstrual cycles results in relief of dysmenorrhea and menorrhagia</li>\n<li>Reduced incidence of fibrocystic breast disease and ovarian cysts</li>\n<li>Endometriosis and pelvic inflammatory disease are improved</li>\n</ul>\n<p>Option A: The <strong>estrogen</strong> component of combined oral contraceptive pills is mainly responsible for venous thromboembolism.</p>\n<p>Option C: OCP is not used in the treatment of mastalgia. <strong>Mastalgia,</strong> chloasma, and breakthrough bleeding are <strong>known side effects</strong> of oral contraceptive pills.</p>\n<p>Option D: OCPs are metabolized by CYP3A4 enzymes. <strong>Rifampicin</strong> is a <strong>strong inducer</strong> of <strong>CYP3A4</strong>. Hence, if administered together, rifampicin can cause <strong>enhanced metabolism </strong>of OCPs and may lead to<strong> contraceptive failure.</strong> </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9900",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 57-year-old woman is diagnosed with HER 2/neu positive breast cancer. Which of the following monoclonal antibodies is indicated for the management of this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Panitumumab"
+        },
+        {
+          "id": 2,
+          "text": "Cetuximab"
+        },
+        {
+          "id": 3,
+          "text": "Trastuzumab"
+        },
+        {
+          "id": 4,
+          "text": "Bevacizumab"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Trastuzumab</strong> is indicated for <strong>adjuvant</strong> therapy in early and metastatic <strong>HER2 positive breast cancer</strong>.&nbsp;</p>\n<p>Trastuzumab is a humanized monoclonal antibody that binds to the extracellular domain of HER2/Neu.</p>\n<div class=\"page\" title=\"Page 1213\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Human epidermal growth factor receptor 2 tyrosine kinase receptor (<strong>HER-2-TK</strong>) <strong>inhibitors</strong> are:</p>\n<ul>\n<li>Lapatinib</li>\n<li>Neratinib</li>\n</ul>\n<p><strong>Anti-Her-2 monoclonal antibodies</strong> are:</p>\n<ul>\n<li>Trastuzumab</li>\n<li>Pertuzumab</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9903",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following antineoplastic agents is extracted from the plant shown below?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Epothilones"
+        },
+        {
+          "id": 2,
+          "text": "Camptothecin analogs"
+        },
+        {
+          "id": 3,
+          "text": "Vinca alkaloids"
+        },
+        {
+          "id": 4,
+          "text": "Taxanes"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The image shown is of the<strong> periwinkle plant&nbsp;</strong>(<em>Catharanthus roseus)</em>. Vinca alkaloids like vinblastine and vincristine are extracted from this plant.</p>\n<p>Sources&nbsp;of few other drugs are:</p>\n<ul>\n<li>Epothilones - Myxobacterium <em>Sorangium cellulosum</em></li>\n<li>Camptothecin analogs -&nbsp;<em>Camptotheca acuminata&nbsp;</em>tree</li>\n<li>Taxanes - bark of the western yew tree.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/3028fcb0a53b4536a576398ec8cbb459.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9904",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Arrange the following formulations of amphotericin B (AMB) according to the increasing order of nephrotoxicity.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Conventional-AMB < Amphotericin B lipid complex < Liposomal amphotericin B"
+        },
+        {
+          "id": 2,
+          "text": "Liposomal amphotericin B < Conventional-AMB < Amphotericin B lipid complex"
+        },
+        {
+          "id": 3,
+          "text": "Conventional-AMB < Liposomal amphotericin B < Amphotericin B lipid complex"
+        },
+        {
+          "id": 4,
+          "text": "Liposomal amphotericin B < Amphotericin B lipid complex < Conventional-AMB"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The correct order of nephrotoxicity with amphotericin B formulations is <strong>liposomal amphotericin B &lt; amphotericin B lipid complex &lt; conventional-amphotericin B.</strong></p>\n<p>Nephrotoxicity with&nbsp;amphotericin B:</p>\n<p>All <strong>lipid formulations of amphotericin B</strong> are <strong>less nephrotoxic</strong> than conventional amphotericin B.&nbsp;Liposomal amphotericin B is less nephrotoxic than amphotericin B lipid complex, especially in patients with a higher risk of nephrotoxicity. Azotemia is seen in 80% of cases with C-AMB. Renal tubular acidosis and renal wasting of potassium and magnesium are seen. Nephrotoxicity can be <strong>reduced by saline loading.&nbsp;</strong></p>\n<p>Other adverse effects:</p>\n<p><strong>Infusion-related reactions</strong> - It is most prominent with amphotericin B&nbsp;colloidal dispersion. Fever and chills following IV injection is a major acute reactions. Tachypnea, hypotension, or respiratory stridor may be also seen. Meperidine is used to shorten the reaction.</p>\n<p><strong>Hypochromic normocytic anemia</strong> may be seen due to decreased erythropoietin.</p>\n<p>Headache, nausea, malaise, vomiting, and phlebitis at the site of injection is also seen.</p>\n<p>Arachnoiditis may be seen with intrathecal injections.</p>\n<p>Formulations of amphotericin B:</p>\n<p><strong>C-AMB(Conventional&nbsp;amphotericin B)</strong>: It is formulated with bile salt deoxycholate and is given as an intravenous infusion.</p>\n<p><strong>ABCD(Amphotericin B colloidal dispersion)</strong>: It is formed by equimolar concentrations of amphotericin B and cholesteryl sulfate.</p>\n<p><strong>L-AMB(Liposomal&nbsp;amphotericin B)</strong>: Here amphotericin B is incorporated within a small liposomal vesicle.</p>\n<p><strong>ABLC(Amphotericin B lipid complex)</strong>: It is a complex of amphotericin B with two phospholipids.</p><hr><h3>Related Pearl: Nephrotoxicity risk with Amphotericin-B formulations (decreasing order)</h3><div>Nephrotoxicity Risk with Amphotericin B&nbsp;formulations:</div>\n<div>\n<ul>\n<li>\n<div>Conventional amphotericin B (C-AMB) has the highest risk of nephrotoxicity.</div>\n</li>\n<li>\n<div>C-AMB &gt; Amphotericin B lipid complex &gt; Liposomal amphotericin B.</div>\n</li>\n</ul>\n</div>\n<div>Amphotericin B colloidal dispersion has not been compared with other lipid-based formulations.&nbsp;</div><hr><h3>Related Pearl: Mechanism of action of Antifungal drugs</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/223d24b7e0d84721a94c23176114c9dax1280x2560.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9879",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 30-year-old woman, in the first trimester of pregnancy from a tribal area, presented with fever and chills for the last 3 days. After examination of the peripheral smear given below, chloroquine was started but there was no improvement in the patient's condition. Which of the following is preferred for treating this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Quinine plus clindamycin"
+        },
+        {
+          "id": 2,
+          "text": "Quinine plus doxycycline"
+        },
+        {
+          "id": 3,
+          "text": "Artemether plus lumefantrine"
+        },
+        {
+          "id": 4,
+          "text": "Artesunate plus pyrimethamine-sulfadoxine"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Quinine plus clindamycin</strong> is <strong>preferred</strong> for the treatment of <strong>chloroquine-resistant falciparum malaria</strong> in the <strong>1st trimester of pregnancy</strong>.</p>\n<p>The given clinical vignette is suggestive of a <strong>chloroquine-resistant</strong> <strong>malarial infection</strong>. The image given shows ring forms/ early trophozoites in erythrocytes, which are binucleate (double chromatin) and resemble stereo headphones in appearance, characteristic of malaria caused by<strong><em> P. falciparum</em>.</strong> </p>\n<p>Worldwide most infections with <em>P</em>. f<em>alciparum</em> malaria are resistant to chloroquine. In<strong> </strong>the<strong> 1st trimester, </strong>pregnant women diagnosed with<strong> uncomplicated malaria </strong>caused by <strong>chloroquine-resistant <em>P. falciparum</em> </strong>infection, the drug of choice is a <strong>combination of quinine and clindamycin</strong><strong>. </strong>Artemisinin-based combination therapy can be used as an alternative for patients that are unable to tolerate oral quinine.</p>\n<p>In<strong> the second and third trimesters</strong>, they<strong> </strong>can be treated with artemisinin combination therapy<strong> </strong>such as:</p>\n<ul>\n<li>Artemether-lumefantrine</li>\n<li>Artesunate-amodiaquine</li>\n<li>Artesunate-mefloquine</li>\n<li>Dihydroartemisinin-piperaquine</li>\n<li>Artesunate + clindamycin</li>\n</ul>\n<p>During pregnancy, <strong><em>P. vivax</em> malaria</strong> is treated with <strong>chloroquine</strong> as it is safe in pregnancy and children. In chloroquine-resistant vivax cases,<strong> clindamycin, quinine, chloroquine, </strong>and<strong> proguanil </strong>can be used.</p>\n<p>Other options:</p>\n<p>Option B: <strong>Doxycycline</strong> is useful in the treatment of malaria but <strong>not used in pregnancy</strong>.</p>\n<p>Options C: <strong>Artemether plus lumefantrine</strong> is not the drug of choice in the 1st trimester of pregnancy. ACT may be given in the first trimester only if oral quinine is not tolerated or not available.</p>\n<p>Option D: <strong>ACT with pyrimethamine-sulfadoxine</strong> is avoided in the first trimester.</p><hr><h3>Related Pearl: Treatment of Malaria</h3><table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>\n<p><strong> Drug of Choice</strong></p>\n</td>\n<td>\n<p><strong>&nbsp;Primaquine Dose</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>P. vivax malaria </strong></p>\n</td>\n<td>\n<p><strong>Chloroquine</strong> 25 mg/kg divided as:</p>\n<p>10mg/kg on day 1</p>\n<p>10mg/kg on day 2</p>\n<p>5mg/kg on day 3</p>\n</td>\n<td>\n<p>0.25 mg/kg for 14 days</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>P. falciparum malaria</strong></p>\n<p>North East</p>\n<p>In other states</p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p><strong>ACT-AL</strong> for 3 days</p>\n<p><strong>ACT-SP</strong> for 3 days&nbsp;</p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p>0.75mg/kg on day 2</p>\n<p>0.75mg/kg on day 2</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Mixed infection</strong></p>\n<p>North East</p>\n<p>In other states</p>\n</td>\n<td>\n<p><strong>ACT-AL</strong> for 3 days</p>\n<p><strong>ACT-SP</strong> for 3 days</p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p>0.25 mg/kg for 14 days</p>\n<p>0.25 mg/kg for 14 days</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Resistance to ACT/ Severe malaria </strong></p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p><strong>Quinine </strong></p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p><strong> -</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Pregnancy</strong></p>\n<p><strong>P. vivax</strong></p>\n</td>\n<td>\n<p><strong>Chloroquine </strong></p>\n</td>\n<td>\n<p><strong>Contraindicated</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Pregnancy</strong></p>\n<p><strong>P. falciparum</strong></p>\n</td>\n<td>\n<p>1<sup>st&nbsp;</sup>trimester: <strong>Quinine</strong></p>\n<p>2<sup>nd</sup> and 3<sup>rd</sup> trimester<strong>: Area specific ACT</strong></p>\n</td>\n<td>\n<p>&nbsp;</p>\n<p><strong>Contraindicated</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>ACT:&nbsp;</strong>artemisinin-based combination therapy</p>\n<p><strong>AL:</strong>&nbsp;artemether-lumefantrine</p>\n<p><strong>SP</strong>: Sulfadoxine-<wbr />Pyrimethamine</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/12bad9c206864bd3901a30719dbb8d27.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9881",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A 35-year-old lady presents with pulmonary TB is started on anti-tubercular therapy. What is the rationale for administering multi-drug therapy to her?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "To delay development of resistance"
+        },
+        {
+          "id": 2,
+          "text": "To reduce toxicity"
+        },
+        {
+          "id": 3,
+          "text": "To broaden antimicrobial spectrum"
+        },
+        {
+          "id": 4,
+          "text": "To prevent toxin release from the organism"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The reason for administering <strong>multi-drug therapy</strong> in tuberculosis is to <strong>prevent</strong>&nbsp;the <strong>development</strong> of <strong>resistance.</strong></p>\n<p><strong>Resistance</strong> to individual drugs in <em>Mycobacterium tuberculosis</em> occurs by <strong>spontaneous point mutations</strong>&nbsp;that occur at a low but predictable rate (10<sup>-7 </sup>to 10<sup>-10 </sup>). Development of this drug resistance is almost invariably the<strong> result of monotherapy,&nbsp;</strong>i.e., the failure of the health care provider to prescribe at least 2 drugs to which the tubercle bacilli are susceptible. Hence, multi-drug therapy is recommended for the treatment of tuberculosis.&nbsp;</p><hr><h3>Related Pearl: ATT Regimen for TB Patients</h3><p>As per the latest recommendations from <strong>National Tuberculosis Elimination Programme (NTEP)</strong>, treatment of TB is now based primarily on <strong>drug susceptibility testing</strong>. This is irrespective of new cases, previously treated cases or recurrent TB cases.&nbsp;<br />All cases of TB are treated with Drug Sensitive TB Regimen, as long as the patient is sensitive to isoniazid and rifampicin. (<strong>No classification into category I or II</strong>)</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Type of TB Case</strong></td>\n<td><strong>Intensive Phase</strong></td>\n<td><strong>Continuation Phase</strong></td>\n</tr>\n<tr>\n<td>New and previously treated cases (H and R sensitive)</td>\n<td>2 months H R Z E</td>\n<td>4 months H R E</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<h2><strong><span>Classification based on drug resistance.&nbsp;</span></strong></h2>\n<p><span>The<strong>&nbsp;</strong>cases are classified as:</span></p>\n<ul>\n<li><strong>Mono-resistant (MR):</strong> A TB patient, who is resistant to one 1st line anti-TB drug only.</li>\n<li><strong>Poly-Drug Resistant (PDR):</strong> A TB patient, who is resistant to more than one 1st line anti-TB drug, other than Rifampicin.&nbsp;</li>\n<li><strong>Rifampicin Resistant (RR):</strong> A TB patient, who is resistant to <strong>rifampicin</strong> with or without resistance to other drugs. Patients, who have rifampicin resistance, should be managed as if they are an MDR TB case.</li>\n<li><strong>Multi-Drug Resistant (MDR):</strong> A TB patient, who is resistant to <strong>both isoniazid and rifampicin.</strong></li>\n<li><strong>Extensively Drug-Resistant (XDR):</strong> A MDR TB patient who is additionally resistant to a <strong>fluoroquinolone</strong> (ofloxacin, levofloxacin, or moxifloxacin) and at least one additional group A drug (as of 2021, these are&nbsp;<a href=\"https://www.uptodate.com/contents/bedaquiline-drug-information?search=xdr+tb&amp;topicRef=8028&amp;source=see_link\" target=\"_blank\" data-topicid=\"87509\" rel=\"noopener\">bedaquiline</a>&nbsp;and&nbsp;<a href=\"https://www.uptodate.com/contents/linezolid-drug-information?search=xdr+tb&amp;topicRef=8028&amp;source=see_link\" target=\"_blank\" data-topicid=\"10283\" rel=\"noopener\">linezolid</a>)</li>\n</ul>\n<h2><strong><span>Standard DR TB regimen</span></strong></h2>\n<table>\n<tbody>\n<tr>\n<td><strong>Regimen class</strong></td>\n<td><strong>Drugs</strong></td>\n<td><strong>Comments</strong></td>\n</tr>\n<tr>\n<td><strong>H mono-resistant/ poly-drug resistant TB regimen</strong></td>\n<td>Lfx R E Z for 6 months</td>\n<td>\n<p>6 months long</p>\n<p>Oral drugs only</p>\n</td>\n</tr>\n<tr>\n<td><strong>Shorter MDR TB regimen</strong></td>\n<td>\n<p><strong>Intensive Phase:</strong></p>\n<p>Mfx Bdq(6 months) Cfz Z Hh E Eto for 4-6 months</p>\n<p><strong>Continuation phase:</strong></p>\n<p>Mfx Cfz Z E for 5 months</p>\n</td>\n<td>\n<p>9-11 months long totally</p>\n<p>Injectables used in Intensive phase.</p>\n</td>\n</tr>\n<tr>\n<td><strong>Longer MDR TB regimen</strong></td>\n<td>Bdq(6 months or longer) Lfx Lzd Cfz Cs&nbsp;</td>\n<td>\n<p>18-20 months long</p>\n<p>Oral drugs only</p>\n<p>This regimen is used for XDR TB patients for 20 months.</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<h2>&nbsp;</h2>\n<h2><strong><span>Criteria for patients to receive standard Drug Resistant TB regimen:</span></strong></h2>\n<table>\n<tbody>\n<tr>\n<td><strong>Standard Drug Resistant TB regimen</strong></td>\n<td><strong>Inclusion criteria</strong></td>\n<td><strong>Exclusion criteria</strong></td>\n</tr>\n<tr>\n<td><strong>H mono-resistant/poly-drug resistant TB regimen</strong></td>\n<td><strong>Isoniazid resistant</strong> TB with <strong>rifampicin sensitive</strong></td>\n<td>No specific criteria</td>\n</tr>\n<tr>\n<td><strong>Shorter MDR TB regimen</strong></td>\n<td>Patient with <strong>rifampicin resistant</strong> pulmonary or extra pulmonary TB</td>\n<td>Non drug sensitivity test based criteria:\n<ul>\n<li>Pregnancy</li>\n<li>Any extra pulmonary disease in PLHIV</li>\n<li>Disseminated meningeal or central nervous system TB</li>\n<li>Intolerance to any drug in the shorter MDR TB regimen</li>\n</ul>\nDrug sensitivity test based criteria:\n<ul>\n<li>If DST/DRT result for FQ or SLI is resistant (XDR TB)</li>\n<li>Presence of InhA mutation</li>\n<li>Resistant to Z&nbsp;</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td><strong>Longer MDR TB regimen</strong></td>\n<td>Patients in whom <strong>shorter MDR TB regimen cannot be considered</strong> due to any reason</td>\n<td>None</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Legend</p>\n<p>FQ: Fluoroquinolone</p>\n<p>SLI: Second Line Injectable</p>\n<p>PLHIV: People Living with HIV</p>\n<p>Lfx: Levofloxacin</p>\n<p>H: Isoniazid</p>\n<p>Hh: High Dose Isoniazid</p>\n<p>R: Rifampicin</p>\n<p>E: Ethambutol</p>\n<p>Z: Pyrazinamide</p>\n<p>Mfx: Moxifloxacin</p>\n<p>Km: Kanamycin</p>\n<p>Am: Amikacin</p>\n<p>Eto: Ethionamide</p>\n<p>Cfz: Clofazimine</p>\n<p>Bdq: Bedaquiline</p>\n<p>Lzd: Linezolid</p>\n<p>Cs: Cycloserine</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "FB9905",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,738 @@
+{
+  "meta": {
+    "title": "General_Radiology"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Electrons</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photons</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Positrons</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Beta-rays</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">X-Rays are made up of</span></p>",
+      "unique_key": "DT1290406",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290406,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>When X-rays are emitted, they are essentially a stream of X-ray photons. Each photon carries a specific amount of energy determined by the X-ray's wavelength. X-rays are a form of ionizing radiation, which means they have enough energy to remove tightly bound electrons from atoms, potentially causing ionization.</p>\r\n<p>X-rays are generated when high-energy electrons collide with a target material, particularly those with a high atomic number (Z). As these electrons approach the nucleus, they experience a strong electric field due to the positive charge, causing them to decelerate and change direction. This deceleration results in a loss of kinetic energy, which is conserved and emitted as X-ray photons.</p>\r\n<p>X-rays are widely used in medical imaging, security screening, and various industrial applications, demonstrating their importance across multiple fields.</p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li>X-rays are a form of ionizing radiation.</li>\r\n<li>They are a stream of X-ray photons.</li>\r\n</ul>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photosynthesis</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photo-electric Effect</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photoluminescence</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Electrophoresis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Image production in X-Ray film is based on which principle?</span></p>",
+      "unique_key": "DT1290428",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290428,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>X-rays interact with a <strong>phosphor screen</strong> (made of materials like cesium iodide or gadolinium oxysulfide). When X-rays strike the phosphor, they cause it to emit visible light through a process called <strong>photoluminescence</strong>. This visible light is then detected by a <strong>charge-coupled device (CCD)</strong> or a <strong>flat panel detector.</strong></p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024121085120b45-97c8-4c5b-9c8c-28d5e894c1ed.jpg\">\r\n<p><strong>Others options:</strong></p>\r\n<p>b. Photo-electric Effect is a <em>low energy</em> phenomenon which helps in creating <em>contrast</em> To produce more contrast images, the photo electric effect is maximized.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Characteristic radiation</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bremsstrahlung radiation</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photo-electric effect</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Photoluminescence</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old patient came for breast screening. She underwent a mammogram. What type of radiation is used in mammography?</span></p>",
+      "unique_key": "DT1290445",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290445,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>X-rays are generated when high-energy electrons collide with a target material inside the X-ray tube. Two main types of radiation are produced:</p>\n<ul>\n<li><strong>Bremsstrahlung radiation (\"braking radiation\")</strong> is produced when electrons are decelerated in the strong electric field of the target nucleus, giving rise to a continuous spectrum of X-ray energies.</li>\n<li><strong>Characteristic radiation</strong> is produced when an incoming electron ejects an inner-shell electron of the target atom (e.g., molybdenum or rhodium in mammography). As outer electrons fall into the vacancy, they emit photons of discrete energies characteristic of that element.</li>\n</ul>\n<p>In <strong>mammography</strong>, the <strong>characteristic radiation of molybdenum (17-19 keV) or rhodium (20-23 keV)</strong> is particularly important. These specific energies provide excellent soft tissue contrast for breast imaging while minimizing radiation dose. Special filters are used to remove much of the Bremsstrahlung radiations, enhancing the characteristic peaks.</p>\n<p><strong>Explanation of Other Options:</strong></p>\n<ul>\n<li><strong>Bremsstrahlung radiation (Option B):</strong> Although produced in the X-ray tube, most of it is filtered out in mammography. Bremsstrahlung dominates in general radiography (using tungsten targets), but in mammography, characteristic radiation is the main useful component.</li>\n<li><strong>Photoelectric effect (Option C):</strong> This is an interaction of X-rays with the patient's tissue, important for contrast formation, but not the source of X-rays.</li>\n<li><strong>Photoluminescence (Option D):</strong>This refers to emission of light by a substance after absorbing photons, a principle used in image detectors/screens, not in X-ray generation.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>In <strong>mammography</strong>, the imaging beam predominantly utilizes <strong>characteristic radiation</strong> from molybdenum or rhodium targets, as these discrete low-energy X-rays provide optimal breast tissue visualization.</p>",
+      "correct_choice_id": 21,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silver bromide</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aluminum bromide</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silver Nitrate</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sulphur Phosphate</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which compound is used in X-Ray films?</span></p>",
+      "unique_key": "DT1290451",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290451,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Layers of X-ray Film:</strong></p>\r\n<ol>\r\n<li><strong>Base:</strong> Typically made of <em>cellulose triacetate or polyester,</em> providing structural support.</li>\r\n<li><strong>Substratum:</strong> An <em>adhesive layer containing gelatin</em> that binds the emulsion to the base.</li>\r\n<li><strong>Emulsion Layer:</strong> Contains <em>silver halide crystals (mostly silver bromide, with some silver iodide) suspended in gelatin.</em> This is where the latent image is formed.</li>\r\n<li><strong>Protective Layer:</strong> A layer of gelatin that protects the emulsion from physical damage.</li>\r\n</ol>\r\n<p><strong>Image Formation Process</strong>:</p>\r\n<ul>\r\n<li>When X-ray film is exposed to X-rays, silver bromide crystals interact with the radiation.</li>\r\n<li>Silver iodide ions introduce defects in the silver bromide crystals, creating \"sensitivity specks\". These specks enhance the film's sensitivity to light and X-rays.</li>\r\n<li>Upon exposure, a bromide ion releases an electron, which is attracted to a sensitivity speck. This process transforms the bromide ion into a bromine atom that diffuses into the gelatin.</li>\r\n<li>The trapped electron attracts silver ions, forming silver atoms. A latent image begins to develop as more silver ions are attracted, leading to the formation of metallic silver.</li>\r\n<li>During film processing, additional silver atoms are produced, resulting in a visible black image on the film.</li>\r\n</ul>\r\n<p>This structure and process allow X-ray film to capture and produce detailed radiographic images essential for medical diagnostics.</p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li><strong>Base:</strong> Typically made of cellulose triacetate or polyester,</li>\r\n<li><strong>Substratum:</strong> An adhesive layer containing gelatin</li>\r\n<li><strong>Emulsion Layer:</strong> Contains silver halide crystals (mostly silver bromide, with some silver iodide) suspended in gelatin.</li>\r\n<li><strong>Protective Layer:</strong> A layer of gelatin.</li>\r\n</ul>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wilhelm Roentgen</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">William Putin</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Madam Curie</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">James Becquerel</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Who discovered the X-Rays?</span></p>",
+      "unique_key": "DT1290455",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290455,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Wilhelm Conrad Roentgen was a German physicist renowned for<em> discovering X-rays.</em> While experimenting with low-output Lenard tubes, he observed <em>fluorescence on a screen coated with barium platinocyanide.</em></p>\r\n<p>During one experiment, he held a metal object and saw the outline of the bones in his hand, revealing the ray's ability to create images of internal structures.</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024121008b6295c-469e-4a25-9c17-81d4b4168b4c.png\">\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li>Roentgen's discovery revolutionized medical imaging and earned him the first <em>Nobel Prize in Physics in 1901. </em></li>\r\n<li>Because the nature of these rays was initially unknown, he referred to them as \"X-rays\", with <em>\"X\" denoting the unknown.</em></li>\r\n</ul>",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead Aluminium Sulphate</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead Zirconate Titanate</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Platinum Bronze Mercury</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silver Zinc Chloride</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which crystals are used in ultrasound transducer?</span></p>",
+      "unique_key": "DT1290460",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290460,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>It consists of five main components:</p>\r\n<ol>\r\n<li><strong>Crystal/Ceramic Element:</strong>\r\n<ul>\r\n<li>Typically made of <em>lead zirconate titanate or polyvinylidene fluoride.</em></li>\r\n<li>Thicker elements produce lower frequency oscillations, while thinner elements produce higher frequencies.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Electrodes:</strong></li>\r\n<li><strong>Damping (Backing) Block:</strong>\r\n<ul>\r\n<li>Positioned behind the crystal, it <em>absorbs backward-directed ultrasound energy and minimizes stray signals.</em></li>\r\n<li>Damps resonant vibrations to create shorter spatial pulse lengths, enhancing axial resolution and bandwidth for better imaging.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Matching Layer:</strong>\r\n<ul>\r\n<li>Serves as an interface between the transducer element and the tissue.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Housing:</strong>\r\n<ul>\r\n<li>Provides electrical insulation and protection for the transducer element.</li>\r\n<li>Includes components like a plastic case, metal shield, and acoustic insulator to safeguard the internal elements.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412106cbb420f-4fe2-4880-8fca-80f189e5880c.jpg\">\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li>An <strong>ultrasound transducer</strong> is a crucial component of an ultrasound machine that converts electrical energy into mechanical (sound) energy and vice versa, utilizing <strong><em>the piezoelectric effect.</em></strong></li>\r\n<li>Ceramic element is made of lead zirconate titanate and polyvinyl diene fluoride.</li>\r\n</ul>",
+      "correct_choice_id": 52,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Principle of depth</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Doppler shift principle</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Axial dimension</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Longitudinal dimension</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What principle is used in ultrasound imaging of the vessels?</span></p>",
+      "unique_key": "DT1290468",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290468,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Doppler Effect:</strong> The Doppler shift refers to the change in frequency of sound waves caused by the relative motion between a reflector (such as blood cells) and the ultrasound transducer. <em>When the reflector moves towards the transducer, the frequency increases; when it moves away, the frequency decreases.</em></p>\r\n<p><strong>Color Flow Doppler (CFD):</strong> This ultrasound technique enables the visualization of blood flow direction and velocity within a defined region of interest (ROI). The sonographer selects the ROI, and the Doppler shifts of the returning ultrasound waves are color-coded based on average velocity and direction.</p>\r\n<p><strong>Applications:</strong></p>\r\n<ul>\r\n<li><strong><em>Echocardiography</em></strong>: Color Doppler is essential for assessing the velocity and direction of blood flow within the heart.</li>\r\n<li><strong><em>Vascular Ultrasound</em></strong>:It helps visualize blood flow in blood vessels, providing critical information about circulation.</li>\r\n</ul>\r\n<p><strong>Unique Phenomena:</strong></p>\r\n<ul>\r\n<li><strong><em>Fluid Color Sign:</em></strong> A phenomenon where the direction of flow is depicted through specific color patterns.</li>\r\n<li><strong><em>Twinkling Artifact:</em></strong> An effect observed in Doppler imaging that can indicate the presence of certain structures, like small stones.</li>\r\n</ul>\r\n<p>Color flow Doppler also facilitates the use of spectral Doppler for quantitative assessments of blood flow, enhancing diagnostic capabilities in various medical applications.</p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210513e14ac-9f10-4afd-bf6e-b0dbe4cb422e.jpg\">",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spleen</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Testes</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pancreas</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is shown in the ultrasound image given below?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210d1f37f36-1a1e-43cd-bc7b-86e936830146.jpg\"></span></p>",
+      "unique_key": "DT1290487",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290487,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Key Features in Liver Examination</p>\r\n<ol>\r\n<li><strong>Liver Parenchyma:</strong>\r\n<ul>\r\n<li><strong><em>Echo Texture:</em></strong> Normal liver tissue appears homogeneous and slightly more reflective compared to the adjacent renal cortex.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Vascular Anatomy:</strong>\r\n<ul>\r\n<li><strong><em>Portal Vein:</em></strong>\r\n<ul>\r\n<li>Branches radiate from the hilum of the liver.</li>\r\n<li>Increased wall reflectivity is noted.</li>\r\n<li>Normal waveform is continuous and antegrade, with a mean peak velocity of approximately 15 to 25 cm/s.</li>\r\n<li>Variability in flow may occur with respiration and the cardiac cycle.</li>\r\n</ul>\r\n</li>\r\n<li><strong><em>Hepatic Veins:</em></strong>\r\n<ul>\r\n<li>Converge on the inferior vena cava (IVC) and right atrium.</li>\r\n<li>Walls are typically indistinguishable from adjacent liver parenchyma.</li>\r\n<li>Doppler examination reveals a waveform that reflects right heart pressure changes, showing transient flow reversal during the cardiac cycle.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412108dbe6ad5-3016-40a2-9dcc-7df194792317.jpg\">\r\n<p>Clinical Significance</p>\r\n<ul>\r\n<li><strong>Hepatic Blood Flow:</strong> The ability to assess hepatic blood flow through Doppler ultrasound is critical for identifying conditions such as <em>portal hypertension</em> or vascular abnormalities.</li>\r\n<li><strong>Bile Duct Identification:</strong> Accurate identification of bile ducts is essential for diagnosing cholestasis, biliary obstruction, and other hepatobiliary diseases.</li>\r\n</ul>\r\n<p>Pancreas</p>\r\n<ul>\r\n<li><strong>Normal Anatomy:</strong> The <em>head, body, and tail</em> are identifiable. The duct of Wirsung may be seen as a thin echogenic line.</li>\r\n<li><strong>Clinical Significance:</strong> US is used to assess conditions like pancreatitis, tumors, and cysts.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210ff3d5793-60a2-49ff-ae77-0732bf83f8ee.jpg\">\r\n<p>Spleen</p>\r\n<ul>\r\n<li><strong>Normal Size:</strong> Usually measures 10-12 cm in length.</li>\r\n<li><strong>Clinical Significance:</strong> US can help detect splenomegaly, hematomas, and splenic lesions.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210f3516090-5348-4c4e-a12f-d57e8da61ac8.jpg\">\r\n<p>Testes</p>\r\n<ul>\r\n<li><strong>Clinical Significance:</strong> US is used to evaluate conditions such as testicular torsion, tumors, and hydrocele.</li>\r\n</ul>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<p>Abdominal ultrasound (US) is a key diagnostic tool for evaluating liver health.</p>\r\n<p><strong>Transducer and Frequency</strong></p>\r\n<ul>\r\n<li><strong>Transducer Type:</strong> Phased array transducers</li>\r\n<li><strong>Operating Frequency:</strong> 3 to 5 MHz</li>\r\n<li><strong>Doppler Capability:</strong> Includes spectral Doppler, color Doppler, and harmonic imaging.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024121056b669a7-8bdd-48f1-8b56-600f97feb334.jpg\">",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spleen</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Testes</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pancreas</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is shown in the ultrasound image given below?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024121031e9a3fe-8145-44d3-b93d-41f723135bb6.jpg\"></span></p>",
+      "unique_key": "DT1290489",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290489,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Normal Appearance</p>\r\n<ul>\r\n<li><strong>Location:</strong> Located in the left upper quadrant of the abdomen, posterior to the stomach and above the <em>left kidney</em>.</li>\r\n<li><strong>Hilum:</strong> The hilum is the area where blood vessels and lymphatic vessels enter and exit the spleen, visible on ultrasound.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210f40d027f-00bf-4116-b7a7-0af57e6cd7ca.jpg\">\r\n<p>Clinical Significance</p>\r\n<ul>\r\n<li><strong>Splenomegaly:</strong> An enlarged spleen can indicate various conditions, such as infections, liver disease, hematological disorders, or malignancies.</li>\r\n<li><strong>Trauma:</strong> Ultrasound can detect splenic lacerations or hematomas, which are critical in trauma assessments.</li>\r\n<li><strong>Lesions:</strong> The ultrasound can help identify cysts, abscesses, or tumors within the spleen.</li>\r\n</ul>\r\n<p>Pancreas</p>\r\n<ul>\r\n<li><strong>Normal Anatomy:</strong> The head, body, and tail are identifiable. The duct of Wirsung may be seen as a thin echogenic line.</li>\r\n<li><strong>Clinical Significance:</strong> US is used to assess conditions like pancreatitis, tumors, and cysts.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210ec4012fe-a58a-4f9b-8f95-763f8675a1bd.jpg\">\r\n<p>Testes</p>\r\n<ul>\r\n<li><strong>Clinical Significance:</strong> US is used to evaluate conditions such as testicular torsion, tumors, and hydroceles.</li>\r\n</ul>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li><strong>Echogenicity:</strong> The spleen typically appears as a homogeneous, moderately echogenic organ, generally <em>more echogenic than the liver</em>.</li>\r\n<li><strong>Size:</strong> A normal spleen usually measures between <strong>10-12 cm</strong> in length. Measurements beyond this range may indicate splenomegaly.</li>\r\n<li><strong>Shape and Contours:</strong> The spleen has a smooth, oval shape with well-defined margins.</li>\r\n</ul>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Depth of vessels</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Direction of blood flow</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nothing</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Site of lesion</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What does the colour in the following image show?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210fd9c7827-5ae9-443c-bcce-53a7e9ddc58f.jpg\"></span></p>",
+      "unique_key": "DT1290491",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290491,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong><em>Color Flow Doppler (CFD)</em></strong> is an advanced ultrasound technique that allows for the visualization of <em>blood flow direction and velocity within the body.</em></p>\r\n<ul>\r\n<li><strong>Doppler Effect:</strong>CFD utilizes the Doppler effect, which measures changes in frequency of ultrasound waves reflected off moving blood cells. When blood flows towards the transducer, the frequency increases; when it flows away, the frequency decreases.</li>\r\n</ul>\r\n<p><strong>KEY TAKEAWAY:</strong></p>\r\n<p>Color flow doppler shows blood flow direction and velocity within the body.</p>\r\n<ul>\r\n<li>Typically, <em>flow towards the transducer is shown in red, while flow away is shown in blue.</em></li>\r\n<li>The <em>intensity</em>of the color can indicate the speed of the blood flow, with brighter colors representing higher velocities.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210d96cc3ba-af56-4ad0-ac7d-80ac4489a963.jpg\">",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gray</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sievert</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Becquerel</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">C/kg</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the SI unit of absorbed radiation?</span></p>",
+      "unique_key": "DT1290492",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290492,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210199a5b23-ba3f-490f-851b-c2966b4e84fa.jpg\">",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rem</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rad</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">HU</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Joule/kg</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the unit used to measure the values in a CT scan image?</span></p>",
+      "unique_key": "DT1290494",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290494,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>The <strong><em>Hounsfield Unit (HU)</em></strong> is a measure used in computed tomography (CT) to <em>quantify radiodensity.</em></p>\r\n<ul>\r\n<li><strong>Hounsfield Unit:</strong> A dimensionless unit that indicates the relative density of a substance <em>compared to water.</em></li>\r\n</ul>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<ul>\r\n<li>The scale is defined as:\r\n<ul>\r\n<li><strong>Water:</strong> 0 HU</li>\r\n<li><strong>Air:</strong> Approximately -1000 HU</li>\r\n<li><strong>Fat:</strong> About -100 to -50 HU</li>\r\n<li><strong>Soft Tissue:</strong> Ranges from 0 to +100 HU</li>\r\n<li><strong>Acute bleed:</strong> Ranges from +60 to +90 HU</li>\r\n<li><strong>Bone:</strong> Typically ranges from +200 to +3000 HU, depending on the density.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210a37f1f83-ecda-4598-8f52-a5ad7328b3ac.jpg\">",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Iodinated</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Barium</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gadolinium</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient underwent a contrast study of the chest. What contrast is used for this patient?</span></p>",
+      "unique_key": "DT1290499",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290499,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Contrast agents</strong> are substances used in CT scans <em>to enhance the visibility of structures and fluids within the body.</em> Here's a brief overview:</p>\r\n<p>Types of Contrast Agents</p>\r\n<p><strong>Iodinated Contrast Media:</strong></p>\r\n<ul>\r\n<li><strong>Properties:</strong> Contain iodine, which is highly effective at absorbing X-rays.</li>\r\n<li><strong>Forms:</strong> Can be administered intravenously (IV) or orally, depending on the area being examined.</li>\r\n<li><strong>Use:</strong> Commonly used for imaging blood vessels, organs, and detecting tumors.</li>\r\n</ul>\r\n<p><strong>Barium sulfate</strong> is a radiopaque contrast agent commonly used in gastrointestinal (GI) imaging. Here's a brief summary:</p>\r\n<ul>\r\n<li><strong>Radiopaque:</strong> Barium sulfate is not absorbed by the body and appears white on X-ray, allowing for clear visualization of the GI tract.</li>\r\n<li><strong>Insoluble:</strong> It remains in the intestines without being absorbed, making it safe for imaging purposes.</li>\r\n<li><strong>Barium Swallow:</strong> Evaluates the esophagus for abnormalities such as strictures or tumors.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412102d15ea07-ccd1-4da9-9366-711b693dddbe.png\">\r\n<ul>\r\n<li><strong>Barium Meal:</strong> Assesses the stomach and duodenum for ulcers, tumors, or motility disorders.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412101c6bb572-473d-4e89-84c3-31884b4e6f16.jpg\">\r\n<ul>\r\n<li><strong>Barium Enema:</strong> Used to visualize the colon, identifying polyps, tumors, and inflammatory diseases like ulcerative colitis.</li>\r\n</ul>\r\n<p><strong>Gadolinium</strong> is a paramagnetic contrast agent commonly used in magnetic resonance imaging (MRI) to enhance the visibility of tissues and blood vessels.</p>\r\n<ul>\r\n<li><strong>Paramagnetic:</strong> Gadolinium enhances the magnetic properties of nearby tissues, improving contrast in MRI scans.</li>\r\n<li><strong>Water-Soluble:</strong> Typically used in the form of gadolinium-based contrast agents (GBCAs) that are safe for intravenous administration.</li>\r\n</ul>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412103b88357a-2bc9-493b-ab43-6a7bf0a2cc15.jpg\">",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">First</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Second</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Third</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fourth</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A CT scanner which consists of a pencil beam and a single detector is which generation?</span></p>",
+      "unique_key": "DT1290501",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290501,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210452d1f04-d433-4f4e-8a5a-f8fe2180c8be.jpg\">",
+      "correct_choice_id": 131,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Light rays</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">X rays</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRI</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">CT scan uses which beams to create cross sectional images of the body?</span></p>",
+      "unique_key": "DT1290503",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290503,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Computed Tomography (CT) Scan</strong> is a diagnostic imaging technique <em>that combines X-ray images taken from different angles and uses computer processing to create cross-sectional images (slices) of bones, blood vessels, and soft tissues</em>. Here's a comprehensive overview:</p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<p>CT scan working principle</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210095c1e20-6f9a-4983-9c99-59d8c7171c3e.jpg\">",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">T1WI</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">T2WI</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">FLAIR</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">SWI</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the MRI sequence shown below?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412103d6fc3a1-2b73-4148-8a69-55bf2d3696bb.jpg\"></span></p>",
+      "unique_key": "DT1290505",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290505,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>MRI (Magnetic Resonance Imaging) is indeed a valuable noninvasive diagnostic tool for assessing the neuraxis, including the brain and spine. By utilizing nonionizing electromagnetic radiation, MRI avoids the risks associated with ionizing radiation found in other imaging modalities, such as X-rays and CT scans.</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210b51c49f5-01b5-4597-ac74-b265a9e48cc1.jpg\">\r\n<p>FLAIR (Fluid-Attenuated Inversion Recovery) - a special type of T2-weighted sequence that suppresses the cerebrospinal fluid signal, which allows for better visualization of certain pathological changes near to ventricles.</p>\r\n<p>DWI (Diffusion Weighted Imaging) - this sequence allows imaging of water diffusion processes in tissues. It is particularly useful in detecting early signs of <em>stroke</em>.</p>\r\n<p>SWI (Susceptibility Weighted Imaging) - enhances the visualization of blood products, especially useful in Diffuse axonal injury.</p>\r\n<p><strong>KEY TAKE AWAY:</strong></p>\r\n<p>Various MRI sequences:</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210a9610cfe-f13d-49dc-8610-b7e9d449d3c2.jpg\">",
+      "correct_choice_id": 153,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Long TE and long TR</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Short TE and short TR</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Long TE and short TR</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Short TE and long TR</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">How is T1 image formed?</span></p>",
+      "unique_key": "DT1290507",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1290507,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>KEY TAKE AWAY:</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241210fbe3f8ab-0e6b-4492-a82f-c92e341cc79f.jpg\">",
+      "correct_choice_id": 162,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

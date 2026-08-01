@@ -1,0 +1,609 @@
+{
+  "meta": {
+    "title": "Screening"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Serial interval</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead time</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Time lag</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Latent period</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The time interval between diagnosis by early detection and diagnosis by other means is</span></p>",
+      "unique_key": "DT1292963",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292963,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul><li><strong>Lead Time</strong>:<ul><li>Defined as the interval between the detection of a disease through screening and when it would have been diagnosed based on clinical symptoms.</li><li>It provides an advantage by allowing earlier intervention, which can improve treatment outcomes.</li><li>Important for conditions where there is a significant time lag between disease onset and the critical treatment point.</li><li>However, it may result in overdiagnosis if the detected condition is asymptomatic or not harmful during the patient's lifetime.</li></ul></li><li><strong>Serial Interval</strong>:<ul><li>Refers to the time between the onset of symptoms in the primary case (infector) and the onset of symptoms in the secondary case (infected person).</li><li>Key for understanding transmission dynamics in infectious diseases.</li></ul></li><li><strong>Latent Period</strong>:<ul><li>The interval between exposure to an infectious agent and the onset of infectiousness.</li><li>Indicates when an infected person harbors the pathogen but cannot transmit it.</li><li>Important for epidemiological studies to differentiate from the incubation period (time from exposure to symptom onset).</li></ul></li><li><strong>Time Lag</strong>:<ul><li>A more general term that can refer to various delays in processes but is not specifically defined in this context.</li></ul></li></ul><p><strong>Why Not Other Options</strong>:</p><ul><li><strong>(a) Serial Interval</strong>: Relates to infectious disease transmission, not to early detection in screening.</li><li><strong>(c) Time Lag</strong>: Lacks specificity in medical terminology, making it less precise than lead time.</li><li><strong>(d) Latent Period</strong>: Involves the time before infectiousness, not the time before diagnosis.</li></ul><p><strong>Key Takeaways</strong>:</p><p>Lead time is crucial in evaluating the benefits of screening programs, allowing earlier treatment and better outcomes. However, it must be balanced with the risk of overdiagnosis. Understanding concepts like the serial interval and latent period is essential for effective disease control and epidemiological studies.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122049be3dc9-9d92-43e5-9be2-912416bd8ccc.jpg\">",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Population attributable risk</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Predictive value</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Diagnostic power of a screening test is deduced from:</span></p>",
+      "unique_key": "DT1292964",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292964,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Predictive Value</strong>:\r\n<ul>\r\n<li>Refers to the probability that individuals with a positive test result actually have the disease (Positive Predictive Value, PPV) or that individuals with a negative test result truly do not have the disease (Negative Predictive Value, NPV).</li>\r\n<li>It is influenced by sensitivity (the test's ability to identify true positives), specificity (the ability to identify true negatives), and the prevalence of the disease in the population.</li>\r\n<li><strong>Higher disease prevalence</strong> generally leads to <strong>higher PPV</strong>, while a <strong>lower prevalence</strong> reduces PPV, even if the test is highly sensitive and specific.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Sensitivity</strong>:\r\n<ul>\r\n<li>The proportion of true positives identified by the test.</li>\r\n<li>Important for detecting the disease but does not directly assess the test's predictive power regarding actual patient outcomes.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Specificity</strong>:\r\n<ul>\r\n<li>The proportion of true negatives identified by the test.</li>\r\n<li>Like sensitivity, it contributes to the test's effectiveness but not directly to predictive value.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Population Attributable Risk</strong>:\r\n<ul>\r\n<li>This term quantifies the proportion of a disease in the population that can be attributed to a specific risk factor, but it does not assess the diagnostic power of a screening test.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(a) Specificity</strong>: While important for test accuracy, it does not alone determine the predictive value.</li>\r\n<li><strong>(b) Population Attributable Risk</strong>: Irrelevant to screening test evaluation. <br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412208d7c5c11-327a-432d-9f40-998d47e472a8.jpg\"></li>\r\n<li><strong>(c) Sensitivity</strong>: Similar to specificity, it is vital for the test's ability to detect disease but not for calculating predictive value.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>The diagnostic power of a screening test is best evaluated through its predictive value, which integrates sensitivity, specificity, and disease prevalence. Understanding how these factors interact helps to determine the test's effectiveness in clinical settings, influencing patient outcomes and public health strategies. </p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412267a47e756-3de7-4a86-978e-2425ffe16c42.jpg\">\r\n",
+      "correct_choice_id": 14,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity and specificity will increase</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity and specificity will decrease</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity decreases but specificity increases</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity decreases but sensitivity increases</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What will be the effect on the Interpretation of a screening test if the cut off point in the interpretation is raised?</span></p>",
+      "unique_key": "DT1292972",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292972,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Effect of Raising Cutoff Point</strong>:\r\n<ul>\r\n<li>When the cutoff point for a screening test is raised, it alters the balance between sensitivity and specificity:</li>\r\n</ul>\r\n</li>\r\n<li><strong>Sensitivity</strong> (True Positive Rate):\r\n<ul>\r\n<li><strong>Decreases</strong>: Raising the cutoff means that fewer individuals will test positive, resulting in <strong>more false negatives</strong>. This is because some individuals with the disease will no longer meet the higher threshold for a positive result.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Specificity</strong> (True Negative Rate):\r\n<ul>\r\n<li><strong>Increases</strong>: A higher cutoff means that more individuals who do not have the disease will be accurately identified as negative, leading to <strong>fewer false positives</strong>.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li>Generally <strong>increases</strong>: With increased specificity, the proportion of true positives among those testing positive rises, making a positive test result more reliable.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Negative Predictive Value (NPV)</strong>:\r\n<ul>\r\n<li>Generally <strong>decreases</strong>: The increase in false negatives lowers the proportion of true negatives among those testing negative, reducing confidence in negative results.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Why Not Other Options</strong>:\r\n<ul>\r\n<li><strong>(a) Sensitivity and specificity will increase</strong>: Incorrect; raising the cutoff does not increase both simultaneously.</li>\r\n<li><strong>(b) Sensitivity and specificity will decrease</strong>: Incorrect; while sensitivity decreases, specificity increases.</li>\r\n<li><strong>(d) Specificity decreases but sensitivity increases</strong>: Incorrect; this is the opposite of what occurs when raising the cutoff.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>Raising the cutoff point in a screening test reduces sensitivity while increasing specificity. This change can improve the reliability of positive results but may compromise the detection of some cases. Balancing these effects is crucial to optimize screening effectiveness based on the disease context and population.</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220dbf9b3bf-38c7-4f79-b0f0-18ae7c084f7f.jpg\">\r\n<p>Sensitivity&prop;l/FN</p>\r\n<p>Specificity&prop;l/FP</p>\r\n",
+      "correct_choice_id": 23,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Yield</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Repeatability</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Validity</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reliability</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The extent to which a test measures what it was originally designed to measure is described as:</span></p>",
+      "unique_key": "DT1292976",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292976,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Validity</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Refers to the extent to which a test measures what it was designed to measure, specifically its accuracy in identifying individuals with and without a disease.</li>\r\n<li><strong>Components</strong>:\r\n<ul>\r\n<li><strong>Sensitivity</strong>: The ability of the test to correctly identify those with the disease (true positives).</li>\r\n<li><strong>Specificity</strong>: The ability of the test to correctly identify those without the disease (true negatives).</li>\r\n<li><strong>Predictive Values</strong>: Positive Predictive Value (PPV) and Negative Predictive Value (NPV) also contribute to understanding the test's performance within a specific population.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Factors Influencing Validity</strong>:\r\n<ul>\r\n<li><strong>Prevalence</strong>: The prevalence of the disease affects PPV and NPV. Higher prevalence increases PPV but decreases NPV, and vice versa for lower prevalence.</li>\r\n<li><strong>Population Characteristics</strong>: Different baseline risks in populations can influence the test's performance metrics.</li>\r\n<li><strong>Disease Stage</strong>: The stage at which the disease is detected can affect sensitivity and specificity; some tests may perform better at detecting early-stage disease, while others may excel at advanced stages.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Repeatability</strong>:\r\n<ul>\r\n<li>Also known as test-retest reliability, it measures the consistency of test results when administered multiple times under identical conditions. High repeatability is crucial for the reliability of test results.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Reliability</strong>:\r\n<ul>\r\n<li>Refers to the ability of the test to produce consistent and stable results over repeated applications. Reliability is essential for ensuring that test results are dependable and reproducible.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Yield</strong>:\r\n<ul>\r\n<li>Represents the number of previously undiagnosed cases of a disease that a test correctly identifies within a specific population. It is important for evaluating the effectiveness and efficiency of a screening program.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Why Not Other Options</strong>:\r\n<ul>\r\n<li><strong>(a) Yield</strong>: Incorrect; yield refers to the number of undiagnosed cases identified, not the measure of what the test is designed to assess.</li>\r\n<li><strong>(b) Repeatability</strong>: Incorrect; repeatability refers to consistency of results, not accuracy in measuring the intended outcome.</li>\r\n<li><strong>(d) Reliability</strong>: Incorrect; while related, reliability focuses on consistency of results, whereas validity concerns the accuracy of the test in measuring its intended target.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>Validity is essential in determining how effectively a screening test identifies disease. Factors like disease prevalence and population characteristics impact its predictive values. Understanding validity helps in evaluating the overall effectiveness of a screening program, while reliability ensures consistency in test results.</p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412209d1e04ee-bc1b-46fe-9d6c-3649dcac1929.jpg\">\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/202412203da60519-1239-4433-b2e4-79dc81440363.jpg\">\r\n",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low PPV</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low NPV</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low accuracy</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">High validity</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A screening test is positive in the majority of cases but false positive rate is much higher than true positives this indicates:</span></p>",
+      "unique_key": "DT1292979",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292979,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: PPV is the proportion of positive test results that are true positives, indicating the likelihood that a positive test result reflects the presence of the disease.</li>\r\n<li><strong>Influence on PPV</strong>:\r\n<ul>\r\n<li>When a screening test shows a high false positive rate, it suggests that many individuals who test positive do not actually have the disease, leading to a lower PPV.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Key Factors Affecting PPV</strong>:\r\n<ul>\r\n<li><strong>Disease Prevalence</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Proportion of the population with the disease at a given time.</li>\r\n<li><strong>Impact</strong>: Higher prevalence increases PPV; low prevalence increases false positives, reducing PPV.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Test Sensitivity and Specificity</strong>:\r\n<ul>\r\n<li><strong>Sensitivity</strong>: Ability to identify true positives.</li>\r\n<li><strong>Specificity</strong>: Ability to identify true negatives.</li>\r\n<li><strong>Impact</strong>: Higher sensitivity and specificity enhance PPV; low specificity (high false positive rate) decreases it.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Positive Likelihood Ratio (LR+)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Odds of having the disease given a positive test result.</li>\r\n<li><strong>Impact</strong>: Higher LR+ correlates with higher PPV.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Negative Likelihood Ratio (LR-)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Odds of not having the disease given a negative test result.</li>\r\n<li><strong>Impact</strong>: Lower LR- contributes to higher PPV.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Test Accuracy and Reliability</strong>:\r\n<ul>\r\n<li><strong>Accuracy/Validity</strong>: Overall correctness of the test results.</li>\r\n<li><strong>Precision/Reliability</strong>: Consistency of results over repeated tests.</li>\r\n<li><strong>Impact</strong>: Tests with high accuracy and reliability produce more reliable positive results, increasing PPV.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(b) Low NPV</strong>: Incorrect; NPV relates to the probability that a negative test result indicates absence of disease, not directly affected by false positives.</li>\r\n<li><strong>(c) Low accuracy</strong>: Incorrect; while accuracy can be a concern, the specific issue of high false positive rate directly leads to low PPV.</li>\r\n<li><strong>(d) High validity</strong>: Incorrect; high false positive rates suggest the test is not valid in accurately measuring what it is supposed to measure.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>A high false positive rate in a screening test indicates low PPV, meaning many positive results may not reflect true disease presence. Factors like disease prevalence, sensitivity, specificity, and test accuracy are crucial for interpreting PPV, guiding clinical decision-making.</p>\r\n",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">High prevalence </span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">High incidence </span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Short duration </span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">High fatality</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">For a given sensitivity and specificity the positive predictive value will be more if the disease under consideration has</span></p>",
+      "unique_key": "DT1292982",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292982,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: PPV is the likelihood that a positive test result correctly indicates the presence of the disease.</li>\r\n<li><strong>Influence on PPV</strong>: PPV is influenced by sensitivity, specificity, and the prevalence of the disease.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Impact of Disease Prevalence</strong>:\r\n<ul>\r\n<li><strong>High Prevalence</strong>: Increases PPV because more individuals tested positive will have the disease, reducing the proportion of false positives.</li>\r\n<li><strong>Moderately Specific Tests</strong>: Even tests with moderate specificity yield higher PPV when disease prevalence is high.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other Factors Analyzed</strong>:\r\n<ul>\r\n<li><strong>Disease Incidence</strong>:\r\n<ul>\r\n<li>While higher incidence can lead to higher prevalence over time, it does not directly affect PPV at a specific point in time.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Disease Duration</strong>:\r\n<ul>\r\n<li>The duration of the disease does not directly impact PPV; it's primarily influenced by the current prevalence, sensitivity, and specificity.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Disease Fatality</strong>:\r\n<ul>\r\n<li>Fatality rates do not impact PPV as they do not change the proportion of true positives among positive results.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Conclusion</strong>: For a given sensitivity and specificity, a high prevalence of the disease leads to a higher PPV, indicating that the positive test results are more likely to reflect true disease presence. This relationship highlights the importance of understanding the epidemiology of diseases when interpreting screening test results.</p>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(b) High incidence</strong>: Incorrect; while it can increase prevalence over time, incidence alone does not directly affect PPV.</li>\r\n<li><strong>(c) Short duration</strong>: Incorrect; duration does not influence PPV directly.</li>\r\n<li><strong>(d) High fatality</strong>: Incorrect; fatality affects disease outcome but does not change the proportion of true positives among positives.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>High prevalence of the disease in the population being tested significantly increases the positive predictive value of a screening test, assuming sensitivity and specificity are constant. Understanding these epidemiological factors is essential for accurate interpretation of screening results in clinical practice.</p>\r\n",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Accuracy</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Precision</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Odds</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Likelihood ratio</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">L-J chart is used for :</span></p>",
+      "unique_key": "DT1292984",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292984,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>L-J Chart</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: The L-J (Lindley-Johnson) chart is a graphical tool specifically designed for visualizing likelihood ratios (LRs) in diagnostic testing.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Likelihood Ratio (LR)</strong>:\r\n<ul>\r\n<li><strong>LR Definition</strong>: Likelihood ratios quantify how much a test result increases (LR+) or decreases (LR-) the probability of a disease.\r\n<ul>\r\n<li><strong>LR+ (Positive Likelihood Ratio)</strong>: Indicates how much the odds of having the disease increase when the test result is positive.</li>\r\n<li><strong>LR- (Negative Likelihood Ratio)</strong>: Indicates how much the odds of having the disease decrease when the test result is negative.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Functionality of L-J Chart</strong>:\r\n<ul>\r\n<li><strong>Visualization</strong>: It plots LR+ on the x-axis and LR- on the y-axis, allowing clinicians to assess the diagnostic accuracy of tests visually.</li>\r\n<li><strong>Interpretation of Results</strong>: Clinicians can easily interpret how likely a positive or negative test result corresponds to actual disease presence or absence.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Use in Clinical Practice</strong>:\r\n<ul>\r\n<li><strong>Decision Making</strong>: The L-J chart helps inform decisions regarding further testing, treatment options, and disease exclusion based on test performance.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(a) Accuracy</strong>: Incorrect; accuracy is a separate measure reflecting the proportion of true results among all test results.</li>\r\n<li><strong>(b) Precision</strong>: Incorrect; precision refers to the consistency of test results rather than likelihood ratios.</li>\r\n<li><strong>(c) Odds</strong>: Incorrect; odds describe the ratio of the probability of an event occurring to it not occurring, which is different from likelihood ratios.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>The L-J chart is specifically used for evaluating likelihood ratios, providing critical insights into the diagnostic power of tests and assisting clinicians in interpreting results effectively. This chart enhances decision-making processes in clinical settings, emphasizing the importance of understanding LRs in the context of diagnostic testing.</p>\r\n",
+      "correct_choice_id": 64,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Volunteer group </span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Randomly selected group</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">High risk group</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-randomized group</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Selective screening refers to screening tests applied to a</span></p>",
+      "unique_key": "DT1292987",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292987,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Selective Screening</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: This approach targets specific individuals based on their increased risk for certain diseases, allowing for more effective use of healthcare resources.</li>\r\n</ul>\r\n</li>\r\n<li><strong>High-Risk Group</strong>:\r\n<ul>\r\n<li><strong>Rationale</strong>: Selective screening is designed for those with known risk factors, which increases the likelihood of identifying disease early and improving management outcomes.</li>\r\n<li><strong>Examples</strong>:\r\n<ul>\r\n<li><strong>Diabetes</strong>: Screening in individuals with obesity or family history.</li>\r\n<li><strong>Breast Cancer</strong>: Mammography in women with familial or genetic risk factors.</li>\r\n<li><strong>Lung Cancer</strong>: Screening for long-term smokers.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(A) Volunteer Group</strong>: Incorrect; volunteer groups may include individuals with varying risk levels and are not exclusively high-risk.</li>\r\n<li><strong>(B) Randomly Selected Group</strong>: Incorrect; random selection does not specifically target high-risk individuals.</li>\r\n<li><strong>(D) Non-randomized Group</strong>: Incorrect; this indicates selection bias but does not imply a focus on high-risk populations.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:</p>\r\n<p>Selective screening is effective for identifying and managing diseases in high-risk groups, optimizing healthcare interventions, and improving patient outcomes through early detection. This targeted approach allows healthcare providers to allocate resources efficiently and address health disparities effectively.</p>\r\n",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low sensitivity </span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low specificity </span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low Positive Predictive Value (PPV) </span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">High Negative Predictive Value (NPV)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">For a disease with very low prevalence, the most likely challenge in screening is:</span></p>",
+      "unique_key": "DT1292989",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292989,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Low Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: PPV is the probability that individuals who test positive for a disease actually have it.</li>\r\n<li><strong>Influence of Prevalence</strong>: In populations with very low prevalence, the number of true positive cases is significantly smaller compared to the number of false positives, leading to a low PPV. This means that even if a test is positive, the likelihood that the individual actually has the disease is low.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Points</strong>:</p>\r\n<ul>\r\n<li><strong>Importance of Prevalence</strong>:\r\n<ul>\r\n<li>Prevalence directly impacts PPV; as prevalence decreases, PPV diminishes due to the increased ratio of false positives to true positives.</li>\r\n<li>Screening tests with high specificity can still yield low PPV in low-prevalence populations because the absolute number of individuals who are truly positive is low.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Impact of Testing Strategy</strong>:\r\n<ul>\r\n<li><strong>Targeted Screening</strong>: Implementing screening programs targeting high-risk populations can improve PPV. By focusing on individuals with higher disease prevalence, the likelihood of correctly identifying true positives increases.</li>\r\n<li><strong>Follow-Up Testing</strong>: Using confirmatory testing for positive results can help improve the accuracy of diagnoses, thus mitigating the low PPV issue associated with low prevalence.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical Implications</strong>:\r\n<ul>\r\n<li><strong>Diagnostic Dilemmas</strong>: Low PPV can lead to unnecessary anxiety and further testing for individuals who test positive but do not have the disease.</li>\r\n<li><strong>Resource Allocation</strong>: Low PPV in low-prevalence settings can strain healthcare resources due to increased false-positive results leading to additional diagnostic procedures.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(A) Low Sensitivity</strong>: While sensitivity measures how well a test identifies true positives, it does not change with prevalence and is not the primary challenge when prevalence is low.</li>\r\n<li><strong>(B) Low Specificity</strong>: Low specificity increases false positives but does not inherently indicate a problem with the test's accuracy regarding true disease presence in a low-prevalence population.</li>\r\n<li><strong>(D) High Negative Predictive Value (NPV)</strong>: In low-prevalence scenarios, NPV is usually high because the majority of individuals do not have the disease, which makes negative results reliable and is not a challenge.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>: In screening for diseases with very low prevalence, the primary challenge is achieving a high PPV due to the greater likelihood of false positives compared to true positives.</p>\r\n",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity of the test </span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity of the test </span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence of the disease in the population </span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">The cost of the test</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Positive Predictive Value (PPV) of a screening test is influenced most by:</span></p>",
+      "unique_key": "DT1292991",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292991,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li>PPV is the proportion of positive test results that are true positives; it indicates the probability that individuals with a positive test actually have the disease.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Key Influences on PPV</strong>:\r\n<ul>\r\n<li><strong>Prevalence of the Disease</strong>:\r\n<ul>\r\n<li><strong>High Influence</strong>: The prevalence of the disease significantly impacts PPV. Higher prevalence increases the likelihood of true positives relative to false positives, thus boosting PPV.</li>\r\n<li><strong>Low Prevalence Impact</strong>: In populations with low prevalence, the number of true positive cases is small compared to false positives, leading to a low PPV even if the test is highly sensitive and specific.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Specificity of the Test</strong>:\r\n<ul>\r\n<li>Specificity reduces the number of false positives; while higher specificity can improve PPV, its effect is secondary to that of prevalence.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Sensitivity of the Test</strong>:\r\n<ul>\r\n<li>Sensitivity measures the proportion of true positives identified by the test. While higher sensitivity can increase the number of true positives, its direct impact on PPV is less pronounced compared to prevalence.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Cost of the Test</strong>:\r\n<ul>\r\n<li>The cost does not directly affect PPV. It is more relevant to the practical implementation of screening rather than influencing the statistical properties of</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:<br /> The Positive Predictive Value (PPV) of a screening test is most influenced by the prevalence of the disease in the population. Higher prevalence increases the proportion of true positives among positive test results, thereby enhancing PPV.</p>\r\n",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">High sensitivity </span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">High specificity </span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">High cost </span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acceptability to the population</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following characteristics is NOT essential for a good screening test?</span></p>",
+      "unique_key": "DT1292994",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292994,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Characteristics of a Good Screening Test</strong>:\r\n<ul>\r\n<li><strong>High Sensitivity</strong>:\r\n<ul>\r\n<li><strong>Essential</strong>: A good screening test must have high sensitivity to identify most individuals with the disease, minimizing false negatives. Early detection is critical for effective intervention.</li>\r\n</ul>\r\n</li>\r\n<li><strong>High Specificity</strong>:\r\n<ul>\r\n<li><strong>Essential</strong>: High specificity ensures that individuals without the disease are accurately identified, minimizing false positives. This helps avoid unnecessary anxiety and invasive follow-up tests for healthy individuals.</li>\r\n</ul>\r\n</li>\r\n<li><strong>High Cost</strong>:\r\n<ul>\r\n<li><strong>Not Essential</strong>: High cost is undesirable in a screening test. A good screening test should be cost-effective to promote widespread use, especially in public health settings. Lower cost facilitates accessibility and greater participation in screening programs.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Acceptability to the Population</strong>:\r\n<ul>\r\n<li><strong>Essential</strong>: The screening test must be acceptable to the target population. It should be non-invasive (or minimally invasive), cause minimal discomfort, and be culturally appropriate. High acceptability leads to increased participation and engagement in the screening process.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(A) High Sensitivity</strong>: Essential for detecting as many cases as possible; critical for successful screening.</li>\r\n<li><strong>(B) High Specificity</strong>: Important for accurately identifying healthy individuals and reducing unnecessary follow-ups.</li>\r\n<li><strong>(D) Acceptability to the Population</strong>: Crucial for ensuring that people are willing to participate in the screening program.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:<br /> A good screening test should prioritize high sensitivity, high specificity, and acceptability to the population while being cost-effective. High cost is not a desirable characteristic, as it can limit accessibility and reduce the effectiveness of screening initiatives in public health.</p>\r\n",
+      "correct_choice_id": 103,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity </span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Positive Predictive Value (PPV) </span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Negative Predictive Value (NPV)</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which screening test measure indicates the likelihood that a positive test result correctly identifies someone with the disease?</span></p>",
+      "unique_key": "DT1292995",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292995,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Positive Predictive Value (PPV)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: PPV is the proportion of positive test results that are true positives. It reflects the likelihood that an individual who tests positive actually has the disease.</li>\r\n<li><strong>Importance</strong>: A high PPV indicates that the test result is reliable and that the disease is likely present when a positive result is obtained.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other Measures</strong>:\r\n<ul>\r\n<li><strong>Sensitivity</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Sensitivity measures the proportion of true positives correctly identified by the test. It reflects the test's ability to detect the disease.</li>\r\n<li><strong>Impact</strong>: High sensitivity reduces the likelihood of false negatives but does not directly indicate the accuracy of positive results.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Specificity</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Specificity measures the proportion of true negatives correctly identified by the test. It reflects the test's ability to correctly identify healthy individuals.</li>\r\n<li><strong>Impact</strong>: While important, specificity does not directly influence the likelihood that a positive result indicates disease presence.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Negative Predictive Value (NPV)</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: NPV is the proportion of negative test results that are true negatives. It indicates the likelihood that a person who tests negative does not have the disease.</li>\r\n<li><strong>Impact</strong>: NPV is not relevant to positive test results.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:<br /> The Positive Predictive Value (PPV) is the key measure that indicates how likely a positive test result is to correctly identify an individual with the disease. Understanding PPV is crucial for interpreting screening tests and making informed clinical decisions, especially in populations with varying disease prevalence.</p>\r\n",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Validity </span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reliability </span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Accuracy</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Precision</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which term describes the consistency of a screening test in producing the same results on repeated trials?</span></p>",
+      "unique_key": "DT1292997",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292997,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Reliability</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Reliability refers to the ability of a screening test to yield consistent and stable results across repeated trials. A reliable test produces the same outcomes when administered to the same individual under the same conditions on different occasions.</li>\r\n<li><strong>Also Known As</strong>: It is sometimes termed repeatability or reproducibility.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other Terms</strong>:\r\n<ul>\r\n<li><strong>Validity</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Validity assesses whether a test accurately measures what it is intended to measure, effectively distinguishing between individuals who have the disease and those who do not.</li>\r\n<li><strong>Assessment</strong>: Validity is evaluated in terms of sensitivity and specificity.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Accuracy</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Accuracy indicates the extent to which the test results reflect the true disease status. An accurate test has high sensitivity and specificity, correctly identifying both true positives and true negatives.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Precision</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Precision, akin to reliability, focuses on the consistency of test results. It measures how close repeated measurements are to one another, regardless of whether those measurements are accurate.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(A) Validity</strong>: Focuses on whether the test measures the intended construct accurately rather than consistency over trials.</li>\r\n<li><strong>(C) Accuracy</strong>: Relates to how close test results are to the true status of the disease but does not address repeated testing consistency.</li>\r\n<li><strong>(D) Precision</strong>: Similar to reliability, but more focused on the closeness of repeated measurements rather than their consistency over time.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:<br /> Reliability is a crucial aspect of screening tests, ensuring consistent results across trials. A reliable test contributes to effective clinical decision-making by providing stable and trustworthy data. Understanding reliability helps differentiate it from related concepts like validity, accuracy, and precision, which each play important roles in assessing the overall effectiveness of screening tools.</p>\r\n",
+      "correct_choice_id": 122,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Length-time bias</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lead-time bias</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Selection bias</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Recall bias</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is a common bias in screening studies where survival appears longer due to early detection but not necessarily due to actual prolongation of life?</span></p>",
+      "unique_key": "DT1293000",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1293000,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Lead-time Bias</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Lead-time bias occurs when screening detects a disease earlier than it would have been diagnosed due to the onset of symptoms. This early detection can give the illusion of longer survival time, but it does not imply an actual extension of life.</li>\r\n<li><strong>Impact</strong>: The additional time measured between early detection and usual diagnosis does not alter the overall outcome or life expectancy, making it misleading when assessing the effectiveness of screening programs.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other Biases</strong>:\r\n<ul>\r\n<li><strong>Length-time Bias</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: This bias happens when screening disproportionately detects slower-progressing, less aggressive cases of a disease compared to faster-progressing ones.</li>\r\n<li><strong>Impact</strong>: It can make screening appear more effective because the cases identified are often associated with better prognoses, potentially skewing results.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Selection Bias</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Occurs when the individuals who participate in the screening do not represent the general population.</li>\r\n<li><strong>Impact</strong>: This can lead to overestimation or underestimation of the screening program&rsquo;s effectiveness due to the characteristics of the selected participants.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Recall Bias</strong>:\r\n<ul>\r\n<li><strong>Definition</strong>: Arises when participants in a study have discrepancies in the accuracy or completeness of their recollections about past events or experiences.</li>\r\n<li><strong>Impact</strong>: Common in retrospective studies, this can compromise data validity due to participants' faulty memory regarding previous exposures or conditions.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Why Not Other Options</strong>:</p>\r\n<ul>\r\n<li><strong>(A) Length-time Bias</strong>: While relevant, it pertains to the detection of different disease progression rates rather than the timing of diagnosis.</li>\r\n<li><strong>(C) Selection Bias</strong>: Focuses on the representativeness of the study population rather than timing effects in survival estimates.</li>\r\n<li><strong>(D) Recall Bias</strong>: Concerns the accuracy of past recollections, not the implications of early detection in survival analysis.</li>\r\n</ul>\r\n<p><strong>Key Takeaways</strong>:<br /> Lead-time bias is a crucial consideration in evaluating the effectiveness of screening programs, as it can mislead interpretations of survival benefits. Understanding the various biases, including length-time, selection, and recall bias, is essential for accurately assessing screening outcomes and making informed clinical decisions.</p>\r\n",
+      "correct_choice_id": 132,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

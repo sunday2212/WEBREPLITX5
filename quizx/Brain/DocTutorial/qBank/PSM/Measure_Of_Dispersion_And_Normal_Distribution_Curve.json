@@ -1,0 +1,824 @@
+{
+  "meta": {
+    "title": "Measure_Of_Dispersion_And_Normal_Distribution_Curve"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">15.0 -25.0</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">10.2 -29.9</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">7.1 -32.9</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">10 - 30</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If the mean of a normal distribution is 20 and its standard deviation is 5, then 95% of the data lie within which of the following ranges?</span></p>",
+      "unique_key": "DT1231735",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231735,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>95% of data in a normal distribution lies within <strong>&plusmn;2 standard deviations</strong> from the mean.</p>\r\n<ul>\r\n<li>Given mean (&mu;) = 20</li>\r\n<li>Standard deviation (&sigma;) = 5</li>\r\n<li>Range covering 95% of data = &mu; &plusmn; 2&sigma; = 20 &plusmn; 10</li>\r\n<li>Therefore, 95% of values fall between <strong>10 and 30</strong></li>\r\n</ul>\r\n<p><strong>Related Important Points:</strong></p>\r\n<ul>\r\n<li><strong>68%</strong>of data lies within &plusmn;1 SD (15 to 25 in this case)</li>\r\n<li><strong>95%</strong>of data lies within &plusmn;2 SD (10 to 30)</li>\r\n<li><strong>7%</strong>of data lies within &plusmn;3 SD (5 to 35)</li>\r\n<li>This is known as the <strong>Empirical Rule</strong>or <strong>68-95-99.7 Rule</strong></li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>15.0 -25.0 (Option A):</strong> Represents &plusmn;1 SD, which only covers 68% of data</p>\r\n<p><strong>10.2 - 29.9 (Option B):</strong> Close to &plusmn;2 SD, but not the exact symmetric interval</p>\r\n<p><strong>7.1 - 32.9 (Option C):</strong> Closer to &plusmn;2.8 SD, which corresponds to nearly 99.5% of the data</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>In a normal distribution, 95% of values fall within <strong>&plusmn;2 SD</strong>of the mean.</p>",
+      "correct_choice_id": 4,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">The number of hospital attendances in a year in a sample of adults from the general population</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Survival times following a heart transplant</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Heights of individuals in the population</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">The ages of first-year medical PG students</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Select all of the following variables that are likely to follow a normal distribution:</span></p>",
+      "unique_key": "DT1231736",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231736,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p>Explanation:</p>\r\n<p>Height is a classical example of a variable that follows a normal distribution in large populations.</p>\r\n<ul>\r\n<li>According to the <strong>Central Limit Theorem</strong>, when a variable is influenced by multiple small, independent factors (genetic + environmental), the resulting distribution tends to be <strong>normal</strong>.</li>\r\n<li><strong>Height</strong> fits this profile well it is continuous and influenced by multiple factors, and therefore exhibits a <strong>bell-shaped distribution</strong>.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923696c368f-ee0e-45bd-8dfe-5880d16b93f3.png\">\r\n<p>Explanation of other options:</p>\r\n<p><strong>The number of hospital attendances (Option A):</strong> Count data, often follows Poisson or skewed distribution, not normal.</p>\r\n<p><strong>Survival times (Option B):</strong> Usually follow a right-skewed or exponential distribution, not normal.</p>\r\n<p><strong>Ages of PG students (Option D):</strong> In a selected group, age is often clustered and may not be normally distributed.</p>\r\n<p>Key Takeaway:</p>\r\n<p>Only variables like <strong>height</strong>, influenced by many independent factors, are likely to follow a <strong>normal distribution</strong> in the general population.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">2.8</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">0</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">1</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.28</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If the birth weight of each of the babies born in a hospital in a day is found to be 2.8 kg, then the standard deviation of this sample will be:</span></p>",
+      "unique_key": "DT1231737",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231737,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Standard deviation reflects how much each value in a dataset deviates from the mean. If all values are the same, then there is <strong>no deviation</strong>, and the SD is <strong>0</strong>.</p>\r\n<ul>\r\n<li>In this case, every baby weighs exactly <strong>8 kg</strong>, so:\r\n<ul>\r\n<li>Mean = 2.8 kg</li>\r\n<li>All individual values = 2.8 kg</li>\r\n<li>Deviation of each value from mean = 0</li>\r\n</ul>\r\n</li>\r\n<li>Hence, the <strong>sum of squared deviations</strong> is 0, and the <strong>SD = 0</strong></li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923811cff28-5742-4f4a-912f-065424087c8c.png\" />\r\n<p>Key Takeaway:</p>\r\n<p>If all observations in a dataset are identical, the <strong>standard deviation is always 0</strong>.</p>",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-sampling errors</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sampling errors</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Random errors</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Conceptual errors</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation of means is a measure of:</span></p>",
+      "unique_key": "DT1231738",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231738,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The <strong>standard deviation of means</strong>, also called the <strong>standard error of the mean (SEM)</strong>, quantifies the <strong>variability of sample means</strong> around the population mean.</p>\r\n<ul>\r\n<li>It reflects the <strong>sampling error</strong>, i.e., the error that arises due to taking different samples from the same population.</li>\r\n<li>SEM = SD / &radic;n, where SD is the standard deviation of the sample, and n is the sample size.</li>\r\n<li>As sample size increases, SEM decreases, indicating greater precision of the estimate.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923495db1a2-e82f-4ba0-b34c-0a92eeac3058.png\" />\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Non-sampling errors (Option A):</strong> Errors in data collection or processing; not related to sampling variability</p>\r\n<p><strong>Random errors (Option C):</strong> Affect individual measurements, not sample means specifically</p>\r\n<p><strong>Conceptual errors (Option D):</strong> Errors in understanding or application of concepts; unrelated to SEM</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p><strong>Standard error of the mean</strong> measures <strong>sampling error</strong> the variation of sample means around the true population mean.</p>",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Population diagram</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Parameter diagram</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sample diagram</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sampling diagram</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A researcher collects as many samples as possible from a population and plots a line using the mean values of those samples. What is this line called?</span></p>",
+      "unique_key": "DT1231739",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231739,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>When a researcher takes <strong>multiple samples</strong> from a population and plots their <strong>means</strong>, the resulting plot is known as a <strong>sampling diagram</strong>. This represents the <strong>distribution of sample means</strong>, a concept central to <strong>sampling theory</strong>.</p>\r\n<ul>\r\n<li>This is foundational in understanding the <strong>Central Limit Theorem</strong>, which states that the distribution of sample means tends to follow a normal distribution as the number of samples increases, regardless of the population distribution.</li>\r\n<li>The line or curve drawn through these sample means reflects the <strong>sampling distribution</strong> of the mean.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923a62e3492-8557-4415-80ca-3fe938580c65.png\" />\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Population diagram (Option A):</strong> Not a standard term; population data is not represented by this sampling approach.</p>\r\n<p><strong>Parameter diagram (Option B):</strong> No such term in statistics; parameters are constants, not graphed as distributions.</p>\r\n<p><strong>Sample diagram (Option C):</strong> Generic and undefined; may refer to a graph of raw sample data, not aggregated sample means.</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>A <strong>sampling diagram</strong> illustrates the <strong>distribution of sample means</strong> and forms the basis of inferential statistics.</p>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">75%</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">68%</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">95%</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">99.7%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">According to the Empirical Rule, what percentage of data should lie within the normal limits (&plusmn;2 standard deviations from the mean) in a normal distribution?</span></p>",
+      "unique_key": "DT1231740",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231740,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The <strong>Empirical Rule</strong> (also known as the <strong>68-95-99.7 rule</strong> or <strong>three-sigma rule</strong>) describes how data is distributed in a <strong>normal distribution</strong>:</p>\r\n<ul>\r\n<li><strong>68%</strong> of values lie within <strong>&plusmn;1 SD</strong> from the mean</li>\r\n<li><strong>95%</strong> of values lie within <strong>&plusmn;2 SD</strong> from the mean &rarr; this is referred to as the <strong>normal limits</strong></li>\r\n<li><strong>99.7%</strong> of values lie within <strong>&plusmn;3 SD</strong> from the mean</li>\r\n</ul>\r\n<p>Thus, <strong>95%</strong> is the percentage of values that fall <strong>within normal limits</strong>.</p>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923eb83e0a7-78f7-4896-a912-77338bba158d.png\"  /><strong>Explanation of other options:</strong></p>\r\n<p><strong>75% (Option A):</strong> Not part of the empirical rule-this figure is irrelevant in this context</p>\r\n<p><strong>68% (Option B):</strong> Refers to &plusmn;1 SD, not the normal limit</p>\r\n<p><strong>99.7% (Option D):</strong> Refers to &plusmn;3 SD, not typically considered the <strong>normal limit</strong></p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>According to the <strong>empirical rule</strong>, <strong>95% of data</strong> lies within the <strong>normal limit (&plusmn;2 SD)</strong> in a normal distribution.</p>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.01</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.1</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">1</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">10</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Among 100 women with an average hemoglobin of 10 gm%, the standard deviation is 1. What is the standard error of the mean?</span></p>",
+      "unique_key": "DT1231741",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231741,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>To calculate the standard error of the mean (SEM), which represents the variability of sample means around the population mean, you use the formula:</p>\r\n<p>SEM= Standard Deviation/ sqrt of Sample Size</p>\r\n<p>Given:</p>\r\n<ul>\r\n<li>Standard deviation (SD) = 1</li>\r\n<li>Sample size = 100</li>\r\n</ul>\r\n<p>SEM= 1/ &radic;100 = 0.1</p>\r\n<p>So, the correct answer is b. 0.1</p>\r\n<p>The standard error of the mean (SEM) quantifies how much the sample mean is expected to vary from the population mean. It is calculated by dividing the standard deviation of the sample by the square root of the sample size.</p>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092303bfcc17-810a-47db-961e-35200c27ec96.png\"/>\r\n<ul>\r\n<li>SEM gives an idea of <strong>how much the sample mean varies from the population mean</strong></li>\r\n<li>SEM is always <strong>smaller than SD</strong></li>\r\n</ul>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>The <strong>standard error of the mean</strong> is calculated as <strong>SD / &radic;n</strong> and is a measure of precision of the sample mean.</p>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 in 5</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 in 15</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 in 20</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 in 40</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the probability that the confounding factor fall to the right of 95%</span></p>",
+      "unique_key": "DT1231742",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231742,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>To understand the probability that a confounding factor falls to the right of 95% :</p>\r\n<ul>\r\n<li>Confounding Factor: In statistics and research, a confounding factor is an extraneous variable that correlates with both the independent variable and the dependent variable. It can distort the relationship between the two variables under study.</li>\r\n<li>Falls to the Right of 95%: This implies that the confounding factor has a value greater than the 95th percentile of its distribution.</li>\r\n</ul>\r\n<p>Now, the 95th percentile is a value below which 95% of the data falls. Therefore, if the confounding factor falls to the right of the 95th percentile, it means it's in the top 5% of the distribution.</p>\r\n<p>The option <strong>\"1 in 40\" </strong>indicates that the probability of the confounding factor falling to the right of 95% is 1 out of 40, or 1/40. This means that if you randomly select a value from the distribution of the confounding factor, there's a 1/40 chance that it will fall to the right of the 95th percentile.</p>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>1 in 5 (Option A):</strong> This would imply a probability of 1/5 or 20%, which is much higher than the probability of falling to the right of the 95th percentile.</p>\r\n<p><strong>1 in 15 (Option </strong><strong>B):</strong> Similar to the above, this would imply a probability of 1/15 or approximately 6.67%, which is also higher than the probability of interest.</p>\r\n<p><strong>1 in 20 (Option </strong><strong>C):</strong> Again, this would imply a probability of 1/20 or 5%, which is exactly the probability of falling below the 95th percentile, not to the right of it.</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>A <strong>1 in 40</strong> probability corresponds to the <strong>extreme right tail</strong> of a normal distribution, useful in identifying <strong>rare confounding outliers</strong>.</p>",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Population data</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sample data</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Test statistic</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">None</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A parameter is a measure which is computed from:</span></p>",
+      "unique_key": "DT1231743",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231743,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>parameter</strong> is a numerical value that <strong>describes a characteristic of an entire population</strong>, such as:</p>\r\n<ul>\r\n<li>Population mean (&mu;)</li>\r\n<li>Population standard deviation (&sigma;)</li>\r\n<li>Population proportion (P)</li>\r\n</ul>\r\n<p>These values are <strong>typically unknown</strong> and are <strong>estimated using sample statistics</strong> derived from a representative subset of the population.</p>\r\n<p><img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509233ccbac31-3bf1-4f6c-9202-0754a8d0ebbc.png\" /></p>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Sample data (Option B):</strong> Used to compute <strong>statistics</strong>, not parameters</p>\r\n<p><strong>Test statistic (Option C):</strong> Calculated from sample data for hypothesis testing; not a parameter</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p><strong>Parameters</strong> are descriptive measures calculated from the <strong>entire population</strong>, while <strong>statistics</strong> describe <strong>samples</strong>.</p>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">The intervals are larger with smaller sample size</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">95% confidence interval means that 95% of all observed values in population fall within that interval.</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">In an odds ratio, if the 95% confidence interval includes unity, then no significant difference may apply</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">None</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following statements about confidence intervals is NOT true?</span></p>",
+      "unique_key": "DT1231744",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231744,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>95% confidence interval (CI)</strong> represents the range within which the <strong>true population parameter</strong> is expected to lie <strong>in 95% of the samples</strong> drawn from the population-not 95% of the population data points.</p>\r\n<ul>\r\n<li><strong>Correct interpretation:</strong> If you repeat sampling many times, 95% of the <strong>confidence intervals</strong> constructed from those samples would contain the <strong>true parameter</strong>.</li>\r\n<li>It does <strong>not</strong> mean that 95% of individual data values lie within the interval.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509230776a2ed-0cba-47eb-8824-f9ea9264403b.png\" />\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>The intervals are larger with smaller sample size (Option A):</strong> True - smaller sample size &rarr; greater variability &rarr; wider CI</p>\r\n<p><strong>In an odds ratio, if the 95% confidence interval includes unity, then no significant difference may apply (Option C):</strong> True - if the 95% CI of an <strong>odds ratio</strong> includes <strong>1</strong>, the association is <strong>not statistically significant</strong></p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p><strong>Confidence intervals</strong> describe the <strong>precision</strong> of estimates and the <strong>likelihood of containing the true parameter</strong>, not the distribution of population values.</p>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Leptokurtic</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pyrokurtic</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Platykurtic</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mesokurtic</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">If a distribution is abnormally tall and sharply peaked, it is referred to as:</span></p>",
+      "unique_key": "DT1231745",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231745,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>leptokurtic distribution</strong> is <strong>abnormally tall and peaked</strong> with <strong>heavy tails</strong>, indicating <strong>higher kurtosis</strong> than a normal (mesokurtic) distribution.</p>\r\n<ul>\r\n<li><strong>Kurtosis</strong> refers to the <strong>sharpness</strong> or <strong>flatness</strong> of a distribution's peak.</li>\r\n<li>Leptokurtic curves have <strong>narrower peaks and fatter tails</strong>, showing <strong>more extreme values</strong>.</li>\r\n<li>This makes them <strong>more concentrated around the mean</strong> with <strong>occasional outliers</strong>.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092371d5f4ce-c203-4023-a171-229600382ecf.PNG\" alt=\"\" /> <img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509236b241085-6bb1-4630-b48d-78d40aa6d925.png\" />\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Pyrokurtic (Option B):</strong> Not a valid statistical term; irrelevant in this context</p>\r\n<p><strong>Platykurtic (Option C):</strong> Flatter and broader curve, opposite of what's described</p>\r\n<p><strong>Mesokurtic (Option D):</strong> Normal distribution (e.g., bell curve), not abnormally peaked</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>A <strong>leptokurtic distribution</strong> is <strong>tall, sharply peaked</strong>, and has <strong>heavier tails</strong>, indicating high kurtosis.</p>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">We are 95% certain that the sample mean lies within the interval</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">We are 95% certain that the true mean in the population equals &mu;<sub>1</sub></span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">We are 95% certain that the sample mean equals the population mean.</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">There is a 5% chance that the population mean lies outside this interval.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following statements is true regarding 95% confidence interval for the mean of a variable of interest obtained from a sample for values with &mu; <sub> 1</sub> mean:</p></span></p>",
+      "unique_key": "DT1231746",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231746,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>A <strong>95% confidence interval</strong> means that if we were to take <strong>repeated samples</strong> and calculate a confidence interval from each, then <strong>95% of those intervals</strong> would contain the <strong>true population mean</strong>.</p>\n<ul>\n<li>Thus, for <strong>any single sample</strong>, there is a <strong>5% chance</strong> that its calculated confidence interval <strong>does not include</strong> the population mean.</li>\n<li>This does <strong>not</strong> mean we're 95% sure about the sample mean or that the population mean is exactly equal to &mu;<sub>1</sub>.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>A <strong>95% confidence interval</strong> implies that there is a <strong>5% chance</strong> the <strong>true population mean lies outside</strong> the calculated range.</p>",
+      "correct_choice_id": 114,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Same mean, median; different standard deviation</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Same mean, median, mode same standard deviation</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Different mean, median, mode; different standard deviation</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Different mean, median, mode; same standard deviation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following best describes the similarities and differences in the three normal distributions shown in the figure (not displayed here)?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240330f4ef2993-fd39-45f4-a501-b43a31ad4dd3.jpg\"></span></p>",
+      "unique_key": "DT1231747",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231747,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The figure typically referred to in this context (as shown in Park&rsquo;s textbook) depicts <strong>three normal curves</strong> that are <strong>centered at the same point</strong> (i.e., same <strong>mean and median</strong>) but have <strong>different spreads</strong>, indicating <strong>different standard deviations</strong>.</p>\n<ul>\n<li>A <strong>wider curve</strong> indicates a <strong>larger standard deviation</strong>, while a <strong>narrower curve</strong> indicates a <strong>smaller standard deviation</strong>.</li>\n<li>Since the <strong>central location</strong> remains unchanged (same peak), the <strong>mean and median are the same</strong> across all distributions.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092378849a86-c235-49d6-b3d0-29f8f36f0940.PNG\">\n<p><strong>Key Takeaway:</strong></p>\n<p>In normal curves with <strong>same center</strong> but <strong>different spread</strong>, the <strong>mean and median are constant</strong>, but <strong>standard deviation varies</strong>.</p>",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">The standard deviation is the square root of the variance</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">The variance is the square root of the standard deviation</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">The standard deviation is the variance divided by the square root of n</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">The variance is the standard deviation divided by the square root of n</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the algebraic relationship between variance and standard deviation?</span></p>",
+      "unique_key": "DT1231748",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231748,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>standard deviation (SD)</strong> and <strong>variance</strong> are both measures of dispersion, but they differ in their mathematical relationship:</p>\n<ul>\n<li><strong>Variance (&sigma;&sup2;)</strong> is the <strong>average of the squared deviations</strong> from the mean.</li>\n<li><strong>Standard deviation (&sigma;)</strong> is the <strong>square root</strong> of the variance:</li>\n</ul>\n<p>  &sigma;=&radic;&sigma;2</p>\n<ul>\n<li>This transformation brings the measure <strong>back into the original units</strong> of the data.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923da369417-5e7e-44a0-967d-98f85aaf8eca.PNG\">\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>standard deviation</strong> is the <strong>square root</strong> of the <strong>variance</strong>, providing a more interpretable measure of spread in original units.</p>",
+      "correct_choice_id": 131,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Range</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean deviation</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">All of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following are considered measures of variability?</span></p>",
+      "unique_key": "DT1231773",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231773,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>All three listed options <strong>range</strong>, <strong>mean deviation</strong>, and <strong>standard deviation</strong> are <strong>measures of variability (or dispersion)</strong>, describing the <strong>spread</strong> of data in a dataset.</p>\n<ul>\n<li><strong>Range:</strong>\n<ul>\n<li>Difference between the <strong>maximum</strong> and <strong>minimum</strong></li>\n<li>Simplest measure of spread, but <strong>sensitive to outliers</strong>.</li>\n</ul>\n</li>\n<li><strong>Mean Deviation (MD):</strong>\n<ul>\n<li>Also called <strong>average deviation</strong>.</li>\n<li>Average of the <strong>absolute differences</strong> from the <strong>mean</strong>.</li>\n<li>Gives a sense of <strong>how much data points deviate on average</strong>.</li>\n</ul>\n</li>\n<li><strong>Standard Deviation (SD):</strong>\n<ul>\n<li>Most widely used measure of variability.</li>\n<li>Considers the <strong>square of deviations</strong> from the mean.</li>\n<li>Used in most statistical procedures including confidence intervals and hypothesis testing.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250923be764ca3-63dc-4598-99ff-ed28d9ad66f7.PNG\">\n<p><strong>Key Takeaway:</strong></p>\n<p>All of the listed options are valid <strong>measures of dispersion</strong>, with <strong>standard deviation</strong> being the most statistically robust and commonly used.</p>",
+      "correct_choice_id": 144,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean and standard deviation</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median and standard deviation</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mean and standard error</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Confidence limits are calculated using:</span></p>",
+      "unique_key": "DT1231777",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231777,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Confidence limits are calculated using the mean and the standard error. The standard error represents the standard deviation of the sampling distribution of a statistic (such as the mean). It quantifies the variability of sample estimates and is used to calculate confidence intervals. Confidence limits, often referred to as confidence intervals, are constructed around the sample mean using the standard error to provide a range within which the population parameter (such as the population mean) is likely to fall.</p>\n<ul>\n<li>Hence, <strong>both the mean and the standard error</strong> are required for this calculation.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025092305e6563c-4991-44c2-8e8d-fbb083e9d040.PNG\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Mean and standard deviation (Option A):</strong> SD reflects spread of raw data, but <strong>SE</strong> reflects precision of the mean, which is used for CI</p>\n<p><strong>Median and standard deviation (Option B):</strong> Not appropriate for CI; median is non-parametric</p>\n<p><strong>Median (Option C):</strong> Cannot be used alone to calculate confidence intervals</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Confidence intervals</strong> are calculated using the <strong>mean and standard error</strong>, not the standard deviation or median.</p>",
+      "correct_choice_id": 154,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pie chart</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Histogram</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Frequency polygon</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Scatter diagram</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Two variables can be plotted together using:</span></p>",
+      "unique_key": "DT1231779",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231779,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>A <strong>scatter diagram</strong> (scatter plot) is specifically designed to <strong>plot two continuous variables together</strong>, allowing us to:</p>\n<ul>\n<li>Visualize potential <strong>correlations or associations</strong></li>\n<li>Detect <strong>positive</strong>, <strong>negative</strong>, or <strong>no correlation</strong></li>\n<li>Analyze <strong>linear</strong> or <strong>non-linear relationships</strong></li>\n</ul>\n<p>Each point on the graph corresponds to a <strong>pair of values</strong> (x, y) for the two variables under consideration.</p>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509232ff91e24-06e0-4d12-a92b-14488fa800b0.png\">\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509230298e3c0-fac5-445b-b547-0965071cbc22.PNG\">\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Pie chart (Option A):</strong> Categorical, single-variable distribution only</p>\n<p><strong>Histogram (Option B):</strong> Shows frequency of one variable; can't compare two</p>\n<p><strong>Frequency polygon (Option C):</strong> Like histogram but smoother; still for one variable</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>A <strong>scatter diagram</strong> is the standard graph used to <strong>simultaneously plot two variables</strong> and study their <strong>relationship</strong>.</p>",
+      "correct_choice_id": 164,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">First quartile</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Third quartile</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mode </span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A measure of location that divides the distribution in the ratio of 3:1 is:</span></p>",
+      "unique_key": "DT1231799",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231799,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The <strong>third quartile (Q3)</strong> marks the point below which <strong>75%</strong> of the observations lie, effectively dividing the data in a <strong>3:1</strong> ratio (i.e., three parts below and one part above).</p>\n<p><strong>Explanation of other options:</strong></p>\n<p><strong>Median (Option A):</strong> Divides the distribution into two equal halves (50:50), not 3:1.</p>\n<p><strong>First quartile (Option B):</strong> Divides the distribution into 1:3 ratio, with 25% below and 75% above.</p>\n<p><strong>Mode (Option D):</strong> Most frequent value; it doesn't divide the dataset into fixed ratios.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>third quartile</strong> (Q3) divides the dataset into a <strong>3:1 ratio</strong>, placing 75% of the values below it.</p>",
+      "correct_choice_id": 173,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chance of death by using statin is 50% less, and true effect on population is between 60% and 40%</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chance of death by using statin is 50% more, and true effect on population is between 60% and 80%</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chance of death by using statin is 50% less, and true effect on population is between 60% and 20%</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chance of death by using statin is 60% less, and true effect on population is between 60% and 80%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A clinical trial was conducted to compare the efficacy of statin vs. placebo. The Odds Ratio (OR) was 0.5, and the 95% Confidence Interval (CI) was 0.4-0.6. What is the correct interpretation?</span></p>",
+      "unique_key": "DT1231821",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1231821,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>An <strong>odds ratio of 0.5</strong> indicates a <strong>50% reduction in the odds</strong> of death in the statin group compared to placebo.</p>\r\n<ul>\r\n<li>A 95% confidence interval of <strong>4 to 0.6</strong> means the <strong>true effect size</strong> lies between a <strong>60% and 40% reduction</strong> in odds.</li>\r\n<li>Since the CI does <strong>not include 1</strong>, the result is <strong>statistically significant</strong>.</li>\r\n<li>This interpretation aligns with both the point estimate (OR 0.5) and the CI limits.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509230086ba42-002c-43b0-992b-0ff45a959465.PNG\"/>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Chance of death by using statin is 50% more, and true effect on population is between 60% and 80% (Option B):</strong> OR of 0.5 means <strong>reduction</strong>, not increase; \"50% more\" is incorrect.</p>\r\n<p><strong>Chance of death by using statin is 50% less, and true effect on population is between 60% and 20% (Option C):</strong> Misinterprets the lower CI bound; it's <strong>0.4 (40%)</strong>, not 20%.</p>\r\n<p><strong>Chance of death by using statin is 60% less, and true effect on population is between 60% and 80% (Option D):</strong> OR of 0.5 = 50% reduction, not 60%; also, CI is 0.4-0.6 (not 0.2 or 0.8).</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>An <strong>OR of 0.5</strong> with a <strong>95% CI of 0.4-0.6</strong> indicates a <strong>significant 50% reduction in odds</strong>, with the true population effect ranging from <strong>40-60% reduction</strong>.</p>",
+      "correct_choice_id": 181,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

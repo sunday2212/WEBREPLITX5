@@ -1,0 +1,1417 @@
+{
+  "meta": {
+    "title": "Problems_Mini_Test"
+  },
+  "questions": [
+    {
+      "text": "You place a cell that is equilibrated at 160 mOsm solution, in a solution containing 70 mmol of NaCl and 50 mmol of Urea (Urea is membrane permeable). The change you would expect is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cell Swelling"
+        },
+        {
+          "id": 2,
+          "text": "Cell shrinkage"
+        },
+        {
+          "id": 3,
+          "text": "Cell shrinkage followed by cell swelling to original size eventually"
+        },
+        {
+          "id": 4,
+          "text": "Cell swelling followed by cell shrinking to original size eventually"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>cell shrinks followed by the cell swelling to original size.</strong></p>\n<p>&nbsp;</p>\n<p><strong>Step 1:</strong></p>\n<p>It is given that the cell is equilibrated in a solution at <strong>160 mOsm</strong>. Let us assume this as 'solution A'.</p>\n<p>Equilibrated means that concentration of both the <strong>intracellular fluid</strong> and the solution are 160 mOsm.</p>\n<p>As long as the cell is in 'solution A' it neither shrinks nor swells.</p>\n<p>&nbsp;</p>\n<p><strong>Step 2:</strong></p>\n<p>The cell is now placed in another solution. Let us assume this as '<strong>solution B</strong>'.</p>\n<p>It is given that the concentration of NaCl and urea in solution B are <strong>70 mmol</strong> and <strong>50 mmol</strong> respectively. We need to convert <strong>mmol to mOsm,&nbsp;</strong>and add them to find the osmolality of solution B.</p>\n<p><strong>Osmolal concentration</strong> = molar concentration X no. of freely moving particles liberated by a molecule.</p>\n<ul>\n<li><strong>NaCl</strong> is an ionizable solute. Each molecule of NaCl liberates two ions (one Na<sup>+</sup>&nbsp;ion and one Cl<sup>-</sup> ion). Hence Osmolal concentration of NaCl = 70 mmol X 2 = <strong>140 mOsm</strong>.</li>\n<li><strong>Urea</strong> is non ionizable. Hence, osmolal concentration of urea = 50 mmol X 1 = <strong>50 mOsm</strong>.</li>\n</ul>\n<p><strong>&there4; Osmolal concentration of solution B </strong>is 140 mOsm + 50 mOsm = <strong>190 mOsm</strong>.</p>\n<p>&nbsp;</p>\n<p><strong>Step 3:</strong></p>\n<p>The <strong>solution B</strong> (190 mOsm) is <strong>hyperosmolal</strong>&nbsp;compared to intracellular fluid (160 mOsm).</p>\n<p>When the cell is placed in solution B, the water moves from hyposmolal region (intracellular) to the hyperosmolal solution, therefore the cell <strong>initially shrinks.</strong></p>\n<p>However, since <strong>urea is membrane permeable</strong>, it slowly moves into the cell until the osmolality of both the intracellular fluid and the solution becomes equal.</p>\n<p>As the urea moves in, the osmolal concentration inside the cell rises, and the water moves back into the cell. Thus the<strong> cell returns to its original size.</strong></p>\n<p>&nbsp;</p><hr><h3>Related Pearl: Extracellular fluid vs Intracellular fluid</h3><table>\n<tbody>\n<tr>\n<td> </td>\n<td><strong>Extracellular fluid</strong></td>\n<td><strong>Intracellular fluid</strong></td>\n</tr>\n<tr>\n<td>Na<sup>+</sup></td>\n<td><strong>142 mEq/L</strong></td>\n<td>10 mEq/L</td>\n</tr>\n<tr>\n<td>K<sup>+</sup></td>\n<td>4 mEq/L</td>\n<td><strong>140 mEq/L</strong></td>\n</tr>\n<tr>\n<td>Ca<sup>++</sup></td>\n<td><strong>2.4 mEq/L</strong></td>\n<td>0.0001 mEq/L</td>\n</tr>\n<tr>\n<td>Cl<sup>-</sup></td>\n<td><strong>103 mEq/L</strong></td>\n<td>4 mEq/L</td>\n</tr>\n<tr>\n<td>HCO<sub>3</sub><sup>-</sup></td>\n<td><strong>28 mEq/L</strong></td>\n<td>10 mEq/L</td>\n</tr>\n<tr>\n<td>PO₄³⁻</td>\n<td>4 mEq/L</td>\n<td><strong>75 mEq/L</strong></td>\n</tr>\n<tr>\n<td>Glucose</td>\n<td><strong>90 mg/dL</strong></td>\n<td>0-20 mg/dL</td>\n</tr>\n<tr>\n<td>Proteins</td>\n<td>2 g/dl (5mEq/L)</td>\n<td><strong>16 g/dL (40 mEq/L)</strong></td>\n</tr>\n<tr>\n<td>pH</td>\n<td>7.4</td>\n<td> 7.0</td>\n</tr>\n<tr>\n<td>Osmolarity</td>\n<td>282 mOsm/L</td>\n<td>281 mOsm/L</td>\n</tr>\n<tr>\n<td>Major Cation</td>\n<td>Na<sup>+</sup></td>\n<td>K<sup>+</sup></td>\n</tr>\n<tr>\n<td>Major Anion</td>\n<td>Cl<sup>-</sup></td>\n<td>Phosphate</td>\n</tr>\n<tr>\n<td>Buffer</td>\n<td>HCO3<sup>-</sup></td>\n<td>\n<p>Protein</p>\n<p>Phosphate</p>\n</td>\n</tr>\n<tr>\n<td>Most osmotically active ion</td>\n<td>Na<sup>+</sup></td>\n<td>K<sup>+</sup></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6221",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A patient has a ​blood glucose level of 200 mg/dL and GFR of 90 ml/min. What is the amount of glucose excreted if the transport maximum of the patient is as shown below?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "80 mg/min"
+        },
+        {
+          "id": 2,
+          "text": "50 mg/min"
+        },
+        {
+          "id": 3,
+          "text": "40 mg/min"
+        },
+        {
+          "id": 4,
+          "text": "30 mg/min"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The amount of Glucose excreted in the above scenario is <strong>30 mg/min.</strong></p>\n<p>Normally, glucose is filtered into the tubular secretion. The filtered glucose is reabsorbed by glucose transportes in the proximal tubule of the nephron. When blood glucose levels are normal all the glucose is absorbed back into the blood, and very minute quantities are excreted in urine.</p>\n<p>The maximum rate at which the glucose can be reabsorbed by the transporters is known as the&nbsp;<strong>transport maxiumum (Tm).&nbsp;</strong>When Tm is reached, all the glucose transporters gets saturated and cannot reabsorb more glucose.</p>\n<p>The <strong>renal threshold for glucose</strong> is the plasma glucose concentration beyond which the filtered glucose exceeds the ability of the tubule to reaborb (Tm), such that, the excess of filtered glucose is excreted in the urine.</p>\n<p>&nbsp;</p>\n<p><strong>Calculation:</strong></p>\n<p><strong>Step 1:</strong> <strong>Calculate total filtered glucose:</strong></p>\n<p>In this question,</p>\n<ul>\n<li>GFR = 90 ml/min</li>\n<li>Plasma glucose concentration = 200 mg/dL= 2 mg/ml (1dL=100 ml).</li>\n<li><strong>Total filtered glucose = GFR X Plasma glucose concentration</strong>.</li>\n</ul>\n<p>= 90 ml/min X 2 mg/ml<br />= 180 mg/min.</p>\n<p><strong>Step 2:</strong> <strong>Check transport maximum: </strong></p>\n<p>In the above question transport maximum is 150 mg/min.</p>\n<p><strong>Step 3: Calculate the excretion:</strong></p>\n<p>Excretion = Total filtered glucose - Total reabsorbed glucose (Transport Maximum)</p>\n<p>= 180-150 mg/min<br />= 30 mg/min</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/1a5c198398b648cfb6402e222c8a9ba0.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA0771",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 55-year-old patient presents with claudication in the right lower limb. Arterial doppler reveals a narrowing of the popliteal artery. The diameter was found to be reduced to one-third. How much will the blood flow reduce by?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "9 times"
+        },
+        {
+          "id": 2,
+          "text": "81 times"
+        },
+        {
+          "id": 3,
+          "text": "27 times"
+        },
+        {
+          "id": 4,
+          "text": "18 times"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The blood flow through the vessel decreases by<strong>&nbsp;81 times.</strong></p>\n<p>The relationship between the flow in a long narrow tube, the viscosity of the fluid, and the radius of the tube is expressed mathematically in the formula called as&nbsp;<strong>Poiseuille's law :</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e76a6f79e08c4f6eb14d921ed23891f1x252x96.JPEG\" alt=\"Explanation Image\"><p>Blood flow (F) inside the vessel depends on:&nbsp;</p>\n<ul>\n<li><strong>Pressure&nbsp;difference</strong>:&nbsp;<strong>directly proportional</strong></li>\n<li><strong>Viscosity: inversely proportional</strong></li>\n<li><strong>Radius: directly proportional to the fourth power</strong></li>\n<li><strong>Length of the vessel: inversely proportional</strong></li>\n</ul>\n<p>Here, the diameter is reduced to 1/3rd, implying the radius is also reduced to 1/3rd. Therefore<strong>,</strong>&nbsp;the&nbsp;<strong>flow decreases</strong>&nbsp;by (1/3) <sup>4 </sup>=&nbsp;1/81</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5522",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In the given circuit of blood flow, the inward flow pressure is 100 mmHg and the outward flow pressure is 10 mmHg. Each of the parallel circuit of capillaries have resistance of 5 mmHg/mL/min. Calculate the flow across the circuit of blood vessels.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "90 mL/min"
+        },
+        {
+          "id": 2,
+          "text": "27 mL/min"
+        },
+        {
+          "id": 3,
+          "text": "45 mL/min"
+        },
+        {
+          "id": 4,
+          "text": "54 mL/min"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given circuit of the blood flow, three capillary resistances are connected in <strong>parallel</strong>,</p>\n<p>Hence the net resistance (R) can be calculated as</p>\n<p>1 / R = 1/R1 + 1/R2 + 1/R3</p>\n<p>1 / R = 1/5 + 1/5 + 1/5</p>\n<p>Therefore,</p>\n<p><strong>Net resistance</strong> <strong>(R)</strong> = 5/3 mmHg/mL/min</p>\n<p>Flow in any portion of the vascular system is equal to the effective perfusion pressure in that portion divided by the net resistance.</p>\n<p>The effective perfusion pressure is the mean intraluminal pressure at the arterial end (inward flow pressure) minus the mean pressure at the venous end (outward flow pressure).</p>\n<p>According to <strong>Ohm’s law,</strong></p>\n<p>The flow in any circuit can be calculated by the formula,</p>\n<p>Flow = (100-10) / (5/3)</p>\n<p>= 90 × 3/5</p>\n<p>= 18 × 3</p>\n<p>= 54 mL/min</p>\n<p> </p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/cc699a94f7eb4ef69b7e16c132a6c37c.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2392",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate the ejection fraction from the given left ventricular pressure-volume curve:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "40%"
+        },
+        {
+          "id": 2,
+          "text": "50%"
+        },
+        {
+          "id": 3,
+          "text": "60%"
+        },
+        {
+          "id": 4,
+          "text": "70%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The ejection fraction as calculated from the above volume pressure curve is <strong>60%.</strong></p>\n<p><strong>The ejection fraction</strong> is defined as the percentage of the end-diastolic ventricular volume that is ejected with each stroke.</p>\n<p>Thus, EF = Volume ejected / End diastolic volume × 100</p>\n<p>The volume ejected can be obtained, by subtracting the end systolic volume from end diastolic volume. Thus,</p>\n<p>EF = End diastolic volume (EDV) − End systolic volume (ESV) / End diastolic volume (EDV) × 100</p>\n<p>In the above volume pressure curve of left ventricle,</p>\n<p>EDV = 130 ml</p>\n<p>ESV = 52 ml</p>\n<p>Substituting these values in the above equation we get,</p>\n<p><strong>EF </strong>= (130 − 52 / 130) × 100</p>\n<p> = (3 / 5) × 100</p>\n<p> = 0.6 × 100</p>\n<p><strong> = 60%</strong></p><p><strong>Related information:</strong></p>\n<p><strong>The ejection fraction</strong> is a valuable index of the ventricular function. It is measured by injecting radionuclide-labeled red blood cells and imaging the volume of the blood at the end of diastole and the end of systole (equilibrium radionuclide angiocardiography), or by computed tomography.</p>\n<p>The <strong>normal left ventricular ejection fraction</strong> is <strong>50% to 70%.</strong></p>\n<p>In heart failure, ejection fraction may be preserved or reduced,</p>\n<ul>\n<li><strong>Preserved ejection fraction (HFpEF)</strong> – also referred to as diastolic heart failure. The heart muscle contracts normally but the ventricles do not relax as they should during ventricular filling (or when the ventricles relax).</li>\n<li><strong>Reduced ejection fraction (HFrEF)</strong> – also referred to as systolic heart failure. The heart muscle does not contract effectively and less oxygen-rich blood is pumped out to the body.</li>\n</ul>\n<p><strong>LVEF Assessment:</strong></p>\n<p>The American college of cardiology (ACC), gives the cardiac function and their corresponding ejection fractions</p>\n<ul>\n<li>Hyperdynamic = LVEF greater than 70%</li>\n<li><strong>Normal = LVEF 50% to 70% (midpoint 60%)</strong></li>\n<li>Mild dysfunction = LVEF 40% to 49% (midpoint 45%)</li>\n<li>Moderate dysfunction = LVEF 30% to 39% (midpoint 35%)</li>\n<li>Severe dysfunction = LVEF less than 30%</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/df8e64014ec846e99726e32ee4bdfb21.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2279",
+      "difficulty": "medium"
+    },
+    {
+      "text": "If the tidal volume is 500 mL, PeCO2 is 30 mmHg and PaCO2 is 45 mmHg, calculate the dead space?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "150 mL"
+        },
+        {
+          "id": 2,
+          "text": "160 mL"
+        },
+        {
+          "id": 3,
+          "text": "166 mL"
+        },
+        {
+          "id": 4,
+          "text": "145 mL"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The Bohr-enghoff equation is used to calculate physiological dead space/total dead space.</p>\n<p>The original Bohr equation required measurement of the alveolar partial pressure of CO<sub>2</sub> (P<sub>A</sub>CO<sub>2</sub>).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/19c716da9d264707a06612bc0440a235x1280x735.JPEG\" alt=\"Explanation Image\"><p>Later Enghoff modified the equation and replaced the P<sub>A</sub>CO<sub>2</sub> with P<span>a</span>CO<sub>2</sub> (partial pressure of CO<sub>2</sub> in arterial blood). Enghoff's modification of<sup id=\"cite_ref-4\" class=\"reference\"></sup> Bohr equation is:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/965e93fa8fff4ec988a8974ef51b472fx1280x735.JPEG\" alt=\"Explanation Image\"><p>Where,</p>\n<ul>\n<li>V<sub>D</sub> is the physiological dead space</li>\n<li>V<sub>T</sub> is the tidal volume</li>\n<li>PaCO<sub>2</sub> is the partial pressure of CO<sub>2</sub> in the arterial blood</li>\n<li>PeCO<sub>2</sub> is the average partial pressure of CO<sub>2</sub> in the entire expired air. <strong> </strong></li>\n</ul>\n<p>Substituting the values:</p>\n<p>Vd=(45-30/45) x 500=166.66 ml</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9771",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A person with normal lung at sea level (760 mm Hg) is breathing 50% oxygen. With a normal respiratory quotient of 0.8, what is the approximate alveolar Po2 (in mmHg)?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "713"
+        },
+        {
+          "id": 2,
+          "text": "159"
+        },
+        {
+          "id": 3,
+          "text": "306"
+        },
+        {
+          "id": 4,
+          "text": "365"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Alveolar gas equation is used to calculate partial pressure of O<sub>2</sub> in alveolar air.</strong></p>\n<p><strong>It is given by the formula:</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d28688fb943c4d908fc735574aafe4b9x1280x735.JPEG\" alt=\"Explanation Image\"><p>Where</p>\n<ul>\n<li>PAO<sub>2</sub> = Alveolar PO<sub>2</sub> (mm Hg)</li>\n<li>PIO<sub>2</sub> = PO<sub>2</sub> in inspired air (mm Hg)</li>\n<li>PACO<sub>2</sub> = Alveolar PCO<sub>2</sub> (mm Hg), which is normally 40mmHg</li>\n<li>R = Respiratory exchange ratio or respiratory quotient (CO<sub>2</sub> production/O2 consumption)</li>\n<li>Correction factor is usually negligible.</li>\n</ul>\n<p>Step 1: In the question PO<sub>2</sub> in inspired air is not given directly. It has to be calculated using the formula:</p>\n<p><strong>PIO<sub>2</sub> = FIO<sub>2</sub> (P<sub>B</sub> - P<sub>H20</sub>)</strong></p>\n<p>Where</p>\n<ul>\n<li>PIO<sub>2</sub> = PO<sub>2</sub> in inspired air (mm Hg)</li>\n<li>FIO<sub>2</sub> = Fraction of inspired O<sub>2</sub> (50% or 0.5)</li>\n<li>P<sub>B</sub> = Barometric pressure (760 mmHg)</li>\n<li>P<sub>H2O</sub> = Water vapour pressure (47 mmHg)</li>\n</ul>\n<p>Substituting the values:</p>\n<p><strong>PIO<sub>2</sub></strong> = 0.5 (760 - 47) = 0.5 × 713 = <strong>356.5 mmHg</strong></p>\n<p>Step 2:</p>\n<p><strong>PAO<sub>2</sub></strong> = P<sub>i</sub>O<sub>2</sub> – (Pco<sub>2</sub>/R) = 356.5 – (40/0.8) = 356.5 – 50 = <strong>306.5 mmHg.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2010",
+      "difficulty": "medium"
+    },
+    {
+      "text": "500 mg of mannitol was injected out of which 10% is excreted. After equilibrium, plasma concentration is 3.2 mg/100 ml. Calculate ECF Volume (L).",
+      "choices": [
+        {
+          "id": 1,
+          "text": "10"
+        },
+        {
+          "id": 2,
+          "text": "14"
+        },
+        {
+          "id": 3,
+          "text": "42"
+        },
+        {
+          "id": 4,
+          "text": "52"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The volume of distribution can be calculated using the formula:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4c32564f9617416693bc084f18697e8ex1199x614.JPEG\" alt=\"Explanation Image\"><ul>\n<li>V = volume of compartment</li>\n<li>Amount injected = 500 mg</li>\n<li>Amount of indicator excreted = 10% of 500 mg = 50mg</li>\n<li>Plasma concentration of the indicator = 3.2 mg/100mL</li>\n</ul>\n<p><strong>Calculation:</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/727bbce32b50462da2cf45ca25ef891ax1280x539.JPEG\" alt=\"Explanation Image\"><p><strong>2nd method : </strong></p>\n<p>Mannitol is a substance which leaves blood vessel but can't enter the cell. Therefore, after attaining equilibrium, conc. of mannitol is same in plasma and interstitial fluid </p>\n<p>Therefore, by applying dye-dilution technique, mannitol can be used to measure the volume of ECF (x)</p>\n<p>Since, 10% is excreted and 10% of 500mg is 50 mg, the amount of mannitol diluted in ECF is 450 mg (500 - 50) i.e, 450 mg is present in x </p>\n<p>From the given values, 3.2 mg is present in 100 ml, which can be re-written as</p>\n<p>      3.2/100 = 450/x</p>\n<p>Therefore x = 450 * 100 / 3.2 mL</p>\n<p><strong>                    = 14,062.5 mL</strong></p>\n<p><strong>                    = 14 L</strong></p>\n<p><strong>Clinical :</strong></p>\n<p>IV Mannitol is used to treat <strong>cerebral oedema</strong> (since, it doesn't cross cell membrane, it extracts fluid from brain cells), whereas it is contra-indicated in <strong>pulmonary edema</strong> (here the fluid collection is in the interstitial space)</p>\n<p> </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA6315",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a sample of DNA if adenine is 23%, what will be the amount of guanine?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "27%"
+        },
+        {
+          "id": 2,
+          "text": "23%"
+        },
+        {
+          "id": 3,
+          "text": "46%"
+        },
+        {
+          "id": 4,
+          "text": "54%"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In a sample of DNA, if adenine is 23%, <strong>guanine will be 27%.</strong></p>\n<p>This is based on Chargaff&rsquo;s rule which states that the number of purines is equal to the number of pyrimidines.</p>\n<p><strong>Purines</strong> include <strong>adenine and guanine</strong>. <strong>Pyrimidines</strong> include<strong> thymine and cytosine. </strong>The <span>two strands of DNA are complementary to each other. </span><span>So, the<strong> adenine</strong> of one strand will <strong>pair with thymine</strong> of the opposite strand, while<strong> guanine will pair with cytosine</strong>.</span></p>\n<ul>\n<li>Step 1:</li>\n</ul>\n<p>No of adenine = No of thymine</p>\n<p>So adenine + thymine = 46%</p>\n<p>Guanine + cytosine = 54%</p>\n<ul>\n<li>Step 2:</li>\n</ul>\n<p>No of guanine = No of cytosine</p>\n<p>So, amount of guanine = 54/2 = 27%</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5034",
+      "difficulty": "easy"
+    },
+    {
+      "text": "On infusion of a large volume of blood, the MAP rises from 100 mmHg to 175 mmHg. Due to the baroreceptor feedback mechanism, the MAP falls down to 125 mmHg. Calculate the gain of the feedback system.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "-2"
+        },
+        {
+          "id": 2,
+          "text": "-3"
+        },
+        {
+          "id": 3,
+          "text": "+2"
+        },
+        {
+          "id": 4,
+          "text": "+3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div class=\"page\" title=\"Page 19\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>The gain of the feedback system in the above case is -2.</p>\n<p>The gain of the system is then calculated by using the following formula:</p>\n<p><strong>Gain = C/E</strong></p>\n<p>Here, C is <strong>correction</strong> achieved from the deviated value and E is the remaining<strong> error post-correction.</strong></p>\n<div class=\"page\" title=\"Page 19\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Calculation</p>\n<ul>\n<li>The original value in the given case is 100 mmHg.</li>\n<li>The deviated value in the given case is 175 mmHg.</li>\n<li>The corrected value in the given case is 125 mmHg.</li>\n<li>C is given by correction achieved from deviated value, Corrected value - Deviated value = 125 - 175 = -50 mmHg.</li>\n<li>E is given by the remaining error post-correction, Corrected value - Original value = 125 - 100 = 25 mmHg.</li>\n<li>Gain = -50/25 = -2.</li>\n</ul>\n<p>The negative symbol indicates that the homeostatic mechanism acts in a direction opposite to the initial deviation.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC1671",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The lab values of a patient reveal a total cholesterol level of  300 mg/dl, TG - 150 mg/dl and HDL - 25 mg/dl . What would be the LDL value?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "125"
+        },
+        {
+          "id": 2,
+          "text": "245"
+        },
+        {
+          "id": 3,
+          "text": "55"
+        },
+        {
+          "id": 4,
+          "text": "35"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The LDL value in the above scenario will be <strong>245</strong> mg/dl.</p>\n<p>According to <strong>Friedewald&rsquo;s equation </strong></p>\n<p><strong>LDL-C = TC - HDL-C - (TG/5)&nbsp;</strong></p>\n<p>Where</p>\n<ul>\n<li>HDL-C: High-density lipoprotein cholesterol</li>\n<li>LDL-C: Low-density lipoprotein cholesterol</li>\n<li>TG: Triglycerides</li>\n<li>TC: Total cholesterol</li>\n</ul>\n<p>Substituting the values:</p>\n<p>LDL-C = 300 - 25 - (150/5) = 300-55 = <strong>245 mg/dl</strong></p>\n<p><strong>Note: </strong></p>\n<p><strong>VLDL-C</strong>(Very low-density lipoprotein cholesterol)<strong> = TG/5</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6255",
+      "difficulty": "hard"
+    },
+    {
+      "text": "In a reaction, the substrate is available in a concentration that is 1000 times the Km value of the enzyme.  After 9 minutes of reaction, 1% of substrate is converted to product (12 microgram/ml). If the concentration of the enzyme is changed to 1/3 and concentration of substrate is doubled, what is the time taken to convert the substrate into the same amount of product that i.e. 12 microgram/ml?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "9 minutes"
+        },
+        {
+          "id": 2,
+          "text": "4.5 minutes"
+        },
+        {
+          "id": 3,
+          "text": "27 minutes"
+        },
+        {
+          "id": 4,
+          "text": "13.5 minutes"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The time taken for the formation of the same amount of product is<strong> 27 minutes.</strong></p>\n<p>In this reaction, the substrate concentration becomes 1000 times i.e <strong>much greater </strong>than the <strong>K<sub>m</sub> value. </strong>Thus, the <strong>rate</strong> of this reaction is equal to V<sub>max </sub>and is thus <strong>independent</strong> of the <strong>substrate concentration</strong> i.e. it follows <strong>zero-order kinetics</strong>. Thus, <strong>doubling</strong> the substrate concentration <strong>does not change</strong> the<strong> velocity</strong> of the reaction i.e. it remains as V<sub>max</sub>.</p>\n<p>No matter the substrate concentration, the <strong>rate </strong>of the reaction is <strong>directly proportional</strong> to the <strong>concentration</strong> of the enzyme. In this situation the enzyme concentration becomes <strong>1/3rd. </strong>Thus, the velocity of the reaction (V<sub>max</sub>) also becomes <strong>1/3rd. </strong>This means that the time taken for the formation of the same amount of product will become <strong>tripled</strong> i.e 9 × 3 = <strong>27 minutes.</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d3f970f898ad403588b44f7d14be080cx1280x1019.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5232",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 25-year-old woman had severe blood loss during delivery 2-days ago. Her current hemoglobin is 5 gm/dL and reticulocyte count is 9%. What is her corrected reticulocyte count?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "6"
+        },
+        {
+          "id": 2,
+          "text": "4.5"
+        },
+        {
+          "id": 3,
+          "text": "3"
+        },
+        {
+          "id": 4,
+          "text": "0.5"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In the given scenario, the corrected reticulocyte count is <strong>3</strong>.</p>\n<p>It is given by the following formula:</p>\n<p><strong>Corrected reticulocyte count</strong> = Reticulocyte count × (patient's hemoglobin or hematocrit ⁄ standard hemoglobin or hematocrit)</p>\n<p>So, in this case, the corrected reticulocyte count = 9×5/15  = 9/3  = 3</p>\n<p>This formula corrects for hemoglobin. It will show you if the patient is making enough reticulocytes for the degree of anemia present. As the hemoglobin drops, reticulocytes increase from the normal range of 0.5–2.0%.</p>\n<p>The standard reference range of hemoglobin concentration in females is 12-15 g/dl. Accordingly, in this scenario, corrected reticulocyte count would range between 3-3.75%. So, the best answer to this question remains option C.</p>\n<p><strong>Absolute reticulocyte count </strong>is the percentage of red cells that are reticulocytes (normal is about 0.5 – 2.0%). However, it does not reflect the fact that as the hemoglobin drops, there should be more reticulocytes, percentage-wise (for example, at a hemoglobin of 5, you should have a much higher percentage of reticulocytes than you should at a hemoglobin of 10). To take this into account, we use corrected reticulocyte count.</p>\n<p><strong>Reticulocyte Index</strong> = Corrected reticulocyte count / maturation factor</p>\n<p>This corrects for the longer life span of prematurely released reticulocytes in the blood which is a phenomenon of increased red blood cell production.</p>\n<table>\n<tbody>\n<tr>\n<td>Hematocrit</td>\n<td>Maturation factor</td>\n</tr>\n<tr>\n<td>≥ 35%</td>\n<td>1.0</td>\n</tr>\n<tr>\n<td>35% &gt; Hct ≥ 25%</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>25% &gt; Hct ≥ 20%</td>\n<td>2.0</td>\n</tr>\n<tr>\n<td>&lt; 20%</td>\n<td>2.5 </td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC0413",
+      "difficulty": "medium"
+    },
+    {
+      "text": "If a drug is known to be distributed into the total body water, what dose of the drug is needed to obtain an initial plasma level of 5 mg/L in a male patient weighing 70 kg?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "110 mg"
+        },
+        {
+          "id": 2,
+          "text": "210 mg"
+        },
+        {
+          "id": 3,
+          "text": "240 mg"
+        },
+        {
+          "id": 4,
+          "text": "150 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The drug dose needed to achieve initial plasma concentration is the<strong> loading dose, </strong>which is <strong>210 mg </strong>in this case.</p>\n<p>The equation for loading dose or the volume of the distribution equation can be used for calculation.<br /><strong>Loading Dose = Vd × Cp</strong></p>\n<p>Since the patient weighs 70 kg and 60% of his body weight is water, he has 42 L (70 L x 60%) of total body water. <br />Loading Dose = 42 L × 5 mg/L = <strong>210 mg.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6199",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Oral digoxin is being given to a 65-year-old male patient with congestive heart failure as a maintenance dose to gradually digitalize him. A target plasma concentration of 0.70 ng/mL is decided upon. The digoxin clearance for this particular individual is calculated as 60 mL/min. Knowing that the oral bioavailability of digoxin is 70%, what is the dosing rate in this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 ng/min"
+        },
+        {
+          "id": 2,
+          "text": "60 ng/min"
+        },
+        {
+          "id": 3,
+          "text": "70 ng/min"
+        },
+        {
+          "id": 4,
+          "text": "80 ng/min"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The dosing rate in this patient is <strong>60 ng/min.</strong></p>\n<p>The <strong>oral bioavailability of digoxin is 70% (F = 0.7)</strong> and the required target plasma concentration (Cp) is <strong>0.70 ng/mL</strong>. <strong>CL</strong> is the clearance of digoxin which is 60 mL/min.</p>\n<p>Hence, the appropriate dose rate for this patient can be calculated as:</p>\n<p><strong>Dosing rate = Target Cp x CL/F</strong></p>\n<p>= [0.70 ng/mL × 60 mL/min] ÷ [0.7]</p>\n<p>= <strong>60 ng/min</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5674",
+      "difficulty": "easy"
+    },
+    {
+      "text": "How much drug will remain at the end of 6 hours when a patient is given 200 mg drug, 75 mg excreted in 90 min and if the drug follows first-order kinetics?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 mg"
+        },
+        {
+          "id": 2,
+          "text": "30.5 mg"
+        },
+        {
+          "id": 3,
+          "text": "12.5 mg"
+        },
+        {
+          "id": 4,
+          "text": "6.25 mg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In <strong>first order kinetics, </strong>a<strong> constant fraction</strong> of the drug is<strong> excreted in </strong>a<strong> given time.</strong> </p>\n<p>Since 75 mg of 200 mg is excreted in 90 minutes, the fraction of drug excreted in each 90 mins is 75/200, which is 3/8. Thus, the fraction of the drug that remains in the body is 5/8. </p>\n<p>There will be 4 cycles of excretion of the drug (6 hours = 360 mins, and 360/90 = 4). Thus, with a starting dose of 200mg, the drug remaining in the body after 4 hours will be:</p>\n<p>200 x 5/8 x 5/8 x 5/8 x 5/8 = <strong>30.5mg</strong></p>\n<p><strong>Alternate way to calculate: </strong></p>\n<p>75 mg of 200 mg is excreted in 90 minutes, thus 75/200 = 0.375 is eliminated </p>\n<p>After 90 minutes; 200 mg-75 mg = 125 mg remains.<br /><span>The second 90 minutes (after 180 minutes) = 125 x 0.375 = 46.875 mg is eliminated, and 125-46.875 = 78.125 mg remains<br /></span><span>The third 90 minutes (after 270 minutes) = 78.125 x 0.375 = 29.297 mg is eliminated, and 78.125-29.297 = 48.828 remains<br /></span><span>The fourth 90 minutes (after 360 minutes) = 48.828 x 0.375 = 18.310 mg is eliminated, 48.828-18.310 = 30.518 mg remains after 6 hours. </span></p><hr><h3>Related Pearl: Zero order vs First order kinetics of drugs</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Zero order</strong></p>\n</td>\n<td>\n<p><strong>First order</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Constant <strong>amount</strong> of drug is eliminated per unit time</p>\n</td>\n<td>Constant <strong>fraction</strong> of drug is eliminated per unit time</td>\n</tr>\n<tr>\n<td>\n<p>Rate of elimination is <strong>independent</strong> of plasma concentration</p>\n</td>\n<td>Rate of elimination is <strong>proportional</strong> to the plasma concentration</td>\n</tr>\n<tr>\n<td>\n<p>Clearance is <strong>more at low</strong> concentration and <strong>less at high</strong> concentration</p>\n</td>\n<td>Clearance remains <strong>constant</strong>&nbsp;</td>\n</tr>\n<tr>\n<td>\n<p>Half-life is <strong>less at low</strong> concentration and <strong>more at high</strong> concentration</p>\n</td>\n<td>Half-life remains <strong>constant</strong></td>\n</tr>\n<tr>\n<td>\n<p>Very <strong>few drugs</strong> follow zero-order kinetics, e.g.(<strong>WATT Power</strong>)</p>\n<ul>\n<li><strong>W</strong>arfarin</li>\n<li><strong>A</strong>lcohol,&nbsp;<strong>A</strong>spirin</li>\n<li><strong>T</strong>olbutamide</li>\n<li><strong>T</strong>heophylline&nbsp;</li>\n<li><strong>P</strong>henytoin</li>\n</ul>\n<p>&nbsp;</p>\n</td>\n<td><strong>Most of the drugs</strong> follow first order kinetics&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8bee4685a9ae43ae9d112e3d0790eaffx1280x2445.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA1112",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate the therapeutic index of a drug whose dose-response curves are plotted as shown below:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1"
+        },
+        {
+          "id": 2,
+          "text": "2"
+        },
+        {
+          "id": 3,
+          "text": "4"
+        },
+        {
+          "id": 4,
+          "text": "8"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>therapeutic index</strong> is <strong>4</strong>.</p>\n<p>In the above graph,</p>\n<p>Median lethal dose (LD50) = 400</p>\n<p>Median effective dose (ED50) = 100</p>\n<p><strong>Therapeutic index (TI)</strong> =<strong> LD50/ED50.</strong></p>\n<p>Hence,</p>\n<p>Therapeutic index (TI ) = 400/100 = 4</p>\n<p>Clinically, the therapeutic range bound by the dose that produces the minimal therapeutic effect and the dose that produces the maximal acceptable adverse effect is more relevant.</p>\n<p> </p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/622c455438be4ab480ed5ee698509c1f.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2315",
+      "difficulty": "easy"
+    },
+    {
+      "text": "You have started an infusion of drug Y in a patient at a rate of 200 mg/hr. Drug Y has Vd of 100 litres and clearance of 100 mL/min. What will be the drug concentration at a steady state?<div class='question-desc-html'><p>V<sub>d</sub>- Volume of distribution</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 mg/h"
+        },
+        {
+          "id": 2,
+          "text": "25 mg/h"
+        },
+        {
+          "id": 3,
+          "text": "36.66 mg/L"
+        },
+        {
+          "id": 4,
+          "text": "33.33 mg/L"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Steady state concentration </strong>(C<sub>ss</sub>) for this drug Y is<strong> 33.33mg/L.</strong></p>\n<p>Steady-state concentration is the amount of drug administered is equal to the amount of drug eliminated within one dosing interval resulting in a plateau or constant drug plasma concentration, with the plasma concentration fluctuating between a minimum and maximum. In the case of intravenous infusion, the equation is: </p>\n<table>\n<tbody>\n<tr>\n<td><strong>Steady state concentration (C<sub>ss</sub>) = Rate of infusion ÷ Clearance</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>In the above question,</p>\n<p>Rate of infusion = <strong>200 mg/hr</strong>, Volume of distribution (V<sub>d</sub>)= 100 L, Clearance = 100 mL/min</p>\n<p>Clearance = 100 x 60 mL/hr = 6000 mL/hr = <strong>6L/hr</strong> (converted from mL/min to L/hr)</p>\n<p>Therefore, on substituting these values to the above equation, </p>\n<p><strong>C<sub>ss</sub></strong> = (200 mg/hr) ÷ (6L/hr) = 100/3 = <strong>33.33 mg/L</strong> </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4532",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The clearance of a drug which follows first-order kinetics (in one compartment model) is 0.2 L/min and volume of distribution is 40 L. What is the t1/2 of that drug?<div class='question-desc-html'><p>t1/2: half-life</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "140 min"
+        },
+        {
+          "id": 2,
+          "text": "220 min"
+        },
+        {
+          "id": 3,
+          "text": "240 min"
+        },
+        {
+          "id": 4,
+          "text": "180 min"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>t<sub>1/2</sub></strong> of the drug would be <strong>140 minutes.</strong></p>\n<p>Plasma half-life (t<sub>1/2)</sub> is the <strong>time</strong> required for the <strong>plasma concentration</strong> or the amount of a drug in the <strong>body</strong> to be <strong>reduced</strong> by <strong>50%.</strong> It depends on its <strong>clearance</strong> and <strong>volume</strong> of <strong>distribution.</strong> </p>\n<table>\n<tbody>\n<tr>\n<td><strong>t<sub>1/2</sub> = 0.693 x V<sub>d</sub>/CL</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>where, </p>\n<ul>\n<li>V<sub>d</sub> - volume of distribution</li>\n<li>CL - clearance.</li>\n</ul>\n<p>In the given question, drug clearance (CL) = 0.2 L/min and Vd = 40 L</p>\n<p>We can take 0.693 approximately as 0.7</p>\n<p>Substituting,</p>\n<p>t<sub>1/2</sub> = 0.7 x 40 /0.2</p>\n<p>t<sub>1/2</sub> = 0.7 x 200</p>\n<p>t<sub>1/2</sub> = <strong>140 minutes</strong></p>\n<p>Clinical implications: Half-life determines the duration of the drug effect. It also indicates whether the accumulation of the drug will occur under multiple dosage regimens, thereby making it is essential to decide on the appropriate dosing interval.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6482",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You have to give 180 mg of ceftriaxone to a patient in a 2 ml syringe that has 10 divisions per ml. The concentration of the drug in the vial is 500 mg/5 ml. How many divisions should be filled in 2 ml of the syringe to give 180 mg?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "18"
+        },
+        {
+          "id": 2,
+          "text": "1.8"
+        },
+        {
+          "id": 3,
+          "text": "2"
+        },
+        {
+          "id": 4,
+          "text": "20"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The 2ml syringe should be filled up to <strong>18 divisions</strong> to deliver 180 mg ceftriaxone to the patient. </p>\n<p>Concentration of ceftriaxone in the vial is: 500mg/5ml = 100mg/1mL.</p>\n<p>Since 100mg is present in 1 mL, we can calculate the volume required for <strong>180mg</strong>:   180mg ÷ 100mg/1 mL = <strong>1.8 mL</strong>. Thus, we need to draw 1.8 mL of solution into the syringe.</p>\n<p>The given 2 mL syringe has 10 divisions per mL. Therefore, the total number of divisions in 2 mL is 20 divisions. Since 1 mL = 10 divisions, the required 1.8mL corresponds to: </p>\n<p>1.8mL x 10 divisions/ mL = <strong>18 divisions</strong>. Hence, to administer 180 mg of ceftriaxone, the syringe should be filled up to 18 divisions.<strong> </strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4514",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate hepatic clearance of a drug with hepatic blood flow of 2000 mL/min and hepatic extraction ratio of 0.5.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "4000 mL/min"
+        },
+        {
+          "id": 2,
+          "text": "2000 mL/min"
+        },
+        {
+          "id": 3,
+          "text": "1500 mL/min"
+        },
+        {
+          "id": 4,
+          "text": "1000 mL/min"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p class=\"p1\">The hepatic clearance of the given drug is <strong>1000 mL/min</strong>.</p>\n<p class=\"p1\"><strong>Clearance</strong> of a drug by an organ is the <strong>difference between</strong> the <strong>rate</strong> of <strong>presentation</strong> of the drug<strong> to</strong> the <strong>organ</strong> and the <strong>rate</strong> of <strong>exit</strong> of the drug<strong> from</strong> the <strong>organ.</strong> It is calculated by the equation:</p>\n<table>\n<tbody>\n<tr>\n<td><strong>CL<sub>organ</sub> = Q x E</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p class=\"p1\">Where, </p>\n<ul>\n<li class=\"p1\">Q - Organ blood flow </li>\n<li class=\"p1\">E - Extraction ratio (organ-specific)</li>\n</ul>\n<p class=\"p1\">The question shows that the hepatic blood flow (Q) is 2000 mL/min and the hepatic extraction ratio (E) is 0.5.</p>\n<p class=\"p1\">Substituting the values in the above equation, </p>\n<p class=\"p1\"><strong>CL<sub>organ</sub> = </strong>2000 X 0.5 <strong>= 1000 mL/min</strong></p>\n<p class=\"p1\">Note: The extraction ratio (E) is the fraction of the drug that is removed from the blood by the eliminating organ.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Extraction ratio (E) = C<sub>A</sub>-C<sub>V</sub>/C<sub>A</sub></strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Where,</p>\n<ul>\n<li>C<sub>A </sub>is the concentration of drug presented to the organ</li>\n<li>C<sub>A</sub>-C<sub>V</sub> is the drug removed by the organ</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4518",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Crown Rump Length is 21 cm, length of lower limb is 10 cm, gestational age of the fetus will be:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "6 to 7 months"
+        },
+        {
+          "id": 2,
+          "text": "4 to 5 months"
+        },
+        {
+          "id": 3,
+          "text": "7 to 8 months"
+        },
+        {
+          "id": 4,
+          "text": "Term"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Gestational age of this fetus is <strong>6-7 months.</strong></p>\n<p>Crown rump length + length of lower limb = crown heel length</p>\n<p><strong>Rule of Haase</strong> enables the estimation of the age of the fetus in lunar months from its <strong>crown-heel length (in cm). </strong></p>\n<p>According to the rule,</p>\n<ul>\n<li>Age in months = Square root of crown-heel length (when the crown-heel length is 25 cm or less/ first 5 months).</li>\n<li>Age in months = crown-heel length divided by 5 (when the crown-heel length is more than 25 cm/ last 5 months).</li>\n</ul>\n<p>Here, crown heel length = Crown rump + lower limb length = 31 cm.</p>\n<p>Hence, gestational age = 31 / 5 = 6-7 months.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5204",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A lens has a focal length of 10 cms. What is the dioptric power of the lens?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.1 D"
+        },
+        {
+          "id": 2,
+          "text": "1 D"
+        },
+        {
+          "id": 3,
+          "text": "10 D"
+        },
+        {
+          "id": 4,
+          "text": "20 D"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>The dioptric power of the lens</strong> is reciprocal to its focal length, provided that the unit of measuring length is a metre.</p>\n<p>Thus, </p>\n<p>D = 1 / f</p>\n<p>Where,</p>\n<p>D is the dioptric power of the lens, and f is the focal length in metre.</p>\n<p>The <strong>focal length</strong> of the lens in the above question is 10 cms which is equal to<strong> 0.1 m.</strong></p>\n<p>Substituting the above value in the equation we get the dioptric power as,</p>\n<p>D = 1 / 0.1 = 10 D</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2321",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A population of 25000 were subjected to a screening test to detect lung cancer. The prevalence of the disease was 20% among the population. The test could correctly detect the disease in only 80% of the diseased people. Another 5% of the normal people were also identified as diseased by the test. Considering the population doubles in the next 5 years while the prevalence rate remains the same, which of the following with respect to screening test would be true?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The likelihood of a diseased person being detected as positive is 16 times as compared to a normal person"
+        },
+        {
+          "id": 2,
+          "text": "The sensitivity would remain the same but negative predictive value would change"
+        },
+        {
+          "id": 3,
+          "text": "The sensitivity of the test will be equal to the negative predictive value of the test in 5 years"
+        },
+        {
+          "id": 4,
+          "text": "The specificity of the test will be double that of sensitivity"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The positive likelihood ratio (the likelihood of a diseased person being detected as positive is as compared to a normal person) for the given screening test is <strong>16.</strong></p>\n<p>For the given data the following table can be constructed.</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>Disease positive</td>\n<td>Disease negative</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Test Positive</td>\n<td>4000 (TP)</td>\n<td>1000 (FP)</td>\n<td>5000</td>\n</tr>\n<tr>\n<td>Test Negative</td>\n<td>1000 (FN)</td>\n<td>19000 (TN)</td>\n<td>20000</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>5000</td>\n<td>20000</td>\n<td>25000</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>From the table, the following values can be calculated:</p>\n<ul>\n<li>Sensitivity: TP/ (TP + FN) * 100 = 4000/5000 * 100 = 80%</li>\n<li>Specificity: TN/ (TN+ FP) * 100 = 19000/20000 * 100 = 95%</li>\n<li>Positive Likelihood ratio: Sens / (1- Spec) = 0.8 / 0.05 = 16</li>\n<li>Negative Likelihood ratio: (1-Sens) / Spec = 0.2 / 0.95 = 0.21</li>\n<li>Positive Predictive Value: TP/ (TP + FP) * 100 = 4000/5000 * 100 = 80%</li>\n<li>Negative Predictive Value: TN / (TN+ FN) * 100 = 19000/20000 * 100 = 95%</li>\n</ul>\n<p>If the population doubles, and the prevalence is the same, there is <strong>no change</strong> in the values as can be seen below:</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>Disease positive</td>\n<td>Disease negative</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Test Positive</td>\n<td>&nbsp;8000 (TP)</td>\n<td>2000 (FP)</td>\n<td>10000</td>\n</tr>\n<tr>\n<td>Test Negative</td>\n<td>2000 (FN)</td>\n<td>38000 (TN)</td>\n<td>40000</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>10,000</td>\n<td>40,000</td>\n<td>50000</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>Sensitivity: TP/ (TP + FN) * 100 = 8000/10000 * 100 = 80%</li>\n<li>Specificity: TN/ (TN+ FP) * 100 = 38000/40000 * 100 = 95%</li>\n<li>Positive Likelihood ratio: Sens / (1- Spec) = 0.8 / 0.05 = 16</li>\n<li>Negative Likelihood ratio: (1-Sens) / Spec = 0.2 / 0.95 = 0.21</li>\n<li>Positive Predictive Value: TP/ (TP + FP) * 100 = 8000/10000 * 100 = 80%</li>\n<li>Negative Predictive Value: TN / (TN+ FN) * 100 = 38000/40000 * 100 = 95%</li>\n</ul><hr><h3>Related Pearl: Validity of a Screening Test</h3><ul>\n<li><strong>Validity/ accuracy </strong>of a screening test depends upon the <strong>sensitivity, specificity,</strong> and<strong> predictive accuracy</strong> of the test.</li>\n<li>It represents the closeness to a true value/ actual value.</li>\n<li>These are the <strong>inherent properties</strong> of a screening test.</li>\n<li>P<strong>P</strong>V and N<strong>P</strong>V are <strong>dependent</strong> on the <strong>P</strong>revalence of disease.</li>\n<li>Sensitivity &amp; Specificity are independent of prevalence of disease.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/62275b1d441443bc92db11bb3add523ex1280x959.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td colspan=\"2\"><strong>Formulae</strong>&nbsp;</td>\n</tr>\n<tr>\n<td><span>Sensitivity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TP</strong>&nbsp; &nbsp;&nbsp;</span></span><br /><span><strong>TP</strong> + FN</span></td>\n</tr>\n<tr>\n<td><span>Specificity</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;<strong>TN&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>FP + <strong>TN</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a positive test (<strong>P</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>P&nbsp; &nbsp;&nbsp;</strong></span><sub><br /></sub>T<strong>P</strong> + F<strong>P</strong></span></td>\n</tr>\n<tr>\n<td><span>Predictive value of a negative test (<strong>N</strong>PV)</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;T<strong>N&nbsp; &nbsp;&nbsp;</strong>&nbsp;</span><sub><br /></sub>T<strong>N</strong> + F<strong>N</strong></span></td>\n</tr>\n<tr>\n<td><span>Percentage of false positives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FP&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>FP + TN</span></td>\n</tr>\n<tr>\n<td><span>Percentage of false negatives</span></td>\n<td><span><span>&nbsp; &nbsp; &nbsp;FN&nbsp; &nbsp; &nbsp;</span><sub><br /></sub>TP + FN</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li><strong>PPV</strong> varies <strong>directly</strong> with prevalence</li>\n<li><strong>NPV</strong> varies <strong>inversely</strong> with prevalence</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6185",
+      "difficulty": "hard"
+    },
+    {
+      "text": "What is the angle subtended by the optotype on the second line of Snellen’s chart when viewed from a distance of 6 meters?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5 minutes of arc"
+        },
+        {
+          "id": 2,
+          "text": "30 minutes of arc"
+        },
+        {
+          "id": 3,
+          "text": "25 minutes of arc"
+        },
+        {
+          "id": 4,
+          "text": "6 minutes of arc"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The angle subtended by the optotype (individual letters on the chart) on the second line of Snellen’s chart in the above case would be <strong>30 minutes of arc</strong>.</p>\n<p>The second line on Snellen’s chart corresponds to a distance of 36 meters. When viewed from a 6m distance, it is denoted as visual acuity 6/36. Where,</p>\n<ul>\n<li>The <strong>numerator</strong> (6) denotes the distance from which the patient is <strong>actually viewing</strong> it</li>\n<li>The <strong>denominator</strong> (36) denotes the distance at which it should be <strong>ideally viewed.</strong> It denotes the distance at which each stroke of the letter would subtend the minimum angle of resolution (MAR) of <strong>one minute</strong> of <strong>arc</strong>.</li>\n</ul>\n<p><em>MAR</em> = 1/<em>Visual acuity</em></p>\n<p>Each letter is shaped such that it can be placed in a square, the sides of which are five times the breadth of individual limbs of the letters. Hence, the angle subtended by the optotype= MAR x 5</p>\n<p>For eg: At exactly 6 meters distance from the patient, the letters on the 6/6 line shall subtend 5 minutes of arc (such that the individual limbs of the letters subtend 1 minute of arc).</p>\n<p>The equation to calculate the minimum angle of resolution (MAR) is given as follows:</p>\n<p>For the given question,</p>\n<p><em>MAR</em> = 1/ 6/36<br /><em>MAR</em><span> = 36/6<br /></span><em>MAR</em><span> = 6 minutes of arc</span></p>\n<p>Hence, the angle subtended by the entire letter is 6 × 5 <strong>= 30 minutes of arc</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/192387686eb2481ca5231f8af8a9f6c6x1280x1482.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6695",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a subcentre area with a crude birth rate (CBR) of 20, what would be the expected number of antenatal care (ANC) registrations by the village health nurse (VHN) in a year?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "60"
+        },
+        {
+          "id": 2,
+          "text": "80"
+        },
+        {
+          "id": 3,
+          "text": "100"
+        },
+        {
+          "id": 4,
+          "text": "110"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<ul>\n<li>According to the <strong>Indian Public Health Standards (IPHS)</strong> laid down by the Government of India, a <strong>subcentre is to serve a population of 5000</strong> in plains.</li>\n<li>In this scenario, the CBR is 20.</li>\n<li><strong>Probable number of pregnancies (Y) = Birth rate x population of the area / 1000 = 20 x 5000/1000 = 100.</strong></li>\n<li>But, we add a correction factor of 10% to adjust for pregnancy wastage in the form of abortions or stillbirths.&nbsp;</li>\n<li>Thus, <strong>total number of expected pregnancies= Y + 10% of Y= 110</strong></li>\n<li>As all the pregnancies are not registered, and at any given time an ANM should have atleast half the expected pregnancies registered with her, the number of ANC registrations is taken as 50% of the expected pregnancies.</li>\n<li><strong>Therefore, Total ANC registrations</strong> = <strong>total number of expected pregnancies/2 = 55</strong></li>\n<li><strong>Hence, the closest answer is 60.</strong></li>\n</ul>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9123",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Hemoglobin levels were measured in 200 pregnant women. The results showed a mean hemoglobin level of 10.5 g/dL with a standard deviation of 0.5 g/dL. Assuming that the distribution is normal, how many women will have hemoglobin levels <9.5 g/dL?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "10"
+        },
+        {
+          "id": 2,
+          "text": "5"
+        },
+        {
+          "id": 3,
+          "text": "2.5"
+        },
+        {
+          "id": 4,
+          "text": "25"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In the given population,<strong> 5</strong> women will have hemoglobin (Hb) levels <strong>&lt; 9.5 g/dL</strong>.</p>\n<p>In a normal distribution, the distribution of values around the mean is as follows:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3fa0722f02234f549d26688e42a86a5bx1280x1219.JPEG\" alt=\"Explanation Image\"><ul>\n<li>68% of the distribution falls within &plusmn;1 SD of the mean.&nbsp;</li>\n<li>95% of the distribution falls within &plusmn;2 SD of the mean.&nbsp;</li>\n<li>99.7% of the distribution falls within &plusmn;3 SD of the mean.</li>\n</ul>\n<p>In a normal distribution, 2 SD from the mean will have 95% of the participants. Therefore,&nbsp;<strong>95%</strong> of pregnant women will have Hb levels of 10.5&plusmn;2*0.5 = 10.5&plusmn;1 = &nbsp;<strong>9.5-11.5 g/dL.</strong></p>\n<p>The remaining&nbsp;<strong>2.5%</strong>&nbsp;of women will have <strong>Hb &gt;11.5 g/dL</strong>&nbsp;and <strong>2.5%</strong>&nbsp;of women will have Hb level <strong>&lt;9.5 g/dL.</strong></p>\n<p><strong>2.5% of 200 = 5. </strong>Hence, 5 women will have Hb of &lt;9.5 g/dL.</p><hr><h3>Related Pearl: Normal Distribution</h3><p><strong>The normal distribution </strong>curve is the most <strong>common </strong>shape taken by<strong> continuous data </strong>distributions. It is also called <strong>bell curve </strong>(bell-shaped) or <strong>Gaussian distribution</strong> after mathematician Karl Friedrich Gauss.</p>\n<p>The following is an image of three different normal distribution curves.</p><img src=\"https://cdn1.dailyrounds.org/uploads/99fb903f13594e838e63dcee222ccc82x479x387.JPEG\" alt=\"Pearl Image\"><p>Salient features of the&nbsp;<strong>standard normal distribution</strong>:</p>\n<ul>\n<li>Defined by two parameters:&nbsp;the<strong>&nbsp;mean&nbsp;</strong>and the&nbsp;<strong>standard deviation</strong></li>\n<li>Has<strong> mean</strong> of<strong> 0</strong> and a<strong> standard deviation</strong> of<strong> 1</strong></li>\n<li><strong>Mean = median = mode</strong></li>\n<li><strong>Symmetric</strong>&nbsp;and have&nbsp;<strong>bell</strong>-shaped <strong>curves</strong>&nbsp;with a single peak</li>\n<li>Total<strong> area under the curve </strong>is<strong> 1</strong></li>\n<li><strong>Frequency of values</strong>&nbsp;is <strong>more around the center</strong> and <strong>less around the tails</strong></li>\n<li><strong>No skew </strong>in the curve</li>\n<li>Data like blood pressure, heights, IQ scores, etc. form a normal distribution</li>\n<li>The <strong>empirical rule</strong> of a normal distribution:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean (<strong>mean &plusmn; 1 SD</strong>)</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two </strong>standard deviations of the mean (<strong>mean &plusmn; 2 SD</strong>)</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three </strong>standard deviations of the mean (<strong>mean &plusmn; 3 SD</strong>)</li>\n</ul>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b2acfa7a0024a73895e0113ce912fbcx1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4956",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a given population, total births in a year are 5100. 100 babies were still born and 250 neonates died within 28 days of life. What is the neonatal mortality rate in this population?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "49"
+        },
+        {
+          "id": 2,
+          "text": "12.5"
+        },
+        {
+          "id": 3,
+          "text": "50"
+        },
+        {
+          "id": 4,
+          "text": "51"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<ul>\n<li>Neonatal mortality rate = Number of deaths of children under 28 days of age in a year x 1000/Total live births in the same year</li>\n<li>The total live births in this scenario is 5100 &ndash; 100 = 5000 live births</li>\n<li>NMR = 250 x 1000/5000 = 50</li>\n</ul><hr><h3>Related Pearl: Neonatal Mortality Rate</h3><ul>\n<li><strong>Neonatal deaths</strong> are those that occur during the neonatal period, commencing at birth and ending at 28 completed days after birth.</li>\n<li><strong>NMR = Number of deaths of children under 28 days of age in a year x 1000/Total live births in the same year</strong></li>\n<li>Main causes of neonatal death are <strong>prematurity&nbsp;</strong>(leading cause), birth asphyxia, intrapartum-related complications, sepsis, pneumonia, congenital anomalies, tetanus, diarrhea, etc.</li>\n<li>India&rsquo;s NMR&nbsp; is<strong>&nbsp;20 per 1000 live births&nbsp;</strong>(SRS 2020)</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6581",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a population of 100, prevalence of candida glabrata was found to be 80%. If the investigator has to repeat the prevalence with 95% confidence, what will the prevalence be?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "78-82%"
+        },
+        {
+          "id": 2,
+          "text": "76-84%"
+        },
+        {
+          "id": 3,
+          "text": "72-88%"
+        },
+        {
+          "id": 4,
+          "text": "74-86%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Confidence intervals(CI) for population proportion (95% confidence).</p>\n<p><strong>CI</strong> = <strong>p</strong> +/- <strong>2 x SEP </strong></p>\n<p>Where, SEP (sample error of proportion) =&radic;pq/n</p>\n<p>Hence,</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/921f429011f44f17a0202016c0129463x326x141.PNG\" alt=\"Explanation Image\"><p><strong>In the given question</strong> :</p>\n<ul>\n<li><strong>p</strong>&nbsp;<strong>(prevalence)</strong> = 0.80 (80%)&nbsp;</li>\n<li><strong>q</strong> = 1-p = 1-0.80= 0.20</li>\n<li><strong>n (sample size)</strong>&nbsp;= 100</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0cd95c5d6cbf4556a202841312e79b8fx578x622.PNG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC2691",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The incidence of bladder carcinoma in a population was found to be 5 times higher in smokers than in non-smokers. What is the attributable risk?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "20%"
+        },
+        {
+          "id": 2,
+          "text": "40%"
+        },
+        {
+          "id": 3,
+          "text": "60%"
+        },
+        {
+          "id": 4,
+          "text": "80%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The attributable risk, in this case, will be 80%.</p>\n<p>Let the incidence of bladder carcinoma in <strong>non-smokers (non-exposed)</strong> be <strong>x</strong>. Therefore, the incidence in <strong>smokers (exposed)</strong> will be <strong>5x.</strong></p>\n<p>According to the formula, attributable risk (AR) is given as follows:</p>\n<p><strong>AR (%) = [(IP exposed - IP non-exposed)/ IP exposed] x100,&nbsp;</strong>where IP = Incidence proportion</p>\n<p>= <strong>[(5x - x)/5x] x 100</strong></p>\n<p>= 4x/5x x 100</p>\n<p>= 80%</p>\n<p>Thus, the attributable risk is <strong>80%</strong>.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6564",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The smoking history for the past 6 years of a patient with emphysema is given in the table below. If a pack has 20 cigarettes, what is the mean, median and mode of the given data?<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>&nbsp;Year&nbsp;&nbsp;</td>\n<td>No of cigarettes per day</td>\n</tr>\n<tr>\n<td>2015</td>\n<td>Quarter pack</td>\n</tr>\n<tr>\n<td>2016</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2017</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2018</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2019</td>\n<td>One pack</td>\n</tr>\n<tr>\n<td>2020</td>\n<td>Two packs</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16, 10, 15"
+        },
+        {
+          "id": 2,
+          "text": "16, 10, 10"
+        },
+        {
+          "id": 3,
+          "text": "10, 10, 15"
+        },
+        {
+          "id": 4,
+          "text": "16, 15, 10"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The distribution in this scenario in terms of the number of cigarettes smoked is 5, 10, 10, 10, 20, 40.</p>\n<p>The <strong>mean </strong>here is &sum;x/n = 95/6 = 15.833 rounded off to <strong>16</strong>.</p>\n<p>The <strong>median </strong>here is the central value = average of 3rd and 4th values&nbsp;since the <strong>distribution</strong> has an <strong>even number</strong> of values. This comes to (10 + 10) / 2 = <strong>10</strong>.</p>\n<p>The <strong>mode</strong> here is <strong>10</strong> which has a frequency of 3 in the given dataset.</p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul><hr><h3>Related Pearl: The Mode in Biostatistics</h3><ul>\n<li>The <strong>mode</strong> is most <strong>frequently </strong>occurring<strong> observed value</strong> in a distribution.</li>\n<li>A distribution with a <strong>single mode</strong> is called <strong>unimodal</strong>.</li>\n<li>If <strong>two values </strong>occur with the <strong>highest frequency</strong>, then the distribution is <strong>bimodal</strong>.</li>\n<li>If <strong>more </strong>than<strong> two values </strong>occur with the<strong> highest frequency</strong>, then the distribution is <strong>multimodal</strong>.</li>\n<li>The <strong>mode </strong>is the <strong>preferred</strong> measure of central tendency for <strong>nominal data.</strong></li>\n<li>It is sometimes symbolized by <strong>Mo</strong>.</li>\n<li>Mode can be arrived at from all data scales, i.e., <strong>nominal, ordinal, ratio </strong>and<strong> interval.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1785",
+      "difficulty": "easy"
+    },
+    {
+      "text": "There are 50 patients admitted in a ward of your medical college. Here 20 are girls and 30 are boys. Out of this, 10 girls and 20 boys require surgery. What is the probability that a randomly selected boy and girl both require surgery?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1/6"
+        },
+        {
+          "id": 2,
+          "text": "3/5"
+        },
+        {
+          "id": 3,
+          "text": "6/25"
+        },
+        {
+          "id": 4,
+          "text": "1/3"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the <strong>probability</strong> that a randomly selected <strong>boy and girl both require surgery</strong> is <strong>1/3</strong>.</p>\n<p>First, we have to calculate the <strong>probability</strong> of picking the boys requiring surgery and the girls requiring surgery<strong> separately</strong>. These are <strong>mutually exclusive</strong> events.</p>\n<p>In this scenario, the probability of correctly picking a girl requiring surgery is p(A)=10/20= 1/2</p>\n<p>The probability of correctly picking a boy requiring surgery is p(B)=20/30= 2/3</p>\n<p>Next, we apply the <strong>multiplication rule</strong> of probability.</p>\n<p>The probability of picking boys and girls that require surgery,</p>\n<p><strong>p(A and B)</strong>= p(A) x p(B)= ½ x ⅔ = 2/6= <strong>1/3</strong>.</p><hr><h3>Related Pearl: Probability</h3><ul>\n<li>Expressed as a <strong>decimal fraction</strong> never as a percentage. Denoted by <strong>p</strong></li>\n<li>Must lie between <strong>0 (zero probability) </strong>and <strong>1 (absolute certainty)</strong>.</li>\n<li>Probability of an event <strong>cannot be negative</strong>.</li>\n<li>The probability of an event <strong>not occurring (q)</strong> is q= 1-p</li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Rule</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Example</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Addition Rule</strong></p>\n</td>\n<td>\n<p>(p)&nbsp;<strong>of any one of several particular events</strong> occurring =&nbsp;<strong>the sum of their individual probabilities</strong>, provided the events cannot both happen and are <strong>mutually exclusive</strong>.</p>\n</td>\n<td>\n<p>Probability of picking a heart card from a deck is 0.25 and that of picking a club is 0.25. Thus the <strong>p (hearts or clubs)</strong> is 0.25 + 0.25 = 0.50.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Multiplication Rule</strong></p>\n</td>\n<td>\n<p>(p)<strong> of two or more statistically independent events</strong> <strong>all occurring</strong> is =&nbsp;<strong>product of their individual probabilities</strong>.</p>\n</td>\n<td>\n<p>If the lifetime probability of a person developing a lung neoplasm is 0.25 and the life time probability of developing dementia is 0.01, then the <strong>p (lung neoplasm and dementia) </strong>is 0.25 x 0.01 = 0.0025.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>The <strong>Binomial Distribution</strong></p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>(p) of the occurrence of a <strong>specific combination of mutually exclusive independent events.</strong></p>\n<p>The events for which binomial distribution is used have only two outcomes like yes or no, tall or short, male or female, etc.</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<p>Widely used in <strong>genetic counseling</strong>.</p>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1338",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Each value of a study sample is multiplied by 10. What would be the new standard deviation of the observations?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Original standard deviation x 10"
+        },
+        {
+          "id": 2,
+          "text": "Original standard deviation x100"
+        },
+        {
+          "id": 3,
+          "text": "Original standard deviation /10"
+        },
+        {
+          "id": 4,
+          "text": "Original standard deviation itself"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>When each element of a sample is multiplied by 10, the new standard deviation= <strong>10 x original standard deviation.</strong></p>\n<p>The formula for standard deviation, <strong>SD = &radic;&sum;(x - x̄)<sup>2</sup>/<em>n</em>-1.</strong></p>\n<p>If each element of the distribution is multiplied by 10, the new mean will become 10 times the original mean.</p>\n<p>If all observations are multiplied by 10, then the <strong>new SD</strong> = &radic;&sum;(10x-10x̄)<sup>2</sup>/<em>n</em>-1</p>\n<p>= <strong>10 &radic;&sum;(x - x̄)<sup>2</sup>/<em>n</em>-1</strong></p>\n<p>= 10 x Original SD</p>\n<p>Change in variance: variance = square of standard deviation, so when SD becomes 10 times,&nbsp;</p>\n<p><strong>the variance</strong> will be&nbsp; 10&sup2; =&nbsp;<strong>100 times</strong> the <strong>original</strong> variance.</p><hr><h3>Related Pearl: Variance, Deviation Scores and Standard Deviation</h3><ul>\n<li><strong>Deviation Scores: </strong>\n<ul>\n<li><strong>The deviation score </strong>of an element in distribution is the <strong>difference </strong>between the<strong> mean </strong>of the distribution and the<strong> element </strong>itself, i.e., subtracting the distribution’s mean from the element.</li>\n<li>Denoted by the letter <strong>x</strong></li>\n<li>For example, if <strong>29 </strong>and<strong> 15 </strong>are <strong>elements</strong> in a distribution that has a <strong>mean </strong>of<strong> 22</strong>, the deviation score of 29 would be (29 – 22) = <strong>7</strong> and the deviation score of 15 would be (15 – 22) = <strong>- 7</strong>.</li>\n<li><strong>Sum </strong>of all the<strong> deviation scores</strong> of elements in distribution will be <strong>zero</strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Variance </strong>(also called mean square) \n<ul>\n<li>The <strong>mean </strong>of the<strong> squares </strong>of all the<strong> deviation scores</strong> of the distribution</li>\n<li>Used to <strong>measure </strong>how far<strong> data </strong>is <strong>spread out</strong></li>\n<li>If the <strong>variance</strong> is<strong> zero</strong>, it indicates that all the elements in the distribution are the same and that there is <strong>no variability</strong>.</li>\n<li>Population variance (<strong>σ<sup>2</sup></strong>) is calculated as:\n<ul>\n<li>Find the<strong> deviation score </strong>of<strong> each element </strong>in the distribution</li>\n<li><strong>Square </strong>each of the deviation <strong>scores.</strong></li>\n<li>Obtain the <strong>mean </strong>of all these <strong>squared</strong> deviation<strong> scores</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n<li> </li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/0725718d058e4e2fb192380dce611018x1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Sample variance</strong> (<strong>s<sup>2</sup></strong>): \n<ul>\n<li><strong>more commonly used</strong> in statistics than population variance</li>\n<li>The <strong>denominator</strong> is <strong>n-1</strong> (and not <strong>N </strong>as it is in population variance)</li>\n<li>For small samples, it is better to use<strong> n-1</strong> in the <strong>denominator</strong>.</li>\n<li>For a very <strong>large sample</strong>, like a population,<strong> </strong>subtracting 1 from a huge number will not make much of a significant correction. Hence, we may choose to <strong>ignore subtracting 1</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3d1af8db94f94ed484da8d27414d1dafx1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Standard Deviation (SD)</strong></li>\n<ul>\n<li>It is the <strong>square root of variance.</strong></li>\n<li>The standard deviation of a <strong>population</strong> is denoted by <strong>σ</strong> and the standard deviation of a <strong>sample</strong> is denoted by just <strong>s</strong>.</li>\n<li>The formula for the standard deviation of a sample (usually &lt;30):</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/305d6bbc4a0f469fb7e0564e3e3889eax1280x453.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li>For a population (large sample), the denominator would be replaced by just <strong>N</strong>.</li>\n<li>It is particularly useful for normal distributions but can be used in <strong>skewed distributions</strong></li>\n<li>It is used to calculate the <strong>proportion </strong>of the<strong> population</strong> within the given SD</li>\n<li>A low SD means that the data are close to the mean but a high SD would mean that the data are more spread out.</li>\n<li>The <strong>empirical rule</strong> of a normal distribution states that:\n<ul>\n<li>Approximately <strong>68%</strong> of the distribution falls within <strong>one</strong> standard deviation of the mean.</li>\n<li>Approximately <strong>95%</strong> of the distribution falls within <strong>two</strong> standard deviations of the mean.</li>\n<li>Approximately <strong>99.7%</strong> of the distribution falls within <strong>three</strong> standard deviations of the mean.</li>\n</ul>\n</li>\n</ul>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/39dff3335b964a29962407c305219e50x1280x1219.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1962",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A village has 100 children under the age of 5. The coverage of measles vaccination is 60%. Following a case of measles, 26 children developed measles. What is the secondary attack rate?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "41%"
+        },
+        {
+          "id": 2,
+          "text": "25%"
+        },
+        {
+          "id": 3,
+          "text": "69%"
+        },
+        {
+          "id": 4,
+          "text": "66%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>secondary attack rate</strong> for the given scenario is <strong>66%</strong>.</p>\n<p>The secondary attack rate (SAR) is given by:</p>\n<p>(Number of exposed or susceptible persons developing the disease within the incubation period x 100)/(Total number of close or exposed contacts that are susceptible)</p>\n<p>Here, number who <strong>developed</strong> the<strong> disease</strong> after exposure= <strong>26</strong></p>\n<p><strong>Susceptible</strong> population= 100 - 60 (vaccinated) - 1 (primary case) = <strong>39</strong></p>\n<p>Therefore, <strong>SAR</strong> = 26 /39 x 100 = <strong>66%</strong>.</p>\n<p>SAR is a measure of communicability.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA6727",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A case-control study was done among 500 lung cancer patients and 400 controls. The study groups had 400 and 50 smokers respectively. Calculate the odds ratio.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.8"
+        },
+        {
+          "id": 2,
+          "text": "0.28"
+        },
+        {
+          "id": 3,
+          "text": "0.20"
+        },
+        {
+          "id": 4,
+          "text": "28"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the odds ratio (<strong>OR</strong>) is <strong>28</strong>.</p>\n<p>The given data is represented as:&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>\n<p><strong>Disease +</strong></p>\n</td>\n<td>\n<p><strong>Disease&nbsp; -</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Exposure +</strong></p>\n</td>\n<td>\n<p>400 (a)</p>\n</td>\n<td>\n<p>50 (b)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Exposure - </strong></p>\n</td>\n<td>\n<p>100 (c)</p>\n</td>\n<td>\n<p>350 (d)</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Odds Ratio</strong> = ad/bc</p>\n<p>= (400 x 350) / (50 x 100)</p>\n<p>= (4 x 35)/5</p>\n<p>= 4 x 7</p>\n<p>= <strong>28</strong></p><hr><h3>Related Pearl: Odds Ratio</h3><ul>\n<li>Odds ratio is a measure of the <strong>strength of association</strong> between<strong> risk factor</strong> and <strong>outcome</strong> in case control studies.</li>\n<li>Odds ratio can be arrived at from <strong>case control studies</strong>.</li>\n<li>It is also known as <strong>cross product ratio</strong>.</li>\n<li>A representation of the odds ratio <strong>(OR) </strong>is given in the picture below:</li>\n</ul>\n<p>Calculation of odds ratio (OR) = (a/b)/(c/d) = ad/bc where,&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td>&nbsp;</td>\n<td>Yes</td>\n<td>No</td>\n</tr>\n<tr>\n<td>Yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>No</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><ul>\n<li><strong>OR &lt; 1</strong> indicates <strong>possible protection</strong>&nbsp;(<strong>negative</strong> association) as the frequency of exposure is lower among cases than controls.</li>\n<li><strong>OR = 1&nbsp;</strong>indicates <strong>no association</strong> of risk with exposure, or that the event is equally likely in both groups.</li>\n<li><strong>OR &gt; 1</strong> indicates <strong>increased risk</strong>&nbsp;(<strong>positive</strong> association) as the frequency of exposure is greater among cases than controls.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4107",
+      "difficulty": "medium"
+    },
+    {
+      "text": "As part of the National family planning program, you are conducting a study in a village to gather data on the efficacy of a new contraceptive. 20 out of 100 women became pregnant in the village despite using this contraceptive for a period of 2 years continuously. What is the pearl index of this contraceptive?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.1 per HWY"
+        },
+        {
+          "id": 2,
+          "text": "5 per HWY"
+        },
+        {
+          "id": 3,
+          "text": "10 per HWY"
+        },
+        {
+          "id": 4,
+          "text": "1000 per HWY"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In the given scenario,<strong> </strong>the <strong>pearl index</strong> is <strong>10 per HWY</strong>.</p>\n<p>Here, the total number of <strong>accidental pregnancies</strong> is <strong>20</strong>. The total <strong>months of exposure</strong> are <strong>24</strong> months for <strong>each woman</strong>.</p>\n<p>Hence, the <strong>total months of exposure</strong> for <strong>100 women</strong> are 24 x 100 = <strong>2400</strong>.</p>\n<p><strong>Pearl index </strong>= Total accidental pregnancies x 1200/ Total months of exposure </p>\n<p>Hence, pearl index= 20 x 1200/2400 = <strong>10 per HWY</strong></p><hr><h3>Related Pearl: Pearl index and couple protection rate:</h3><p><strong>Pearl Index</strong>&nbsp;is defined as the <strong>number </strong>of <strong>contraceptive failures</strong> per 100 woman-years of exposure (<strong>HWY).</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/da0fc9aa2dee499fb8ab86afa8cbe537x1280x667.JPEG\" alt=\"Pearl Image\"><ul>\n<li>In this formula, the total accidental pregnancies that are used as the numerator must include every known conception, irrespective of its outcome.</li>\n<li>In the denominator, total months of exposure is obtained by deducting, 10 months for full-term deliveries and 4 months for abortion, from the total period under review.</li>\n</ul>\n<p><strong>Couple Protection Rate:</strong></p>\n<ul>\n<li>It is an indicator of <strong>couple protection practice</strong> in the community.</li>\n<li>It is defined as the percentage of <strong>eligible couples</strong> effectively <strong>protected against childbirth</strong> by one or the other approved methods of family planning.</li>\n<li>Attaining a <strong>60% CPR</strong> would mean <strong>restricting all third </strong>or<strong> higher-order births.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB8251",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was conducted in a village with 180 eligible couples, to gather data on the different contraceptive methods used. The data obtained are given below. What is the couple protection rate in the village?<div class='question-desc-html'><p>Vasectomy &ndash; 15</p>\n<p>Tubectomy &ndash; 15</p>\n<p>Intrauterine device (IUD) users &ndash; 8</p>\n<p>Oral pill users &ndash; 15</p>\n<p>Condom users &ndash; 7</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "60%"
+        },
+        {
+          "id": 2,
+          "text": "33%"
+        },
+        {
+          "id": 3,
+          "text": "45%"
+        },
+        {
+          "id": 4,
+          "text": "50%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Couple protection rate</strong> (CPR) is defined as the percentage of<strong> eligible couples</strong> effectively <strong>protected against childbirth</strong> by one or the other approved methods of family planning.&nbsp;</p>\n<p>In the given scenario, 60 out of 180 eligible couples are using different contraceptive methods.&nbsp;Therefore, CPR = (60/180) x 100 = <strong>33%.</strong></p><hr><h3>Related Pearl: Pearl index and couple protection rate:</h3><p><strong>Pearl Index</strong>&nbsp;is defined as the <strong>number </strong>of <strong>contraceptive failures</strong> per 100 woman-years of exposure (<strong>HWY).</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/da0fc9aa2dee499fb8ab86afa8cbe537x1280x667.JPEG\" alt=\"Pearl Image\"><ul>\n<li>In this formula, the total accidental pregnancies that are used as the numerator must include every known conception, irrespective of its outcome.</li>\n<li>In the denominator, total months of exposure is obtained by deducting, 10 months for full-term deliveries and 4 months for abortion, from the total period under review.</li>\n</ul>\n<p><strong>Couple Protection Rate:</strong></p>\n<ul>\n<li>It is an indicator of <strong>couple protection practice</strong> in the community.</li>\n<li>It is defined as the percentage of <strong>eligible couples</strong> effectively <strong>protected against childbirth</strong> by one or the other approved methods of family planning.</li>\n<li>Attaining a <strong>60% CPR</strong> would mean <strong>restricting all third </strong>or<strong> higher-order births.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB8217",
+      "difficulty": "easy"
+    },
+    {
+      "text": "For a community’s well water, Horrock’s apparatus first shows the 3rd cup changing color to blue. What will be the required dose of bleaching powder for disinfecting 9100 litres of water?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "120 grams"
+        },
+        {
+          "id": 2,
+          "text": "160 grams"
+        },
+        {
+          "id": 3,
+          "text": "200 grams"
+        },
+        {
+          "id": 4,
+          "text": "360 grams"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>The dose of bleaching powder</strong> required is given by <strong>(n x 2) gms for 455 litres of water</strong>, where n is the number of the first cup that shows distinct blue color.</p>\n<p>In this scenario, the dose of bleaching powder required to disinfect 455 litres of water is (3 x 2) = <strong>6 grams.</strong></p>\n<p>Since 9100/455 = 20. The amount of bleaching powder required to disinfect 9100 litres of water = 6 x 20 = <strong>120 grams.</strong></p><hr><h3>Related Pearl: Horrock’s Apparatus</h3><ul>\n<li><strong>Horrock&rsquo;s Apparatus</strong> is used to estimate the <strong>chlorine demand</strong> of water.</li>\n<li>This is widely used in the&nbsp;<strong>disinfection of wells</strong> to find out <strong>how much</strong> <strong>bleaching powder is required</strong>.</li>\n<li><strong>Contents</strong> of this water-testing apparatus:\n<ul>\n<li><strong>6 white cups</strong> of 200 ml each and <strong>one black cup</strong> with a circular mark</li>\n<li>2 metal spoons (each holds 2g of bleaching powder)</li>\n<li>7 glass stirring rods and 1 special pipette</li>\n<li>Two droppers</li>\n<li><strong>Starch-iodide indicator solution</strong></li>\n</ul>\n</li>\n<li><strong>Procedure:</strong>\n<ul>\n<li>Use 2g of bleaching powder to create a thin paste in the black cup. It is now called the&nbsp;<strong>Chlorine stock solution</strong>.</li>\n<li>The six white cups are filled with the water to be tested</li>\n<li>Add one drop of the stock solution to the 1<sup>st</sup> cup, two drops to the 2<sup>nd</sup> cup, three drops to the 3<sup>rd</sup> cup, and so on till adding six drops to the 6<sup>th</sup> cup.</li>\n<li>Stir the cups and wait for half an hour.</li>\n<li>Add 3 drops of starch-iodide indicator to each cup</li>\n<li>Development of <strong>blue color</strong> in the apparatus indicates <strong>free residual chlorine</strong>.&nbsp;</li>\n<li>The first cup which develops this color gives an estimate of the amount of bleaching powder needed to disinfect<strong> 455 Litres</strong> of the sample water.</li>\n</ul>\n</li>\n<li><strong>Chlorine demand</strong> or the&nbsp;<strong>dose of bleaching powder</strong> required is given by <strong>(n x 2) g</strong>&nbsp;for<strong> 455 liters of water, </strong>i.e., (n x 2) g of bleaching powder is required to disinfect 455 liters of water. Here, <strong>n</strong> represents the<strong> position of the cup</strong> (1, 2, 3, etc.) that was <strong>first to show a distinct blue color</strong>.</li>\n</ul><img src=\"https://cdn1.dailyrounds.org/uploads/bed65d5582c142b8ab4533128373dcabx383x287.PNG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB7345",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Arterial blood gas analysis of an unconscious woman shows pH = 7.39, PaCO2 = 20 mm Hg and Bicarbonate = 12 mEq/L. The acid-base abnormality is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Compensated metabolic acidosis"
+        },
+        {
+          "id": 2,
+          "text": "Compensated respiratory alkalosis"
+        },
+        {
+          "id": 3,
+          "text": "Mixed metabolic acidosis-respiratory alkalosis"
+        },
+        {
+          "id": 4,
+          "text": "Mixed metabolic alkalosis-respiratory acidosis"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In the above ABG, pH is within normal range (7.35-7.45). However, PaCO<sub>2 </sub>(Normal: 40 mmHg) and Bicarbonate (Normal: 22 mEq/L) are low.</p>\n<p>Here, we start with the bicarbonate levels. Bicarbonate levels of 12 mEq/L indicates <strong>metabolic acidosis</strong>.</p>\n<p>Now, we check whether the decrease in PaCO<sub>2 </sub>is within the expected range of compensation by applying <strong>Winter’s formula</strong>.</p>\n<p>Expected PaCO<sub>2</sub> = [1 .5 X HCO<sub>3</sub><strong><sup>-</sup></strong>] + 8 ± 2</p>\n<p>                        = [1.5 X12] + 8 ± 2</p>\n<p>                        = 26 ± 2 mm Hg</p>\n<p>Because the observed PaCO<sub>2</sub> (20 mm Hg) is lower than the expected value (26± 2 mm Hg), there is a coexisting <strong>primary respiratory alkalosis</strong>.</p>\n<p>Hence, the acid-base abnormality is Mixed metabolic acidosis-respiratory alkalosis.</p>\n<p>We arrive at the same conclusion by starting with the low PaCO<sub>2 </sub>i.e <strong>respiratory alkalosis.</strong></p>\n<p>The expected compensation is calculated by the formula</p>\n<p>Decrease in HCO<sub>3</sub><strong><sup>-</sup> </strong>= 0.2 x [decrease in PaCO<sub>2</sub>] (since it is acute, replace by 0.5 in chronic)</p>\n<p>                           = 0.2 X (40-20)</p>\n<p>                           = 0.2 X 20 = 4</p>\n<p>Therefore, expected bicarbonate in compensatory metabolic acidosis is 22 - 4 = 18</p>\n<p>The actual bicarbonate (12 mEq/L ) is lower than expected (18 mEq/L).This implies a co-existing metabolic acidosis.</p>\n<p>Mixed metabolic acidosis-respiratory alkalosis is seen in Acute salicylate toxicity.</p>\n<ul>\n<li>It leads to respiratory alkalosis by stimulating the respiratory center in the medulla and causing</li>\n</ul>\n<p>tachypnea (with resultant low PaC0<sub>2</sub> as the C0<sub>2</sub> is blown off).</p>\n<ul>\n<li>It then causes an anion gap metabolic acidosis by uncoupling of oxidative phosphorylation in the mitochondria leading to anaerobic metabolism (with resultant low HCO<sub>3</sub><sup>-</sup> from acid buildup).</li>\n</ul>\n<p>Hint: In compensated acid base disorders, the pH never reaches normal range, hence options A and B can be ruled out. Option D is ruled out because the primary acid base disorders are opposite to values of bicarbonate and PaC0<sub>2</sub> given.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4041",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The ABG findings of a patient are given below. Which of the following metabolic abnormality is present in this patient?<div class='question-desc-html'><p>PaCO<sub>2</sub>: 35 mmHg</p>\n<p>HCO<sub>3</sub><sup>-</sup>: 30 mEq/L</p>\n<p>pH: 7.50</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Metabolic acidosis"
+        },
+        {
+          "id": 2,
+          "text": "Metabolic alkalosis and respiratory acidosis"
+        },
+        {
+          "id": 3,
+          "text": "Metabolic alkalosis and respiratory alkalosis"
+        },
+        {
+          "id": 4,
+          "text": "Metabolic alkalosis with compensatory respiratory alkalosis"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given scenario reveals <strong>metabolic alkalosis and respiratory alkalosis.</strong></p>\n<p><strong>Interpretation of ABG:</strong></p>\n<p><strong>Step 1:</strong></p>\n<table>\n<tbody>\n<tr>\n<td>Value in the question</td>\n<td>Normal value</td>\n<td>Interpretation</td>\n</tr>\n<tr>\n<td>pH = 7.50</td>\n<td>(7.35 – 7.45) <strong>7.4</strong></td>\n<td><strong>Increased</strong></td>\n</tr>\n<tr>\n<td>paCO<sub>2 </sub>= 35 </td>\n<td>(35 – 45) <strong>40</strong></td>\n<td>Normal</td>\n</tr>\n<tr>\n<td>HCO<sub>3</sub><sup>- </sup>= 30 </td>\n<td>(22 – 28) <strong>25</strong></td>\n<td><strong>Increased</strong></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>The values clearly suggest<strong> metabolic alkalosis.</strong></p>\n<p><strong>Step 2:</strong></p>\n<p>Calculating the respiratory compensation:</p>\n<p>In <strong>metabolic alkalosis</strong>, Compensation formula is as follows:</p>\n<p><strong>∆ [HCO3-] = </strong>Increase in <strong>HCO<sub>3</sub></strong>-, in above case is  = 30 - 25 = <strong>5</strong></p>\n<p>So, <strong>compensatory increase of CO<sub>2</sub></strong> should be = 0.7 x 5<strong> = 3.5</strong></p>\n<p>Applying the above, the compensation value of CO<sub>2</sub> should lie between</p>\n<p>40 + 3.5 = <strong>43.5 or approx. 44</strong></p>\n<p>Taking +/- 3 into consideration,  <strong>Compensatory values of CO<sub>2</sub></strong><sub> = </sub><strong>41 – 47</strong></p>\n<p><strong>Step 3:</strong></p>\n<p>Since <strong>CO<sub>2</sub></strong> = <strong>35 which is below the compensatory values</strong>, hence this is <strong>not compensated.</strong></p>\n<p>It suggests that there is a simultaneous <strong>respiratory alkalosis.</strong></p>\n<p><strong>Step 4:</strong></p>\n<p><strong>Looking for anion gap:</strong></p>\n<p>Anion gap should be looked for only in cases of:</p>\n<ul>\n<li>Metabolic acidosis</li>\n<li>Normal pH</li>\n</ul>\n<p>Since the primary disorder is <strong>metabolic alkalosis</strong>, anion gap is not looked into.</p>\n<p>A situation like this is seen with <strong>liver disease and diuretics administration.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6442",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate the rate of atrial contraction from the given ECG strip:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "265/min"
+        },
+        {
+          "id": 2,
+          "text": "375/min"
+        },
+        {
+          "id": 3,
+          "text": "495/min"
+        },
+        {
+          "id": 4,
+          "text": "545/min"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The rate of <strong>atrial contraction</strong> is <strong>375/min</strong>.</p>\n<p><strong>Atril Flutter</strong></p>\n<p>The ECG depicts <strong>atrial flutter with a 4:1 block</strong>.</p>\n<p><strong>Calculation</strong>:</p>\n<ul>\n<li>No. of large boxes between two R waves = 3</li>\n<li>Hence, <strong>ventricular rate = 300/3 = 100/min</strong></li>\n<li>As it is a 4:1 block, for every 4 atrial contractions there is 1 ventricular contraction</li>\n<li>Hence, <strong>atrial rate = 100 x 4 = 400/min</strong></li>\n<li><strong>Hence, nearest correct answer is 375/min</strong></li>\n</ul>\n<p><strong>Alternative calculation:</strong></p>\n<ul>\n<li>No. of small boxes between two R waves = 16</li>\n<li>Hence, <strong>ventricular rate = 1500/16 = 94</strong></li>\n<li>As it is a 4:1 block, for every 4 atrial contractions there is 1 ventricular contraction.</li>\n<li>Hence, <strong>atrial rate = 94 x 4 = 376/min</strong></li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/65ad7b0034404fd4aa9ffdac077d2c31.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9082",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Calculate the transferrin saturation if:<br><br>Serum iron - 130 μg/mL\nTIBC - 320 μg/mL",
+      "choices": [
+        {
+          "id": 1,
+          "text": "44.6%"
+        },
+        {
+          "id": 2,
+          "text": "24.7%"
+        },
+        {
+          "id": 3,
+          "text": "40.6%"
+        },
+        {
+          "id": 4,
+          "text": "35.3%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Transferrin saturation <strong>=&nbsp;</strong>(Serum iron)/(Total iron binding capacity)&nbsp;&times; 100</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&nbsp;&nbsp;130/320&nbsp;&times; 100</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&nbsp;40.625%</p>\n<p><strong>So Transferrin saturation = 40.6%</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA9265",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 26-year-old man was rushed to the ER after a motorbike accident causing a head injury. He was confused, could open eyes on command and was withdrawing on painful stimuli. His GCS score is __________",
+      "choices": [
+        {
+          "id": 1,
+          "text": "9"
+        },
+        {
+          "id": 2,
+          "text": "11"
+        },
+        {
+          "id": 3,
+          "text": "12"
+        },
+        {
+          "id": 4,
+          "text": "13"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Since the patient is</p>\n<ul>\n<li>Confused – V4</li>\n<li>Opens eye on command – E3</li>\n<li>Withdraws to painful stimuli – M4</li>\n</ul>\n<p>Therefore the GCS score is 4+3+4 =<strong>11</strong>.</p><hr><h3>Related Pearl: Glasgow Coma Scale (GCS)</h3><div class=\"ng-scope\">\n<p><strong>GCS Score</strong></p>\n<ul>\n<li class=\"ng-binding ng-scope\">13-15 represent mild injury</li>\n<li>9-12 represent moderate injury</li>\n<li>Scores ≤8 represent severe injury </li>\n</ul>\n</div>\n<div class=\"ng-scope\">\n<p><strong>Head Injury Severity: Clinical classification</strong> </p>\n</div>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Eyes Opening</strong></p>\n</td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Spontaneously</td>\n<td>4</td>\n</tr>\n<tr>\n<td>To verbal command</td>\n<td>3</td>\n</tr>\n<tr>\n<td>To painful stimulus</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Do not open</td>\n<td>1</td>\n</tr>\n<tr>\n<td>\n<div class=\"page\" title=\"Page 163\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Non-testable</p>\n</div>\n</div>\n</div>\n</div>\n</td>\n<td>NT</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<table>\n<tbody>\n<tr>\n<td><strong>Verbal response</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Normal-oriented conversation</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Confused</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Inappropriate words only</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Sounds only</td>\n<td>2</td>\n</tr>\n<tr>\n<td>No sounds</td>\n<td>1</td>\n</tr>\n<tr>\n<td>\n<div class=\"page\" title=\"Page 163\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Non-testable</p>\n</div>\n</div>\n</div>\n</div>\n</td>\n<td>NT</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<table>\n<tbody>\n<tr>\n<td><strong>Motor Response</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Obeys commands</td>\n<td>6</td>\n</tr>\n<tr>\n<td>Localizes to pain</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Withdrawal response to pain</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Abnormal flexion/ Decorticate posturing </td>\n<td>3</td>\n</tr>\n<tr>\n<td>Abnormal extension/ Decerebrate posturing </td>\n<td>2</td>\n</tr>\n<tr>\n<td>No motor response</td>\n<td>1</td>\n</tr>\n<tr>\n<td>\n<div class=\"page\" title=\"Page 163\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Non-testable</p>\n</div>\n</div>\n</div>\n</div>\n</td>\n<td>NT</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Minimum value: </strong>3</p>\n<p><strong>Maximum value:</strong> 15</p>\n<ul>\n<li>GCS, in particular, the <strong>motor score</strong>, is the <strong>best predictor of neurological outcome.</strong></li>\n<li>If an area cannot be assessed, no numerical score is given for that region, and it is considered “non-testable.\" (NT)</li>\n<li>In case of <strong>endotracheal intubation or tracheostomy</strong>, the verbal component of the score is <strong>denoted as NT</strong>.</li>\n<li>A score of  ‘1’ is not recorded in missing components, instead, NT is used</li>\n<li>when a component is Not Testable, a total score is not recorded because the score will be low and this could be confusing to medical colleagues. This may also imply that the patient is more unwell than they actually are.</li>\n</ul>\n<p> </p>\n<div class=\"page\" title=\"Page 163\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>NOTE: </strong></p>\n<p>A new parameter, \"pupil reactivity score\" has been added to GCS, and now, it is referred to as GCS-P.</p>\n</div>\n</div>\n</div>\n<p>P stands for \"Pupils unreactive to light\"</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Pupils unreactive to light</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Both pupils</td>\n<td>2</td>\n</tr>\n<tr>\n<td>One pupil</td>\n<td>1 </td>\n</tr>\n<tr>\n<td>Neither</td>\n<td> 0</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>The pupillary score is subtracted</strong> from the GCS score to give the final value. Therefore, the range of GCS-P is 1–15.</p>\n<p><strong>Note:</strong> The minimum frequency of observations for patients with GCS equal to 15 should be as follows, starting after the initial assessment in the emergency department:</p>\n<ul>\n<li class=\"p-rich_text_section\">Half-hourly for 2 hours,</li>\n<li class=\"p-rich_text_section\">Then 1-hourly for 4 hours,</li>\n<li class=\"p-rich_text_section\">2-hourly thereafter.</li>\n</ul>\n<p>Should the patient with GCS equal to 15 deteriorate at any time after the initial 2-hour period, observations should revert to half-hourly and follow the original frequency schedule.</p><hr><h3>Related Pearl: NICE Guidelines for CT in Head Injury</h3><p>National Institute for Health and Care Excellence <strong>(NICE) Guidelines</strong> for Computed Tomography <strong>(CT) in Head Injury</strong></p>\n<p><strong>Indications for CT </strong>imaging <strong>within 1 hour </strong>of the following risk factors being identified:</p>\n<div class=\"page\" title=\"Page 351\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<ul>\n<li>Glasgow Coma Score (GCS) &lt;12 on initial assessment</li>\n<li>GCS &lt;15 at 2 hours after injury on assessment in an emergency department</li>\n<li>Focal neurological deficit</li>\n<li>Suspected open, depressed, or basal skull fracture</li>\n<li>More than one episode of vomiting</li>\n<li>Post-traumatic seizure</li>\n</ul>\n<p><strong>Indications for CT </strong>imaging <strong>within 8 hours:</strong></p>\n<ul>\n<li>Age <span>&gt;</span>65 years</li>\n<li>Bleeding or clotting disorders</li>\n<li>Dangerous mechanism of injury (e.g., fall from a height of &gt;1 meter/5 stairs, road traffic accident)</li>\n<li>Retrograde amnesia &gt;30 minutes</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4828",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 12 year old girl presents to the emergency department after sustaining electrical burn injuries of 10% total body surface area. Her bodyweight is 40 kg. What is the amount of fluid that must be administered within the first 8 hours after burn injury?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1,600 mL"
+        },
+        {
+          "id": 2,
+          "text": "800 mL"
+        },
+        {
+          "id": 3,
+          "text": "600 mL"
+        },
+        {
+          "id": 4,
+          "text": "400 mL"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In <strong>electrical injuries,&nbsp;</strong>adjusted fluid rates are given at a rate of<strong>&nbsp;4ml LR x kg x %TBSA </strong>until urine clears.</p>\n<p>The calculated fluid volume is initiated in the following manner: (a 40-kg girl with 10% TBSA burns requires 4 &times; 40 &times; 10 = <strong>1,600 mL in 24 hours</strong>).</p>\n<p>One-half of that volume <strong>(800 mL)</strong> should be provided in the <strong>first 8 hours</strong>.</p>\n<p>The remaining one-half of the total fluid is administered during the subsequent 16 hours.</p><p><strong>In electric injury,&nbsp;</strong>the current enters at one point and then leaves the body at an exit point, usually to the earth or the neutral conductor of the electricity supply.&nbsp;It tends to take the&nbsp;<strong>shortest route&nbsp;</strong>between&nbsp;<strong>entry and best exit</strong>, irrespective of the varying conductivity of different internal tissues.</p>\n<p>When a hand is brought into contact with a live conductor, and the body is earthed either through the feet or the opposite hand, the&nbsp;<strong>most common&nbsp;</strong>passage of current is<strong>&nbsp;across the heart.</strong></p>\n<p>It has been claimed that<strong>&nbsp;the most dangerous current path&nbsp;</strong>is contacted&nbsp;<strong>with the right hand&nbsp;</strong>and&nbsp;<strong>exit through the left foot</strong>, as this causes the maximum&nbsp;<strong>(up to 8.5 percent)&nbsp;</strong>of the total body current to flow<strong>&nbsp;through the heart</strong>&nbsp;when compared with head to feet (up to 5.9 percent), left hand to feet (up to 5.1 percent), hand to hand (up to 4.4 percent) or foot to foot (up to 0.4 percent)</p>\n<p>Direct current<strong>&nbsp;(d.c.)</strong>&nbsp;<strong>is less dangerous</strong>&nbsp;than alternating current (a.c.).&nbsp;<strong>Most deaths&nbsp;</strong>from electricity are<strong>&nbsp;from cardiac arrhythmias</strong>, usually, ventricular fibrillation ending in cardiac arrest.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8b7108ea737840f6b70f54d74c5c5d1ax1280x1780.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Burns – Formulae for Fluid Calculation(Updated according to ATLS 10th edition 2018 guidelines)</h3><p><strong>Parkland’s formula</strong> gives the total fluid requirement for 24hours. <strong>Half</strong> of this volume is infused in the <strong>first 8 hours</strong>, and the <strong>remaining half</strong> is infused in the <strong>next 16 hours</strong>.</p>\n<p>This formula is recommended for those who have sustained large <strong>deep partial-thickness or full-thickness burns</strong> that cover more than 20% of the TBSA in adults and more than 10% in children. </p>\n<p>Formulas provide a <strong>starting target rate</strong>; Subsequently, the amount of fluid provided should be adjusted based on <strong>urine output</strong>.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Category of burn</strong></td>\n<td><strong>Age</strong></td>\n<td><strong>Amount of Ringer’s Lactate given for 24 hours (ml)</strong></td>\n<td><strong>Target urine output (ml/kg/hour)</strong></td>\n</tr>\n<tr>\n<td rowspan=\"3\"><strong>2nd/3rd-degree burns</strong></td>\n<td>Adults </td>\n<td>2 x weight in kgs x % TBSA</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>&lt;14 years</td>\n<td>3 x weight in kgs x % TBSA</td>\n<td>1</td>\n</tr>\n<tr>\n<td>&lt; 1 year or &lt;30kgs</td>\n<td>3 x weight in kgs x % TBSA + 5% dextrose on a maintenance rate</td>\n<td>1</td>\n</tr>\n<tr>\n<td><strong>4th-degree burns / Electrical burns</strong></td>\n<td>All ages</td>\n<td>4 x weight in kgs x % TBSA</td>\n<td>1-1.5 (until urine clears)</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Dextrose maintenance:</strong></p>\n<ul>\n<li aria-level=\"1\">100 ml/ kg in 24 hours for 10 kg</li>\n<li aria-level=\"1\">50 ml/kg for next 10 kg</li>\n<li aria-level=\"1\">20 ml/kg for every kg after 20 kg</li>\n</ul>\n<p><strong>Evan’s formula</strong> is used for <strong>normal saline</strong>.</p>\n<p>For the first 24 hours:</p>\n<ul>\n<li aria-level=\"1\">Amount of NS administered = weight in kgs x % TBSA</li>\n<li aria-level=\"1\">Amount of colloid administered = weight in kgs x % TBSA</li>\n<li aria-level=\"1\">5% Dextrose administered= 2000 ml</li>\n</ul>\n<p>After 24 hours, the amount of NS and colloid administered is half. 2000 ml of dextrose is maintained.</p>\n<p><strong>Muir and Barclay’s formula</strong> for colloids:</p>\n<ul>\n<li>1 portion of colloid = (weight in kgs x % TBSA)/2</li>\n<li>6 portions of colloid are administered over 36 hours</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6311",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A woman whose obstetric score is G2 P1 L1 had an LMP of Jan 9th 2017. Calculate the EDD according to Naegele’s rule.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "September 19"
+        },
+        {
+          "id": 2,
+          "text": "October 19"
+        },
+        {
+          "id": 3,
+          "text": "October 16"
+        },
+        {
+          "id": 4,
+          "text": "September 16"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>As per Naegele&rsquo;s rule, the EDD&nbsp;(expected date of delivery) of this woman is<strong>&nbsp;October 16</strong>, 2017.</p>\n<p><strong>Naegele&rsquo;s rule</strong>&nbsp;states that EDD is obtained by <strong>adding</strong> <strong>7 days </strong>and<strong> subtracting 3 months </strong>from the LMP (the 1st day of the last menstrual period).&nbsp;Another method is adding&nbsp;9 months and 7 days&nbsp;to&nbsp;LMP.&nbsp;Less than 5% of births follow Naegele's rule.&nbsp;</p>\n<p>It is based on a 28-day regular cycle. If the cycle is shorter/longer than 28 days, <strong>corrected EDD</strong> is calculated as follows:</p>\n<ul>\n<li>For a 35-day cycle, add another 7 (35-28=7) days to the calculated EDD to get the corrected EDD.</li>\n<li>For a 25-day cycle, subtract 3 (28-25=3) days from the calculated EDD to get the corrected EDD.</li>\n</ul>\n<p>Naegele&rsquo;s rule cannot be followed in IVF pregnancies. Considering the human embryo takes 266 days to develop, <strong>EDD is calculated in IVF pregnancies</strong> by the following method:</p>\n<ul>\n<li aria-level=\"1\"><strong>Same day as fertilization (day 0)</strong>: EDD = date of transfer + 266 days&nbsp;</li>\n<li aria-level=\"1\"><strong>3 days after fertilization (day 3)</strong>: EDD = date of transfer + 263 days</li>\n<li aria-level=\"1\"><strong>5 days after fertilization (day 5)</strong>: EDD = date of transfer + 261 days</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9118",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A primigravida came to the labor room at 40 weeks + 5 days gestation for induction of labor. On per vaginal examination, the cervix is 1 cm dilated and is 30% effaced. The vertex is at –1 station and the cervix is soft and posterior. What will be the bishop score for this lady?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0"
+        },
+        {
+          "id": 2,
+          "text": "3"
+        },
+        {
+          "id": 3,
+          "text": "5"
+        },
+        {
+          "id": 4,
+          "text": "8"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The Bishop's score, in this case, is 5.</p>\n<p>Bishop’s pre-induction Cervical Scoring System.</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Score</strong></p>\n<p><strong>Cervix </strong></p>\n</td>\n<td><strong>0</strong></td>\n<td><strong>1</strong></td>\n<td><strong>2</strong></td>\n<td><strong>3 </strong></td>\n</tr>\n<tr>\n<td>Dilatation (cm)</td>\n<td>Closed </td>\n<td>1-2</td>\n<td>3-4 </td>\n<td>&gt;5 </td>\n</tr>\n<tr>\n<td>Effacement (%)</td>\n<td>0-30</td>\n<td>40-50</td>\n<td>60-70</td>\n<td>≥80</td>\n</tr>\n<tr>\n<td>Consistency </td>\n<td>Firm</td>\n<td>Medium</td>\n<td>Soft </td>\n<td>   - </td>\n</tr>\n<tr>\n<td>Position </td>\n<td>Posterior </td>\n<td>Midline </td>\n<td>Anterior</td>\n<td>      -</td>\n</tr>\n<tr>\n<td>Head station </td>\n<td>-3</td>\n<td>-2</td>\n<td>-1,0</td>\n<td>+1, +2</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Total score = 13; Favorable score = 6-13; Unfavorable score = 0-5</p>\n<p>In the <strong>modified Bishop score</strong> (1991) the effacement is replaced by cervical length in cm.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Score </strong></td>\n<td>0</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td><strong>Cervical length in (cm)</strong></td>\n<td>More than 4</td>\n<td>2-4</td>\n<td>1-2</td>\n<td>Less than 1 </td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>From the data given in the question:</p>\n<ul>\n<li>Cervical dilatation is 1 cm, hence score = <strong>1</strong>.</li>\n<li>Effacement is 30%, hence score = <strong>0</strong></li>\n<li>Station of the head is –1, hence score = <strong>2</strong></li>\n<li>Consistency of cervix is soft, hence score = <strong>2</strong></li>\n<li>Position of the cervix is posterior, hence score =<strong> 0</strong></li>\n</ul>\n<p>Hence,<strong> Bishop's score is 1+0+2+2+0 = 5.</strong></p><hr><h3>Related Pearl: Bishop’s Score (Modified)</h3><table>\n<tbody>\n<tr>\n<td><strong>Score</strong></td>\n<td><strong>0</strong></td>\n<td><strong>1</strong></td>\n<td><strong>2</strong></td>\n<td><strong>3</strong></td>\n</tr>\n<tr>\n<td><strong>Dilatation (cm)</strong></td>\n<td>Closed</td>\n<td>1-2</td>\n<td>3-4</td>\n<td>5+</td>\n</tr>\n<tr>\n<td><strong>Cervical length (cm)</strong></td>\n<td>&gt;4</td>\n<td>2-4</td>\n<td>1-2</td>\n<td>&lt;1</td>\n</tr>\n<tr>\n<td><strong>Consistency</strong></td>\n<td>Firm</td>\n<td>Medium</td>\n<td>Soft</td>\n<td>-</td>\n</tr>\n<tr>\n<td><strong>Position</strong></td>\n<td>Posterior</td>\n<td>Midline</td>\n<td>Anterior</td>\n<td>-</td>\n</tr>\n<tr>\n<td><strong>Head-Station</strong></td>\n<td>-3</td>\n<td>-2</td>\n<td>-1, 0</td>\n<td>+1, +2</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>Total score = 13</p>\n<p><strong>Favourable</strong>= 6-13</p>\n<p><strong>Unfavourable</strong>= 0-5</p>\n<p><strong>Note:</strong>&nbsp;</p>\n<ul>\n<li>According to NICE guidelines, a score of&nbsp;<strong>6-13</strong>&nbsp;is favorable for induction of labour.</li>\n<li>According to Williams Obstetrics (26th edition), a score of <strong>9 or more</strong> indicates a high likelihood of successful induction.</li>\n</ul><hr><h3>Related Pearl: Indications & contraindications for induction of labor</h3><div class=\"p-rich_text_section\"><strong data-stringify-type=\"bold\">Indications</strong>:</div>\n<ul class=\"p-rich_text_list p-rich_text_list__bullet\" data-stringify-type=\"unordered-list\" data-indent=\"0\" data-border=\"0\">\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Uncontrolled maternal diabetes mellitus</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Gestational hypertension</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Pre-eclampsia</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Post-term pregnancy</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Abruption placentae</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Premature rupture of membranes</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Rh-isoimmunization</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Intra-uterine growth restriction (IUGR)</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Intra-uterine death (IUD)</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Oligohydramnios</li>\n</ul>\n<div class=\"p-rich_text_section\"><strong data-stringify-type=\"bold\">Contraindications</strong>:</div>\n<ul class=\"p-rich_text_list p-rich_text_list__bullet\" data-stringify-type=\"unordered-list\" data-indent=\"0\" data-border=\"0\">\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Contracted/distorted pelvis and cephalopelvic disproportion</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Placenta previa or vasa previa</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Active genital herpes</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Pelvic tumor &amp; carcinoma cervix</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Transverse lie or footling breech</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Appreciable macrosomia</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Severe hydrocephalus</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Umbilical cord prolapse</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">High-risk pregnancy with fetal compromise</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Previous classical cesarean or hysterotomy</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Previous history of uterine rupture</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Pelvic surgeries like vesicovaginal fistula/rectovaginal fistula/pelvic floor repair (third or fourth-degree perineal tears repair)</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Previous 3 or more lower transverse cesarian sections.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA9169",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You have been asked to start parenteral iron infusion for a woman at 38 weeks of gestation. What formula would you use to calculate the required dosage?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.4 × (target Hb-actual Hb) × body weight (kg)"
+        },
+        {
+          "id": 2,
+          "text": "2.4 × (target Hb-actual Hb) × body weight (kg) + 500 mg"
+        },
+        {
+          "id": 3,
+          "text": "2.4 × (target Hb-actual Hb) × body weight (kg) + 500 mcg"
+        },
+        {
+          "id": 4,
+          "text": "2.4 × (target Hb-actual Hb) × body weight (kg) + 50 mg/kg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The formula for calculating dose of parenteral iron is:</p>\n<p><strong>Total dose in mg = &nbsp;2.4 X (Target Hb - Actual Hb) X&nbsp;Body Wt. + 500 mg</strong></p>\n<div class=\"page\" title=\"Page 2\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<div class=\"page\" title=\"Page 3\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<ul>\n<li>2.4 -&nbsp;conversion factor</li>\n<li>Target Hb&nbsp;-&nbsp;Hb you want to achieve&nbsp;</li>\n<li>Actual Hb-&nbsp;level of current Hb</li>\n<li>500 mg&nbsp;-&nbsp;additional amount to replenish the iron stores</li>\n</ul>\n<p><strong>Iron sucrose</strong> must be diluted only using <strong>normal saline</strong> at a concentration of&nbsp;1-2 mg of iron/mL of saline. It is given over 20-30 minutes<strong>&nbsp;intravenously</strong>.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA1083",
+      "difficulty": "medium"
+    },
+    {
+      "text": "If the fundal height of the uterus is 35 cm and the head is at -2 station, what is the approximate fetal weight?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.5 kg"
+        },
+        {
+          "id": 2,
+          "text": "3 kg"
+        },
+        {
+          "id": 3,
+          "text": "3.5 kg"
+        },
+        {
+          "id": 4,
+          "text": "4 kg"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The approximate fetal weight is <strong>3.5 kg</strong>.</p>\n<p>Estimated fetal weight (EFW) from fundal height and station of the head is given by the<strong> Johnson formula:</strong></p>\n<ul>\n<li>If station is&nbsp;<strong>below</strong> ischial spine: EFW = [height(in cm)-<strong>11</strong>] x 155</li>\n<li>If station is <strong>at</strong> or <strong>above</strong> ischial spine: EFW = [height(in cm)-<strong>12</strong>] x 155</li>\n</ul>\n<p>The above formula gives the estimated fetal weight in grams.</p>\n<p>The <strong>station of the head</strong> is <strong>zero</strong> if the presenting part is at the level of <strong>ischial spines</strong>.</p>\n<p>The station is stated in <strong>negative</strong> values (-1, -2, etc) if the head is <strong>above ischial spines</strong> and in positive values (+1, +2, etc) if the head is below ischial spines.</p>\n<p>Now, applying the formula;</p>\n<ul>\n<li>Station of the head is -2 (above the ischial spine); height is 35 cm</li>\n<li>EFW = (35-12)x 155 = 3565 grams = 3.56 kgs</li>\n</ul>\n<p>Note:&nbsp;Shephard formula and Hadlock formula are used to measure fetal weight from USG by fetal biometry.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fb5f330a0aaa421aba11404f88213b20x1280x1373.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9792",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A 4 year old child is brought to the casualty in respiratory distress. In order to intubate this child, which is the appropriate size of endotracheal tube to be used?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "4 mm"
+        },
+        {
+          "id": 2,
+          "text": "5 cm"
+        },
+        {
+          "id": 3,
+          "text": "4 cm"
+        },
+        {
+          "id": 4,
+          "text": "5 mm"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Appropriate size of an endotracheal tube for a 4 year old&nbsp;child is 5mm.</p>\n<p>Size of an endotracheal tube usually refers to the <strong>internal diameter in mm</strong>.</p>\n<p>According to the Penlington formula, size of the endotracheal tube in the pediatric population is calculated by:&nbsp;</p>\n<p><strong>&lt;6 years: 3.75 + [Age/3]&nbsp;</strong>&nbsp;</p>\n<p>&gt;6 years: 4.5 + [Age/4]&nbsp;&nbsp;</p>\n<p>The appropriate size of the endotracheal tube for this child is <strong>5 mm&nbsp;</strong>( 3.75 + [4/3] ) = 3.75 + 1.33 = 5.05.&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Age</strong></td>\n<td><strong>Internal diameter (mm)</strong></td>\n<td><strong>Length (cm)</strong></td>\n</tr>\n<tr>\n<td>Full term infant</td>\n<td>3.5</td>\n<td>12</td>\n</tr>\n<tr>\n<td>Child</td>\n<td><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">4</span></span><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">&nbsp;&nbsp;</span></span><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">+</span></span><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">&nbsp;(</span></span><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">Age</span></span><span class=\"TextRun SCX204806933\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX204806933\">/4)&nbsp; &nbsp;</span></span></td>\n<td><span class=\"TextRun SCX261922224\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX261922224\">12&nbsp;</span></span><span class=\"TextRun SCX261922224\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX261922224\">+ (</span></span><span class=\"TextRun SCX261922224\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX261922224\">Age</span></span><span class=\"TextRun SCX261922224\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX261922224\">/2)</span></span></td>\n</tr>\n<tr>\n<td>Adult female</td>\n<td><span class=\"TextRun SCX150009163\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX150009163\">7.0&ndash;7.5</span></span><span class=\"TextRun SCX150009163\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX150009163\">&nbsp;&nbsp;&nbsp;</span></span></td>\n<td>\n<p>&nbsp;<span class=\"TextRun SCX150009163\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX150009163\">&nbsp;20-22</span></span></p>\n</td>\n</tr>\n<tr>\n<td>Adult male</td>\n<td>&nbsp;<span class=\"TextRun SCX247515821\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX247515821\">7.5&ndash;9.0</span></span><span class=\"TextRun SCX247515821\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX247515821\">&nbsp;&nbsp;</span></span></td>\n<td>&nbsp;<span class=\"TextRun SCX247515821\" lang=\"EN-US\" xml:lang=\"EN-US\"><span class=\"NormalTextRun SCX247515821\">&nbsp;22-24</span></span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p><p>Besides age, choice of an endotracheal tube also depends on the presence of airway pathologies and the reason behind placement of the tube.</p>\n<p>Smaller sized tubes lead to increase airway resistance and increased work of breathing.&nbsp;</p>\n<p>Larger tubes have a higher risk of sore throat, laryngeal and tracheal trauma.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA2292",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A 7-year-old boy weighing 30 Kgs has been posted for surgical resection of a tumor. What is the daily maintenance fluid required for this child while he’s NPO?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1000 mL"
+        },
+        {
+          "id": 2,
+          "text": "1700 mL"
+        },
+        {
+          "id": 3,
+          "text": "2500 mL"
+        },
+        {
+          "id": 4,
+          "text": "3000 mL"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The daily maintenance fluid required for a child weighing 30 Kg is 1700 ml.&nbsp;</p>\n<p>Bodyweight method for calculating the daily maintenance fluid volume (also known as <strong>Holliday-Segar method</strong>) is used.</p>\n<table>\n<tbody>\n<tr>\n<td>Bodyweight</td>\n<td>Fluid required per day</td>\n</tr>\n<tr>\n<td>0&ndash;10 Kg</td>\n<td>100 mL/Kg</td>\n</tr>\n<tr>\n<td>11&ndash;20 Kg</td>\n<td>1000 mL + 50 mL/Kg for each Kg &gt;10 Kg</td>\n</tr>\n<tr>\n<td>&gt;20 Kg</td>\n<td>1500 mL + 20 mL/Kg for each Kg &gt;20 kg</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Calculation:</strong></p>\n<p>In the question, the weight of the child is given as 30 Kgs.</p>\n<p>So, the formula for &gt;20 Kg is used.</p>\n<p>1500 mL + (20 mL x weight more than 20 Kgs)</p>\n<p>Since the child weight is 30 Kgs, he/she is 10 Kgs more.</p>\n<p>Therefore, fluid required is</p>\n<p>= 1500 mL + (20 mL x 10)</p>\n<p>= 1500 mL + 200 mL</p>\n<p>= 1700 mL.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC0776",
+      "difficulty": "medium"
+    }
+  ]
+}

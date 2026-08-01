@@ -1,0 +1,920 @@
+{
+  "chapter": "Biostatistics-Previous Year Questions",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "What does a correlation coefficient of less than 0.5 signify?",
+      "options": {
+        "A": "Confidence interval of 95%",
+        "B": "Weak correlation",
+        "C": "Not statistically significant",
+        "D": "Strong correlation"
+      },
+      "correct_answer": "B",
+      "explanation": "than 0), it indicates a weak correlation between the variables. This means that there is a relationship between the variables, but it is not very strong or significant. The strength and direction of the correlation increase as the correlation coefficient approaches -1 or +1. Confidence interval of 95% (Option A) : This option is incorrect because the correlation coefficient measures the relationship between variables, while confidence intervals estimate a parameter's likely range. Not statistically significant (Option C) : This option is incorrect because statistical significance refers to the probability that the observed correlation is due to chance. Strong correlation (Option D) : Strong correlations typically have coefficients closer to -1 or +1, indicating a more pronounced relationship. Reference: High Yield Biostatistics, 4th Edition, Page 30",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following is used for graphical representation in flow cytometry analysis?",
+      "options": {
+        "A": "Bar diagram, dot plot",
+        "B": "Line diagram, dot plot",
+        "C": "Histogram, dot plot",
+        "D": "Pie chart, dot plot"
+      },
+      "correct_answer": "C",
+      "explanation": "typically done using: Histogram, dot plot Flow cytometry analyzes cellular properties like size, granularity, and fluorescence intensity. Data is represented using histograms, showing frequency distribution of parameters like fluorescence intensity, and dot plots, displaying two parameters per cell to identify subpopulations. Incorrect Options: Bar diagram, dot plot (Option A): While bar diagrams can be used to represent categorical or discrete data, they are not commonly used for flow cytometry analysis.. Line diagram, dot plot (Option B): Line diagrams are often used to depict trends over time, but in flow cytometry analysis, where data points represent individual cells and aren't time-dependent, they're not commonly employed. Pie chart, dot plot (Option D): Pie charts display categorical data distribution but aren't suitable for flow cytometry analysis due to its focus on continuous variables and individual cells.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q2_exp.png",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 3,
+      "question": "Interpret the following graph (in order from left to right):",
+      "options": {
+        "A": "Normal, negatively skewed, positively skewed, skewed with outliers",
+        "B": "Normal, positively skewed, negatively skewed, normal with outliers",
+        "C": "Normal, negatively skewed, positively skewed, normal with outliers",
+        "D": "Skewed with outliers, positively skewed, negatively skewed, normal"
+      },
+      "correct_answer": "B",
+      "explanation": "1- Normal Distribution: A whisker and box plot displays a normal distribution with a box from Q1 to Q3, showing the median as a line inside. The whiskers extend 1.5 times the IQR or to the maximum and minimum values within the range, with no outliers beyond them. 2- Positively Skewed Distribution: In a positively skewed distribution, most data cluster at the lower end with a long tail towards higher values. The whisker and box plot reflects this by shifting the box towards the lower end, with the median closer. The longer whisker on the higher end accommodates the tail, with any outliers beyond it. 3- Negatively Skewed Distribution: In a negatively skewed distribution, most data cluster at the higher end, with a long tail toward lower values. The whisker and box plot reflects this by shifting the box towards the higher end, with the median closer. The longer lower whisker accommodates the tail, with any outliers beyond it. 4- Normal Distribution with Outliers: In a normal distribution with outliers, the box and whisker plot resembles a standard distribution, but with outliers plotted beyond the whiskers. These outliers deviate significantly from the majority of the data and may be shown as individual points or special symbols. Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 60",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q3_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 4,
+      "question": "A homogenous sample of 4 groups was taken as shown below. The height and weight of each group had a correlation coefficient of 0.6. What will be the total coefficient of correlation of the whole group?",
+      "options": {
+        "A": "Equal to 0.6",
+        "B": "Less than 0.6",
+        "C": "More than 0.6",
+        "D": "Skewed coefficient of 0.6"
+      },
+      "correct_answer": "A",
+      "explanation": "indicates a positive relationship between height and weight. If this relationship holds consistently across all groups, it suggests a strong positive correlation within the entire dataset. This is depicted by tight clustering of data points along an upward-sloping trend line on the scatter plot. The correlation coefficient is a statistical measure that describes the strength and direction of a relationship between two variables. It ranges from -1 to 1: +1 means a perfect positive correlation (as one variable increases, the other also increases). -1 means a perfect negative correlation (as one variable increases, the other decreases). 0 means no correlation (no relationship between the variables). Incorrect Options: Less than 0.6 (Option B) : If a positive correlation of 0.6 exists within each group, and it holds consistently across all groups, the total correlation for the entire dataset would be at least 0.6. More than 0.6 (Option C) : Total correlation might surpass 0.6, but without more details like group weights or sample sizes, we can't be sure. Skewed coefficient of 0.6 (Option D) : The term \"skewed coefficient\" typically refers to an asymmetrical distribution, not the correlation coefficient itself.",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q4_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 5,
+      "question": "Which one of the following is not a component of meta-analysis?",
+      "options": {
+        "A": "Selection",
+        "B": "Analysis",
+        "C": "Randomization",
+        "D": "Abstraction"
+      },
+      "correct_answer": "C",
+      "explanation": "derived from multiple studies. It doesn't involve randomization because it synthesizes data from studies where randomization has already occurred, particularly in randomized controlled trials (RCTs). It quantitatively and qualitatively analyses the results from various studies to reach a common conclusion. It differs from a systematic review in that the latter can be used to analyse the outcome of only a single study. Meta-analysis takes the upper hand because the final outcome will always be reliable if multiple studies on the same topic are being analysed rather than a single study. Incorrect Options: Selection (Option A) : Selection is a crucial step in meta-analysis. It involves identifying and selecting relevant studies that meet the inclusion criteria for the analysis. Analysis (Option B) : Analysis in meta-analysis involves extracting and synthesizing data from selected studies to obtain pooled estimates of treatment effects or associations through statistical methods. Abstraction (Option D) : In meta-analysis, abstraction involves extracting vital data from selected studies. Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page no: 60",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 6,
+      "question": "Glasgow coma scale is a type of?",
+      "options": {
+        "A": "Nominal scale data",
+        "B": "Ordinal scale data",
+        "C": "Alphanumerical data",
+        "D": "Interval scale data"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer B - Ordinal scale data The Glasgow Coma Scale (GCS) is used to assess the level of consciousness in a patient. It assigns scores based on three components: Eye opening (1 to 4) Verbal response (1 to 5) Motor response (1 to 6) The total score ranges from 3 to 15, with higher scores indicating better neurological function. Data Type: The GCS is considered ordinal scale data because: The scores indicate an order or rank (e.g., a score of 4 is better than 3 in motor response). However, the difference between scores (e.g., between 3 and 4) does not necessarily represent an equal increment in consciousness level, which makes it ordinal rather than interval or ratio. Nominal scale data (Option A) : Used for categorization without any order (e.g., blood groups). GCS has an inherent ranking, so it is not nominal. Alphanumerical data (Option C) : Refers to data containing letters and numbers. GCS consists only of numerical scores. Interval scale data (Option D) : Involves ordered data with equal intervals between values (e.g., temperature in Celsius). GCS does not have equal intervals between scores, so it is not interval scale data. Reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC1320380/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 7,
+      "question": "Which one of the options listed below is a non-parametric test?",
+      "options": {
+        "A": "Student t test",
+        "B": "Friedman test",
+        "C": "ANOVA",
+        "D": "Pearson"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Friedman test Explanation: A non-parametric test is one that does not assume a specific distribution for the data, such as normality, and is typically used when the assumptions of parametric tests (like the t-test or ANOVA) are not met. The Friedman test is a non-parametric alternative to the repeated measures ANOVA , used to test differences between groups when the data is paired or repeated. Student t-test (Option A) : This is a parametric test, used to compare the means of two groups. It assumes that the data follows a normal distribution. ANOVA (Option C) : Analysis of Variance (ANOVA) is a parametric test used to compare means across three or more groups. It assumes normality and homogeneity of variance. Pearson (Option D) : The Pearson correlation coefficient measures the strength of a linear relationship between two continuous variables. It is parametric and assumes normality. Reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10324782/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 8,
+      "question": "What is the term used to describe a probability distribution that represents the likelihood of a specific number of events occurring within a specific time period?",
+      "options": {
+        "A": "Binomial distribution",
+        "B": "Gaussian distribution",
+        "C": "Poissons distribution",
+        "D": "Normal distribution"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer: C) Poisson distribution Explanation: The Poisson distribution is used to model the probability of a specific number of events occurring within a fixed time period or spatial area, given a known average rate of occurrence. It is typically applied in situations where events happen independently and randomly over time, such as the number of calls at a call center, accidents at an intersection, or infections in a population. Binomial distribution (Option A) : The binomial distribution models the number of successes in a fixed number of independent Bernoulli trials (e.g., flipping a coin or testing a drug's efficacy), where the probability of success is constant for each trial. Gaussian distribution (Option B) : The Gaussian (Normal) distribution is a continuous probability distribution that is used to model variables that tend to cluster around a mean. It is not specific to counting events within a time period. Normal distribution (Option D) : This is another term for the Gaussian distribution , which is used for continuous variables rather than discrete event counts over time. Reference: Fundamentals of Biostatistics, Bernard Rosner, Edition 8, Page 98, 99.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 9,
+      "question": "In order to evaluate the nutritional status of young children residing in rural and urban areas, a research study was conducted. The study revealed that out of the total sample, comprising 30 children from rural areas and 20 children from urban areas, a significant proportion were found to be malnourished. Based on this information, which of the following statistical significance tests would be the most suitable in this scenario?",
+      "options": {
+        "A": "Chi-Square test",
+        "B": "Paired T-test",
+        "C": "Standard error of the mean",
+        "D": "ANOVA"
+      },
+      "correct_answer": "A",
+      "explanation": "association between two qualitative variables. In this scenario, in comparing malnutrition rates among children in rural and urban areas, it analyzes if there's a significant difference in proportions between the two groups. Parametric Test Description Paired Student's T-test (Option B) Used to compare means (± SD) in paired data from the same group of individuals before and after an intervention. Unpaired Student's T-test Used to compare means (± SD) in two different groups of individuals. The Z-test is a variant of the unpaired Student's t-test used when the sample size is > 30. ANOVA (Option D) Used to compare means (± SD) in more than two different groups of individuals. Pearson correlation coefficient Measures the linear association between two variables and can range from -1 (perfect negative correlation) to +1 (perfect positive correlation). Standard error of the mean (Option C) : is a measure of the variability of sample means and is not directly applicable for comparing categorical variables or assessing differences between groups. Reference: High Yield Biostatistics, 4th Edition, Page 3",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q9_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 10,
+      "question": "In a population study, if the mean value is 200 and the standard deviation is 20, what percentage of the population will fall within one standard deviation of the mean?",
+      "options": {
+        "A": "180-220",
+        "B": "160-240",
+        "C": "170- 230",
+        "D": "190-210"
+      },
+      "correct_answer": "A",
+      "explanation": "standard deviation of the mean. Given that the mean is 200 and the standard deviation is 20, we can calculate the range within which 68% of the population will lie. One standard deviation below the mean is 200 - 20 = 180. One standard deviation above the mean is 200 + 20 = 220. Therefore, approximately 68% of the population will lie between 180 and 220. Reference: High Yield Biostatistics, 4th Edition, Page 3",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 11,
+      "question": "The variation in a data set is compared with that of another data set using?",
+      "options": {
+        "A": "Variance",
+        "B": "Coefficient of variation",
+        "C": "Standard error of mean",
+        "D": "Standard deviation"
+      },
+      "correct_answer": "B",
+      "explanation": "used to compare the variability of two or more data sets relative to their mean. It is calculated by dividing the standard deviation of a data set by its mean and then multiplying by 100 to express it as a percentage. It's beneficial for comparing data sets with different units, indicating which has more or less variability relative to the mean. Variance (Option A) : Variance is a measure of the spread or dispersion of a single data set, not a comparison between two data sets. Standard error of mean (Option C) : The standard error of the mean (SEM) measures the precision of the estimated mean of a data set, not for comparing variation between different sets. Standard deviation (Option D) : The standard deviation measures the spread within a single data set without directly comparing variation between different sets",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 12,
+      "question": "How is the calculation of one variable using another variable typically performed?",
+      "options": {
+        "A": "Coefficient of correlation",
+        "B": "Coefficient of Regression",
+        "C": "Coefficient of variation",
+        "D": "Coefficient of determination"
+      },
+      "correct_answer": "B",
+      "explanation": "regression coefficient or slope coefficient, is used to calculate the relationship between two variables in a linear regression model. It quantifies the change in the dependent variable per unit change in the independent variable, aiding in estimating or predicting one variable's value based on another's . The Coefficient of Correlation (Option A) measures the strength and direction of a linear relationship between two variables. The coefficient of variation (Option C) measures relative variability between datasets, typically as a percentage, without involving the calculation of one variable using another. The coefficient of determination (Option D) (R-squared) measures the proportion of variance explained by independent variables in a regression model, assessing goodness of fit without directly calculating one variable using another. Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition Pg 40",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 13,
+      "question": "Calculate the median of the following data set: 2, 3, 4, 4, 5, 6, 7, 8.",
+      "options": {
+        "A": "4",
+        "B": "4.5",
+        "C": "4.8",
+        "D": "5"
+      },
+      "correct_answer": "B",
+      "explanation": "numbers, the median is the average of the 4th and 5th numbers (4 and 5). Thus, the median is (4 + 5) / 2 = 4.5. Incorrect Options: Options A, C and D are incorrect as given above.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 14,
+      "question": "What is the term used to describe the value that appears most frequently in a set of data?",
+      "options": {
+        "A": "Median",
+        "B": "Mode",
+        "C": "Standard deviation",
+        "D": "Mean"
+      },
+      "correct_answer": "B",
+      "explanation": "in a dataset. It represents the value that occurs with the highest frequency. In the dataset [1, 2, 3, 3, 4, 5], the mode is 3 because it appears twice, which is more frequently than any other value. Incorrect Options: Median (Option A): It is calculated by arranging the variables in ascending order and taking up the middle value. This applies when an odd number of variables are given, which is given by The median is given for variables in even numbers by averaging the two middle variables. Standard deviation (Option C): Measures the variation or dispersion of a set of values around the mean. The formula for calculation is σ = √ ( ∑ (x − x I ) 2 /n). Mean (Option D): It is calculated by summing all the variables and dividing the same by the total number of variables. Reference: Park’s Textbook of Preventive and Social Medicine 27th edition, Page 975, 976",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q14_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 15,
+      "question": "A study was done to assess nutritional status among young children in rural and urban areas. 40 children in rural and 30 children in urban areas were malnourished. Which of the following tests of significance is the most appropriate in this case?",
+      "options": {
+        "A": "Chi Square test",
+        "B": "Paired T test",
+        "C": "Standard error of the mean",
+        "D": "ANOVA"
+      },
+      "correct_answer": "A",
+      "explanation": "whether there is a significant association between two categorical variables. In this case, the variables are \"nutritional status\" (malnourished or not) and \"area of residence\" (rural or urban). By comparing the observed frequencies (40 malnourished children in rural areas and 30 malnourished children in urban areas) with the expected frequencies, the Chi-Square test can assess if there is a significant difference in the distribution of malnourished children between rural and urban areas. Parametric Test Description Paired Student's t-test (Option B ruled out) Used to compare means (± SD) in paired data from the same group of individuals before and after an intervention. Unpaired Student's t-test Used to compare means (± SD) in two different groups of individuals. The Z-test is a variant of the unpaired Student's t-test used when the sample size is > 30. ANOVA (Option D ruled out) Used to compare means (± SD) in more than two different groups of individuals. Pearson correlation coefficient Measures the linear association between two variables and can range from -1 (perfect negative correlation) to +1 (perfect positive correlation). Standard error of the mean (Option C): Quantifies the variability of sample means around the true population mean . Standard error of the mean = standard deviation / √ sample size Reference: https://www.wjpmr.com/download/article/120032024/1711972240.pdf Park’s Textbook of Preventive and Social Medicine, 27th edition, pg 978",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q15_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 16,
+      "question": "What is the most effective method for graphically representing the fluctuations in disease occurrence within a specific geographical region?",
+      "options": {
+        "A": "Line graph",
+        "B": "Histogram",
+        "C": "Ogive",
+        "D": "Tree diagram"
+      },
+      "correct_answer": "A",
+      "explanation": "or incidence of cases over time. It has both rise and fall. Fig. Line chart Histogram: (Option B ruled out) It represents the frequency of continuous variables or quantitative variables. Height is a quantitative or continuous variable (can take many possible values and also in between values) It can be expressed in decimals and there is no gap in between. Ogive: (Option C ruled out) Aka cumulative frequency curve is useful for understanding how quantities accumulate over time. By plotting cumulative vaccination completion data on an ogive, the clinic can easily visualize the total number of patients vaccinated up to each month and observe trends in the rate of increase in vaccinations. There is no dip or no fall of the curve. Cases are constantly increasing Fig. Ogive Tree diagram (Option D): I t is a visual tool used to represent hierarchical relationships or branching structures. It is commonly used in decision analysis or to display the possible outcomes of a particular event. It is not typically used to plot changes in disease incidence over time. Therefore, the most appropriate option for plotting the changes in the incidence of a disease in a given area is a Line Graph.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q16_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 17,
+      "question": "For which type of variables is the following data representation used?",
+      "options": {
+        "A": "Nominal",
+        "B": "Discrete",
+        "C": "Continuous",
+        "D": "All the above"
+      },
+      "correct_answer": "C",
+      "explanation": "continuous variables or quantitative variables. Height is a quantitative or continuous variable (can take many possible values and also in between values) It can be expressed in decimals and there is no gap in between. Bar Diagram: Simple bar diagrams represent the frequency of discrete variables like gender. (Options A & B ruled out) Discrete variables:These variables take fewer values and no in between values. Examples: Religion, Blood groups These are not represented in decimals so there are gaps",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q17_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 18,
+      "question": "Please determine the study design based on the following information:",
+      "options": {
+        "A": "Prospective cohort study",
+        "B": "Retrospective cohort study",
+        "C": "Case control study",
+        "D": "Nested case control study"
+      },
+      "correct_answer": "C",
+      "explanation": "participants based on the outcome (disease or no disease). Cases: individuals who already have the disease/outcome. Controls: individuals without the disease/outcome. The study then looks backward to determine prior exposure to potential risk factors. Since the selection is based on outcome status, and exposure is assessed retrospectively, this fits the definition of a case-control study. Incorrect Options: Prospective cohort study (Option A): Participants are selected based on exposure status and followed forward in time to see who develops the disease. This is incorrect because the selection here is based on outcome, not exposure. Retrospective cohort study (Option B): Participants are again selected based on exposure status, but outcomes are assessed from past records. This is incorrect because there is no exposure-based grouping in this study. Nested case control study (Option D): A case-control study conducted within a pre-existing cohort, where cases and controls are drawn from the same cohort. This is incorrect because there’s no mention of an existing cohort. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pages 78-80",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q18_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 19,
+      "question": "A researcher is studying the difference in the incidence of asthma in children who are exposed to second-hand smoke and those who are not. If he wishes to express the additional incidence of asthma in the exposed children as a percentage, which of the following should he use?",
+      "options": {
+        "A": "Attributable risk",
+        "B": "Relative risk",
+        "C": "Population attributable risk",
+        "D": "Odds ratio"
+      },
+      "correct_answer": "C",
+      "explanation": "(PAR) measures the proportion of disease in the exposed group due to the exposure. It's expressed as a percentage, indicating the additional risk due to the exposure. It considers baseline disease risk in the population. Helps estimate potential disease reduction if exposure is eliminated or modified. Measure Definition Calculation Attributable Risk Proportion of disease incidence attributable to a specific exposure or risk factor Risk in exposed group - Risk in unexposed group Relative Risk Risk of a particular outcome in the exposed group compared to the unexposed group Risk in exposed group/Risk in unexposed group Population Attributable Risk Proportion of disease cases in a population attributable to a specific exposure or risk factor (Prevalence of exposure) x (Relative risk-1)/(1+ (Prevalence of exposure) x (Relative risk - 1)) Odds Ratio Strength of association between exposure and outcome in case-control or retrospective studies (Exposure odds in cases/Non-exposure odds in cases) / (Exposure odds in controls/Non- exposure odds in controls) Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pages 81,86",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 20,
+      "question": "The blood pressure of 200 hypertensive patients is being compared after 3 months. One group of 100 patients received medical advice, while the other group of 100 patients were advised to make lifestyle changes. Which test of significance is used to compare the blood pressure in these two groups?",
+      "options": {
+        "A": "ANOVA",
+        "B": "Un-paired T test",
+        "C": "Chi-square test",
+        "D": "McNemar's test"
+      },
+      "correct_answer": "B",
+      "explanation": "non-parametric test such as the Unpaired T-Test to compare the blood pressures after 3 months. Since we are comparing two groups we use an unpaired t test and not the paired t test. Parametric Test Description Paired Student's t-test Used to compare means (± SD) in paired data from the same group of individuals before and after an intervention. Unpaired Student's t-test (Option B) Used to compare means (± SD) in two different groups of individuals. The Z-test is a variant of the unpaired Student's t-test used when the sample size is > 30. ANOVA (Option A ruled out) Used to compare means (± SD) in more than two different groups of individuals. Pearson correlation coefficient Measures the linear association between two variables and can range from -1 (perfect negative correlation) to +1 (perfect positive correlation). Chi-Square Test (Option C): It is a non-parametric test used to study the association between two qualitative variables. McNemar's test (Option D): Non-parametric test is used only when there is one group. Reference: https://www.wjpmr.com/download/article/120032024/1711972240.pdf Park’s Textbook of Preventive and Social Medicine 27th Edition Pg: 980",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 21,
+      "question": "A study conducted on 46 mothers who delivered deformed babies showed that 41 were found to have thalidomide during their early pregnancy; what kind of study is being done here?",
+      "options": {
+        "A": "Prospective cohort study",
+        "B": "Retrospective cohort study",
+        "C": "Case-control study",
+        "D": "Descriptive study"
+      },
+      "correct_answer": "C",
+      "explanation": "individuals with the outcome of interest (cases) to those without the outcome (controls) to assess the association between exposure and outcome.\\ Observational studies Analytical studies Case-control/case reference. (Option C) Ecological/correlational. Cross-sectional/prevalence. Cohort/follow-up. (Options A & B ruled out) Descriptive studies (Option D ruled out) Experimental/observational studies Community trials/community intervention trials. Field trials. Non-randomised trials Uncontrolled trials. Natural experiments. Before and after comparison studies. Randomised controlled trials Trial of aetiological agents. Risk factor trials. Clinical trials. Preventive trials. Cessation experiments. Evaluation of health services. Reference: Park’s Textbook of Preventive and Social Medicine26th edition, page 93",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 22,
+      "question": "What percentage of distribution is represented by one standard deviation in a normal curve?",
+      "options": {
+        "A": "68%",
+        "B": "34%",
+        "C": "99%",
+        "D": "95%"
+      },
+      "correct_answer": "A",
+      "explanation": "data falls within one standard deviation of the mean . This means that the majority of the observations cluster around the mean, with a smaller proportion extending beyond one standard deviation in either direction. Incorrect Options Option B. Option B (34%) : In reality, 34% of the data falls within half of one standard deviation from the mean, not the full one standard deviation. Option C. Option C (99%) :It represents a much larger range, which would be three standard deviations. In a normal distribution, about 99.7% of the data falls within three standard deviations of the mean, not within one standard deviation. OptionD. Option D (95%): This also represents a larger range, which would be two standard deviations. In reality, about 95% of the data falls within two standard deviations of the mean, not within one standard deviation.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 23,
+      "question": "Which statistical diagram represents the population change in a specific location from 1983 to 1989?",
+      "options": {
+        "A": "Histogram",
+        "B": "Line diagram",
+        "C": "Component bar graph",
+        "D": "Multiple bar graphs"
+      },
+      "correct_answer": "C",
+      "explanation": "graph , is a statistical diagram used to represent the composition or distribution of a whole over different categories or components. It consists of bars representing each category or component, stacked on top of each other to show the total value or size of the whole. In the given scenario, where the diagram charts the population change over years from 1983 to 1989, a component bar graph would be an appropriate representation. Each bar in the graph would represent a specific year, and the different components of the bar would represent the population size or change in population within that year. Incorrect Options: Options A. Histogram : A histogram is a statistical diagram that represents the distribution of continuous or grouped data. It consists of bars where the area of each bar corresponds to the frequency or relative frequency of data within a specific range or class. Histograms are typically used to analyze continuous variables, such as age or income, and are not suitable for representing",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q23_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 24,
+      "question": "A randomized control trial is being conducted in patients with direct inguinal hernia, to compare the outcomes of a new surgery 'A' and the gold standard surgery 'B'. The p-value of this trial is found to be 0.04. What can we conclude from this?",
+      "options": {
+        "A": "Type Il error is small and we can accept the findings of the study",
+        "B": "The probability of a false negative conclusion that operation A is better than B is 4%",
+        "C": "The power of the study to detect the difference between operations A and B is 96%",
+        "D": "The probability of a false positive conclusion that operation A is better than B is 4%"
+      },
+      "correct_answer": "D",
+      "explanation": "4% 4% This option correctly interprets the p-value of 0.04. The p-value represents the probability of obtaining results as extreme as the observed results under the assumption that the null hypothesis is true. In this case, it means there is a 4% probability of falsely concluding that operation A is better than B when, in fact, there is no significant difference between the surgeries. Therefore, option D is the correct interpretation of the given p-value. Incorrect Options: OptionA - Type II error is small, and we can accept the findings of the study: A p-value of 0.04 doesn't offer direct insight into Type II error probability, making it unwarranted to assume it's small and accept the study findings. Option B - The probability of a false negative conclusion that operation A is better than B is 4%: The p-value of 0.04 doesn't directly reflect the probability of a false negative. It represents the likelihood of obtaining results as extreme as observed if the null hypothesis is true. Therefore, this conclusion can't be solely inferred from the given p-value.. Option C - The power of the study to detect the difference between operations A and B is 96%: The p-value of 0.04 doesn't inform about the study's power, which requires details like sample size and effect size. Therefore, this conclusion can't be drawn solely from the given p-value. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 25,
+      "question": "What is the proportion of the distribution within one standard deviation of the mean in a normal curve?",
+      "options": {
+        "A": "68%",
+        "B": "34%",
+        "C": "99%",
+        "D": "95%"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer A- One standard deviation from the mean captures about 68% of the total data points. This means that 68% of the values in a normal distribution lie within one standard deviation above or below the mean. A Gaussian/bell-shaped curve showing normal distribution forms when the point of coincidence is equal to mean = median = mode ~ Normal distribution In a standard normal distribution Mean = Median = mode = 0 Standard deviation = 1 Total area under the curve = 1 Area under the curve Observation covered Mean +/- 1 SD 68.3% ~ 68% of observation Mean +/- 2 SD 95.4% ~ 95% of observation (Option D) Mean +/- 3 SD 99.7% ~ 99% of observation (Option C) Mean +/- ∞ SD 100% of observation 34% (Option B): is the percentage of the distribution that falls within the half standard deviation of the mean. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, Pg 977",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q25_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 26,
+      "question": "Which of the following is the best study design as per hierarchy of evidence?",
+      "options": {
+        "A": "Meta analysis",
+        "B": "Case control study",
+        "C": "Cohort Study",
+        "D": "Large RCT"
+      },
+      "correct_answer": "A",
+      "explanation": "from multiple high-quality studies. Combines Results: It pools results from randomized controlled trials (RCTs) or observational studies , increasing statistical power and reliability. Best for Decision-Making: Used in evidence-based medicine (EBM) to guide clinical practice by summarizing large amounts of data. Higher Level than RCTs: While RCTs provide strong evidence, a meta-analysis of multiple high-quality RCTs offers even stronger conclusions. Hierarchy of Evidence in Clinical Research In evidence-based medicine , study designs are ranked based on their reliability in guiding clinical decision-making. Level Study Design Strength of Evidence 1a Meta-analysis of RCTs Highest - Combines data from multiple studies for stronger conclusions. 1b Large RCT (Randomized Controlled Trial) Strong - Best for causality, but single studies may have limitations. 2a Cohort Study Moderate - Observational, used for prognosis and risk factor assessment. 2b Case-Control Study Weaker - Retrospective, useful for rare diseases. 3 Cross-sectional & Case Series Weak - Descriptive, no causal inference. 4 Expert Opinion & Case Reports Weakest - No statistical comparison, potential bias. Case control study (Option B): Incorrect because case-control studies are retrospective and prone to bias, ranking lower in the hierarchy. Cohort study (Option C): Incorrect because while prospective cohort studies provide stronger evidence than case-control studies , they are inferior to RCTs and meta-analyses . Large RCT (Option D): Incorrect because while RCTs are the gold standard for individual studies , a meta-analysis of multiple RCTs provides even higher-quality evidence. Reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3099299/ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3024725/",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 27,
+      "question": "A group of 80 people was studied to assess the effect of diet modification on mean cholesterol levels before and after the intervention. Which statistical test is most appropriate to compare the mean cholesterol levels before and after the diet modification?",
+      "options": {
+        "A": "Paired t-test",
+        "B": "McNemar test",
+        "C": "Chi-square test",
+        "D": "Wilcoxon signed-rank test"
+      },
+      "correct_answer": "A",
+      "explanation": "cholesterol levels before and after diet modification in the same group of individuals. This test accounts for the fact that the data are paired (pre- and post-diet modification) and assesses whether the mean difference is statistically significant. Incorrect Options: Option B - McNemar test: This test is used for paired nominal data, specifically to analyze the difference in proportions for matched pairs, such as yes/no responses before and after an intervention. It is not appropriate for comparing means. Option C - Chi-square test: The chi-square test is used to analyze categorical data to determine if there is a significant association between variables. It is not suitable for comparing means, especially when dealing with continuous data like cholesterol levels. Option D - Wilcoxon signed-rank test: This is a non-parametric test used to compare two related samples or repeated measurements on a single sample when the data does not follow a normal distribution. It is an alternative to the paired t-test when the data is not normally distributed.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 28,
+      "question": "A statistician wants to study the effects of medicine in three groups: humans, animals, and plants. He selects randomly out of these three groups. Which type of sampling is performed here?",
+      "options": {
+        "A": "Simple Random Sampling",
+        "B": "Systematic Sampling",
+        "C": "Stratified Random Sampling",
+        "D": "Cluster Sampling"
+      },
+      "correct_answer": "C",
+      "explanation": "stratified random sampling. This approach involves dividing the population into distinct strata (humans, animals, and plants) and then selecting randomly from each stratum. This method ensures that each subgroup is represented in the study, allowing for a more detailed analysis of the effects of medicine across different types of organisms. Incorrect Options: Option A - Simple Random Sampling: This method involves selecting individuals randomly from the entire population without considering any subgroups. In this scenario, simple random sampling would mean choosing any individual from the combined groups of humans, animals, and plants without distinguishing between them. Option B - Systematic Sampling: This method involves selecting samples based on a fixed, periodic interval (e.g., every 10th individual). Systematic sampling is not described in this scenario since the selection process does not involve intervals or systematic patterns. Option D - Cluster Sampling: This method involves dividing the population into clusters (groups) and then randomly selecting entire clusters for the study. The focus here is on the whole clusters rather than individual strata within those clusters.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 29,
+      "question": "A study was undertaken to establish consumption of vegetarian and non-vegetarian diet with disease. Which statistical test should be done?",
+      "options": {
+        "A": "Paired t-test",
+        "B": "McNemar test",
+        "C": "Chi-square test",
+        "D": "Wilcoxon signed-rank test"
+      },
+      "correct_answer": "C",
+      "explanation": "association between two categorical variables. It compares the observed frequencies with the expected frequencies to see if there is a significant difference. This is appropriate for analyzing the relationship between diet type (categorical) and disease status (categorical). It helps to determine if the distribution of disease is independent of the type of diet. Incorrect Options: Option A - Paired t-test : This test is used to compare the means of two related groups. For example, it could be used to compare pre- and post-treatment measurements in the same subjects. This is not suitable for comparing categorical data (diet type) with disease status. It is more appropriate for continuous variables. Option B - McNemar's Test : McNemar's test is used for paired nominal data to determine if there are differences in proportions. It is often used in studies with a matched case-control design or in before-and-after studies where the same subjects are measured twice. This test is not suitable for comparing two independent groups (vegetarian vs. non-vegetarian) in relation to disease status. It is used for paired data rather than independent groups. Option D - Wilcoxon Rank-Sum Test : This test, also known as the Mann-Whitney U test, is used to compare differences between two independent groups on a continuous or ordinal outcome when the data does not assume normal distribution. This is not suitable for categorical variables like diet type and disease status. It is used for comparing continuous or ordinal variables.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 30,
+      "question": "Identify the image?",
+      "options": {
+        "A": "Line diagram",
+        "B": "Histogram",
+        "C": "Scattered diagram",
+        "D": "Frequency polygon"
+      },
+      "correct_answer": "A",
+      "explanation": "depicts the trends of events or incidence of cases over time, showing both rises and falls. Incorrect Options: Histogram (Option B): A histogram represents the frequency of continuous variables or quantitative variables. It consists of a series of adjacent rectangles or bars, where the area of each bar corresponds to the frequency or relative frequency of the data within a specific interval or category. Scattered diagram (Option C): The scattered diagram represents a correlation between two continuous variables It consists of a collection of points, each representing the value of one variable plotted against the value of another variable. Frequency polygon (Option D): The frequency polygon is obtained by joining the mid-points of the histogram blocks.",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q30_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 31,
+      "question": "What percentage of data falls within one standard deviation of the mean in a normal distribution?",
+      "options": {
+        "A": "68%",
+        "B": "95%",
+        "C": "98%",
+        "D": "99%"
+      },
+      "correct_answer": "A",
+      "explanation": "standard deviation of the mean. A Gaussian/bell-shaped curve showing normal distribution forms when the point of coincidence is equal to mean = median = mode ~ Normal distribution In a standard normal distribution Mean = Median = mode = 0 Standard deviation = 1 Total area under the curve = 1 If we draw the following line Redline cuts the base at the distance of 1 standard deviation. Pink line at +/- 2 standard deviation. Green line at +/- 3 standard deviation. The tail of the curve never touches the baseline. Area under the curve Observation covered Mean +/- 1 SD 68.3% ~ 68% of observation Mean +/- 2 SD 95.4% ~ 95% of observation (Option B ruled out) Mean +/- 3 SD 99.7% ~ 99% of observation (Option D ruled out) Mean +/- ∞ SD 100% of observation 98% (Option C): 98% of the data in a normal distribution falls within 2 and 3 SD (~2.33 SD) of the mean. Reference: Parks Textbook of Preventive and Social Medicine, 27th Edition, Page no: 60",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q31_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 32,
+      "question": "In biostatistics, formula given below stands for? ( σ ) = √ [ Σ (x - µ ²/ Ν ]",
+      "options": {
+        "A": "Standard Deviation",
+        "B": "Sample Variance",
+        "C": "Sample Mean",
+        "D": "Median"
+      },
+      "correct_answer": "A",
+      "explanation": "the dispersion or variability of a set of values. It quantifies how much the values deviate from the mean. The formula for calculating the standard deviation involves taking the square root of the average of the squared differences between each value and the mean. Standard deviation is considered the most comprehensive and widely used measure of dispersion in statistical analysis. Measures of dispersion Definition Calculation Standard deviation (Option A) Measures the variation or dispersion of a set of values around the mean. σ = √ ( ∑ (x − x I ) 2 /n) Range The difference between the highest and lowest values in a dataset. Range = Maximum value - Minimum value Mean deviation Measures the average absolute deviation of data points from the mean. Mean deviation = ∑ X - x I / n Variance (Option B ruled out) Measures the average of the squared differences from the mean. Variance = σ 2 Sample Mean (Option C): The sample mean is the average value of a set of observations or data points. It is calculated by summing all the values in the sample and dividing the total by the number of observations. The sample mean is often used as an estimate of the population mean. Median (Option D): It is calculated by arranging the variables in ascending order and taking up the middle value. This applies when an odd number of variables are given, which is given by The median is given for variables in even numbers by averaging the two middle variables. Reference: Park’s Textbook of Preventive and Social Medicine, 27th edition, pg 975, 976",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q32_exp.png",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 33,
+      "question": "2 doctors were asked to report 100 X-rays and a Kappa value of 0.71; what is interpretation?",
+      "options": {
+        "A": "Good",
+        "B": "Poor",
+        "C": "Perfect Disagreement",
+        "D": "Perfect Agreement"
+      },
+      "correct_answer": "A",
+      "explanation": "doctors reporting 100 X-rays is considered Good, indicating a reliable level of agreement between the observers. The Kappa statistic is a measure of inter-rater agreement or reliability between two observers. It ranges from -1 to 1, where: 1 indicates perfect agreement O indicates agreement expected by chance -1 indicates perfect disagreement. Kappa value Inference >0.75 Excellent (beyond chance) 0.4-0.75 Intermediate to Good <0.4 Poor Reference: Interrater reliability: the kappa statistic - PMC",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 34,
+      "question": "In order to investigate the dietary habits of the diverse population residing in the urban region of Delhi, a research study is being conducted. Which of the following methods can be utilized to acquire a representative sample for the study?",
+      "options": {
+        "A": "Cluster random sampling",
+        "B": "Stratified random sampling",
+        "C": "Simple random sampling",
+        "D": "Systematic random sampling"
+      },
+      "correct_answer": "B",
+      "explanation": "Correct Answer: B) Stratified random sampling Explanation: In a diverse population, such as the one in urban Delhi, stratified random sampling is an effective method to ensure that different subgroups (or strata) of the population are represented in the sample. In this case, the population can be divided into subgroups based on factors like socioeconomic status, age, dietary preferences, or geographic location within the urban region. After dividing the population into strata, random samples are then taken from each group, ensuring that the sample is representative of the entire population. Cluster random sampling (Option A): is incorrect because cluster sampling is used when the population is divided into clusters, often geographically, and entire clusters are randomly selected. While this can be used in large-scale studies, it doesn't specifically ensure representation of the diverse subgroups within the population as well as stratified sampling. Simple random sampling (Option C): is incorrect because simple random sampling involves selecting individuals from the entire population randomly without considering any subgroups. While it may still give a sample, it may not adequately represent the diverse dietary habits of the population in urban Delhi. Systematic random sampling (Option D): is incorrect because systematic random sampling involves selecting every nth individual from a list or a sequence of individuals. While it's easier to implement, it doesn't ensure that different groups within the population are represented as effectively as stratified sampling. Reference: Park’s Textbook of Preventive and Social Medicine, Edition 26, Page 946",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 35,
+      "question": "In a patient, if a point-of-care diagnostic test with a sensitivity of 98% yields a negative test result, what does this indicate?",
+      "options": {
+        "A": "The patient would need another point–of–care diagnostic test for the same clinical condition",
+        "B": "The prevalence of the disease is 2%.",
+        "C": "The patient is less likely to have the disease",
+        "D": "The patient has been wrongly ruled out due to false negatives"
+      },
+      "correct_answer": "C",
+      "explanation": "patient is less likely to have the disease due to the low probability of a false-negative result. The patient would need another point–of–care diagnostic test for the same clinical condition (Option A): A highly sensitive test that gives a negative result already provides strong evidence to rule out the disease, and further testing is generally unnecessary. The prevalence of the disease is 2% (Option B): Sensitivity does not directly relate to disease prevalence; prevalence is the proportion of individuals in a population who have the disease. The patient has been wrongly ruled out due to false negatives (Option D): With a sensitivity of 98%, the chance of a false-negative result is very low (only 2%). Reference: Park's Textbook of Preventive and Social Medicine, 27th edition, Page.155 IAPSM textbook of Community medicine, 2nd edition, Page.134",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 36,
+      "question": "Which of the following indicators can help determine whether the health system is important to identifying leprosy in the community?",
+      "options": {
+        "A": "Treatment completion rate",
+        "B": "Annual new case detection rate per lac",
+        "C": "Treatment initiation rate",
+        "D": "Proportion of newly diagnosed patients with grade 2 disability"
+      },
+      "correct_answer": "B",
+      "explanation": "the community. It reflects the number of new cases detected per 100,000 people. A high rate of new case detection suggests an active effort to identify and diagnose cases early, which is crucial for effective control of leprosy in the community. Thus, it is an important indicator for evaluating how well the health system is identifying new cases. Treatment completion rate (Option A) : While this indicator is essential for assessing the success of leprosy treatment, it does not directly help in determining how well the health system is identifying new cases in the community. It is more about patient adherence to treatment after diagnosis. Treatment initiation rate (Option C) : This is important for assessing how quickly patients are started on treatment after diagnosis. However, it doesn't directly indicate the system's effectiveness in identifying new cases in the first place. Proportion of newly diagnosed patients with grade 2 disability (Option D) : This is more about the severity of the disease at diagnosis rather than how effectively the health system is identifying new cases. A higher proportion of patients with grade 2 disability indicates delayed diagnosis, which is a problem, but it doesn't directly measure case identification. Reference: https://cltri.gov.in/AboutLeprosy/NLEP_indicators.pdf Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 362",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 37,
+      "question": "Which of the following statements accurately reflects the findings of the multivariate analysis presented in the table below, regarding the correlation between the risk of blindness and variables such as age, literacy rate, residence, and gender? Variables Odds ratio p-value Age <50y 1.1 <0.001 50-59y 1.2 <0.001 60-69y 1.5 <0.001 70-79y 1.6 <0.001 >80y 2.1 <0.001 Male 1.2 0.2 Female 0.3 <0.001 Rural 2.4 0.1 Urban 1 <0.001 Literate 0.4 <0.01 Illiterate 1.2 <0.01 1. The female population is at greater risk of developing blindness. 2. People dwelling in rural areas are at increased risk of developing blindness 3. The risk of developing blindness increases with age 4. Illiteracy leads to an increased risk of developing blindness",
+      "options": {
+        "A": "2 and 3",
+        "B": "1 and 3",
+        "C": "1 and 2",
+        "D": "3 and 4"
+      },
+      "correct_answer": "D",
+      "explanation": "This is true . The odds ratios for each age group (>50 years) consistently increase, and all p-values are <0.001 , indicating a strong and statistically significant association between age and the risk of blindness. Illiteracy leads to an increased risk of developing blindness (4) : This is true . The odds ratio for illiterate individuals is 1.2, and the p-value is <0.01 , indicating a statistically significant association between illiteracy and a higher risk of blindness. The female population is at greater risk of developing blindness (1) : This is false . The odds ratio for females is 0.3, which indicates a lower risk compared to males, as a value less than 1 indicates a protective effect for females. The p-value is significant (<0.001), further supporting this finding. People dwelling in rural areas are at increased risk of developing blindness (2) : This is partially true , but the p-value of 0.1 for rural residence suggests that the result is not statistically significant , despite the odds ratio of 2.4 indicating a higher risk. Since the p-value is not below 0.05, this association is not conclusive . Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 86",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 38,
+      "question": "5-year old Ram and 3-year-old Sham are Rama Devi’s sons. Sham developed a rash, but Rama Devi ignored it, assuming it to be an allergy. After 10 days, Ram also developed a rash along with a fever. Out of fear, Rama Devi took Ram to the primary health center (PHC). The healthcare workers at the PHC suspected it to be measles. Choose all correct options from among the following: 1. Ram is an index case. 2. Sham is a primary case 3. Ram got the infection from Sham 4. Ram could have received post-exposure prophylaxis if his mother had brought him to the hospital when Sham got the rash.",
+      "options": {
+        "A": "1, 2, 3 and 4 are correct",
+        "B": "1 only is correct",
+        "C": "1 and 4 are correct",
+        "D": "1 and 3 are correct"
+      },
+      "correct_answer": "A",
+      "explanation": "Ram is an index case – This is correct because Ram is the first person in the scenario who prompted healthcare intervention. Sham is a primary case – This is correct because Sham developed symptoms first, indicating he was likely the initial case. Ram got the infection from Sham – This is likely correct, as Sham showed symptoms first, and Ram developed symptoms later, suggesting transmission from Sham. Ram could have received post-exposure prophylaxis if his mother had brought him to the hospital when Sham got the rash – This is correct because timely intervention could have allowed for post-exposure prophylaxis to prevent measles. Reference: https://www.cdc.gov/measles/hcp/clinical-overview/?CDC_AAref_Val=https://www.cdc.gov/measles/hcp/index.html https://www.who.int/news-room/fact-sheets/detail/measles",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 39,
+      "question": "Identify the formula given below:",
+      "options": {
+        "A": "Standard deviation",
+        "B": "Standard error",
+        "C": "Median",
+        "D": "Variance"
+      },
+      "correct_answer": "A",
+      "explanation": "statistical analysis. Measures of dispersion Definition Calculation Standard deviation Measures the variation or dispersion of a set of values around the mean. σ = √ ( ∑ (x − x I ) 2 /n) Range The difference between the highest and lowest values in a dataset. Range = Maximum value - Minimum value Mean deviation Measures the average absolute deviation of data points from the mean. Mean deviation = ∑ X - x I / n Variance Measures the average of the squared differences from the mean. Variance = σ 2 Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 976",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q39_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 40,
+      "question": "Which methods are used to evaluate contraceptive failure?",
+      "options": {
+        "A": "Pharmacological index",
+        "B": "Pearl index",
+        "C": "Performance index",
+        "D": "Efficacy index"
+      },
+      "correct_answer": "B",
+      "explanation": "contraceptive method. It is a technique for evaluating contraceptive efficacy. Formula (Total accidental pregnancies / Total months of exposure) x 1200 Numerator The total number of accidental pregnancies, including pregnancies that resulted in live births, stillbirths, abortions, or are ongoing. Denominator (Total months in the review period) – (months stopped using contraception for non-pregnancy reasons) Minimum Data At least 600 months of exposure. Disadvantages PI assumes a constant failure rate over time, but contraceptive failure rates typically decline with longer use. High-fertility couples conceive earlier, skewing results towards lower-fertility couples later in studies. PI ignores factors beyond accidental pregnancy that affect effectiveness, like user dissatisfaction, side effects, attempts to conceive, or loss of follow-up. Better methods Life Table Analysis is a better method to evaluate contraceptive efficacy. It calculates cumulative failure rates over a specified time frame, like one month. Pharmacological index (Option A) : There is no such index specifically used to evaluate contraceptive failure. Performance index (Option C) : This refers to an evaluation of overall performance, often in industrial or technical contexts, and is not used for contraceptive failure assessment. Efficacy index (Option D) : Although the term \"efficacy\" can relate to the effectiveness of contraceptives, there is no specific \"efficacy index\" used for evaluating contraceptive failure. Reference: Reference: Park’s Textbook of Preventive and Social Medicine, 27th Edition, Page 585",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 41,
+      "question": "Examine the provided graphs depicting various occupational groups and their likelihood of developing fever. Identify the group with the greatest probability of experiencing fever.",
+      "options": {
+        "A": "Industrial workers",
+        "B": "Farmers",
+        "C": "White-collar jobs",
+        "D": "Housewives"
+      },
+      "correct_answer": "C",
+      "explanation": "",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q41_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 42,
+      "question": "What type of statistical diagram is used in the given text to illustrate the population change between 1983 and 1989 in a specific location?",
+      "options": {
+        "A": "Histogram",
+        "B": "Line diagram",
+        "C": "Component bar graph",
+        "D": "Multiple bar graphs"
+      },
+      "correct_answer": "C",
+      "explanation": "Correct Answer C - Component bar graph A Component bar graph, also known as a Stacked bar graph, displays the parts-to-whole relationship within a category. It may not be suitable for depicting population change over time unless the population is divided into different components. Types of bar diagrams: Image Discrete variables:These variables take fewer values and no in between values. Examples: Religion, Blood groups II Compound Bar Diagram There are gaps (discrete data) represented with multiple bars. It is qualitative in the first quarter. It is a Multiple bar diagram/Compound bar diagram. Component Bar Diagram Same bar has been divided into different components and each component represents its frequency. It is a frequency of discrete variables. It is known as the Component bar diagram. Histogram (Option A) It is not a bar diagram. It represents the frequency of continuous variables or quantitative variables. Height is a quantitative or continuous variable (can",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q42_q.png",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 43,
+      "question": "Which method would be most effective in delivering statistical data to emphasize the significance of routine antenatal care for pregnant mothers, when educating a small, uneducated village during your rural posting?",
+      "options": {
+        "A": "Pictogram",
+        "B": "Line diagram",
+        "C": "Histogram",
+        "D": "Frequency polygon"
+      },
+      "correct_answer": "A",
+      "explanation": "Correct Answer A - Pictogram Pictograms are the best way to present the data to the “man in the street” and those who cannot understand the orthodox charts i.e. to uneducated people as mentioned in the question. Small pictures or symbols are used to present the data. Fractions of the picture can be used to represent the numbers smaller than the value of the whole symbol. Histogram: (Option C) It represents the frequency of continuous variables or quantitative variables. Height is a quantitative or continuous variable (can take many possible values and also in between values) It can be expressed in decimals and there is no gap in between. Bar Diagram: Simple bar diagrams represent the frequency of discrete variables like gender. Discrete variables:These variables take fewer values and no in between values. Examples: Religion, Blood groups These are not represented in decimals so there are gaps. Pictograph: Used for graphical representation of qualitative variables Used to teach something to a layman (illiterate). Box and Whisker Plot: A method of quantitative data representation. Used to represent quartiles. It comments on the type of distribution i.e., normal or skewed. There is equal distribution on both sides (no outliers). It is a normal distribution. Tails are also equally distributed. Frequency Polygon: (Option D) It is drawn above a histogram. Midpoints are joined by a straight line (frequency polygon). Height is continuous (quantitative data). If the number of observations is very large and group intervals are reduced, then frequency polygon loses its angulature and becomes a curve i.e., frequency curve. A line chart is used for showing trends of events or incidence of cases over time. It has both rise and fall. (Option B) Line chart",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 44,
+      "question": "You are initiating hypertension services at your Primary Health Center (PHC). 50 patients in need of antihypertensive treatment have been transferred from another facility. Among them, 40 were prescribed amlodipine (5mg orally) and 10 were prescribed lisinopril (10mg orally) due to contraindications with amlodipine. Medications are supplied monthly at the PHC, and you are responsible for ordering them. How many tablets do you need to order and what should be the reorder factor?",
+      "options": {
+        "A": "1000, rf=3",
+        "B": "1200, rf=2",
+        "C": "1400, rf=3",
+        "D": "1600, rf=2"
+      },
+      "correct_answer": "D",
+      "explanation": "patients * 5mg per day * 30 days = 6,000 mg Lisinopril: 10 patients * 10mg per day * 30 days = 3,000 mg Total tablets required: Amlodipine: 6,000 mg / 5mg per tablet = 1,200 tablets Lisinopril: 3,000 mg / 10mg per tablet = 300 tablets Reorder factor (rf) = Total tablets required / Monthly supply rf = 1,500 / 1,600 = 0.9375 (not equal to 2) Based on the calculations, none of the options match the required number of tablets and reorder factor. However, from requirement is 1500 tablets and only one option has tablets more than 1500, ie option D, it is the most suitable answer. Incorrect Options: 1000, rf=3 (Option A): 1,500 tablets / rf = 1,000 tablets, rf = 1,500 / 1,000 = 1.5 (not equal to 3) 1200, rf=2 (Option B): 1,500 tablets / rf = 1,200 tablets, rf = 1,500 / 1,200 = 1.25 (not equal to 2) 1400, rf=3 (Option C): 1,500 tablets / rf = 1,400 tablets, rf = 1,500 / 1,400 = 1.07 (not equal to 3)",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 45,
+      "question": "What is the branch of statistics dealing with method of data collection and counting?",
+      "options": {
+        "A": "Theoretical statistics",
+        "B": "Descriptive statistics",
+        "C": "Analytical statistics",
+        "D": "Inferential statistics"
+      },
+      "correct_answer": "B",
+      "explanation": "methods for collecting, organizing, summarizing, and presenting data in an informative way. This includes techniques such as counting, calculating averages, and representing data in charts, tables, or graphs. It focuses on presenting the data collected, such as through counts or frequency distributions. Theoretical statistics (Option A) deals with the development of statistical models and methods, but it doesn't primarily focus on data collection or counting. It is more concerned with the mathematical foundations of statistical theory. Analytical statistics (Option C) involves the process of using statistical methods to analyze and interpret data, especially through hypothesis testing, correlation, regression, etc. It goes beyond the initial counting and organization of data. Inferential statistics (Option D) involves using sample data to make generalizations or predictions about a larger population. It includes methods like hypothesis testing, confidence intervals, and regression, but it doesn't focus on data collection and counting. Reference: Park’s Textbook of Preventive and Social Medicine, 25th Edition, Page 78 High Yield Biostatistics, 4th Edition, Page 1",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 46,
+      "question": "Regarding the given box-whisker plot, the true statement is:",
+      "options": {
+        "A": "Mean > Median > Mode",
+        "B": "Mode > Median > Mean",
+        "C": "Mode = Mean = Median",
+        "D": "Peaked symmetrical distribution"
+      },
+      "correct_answer": "A",
+      "explanation": "median, and the median is greater than the mode, implying a positively skewed distribution. In such distributions, the tail extends towards higher values, affecting the mean more than the median. The mode represents the most common value(s), which can be lower than the mean and median in this scenario. Incorrect Options: B, C & D Reference: .",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q46_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 47,
+      "question": "To analyze the seasonal fluctuations of a disease in children, two groups were observed. One group was studied from June to July, while the other group, with similar characteristics, was observed from August to September. The appropriate statistical test to compare the data would be:",
+      "options": {
+        "A": "Chi square",
+        "B": "Paired t test",
+        "C": "Wilcoxan test",
+        "D": "ANOVA"
+      },
+      "correct_answer": "A",
+      "explanation": "categorical variables, commonly used to compare frequencies or proportions between groups. In this case, the seasonal variations of a disease in two different groups (June to July group and August to September group) can be compared using the Chi-square test to determine if there is a significant difference in disease occurrence between the two time periods. Incorrect Options: Option B. Paired t-test: The paired t-test is used to compare the means of two related groups or to assess the difference between two measurements taken on the same group at different time points. Option C. Wilcoxon test: The Wilcoxon test compares two independent groups when data aren't normally distributed or when t-test assumptions aren't met. It's for continuous variables, not categorical data or seasonal disease variations. Option D. ANOVA (Analysis of Variance): ANOVA is a statistical test used to compare means among three or more groups. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 48,
+      "question": "A study was conducted on two different samples for comparing variation between DBP and Vitamin D. The mean diastolic blood pressure is 110 with standard deviation 11 and the mean vitamin D level is 18 with standard deviation 3. Which of the following statement is true regarding the coefficient of variation (CV)?",
+      "options": {
+        "A": "CV of DBP is more than Vitamin D",
+        "B": "CV of Vitamin D is more than DBP",
+        "C": "Both DBP and Vitamin D have equal variability",
+        "D": "It cannot be ascertained from information provided"
+      },
+      "correct_answer": "B",
+      "explanation": "the mean diastolic blood pressure (DBP) is 110 with a standard deviation of 11, and the mean vitamin D level is 18 with a standard deviation of 3. CV of DBP = (11 / 110) * 100 = 10% CV of Vitamin D = (3 / 18) * 100 ≈ 16.67% Comparing the CV values, we can see that the CV of DBP (10%) is lower than the CV of Vitamin D (16.67%). Thus, Option B- CV of Vitamin D is more than that of DBP is correct. Incorrect Options: Option A. states that the CV of DBP is more than Vitamin D, which is incorrect based on the calculated CV values. Option C. suggests that both DBP and Vitamin D have equal variability, which is also incorrect since the CV values differ. Option D. states that it cannot be ascertained from the information provided, but we can determine the relative variability based on the given data. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 49,
+      "question": "The margin of error will vary according to the sample sizes, with sample 1 having the largest size of 1000, followed by sample 2 with a size of 800, and sample 3 with the smallest size of 600.",
+      "options": {
+        "A": "3>2>1",
+        "B": "3>1>2",
+        "C": "1>2>3",
+        "D": "1=2=3"
+      },
+      "correct_answer": "A",
+      "explanation": "standard deviation suggests greater dispersion. Increased standard deviation means more spread in the dataset, making it less reliable. Conversely, lower standard deviation implies less spread and increased reliability. Therefore, first set is more reliable than the third set in this graph. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 50,
+      "question": "Study A(red) and Study B(blue) done in a given population yields two different distribution curves as shown below. Comparing both the curves, which of the following will be true?",
+      "options": {
+        "A": "Mean = mode = median",
+        "B": "Mean = median, not equal to mode",
+        "C": "Mean, median, mode not equal",
+        "D": "Mode = median, not equal to mean"
+      },
+      "correct_answer": "B",
+      "explanation": "the median, but not equal to the mode for both Study A and Study B. This option indicates that the distribution curves have a symmetric shape, where the mean and median are located at the center, but the mode may differ. This option aligns with the information provided and is the correct answer. Incorrect Options: Option A . Mean = mode = median: Option A suggests that the measures of central tendency are equal for both Study A and Study B. However, this conclusion may not be accurate based on the provided information and the comparison of the curves. Option C . Mean, median, mode not equal: Option C implies that the central tendency measures differ between Study A and Study B, indicating varied shapes and positions of their distribution curves. However, this conclusion may not be accurate given the provided details and the need to compare the curves. Option D . Mode = median, not equal to mean: Option D proposes that the mode equals the median but not the mean for both Study A and Study B. However, this conclusion might not be accurate given the provided details and curve comparison. Reference: .",
+      "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q50_q.jpg",
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 51,
+      "question": "What is the purpose of conducting a significance test for two or more proportions?",
+      "options": {
+        "A": "Chi- square test",
+        "B": "Student's test",
+        "C": "Z test",
+        "D": "ANOVA test"
+      },
+      "correct_answer": "A",
+      "explanation": "between categorical variables . In the case of comparing proportions, the chi-square test can be applied to analyze contingency tables or cross-tabulations of categorical data. It determines if the observed proportions differ significantly from the expected proportions under the null hypothesis of no association or difference. Incorrect Options : Options B. Student's test :The t-test compares means between two groups and isn't suitable for comparing proportions because it deals with continuous, not categorical, data. Options C. Z test:The Z test compares proportions with a known population standard deviation, assuming a normal distribution, which isn't always practical since standard deviations are often unknown in real-world scenarios . Options D. ANOVA test: ANOVA compares means across multiple groups but isn't suitable for comparing proportions, which are categorical variables.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 52,
+      "question": "You have gone to a sub center as part of an audit. How many infants should be registered in a year with a health worker working there?",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "150",
+        "D": "200"
+      },
+      "correct_answer": "C",
+      "explanation": "worker at the subcenter. This number is a more reasonable estimate and aligns with the expected workload of a subcenter. It allows for adequate monitoring and provision of healthcare services to a considerable number of infants within a year. Incorrect Options: Option A . 50: This number seems quite low considering the population and the expected workload of a subcenter. Option B . 100: Subcenters often serve a larger population and aim to provide comprehensive healthcare to a significant number of infants. Option D . 200: While this number is higher than the other options, it may be on the higher side for a typical subcenter. The workload of a health worker at the sub center needs to be balanced to ensure quality care and effective management of healthcare services. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 53,
+      "question": "The chi-square test is used to test the significance of the association between:",
+      "options": {
+        "A": "Age and serum cholesterol level",
+        "B": "Heart rate and body mass index",
+        "C": "Sex and type of cancer",
+        "D": "Weight of a patient before and after a treatment"
+      },
+      "correct_answer": "C",
+      "explanation": "the Chi-square test. This involves investigating whether there's a significant association between the variables \"sex\" (male or female) and \"type of cancer\" (e.g., lung, breast). The test compares observed frequencies in a contingency table to expected frequencies under the assumption of independence between variables, determining if the association is statistically significant. Incorrect Options: Option A (Age and serum cholesterol level): The association between age and serum cholesterol level would typically be analyzed using correlation or regression analysis rather than the Chi-square test. Option B (Heart rate and body mass index): Similarly, the association between heart rate and body mass index would be more appropriately analyzed using correlation or regression analysis. Option D (Weight of a patient before and after treatment): The comparison of weight before and after treatment would typically be analyzed using paired t-tests or other appropriate statistical tests, depending on the specific research design and assumptions. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 54,
+      "question": "Which of the following statements correctly describes the findings of a well-designed cancer study that obtained similar remission rates of 33.2% for both a new treatment and the usual treatment, with a p-value of 0.04?",
+      "options": {
+        "A": "Both the treatments are equally effective",
+        "B": "Neither of the treatments is effective",
+        "C": "The new treatment is more effective than the usual treatment",
+        "D": "The information given is not adequate to compare the efficacy of the treatments"
+      },
+      "correct_answer": "C",
+      "explanation": "suggests a 4% chance of obtaining observed results, or more extreme results, if the null hypothesis is true. With a significance level of 0.05, results are statistically significant if the p-value is less than this threshold. Since 0.04 is below 0.05, we reject the null hypothesis, concluding the new treatment is more effective. While similar remission rates could be chance, statistical analysis indicates this difference isn't solely due to randomness.. Incorrect Options: Option A - Both the treatments are equally effective: The p-value of 0.04 signifies a significant difference between treatments, suggesting they aren't equally effective. Option B - Neither of the treatments is effective:The study didn't assess treatment effectiveness but compared remission rates between them. Since both treatments had identical remission rates, we can't conclude their ineffectiveness from this data. . Option D - The information given is not adequate to compare the efficacy of the treatments: The p-value of 0.04 indicates a statistically significant difference in remission rates between treatments, implying a meaningful efficacy difference.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 55,
+      "question": "Which of the following statements accurately describes non-parametric tests?",
+      "options": {
+        "A": "ANOVA is an example of a non-parametric test",
+        "B": "It is used for skewed distributions",
+        "C": "It involves the assumption that the data has a normal distribution",
+        "D": "It cannot be used for small sample sizes"
+      },
+      "correct_answer": "B",
+      "explanation": "skewed distributions. Unlike parametric tests, which make assumptions about the underlying distribution of the data (such as a normal distribution), non-parametric tests do not rely on these assumptions. Instead, they are designed to analyze data that may not meet the requirements of parametric tests, such as when the data is not normally distributed or when the data is ordinal or categorical. Incorrect Options: Option A: ANOVA is an example of a non-parametric test- ANOVA (Analysis of Variance) is an example of a parametric test, not a non-parametric test. Option C: It involves the assumption that the data has a normal distribution- non-parametric tests do not assume that the data has a normal distribution. In fact, they are specifically used when the data does not meet the assumption of normality. Option D: It cannot be used for small sample sizes: It is incorrect because non-parametric tests can be used with small sample sizes.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 56,
+      "question": "What is the most effective approach to graphically represent the variations in the occurrence of a disease within a specific geographical region throughout a period of time?",
+      "options": {
+        "A": "Line graph",
+        "B": "Histogram",
+        "C": "Ogive",
+        "D": "Tree diagram"
+      },
+      "correct_answer": "A",
+      "explanation": "changes in incidence over time. It displays disease incidence trends over time using connected data points. The x-axis shows chronological time, while the y-axis represents incidence rate or case numbers. The line illustrates how disease incidence changes, aiding in trend, pattern, and fluctuation identification. Incorrect Options: Option B - Histogram: A histogram is effective for showing data distribution but isn't ideal for visualizing changes in disease incidence over time since it doesn't capture temporal aspects. Option C - Ogive: An ogive aids in understanding cumulative data distribution but isn't suitable for depicting changes in disease incidence over time as it lacks clarity in temporal trends and patterns. Option D - Tree diagram: A tree diagram isn't suitable for showing changes in disease incidence over time as it doesn't capture temporal aspects or display quantitative data in a time series format.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 57,
+      "question": "What is the preferred test for evaluating the disparity in means between two groups in a study, where one group serves as the control?",
+      "options": {
+        "A": "Chi-square test",
+        "B": "Z test",
+        "C": "Unpaired T test",
+        "D": "Paired T test"
+      },
+      "correct_answer": "C",
+      "explanation": "unpaired T test, compares means of two independent groups. It's used for continuous data that are roughly normally distributed and commonly applied in studies with a control group to evaluate group differences. Incorrect Options: Options A. Chi-square test : The chi-square test is used to determine the association between categorical variables. Options B. Z test: The Z test is used to compare means when the population standard deviation is known. OptionsD. Paired T test: The paired T test, also known as the dependent samples T test, is used when comparing means of related or paired data.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 58,
+      "question": "Which of the following is not a measure of Dispersion?",
+      "options": {
+        "A": "Standard error",
+        "B": "Variance",
+        "C": "Range",
+        "D": "Mean"
+      },
+      "correct_answer": "D",
+      "explanation": "dispersion. To obtain the mean, the individual observations are first added together and then divided by the number of observations. Incorrect Options: Option A - Standard error- Standard error is a measure of the variability or dispersion of sample means around the population mean. Option B - Variance- Variance is a measure of dispersion that quantifies the spread of data points around the mean. Option C - Range- Range is a measure of dispersion that indicates the difference between the highest and lowest values in a dataset. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 59,
+      "question": "Please observe the provided image and choose the linear regression equation that matches the displayed graph.",
+      "options": {
+        "A": "y = 10 – x",
+        "B": "x = 10+y",
+        "C": "y = 11 + 2x",
+        "D": "x = 11 + 2y"
+      },
+      "correct_answer": "C",
+      "explanation": "variables appears to be a linear relationship, with a positive slope. The equation y = 11 + 2x represents this relationship accurately. It suggests that for every unit increase in x, y increases by 2 units, and the line intersects the y-axis at 11. Incorrect Options: Option A . y = 10 – x: This equation represents a line with a negative slope, which is not consistent with the positive slope observed in the graph. Option B . x = 10 + y: This equation represents a line with a slope of 1, where x increases by 1 unit for every unit increase in y. This is not consistent with the slope observed in the graph. Option D . x = 11 + 2y: This equation represents a line with a slope of 1/2, where x increases by 1 unit for every 2 unit increase in y. This is not consistent with the slope observed in the graph.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 60,
+      "question": "What is the most appropriate measure of central tendency when there is a diverse range of values within a community?",
+      "options": {
+        "A": "Mean",
+        "B": "Mode",
+        "C": "Median",
+        "D": "Standard deviation"
+      },
+      "correct_answer": "C",
+      "explanation": "groups where values span a wide spectrum. A data set's median is the value in the middle, with half of the values being greater than the median and the other half being less than the median. Extreme values or outliers, which have a significant impact on the mean, have no effect on the median. Incorrect Options Option A : Extreme values or outliers in the data set have an impact on the mean because they can significantly deviate the mean value from the majority of the data. Option B: Another way to measure central tendency is by using the mode, but this method is not appropriate for continuous data or data with a wide range of values. Option D : The standard deviation is not a measure of central tendency; rather, it is a measure of variability or spread in the data. Reference: .",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    },
+    {
+      "q_no": 61,
+      "question": "What is the best way to use a graphical representation to illustrate patterns and changes in the occurrence of diarrheal disease within a specific region?",
+      "options": {
+        "A": "Line graph",
+        "B": "Histogram",
+        "C": "Ogive",
+        "D": "Tree diagram"
+      },
+      "correct_answer": "A",
+      "explanation": "disease in a given area. A line graph effectively displays trends in diarrheal disease incidence over time. It utilizes an X-axis for time (e.g., years) and a Y-axis for incidence rate (e.g., cases per 100,000). By connecting data points with lines, it provides a clear visualization of changing trends and patterns in disease incidence Incorrect Options: Option B: Histogram Histograms are useful for analyzing large datasets and identifying patterns or trends. Option C: Ogive An ogive, or cumulative frequency curve visually illustrates how cumulative frequency increases with rising variable values.. Option D: Tree diagram A tree diagram visually represents potential outcomes of a choice or process. Reference: Ref: Park’s textbook of preventive medicine, edition: 25",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxpsm/Biostatistics-Previous_Year_Questions_Q61_exp.jpg",
+      "chapter_heading": "Biostatistics-Previous Year Questions"
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "meta": {
+    "title": "Statistical_Testing"
+  },
+  "questions": [
+    {
+      "text": "A researcher is studying the annual mortality rate in two Midwestern towns, Town A and Town B. The mortality rates by age bracket for the two towns are shown in Table 1: <br>&#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/zwS57u2KQ9_tQNVqCxPNJeL6Szi_sQL4/_.png\"></div><br>The age distribution of Town A is used as the reference (standardized) population and shown below: &#160;<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/EG_fcSg9Th_UHvLxGmmcNuY2Qd2Hd79M/_.png\"></div><br>Direct standardization is performed so that the mortality rates of the two towns can be better compared. Which of the following best approximates the age-adjusted mortality rate of Town B? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5%"
+        },
+        {
+          "id": 2,
+          "text": "6%"
+        },
+        {
+          "id": 3,
+          "text": "7%"
+        },
+        {
+          "id": 4,
+          "text": "8%"
+        },
+        {
+          "id": 5,
+          "text": "9% &#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Standardization&#160;</strong>is a technique used to allow populations to be compared even when there are differences in demography (e.g., age, gender) between the populations. This technique helps remove potential confounding variables. <br><br><strong>Direct standardization</strong> involves comparing differences in health events among populations by calculating age-adjusted rates. It can be used when the event distribution of each group within the populations being studied is known. The steps in performing direct standardization are as follows:<br><br>1. Choose a <strong>reference population</strong>.<br>2. Multiply each population of interest&#8217;s age-specific mortality rates by the number of individuals within each age group in the reference population.<br>3. Add up the number of expected deaths from all age groups. Then divide this value by the total number of individuals within the reference population to obtain the <strong>overall mortality rate</strong>.<br>4. Compare the age-standardized mortality rates between the different populations to draw conclusions.<br><br>Using the data provided in the question stem, the age-adjusted mortality rate of Town B can be calculated as follows: <br>&#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/kEUlI4JPRv20Hrcsnv4EL99_TLOdk0BY/_.png\"></div><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 5%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In this question, the population of Town A is used as the reference population. Direct standardization can be implemented by multiplying Town B&#8217;s age-specific mortality rates by the number of individuals within each age range in the reference population. This value can then be divided by the total number of individuals in the reference population to obtain the age-adjusted mortality rate, which is 8.1%. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 6%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In this question, the population of Town A is used as the reference population. Direct standardization can be implemented by multiplying Town B&#8217;s age-specific mortality rates by the number of individuals within each age range in the reference population. This value can then be divided by the total number of individuals in the reference population to obtain the age-adjusted mortality rate, which is 8.1%. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 7%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In this question, the population of Town A is used as the reference population. Direct standardization can be implemented by multiplying Town B&#8217;s age-specific mortality rates by the number of individuals within each age range in the reference population. This value can then be divided by the total number of individuals in the reference population to obtain the age-adjusted mortality rate, which is 8.1%. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 8%:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 9% &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In this question, the population of Town A is used as the reference population. Direct standardization can be implemented by multiplying Town B&#8217;s age-specific mortality rates by the number of individuals within each age range in the reference population. This value can then be divided by the total number of individuals in the reference population to obtain the age-adjusted mortality rate, which is 8.1%. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A primary care physician is studying the relationship between a patient&#8217;s height in centimeters and body weight in kilograms. Data from 300 patients were obtained and found to have a linear relation. The following regression model was obtained: &#160;<br><br><div>y(x) = -130 + 1.2x &#160;</div><div>r-coefficient = 0.85 &#160;</div><br>According to this model, which of the following would be the most likely body weight for an individual 180 cm in height? &#160;<br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Additional data is required to answer the question &#160;"
+        },
+        {
+          "id": 2,
+          "text": "65 kilograms &#160;"
+        },
+        {
+          "id": 3,
+          "text": "70 kilograms &#160;"
+        },
+        {
+          "id": 4,
+          "text": "90 kilograms &#160;"
+        },
+        {
+          "id": 5,
+          "text": "100 kilograms &#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "The physician in this vignette has observed that a linear relation exists between height and body weight. <strong>Linear regression,</strong> a statistical method that calculates an equation for the <strong>best fitting trend line</strong> for a set of data points, was performed to obtain the equation y(x) = -130 + 1.2x. Based on this equation, an individual with a height of 180 cm would have a predicted weight of 86 kg or approximately 90 kg. &#160; <br><br>Linear regression is used to predict the value of a <strong>continuous dependent variable&#160;</strong>(e.g., body weight, blood glucose level) based on a given set of independent variables. As in the case of this vignette, a simple linear regression can be performed when there is only one independent variable (e.g., height). In contrast, <strong>multiple linear regression</strong> can be achieved when multiple independent variables (e.g., height, body mass index) are present. &#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/afaHLT3TTAujRAp-oyz72CpeTLe2CJp6/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Additional data is required to answer the question &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Linear regression is a statistical method used to figure out the effect of an independent variable on a dependent variable. In this vignette, the physician is trying to determine the impact of height on weight. The equation provided in this vignette can be used to calculate the predicted weight of someone with a height of 180 cm.</span></div><div style='margin-bottom: 12px;'><strong>❌ 65 kilograms &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A linear relation exists between height and weight. Based on the equation provided in the vignette, an individual with a height of 180 cm would have an estimated weight of 86 kg or approximately 90 kg. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 70 kilograms &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A linear relation exists between height and weight. Based on the equation provided in the vignette, an individual with a height of 180 cm would have an estimated weight of 86 kg or approximately 90 kg. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 90 kilograms &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 100 kilograms &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A linear relation exists between height and weight. Based on the equation provided in the vignette, an individual with a height of 180 cm would have an estimated weight of 86 kg or approximately 90 kg. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An anesthesiologist is studying the effects of chronic low back pain on patients&#8217; quality of life. Which of the following values would the physician require to calculate the quality-adjusted life-year (QALY) associated with the condition? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Years of life lost due to complications of low back pain &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Cost of disability on public health infrastructure &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Years of a life lived with low back pain &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Utility weight associated with a diseased state &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Effects of specific risk factors on developing low back pain &#160;&#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Quality-adjusted life year </strong>(QALY) is a measure of disease burden and considers both the quality and quantity of life lived. To calculate QALY, two values are needed. The first value is the <strong>utility weight,</strong> which measures the quality of life associated with an illness/disability. A utility weight of 1 corresponds to perfect health, whereas death is assigned a value of 0. The second value is the <strong>number of years lived with disability/illness</strong>. &#160;These two values can be multiplied to calculate the QALY. &#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/QXNdubIESS6RshIHlnAjUT9XSp6Q6XSl/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Years of life lost due to complications of low back pain &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Disability-adjusted life years (DALY) measure overall disease burden, which is the impact of a health problem on an individual or in a population. DALY is calculated as the sum of the years lost due to premature death (YLL) and years lived with disability (YLD). In contrast, this physician is trying to calculate QALY, which equals the utility weight multiplied by the number of years lived with the illness/disability. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Cost of disability on public health infrastructure &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: QALY is calculated by multiplying the utility weight by the number of years lived with illness/disability. The QALY does not factor in the cost that a disability has on public health infrastructure. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Years of a life lived with low back pain &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Disability-adjusted life years (DALY) measure overall disease burden, which is the impact of a health problem on an individual or in a population. DALY is calculated as the sum of the years lost due to premature death (YLL) and years lived with disability (YLD). In contrast, this physician is trying to calculate QALY, which equals the utility weight multiplied by the number of years lived with illness/disability. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Utility weight associated with a diseased state &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Effects of specific risk factors on developing low back pain &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Measures such as relative risk or odds ratio can calculate the effects of a particular risk factor (e.g., history of trauma, lack of exercise) on developing low back pain. However, such measures are not required to calculate the quality-adjusted life-year (QALY). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher wants to study how smoking electronic cigarettes affects the risk of developing lung cancer. The researcher recruits 100 individuals who smoke electronic cigarettes and 100 nonsmokers for a prospective cohort study. She then follows the patients over a 10-year period. Which of the following associations is the researcher most likely to report? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Exposure odds ratio &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Prevalence odds ratio &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Case fatality rate &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Relative risk &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Number needed to treat &#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Relative risk</strong> (RR) is used to measure how strongly a risk factor in exposed individuals is associated with an outcome (e.g., death, injury, disease) and to help establish disease etiology. Relative risk is typically used to report the results of <strong>cohort studies</strong>. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Exposure odds ratio &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Exposure odds ratio is calculated in case-control studies. In contrast, data from cohort studies is typically reported via relative risk. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prevalence odds ratio &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Prevalence odds ratio is calculated in cross-sectional studies. In contrast, data from cohort studies is typically reported via relative risk. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case fatality rate &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Case fatality rate is used to measure the percentage of deaths occurring among those with disease. This study aims to measure the risk of developing lung cancer. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Relative risk &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ Number needed to treat &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Number needed to treat compares the effectiveness of different treatments. In contrast, this study aims to measure the risk of developing lung cancer in individuals who smoke electronic cigarettes. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A scientist is conducting a clinical trial to determine if a novel medication called Drug A is more effective than metformin in reducing the hemoglobin A1c (HbA1c) of patients with type II diabetes mellitus. In this trial, 100 participants are prescribed Drug A for six months, and another 100 are prescribed metformin for the same duration. The participants' HbA1c is measured at the end of the study. Which of the following statistical analyses would be most helpful in answering this researcher's question? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "One-tailed t-test &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Two-tailed t-test &#160;"
+        },
+        {
+          "id": 3,
+          "text": "One-tailed analysis of variance test &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Two-tailed analysis of variance test &#160;"
+        },
+        {
+          "id": 5,
+          "text": "One-tailed chi-square test &#160;"
+        },
+        {
+          "id": 6,
+          "text": "Two-tailed chi-square test &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "This researcher is trying to determine whether the hemoglobin A1c (HbA1c) of patients taking Drug A is significantly lower than patients taking metformin. The most appropriate statistical analysis to help answer these questions would be the<strong> one-tailed t-test. &#160; &#160;</strong><br><br>The <strong>t-test</strong> is used to determine whether the difference between the means of two samples is statistically significant. Additional statistical analyses frequently used in biomedical research include the <strong>analysis of variance</strong> (ANOVA) <strong>test</strong>, which compares the means of three or more groups, and the <strong>chi-square test</strong>, which compares categorical outcomes between groups. Depending on the initial study hypothesis, either a one-tailed or two-tailed test should be performed. &#160; &#160;<br><br>A <strong>one-tailed</strong> test should evaluate a hypothesis stating that a <strong>directional </strong>relation exists between variables (e.g. HbA1c of group A &lt; HbA1c of group B). In contrast, a <strong>two-tailed</strong> test should be used to evaluate a <strong>non-directional </strong>hypothesis (e.g. HbA1c of group A is different from that of group B). &#160; &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ One-tailed t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Two-tailed t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The t-test can determine whether the difference between two samples is statistically significant. A two-tailed t-test would be appropriate if the researcher tried to determine if the difference existed between the two groups regardless of direction. In contrast, the researcher in this vignette is only interested in identifying changes in a particular direction. A one-tailed t-test would be more appropriate.</span></div><div style='margin-bottom: 12px;'><strong>❌ One-tailed analysis of variance test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can evaluate the difference between three or more groups by comparing their means. In contrast, this clinical trial has two groups (patients taking Drug A and patients taking metformin). As a result, a t-test, particularly a one-tailed t-test, would be more appropriate. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Two-tailed analysis of variance test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can evaluate the difference between three or more groups by comparing their means. In contrast, this clinical trial has two groups (patients taking Drug A and patients taking metformin). As a result, a t-test, particularly a one-tailed t-test, would be more appropriate.</span></div><div style='margin-bottom: 12px;'><strong>❌ One-tailed chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test can evaluate whether the difference in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. In contrast, this clinical trial kept track of the participants' HbA1c levels, a continuous outcome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Two-tailed chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test can evaluate whether the difference in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. In contrast, this clinical trial kept track of the participants' HbA1c levels, a continuous outcome. As a result, a t-test would be more appropriate. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of investigators are trying to determine which type of statistical tests to use for an upcoming project. They come across different types of analysis of variance (ANOVA) tests. Which of the following statements best differentiates the repeated measures ANOVA test from the one-way ANOVA test?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Checks differences amongst 2 or more percentages or proportions of categorical outcomes &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Checks differences between the means of three or more related groups &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Evaluates the difference between the means of two groups for statistical significance &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Determines strength of relationship between two variables &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Aggregates data obtained from multiple studies &#160;"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "The<strong> repeated measures analysis of variance</strong> (ANOVA) test is the equivalent of the one-way ANOVA test but for <strong>related</strong>, non-independent groups. This test is also referred to as a within-subjects ANOVA test or ANOVA test for correlated samples. The repeated measures ANOVA test is often used to analyze results from the following types of studies: &#160;<br><br><strong>1) Changes in mean scores over three or more time points &#160;<br>2) Differences in mean scores under three or more different conditions &#160;&#160;</strong><br><br>For example, a researcher could be studying the cholesterol levels of the same group of patients at one, three, and six months after making modifications to their diet. In this example, the independent variable is &#8220;time&#8221; and the dependent variable is &#8220;cholesterol.&#8221; &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Checks differences amongst 2 or more percentages or proportions of categorical outcomes &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a chi-square test, as opposed to an ANOVA test. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Checks differences between the means of three or more related groups &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Evaluates the difference between the means of two groups for statistical significance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the purpose of a t-test. In contrast, a repeated measures ANOVA test is used to check differences between the means of three or more related groups. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Determines strength of relationship between two variables &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the correlation coefficient. In contrast, a repeated measures ANOVA test is used to evaluate the differences between the means of three or more related groups. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Aggregates data obtained from multiple studies &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes a meta-analysis, as opposed to an ANOVA test. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is studying a new vaccine for respiratory syncytial virus (RSV) in premature infants and is comparing it with the current standard of care treatment. 8% of infants who received the standard of care treatment developed symptomatic RSV, and 2% of infants who received the new vaccine developed symptomatic RSV. Which of the following is the relative risk reduction attributable to this new vaccine? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.06"
+        },
+        {
+          "id": 2,
+          "text": "0.10"
+        },
+        {
+          "id": 3,
+          "text": "0.25"
+        },
+        {
+          "id": 4,
+          "text": "0.75"
+        },
+        {
+          "id": 5,
+          "text": "2.00"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "The <strong>relative risk reduction</strong> (RRR) is the <strong>proportion of risk reduction </strong>attributable to the intervention as compared to a control. It is used to determine how much the treatment reduces the risk of negative outcomes. It can be calculated via one of two ways. &#160; <br><br>The first way involves dividing the difference in incidence between the treated and untreated groups by the incidence in the untreated group: &#160; <br><br>RRR &#160;= (P(symptomatic RSV infection in unvaccinated infants) - P(symptomatic RSV infection in vaccinated infants)) / P(symptomatic RSV infection in unvaccinated infants) = (0.08-0.02) / 0.08 = 0.75 &#160; <br><br>Alternatively, RRR can be calculated by using the equation <strong>1 - relative risk (RR)</strong>. In this study, 2% of vaccinated infants developed RSV and 8% of unvaccinated infants developed RSV. Therefore, the relative risk is 0.02/0.08 = 0.25, and thus, RRR = 1 - 0.25 = 0.75. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.06:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the absolute risk reduction. In contrast, this question is asking for the relative risk reduction. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.10:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The relative risk reduction (RRR) is the proportion of risk reduction attributable to the intervention as compared to a control. It can be calculated by dividing the difference in incidence between the treated and untreated groups (0.08 - 0.02 = 0.06) by the incidence in the untreated group (0.08), which equals 0.75. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.25:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the relative risk of developing symptomatic RSV infection in the infants who have been vaccinated. Relative risk is calculated by dividing the probability of a given event in the exposed/treated population by the probability of the event occurring in the unexposed/untreated population. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 0.75:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 2.00:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The relative risk reduction (RRR) is the proportion of risk reduction attributable to the intervention as compared to a control. It can be calculated by dividing the difference in incidence between the treated and untreated groups (0.08 - 0.02 = 0.06) by the incidence in the untreated group (0.08), which equals 0.75. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is trying to determine the disability-adjusted life years (DALY) associated with rheumatoid arthritis. Which of the following values is necessary to calculate the DALY? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Years of life lost due to premature death &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Utility weight associated with a diseased state &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Years of healthy life lived &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Cost of disability on public health infrastructure &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Effects of specific exposure on developing a disability &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Disability-adjusted life years </strong>(DALY) is a measure of overall disease burden, which is the impact of a health problem on an individual or population. The DALY is the sum of the <strong>years of lost life due to premature death</strong> (YLL) and <strong>years lived with disability</strong> (YLD), which are calculated as follows: &#160; <br><br>YLL = number of deaths * standard life expectancy at the age of death in years &#160;YLD = number of incident cases * disability weight * average duration of disability in years<br>&#160; &#160;<br>Disability weight is defined as how much a medical condition affects a person. This is determined by disease or disability and does not vary with age. Tables have created thousands of illnesses and disabilities, ranging from loss of fingers to deafness, with the disability weight meant to indicate the level of disability that results from the specific condition. &#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/Y0sk2kzKSaCtIneqDnkA83etRBe08JgX/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Years of life lost due to premature death &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Utility weight associated with a diseased state &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The utility weight associated with a particular health state is used to calculate the quality-adjusted life-year (QALY) but not the disability-adjusted life year (DALY). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Years of healthy life lived &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The disability-adjusted life year is calculated as the sum of the number of years lost due to premature death and the number of years lived with disability. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Cost of disability on public health infrastructure &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The disability-adjusted life year is calculated as the sum of the number of years lost due to premature death and the number of years lived with disability. The DALY does not factor in the cost that a disability has on the public health system. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Effects of specific exposure on developing a disability &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Measures such as relative risk can calculate the effects of a particular exposure (e.g., smoking, asbestos) on developing a condition. However, such measures are not required to calculate the disability-adjusted life year (DALY). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is evaluating data obtained from a study examining the effects of rosuvastatin on low-density lipoprotein (LDL) levels. The experimental group consisted of 250 randomly selected individuals prescribed rosuvastatin for six months. The control group consisted of 300 randomly selected individuals prescribed placebo pills. The changes in LDL levels were measured at the end of the study. Which of the following statistical analyses should the researcher perform to determine if rosuvastatin therapy led to a statistically significant change in LDL levels? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Analysis of variance &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 3,
+          "text": "Two-sample t-test &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Fisher exact test &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Paired t-test"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "This researcher evaluates whether rosuvastatin therapy will lead to a statistically significant change in low-density lipoprotein (LDL) levels. Since the subjects in the statin and placebo groups are unpaired, the most appropriate statistical analysis would be the<strong> two-sample</strong> (unpaired)<strong> t-test</strong>. &#160; &#160;<br><br>The t-test is a parametric test used to determine whether the difference between the <strong>means </strong>of two samples is <strong>statistically significant</strong>. A <strong>two-sample</strong> (unpaired)<strong> t-test </strong>can compare means obtained from two groups of individuals wherein <strong>no subject pairing</strong> is utilized (e.g. HbA1c of 25 patients receiving Drug A vs. HbA1c of 25 different patients receiving placebo). In contrast, a <strong>paired t-test</strong> can be used to compare means obtained from the same group of individuals at different time points (e.g. HbA1c before treatment vs. HbA1c after treatment) or matched pairs of individuals (e.g. each experimental group subject is paired with a control group subject of the same age). &#160; &#160;<br><br>Each t-test has a <strong>null hypothesis</strong>, which typically postulates no significant difference exists, and an <strong>alternate hypothesis</strong>, which postulates that a significant difference exists. To test the hypothesis, the t-test is performed (often via a computer or calculator). A t-score is obtained, which can be compared to a critical value to answer whether the difference is significant. &#160; &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can evaluate the difference between 3 or more groups by comparing their means. In contrast, this study has two groups (change in LDL among patients taking rosuvastatin, change in LDL among patients taking placebo). As a result, a t-test would be more appropriate.</span></div><div style='margin-bottom: 12px;'><strong>❌ Chi-square test:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test can evaluate whether the difference in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. In contrast, this study monitored LDL levels, a continuous outcome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Two-sample t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Fisher exact test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Fisher exact test is a nonparametric test that evaluates whether differences in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups are statistically significant. The Fisher exact test can be used in scenarios when the chi-square test cannot, such as small sample sizes.</span></div><div style='margin-bottom: 12px;'><strong>❌ Paired t-test:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The t-test determines whether the mean between two samples is statistically significant. A paired t-test can compare the mean obtained from the same group of individuals at different time points. No subject pairing was used in this study. Therefore, a two-sample (unpaired) t-test would be more appropriate.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A phase III clinical trial is testing the efficacy of a novel checkpoint inhibitor as immunotherapy for treatment of metastatic melanoma with central nervous system involvement. The primary endpoint of the study is mortality at 1 year and 350 patients are enrolled in the study. Study results are shown below. What is the number needed to treat for this novel checkpoint inhibitor? &#160;<br><strong><br><table><tbody><tr><td>&#160;</td><td>&#160;Number of patients who did not survive&#160;</td><td>&#160;Number of patients alive after a year&#160;</td><td>&#160;Total number of patients&#160;</td></tr><tr><td>&#160;Intervention&#160;</td><td>&#160;60&#160;</td><td>&#160;90&#160;</td><td>&#160;150&#160;</td></tr><tr><td>&#160;No intervention&#160;</td><td>&#160;120&#160;</td><td>&#160;80&#160;</td><td>&#160;200&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.20"
+        },
+        {
+          "id": 2,
+          "text": "0.34"
+        },
+        {
+          "id": 3,
+          "text": "0.66"
+        },
+        {
+          "id": 4,
+          "text": "1.00"
+        },
+        {
+          "id": 5,
+          "text": "5.00"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<strong>Number needed to treat</strong> (NNT) is the number of individuals who must be treated, in a particular time period, for one person to benefit from treatment (e.g., not develop disease, not experience mortality). It is inversely related to the effectiveness of a treatment and, in particular, the absolute risk reduction (ARR). In other words, NNT = 1/ARR. &#160; <br><br>In this clinical vignette: ARR= P(mortality within 1 year in untreated group) - P(mortality within 1 year in treated group) = 0.6-0.4 = 0.2 &#160; <br><br>NNT = 1/0.2 = 5. &#160; <br><br>As a result, five patients need to be treated with this novel checkpoint inhibitor in order to improve the survival of one patient with metastatic melanoma with central nervous system involvement. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.20:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice is the absolute risk reduction, which is calculated by finding the difference in the mortality rate between patients who did and did not receive the novel checkpoint inhibitor. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.34:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the relative risk reduction. In contrast, this question is asking for the number needed to treat. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.66:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Number needed to treat (NNT) is the number of individuals who must be treated, in a particular time period, for one person to benefit from treatment. NNT is inversely proportional to the absolute risk reduction (ARR). In this clinical vignette, ARR is 0.20, and hence, NNT is 5.</span></div><div style='margin-bottom: 12px;'><strong>❌ 1.00:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Number needed to treat (NNT) is the number of individuals who must be treated, in a particular time period, for one person to benefit from treatment. NNT is inversely proportional to the absolute risk reduction (ARR). In this clinical vignette, ARR is 0.20, and hence, NNT is 5. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 5.00:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is studying the annual mortality rates of two Midwestern towns, Town A and Town B. The age distribution of the two towns are shown below: &#160;&#160;<br><br>Table 1: Age distribution of Town A and B<br><strong>&#160;<br><table><tbody><tr><td>&#160;Age Range&#160;</td><td>&#160;Number of individuals in Town A within each age range&#160;</td><td>&#160;Number of individuals in Town B within each age range&#160;</td></tr><tr><td>&#160;0-20&#160;</td><td>&#160;2,000&#160;</td><td>&#160;5,000&#160;</td></tr><tr><td>&#160;21-40&#160;</td><td>&#160;3,000&#160;</td><td>&#160;8,000&#160;</td></tr><tr><td>&#160;41-60&#160;</td><td>&#160;3,000&#160;</td><td>&#160;8,000&#160;</td></tr><tr><td>&#160;80+&#160;</td><td>&#160;2,000&#160;</td><td>&#160;4,000&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong><br>The recorded number of deaths in Town B is 2,000/year. The mortality rates by age bracket are available for only Town A and shown below: &#160;&#160;<br><br>Table 2: Mortality rates of Town A by age group <strong>&#160;<br><table><tbody><tr><td>&#160;Age range&#160;</td><td>&#160;Town A annual mortality rate&#160;</td></tr><tr><td>&#160;0-20&#160;</td><td>&#160;1%&#160;</td></tr><tr><td>&#160;21-40&#160;</td><td>&#160;5%&#160;</td></tr><tr><td>&#160;41-60&#160;</td><td>&#160;8%&#160;</td></tr><tr><td>&#160;80+&#160;</td><td>&#160;15%&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong><br><strong>Indirect standardization is performed using the mortality rates of Town A as the reference. Which of the following conclusions can be drawn from the above data? &#160;</strong>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Town B has a higher mortality rate &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Town A has a higher mortality rate &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Towns A and B have identical mortality rates &#160;&#160;"
+        },
+        {
+          "id": 4,
+          "text": "The differences in age distribution between Towns A and B is statistically significant. &#160;"
+        },
+        {
+          "id": 5,
+          "text": "The differences in mortality rates between Towns A and B can be attributed solely to differences in age distribution &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Standardization&#160;</strong>is a technique used to allow populations to be compared even when there are differences in demography (e.g., age, gender) between the populations. This technique helps remove potential confounding variables. &#160; &#160;<br><br><strong>Indirect standardization&#160;</strong>involves comparing differences in health events among populations by calculating age-adjusted rates. It can be used when the event distribution is unknown for one or more of the groups being studied. The steps in performing indirect standardization using the data provided in the question stem is as follows: &#160; <br><br>1. Multiply the number of individuals within each age bracket by the mortality rates of the reference population to calculate the expected number of deaths for Town B <br>&#160;<br><table><tbody><tr><td>&#160;Age Range&#160;</td><td>&#160;Number of individuals within each age range (Town B)&#160;</td><td>&#160;Mortality rates by age group (reference)&#160;</td><td>&#160;Mortality rate * number of individuals&#160;</td></tr><tr><td>&#160;0-20&#160;</td><td>&#160;5,000&#160;</td><td>&#160;1%&#160;</td><td>&#160;50&#160;</td></tr><tr><td>&#160;21-40&#160;</td><td>&#160;8,000&#160;</td><td>&#160;5%&#160;</td><td>&#160;400&#160;</td></tr><tr><td>&#160;41-60&#160;</td><td>&#160;8,000&#160;</td><td>&#160;8%&#160;</td><td>&#160;640&#160;</td></tr><tr><td>&#160;80+&#160;</td><td>&#160;4,000&#160;</td><td>&#160;15%&#160;</td><td>&#160;600&#160;</td></tr><tr><td>Expected number of deaths for Town B&#160;</td><td>&#160;1690&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><br>2. Calculate the standardized mortality ratio by dividing the observed number of deaths of Town B (2,000) by the expected number deaths (1,690), which yields 1.18.<br>&#160; &#160;<br>A standardized mortality ratio greater than 1 suggests that the inhabitants of Town B have a greater risk of mortality than those of the reference population (Town A). &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Town B has a higher mortality rate &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Town A has a higher mortality rate &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The standardized mortality ratio is calculated by dividing the observed number of deaths in Town B (2,000) by the expected number deaths (1,690; see Main Explanation for calculations). This calculation yields a standardized mortality ratio of 1.18, which suggests that the inhabitants of Town B have a greater risk of mortality than those of Town A. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Towns A and B have identical mortality rates &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The standardized mortality ratio is calculated by dividing the observed number of deaths in Town B (2,000) by the expected number deaths (1,690; see Main Explanation for calculations). This calculation yields a standardized mortality ratio of 1.18, which suggests that the inhabitants of Town B have a greater risk of mortality than those of Town A. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The differences in age distribution between Towns A and B is statistically significant. &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: In statistical hypothesis testing, statistical significance refers to the claim that results obtained from testing or experimentation are not likely to occur randomly or by chance. In contrast, no testing or experimentation was performed in this clinical vignette. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The differences in mortality rates between Towns A and B can be attributed solely to differences in age distribution &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Standardization is performed to account for differences in age distribution amongst the populations of interest. In this case, indirect standardization is performed and yields a standardized mortality ratio of 1.18. Since age has already been accounted for, it is likely that other factors (e.g. access to healthcare, tobacco use rates) are in play and contributing to the differences in mortality rate between Towns A and B. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is studying a new vaccine for respiratory syncytial virus (RSV) in premature infants and is comparing it with the current standard of care treatment. 8% of infants who received the standard of care treatment developed symptomatic RSV and 2% of infants who received the new vaccine developed symptomatic RSV. Which of the following is the absolute risk reduction attributable to this new vaccine? &#160;&#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.06"
+        },
+        {
+          "id": 2,
+          "text": "0.10"
+        },
+        {
+          "id": 3,
+          "text": "0.25"
+        },
+        {
+          "id": 4,
+          "text": "0.75"
+        },
+        {
+          "id": 5,
+          "text": "4.00"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "Absolute risk reduction (ARR) represents the difference in the risk of developing an outcome (e.g., disease, mortality) between the treated group and untreated group. It is calculated as follows: &#160; <br><br>ARR = (absolute risk in the unexposed group) - (absolute risk in the exposed group) = c/(c + d) - a/(a + b) &#160; <br><br>In this patient: ARR = 0.08 - 0.02 = 0.06. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ 0.06:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.10:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Absolute risk reduction compares the risk of developing an outcome in the treated group versus untreated group. In this clinical vignette, the probabilities of developing symptomatic RSV in unvaccinated and vaccinated infants are 8% and 2%, respectively. The difference between the two values is 6% (0.06) and represents the absolute risk reduction. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.25:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Absolute risk reduction compares the risk of developing an outcome in the treated group versus untreated group. In this clinical vignette, the probabilities of developing symptomatic RSV in unvaccinated and vaccinated infants are 8% and 2%, respectively. The difference between the two values is 6% (0.06) and represents the absolute risk reduction. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.75:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the relative risk reduction. In contrast, this question is asking for the absolute risk reduction attributed to the new vaccine. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 4.00:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the relative risk of developing symptomatic RSV infection in individuals who are vaccinated (when compared to those who are vaccinated). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A cardiologist is studying the effects of gender and the type of statin prescribed on patients' low-density lipoprotein (LDL) levels. In particular, the study will assess the effects of atorvastatin, rosuvastatin, and pravastatin. 50 male and 50 female participants will be assigned to take each type of statin for six months. A table illustrating the study design is as follows: &#160; <br><br><strong>Table 1: Number of participants in each study group</strong><br><table><tbody><tr><td><br></td><td><strong>Male</strong><br></td><td><strong>Female</strong><br></td></tr><tr><td><strong>Atorvastatin</strong><br></td><td>50</td><td>50</td></tr><tr><td><strong>Rosuvastatin</strong><br></td><td>50</td><td>50</td></tr><tr><td><strong>Pravastatin</strong><br></td><td>50</td><td>50</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><br>Afterwards, the LDL level for each participant is recorded. Which of the following statistical analyses should be performed to analyze the results of this study?<strong>&#160;&#160;</strong>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Unpaired t-test &#160;&#160;"
+        },
+        {
+          "id": 2,
+          "text": "Paired t-test &#160;"
+        },
+        {
+          "id": 3,
+          "text": "One-way analysis of variance &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Two-way analysis of variance &#160;"
+        },
+        {
+          "id": 5,
+          "text": "One-tailed chi-square test &#160;"
+        },
+        {
+          "id": 6,
+          "text": "Two-tailed chi-square test &#160;"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "The cardiologist examines if gender and the type of statin prescribed affect patients' low-density lipoprotein (LDL) levels. This study has two independent variables (i.e., statin type and gender) and six groups. A <strong>two-way analysis of variance</strong> (ANOVA) test would be most useful in helping answer the cardiologist&#8217;s question. &#160; <br><br>The ANOVA test is used to evaluate if there is a statistically significant difference between the means of<strong> three or more groups</strong>. It can only be applied for continuous outcomes, such as height, systolic blood pressure, or blood glucose level. &#160; <br><br>The ANOVA test can be divided into one-way ANOVA and factorial ANOVA. The <strong>one-way ANOVA</strong> should be used when there is only <strong>one independent variable</strong> (e.g., statin type). The <strong>factorial ANOVA</strong>, such as a two-way or three-way ANOVA, should be used when <strong>multiple independent variables</strong> are present. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Unpaired t-test &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: An unpaired t-test can be used to compare means obtained from two groups of individuals wherein no subject pairing is utilized (e.g. LDL of 25 patients receiving atorvastatin vs. LDL of 25 different patients receiving placebo). In contrast, the study described in this vignette has six groups. As a result, a t-test cannot be used to analyze the results of this study. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Paired t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A paired t-test can help compare means obtained from the same group of individuals at different time points (e.g. LDL before treatment vs. LDL after treatment) or matched pairs of individuals. The t-test can be used only when two groups are being compared. In contrast, the study described in this vignette has six groups. Thus, an analysis of variance (ANOVA) test would be more appropriate. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ One-way analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can evaluate the difference between 3 or more groups by comparing their means. A one-way ANOVA can be used if there is only one independent variable (e.g. statin type). In contrast, this study has two independent variables (i.e., statin type, gender). &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Two-way analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ One-tailed chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test is used to evaluate whether categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups are statistically significant. In contrast, this study kept track of the participants' LDL levels, a continuous outcome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Two-tailed chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test is used to evaluate whether categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups are statistically significant. In contrast, this study kept track of the participants' LDL levels, a continuous outcome. Thus, a chi-square test would be inappropriate for this situation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is investigating the association between the use of social media in teenagers and bipolar disorder. He gathers continuous data, which is divided into 2 groups: those who spend more than 2 hours per day on social media and those who spend less than 2 hours per day. The data is demonstrated below: &#160; &#160;<br><strong><br><table><tbody><tr><td>&#160;</td><td>&#160; More than 2 hours of social media daily&#160;</td><td>&#160;Less than 2 hours of social media daily&#160;</td></tr><tr><td>&#160;Bipolar disorder&#160;</td><td>&#160;300&#160;</td><td>&#160;200&#160;</td></tr><tr><td>&#160;No bipolar disorder&#160;</td><td>&#160;100&#160;</td><td>&#160;400&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong><br>Which of the following is the odds ratio for developing bipolar disorder among teenagers who spend more than 2 hours per day on social media, when compared to those who spend less than 2 hours per day. &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.17"
+        },
+        {
+          "id": 2,
+          "text": "0.67"
+        },
+        {
+          "id": 3,
+          "text": "1.50"
+        },
+        {
+          "id": 4,
+          "text": "2.25"
+        },
+        {
+          "id": 5,
+          "text": "6.00"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "An <strong>odds ratio&#160;</strong>compares the odds of developing a disease with exposure to a risk factor versus the odds of developing that disease without exposure. The odds ratio can be calculated as follows: &#160; <br><br>Odds ratio (OR) = (odds of disease in exposed individuals)/(odds of disease in unexposed individuals) = (300)(400)/(100)(200) = 6. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.17:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The odds ratio is calculated by dividing the odds of developing bipolar disorder in those who spend more than two hours on social media daily (300/100) by the odds of developing bipolar disorder in those who spend less than two hours daily (200/400). This calculation ultimately yields an answer of 6.</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.67:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The odds ratio is calculated by dividing the odds of developing bipolar disorder in those who spend more than two hours on social media daily (300/100) by the odds of developing bipolar disorder in those who spend less than two hours daily (200/400). This calculation ultimately yields an answer of 6.</span></div><div style='margin-bottom: 12px;'><strong>❌ 1.50:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The odds ratio is calculated by dividing the odds of developing bipolar disorder in those who spend more than two hours on social media daily (300/100) by the odds of developing bipolar disorder in those who spend less than two hours daily (200/400). This calculation ultimately yields an answer of 6. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 2.25:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the relative risk rather, as opposed to the odds ratio. The relative risk is calculated by dividing the probability of developing bipolar disorder in those who spend more than two hours daily on social media (300/400) by the probability in those who spend less than two hours daily (200/600). &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 6.00:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is studying the effects of psoriasis on cardiac disease. He identifies 200 patients with psoriasis and 200 patients without psoriasis. The patients are followed for 10 years. At the end of this period, the participants&#8217; charts are reviewed for myocardial infarction during this time interval, and the results are shown below. What is the relative risk of myocardial infarction in participants with psoriasis? &#160;<br><strong><br><table><tbody><tr><td>&#160;</td><td>&#160;Myocardial infarction&#160;</td><td>&#160;No myocardial infarction&#160;</td></tr><tr><td>&#160;Psoriasis&#160;</td><td>&#160;12&#160;</td><td>&#160;188&#160;</td></tr><tr><td>&#160;No psoriasis&#160;</td><td>&#160;4&#160;</td><td>&#160;196&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.04"
+        },
+        {
+          "id": 2,
+          "text": "0.06"
+        },
+        {
+          "id": 3,
+          "text": "0.50"
+        },
+        {
+          "id": 4,
+          "text": "0.75"
+        },
+        {
+          "id": 5,
+          "text": "3.0"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "Relative risk compares the probability of developing a disease between an exposed group and unexposed group. It is calculated as follows: &#160; <br><br>Relative risk (RR)= Probability of event in exposed population / Probability of event in unexposed population = (a/(a + b))/(c/(c + d)) &#160; <br><br>RR =(12/200)/(4/200) = 3.0. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.04:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The relative risk is calculated by dividing the probability of a given event in the exposed population by the probability of the event occurring in the unexposed population. In this scenario, the probability of developing myocardial infarction in patients with and without psoriasis are 0.06 and 0.02, respectively. As a result, the relative risk is 3. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.06:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The probability of having a myocardial infarction in individuals with psoriasis over the 10-year time period is 0.06. In contrast, this question is asking for the relative risk of myocardial infarction in individuals with psoriasis. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.50:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The relative risk is calculated by dividing the probability of a given event in the exposed population by the probability of the event occurring in the unexposed population. In this scenario, the probability of developing myocardial infarction in patients with and without psoriasis are 0.06 and 0.02, respectively. As a result, the relative risk is 3. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.75:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: 0.75 is the prevalence of psoriasis in individuals with myocardial infarction. In contrast, this question is asking for the relative risk of myocardial infarction in individuals with psoriasis. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 3.0:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A research team is conducting a study to assess the impact of LDL levels on cardiovascular disease in a middle-sized city. The population includes 50,000 men aged 50-75 years. The study results are summarized in the table below. Which of the following is the attributable risk of elevated LDL levels on developing cardiovascular disease? &#160;<br><strong><br><table><tbody><tr><td>&#160;</td><td>&#160;Cardiovascular disease&#160;</td><td>&#160;No cardiovascular disease&#160;</td></tr><tr><td>&#160;Elevated LDL levels&#160;</td><td>&#160;17,000&#160;</td><td>&#160;3,000&#160;</td></tr><tr><td>&#160;Normal LDL levels&#160;</td><td>&#160;15,000&#160;</td><td>&#160;15,000&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>&#160;</strong>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.35"
+        },
+        {
+          "id": 2,
+          "text": "0.41"
+        },
+        {
+          "id": 3,
+          "text": "1.70"
+        },
+        {
+          "id": 4,
+          "text": "2.86"
+        },
+        {
+          "id": 5,
+          "text": "5.67"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Attributable risk&#160;</strong>(AR) is the absolute difference between the risk of an outcome occurring in exposed individuals versus unexposed individuals. It can be calculated as follows: &#160;<br>&#160;<br>AR = (incidence risk in exposed group) - (incidence risk in unexposed group) &#160;<br>&#160;<br>For this patient: 17,000/20,000 - 15,000/30,000 = 0.35. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ 0.35:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.41:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Attributable risk is the absolute difference between the risk of a given outcome between exposed individuals and unexposed individuals. In this scenario, the attributable risk corresponds to the difference between the risk of cardiovascular disease in individuals with elevated LDL levels (0.85) and that in individuals with normal LDL levels (0.50), which equals 0.35. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 1.70:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice is the relative risk of developing cardiovascular disease in individuals with elevated LDL levels (compared to individuals with normal LDL levels). The relative risk is calculated by dividing the risk of disease in the exposed group by the risk of disease in the unexposed group, or 0.85/0.50 = 1.70. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 2.86:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: 2.86 is the number needed to harm, which is the inverse of the attributable risk, or 1/0.35 = 2.86. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 5.67:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the odds ratio of developing cardiovascular disease in individuals with elevated LDL levels (compared to individuals with normal LDL levels). &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher analyzes data collected from the clinical trial of a new antihypertensive drug. The study involves measuring each patient&#8217;s systolic blood pressure before and after taking the new medication. Which of the following assumptions should hold If the researcher were to analyze the data using a t-test? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Small sample size &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Normally distributed data &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Dose-response changes in blood pressure &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Biomodally distributed data &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Absence of outliers &#160;"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "The t-test, which can be subcategorized into paired and unpaired tests, is a <strong>parametric test</strong>. It determines whether the difference in systolic blood pressure before and after taking the new drugs is statistically significant. Typically, the difference is less than 0.05 or 5%. &#160; <br><br>In addition to the<strong> t-test,</strong> other parametric tests include the<strong> analysis of variance</strong> (ANOVA) <strong>test </strong>and<strong> Pearson&#8217;s r coefficient. &#160;&#160;</strong><br><br>When performing any parametric test, three key assumptions should be made about the population: &#160;<br><ol><li>First, subjects in the sample population must have been <strong>recruited randomly and independently</strong>. This caveat is important to ensure the results of the t-test can be applied to the general population and have good external validity. &#160;</li><li>The second assumption is that the data being analyzed follows a <strong>normal distribution</strong>. &#160;</li><li>The third assumption is that the data was obtained from a <strong>large sample size</strong> (N &gt; 30). </li></ol><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Small sample size &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Parametric tests, such as the paired t-test, should generally be used for data that is normally distributed and collected from a large sample size. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Normally distributed data &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Dose-response changes in blood pressure &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A dose-response change in blood pressure, wherein a more significant dose of the new antihypertensive drug leads to a greater decline in systolic blood pressure, can help support the drug&#8217;s effectiveness. However, this trend does not necessarily need to hold for a paired t-test for statistical analysis. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Biomodally distributed data &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The t-test assumes that the sample data is normally distributed. A nonparametric test (e.g., Wilcoxon signed-rank test, Mann-Whitney U test) should be used for data that is not normally distributed. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Absence of outliers &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Parametric tests, such as the paired t-test, often assume that the standard deviation is roughly similar between the two datasets of interest. If there are only a few outliers or if outliers are present in both datasets, then the standard deviation of the two datasets would nonetheless remain roughly identical. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A prospective cohort study is conducted to assess the relationship between LDL-C levels and the incidence of heart disease. Results reveal a 10-year relative risk of 2.3 (p=0.001) for individuals with elevated LDL-C levels when compared to individuals with normal LDL-C levels. Which of the following statements is the best interpretation of this reported association? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Elevated LDL-C levels neither increases nor decreases the risk of developing heart disease &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Elevated LDL-C levels increases the risk of developing heart disease &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Elevated LDL-C decreases the risk of developing heart disease &#160;"
+        },
+        {
+          "id": 4,
+          "text": "The results obtained are not statistically significant &#160;"
+        },
+        {
+          "id": 5,
+          "text": "The 95% confidence interval for relative risk includes 1 &#160;"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "The interpretation of the relative risk (RR) is as follows: &#160;<br>-RR = 1: Exposure neither increases nor decreases the risk of the defined outcome. &#160;<br>-RR &gt; 1: Exposure increases the risk of the outcome. &#160;<br>-RR &lt; 1: Exposure decreases the risk of the outcome. &#160; <br><br>Therefore, a RR of 2.3 and p-value of 0.001 signifies that elevated --LDL-C levels (exposure) are associated with an increased risk of developing heart disease (outcome). &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Elevated LDL-C levels neither increases nor decreases the risk of developing heart disease &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice would be correct if the relative risk was equal to 1. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Elevated LDL-C levels increases the risk of developing heart disease &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Elevated LDL-C decreases the risk of developing heart disease &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice would be correct if the relative risk was less than 1. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The results obtained are not statistically significant &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: A p-value of less than 0.05 is generally suggestive of statistically significant results. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ The 95% confidence interval for relative risk includes 1 &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: If the 95% confidence interval for relative risk includes 1, then it suggests the results are statistically insignificant. In contrast, this study has a p-value of 0.001, which indicates statistical significance, and therefore, the confidence interval should not include 1. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A surgeon is studying how different surgical techniques impact the healing of tendon injuries. He will compare three different suture repairs biomechanically to determine maximum load. He collects data on 90 different tendons from an animal model. Thirty tendons were repaired using the suture techniques. Which is the most appropriate statistical method for analyzing the results of this study? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "One-way analysis of variance &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Chi-square test &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Pearson correlation coefficient &#160;"
+        },
+        {
+          "id": 4,
+          "text": "DeLong test &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Meta-analysis &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "The <strong>one-way analysis of variance (ANOVA)</strong> test determines whether there are any statistically significant differences between the <strong>means of &#8805;3 groups</strong>. It requires one <strong>categorical independent variable </strong>(i.e. exposure) that is used to divide the study pool into &#8805;3 groups and a quantitative dependent variable (i.e. outcome) for which an average can be calculated. &#160; <br><br>In this study, the categorical independent variable is the type of suture used in the surgical repair. The quantitative dependent variable is the maximum load before tendon failure two weeks after repair. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ One-way analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test can evaluate whether the difference in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. In contrast, this study kept track of the maximum load before tendon rupture, a continuous outcome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Pearson correlation coefficient &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Pearson correlation coefficient determines whether two continuous variables are correlated. It would not be appropriate to analyze results from three discrete testing groups. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ DeLong test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The DeLong test can evaluate whether differences in the area under the curve (AUC) of two groups are statistically significant. However, the DeLong test is not used to evaluate statistical significance between several groups' means. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Meta-analysis &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Meta-analysis involves pooling data from several studies to perform an analysis with greater statistical power than the individual studies alone.</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher analyzes data for a new antihyperglycemic medication called Drug X. The study involved 300 participants. Each participant&#8217;s baseline fasting blood glucose level was measured. Afterward, participants were administered Drug X, and repeat measurements were obtained. The researcher is interested in knowing if Drug X reduces fasting blood glucose. Which of the following statistical analyses should the researcher perform? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Analysis of variance &#160;&#160;"
+        },
+        {
+          "id": 2,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 3,
+          "text": "DeLong test &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Fisher exact test &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Paired t-test &#160;"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "The researcher is trying to determine whether the same group of individuals had a statistically significant decline in fasting blood glucose after initiating Drug X. The most appropriate statistical analysis would be the <strong>paired t-test</strong>. &#160; <br><br>The t-test is a parametric test used to determine whether the difference between the <strong>means </strong>of two samples is <strong>statistically significant</strong>. A <strong>paired</strong> <strong>t-test</strong> can compare means obtained from the same group of individuals (e.g. HbA1c before treatment vs. HbA1c after treatment) or matched pairs of individuals. In contrast, an <strong>unpaired t-test</strong> can compare means obtained from two different groups of individuals (e.g. HbA1c of 25 patients receiving Drug A vs. HbA1c of 25 additional patients receiving Drug B). &#160; <br><br>Each t-test has a <strong>null hypothesis</strong>, which typically postulates no significant difference exists, and an <strong>alternate hypothesis</strong>, which postulates that a significant difference exists. &#160;The t-test is performed (often via a computer or calculator), and a t-score is obtained, which can be compared to a critical value to answer whether the difference is significant. &#160;<br><div><img src=\"https://d16qt3wv6xm098.cloudfront.net/Y4_sne4pTumY94FYaVOewI6hTLOuRlvn/_.png\"></div><br><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Analysis of variance &#160;&#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can evaluate the difference between 3 or more groups by comparing their means. In contrast, this clinical trial has two groups (baseline fasting blood glucose and fasting blood glucose after Drug X therapy). As a result, a t-test would be more appropriate.</span></div><div style='margin-bottom: 12px;'><strong>❌ Chi-square test:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test can evaluate whether the difference in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. In contrast, this clinical trial kept track of fasting blood glucose levels, a continuous outcome.</span></div><div style='margin-bottom: 12px;'><strong>❌ DeLong test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The DeLong test can evaluate whether differences in the area under the curve (AUC) of two groups are statistically significant. However, the DeLong test is not used to assess statistical significance between two means. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Fisher exact test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Fisher exact test is a nonparametric test that evaluates whether differences in categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups are statistically significant. The Fisher exact test can be used in scenarios when the chi-square test cannot, such as small sample sizes. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Paired t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An investigator is conducting a pilot study to evaluate the effects of Drug X and Drug Y on treating leukemia. Results are shown below in the following 2 by 2 contingency table: &#160;<br><strong><br><table><tbody><tr><td>&#160;</td><td>&#160;Cured&#160;</td><td>&#160;Not Cured&#160;</td><td>&#160;Total&#160;</td></tr><tr><td>&#160;Drug X&#160;</td><td>&#160;9&#160;</td><td>&#160;11&#160;</td><td>&#160;20&#160;</td></tr><tr><td>&#160;Drug Y&#160;</td><td>&#160;3&#160;</td><td>&#160;18&#160;</td><td>&#160;21&#160;</td></tr><tr><td>&#160;Total&#160;</td><td>&#160;12&#160;</td><td>&#160;29&#160;</td><td>&#160;41&#160;</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></strong><br>After completing the study, the investigator discovers that the percentage of patients who were cured after taking Drug X is much higher than that of patients taking Drug Y. Which of the following statistical tests was most likely used to draw this conclusion? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Analysis of variance &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Multiple logistic regression &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Fisher's exact test &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Pearson correlation coefficient &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Chi-square test &#160;"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "The <strong>Fisher exact test</strong> is used to evaluate whether differences in <strong>categorical outcomes</strong> (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between groups is statistically significant. The Fisher exact test can be used in scenarios when the chi-square test cannot, such as with small sample sizes (i.e. when there are <strong>less than five samples</strong> within each cell of the contingency table). The test calculates a p-value, which, if less than 0.05, is suggestive of a statistically significant difference. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can be used to evaluate the differences between three or more groups on a continuous variable. In contrast, this study has only two groups (Drug X versus Drug Y) and the outcome is categorical (cured versus not cured). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Multiple logistic regression &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Multiple logistic regression is used when there is a single dichotomous outcome variable and at least two independent variables. In contrast, this study has only one independent variable, which is whether the patient received the rotavirus vaccine. Hence, a multiple logistic regression would not be appropriate in this scenario. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Fisher's exact test &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation.</span></div><div style='margin-bottom: 12px;'><strong>❌ Pearson correlation coefficient &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect:</strong> The Pearson correlation coefficient describes the strength and polarity of a linear relationship between two continuous variables. The Pearson correlation coefficient does not, however, determine if the difference between two groups is statistically significant. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chi-square test is used to evaluate whether differences in the frequency of categorical outcomes (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between two or more groups is statistically significant. The chi-square test requires a relatively large sample size, with at least five samples in each cell of the contingency table. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A researcher is investigating the potential association between dairy consumption and breast cancer. She interviews 100 patients with breast cancer and 200 patients without breast cancer to assess how many average servings of dairy they consumed per week. Which of the following associations is the researcher most likely to report? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Exposure odds ratio &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Prevalence odds ratio &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Case fatality rate &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Relative risk &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Number needed to treat"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Odds ratio</strong> is used to measure the strength of an association between an exposure (e.g., risk factor, health characteristic) and an outcome (e.g., disease, mortality). The results of <strong>case-control studies</strong> are typically presented via an odds ratio. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Exposure odds ratio &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Prevalence odds ratio &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The prevalence odds ratio is calculated in cross-sectional studies. In contrast, this is a case-control study and results are typically reported as an exposure odds ratio. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Case fatality rate &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Case fatality rate is used to measure the percentage of deaths occurring among those with disease. This study aims to measure the effects of dairy consumption on the risk of developing lung cancer. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Relative risk &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Relative risk is typically used to report the findings of a cohort study. In contrast, this is a case-control study and results are typically reported as an exposure odds ratio. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Number needed to treat:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Number needed to treat is used to assess the effectiveness of different treatment options. In contrast, this study aims to measure the effects of dairy consumption on the risk of developing lung cancer. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A study was conducted at a large medical center to assess the association between rotavirus vaccine and the incidence of intussusception in pediatric patients. The patients were randomized into groups that either received the trial vaccine or a placebo injection. Data from the study is presented below. Which of the following analysis methods would be most appropriate to assess the statistical significance of these results? &#160;<br><br><table><tbody><tr><td><br></td><td>Intussusception within 6 months<br></td><td>No intussusception within 6 months<br></td><td>Total studied<br></td></tr><tr><td>Vaccine administered &#160; <br></td><td>421</td><td>671</td><td>1092</td></tr><tr><td>Vaccine not administered<br></td><td>263</td><td>524</td><td>787</td></tr><tr><td><br></td><td>784</td><td>1195</td><td><br></td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><br>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Analysis of variance &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Multiple logistic regression &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Paired t-test &#160;"
+        },
+        {
+          "id": 4,
+          "text": "Pearson correlation coefficient &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Chi-square test &#160;"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "The<strong> chi-square test </strong>is used to evaluate whether differences in the <strong>frequency of categorical outcomes</strong> (e.g., diabetic vs. non-diabetic, cancer vs. no cancer) between two or more groups is statistically significant. &#160; <br><br>In this study, the chi-square test can help evaluate whether differences in the incidence of intussusception between vaccinated versus unvaccinated patients is statistically significant. The null hypothesis can be rejected if a statistically significant difference exists between the groups. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ Analysis of variance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The analysis of variance (ANOVA) test can be used to evaluate the differences between three or more groups on a continuous variable. In contrast, this study has only two groups (treatment versus placebo group) and the outcome is categorical (intussusception versus healthy).</span></div><div style='margin-bottom: 12px;'><strong>❌ Multiple logistic regression &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Multiple logistic regression is used when there is a single dichotomous outcome variable and at least two independent variables. In contrast, this study has only one independent variable, which is whether the patient received the rotavirus vaccine. Hence, a multiple logistic regression would not be appropriate in this scenario. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Paired t-test &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The t-test is used to determine whether the difference between the means of two continuous variables is statistically significant. In contrast, in this clinical vignette, the outcome is a categorical variable (intussusception versus healthy). &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Pearson correlation coefficient &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The Pearson correlation coefficient describes the strength and polarity of a linear relationship between two continuous variables. The Pearson correlation coefficient does not, however, determine if the difference between two groups is statistically significant. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ Chi-square test &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A cohort study is conducted to assess the relationship between the consumption of foods with high saturated fat content and colorectal cancer in women aged 40-65. The cohort is followed for seven years, and the attributable risk is found to be 0.35. How many patients need to be exposed to foods with a high saturated fat content for one additional patient to develop colorectal cancer? &#160;&#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.35"
+        },
+        {
+          "id": 2,
+          "text": "0.41"
+        },
+        {
+          "id": 3,
+          "text": "1.70"
+        },
+        {
+          "id": 4,
+          "text": "2.86"
+        },
+        {
+          "id": 5,
+          "text": "5.67"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<strong>Number needed to harm</strong> (NNH) is the number of individuals who need to be exposed to a certain risk factor before one person develops a particularly adverse outcome. NNH is calculated as the inverse of the attributable risk. This relationship is mathematically expressed as follows: &#160; <br><br>NNH = 1/AR &#160; <br><br>For this study: NNH = 1/0.35 = 2.86. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0.35:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This answer choice describes the attributable risk, the absolute difference between the risk of a given outcome between exposed individuals and unexposed individuals. In contrast, this question is asking for the number needed to treat. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 0.41:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This question asks for the number needed to harm (NNH), which is the inverse of the attributable risk. As a result, since the attributable risk is 0.35, the NNH is 1/0.35 = 2.86. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 1.70:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This question asks for the number needed to harm (NNH), which is the inverse of the attributable risk. As a result, since the attributable risk is 0.35, the NNH is 1/0.35 = 2.86. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 2.86:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 5.67:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This question asks for the number needed to harm (NNH), which is the inverse of the attributable risk. As a result, since the attributable risk is 0.35, the NNH is 1/0.35 = 2.86. &#160;&#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    }
+  ]
+}

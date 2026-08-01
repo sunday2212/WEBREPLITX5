@@ -1,0 +1,597 @@
+{
+  "meta": {
+    "title": "60_Tests_Of_Significance"
+  },
+  "questions": [
+    {
+      "text": "Which of these tests is used in case of a nominal data?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Student’s t test"
+        },
+        {
+          "id": 2,
+          "text": "Analysis of variance"
+        },
+        {
+          "id": 3,
+          "text": "Chi-square"
+        },
+        {
+          "id": 4,
+          "text": "Paired t test"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Chi-square</strong> test deals with <strong>nominal/ non-parametric data&nbsp;</strong>(qualitative).</p>\n<p><strong>Nominal data</strong> is one with a name and does not have a numerical value. Ex blood group, gender, religion</p>\n<p>Student's t test, ANOVA, and paired t test are used for <strong>parametric data</strong> (quantitative).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2744",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is true for non-parametric tests?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ANOVA is an example of a non parametric test"
+        },
+        {
+          "id": 2,
+          "text": "It is used for skewed distributions"
+        },
+        {
+          "id": 3,
+          "text": "It involves the assumption that the data has a normal distribution"
+        },
+        {
+          "id": 4,
+          "text": "It cannot be used for small sample sizes"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Non-parametric tests</strong> are tests that do not assume that the data is normally distributed. Thus, they are used for <strong>skewed</strong> (asymmetric)<strong> distributions </strong>{skewed either to the lesser side (left-sided skewed) or towards the greater side (right-sided skewed)}.</p>\n<p>The <strong>chi-square test</strong> is an example of a non-parametric test that is used to test hypotheses in relation to nominal scale data or categorical data.</p>\n<p>ANOVA is an example of a parametric test.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC4556",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of these terms is used for paired t tests?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Independent samples t tests"
+        },
+        {
+          "id": 2,
+          "text": "Two samples t tests"
+        },
+        {
+          "id": 3,
+          "text": "Dependent samples t tests"
+        },
+        {
+          "id": 4,
+          "text": "One sample t tests"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Paired t tests are also called correlated pairs t test, paired samples t test, or dependent samples t test.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2746",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The test of significance done for two or more proportions:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi- square test"
+        },
+        {
+          "id": 2,
+          "text": "Student’s test"
+        },
+        {
+          "id": 3,
+          "text": "Z test"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA test"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Chi-Square(&chi;<sup>2</sup>) test</strong>&nbsp;is a test used for<strong>&nbsp;proportions&nbsp;</strong>and<strong>&nbsp;associations.</strong></p>\n<p>It is a <strong>non-parametric (non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7450",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A researcher can use the chi-square test in all of the following situations, except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "To test the hypothesis that drug A has the same potency as drug B"
+        },
+        {
+          "id": 2,
+          "text": "To calculate the degree of freedom of a 3 x 4 contingency table"
+        },
+        {
+          "id": 3,
+          "text": "To compare the mean corpuscular volume in normal subjects versus those suffering from hereditary spherocytosis"
+        },
+        {
+          "id": 4,
+          "text": "To compare the proportions of overweight boys and girls in a class"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The Chi-square test is not used for comparing means for different groups as means can only be calculated for quantitative data.</p>\n<p>The <strong>Chi-square test</strong> is used for <strong>qualitative data.</strong> It&nbsp;can be used:</p>\n<ul>\n<li>To test the null hypothesis</li>\n<li>To compare proportions</li>\n<li>To calculate the degree of freedom</li>\n</ul><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2769",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not true about the Chi-square test?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tests the significance of difference between two proportions"
+        },
+        {
+          "id": 2,
+          "text": "Tells about the presence or absence of an association between two variables"
+        },
+        {
+          "id": 3,
+          "text": "Directly measures the strength of association"
+        },
+        {
+          "id": 4,
+          "text": "It is usually used for skewed data"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>A <strong>Chi-square test</strong> does not directly measure the strength of association. It merely tells about the <strong>presence or lack of association</strong>.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2761",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A Chi-square test would be most appropriate for testing which of the following hypotheses?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The mean AIPGE score of Chennai students is greater than Mumbai students"
+        },
+        {
+          "id": 2,
+          "text": "A smaller proportion of people who were immunized against chicken pox subsequently develop zoster than those who were not immunized"
+        },
+        {
+          "id": 3,
+          "text": "The mean BP of indian, american and english hypertensive men taking ACE inhibitors is the same as that of indian, american and english hypertensive women on ACEIs"
+        },
+        {
+          "id": 4,
+          "text": "The mean cost of treating a patient with CAD by angioplasty is greater than the mean cost of providing medical treatment"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>Chi-square</strong> test is used to <strong>compare proportions</strong>&nbsp;or <strong>qualitative variables</strong> e.g., whether people developed zoster or not.</p>\n<p>Options A and D: Two independent groups are being compared with <strong>quantitative</strong> variables (exam scores and cost, respectively). Thus, an <strong>unpaired t test</strong> will be used.</p>\n<p>Option C: The blood pressure of <strong>3 groups</strong> are being compared, thus making <strong>analysis of variance (ANOVA)</strong> the most appropriate method of testing significance.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2750",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The test of choice to measure the difference in means between two groups in a study, with one group being a control is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 2,
+          "text": "Z test"
+        },
+        {
+          "id": 3,
+          "text": "Unpaired T test"
+        },
+        {
+          "id": 4,
+          "text": "Paired T test"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The test of choice to measure the difference in means between two groups in a study, with one group being a control is <strong>u</strong><strong>npaired</strong> <strong>T</strong> <strong>test</strong>.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7451",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A cardiologist wants to study the effect of the atorvastatin drug. She measures the initial cholesterol levels of 50 patients. After a month's treatment, she measures the cholesterol level again. Which of the following tests will she use to test the statistical significance of the change in the cholesterol level?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paired t test"
+        },
+        {
+          "id": 2,
+          "text": "Unpaired t test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Chi-square test"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In this scenario, the <strong>variable</strong> (cholesterol level) is <strong>quantitative.&nbsp;</strong>Moreover, the <strong>comparison</strong> is being done <strong>before</strong> and <strong>after</strong> the <strong>treatment</strong>&nbsp;(dependent)<strong>.</strong>&nbsp;Hence, a&nbsp;<strong>paired t test</strong>&nbsp;will be used.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2749",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a particular trial, the association of lung cancer with smoking is found to be 40% in one sample and 60% in another. What is the best test to compare the results?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 2,
+          "text": "Fischer test"
+        },
+        {
+          "id": 3,
+          "text": "Paired t test"
+        },
+        {
+          "id": 4,
+          "text": "Unpaired test"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Chi-square tests</strong> are best used in comparing<strong> proportions </strong>and<strong> associations.</strong></p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2751",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A pediatrician carried out a study to assess the difference in growth velocities in boys and girls. The average height of a group of 20 boys aged 10 years was 140 ± 13 cm and for 20 girls of the same age was 135 ± 7 cm. To test the statistical significance of the difference in height, which test would she use?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi square test"
+        },
+        {
+          "id": 2,
+          "text": "Paired t test"
+        },
+        {
+          "id": 3,
+          "text": "Student t test"
+        },
+        {
+          "id": 4,
+          "text": "Analysis of variance test"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In the given scenario, two independent groups are being compared with quantitative variables. Thus, a&nbsp;<strong>student t test</strong> or&nbsp;<strong>unpaired t-test</strong>&nbsp;is used.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2752",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A clinical trial was done between two groups to measure their blood pressure after treatment. Which of the following tests would be appropriate to use?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paired t test"
+        },
+        {
+          "id": 2,
+          "text": "Unpaired t test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Chi-square test"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In the given scenario, two groups are being compared independent of each other. Hence,&nbsp;<strong>students&nbsp;t test/ unpaired</strong> t test should be used.</p>\n<p><strong>T tests</strong>&nbsp;are used if&nbsp;<strong>2 groups&nbsp;</strong>are being compared. If the same group is compared before and after, <strong>paired T test is used.</strong> Otherwise, unpaired T test is used.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6993",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Analysis of variance test is used in which scenario among the following?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Comparing proportions in more than 2 groups"
+        },
+        {
+          "id": 2,
+          "text": "Comparing means in more than 2 groups"
+        },
+        {
+          "id": 3,
+          "text": "Comparing means in same groups before and after intervention"
+        },
+        {
+          "id": 4,
+          "text": "Comparing means in less than or equal to 2 groups"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Analysis of variance</strong> or <strong>ANOVA</strong> is used when <strong>more than 2 groups are compared</strong> for a quantitative difference (means).</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2768",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study was done to assess nutritional status among young children in rural and urban areas. 30 children in rural and 20 children in urban areas were malnourished. Which of the following tests of significance is the most appropriate in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chi Square test"
+        },
+        {
+          "id": 2,
+          "text": "Paired T test"
+        },
+        {
+          "id": 3,
+          "text": "Standard error of the mean"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The most appropriate test of significance, in this case, is the <strong>c</strong><strong>hi-square test. </strong>It is used to compare <strong>qualitative data</strong>&nbsp;between&nbsp;<strong>2 groups</strong> with independent measures.</p>\n<p>Option B: <strong>Paired t-test</strong> compares paired data or pre<strong>-</strong>intervention and post-intervention data of the same group. This doesn't apply here as the groups are not paired.</p>\n<p>Option C: The standard error of the mean is calculated for quantitative data, with a measure of central tendency as mean.</p>\n<p>Option D: <strong>ANOVA</strong> is used to compare<strong> more than 2 groups.</strong></p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD0843",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study was conducted to compare the incidence of postpartum depression in mothers as compared to the sex of the child. For assessment, Edinburg Depression scaled score (EDSS) was used. The study was divided into mothers with male babies as one group to be compared with mothers with female babies. Which of the following statistical test will be used to determine the association?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Students t test"
+        },
+        {
+          "id": 2,
+          "text": "Paired t test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Chi square test"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The Chi-square test is used to compare <strong>qualitative</strong> data and compares<strong> 2 groups</strong> with independent measures. The variables used here are yes/no signifying the presence/absence of postpartum depression. Hence it is the most appropriate test here.</p>\n<p>Option A: Student’s t-test is for quantitative data. Here the data is qualitative, hence it can't be used.</p>\n<p>Option B: Paired t-test compares paired data or pre-intervention and post-intervention data of the same group. This doesn't apply here as the groups are not paired.</p>\n<p>Option C: ANOVA is used to compare more than 2 groups.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9575",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is the most appropriate test for testing the statistical significance of the difference in heights of school children?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Student’s t test"
+        },
+        {
+          "id": 2,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 3,
+          "text": "Paired t test"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Analysis of variance</strong> or <strong>ANOVA</strong> is used when <strong>more than 2 variable groups</strong> are compared.</p>\n<p>In the scenario of comparing heights of school children, we would <strong>divide the school children</strong> into classes or grades or sections or by schools themselves, etc. This would involve comparing more than 2 groups and thus ANOVA is used.</p>\n<p>Remember if the question limits its comparison within 2 groups, for example, comparison between boys and girls in a class then we have to choose unpaired t test.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2760",
+      "difficulty": "medium"
+    },
+    {
+      "text": "An investigator wants to study the association between maternal intake of iron supplements and the incidence of low birth weight. He collects relevant data from 100 pregnant women regarding the status of usage of iron supplements and the status of birth weight in their newborns. Which of the following tests will he use for his study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paired t test"
+        },
+        {
+          "id": 2,
+          "text": "Student's t test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        },
+        {
+          "id": 4,
+          "text": "Chi-square test"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Here, two&nbsp;<strong>qualitative</strong>&nbsp;variables are being evaluated. First, whether the child belongs to the <strong>low birth weight category or not </strong>(and not the actual weight of the child, which is a quantitative value). Second, whether or not the mother took iron supplements in the gestational period. Hence, the&nbsp;<strong>chi-square test</strong> is used as the test the significance of the association.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2754",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study, two groups of newborns are checked for differences in their birth weights based on whether mothers received supplements or not. Which of the following would be most appropriate test of significance?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "ANOVA"
+        },
+        {
+          "id": 2,
+          "text": "Un-paired t test"
+        },
+        {
+          "id": 3,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 4,
+          "text": "paired t test"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The<strong> unpaired t-test</strong> is used to test the difference between two groups of parametric variables or <strong>means</strong> when the samples are <strong>independent</strong> of each other. Here, birth weights (quantitative variable) of the two groups of newborns are being compared, which are independent of each other.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2764",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was planned to find out the effect of iron supplementation during pregnancy on the birth weight of newborn children. Two groups, one with iron supplementation and the other without, were compared. Birth weights of newborns were recorded as means + SD. Which statistical test is appropriate for the comparison of birth weights between the two groups?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Paired t test"
+        },
+        {
+          "id": 2,
+          "text": "Unpaired t test"
+        },
+        {
+          "id": 3,
+          "text": "Chi-square test"
+        },
+        {
+          "id": 4,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In the given scenario, we aim to compare only the <strong>birth</strong> <strong>weights</strong> of the <strong>two</strong> <strong>groups</strong>, which is a&nbsp;<strong>quantitative </strong>data<strong>, </strong>and thus an<strong> unpaired t test </strong>is most appropriate.</p><hr><h3>Related Pearl: Tests of Significance</h3><p><strong>How to choose which test to use?</strong></p>\n<ul>\n<li>See the <strong>variable</strong>. Are the variables <strong>quantitative</strong> or <strong>qualitative</strong>?\n<ul>\n<li>If the variables are <strong>qualitative&nbsp;</strong>(<strong>nominal</strong>), then <strong>Chi square test</strong> is used.</li>\n<li>If the variables are <strong>quantitative</strong>, then see whether <strong>2 groups or more than 2 groups&nbsp;</strong>.\n<ul>\n<li>If <strong>2 groups </strong>are being tested, then <strong>T tests</strong> are used. In that, if the same group is tested before and after, paired T test is used. Otherwise, unpaired T test is used.</li>\n<li>If <strong>more than 2 groups</strong> are being tested, then use <strong>ANOVA</strong>.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>1. T Tests</strong></p>\n<ul>\n<li><strong>Unpaired t tests</strong>\n<ul>\n<li>Also known as the <strong>student&rsquo;s t test, independent t test, two-samples t test</strong>.</li>\n<li>It's the <strong>most commonly used t test</strong>&nbsp;and it tests the difference between two groups (the means of 2 groups)<strong> independent</strong> of each other<strong>&nbsp;</strong>and indicates how significant the differences are<strong>.</strong></li>\n</ul>\n</li>\n<li><strong>Paired t tests</strong>\n<ul>\n<li>\"Pairs <strong>before</strong>&nbsp;marriage are not the same <strong>after!\"</strong></li>\n<li>So remember the&nbsp;<strong>paired</strong> test is mainly used in the comparison of a&nbsp;<strong>before and after scenario</strong>&nbsp;</li>\n<li>Also known as<strong> correlated t test,</strong>&nbsp;<strong>dependent samples t test</strong>.</li>\n<li>It is mainly used on dependent samples.<strong>&nbsp;</strong>For example, the cholesterol level of a person before and after using a specific drug.</li>\n<li>It can also be used when you put the <strong>same condition</strong> under <strong>test</strong> <strong>using different items</strong> or things. For example, same crash safety tests for different cars.</li>\n</ul>\n</li>\n<li><strong>T scores</strong>&nbsp;\n<ul>\n<li>The t score is referred to as the <strong>ratio </strong>of<strong>&nbsp;</strong>the difference between two groups and the difference within the groups.</li>\n<li>The <strong>smaller </strong>the t score, the <strong>more similarity</strong> there is between two groups and vice versa.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>2</strong>. <strong>Analysis of Variance (ANOVA)</strong></p>\n<ul>\n<li>The analysis of variance test (<strong>ANOVA)</strong> is used to test the difference between two or usually<strong> more than two groups (means) </strong>and here the inferences are made by analyzing the variances.</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>3</strong>. <strong>Chi-Square Test</strong></p>\n<ul>\n<li>The <strong>Chi-Square test (&chi;<sup>2</sup>)</strong> is a <strong>non-parametric(non-numeric) test</strong> and it is used to test hypotheses in relation to <strong>nominal scale data or categorical data.</strong></li>\n<li>It is a <strong>test of proportions and associations.</strong></li>\n<li>A Chi-square distribution is usually<strong> positively skewed</strong> but it approaches a normal distribution as its degrees of freedom increases.</li>\n<li>If the <strong>frequency of any of the cells of the categorical table</strong> is&nbsp;<strong>&lt;5</strong>, then&nbsp;<strong>Fisher&rsquo;s exact test</strong> is used.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2765",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While applying the Chi-square test to a contingency table of 4 rows and 4 columns, what would the degree of freedom be in this case?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1"
+        },
+        {
+          "id": 2,
+          "text": "4"
+        },
+        {
+          "id": 3,
+          "text": "8"
+        },
+        {
+          "id": 4,
+          "text": "9"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In this scenario, df = (4 &ndash; 1) (4 &ndash; 1) = <strong>9.</strong></p>\n<p>In a <strong>Chi-square test</strong>&nbsp;for a <strong>contingency table,&nbsp;</strong>the <strong>degrees of freedom (df) = (r-1) (c-1),&nbsp;</strong>where r is the number of rows and c is the number of columns.</p>\n<p>&nbsp;</p><hr><h3>Related Pearl: Degrees of Freedom</h3><ul>\n<li>In general, <strong>degrees of freedom</strong> (<strong>df</strong>) is equal to the <strong>number of values minus the numbers of parameters estimated</strong> on the way to the obtaining a particular estimate. For example, if we want to estimate the variance between the heights of two people A and B, we would use the values of 2 heights to estimate 1 parameter. Thus, the degrees of freedom in this case would be 2 &ndash; 1 = 1.</li>\n<li>For a Chi-square contingency table, the <strong>df = (r-1) (c-1)</strong>, where <strong>r </strong>is the <strong>number of rows</strong> and <strong>c</strong> is the <strong>number of columns</strong>.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2755",
+      "difficulty": "easy"
+    },
+    {
+      "text": "In a Chi-square test for the following data, the degrees of freedom will be:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "12"
+        },
+        {
+          "id": 2,
+          "text": "6"
+        },
+        {
+          "id": 3,
+          "text": "9"
+        },
+        {
+          "id": 4,
+          "text": "20"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In this scenario,contingency table has <strong>3 rows and 4 columns</strong>. Hence, the degree of freedom, df = (3 – 1) (4 – 1) = <strong>6.</strong></p>\n<p>In a <strong>Chi-square test</strong> for a <strong>contingency table,</strong> the <strong>degrees of freedom (df) = (r-1) (c-1)</strong>, where r is the number of rows and c is the number of columns.</p><hr><h3>Related Pearl: Degrees of Freedom</h3><ul>\n<li>In general, <strong>degrees of freedom</strong> (<strong>df</strong>) is equal to the <strong>number of values minus the numbers of parameters estimated</strong> on the way to the obtaining a particular estimate. For example, if we want to estimate the variance between the heights of two people A and B, we would use the values of 2 heights to estimate 1 parameter. Thus, the degrees of freedom in this case would be 2 &ndash; 1 = 1.</li>\n<li>For a Chi-square contingency table, the <strong>df = (r-1) (c-1)</strong>, where <strong>r </strong>is the <strong>number of rows</strong> and <strong>c</strong> is the <strong>number of columns</strong>.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/93e2bf4f32dc4ae18ff93a6454c32c28.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2759",
+      "difficulty": "easy"
+    }
+  ]
+}

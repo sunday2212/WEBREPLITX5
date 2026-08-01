@@ -1,0 +1,150 @@
+{
+  "chapter": "Radiology",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "A 45-year-old patient is scheduled for an MRI of the brain to assess potential lesions. Which of the following best describes the fundamental principle of MRI?",
+      "options": {
+        "A": "Evaluate changes in magnetic field strength around tissues",
+        "B": "Alignment and relaxation of hydrogen nuclei",
+        "C": "Detection of thermal radiation emitted by tissues.",
+        "D": "Measurement of varying ionizing radiation absorption."
+      },
+      "correct_answer": "B",
+      "explanation": "field and then detecting the signals produced as these nuclei return to their equilibrium state (relaxation). Radiofrequency (RF) pulses excite hydrogen protons, and the emitted signals are captured and processed to generate detailed images of internal structures. MRI: Magnetic Resonance Imaging (MRI) is a noninvasive diagnostic technique that uses non-ionizing electromagnetic radiation, making it safer than CT scans, which involve ionizing radiation. (Option D) Principle: MRI operates on the principle of Nuclear Magnetic Resonance (NMR), utilizing a superconducting magnet to produce a strong magnetic field. Mechanism: MRI primarily works by aligning the hydrogen nuclei in the body's tissues with a strong magnetic field and then detecting the signals produced as these nuclei return to their equilibrium state (relaxation). Radiofrequency (RF) pulses excite hydrogen protons, and the emitted signals are captured and processed to generate detailed images of internal structures. Scan duration: Scans typically last from 10 minutes for simpler studies to about an hour for more complex examinations. Noise: The process is noisy due to the rapid switching of gradient coils ; hence, patients are provided hearing protection. Specialized Techniques: Advanced methods such as MR angiography (MRA), venography, perfusion imaging, spectroscopy, tractography, and functional MRI (fMRI) are used for specific, detailed evaluations. Evaluate changes in magnetic field strength around tissues (Option A): MRI focuses on the behavior of hydrogen nuclei rather than changes in magnetic field strength around tissues. Detection of thermal radiation emitted by tissues (Option C): This refers to Thermography, and MRI does not utilize thermal radiation for imaging. Reference: Grainger & Allison’s Diagnostic Radiology, Volume 2, 7th Edition, Page 1374",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 2,
+      "question": "Which of the following accurately describes the stages of MRI image acquisition?",
+      "options": {
+        "A": "Protons align uniformly, get excited, and relax, emitting radiation.",
+        "B": "Protons align randomly and emit radiation upon excitation.",
+        "C": "Protons rest and emit radiation continuously without excitation.",
+        "D": "Excited protons emit radiation before aligning with the magnetic field."
+      },
+      "correct_answer": "A",
+      "explanation": "emits radiation while relaxing. This radiation is detected and used to create MRI Images. MRI Image Acquisition Process (Four Stages): Resting State : In this initial phase, protons in the body are randomly aligned and moving, resulting in no net magnetisation. Magnetisation : An external magnetic field is applied, causing the protons to align uniformly , creating a net magnetisation vector along the longitudinal axis. Excitation : An RF(Radio Frequency) coil is activated, sending an RF pulse that excites the protons, moving them to a higher energy state. This excitation causes the protons to transition from longitudinal magnetisation to transverse magnetisation. Relaxation: Once the RF coil is switched off, protons return to their lower energy state (longitudinal magnetisation). As they relax, the difference in energy states emits radiation, which is detected to create the MRI images.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Radiology_Q2_exp.png",
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 3,
+      "question": "Which statements correctly describe the differences between T1 and T2 relaxation in MRI?",
+      "options": {
+        "A": "T1 measures transverse decay; T2 measures longitudinal recovery.",
+        "B": "T1 involves energy exchange; T2 involves loss of phase coherence.",
+        "C": "T1 relaxation is typically shorter in duration than T2",
+        "D": "Longer T1 appears Brighter & Longer T2 appears Darker"
+      },
+      "correct_answer": "B",
+      "explanation": "MRI involves loss of phase coherence among spins. T1 & T2 Weighted MRI: Parameter T1-Weighted MRI T2-Weighted MRI Definition It is time for longitudinal magnetisation to recover to its equilibrium after excitation. It is time for transverse magnetisation to decay. Mechanism Involves energy exchange between spins and surrounding environment (spin-lattice interaction) Involves loss of phase coherence among spins (spin-spin interaction) Tissue Assessment Useful for assessing fat content in tissues (e.g., brain white matter ) Useful for assessing water content in tissues (e.g., cerebrospinal fluid ) Tissue Appearance Darker for longer T1, brighter for shorter T1 Brighter for longer T2, darker for shorter T2 Bright Area Significance Bright areas indicate tissues with shorter T1 times (e.g., fat-rich tissues) Bright areas indicate tissues with longer T2 times (e.g., fluid-rich tissues) Time Range Microseconds to seconds Typically shorter than T1 T1 measures transverse decay; T2 measures longitudinal recovery (Option A): T1 relaxation measures longitudinal recovery — how quickly the net magnetization returns to align with the main magnetic field (along the z-axis). T2 relaxation measures transverse decay — how quickly the spins dephase in the transverse plane (xy-plane). T1 relaxation is typically shorter in duration than T2 (Option C): T1 relaxation times are typically longer than T2. For most tissues, it takes longer for longitudinal magnetization to recover than it does for transverse magnetization to decay. Longer T1 appears Brighter & Longer T2 appears Darker (Option D): In T1-weighted images , tissues with short T1 times appear brighter , while those with long T1 appear darker. In T2-weighted images , tissues with long T2 times appear brighter because their signal decays more slowly, maintaining more signal during image acquisition.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 4,
+      "question": "Match the following: 1) a) FLAIR 2) b) Diffusion-weighted MRI 3) c) T1-Weighted MRI 4) d) T2-Weighted MRI",
+      "options": {},
+      "correct_answer": "",
+      "explanation": "",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 5,
+      "question": "A 65-year-old patient presents with cognitive decline and movement difficulties. Imaging studies reveal iron deposition in the basal ganglia. The neurologist wants to confirm the extent of iron accumulation and assess for any associated microbleeds. Which MRI technique is preferred for evaluating iron deposition in this patient?",
+      "options": {
+        "A": "Susceptibility-Weighted Imaging (SWI)",
+        "B": "Diffusion-Weighted Imaging (DWI)",
+        "C": "Functional MRI (fMRI)",
+        "D": "MR Spectroscopy"
+      },
+      "correct_answer": "A",
+      "explanation": "tissues based on magnetic susceptibility differences. It is highly sensitive for detecting microbleeds (common in hypertension), iron deposits (seen in neurodegenerative diseases and hemorrhagic lesions), and calcifications. Black dots on SWI indicate areas of Microbleeds/Iron deposition/Calcification. CSF appears dark, not bright. Diffusion-weighted imaging (DWI) (Option B) is primarily used to assess the diffusion of water molecules and is not specifically designed to visualise iron deposition. It is preferred in acute infarcts, brain abscesses, and brain tumours. Functional MRI (fMRI) (Option C) focuses on detecting brain activity rather than structural changes like iron deposition. Clinically, it is commonly used for pre-surgical planning in brain tumour and Arteriovenous Malformation (AVM) surgeries, as well as for localising language centres and determining hemispheric dominance before epilepsy surgery. MR Spectroscopy (Option D) provides metabolic information but does not directly assess iron accumulation. Key metabolites include N-acetyl aspartate (NAA) as a marker of neuronal integrity, choline (Cho) associated with membrane turnover and elevated in tumors, creatine (Cr) for energy metabolism, lactate indicative of hypoxia or ischemia, and myo-inositol, reflecting glial activity.",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 6,
+      "question": "A 60-year-old patient is scheduled for an MRI to evaluate cognitive changes. Which of the following systems is specifically designed to provide shielding against radio frequency interference during the scan?",
+      "options": {
+        "A": "Gradient coils",
+        "B": "Helmholtz coils",
+        "C": "Shim coils",
+        "D": "Faraday’s cage"
+      },
+      "correct_answer": "D",
+      "explanation": "interference. In MRI environments, this enclosure is typically constructed using wooden panels wrapped in copper wires, which provide effective radiofrequency (RF) shielding. This shielding helps minimize interference, which leads to imaging artifacts and ensures clearer and more accurate MRI results. In the MRI facility, the cage is often visible through the special window glass separating the control room from the scanner area, further emphasizing its role in maintaining optimal imaging conditions. Gradient Coils (Option A) are three sets, X, Y, and Z, used in the MRI imaging process to create intentional variations in the main magnetic field. These changes in the magnetic field enable the localisation of image slices. Helmholtz coils (Option B) are a pair of circular coils arranged parallel to one another and function as Z gradient coils in MRI scanners. Shim coils (Option C) are used to correct minor spatial discrepancies in the main static magnetic field and ensure optimal spatial uniformity, improving MRI image quality by reducing artifacts.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Radiology_Q6_exp.jpg",
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 7,
+      "question": "A 70-year-old patient requires arterial access via the femoral artery using the Seldinger technique. After sterilizing the area, the physician successfully punctures the artery with a needle. What is the next step in the Seldinger technique?",
+      "options": {
+        "A": "Secure the catheter",
+        "B": "Insert a dilator through the needle",
+        "C": "Insert a guide wire through the needle",
+        "D": "Remove the needle and insert a dilator"
+      },
+      "correct_answer": "C",
+      "explanation": "vessel. This confirms and maintains access to the vessel, guiding subsequent insertion of dilators and catheters. This is a key step in the Seldinger technique. The Seldinger technique is a method for accessing a blood vessel under Ultrasound guidance that allows for more controlled catheter placement, especially in situations with an increased risk.",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Radiology_Q7_exp.png",
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 8,
+      "question": "A 55-year-old female presents with 6 months of heavy menstrual bleeding, pelvic pressure, and frequent urination due to multiple uterine fibroids. After failed conservative treatments and a history of hypertension and obesity, uterine fibroid embolisation (UFE) is planned, and the risks have been explained. Which of the following is not an advantage of the single wall puncture technique?",
+      "options": {
+        "A": "Fewer complications at the arterial puncture site",
+        "B": "Beneficial for patients with coagulopathy",
+        "C": "Less risk of arterial dissection",
+        "D": "A favored technique for ultrasound-guided access"
+      },
+      "correct_answer": "C",
+      "explanation": "of the artery without going through the back wall. While this technique reduces the risk of hematoma and pseudoaneurysm compared to the double-wall (through-and-through) puncture, it does not reduce the risk of arterial dissection . In fact, manipulating the needle tip within the arterial lumen (especially if not carefully aligned) can potentially increase the risk of dissection. Single-wall Puncture Technique Double-wall Puncture Technique Description Puncturing only one layer (tunica intima) of the arterial wall. Advantages Fewer complications at the arterial puncture site. (Option A) Beneficial for patients with coagulopathy. (Option B) A favored technique for ultrasound-guided access. (Option D) Decreases the time required for arterial access. Decreases the number of attempts needed. Decreased risk of arterial dissection. It can strike the bony landmark located behind the vessels (such as the femoral head). Disadvantages The risk of arterial dissection may increase due to guidewire buckling if it is only partially within the lumen. Prone to complications such as: Hematoma Arteriovenous fistula Retroperitoneal hemorrhage",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 9,
+      "question": "A 55-year-old male with chronic bronchitis and smoking presents with persistent hemoptysis. After consulting a specialist, he is advised to undergo bronchial artery embolization (BAE), and the risks are explained. He wants more details about the procedure, specifically regarding the types of embolic agents used. Which of the following is not a permanent type of embolic agent?",
+      "options": {
+        "A": "Injectable coil",
+        "B": "Onyx",
+        "C": "Polyvinyl alcohol",
+        "D": "Gelfoam"
+      },
+      "correct_answer": "D",
+      "explanation": "occlusion in embolization. In contrast, injectable coils, Onyx, and polyvinyl alcohol (PVA) are considered permanent or semi-permanent. Types of Embolic agents: Significance of Embolisation: It effectively controls acute hemorrhage by selectively occluding bleeding vessels, providing rapid stabilization in emergencies. This minimally invasive technique shrinks hypervascular tumors, facilitating easier surgical resection while reducing recovery times and complications. Reference: Grainger and Allison’s Diagnostic Radiology, 7th Edition, Page 2094, 2096. David Sutton’s Textbook of Radiology and Imaging, Volume II, 7th Edition, Page 1710, 1711",
+      "image": null,
+      "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/pxradiology/Radiology_Q9_exp.png",
+      "chapter_heading": "Radiology"
+    },
+    {
+      "q_no": 10,
+      "question": "Match the following imaging modalities with their corresponding terms. Imaging Modality Terms 1. X-ray a) Hypoechoic / Hyperechoic 2. CT (Computed Tomography) b) Hypointense / Hyperintense 3. MRI (Magnetic Resonance Imaging)",
+      "options": {
+        "C": "1-a, 2-b, 3-d, 4-c",
+        "A": "1-b, 2-d, 3-c, 4-a",
+        "B": "1-c, 2-d, 3-b, 4-a",
+        "D": "1-c, 2-d, 3-a, 4-b"
+      },
+      "correct_answer": "B",
+      "explanation": "→ Radiolucent / Opaque: Radiolucent structures allow X-rays to pass through, appearing dark on the image (e.g., air, fat). Opaque structures do not allow X-rays to pass, appearing white (e.g., bones, metal). CT (Computed Tomography) → Hypodense / Hyperdense: Hypodense areas appear darker on a CT scan, indicating less density (e.g., fluid). Hyperdense areas appear brighter, indicating higher density (e.g., bone, calcifications). MRI (Magnetic Resonance Imaging) → Hypointense / Hyperintense : Hypointense signals are darker, indicating less hydrogen density (e.g., certain tumors, cysts). Hyperintense signals are brighter, indicating higher hydrogen density (e.g., fluid, edema). USG (Ultrasound) → Hypoechoic / Hyperechoic : Hypoechoic areas appear darker on ultrasound due to fewer echoes returning (e.g., fluid-filled structures). Hyperechoic areas appear brighter due to more echoes (e.g., solid masses, calcifications). Reference: Fred A. Mettler, Jr. Essentials of Radiology, 4th Edition, Page 1-6",
+      "image": null,
+      "explanation_image": null,
+      "chapter_heading": "Radiology"
+    }
+  ]
+}

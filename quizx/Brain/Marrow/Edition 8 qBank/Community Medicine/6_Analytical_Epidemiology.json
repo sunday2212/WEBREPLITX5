@@ -1,0 +1,933 @@
+{
+  "meta": {
+    "title": "6_Analytical_Epidemiology"
+  },
+  "questions": [
+    {
+      "text": "You are conducting a cohort study in a group of headload workers to identify the risk factors for developing low back pain in future. This type of study falls under which of the following?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Experimental analytical studies"
+        },
+        {
+          "id": 2,
+          "text": "Quasi-experimental analytical studies"
+        },
+        {
+          "id": 3,
+          "text": "Non-experimental analytical studies"
+        },
+        {
+          "id": 4,
+          "text": "Interventional analytical studies"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Cohort studies fall under <strong>non-experimental</strong> (<strong>observational</strong>) <strong>analytical</strong> studies.</p>\n<p><strong>Classification</strong> of epidemiological studies:</p>\n<ol>\n<li><strong>Observational </strong>studies: allow nature to take its own course, the investigator measures but does not intervene. It is further classified into:\n<ul>\n<li><strong>Descriptive</strong> studies: limited to describing the occurrence of a disease in a population.</li>\n<li><strong>Analytical</strong> studies: go further by analyzing the relationship between health status and other variables. It includes:\n<ul>\n<li>Ecological studies</li>\n<li>Cross-sectional studies</li>\n<li>Case-control studies</li>\n<li><strong>Cohort</strong> studies</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Experimental </strong>studies or <strong>interventional</strong> studies: it involves an active attempt to change a disease determinant or the progress of a disease, and is similar in design to experiments in other sciences.\n<ul>\n<li>Randomized controlled trials</li>\n<li>Field trials</li>\n<li>Community trials</li>\n</ul>\n</li>\n</ol>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5081",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the unit of observation in ecological studies?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Population"
+        },
+        {
+          "id": 2,
+          "text": "Patient"
+        },
+        {
+          "id": 3,
+          "text": "Healthy inividuals"
+        },
+        {
+          "id": 4,
+          "text": "Case"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In ecological studies, the unit of observation is the <strong>population</strong> or community.</p>\n<table>\n<tbody>\n<tr>\n<td>Type of study</td>\n<td>Unit</td>\n</tr>\n<tr>\n<td>Ecological/ Correlational</td>\n<td>Population</td>\n</tr>\n<tr>\n<td>Cross-sectional/ Prevalence</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>Case-control/ Case reference</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>Cohort/ Follow up</td>\n<td>Individual</td>\n</tr>\n<tr>\n<td>Randomised Controlled Trials</td>\n<td>Patients</td>\n</tr>\n<tr>\n<td>Field Trial</td>\n<td>Healthy people</td>\n</tr>\n<tr>\n<td>Community trial</td>\n<td>Community</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9572",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Identify the type of study from the following design:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Prospective cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Retrospective cohort study"
+        },
+        {
+          "id": 3,
+          "text": "Case–control study"
+        },
+        {
+          "id": 4,
+          "text": "Follow-up study"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The design given is of a <strong>case-control study</strong>.&nbsp;It proceeds from <strong>effect to cause</strong> and is done after the exposure and outcome have occurred.</p>\n<p>It tries to<strong> determine </strong>the possible<strong> exposure </strong>factors after a <strong>known disease</strong> incidence. This is the first approach to test <strong>causal hypotheses</strong> and uses controls to support or refute an inference.</p>\n<div class=\"page\" title=\"Page 92\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Retrospective </strong>or&nbsp;<strong>historical</strong>&nbsp;<strong>cohort</strong> study, on the other hand, tries to compare the risk of developing a disease to some already <strong>known exposure</strong> factors. Ex: risk of lung cancer in uranium miners, risk of angiosarcoma in persons exposed to polyvinyl chloride etc.</p>\n<p>Retrospective cohort studies are&nbsp;<strong>more economical</strong> and <strong>quicker</strong> than prospective cohort studies.</p>\n</div>\n</div>\n</div><hr><h3>Related Pearl: Case Control Study</h3><p>In a <strong>case-control</strong> study, progression is from <strong>effect </strong>(disease) to<strong> cause</strong>&nbsp;(exposure) as the outcome or disease has already occurred. It is also called a&nbsp;<strong>retrospective</strong> study.</p>\n<p><strong>Design </strong>of case-control study:</p>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/54361314f5e0423d9bef0e4acae144a0x1280x1242.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Steps of case control study:</strong>\n<ul>\n<li>Selection of cases and controls</li>\n<li>Matching</li>\n<li>Measurement of exposure</li>\n<li>Analysis in the form of exposure rates, risk ratio, and odds ratio</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Advantages of case control study:</strong>\n<ul>\n<li>Easy to carry out, rapid and inexpensive</li>\n<li>Requires few subjects, no risk to subjects</li>\n<li>Used to investigate rare diseases</li>\n<li>Different etiological factors can be studied and risk factors can be identified</li>\n<li>No attrition problems, minimal ethical problems</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Disadvantages&nbsp;of case control study:</strong>\n<ul>\n<li>Relies on memory or past records giving rise to bias</li>\n<li>Selection of appropriate control groups is difficult</li>\n<li>Incidence cannot be measured</li>\n<li>Does not distinguish between causes and associated factors</li>\n<li>Not suited for evaluation of therapy or prophylaxis</li>\n<li>Representativeness of the cases and controls is often inadequate</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/ee817b9e79fc41a5be92abbc04d5bbc8.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4094",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was conducted among a group of 500 patients with lung cancer and another group of 300 people chosen from the general population. Both the groups were questioned about their exposure to smoking. What kind of study is this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Cross-sectional study"
+        },
+        {
+          "id": 3,
+          "text": "Correlational study"
+        },
+        {
+          "id": 4,
+          "text": "Case-control study"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>This is a <strong>case-control</strong> study. In this scenario, <strong>500 patients</strong>&nbsp;constitute the <strong>cases</strong> and <strong>300 people</strong>&nbsp;from the general population constitute the <strong>controls</strong>.&nbsp;The study is done from <strong>effect </strong>(lung cancer) <strong>to cause </strong>(smoking).</p><hr><h3>Related Pearl: Case Control Study</h3><p>In a <strong>case-control</strong> study, progression is from <strong>effect </strong>(disease) to<strong> cause</strong>&nbsp;(exposure) as the outcome or disease has already occurred. It is also called a&nbsp;<strong>retrospective</strong> study.</p>\n<p><strong>Design </strong>of case-control study:</p>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/54361314f5e0423d9bef0e4acae144a0x1280x1242.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Steps of case control study:</strong>\n<ul>\n<li>Selection of cases and controls</li>\n<li>Matching</li>\n<li>Measurement of exposure</li>\n<li>Analysis in the form of exposure rates, risk ratio, and odds ratio</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Advantages of case control study:</strong>\n<ul>\n<li>Easy to carry out, rapid and inexpensive</li>\n<li>Requires few subjects, no risk to subjects</li>\n<li>Used to investigate rare diseases</li>\n<li>Different etiological factors can be studied and risk factors can be identified</li>\n<li>No attrition problems, minimal ethical problems</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Disadvantages&nbsp;of case control study:</strong>\n<ul>\n<li>Relies on memory or past records giving rise to bias</li>\n<li>Selection of appropriate control groups is difficult</li>\n<li>Incidence cannot be measured</li>\n<li>Does not distinguish between causes and associated factors</li>\n<li>Not suited for evaluation of therapy or prophylaxis</li>\n<li>Representativeness of the cases and controls is often inadequate</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4095",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A case-control study was conducted to evaluate the association between lifestyle risk factors and the prevalence of dyslipidemia. Which of the following is not an advantage of this type of study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Incidence can be calculated"
+        },
+        {
+          "id": 2,
+          "text": "No risk to subjects"
+        },
+        {
+          "id": 3,
+          "text": "Easy to carry out"
+        },
+        {
+          "id": 4,
+          "text": "Suitable for rare diseases"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Incidence cannot be calculated from case-control studies. <strong>Incidence</strong> can be calculated from<strong>&nbsp;cohort </strong>studies, also known as <strong>longitudinal</strong> studies.</p><hr><h3>Related Pearl: Case Control Study</h3><p>In a <strong>case-control</strong> study, progression is from <strong>effect </strong>(disease) to<strong> cause</strong>&nbsp;(exposure) as the outcome or disease has already occurred. It is also called a&nbsp;<strong>retrospective</strong> study.</p>\n<p><strong>Design </strong>of case-control study:</p>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/54361314f5e0423d9bef0e4acae144a0x1280x1242.JPEG\" alt=\"Pearl Image\"><ul>\n<li><strong>Steps of case control study:</strong>\n<ul>\n<li>Selection of cases and controls</li>\n<li>Matching</li>\n<li>Measurement of exposure</li>\n<li>Analysis in the form of exposure rates, risk ratio, and odds ratio</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Advantages of case control study:</strong>\n<ul>\n<li>Easy to carry out, rapid and inexpensive</li>\n<li>Requires few subjects, no risk to subjects</li>\n<li>Used to investigate rare diseases</li>\n<li>Different etiological factors can be studied and risk factors can be identified</li>\n<li>No attrition problems, minimal ethical problems</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Disadvantages&nbsp;of case control study:</strong>\n<ul>\n<li>Relies on memory or past records giving rise to bias</li>\n<li>Selection of appropriate control groups is difficult</li>\n<li>Incidence cannot be measured</li>\n<li>Does not distinguish between causes and associated factors</li>\n<li>Not suited for evaluation of therapy or prophylaxis</li>\n<li>Representativeness of the cases and controls is often inadequate</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4096",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A case-control study was conducted to see if symptoms of upper gastrointestinal dysfunction occurred more frequently in patients with Duchenne muscular dystrophy. Which of the following cannot be used as controls in this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hospital patients"
+        },
+        {
+          "id": 2,
+          "text": "Siblings"
+        },
+        {
+          "id": 3,
+          "text": "General public"
+        },
+        {
+          "id": 4,
+          "text": "Healthcare workers"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Siblings</strong> cannot be used as controls while studying&nbsp;<strong>genetic conditions</strong>&nbsp;because the outcome would be&nbsp;<strong>distorted&nbsp;due to</strong> their <strong>similarities</strong>.</p>\n<p><strong>Controls</strong> in a case-control study:</p>\n<ul>\n<li>Usually disease-free</li>\n<li>Can be up to <strong>4 times&nbsp;</strong>the number <strong>of cases</strong> in <strong>small</strong> studies</li>\n<li>In <strong>large</strong> studies, a <strong>1:1</strong> ratio of cases and controls can be sought</li>\n<li>Sources: general population, hospitals, relatives (spouses and siblings), neighbors, or colleagues</li>\n<li>Although, siblings cannot be used as controls for studies on genetic conditions</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4099",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not a cause of bias in a case-control study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Recall bias"
+        },
+        {
+          "id": 2,
+          "text": "Confounding bias"
+        },
+        {
+          "id": 3,
+          "text": "Hawthorne bias"
+        },
+        {
+          "id": 4,
+          "text": "Selection bias"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Hawthorne bias</strong> is not seen in case-control studies. This bias occurs when the subjects change their attitude/ actions while under observation. This distorts the results of the&nbsp;<strong>cohort</strong> or <strong>experimental studies.</strong></p>\n<p>The <strong>bias</strong> that are seen in the <strong>case-control study</strong> are:</p>\n<ol>\n<li>Confounding</li>\n<li>Recall bias</li>\n<li>Selection bias</li>\n<li>Berkesonian bias</li>\n<li>Interviewer's bias</li>\n</ol><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4097",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not true about random errors?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sampling errors are random errors"
+        },
+        {
+          "id": 2,
+          "text": "It cannot be completely eliminated"
+        },
+        {
+          "id": 3,
+          "text": "It can cause bias"
+        },
+        {
+          "id": 4,
+          "text": "Systematic errors are different from random errors"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Random errors are not causes of bias.&nbsp;</p>\n<p><strong>Random error</strong> arises when a value of the sample measurement diverges, due to <strong>chance</strong> alone, from that of the true population value. They can never be completely eliminated.&nbsp;</p>\n<p>Sources of random errors are individual biological variations, sampling errors, and measurement errors.</p>\n<p><strong>Systematic errors</strong> are also called <strong>biases.&nbsp;</strong>They are different from random errors.</p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4282",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following factors in a study will cause Berkesonian bias?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Interviewer asking leading questions to the subjects"
+        },
+        {
+          "id": 2,
+          "text": "Different rates of hospital admission of different diseases"
+        },
+        {
+          "id": 3,
+          "text": "Researcher's belief in the treatment changing the outcome of the study"
+        },
+        {
+          "id": 4,
+          "text": "Cases that are lost to follow-up"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Berkesonian</strong> bias occurs due to the different rates of <strong>hospital</strong> admission of people with different diseases. It is a type of <strong>selection bias&nbsp;</strong>termed after <strong> Joseph Berkeson</strong> who described it.</p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4102",
+      "difficulty": "easy"
+    },
+    {
+      "text": "An epidemiologist plans to conduct a prospective study instead of a retrospective study. Which of the following disadvantages does he aim to eliminate by conducting this study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Recall bias"
+        },
+        {
+          "id": 2,
+          "text": "Selection bias"
+        },
+        {
+          "id": 3,
+          "text": "Confounding bias"
+        },
+        {
+          "id": 4,
+          "text": "Berksonian bias"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Recall bias</strong>&nbsp;can be eliminated in a prospective study.</p>\n<p>Recall bias is also called <strong>memory bias.</strong>&nbsp;It is widely seen in <strong>retrospective&nbsp;</strong>(case-control)<strong>&nbsp;</strong>studies as extensive history is taken from the participants.</p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4110",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A study conducted in a group revealed that consumption of alcohol increases the risk of esophageal cancer, but it may be actually due to cigarette smoking. This happens due to:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Confounding factor"
+        },
+        {
+          "id": 2,
+          "text": "Misclassification bias"
+        },
+        {
+          "id": 3,
+          "text": "Ecological fallacy"
+        },
+        {
+          "id": 4,
+          "text": "Effect modifier"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In this scenario, cigarette smoking is related to both the outcome of esophageal cancer and consumption of alcohol. Thus, this is an example of a&nbsp;<strong>confounding factor</strong>.</p>\n<p>A confounding factor is defined as one which is <strong>associated</strong> with <strong>both exposure and outcome</strong> and is <strong>distributed unequally</strong> in study and control groups.&nbsp;In this study to determine the role of alcohol in the etiology of esophageal cancer, <strong>smoking</strong> is considered as a <strong>confounding</strong> <strong>factor</strong> because:</p>\n<ul>\n<li>It is associated with the consumption of alcohol (<strong>exposure</strong>).</li>\n<li>It is an independent risk factor for oesophageal cancer (<strong>outcome</strong>).</li>\n</ul>\n<p>In these conditions, the effects of alcohol consumption can be determined only if the influence of smoking is neutralized by <strong>matching</strong>.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4286",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is false regarding confounding factor?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It can be reduced by matching"
+        },
+        {
+          "id": 2,
+          "text": "It is associated individually with both cause and effect"
+        },
+        {
+          "id": 3,
+          "text": "It is distributed equally in both study and control groups"
+        },
+        {
+          "id": 4,
+          "text": "It is associated with the exposure of the study"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>A<strong> confounding factor</strong> is a factor that is <strong>associated </strong>with both<strong> exposure and diseases</strong> and is distributed <strong>unequally</strong> in study and control groups.&nbsp;It can be reduced by <strong>matching</strong>.</p>\n<p>For example, if the study is that a sedentary lifestyle can lead to coronary artery diseases, then <strong>age</strong> can act as a <strong>confounding</strong> <strong>factor</strong> as it is individually linked to both sedentary lifestyle and coronary artery diseases.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4101",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A researcher is planning to conduct a study to investigate the relationship between oral contraceptives and breast cancer. He wants to remove age as a confounding factor. Which of the following methods will not help him reduce this bias?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Stratification"
+        },
+        {
+          "id": 2,
+          "text": "Randomization"
+        },
+        {
+          "id": 3,
+          "text": "Deletion"
+        },
+        {
+          "id": 4,
+          "text": "Regression analysis"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Deletion is not a method to reduce confounding.</p>\n<p><strong>Methods</strong> to <strong>reduce confounding</strong> are:</p>\n<ul>\n<li>At the time of <strong>designing</strong> the study:\n<ul>\n<li>Randomization</li>\n<li>Matching</li>\n<li>Restriction</li>\n</ul>\n</li>\n<li>At the time of <strong>analysis:</strong>\n<ul>\n<li>Stratification</li>\n<li>Statistical modelings like <strong>regression </strong>analysis,<strong> multivariate </strong>analysis, and the<strong> Cochran-Mantel-Haenszel </strong>method.</li>\n</ul>\n</li>\n</ul><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4281",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Matching is done for which of the following?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Known confounding"
+        },
+        {
+          "id": 2,
+          "text": "Unknown confounding"
+        },
+        {
+          "id": 3,
+          "text": "Known and unknown confounding"
+        },
+        {
+          "id": 4,
+          "text": "Sampling errors"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Matching</strong> helps <strong>only</strong> in removing the <strong>known</strong> confounding factors.</p>\n<p>Matching is the process by which <strong>controls are selected</strong> in a way that they are <strong>similar to cases</strong> in certain <strong>pertinent variables</strong> (e.g., age) that are known to influence the outcome of the disease. If not adequately matched for comparability, these variables could confound the results.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4098",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which among the following is not a type of matching?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Frequency matching"
+        },
+        {
+          "id": 2,
+          "text": "Collective matching"
+        },
+        {
+          "id": 3,
+          "text": "Group matching"
+        },
+        {
+          "id": 4,
+          "text": "Matching by pairs"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>There is no type of matching called collective matching.&nbsp;</p>\n<p><strong>Types </strong>of matching:</p>\n<ul>\n<li><strong>Group</strong> matching: It is also called <strong>frequency </strong>matching. It is done when a <strong>large</strong> stratum is used for study and a 1:1 ratio of cases and controls can be achieved.</li>\n<li><strong>Individual </strong>matching:&nbsp;It is&nbsp;also called&nbsp;<strong>matching by pairs.</strong>&nbsp;It can be done when the study is <strong>small</strong> and more controls can be selected for one case.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4100",
+      "difficulty": "hard"
+    },
+    {
+      "text": "An epidemiologist determines to evaluate the strength of association between asbestos exposure and mesothelioma in a case-control study. Which of the following variables would he use for it?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Absolute risk ratio"
+        },
+        {
+          "id": 2,
+          "text": "Relative risk"
+        },
+        {
+          "id": 3,
+          "text": "Attributable risk"
+        },
+        {
+          "id": 4,
+          "text": "Odds ratio"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Odds ratio&nbsp;</strong>(OR), also known as <strong>cross-product ratio</strong>, is used to measure the <strong>strength of association</strong> between <strong>risk factor</strong> (asbestos exposure) and <strong>outcome</strong> (mesothelioma) in <strong>case-control </strong>studies.</p>\n<p>A case-control study yields only odds ratio and not incidence or relative risk.</p><hr><h3>Related Pearl: Odds Ratio</h3><ul>\n<li>Odds ratio is a measure of the <strong>strength of association</strong> between<strong> risk factor</strong> and <strong>outcome</strong> in case control studies.</li>\n<li>Odds ratio can be arrived at from <strong>case control studies</strong>.</li>\n<li>It is also known as <strong>cross product ratio</strong>.</li>\n<li>A representation of the odds ratio <strong>(OR) </strong>is given in the picture below:</li>\n</ul>\n<p>Calculation of odds ratio (OR) = (a/b)/(c/d) = ad/bc where,&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td>&nbsp;</td>\n<td>Yes</td>\n<td>No</td>\n</tr>\n<tr>\n<td>Yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>No</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><ul>\n<li><strong>OR &lt; 1</strong> indicates <strong>possible protection</strong>&nbsp;(<strong>negative</strong> association) as the frequency of exposure is lower among cases than controls.</li>\n<li><strong>OR = 1&nbsp;</strong>indicates <strong>no association</strong> of risk with exposure, or that the event is equally likely in both groups.</li>\n<li><strong>OR &gt; 1</strong> indicates <strong>increased risk</strong>&nbsp;(<strong>positive</strong> association) as the frequency of exposure is greater among cases than controls.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4103",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following statements is false about the odds ratio?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "OR = 1 indicates positive association"
+        },
+        {
+          "id": 2,
+          "text": "It is obtained from case-control studies"
+        },
+        {
+          "id": 3,
+          "text": "OR < 1 indicates posible protection"
+        },
+        {
+          "id": 4,
+          "text": "It is a measure of strength of association"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>An odds ratio (<strong>OR</strong>) of <strong>1</strong> indicates that there is <strong>no association</strong> or that the event is likely in both the groups.</p><hr><h3>Related Pearl: Odds Ratio</h3><ul>\n<li>Odds ratio is a measure of the <strong>strength of association</strong> between<strong> risk factor</strong> and <strong>outcome</strong> in case control studies.</li>\n<li>Odds ratio can be arrived at from <strong>case control studies</strong>.</li>\n<li>It is also known as <strong>cross product ratio</strong>.</li>\n<li>A representation of the odds ratio <strong>(OR) </strong>is given in the picture below:</li>\n</ul>\n<p>Calculation of odds ratio (OR) = (a/b)/(c/d) = ad/bc where,&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td>&nbsp;</td>\n<td>Yes</td>\n<td>No</td>\n</tr>\n<tr>\n<td>Yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>No</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><ul>\n<li><strong>OR &lt; 1</strong> indicates <strong>possible protection</strong>&nbsp;(<strong>negative</strong> association) as the frequency of exposure is lower among cases than controls.</li>\n<li><strong>OR = 1&nbsp;</strong>indicates <strong>no association</strong> of risk with exposure, or that the event is equally likely in both groups.</li>\n<li><strong>OR &gt; 1</strong> indicates <strong>increased risk</strong>&nbsp;(<strong>positive</strong> association) as the frequency of exposure is greater among cases than controls.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4104",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A case-control study was done among 500 lung cancer patients and 400 controls. The study groups had 400 and 50 smokers respectively. Calculate the odds ratio.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2.8"
+        },
+        {
+          "id": 2,
+          "text": "0.28"
+        },
+        {
+          "id": 3,
+          "text": "0.20"
+        },
+        {
+          "id": 4,
+          "text": "28"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the odds ratio (<strong>OR</strong>) is <strong>28</strong>.</p>\n<p>The given data is represented as:&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>\n<p><strong>Disease +</strong></p>\n</td>\n<td>\n<p><strong>Disease&nbsp; -</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Exposure +</strong></p>\n</td>\n<td>\n<p>400 (a)</p>\n</td>\n<td>\n<p>50 (b)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Exposure - </strong></p>\n</td>\n<td>\n<p>100 (c)</p>\n</td>\n<td>\n<p>350 (d)</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Odds Ratio</strong> = ad/bc</p>\n<p>= (400 x 350) / (50 x 100)</p>\n<p>= (4 x 35)/5</p>\n<p>= 4 x 7</p>\n<p>= <strong>28</strong></p><hr><h3>Related Pearl: Odds Ratio</h3><ul>\n<li>Odds ratio is a measure of the <strong>strength of association</strong> between<strong> risk factor</strong> and <strong>outcome</strong> in case control studies.</li>\n<li>Odds ratio can be arrived at from <strong>case control studies</strong>.</li>\n<li>It is also known as <strong>cross product ratio</strong>.</li>\n<li>A representation of the odds ratio <strong>(OR) </strong>is given in the picture below:</li>\n</ul>\n<p>Calculation of odds ratio (OR) = (a/b)/(c/d) = ad/bc where,&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td>&nbsp;</td>\n<td>Yes</td>\n<td>No</td>\n</tr>\n<tr>\n<td>Yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>No</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><ul>\n<li><strong>OR &lt; 1</strong> indicates <strong>possible protection</strong>&nbsp;(<strong>negative</strong> association) as the frequency of exposure is lower among cases than controls.</li>\n<li><strong>OR = 1&nbsp;</strong>indicates <strong>no association</strong> of risk with exposure, or that the event is equally likely in both groups.</li>\n<li><strong>OR &gt; 1</strong> indicates <strong>increased risk</strong>&nbsp;(<strong>positive</strong> association) as the frequency of exposure is greater among cases than controls.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4107",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A research scholar is preparing to do a prospective cohort study in a hospital to evaluate the association of H. pylori with inflammatory bowel disease. Which of the following measures must she take, before starting the study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Enrol all patients taking proton pump inhibitors"
+        },
+        {
+          "id": 2,
+          "text": "Enrol all patients on whom endoscopy was done"
+        },
+        {
+          "id": 3,
+          "text": "Exclude all patients diagnosed with inflammatory bowel disease"
+        },
+        {
+          "id": 4,
+          "text": "Exclude all patients with positive urea breath test for H. pylori"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>All patients</strong> diagnosed with inflammatory bowel disease (<strong>IBD</strong>) must be<strong> excluded</strong> from a prospective cohort study, as the study progresses from <strong>cause to effect</strong>.&nbsp;The study begins before the disease under study has occurred.</p><hr><h3>Related Pearl: Cohort Study</h3><ul>\n<li>A <strong>cohort study</strong> progresses from <strong>cause</strong> (exposure) <strong>to effect</strong> (disease).</li>\n<li>It is also known as <strong>forward-looking </strong>study, <strong>incidence </strong>study,<strong> prospective </strong>study, and<strong> longitudinal </strong>study.</li>\n<li><strong>Design of a cohort study:</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2ea236bdd083460eaa50179f47f0948dx1280x1373.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Types of cohort study:</strong>\n<ul>\n<li>Prospective (concurrent) cohort studies</li>\n<li>Retrospective (historical) cohort studies</li>\n<li>Combination cohort studies</li>\n</ul>\n</li>\n<li><strong>Steps of cohort study:</strong>\n<ul>\n<li>Selection of study subjects</li>\n<li>Obtaining data on exposure</li>\n<li>Selection of comparison groups</li>\n<li>Follow-up</li>\n<li>Analysis in terms of incidence rates and estimation of risk</li>\n</ul>\n</li>\n<li><strong>Advantages of cohort study:</strong>\n<ul>\n<li>Incidence can be calculated</li>\n<li>Several possible outcomes related to exposure can be studied at the same time</li>\n<li>Provides direct estimate of relative risk</li>\n<li>Calculation of dose-response ratio</li>\n<li>Minimization of certain biases</li>\n</ul>\n</li>\n<li><strong>Disadvantages of cohort study:</strong>\n<ul>\n<li>Cannot use for uncommon diseases</li>\n<li>Expensive, requires a large population and&nbsp;longer time</li>\n<li>Many common administrative and ethical problems</li>\n<li>High attrition and selection of subjects is difficult</li>\n<li>Dynamism of diagnostics is difficult to incorporate</li>\n<li>Tends to alter the behaviour of subjects known as&nbsp;<strong>Hawthorne effect</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4284",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not true about cohort study?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Incidence can be calculated"
+        },
+        {
+          "id": 2,
+          "text": "It is always a prospective study design"
+        },
+        {
+          "id": 3,
+          "text": "Attrition is very common"
+        },
+        {
+          "id": 4,
+          "text": "Outcome is not present at the start of study"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Although cohort studies are called prospective studies, there are subtypes of cohort studies that do not follow the prospective study design like <strong>historical (retrospective) cohort</strong> studies.</p>\n<p><strong>Framingham Heart Study </strong>is one of the most famous long-term cardiovascular prospective cohort studies.</p><hr><h3>Related Pearl: Cohort Study</h3><ul>\n<li>A <strong>cohort study</strong> progresses from <strong>cause</strong> (exposure) <strong>to effect</strong> (disease).</li>\n<li>It is also known as <strong>forward-looking </strong>study, <strong>incidence </strong>study,<strong> prospective </strong>study, and<strong> longitudinal </strong>study.</li>\n<li><strong>Design of a cohort study:</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2ea236bdd083460eaa50179f47f0948dx1280x1373.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Types of cohort study:</strong>\n<ul>\n<li>Prospective (concurrent) cohort studies</li>\n<li>Retrospective (historical) cohort studies</li>\n<li>Combination cohort studies</li>\n</ul>\n</li>\n<li><strong>Steps of cohort study:</strong>\n<ul>\n<li>Selection of study subjects</li>\n<li>Obtaining data on exposure</li>\n<li>Selection of comparison groups</li>\n<li>Follow-up</li>\n<li>Analysis in terms of incidence rates and estimation of risk</li>\n</ul>\n</li>\n<li><strong>Advantages of cohort study:</strong>\n<ul>\n<li>Incidence can be calculated</li>\n<li>Several possible outcomes related to exposure can be studied at the same time</li>\n<li>Provides direct estimate of relative risk</li>\n<li>Calculation of dose-response ratio</li>\n<li>Minimization of certain biases</li>\n</ul>\n</li>\n<li><strong>Disadvantages of cohort study:</strong>\n<ul>\n<li>Cannot use for uncommon diseases</li>\n<li>Expensive, requires a large population and&nbsp;longer time</li>\n<li>Many common administrative and ethical problems</li>\n<li>High attrition and selection of subjects is difficult</li>\n<li>Dynamism of diagnostics is difficult to incorporate</li>\n<li>Tends to alter the behaviour of subjects known as&nbsp;<strong>Hawthorne effect</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4274",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Hawthorne effect is seen in which of the following studies?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Case-control studies"
+        },
+        {
+          "id": 2,
+          "text": "Retrospective studies"
+        },
+        {
+          "id": 3,
+          "text": "Cohort studies"
+        },
+        {
+          "id": 4,
+          "text": "Cross-sectional studies"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Hawthorne effect</strong> is seen in <strong>cohort</strong> studies. It refers to the phenomenon when study subjects <strong>change or alter </strong>their<strong> behaviour</strong> during the course of the study, which results in different outcomes and <strong>underestimation of risks</strong>.</p><hr><h3>Related Pearl: Cohort Study</h3><ul>\n<li>A <strong>cohort study</strong> progresses from <strong>cause</strong> (exposure) <strong>to effect</strong> (disease).</li>\n<li>It is also known as <strong>forward-looking </strong>study, <strong>incidence </strong>study,<strong> prospective </strong>study, and<strong> longitudinal </strong>study.</li>\n<li><strong>Design of a cohort study:</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2ea236bdd083460eaa50179f47f0948dx1280x1373.JPEG\" alt=\"Pearl Image\"><ul>\n<ul>\n<li><strong>Types of cohort study:</strong>\n<ul>\n<li>Prospective (concurrent) cohort studies</li>\n<li>Retrospective (historical) cohort studies</li>\n<li>Combination cohort studies</li>\n</ul>\n</li>\n<li><strong>Steps of cohort study:</strong>\n<ul>\n<li>Selection of study subjects</li>\n<li>Obtaining data on exposure</li>\n<li>Selection of comparison groups</li>\n<li>Follow-up</li>\n<li>Analysis in terms of incidence rates and estimation of risk</li>\n</ul>\n</li>\n<li><strong>Advantages of cohort study:</strong>\n<ul>\n<li>Incidence can be calculated</li>\n<li>Several possible outcomes related to exposure can be studied at the same time</li>\n<li>Provides direct estimate of relative risk</li>\n<li>Calculation of dose-response ratio</li>\n<li>Minimization of certain biases</li>\n</ul>\n</li>\n<li><strong>Disadvantages of cohort study:</strong>\n<ul>\n<li>Cannot use for uncommon diseases</li>\n<li>Expensive, requires a large population and&nbsp;longer time</li>\n<li>Many common administrative and ethical problems</li>\n<li>High attrition and selection of subjects is difficult</li>\n<li>Dynamism of diagnostics is difficult to incorporate</li>\n<li>Tends to alter the behaviour of subjects known as&nbsp;<strong>Hawthorne effect</strong>.</li>\n</ul>\n</li>\n</ul>\n</ul><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4112",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is the ratio of the incidence of the disease in the exposed to that of the non-exposed?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Attributable risk"
+        },
+        {
+          "id": 2,
+          "text": "Odds ratio"
+        },
+        {
+          "id": 3,
+          "text": "Relative risk"
+        },
+        {
+          "id": 4,
+          "text": "Population attributable risk"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk </strong>(<strong>RR</strong>).</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4218",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Calculate the risk ratio when the incidence of the disease in exposed is 30 and that in non-exposed is 5.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "6"
+        },
+        {
+          "id": 2,
+          "text": "5"
+        },
+        {
+          "id": 3,
+          "text": "0.6"
+        },
+        {
+          "id": 4,
+          "text": "0.5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given scenario,&nbsp;<strong>risk ratio</strong> or <strong>relative risk</strong>&nbsp;(RR) is <strong>6</strong>.</p>\n<p>Here, the incidence of disease in the exposed is 30 and that in the non-exposed is 5.<br />Thus, <strong>RR</strong> = 30/5 = <strong>6</strong>.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4277",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A cohort study was conducted among 10,000 smokers and 10,000 non-smokers. They were followed up over a period of 20 years. It was found that 100 of the smokers and 10 of the non-smokers developed oral squamous cell carcinoma. Calculate the relative risk.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.1"
+        },
+        {
+          "id": 2,
+          "text": "0.001"
+        },
+        {
+          "id": 3,
+          "text": "1"
+        },
+        {
+          "id": 4,
+          "text": "10"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The relative risk in the given scenario is <strong>10</strong>.</p>\n<p>Here, the incidence in <strong>exposed </strong>is<strong> 0.01 </strong>(100/10000). Incidence in <strong>non-exposed </strong>is<strong> 0.001 </strong>(10/10000).</p>\n<p><strong>Relative Risk</strong> = Incidence in exposed/ Incidence in non-exposed = 0.01/0.001 =<strong> 10.</strong></p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4275",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While testing the deleterious health hazards on a group of people after giving a new drug and a placebo, the following results were obtained as tabulated. Based on these results, which of the following is true?<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>Total participants</td>\n<td>People affected</td>\n</tr>\n<tr>\n<td>New drug</td>\n<td>15225</td>\n<td>1603</td>\n</tr>\n<tr>\n<td>Placebo</td>\n<td>15225</td>\n<td>1804</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Absolute risk reduction (ARR) is 1% and relative risk reduction (RRR) is 0.1"
+        },
+        {
+          "id": 2,
+          "text": "Absolute risk reduction (ARR) is 10% and relative risk reduction (RRR) is 0.9"
+        },
+        {
+          "id": 3,
+          "text": "Absolute risk reduction (ARR) is 1% and relative risk reduction (RRR) is 10"
+        },
+        {
+          "id": 4,
+          "text": "Absolute risk reduction (ARR) is 10% and relative risk reduction (RRR) is 9"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>In the given scenario, absolute risk reduction (<strong>ARR</strong>) is <strong>1%</strong> and relative risk reduction (<strong>RRR</strong>) is <strong>0.1</strong>.</p>\n<p>Let us reconstruct the design table in the following way:</p>\n<table>\n<tbody>\n<tr>\n<td>&nbsp;</td>\n<td>Health hazard (+)</td>\n<td>Health hazard (-)</td>\n<td>Total</td>\n</tr>\n<tr>\n<td>New drug</td>\n<td>1603 (a)</td>\n<td>13622 (b)</td>\n<td>15225 (a+b)</td>\n</tr>\n<tr>\n<td>Placebo</td>\n<td>1804 (c)</td>\n<td>13421 (d)</td>\n<td>15225 (c+d)</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Relative risk (RR)</strong> is given as <strong>a/(a+b) &divide; c/(c+d)</strong>.</p>\n<p>RR = 1603/15225 &divide; 1804/15225 = 0.106/0.118 = 0.89&nbsp;<strong>&asymp;</strong><strong>&nbsp;0.90</strong>.&nbsp;</p>\n<p><strong>Relative risk reduction (RRR) = 1 &ndash; Relative risk</strong>. In this scenario, RRR = 1 &ndash; 0.9 = <strong>0.1 or 10%.</strong></p>\n<p><strong>Incidence</strong> of a disease is the <strong>absolute risk</strong> of contracting it.</p>\n<p>Absolute risk rate of the group using new drug = a/(a+b) = 1603/15225 = 0.106 or 10.6%&nbsp;&asymp; 11%.</p>\n<p>Absolute risk rate of the group using placebo = c/(c+d) = 1804/15225 = 0.118 or 11.8%&nbsp;&asymp; 12%.</p>\n<p><strong>Absolute risk reduction</strong> (ARR) is the difference in the absolute risk rates between the placebo and the drug. In this scenario, <strong>ARR</strong> = 12% - 11% = <strong>1%</strong>.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9546",
+      "difficulty": "hard"
+    },
+    {
+      "text": "The difference between the incidence of disease among exposed and incidence among non exposed is given by which of the following variables?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Relative risk"
+        },
+        {
+          "id": 2,
+          "text": "Attributable risk"
+        },
+        {
+          "id": 3,
+          "text": "Population  Attributable risk"
+        },
+        {
+          "id": 4,
+          "text": "Odds Ratio"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>difference</strong> between the incidence of disease among <strong>exposed</strong> and incidence among <strong>non-exposed</strong> is given by <strong>attributable risk.</strong></p>\n<p>Attributable risk is often expressed as a&nbsp;<strong>percentage</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/06baf08128544a79a355dc63df25f195x902x260.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD0715",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study conducted among smokers shows that 80% of the cases of lung cancer are due to cigarette smoking. Which of the following variables indicates this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Risk ratio"
+        },
+        {
+          "id": 2,
+          "text": "Relative risk"
+        },
+        {
+          "id": 3,
+          "text": "Attributable risk"
+        },
+        {
+          "id": 4,
+          "text": "Population attributable risk"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Attributable risk</strong> indicates to what extent the disease under study can be attributed to the exposure.&nbsp;Here, cigarette smoking is attributed to be the cause of 80% of lung cancers in smokers.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5148",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study found that the incidence of bladder carcinoma is 5 times higher in smokers than in non smokers. Calculate the attributable risk.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "20%"
+        },
+        {
+          "id": 2,
+          "text": "40%"
+        },
+        {
+          "id": 3,
+          "text": "60%"
+        },
+        {
+          "id": 4,
+          "text": "80%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the attributable risk (<strong>AR</strong>) is <strong>80%</strong>.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fba85ace985742a98a0f971856cf91ebx902x260.JPEG\" alt=\"Explanation Image\"><p>Taking the incidence of disease in <strong>non-exposed</strong> as <strong>x</strong>, the incidence of disease in <strong>exposed</strong> would be <strong>5x.</strong>&nbsp;</p>\n<p>Attributable risk (<strong>AR</strong>) would be given as&nbsp;[(5x - x)/5x] x 100 =<strong>&nbsp;80%</strong>.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4276",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a population of 9000 people, 2100 are alcoholics. 70 alcoholics and 23 non-alcoholics developed cirrhosis. What is the attributable risk?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "40%"
+        },
+        {
+          "id": 2,
+          "text": "60%"
+        },
+        {
+          "id": 3,
+          "text": "70%"
+        },
+        {
+          "id": 4,
+          "text": "90%"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>In the given scenario, the attributable risk (<strong>AR</strong>) is <strong>90%</strong>.</p>\n<p>Number of people exposed (to alcohol) = 2100 <br />Number of people not exposed (to alcohol) = 6900 </p>\n<p>Incidence of cirrhosis among exposed = 70/2100 (I<strong><sub>Exposed</sub></strong>)<br />Incidence of cirrhosis among non-exposed = 23/6900 (I<strong><sub>Non-exposed</sub></strong>)</p>\n<p>Attributable risk (AR) = <strong>[</strong> ( I<strong><sub>Exposed</sub></strong> - I<sub>Non-exposed)</sub> <strong>/</strong> I<strong><sub>Exposed </sub>]</strong>*100<br />= <strong>[</strong> (70/2100 - 23/6900) <strong>/</strong> (70/2100)<strong>]</strong> *100<br />= <strong>[ </strong>9 / 10 <strong>] </strong>*100<br />= <strong>90</strong></p>\n<p>Thus, the attributable risk (AR) is <strong>90%</strong>.</p><hr><h3>Related Pearl: Relative and Attributable Risk</h3><p>Relative Risk:</p>\n<ul>\n<li>Ratio of incidence of disease or death among exposed to that among the non-exposed is called <strong>relative risk (RR).</strong></li>\n<li>It is also called <strong>risk ratio</strong>.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/f8f2d7bcf01a465699a42d1a750c87b8x1280x704.JPEG\" alt=\"Pearl Image\"><ul>\n<li>It is the direct measure of the <strong>strength of association</strong> between suspected cause and effect in <strong>cohort studies</strong>.</li>\n<li>RR &lt; 1 indicates inverse association(protective effect)</li>\n<li>RR = 1 indicates no association.</li>\n<li>RR &gt; 1 indicates positive association.</li>\n<li>RR of 2 indicates a 100% increase in risk.</li>\n<li>Relative risk calculation (RR) = [ a/(a+b) ]/ [ c/(c+d) ] where, </li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td> </td>\n<td colspan=\"3\">Cancer</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Exposure</td>\n<td> </td>\n<td>yes</td>\n<td>no</td>\n</tr>\n<tr>\n<td>yes</td>\n<td>a</td>\n<td>b</td>\n</tr>\n<tr>\n<td>no</td>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p> </p>\n<p>Attributable Risk:</p>\n<ul>\n<li><strong>Attributable risk (AR)</strong> is the <strong>difference</strong> in incidence rates or proportions of disease or death between an exposed and non-exposed group.</li>\n<li>It is expressed in <strong>percentage</strong> and gives the extent to which the disease can be attributed to the exposure in a <strong>cohort study.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c96f4beb9eb942899198d757d3388918x1280x904.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4285",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following is the numerator in the formula for population-attributable risk?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Incidence among exposed minus incidence among non-exposed"
+        },
+        {
+          "id": 2,
+          "text": "Incidence among non-exposed minus incidence among exposed"
+        },
+        {
+          "id": 3,
+          "text": "Incidence in the total population minus incidence among non-exposed"
+        },
+        {
+          "id": 4,
+          "text": "Incidence in the total population minus incidence among exposed"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Incidence in the<strong> total population</strong> minus incidence among non-exposed<strong> </strong>is the numerator in population-attributable risk (PAR).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c762319a5ac9496db4f4b27febcc7255x1280x904.JPEG\" alt=\"Explanation Image\"><p>Population attributable risk is obtained from <strong>cohort studies.</strong> It provides an estimate of the amount by which the disease could be reduced in that population if the suspected factor was eliminated or modified.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4283",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A study was done in the Indian population to correlate the deaths due to myocardial infarction and dietary practices. What is this type of study known as?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Case reference study"
+        },
+        {
+          "id": 3,
+          "text": "Ecological study"
+        },
+        {
+          "id": 4,
+          "text": "Experimental study"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>This is an example of an <strong>ecological study.</strong>&nbsp;As the study was done in the Indian population, it can be inferred that&nbsp;<strong>population</strong> was taken as the <strong>unit</strong> of the study.</p>\n<p>The study was done to <strong>correlate</strong> the deaths and dietary practices, and hence&nbsp;<strong>ecological </strong>studies are also called<strong>&nbsp;correlational </strong>studies.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5151",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which among the following is the weakest study design to prove causation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Cohort study"
+        },
+        {
+          "id": 2,
+          "text": "Case control study"
+        },
+        {
+          "id": 3,
+          "text": "Randomized control trials"
+        },
+        {
+          "id": 4,
+          "text": "Ecological study"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Ecological</strong> studies take a <strong>population</strong> as a unit. They&nbsp;provide the <strong>weakest </strong>evidence for<strong> causality</strong> because of extrapolation to individuals from regional data.</p>\n<p>Randomized control trials (<strong>RCTs</strong>) provide the <strong>strongest</strong> design amongst the options given. Case-control and cohort studies have <strong>moderate</strong> ability to provide evidence for causality.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/94f6f88e8eb740cf884aade87de2dc20x1280x1603.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4279",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What kind of bias is implied by assigning group characteristics to people which they may not possess as individuals?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ecological fallacy"
+        },
+        {
+          "id": 2,
+          "text": "Hawthorne effect"
+        },
+        {
+          "id": 3,
+          "text": "Berkesonian bias"
+        },
+        {
+          "id": 4,
+          "text": "Attrition"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>An <strong>ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p><hr><h3>Related Pearl: Bias in Epidemiological Studies</h3><table>\n<tbody>\n<tr>\n<td><strong>Type of Bias</strong></td>\n<td><strong>Definition</strong></td>\n<td><strong>Methods to reduce it</strong></td>\n</tr>\n<tr>\n<td>Observer bias</td>\n<td>Differential ability to observe. A <strong>subjective</strong> bias.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Interviewer's bias</td>\n<td>Interviewer asking <strong>leading questions</strong> to the subjects. Or interviewing cases thoroughly than the controls.</td>\n<td>&nbsp;Double blinding</td>\n</tr>\n<tr>\n<td>Memory/ <strong>Recall</strong> bias</td>\n<td>Differential ability of cases and controls <strong>to recall</strong> a certain detail. An <strong>objective</strong> bias.</td>\n<td>Decrease time from exposure to follow-up</td>\n</tr>\n<tr>\n<td>Surveillance bias</td>\n<td>Active surveillance leads to an <strong>increased chance</strong> of <strong>identifying</strong> the event.</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>Reporting/ notification bias</td>\n<td>Diseases associated with <strong>stigma</strong> are <strong>reported less.</strong></td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td><strong>Berkesonian</strong> bias</td>\n<td><strong>Hospital-based case-control studies.</strong> Occurs due to differential hospital admission rates.</td>\n<td>\n<p>Randomization or Matching&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>Selection bias</td>\n<td>A <strong>sampling bias.</strong> Non-random allocation of subjects that do not represent the population</td>\n<td>Randomization or Matching</td>\n</tr>\n<tr>\n<td><strong>Hawthorne</strong> bias</td>\n<td><strong>Change</strong> in <strong>attitude/</strong> actions of the subjects under <strong>observation</strong></td>\n<td>Use placebo group</td>\n</tr>\n<tr>\n<td><strong>Confounding</strong> bias</td>\n<td><strong>Factors related</strong> to <strong>both exposure</strong> and <strong>outcome</strong> distort the effect of exposure on outcome</td>\n<td>Matching, cross-over studies, randomization, or stratification</td>\n</tr>\n<tr>\n<td>Attrition bias</td>\n<td>Participants <strong>lost to follow-up</strong> have a different prognosis than those who complete the study.</td>\n<td>Randomization</td>\n</tr>\n<tr>\n<td>Pygmalion bias</td>\n<td><strong>Researcher's</strong> high <strong>expectations</strong> in the efficacy of the treatment <strong>change</strong> the <strong>outcome</strong> of that treatment.</td>\n<td>Blinding</td>\n</tr>\n<tr>\n<td><strong>Neyman's/</strong> Prevalence-Incidence bias&nbsp;</td>\n<td>Occurs due to the <strong>selective survival</strong> in <strong>prevalent cases</strong> usually seen in <strong>fatal diseases.</strong> Very sick patients are automatically excluded because of their early death.</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Neyman&rsquo;s</strong> bias or prevalence-incidence bias example: a case-control study is carried out to study the relationship between tobacco smoking and acute myocardial infarction (AMI). The cases are interviewed one week after the coronary attack. If smoker patients with AMI die more frequently, the living cases will show a lower frequency of smoking, undervaluing the association between smoking and AMI. It has been shown that the bias occurs only if the risk factor influences mortality from the disease being studied.</p>\n<p><strong>Ecological fallacy</strong> results when characteristics of the group are assigned inappropriately to individuals.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4280",
+      "difficulty": "easy"
+    }
+  ]
+}

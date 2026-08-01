@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article - Nextpulse</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="brain-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../../access-control.js"></script>
+  <script src="../../theme.js"></script>
+  <script src="../../block.js"></script>
+  <script src="../../error-handler/link-checker.js"></script>
+  <style>
+    .article-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .article-selector {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .article-selector h3 {
+      margin-bottom: 1rem;
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-list {
+      display: grid;
+      gap: 0.75rem;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .article-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      background: #f7fafc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+      border-left: 4px solid #2c5282;
+    }
+
+    .article-item:hover {
+      background: #e2e8f0;
+      border-color: #2c5282;
+      transform: translateX(5px);
+    }
+
+    .article-item i {
+      font-size: 1.25rem;
+      color: #2c5282;
+    }
+
+    .article-item .article-name {
+      flex: 1;
+      font-weight: 500;
+      color: #2d3748;
+    }
+
+    .article-item .article-arrow {
+      color: #a0aec0;
+    }
+
+    .article-content-wrapper {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .article-header {
+      background: linear-gradient(135deg, #2c5282, #1a365d);
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+
+    .article-header h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-header .article-meta {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .article-header .article-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .article-body {
+      padding: 2rem;
+      line-height: 1.8;
+      color: #2d3748;
+      font-size: 1rem;
+    }
+
+    .article-body h1, .article-body h2, .article-body h3, 
+    .article-body h4, .article-body h5, .article-body h6 {
+      color: #1a365d;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-body h1 { font-size: 1.75rem; }
+    .article-body h2 { font-size: 1.5rem; }
+    .article-body h3 { font-size: 1.25rem; }
+    .article-body h4 { font-size: 1.1rem; }
+
+    .article-body p {
+      margin-bottom: 1rem;
+    }
+
+    .article-body ul, .article-body ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-body li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Horizontal scroll container for tables */
+    .table-scroll-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+
+    .article-body table {
+      min-width: 600px;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .article-body th, .article-body td {
+      border: 1px solid #e2e8f0;
+      padding: 0.75rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    
+    /* Global Search */
+    .global-search-container {
+      margin-bottom: 1.5rem;
+    }
+    .global-search-bar {
+      background: white;
+      border-radius: 25px;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .global-search-bar i {
+      color: #718096;
+      margin-right: 0.75rem;
+    }
+    .global-search-bar input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      color: #2d3748;
+    }
+    .search-results {
+      margin-top: 0.75rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+    }
+    .search-results.active {
+      display: block;
+    }
+    .search-result-item {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .search-result-item:hover {
+      background: #f7fafc;
+    }
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+    .search-result-item i {
+      color: #2c5282;
+    }
+    .search-result-item .result-title {
+      font-weight: 500;
+      color: #2d3748;
+    }
+    .search-result-item .result-path {
+      font-size: 0.8rem;
+      color: #718096;
+    }
+
+    .article-body th {
+      background: #f7fafc;
+      font-weight: 600;
+      color: #2c5282;
+    }
+
+    .article-body blockquote {
+      border-left: 4px solid #2c5282;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #4a5568;
+      font-style: italic;
+    }
+
+    .article-body code {
+      background: #f7fafc;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+
+    .article-body pre {
+      background: #2d3748;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    .article-body pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+
+    .article-body a {
+      color: #2c5282;
+      text-decoration: underline;
+    }
+
+    .article-body a:hover {
+      color: #1a365d;
+    }
+
+    .article-body .api {
+      color: #2c5282;
+      font-weight: 500;
+    }
+
+    .article-body .nowrap {
+      white-space: nowrap;
+    }
+
+    .article-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      background: #f7fafc;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #2c5282;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: #1a365d;
+    }
+
+    .nav-btn:disabled {
+      background: #a0aec0;
+      cursor: not-allowed;
+    }
+
+    .nav-btn.secondary {
+      background: #e2e8f0;
+      color: #2d3748;
+    }
+
+    .nav-btn.secondary:hover {
+      background: #cbd5e0;
+    }
+
+    .loading-spinner {
+      text-align: center;
+      padding: 3rem;
+      color: #718096;
+    }
+
+    .loading-spinner i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2c5282;
+    }
+
+    .error-state {
+      text-align: center;
+      padding: 3rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .error-state i {
+      font-size: 3rem;
+      color: #e53e3e;
+      margin-bottom: 1rem;
+    }
+
+    .error-state h3 {
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+    }
+
+    .error-state p {
+      color: #718096;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-bar {
+      background: #f7fafc;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .search-bar i {
+      color: #718096;
+      margin-right: 0.75rem;
+    }
+
+    .search-bar input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      color: #2d3748;
+    }
+
+    @media (max-width: 768px) {
+      .article-body {
+        padding: 1.25rem;
+        font-size: 0.95rem;
+      }
+
+      .article-header {
+        padding: 1.25rem;
+      }
+
+      .article-nav {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .nav-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+<script src="../../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+  <script>
+    if (!accessControl.initProtectedPage()) {
+      throw new Error('Access denied - redirecting to index.html');
+    }
+  </script>
+  
+  <header>
+    <div class="header-content">
+      <button onclick="goBack()" class="back-button" style="display: block;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1 id="pageTitle">Articles</h1>
+      <p class="header-subtitle" id="articleInfo">Nextpulse</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-container">
+      <!-- Global Search -->
+      <div class="global-search-container">
+        <div class="global-search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search all topics and articles..." id="globalSearchInput" oninput="handleGlobalSearch(event)">
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+      
+      <div id="loading" class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading articles...</p>
+      </div>
+
+      <div id="article-selector" class="article-selector" style="display: none;">
+        <h3><i class="fas fa-file-medical-alt"></i> Available Articles</h3>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search articles..." id="articleSearch" oninput="filterArticles()">
+        </div>
+        <div class="article-list" id="articleList"></div>
+      </div>
+
+      <div id="article-viewer" style="display: none;">
+        <div class="article-content-wrapper">
+          <div class="article-header">
+            <h2 id="articleTitle">Article Title</h2>
+            <div class="article-meta">
+              <span><i class="fas fa-folder"></i> <span id="articleCategory">Category</span></span>
+              <span><i class="fas fa-clock"></i> <span id="articleDate">Date</span></span>
+            </div>
+          </div>
+          <div class="article-body" id="articleContent">
+          </div>
+          <div class="article-nav">
+            <button class="nav-btn secondary" onclick="backToList()">
+              <i class="fas fa-list"></i> All Articles
+            </button>
+            <div>
+              <button class="nav-btn" id="prevArticleBtn" onclick="prevArticle()">
+                <i class="fas fa-chevron-left"></i> Previous
+              </button>
+              <button class="nav-btn" id="nextArticleBtn" onclick="nextArticle()">
+                Next <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="error-state" class="error-state" style="display: none;">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h3>No Articles Found</h3>
+        <p id="errorMessage">No articles available in this folder.</p>
+        <button class="nav-btn" onclick="goBack()">
+          <i class="fas fa-arrow-left"></i> Go Back
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+  <script>
+    let articles = [];
+    let currentArticleIndex = -1;
+    let folderName = '';
+    let folderPath = '';
+    let pathString = '';
+    let allManifestFiles = []; // For global search
+    
+    // Global Search
+    async function loadManifestForSearch() {
+      try {
+        const response = await fetch('./file-manifest.json');
+        if (response.ok) {
+          const manifest = await response.json();
+          allManifestFiles = [];
+          
+          if (manifest.folders) {
+            for (const [folderPathKey, folderData] of Object.entries(manifest.folders)) {
+              if (folderData.files && Array.isArray(folderData.files)) {
+                folderData.files.forEach(fileName => {
+                  allManifestFiles.push({
+                    name: fileName.replace('.json', '').replace(/_/g, ' '),
+                    path: `./${folderPathKey}/${fileName}`,
+                    folderPath: folderPathKey,
+                    type: folderData.type || 'quiz'
+                  });
+                });
+              }
+            }
+          }
+        }
+      } catch (e) {
+        console.log('Could not load manifest for search');
+      }
+    }
+    
+    function handleGlobalSearch(event) {
+      const query = event.target.value.toLowerCase().trim();
+      const resultsContainer = document.getElementById('searchResults');
+      
+      if (query.length < 2) {
+        resultsContainer.classList.remove('active');
+        return;
+      }
+      
+      const filtered = allManifestFiles.filter(file => 
+        file.name.toLowerCase().includes(query) ||
+        file.folderPath.toLowerCase().includes(query)
+      );
+      
+      if (filtered.length === 0) {
+        resultsContainer.innerHTML = '<div class="search-result-item"><span>No results found</span></div>';
+        resultsContainer.classList.add('active');
+        return;
+      }
+      
+      resultsContainer.innerHTML = filtered.slice(0, 10).map(file => `
+        <div class="search-result-item" onclick="openSearchResult('${encodeURIComponent(file.path)}', '${file.type}', '${encodeURIComponent(file.folderPath)}')">
+          <i class="fas ${file.type === 'article' ? 'fa-file-medical-alt' : 'fa-question-circle'}"></i>
+          <div>
+            <div class="result-title">${file.name}</div>
+            <div class="result-path">${file.folderPath}</div>
+          </div>
+        </div>
+      `).join('');
+      resultsContainer.classList.add('active');
+    }
+    
+    function openSearchResult(path, type, folderPathEncoded) {
+      const decodedPath = decodeURIComponent(path);
+      const decodedFolderPath = decodeURIComponent(folderPathEncoded);
+      const fileName = decodedPath.split('/').pop().replace('.json', '').replace(/_/g, ' ');
+      
+      if (type === 'article') {
+        window.location.href = `article.html?folder=${encodeURIComponent(fileName)}&folderPath=${encodeURIComponent(decodedFolderPath)}`;
+      } else {
+        window.location.href = `quiz.html?folder=${encodeURIComponent(fileName)}&folderPath=${encodeURIComponent(decodedFolderPath)}`;
+      }
+    }
+
+    function goBack() {
+      if (pathString) {
+        const pathParts = pathString.split(',');
+        pathParts.pop();
+        if (pathParts.length > 0) {
+          window.location.href = `browse.html?path=${pathParts.join(',')}`;
+        } else {
+          window.location.href = 'index.html';
+        }
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    async function init() {
+      const urlParams = new URLSearchParams(window.location.search);
+      folderName = urlParams.get('folder') || '';
+      folderPath = urlParams.get('folderPath') || '';
+      pathString = urlParams.get('path') || '';
+
+      document.getElementById('pageTitle').textContent = folderName;
+      document.getElementById('articleInfo').textContent = 'Medical Articles';
+
+      // Load manifest for global search
+      loadManifestForSearch();
+      
+      await loadArticles();
+    }
+
+    async function loadArticles() {
+      let foundFiles = [];
+      
+      try {
+        const manifestResponse = await fetch('./file-manifest.json');
+        if (manifestResponse.ok) {
+          const manifest = await manifestResponse.json();
+          
+          if (manifest.folders && folderPath && manifest.folders[folderPath]) {
+            const folderData = manifest.folders[folderPath];
+            foundFiles = folderData.files.map(fileName => ({
+              name: fileName.replace('.json', '').replace(/_/g, ' '),
+              path: `./${folderPath}/${fileName}`,
+              data: null
+            }));
+          }
+        }
+      } catch (e) {
+        console.log('Manifest not found, trying direct file access');
+      }
+      
+      if (foundFiles.length === 0) {
+        const possiblePaths = [];
+        if (folderPath) {
+          possiblePaths.push(`./${folderPath}/`);
+        }
+        possiblePaths.push(`./${folderName}/`);
+        possiblePaths.push(`./${folderName.replace(/\s+/g, '_')}/`);
+        
+        for (const basePath of possiblePaths) {
+          try {
+            const files = await scanForJsonFiles(basePath);
+            if (files.length > 0) {
+              foundFiles = files;
+              break;
+            }
+          } catch (e) {
+            console.log(`No files at ${basePath}`);
+          }
+        }
+      }
+
+      if (foundFiles.length === 0) {
+        const directPaths = [
+          `./${folderPath}.json`,
+          `./${folderName}.json`,
+          `./${folderName.replace(/\s+/g, '_')}.json`
+        ];
+        
+        for (const jsonPath of directPaths) {
+          try {
+            const response = await fetch(jsonPath);
+            if (response.ok) {
+              const data = await response.json();
+              if (data.content || data.meta) {
+                foundFiles = [{ name: folderName, path: jsonPath, data: data }];
+                break;
+              }
+            }
+          } catch (e) {
+          }
+        }
+      }
+
+      if (foundFiles.length === 0) {
+        showError(`No articles found in: ${folderName}. Please upload JSON files to the ${folderPath || folderName} folder and update the file-manifest.json.`);
+        return;
+      }
+
+      articles = foundFiles;
+      
+      if (articles.length === 1 && articles[0].data) {
+        displayArticle(0, articles[0].data);
+      } else if (articles.length === 1) {
+        await openArticle(0);
+      } else {
+        showArticleList();
+      }
+    }
+
+    async function scanForJsonFiles(basePath) {
+      const files = [];
+      
+      const testFiles = [
+        'index.json',
+        'articles.json',
+        'data.json'
+      ];
+      
+      const pathParts = basePath.split('/').filter(p => p && p !== '.');
+      const lastFolder = pathParts[pathParts.length - 1];
+      if (lastFolder) {
+        testFiles.unshift(`${lastFolder}.json`);
+        testFiles.unshift(`${lastFolder.replace(/\s+/g, '_')}.json`);
+      }
+      
+      for (const fileName of testFiles) {
+        try {
+          const fullPath = basePath + fileName;
+          const response = await fetch(fullPath);
+          if (response.ok) {
+            const data = await response.json();
+            files.push({ 
+              name: fileName.replace('.json', '').replace(/_/g, ' '), 
+              path: fullPath,
+              data: data 
+            });
+          }
+        } catch (e) {
+        }
+      }
+      
+      return files;
+    }
+
+    function showArticleList() {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('article-selector').style.display = 'block';
+      document.getElementById('article-viewer').style.display = 'none';
+      document.getElementById('error-state').style.display = 'none';
+
+      renderArticleList(articles);
+    }
+
+    function renderArticleList(articleList) {
+      const listEl = document.getElementById('articleList');
+      
+      listEl.innerHTML = articleList.map((article, index) => {
+        const title = article.data?.meta?.title || article.name;
+        return `
+          <div class="article-item" onclick="openArticle(${index})">
+            <i class="fas fa-file-medical-alt"></i>
+            <span class="article-name">${title}</span>
+            <i class="fas fa-chevron-right article-arrow"></i>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterArticles() {
+      const query = document.getElementById('articleSearch').value.toLowerCase();
+      const filtered = articles.filter(article => {
+        const title = (article.data?.meta?.title || article.name).toLowerCase();
+        return title.includes(query);
+      });
+      renderArticleList(filtered);
+    }
+
+    async function openArticle(index) {
+      currentArticleIndex = index;
+      const article = articles[index];
+      
+      if (article.data) {
+        displayArticle(index, article.data);
+      } else {
+        try {
+          const response = await fetch(article.path);
+          const data = await response.json();
+          article.data = data;
+          displayArticle(index, data);
+        } catch (e) {
+          showError('Failed to load article content.');
+        }
+      }
+    }
+
+    function displayArticle(index, data) {
+      currentArticleIndex = index;
+      
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('article-selector').style.display = 'none';
+      document.getElementById('article-viewer').style.display = 'block';
+      document.getElementById('error-state').style.display = 'none';
+
+      const title = data.meta?.title || articles[index]?.name || 'Article';
+      const date = data.meta?.scrapedAt ? new Date(data.meta.scrapedAt).toLocaleDateString() : 'N/A';
+      
+      document.getElementById('articleTitle').textContent = title;
+      document.getElementById('articleCategory').textContent = folderName;
+      document.getElementById('articleDate').textContent = date;
+      
+      let content = data.content || '';
+      
+      content = content.replace(/data-content="[^"]*"/g, '');
+      content = content.replace(/id="[^"]*"/g, '');
+      content = content.replace(/data-[a-z-]+="[^"]*"/g, '');
+      
+      // Wrap tables in scroll containers for horizontal scrolling
+      content = content.replace(/<table/g, '<div class="table-scroll-container"><table');
+      content = content.replace(/<\/table>/g, '</table></div>');
+      
+      document.getElementById('articleContent').innerHTML = content;
+
+      document.getElementById('prevArticleBtn').disabled = index === 0;
+      document.getElementById('nextArticleBtn').disabled = index === articles.length - 1;
+      
+      if (articles.length <= 1) {
+        document.querySelector('.article-nav > div:last-child').style.display = 'none';
+      }
+
+      window.scrollTo(0, 0);
+    }
+
+    function backToList() {
+      if (articles.length > 1) {
+        showArticleList();
+      } else {
+        goBack();
+      }
+    }
+
+    function prevArticle() {
+      if (currentArticleIndex > 0) {
+        openArticle(currentArticleIndex - 1);
+      }
+    }
+
+    function nextArticle() {
+      if (currentArticleIndex < articles.length - 1) {
+        openArticle(currentArticleIndex + 1);
+      }
+    }
+
+    function showError(message) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('article-selector').style.display = 'none';
+      document.getElementById('article-viewer').style.display = 'none';
+      document.getElementById('error-state').style.display = 'block';
+      document.getElementById('errorMessage').textContent = message;
+    }
+
+    window.addEventListener('load', init);
+  </script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

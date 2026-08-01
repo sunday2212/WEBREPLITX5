@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Update | Medical Learning Hub</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2dcecc;
+            --secondary: #2193b0;
+            --accent: #ff4b2b;
+            --glass: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            --cursor-size: 20px;
+            --cursor-outline-size: 40px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Hide default cursor */
+        html {
+            cursor: none;
+            scroll-behavior: smooth;
+        }
+        a,
+        button,
+        .btn,
+        .feature-item,
+        .cube-face {
+            cursor: none;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* ============ CUSTOM CURSOR ============ */
+        .cursor-dot {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            mix-blend-mode: difference;
+            transition: transform 0.08s ease-out;
+            box-shadow: 0 0 20px rgba(45, 206, 204, 0.8), 0 0 40px rgba(45, 206, 204, 0.4);
+        }
+        .cursor-outline {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99998;
+            transition: all 0.15s ease-out;
+            box-shadow: 0 0 15px rgba(45, 206, 204, 0.3);
+        }
+        .cursor-outline.hover-active {
+            width: 70px;
+            height: 70px;
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(45, 206, 204, 0.7);
+            background: rgba(45, 206, 204, 0.08);
+        }
+        .cursor-dot.clicking {
+            transform: scale(0.4);
+            background: var(--accent);
+        }
+        .cursor-outline.clicking {
+            transform: scale(0.6);
+            border-color: var(--accent);
+            box-shadow: 0 0 25px rgba(255, 75, 43, 0.7);
+        }
+
+        /* Cursor trail particles */
+        .cursor-trail {
+            position: fixed;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99997;
+            animation: trailFade 0.8s ease-out forwards;
+        }
+        @keyframes trailFade {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        /* ============ SCROLL PROGRESS BAR ============ */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            z-index: 99999;
+            border-radius: 0 3px 3px 0;
+            box-shadow: 0 0 15px rgba(45, 206, 204, 0.6);
+            transition: width 0.1s linear;
+            pointer-events: none;
+        }
+
+        /* ============ BACKGROUND PARTICLES ============ */
+        .bg-circles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+            pointer-events: none;
+        }
+        /* Particle connection lines */
+        .particle-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* ============ 3D MEDICAL CROSS ============ */
+        .canvas-3d-wrapper {
+            position: relative;
+            margin-top: 50px;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .canvas-3d {
+            perspective: 1000px;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        .medical-cross {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate3D 12s infinite linear;
+            transition: animation-duration 0.5s ease;
+        }
+        .cube-face {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(45, 206, 204, 0.2);
+            border: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: var(--primary);
+            backdrop-filter: blur(5px);
+            transition: all 0.4s ease;
+            border-radius: 15px;
+        }
+        .cube-face:hover {
+            background: rgba(45, 206, 204, 0.4);
+            box-shadow: 0 0 40px rgba(45, 206, 204, 0.5);
+        }
+        .front {
+            transform: translateZ(75px);
+        }
+        .back {
+            transform: rotateY(180deg) translateZ(75px);
+        }
+        .right {
+            transform: rotateY(90deg) translateZ(75px);
+        }
+        .left {
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+        .top {
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .bottom {
+            transform: rotateX(-90deg) translateZ(75px);
+        }
+
+        /* Pulse rings around 3D cube */
+        .pulse-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            animation: pulseExpand 2.5s ease-out infinite;
+            pointer-events: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .pulse-ring:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .pulse-ring:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+        .pulse-ring:nth-child(3) {
+            animation-delay: 1.6s;
+        }
+        @keyframes pulseExpand {
+            0% {
+                width: 160px;
+                height: 160px;
+                opacity: 0.8;
+                border-width: 3px;
+            }
+            100% {
+                width: 350px;
+                height: 350px;
+                opacity: 0;
+                border-width: 0.5px;
+            }
+        }
+
+        /* ============ CONTENT SECTIONS ============ */
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+            z-index: 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s forwards ease-out;
+            position: relative;
+            overflow: hidden;
+            will-change: transform;
+        }
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center,
+                    rgba(45, 206, 204, 0.06) 0%,
+                    transparent 60%);
+            pointer-events: none;
+            animation: shimmer 8s infinite linear;
+        }
+        @keyframes shimmer {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+        .sorry-msg {
+            font-style: italic;
+            color: #ff9a9e;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .content-text {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #d1d1d1;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .warning-box {
+            background: rgba(255, 75, 43, 0.1);
+            border-left: 5px solid var(--accent);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            animation: warningPulse 3s ease-in-out infinite;
+        }
+        @keyframes warningPulse {
+            0%,
+            100% {
+                box-shadow: 0 0 10px rgba(255, 75, 43, 0.1);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255, 75, 43, 0.25);
+            }
+        }
+        .warning-box h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: none;
+            will-change: transform;
+        }
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+            pointer-events: none;
+        }
+        .btn:active::after {
+            width: 400px;
+            height: 400px;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: #000;
+        }
+        .btn-primary:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 35px rgba(45, 206, 204, 0.7);
+        }
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 30px rgba(45, 206, 204, 0.5);
+        }
+
+        /* ============ ECG HEARTBEAT LINE ============ */
+        .ecg-container {
+            margin: 25px auto 15px;
+            max-width: 400px;
+            height: 60px;
+            position: relative;
+            z-index: 1;
+            opacity: 0.7;
+        }
+        .ecg-line {
+            width: 100%;
+            height: 100%;
+        }
+        .ecg-path {
+            fill: none;
+            stroke: var(--accent);
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            filter: drop-shadow(0 0 8px rgba(255, 75, 43, 0.6));
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: ecgDraw 2s ease-in-out infinite;
+        }
+        @keyframes ecgDraw {
+            0% {
+                stroke-dashoffset: 1000;
+            }
+            45% {
+                stroke-dashoffset: 0;
+            }
+            55% {
+                stroke-dashoffset: 0;
+            }
+            100% {
+                stroke-dashoffset: -1000;
+            }
+        }
+
+        /* ============ FEATURES GRID ============ */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 20px;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+            will-change: transform;
+        }
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%),
+                    rgba(45, 206, 204, 0.12) 0%,
+                    transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .feature-item:hover::before {
+            opacity: 1;
+        }
+        .feature-item:hover {
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.07);
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(45, 206, 204, 0.15);
+        }
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            transition: transform 0.4s ease;
+        }
+        .feature-item:hover i {
+            transform: scale(1.2) rotate(-10deg);
+        }
+        .feature-item h3 {
+            margin-bottom: 8px;
+        }
+        .feature-item .counter {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            margin-top: 50px;
+            padding-bottom: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes rotate3D {
+            0% {
+                transform: rotateX(0) rotateY(0);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .glass-card {
+                padding: 30px 20px;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+            .cube-face {
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+            }
+            .front {
+                transform: translateZ(50px);
+            }
+            .back {
+                transform: rotateY(180deg) translateZ(50px);
+            }
+            .right {
+                transform: rotateY(90deg) translateZ(50px);
+            }
+            .left {
+                transform: rotateY(-90deg) translateZ(50px);
+            }
+            .top {
+                transform: rotateX(90deg) translateZ(50px);
+            }
+            .bottom {
+                transform: rotateX(-90deg) translateZ(50px);
+            }
+            .canvas-3d {
+                width: 100px;
+                height: 100px;
+            }
+            .canvas-3d-wrapper {
+                height: 100px;
+                width: 100px;
+                margin-top: 30px;
+            }
+            .pulse-ring {
+                animation: pulseExpandMobile 2s ease-out infinite;
+            }
+            @keyframes pulseExpandMobile {
+                0% {
+                    width: 110px;
+                    height: 110px;
+                    opacity: 0.7;
+                    border-width: 2px;
+                }
+                100% {
+                    width: 220px;
+                    height: 220px;
+                    opacity: 0;
+                    border-width: 0.5px;
+                }
+            }
+            .cursor-dot,
+            .cursor-outline,
+            .cursor-trail {
+                display: none;
+            }
+            html {
+                cursor: auto;
+            }
+            a,
+            button,
+            .btn,
+            .feature-item,
+            .cube-face {
+                cursor: pointer;
+            }
+        }
+    </style>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Background Particles Container -->
+    <div class="bg-circles" id="bg-circles"></div>
+    <!-- Particle connection lines canvas -->
+    <canvas class="particle-line" id="particleCanvas"></canvas>
+
+    <!-- 3D Medical Cross with Pulse Rings -->
+    <div class="canvas-3d-wrapper">
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <div class="canvas-3d" id="cube3D">
+            <div class="medical-cross" id="medicalCross">
+                <div class="cube-face front"><i class="fas fa-plus-medical"></i></div>
+                <div class="cube-face back"><i class="fas fa-heartbeat"></i></div>
+                <div class="cube-face right"><i class="fas fa-stethoscope"></i></div>
+                <div class="cube-face left"><i class="fas fa-microscope"></i></div>
+                <div class="cube-face top"><i class="fas fa-user-md"></i></div>
+                <div class="cube-face bottom"><i class="fas fa-dna"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ECG Heartbeat Line -->
+    <div class="ecg-container">
+        <svg class="ecg-line" viewBox="0 0 400 60" preserveAspectRatio="none">
+            <path class="ecg-path"
+            d="M0,30 L60,30 L75,30 L85,5 L95,55 L105,30 L120,30 L200,30 L215,30 L225,5 L235,55 L245,30 L260,30 L340,30 L355,30 L365,5 L375,55 L385,30 L400,30" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="glass-card" id="glassCard">
+            <h1>Thank You for Sharing! ❤️</h1>
+            <p class="sorry-msg">"Our sincerest apologies from the bottom of our heart..."</p>
+
+            <div class="content-text">
+                Dear Future Doctor, we are incredibly grateful for your support and for sharing our application. However,
+                we want to be completely honest with you to protect your journey.
+                <br><br>
+                <strong>The Truth About Marrow Edition 8:</strong> Currently, Marrow 8 lectures have <strong>never been
+                    leaked</strong>. We do not have them, and in reality, no one in the online community has access to
+                these original files.
+            </div>
+
+            <div class="warning-box">
+                <h3><i class="fas fa-exclamation-triangle"></i> Beware of Scammers!</h3>
+                <p>Many fake sellers are claiming to have Marrow 8. They often show "sample videos" which are actually
+                    clips already available for free on YouTube. Please do not lose your hard-earned money to these
+                    fraudsters.</p>
+            </div>
+
+            <div class="content-text">
+                While we can't provide Edition 8, we don't want your prep to stop! We have curated high-quality lectures
+                from other premium medical platforms available for you <strong>completely free of cost</strong>.
+            </div>
+
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary magnetic-btn"><i class="fas fa-play-circle"></i> Watch Other
+                Platforms</a>
+                <a href="#" class="btn btn-outline magnetic-btn"><i class="fas fa-shield-alt"></i> Stay Updated</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-item" data-magnetic>
+                <i class="fas fa-user-shield"></i>
+                <span class="counter" data-target="100">0</span><span style="font-size:1.5rem;color:var(--primary);">%</span>
+                <h3>100% Secure</h3>
+                <p>We prioritize your privacy and academic integrity above all.</p>
+            </div>
+            <div class="feature-item" data-magnetic>
+                <i class="fas fa-book-medical"></i>
+                <span class="counter" data-target="5000">0</span><span style="font-size:1.5rem;color:var(--primary);">+</span>
+                <h3>Free Resources</h3>
+                <p>Access thousands of high-yield videos from top educators.</p>
+            </div>
+            <div class="feature-item" data-magnetic>
+                <i class="fas fa-hand-holding-heart"></i>
+                <span class="counter" data-target="24">0</span><span style="font-size:1.5rem;color:var(--primary);">/7</span>
+                <h3>Student Support</h3>
+                <p>We are here to guide you, not to mislead you. Trust the process.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Medical Learning Hub | Dedicated to your Success</p>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            // ============ DOM ELEMENTS ============
+            const cursorDot = document.getElementById('cursorDot');
+            const cursorOutline = document.getElementById('cursorOutline');
+            const scrollProgress = document.getElementById('scrollProgress');
+            const bgCircles = document.getElementById('bg-circles');
+            const particleCanvas = document.getElementById('particleCanvas');
+            const ctx = particleCanvas.getContext('2d');
+            const glassCard = document.getElementById('glassCard');
+            const medicalCross = document.getElementById('medicalCross');
+            const cube3D = document.getElementById('cube3D');
+            const counters = document.querySelectorAll('.counter');
+
+            // ============ STATE ============
+            let mouseX = window.innerWidth / 2;
+            let mouseY = window.innerHeight / 2;
+            let outlineX = mouseX;
+            let outlineY = mouseY;
+            let dotX = mouseX;
+            let dotY = mouseY;
+            let isHovering = false;
+            let isClicking = false;
+            let trailParticles = [];
+            const bgParticlesData = [];
+            const PARTICLE_COUNT = 25;
+            const colors = ['#2dcecc', '#2193b0', '#ffffff', '#ff4b2b'];
+            let animationId;
+            let countersAnimated = false;
+
+            // ============ RESIZE CANVAS ============
+            function resizeCanvas() {
+                particleCanvas.width = window.innerWidth;
+                particleCanvas.height = window.innerHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                bgParticlesData.length = 0;
+                createBgParticles();
+            });
+
+            // ============ CREATE BACKGROUND PARTICLES ============
+            function createBgParticles() {
+                bgCircles.innerHTML = '';
+                bgParticlesData.length = 0;
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    const circle = document.createElement('div');
+                    circle.classList.add('circle');
+                    const size = Math.random() * 80 + 15;
+                    const x = Math.random() * 100;
+                    const y = Math.random() * 100;
+                    circle.style.width = size + 'px';
+                    circle.style.height = size + 'px';
+                    circle.style.left = x + '%';
+                    circle.style.top = y + '%';
+                    circle.style.animationDelay = Math.random() * 20 + 's';
+                    circle.style.animationDuration = Math.random() * 12 + 10 + 's';
+                    circle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    circle.style.opacity = Math.random() * 0.4;
+                    bgCircles.appendChild(circle);
+
+                    bgParticlesData.push({
+                        el: circle,
+                        size: size,
+                        xPercent: x,
+                        yPercent: y,
+                        vx: (Math.random() - 0.5) * 0.015,
+                        vy: (Math.random() - 0.5) * 0.015 - 0.01,
+                    });
+                }
+            }
+            createBgParticles();
+
+            // ============ DRAW PARTICLE CONNECTIONS ============
+            function drawParticleConnections() {
+                ctx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+                const w = particleCanvas.width;
+                const h = particleCanvas.height;
+
+                // Get current positions of all bg particles
+                const positions = bgParticlesData.map(p => ({
+                    x: (p.xPercent / 100) * w,
+                    y: (p.yPercent / 100) * h,
+                    size: p.size,
+                }));
+
+                // Draw connections between nearby particles
+                for (let i = 0; i < positions.length; i++) {
+                    for (let j = i + 1; j < positions.length; j++) {
+                        const dx = positions[i].x - positions[j].x;
+                        const dy = positions[i].y - positions[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        const maxDist = 180;
+                        if (dist < maxDist) {
+                            const alpha = (1 - dist / maxDist) * 0.35;
+                            ctx.strokeStyle = `rgba(45,206,204,${alpha})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.beginPath();
+                            ctx.moveTo(positions[i].x, positions[i].y);
+                            ctx.lineTo(positions[j].x, positions[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                // Draw cursor connections to nearby particles
+                for (let i = 0; i < positions.length; i++) {
+                    const dx = mouseX - positions[i].x;
+                    const dy = mouseY - positions[i].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    const maxDist = 200;
+                    if (dist < maxDist) {
+                        const alpha = (1 - dist / maxDist) * 0.5;
+                        ctx.strokeStyle = `rgba(255,255,255,${alpha})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(mouseX, mouseY);
+                        ctx.lineTo(positions[i].x, positions[i].y);
+                        ctx.stroke();
+
+                        // Glow dot at particle position near cursor
+                        ctx.fillStyle = `rgba(45,206,204,${alpha})`;
+                        ctx.beginPath();
+                        ctx.arc(positions[i].x, positions[i].y, 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+
+                // Draw cursor glow
+                const cursorGlow = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, 80);
+                cursorGlow.addColorStop(0, 'rgba(45,206,204,0.15)');
+                cursorGlow.addColorStop(1, 'rgba(45,206,204,0)');
+                ctx.fillStyle = cursorGlow;
+                ctx.beginPath();
+                ctx.arc(mouseX, mouseY, 80, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // ============ UPDATE BG PARTICLES ============
+            function updateBgParticles() {
+                bgParticlesData.forEach(p => {
+                    p.xPercent += p.vx;
+                    p.yPercent += p.vy;
+                    // Wrap around
+                    if (p.xPercent > 105) p.xPercent = -5;
+                    if (p.xPercent < -5) p.xPercent = 105;
+                    if (p.yPercent > 105) p.yPercent = -5;
+                    if (p.yPercent < -5) p.yPercent = 105;
+                    p.el.style.left = p.xPercent + '%';
+                    p.el.style.top = p.yPercent + '%';
+                });
+            }
+
+            // ============ CUSTOM CURSOR ============
+            function updateCursor() {
+                // Smooth follow for outline
+                const outlineSpeed = 0.12;
+                outlineX += (mouseX - outlineX) * outlineSpeed;
+                outlineY += (mouseY - outlineY) * outlineSpeed;
+                // Faster follow for dot
+                const dotSpeed = 0.35;
+                dotX += (mouseX - dotX) * dotSpeed;
+                dotY += (mouseY - dotY) * dotSpeed;
+
+                cursorDot.style.left = dotX - 4 + 'px';
+                cursorDot.style.top = dotY - 4 + 'px';
+                cursorOutline.style.left = outlineX - (isHovering ? 35 : 20) + 'px';
+                cursorOutline.style.top = outlineY - (isHovering ? 35 : 20) + 'px';
+
+                if (isClicking) {
+                    cursorDot.classList.add('clicking');
+                    cursorOutline.classList.add('clicking');
+                } else {
+                    cursorDot.classList.remove('clicking');
+                    cursorOutline.classList.remove('clicking');
+                }
+                if (isHovering) {
+                    cursorOutline.classList.add('hover-active');
+                } else {
+                    cursorOutline.classList.remove('hover-active');
+                }
+            }
+
+            // ============ CURSOR TRAIL ============
+            function spawnTrailParticle(x, y) {
+                const trail = document.createElement('div');
+                trail.classList.add('cursor-trail');
+                trail.style.left = x + 'px';
+                trail.style.top = y + 'px';
+                trail.style.width = (Math.random() * 5 + 3) + 'px';
+                trail.style.height = trail.style.width;
+                trail.style.background = colors[Math.floor(Math.random() * colors.length)];
+                trail.style.boxShadow = `0 0 ${Math.random() * 8 + 4}px ${trail.style.background}`;
+                document.body.appendChild(trail);
+                trailParticles.push({ el: trail, life: 0.8, age: 0 });
+            }
+
+            function updateTrailParticles(dt) {
+                for (let i = trailParticles.length - 1; i >= 0; i--) {
+                    trailParticles[i].age += dt;
+                    if (trailParticles[i].age >= trailParticles[i].life) {
+                        trailParticles[i].el.remove();
+                        trailParticles.splice(i, 1);
+                    } else {
+                        const progress = trailParticles[i].age / trailParticles[i].life;
+                        trailParticles[i].el.style.opacity = 1 - progress;
+                        trailParticles[i].el.style.transform = `scale(${1 - progress})`;
+                    }
+                }
+            }
+
+            // ============ EVENT LISTENERS ============
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                // Spawn trail particles periodically
+                if (Math.random() < 0.35) {
+                    spawnTrailParticle(e.clientX, e.clientY);
+                }
+            });
+
+            document.addEventListener('mousedown', () => { isClicking = true; });
+            document.addEventListener('mouseup', () => { isClicking = false; });
+
+            // Hover detection for interactive elements
+            const hoverTargets = document.querySelectorAll(
+                'a, button, .btn, .feature-item, .cube-face, .magnetic-btn, [data-magnetic]');
+            hoverTargets.forEach(el => {
+                el.addEventListener('mouseenter', () => { isHovering = true; });
+                el.addEventListener('mouseleave', () => { isHovering = false; });
+            });
+
+            // ============ SCROLL PROGRESS ============
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                scrollProgress.style.width = progress + '%';
+            });
+
+            // ============ 3D CUBE MOUSE TRACKING ============
+            cube3D.addEventListener('mousemove', (e) => {
+                const rect = cube3D.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+                const dx = (e.clientX - cx) / rect.width;
+                const dy = (e.clientY - cy) / rect.height;
+                const maxTilt = 25;
+                medicalCross.style.transform = `rotateX(${-dy * maxTilt}deg) rotateY(${dx * maxTilt}deg)`;
+                medicalCross.style.animationPlayState = 'paused';
+            });
+            cube3D.addEventListener('mouseleave', () => {
+                medicalCross.style.transform = '';
+                medicalCross.style.animationPlayState = 'running';
+            });
+
+            // ============ MAGNETIC BUTTONS ============
+            const magneticBtns = document.querySelectorAll('.magnetic-btn, [data-magnetic]');
+            magneticBtns.forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const cx = rect.left + rect.width / 2;
+                    const cy = rect.top + rect.height / 2;
+                    const dx = e.clientX - cx;
+                    const dy = e.clientY - cy;
+                    const strength = 0.35;
+                    const maxMove = 15;
+                    const moveX = Math.min(Math.max(dx * strength, -maxMove), maxMove);
+                    const moveY = Math.min(Math.max(dy * strength, -maxMove), maxMove);
+                    btn.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.04)`;
+                    btn.style.transition = 'transform 0.15s ease-out';
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = 'translate(0, 0) scale(1)';
+                    btn.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.2)';
+                });
+            });
+
+            // ============ FEATURE ITEM SHINE EFFECT ============
+            const featureItems = document.querySelectorAll('.feature-item');
+            featureItems.forEach(item => {
+                item.addEventListener('mousemove', (e) => {
+                    const rect = item.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    item.style.setProperty('--mx', x + '%');
+                    item.style.setProperty('--my', y + '%');
+                });
+            });
+
+            // ============ COUNTER ANIMATION ============
+            function animateCounters() {
+                if (countersAnimated) return;
+                countersAnimated = true;
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const duration = 2000;
+                    const startTime = performance.now();
+                    const startVal = 0;
+
+                    function updateCounter(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        // Ease-out cubic
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.round(startVal + (target - startVal) * eased);
+                        counter.textContent = current.toLocaleString();
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target.toLocaleString();
+                        }
+                    }
+                    requestAnimationFrame(updateCounter);
+                });
+            }
+
+            // Use Intersection Observer to trigger counters
+            const featuresSection = document.querySelector('.features');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            if (featuresSection) {
+                observer.observe(featuresSection);
+            }
+            // Fallback: animate after 1.5s if not triggered
+            setTimeout(() => {
+                if (!countersAnimated) animateCounters();
+            }, 1500);
+
+            // ============ GLASS CARD MOUSE PARALLAX ============
+            document.addEventListener('mousemove', (e) => {
+                if (!glassCard) return;
+                const rect = glassCard.getBoundingClientRect();
+                const cardCX = rect.left + rect.width / 2;
+                const cardCY = rect.top + rect.height / 2;
+                const dx = (e.clientX - cardCX) / rect.width;
+                const dy = (e.clientY - cardCY) / rect.height;
+                const maxRotate = 3;
+                glassCard.style.transform =
+                    `rotateY(${dx * maxRotate}deg) rotateX(${-dy * maxRotate}deg) translateY(0)`;
+                glassCard.style.transition = 'transform 0.1s ease-out';
+            });
+            document.addEventListener('mouseleave', () => {
+                if (!glassCard) return;
+                glassCard.style.transform = 'rotateY(0deg) rotateX(0deg) translateY(0)';
+                glassCard.style.transition = 'transform 0.6s ease';
+            });
+
+            // ============ MAIN ANIMATION LOOP ============
+            let lastTime = performance.now();
+
+            function animate(timestamp) {
+                const dt = Math.min((timestamp - lastTime) / 1000, 0.1);
+                lastTime = timestamp;
+
+                updateCursor();
+                updateBgParticles();
+                drawParticleConnections();
+                updateTrailParticles(dt);
+
+                animationId = requestAnimationFrame(animate);
+            }
+            animationId = requestAnimationFrame(animate);
+
+            // ============ CLEANUP ON UNLOAD ============
+            window.addEventListener('beforeunload', () => {
+                if (animationId) cancelAnimationFrame(animationId);
+            });
+
+            // ============ KEYBOARD EASTER EGG ============
+            let konamiCode = '';
+            const secretCode = 'marrow';
+            window.addEventListener('keydown', (e) => {
+                konamiCode += e.key.toLowerCase();
+                if (konamiCode.length > secretCode.length) {
+                    konamiCode = konamiCode.slice(-secretCode.length);
+                }
+                if (konamiCode === secretCode) {
+                    // Burst of particles!
+                    for (let i = 0; i < 40; i++) {
+                        setTimeout(() => {
+                            spawnTrailParticle(
+                                mouseX + (Math.random() - 0.5) * 300,
+                                mouseY + (Math.random() - 0.5) * 300
+                            );
+                        }, i * 15);
+                    }
+                    // Flash the cube
+                    medicalCross.style.animationDuration = '1.5s';
+                    setTimeout(() => {
+                        medicalCross.style.animationDuration = '12s';
+                    }, 3000);
+                    konamiCode = '';
+                }
+            });
+
+            console.log('%c🩺 Medical Learning Hub %c| Advanced Edition',
+                'font-size:1.4em;color:#2dcecc;', 'color:#fff;');
+            console.log('%cAll systems initialized. Particle network active. Cursor tracking online.',
+                'color:#d1d1d1;');
+        })();
+    </script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

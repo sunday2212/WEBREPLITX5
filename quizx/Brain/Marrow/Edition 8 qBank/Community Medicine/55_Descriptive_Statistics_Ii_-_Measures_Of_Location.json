@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "title": "55_Descriptive_Statistics_Ii_-_Measures_Of_Location"
+  },
+  "questions": [
+    {
+      "text": "Which of the following is not a measure of location?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean"
+        },
+        {
+          "id": 2,
+          "text": "Median"
+        },
+        {
+          "id": 3,
+          "text": "Mode"
+        },
+        {
+          "id": 4,
+          "text": "Percentile"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Percentile</strong> is a measure of <strong>position</strong>. It can be defined&nbsp;as a number&nbsp;that states the percentage of observations that fall below any particular score.</p>\n<p><strong>Measures of location </strong>help in summarizing the data by <strong>locating</strong> its&nbsp;<strong>centre </strong>or middle. The three main measures of location include&nbsp;<strong>mean</strong>, <strong>median</strong> and <strong>mode</strong>. They are also called measures of <strong>central tendency</strong>.</p><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1743",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The mean can be calculated only if data is on:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Interval scale"
+        },
+        {
+          "id": 2,
+          "text": "Dichotomous scale"
+        },
+        {
+          "id": 3,
+          "text": "Nominal scale"
+        },
+        {
+          "id": 4,
+          "text": "Ordinal scale"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>mean</strong> can be worked out only for <strong>quantitative</strong> values. Thus, it can be calculated for&nbsp;<strong>interval</strong> or&nbsp;<strong>ratio scale </strong>data.&nbsp;</p>\n<p>A<strong> dichotomous</strong> scale is a type of <strong>nominal</strong> <strong>scale</strong> data that can take <strong>only</strong> <strong>two values</strong>. Example: Male/ Female. For <strong>nominal</strong> scale data, the preferred measure of central tendency is <strong>mode</strong>. For<strong> ordinal</strong> scale data, both&nbsp;<strong>median</strong> and <strong>mode</strong> can be calculated.</p>\n<p><strong>Median</strong> can be derived from <strong>ordinal</strong>, <strong>interval</strong> and <strong>ratio</strong> data scales.&nbsp;<strong>Mode</strong> can be derived from <strong>all scales</strong> of data- nominal, ordinal, interval and ratio.</p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1792",
+      "difficulty": "medium"
+    },
+    {
+      "text": "During a school health survey on malnutrition, the children are arranged according to ascending order of their heights. Which of the following can be obtained by this arrangement?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Arithmetic mean"
+        },
+        {
+          "id": 2,
+          "text": "50th centile"
+        },
+        {
+          "id": 3,
+          "text": "Geometric mean"
+        },
+        {
+          "id": 4,
+          "text": "Mean deviation"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The<strong> 50th centile </strong>can be&nbsp;obtained when<strong>&nbsp;</strong>values are<strong> arranged in</strong> <strong>order</strong> and the <strong>central value</strong> is <strong>picked</strong> out. This is the same as the <strong>median</strong>.</p>\n<p>In a distribution that has an&nbsp;<strong>odd&nbsp;</strong>number of<strong>&nbsp;elements</strong>, the median is the<strong>&nbsp;middle value</strong>.</p>\n<p>In a distribution that has an&nbsp;<strong>even&nbsp;</strong>number of&nbsp;<strong>elements</strong>, the median is the<strong>&nbsp;average&nbsp;</strong>of the<strong>&nbsp;middle values</strong>, i.e., the arithmetic mean of the two middle values.</p>\n<p>An example of how to calculate the median of an odd and an even number of elements is given below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4531762c99d34063a17775a9b7b9b3e8x800x588.PNG\" alt=\"Explanation Image\"><p>Option C:&nbsp;<strong>Geometric mean</strong>&nbsp;is obtained by taking the <strong>arithmetic mean</strong> of values on a <strong>logarithmic scale</strong>.</p>\n<p>Option D:&nbsp;<strong>Mean deviation</strong>&nbsp;is a measure of <strong>dispersion</strong>. The average of <strong>deviations</strong> from the arithmetic <strong>mean</strong> gives the mean deviation.</p><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1752",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following can have more than one value?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Median"
+        },
+        {
+          "id": 2,
+          "text": "Harmonic mean"
+        },
+        {
+          "id": 3,
+          "text": "Mode"
+        },
+        {
+          "id": 4,
+          "text": "Geometric mean"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The <strong>mode</strong>&nbsp;of a given sample can have <strong>more than one</strong> value. It is the <strong>most frequently</strong> <strong>occurring</strong> value in a distribution.&nbsp;</p>\n<p>For example, in the sample [1, 3, 6, 6, 6, 6, 7, 7, 12, 12, 17], the most repeated value i.e., the mode is 6.</p>\n<p>For the list of data [1, 1, 2, 4, 4], the mode is 1 and 4. Therefore, the&nbsp;<strong>mode</strong> is<strong> not</strong> <strong>unique</strong>. This dataset may be said to be bimodal, while a set with <strong>more than two modes</strong> may be described as <strong>multimodal</strong>.</p>\n<p><strong>Median</strong> can have only <strong>one value</strong>, obtained by arranging values in order and then picking out the <strong>central value</strong>. In a sample with an&nbsp;<strong>even</strong> number of <strong>elements</strong>, median is obtained by taking the <strong>average</strong> of the <strong>middle 2</strong> elements.</p>\n<p><strong>Mean </strong>can only have a <strong>single value</strong>. The<strong> harmonic mean</strong> is the <strong>reciprocal</strong> of the arithmetic mean&nbsp;of the reciprocals of the data values.&nbsp;<strong>The geometric mean</strong>&nbsp;is obtained by taking the arithmetic <strong>mean</strong> of values on a <strong>logarithmic</strong> scale.</p><hr><h3>Related Pearl: The Mode in Biostatistics</h3><ul>\n<li>The <strong>mode</strong> is most <strong>frequently </strong>occurring<strong> observed value</strong> in a distribution.</li>\n<li>A distribution with a <strong>single mode</strong> is called <strong>unimodal</strong>.</li>\n<li>If <strong>two values </strong>occur with the <strong>highest frequency</strong>, then the distribution is <strong>bimodal</strong>.</li>\n<li>If <strong>more </strong>than<strong> two values </strong>occur with the<strong> highest frequency</strong>, then the distribution is <strong>multimodal</strong>.</li>\n<li>The <strong>mode </strong>is the <strong>preferred</strong> measure of central tendency for <strong>nominal data.</strong></li>\n<li>It is sometimes symbolized by <strong>Mo</strong>.</li>\n<li>Mode can be arrived at from all data scales, i.e., <strong>nominal, ordinal, ratio </strong>and<strong> interval.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1753",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While collecting data on which of the following variables would median not be the preferred measure of central tendency?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Blood presssure"
+        },
+        {
+          "id": 2,
+          "text": "Survival time"
+        },
+        {
+          "id": 3,
+          "text": "Incubation period"
+        },
+        {
+          "id": 4,
+          "text": "Health expenses"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Blood pressure</strong> usually forms a normal <strong>symmetrical</strong> <strong>distribution</strong> for which <strong>mean</strong> is the <strong>preferred</strong> measure of central tendency.</p>\n<p>Distributions of<strong> survival time, incubation period </strong>and<strong> health expenses</strong>&nbsp;have the probability of having extreme values, i.e., <strong>outliers</strong>. Thus, they form <strong>skewed</strong> <strong>distributions </strong>and in such cases,&nbsp;<strong>median</strong> is the <strong>preferred</strong> measure of central tendency.</p><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1778",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following is true for the given distribution of ages of patients who are visiting a family planning clinic in a day?<div class='question-desc-html'><p>Age in years: 20, 31, 31, 31, 25, 28, 35, 38, 31.</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean is 30"
+        },
+        {
+          "id": 2,
+          "text": "Mode is 15"
+        },
+        {
+          "id": 3,
+          "text": "Median is 15"
+        },
+        {
+          "id": 4,
+          "text": "Median is 28"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The arithmetic <strong>mean</strong> from the following data is given by the sum of all the values,&nbsp;<strong>270</strong> <strong>divided</strong> by the number of values, <strong>9</strong> = <strong>30</strong>.</p>\n<p>The data can be arranged in ascending order as 20, 25, 28, 31, 31, 31, 31, 35, 38.</p>\n<p>After arranging in order, the<strong> median</strong>&nbsp;is obtained by picking out the <strong>central value</strong>&nbsp;which is&nbsp;<strong>31</strong>.</p>\n<p>The <strong>mode</strong> is the most <strong>frequently</strong> occurring <strong>value</strong>, which is <strong>31</strong> here.</p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul><hr><h3>Related Pearl: The Mode in Biostatistics</h3><ul>\n<li>The <strong>mode</strong> is most <strong>frequently </strong>occurring<strong> observed value</strong> in a distribution.</li>\n<li>A distribution with a <strong>single mode</strong> is called <strong>unimodal</strong>.</li>\n<li>If <strong>two values </strong>occur with the <strong>highest frequency</strong>, then the distribution is <strong>bimodal</strong>.</li>\n<li>If <strong>more </strong>than<strong> two values </strong>occur with the<strong> highest frequency</strong>, then the distribution is <strong>multimodal</strong>.</li>\n<li>The <strong>mode </strong>is the <strong>preferred</strong> measure of central tendency for <strong>nominal data.</strong></li>\n<li>It is sometimes symbolized by <strong>Mo</strong>.</li>\n<li>Mode can be arrived at from all data scales, i.e., <strong>nominal, ordinal, ratio </strong>and<strong> interval.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1750",
+      "difficulty": "easy"
+    },
+    {
+      "text": "You are conducting a study on birth weights in your hospital. Out of 11 births, 5 babies weighed over 2.5 kg, one baby weighed 2.5 kg and 5 weighed less than 2.5 kg. What does the value 2.5 represent in this distribution?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Arithmetic Mean"
+        },
+        {
+          "id": 2,
+          "text": "Geometric Mean"
+        },
+        {
+          "id": 3,
+          "text": "Median"
+        },
+        {
+          "id": 4,
+          "text": "3rd quartile"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Out of the 11 birth weights, <strong>2.5 kg</strong>&nbsp;would represent the <strong>middle value</strong>&nbsp;or the <strong>median</strong>.<strong>&nbsp;</strong>5 babies weigh more than 2.5 kg and 5 less than that.</p>\n<p>This can be understood from the image below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/04f8d6b8c64e47e193db6c07742c6c69x697x367.JPEG\" alt=\"Explanation Image\"><p>Option A:&nbsp;<strong>Mean</strong> or arithmetic mean is the <strong>average</strong> value.&nbsp;In this case, the mean is the average of all the 11 values. It need not be 2.5.</p>\n<p>Option B: <strong>Geometric mean </strong>is obtained by taking the&nbsp;arithmetic mean&nbsp;of values on a&nbsp;<strong>logarithmic scale</strong>.</p>\n<p>Option D:&nbsp;<strong>Quartile</strong>&nbsp;is a measure of <strong>position</strong>,<strong>&nbsp;</strong>where the data is divided into four equal sets.&nbsp;<strong>3/4</strong> of the values are <strong>below</strong> the <strong>3rd quartile</strong> reading. Hence, it cannot be the central reading.</p><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1755",
+      "difficulty": "medium"
+    },
+    {
+      "text": "You are conducting an epidemiological study on malaria in a town X. The number of cases reported during the last 10 years is given below. What is the most appropriate measure of central tendency for this data?<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>Year&nbsp;</td>\n<td>\n<p>No. of&nbsp;cases</p>\n</td>\n</tr>\n<tr>\n<td>2011</td>\n<td>250</td>\n</tr>\n<tr>\n<td>2012</td>\n<td>320</td>\n</tr>\n<tr>\n<td>2013</td>\n<td>190</td>\n</tr>\n<tr>\n<td>2014</td>\n<td>300</td>\n</tr>\n<tr>\n<td>2015</td>\n<td>5000</td>\n</tr>\n<tr>\n<td>2016</td>\n<td>100</td>\n</tr>\n<tr>\n<td>2017</td>\n<td>260</td>\n</tr>\n<tr>\n<td>2018</td>\n<td>350</td>\n</tr>\n<tr>\n<td>2019</td>\n<td>320</td>\n</tr>\n<tr>\n<td>2020</td>\n<td>160</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Arithmetic Mean"
+        },
+        {
+          "id": 2,
+          "text": "Mode"
+        },
+        {
+          "id": 3,
+          "text": "Median"
+        },
+        {
+          "id": 4,
+          "text": "Geometric Mean"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>In this scenario,<strong> median</strong> is the <strong>preferred</strong> measure of central tendency&nbsp;as there are <strong>outliers.</strong></p>\n<p>The value of <strong>5000</strong>&nbsp;is an <strong>outlier </strong>in the given set, i.e., an observed value which is very distant from other observations in the distribution. This indicates the usage of <strong>median</strong> as the measure of central tendency as it is <strong>not sensitive </strong>to<strong> extreme </strong>values, unlike the mean.</p>\n<p>By arranging the data in order: 100, 160, 190, 250, 260, 300, 320, 320, 350, 5000, we get the <strong>median</strong> as (260 + 300) / 2 = 280.</p>\n<p>Options A and B: <strong>Mean</strong> is the <strong>most</strong> <strong>affected</strong> by the presence of outliers.&nbsp;<strong>Mode</strong> is the least affected by outliers but it is used mainly for measuring the central tendency of <strong>nominal data</strong>.</p>\n<p>Option D:&nbsp;<strong>Geometric mean&nbsp;</strong>can be used for datasets with extreme values but it is <strong>not</strong> <strong>used</strong> when the <strong>values</strong> can be <strong>zero</strong> or <strong>negative</strong>. In the given scenario, the number of malaria cases reported in a town can also have a zero value.</p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1756",
+      "difficulty": "medium"
+    },
+    {
+      "text": "During a school health assessment, the mean value of weight for a group of 10 boys was found to be 18.2 kg. Later, it was found that the weight of one of the boys was wrongly recorded as 2.0 kg instead of 20 kg. What is the true mean weight of the group?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "20 kg"
+        },
+        {
+          "id": 2,
+          "text": "20.2 kg"
+        },
+        {
+          "id": 3,
+          "text": "16.4 kg"
+        },
+        {
+          "id": 4,
+          "text": "18.2 kg"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The <strong>true mean</strong> weight of the group is <strong>20 kg</strong>.</p>\n<p>Mean is given as <strong>x̄ = &sum;x / n</strong>, where n is the number of elements and &sum;x denotes the sum of all the elements in the series.</p>\n<p>In this scenario, the incorrect mean is 18.2, i.e.,<br /> <strong>&sum;x / 10 = 18.2</strong>, making <strong>&sum;x = 182</strong>. <br />But this is incorrect as one of the 10 weights was wrongly recorded as 2 instead of 20.</p>\n<p>The corrected <strong>&sum;x = (Incorrect &sum;x &ndash; incorrect value) + correct value</strong>.</p>\n<p>The incorrect sum of all elements = 182,&nbsp;incorrect value =2 and the correct value = 20.</p>\n<p>Thus, the correct sum of all the 10 weights would be,&nbsp;<br /><strong>&sum;x = (182 &ndash; 2) + 20&nbsp;= 200</strong>.<strong><br /></strong></p>\n<p>From this, the <strong>correct</strong> <strong>mean value</strong> of the 10 weights can be given by:&nbsp;<br />&sum;x / 10<strong> =&nbsp;</strong>200/ 10 = <strong>20</strong>.</p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1768",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements is correct about the given distribution of ages of patients attending a geriatric medicine clinic?<div class='question-desc-html'><p>Age in years:&nbsp;70, 70, 76, 76, 80, 83, 84, 85</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mode is 70, 76"
+        },
+        {
+          "id": 2,
+          "text": "Median is 80"
+        },
+        {
+          "id": 3,
+          "text": "Mode is 73"
+        },
+        {
+          "id": 4,
+          "text": "Median is 76, 80"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>For the given dataset, the<strong> modes</strong>&nbsp;are&nbsp;<strong>70</strong> and <strong>76</strong>. The mode is the most <strong>frequently occurring</strong> value. It can have <strong>multiple values</strong>. In this scenario, the values <strong>70</strong> and <strong>76</strong> have been <strong>repeated twice</strong>.&nbsp;</p>\n<p>Median of this distribution is the central value, (76 + 80) / 2 = 78.</p><hr><h3>Related Pearl: The Mode in Biostatistics</h3><ul>\n<li>The <strong>mode</strong> is most <strong>frequently </strong>occurring<strong> observed value</strong> in a distribution.</li>\n<li>A distribution with a <strong>single mode</strong> is called <strong>unimodal</strong>.</li>\n<li>If <strong>two values </strong>occur with the <strong>highest frequency</strong>, then the distribution is <strong>bimodal</strong>.</li>\n<li>If <strong>more </strong>than<strong> two values </strong>occur with the<strong> highest frequency</strong>, then the distribution is <strong>multimodal</strong>.</li>\n<li>The <strong>mode </strong>is the <strong>preferred</strong> measure of central tendency for <strong>nominal data.</strong></li>\n<li>It is sometimes symbolized by <strong>Mo</strong>.</li>\n<li>Mode can be arrived at from all data scales, i.e., <strong>nominal, ordinal, ratio </strong>and<strong> interval.</strong></li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1782",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The smoking history for the past 6 years of a patient with emphysema is given in the table below. If a pack has 20 cigarettes, what is the mean, median and mode of the given data?<div class='question-desc-html'><table>\n<tbody>\n<tr>\n<td>&nbsp;Year&nbsp;&nbsp;</td>\n<td>No of cigarettes per day</td>\n</tr>\n<tr>\n<td>2015</td>\n<td>Quarter pack</td>\n</tr>\n<tr>\n<td>2016</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2017</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2018</td>\n<td>Half a pack</td>\n</tr>\n<tr>\n<td>2019</td>\n<td>One pack</td>\n</tr>\n<tr>\n<td>2020</td>\n<td>Two packs</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16, 10, 15"
+        },
+        {
+          "id": 2,
+          "text": "16, 10, 10"
+        },
+        {
+          "id": 3,
+          "text": "10, 10, 15"
+        },
+        {
+          "id": 4,
+          "text": "16, 15, 10"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The distribution in this scenario in terms of the number of cigarettes smoked is 5, 10, 10, 10, 20, 40.</p>\n<p>The <strong>mean </strong>here is &sum;x/n = 95/6 = 15.833 rounded off to <strong>16</strong>.</p>\n<p>The <strong>median </strong>here is the central value = average of 3rd and 4th values&nbsp;since the <strong>distribution</strong> has an <strong>even number</strong> of values. This comes to (10 + 10) / 2 = <strong>10</strong>.</p>\n<p>The <strong>mode</strong> here is <strong>10</strong> which has a frequency of 3 in the given dataset.</p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul><hr><h3>Related Pearl: The Mode in Biostatistics</h3><ul>\n<li>The <strong>mode</strong> is most <strong>frequently </strong>occurring<strong> observed value</strong> in a distribution.</li>\n<li>A distribution with a <strong>single mode</strong> is called <strong>unimodal</strong>.</li>\n<li>If <strong>two values </strong>occur with the <strong>highest frequency</strong>, then the distribution is <strong>bimodal</strong>.</li>\n<li>If <strong>more </strong>than<strong> two values </strong>occur with the<strong> highest frequency</strong>, then the distribution is <strong>multimodal</strong>.</li>\n<li>The <strong>mode </strong>is the <strong>preferred</strong> measure of central tendency for <strong>nominal data.</strong></li>\n<li>It is sometimes symbolized by <strong>Mo</strong>.</li>\n<li>Mode can be arrived at from all data scales, i.e., <strong>nominal, ordinal, ratio </strong>and<strong> interval.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1785",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While reviewing a data distribution, you find that the highest value of 58 was wrongly recorded as 85 and so you correct it. How will this correction change the measures of central tendency?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "No change in mean, decreased median"
+        },
+        {
+          "id": 2,
+          "text": "Decreased mean, no change in median"
+        },
+        {
+          "id": 3,
+          "text": "Decreased mean, Decreased median"
+        },
+        {
+          "id": 4,
+          "text": "Decreased mean, increased median"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given change in a dataset would cause a <strong>decrease</strong> in the <strong>mean</strong> but the <strong>median</strong> would remain <strong>unchanged</strong>.</p>\n<p>The <strong>mean</strong> is <strong>sensitive</strong> to <strong>every value</strong> in the distribution. Since the correct value of 58 is much lesser than the wrongly recorded value of 85, the final&nbsp;<strong>mean </strong>will be<strong>&nbsp;decreased </strong>compared to the earlier recorded<strong>&nbsp;</strong>value.</p>\n<p>However, as only the highest value&nbsp;was wrongly recorded, the <strong>median</strong> i.e., the <strong>central value</strong>,<strong>&nbsp;</strong>will remain the<strong> same.</strong></p><hr><h3>Related Pearl: The Mean (Arithmetic) in Biostatistics</h3><ul>\n<li>The <strong>mean</strong> is also called the <strong>average</strong> or <strong>arithmetic mean.</strong></li>\n<li>It is the<strong> sum </strong>of all<strong> elements</strong> in the distribution <strong>divided </strong>by the <strong>number </strong>of all the<strong> elements</strong> in it.</li>\n<li>It is usually denoted by <strong>μ</strong> in a population and by <strong>x̄ (x-bar) </strong>in a sample.</li>\n<li>The formula for sample mean is given as:</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e7aa362aa1c44bd1ba22a5519d43a915x1280x363.JPEG\" alt=\"Pearl Image\"><p>where the sigma sign denotes summation and n is the total number of elements.</p>\n<ul>\n<li>The arithmetic mean <strong>responds </strong>to the<strong> exact value </strong>of every<strong> element</strong> in the distribution.</li>\n<li>This makes it <strong>over-sensitive</strong> to extreme values, i.e., <strong>outliers</strong> thus making it an <strong>inappropriate </strong>measure for <strong>skewed distributions.</strong></li>\n<li>The advantage of the arithmetic mean is that if <strong>repeated samples</strong> are taken from the same populations, they will have very <strong>similar means</strong>, i.e., the measure of central tendency that best<strong> resists </strong>the influence of<strong> fluctuation</strong> between samples is the <strong>mean</strong>.</li>\n<li>The mean can be calculated only on <strong>quantitative</strong> data on an <strong>interval </strong>or a <strong>ratio scale.</strong></li>\n</ul><hr><h3>Related Pearl: The Median in Biostatistics</h3><ul>\n<li>The <strong>median</strong> is the <strong>central element</strong> in a distribution when all the elements are arranged in<strong> order</strong>.</li>\n<li>In a distribution that has an <strong>odd </strong>number of<strong> elements</strong>, the median is the<strong> middle value</strong>.</li>\n<li>In a distribution that has an <strong>even </strong>number of <strong>elements</strong>, the median is the<strong> average </strong>of the<strong> middle values</strong>, i.e., the arithmetic mean of the two middle values.</li>\n<li>The median is <strong>not sensitive</strong> to extreme values, i.e., <strong>outliers</strong> and thus it is <strong>preferred</strong> measure of location for very<strong> skewed </strong>distributions.</li>\n<li>The drawback of the median is that it <strong>doesn&rsquo;t respond </strong>to the<strong> actual values</strong> of the elements but <strong>only to</strong> the <strong>number of values</strong> above or below it.</li>\n<li>The median is the same as the<strong> 50<sup>th</sup></strong> <strong>centile</strong>.</li>\n<li>It is sometimes symbolized by <strong>Mdn</strong>.</li>\n<li>The median can be arrived at in <strong>ordinal, interval </strong>and <strong>ratio </strong>data scales.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1789",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While conducting a study on the age at death in males of a population Y, the distribution curve given below is obtained. Which of the following is true?<div class='question-desc-html'><ol class=\"ol1\">\n<li class=\"li1\">It is a positively skewed distribution</li>\n<li class=\"li1\">It is a left skewed distribution</li>\n<li class=\"li1\">Mean &gt; median &gt; mode</li>\n<li class=\"li1\">It is a bimodal distribution</li>\n<li class=\"li1\">Mean &lt; median &lt; mode</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2 & 5"
+        },
+        {
+          "id": 2,
+          "text": "1 & 3"
+        },
+        {
+          "id": 3,
+          "text": "1, 3 & 4"
+        },
+        {
+          "id": 4,
+          "text": "2,4 & 5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p class=\"p1\">The given image shows a <strong>negatively</strong> skewed or a <strong>left-skewed</strong>&nbsp;distribution curve. Here, <strong>mean &lt; median &lt; mode</strong>.</p>\n<p class=\"p1\"><strong>Mode</strong> is the most frequently occurring value in the distribution and is given by the <strong>highest point</strong> of the graph. Since the given graph has only one peak, it is<strong> unimodal</strong>.</p>\n<p class=\"p1\">A <strong>positively</strong> skewed distribution refers to a&nbsp;<strong>right-skewed</strong>&nbsp;distribution. In such cases,&nbsp;<strong>mean &gt; median &gt; mode</strong>.</p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/3d5873cd48224b9b8c3e08c5eac1bce0.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1795",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following sets of measures of central tendency is likely to match the distribution depicted in the given image?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Median = 3, mode = 1, mean = 2"
+        },
+        {
+          "id": 2,
+          "text": "Mean = 3, median = 2, mode= 1"
+        },
+        {
+          "id": 3,
+          "text": "Mode= 3, median = 2, mean = 1"
+        },
+        {
+          "id": 4,
+          "text": "Mean = 3, mode  = 2, median = 1"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given image is of a <strong>right-skewed</strong> or positively skewed distribution. So, among the given options, the most likely values of&nbsp;<strong>mean = 3, median = 2, and mode = 1</strong>.</p>\n<p>We can tell the direction of skew of a distribution by observing the direction of the tail. Here, the <strong>tail </strong>of the distribution is towards the<strong> positive </strong>direction and thus it is&nbsp;<strong>positively </strong>skewed or<strong>&nbsp;right-skewed</strong>. In a positively skewed distribution, <strong>mean &gt; median &gt; mode</strong>.&nbsp;</p>\n<p>If the <strong>tail</strong> of the distribution is towards the <strong>negative</strong> direction, the distribution would be <strong>negatively</strong> skewed or <strong>left-skewed</strong>. In such distributions, <strong>mode &gt; median &gt; mean</strong>.</p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/f909df669ad44764bbca9fa814578160.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1802",
+      "difficulty": "easy"
+    },
+    {
+      "text": "You are conducting a study on blood pressure in a population. The systolic blood pressure values have a mean of 130 mmHg, a median of 140 mmHg and mode of 160 mmHg.  What type of distribution is this?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Unimodal symmetrical distribution"
+        },
+        {
+          "id": 2,
+          "text": "Positively skewed distribution"
+        },
+        {
+          "id": 3,
+          "text": "Negatively skewed distribution"
+        },
+        {
+          "id": 4,
+          "text": "Bimodal asymmetric distribution"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>This is a&nbsp;<strong>unimodal negatively</strong> <strong>skewed</strong> distribution.</p>\n<p>In this scenario, the <strong>mean</strong> of 130 mmHg is <strong>less than</strong> the <strong>median</strong> of 140 mmHg which is <strong>less than mode</strong> of 160mmHg. Since mean&lt;median&lt;mode, this is an <strong>asymmetrical</strong>&nbsp;<strong>negatively</strong> skewed or <strong>left-skewed</strong>&nbsp;distribution.</p>\n<p>It is a <strong>unimodal</strong> distribution as there is only a<strong> single</strong> value for <strong>mode.</strong></p>\n<p>In a <strong>symmetrical</strong> distribution, the <strong>mean =</strong>&nbsp;<strong>median = mode</strong>.</p>\n<p>In a <strong>positively</strong> skewed distribution, <strong>mean &gt; median &gt; mode.</strong></p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1797",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The mean of a dataset is 2 and the median is 3. What is the mode?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "5"
+        },
+        {
+          "id": 2,
+          "text": "2.5"
+        },
+        {
+          "id": 3,
+          "text": "4"
+        },
+        {
+          "id": 4,
+          "text": "3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>As the mean &ne; median, this is an asymmetric distribution and so we can use the formula:</p>\n<p><strong>Mode = 3 median - 2 mean</strong>.</p>\n<p>Using the given values,&nbsp;<strong>mode</strong> = (3x3) &ndash; (2x2) = 9 &ndash; 4 = <strong>5</strong>.</p>\n<p>A distribution is termed <strong>symmetric</strong> when the mean, median and mode coincide i.e., <strong>mean= median= mode.</strong></p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB1763",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Study A(red) and Study B(blue) done in a given population yields two different distribution curves as shown below. Comparing both the curves, which of the following will be true?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean = mode = median"
+        },
+        {
+          "id": 2,
+          "text": "Mean = median, not equal to mode"
+        },
+        {
+          "id": 3,
+          "text": "Mean, median, mode not equal"
+        },
+        {
+          "id": 4,
+          "text": "Mode = median, not equal to mean"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>On comparing the 2 graphs, we can say&nbsp;<strong>mean=median</strong> for both study A and B but the <strong>mode </strong>is<strong> different</strong>.</p>\n<p>Study <strong>A</strong> is a <strong>unimodal symmetrical</strong> distribution, so <strong>mean=median=mode.</strong></p>\n<p>Study <strong>B</strong> is a <strong>bimodal</strong> distribution. Here, mean=median, but the curve has <strong>two highest points</strong>, therefore it has <strong>2 modes</strong>.&nbsp;</p><hr><h3>Related Pearl: Mean, Median, Mode in Different Distribution Shapes</h3><ul>\n<li>The relationship between the mean, median and mode depends upon the distribution.</li>\n<li>In a <strong>unimodal symmetrical </strong>distribution like a <strong>normal distribution</strong>, all the <strong>three measures</strong> are approximately the<strong> same</strong>, as shown in Figure (2) in the following image, i.e., <strong>mean = median = mode.</strong></li>\n<li>Figure (3) in the following image shows a <strong>positively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> positive direction</strong>. In this, the mean will be larger than the median and mode, i.e., <strong>mean &gt; median &gt; mode.</strong></li>\n<li>Figure (1) in the following image shows a <strong>negatively skewed</strong> distribution in which the <strong>longer tail </strong>is towards the<strong> negative direction</strong>. In this, the mean will be smaller than the median, i.e., <strong>mean &lt; median &lt; mode.</strong></li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d79321686162499ca8b9174d58e8f7aex1280x2893.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p>Unimodal <strong>symmetrical distribution</strong></p>\n</td>\n<td>\n<p><strong>Mean = Median = Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Positively (right) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &gt; Median &gt; Mode</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Negatively (left) skewed</strong> distribution</p>\n</td>\n<td>\n<p><strong>Mean &lt; Median &lt; Mode</strong></p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<ul>\n<li>As seen in the figures above, in any distribution curve, the <strong>mode </strong>is generally the<strong> highest point</strong>. The <strong>mean</strong> will be pulled up or down <strong>based </strong>on the<strong> values</strong> in the distribution. The <strong>median </strong>will lie<strong> between</strong> the <strong>mode</strong> and <strong>mean</strong> and <strong>divide</strong> the distribution in two<strong> equal halves</strong> under the curve.</li>\n<li>A <strong>bimodal distribution</strong> will have <strong>two high</strong> points as shown in the image below.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25c3b8cb808949c2891e9d098cd1ab54x1280x1007.JPEG\" alt=\"Pearl Image\"><ul>\n<li>Mathematically, the relationship between mode, median and mean in <strong>asymmetrical</strong> distributions can be given as:<br /><strong>Mode = 3 median – 2 mean</strong> (or) <strong>Mean = ½ (3 median – mode).</strong></li>\n<li><strong>Outlier </strong>is the statistical term used for an <strong>observation </strong>or value that is<strong> very distant </strong>from<strong> other </strong>observations in the distribution.</li>\n<li>In a distribution with <strong>outliers</strong>, <strong>preferred </strong>measure of central tendency is the <strong>median</strong>.</li>\n<li><strong>Mode </strong>is <strong>least </strong>affected<strong> by outliers</strong> but <strong>mean </strong>is the <strong>most</strong> affected out of all the measures of location.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6ff5d7e687694e7084206608b28b8e89.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC6992",
+      "difficulty": "medium"
+    }
+  ]
+}

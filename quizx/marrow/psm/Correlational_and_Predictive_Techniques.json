@@ -1,0 +1,305 @@
+{
+  "chapter": "Correlational_and_Predictive_Techniques",
+  "questions": 
+[
+  {
+    "q_no": 1,
+    "question": "Question 1: A study is conducted to find the relationship between the height and weight of school \nstudents. Which of the following would be useful in this study?",
+    "options": {
+      "a": "Coefficient of variation",
+      "b": "Coefficient of correlation",
+      "c": "Coefficient of regression",
+      "d": "Coefficient of mean deviation"
+    },
+    "correct_answer": "b",
+    "explanation": "The coefficient of correlation can be used to determine the relationship between both variables in \nthis scenario. It is used to express the strength and direction of the relationship between two \nvariables. It is represented by the letter 'r'. Its value ranges from -1 to +1.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 2,
+    "question": "Question 2: Which among the following is false about correlation?",
+    "options": {
+      "a": "It indicates the strength of relationship between 2 variables",
+      "b": "Correlation coefficient of 1 indicates a linear relationship",
+      "c": "Correlation cannot measure risk",
+      "d": "Correlation implies a causal relationship"
+    },
+    "correct_answer": "d",
+    "explanation": "A correlation between 2 variables only indicates the strength of the relationship between two \nvariables, not causation. A correlation coefficient of 1 indicates a linear relationship. It cannot measure the risk.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 3,
+    "question": "Question 3: During a study conducted to assess the effect of smoking on life expectancy, the correlation \ncoefficient was found to be 0.60. Calculate the coefficient of determination for this study.",
+    "options": {
+      "a": "0.6",
+      "b": "0.36",
+      "c": "0.4",
+      "d": "1.2"
+    },
+    "correct_answer": "b",
+    "explanation": "The coefficient of determination (CD) for this study is 0.36 (36%). It is calculated by r2, where r is the correlation coefficient. In this study, the correlation coefficient \n(r) is 0.6. Hence CD = (0.6)2 = 0.36 The coefficient of determination refers to the percentage variability in one variable due to a \nchange in the other variable. In the above study, a coefficient of determination of 0.36 means \nthat 36% of the variation in life expectancy is accounted for by smoking.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 4,
+    "question": "Question 4: What is the best way to study relationship between two variables?",
+    "options": {
+      "a": "Forest plot",
+      "b": "Scattergram",
+      "c": "Funnel plot",
+      "d": "Frequency polygon"
+    },
+    "correct_answer": "b",
+    "explanation": "A scattergram/ scatter plot is the best way to study the relationship between 2 variables. The following image shows a scatter plot. 874 \nSold by @itachibot The following image shows a forest plot. The following image shows a funnel plot. 875 \nSold by @itachibot The following image shows a frequency polygon.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 5,
+    "question": "Question 5: A psychiatry resident is conducting a study to assess the relationship between prefrontal \nblood flow under cognitive load and the severity of psychotic symptoms in schizophrenic \npatients. He calculates the correlation coefficient as -1.24. You can therefore conclude that:",
+    "options": {
+      "a": "Prefrontal blood flow is a good predictor of the severity of psychotic symptoms",
+      "b": "Prefrontal blood flow accounts for most of the variance in symptoms",
+      "c": "Schizophrenia causes low prefrontal blood flow",
+      "d": "The correlation coefficient has been calculated incorrectly"
+    },
+    "correct_answer": "d",
+    "explanation": "In this scenario, the correlation coefficient (r) of -1.24 is incorrect, as 'r' can only lie between -1 to \n+1.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 6,
+    "question": "Question 6: In a random sample of 5000 corporate workers, the correlation coefficient of work \nsatisfaction and life expectancy was found to be +0.7 with a p-value of 0.01. What is your \ninterpretation?",
+    "options": {
+      "a": "Work satisfaction does not improve life expectancy",
+      "b": "Strong statistically significant positive association between the variables",
+      "c": "70% people who enjoy work will live longer",
+      "d": "30% people who do not enjoy work will have a shorter life expectancy"
+    },
+    "correct_answer": "b",
+    "explanation": "The above study is statistically significant (p-value = 0.01) and indicates a strong positive \ncorrelation (correlation coefficient = +0.7) between work satisfaction and life expectancy. 876 \nSold by @itachibot Correlation is a measure of the statistical association of the variables, not a causal relationship. Here, the coefficient of determination (r2) = 0.7 x 0.7 = 0.49. This means that 49% of the \nvariation in life expectancy can be explained by satisfaction at work.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 7,
+    "question": "Question 7: A group of cardiologists found a correlation coefficient of 0.90 (p-value = 0.01) between the \nsystolic BP and serum cholesterol levels of patients attending their clinics. Which of the \nfollowing statements is an incorrect interpretation of this study?",
+    "options": {
+      "a": "The magnitude of systolic BP and serum cholesterol levels are closely related",
+      "b": "A patient with a high systolic BP is likely to have high serum cholesterol",
+      "c": "A patient with a low systolic BP is likely to have low serum cholesterol",
+      "d": "80% of the variation in BP can be explained by serum cholesterol and vice versa"
+    },
+    "correct_answer": "a",
+    "explanation": "Correlation is an indicator of the strength and direction of the relationship between 2 variables, \nnot the magnitude. The given study is statistically significant (p-value = 0.01) with a strong positive correlation (r = \n+0.90) between systolic BP and cholesterol levels. Thus, it is likely that patients with high systolic \nBP will have high cholesterol levels and those with low BP will have low cholesterol levels. The coefficient of determination (r2)here is 0.9 x 0.9 = 0.81. This indicates that around 80% of \nthe variation in systolic BP among the patients can be explained by serum cholesterol levels.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 8,
+    "question": "Question 8: 868 \nSold by @itachibot Among the given options, what can be the likely value of the coefficient of correlation \nbetween infant mortality rate and economic status?",
+    "options": {
+      "a": "+1",
+      "b": "-1",
+      "c": "+0.22",
+      "d": "-0.8"
+    },
+    "correct_answer": "d",
+    "explanation": "Among the given options, the coefficient of correlation between infant mortality rate and \neconomic status (r) is likely to be -0.8. It is known that low economic status is associated with a high infant mortality rate. This indicates \na negative correlation. However, the infant mortality rate is also influenced by other factors, \nindicating a moderate correlation (not equal to 1). This makes -0.8 the most likely value of \ncorrelation.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 9,
+    "question": "Question 9: High salt intake in individuals is associated with high blood pressure. What type of \ncorrelation is this?",
+    "options": {
+      "a": "Negative correlation",
+      "b": "Positive correlation",
+      "c": "Non-linear correlation",
+      "d": "Zero correlation"
+    },
+    "correct_answer": "b",
+    "explanation": "An increase in blood pressure with salt intake is an example of a positive correlation. The association of decreased life expectancy with increased smoking is an example of negative \ncorrelation.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 10,
+    "question": "Question 10: A scattergram was plotted as shown below to study the relationship between two variables. \nWhat is the correct interpretation?",
+    "options": {
+      "a": "There is correlation between both variables and the Pearson’s coefficient is 1",
+      "b": "There is correlation between both variables and the Pearson’s coefficient is – 1",
+      "c": "There is non-linear correlation between both variables",
+      "d": "There is no association between both variables"
+    },
+    "correct_answer": "c",
+    "explanation": "The given scattergram depicts a non-linear correlation between the two variables. Correlation expresses the strength and direction of the relationship between two variables in \nterms of a correlation coefficient. There are two types of correlation coefficients: Pearson coefficient \nSpearman coefficient Used for data withcontinuous \nintervals Used for data withdiscrete or \nderedintervals 877 \nSold by @itachibot Pearson coefficient \nSpearman coefficient Used to findlinearornon-linea \nrrelationships(e.g. socioecono \nmic status vs parity) Used to findlinearrelationshi \nps(e.g. salt intake vs blood pr \nessure)",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 11,
+    "question": "Question 11: What conclusion can be drawn from the following scattergram?",
+    "options": {
+      "a": "There is a perfect negative correlation between the two variables",
+      "b": "There is a high positive correlation between the two variables",
+      "c": "There is a high negative correlation between the two variables",
+      "d": "There is a perfect positive correlation between the two variables"
+    },
+    "correct_answer": "c",
+    "explanation": "The given scattergram shows a high negative correlation between the two variables.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 12,
+    "question": "Question 12: The value of one parameter can be estimated from another related parameter by:",
+    "options": {
+      "a": "Standard deviation",
+      "b": "Correlation",
+      "c": "Scattergram",
+      "d": "Regression"
+    },
+    "correct_answer": "d",
+    "explanation": "The value of one parameter can be estimated from another related parameter by using regression \ntechniques.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 13,
+    "question": "Question 13: If correlation is given by the equation y = a + bx, what would be the nature of the graph? 870 \nSold by @itachibot",
+    "options": {
+      "a": "Straight line",
+      "b": "Parabola",
+      "c": "Hyperbola",
+      "d": "Sigmoid curve"
+    },
+    "correct_answer": "a",
+    "explanation": "The equation, y = a + bx indicates a straight line.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 14,
+    "question": "Question 14: Look at the image below and select the linear regression equation corresponding to the graph.",
+    "options": {
+      "a": "y=10-x",
+      "b": "x=10+y",
+      "c": "y=11+2x",
+      "d": "x=11+2y"
+    },
+    "correct_answer": "c",
+    "explanation": "Among the given options, the equation y=11+2x corresponds to the linear regression equation of \nthe form y= + x. When 2 variables are correlated, such that the dependent variable is represented on the y-axis and \nthe independent variable on the x-axis, then the value of y can be obtained by using the linear \nregression equation y =  + x, where: y - dependent variable  - intercept  - slope of the line x - independent variable In the equation y=11+2x, the intercept() = 11, while the slope of the line () = 2. Option A: y=10-x, represents an intercept of 10, and a slope of -1 indicating a negative correlation. \nHowever, the given image shows a positive correlation. Options B and D: They do not fit the linear regression equation of the form y =  + x.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 15,
+    "question": "Question 15: In a study, the total cholesterol was calculated as a + b■x■ + b■x■ + b■ x■, where x■ \nindicates calorie intake, x■ indicates physical activity, and x■ indicates body mass index. \nWhat is this an example of?",
+    "options": {
+      "a": "Simple linear regression",
+      "b": "Simple curvilinear regression",
+      "c": "Multiple linear regression",
+      "d": "Logistic regression"
+    },
+    "correct_answer": "c",
+    "explanation": "878 \nSold by @itachibot The given equation of y = a + b1x1 +b2x2…..bnxn is an example of multiple linear regression. In this equation: b1, b2…..bn represent different regression coefficients x1, x2…….xn represent the known variables",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 16,
+    "question": "Question 16: An epidemiologist has determined five independent factors influencing the outcome of a \nparticular disease. Which of the following statistical methods can he use to compare these \nfactors?",
+    "options": {
+      "a": "ANOVA",
+      "b": "Multiple linear regression",
+      "c": "T-test",
+      "d": "Logistic regression"
+    },
+    "correct_answer": "d",
+    "explanation": "In this scenario, the outcome to be determined (dependent variable) is the occurrence of the \ndisease, which is categorical (qualitative) in nature. Logistic regression can be used when a \ncategorical dependent variable is being compared with either a categorical or numerical \nindependent variable. Linear regression is used when the outcome is numerical. Dependent variable (outco \nme) Independent variable(risk \nfactors, exposure) Qualitative (categorical) \nQuantitative (numeric \nal) Linear regressionT-testA \nNOVA Qualitative (categorical) \nLogistic regressionChi-squ \nare Quantitative (numerical) \nLogistic regression \nLinear regression",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 17,
+    "question": "Question 17: What test is used to compare Kaplan-Meier survival curves?",
+    "options": {
+      "a": "ANOVA",
+      "b": "Bland-Altman analysis",
+      "c": "Chi-square test",
+      "d": "Cox proportional hazards test"
+    },
+    "correct_answer": "d",
+    "explanation": "The Cox proportional hazards test is used to compare Kaplan-Meier survival curves. Survival analysis is used for analyzing the expected duration of time until one event occurs, such \nas death. The following methods are used for this are: • Life table analysis • Kaplan-Meier analysis - it involves calculating the survival function (the probability that a person \nwill survive past a certain time) Life tables and survival functions are graphically represented in a Kaplan-Meier plot or curve.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 18,
+    "question": "Question 18: Which of the following is not used to compare survival curves?",
+    "options": {
+      "a": "Mantel-Haenszel test",
+      "b": "Log-rank test",
+      "c": "Cox regression",
+      "d": "Fisher’s exact test"
+    },
+    "correct_answer": "d",
+    "explanation": "Fisher’s exact test is not used to compare survival curves. The following tests are used to compare \nthe survival curves or Kaplan-Meier curves: • Mantel-Haenszel test • Log-rank test 879 \nSold by @itachibot • Cox regression or Cox proportional hazards analysis",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 19,
+    "question": "Question 19: What is the Spearman coefficient used to determine?",
+    "options": {
+      "a": "Regression",
+      "b": "Correlation",
+      "c": "Comparison of variation",
+      "d": "Standard deviation comparison"
+    },
+    "correct_answer": "b",
+    "explanation": "Spearman coefficient is used to determine correlation. It is used to find linear or non-linear \nrelationships for data with discrete ordered intervals. Pearson correlation coefficient is used to find linear relationships for data with continuous \nintervals.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Correlational and Predictive Techniques"
+  },
+  {
+    "q_no": 20,
+    "question": "Question 20: A researcher wants to compare a newly developed test for COVID with the gold standard test. \nWhich of the following methods can he use?",
+    "options": {
+      "a": "Simple random",
+      "b": "Cluster",
+      "c": "Systematic",
+      "d": "Stratified random"
+    },
+    "correct_answer": "b",
+    "explanation": "The Bland-Altmann analysis is used for comparing a newly developed test with another test, \nwhich usually is the gold standard. This method involves the graphical construction of a \nBland-Altmann plot which is used to compare the measurements from both methods. 880 \nSold by @itachibot Facets of Clinical Research and Biostatistics",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Correlational_and_Predictive_Techniques_Q20_q.jpg",
+    "explanation_image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Correlational_and_Predictive_Techniques_Q20_exp.jpg",
+    "chapter_heading": "Correlational and Predictive Techniques"
+  }
+]}

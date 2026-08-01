@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Population_Genetics"
+  },
+  "questions": [
+    {
+      "text": "An epidemiologist is studying the incidence of cystic fibrosis in a specific population. It is determined that 36% of the population has cystic fibrosis. Assuming the population is in Hardy-Weinberg equilibrium, which of the following is the most likely percentage of patients who are carriers of this disease?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16%"
+        },
+        {
+          "id": 2,
+          "text": "36%"
+        },
+        {
+          "id": 3,
+          "text": "48%"
+        },
+        {
+          "id": 4,
+          "text": "60%"
+        },
+        {
+          "id": 5,
+          "text": "40%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "There are different types of modes of inheritance of diseases that are described by Hardy-Weinberg equation, which is: &#160;<br><br>p<sup>2&#160;</sup>+ 2pq + q<sup>2</sup> = 1 &#160; &#160;<br><br>In this vignette, it is known that 36%, or 0.36 of the population has cystic fibrosis. In the Hardy-Weinberg equation, this 0.36 equals q<sup>2</sup>. Now we can use that information to calculate the frequency of q which would be &#8730;0.36 = 0.6. Once it is known that q = 0.6, then since p + q = 1, p must equal 0.4. &#160; <br><br>Now that we know the values of p and q, we just have to plug in the numbers. Since<strong>&#160;2pq represents the number of carriers in the population,</strong>&#160; &#160; <br><br>2(0.4)(0.6) = 0.48, or <strong>48% of the population. &#160;</strong><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 16%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This percentage represents the population with normal alleles (p<sup>2</sup>) as per the Hardy-Weinberg equation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 36%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the percentage of the diseased population. Since cystic fibrosis is typically an autosomal recessive disease, it is not possible to have 36% of carriers (2pq) in this population as per the Hardy-Weinberg equation. &#160;&#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 48%:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 60%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the frequency of a mutant allele in the population (q) whether in the carriers (2pq) or in patients with disease (q<sup>2</sup>) as per the Hardy-Weinberg equation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 40%:</strong><br><span style='opacity:0.9'>Incorrect: This is the frequency of normal allele in the population (p) whether in the carriers (2pq) or in the healthy population (p<sup>2</sup>) as per Hardy-Weinberg equation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An epidemiologist is studying the rates of sickle cell disease in a specific population. Among the population, it is determined that 16% of the population has sickle cell disease. Which of the following is the most likely percentage of patients who are homozygous for the wildtype, non-mutated allele? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16%"
+        },
+        {
+          "id": 2,
+          "text": "36%"
+        },
+        {
+          "id": 3,
+          "text": "40%"
+        },
+        {
+          "id": 4,
+          "text": "60%"
+        },
+        {
+          "id": 5,
+          "text": "48%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "There are different types of modes of inheritance of diseases that are described by Hardy-Weinberg equation, which is: &#160;<br><br>p<sup>2</sup> + 2pq + q<sup>2</sup> = 1 &#160; &#160;<br><br>In this vignette, it is known that 16%, or 0.16 of the population has sickle cell disease. In the Hardy-Weinberg equation, this 0.16 equals q<sup>2</sup>. Now we can use that information to calculate the frequency of q which would be &#8730;0.16 = 0.4. Once it is known that q = 0.4, then since p + q = 1, p must equal 0.6. &#160; Now that we know the values of p and q, we just have to plug in the numbers. Since<strong> p<sup>2</sup> represents the number of healthy individuals in the population, &#160; &#160;</strong><br><br>(0.6)2 = 0.36, or<strong> 36% of the population. &#160;</strong><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 16%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the percentage of the diseased population. Since sickle cell disease is typically an autosomal recessive disease, it is not possible to have 16% of carriers (2pq) in this population as per Hardy-Weinberg equation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 36%:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 40%:</strong><br><span style='opacity:0.9'>Incorrect: This is the frequency of mutant allele in the population (q) whether in the carriers (2pq) or in the patients with disease (q<sup>2</sup>) as per Hardy-Weinberg equation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 60%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the frequency of normal allele in the population (p) whether in the carriers (2pq) or in the healthy population (p<sup>2</sup>) as per Hardy-Weinberg equation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 48%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the percentage of individuals with sickle cell traits (carriers) in this population (2pq) as per Hardy-Weinberg equation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A group of geneticists are studying characteristics of a novel frog species. They find that within this species, there is a tendency for progeny to inherit two specific traits together which are red eyes and yellow-spotted backs. Which of the following best describes this phenomenon? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Genetic linkage &#160;"
+        },
+        {
+          "id": 2,
+          "text": "Autosomal dominant inheritance &#160;"
+        },
+        {
+          "id": 3,
+          "text": "Imprinting"
+        },
+        {
+          "id": 4,
+          "text": "Locus heterogeneity &#160;"
+        },
+        {
+          "id": 5,
+          "text": "Allelic heterogeneity &#160;"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<strong>Genetic linkage</strong> serves as a likely explanation for why these two traits are inherited together. Genetic linkage is the most prominent exception to Gregor Mendel's Law of Independent Assortment, which asserts that separate genes assort independently of each other. &#160; <br><br>With genetic linkage, two separate genes lie very close together on the same chromosome and are inherited together as a single unit during meiotic crossover. A common example of this phenomenon includes human hair and eye color&#8211;e.g. blonde hair and blue eyes are more commonly inherited together than blonde hair and brown eyes. &#160;Genetic linkage can provide useful information regarding allelic foci, allowing researchers to calculate <strong>recombination frequencies</strong> and generate <strong>linkage maps</strong> that show the order and relative distances of genes on a chromosome. &#160;&#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>✅ Genetic linkage &#160;:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Autosomal dominant inheritance &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Autosomal dominant inheritance occurs when one variant of a gene on a chromosome masks or overrides the effect of a different variant of the same gene on the other copy of the chromosome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Imprinting:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Imprinting refers to diseases where one gene copy is silenced by methylation, and only the other copy is expressed. Disease-specific examples include Prader-Willi and Angelman syndrome. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Locus heterogeneity &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Locus heterogeneity refers to a phenomenon, where mutations at different genetic loci can produce a similar phenotype. This form of inheritance has been associated with several diseases including retinitis pigmentosa, hypertrophic cardiomyopathy, and osteogenesis imperfecta. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ Allelic heterogeneity &#160;:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: Allelic heterogeneity occurs when different mutations in the same locus produce the same phenotype. Examples include beta-thalassemia and alkaptonuria. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "An epidemiologist is studying the rates of Tay-Sachs disease in a specific population. Among the population, it is determined that 4% of the population has Tay-Sachs disease. Which of the following is the frequency of the recessive allele in the population?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "4%"
+        },
+        {
+          "id": 2,
+          "text": "80%"
+        },
+        {
+          "id": 3,
+          "text": "20%"
+        },
+        {
+          "id": 4,
+          "text": "32%"
+        },
+        {
+          "id": 5,
+          "text": "64%"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "There are different types of modes of inheritance of diseases that are described by Hardy-Weinberg equation, which is: &#160;<br><br>p<sup>2</sup> + 2pq + q<sup>2</sup> = 1 &#160; &#160;<br><br>In this vignette, it is known that 4% (or 0.04) of the population has Tay-Sachs disease, this is the prevalence of disease. In the Hardy-Weinberg equation, this 0.04 equals q<span><sup>2</sup></span> and is the prevalence of disease (or percent of homozygous recessive individuals in the population). Now we can use that information to calculate the frequency of the recessive allele in the population, or q, which would be &#8730;0.04 = 0.2 in this case. &#160;<br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 4%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the percentage of homozygous recessive individuals in the population, also the percentage of people with Tay-Sachs disease or the prevalence.&#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 80%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the frequency of the dominant allele in the population (p) whether in the carriers (2pq) or in the healthy population (p<span><sup>2</sup></span>) as per Hardy-Weinberg equation.</span></div><div style='margin-bottom: 12px;'><strong>✅ 20%:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 32%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This is the percentage of individuals who are carriers or have the heterozygous genotype in this population (2pq) as per Hardy-Weinberg equation.</span></div><div style='margin-bottom: 12px;'><strong>❌ 64%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: This percentage represents the population with normal alleles (p<sup>2</sup>) as per Hardy-Weinberg equation. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "A couple trying to have a baby visits their physician for counseling. The parents both have sickle cell traits and they are worried about the risk of their baby having sickle cell disease. Assuming the population is in Hardy-Weinberg equilibrium, which of the following is the most likely chance the child would have the condition? &#160;",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0%"
+        },
+        {
+          "id": 2,
+          "text": "25%"
+        },
+        {
+          "id": 3,
+          "text": "33%"
+        },
+        {
+          "id": 4,
+          "text": "50%"
+        },
+        {
+          "id": 5,
+          "text": "100%"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "There are different types of modes of inheritance of diseases that are described by the Hardy-Weinberg equation. If a genetic disease mutation affects a recessive allele and it takes two mutant copies to cause a disease, it is called a recessive inheritance pattern. Autosomal recessive diseases (e.g., sickle cell disease, cystic fibrosis, etc.) only occur when a person has two recessive alleles (rr). Heterozygotes with only one mutant allele (Rr) are considered to be carriers of the disease, even though they don&#8217;t have the disease phenotype. For example, here are several scenarios: &#160; <br><br><ul><li>If two parents are carriers for sickle cell disease - they are both heterozygous Rr. They make gametes that have the normal R allele, or the recessive mutant r allele. So, their children have a 25% chance of ending up being homozygous dominant (RR), which means they don&#8217;t have sickle cell disease, and also are not carriers, so they are healthy. They also have a 25% chance of ending up being homozygous recessive (rr), which means they do have sickle cell disease. Finally, they have a 50% chance of ending up being heterozygous carriers (Rr), just like their parents. &#160;</li><li>However, if one of the parents is affected (rr) and the other one is not (RR), then all the children would end up heterozygous (Rr) carriers.<div><img src=\"https://d16qt3wv6xm098.cloudfront.net/HTLqlHTWSJikbnCP8dXHBGJYTZiafGyC/_.png\"></div>&#160;</li></ul><br><hr><h4 style='color: var(--accent-blue); margin-top:16px; margin-bottom:8px;'>Option Analysis</h4><div style='margin-bottom: 12px;'><strong>❌ 0%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: It would be zero percent if it was an X-linked recessive disease and only the father had the mutant allele. Sickle cell disease is an autosomal recessive disease. &#160;</span></div><div style='margin-bottom: 12px;'><strong>✅ 25%:</strong><br><span style='opacity:0.9'><strong>Correct</strong>: See Main Explanation. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 33%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: The chance of this couple having a child with sickle cell disease would be 25% since it is an autosomal recessive condition. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 50%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: It would be 50% if it was an autosomal dominant disease and only one of the parents had the mutant allele. Sickle cell disease is an autosomal recessive disease. &#160;</span></div><div style='margin-bottom: 12px;'><strong>❌ 100%:</strong><br><span style='opacity:0.9'><strong>Incorrect</strong>: It would be 100% if the disease would exhibit a mitochondrial inheritance pattern and the mother had the mutant allele. Sickle cell disease is an autosomal recessive disease. &#160;</span></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "N/A",
+      "difficulty": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "title": "30_Blood_Pressure_And_Regulation"
+  },
+  "questions": [
+    {
+      "text": "What is blood pressure?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "SBP X Pulse rate"
+        },
+        {
+          "id": 2,
+          "text": "DBP X pulse rate"
+        },
+        {
+          "id": 3,
+          "text": "Pulse pressure X pulse rate"
+        },
+        {
+          "id": 4,
+          "text": "Cardiac output X peripheral resistance"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Blood pressure is defined as&nbsp;<strong>cardiac output X peripheral resistance.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3691",
+      "difficulty": "easy"
+    },
+    {
+      "text": "What is the SI unit of blood pressure?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "pascal"
+        },
+        {
+          "id": 2,
+          "text": "mmHg"
+        },
+        {
+          "id": 3,
+          "text": "torr"
+        },
+        {
+          "id": 4,
+          "text": "psi"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The SI unit of blood pressure is <strong>Pascal&nbsp;</strong>(Pa). It is conventionally expressed in mm of Hg.</p>\n<p><strong>Note:</strong>&nbsp;1 mmHg = 133 Pa.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9971",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is mean arterial pressure?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Systolic + (Diastolic BP)/2"
+        },
+        {
+          "id": 2,
+          "text": "Diastolic + 1/3rd Pulse pressure"
+        },
+        {
+          "id": 3,
+          "text": "Systolic + 1/3rd Pulse pressure"
+        },
+        {
+          "id": 4,
+          "text": "Diastolic + (Systolic BP)/2"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Mean arterial pressure is diastolic + 1/3rd pulse pressure.&nbsp;</p>\n<p>The mean pressure is the <strong>average pressure throughout the cardiac cycle.&nbsp;</strong>It is not equal to&nbsp;the average of systolic and diastolic pressure because, at&nbsp;normal heart rates, a greater fraction of the cardiac cycle&nbsp;is spent in diastole than in systole. The&nbsp;mean arterial pressure is therefore determined by about<strong> 60&nbsp;percent</strong> by the <strong>diastolic pressure</strong> and <strong>40 percent</strong> by the&nbsp;<strong>systolic pressure</strong>.</p>\n<p>Mean BP= <strong>DBP + 1/3 Pulse pressure</strong><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = DBP +1/3(SBP- DBP)<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = (3DBP+SBP- DBP)/3<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = <strong>2/3 DBP + 1/3 SBP</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3704",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Korotkoffs sounds are due to ______.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Increased laminar flow on application of pressure"
+        },
+        {
+          "id": 2,
+          "text": "Closure of aortic valve in diastole"
+        },
+        {
+          "id": 3,
+          "text": "Arterial turbulence on occlusion of vessel"
+        },
+        {
+          "id": 4,
+          "text": "Normal sound that exist even without application of cuff"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Korotkoffs sounds are due to arterial turbulence on occlusion of the vessel.</p>\n<p>The <strong>streamline flow</strong> in the <strong>unconstricted</strong> artery is <strong>silent.</strong>&nbsp;But when the artery is narrowed, the velocity of flow through the constriction<strong> exceeds</strong> the <strong>critical velocity</strong> and turbulent flow results. <strong>Turbulent flow </strong>in the partly occluded brachial artery sets up the&nbsp;vibrations (oscillations) of the vessel wall which are heard through the stethoscope and are known as&nbsp;Korotkoffs sounds.</p><hr><h3>Related Pearl: Phases of Korotkoff Sounds</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Phase</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>K-1</p>\n</td>\n<td>\n<p>Tapping sound</p>\n<p>Corresponds to systolic BP</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>K-2</p>\n</td>\n<td>\n<p>Murmur (soft swishing sound)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>K-3</p>\n</td>\n<td>\n<p>Loud and clear tapping sound</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>K-4</p>\n</td>\n<td>\n<p>Muffled sound</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>K-5</p>\n</td>\n<td>\n<p>Disappearance of sounds</p>\n<p>Corresponds to Diastolic BP</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>NOTE- K-4 (muffled sound) corresponds to DBP in</strong>-</p>\n<ul>\n<li>Adults after exercise</li>\n<li>Children</li>\n<li>Hyperthyroidism</li>\n<li>Aortic regurgitation</li>\n<li>Patients with arteriovenous fistulas for hemodialysis</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3709",
+      "difficulty": "easy"
+    },
+    {
+      "text": "When measuring blood pressure, which of the following is unlikely to show a spuriously high BP?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Auscultatory gap"
+        },
+        {
+          "id": 2,
+          "text": "Small cuff"
+        },
+        {
+          "id": 3,
+          "text": "Thick calcified vessel"
+        },
+        {
+          "id": 4,
+          "text": "Obesity"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>The auscultatory gap</strong> may give a&nbsp;<strong>falsely low</strong> recording of systolic BP and overestimation of diastolic blood pressure not spuriously high BP.</p>\n<p>In older patients with wide pulse pressure and in some hypertensive patients, the Korotkoff sounds may become inaudible between SBP and DBP, and reappear as cuff deflation continues, this is known as&nbsp;<strong>auscultatory gap</strong>.</p>\n<p><strong>Small cuff size</strong>,<strong> obesity</strong>,<strong> and thick calcified arteries</strong> can give rise to <strong>falsely high BP </strong>as in these conditions, vessels are difficult to compress and higher cuff pressure is required to compress them.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3716",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The systolic pressure in the right ventricle is _______",
+      "choices": [
+        {
+          "id": 1,
+          "text": "25 mmHg"
+        },
+        {
+          "id": 2,
+          "text": "85 mmHg"
+        },
+        {
+          "id": 3,
+          "text": "95 mmHg"
+        },
+        {
+          "id": 4,
+          "text": "100 mmHg"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The systolic pressure in the right ventricle is about <strong>25 mmHg.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3718",
+      "difficulty": "easy"
+    },
+    {
+      "text": "During diastole, the arterial pressure is maintained by:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Musculature of arteries"
+        },
+        {
+          "id": 2,
+          "text": "Elastic recoil of aorta"
+        },
+        {
+          "id": 3,
+          "text": "Constriction of capillaries"
+        },
+        {
+          "id": 4,
+          "text": "Contraction of left ventricle"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>During diastole, the arterial pressure is maintained by the <strong>elastic recoil of aorta</strong>.&nbsp;</p>\n<p>There is stretching of aorta and arteries during systole due to ejection of blood from ventricle. During diastole, the previously stretched aorta and arteries recoil. The volume of blood that is displaced by the recoil furnishes continuous capillary flow throughout diastole.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3725",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The shape of arterial pulse is influenced by _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Viscosity of blood"
+        },
+        {
+          "id": 2,
+          "text": "Velocity of blood"
+        },
+        {
+          "id": 3,
+          "text": "Cross-sectional area of artery"
+        },
+        {
+          "id": 4,
+          "text": "Arterial wall expansion"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The shape of arterial pulse is influenced by arterial wall expansion.</p>\n<p><strong>Arterial Pulse</strong></p>\n<ul>\n<li>The blood forced into the aorta during systole not only moves the blood in the vessels forward but also sets up a pressure wave that travels along the arteries. The pressure wave expands the arterial walls as it travels and the expansion is palpable as the <strong>pulse</strong><strong>.</strong></li>\n</ul>\n<ul>\n<li>The two major factors that influence arterial pulse are- <strong>stroke volume</strong> of the heart and <strong>distensibility (compliance) of the vessels.</strong></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC0033",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Carotid sinus baroreceptor is most sensitive to _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean BP"
+        },
+        {
+          "id": 2,
+          "text": "Diastolic BP"
+        },
+        {
+          "id": 3,
+          "text": "Systolic BP"
+        },
+        {
+          "id": 4,
+          "text": "Pulse pressure"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The carotid sinus baroreceptor is most sensitive to <strong>pulse pressure.</strong> They fire more rapidly to a constantly changing pressure than a stationary one.  </p>\n<p><strong>Baroreceptors</strong></p>\n<ol>\n<li><strong>Stretch receptors</strong> located in the heart and adventitia of the blood vessels</li>\n<li><strong>Types based on location</strong>\n<ul>\n<li>Carotid sinus and aortic arch receptors (high-pressure regions)</li>\n<li>Cardiopulmonary receptors (low-pressure regions)</li>\n</ul>\n</li>\n<li><strong><strong>Afferents</strong></strong>\n<ul>\n<li>Carotid sinus – a branch of Glossopharyngeal nerve (IX CN) – the carotid sinus nerve (sinus nerve of Hering)</li>\n<li>Aortic arch receptor – a branch of the Vagus nerve (X CN) – aortic depressor nerve</li>\n</ul>\n</li>\n<li><strong>Center for Reflex</strong>\n<ul>\n<li>Medulla (Nucleus Tractus solitarius)</li>\n</ul>\n</li>\n<li><strong>Efferents</strong>\n<ul>\n<li>Sympathetic and parasympathetic neurons to heart and vasculature</li>\n</ul>\n</li>\n<ul>\n<li><strong>Most sensitive to pulsatile pressure:</strong> They work to maintain BP in the range of mean BP, but it is the changes in the pressure they are the most sensitive to. </li>\n<li>The threshold for excitation:<strong> 50 mmHg</strong></li>\n<li><strong>Maximal activity</strong>: <strong>180 mmHg</strong></li>\n</ul>\n<li>Responses when one carotid sinus is isolated and perfused and the other baroreceptors are denervated\n<ul>\n<li>Perfusion pressure <strong>&lt;30mm Hg</strong>:<strong>no response</strong></li>\n<li>70–110mm Hg: the linear relationship between perfusion pressure and the fall in systemic BP and HR</li>\n<li>&gt;150mm Hg: no further increase in response to the degree of inhibition of the sympathetic nerve is maximal.</li>\n</ul>\n</li>\n</ol>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3730",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Baroreceptor stimulation would result in _______",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Decreased Vagal activity"
+        },
+        {
+          "id": 2,
+          "text": "Increased heart rate"
+        },
+        {
+          "id": 3,
+          "text": "Decreased sympathetic discharge to heart"
+        },
+        {
+          "id": 4,
+          "text": "Increased vasomotor tone"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Baroreceptor stimulation would result in decreased sympathetic discharge to heart.</p>\n<p>The baroreceptors are <strong>stretch receptors</strong> in the walls of the heart and blood vessels.<span class=\"Apple-converted-space\">&nbsp;<br /></span>Baroreceptor stimulation, by distension of the structures they are located in, <strong>inhibits</strong> the tonic discharge of <strong>sympathetic nerves</strong> and <strong>excites</strong> the <strong>vagal</strong> innervation of the heart. Thus leading to:</p>\n<ul>\n<li>Vasodilation and venodilation</li>\n<li>Hypotension</li>\n<li>Bradycardia</li>\n<li>Decrease in cardiac output</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3733",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The maximum blood pressure to which carotid baroreceptors respond is",
+      "choices": [
+        {
+          "id": 1,
+          "text": "180 mmHg"
+        },
+        {
+          "id": 2,
+          "text": "160 mmHg"
+        },
+        {
+          "id": 3,
+          "text": "200 mmHg"
+        },
+        {
+          "id": 4,
+          "text": "220 mmHg"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The maximum blood pressure to which carotid baroreceptors respond is&nbsp;<strong>180 mmHg&nbsp;</strong>(arterial pressure here and not MAP).<br />The blood pressure range to which carotid baroreceptors respond is <strong>70- 150 mmHg of mean arterial pressure.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3734",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Discharge from Baroreceptors cause inhibition of:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Rostral ventrolateral medulla"
+        },
+        {
+          "id": 2,
+          "text": "Caudal ventrolateral medulla"
+        },
+        {
+          "id": 3,
+          "text": "Nucleus of tractus solitarius"
+        },
+        {
+          "id": 4,
+          "text": "Nucleus ambiguous"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Discharge from Baroreceptors cause inhibition of&nbsp;<strong>Rostral ventrolateral medulla</strong>.</p>\n<p>The baroreceptors are stimulated by distension of the structures in which they are located.&nbsp;Their afferent fibers pass via the <strong>glossopharyngeal and vagus nerves</strong> to the medulla. These fibers release glutamate to <strong>excite</strong> neurons in the <strong>nucleus of the tractus solitarius </strong>(NTS).<span class=\"Apple-converted-space\">&nbsp;</span>These NTS neurons then <strong>excite</strong> neurons in the <strong>caudal ventrolateral medulla </strong>(CVLM). These CVLM neurons release the i<strong>nhibitory neurotransmitter</strong> &gamma;-aminobutyric<span class=\"Apple-converted-space\">&nbsp;</span>acid (GABA) <strong>into the RVLM</strong> to reduce the firing rate of these.<span class=\"Apple-converted-space\">&nbsp;Thus, reducing the sympathetic outflow.</span></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/afa52b6422c347ef84b15942212a99a6x1280x1430.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3731",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Baroreceptor provides ________",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Negative feedback"
+        },
+        {
+          "id": 2,
+          "text": "Positive feedback"
+        },
+        {
+          "id": 3,
+          "text": "Both negative and positive feedback"
+        },
+        {
+          "id": 4,
+          "text": "Feedforward control"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Baroreceptors provide <strong>negative feedback</strong> in response to an increase in blood pressure.</p>\n<p>Increased baroreceptor discharge inhibits the tonic discharge of sympathetic nerves and excites the vagal innervation of the heart.</p>\n<p><strong>Baroreceptor reflex</strong></p>\n<ul>\n<li>Increased BP &rarr; stimulation of baroreceptors &rarr; stimulation of NTS &rarr; inhibition of RVLM &rarr; inhibition of sympathetic system</li>\n<li>Stimulation of NTS also stimulates CVC &rarr; parasympathetic stimulation</li>\n<li>Net effect = sympathetic inhibition and parasympathetic stimulation &rarr; decreased HR and BP</li>\n</ul>\n<p>NTS - Nucleus tractus solitarius</p>\n<p>CVC - Cardiovagal center</p>\n<p>RVLM - Rostral ventrolateral medulla</p>\n<p>HR- Heart rate</p>\n<p>BP - Blood pressure</p>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC5221",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Afferent fibers from baroreceptors for blood pressure control goes to?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Nucleus ambiguous"
+        },
+        {
+          "id": 2,
+          "text": "Rostral-ventro lateral medulla"
+        },
+        {
+          "id": 3,
+          "text": "Nucleus Tractus Solitarius"
+        },
+        {
+          "id": 4,
+          "text": "Caudal ventrolateral medulla"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Afferent fiber for blood pressure control goes to the<strong> Nucleus Tractus Solitarius (NTS).</strong></p>\n<p>Increased BP stimulates the baroreceptors which provide&nbsp;<strong>negative feedback</strong>&nbsp;in response to the increase in blood pressure.</p>\n<p><strong>Baroreceptor reflex:</strong></p>\n<ul>\n<li>Increased BP &rarr; stimulation of baroreceptors &rarr; stimulation of NTS &rarr; excitation of CVLM &rarr; inhibition of RVLM &rarr; inhibition of sympathetic system</li>\n<li>Stimulation of NTS also stimulates CVC &rarr; parasympathetic stimulation</li>\n<li>Net effect = sympathetic inhibition and parasympathetic stimulation &rarr; decreased HR and BP</li>\n</ul>\n<p><strong>NTS</strong> - Nucleus tractus solitarius</p>\n<p><strong>CVC</strong> - Cardiovagal centre</p>\n<p><strong>CVLM</strong> - Caudal ventrolateral medulla</p>\n<p><strong>RVLM</strong> - Rostral ventrolateral medulla</p>\n<p><strong>HR</strong> - Heart rate</p>\n<p><strong>BP</strong> - Blood pressure</p><p>Note:-</p>\n<p class=\"p2\">Baroreceptors are <strong>more sensitive to pulsatile pressure</strong> than to constant pressure.&nbsp;A decline in pulse pressure without any change in mean pressure decreases the rate of baroreceptor discharge and provokes a rise in systemic blood pressure and tachycardia.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC7658",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The low pressure receptors are ______",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Affected by cardiac output"
+        },
+        {
+          "id": 2,
+          "text": "Stimulated by atrial systole and diastole"
+        },
+        {
+          "id": 3,
+          "text": "Stimulated by left ventricular contraction"
+        },
+        {
+          "id": 4,
+          "text": "Stimulated by aortic pressure"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The low-pressure receptors are <strong>stimulated by atrial systole and diastole</strong></p>\n<p>The low-pressure receptors are those in the great veins, right and left atria and pulmonary vessels.<br /><strong>Atrial stretch receptors</strong> are of two types:</p>\n<ul>\n<li><strong>Type A</strong>: discharge primarily during atrial systole</li>\n<li><strong>Type B:</strong> discharge primarily during late diastole</li>\n</ul>\n<p>Distension of the atrial walls&rarr;stimulation of atrial receptors &rarr; <strong>Vasodilation, fall in BP and increased heart rate.</strong></p>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3738",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Occlusion of common carotid arteries on both sides leads to _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Increase in heart rate and BP"
+        },
+        {
+          "id": 2,
+          "text": "Increase in BP and decrease in heart rate"
+        },
+        {
+          "id": 3,
+          "text": "Decrease in heart rate and BP"
+        },
+        {
+          "id": 4,
+          "text": "No effect on heart rate and BP"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Occlusion of both common carotid arteries causes<strong> an increase in HR and BP.</strong></p>\n<p>Reduced sinus pressure &rarr; response carried to nucleus tractus solitarius via glossopharyngeal and vagus nerve&nbsp;&rarr;&nbsp;less inhibitory effect on the vasomotor center.<br />This leads to:</p>\n<ul>\n<li>Decreased parasympathetic activity to the heart - Increases heart rate</li>\n<li>Increased sympathetic activity to the heart and blood vessels - Increases heart rate, contractility, constricts arterioles - Increases TPR, constricts veins - increases venous return&nbsp;</li>\n</ul>\n<p><strong>Note</strong>: The carotid baroreceptors are located in the walls of the carotid sinus, which is located at or slightly above the bifurcation of the common carotid arteries. So, the <strong>occlusion of common carotid arteries</strong> is <strong>occlusion&nbsp;proximal</strong> to the carotid sinus.</p>\n<p>If the <strong>occlusion is distal to the carotid sinus</strong> &rarr;increase in sinus pressure &rarr; activation of baroreceptor reflex &rarr; <strong>decrease in BP and HR</strong>.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3735",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The hormone involved in the regulation of blood pressure is _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Serotonin"
+        },
+        {
+          "id": 2,
+          "text": "Histamine"
+        },
+        {
+          "id": 3,
+          "text": "Angiotensin II"
+        },
+        {
+          "id": 4,
+          "text": "Prostaglandin"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The hormone involved in the regulation of blood pressure is Angiotensin II.</p>\n<p>Angiotensin II is a <strong>powerful vasoconstrictor</strong>&nbsp;that increases the total peripheral resistance and <strong>decreases Na<sup>+</sup> and H<sub>2</sub>O excretion</strong> by kidney, thereby causing an&nbsp;<strong>increase in arterial BP.</strong></p><hr><h3>Related Pearl: Actions of Angiotensin II</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Actions of Angiotensin II</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Produces powerful arteriolar constriction and a rise in SBP and DBP</p>\n<p>Acts directly on the adrenal cortex to increase aldosterone secretion</p>\n<p>Facilitates the release of Norepinephrine by a direct action on postganglionic sympathetic neurons</p>\n<p>Constricts efferent arteriole, thereby increasing filteration fraction and glomerular filteration rate, when there is decreased renal bloodflow</p>\n<p>Direct effect on renal tubules to increase Na<sup>+ </sup>reabsorption</p>\n<p>Acts on brain to decrease sensitivity of baroreceptor reflex, potentiating the pressor effect of AT II</p>\n<p>Acts on brain to increase water intake and increase secretion of ADH and ACTH</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3740",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Marey’s law states that _____",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Heart rate varies directly with blood pressure"
+        },
+        {
+          "id": 2,
+          "text": "Heart rate varies inversely with blood pressure"
+        },
+        {
+          "id": 3,
+          "text": "Heart rate do not have any relation with blood pressure"
+        },
+        {
+          "id": 4,
+          "text": "Heart rate is directly proportional to cardiac output"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Marey&rsquo;s law states that the<strong>&nbsp;</strong>heart rate varies inversely with blood pressure.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3742",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is NOT caused by sympathetic stimulation?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Increased BP"
+        },
+        {
+          "id": 2,
+          "text": "Increased HR"
+        },
+        {
+          "id": 3,
+          "text": "Increased venous capacitance"
+        },
+        {
+          "id": 4,
+          "text": "Increased total peripheral resistance"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Increased venous capacitance</strong>&nbsp;is NOT caused by sympathetic stimulation.</p>\n<p><strong>Important effects of increased sympathetic stimulation</strong>:</p>\n<ul>\n<li>Arteriolar vasoconstriction</li>\n<li>Increased stroke volume</li>\n<li>Increased heart rate</li>\n<li>Venoconstriction and decrease in venous capacitance</li>\n<li>The increase in mean systemic filling pressure is caused mainly by venous contraction.</li>\n</ul>\n<p>All these effects together bring about an increased arterial pressure.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3744",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is false regarding nitric oxide?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Derived from endothelium"
+        },
+        {
+          "id": 2,
+          "text": "Acts by increasing cAMP levels"
+        },
+        {
+          "id": 3,
+          "text": "Vasodilator"
+        },
+        {
+          "id": 4,
+          "text": "Derived from arginine"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Nitric oxide acts by increasing cGMP not by increasing cAMP.</p>\n<p><strong>Nitric Oxide</strong></p>\n<ul>\n<li>Also known as <strong>Endothelium-derived relaxing factor (EDRF).</strong></li>\n<li>Synthesized in <strong>endothelial cells</strong> from<strong> arginine</strong> in a reaction catalyzed by <strong>nitric oxide synthase (NOS).</strong></li>\n<li>Mechanism of action:<strong><br /></strong>NO causes activation of <strong>guanylyl cyclase</strong> <strong>&rarr; &uarr; cGMP</strong> &rarr; relaxation of vascular smooth muscle &rarr; <strong>vasodilation.</strong></li>\n<li>Effects of NO:\n<ul>\n<li>Vasodilation.</li>\n<li>Neuromodulator in brain.</li>\n<li>Antimicrobial and cytotoxic activity of various inflammatory cells.</li>\n<li>In GIT, relaxation of smooth muscle.</li>\n<li>Penile erection.</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3750",
+      "difficulty": "medium"
+    },
+    {
+      "text": "All of the following are true regarding the actions of endothelin-1 except ______",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Bronchodilation"
+        },
+        {
+          "id": 2,
+          "text": "Vasoconstriction"
+        },
+        {
+          "id": 3,
+          "text": "Decreased GFR"
+        },
+        {
+          "id": 4,
+          "text": "Has inotropic effect"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong> Endothelin-1</strong></p>\n<ul>\n<li>Potent <strong>vasoconstrictor agent.</strong></li>\n<li>Produced by <strong>endothelial cells.</strong></li>\n<li>They are secreted locally and act in a<strong> paracrine </strong>fashion<strong>.</strong></li>\n</ul>\n<p><strong>Actions of Endothelin-1 (ET-1)</strong></p>\n<ul>\n<li>Potent vasoconstrictor.</li>\n<li>Platelet activation.</li>\n<li>Inotropic effect.</li>\n<li>Closure of ductus arteriosus.</li>\n<li>Have a role in the pathogenesis of hypertension, myocardial infarction, and congestive heart failure.</li>\n<li>In the brain, regulate the transport of substances across blood brain barrier (BBB).</li>\n<li>In the kidneys, they are involved in tubuloglomerular feedback→ ↓ GFR.</li>\n<li>In the lungs, it causes bronchoconstriction (mediated via ET-B receptors).</li>\n<li>In GIT, they are involved in the migration of myenteric plexus to distal colon (failure leads to Hirschsprung’s/megacolon).</li>\n<li>Deletion of both alleles of ET-1 gene→craniofacial abnormalities and respiratory failure at birth.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3749",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 55-year-old man comes to his primary-care clinician complaining of erectile dysfunction. He is given a prescription for sildenafil, and on follow-up, reports that his ability to sustain an erection has been improved markedly by this treatment. The action of which of the following vasoactive mediators would primarily be prolonged in this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Histamine"
+        },
+        {
+          "id": 2,
+          "text": "Endothelin-1"
+        },
+        {
+          "id": 3,
+          "text": "Prostacyclin"
+        },
+        {
+          "id": 4,
+          "text": "Nitric oxide"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The action of <strong>nitric oxide</strong> would primarily be prolonged in this patient.</p>\n<p><strong>Sildenafil:</strong> It is used for the&nbsp;treatment of erectile dysfunction, which <strong>inhibits cGMP-specific phosphodiesterase-5</strong> (PDE-5), an enzyme that degrades cGMP, thereby effectively <strong>prolonging the action of NO.</strong></p>\n<p><strong>Penile erection</strong> is produced by release of <strong>nitric oxide (NO)</strong>, with consequent vasodilation and engorgement of the <strong>corpora cavernosa</strong>.&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3752",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Reflex responsible for tachycardia during right atrial distension is:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Bezold-Jarisch reflex"
+        },
+        {
+          "id": 2,
+          "text": "Bainbridge reflex"
+        },
+        {
+          "id": 3,
+          "text": "Cushing reflex"
+        },
+        {
+          "id": 4,
+          "text": "J reflex"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>Reflex responsible for tachycardia during right atrial distension is&nbsp;<strong>Bainbridge Reflex.</strong></p>\n<p>The <strong>stretch receptors</strong> of the atria that&nbsp;elicit the Bainbridge reflex transmit their afferent signals&nbsp;through the <strong>vagus nerves</strong> to the medulla of the brain.&nbsp;Then efferent signals are transmitted back through <strong>vagal&nbsp;and sympathetic nerves</strong> to increase heart rate and strength&nbsp;of heart contraction. Thus, this reflex helps prevent&nbsp;damming of blood in the veins, atria, and pulmonary&nbsp;circulation.</p>\n<p><strong>Other options:</strong></p>\n<p><strong>Option A: Bezold&ndash;Jarisch Reflex:&nbsp;</strong>Activation of chemosensitive<strong> vagal C fibers</strong> in the cardiopulmonary region causes profound <strong>brady&shy;cardia, hypotension and a brief period of apnoea </strong>followed by rapid shallow breathing.</p>\n<p><strong>Option C: Cushing</strong> <strong>Reflex</strong>:&nbsp;When intracranial&nbsp;pressure<strong>&nbsp;is increased</strong>, the blood supply to Rostral&nbsp;Ventro-Lateral Medulla (RVLM) neurons is compromised.&nbsp;The local hypoxia and hypercapnia cause an increase in discharge from the neurons, producing <strong>hypertension, bradycardia, and irregular respiration.</strong></p>\n<p><strong>Option D: J Reflex:&nbsp;</strong>The stimulation of the J-receptors (C receptors/juxta-pulmonary capillary receptors) causes apnea followed by <strong>rapid breathing, bradycardia,</strong> and<strong> hypotension.</strong></p><p>A \"reverse\" Bainbridge reflex has been proposed to explain the decreases in heart rate observed under conditions in which venous return is reduced, such as during spinal and epidural anesthesia, controlled hypotension, and severe hemorrhage.</p>\n<p>Physiology of blood pressure regulation is an important topic as it is being frequently asked in both AIIMS and NEET examination.&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9238",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 45-year-old male met with a road traffic accident and suffered a head injury. On examination, he was drowsy and his blood pressure is high. Which reflex is responsible for elevated blood pressure in this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "J reflex"
+        },
+        {
+          "id": 2,
+          "text": "Bainbridge reflex"
+        },
+        {
+          "id": 3,
+          "text": "Bezold-Jarisch reflex"
+        },
+        {
+          "id": 4,
+          "text": "Cushing reflex"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The reflex responsible for elevated blood pressure(BP) in head injury patients is the&nbsp;<strong>Cushing&nbsp;</strong><strong>reflex.</strong></p>\n<p>When intracranial pressure is increased, the blood supply to <strong>rostral ventrolateral</strong>&nbsp;neurons is compromised, and the local hypoxia and hypercapnia increase the discharge of the central chemoreceptors. The resultant rise in systemic arterial pressure <strong>(Cushing reflex) </strong>tends to restore the blood flow to the medulla.</p>\n<p><strong>Cushing</strong> <strong>reflex</strong> causes a <strong>triad</strong> of symptoms:</p>\n<ul>\n<li>Reflex bradycardia (via arterial baroreceptors)</li>\n<li>Hypertension (with widened pulse pressure)</li>\n<li>Irregular respiration (bradypnea)</li>\n</ul>\n<p class=\"p2\">&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3737",
+      "difficulty": "easy"
+    },
+    {
+      "text": "All of the following are rapidly acting blood pressure control mechanisms except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Chemoreceptor reflex"
+        },
+        {
+          "id": 2,
+          "text": "Central nervous system ischemic mechanism"
+        },
+        {
+          "id": 3,
+          "text": "Renin angiotensin vasoconstrictor mechanism"
+        },
+        {
+          "id": 4,
+          "text": "Baroreceptor reflex"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Renin-angiotensin vasoconstrictor mechanism is not a&nbsp;rapidly acting pressure control mechanism, it is an intermediate-acting mechanism.</p>\n<p>Regulation of Arterial Blood Pressure:</p>\n<ul>\n<li><strong>Rapidly acting pressure control mechanism&nbsp;</strong>(acting within sec or min)\n<ul>\n<li>The chemoreceptor reflex.</li>\n<li>The central nervous system ischemic mechanism.</li>\n<li>The baroreceptor reflex.</li>\n</ul>\n</li>\n<li><strong>Intermediate-acting mechanisms </strong>(act after minutes)\n<ul>\n<li>The capillary fluid shift mechanism.</li>\n<li>Stress-relaxation of the vasculature.</li>\n<li>The renin-angiotensin vasoconstrictor mechanism.</li>\n</ul>\n</li>\n<li><strong>Long-term mechanisms </strong>(after days)\n<ul>\n<li>Renin-angiotensin-aldosterone system (RAAS)</li>\n</ul>\n</li>\n</ul>\n<p>Note:</p>\n<ul>\n<li>Renin-angiotensin <strong>vasoconstrictor</strong> mechanism is an intermediate-acting mechanism, but <strong>water conservation</strong> by RAAS is a long-term mechanism in the regulation of BP.</li>\n<li><strong>Most</strong> <strong>rapidly</strong> acting: <strong>Baroreceptor</strong> <strong>reflex</strong>&gt;&gt;Chemoreceptor reflex</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3727",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following neurotransmitters is correctly matched with an autonomic pathway?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Glutamate is released by Caudal Ventrolateral Medulla (CVLM) neurons projecting to the intermediolateral nucleus (IML)"
+        },
+        {
+          "id": 2,
+          "text": "GABA is released by Nucleus Tractus Solitarius (NTS) neurons projecting to the nucleus ambiguus"
+        },
+        {
+          "id": 3,
+          "text": "GABA is released by CVLM neurons projecting to the Rostral Ventrolateral Medulla  (RVLM)"
+        },
+        {
+          "id": 4,
+          "text": "Glutamate is released by CVLM neurons projecting to the NTS"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Basic Neural Pathway involved in Regulation of BP</strong></p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b3b78b38f849462e87bfe013e509b422x1280x1429.JPEG\" alt=\"Explanation Image\"><ul>\n<li>NTS: Nucleus Tractus Solitarius</li>\n<li>CVLM: Caudal Ventrolateral Medulla</li>\n<li>RVLM (VMC): Rostral Ventrolateral Medulla (Vasomotor center)</li>\n<li>CVC (CIC): Cardiovagal center (Cardioinhibitory center</li>\n<li><span class=\"st\">intermediolateral nucleus (IML)</span></li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3732",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Stimulation of peripheral chemoreceptors causes:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Bradycardia"
+        },
+        {
+          "id": 2,
+          "text": "Tachycardia"
+        },
+        {
+          "id": 3,
+          "text": "Either bradycardia or tachycardia"
+        },
+        {
+          "id": 4,
+          "text": "Neither bradycardia nor tachycardia"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Peripheral chemoreceptors</strong> in the carotid and aortic bodies can produce variable effects on heart rate-</p>\n<ul>\n<li><strong>Direct Effect</strong>\n<ul>\n<li>vagal stimulation &rarr; <strong>bradycardia</strong></li>\n</ul>\n</li>\n<li><strong>Indirect effect </strong>\n<ul>\n<li>Hypoxia &rarr;peripheral chemoreceptor stimulation&rarr; hyperventilation and increased catecholamine secretion &rarr; <strong>tachycardia and increased cardiac output</strong></li>\n</ul>\n</li>\n</ul>\n<p><strong>Chemoreceptor reflex</strong></p>\n<ul>\n<li><strong>Receptors </strong>\n<ul>\n<li>Peripheral chemoreceptors in carotid and aortic bodies</li>\n<li>Central chemoreceptors in the medulla</li>\n</ul>\n</li>\n<li><strong>Stimulus</strong>\n<ul>\n<li>decrease in- PaO<sub>2</sub></li>\n<li>increase in-Pa CO<sub>2</sub>, H+ ion conc</li>\n</ul>\n</li>\n<li><strong>Afferent</strong>\n<ul>\n<li>IX (sinus nerve of Hering) and X (vagus N)</li>\n</ul>\n</li>\n<li><strong>Center for reflex</strong>\n<ul>\n<li>Medulla</li>\n</ul>\n</li>\n<li><strong>Efferent</strong>\n<ul>\n<li>Sympathetic and parasympathetic neurons to heart vasculature and adrenal medulla</li>\n</ul>\n</li>\n<li><strong>Response</strong>\n<ul>\n<li><strong>Direct effect</strong>- bradycardia</li>\n<li><strong>Indirect effect</strong>- hyperventilation, tachycardia, vasoconstriction, increased cardiac output and increased BP</li>\n</ul>\n</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3736",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following can be responsible for Bezold-Jarisch reflex?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Serotonin"
+        },
+        {
+          "id": 2,
+          "text": "Histamine"
+        },
+        {
+          "id": 3,
+          "text": "Prostaglandin"
+        },
+        {
+          "id": 4,
+          "text": "Angiotensin"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Serotonin </strong>can be responsible for&nbsp;Bezold&ndash;Jarisch reflex.</p>\n<p>Activation of chemosensitive vagal C fibers located in the cardiopulmonary region (ex: ventricles, atria, great veins, pulmonary artery, juxtacapillary region of alveoli) causes profound bradycardia, hypotension, and apnea followed by rapid shallow breathing. This response is called Bezold-Jarisch reflex.</p>\n<p>Other substances that can cause Bezold&ndash;Jarisch reflex are <strong>capsaicin, phenyl biguanide, and veratridine.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC9431",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following events occur immediately when a person changes his/her posture from supine to standing?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Decrease in firing from baroreceptor"
+        },
+        {
+          "id": 2,
+          "text": "Vagal output to cardiac fibres increase"
+        },
+        {
+          "id": 3,
+          "text": "Mesenteric Vasoconstriction"
+        },
+        {
+          "id": 4,
+          "text": "Increase cardiac contractility"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>There is a decreased firing from the baroreceptors.</p>\n<ul>\n<li>When a person <strong>stands up from a lying down position</strong>, it causes <strong>pooling of the blood</strong> in the legs, due to gravity. This <strong>reduces the venous return</strong> and causes a <strong>decrease</strong> in <strong>cardiac output.</strong></li>\n<li>Reduced cardiac output, leads to a <strong>fall in blood pressure,</strong> which in turn causes<strong> reduced firing from baroreceptors.</strong></li>\n<li>As a result, the <strong>vagal tone is suppressed</strong> leading to<strong> increased heart rate.</strong></li>\n</ul>\n<p>&nbsp;</p><hr><h3>Related Pearl: Factors Affecting Heart Rate</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Heart rate is accelerated by</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Decreased activity of arterial baroreceptors</li>\n<li>Increased activity of atrial stretch receptors</li>\n<li>Inspiration</li>\n<li>Excitement</li>\n<li>Anger</li>\n<li>Pain</li>\n<li>Hypoxia</li>\n<li>Exercise</li>\n<li>Thyroid hormones</li>\n<li>Fever</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>The Heart is slowed by</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Increased activity of arterial baroreceptors</li>\n<li>Expiration</li>\n<li>Grief</li>\n<li>Stimulation of pain fibers in trigeminal nerve</li>\n<li>Increased intracranial pressure</li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD6813",
+      "difficulty": "medium"
+    }
+  ]
+}

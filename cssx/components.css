@@ -1,0 +1,10 @@
+
+/* ================================================================
+   DARK MODE overrides
+   ================================================================ */
+html:not([data-theme="light"]) .platform-info,
+html:not([data-theme="light"]) .video-info-panel,
+html:not([data-theme="light"]) .info-card {
+  background: #1a1d2e !important;
+  color: #e2e8f0 !important;
+}

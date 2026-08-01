@@ -1,0 +1,996 @@
+{
+  "meta": {
+    "title": "Basic_Principles_Of_Pharmacology_Part_1"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">A, B &amp; C</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">A, B &amp; D</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">B, C &amp; F</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">C, E &amp; F</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A one-year-old is brought to the ED having just ingested a large overdose of \"X\", which is a weak acid with a pKa of 4.0. It is capable of entering most tissues. On physical examination, the heart rate is 130/min, blood pressure 100/60 mm Hg, and respiratory rate 30/min. Which of the following statements about management in this case of \"X\" overdose is incorrect?<br>A. Absorption of the drug would be faster from the stomach than from the small intestine.<br>B. More of the drug would be ionised at blood pH than at stomach pH.<br>C. Urinary excretion would be accelerated by administration of NH4Cl, an acidifying agent.<br>D. Urinary excretion would be accelerated by giving NaHCO3, an alkalinising agent<br>E. Absorption of the drug would be slower from the stomach than from the small intestine.<br>F. More of the drug would be unionised at blood pH than at stomach pH.</span></p>",
+      "unique_key": "DT1166325",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166325,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Given scenario of overdose of drug \"X\", need understanding of the <strong>Henderson-Hasselbalch</strong> <strong>Relationship</strong> for management.</li>\n<li>The Henderson-Hasselbalch relationship is clinically important when it is necessary to estimate or alter the partition of drugs between compartments of differing pH.</li>\n<li><strong>Statement A (Correct):</strong> Weak acids are better absorbed in the <strong>acidic stomach</strong> than in the <strong>alkaline intestine</strong> because they remain unionised at acidic pH.</li>\n<li><strong>Statement B (Correct):</strong> At <strong>blood pH</strong>, a weak acid (pKa 4.0) is mostly <strong>ionised</strong> (since pH &gt; pKa), which is true.</li>\n<li><strong>Statement C (Incorrect): NH<sub>4</sub>Cl (acidifying urine)</strong> would favour the <strong>reabsorption</strong> (not excretion) of weak acids like drug \"X\", by increasing the proportion of the unionised form in the renal tubule. Hence, this would <strong>decrease</strong> excretion.</li>\n<li><strong>Statement D (Correct):</strong> <strong>Alkalinization</strong> of urine using <strong>NaHCO<sub>3</sub></strong> promotes the ionisation of weak acids, enhancing their excretion, a standard principle in overdose management.</li>\n<li><strong>Statement E (Incorrect): </strong>Absorption of weak acids is typically <strong>faster from the stomach</strong>, where the acidic environment favours the <strong>unionised form</strong> of the drug. Therefore, absorption would be <strong>slower from the intestine</strong> due to a higher pH.</li>\n<li><strong>Statement F (Incorrect): </strong>At <strong>blood pH (7.4)</strong>, a weak acid with <strong>pKa = 4.0</strong> will be predominantly <strong>ionised</strong>, while in <strong>stomach pH (1-2)</strong>, the drug remains mostly <strong>unionised</strong>. Therefore, more of the drug is unionised at <strong>stomach pH</strong>, not blood pH.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Weak acids</strong> are absorbed better in <strong>acidic environments</strong> (stomach).</li>\n<li><strong>Ionised forms</strong> of drugs are <strong>not reabsorbed</strong> and are excreted in urine.</li>\n<li><strong>Alkalinising agents</strong> (e.g., NaHCO<sub>3</sub>) enhance weak acid excretion.</li>\n<li><strong>NH<sub>4</sub>Cl</strong> acidifies urine, favouring the <strong>reabsorption</strong> of weak acids.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/20240309f3e3dddd-ae43-441c-a7b7-6efcfd09ae48.jpg\">",
+      "correct_choice_id": 4,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">1%</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">99%</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">90%</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.1%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old female has acute bacterial rhino-sinusitis and is to receive an oral antibiotic. She complains of a headache and fever. Blood pressure is 100/70 mm Hg, heart rate 100/min, temperature 37.8 &deg;C (100.1 F). Amoxicillin is a weak organic acid with a pKa of 2. What percentage of a given dose will be in the water-soluble form in the duodenum at a pH of 4?</span></p>",
+      "unique_key": "DT1166329",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166329,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<ul>\n<li>This question tests the application of the <strong>Henderson-Hasselbalch equation</strong> in predicting the <strong>ionised (water-soluble) fraction</strong> of weak acids at a given pH.</li>\n<li>Amoxicillin is a <strong>weak acid</strong> (pKa = 2). When placed in an <strong>alkaline environment</strong> like the <strong>duodenum (pH = 4)</strong>, the <strong>ionised form</strong> of the drug predominates, and this form is <strong>water-soluble</strong> but <strong>less absorbable</strong> across lipid membranes.</li>\n</ul>\n<h4>Step-by-step calculation using Henderson-Hasselbalch:</h4>\n<p>pH = pKa + log(A<sup><span style=\"font-size: xx-small;\">-</span></sup>/HA)</p>\n<p>Where:</p>\n<ul>\n<li>A<sup>-</sup> = ionised (water-soluble) form</li>\n<li>HA = unionised (lipid-soluble) form</li>\n</ul>\n<p>Substituting:</p>\n<p>4 = 2 + log(A<sup>-</sup>/HA)</p>\n<p>&rArr; log(A<sup>-</sup>/HA)= 2</p>\n<p>&rArr;A<sup>-</sup>/HA = 10&#178;=100.</p>\n<p><strong>Ionised</strong> = 100, <strong>unionised</strong> = 1.</p>\n<p>Therefore, % ionised = 100/(100+1)&times;100 =100/101&times;100 &asymp; 99%</p>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Weak acids are <strong>mostly ionised in alkaline pH</strong> &rarr; more water-soluble</li>\n<li>Ionised form = <strong>less membrane permeable</strong>, more <strong>excretable</strong></li>\n<li>Henderson-Hasselbalch helps predict <strong>drug ionisation</strong> at physiological pH</li>\n</ul>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906b2bf4601-b628-4d66-ae15-c70cb98943ba.png\">",
+      "correct_choice_id": 12,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">W</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">X</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Y</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">Z</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a clinical trial, Pretamycin, a new drug, was administered intravenously to 20 volunteers, and blood samples were taken for several hours. Several inactive metabolites were found, as well as declining concentrations of Pretamycin. A graph was prepared as shown below, with the Pretamycin plasma levels plotted on the concentration (mg/hr) ordinate and time on the X axis. It was concluded that the drug has first-order kinetics. From this graph, which line best correlates with the concentration of Pretamycin?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/202403092ea7807c-2128-41ee-a762-332995266e36.jpg\"></span></p>",
+      "unique_key": "DT1166336",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166336,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li><strong>The correct line is Z</strong>, because it displays an <strong>exponential decline</strong> in drug concentration with time, which is the hallmark of <strong>first-order elimination kinetics</strong>.</li>\r\n<li>In <strong>first-order kinetics</strong>, a <strong>constant fraction</strong> of the drug is eliminated per unit time.</li>\r\n<li>As drug concentration decreases, the <strong>rate of elimination slows</strong>, producing a <strong>curved, exponential decay</strong> on a <strong>linear scale plot</strong>.</li>\r\n<li>This results in a <strong>non-linear (concave)</strong> curve as seen in <strong>line Z</strong> on the graph.</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>W (Option A):</strong> This line shows a <strong>gentle linear decline</strong>, indicating a <strong>slow and constant rate of elimination</strong>, which is more characteristic of <strong>zero-order kinetics</strong>. In zero-order kinetics, <strong>a fixed amount</strong> of drug is eliminated per unit time <strong>regardless of concentration</strong>. Therefore, it does <strong>not</strong> fit first-order behaviour.</p>\r\n<p><strong>X (Option B):</strong> This line shows a <strong>more rapid linear fall</strong> in concentration over time. This again reflects <strong>zero-order kinetics</strong>, where drug elimination is <strong>not dependent</strong> on plasma concentration. Despite the steeper slope, the <strong>linear nature</strong> of the curve makes it incompatible with first-order kinetics.</p>\r\n<p><strong>Y (Option C):</strong> Y appears to show a <strong>partially curved decline</strong>, which might seem like a transition phase or a <strong>mixed-order</strong> or <strong>non-classical</strong> elimination. However, it does not reflect the classic <strong>exponential drop</strong> required for first-order elimination and is thus <strong>not ideal</strong> for this scenario.</p>\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/20240309e9f42d0c-48ea-413b-913c-b3f7b7357187.jpg\">\r\n<img class=\"w-100\" style=\"height: auto; display: block; vertical-align: middle; border: 0;\" src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/20240309a3b9da4f-edd6-4174-85bf-36743b26b97f.jpg\">\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li><strong>First-order kinetics</strong>: Rate &prop; Concentration &rarr; <strong>exponential decay</strong></li>\r\n<li><strong>Zero-order kinetics</strong>: Rate = Constant &rarr; <strong>linear decline</strong></li>\r\n<li>Graphs must be interpreted using the <strong>shape of the curve</strong>, not just the slope</li>\r\n<li>Most drugs follow <strong>first-order kinetics</strong> at therapeutic doses</li>\r\n</ul>",
+      "correct_choice_id": 24,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">300, 100</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">450, 150</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">667, 222</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">500, 167</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Mr Shah is undergoing hemodialysis 3 days per week while awaiting a kidney transplant. He takes metformin for type 2 diabetes mellitus and was previously stabilised while his kidney function was adequate at a dosage of 500 mg twice daily, given orally. The plasma concentration at this dosage with normal kidney function was found to be 1.5mg/L. He has had 6 dialysis procedures, and metformin toxicity is suspected. A blood sample now shows a metformin concentration of 4.5 mg/L. What was Mr Shah's clearance (litre/24hr) of metformin while his kidney function was normal, and no,w respectively?</span></p>",
+      "unique_key": "DT1166339",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166339,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<p>To calculate drug clearance (<strong>Cl</strong>) at steady state, we apply the formula:</p>\n<p><strong>Cl = Rate of Drug Input </strong> &#247; <strong>Steady State Plasma Concentration (Cp)</strong></p>\n<ul>\n<li><strong>Dose (Rate In)</strong> = 500 mg &times; 2 = <strong>1000 mg/day</strong></li>\n<li><strong>Cp (normal)</strong> = 1.5 mg/L</li>\n<li><strong>Cp (now)</strong> = 4.5 mg/L</li>\n</ul>\n<h4>Normal Kidney Function:</h4>\n<p>Cl = 1000 mg/day &#247; 1.5 mg/L = 666.67 L/day &#8776; <strong>667 L/24hr.</strong></p>\n<h4>Current (Dialysis State):</h4>\n<p>Cl = 1000 mg/day &#247; 4.5 mg/L = 222.22 L/day <strong>&asymp; 222 L/24hr</strong></p>\n<p>This reduced clearance confirms <strong>accumulation and risk of toxicity</strong>, which is consistent with <strong>renal dysfunction</strong>, as <strong>metformin is cleared unchanged in urine</strong>.</p>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Metformin is not metabolised</strong> and is eliminated almost entirely via the <strong>kidneys</strong>.</li>\n<li><strong>Reduced renal clearance</strong> results in <strong>accumulation</strong>, leading to toxicity (e.g., lactic acidosis).</li>\n<li><strong>Dose adjustments or withdrawal</strong> are critical in <strong>renal impairment</strong>.</li>\n</ul>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.5 L</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">1L</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">2 L</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">5 L</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 24-year-old female with candidiasis is given a one-time 100 mg dose of oral fluconazole. Administration of the medication results in a peak plasma concentration of 20 micro-g/mL. What is the apparent volume of drug distribution?</span></p>",
+      "unique_key": "DT1166353",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166353,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<p>The <strong>volume of distribution (Vd)</strong> is calculated by the formula:</p>\n<p><strong>Vd = Amount of drug in the body(mg)</strong> &#247; <strong>Plasma concentration (mg/L)</strong></p>\n<ul>\n<li><strong>Dose administered</strong> = <strong>100 mg</strong></li>\n<li><strong>Plasma concentration</strong> = 20 &micro;g/mL =<strong> 20 mg/L</strong></li>\n</ul>\n<p>Vd = 100 mg 20 mg/L = <strong>5L</strong></p>\n<p>This means fluconazole appears to distribute in a fluid volume equivalent to <strong>5 litres</strong>, which corresponds to extracellular water.</p>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li><strong>Vd</strong> helps infer the <strong>extent of tissue penetration</strong>.</li>\n<li>A <strong>low Vd</strong> suggests the drug remains in the plasma; a <strong>high Vd</strong> indicates distribution into tissues or fat.</li>\n<li>Useful in <strong>loading dose</strong> calculations and <strong>toxicity assessment.</strong></li>\n</ul>",
+      "correct_choice_id": 44,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">20h</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">30h</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">40h</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">50h</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 17-year-old woman is given a prescription of fluconazole to be taken daily (q 12 h) for 3 days. The half-life is 12 h. How long will it take for the medication to reach 90% of its final steady state level?</span></p>",
+      "unique_key": "DT1166356",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166356,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>Drug elimination follows <strong>first-order kinetics</strong>, where a <strong>fixed fraction</strong> of the drug is removed per unit time (in this case, per half-life).</li>\r\n<li>For most drugs eliminated by this pathway, the fraction of the drug remaining in the body after successive half-lives is:</li>\r\n<li>After 1 half-life, 50% remains</li>\r\n<li>After 2 half-lives, 25% remains</li>\r\n<li>After 3 half-lives, 12.5% remains</li>\r\n<li>After 3.3 half-lives, ~10% remains (i.e., <strong>90% eliminated</strong>)</li>\r\n<li>To calculate the time it takes for a medication to reach 90% of its final steady state, you can use the formula.</li>\r\n</ul>\r\n<p>Time to reach 90% of <strong>Steady state = (3.3) x (t1/2).</strong></p>\r\n<ul>\r\n<li>Given that the <strong>half-life (t1/2) of fluconazole</strong> is 12 hours:</li>\r\n<li>Time to Reach 90% of Steady State = (3.3) * (12 hours) = 39.6 hours</li>\r\n<li>So, it will take approximately 39.6 hours for the medication to reach 90% of its final steady-state level.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>It typically takes <strong>3 half-lives</strong> to reach <strong>90% steady-state</strong>,</li>\r\n<li><strong>4-5 half-lives</strong> are needed to reach <strong>~ 95-97% steady-state</strong>,</li>\r\n<li>This principle is crucial when determining <strong>loading dose needs</strong> or predicting time to <strong>therapeutic effect</strong>.</li>\r\n</ul>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">325 micrograms</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">350 micrograms</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">375 micrograms</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">300 micrograms</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old man with chronic cardiac failure was brought to the ED because of slurred speech and inappropriate behaviour. It turns out that he has not taken his digoxin for the last 2 weeks. The physician gives 125 micrograms as the standard dose. Twenty-four hours later, his serum levels were reported to be 2 ng/mL. The target therapeutic level is 8 ng/mL. What dose of digoxin should he receive?</span></p>",
+      "unique_key": "DT1166360",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166360,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<p>The formula used to calculate the new dose is:</p>\r\n<p><strong>D<sub><span style=\"font-size: xx-small;\">new</span></sub>= Vd (Target level - Current level)</strong></p>\r\n<p>Where:</p>\r\n<ul>\r\n<li>Vd is the volume of distribution</li>\r\n<li>Target level is the desired therapeutic level</li>\r\n<li>The current level is the measured current level</li>\r\n</ul>\r\n<p>In this case:</p>\r\n<ul>\r\n<li>Current level = 2 ng/mL</li>\r\n<li>Target therapeutic level = 8 ng/mL</li>\r\n<li>Standard dose = 125 micrograms</li>\r\n</ul>\r\n<p>First, we need to calculate the volume of distribution (Vd):&nbsp;</p>\r\n<p>Vd = Standard dose / Current level Vd = 125 micrograms / 2 ng/mL = 62.5 L</p>\r\n<p>Now, calculate the new dose (D<sub><span style=\"font-size: xx-small;\">new</span></sub>):</p>\r\n<p style=\"padding-left: 30px;\">D<sub><span style=\"font-size: xx-small;\">new</span></sub>= Vd (Target level - Current level)</p>\r\n<p style=\"padding-left: 30px;\">                           = 62.5 L (8 ng/mL - 2 ng/mL)</p>\r\n<p style=\"padding-left: 30px;\">                           = 62.6 L x 6 ng/mL = <strong>375 ng</strong></p>\r\n<p>To express this in micrograms (since 1 microgram = 1000 ng), D<sub><span style=\"font-size: xx-small;\">new</span></sub>= 375 ng * (1 microgram / 1000 ng) = 0.375 micrograms.</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p><strong>Digoxin Has a Narrow Therapeutic Window:</strong></p>\r\n<ul>\r\n<li>Target levels: <strong>8-2.0 ng/mL</strong> (but 8 ng/mL was asked hypothetically for concept testing).</li>\r\n<li>The toxicity risk is <strong>high</strong> with even modest overdose-precise dosing is crucial.</li>\r\n</ul>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.5 mg/L</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 mg/L</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">1.5 mg/L</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">2 mg/L</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old man is evaluated for Infective endocarditis. He has a history of aortic valve replacement for aortic stenosis. As part of the patient's treatment, 240 mg of intravenous gentamicin is started. The pharmacy calculates that, in this patient, gentamicin has a volume of distribution of 30 L, a half-life of 4 hours, and demonstrates first-order and one-compartment kinetics. Which of the following is the most likely serum drug concentration just before the next dose, 8 hours later?</span></p>",
+      "unique_key": "DT1166377",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166377,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>The <strong>initial plasma concentration (C<sub>o</sub>)</strong> of the drug after a single IV dose can be calculated using:</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509061cca1480-f891-4c06-8bc9-709ca7870407.png\"><ul>\r\n<li>The drug follows <strong>first-order kinetics</strong>, meaning the plasma concentration halves every half-life. With a half-life of <strong>4 hours</strong>, the plasma levels will reduce as follows:\r\n<ul>\r\n<li>After 4 hours: 8&rarr;4&thinsp;mg/L</li>\r\n<li>After another 4 hours (total 8 hours): 4&rarr;2&thinsp;mg/L</li>\r\n<li>Hence, just before the next scheduled dose at 8 hours, the expected serum concentration = <strong>2 mg/L</strong>.</li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral bioavailability</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Volume of distribution</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clearance</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Drug metabolism</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">While reviewing the data of phase I clinical trials, the researchers note that the newly developed drug's half-life seems to vary among the healthy volunteers. An increase in which of the following pharmacologic parameters is most likely responsible for the longer half-life seen in certain individuals?</span></p>",
+      "unique_key": "DT1166380",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166380,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>The half-life of a drug can be calculated using these parameters, as follows:</li>\r\n</ul>\r\n<p><strong>T<sub><span style=\"font-size: xx-small;\">1/2</span></sub>= (0.7 &times; Vd) / CL</strong></p>\r\n<ul>\r\n<li>Thus, <strong>an increase in volume of distribution (Vd)</strong> will proportionally increase the drug's half-life, assuming clearance remains constant.</li>\r\n<li>This explains why some individuals in the trial have a <strong>longer half-life</strong>: a larger Vd means the drug is more widely distributed into tissues and takes longer to be cleared from plasma.</li>\r\n<li>This is commonly seen in individuals with increased lean body mass, fat content, or altered tissue binding capacity.</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Oral bioavailability (Option A):</strong> While it influences how much of the drug enters systemic circulation, it <strong>does not affect the half-life</strong>. Once in circulation, the rate of elimination (t&frac12;) is governed by clearance and Vd, not by absorption extent.</p>\r\n<p><strong>Clearance (Option C):</strong> A <strong>decrease</strong> in clearance would prolong half-life, not an increase. In this question, the half-life <strong>increased</strong> due to another factor, and <strong>clearance wasn't reduced</strong> across subjects.</p>\r\n<p><strong>Drug metabolism (Option D):</strong> Alterations in metabolism do affect half-life, but the question explicitly points to <strong>increased</strong> values of a parameter. If metabolism increased, clearance would rise and half-life would shorten, not lengthen.</p>",
+      "correct_choice_id": 82,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">40 mg/L</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">3.0 mg/L</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.025 mg/L</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">7.2 mg/L</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 70-year-old man is admitted with a MI with cardiac arrhythmia. A continuous intravenous infusion of lidocaine, 1.92 mg/min, is started at 8 AM. The average pharmacokinetic parameters of lidocaine are: Vd 77 L; clearance 640 mL/min; half-life 1.4 h. What is the expected steady-state plasma concentration?</span></p>",
+      "unique_key": "DT1166382",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166382,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<ul>\n<li>The steady-state plasma concentration, Cp<sub>ss,</sub> for a drug given by <strong>continuous IV infusion</strong> is determined by the equation:</li>\n</ul>\n<p><strong>Cp<sub>ss </sub>= Rate of infusion / Clearance</strong><strong></strong></p>\n<p>Given:</p>\n<ul>\n<li>Rate of infusion = <strong>1.92 mg/min</strong></li>\n<li>Clearance = <strong>640 mL/min</strong> or <strong>0.640 L/min</strong></li>\n</ul>\n<p><strong>Cp<sub>ss </sub>= 1.92/0.640 = 3.0 mg/L</strong></p>\n<ul>\n<li>Thus, the expected steady-state plasma concentration of lidocaine is <strong>3.0 mg/L</strong>.</li>\n</ul>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">1, 2, 3, 4</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">5, 6, 7, 8</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">2, 4, 6, 8</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">1, 3, 5, 7</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following drugs are established inhibitors of P-glycoprotein (P-gp) drug transporters?<br>1. Cimetidine<br>2. Ethanol<br>3. Ketoconazole<br>4. Ritonavir<br>5. Verapamil<br>6. Amiodarone<br>7. Cyclosporine<br>8. Nifedipine</span></p>",
+      "unique_key": "DT1166404",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166404,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>P-glycoprotein (P-gp), also known as <strong>MDR-1 (multidrug resistance protein 1)</strong>, is an ATP-dependent efflux transporter involved in limiting drug absorption in the gut, promoting biliary and renal excretion, and restricting drug entry into the brain and placenta.</li>\r\n<li><strong>Inhibition of P-gp</strong> can significantly increase the bioavailability and systemic exposure of P-gp substrates.</li>\r\n<li>According to Goodman &amp; Gilman's, <strong>established P-gp inhibitors</strong> include:\r\n<ul>\r\n<li><strong>Verapamil</strong> (a calcium channel blocker),</li>\r\n<li><strong>Amiodarone</strong> (an antiarrhythmic),</li>\r\n<li><strong>Cyclosporine</strong> (an immunosuppressant), and</li>\r\n<li><strong>Nifedipine</strong> (a dihydropyridine calcium channel blocker).</li>\r\n</ul>\r\n</li>\r\n<li>These agents <strong>directly block P-gp efflux function</strong>, thereby increasing the intracellular concentration of P-gp substrate drugs.</li>\r\n<li>This is clinically relevant in enhancing drug bioavailability and increasing drug-drug interaction risk.</li>\r\n<li><strong>Cimetidine</strong> may affect renal drug secretion via OCTs but not directly P-gp.</li>\r\n<li><strong>Ethanol</strong> has no consistent P-gp inhibitory effect.</li>\r\n<li><strong>Ketoconazole</strong> and <strong>ritonavir</strong> are known inhibitors, but not enough to validate this as a complete answer.</li>\r\n<li><strong>Rifampicin</strong> is a P-gp inducer and not an inhibitor.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906c9c440ea-b00e-4297-a41b-cca827896cdc.png\">",
+      "correct_choice_id": 102,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clopidogrel</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prasugrel</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ticagrelor</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Warfarin</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 59-year-old man with MI is admitted for emergency percutaneous insertion of a coronary stent. Which of the following drugs might cause unexpected results based on the patient's CYP2C19 genotype?</span></p>",
+      "unique_key": "DT1166426",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166426,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>Clopidogrel is a <strong>prodrug</strong> that requires <strong>oxidative activation via CYP2C19</strong>, a polymorphic enzyme in the cytochrome P450 family.</li>\r\n<li>Individuals who are <strong>poor metabolizers</strong> (with two loss-of-function alleles) generate <strong>less of the active metabolite</strong>, leading to <strong>reduced platelet inhibition</strong> and, consequently, an increased risk of <strong>cardiovascular events</strong> despite therapy.</li>\r\n<li>Therefore, genetic polymorphism in <strong>CYP2C19</strong> plays a significant role in interindividual variability in <strong>clopidogrel response</strong>, which is clinically important in antiplatelet therapy after PCI.</li>\r\n</ul>\r\n<p>Explanation of other options:</p>\r\n<p><strong>Prasugrel (Option B):</strong> Although prasugrel is also a prodrug, its activation is more efficient and <strong>less dependent on CYP2C19</strong>. Therefore, <strong>poor metabolizers still achieve therapeutic levels</strong> of the active metabolite.</p>\r\n<p><strong>Ticagrelor (Option C):</strong> Ticagrelor is <strong>not a prodrug</strong>. It is <strong>active as administered</strong> and does not require metabolic activation via CYP enzymes. Thus, CYP2C19 polymorphism does <strong>not influence its effect</strong>.</p>\r\n<p><strong>Warfarin (Option D):</strong> Warfarin metabolism is affected by polymorphisms in <strong>CYP2C9</strong> and its target <strong>VKORC1</strong>, not CYP2C19. Thus, its variability in effect is unrelated to the genotype in question.</p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Amiodarone</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ethanol</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Phenobarbital</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Procainamide</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following drugs may inhibit the hepatic microsomal P450 responsible for warfarin metabolism?</span></p>",
+      "unique_key": "DT1166428",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166428,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>Amiodarone is a potent <strong>inhibitor of cytochrome P450 enzymes</strong>, particularly <strong>CYP2C9</strong>, which is the primary isoenzyme responsible for metabolising <strong>S-warfarin</strong>, the more active enantiomer of warfarin.</li>\r\n<li>Inhibition of CYP2C9 by amiodarone results in a <strong>reduction of warfarin clearance</strong>, leading to increased plasma levels and an enhanced anticoagulant effect, thereby heightening the <strong>risk of bleeding</strong>.</li>\r\n<li>This interaction is clinically significant and necessitates close <strong>INR monitoring</strong> and often a <strong>dose reduction</strong> of warfarin when used concomitantly.</li>\r\n</ul>\r\n<p><strong>Common Enzyme inhibitors:</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025090684b261b9-0a03-42c4-931b-b2ab94a10790.png\"><p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Ethanol (Option B)</strong> acts as a <strong>biphasic modulator</strong>; acute use may inhibit metabolism, but chronic use <strong>induces</strong> microsomal enzymes.</p>\r\n<p><strong>Phenobarbital (Option C)</strong> is a classic <strong>inducer</strong> of hepatic microsomal enzymes, including CYP2C9, leading to <strong>enhanced metabolism</strong> of warfarin and decreased anticoagulant effect.</p>\r\n<p><strong>Procainamide (Option D)</strong> is not known to significantly affect cytochrome P450-mediated metabolism of warfarin.</p>",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Testosterone</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lignocaine</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Propranolol</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ritonavir</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following drugs has higher first-pass metabolism but is used orally?</span></p>",
+      "unique_key": "DT1166431",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166431,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li><strong>Propranolol</strong> undergoes <strong>extensive first-pass hepatic metabolism</strong>, leading to a significant reduction in its bioavailability.</li>\r\n<li>However, despite this, it is administered <strong>orally</strong> because the metabolised fraction is still <strong>therapeutically active</strong>, and the required plasma levels can be achieved by appropriate dosing.</li>\r\n<li>First-pass effect refers to the metabolism of orally administered drugs in the <strong>liver</strong> and <strong>intestinal wall</strong> before reaching systemic circulation.</li>\r\n<li>Propranolol has a <strong>bioavailability of ~25%</strong>, and doses are adjusted to compensate for this.</li>\r\n<li>It is metabolised primarily by <strong>CYP2D6</strong> and <strong>CYP1A2</strong> in the liver.</li>\r\n</ul>\r\n<p><strong>Drugs and Oral Bioavailability Classification</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025090650876e38-ba3f-4a86-80cf-30f3e7556ab7.png\"><p><strong>Explanation of other options:</strong></p>\r\n<p><strong>Testosterone (Option A)</strong> has <strong>very high first-pass metabolism</strong> and is <strong>not used orally</strong> in its native form. Instead, modified formulations (e.g., testosterone undecanoate) or parenteral/transdermal routes are preferred to avoid hepatic degradation.</p>\r\n<p><strong>Lignocaine (Lidocaine (Option B))</strong>: Extensively metabolised by the liver; not suitable for oral use due to rapid first-pass metabolism. Typically given <strong>IV</strong> or via <strong>topical/infiltration routes</strong>.</p>\r\n<p><strong>Ritonavir (Option D)</strong>: Undergoes hepatic metabolism, but is primarily used as a <strong>CYP3A4 inhibitor (booster)</strong> to increase levels of co-administered drugs. It does have oral activity, but its <strong>primary use is as a pharmacokinetic enhancer</strong>, not a direct example of tolerable high first-pass metabolism.</p>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<ul>\r\n<li>Drugs with <strong>high first-pass metabolism</strong> may still be used orally if:\r\n<ul>\r\n<li>The <strong>metabolites retain activity</strong></li>\r\n<li>The <strong>therapeutic window allows for dose adjustment<br /> </strong></li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 133,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">HLA-B*1502</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">HLA-B*5801</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">HLA-B*5701</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">HLA-B*5901</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 30-year-old man is being treated for HIV. When abacavir therapy is begun, he develops a severe skin rash. Which of the following pharmacogenomic diagnoses might explain this skin rash?</span></p>",
+      "unique_key": "DT1166437",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166437,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li><strong>Abacavir hypersensitivity</strong> is strongly associated with the presence of the <strong>HLA-B*5701</strong></li>\r\n<li>Individuals carrying this allele are at increased risk for severe immune-mediated skin reactions, such as <strong>Stevens-Johnson syndrome</strong> and <strong>toxic epidermal necrolysis (TEN)</strong>, as well as other forms of <strong>systemic hypersensitivity</strong>.</li>\r\n<li>Notable HLA-drug associations include:</li>\r\n<li><strong>HLA-B*1502 (Option A)</strong>: Linked to <strong>Stevens-Johnson syndrome</strong> in patients taking <strong>carbamazepine</strong>, particularly in Asian populations.</li>\r\n<li><strong>HLA-B*5801 (Option B)</strong>: Associated with severe <strong>cutaneous adverse reactions</strong> to <strong>allopurinol</strong>, including TEN.</li>\r\n<li><strong>HLA-B*5701</strong>: As above, associated with <strong>abacavir</strong> and also <strong>flucloxacillin</strong> in drug-induced liver injury.</li>\r\n<li>Genetic screening for these alleles prior to initiating therapy can significantly reduce the risk of adverse drug reactions.</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<p><strong>HLA-B*5901 (Option D)</strong>: This allele has no clinically established pharmacogenomic link with abacavir or any other common drug hypersensitivity reaction.</p>",
+      "correct_choice_id": 143,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">CYP2D6</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">CYP2C19</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">CYP2C9</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">CYP3A4</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 7-year-old child is brought to the ED with severe bruising after a fall, is given codeine with acetaminophen. Shortly after the first dose, the child became unresponsive and turned blue. Which of the following alleles might be responsible for this presentation?</span></p>",
+      "unique_key": "DT1166443",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166443,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li><strong>Codeine</strong> is a <strong>prodrug</strong> that requires <strong>metabolic activation by CYP2D6</strong> to form <strong>morphine</strong>, the active metabolite responsible for analgesia.</li>\r\n<li>Some individuals (including children) may carry <strong>CYP2D6 gene duplications,</strong> making them <strong>ultrarapid metabolizers</strong>, leading to <strong>excessive morphine formation</strong>, toxicity, <strong>respiratory depression</strong>, and death, even at therapeutic doses.</li>\r\n<li>In such patients, <strong>normal codeine dosing results in dangerously high plasma morphine levels</strong>, explaining the cyanosis and unresponsiveness observed.</li>\r\n</ul>\r\n<p><strong>Pharmacogenomic Variants and Associated Drug Responses:</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906e1065efa-6972-409a-b17d-8a262dc1e0c3.png\">",
+      "correct_choice_id": 151,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Methylation</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sulfation</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oxidation</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acetylation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 26-year-old man comes to the ED because of a 1-week history of worsening fatigue, nausea, and vomiting. The patient is on ATT. Physical examination shows right upper quadrant tenderness and scleral icterus. Laboratory studies show elevated aminotransferases. Impaired function of which of the following pharmacokinetic processes is the most likely explanation for this patient's symptoms?</span></p>",
+      "unique_key": "DT1166450",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166450,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>The patient on ATT is most likely receiving isoniazid, a drug known for hepatotoxicity in slow acetylators.</li>\r\n<li><strong>Acetylation</strong> is a <strong>phase II metabolic process</strong> where drugs are conjugated with an acetyl group to increase water solubility and promote excretion. Isoniazid is metabolised via <strong>N-acetyltransferase</strong> (NAT2).</li>\r\n<li>Genetic polymorphism in NAT2 results in \"slow acetylators\" who accumulate toxic metabolites, increasing the risk of drug-induced hepatitis and liver damage.</li>\r\n<li>Phase II reactions, such as acetylation, follow phase I metabolism if the intermediate is still insufficiently polar. In this case, impaired acetylation prevents effective detoxification of isoniazid intermediates.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/2024030947722a03-dfb1-4da3-b89c-d3a613b93c18.jpg\">\r\n<p><strong>Comparison of Phase I and Phase II Drug Metabolism</strong></p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906a7bb8739-5e6c-41c5-a7c8-401cca8452fb.png\"><h3>Explanation of other options:</h3>\r\n<p><strong>Methylation (Option A)</strong> involves the addition of a methyl group and is typically associated with neurotransmitter metabolism (e.g., norepinephrine). It does not significantly contribute to the metabolism of isoniazid and is not associated with hepatotoxicity in ATT.</p>\r\n<p><strong>Sulfation</strong> <strong>(Option B) </strong>is another phase II conjugation reaction, mainly involved in detoxifying phenolic drugs. However, sulfation plays little to no role in isoniazid metabolism and isn't associated with hepatotoxic adverse effects in this context.</p>\r\n<p><strong>Oxidation (Option C)</strong> is a <strong>phase I reaction</strong> predominantly mediated by cytochrome P450 enzymes. Though oxidative metabolites can contribute to hepatotoxicity, the genetically influenced acetylation pathway is more directly implicated in this patient's scenario with ATT-induced hepatitis.</p>",
+      "correct_choice_id": 164,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">567</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">576</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">675</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">765</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 56-year-old patient is being treated with oral levofloxacin for community-acquired pneumonia. The plasma clearance of the drug is calculated as 12.0 L/h. Oral bioavailability of the drug is 50%. Sensitivity analysis of a sputum culture shows a minimal inhibitory concentration of 1 &mu;g/mL for the causative pathogen. The target plasma concentration is 2 mg/L. If the drug is administered twice per day, which of the following dosages should be administered at each dosing interval to maintain a steady state?</span></p>",
+      "unique_key": "DT1166459",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166459,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<p>To maintain a steady-state plasma concentration for a drug given at fixed intervals, the <strong>maintenance dose</strong> can be calculated using the following formula:</p>\n<p><strong>Maintenance Dose = (Cp&times;CL&times;T) &#247; F</strong></p>\n<p>Where:</p>\n<ul>\n<li>Cp = Target plasma concentration = <strong>2 mg/L</strong></li>\n<li>CL = Clearance = <strong>12 L/h</strong></li>\n<li>T = Dosing interval = <strong>12 hours</strong></li>\n<li>F = Oral bioavailability = <strong>0.5<br /> </strong></li>\n</ul>\n<p><strong>Maintenance Dose = (2&times;12&times;12)</strong> &#247; <strong>0.5 = 288</strong> &#247; <strong>0.5 = 576</strong></p>\n<p>Thus, <strong>576 mg</strong> should be administered <strong>every 12 hours</strong> to maintain the desired steady-state plasma concentration.</p>",
+      "correct_choice_id": 172,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">2 mL/min</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.002 mL</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">50 mL/min</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.5 mL/min</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An investigator injects 7 mg of an experimental drug into an animal. The drug does not bind to plasma proteins and is eliminated unchanged in urine via first-order kinetics. Two hours later, the investigator obtains laboratory values from the animal that reveal the rate of drug elimination is 0.02 mg/min, the plasma drug concentration is 0.04 mg/mL, and the total amount of drug eliminated in urine is 5 mg. Which of the following is the best estimate of the clearance of the drug in the animal at the time of measurement?</span></p>",
+      "unique_key": "DT1166463",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166463,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>Clearance (CL) represents the <strong>volume of plasma cleared of a drug per unit time</strong>. When using the rate of elimination and plasma concentration, clearance is calculated as:</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509069eab482b-2983-41ae-a038-bfa067a329e7.png\"><ul>\r\n<li>This drug is <strong>not protein-bound</strong> and is <strong>excreted unchanged</strong>, meaning the clearance approximates <strong>renal clearance</strong> (like <strong>inulin</strong> in humans).</li>\r\n<li>In <strong>first-order kinetics</strong>, both plasma concentration and elimination rate vary with time, but <strong>clearance remains constant</strong>.</li>\r\n</ul>",
+      "correct_choice_id": 184,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-competitive antagonist</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">Competitive antagonist</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inverse agonist</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Functional antagonist</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An investigator is studying the interaction between a new drug B and an existing drug A. The results are recorded and plotted on the graph shown. Which of the following properties of drug B best explains the observed effect on the dose-response curve of drug A?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/202403096c7b7323-1b33-4d08-99b5-52dc9791b7cc.jpg\"></span></p>",
+      "unique_key": "DT1166469",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166469,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>A rightward parallel shift in the dose-response curve (as seen when comparing curve A to B) indicates that drug B competes with drug A for the same receptor site.</li>\r\n<li>This type of interaction is characteristic of a <strong>competitive antagonist</strong>.</li>\r\n<li>It decreases the <strong>potency</strong> of drug A, requiring a higher dose to achieve the same effect (i.e., increase in EC50), but <strong>does not alter the maximum efficacy (Emax)</strong>.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906b2132cea-8f35-463c-a32a-934b00d12e38.png\">\r\n<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/202403091851f046-dc84-45b1-b41a-3744332292be.jpg\">\r\n",
+      "correct_choice_id": 192,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">A</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">B</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">C</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">D</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">An investigator is studying the effect of a new drug on an enzyme. The drug triggers a conformational change in the shape of the enzyme, increasing its affinity to a substrate. The kinetics of the enzyme alone are labelled in the graph as N. Which of the following curves best represents the drug's effect on this enzyme?<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/20240309c73b4d12-32e3-4279-9fcc-18de00b642aa.jpg\"></span></p>",
+      "unique_key": "DT1166473",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166473,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>The graph shows a <strong>Michaelis-Menten plot</strong>.</li>\r\n<li>The curve labelled <strong>B</strong> indicates that the enzyme, under the influence of the drug, reaches <strong>half-maximal velocity (Vmax)</strong> at a <strong>lower substrate concentration</strong>, which reflects <strong>increased affinity</strong> for the substrate (i.e., a <strong>lower Km</strong>).</li>\r\n<li>The maximum velocity (Vmax) remains unchanged, suggesting that the catalytic potential is unaffected; only the <strong>binding</strong> of substrate is enhanced.</li>\r\n<li>This is characteristic of <strong>allosteric activation</strong> or <strong>positive cooperative binding</strong>.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906aaf291ab-29d2-4881-bafe-e8997fc6a484.png\">",
+      "correct_choice_id": 202,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Potentiation</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tachyphylaxis</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Synergism</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Additive interaction</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Therapy with elvitegravir, emtricitabine, and tenofovir is initiated for a 35-year-old woman with HIV-1. The physician also prescribes a new drug, cobicistat, which does not have antiretroviral activity. Which of the following is the most likely reason for prescribing cobicistat?</span></p>",
+      "unique_key": "DT1166478",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166478,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li>Cobicistat is not an antiretroviral drug. Instead, it is a <strong>pharmacokinetic enhancer</strong>, a <strong>potent CYP3A4 inhibitor</strong>.</li>\r\n<li>By inhibiting CYP3A4, cobicistat decreases the metabolism of <strong>elvitegravir</strong> (and other CYP3A4-metabolised antiretrovirals), leading to <strong>increased plasma levels</strong> and <strong>enhanced efficacy</strong> of those drugs.</li>\r\n<li>This is an example of <strong>potentiation</strong>, where a drug with <strong>no activity of its own</strong> increases the action of another drug by altering its <strong>pharmacokinetics</strong>.</li>\r\n</ul>\r\n<p><strong>Pharmacodynamic Interactions</strong></p>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\" https://d3d535v34tlady.cloudfront.net/NEETPGMCQ/2024030988f1c7bd-60f0-43a7-95fc-c9d11311ddb7.jpg\">\r\n",
+      "correct_choice_id": 211,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chemical antagonist</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">Noncompetitive antagonist</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">Physiologic antagonist</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pharmacologic antagonist</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Sugammadex is a drug that reverses the action of rocuronium. It appears to interact directly with the rocuronium molecule and not at all with the rocuronium receptor. Which of the following terms best describes sugammadex?</span></p>",
+      "unique_key": "DT1166482",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1166482,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\r\n<ul>\r\n<li><strong>Sugammadex</strong> interacts directly with <strong>rocuronium</strong> and not with the <strong>rocuronium receptor</strong>.</li>\r\n<li>This type of antagonism, where the agent binds to the drug and prevents it from binding to its receptor, is termed <strong>chemical antagonism</strong>.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250906e092b9a1-2269-4f31-a71d-8f70df431347.png\">",
+      "correct_choice_id": 221,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

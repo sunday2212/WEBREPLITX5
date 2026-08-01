@@ -1,0 +1,633 @@
+#!/usr/bin/env python3
+"""
+fix_lecture_pages.py
+Scans only HTML files inside the '1234xxx' folder, identifies incomplete lecture pages
+(those that fetch a .json but lack the full interactive template), and replaces them
+with the complete version.
+
+- JSON filename = <html_stem>.json
+- Title derived from the same stem (e.g., anatomy -> "Anatomy Lectures - NEXTPULSE …")
+- Relative paths (../) automatically adjusted to the file's depth inside the repo.
+- Already correct pages, non-lecture pages, and 'subjects.html' are left untouched.
+"""
+
+import os
+import re
+import sys
+from pathlib import Path
+
+# ---------- CONFIG ----------
+CORRECT_MARKER = 'completion-toggle'               # present in all fully-featured pages
+FETCH_JSON_REGEX = re.compile(r"""fetch\s*\(\s*['"]([^'"]+\.json)['"]\s*\)""", re.IGNORECASE)
+
+# ---------- HELPERS ----------
+def stem_to_subject(stem):
+    """'cbbanatomy' -> 'Cbbanatomy', 'anatomy' -> 'Anatomy'"""
+    return re.sub(r'[-_]+', ' ', stem).title()
+
+def rel_prefix(filepath, repo_root):
+    """
+    Return the correct number of '../' to reach repo_root from filepath's directory.
+    For example, a file in '1234xxx/Diginerve' needs '../../'.
+    """
+    rel_dir = os.path.relpath(os.path.dirname(filepath), repo_root)
+    if rel_dir == '.':
+        return ''
+    # Count directory components (not just separators)
+    depth = len(Path(rel_dir).parts)
+    return '../' * depth
+
+# ---------- FULL TEMPLATE ----------
+PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{page_title}</title>
+  <meta name="description" content="Access comprehensive {subject} video lectures from Marrow. Expert faculty teaching {subject_lower} for NEET PG preparation.">
+  <meta name="keywords" content="Marrow {subject_lower}, human {subject_lower} lectures, NEET PG {subject_lower}, medical {subject_lower} videos">
+  <link rel="stylesheet" href="{prefix}styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .completion-toggle {{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 10;
+    }}
+
+    .completion-circle {{
+      width: 32px;
+      height: 32px;
+      border: 2px solid #e2e8f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }}
+
+    .completion-circle:hover {{
+      border-color: #4299e1;
+      transform: scale(1.05);
+    }}
+
+    .completion-circle.completed {{
+      background: #48bb78;
+      border-color: #48bb78;
+    }}
+
+    .completion-circle .fas.fa-check {{
+      color: white;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }}
+
+    .completion-circle .fas.fa-check.visible {{
+      opacity: 1;
+    }}
+
+    .lecture-card {{
+      position: relative;
+    }}
+    
+    /* Video popup styles */
+    .video-popup {{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }}
+    
+    .video-popup-content {{
+      background: white;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow: auto;
+      position: relative;
+      padding: 20px;
+    }}
+    
+    .refresh-popup {{
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      background: white;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }}
+
+    .refresh-popup:hover {{
+      background: #f0f0f0;
+      transform: scale(1.1);
+    }}
+
+    .close-popup {{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: white;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }}
+
+    .close-popup:hover {{
+      background: #f0f0f0;
+      transform: scale(1.1);
+    }}
+    
+    .video-title {{
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }}
+    
+    .iframe-container {{
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }}
+    
+    .iframe-container iframe {{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 4px;
+    }}
+    
+    /* Lecture card styles */
+    .lecture-card {{
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }}
+    
+    .lecture-card:hover {{
+      transform: translateY(-3px);
+    }}
+    
+    .lecture-card h3 {{
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }}
+    
+    .button-container {{
+      display: flex;
+      gap: 10px;
+    }}
+    
+    .stream-button, .download-button {{
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.2s;
+    }}
+    
+    .stream-button {{
+      background-color: #3498db;
+      color: white;
+    }}
+    
+    .stream-button:hover {{
+      background-color: #2980b9;
+    }}
+    
+    .download-button {{
+      background-color: #2ecc71;
+      color: white;
+    }}
+    
+    .download-button:hover {{
+      background-color: #27ae60;
+    }}
+  </style>
+  <script src="{prefix}access-control.js"></script>
+  <script src="{prefix}block.js"></script>
+  <script src="{prefix}error-handler/link-checker.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<script>
+      // Initialize access control for protected page
+      if (!accessControl.initProtectedPage()) {{
+        throw new Error('Access denied - redirecting to index.html');
+      }}
+</script>
+  <header>
+    <div class="header-content">
+      <button onclick="history.back()" style="position: fixed; top: 20px; left: 20px; background: transparent; color: white; border: none; padding: 10px; cursor: pointer; z-index: 1001; font-size: 20px;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1>{subject} Lectures</h1>
+      <p class="header-subtitle">Marrow - Expert Faculty</p>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search lectures..." id="searchInput">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="lecture-list" id="lectureList">
+      <p>Loading lectures...</p>
+    </div>
+  </main>
+  
+  <script>
+    let lecturesData = [];
+
+    // Completion tracking functionality
+    class LectureCompletion {{
+      constructor() {{
+        this.storageKey = 'lectureCompletions';
+      }}
+
+      isCompleted(platform, subject, lectureTitle) {{
+        const completions = this.getCompletions();
+        const key = `${{platform}}-${{subject}}-${{lectureTitle}}`;
+        return completions[key] || false;
+      }}
+
+      toggleCompletion(platform, subject, lectureTitle) {{
+        const completions = this.getCompletions();
+        const key = `${{platform}}-${{subject}}-${{lectureTitle}}`;
+        completions[key] = !completions[key];
+        this.saveCompletions(completions);
+        return completions[key];
+      }}
+
+      getCompletions() {{
+        try {{
+          const stored = localStorage.getItem(this.storageKey);
+          return stored ? JSON.parse(stored) : {{}};
+        }} catch (error) {{
+          console.error('Error reading completions from localStorage:', error);
+          return {{}};
+        }}
+      }}
+
+      saveCompletions(completions) {{
+        try {{
+          localStorage.setItem(this.storageKey, JSON.stringify(completions));
+        }} catch (error) {{
+          console.error('Error saving completions to localStorage:', error);
+        }}
+      }}
+
+      createCompletionToggle(platform, subject, lectureTitle) {{
+        const isCompleted = this.isCompleted(platform, subject, lectureTitle);
+        
+        const toggle = document.createElement('div');
+        toggle.className = 'completion-toggle';
+        toggle.innerHTML = `
+          <div class="completion-circle ${{isCompleted ? 'completed' : ''}}">
+            <i class="fas fa-check ${{isCompleted ? 'visible' : ''}}"></i>
+          </div>
+        `;
+
+        toggle.onclick = (e) => {{
+          e.stopPropagation();
+          const newStatus = this.toggleCompletion(platform, subject, lectureTitle);
+          const circle = toggle.querySelector('.completion-circle');
+          const checkIcon = toggle.querySelector('.fas.fa-check');
+          
+          if (newStatus) {{
+            circle.classList.add('completed');
+            checkIcon.classList.add('visible');
+          }} else {{
+            circle.classList.remove('completed');
+            checkIcon.classList.remove('visible');
+          }}
+        }};
+
+        return toggle;
+      }}
+    }}
+
+    const completionTracker = new LectureCompletion();
+
+    // Function to load lectures from JSON
+    async function loadLectures() {{
+      console.log('Starting to load lectures...');
+      try {{
+        console.log('Fetching from {json_filename}...');
+        const response = await fetch('{json_filename}');
+        console.log('Fetch response status:', response.status, response.statusText);
+        
+        if (!response.ok) {{
+          throw new Error(`HTTP error! status: ${{response.status}}`);
+        }}
+        
+        const data = await response.json();
+        console.log('JSON data received:', data);
+        
+        lecturesData = data.lectures || [];
+        console.log('Loaded lectures from JSON:', lecturesData.length, 'lectures');
+        
+        if (lecturesData.length > 0) {{
+          renderLectures(lecturesData);
+        }} else {{
+          console.log('No lectures found in JSON, using fallback');
+          useFallbackLectures();
+        }}
+      }} catch (error) {{
+        console.error('Error loading lectures:', error);
+        console.log('Using fallback lectures due to error');
+        useFallbackLectures();
+      }}
+    }}
+
+    function useFallbackLectures() {{
+      lecturesData = [
+        {{
+          title: "Introduction to Human {subject}",
+          streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }},
+        {{
+          title: "Basic {subject} Terminology", 
+          streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }},
+        {{
+          title: "Cell Structure and Function",
+          streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }},
+        {{
+          title: "Tissue Types and Classification",
+          streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }},
+        {{
+          title: "Skeletal System Overview",
+          streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }}
+      ];
+      console.log('Using fallback lectures:', lecturesData.length, 'lectures');
+      renderLectures(lecturesData);
+    }}
+
+    // Function to render lectures
+    function renderLectures(lectures) {{
+      console.log('Rendering lectures:', lectures.length);
+      const lectureList = document.getElementById('lectureList');
+      
+      if (!lectureList) {{
+        console.error('lectureList element not found!');
+        return;
+      }}
+      
+      lectureList.innerHTML = '';
+
+      if (lectures.length === 0) {{
+        lectureList.innerHTML = '<p>No lectures available.</p>';
+        return;
+      }}
+
+      lectures.forEach((lecture, index) => {{
+        console.log(`Rendering lecture ${{index + 1}}:`, lecture.title);
+        const lectureCard = document.createElement('div');
+        lectureCard.className = 'lecture-card';
+        
+        // Create button using DOM methods to avoid escaping issues
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = lecture.title;
+        
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
+        
+        const openButton = document.createElement('button');
+        openButton.className = 'open-button';
+        openButton.innerHTML = '<i class="fas fa-play-circle"></i> Open';
+        
+        // Use addEventListener instead of onclick attribute to avoid escaping issues
+        openButton.addEventListener('click', function() {{
+          openStreamPlayer(
+            lecture.streamingUrl, 
+            lecture.downloadUrl || lecture.streamingUrl, 
+            lecture.title
+          );
+        }});
+        
+        buttonContainer.appendChild(openButton);
+        lectureCard.appendChild(titleElement);
+        lectureCard.appendChild(buttonContainer);
+        
+        // Add completion toggle
+        const completionToggle = completionTracker.createCompletionToggle('marrow', '{subject_lower}', lecture.title);
+        lectureCard.appendChild(completionToggle);
+        
+        lectureList.appendChild(lectureCard);
+      }});
+      
+      console.log('Finished rendering all lectures');
+    }}
+
+    function openVideo(title, url) {{
+      const popup = document.createElement('div');
+      popup.className = 'video-popup';
+      popup.innerHTML = `
+        <div class="video-popup-content">
+          <button class="close-popup" onclick="closeVideo(this)">&times;</button>
+          <h2 class="video-title">${{title}}</h2>
+          <div class="iframe-container">
+            <iframe src="${{url}}" allowfullscreen></iframe>
+          </div>
+        </div>
+      `;
+      
+      popup.onclick = function(e) {{
+        if (e.target === popup) {{
+          closeVideo(popup.querySelector('.close-popup'));
+        }}
+      }};
+      
+      document.body.appendChild(popup);
+    }}
+
+    function closeVideo(button) {{
+      const popup = button.closest('.video-popup');
+      document.body.removeChild(popup);
+    }}
+
+    function downloadVideo(streamUrl) {{
+      // Convert streaming URL to download URL
+      const downloadUrl = streamUrl.replace('/watch/', '/dl/');
+      window.open(downloadUrl, '_blank');
+    }}
+
+    // Function to open the stream player with reCAPTCHA verification
+    function openStreamPlayer(streamUrl, downloadUrl, title) {{
+      if (!streamUrl) {{
+        alert('Stream URL not available');
+        return;
+      }}
+
+      // Sanitize and encode the title properly to handle special characters
+      const sanitizedTitle = (title || 'Lecture Video').trim();
+      
+      // Build the URL with parameters - URLSearchParams automatically encodes special characters
+      const params = new URLSearchParams({{
+        stream: streamUrl,
+        title: sanitizedTitle
+      }});
+
+      // Add download URL if available
+      if (downloadUrl) {{
+        params.append('download', downloadUrl);
+      }}
+
+      // Smart path detection that works for both GitHub Pages (with repo name) and custom domains
+      const currentPath = window.location.pathname;
+      const pathParts = currentPath.split('/').filter(p => p && !p.includes('.html'));
+      
+      // Detect if we're on GitHub Pages without custom domain
+      const isGitHubPages = window.location.hostname.includes('github.io');
+      
+      let streamPlayerUrl;
+      if (isGitHubPages && pathParts.length > 0) {{
+        // GitHub Pages without custom domain - include repo name
+        const repoName = pathParts[0];
+        streamPlayerUrl = `/${{repoName}}/{prefix}stream-player.html?${{params.toString()}}`;
+      }} else {{
+        // Custom domain or root level - use absolute path from root
+        streamPlayerUrl = `/{prefix}stream-player.html?${{params.toString()}}`;
+      }}
+      
+      window.location.href = streamPlayerUrl;
+    }}
+
+    // Search functionality
+    document.getElementById('searchInput').addEventListener('input', function(e) {{
+      const query = e.target.value.toLowerCase();
+      const filteredLectures = lecturesData.filter(lecture =>
+        lecture.title.toLowerCase().includes(query)
+      );
+      renderLectures(filteredLectures);
+    }});
+
+    // Load lectures when page loads
+    document.addEventListener('DOMContentLoaded', function() {{
+      console.log('DOM loaded, starting lecture load...');
+      loadLectures();
+    }});
+  </script>
+<script src="{prefix}stream-player-utils.js"></script>
+<script src="{prefix}theme.js"></script>
+<nav class="bottom-nav">
+      <a href="{prefix}app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+      <a href="{prefix}00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+      <a href="{prefix}searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+      <a href="{prefix}quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    </nav>
+</body>
+</html>"""
+
+# ---------- FIX ONE FILE ----------
+def should_process(filepath, repo_root):
+    """Return True if the file is inside the '1234xxx' folder and not named 'subjects.html'."""
+    rel_path = os.path.relpath(filepath, repo_root)
+    # Check if the file is directly inside '1234xxx' or a subdirectory of it
+    if not (rel_path.startswith('1234xxx' + os.sep) or rel_path == '1234xxx'):
+        return False
+    # Skip subjects.html
+    if os.path.basename(filepath) == 'subjects.html':
+        return False
+    return True
+
+def fix_html_file(filepath, repo_root):
+    if not should_process(filepath, repo_root):
+        return
+
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # 1. Already correct?
+    if CORRECT_MARKER in content:
+        print(f"  [SKIP] Already correct: {filepath}")
+        return
+
+    # 2. Only process files that fetch a .json (i.e. lecture pages)
+    if not FETCH_JSON_REGEX.search(content):
+        print(f"  [SKIP] Not a lecture page (no fetch .json): {filepath}")
+        return
+
+    # 3. Derive subject and JSON filename from the HTML file’s stem
+    stem = Path(filepath).stem                     # e.g., "cbbanatomy"
+    json_filename = f"{stem}.json"
+    subject = stem_to_subject(stem)
+    subject_lower = subject.lower()
+    page_title = f"{subject} Lectures - NEXTPULSE | NEET PG Preparation"
+
+    # 4. Relative path prefix for all local resources
+    prefix = rel_prefix(filepath, repo_root)
+
+    # 5. Generate new page
+    new_content = PAGE_TEMPLATE.format(
+        page_title=page_title,
+        subject=subject,
+        subject_lower=subject_lower,
+        json_filename=json_filename,
+        prefix=prefix
+    )
+
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    print(f"  [FIXED] {filepath}  -> JSON={json_filename}, prefix='{prefix}'")
+
+# ---------- MAIN ----------
+def main(repo_root='.'):
+    repo_root = os.path.abspath(repo_root)
+    print(f"Scanning repository root: {repo_root}\n")
+    for dirpath, dirs, filenames in os.walk(repo_root):
+        for fname in filenames:
+            if fname.endswith('.html'):
+                fix_html_file(os.path.join(dirpath, fname), repo_root)
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        main(sys.argv[1])
+    else:
+        main()

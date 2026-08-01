@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "title": "Measures_And_Distribution_Of_Data"
+  },
+  "questions": [
+    {
+      "text": "<p>A sample of children age 2-5 years is chosen at random from an outpatient clinic.&nbsp; The number of urinary tract infections (UTIs) over a 1-year period is given in the figure below.</p><P><img id=\"6793\"  src=\"https://www.uworld.com/media/L21554.jpg\" draggable=\"false\" ></P><p>What was the average number of UTI episodes over 1 year for a child in this sample?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Between 0 and 1"
+        },
+        {
+          "id": 2,
+          "text": "1"
+        },
+        {
+          "id": 3,
+          "text": "Between 1 and 2"
+        },
+        {
+          "id": 4,
+          "text": "2"
+        },
+        {
+          "id": 5,
+          "text": "Between 2 and 3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Central tendency (mean, median, mode, outliers)</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>This bar graph illustrates the frequency of urinary tract infection (UTI) episodes in the sample.&nbsp; According to the figure, 50 children had 0 UTIs, 30 children had 1 UTI, 10 had 2 UTIs, and 10 had 3 UTIs.</p><p>In general, the average (or mean) of a dataset is the sum of the values divided by the total number of values.&nbsp; In this example, the average number of UTI episodes per child is the sum (ie, total number) of UTIs divided by the total sample size (ie, total number of children).&nbsp; The total sample size is: 50 + 30 + 10 + 10 = 100 children.&nbsp; The total number of UTIs is: (0 &times; 50) + (1 &times; 30) + (2 &times; 10) + (3 &times; 10) = 0 + 30 + 20 + 30 = 80 UTIs.&nbsp; The average is obtained by dividing the total number of UTIs (80) by the total sample size (100).&nbsp; Therefore, the average number of UTI episodes per year = 80/100 = 0.8 UTIs for a child in this sample.</p><p>In conclusion, children age 2-5 years in this clinic experienced between 0 and 1 UTI over 1 year on average.</p><p><strong>Educational objective:</strong><br>The average (or mean) of a dataset of values is the sum of the values divided by the total number of values.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1209",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A new portable cholesterol-measuring device is being developed for use in medically underserved communities.&nbsp; During clinical trials of an early prototype, a patient&#39;s cholesterol level is found to be 200 mg/dL, 201 mg/dL, and 200 mg/dL on 3 separate measurements of the same blood sample.&nbsp; Using the gold standard measurement method, the same sample is found to have a cholesterol level of 260 mg/dL.&nbsp; Which of the following descriptions best characterizes the new cholesterol-measuring device?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "High accuracy; high precision"
+        },
+        {
+          "id": 2,
+          "text": "High accuracy; low precision"
+        },
+        {
+          "id": 3,
+          "text": "High sensitivity; low specificity"
+        },
+        {
+          "id": 4,
+          "text": "Low accuracy; high precision"
+        },
+        {
+          "id": 5,
+          "text": "Low accuracy; low precision"
+        },
+        {
+          "id": 6,
+          "text": "Low sensitivity; high specificity"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Accuracy and precision</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"10561\" src=\"https://www.uworld.com/media/L34793.jpg\" ></p><ul><li><p><strong>Precision</strong> (reliability) is the ability of a test to reproduce identical or similar results with repeated measurements (bottom half of figure).</p></li><li><p><strong>Accuracy</strong> (validity) is the ability of a test to measure what it is supposed to measure.&nbsp; For a new test to be accurate, its results should be equivalent to the results obtained with a gold standard (eg, best conventional test available) on the same individual (right half of figure).</p></li></ul><p>In this case, repeated measurements of the same blood sample yielded <strong>nearly identical values</strong>; therefore, the new device has <strong>high precision</strong>.&nbsp; However, none of the measurements with the new device were equivalent to the results obtained with the gold standard (ie, the measurements are <strong>incorrect</strong>), meaning the new device has <strong>low accuracy</strong>.</p><p><strong>(Choices C and F)</strong>&nbsp; Sensitivity is defined as the percentage of diseased individuals who are correctly identified (ie, proportion of subjects who have a positive test among all those with disease), whereas specificity is defined as the percentage of healthy individuals who are correctly identified (ie, proportion of subjects who have a negative test among all those without disease).&nbsp; Poor accuracy or precision can lead to low test sensitivity and specificity.&nbsp; However, no information is provided to determine the sensitivity or specificity of the new device compared to the gold standard test.</p><p><strong>Educational objective:</strong><br>A precise tool is one that consistently provides very similar or the same value when measuring a fixed quantity.&nbsp; An accurate tool is one that provides a measurement identical or similar to the actual value (as reflected in a gold standard measurement).</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1765",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A study assessed the association between a new vaccine and traveler&#39;s diarrhea (TD).&nbsp; Researchers selected a random sample of people who intended to travel to regions where they were at increased risk for TD and who had received the new vaccine and another independent random sample of people who intended to travel to the same regions and who had not received the new vaccine.&nbsp; These 2 samples of travelers were assessed&nbsp;for the occurrence of TD during the trip and for 7 days after returning home.&nbsp; Which of the following measures of association are the investigators most likely to report?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Incidence"
+        },
+        {
+          "id": 2,
+          "text": "Median survival time"
+        },
+        {
+          "id": 3,
+          "text": "Odds ratio"
+        },
+        {
+          "id": 4,
+          "text": "Prevalence"
+        },
+        {
+          "id": 5,
+          "text": "Relative risk"
+        }
+      ],
+      "correct_choice_id": 5,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Measures of association</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>This case describes a <a href=\"6804\">cohort study</a> in which participants are initially selected based on their <strong>exposure status to a risk modifier</strong>: exposed (eg, vaccinated) or nonexposed (eg, not vaccinated).&nbsp; Once participants are categorized based on exposure status, the occurrence (ie, incidence) of the outcome/disease of interest (ie, traveler&#39;s diarrhea [TD]) within a specific period is determined in each group.&nbsp; The <strong>risk of disease</strong> is finally compared between exposed and nonexposed groups to estimate the <strong>association</strong> between exposure to a risk modifier and disease occurrence.&nbsp; A common measure of association in cohort studies is the <strong>relative risk (RR)</strong>.&nbsp; The RR is calculated as follows:</p><p><strong>RR</strong> = (risk of disease in exposed) / (risk of disease in nonexposed)</p><p>The exposed group could also have been defined as the unvaccinated group and the nonexposed group as the vaccinated group; in this case, the RR would be inversed (interpretation of RR depends on what is chosen to represent the exposure).</p><p><strong>(Choices A and D)</strong>&nbsp; Incidence (ie, new occurrences of a disease in a population over a period) and prevalence (ie, existing cases of a disease in a population at a point in time) are measures of disease burden.&nbsp; They do not directly convey information regarding the relationship between exposure and disease.</p><p><strong>(Choice B)</strong>&nbsp; Median survival time is calculated in cohort studies or clinical trials and is used to compare the median time to an event of interest (eg, TD) in &#8805;2 groups of individuals (eg, those not vaccinated and those vaccinated).&nbsp; The purpose of this study is to assess the association between exposure to a risk modifier (eg, vaccination) and disease occurrence (eg, TD), not to compare the median time to develop the disease (eg, TD) between exposed and nonexposed groups.</p><p><strong>(Choice C)</strong>&nbsp; Odds ratio is calculated in case-control studies, where 2 groups of individuals are initially identified as &#x22;cases&#x22; or &#x22;controls&#x22; according to an outcome (eg, disease of interest), and then the frequency of exposure to the risk factors is compared between cases and controls to estimate the association between the risk factors and the outcomes.</p><p><strong>Educational objective:</strong><br>A cohort study is used to compare incidence of disease between exposed and nonexposed individuals.&nbsp; A common measure of association in cohort studies is the relative risk.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17848",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Researchers conducted a randomized controlled trial to assess the effectiveness of a new drug to reduce severe cutaneous reactions in patients with rheumatoid arthritis who are treated with adalimumab.&nbsp; Of 150 adults with rheumatoid arthritis who are treated with adalimumab, 75 received the new drug in addition to adalimumab, and 75 received a placebo in addition to adalimumab.&nbsp; Results show that 6 patients in the new drug group developed severe cutaneous reactions, compared to 9 in the placebo group.&nbsp; Which of the following represents the relative risk reduction for severe cutaneous reactions among patients in the new drug group?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "0.08"
+        },
+        {
+          "id": 2,
+          "text": "0.10"
+        },
+        {
+          "id": 3,
+          "text": "0.12"
+        },
+        {
+          "id": 4,
+          "text": "0.33"
+        },
+        {
+          "id": 5,
+          "text": "0.67"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Measures of association</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><strong>Relative risk reduction (RRR)</strong> measures how much a given <strong>treatment reduces the risk of an unfavorable outcome</strong> relative to the control group.&nbsp; RRR may be defined as the difference in risk of the unfavorable outcome in the treatment group (eg, new drug) compared to the control group (eg, placebo):</p><div class=\"equation-scroll\"><p>RRR = (Risk<font size=\"2\"><sub>control</sub></font> &#8722; Risk<font size=\"2\"><sub>treatment</sub></font>) / Risk<font size=\"2\"><sub>control</sub></font></p></div><p>In this example, Risk<font size=\"2\"><sub>control</sub></font> (ie, risk of severe cutaneous reactions in the placebo group) is <strong>9/75 = 0.12</strong>, and Risk<font size=\"2\"><sub>treatment</sub></font> (ie, risk of severe cutaneous reactions in the new drug group) is <strong>6/75 = 0.08</strong>.&nbsp; Therefore, RRR for severe cutaneous reactions among patients in the new drug group is:</p><div class=\"equation-scroll\"><p><strong>RRR = (0.12 &#8722; 0.08) / 0.12 = 0.33</strong></p></div><p>Alternately, RRR may be calculated using relative risk (RR).&nbsp; When using RR, the formula for RRR is:</p><p>RRR = 1 &#8722; RR</p><p>For this example, RR is the ratio of the risk of severe cutaneous reactions in the new drug group to the risk of severe cutaneous reactions in the placebo group, calculated as follows:</p><div class=\"equation-scroll\"><p>RR = (Risk<font size=\"2\"><sub>treatment</sub></font> / Risk<font size=\"2\"><sub>control</sub></font>) = (0.08/0.12) = 0.67</p></div><p>Therefore, RRR is:</p><p>RRR = 1 &#8722; 0.67 = 0.33</p><p><strong>(Choice A)</strong>&nbsp; 0.08 represents the risk of severe cutaneous reactions in the new drug group (6/75 = 0.08, or 8%), not RRR.</p><p><strong>(Choice B)</strong>&nbsp; 0.10 represents the risk of severe cutaneous reactions in the entire study (ie, both groups: [6 + 9] / [75 + 75] = 0.10, or 10%).</p><p><strong>(Choice C)</strong>&nbsp; 0.12 represents the risk of severe cutaneous reactions in the placebo group (9/75 = 0.12, or 12%).</p><p><strong>(Choice E)</strong>&nbsp; 0.67 represents the RR, the ratio of the risk of severe cutaneous reactions in the new drug group to the risk of severe cutaneous reactions in the placebo group (0.08/0.12 = 0.67, or 67%).</p><p><strong>Educational objective:</strong><br>Relative risk reduction (RRR) measures how much a treatment reduces the risk of an unfavorable outcome.&nbsp; Two methods to calculate it are:</p><ul><li>RRR = (Risk<font size=\"2\"><sub>control</sub></font> &#8722; Risk<font size=\"2\"><sub>treatment</sub></font>) / Risk<font size=\"2\"><sub>control</sub></font></li><li>RRR = 1 &#8722; relative risk</li></ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17849",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A large study of serum folate levels in a sample of women age 16-45 reveals that this parameter is normally distributed with a mean of 5.0 ng/mL and a standard deviation of 0.5 ng/mL.&nbsp; According to the study results, 95% of serum folate observations in these patients will lie approximately between which of the following limits?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "3.5 and 6.0 ng/mL"
+        },
+        {
+          "id": 2,
+          "text": "3.5 and 6.5 ng/mL"
+        },
+        {
+          "id": 3,
+          "text": "4.0 and 6.0 ng/mL"
+        },
+        {
+          "id": 4,
+          "text": "4.0 and 5.5 ng/mL"
+        },
+        {
+          "id": 5,
+          "text": "4.5 and 5.5 ng/mL"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img id=\"1994\"  src=\"https://www.uworld.com/media/L10574.png\" draggable=\"false\" ></p><p>A <strong>normal (Gaussian) distribution</strong> is defined as a symmetrical, bell-shaped distribution curve.&nbsp; One of the most important attributes of the normal distribution is the <strong>&#x22;68/95/99 rule,&#x22;</strong> which states that 68% of all observations lie within 1 standard deviation (SD) of the mean, 95% within 2 SDs of the mean, and 99.7% within 3 SDs of the mean.&nbsp; The SD is a measure of dispersion or variance (how far the measurements are from one another).&nbsp; In this example, the mean folate level is 5.0 ng/mL with a SD of 0.5 ng/mL.&nbsp; Therefore:</p><ul><li>4.5-5.5 ng/mL is the range within +/- 1 SD of 5.0 ng/mL (given that 5.0 &ndash; 1*0.5 = 4.5 ng/mL and 5 + 1*0.5 = 5.5 ng/mL);</li><li>4.0-6.0 ng/mL is the range within +/- 2 SDs of 5.0 ng/mL (given that 5.0 &ndash; 2*0.5 = 4.0 ng/mL and 5.0 + 2*0.5 = 6.0 ng/mL)</li><li>3.5-6.5 ng/mL is the range within +/- 3 SDs of 5.0 ng/mL (given that 5.0 &ndash; 3*0.5 = 3.5 ng/mL and 5.0 + 3*0.5 = 6.5 ng/mL)</li></ul><p>Based on the 68/95/99 rule, approximately 95% of observations lie within 2 SDs of the mean, so between 4.0 and 6.0 ng/mL in this case.&nbsp; These are helpful approximations; to be more precise, 95% of the observations lie within 1.96 SDs of the mean and 95.45% of the observations lie within 2 SDs of the mean.</p><p>Note that SD is used to describe individual observations in a dataset.&nbsp; A closely related measure called standard error (SE) is used to show how closely sample means are related to population means; SE = SD / &#8730;n, where n is the sample size.&nbsp; In this example, if SE had been given instead of SD, investigators would be 95% confident that the true mean folate level in the underlying population lies within the mean +/- 2 SE (which is also the range that would include 95% of sample means calculated from repeated samples of the same size taken from that population).</p><p><strong>(Choices A and D)</strong>&nbsp; These limits are asymmetric and are therefore inconsistent with a normal distribution curve around the mean.</p><p><strong>(Choice B)</strong>&nbsp; Approximately 99.7% of all observations lie within 3 SDs of the mean (3.5-6.5 ng/mL).</p><p><strong>(Choice E)</strong>&nbsp; Approximately 68% of all observations lie within 1 SD of the mean (4.5-5.5 ng/mL).</p><p><strong>Educational objective:</strong><br>In a normal (bell-shaped) distribution curve, 68% of observations lie within 1 standard deviation (SD) of the mean, 95% of observations lie within 2 SDs of the mean, and 99.7% of observations lie within 3 SDs of the mean.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1172",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Pulmonary capillary wedge pressure (PCWP) measurements can be used to estimate left atrial pressure; the normal range is between 6-12 mm Hg, and recorded values are whole numbers.&nbsp; A patient in the intensive care unit has 20 serial PCWP measurements taken over the course of 2 hours.&nbsp; Among these 20 observations, the maximal recorded value is 12 mm Hg and the minimal recorded value is 10 mm Hg.&nbsp; If the next measurement is 26 mm Hg, which of the following is most likely to remain unchanged?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Mean"
+        },
+        {
+          "id": 2,
+          "text": "Mode"
+        },
+        {
+          "id": 3,
+          "text": "Range"
+        },
+        {
+          "id": 4,
+          "text": "Standard deviation"
+        },
+        {
+          "id": 5,
+          "text": "Variance"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Central tendency (mean, median, mode, outliers)</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>An <strong>outlier</strong> is defined as an extreme and unusual value observed in a dataset.&nbsp; It may be the result of a recording error, a measurement error, or a natural phenomenon.&nbsp; In this case, the value of 26 mm Hg is an outlier as all the other values lie between 10 and 12 mm Hg.&nbsp; An outlier can affect measures of central tendency (mean, median, mode) as well as measures of dispersion (standard deviation, variance).</p><p>This patient had 20 initial measurements that were all between 10 and 12 mm Hg.&nbsp; Although it is not required to answer this question correctly, a numerical example can help to explain the effect of an outlier such as 26 mm Hg.&nbsp; Assume that the patient&#39;s 20 initial measurements were: 9 measurements of 10 mm Hg, 6 measurements of 11 mm Hg, and 5 measurements of 12 mm Hg.&nbsp; The <strong>mode</strong> is the most frequently observed data point, so the mode for this initial dataset is 10 mm Hg (because this value is observed 9 times whereas the other 2 values are observed 6 times and 5 times).&nbsp; If the next measurement is 26 mm Hg, the mode would remain 10 mm Hg because this would still be the most commonly observed value.&nbsp; Therefore, the mode would remain unchanged.&nbsp; The mode tends to be resistant to outliers because outliers are not likely to affect the most frequently observed value in a dataset.</p><p><strong>(Choice A)</strong>&nbsp; The <strong>mean</strong> (or average) can be quite sensitive to outliers, especially in the case of small datasets and extreme outliers.&nbsp; For instance, the mean of the 20 initial measurements is 10.8 mm Hg (obtained by calculating [9 &times; 10 mm Hg + 6 &times; 11 mm Hg + 5 &times; 12 mm Hg] / 20).&nbsp; With an additional measurement of 26 mm Hg, the mean would become 11.5 mm Hg (obtained by calculating [1 &times; 26 mm Hg + 9 &times; 10 mm Hg + 6 &times; 11 mm Hg + 5 &times; 12 mm Hg] / 21).</p><p><strong>(Choice C)</strong>&nbsp; The <strong>range</strong> is equal to the maximal value minus the minimal value and would clearly be affected by outliers.&nbsp; With the 20 initial measurements, the range is 12 mm Hg &ndash; 10 mm Hg = 2 mm Hg.&nbsp; If the next measurement is 26 mm Hg, then the range will be 26 mm Hg &ndash; 10 mm Hg = 16 mm Hg.</p><p><strong>(Choices D and E)</strong>&nbsp; The standard deviation and variance are measures of dispersion, which reflect how spread out the values in a dataset are from one another.&nbsp; The standard deviation and variance tend to be sensitive to outliers because outliers increase the dispersion of datasets.</p><p><strong>Educational objective:</strong><br>An outlier is defined as an extreme and unusual observed value in a dataset.&nbsp; It can affect measures of central tendency (mean, median, mode) as well as measures of dispersion (standard deviation, variance).&nbsp; Modes tend to be resistant to outliers.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1183",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>Blood pressure measurements are obtained from a sample of individuals with no known medical conditions.&nbsp; For systolic blood pressure (SBP), the mean measurements and associated standard deviations (SDs) are shown by age group for men and women:</p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td></td><td>Men</td><td>Women</td></tr><tr><td>Age group</td><td>Mean SBP (mm Hg) &plusmn; SD</td><td>Mean SBP (mm Hg) &plusmn; SD</td></tr><tr><td>35-44</td><td>120 &plusmn; 20</td><td>124 &plusmn; 18</td></tr><tr><td>45-54</td><td>131 &plusmn; 21</td><td>137 &plusmn; 24</td></tr><tr><td>55-64</td><td>141 &plusmn; 19</td><td>140 &plusmn; 20</td></tr></tbody></table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>If hypertension is defined as SBP &gt;140 mm Hg, approximately what percentage of men age 35-44 in this sample will be classified as having hypertension, assuming a normal (Gaussian) distribution?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "16%"
+        },
+        {
+          "id": 2,
+          "text": "34%"
+        },
+        {
+          "id": 3,
+          "text": "50%"
+        },
+        {
+          "id": 4,
+          "text": "68%"
+        },
+        {
+          "id": 5,
+          "text": "84%"
+        },
+        {
+          "id": 6,
+          "text": "95%"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"14232\" src=\"https://www.uworld.com/media/L38991.jpg\" ></p><p>A <strong>normal (Gaussian) distribution</strong> refers to a symmetrical, bell-shaped distribution with a fixed proportion of observations lying within a certain distance of the mean.&nbsp; This distance is called the <strong>standard deviation (SD)</strong> and reflects the <strong>degree of dispersion</strong> from the mean.&nbsp; According to the properties of this distribution, 68% of observations lie within 1 SD on either side of the mean, with half (ie, 68/2 = 34%) above and half (34%) below the mean.&nbsp; The remaining 32% (= 100% &#8722; 68%) lie outside 1 SD from the mean, with half (ie, 32/2 = 16%) above and the other half (16%) below 1 SD from the mean.&nbsp; In addition, 95% of all observations lie within 2 SDs of the mean, and 99.7% of all observations lie within 3 SDs of the mean.&nbsp; This is the <strong>68-95-99.7 rule</strong>.</p><p>For men age 35-44 in this sample, the mean systolic blood pressure (SBP) is 120 mm Hg with an SD of 20 mm Hg.&nbsp; Therefore, subjects with SBP &gt;140 mm Hg (to fit the proposed definition of hypertension) represent observations <a href=\"29389\">&gt;1 SD above the mean</a>.&nbsp; Based on the 68-95-99.7 rule, 32% of observations (= 100% &#8722; 68%) lie outside 1 SD from the mean, with <strong>half (16%) above</strong> and half (16%) below 1 SD from the mean.&nbsp; Therefore, 16% of men age 35-44 have SBP &gt;140 mm Hg.</p><p><strong>(Choices B, C, D, and E)</strong>&nbsp; Based on the 68-95-99.7 rule, 34% of subjects lie either 1 SD above the mean or 1 SD below the mean.&nbsp; In men age 35-44:</p><ul><li><p>34% have SBP 100-120 mm Hg, 34% have SBP 120-140 mm Hg, and, 68% have SBP 100-140 mm Hg.</p></li><li><p>Half (50%) have SBP above the mean (ie, &gt;120 mm Hg) and half have SBP below the mean (&lt;120 mm Hg).</p></li><li><p>Given that 84% = 50% + 34%, this could represent the sum of those with SBP 100-120 mm Hg (34%) and those with SBP &gt;120 mm Hg (50%): in other words, those with SBP &gt;100 mm Hg.</p></li></ul><p><strong>(Choice F)</strong>&nbsp; Based on the 68-95-99.7% rule, 95% of observations lie within 2 SDs (eg, 2 &times; 20 = 40 mm Hg) of the mean (eg, 120 mm Hg) (ie, SBP between 80 mm Hg [= 120 &#8722; 40] and 160 mm Hg [= 120 + 40]).</p><p><strong>Educational objective:</strong><br>In a normal (bell-shaped) distribution, 68% of all values are within 1 standard deviation (SD) of the mean; 95% are within 2 SD of the mean; and 99.7% are within 3 SD of the mean.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "17565",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A 65-year-old man with a history of congestive heart failure is hospitalized with chest pain and hypotension requiring admission to the cardiac care unit.&nbsp; An intra-arterial line is placed for direct blood pressure monitoring.&nbsp; Consecutive readings of his intra-arterial blood pressure are 75, 110, 80, 90, 75, and 110 mm Hg.&nbsp; Which of the following represents the median of these blood pressure readings?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "80 mm Hg"
+        },
+        {
+          "id": 2,
+          "text": "85 mm Hg"
+        },
+        {
+          "id": 3,
+          "text": "90 mm Hg"
+        },
+        {
+          "id": 4,
+          "text": "100 mm Hg"
+        },
+        {
+          "id": 5,
+          "text": "110 mm Hg"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Central tendency (mean, median, mode, outliers)</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p>It is important to understand the difference between the median, mean, and mode, which are 3 measures of central tendency.&nbsp; The <strong>median</strong> of an ordered dataset is the number that separates the right half of the data from the left half.&nbsp; The dataset MUST be ordered before the median is determined.&nbsp; If the number of observations in the dataset is even, finding the median requires adding the middle 2 values together and dividing that sum by 2.</p><p>The ordered dataset in this case is {75, 75, <strong>80, 90</strong>, 110, 110}.&nbsp; There are 6 observations, which is an even number of observations.&nbsp; The median value splits the dataset in half; it lies between 80 and 90 (3 values on the left and 3 values on the right).&nbsp; The median is (80 + 90) / 2 = 85 mm Hg.</p><p>Now, assume one of the values is missing and the ordered dataset includes the following 5 observations (odd number of observations): {75, 80, <strong>90</strong>, 110, 110}.&nbsp; In this case, the median value would be 90 mm Hg, which splits the dataset in half (2 values on the left and 2 values on the right).</p><p><strong>(Choices A and D)</strong>&nbsp; The values 80 and 100 mm Hg are not measures of the center of the dataset.</p><p><strong>(Choice C)</strong>&nbsp; To find the <strong>mean</strong> of a dataset, add all of the observations and divide that sum by the number of observations.&nbsp; In this case, the mean is (75 + 75 + 80 + 90 + 110 + 110) / 6 = 90 mm Hg.</p><p><strong>(Choice E)</strong>&nbsp; Another measure of the center of a dataset is the mode.&nbsp; Finding the <strong>mode</strong> is easy because it is the most frequent value of a dataset.&nbsp; In our scenario, the dataset is &#x22;bimodal&#x22; because 75 and 110 mm Hg are each listed twice.</p><p><strong>Educational objective:</strong><br>The median is the value that is located in the precise center of an ordered dataset.&nbsp; It separates the right half of the data from the left half.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1281",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A medical student is conducting a chart review of patients admitted to the local emergency department with acute pancreatitis.&nbsp; He is interested in comparing blood glucose levels between mild and severe cases.&nbsp; Before attempting to compare the mean blood glucose levels between the 2 groups of patients, he decides to conduct a descriptive analysis of the variables in each group.&nbsp; Blood glucose levels in patients with severe acute pancreatitis were found to have a strong positively skewed distribution.&nbsp; Which of the following is most likely to be true regarding the data for the severe acute pancreatitis group?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "The mean is equal to the median"
+        },
+        {
+          "id": 2,
+          "text": "The mean is equal to the mode"
+        },
+        {
+          "id": 3,
+          "text": "The mean is greater than the median"
+        },
+        {
+          "id": 4,
+          "text": "The median is greater than the mean"
+        },
+        {
+          "id": 5,
+          "text": "The mode is greater than the mean"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"1718\" src=\"https://www.uworld.com/media/L18285.jpg\" ></p><p>The symmetrical bell-shaped curve is usually cited as the prototypical curve describing the distribution of a continuous variable.&nbsp; However, in actual research scenarios, continuous variables often have <strong>asymmetrical distributions</strong>.&nbsp; When a distribution curve is asymmetric, it is either positively or negatively skewed:</p><ul><li>In a <strong>positively skewed</strong> distribution, there is an increased number of observations with <strong>larger-than-expected magnitudes</strong> (ie, extreme values) that shift the mean toward the <strong>right</strong>, producing a longer slope of the curve (&#x22;tail&#x22;) on the positive side of the distribution.</li><li>In a <strong>negatively skewed</strong>&nbsp;distribution, there is an increased number of observations with <strong>smaller-than-expected magnitudes</strong> that shift the mean toward the <strong>left</strong>, producing a longer slope of the curve (&#x22;tail&#x22;) on the negative side of the distribution.</li></ul><p>In general, in a <strong>positively</strong> skewed distribution, the mean is the most shifted in the positive direction, followed by the median and then the mode (<strong>mode &lt; median &lt; mean</strong>).&nbsp; In such a situation, the median often reflects a central tendency better than the mean does.</p><p><strong>(Choices A and B)</strong>&nbsp; In perfectly normal distribution curves where there is no skew, all 3 measures of central tendency are precisely equal: mean = median = mode.&nbsp; If a minor skew is present, the 3 measures are approximately equal.</p><p><strong>(Choices D and E)</strong>&nbsp; In general, in a negatively skewed distribution (with the &#x22;tail&#x22; on the left), the mean is the most shifted in the negative direction, followed by the median and then the mode.</p><p><strong>Educational objective:</strong><br>In general, in a positively skewed distribution, the mean is the most shifted in the positive direction (to the right), followed by the median and then the mode.&nbsp; In such a situation, the median often reflects a central tendency better than the mean does.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1282",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>A researcher selects&nbsp;a random sample of 100 men age 18-24 and determines&nbsp;their mean serum total cholesterol is 180 mg/dL with a standard deviation of 40 mg/dL.&nbsp; According to national statistics, cholesterol levels for the population of men age 18-24 follow a normal (gaussian) distribution.&nbsp; Based on this information, approximately 50% of the men in the sample will have which of the following serum total cholesterol levels?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "100-260 mg/dL"
+        },
+        {
+          "id": 2,
+          "text": "&lt;140 mg/dL or &gt;220 mg/dL"
+        },
+        {
+          "id": 3,
+          "text": "140-220 mg/dL"
+        },
+        {
+          "id": 4,
+          "text": "&lt;180 mg/dL"
+        },
+        {
+          "id": 5,
+          "text": "&gt;260 mg/dL"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img  draggable=\"false\" id=\"1718\" src=\"https://www.uworld.com/media/highresdefault/L18285.jpg\"  ></p><p>A <strong>normal distribution</strong> refers to a symmetric, bell-shaped distribution pattern with a fixed proportion of observations lying within specific distances from the mean.&nbsp; For a normal distribution, mean equals median.&nbsp; The median divides a distribution of data in half, so for a normal distribution about <strong>50% of observations</strong> lie <strong>below the mean</strong> and 50% of observations lie above the mean.</p><p>In this case, a researcher took a random sample of men age 18-24 and estimated their <strong>mean</strong> serum total cholesterol at <strong>180 mg/dL</strong> with a standard deviation of 40 mg/dL.&nbsp; Therefore, approximately 50% of men age 18-24 in the sample will have serum total cholesterol levels <strong>&lt;180 mg/dL</strong>.</p><p><strong>(Choices A, B, C, and E)</strong>&nbsp; According to the <a href=\"14232\">68-95-99.7 rule</a> for normal distributions, the distribution of serum total cholesterol levels should have the following pattern:</p><ul><li><p>68% of serum total cholesterol values will be within 1 SD from the mean, calculated as being between [180 &#8722; (1 &times; 40)] = 140 mg/dL and [180 + (1 &times; 40)] = 220 mg/dL, and (100% &#8722; 68%) = 32% will be &lt;140 mg/dL or &gt;220 mg/dL.</p></li><li><p>95% of serum total cholesterol values will be within 2 SDs from the mean, calculated as being between [180 &#8722; (2 &times; 40)] = 100 mg/dL and [180 + (2 &times; 40)] = 260 mg/dL, and (100% &#8722; 95%) = 5% will be &lt;100 mg/dL or &gt;260 mg/dL.</p></li><li><p>99.7% of serum total cholesterol will be within 3 SDs from the mean, calculated as being between [180 &#8722; (3 &times; 40)] = 60 mg/dL and [180 + (3 &times; 40)] = 300 mg/dL, and (100% &#8722; 99.7%) = 0.3% will be &lt;60 mg/dL or &gt;300 mg/dL.</p></li></ul><p><strong>Educational objective:</strong><br>In a normal distribution, the mean is equal to the median; 50% of observations lie below the mean and 50% of observations lie above the mean.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "23788",
+      "difficulty": "N/A"
+    },
+    {
+      "text": "<p>An intern in the endocrinology department is asked to complete a chart review of cholesterol levels of all patients hospitalized with diabetes mellitus-related cardiovascular complications in the past 6 months.&nbsp; The intern&#39;s preliminary data analysis reveals that there were 400 such patients, and that serum cholesterol levels were normally distributed among the patients with a mean of 220 mg/dL and a standard deviation of 10 mg/dL.&nbsp; Based on these results, how many patients in this study would be expected to have serum cholesterol <u>&gt;</u>240 mg/dL?</p>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2"
+        },
+        {
+          "id": 2,
+          "text": "10"
+        },
+        {
+          "id": 3,
+          "text": "20"
+        },
+        {
+          "id": 4,
+          "text": "64"
+        },
+        {
+          "id": 5,
+          "text": "128"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<div style='margin-bottom:10px; font-size:0.85em; opacity:0.7;'>Biostatistics > Biostatistics & Epidemiology > Normal distribution</div><hr style='border-color:rgba(255,255,255,0.1); margin:10px 0;'><p><img draggable=\"false\" id=\"1994\" src=\"https://www.uworld.com/media/L10574.png\" ></p><p>A <strong>normal distribution</strong> refers to a symmetrical, bell-shaped distribution pattern with a fixed proportion of observations lying within a certain distance of the mean.&nbsp; This distance is called the <strong>standard deviation (SD)</strong> and is a measure of the <strong>degree of dispersion</strong> from the mean.&nbsp; When the SD is small, the observations tend to have minimal variation and are tightly clustered around the mean.&nbsp; In contrast, a large SD implies that the observations are spread over a large range.&nbsp; According to the properties of normal distribution, 68% of all observations lie within 1 SD of the mean, with half of those above and half of those below the mean.&nbsp; The remaining 32% of observations lie outside 1 SD from the mean, with half of those remaining observations above and the other half below 1 SD from the mean.&nbsp; In addition, <strong>95% of all observations lie within 2 SDs</strong> of the mean, and 99.7% of all observations lie within 3 SDs from the mean.&nbsp; This is commonly known as the &#x22;<strong>68-95-99.7 rule</strong>.&#x22;</p><p>Based on the above example:</p><ul><li>68% of observations lie within 1 SD:&nbsp; 220 mg/dL &plusmn; 10 mg/dL = 210-230 mg/dL</li><li>95% of observations lie within 2 SDs:&nbsp; 220 mg/dL &plusmn; 20 mg/dL = 200-240 mg/dL</li><li>99.7% of observations lie within 3 SDs:&nbsp; 220 mg/dL &plusmn; 30 mg/dL = 190-250 mg/dL</li></ul><p>Because the cutoff point of <u>&gt;</u>240 mg/dL is 2 SDs from the mean, it follows that 2.5% of the observations must lie below 200 mg/dL and <strong>2.5% above 240 mg/dL</strong>.&nbsp; Therefore, of 400 patients included in the analysis, <strong>10 patients</strong> (ie, 2.5%) would have a cholesterol level <u>&gt;</u>240 mg/dL.</p><p><strong>(Choice A)</strong>&nbsp; No more than 1-2 patients (0.25%-0.5% of the study population) would be expected to have cholesterol levels that lie 3 SDs above or below the mean (ie, <u>&lt;</u>190 mg/dL or <u>&gt;</u>250 mg/dL).</p><p><strong>(Choice C)</strong>&nbsp; 20 patients (5% of the study population) would be expected to have cholesterol levels that lie outside 2 SDs from the mean.&nbsp; Only half of these observations would lie above 2 SDs (ie, <u>&gt;</u>240 mg/dL) from the mean.</p><p><strong>(Choice D)</strong>&nbsp; 64 patients (16% of the study population) would be expected to have cholesterol levels that lie 1 SD above the mean (ie, <u>&gt;</u>230 mg/dL).</p><p><strong>(Choice E)</strong>&nbsp; 128 patients (32% of the study population) would be expected to have cholesterol levels that lie 1 SD above or below the mean (ie, <u>&gt;</u>230 mg/dL or <u>&lt;</u>210 mg/dL).</p><p><strong>Educational objective:</strong><br>In a normal (bell-shaped) distribution:&nbsp; 68% of all values are within 1 standard deviation from the mean; 95% of all values are within 2 standard deviations from the mean; 99.7% of all values are within 3 standard deviations from the mean.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "1201",
+      "difficulty": "N/A"
+    }
+  ]
+}

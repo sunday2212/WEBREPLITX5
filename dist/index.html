@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c5282">
+    <meta name="description" content="Medical Education News">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https:; media-src 'self' https://player.cloudinary.com;">
+    <title>LPULSE | Medical Education News</title>
+    <link rel="manifest" href="/assets/app-D7gEpyfo.webmanifest">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        /* Motivation Story Section */
+        .motivation-section {
+            background: linear-gradient(135deg, #2C8252, #1a365d);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .motivation-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .motivation-story {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid white;
+            margin-top: 15px;
+        }
+        
+        .story-author {
+            text-align: right;
+            font-style: italic;
+            margin-top: 15px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+        
+        /* Important Notice Section */
+        .notice-section {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+        }
+        
+        .notice-section h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .notice-content {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        
+        .important-step {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 6px;
+        }
+        
+        .step-number {
+            background: #2C8252;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        
+        /* Logo Section */
+        .logo {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .logo h1 {
+            color: #2C8252;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .logo p {
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+        
+        /* Install Section */
+        .install-section {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        #installBtn {
+            background: linear-gradient(135deg, #2C8252, #1a365d);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+            margin: 10px 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        #installBtn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .instructions {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        
+        /* Notification */
+        #notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #2C8252, #1a365d);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 1000;
+            max-width: 90%;
+            animation: slideIn 0.5s ease-out;
+            display: none;
+        }
+        
+        @keyframes slideIn {
+            from { bottom: -100px; opacity: 0; }
+            to { bottom: 20px; opacity: 1; }
+        }
+        
+        #notification span {
+            flex-grow: 1;
+            font-size: 1rem;
+        }
+        
+        #notification button {
+            background: white;
+            color: #2C8252;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        #notification button:hover {
+            background: #f0f4f8;
+            transform: translateY(-2px);
+        }
+        
+        #dismissBtn {
+            background: transparent !important;
+            color: white !important;
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .motivation-section {
+                padding: 20px;
+            }
+            
+            .motivation-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .motivation-story {
+                font-size: 1rem;
+                padding: 15px;
+            }
+            
+            .install-section {
+                padding: 20px;
+                margin: 0 10px;
+            }
+            
+            #notification {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+                gap: 0.75rem;
+            }
+            
+            #notification button {
+                width: 100%;
+            }
+        }
+    </style>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+    <div class="container">
+        <!-- Motivation Story Section -->
+        <div class="motivation-section">
+            <h2><i class="fas fa-heartbeat"></i> Medical Inspiration</h2>
+            <div class="motivation-story">
+                "During my first year of medical school, I struggled to keep up with the vast amount of information. I'd stay up late, highlighting textbooks until my eyes burned. One night, exhausted, I came across a story about Dr. Ben Carson. He grew up in poverty, with a single mother who worked three jobs, yet he went from being the 'dummy' of his class to one of the world's most celebrated neurosurgeons, performing groundbreaking surgeries like the separation of conjoined twins.
+                
+                <br><br>
+                His secret? He discovered the power of focused, dedicated study. He would read every day, turning knowledge into skill. That story taught me that medical education isn't about being the smartest from the start—it's about persistence, daily learning, and believing that every bit of knowledge you gain today could save a life tomorrow."
+            </div>
+            <div class="story-author">- Medical Student, Class of 2023</div>
+        </div>
+        
+        <!-- Important Notice Section -->
+        <div class="notice-section">
+            <h3><i class="fas fa-exclamation-triangle"></i> Important Update</h3>
+            <p><strong>Our site has moved to a new URL!</strong> Please follow these steps:</p>
+            
+            <div class="notice-content">
+                <div class="important-step">
+                    <div class="step-number">1</div>
+                    <div><strong>New Site:</strong> Our website is now at <strong>www.afrahtafreeh.site</strong> (with "www")</div>
+                </div>
+                
+                <div class="important-step">
+                    <div class="step-number">2</div>
+                    <div><strong>Delete Old App:</strong> If you have the previous app installed, please delete it from your device</div>
+                </div>
+                
+                <div class="important-step">
+                    <div class="step-number">3</div>
+                    <div><strong>Reinstall:</strong> Install the updated app from the new site to continue getting medical education news</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Logo Section -->
+        <div class="logo">
+            <h1>LPULSE</h1>
+            <p>Medical Education News</p>
+        </div>
+        
+        <!-- Install Section -->
+        <div class="install-section">
+            <i class="fas fa-stethoscope" style="font-size: 48px; color: #2C8252; margin-bottom: 20px;"></i>
+            <h2 style="color: #1a365d; margin-bottom: 15px;">Install Our Updated App</h2>
+            <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">
+                Get the best experience by installing our updated Progressive Web App from the new site. Enjoy faster loading, offline access to medical resources, and timely push notifications about important medical education updates.
+            </p>
+            <button id="installBtn"><i class="fas fa-download"></i> Install Updated App</button>
+            <p class="instructions">
+                For Chrome: Tap ⋮ menu → "Install App"<br>
+                For Safari: Tap share icon → "Add to Home Screen"<br>
+                <strong>Note:</strong> Make sure you're on <strong>www.afrahtafreeh.site</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Install this updated app for a better experience?</span>
+        <button id="installPromptBtn">Install Now</button>
+        <button id="dismissBtn">Dismiss</button>
+    </div>
+
+    <script>
+        // PWA Installation Handling
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        const installPromptBtn = document.getElementById('installPromptBtn');
+        const dismissBtn = document.getElementById('dismissBtn');
+        const notification = document.getElementById('notification');
+        
+        // Show install button when PWA is installable
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            window.deferredPrompt = e;
+            
+            installBtn.style.display = 'inline-flex';
+            
+            setTimeout(() => {
+                if (deferredPrompt) {
+                    notification.style.display = 'flex';
+                }
+            }, 5000);
+        });
+        
+        // Handle install button click
+        installBtn.addEventListener('click', () => {
+            showInstallPrompt();
+        });
+        
+        // Handle notification install button
+        installPromptBtn.addEventListener('click', () => {
+            showInstallPrompt();
+            notification.style.display = 'none';
+        });
+        
+        // Handle dismiss button
+        dismissBtn.addEventListener('click', () => {
+            notification.style.display = 'none';
+        });
+        
+        // Function to show install prompt
+        function showInstallPrompt() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted install');
+                        installBtn.style.display = 'none';
+                        notification.style.display = 'none';
+                        
+                        // Show confirmation message
+                        alert('Thank you for installing the updated LPULSE app! Remember to delete the old version if you have it installed.');
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        }
+        
+        // Hide install button after app is installed
+        window.addEventListener('appinstalled', () => {
+            console.log('App was installed');
+            installBtn.style.display = 'none';
+            notification.style.display = 'none';
+        });
+        
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', { scope: './' })
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+        
+        // Check if user might have old version installed
+        window.addEventListener('load', () => {
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                // App is running in standalone mode
+                console.log('App is running in standalone mode');
+                
+                // Check if we're on the correct URL
+                if (!window.location.href.includes('www.afrahtafreeh.site')) {
+                    // Show a warning about the URL change
+                    const urlWarning = document.createElement('div');
+                    urlWarning.className = 'notice-section';
+                    urlWarning.innerHTML = `
+                        <h3><i class="fas fa-exclamation-circle"></i> URL Mismatch Detected</h3>
+                        <p>You might be using an old version of the app. Please ensure you're accessing <strong>www.afrahtafreeh.site</strong> and reinstall the app from there.</p>
+                    `;
+                    document.querySelector('.container').insertBefore(urlWarning, document.querySelector('.logo'));
+                }
+            }
+        });
+    </script>
+<script src="../theme.js"></script>
+<nav class="bottom-nav">
+      <a href="../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+      <a href="../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+      <a href="../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+      <a href="../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    </nav>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

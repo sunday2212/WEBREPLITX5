@@ -1,0 +1,603 @@
+{
+  "meta": {
+    "title": "Mini_Test_6-_Ecgs_Only"
+  },
+  "questions": [
+    {
+      "text": "A patient's ECG strip is given below. His cardiac output was found to be 4.8 L/min. What is the stroke volume?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "100 ml"
+        },
+        {
+          "id": 2,
+          "text": "60 ml"
+        },
+        {
+          "id": 3,
+          "text": "120 ml"
+        },
+        {
+          "id": 4,
+          "text": "80 ml"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>Cardiac output is calculated by the following formula -</p>\n<p>Cardiac output = Heart rate x Stroke volume</p>\n<p>The patient's <strong>cardiac output is 4.8L/min</strong>.</p>\n<p>His heart rate can be calculated from the rhythm strip given i.e., HR = 300/number of large squares between consecutive beats. There are approximately 5 large boxes between beats in this ECG.</p>\n<p><strong>HR = 300/5 = 60 beats/min.</strong></p>\n<p>Therefore, the patient's stroke volume = CO/HR = 4.8L/min/60 beats/min = 0.08 L = <strong>80ml</strong></p><hr><h3>Related Pearl: Cardiac parameters</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Parameter</strong></p>\n</td>\n<td>\n<p><strong>Definition</strong></p>\n</td>\n<td>\n<p><strong>Normal Value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Stroke Volume (SV)</p>\n</td>\n<td>\n<p>Amount of blood ejected by each ventricle per stroke</p>\n</td>\n<td>\n<p>70-90 ml</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>End-Diastolic volume (EDV)</p>\n</td>\n<td>\n<p>Amount of blood in the ventricle at the end of diastole</p>\n</td>\n<td>\n<p>130 ml</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>End-Systolic Volume</p>\n</td>\n<td>\n<p>EDV-SV</p>\n</td>\n<td>\n<p>~50 ml</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Ejection Fraction</p>\n</td>\n<td>\n<p>(SV/EDV) x100</p>\n</td>\n<td>\n<p>55%-68%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Cardiac Output (CO)</p>\n</td>\n<td>\n<p>SV x HR</p>\n</td>\n<td>\n<p>~5 L/min</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Cardiac Index</p>\n</td>\n<td>\n<p>CO/BSA (m2)</p>\n</td>\n<td>\n<p>3.2 L/min/m2</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>BSA - Body surface area</p>\n<p>HR - Heart rate</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/55e0754e85aa4cd3aa9a9395929311b3.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1380",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 65-year-old man presents with complaints of sudden onset pleuritic chest pain and dyspnea. On examination, his heart rate is 122 beats/minute and jugular venous pressure is elevated. Split S2 is heard on ascultation. He underwent inguinal hernia repair 3 weeks ago and was treated for deep vein thrombosis 6 months ago. His ECG findings are given below. What is the most likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Pulmonary embolism"
+        },
+        {
+          "id": 2,
+          "text": "Pleural effusion"
+        },
+        {
+          "id": 3,
+          "text": "Acute pericarditis"
+        },
+        {
+          "id": 4,
+          "text": "Tricuspid stenosis"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The above clinical scenario along with signs of acute <strong>cor pulmonale</strong> (right heart dysfunction) and ECG showing <strong>S1Q3T3</strong> changes is most likely suggestive of acute <strong>pulmonary embolism </strong>(PE). </p>\n<p>Pulmonary embolism is very likely in this patient as his <strong>modified Well's score is 4.5</strong> (&gt;4 = PE likely):</p>\n<ul>\n<li>Heart rate &gt;100 beats/min- score 1.5</li>\n<li>Recent history of immobilization due to abdominal surgery- score 1.5</li>\n<li>Past history of deep vein thrombosis- score 1.5</li>\n</ul>\n<p>ECG changes in acute PE (shown below) are characterized by the classic <strong>S1Q3T3 changes</strong>, due to right ventricular strain and ischemia:</p>\n<ul>\n<li>A prominent S wave in lead I (blue arrow)</li>\n<li>Q wave in lead III (red arrow)</li>\n<li>An inverted T wave in lead III (green arrow)</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5fbde789390b41b783e3cf0731d70596x1280x879.JPEG\" alt=\"Explanation Image\"><p> </p>\n<p>Clinically, patients present with sudden onset of <strong>dyspnea,</strong> syncope, <strong>chest pain</strong>, and hypotension. Occlusion of the pulmonary artery may cause pulmonary artery hypertension and eventually leads to <strong>cor pulmonale/right ventricular dysfunction.</strong></p>\n<p><strong>Cor pulmonale</strong> can be defined as an alteration in the structure and function of the right ventricle of the heart caused by a primary disorder of the respiratory system resulting in pulmonary hypertension. Patients present with <strong>elevated jugular venous pressure, split S2</strong>, ankle edema, hepatomegaly, and ascites.</p>\n<p>The following algorithm guides the diagnosis of pulmonary embolism in a patient with a probability of PE.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a1c10c94c96848bcb3eb7a4820dce995x1200x1743.JPEG\" alt=\"Explanation Image\"><p> </p>\n<p>Other options: </p>\n<p>Option B: Patients with <strong>p</strong><strong>leural effusion </strong>present with pleuritic chest pain, <strong>progressive</strong> dyspnea, and cough. On examination, stony <strong>dullness</strong> on percussion, decreased tactile fremitus, and diminished breath sounds on the side of the effusion. ECG appears normal or may show non-specific findings such as low voltage QRS, axis deviation, and/or electrical alternans.</p>\n<p>Option C:<strong> Acute pericarditis</strong> is the inflammation of the pericardial sac and is characterized by pleuritic chest pain as seen in this patient with PE. However, examination findings reveal a <strong>pericardial friction rub</strong>, and ECG shows <strong>diffuse ST-segment elevation</strong> and PR-segment depression.</p>\n<p>Option D: <strong>Tricuspid stenosis</strong> (TS) is associated with elevated JVP as seen in this patient. However, TS is characterized by features of fatigue, hepatomegaly, and ascites due to the chronic nature of the disease. Auscultation reveals an opening snap and a diastolic murmur. ECG changes include <strong>tall, peaked P waves in lead II</strong> and prominent, upright P waves in V1. </p><hr><h3>Related Pearl: Clinical prediction for pulmonary embolism: Well’s, Modified Well’s and Pulmonary Embolism Rule out Criteria (PERC)</h3><table>\n<tbody>\n<tr>\n<td><strong>Signs/symptoms</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Clinical signs of DVT</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Diagnosis other than pulmonary embolism is less likely</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Heart rate &gt;100 bpm</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>Immobilization for &gt;3 days or surgery in the last 4 weeks</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>Past history of DVT/pulmonary embolism</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>Hemoptysis</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Malignancy</td>\n<td>1</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Three-level score probability:</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Well's criteria</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Low</td>\n<td>&lt;2</td>\n</tr>\n<tr>\n<td>Moderate</td>\n<td>2-6</td>\n</tr>\n<tr>\n<td>High</td>\n<td>&gt;6</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p><strong>Two-level score probability:</strong></p>\n<table>\n<tbody>\n<tr>\n<td><strong>Modified Well's criteria</strong></td>\n<td><strong>Score</strong></td>\n</tr>\n<tr>\n<td>Pulmonary embolism unlikely</td>\n<td>&le;4</td>\n</tr>\n<tr>\n<td>Pulmonary embolism likely</td>\n<td>&gt;4&nbsp;</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><p>&nbsp;</p>\n<p><strong>Pulmonary embolism rule out criteria (PERC):</strong></p>\n<p>This is a quick OPD/casualty tool to rule out pulmonary embolism in patients with low clinical probability. It comprises <strong>eight clinical variables</strong>. If the patient meets all eight criteria, there is no need for further investigations. The variables include:&nbsp;</p>\n<ol>\n<li aria-level=\"1\">Age &lt;50 years</li>\n<li aria-level=\"1\">Heart rate &lt;100 bpm</li>\n<li aria-level=\"1\">SpO2 &ge;95%</li>\n<li aria-level=\"1\">No unilateral leg swelling</li>\n<li aria-level=\"1\">No hemoptysis</li>\n<li aria-level=\"1\">No recent trauma or surgery</li>\n<li aria-level=\"1\">No history of venous thromboembolism</li>\n<li aria-level=\"1\">No use of hormonal therapy.</li>\n</ol><hr><h3>Related Pearl: Chest X Ray signs in pulmonary embolism</h3><p><strong>Westermark's sign:&nbsp;</strong>Focal area of oligemia (decreased vascular markings) distal to the embolism.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/1320503c26a8431b903e7e15089c8ed4x720x655.JPEG\" alt=\"Pearl Image\"><p><strong>Hampton's hump:&nbsp;</strong>Peripherally placed wedge-shaped or dome-shaped opacity due to infarction of lung tissue.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/5faac4b6986f4b6da649d4ca027f99b3x1063x874.JPEG\" alt=\"Pearl Image\"><p><strong>Palla's sign:&nbsp;</strong>Increased size of the right descending pulmonary artery with a sausage-like appearance.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9d6849e258104848bfc976a72abaae15x1069x804.JPEG\" alt=\"Pearl Image\"><p><strong>Fleishner sign</strong>: enlarged pulmonary artery.</p>\n<p><strong>Melting sign</strong>:&nbsp;an infarct shows rapid clearing in contrast to pneumonic consolidation.</p>\n<p><strong>McConnell's</strong>&nbsp;<strong>sign</strong> (indirect sign of PE seen in transthoracic echo):&nbsp;<strong>hypokinesis</strong>&nbsp;of the right ventricular free wall with&nbsp;<strong>normal motion</strong>&nbsp;of the right ventricle apex.</p>\n<p><strong>Knuckle&nbsp;</strong>or<strong>&nbsp;sausage&rsquo; sign:&nbsp;</strong>dilatation of the pulmonary artery,&nbsp;proximal to the embolus with collapse or constriction of the distal arteries resulting in an abrupt tapering of these arteries. &nbsp;</p>\n<p>Note - A normal chest X-ray does not rule out pulmonary embolism in a patient with unexplained acute tachypnea or hypoxemia.</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/f7083ed4efab47839b5d89c15708140a.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1378",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 64-year-old man presents with complaints of palpitations and syncope. He has a history of inferior-wall myocardial infarction a year ago. The ECG strip obtained during his admission is given below. What is the long-term treatment for this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Amiodarone"
+        },
+        {
+          "id": 2,
+          "text": "Atropine only"
+        },
+        {
+          "id": 3,
+          "text": "Permanent pacemaker"
+        },
+        {
+          "id": 4,
+          "text": "Atropine and isoproterenol"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Based on his ECG findings, this patient is suffering from <strong>symptomatic </strong>(palpitations, syncope) <strong>Mobitz Type II AV block</strong>. The definitive long-term treatment is, therefore, a <strong>permanent pacemaker. </strong></p>\n<p>Mobitz Type II AV block is characterized by:</p>\n<ul>\n<li>a <strong>constant PR interval</strong></li>\n<li>some P waves not be followed by QRS complexes</li>\n</ul>\n<p>According to the rhythm strip (Lead II) of the ECG shown, the patient is experiencing a <strong>3:2 AV block</strong> which is then progressing to a 2:1 AV block.</p>\n<p>This patient is also suffering from a <strong>right bundle branch block</strong> (RBBB)<strong> </strong>as indicated by the wide QRS complexes in leads V1, V2, and <strong>V3 ('M'-shaped)</strong>. </p>\n<p>This patient with a history of ischemic heart disease (previous history of inferior-wall MI) and objective signs of Mobitz Type II AV block and RBBB will benefit most from a permanent pacemaker. </p>\n<p>In the ECG below, the <strong>blue arrows</strong> show some <strong>P waves</strong> that were not followed by QRS complexes. The <strong>missed QRS complex</strong> is pointed by the <strong>red arrow</strong>. The <strong>red box</strong> indicates the <strong>wide QRS complexes</strong> in leads V1, V2, and V3:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9b0310f1672747cb9a200242d8371321x765x510.PNG\" alt=\"Explanation Image\"><p> </p>\n<p>Other options:</p>\n<p><strong>Option A - </strong>Amiodarone, a class III <strong>anti-arrhythmic</strong> agent, is the drug of choice in the acute treatment as well as prevention of ventricular tachycardia and ventricular fibrillation. It is a rate-control medication. </p>\n<p><strong>Options B and D - </strong>Pharmacologic interventions such as atropine and isoproterenol serve as short-term supplementary treatment options until a pacemaker can be installed or if the AV block is transient in nature. Even in such instances, a temporary transcutaneous pacemaker is preferred until a permanent device is available. </p><hr><h3>Related Pearl: Indication for Pacemaker in AV Conduction Defects</h3><table>\n<tbody>\n<tr>\n<td>\n<ul>\n<li>In any patient with symptomatic bradycardia</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Irreversible second- or third-degree AV bloc</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Pacing in patients with asymptomatic AV block should be individualized</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<p>With acquired CHB</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Left ventricular dysfunction and</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Waking heart rates 40 beats/min.</p>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Asymptomatic second-degree AV block of either type, if the block is demonstrated to be intra- or infra-His or is associated with a wide QRS complex</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Neuromuscular diseases having a predilection for the conduction system, such as myotonic dystrophy and other muscular dystrophies, and Kearns-Sayre syndrome</li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: Types of Heart block</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/321f89fee89642ff8d4791a7741dd90ax1280x1311.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d4aad04e5c1c4043bdb02d3835b5d743.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1376",
+      "difficulty": "easy"
+    },
+    {
+      "text": "The ECG of a patient with systemic hypothermia is given below. The findings marked in the image are described as:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Delta waves"
+        },
+        {
+          "id": 2,
+          "text": "Osborn waves"
+        },
+        {
+          "id": 3,
+          "text": "Epsilon waves"
+        },
+        {
+          "id": 4,
+          "text": "Saw-tooth waves"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The<strong> Osborn wave </strong>(J wave) is a <strong>positive deflection</strong> seen at the <strong>J point </strong>in precordial and true limb leads as seen in the given electrocardiogram. It is most commonly associated with <strong>hypothermia.</strong></p>\n<p>Osborn waves may be seen in the ECG of patients with <strong>systemic hypothermia</strong>. They are observed as a <strong>hump-like elevation</strong> at the <strong>junction</strong> of the <strong>QRS complex</strong> and <strong>ST segment</strong>. An alteration in the ventricular transmural action potential is attributed to their appearance on an ECG.</p>\n<p>The J wave can be accentuated in hypothermia and<strong> hypercalcemia</strong>. Spontaneous accentuation of the J wave may predispose to ventricular arrhythmias (polymorphic VT and VF).</p>\n<p>Other options:</p>\n<p>Option A:<strong> Delta wave</strong> is the slurred <strong>upstroke</strong> of the <strong>QRS complex</strong> as seen during ventricular pre-excitation, a feature of <strong>Wolff-Parkinson-White syndrome</strong>. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/981b619bcd7a4bb38367d2151a37af1cx800x224.PNG\" alt=\"Explanation Image\"><p> </p>\n<p>Option C: <strong>Epsilon wave</strong> is representative of <strong>T wave inversion</strong> and <strong>delayed ventricular activation</strong> as seen in arrhythmogenic right ventricular cardiomyopathy (<strong>ARVC</strong>).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7aa54a13fec04b709d578e320443e598x800x534.PNG\" alt=\"Explanation Image\"><p> </p>\n<p>Option D: <strong>Saw-tooth wave</strong> is seen in <strong>atrial flutter</strong>. It is caused due to repetitive atrial excitation caused by large re-entry impulses circulating within the atrial myocardium. </p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/94cbd96b56b047b8a065d7477c90014cx798x264.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/d8bd1dfec5994af496037acb94da06d3.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1351",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A patient presenting with lightheadedness and syncope was admitted to the emergency department. The ECG obtained is shown below. His symptoms did not resolve with carotid sinus massage or adenosine. Which of the following mechanisms is responsible for the changes marked by the blue arrows?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "P wave causing normal sinus beat"
+        },
+        {
+          "id": 2,
+          "text": "Hypokalemia"
+        },
+        {
+          "id": 3,
+          "text": "Fusion of 2 independent impulses"
+        },
+        {
+          "id": 4,
+          "text": "Ventricular preexcitation"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given ECG shows&nbsp;<strong>ventricular tachycardia,</strong>&nbsp;and the blue arrows indicate&nbsp;<strong>fusion beats,&nbsp;</strong>which are caused by the fusion of 2 independent electrical impulses.&nbsp;</p>\n<p><strong>Ventricular tachycardia</strong> (VT) is a type of ventricular arrhythmia characterized by a ventricular rate <strong>exceeding 100 beats per minute</strong>, for <strong>three or more</strong> consecutive beats. It may be caused either due to the automatic origin of impulses from the Purkinje cells, myocardial cells, or reentry of the impulses to the ventricles through the scarred tissues.&nbsp;</p>\n<p>Patients will present with&nbsp;palpitations because of increased heart rate. Ineffective contractions of ventricles lead to dizziness, exercise intolerance, episodes of lightheadedness, and syncope.</p>\n<p>ECG findings are characterized by the presence of atrioventricular dissociation, that is, atria and ventricles have different rates of contraction. This is because the <strong>ectopic impulses </strong>originating in the<strong> ventricles</strong> cause them to contract independent of the impulses transmitted from the atria. Ventricular impulses give rise to the <strong>broad QRS</strong> complexes (&gt;120 msec) as seen in the ECG given.</p>\n<p>In some instances, when a P wave is conducted down the AV node to the ventricles, it fuses with the impulse originating from the ventricle. This gives rise to the classic&nbsp;<strong>fusion beat,</strong>&nbsp;as seen in the image below:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dc3de9d0af494f70978dcc1de68ed0e7x720x308.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p>Option A -<strong>&nbsp;</strong>In ventricular tachycardia, a&nbsp;<strong>normal sinus impulse</strong> reaches the atrioventricular node and the ventricle&nbsp;during a gap between 2 ectopic ventricular impulses. It produces a beat with a <strong>normal QRS duration</strong>. This is called capture beat (as the atrial impulse <strong>'captures' </strong>the ventricles during ventricular tachycardia).</p>\n<p>The image below&nbsp;shows a capture beat:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/44983dbe535f4d2ea46dc2d4900bf591x657x234.JPEG\" alt=\"Explanation Image\"><p>Option B - <strong>Hypokalemia</strong> gives rise to&nbsp;<strong>QT interval prolongation</strong>. This change predisposes to polymorphic ventricular tachycardia known as&nbsp;<strong>torsades de pointes (TDP).&nbsp;</strong>It is characterized by wide QRS complexes of varying amplitude that twist around the isoelectric line (shown below).</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/2e09d0f77c9b4296ab1f2b724b7c84d8x720x184.JPEG\" alt=\"Explanation Image\"><p>Option D -&nbsp;<strong>Ventricular preexcitation</strong> is commonly seen in <strong>Wolff-Parkinson-White</strong> syndrome, which is characterized by the presence of accessory atrioventricular pathways. These pathways are responsible for the early conduction of electrical impulses to the ventricles.</p>\n<p>The characteristic ECG changes (shown below) are consistent with</p>\n<ul>\n<li>Short PR interval (&lt;120 msec)</li>\n<li>Wide QRS complex (&gt;120 msec)</li>\n<li>Slurred upstroke of the QRS complex-&nbsp;<strong>delta wave&nbsp;</strong></li>\n<li>Secondary ST-T wave changes</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/8716ba9a652449c9b4931c916d91471ax507x343.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: ECG patterns of various ventricular arrhythmias</h3><p>Ventricular tachycardia</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/097b95729fa14ac68da475ce6288a968x1088x570.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Polymorphic ventricular tachycardia associated with QTc prolongation- Torsades de pointes</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a8ebe0b5757c4efca4f5dd15c6d24e99x1268x324.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Ventricular flutter</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/666962cd0f424000b7e84123f719f120x502x282.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Ventricular fibrillation</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25067efa869941baa6a40b54599b371ax1049x213.PNG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6efb396c47ca452997b5c175461738b2.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1341",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Given below is the ECG of a patient with breathlessness who is admitted to the emergency department. His BP is 90/56 mmHg. Which clinical finding is not seen in this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Muffled heart sounds"
+        },
+        {
+          "id": 2,
+          "text": "Pulsus paradoxus"
+        },
+        {
+          "id": 3,
+          "text": "Pericardial knock"
+        },
+        {
+          "id": 4,
+          "text": "Elevated jugular venous pressure"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The ECG shows <strong>decreased voltage</strong> and <strong>electrical alternans</strong> (alternating amplitude of QRS complexes), which are indicative of a diagnosis of <strong>cardiac tamponade</strong>. Among the given options, pericardial knock is not a clinical feature of cardiac tamponade. It<strong> </strong>is a sign of constrictive pericarditis. </p>\n<p>Cardiac tamponade is characterized by the accumulation of fluid in the pericardial space, leading to the impairment of diastolic relaxation of the cardiac chambers. This leads to a decline in cardiac output. The characteristic signs of cardiac tamponade include the following:</p>\n<ul>\n<li><strong>Pulsus paradoxus - </strong>This is a paradoxical reduction in the systemic blood pressure (&gt;10 mmHg) on inspiration. In tamponade, the increase in venous return to the right side (during inspiration) of the heart causes the interventricular septum to bow towards the left ventricle (fixed total heart volume), thereby reducing the left heart volume. This leads to a reduction in stroke volume and systemic blood pressure. </li>\n<li><strong>Beck's triad - </strong>This is a triad of findings in tamponade that consists of <strong>hypotension </strong>(90/56 mmHg), <strong>muffled heart sounds, </strong>and <strong>elevated jugular venous pressure. </strong>Features of JVP in tamponade include prominent x descent and absent y descent.<strong> </strong></li>\n<li><strong>ECG - </strong>ECG shows<strong> </strong>reduced voltage and electrical alternans. Electrical alternans is a specific finding caused by the anteroposterior swinging of the heart with each contraction. When the heart is nearer to the chest wall, the amplitude deflection on the ECG is increased; in contrast, when the heart moves away from the chest wall, the amplitude deflection is lower.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/1c6c060940e3403eb77355813df0c89ax1280x1090.JPEG\" alt=\"Explanation Image\"><p>Management of cardiac tamponade - In a patient with clinical features suggestive of tamponade, the best course of action is performing <strong>pericardiocentesis, </strong>preferably carried out under echocardiographic guidance. In cases of recurrent tamponade, a small catheter may be left in place to drain subsequent collections of fluid. </p>\n<p>Note - <strong>Constrictive pericarditis </strong>is characterized by a progressive fibrotic change in the pericardium that causes it to thicken and calcify. This leads to impaired cardiac contraction and filling. This gives rise to fatigue, elevated JVP (rapid y descent), ascites, and pulsus paradoxus.</p>\n<p>A notable finding on cardiac auscultation is the <strong>pericardial knock, </strong>which is an early diastolic sound. It is best appreciated over the left sternal border and/or the cardiac apex. It represents early and abrupt discontinuation of ventricular filling. </p>\n<p>ECG findings in constrictive pericarditis consist of non-specific T-wave abnormalities. </p><hr><h3>Related Pearl: Causes of Pulsus Paradoxus</h3><table>\n<tbody>\n<tr>\n<td>\n<p>Physiological causes</p>\n</td>\n<td>\n<p>Obesity</p>\n<p>Pregnancy</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Cardiovascular causes</p>\n</td>\n<td>\n<p>Cardiac tamponade &ndash; most common cause</p>\n<p>Constrictive pericarditis ( in 1/3<sup>rd</sup> cases )</p>\n<p>Massive pulmonary embolism</p>\n<p>Severe CCF</p>\n<p>Hypovolemic shock</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Respiratory causes</p>\n</td>\n<td>\n<p>Severe obstructive lung disease</p>\n<p>Acute severe asthma</p>\n<p>Severe emphysema</p>\n<p>Tension pneumothorax</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><hr><h3>Related Pearl: JVP waveform and the abnormalities</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/18bbe4a977c84587903e8637a0d9303cx1280x1005.JPEG\" alt=\"Pearl Image\"><p>1) The <strong>a-wave</strong> corresponds to <strong>atrial contraction</strong>.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Prominent a-waves</strong></td>\n<td>Pulmonary hypertension, right atrial thrombus/ mass, and tricuspid stenosis</td>\n</tr>\n<tr>\n<td><strong>Cannon a-waves</strong></td>\n<td>\n<p>Complete AV block, ventricular tachycardia, and premature atrial/ junctional/ ventricular beats</p>\n</td>\n</tr>\n<tr>\n<td><strong>Absent a-waves</strong></td>\n<td>Atrial fibrillation</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>2) The <strong>c-wave</strong> corresponds to the <strong>bulging of tricuspid valve</strong> into right atrium during ventricular contraction.</p>\n<p>&nbsp;</p>\n<p>3) The <strong>x-descent</strong> corresponds to <strong>atrial relaxation</strong> during atrial diastole.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Absent x-descent</strong></td>\n<td>Severe tricuspid regurgitation</td>\n</tr>\n<tr>\n<td><strong>Rapid x-descent</strong></td>\n<td>Cardiac tamponade</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>4) The <strong>v-wave</strong> corresponds to the <strong>venous filling</strong> of right atrium.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Dominant v-waves</strong></td>\n<td>Tricuspid regurgitation</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>5) The <strong>y-descent</strong> corresponds to the&nbsp;<strong>passive emptying of the right atrium</strong> into right ventricle.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Prolonged y-descent</strong></td>\n<td>Tricuspid stenosis</td>\n</tr>\n<tr>\n<td><strong>Rapid y-descent</strong></td>\n<td>\n<p>Constrictive pericarditis and isolated severe tricuspid regurgitation</p>\n</td>\n</tr>\n<tr>\n<td><strong>Absent y-descent</strong></td>\n<td>Cardiac tamponade</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/da7e72ef7ad84dc1bf64c845f46c5ff6.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1339",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is the most likely mechanism of origin of the heart rhythm shown in the image below?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Degenerative changes of SA node"
+        },
+        {
+          "id": 2,
+          "text": "Re-entry circuit around tricuspid annulus"
+        },
+        {
+          "id": 3,
+          "text": "Ectopic beats from pulmonary veins"
+        },
+        {
+          "id": 4,
+          "text": "Re-entry circuit involving AV node"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given ECG strip shows&nbsp;<strong>saw-tooth waves</strong>&nbsp;(shown below)<strong>&nbsp;</strong>that are characteristic of&nbsp;<strong>atrial flutter.&nbsp;</strong>These ECG changes are generated due to the presence of a <strong>large re-entry circuit around the tricuspid annulus</strong> that causes impulses to circle the tricuspid annulus in the right atrium.&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/83ccc936da244a8ca580c56a88af1c6ax182x137.PNG\" alt=\"Explanation Image\"><p>The rate of atrial contraction is approximately 300/min. However, it is usually conducted down to the ventricles in ratios of 2:1, 3:1, or 4:1 based on the degree of AV block present.&nbsp;</p>\n<p>Management of atrial flutter - Pharmacological agents to normalize ventricular rate include digoxin, beta-blockers, and/or verapamil. Restoration of a normal sinus rhythm is usually preferred by means of direct current (DC) cardioversion. This is followed up by the administration of beta-blockers or amiodarone to prevent recurrent atrial flutter. Patients suffering from persistent episodes benefit greatly from catheter ablation which offers a &gt;90% chance of complete resolution.&nbsp;</p>\n<p><strong>Other options:</strong></p>\n<p><strong>Option A -&nbsp;</strong>Degenerative changes in the SA node cause sick sinus syndrome (SSS). It gives rise to variable arrhythmias.</p>\n<p>ECG shows delayed P waves (sinus bradycardia), dropped P waves (sinus arrest), atrial ectopic beats, and junctional beats.&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/d1641dad572f424f858eb134a7260516x1280x780.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Option C -&nbsp;</strong>Ectopic beats from pulmonary veins cause atrial fibrillation. These beats originate from the conducting tissue extending into the pulmonary veins or from diseased atrial tissue.</p>\n<p>ECG changes (shown below) in atrial fibrillation are characterized by the absent P waves, irregularly regular narrow QRS complexes, and fibrillation 'f' waves representing uncoordinated atrial activation.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/1712f16030484d4bba0a4164e3c41814x1280x595.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Option D -&nbsp;</strong>Re-entry circuit involving the AV node generates AV nodal re-entrant tachycardia (AVNRT). This is made possible by the presence of a superior 'fast' and an inferior 'slow' conducting pathway within the AV node.</p>\n<p>ECG changes (shown below) demonstrate:</p>\n<ul>\n<li>tachycardia with normal morphology QRS complexes (black arrows)</li>\n<li>occasional rate-dependent bundle branch block</li>\n<li>Heart rate is 150 bpm as evidenced by the presence of 2 large boxes between 2 consecutive R waves (red arrow).&nbsp;</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e9e084767045456a9bbc9df0c33548a9x1280x644.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Supraventricular tachycardias</h3><p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with narrow QRS complex:</strong></p>\n<ul>\n<li><strong>Narrow QRS with regular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td><strong>&nbsp; &nbsp;Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Sinus tachycardia</strong></td>\n<td>Normal P wave, normal ECG features except for the rate</td>\n</tr>\n<tr>\n<td><strong>Focal atrial tachycardia</strong></td>\n<td>A single type of abnormal p wave morphology is seen</td>\n</tr>\n<tr>\n<td><strong>Junctional tachycardia</strong></td>\n<td>No p waves. Heart rate is 100- 200/ min</td>\n</tr>\n<tr>\n<td><strong>AV nodal reentry tachycardia</strong></td>\n<td>No p waves. Pseudo R' waves may be seen. Heart rate is 150-250/ min</td>\n</tr>\n<tr>\n<td><strong>Atrioventricular reentry tachycardia</strong></td>\n<td>P wave always follows QRS. RP interval&lt; PR interval</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter</strong></td>\n<td>Sawtooth shaped flutter waves are seen</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<ul>\n<li><strong>Narrow QRS with irregular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>&nbsp; &nbsp; &nbsp;<strong>Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Atrial fibrillation</strong></td>\n<td>No distinct p waves seen</td>\n</tr>\n<tr>\n<td><strong>Multifocal atrial tachycardia</strong></td>\n<td>More than 3 different abnormal p wave morphologies are seen</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter/tachycardia with variable block</strong></td>\n<td>ECG features of heart block are seen.</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with wide QRS complex:</strong></p>\n<ul>\n<li>Antidromic AVRT (atrioventricular reentry tachycardia)</li>\n<li>Supraventricular tachycardias with bundle branch block</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/6222baedb16349419c89b053b3181bcf.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1338",
+      "difficulty": "hard"
+    },
+    {
+      "text": "Which of the following pairs are correctly matched with respect to the ECG leads in which changes are seen during an event of focal ST-elevation MI?<div class='question-desc-html'><p>MI - Myocardial infarction</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Anteroseptal MI - V1-V4"
+        },
+        {
+          "id": 2,
+          "text": "Lateral wall MI -II, III, aVF"
+        },
+        {
+          "id": 3,
+          "text": "Inferior wall MI - II, aVL, V1-V6"
+        },
+        {
+          "id": 4,
+          "text": "Extensive anterior wall MI - I, aVL"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The correctly matched pair is <strong>Anteroseptal MI - V1-V4</strong>.</p>\n<p>ECG changes are best shown by the leads that correspond to or directly face the area of ischemia or infarction. </p><hr><h3>Related Pearl: Localisation of MI based on ST elevations in different leads</h3><p>Extensive anterior - I, aVL, V1-V6</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a0d690cfd571427cabfe3625fec7aea2x720x446.JPEG\" alt=\"Pearl Image\"><p>Lateral - I, aVL</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/544634fa03c146d38f02014738cc9ffdx1280x791.JPEG\" alt=\"Pearl Image\"><p>Inferior - II, III, aVF</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ecf1b037017145409598613d151004afx1280x808.JPEG\" alt=\"Pearl Image\"><p>Anteroseptal - V1-V4</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/92955d71dfdd400ca4f634e482ddf9d8x1280x849.JPEG\" alt=\"Pearl Image\"><p>Anterolateral - I, aVL, V3-V6</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/e2aaee158f5b4111b131cce1219c5afax1280x791.JPEG\" alt=\"Pearl Image\"><p>Posterior - ST depression and tall R in V1-V4</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/dda0e5b11d9340808ac18534d35fd867x1280x803.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD2920",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 32-year-old diabetic man was undergoing a routine check-up. ECG revealed ST changes as given below. Repeated cardiac biomarkers were found to be within the normal range. Which among the following is the most likely diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Brugada syndrome"
+        },
+        {
+          "id": 2,
+          "text": "Anterior wall ST-elevation MI"
+        },
+        {
+          "id": 3,
+          "text": "Acute pericarditis"
+        },
+        {
+          "id": 4,
+          "text": "Non ST-elevation MI"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The ECG shows <strong>coved ST-segment elevation of V1-V3, </strong>followed by a negative T wave (Brugada sign), which points to a diagnosis of <strong>Brugada syndrome. </strong>A coved ST segment has a <strong>downward concavity.</strong></p>\n<p>Brugada syndrome is an inherited sodium channelopathy (<strong>SCN5A mutation</strong>) most commonly seen in Southeast Asian males. The age of presentation is usually 40 years. This syndrome is characterised by an increased risk of sudden cardiac death due to polymorphic ventricular tachyarrhythmias. <strong>Implantable cardioverter-defibrillator</strong> is the treatment of choice.</p>\n<p>Other options:</p>\n<p>To establish a diagnosis of <strong>ST-elevation MI</strong> (Option B) and <strong>NSTEMI </strong>(Option D), a positive and significant rise in cardiac biomarkers (troponins) is necessary along with one of the following features:</p>\n<ul>\n<li>Symptoms of ischemia</li>\n<li>New ST-T elevation or LBBB (not for NSTEMI)</li>\n<li>Pathologic Q waves (STEMI, old infarcts)</li>\n<li>Imaging evidence of loss of myocardium viability</li>\n<li>Intracoronary thrombus identified on angioplasty or autopsy</li>\n</ul>\n<p>Since we do not have a typical rise and fall pattern of cardiac biomarkers, in this case, a diagnosis of acute ST-elevation MI and NSTEMI is less likely.</p>\n<p>Causes of ST-T changes apart from acute MI:</p>\n<ul>\n<li><strong>Acute pericarditis </strong>(Option C) -<strong> </strong>Diffuse ST elevation with <strong>upward concavity</strong> and PR depression)</li>\n<li>Brugada patterns (right bundle branch block-like pattern with ST elevations in right precordial leads) seen secondary to electrolyte disturbances like hyperkalemia</li>\n<li>Hyperkalemia (peaked T waves)</li>\n</ul><hr><h3>Related Pearl: Sodium Channelopathies</h3><table>\n<tbody>\n<tr>\n<td><strong>Mutation in</strong></td>\n<td><strong>Disease</strong></td>\n</tr>\n<tr>\n<td>SCN1A</td>\n<td>Familial hemiplegic migraine type 3</td>\n</tr>\n<tr>\n<td>SCN4A</td>\n<td>\n<p>Hyperkalemic periodic paralysis</p>\n<p>Potassium aggravated myotonia</p>\n<p>Hypokalemic periodic paralysis type 2</p>\n<p>Paramyotonia congenita</p>\n<p>Congenital myasthenic syndrome</p>\n</td>\n</tr>\n<tr>\n<td>SCN5A</td>\n<td>\n<p>Brugada syndrome</p>\n<p>Long QT syndrome type 3</p>\n</td>\n</tr>\n<tr>\n<td>SCN9A</td>\n<td>Erythromelalgia</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/4557c83f596749dc8b02e10696034244.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD6420",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Choose the false statement regarding the condition with the following ECG changes.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Procainamide is contraindicated"
+        },
+        {
+          "id": 2,
+          "text": "It is a congenital condition"
+        },
+        {
+          "id": 3,
+          "text": "Presence of an accessory electrical pathway"
+        },
+        {
+          "id": 4,
+          "text": "Radio frequency catheter ablation is the treatment of choice"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The given ECG clearly depicts the <strong>d</strong><strong>elta wave</strong> at the start of the QRS complex. It is characteristic of Wolff-Parkinson-White (<strong>WPW</strong>)<strong>&nbsp;</strong>syndrome. <strong>Procainamide</strong> is the <strong>drug of choice</strong>&nbsp;in treating a hemodynamically stable WPW patient presenting with atrial fibrillation.</p>\n<p>It is <strong>a congenital condition</strong> involving presence of an abnormal<strong> accessory </strong>electrical conduction<strong> pathway </strong>called&nbsp;<strong>bundle of kent&nbsp;</strong>between the atria and ventricles. Its&nbsp;prevalence decreases with age.</p>\n<p>Electrical conduction through the accessory pathway circumvents the usual conduction delay between the atria and ventricles, which normally occurs at the AV node, and predisposes the patient to develop <strong>tachydysrhythmias.</strong></p>\n<p>Arrhythmias occurring in WPWS are termed&nbsp;<strong>reentrant arrhythmias</strong>. A premature impulse, temporarily blocked by the AV node,&nbsp;passes via this accessory pathway and re excites the tissues in an advanced&nbsp;state of recovery, thus, setting up recurrent activation of the adjacent myocardium.</p><p>The classic ECG features in WPW are as follows:</p>\n<ul>\n<li>\n<div class=\"topbullet\">A <strong>shortened PR interval</strong> (typically &lt;120 ms)</div>\n</li>\n<li>\n<div class=\"topbullet\">A slurring and slow rise of the initial upstroke of the QRS complex (<strong>delta wave</strong>)</div>\n</li>\n<li>\n<div class=\"topbullet\">A <strong>widened QRS complex</strong> (total duration &gt;0.12 seconds)</div>\n</li>\n<li>\n<div class=\"topbullet\">ST segment&ndash;T wave (repolarization) changes, generally directed opposite the major delta wave and QRS complex, reflecting altered depolarization</div>\n</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/277668ea739844d1bebedda165142e39x248x188.JPEG\" alt=\"Explanation Image\"><p>Given below is the ECG of a patient with WPW syndrome.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/be1272a470b44b47a31f023638196957x799x389.JPEG\" alt=\"Explanation Image\"><p><strong>Treatment:</strong></p>\n<ul>\n<li><strong>Radio frequency catheter ablation</strong> is the treatment of choice.</li>\n<li>Anti-arrhythmic drugs like quinidine (class Ia), procainamide (class Ia), amiodarone (class III),&nbsp;propafenone (class Ic), dofetilide (class III) are used in slowing conduction in the accessory pathway.</li>\n<li>IV procainamide is the drug of choice in a hemodynamically stable WPW presenting with atrial fibrillation.</li>\n<li>DC cardioversion is done in&nbsp;hemodynamically unstable patients.</li>\n</ul><hr><h3>Related Pearl: Wolff Parkinson White Syndrome</h3><p><strong>Wolff Parkinson White Syndrome</strong>&nbsp;(WPW) is characterized by an abnormal accessory pathway in the heart leading to arrhythmias.</p>\n<p><strong>Pathology</strong>- Born with an accessory pathway, the bundle of Kent which connects the atria and ventricle. The electrical impulses from the SA node reach the ventricles earlier via the accessory pathway as there is no AV nodal delay in this pathway. This leads to the preexcitation of the ventricle and initiation of ventricular contraction. This ventricular contraction is prolonged when the impulse via the AV nodal pathway reaches the ventricles.</p>\n<p><strong>Most common location</strong> of the accessory pathway-&nbsp;between the left atrium and free wall of the left ventricle</p>\n<p><strong>ECG changes</strong>:</p>\n<p><strong>Shortened PR interval</strong>- because of the early initiation of ventricular depolarization</p>\n<p><strong>Prolonged QRS duration</strong>- because of the AV nodal impulse reaching the ventricles after the aberrant impulse.</p>\n<p><strong>Delta waves</strong>- slurred upstroke of QRS complex</p>\n<p>The given ECG shows delta waves marked with red arrows:</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b00a7f28fc9540629f591281df010cf4x791x183.JPEG\" alt=\"Pearl Image\"><p><strong>Treatment:</strong></p>\n<ul>\n<li><strong>Catheter ablation</strong>&nbsp;is the treatment of choice.</li>\n<li>Anti-arrhythmic drugs like procainamide, amiodarone, quinidine, propafenone, dofetilide are used in slowing conduction in the accessory pathway (prolong refractory period).</li>\n<li>IV procainamide is the drug of choice in a hemodynamically stable WPW presenting with atrial fibrillation.</li>\n<li>DC cardioversion is done in&nbsp;hemodynamically unstable patients.</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/e4f57d656b424a4dbe19191f71abcc44.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF0382",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the ECG interval that has a normal duration of 0.12-0.2 seconds.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2"
+        },
+        {
+          "id": 2,
+          "text": "4"
+        },
+        {
+          "id": 3,
+          "text": "1"
+        },
+        {
+          "id": 4,
+          "text": "3"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>The ECG interval with a normal duration of 0.12-0.2 seconds is the <strong>PR interval</strong><strong> </strong>(3 to 5 small boxes).</p>\n<p><strong>PR interval</strong> is measured from the beginning of the P wave to the beginning of the QRS complex. It represents the time from the beginning of atrial depolarization to the beginning of ventricular depolarization. The physiologic delay imposed by stimulation of cells in the AV junction area is also measured in the PR interval. It is said to be <strong>prolonged if it is &gt; 0.2 seconds</strong>. </p>\n<p>Other options:</p>\n<p>Option B - <strong>Interval 4</strong> as given in the image is the <strong>QT interval</strong>. It covers primarily the ventricular repolarization time but also ventricular depolarization. The QT interval is inversely proportional to the heart rate. Hence, a rate-related (“corrected”) QT interval, QTc, is calculated as QT/√R. This is called <strong>Bazett's formula.</strong> The <strong>normal duration of QTc</strong> is<strong> ≤0.44 s</strong> and upper normal limits as 0.45 s in men and 0.46 s in women according to some references.</p>\n<p>Option C -<strong> Interval 1</strong> as given in the image is the <strong>RR interval</strong>. It is used to calculate the heart rate. As the normal range of heart rate is 60 to 120 beats per minute, the duration of the RR interval is 0.6 to 1.2 seconds. </p>\n<p>Option D - <strong>Interval 3</strong> is the <strong>QRS interval</strong> and is normally 100–110 ms or less. It signifies the duration of ventricular depolarization.</p><hr><h3>Related Pearl: Normal ECG waves and intervals</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>ECG wave/interval</strong></p>\n</td>\n<td>\n<p><strong>Physiological correlates</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>P wave</p>\n</td>\n<td>\n<p>Atrial depolarization</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>QRS complex (up to 0.10s)</p>\n</td>\n<td>\n<p>Ventricular depolarization</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>T wave</p>\n</td>\n<td>\n<p>Ventricular repolarization</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>U wave</p>\n</td>\n<td>\n<p>Repolarization of ventricular myocytes with long action potential</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>PR interval&nbsp; (0.12-0.2s)&nbsp;</p>\n</td>\n<td>\n<p>Atrial depolarization and conduction through AV node</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>QT interval&nbsp; (up to 0.43s)</p>\n</td>\n<td>\n<p>Ventricular depolarization and Ventricular repolarization</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>ST interval (Average 0.32s)</p>\n<p>(QT minus QRS)</p>\n</td>\n<td>\n<p>Plateau portion of ventricular action potential+ Ventricular repolarisation</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>ST segment</p>\n</td>\n<td>\n<p>Plateau portion of ventricular action potential</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/70e10acc7b9f4c249713071ae9311e21x1280x1789.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/95a68a403849460d959da464bb0f6fdf.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1487",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 50-year-old man was brought to the emergency in an unconscious state. He had a fever for the past two days and is a known case of severe COPD. His ECG is given below. What is the mechanism behind this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Increased atrial automaticity"
+        },
+        {
+          "id": 2,
+          "text": "Automaticity of multiple foci in the atrium"
+        },
+        {
+          "id": 3,
+          "text": "Macro re-entry circuit in the right atrium"
+        },
+        {
+          "id": 4,
+          "text": "Abnormal band of conductive tissue"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The given clinical scenario of <strong>chronic pulmonary disease</strong> and the ECG showing <strong>different P wave morphologies</strong> are suggestive of <strong>multifocal atrial tachycardia (MAT)</strong>. The mechanism triggering multifocal atrial tachycardia is the <strong>automaticity of multiple atrial foci</strong>.</p>\n<p>The given ECG shows narrow QRS complexes with irregular RR intervals; hence, it can be atrial fibrillation or multifocal atrial tachycardia. The next step is to look at the p waves. Multifocal atrial tachycardia (MAT) is characterized by at least<strong> 3 distinct P-wave morphologies</strong> (shown by arrows in the image).&nbsp;However, in atrial fibrillation, there would be no distinct p waves seen.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/3ca1f22af8114d94ba32e0c4cd65fa6bx1280x697.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<p><strong>Multifocal atrial tachycardia </strong>(MAT) occurs due to impulses arising from <strong>multiple abnormal foci</strong> in the atria. This leads to supraventricular tachycardia with p waves and QRS complexes of different morphologies. It is usually encountered in patients with <strong>chronic pulmonary disease and acute illness.&nbsp;</strong>&nbsp;</p>\n<div class=\"ng-scope\">\n<div class=\"ng-scope\">\n<p>Identifying features in ECG:</p>\n<ul>\n<li><strong>Heart rate &gt; 100</strong>,&nbsp;typically between 100 and 150 beats/min</li>\n<li><strong>Irregular</strong>&nbsp;rhythm</li>\n<li>Narrow QRS complex</li>\n<li><strong>Discrete P</strong>&nbsp;waves with&nbsp;<strong>more than 3 different morphologies&nbsp;</strong></li>\n<li>Variable PR interval</li>\n</ul>\n</div>\n</div>\n<p>Therapy for MAT is directed at <strong>treating the underlying disease</strong> and correcting any metabolic abnormalities. The calcium channel blockers&nbsp;<strong>verapamil or diltiazem&nbsp;</strong>are useful in slowing the atrial and ventricular rates. Radiofrequency ablation of the AV node is another treatment modality. Cardioversion is ineffective.&nbsp;</p>\n<p>Other options:</p>\n<p>Option A -&nbsp;Increased atrial automaticity is seen in <strong>atrial tachycardia,</strong> which is a narrow-complex tachycardia in which abnormal P-wave morphology is observed. It can lead to an AV block if the rate is too rapid.</p>\n<p>Option C - <strong>Atrial flutter</strong> is characterized by a&nbsp;macro re-entry circuit in the right atrium, which is usually encircling the tricuspid annulus. ECG shows characteristic <strong>saw-tooth flutter waves</strong>.</p>\n<p>Option D - Abnormal bands of conductive tissue between the atria and ventricles are seen in <strong>atrioventricular re-entrant tachycardia</strong>. ECG shows a characteristic <strong>delta wave</strong> in the presence of these accessory pathways.</p><hr><h3>Related Pearl: Supraventricular tachycardias</h3><p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with narrow QRS complex:</strong></p>\n<ul>\n<li><strong>Narrow QRS with regular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td><strong>&nbsp; &nbsp;Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Sinus tachycardia</strong></td>\n<td>Normal P wave, normal ECG features except for the rate</td>\n</tr>\n<tr>\n<td><strong>Focal atrial tachycardia</strong></td>\n<td>A single type of abnormal p wave morphology is seen</td>\n</tr>\n<tr>\n<td><strong>Junctional tachycardia</strong></td>\n<td>No p waves. Heart rate is 100- 200/ min</td>\n</tr>\n<tr>\n<td><strong>AV nodal reentry tachycardia</strong></td>\n<td>No p waves. Pseudo R' waves may be seen. Heart rate is 150-250/ min</td>\n</tr>\n<tr>\n<td><strong>Atrioventricular reentry tachycardia</strong></td>\n<td>P wave always follows QRS. RP interval&lt; PR interval</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter</strong></td>\n<td>Sawtooth shaped flutter waves are seen</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<ul>\n<li><strong>Narrow QRS with irregular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>&nbsp; &nbsp; &nbsp;<strong>Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Atrial fibrillation</strong></td>\n<td>No distinct p waves seen</td>\n</tr>\n<tr>\n<td><strong>Multifocal atrial tachycardia</strong></td>\n<td>More than 3 different abnormal p wave morphologies are seen</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter/tachycardia with variable block</strong></td>\n<td>ECG features of heart block are seen.</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with wide QRS complex:</strong></p>\n<ul>\n<li>Antidromic AVRT (atrioventricular reentry tachycardia)</li>\n<li>Supraventricular tachycardias with bundle branch block</li>\n</ul>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/46649a6b5c134301b9d8c03872c931ba.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1494",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following ECG findings are seen in a patient with hypokalemia?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Prolonged PR interval with ST elevation"
+        },
+        {
+          "id": 2,
+          "text": "Decreased PR interval with ST depression"
+        },
+        {
+          "id": 3,
+          "text": "Decreased QT interval with tall T waves"
+        },
+        {
+          "id": 4,
+          "text": "Prolonged QT interval with flat T waves"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Prolonged QT interval</strong> with flat T waves is seen in<strong> hypokalemia.</strong></p>\n<p>Hypokalemia prolongs&nbsp;ventricular repolarization. The ECG changes seen are as follows:</p>\n<ul>\n<li>Flattening of T wave</li>\n<li>ST-segment depression</li>\n<li>Prolongation of QT interval</li>\n<li>The appearance of U wave</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/ec4e4533439146ed9de7afe36504c108x1280x2207.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MC0221",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The marked segment of the ECG corresponds to which phase of cardiac action potential:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phase 0"
+        },
+        {
+          "id": 2,
+          "text": "Phase 1"
+        },
+        {
+          "id": 3,
+          "text": "Phase 2"
+        },
+        {
+          "id": 4,
+          "text": "Phase 3"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The marked part is the <strong>ST segment</strong> which corresponds to <strong>phase 2 </strong>of the cardiac action potential.</p>\n<p><strong>Cardiac Action Potential and The ECG</strong></p>\n<ul>\n<li>The rapid upstroke (phase 0) of the action potential is representative of the onset of QRS. </li>\n<li>The plateau (phase 2) corresponds to the isoelectric ST segment.</li>\n<li>Active repolarization (phase 3) corresponds to the T wave.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/eb3a558f149a48a6ae1eaa9cff2daaeax1280x1244.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/b3851a1c9e0748ac8086e50eb683729d.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9108",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Identify the arrhythmia depicted by the given ECG strip:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Ventricular tachycardia"
+        },
+        {
+          "id": 2,
+          "text": "Ventricular fibrillation"
+        },
+        {
+          "id": 3,
+          "text": "Atrial fibrillation"
+        },
+        {
+          "id": 4,
+          "text": "Atrial flutter"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The ECG depicts<strong> ventricular fibrillation. </strong>It has the following characteristics:</p>\n<ul>\n<li>Chaotic irregular deflections of varying amplitude</li>\n<li>No identifiable QRS complexes, ST segments, or T waves are visible</li>\n</ul>\n<p>Other options:</p>\n<p>Option 1- Ventricular tachycardia: The ECG features include:</p>\n<ul>\n<li>Wide QRS complex with abnormal morphology</li>\n<li>Absence of the P waves</li>\n<li>Rate &gt;100/min</li>\n</ul>\n<p>Option 3- Atrial fibrillation: The ECG features include:</p>\n<ul>\n<li>Narrow QRS complexes</li>\n<li>RR intervals are irregular</li>\n<li>No distinct p waves seen</li>\n</ul>\n<p>Option 4- Atrial flutter: The ECG features include:</p>\n<ul>\n<li>Narrow QRS complexes</li>\n<li>RR intervals are regular </li>\n<li>Normal P waves are replaced by <strong>sawtooth-shaped</strong> <strong>waves</strong> known as flutter waves.</li>\n</ul><hr><h3>Related Pearl: ECG patterns of various ventricular arrhythmias</h3><p>Ventricular tachycardia</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/097b95729fa14ac68da475ce6288a968x1088x570.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Polymorphic ventricular tachycardia associated with QTc prolongation- Torsades de pointes</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/a8ebe0b5757c4efca4f5dd15c6d24e99x1268x324.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Ventricular flutter</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/666962cd0f424000b7e84123f719f120x502x282.JPEG\" alt=\"Pearl Image\"><p>&nbsp;</p>\n<p>Ventricular fibrillation</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/25067efa869941baa6a40b54599b371ax1049x213.PNG\" alt=\"Pearl Image\"><hr><h3>Related Pearl: Supraventricular tachycardias</h3><p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with narrow QRS complex:</strong></p>\n<ul>\n<li><strong>Narrow QRS with regular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td><strong>&nbsp; &nbsp;Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Sinus tachycardia</strong></td>\n<td>Normal P wave, normal ECG features except for the rate</td>\n</tr>\n<tr>\n<td><strong>Focal atrial tachycardia</strong></td>\n<td>A single type of abnormal p wave morphology is seen</td>\n</tr>\n<tr>\n<td><strong>Junctional tachycardia</strong></td>\n<td>No p waves. Heart rate is 100- 200/ min</td>\n</tr>\n<tr>\n<td><strong>AV nodal reentry tachycardia</strong></td>\n<td>No p waves. Pseudo R' waves may be seen. Heart rate is 150-250/ min</td>\n</tr>\n<tr>\n<td><strong>Atrioventricular reentry tachycardia</strong></td>\n<td>P wave always follows QRS. RP interval&lt; PR interval</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter</strong></td>\n<td>Sawtooth shaped flutter waves are seen</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<ul>\n<li><strong>Narrow QRS with irregular RR interval</strong></li>\n</ul>\n<table>\n<tbody>\n<tr>\n<td>&nbsp; &nbsp; &nbsp;<strong>Tachycardia</strong></td>\n<td><strong>&nbsp; &nbsp; &nbsp; &nbsp;ECG features</strong></td>\n</tr>\n<tr>\n<td><strong>Atrial fibrillation</strong></td>\n<td>No distinct p waves seen</td>\n</tr>\n<tr>\n<td><strong>Multifocal atrial tachycardia</strong></td>\n<td>More than 3 different abnormal p wave morphologies are seen</td>\n</tr>\n<tr>\n<td><strong>Atrial flutter/tachycardia with variable block</strong></td>\n<td>ECG features of heart block are seen.</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p><strong>Supraventricular tachycardias with wide QRS complex:</strong></p>\n<ul>\n<li>Antidromic AVRT (atrioventricular reentry tachycardia)</li>\n<li>Supraventricular tachycardias with bundle branch block</li>\n</ul>",
+      "question_images": [
+        "https://daily-rounds-staging.s3.amazonaws.com/uploads/04c31ccbac544890acc7a85e7f1b6447.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB9098",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 52-year-old man has come to the emergency complaining of a burning type of chest pain. Comment on his ECG recording shown below.",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Sinus bradycardia"
+        },
+        {
+          "id": 2,
+          "text": "Sinus tachycardia"
+        },
+        {
+          "id": 3,
+          "text": "Normal sinus rhythm"
+        },
+        {
+          "id": 4,
+          "text": "Irregular rhythm"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The above ECG strip shows&nbsp;<strong>normal sinus rhythm</strong>.</p>\n<p>The features in this ECG that suggest this diagnosis are as follows:</p>\n<ul>\n<li>The <strong>QRS complexes are narrow</strong> (&lt;120 ms or 3 small squares) which implies that the impulse is supraventricular and is conducted via the normal conduction pathway.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/251a17748fb242b0b115bb0876e4de25x537x130.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<ul>\n<li>Each <strong>QRS complex is preceded by a P wave</strong>. This means that all the atrial depolarizations that arise in the sinus node are conducted to the ventricles.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/c3db622654d7465093f09972c262c87dx800x224.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<ul>\n<li>The <strong>PR interval is constant</strong>&nbsp;for all the impulses and is normal (&lt;200 ms) in duration.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fc5516f5be574d34a4d83ca6643b63cax800x224.JPEG\" alt=\"Explanation Image\"><p>&nbsp;</p>\n<ul>\n<li>The <strong>RR interval is constant</strong> which implies a regular rhythm.</li>\n</ul><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/4baaf24d405f481b9956ca56d1ac06a7x800x224.JPEG\" alt=\"Explanation Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/ac12bf3ea55644d4b5c63a854c41e773.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA0129",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A student was asked to record ECG by using bipolar limb leads. The below image shows the arrangement of the bipolar electrodes and the potential recorded. What is the potential recorded across the third electrical meter?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "-0.5 mV"
+        },
+        {
+          "id": 2,
+          "text": "+1.9 mV"
+        },
+        {
+          "id": 3,
+          "text": "+0.5 mV"
+        },
+        {
+          "id": 4,
+          "text": "-1.9 mV"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p class=\"p1\"><span class=\"s1\">The potential recorded in the electrical meter that represents <strong>lead III</strong> is <strong>+0.5 mV,&nbsp;</strong>according to&nbsp;<strong>Einthoven&rsquo;s Law</strong>.</span></p>\n<p class=\"p1\"><span class=\"s1\"><strong>Einthoven&rsquo;s Law </strong>describes the principle behind Einthoven's triangle which is formed by the arrangement of <strong>three bipolar limb leads</strong>.&nbsp;</span>Einthoven&rsquo;s law states that if the ECGs are recorded simultaneously with the three limb leads, the <strong>sum of the potentials</strong> recorded in <strong>leads I and III</strong> will <strong>equal the potential in lead II.</strong></p>\n<p class=\"p1\">In the given image, Lead I is represented by the electrodes connected to the left arm and right arm, and the potential recorded is +0.7 mV. Lead II is represented by the electrodes connected to the left leg and right arm and the potential recorded is +1.2 mV. According to Einthoven's law:</p>\n<p class=\"p2\"><strong>Lead I potential + Lead III potential = Lead II potential</strong></p>\n<p class=\"p2\">Therefore, Lead III potential = Lead II potential &ndash; Lead I potential = (1.2 - 0.7) = <strong>+0.5 mV.</strong></p>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/7b565d99a9724e3fac9164d7112a00b6.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1590",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A patient who was being treated for an arrhythmia presented with palpitations and chest discomfort. His ECG has been given below. Which of the following drugs would be least likely to cause this condition?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Quinidine"
+        },
+        {
+          "id": 2,
+          "text": "Sotalol"
+        },
+        {
+          "id": 3,
+          "text": "Procainamide"
+        },
+        {
+          "id": 4,
+          "text": "Lidocaine"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The ECG of this patient shows <strong>wide QRS complexes </strong>and an<strong> undulating baseline </strong>suggesting the diagnosis of <strong>torsades de pointes</strong>. It is associated with <strong>prolonged QT interval. Lidocaine</strong> does not prolong the QT interval, hence, it is<strong> unlikely</strong> to cause torsades de pointes. </p>\n<p><strong>Lidocaine</strong> belongs to the <strong>class IB</strong> antiarrhythmic agent. It is considered to have the least arrhythmogenic potential among antiarrhythmic. QT interval is usually unaltered or slightly reduced with lidocaine use.</p>\n<p>Among the antiarrhythmics, class Ia and class III drugs prolong action potential duration and thus prolong QT interval and are also prone to cause Torsades de pointes.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b2b1e13fe6134e12b1862511d5f653abx1280x1424.JPEG\" alt=\"Explanation Image\"><p><strong>Torsade</strong> <strong>de</strong> <strong>Pointes</strong> is a polymorphic ventricular tachycardia. It is characterized by a premature ventricular beat that induces a pause, followed by a sinus beat with a <strong>longer</strong> <strong>QT</strong> <strong>interval</strong>. The T wave is interrupted by a premature ventricular beat, which is the first beat of the polymorphic VT.</p>\n<p>Management of a patient with Torsade de Pointes if the tachycardia is <strong>stable</strong>, includes IV MgSO<sub>4,</sub> 1-2g over 5-60 minutes, followed by an infusion, which is highly effective for both treatment and prevention, of recurrence of long QT-related ventricular ectopic beats that trigger torsades de pointes. Discontinue the offending drug and correct electrolyte abnormalities. </p>\n<p>If this condition progresses into <strong>ventricular fibrillation</strong>, the appropriate course of action is to perform <strong>defibrillation</strong>. </p><hr><h3>Related Pearl: Drugs causing QT prolongation and torsades de pointes</h3><p>Drugs Associated with QT Prolongation and Torsades de Pointes:</p>\n<p>Antiarrhythmics:</p>\n<ul>\n<li>Sotalol</li>\n<li>Amiodarone</li>\n<li>Quinidine</li>\n<li>Procainamide</li>\n<li>Dofetilide</li>\n<li>Ibutilide</li>\n</ul>\n<p>Antimicrobials:</p>\n<ul>\n<li>Levofloxacin</li>\n<li>Ciprofloxacin</li>\n<li>Gatifloxacin</li>\n<li>Moxifloxacin</li>\n<li>Clarithromycin</li>\n<li>Erythromycin</li>\n<li>Ketoconazole</li>\n<li>Itraconazole</li>\n<li>Rilpivirine</li>\n</ul>\n<p>Antidepressants:</p>\n<ul>\n<li>Amitriptyline</li>\n<li>Desipramine</li>\n<li>Imipramine</li>\n<li>Doxepin</li>\n<li>Fluoxetine</li>\n<li>Sertraline</li>\n<li>Venlafaxine</li>\n</ul>\n<p>Antipsychotics:</p>\n<ul>\n<li>Haloperidol</li>\n<li>Droperidol</li>\n<li>Quetiapine</li>\n<li>Ziprasidone</li>\n<li>Thioridazine</li>\n</ul>\n<p>Others:</p>\n<ul>\n<li>Cisapride</li>\n<li>Sumatriptan</li>\n<li>Zolmitriptan</li>\n<li>Arsenic</li>\n<li>Dolasetron</li>\n<li>Methadone<br />&nbsp;</li>\n</ul><hr><h3>Related Pearl: Anti-arrhythmic drugs</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/7d6c4d5ed4a54f70b2030d71f3d06969x1280x1697.JPEG\" alt=\"Pearl Image\"><table>\n<tbody>\n<tr>\n<td>\n<p><span><strong>Class of antiarrhythmic drugs&nbsp;</strong></span></p>\n</td>\n<td>\n<p><span>&nbsp;</span></p>\n<p><span><strong>Mechanism of action</strong></span></p>\n</td>\n<td>\n<p><span><strong>Effect on action potential duration</strong></span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class I</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IA</strong></span></p>\n<p><span>Procainamide</span></p>\n<p><span>Quinidine</span></p>\n<p><span>Disopyramide</span></p>\n</td>\n<td>\n<p><span>&nbsp;</span></p>\n<p><span>Na+ channel blockers with significant K<sup>+</sup> channel blocking property</span></p>\n<p><span>&nbsp;</span></p>\n</td>\n<td>\n<p><span>Prolonged</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IB</strong></span></p>\n<p><span>Lidocaine</span></p>\n<p><span>Mexiletine</span></p>\n</td>\n<td><span>Na+ channel blockers with K<sup>+</sup> channel opening property&nbsp;</span></td>\n<td>\n<p><span>Shortened or no effect</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IC</strong></span></p>\n<p><span>Flecainide</span></p>\n<p><span>Propafenone</span></p>\n<p><span>Moricizine</span></p>\n</td>\n<td><span>Na+ channel blockers with negligible K<sup>+</sup> channel blocking property&nbsp;</span></td>\n<td>\n<p><span>Variable or no effect</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class II</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Propranolol</span></p>\n<p><span>Esmolol</span></p>\n</td>\n<td><span>&beta;- blockers</span></td>\n<td><span>-&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class III</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Amiodarone, dronedarone</span></p>\n<p><span>Dofetilide</span></p>\n<p><span>Sotalol</span></p>\n<p><span>Ibutilide</span></p>\n<p><span>Vernakalant</span></p>\n</td>\n<td><span>K<sup>+</sup> channel blockers&nbsp;</span></td>\n<td><span>Prolonged&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Class IV</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Verapamil</span></p>\n<p><span>Diltiazem</span></p>\n</td>\n<td><span>Ca<sup>2+</sup> channel blockers</span></td>\n<td><span>-</span></td>\n</tr>\n<tr>\n<td>\n<p><span><strong>Miscellaneous</strong></span></p>\n</td>\n<td><span>&nbsp;</span></td>\n<td><span>&nbsp;</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Adenosine</span></p>\n</td>\n<td><span>Activates adenosine receptors</span></td>\n<td><span>Shortened</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Digoxin</span></p>\n</td>\n<td><span>Na<sup>+</sup>-K<sup>+</sup> ATPase inhibitor</span></td>\n<td><span>Increases AV node refractoriness</span></td>\n</tr>\n<tr>\n<td>\n<p><span>Magnesium</span></p>\n</td>\n<td><span>Unknown</span></td>\n<td><span>-</span></td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/73e78df307ab449686e7e18b7b145007.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD7244",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 64-year-old patient with a history of myocardial infarction is being monitored in the intensive care unit. He develops chest pain suddenly and the following ECG is observed. His blood pressure was 90/40 mm Hg and he had a feeble pulse of 154 bpm. You decide to perform cardioversion. What is the initial recommended dose for this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50 J"
+        },
+        {
+          "id": 2,
+          "text": "120 J"
+        },
+        {
+          "id": 3,
+          "text": "100 J"
+        },
+        {
+          "id": 4,
+          "text": "200 J"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<div class=\"page\" title=\"Page 1681\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>The clinical scenario shows a male patient having unstable tachycardia (154 bpm) with ECG suggestive of<strong> a regular wide QRS complex tachycardia. In this condition,</strong> synchronized cardioversion is administered with an<strong> initial dose of 100 J.</strong></p>\n<p>According to the ACLS algorithm, a patient with a pulse greater than 150 beats per minute is first given airway and oxygen support after which the patient is connected to a cardiac monitor, and IV access is established. A 12-ECG is connected and recorded if available.</p>\n<p>The patient is then monitored to check if stable or unstable. The patient is considered unstable if the following is observed:</p>\n<ul>\n<li>Hypotension</li>\n<li>Signs of shock</li>\n<li>Altered mental status</li>\n<li>Chest discomfort</li>\n<li>Heart failure</li>\n</ul>\n<p>If the patient is unstable, synchronized cardioversion is given.</p>\n<p>Morphologic characteristics to be looked for in the ECG:</p>\n<ul>\n<li>Wide-complex unstable tachycardia is considered ventricular tachycardia (VT) unless proven otherwise</li>\n<li>Narrow regular tachycardia is seen in atrial flutter or supraventricular tachycardia (SVT)</li>\n<li>Narrow irregular tachycardia is seen in atrial fibrillation</li>\n</ul>\n<p>Dose of cardioversion:</p>\n<ul>\n<li>Unstable atrial fibrillation/Narrow irregular tachycardia: 200 J (Monophasic) or 120-200 J (biphasic)</li>\n<li>Unstable atrial flutter or SVT/Narrow regular tachycardia: 50 to 100 J (Monophasic), synchronized</li>\n<li>Unstable monomorphic ventricular tachycardia/Wide-complex regular tachycardia: 100 J (Monophasic)</li>\n<li>Unstable polymorphic VT or VF/Wide-complex irregular tachycardia: Defibrillation dose</li>\n</ul>\n</div>\n</div>\n</div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/74bcd402f19040e69e367365e6cd95a9.PNG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MF1491",
+      "difficulty": "hard"
+    },
+    {
+      "text": "A 50-year-old known diabetic and chronic smoker is brought to the hospital due to sudden onset chest pain radiating to the left arm. His cardiac troponins are elevated. His ECG shows complete heart block. Which of the following JVP waves is likely to be abnormal in this patient?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "A"
+        },
+        {
+          "id": 2,
+          "text": "B"
+        },
+        {
+          "id": 3,
+          "text": "C"
+        },
+        {
+          "id": 4,
+          "text": "D"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>This patient has clinical features suggestive of acute myocardial infarction and has a <strong>complete heart block</strong>. In this patient, an abnormality may be seen in '<strong>a' wave</strong> of the JVP, labeled as '<strong>A' </strong>in the given image.  </p>\n<p>The 'a' wave is representative of the presystolic contraction of the right atrium. Patients with complete AV block have <strong>cannon 'a' waves</strong> in the JVP due to the contraction of atria against the closed tricuspid valve.</p>\n<p>Causes of <strong>canon ‘a’ waves</strong> include:</p>\n<ul>\n<li>Complete AV block</li>\n<li>Ventricular tachycardia</li>\n<li>Premature atrial/ junctional/ ventricular beats</li>\n</ul>\n<p><strong>Complete heart block </strong>(Third-degree AV block): The ECG shows <strong>severe bradycardia, junctional escape rhythm, </strong>and<strong> independent P</strong> (red arrows)<strong> </strong>and<strong> QRS complexes</strong> (green arrow):</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b094c035ebf448939cf63e463c7b2cc3x765x499.PNG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: JVP waveform and the abnormalities</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/18bbe4a977c84587903e8637a0d9303cx1280x1005.JPEG\" alt=\"Pearl Image\"><p>1) The <strong>a-wave</strong> corresponds to <strong>atrial contraction</strong>.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Prominent a-waves</strong></td>\n<td>Pulmonary hypertension, right atrial thrombus/ mass, and tricuspid stenosis</td>\n</tr>\n<tr>\n<td><strong>Cannon a-waves</strong></td>\n<td>\n<p>Complete AV block, ventricular tachycardia, and premature atrial/ junctional/ ventricular beats</p>\n</td>\n</tr>\n<tr>\n<td><strong>Absent a-waves</strong></td>\n<td>Atrial fibrillation</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>2) The <strong>c-wave</strong> corresponds to the <strong>bulging of tricuspid valve</strong> into right atrium during ventricular contraction.</p>\n<p>&nbsp;</p>\n<p>3) The <strong>x-descent</strong> corresponds to <strong>atrial relaxation</strong> during atrial diastole.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Absent x-descent</strong></td>\n<td>Severe tricuspid regurgitation</td>\n</tr>\n<tr>\n<td><strong>Rapid x-descent</strong></td>\n<td>Cardiac tamponade</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>4) The <strong>v-wave</strong> corresponds to the <strong>venous filling</strong> of right atrium.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Dominant v-waves</strong></td>\n<td>Tricuspid regurgitation</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>\n<p>5) The <strong>y-descent</strong> corresponds to the&nbsp;<strong>passive emptying of the right atrium</strong> into right ventricle.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Abnormality</strong></td>\n<td><strong>Conditions</strong></td>\n</tr>\n<tr>\n<td><strong>Prolonged y-descent</strong></td>\n<td>Tricuspid stenosis</td>\n</tr>\n<tr>\n<td><strong>Rapid y-descent</strong></td>\n<td>\n<p>Constrictive pericarditis and isolated severe tricuspid regurgitation</p>\n</td>\n</tr>\n<tr>\n<td><strong>Absent y-descent</strong></td>\n<td>Cardiac tamponade</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p><hr><h3>Related Pearl: Types of Heart block</h3><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/321f89fee89642ff8d4791a7741dd90ax1280x1311.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/e3aeb0fe34994910b928100aa9a360d8.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MD1766",
+      "difficulty": "medium"
+    }
+  ]
+}

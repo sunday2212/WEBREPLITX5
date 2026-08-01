@@ -1,0 +1,1598 @@
+{
+  "meta": {
+    "title": "Obstructive_Restrictive_Lung_Disease"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Residual volume</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tidal volume</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Total lung capacity</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Forced expiratory volume in 1 second/forced vital capacity (FEV1/FVC) ratio</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which pulmonary function test may be altered to a similar degree in both restrictive lung disease and obstructive lung disease?</span></p>",
+      "unique_key": "DT1196003",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196003,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Tidal volume is usually preserved or altered to a similar mild degree in both obstructive and restrictive lung diseases because it reflects normal quiet breathing.</p>\r\n<ul>\r\n<li>Pulmonary function tests measure different aspects of lung volumes and airflow.</li>\r\n<li><strong>Obstructive lung disease</strong> (e.g., COPD, asthma) is characterized by airflow limitation. Key PFT changes include increased residual volume (RV) and total lung capacity (TLC) due to air trapping, while tidal volume (VT) often remains relatively normal. FEV1 is markedly reduced, and FEV1/FVC ratio is decreased.</li>\r\n<li><strong>Restrictive lung disease</strong> (e.g., pulmonary fibrosis, interstitial lung disease) is characterized by decreased lung compliance and reduced lung volumes. TLC, vital capacity (VC), and residual volume are reduced. VT may remain near normal as patients adapt by increasing breathing frequency rather than depth. FEV1 and FVC are reduced proportionally, so FEV1/FVC ratio is normal or slightly increased.</li>\r\n<li><strong>Key point</strong>: Tidal volume, which represents the volume of air exchanged during quiet breathing, is usually preserved in both conditions, unlike residual volume, total lung capacity, or FEV1/FVC ratio, which show disease-specific changes.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Residual volume (Option A):</strong> Increased in obstructive disease due to air trapping, decreased or normal in restrictive disease.</p>\r\n<p><strong>Total lung capacity (Option C):</strong> Increased in obstructive disease (hyperinflation) and decreased in restrictive disease.</p>\r\n<p><strong>FEV1/FVC ratio (Option D):</strong> Decreased in obstructive disease, normal or increased in restrictive disease; changes are not similar between the two.</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Non-invasive ventilation</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intubation and ventilation</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduce inspired oxygen concentration</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increase oxygen concentration</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old man has been a smoker of 20 a day for 30 years. He had a cough and difficulty in breathing for 3 days, which worsened, and he presented to the hospital. He has home nebulisers but not home oxygen. On examination, his oxygen saturation is 95%, blood pressure 110 / 60 mmHg and respiratory rate 32. He has diffuse wheezing and is using his respiratory muscles. Arterial blood gases done on 6 litres of oxygen show: pH 7.25, pO2 120 mmHg, pCO2 61.5 mmHg. What should be the next management step?</span></p>",
+      "unique_key": "DT1196009",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196009,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>This patient has acute-on-chronic hypercapnic respiratory failure due to COPD; high oxygen can worsen CO<sub>2</sub> retention, so oxygen should be carefully titrated.</p>\r\n<ul>\r\n<li>The patient is a chronic smoker with probable COPD, presenting with an acute exacerbation.</li>\r\n<li>Clinical features: tachypnea, accessory muscle use, diffuse wheeze.</li>\r\n<li>ABG analysis on high-flow oxygen shows:\r\n<ul>\r\n<li>pH 7.25 &rarr; acidotic</li>\r\n<li>pCO<sub>2</sub> 61.5 mmHg &rarr; hypercapnia</li>\r\n<li>pO<sub>2</sub> 120 mmHg &rarr; hyperoxemia (likely due to high-flow oxygen)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Key concept</strong>:\r\n<ul>\r\n<li>Patients with chronic hypercapnia may rely on hypoxic drive for respiration.</li>\r\n<li>High inspired oxygen can reduce respiratory drive, worsen V/Q mismatch, and cause CO<sub>2</sub> retention, leading to worsening acidosis (type II respiratory failure).</li>\r\n<li><strong>Management</strong>:\r\n<ul>\r\n<li>Titrate oxygen to target SpO<sub>2</sub> 88-92% rather than giving high-flow oxygen.</li>\r\n<li>Only escalate to non-invasive ventilation (NIV) if hypercapnia worsens or the patient shows signs of exhaustion, severe acidosis (pH &lt;7.25), or altered consciousness.</li>\r\n<li>Intubation is reserved for NIV failure.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Non-invasive ventilation (Option A):</strong> Not immediately indicated because the patient's pH is 7.25, and he is currently maintaining oxygenation; the priority is correcting oxygen therapy first.</p>\r\n<p><strong>Intubation and ventilation (Option B):</strong> Not indicated yet; invasive ventilation is for patients with NIV failure or impending respiratory arrest.</p>\r\n<p><strong>Increase oxygen concentration (Option D):</strong> Dangerous in COPD exacerbation with hypercapnia; can worsen CO<sub>2</sub> retention and acidosis.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Review with daily chest radiographs</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intercostal tube drainage</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Refer to a respiratory outpatient clinic</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">CT chest</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man with emphysema presented with increasing dyspnoea and left-sided pleuritic chest pain. A chest radiograph reveals a left-sided pneumothorax with a lung edge measured 5 cm away from the chest wall. The most appropriate management of his condition is:</span></p>",
+      "unique_key": "DT1196026",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196026,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>large pneumothorax (&gt;</strong>2-3 cm) or <strong>symptomatic pneumothorax</strong> requires immediate intercostal tube drainage to re-expand the lung and prevent complications.</p>\r\n<ul>\r\n<li><strong>Pneumothorax</strong> is classified by size:\r\n<ul>\r\n<li>Small: &lt;2-3 cm from lung margin to chest wall</li>\r\n<li>Large: &gt;2-3 cm</li>\r\n</ul>\r\n</li>\r\n<li>Symptoms and risk factors: Dyspnea, pleuritic pain, underlying lung disease (emphysema) increase the risk of deterioration.</li>\r\n<li><strong>Management</strong>:\r\n<ul>\r\n<li>Small, asymptomatic primary pneumothorax &rarr; can be observed with supplemental oxygen and serial X-rays.</li>\r\n<li>Large (&gt;2-3 cm) or symptomatic pneumothorax, or secondary pneumothorax in patients with underlying lung disease (like emphysema) &rarr; intercostal tube drainage is indicated.</li>\r\n</ul>\r\n</li>\r\n<li>In this patient, the lung edge is 5 cm &rarr; large pneumothorax. Underlying emphysema classifies it as secondary pneumothorax, so observation alone is unsafe.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Review with daily chest radiographs (Option A):</strong> Unsafe for large or symptomatic secondary pneumothorax; can lead to respiratory compromise.</p>\r\n<p><strong>Refer to a respiratory outpatient clinic (Option C):</strong> Delays urgent treatment; not appropriate in acute, symptomatic large pneumothorax.</p>\r\n<p><strong>CT chest (Option D):</strong> Not required acutely for diagnosis; chest X-ray is sufficient for initial management. CT is reserved for recurrent, atypical, or complicated cases.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403297f686582-b8d1-46e1-8d5a-188068053d3a.jpg\">",
+      "correct_choice_id": 22,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">SLE</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dermatomyositis</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ankylosing spondylitis</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cryptogenic fibrosing alveolitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 70-year-old man attends the hospital with a history of proximal muscle weakness. He also gives a history of a cough of 12 weeks duration and complains of pain in the small joints of the hands. He has small haemorrhages in the nail folds, but is not clubbed. On examination of the chest, he has bibasal crackles, and a chest radiograph reveals diffuse reticular infiltrates. Lung function tests confirm a restrictive pattern. What is the likely cause of his interstitial lung disease?</span></p>",
+      "unique_key": "DT1196031",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196031,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Dermatomyositis</strong> is associated with proximal muscle weakness, characteristic skin findings, and can cause a <strong>restrictive interstitial lung disease</strong> with reticular infiltrates.</p>\r\n<ul>\r\n<li><strong>Dermatomyositis</strong> is an idiopathic inflammatory myopathy presenting with:\r\n<ul>\r\n<li>Proximal muscle weakness (shoulder and hip girdle)</li>\r\n<li>Skin manifestations: <strong>Gottron's papules</strong> over joints, nailfold haemorrhages, heliotrope rash</li>\r\n<li>Systemic features: Arthralgia, ILD, and rarely cardiac involvement</li>\r\n</ul>\r\n</li>\r\n<li>Interstitial lung disease (ILD) in dermatomyositis:\r\n<ul>\r\n<li>Presents with dry cough, exertional dyspnea, bibasal crackles</li>\r\n<li>Radiology: <strong>Diffuse reticular or ground-glass infiltrates</strong></li>\r\n<li>Pulmonary function: restrictive pattern (&darr;FVC, &darr;TLC)</li>\r\n</ul>\r\n</li>\r\n<li>In this patient:\r\n<ul>\r\n<li>Proximal weakness + nailfold haemorrhages &rarr; dermatomyositis</li>\r\n<li>Chronic cough + bibasal crackles + restrictive PFT &rarr; ILD secondary to dermatomyositis</li>\r\n</ul>\r\n</li>\r\n<li>Other clues: Small joint pain may reflect associated inflammatory arthritis; absence of clubbing does not rule out ILD.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>SLE (Option A):</strong> Can cause ILD, but muscle weakness is usually not a prominent feature; skin findings are different (malar rash, photosensitivity).</p>\r\n<p><strong>Ankylosing spondylitis (Option C):</strong> Can cause upper-lobe fibrosis but usually presents with chronic back pain, spinal stiffness, and HLA-B27 positivity; distal small joint involvement is uncommon.</p>\r\n<p><strong>Cryptogenic fibrosing alveolitis (Option D):</strong> Also known as <strong>idiopathic pulmonary fibrosis</strong>; presents as restrictive ILD with basal reticular infiltrates, but muscle weakness and nailfold changes are absent, helping differentiate from connective tissue disease-associated ILD.</p>",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">High-resolution CT</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Exercise tolerance test</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Echocardiography</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchoscopy and biopsy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old man is referred for investigation of the cause of chronic cough. He describes long-standing sputum production, which is streaked with blood. There is no fever or night sweats, and he does not smoke. However, there is a family history of such symptoms. Chest X-ray shows mild bilateral lower zone shadowing. Which is the most appropriate investigation?</span></p>",
+      "unique_key": "DT1196052",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196052,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>High-resolution CT (HRCT)</strong> is the most sensitive modality for evaluating structural lung abnormalities in patients with chronic productive cough, especially when <strong>bronchiectasis</strong> is suspected.</p>\r\n<ul>\r\n<li>The patient's features suggest <strong>bronchiectasis</strong>:\r\n<ul>\r\n<li>Chronic productive cough with hemoptysis</li>\r\n<li>Bilateral lower zone shadowing on X-ray</li>\r\n<li>Positive family history (possible underlying genetic cause like cystic fibrosis or primary ciliary dyskinesia)</li>\r\n</ul>\r\n</li>\r\n<li><strong>High-resolution CT (HRCT) is the investigation of choice</strong> because:\r\n<ul>\r\n<li>It can detect bronchial dilatation, wall thickening, and mucus plugging, which may not be visible on plain chest X-ray.</li>\r\n<li>It helps identify the pattern and extent of disease, which guides management.</li>\r\n</ul>\r\n</li>\r\n<li>Other investigations are less appropriate at this stage:</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Exercise tolerance test (Option B):</strong> Cannot visualize structural lung pathology; only measures functional capacity.</p>\r\n<p><strong>Echocardiography (Option C):</strong> Unnecessary in absence of cardiac symptoms or signs; does not evaluate bronchial pathology.</p>\r\n<p><strong>Bronchoscopy and biopsy (Option D):</strong> Invasive; indicated only for localized lesions, unexplained hemoptysis, or suspected malignancy; not required for diffuse bronchiectasis diagnosis.<strong></strong></p>\r\n<p><strong>CT findings of bronchiectasis:</strong></p>\r\n<ul>\r\n<li>Tram track appearance (tubular bronchiectasis)</li>\r\n<li>Grape bunch appearance (cystic bronchiectasis)</li>\r\n<li><strong>Signet ring</strong>sign (a cross-sectional area of the <strong>airway</strong> with a diameter at least <strong>5</strong> <strong>times</strong> that of the adjacent vessel)</li>\r\n<li>Lack of peripheral tapering of bronchi (including the presence of tubular structures <strong>within 1 cm</strong>from the pleural surface)</li>\r\n<li>Finger in glove appearance</li>\r\n<li><strong>Tree in bud</strong>appearance: due to inspissated secretions</li>\r\n</ul><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d19tx39t2q3u48.cloudfront.net/NEETPGMCQ/a1b026e0-6ad3-4aef-b615-49fcb937f0ba.png\">",
+      "correct_choice_id": 41,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acute exacerbation of chronic obstructive pulmonary disease</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Obstructive sleep apnoea</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary oedema</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary embolus</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 72-year-old man presents with a history of worsening breathlessness and cough. His arterial blood gases show the following recordings when taken at room air: pH 7.25, pO2 48 mmHg, pCO2 66.75 mmHg, bicarbonate 31mmol/L What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1196075",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196075,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The ABG shows <strong>type II respiratory failure (hypoxemia with hypercapnia and acidosis)</strong> typical of an <strong>acute exacerbation of COPD</strong>.</p>\r\n<ul>\r\n<li><strong>ABG analysis</strong>:\r\n<ul>\r\n<li>pH 7.25 &rarr; <strong>acidotic</strong></li>\r\n<li>pCO<sub>2</sub> 66.75 mmHg &rarr; <strong>hypercapnia</strong></li>\r\n<li>pO<sub>2</sub> 48 mmHg &rarr; <strong>hypoxemia</strong></li>\r\n<li>Bicarbonate 31 mmol/L &rarr; <strong>metabolic compensation</strong> (chronic CO<sub>2</sub> retention)</li>\r\n</ul>\r\n</li>\r\n<li>This pattern is acute-on-chronic respiratory failure seen in acute exacerbation of COPD (AECOPD):\r\n<ul>\r\n<li>Chronic COPD patients retain CO<sub>2</sub>, leading to partially compensated metabolic alkalosis.</li>\r\n<li>Exacerbations (usually triggered by infection or irritants) can cause worsening hypoxia, hypercapnia, and acidemia.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical features</strong>: Worsening dyspnea, cough, and history of chronic lung disease.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Obstructive sleep apnoea (Option B):</strong> Causes intermittent nocturnal hypoxemia and hypercapnia, not persistent daytime type II respiratory failure.</p>\r\n<p><strong>Pulmonary oedema (Option C):</strong> Usually causes hypoxemia without significant hypercapnia initially; ABG typically shows type I respiratory failure (low pO<sub>2</sub>, normal/low pCO<sub>2</sub>).</p>\r\n<p><strong>Pulmonary embolus (Option D):</strong> Typically causes sudden hypoxemia with respiratory alkalosis (low pCO<sub>2</sub>) due to hyperventilation, not hypercapnia.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403294bb65a89-3975-4e40-bbcc-5f0bfbb1da5c.jpg\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403291261007e-e80a-4b56-b101-0c197d30043e.jpg\">",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Echocardiography to assess cor pulmonale</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">CT scan of the chest</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Blood gas</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sleep study</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55-year-old gentleman has Pickwickian syndrome. He has poor exercise tolerance of 50 yards and often feels lethargic at work. Which of the following is the best investigation?</span></p>",
+      "unique_key": "DT1196090",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196090,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Pickwickian syndrome (obesity hypoventilation syndrome)</strong> is primarily diagnosed and evaluated using a <strong>sleep study (polysomnography)</strong> to detect nocturnal hypoventilation and sleep-disordered breathing.</p>\r\n<ul>\r\n<li><strong>Pickwickian syndrome</strong> (obesity hypoventilation syndrome, <strong>OHS</strong>):\r\n<ul>\r\n<li>Characterized by obesity (<strong>BMI &gt;30 kg/m&sup2;</strong>), chronic daytime hypercapnia, and sleep-disordered breathing, usually obstructive sleep apnoea.</li>\r\n<li><strong>Symptoms</strong>: excessive daytime sleepiness, lethargy, morning headaches, poor exercise tolerance.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Investigation of choice</strong>:\r\n<ul>\r\n<li><strong>Polysomnography</strong> (sleep study) confirms sleep apnoea and nocturnal hypoventilation, guiding management with CPAP or BiPAP therapy.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Echocardiography to assess cor pulmonale (Option A):</strong> Useful to assess right heart strain from chronic hypoxia but does not diagnose OHS.</p>\r\n<p><strong>CT scan of the chest (Option B):</strong> Not required unless other lung pathology is suspected; does not evaluate sleep apnoea.</p>\r\n<p><strong>Blood gas (Option C):</strong> Can show daytime hypercapnia and hypoxemia, but cannot detect nocturnal hypoventilation or apnoea episodes, which define the syndrome.</p>",
+      "correct_choice_id": 64,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Normal</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mixed defect</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Obstructive defect</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Restrictive defect</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old man smoker of 35 pack years, presents with a 6-month history of shortness of breath. His past medical history includes diabetes and cervical spondylosis. Spirometry shows FEV1 of 1 litre - 65% predicted, 1.03 litres - 57% predicted, FEV1/FVC ratio of 95. How would you interpret the spirometry results?</span></p>",
+      "unique_key": "DT1196100",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196100,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation of Answer:</strong></p>\r\n<p>A high or normal FEV<sub>1</sub>/FVC ratio with proportionally reduced FEV<sub>1</sub> and FVC indicates a <strong>restrictive ventilatory defect</strong>.</p>\r\n<ul>\r\n<li><strong>Spirometry patterns</strong>:\r\n<ul>\r\n<li>Obstructive defect: FEV<sub>1</sub> &darr;, FVC normal or slightly &darr;, FEV<sub>1</sub>/FVC &darr; (&lt;70%)</li>\r\n<li>Restrictive defect: FEV<sub>1</sub> &darr;, FVC &darr; proportionally, FEV<sub>1</sub>/FVC normal or &uarr;</li>\r\n<li>Mixed defect: Features of both obstruction and restriction (FEV<sub>1</sub> &darr;, FVC &darr;, FEV1/FVC &darr;)</li>\r\n</ul>\r\n</li>\r\n<li>In this patient:\r\n<ul>\r\n<li>FEV<sub>1</sub> and FVC are both reduced (FEV<sub>1</sub> 65%, FVC 57%)</li>\r\n<li>FEV<sub>1</sub>/FVC ratio is 95% (elevated) &rarr; obstruction is unlikely</li>\r\n<li>Pattern is consistent with restrictive lung disease, possibly due to interstitial lung disease, obesity, or musculoskeletal limitation from cervical spondylosis.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Normal (Option A):</strong> FEV<sub>1</sub> and FVC are below predicted values; not normal.</p>\r\n<p><strong>Mixed defect (Option B):</strong> FEV<sub>1</sub>/FVC ratio would be reduced if obstruction coexists, which it is not.</p>\r\n<p><strong>Obstructive defect (Option C):</strong> FEV<sub>1</sub>/FVC ratio would be decreased (&lt;70%), which is not the case.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403299bed331c-c3b9-4d81-bb5d-bff2a29c208c.jpg\">",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Codeine</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tramadol</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Simvastatin</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Amiodarone</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man has worsening breathlessness. He has a past medical history of arthritis and palpitations. On admission, his oxygen saturation was 90% on air. ABGs show pO2 67 mmhg. pCO2 26 mmHg, pH 7.36. His chest X-ray shows patchy shadowing in both lung peripheries. Which one of the following drugs is likely to be responsible?</span></p>",
+      "unique_key": "DT1196115",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196115,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Amiodarone</strong> can cause drug-induced interstitial lung disease, presenting with hypoxemia, restrictive physiology, and bilateral peripheral infiltrates.</p>\r\n<ul>\r\n<li><strong>Clinical clues</strong>:\r\n<ul>\r\n<li>Worsening breathlessness in an elderly patient on amiodarone for palpitations</li>\r\n<li>ABG shows type I respiratory failure (hypoxemia with low pCO<sub>2</sub> due to hyperventilation)</li>\r\n<li>Chest X-ray: bilateral peripheral patchy infiltrates</li>\r\n</ul>\r\n</li>\r\n<li><strong>Amiodarone-induced pulmonary toxicity</strong> (AIPT):\r\n<ul>\r\n<li>Occurs in 5-15% of patients on long-term therapy</li>\r\n<li>Can manifest as <strong>interstitial pneumonitis</strong>, organizing pneumonia, or ARDS</li>\r\n<li>Risk factors: older age, higher cumulative dose, pre-existing lung disease</li>\r\n</ul>\r\n</li>\r\n<li>Other drugs:\r\n<ul>\r\n<li><strong>Codeine</strong>, <strong>tramadol</strong> &rarr; opioid respiratory depression; typically cause hypercapnia, not hypoxemia with low pCO<sub><span style=\"font-size: xx-small;\">2</span></sub> <strong>(Options A,B ruled out)</strong></li>\r\n<li><strong>Simvastatin</strong> &rarr; rare pulmonary toxicity, usually not with this radiographic pattern <strong>(Option C ruled out)</strong></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Drugs causing pulmonary fibrosis (AB<sub>3</sub>CTNM<sub>2</sub>):</strong></p>\r\n<ul>\r\n<li><strong>A</strong>miodarone</li>\r\n<li><strong>B</strong>leomycin, <strong>B</strong>romocriptine, <strong>B</strong>usulfan</li>\r\n<li><strong>C</strong>yclophosphamide</li>\r\n<li><strong>T</strong>NF alpha inhibitors</li>\r\n<li><strong>N</strong>itrofurantoin</li>\r\n<li><strong>M</strong>ethotrexate, <strong>M</strong>itomycin</li>\r\n</ul>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tiotropium</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Montelukast</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral theophyllines</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">Salmeterol</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man has been diagnosed with chronic obstructive pulmonary disease (COPD). Spirometry confirms severe COPD with a FEV1 of less than 25% predicted. In the last year, he has been admitted to the hospital on 6 occasions with COPD exacerbation. Which one of the following can help reduce hospital admissions?</span></p>",
+      "unique_key": "DT1196126",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196126,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Tiotropium</strong>, a long-acting anticholinergic bronchodilator, reduces COPD exacerbations and hospital admissions more effectively than other bronchodilators.</p>\r\n<ul>\r\n<li>Severe COPD with frequent exacerbations is a marker of high morbidity and mortality.</li>\r\n<li><strong>Tiotropium</strong>:\r\n<ul>\r\n<li>Long-acting muscarinic antagonist (LAMA)</li>\r\n<li>Reduces airway obstruction and hyperinflation</li>\r\n<li>Evidence shows reduction in exacerbation frequency and hospitalizations, especially in severe COPD</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Montelukast (Option B):</strong> Not indicated for COPD; mainly used in asthma and allergic rhinitis.</p>\r\n<p><strong>Oral theophyllines (Option C):</strong> Limited efficacy and increased adverse effects; not first-line for preventing hospitalizations.</p>\r\n<p><strong>Salmeterol (Option D):</strong> LABA improves symptoms and lung function, but is less effective than tiotropium in reducing severe exacerbations requiring hospitalization.</p>",
+      "correct_choice_id": 91,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Trial of inhaled corticosteroids</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchodilator test</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Serial peak flow measurements</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung function tests</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 13-year-old male has recent onset breathlessness. He has a history of wheezing particularly during the summer when the pollen count is high. Which of these tests would help to confirm the diagnosis?</span></p>",
+      "unique_key": "DT1196139",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196139,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>bronchodilator reversibility test</strong> demonstrates reversible airway obstruction, which is diagnostic for <strong>asthma</strong>.</p>\r\n<ul>\r\n<li><strong>Clinical suspicion</strong>: Seasonal wheezing triggered by pollen suggests allergic (extrinsic) asthma.</li>\r\n<li><strong>Bronchodilator test</strong>:\r\n<ul>\r\n<li>Spirometry is performed to measure FEV<sub>1</sub>.</li>\r\n<li>A &ge;12% and &ge;200 mL increase in FEV<sub>1</sub> after inhaled short-acting bronchodilator confirms reversible airflow obstruction, which is characteristic of asthma.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Trial of inhaled corticosteroids (Option A):</strong> Therapeutic approach, not diagnostic.</p>\r\n<p><strong>Serial peak flow measurements (Option C):</strong> Useful for monitoring trends, not for initial confirmation.</p>\r\n<p><strong>Lung function tests (Option D):</strong> Baseline testing shows obstruction, but diagnosis requires demonstration of reversibility.</p>",
+      "correct_choice_id": 102,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic respiratory acidosis</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic respiratory alkalosis</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic metabolic acidosis</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic metabolic alkalosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 70-year-old patient with COPD presents with cough and breathlessness, which has worsened over 2 months. On admission, he has the following arterial blood gas results. pH 7.32, pO2 52 mmhg, pCO2 60 mmhg, HCO3 34mmol/l, Base Excess -1. Which one of the following biochemical states fits best?</span></p>",
+      "unique_key": "DT1196152",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196152,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The patient has hypercapnia with renal compensation, consistent with <strong>chronic respiratory acidosis</strong>, typically seen in <strong>COPD</strong>.</p>\r\n<ul>\r\n<li><strong>ABG analysis</strong>:\r\n<ul>\r\n<li>pH 7.32 &rarr; acidemia (mild)</li>\r\n<li>pCO<sub>2</sub> 60 mmHg &rarr; hypercapnia</li>\r\n<li>HCO<sub>3</sub><sup>-</sup> 34 mmol/L &rarr; elevated, indicating renal compensation</li>\r\n</ul>\r\n</li>\r\n<li><strong>Interpretation</strong>:\r\n<ul>\r\n<li><strong>Respiratory acidosis</strong>: caused by hypoventilation &rarr; CO<sub>2</sub> retention &rarr; &darr;pH</li>\r\n<li><strong>Chronicity</strong>: The presence of elevated bicarbonate indicates renal compensation, suggesting chronic respiratory acidosis rather than acute.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Clinical correlation</strong>:\r\n<ul>\r\n<li>COPD causes chronic CO2 retention due to airflow obstruction and alveolar hypoventilation.</li>\r\n<li>Hypoxemia (pO<sub>2</sub> 52 mmHg) also points to chronic respiratory disease.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Chronic respiratory alkalosis (Option B):</strong> Would show low pCO<sub><span style=\"font-size: xx-small;\">2</span></sub> and compensatory low HCO<sub>3</sub><sup>-</sup>, not seen here.</p>\r\n<p><strong>Chronic metabolic acidosis (Option C):</strong> HCO<sub>3</sub><sup>-</sup> would be low, not elevated.</p>\r\n<p><strong>Chronic metabolic alkalosis (Option D):</strong> HCO<sub>3</sub><sup>-</sup> would be high but pCO2 would typically be normal or elevated due to compensation, but the primary disturbance here is hypercapnia.</p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">COPD</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchiectasis</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cystic fibrosis</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Scoliosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old woman presents with breathlessness. Her lung function test results show an FEV<sub>1</sub> of 1.2 L (65% of predicted), an FVC of 1.4 L (60% of predicted), with an FEV<sub>1</sub>/FVC ratio of 82%. The total lung capacity (TLC) is 65% of predicted, the transfer factor for carbon monoxide (TLCO) is 57% of predicted, and the transfer coefficient (KCO) is 105% of predicted. What is the most likely diagnosis?</span></p>",
+      "unique_key": "DT1196175",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196175,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A restrictive ventilatory defect with proportional reduction in FEV<sub>1</sub> and FVC, preserved FEV<sub>1</sub>/FVC ratio, reduced TLC, and normal KCO is characteristic of extrapulmonary restriction such as scoliosis.</p>\r\n<ul>\r\n<li><strong>Interpretation</strong> of lung function tests:\r\n<ul>\r\n<li>FEV<sub>1</sub> and FVC reduced proportionally &rarr; restrictive pattern</li>\r\n<li>FEV<sub>1</sub>/FVC normal (82%) &rarr; rules out obstructive disease</li>\r\n<li>TLC reduced (65%) &rarr; confirms restriction</li>\r\n<li>TLCO mildly reduced (57%) but KCO normal (105%) &rarr; indicates the alveolar-capillary gas transfer per unit lung volume is preserved, suggesting the problem is extrapulmonary, e.g., chest wall or neuromuscular disease</li>\r\n</ul>\r\n</li>\r\n<li><strong>Scoliosis</strong>:\r\n<ul>\r\n<li>Causes extrinsic restriction due to thoracic cage deformity</li>\r\n<li>Gas exchange per alveolar unit remains normal, hence normal KCO</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>COPD (Option A):</strong> Obstructive pattern with &darr;FEV<sub>1</sub>/FVC, not seen here.</p>\r\n<p><strong>Bronchiectasis (Option B):</strong> Usually obstructive defect with mucus plugging; TLC may be normal or &uarr;; KCO often normal, but FEV<sub>1</sub>/FVC is typically &darr;.</p>\r\n<p><strong>Cystic fibrosis (Option C):</strong> Mixed pattern with obstructive predominance; FEV<sub>1</sub>/FVC often &darr;; KCO often &darr; due to parenchymal involvement.</p><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032952d65ada-c5fb-4744-adae-e9f01fb83701.jpg\">",
+      "correct_choice_id": 124,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung function tests</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Trans bronchial biopsy</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Serum ACE level</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">High-resolution CT of the chest</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 50-year-old man presents with a six-month history of cough and breathlessness. On examination, he has clubbing, and there are bilateral fine inspiratory crackles at the bases of his lungs. A chest X-ray reveals bilateral basal shadowing in the lung fields. His blood gases reveal hypoxia with a pO2 of 67 mmHg. What is the best investigation to confirm a diagnosis?</span></p>",
+      "unique_key": "DT1196186",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196186,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>High-resolution CT (HRCT)</strong> is the <strong>investigation of choice</strong> for diagnosing interstitial lung disease, providing detailed information about the pattern, distribution, and extent of lung involvement.</p>\r\n<ul>\r\n<li><strong>Clinical features</strong> suggest <strong>ILD</strong>:\r\n<ul>\r\n<li>Chronic cough and breathlessness</li>\r\n<li>Bibasal fine inspiratory crackles</li>\r\n<li>Clubbing</li>\r\n<li>Bilateral basal shadowing on X-ray</li>\r\n<li>Hypoxia (pO<sub>2</sub> 67 mmHg)</li>\r\n</ul>\r\n</li>\r\n<li>Role of <strong>investigations</strong>:\r\n<ul>\r\n<li><strong>HRCT chest</strong>:\r\n<ul>\r\n<li>Detects and characterizes interstitial patterns (reticular, honeycombing, ground-glass)</li>\r\n<li>Determines distribution (basal, peripheral, diffuse)</li>\r\n<li>Can guide biopsy if required</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Lung function test</strong>s: Show restrictive pattern and reduced TLCO, helpful for assessment but cannot confirm diagnosis <strong>(Option A ruled out)</strong></li>\r\n<li><strong>Transbronchial biopsy</strong>: Invasive; limited yield for ILD diagnosis, mainly reserved for atypical cases or when histology is needed <strong>(Option B ruled out)</strong></li>\r\n<li><strong>Serum ACE</strong>: Useful in sarcoidosis but not diagnostic for general ILD <strong>(Option C ruled out)</strong></li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240329a9c35848-e861-419c-8d9a-1a2971fe4edb.jpg\">",
+      "correct_choice_id": 134,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Total Ig E level</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Antineutrophil cytoplasmic antibodies</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Anti-GBM antibody</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aspergillus fumigatus precipitins</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 50-year-old asthmatic treated with a high dose of inhaled corticosteroids develops a skin rash. His routine blood tests show mild renal dysfunction and blood eosinophilia. His chest radiograph is normal. Which blood test should be done next?</span></p>",
+      "unique_key": "DT1196198",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196198,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The patient's asthma, eosinophilia, renal involvement, and rash suggest <strong>Churg-Strauss syndrome (eosinophilic granulomatosis with polyangiitis)</strong>, which is best evaluated with <strong>ANCA</strong> testing.</p>\r\n<ul>\r\n<li><strong>Clinical clues</strong>:\r\n<ul>\r\n<li>Adult-onset asthma with high-dose corticosteroids</li>\r\n<li>Blood eosinophilia</li>\r\n<li>Renal involvement (mild dysfunction)</li>\r\n<li>Skin rash (vasculitic lesions)</li>\r\n<li>Normal chest X-ray (early phase possible)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Churg-Strauss syndrome / EGPA</strong>:\r\n<ul>\r\n<li>Small- to medium-vessel vasculitis associated with p-ANCA (MPO) positivity in many patients</li>\r\n<li><strong>Typical features</strong>: asthma, eosinophilia, systemic vasculitis affecting skin, kidneys, and peripheral nerves</li>\r\n</ul>\r\n</li>\r\n<li><strong>Role of blood tests</strong>:\r\n<ul>\r\n<li><strong>ANCA</strong> confirms vasculitic activity and supports diagnosis</li>\r\n<li><strong>Other tests</strong> (IgE, anti-GBM, Aspergillus precipitins) are less specific to this constellation</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Total IgE (Option A):</strong> May be elevated in asthma or atopy but does not explain systemic vasculitis or renal involvement.</p>\r\n<p><strong>Anti-GBM antibody (Option C):</strong> Relevant in Goodpasture syndrome (rapidly progressive glomerulonephritis with pulmonary hemorrhage), not typically associated with asthma or eosinophilia.</p>\r\n<p><strong>Aspergillus fumigatus precipitins (Option D):</strong> Useful for allergic bronchopulmonary aspergillosis (ABPA), which can cause asthma and eosinophilia, but renal involvement and skin rash are not features.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240329be447260-9c4b-451c-a067-b926f770a3c3.jpg\">",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prophylactic antibiotics</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inhaled corticosteroids</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oral corticosteroids</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Postural drainage</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 45-year-old man has a long history of productive cough. He had complained of frequent chest  infections. Examination reveals bilateral inspiratory crackles in the bases of the lungs and clubbing of the fingers. Which of the following treatments is likely to reduce the frequency of exacerbations?</span></p>",
+      "unique_key": "DT1196206",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196206,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Postural drainage</strong> helps clear retained secretions in bronchiectasis, thereby reducing recurrent infections and exacerbations.</p>\r\n<ul>\r\n<li><strong>Clinical features</strong> suggest <strong>bronchiectasis</strong>:\r\n<ul>\r\n<li>Chronic productive cough with frequent chest infections</li>\r\n<li>Bilateral basal crackles</li>\r\n<li>Clubbing of fingers</li>\r\n</ul>\r\n</li>\r\n<li><strong>Management</strong> focus:\r\n<ul>\r\n<li>Prevent recurrent infections and maintain airway clearance</li>\r\n<li>Airway clearance techniques (postural drainage, chest physiotherapy, and devices like oscillatory PEP) are cornerstone therapy</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other therapies</strong>:\r\n<ul>\r\n<li><strong>Prophylactic antibiotics </strong>may be used selectively in frequent exacerbators, but airway clearance is more universally recommended <strong>(Option A ruled out)</strong></li>\r\n<li><strong>Inhaled corticosteroids</strong> &rarr; limited role unless there is coexisting asthma or eosinophilic inflammation <strong>(Option B ruled out)</strong></li>\r\n<li><strong>Oral corticosteroids</strong> &rarr; not recommended for routine bronchiectasis management; used only in exacerbations or underlying inflammatory disease <strong>(Option C ruled out)</strong></li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 154,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">FEV1</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">FVC</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Residual volume</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Flow volume loop</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 50-year-old lady has been complaining of worsening difficulty with breathing over the past year. She has previously been diagnosed with a goitre. On examination, she had marked stridor. Which of the following helps investigate the extent of airway obstruction?</span></p>",
+      "unique_key": "DT1196230",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196230,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A <strong>flow-volume loop</strong> is the best test to <strong>assess the site and severity of fixed or variable airway obstruction</strong>, such as extrinsic compression from a goitre.</p>\r\n<ul>\r\n<li><strong>Clinical context</strong>:\r\n<ul>\r\n<li>Stridor indicates upper airway obstruction</li>\r\n<li>Goitre can cause tracheal compression, which may not be reflected in routine spirometry values alone</li>\r\n</ul>\r\n</li>\r\n<li><strong>Flow-volume loop</strong>:\r\n<ul>\r\n<li>Provides dynamic assessment of airflow during inspiration and expiration</li>\r\n<li>Can distinguish between variable extrathoracic, variable intrathoracic, or fixed upper airway obstruction</li>\r\n<li>Helps plan further management, such as surgical intervention</li>\r\n</ul>\r\n</li>\r\n<li>Other spirometry measures:\r\n<ul>\r\n<li><strong>FEV<sub>1</sub></strong>&rarr; reflects overall expiratory flow; reduced in obstruction but does not localize it <strong>(Option A ruled out)</strong></li>\r\n<li><strong>FVC</strong> &rarr; measures total air exhaled; less useful in detecting upper airway obstruction <strong>(Option B ruled out)</strong></li>\r\n<li><strong>Residual volume</strong> &rarr; assesses trapped air; not helpful for upper airway obstruction <strong>(Option C ruled out)</strong></li>\r\n</ul>\r\n</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/202403299261420b-9905-45e2-8292-a5ab9c2f9846.jpg\">",
+      "correct_choice_id": 164,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aspergillosis</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary fibrosis</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Empyema</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung carcinoma</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old lady has arthritic changes on her hand joints of ulnar deviation and Boutonniere's deformity. She has chronic breathlessness. Which of the following is a likely association?</span></p>",
+      "unique_key": "DT1196237",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196237,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Rheumatoid arthritis can be associated with <strong>interstitial lung disease</strong>, leading to <strong>pulmonary fibrosis</strong> and chronic breathlessness.</p>\r\n<ul>\r\n<li><strong>Clinical clues</strong>:\r\n<ul>\r\n<li>Chronic polyarthritis with classic hand deformities &rarr; rheumatoid arthritis (RA)</li>\r\n<li>Chronic breathlessness in RA raises suspicion for RA-associated interstitial lung disease (RA-ILD)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pulmonary fibrosis in RA</strong>:\r\n<ul>\r\n<li>Usually presents as restrictive lung disease with reduced TLC and impaired gas transfer</li>\r\n<li>HRCT shows basal and subpleural reticulation, honeycombing, or ground-glass changes</li>\r\n<li>Risk factors: long-standing RA, male sex, smoking</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other pulmonary conditions</strong>:\r\n<ul>\r\n<li><strong>Aspergillosis</strong> &rarr; usually occurs in immunocompromised or pre-existing cavities; not directly associated with RA <strong>(Option A ruled out)</strong></li>\r\n<li><strong>Empyema</strong> &rarr; acute complication; no chronic pattern <strong>(Option C ruled out)</strong></li>\r\n<li><strong>Lung carcinoma</strong> &rarr; increased risk in RA patients who smoke, but less directly associated with chronic restrictive lung disease <strong>(Option D ruled out)</strong><strong></strong></li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>The pulmonary complications of rheumatoid arthritis are:</strong></p>\r\n<ul>\r\n<li>Pulmonary fibrosis (interstitial lung disease) - UIP pattern (usual interstitial pneumonia)</li>\r\n<li>Bronchiolitis obliterans with organising pneumonia</li>\r\n<li>Bronchiectasis</li>\r\n<li>Interstitial pneumonitis secondary to drugs (eg, Methotrexate)</li>\r\n</ul>",
+      "correct_choice_id": 172,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">Inhaled corticosteroids</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Leukotriene antagonists</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">Formoterol</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both A and C</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35-year-old man has significant wheezing and breathlessness. Recordings of peak flows show diurnal variation. He was prescribed salbutamol but continues to have frequent wheezy episodes. What is the next step in management?</span></p>",
+      "unique_key": "DT1196241",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196241,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Persistent symptoms despite short-acting &beta;₂-agonists indicate moderate persistent asthma, which requires inhaled corticosteroids plus a long-acting &beta;₂-agonist (LABA) like formoterol.</p>\r\n<ul>\r\n<li><strong>Clinical assessment</strong>:\r\n<ul>\r\n<li>Frequent symptoms despite short-acting &beta;₂-agonist &rarr; not well-controlled asthma</li>\r\n<li>Diurnal variation in peak flow confirms airway hyperresponsiveness</li>\r\n</ul>\r\n</li>\r\n<li><strong>Stepwise management (GINA guidelines):</strong>\r\n<ul>\r\n<li>Step 1: PRN short-acting &beta;₂-agonist</li>\r\n<li>Step 2: Add low-dose inhaled corticosteroid if symptoms persist</li>\r\n<li>Step 3: Moderate persistent asthma &rarr; low- or medium-dose ICS + LABA (e.g., formoterol)</li>\r\n</ul>\r\n</li>\r\n<li><strong>Rationale for combination therapy</strong>:\r\n<ul>\r\n<li>ICS &rarr; reduces airway inflammation</li>\r\n<li>LABA &rarr; improves bronchodilation, prevents nocturnal and exercise-induced symptoms</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other options</strong>:\r\n<ul>\r\n<li><strong>Leukotriene antagonists</strong> &rarr; alternative or adjunct; less effective than ICS + LABA in moderate persistent asthma</li>\r\n</ul>\r\n</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/2024032941c7d648-e9df-4a77-9b4b-dd907c5b137e.jpg\">\r\n<ul>",
+      "correct_choice_id": 184,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silicosis</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chronic obstructive airways disease</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Farmer's lung</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Allergic Bronchopulmonary aspergillosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 70-year-old retired sandblaster has worsening symptoms of cough, wheeze and breathlessness. He has been keeping parrots for 15 years as a hobby. Serum precipitins for M faeni are negative. Chest X-ray showed hyperinflated lungs. His lung function tests show: FEV1 1.8L (predicted 2.6), FVC 3.0L (predicted 3.2), FEV1/FVC 60% Which of the following is the likely diagnosis?</span></p>",
+      "unique_key": "DT1196245",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196245,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The patient has airflow obstruction with reduced FEV<sub>1</sub>/FVC ratio and hyperinflation, consistent with <strong>COPD</strong>, likely due to occupational exposure and smoking history.</p>\r\n<ul>\r\n<li><strong>Clinical features</strong>:\r\n<ul>\r\n<li>Long history of cough, wheeze, breathlessness</li>\r\n<li>Hyperinflated lungs on X-ray &rarr; characteristic of emphysema</li>\r\n</ul>\r\n</li>\r\n<li><strong>Lung function pattern</strong>:\r\n<ul>\r\n<li>FEV<sub>1</sub> reduced (1.8 L / 69% predicted)</li>\r\n<li>FVC near normal &rarr; FEV<sub>1</sub>/FVC 60% &rarr; obstructive pattern</li>\r\n<li>TLC not provided, but hyperinflation on X-ray supports air trapping</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Silicosis (Option A):</strong> Typically restrictive with upper-lobe nodular opacities; airflow obstruction uncommon early.</p>\r\n<p><strong>Farmer's lung (Option C):</strong> Restrictive disease due to hypersensitivity pneumonitis; serum precipitins negative here.</p>\r\n<p><strong>Allergic bronchopulmonary aspergillosis (Option D):</strong> Usually presents in asthma patients with central bronchiectasis and elevated IgE; no such features reported.</p>",
+      "correct_choice_id": 192,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">Eosinophilic granuloma</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asthma</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">Alpha 1 antitrypsin deficiency</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fibrosing alveolitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 25-year-old man who smokes has progressive breathlessness. He has had a long history of recurrent chest infections. His lung function tests show a FEV1/FVC ratio of 65%, reduced FEV1, FVC and KCO of 45% predicted. He also has an uncle who had a similar presentation. Which is the likely diagnosis?</span></p>",
+      "unique_key": "DT1196249",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196249,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Early-onset emphysema with family history, particularly in a young smoker with reduced diffusion capacity, is suggestive of <strong>alpha-1 antitrypsin (A1AT) deficiency</strong>.</p>\r\n<ul>\r\n<li><strong>Clinical features</strong>:\r\n<ul>\r\n<li>Young age of onset (&lt;40 years)</li>\r\n<li>Progressive dyspnea and recurrent chest infections</li>\r\n<li>Family history of similar pulmonary disease</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pulmonary function</strong>:\r\n<ul>\r\n<li>FEV<sub>1</sub>/FVC &lt;70% &rarr; <strong>obstructive pattern</strong></li>\r\n<li>KCO reduced &rarr; impaired gas transfer typical of emphysema</li>\r\n<li>FVC reduced due to hyperinflation in emphysema</li>\r\n</ul>\r\n</li>\r\n<li><strong>Alpha-1 antitrypsin deficiency</strong>:\r\n<ul>\r\n<li>Genetic disorder (autosomal codominant) &rarr; deficient A1AT &rarr; unchecked neutrophil elastase activity &rarr; early panacinar emphysema</li>\r\n<li>Often affects lower lobes</li>\r\n<li>Exacerbated by smoking</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Eosinophilic granuloma (Option A):</strong> Typically presents with localized lytic lesions, not diffuse early-onset emphysema.</p>\r\n<p><strong>Asthma (Option B):</strong> Reversible airflow obstruction; family history and reduced KCO do not match.</p>\r\n<p><strong>Fibrosing alveolitis (Option D):</strong> Restrictive pattern (FEV<sub>1</sub>/FVC &gt;80%), basal fibrosis; KCO may be reduced but pattern differs.</p>",
+      "correct_choice_id": 203,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clarithromycin</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Amoxicillin</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Busulphan</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Omeprazole</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 60-year-old woman had a CXR showing pulmonary fibrosis. Upon review of her drug history, which of the following drugs might she have been on in the past?</span></p>",
+      "unique_key": "DT1196256",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196256,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Busulphan</strong> is a chemotherapeutic agent known to cause drug-induced <strong>pulmonary fibrosis</strong>.</p>\r\n<ul>\r\n<li>Drug-induced pulmonary fibrosis:\r\n<ul>\r\n<li>Certain drugs can lead to interstitial lung disease, presenting with progressive dyspnea, dry cough, and basal reticular shadowing on imaging.</li>\r\n</ul>\r\n</li>\r\n<li><strong>Busulphan</strong>:\r\n<ul>\r\n<li>Alkylating agent used in chemotherapy and bone marrow transplant conditioning</li>\r\n<li>Mechanism: direct alveolar epithelial and endothelial injury &rarr; fibrosis</li>\r\n<li>Pulmonary toxicity may appear months to years after exposure</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Clarithromycin (Option A):</strong> Antibiotic; pulmonary fibrosis is not a recognized side effect.</p>\r\n<p><strong>Amoxicillin (Option B):</strong> Antibiotic; does not cause interstitial lung disease.</p>\r\n<p><strong>Omeprazole (Option D): </strong>Acid-suppressive therapy; not associated with pulmonary fibrosis.</p>\r\n<p><strong>Drugs causing pulmonary fibrosis (AB3CTNM2):</strong></p>\r\n<ul>\r\n<li><strong>A</strong>miodarone</li>\r\n<li><strong>B</strong>leomycin, <strong>B</strong>romocriptine, <strong>B</strong>usulfan</li>\r\n<li><strong>C</strong>yclophosphamide</li>\r\n<li><strong>T</strong>NF alpha inhibitors</li>\r\n<li><strong>N</strong>itrofurantoin</li>\r\n<li><strong>M</strong>ethotrexate, <strong>M</strong>itomycin</li>\r\n</ul>",
+      "correct_choice_id": 213,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spirometry</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fibrotic changes</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">Body Mass Index</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">Arterial blood gases</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man has long-standing breathlessness on exertion. He has been smoking 20 cigarettes a day for over 30 years. On examination, the patient is breathless with the use of accessory muscles and resting activation of the abdominal muscles. The chest is barrel-shaped. With regards to this case, which one of the following is known to be a predictor of mortality?</span></p>",
+      "unique_key": "DT1196259",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196259,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>In patients with severe COPD, a low BMI is a strong independent predictor of mortality, reflecting systemic effects and cachexia.</p>\r\n<ul>\r\n<li><strong>Clinical context</strong>:\r\n<ul>\r\n<li>Advanced COPD with chronic airflow limitation and emphysema</li>\r\n<li>Use of accessory muscles and abdominal activation &rarr; severe disease</li>\r\n</ul>\r\n</li>\r\n<li><strong>Mortality predictors</strong> in COPD:\r\n<ul>\r\n<li><strong>BODE index</strong> (Body mass index, Obstruction [FEV<sub>1</sub>], Dyspnea [MRC scale], Exercise capacity [6MWT]) is validated for predicting survival in COPD</li>\r\n<li><strong>BMI</strong> reflects nutritional status and muscle mass, with low BMI associated with higher mortality</li>\r\n<li>Other components (FEV<sub>1</sub>, dyspnea, exercise capacity) contribute, but BMI is an independent and easily measurable predictor</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Spirometry (Option A):</strong> FEV<sub>1</sub> correlates with severity but is less predictive than the multidimensional BODE index.</p>\r\n<p><strong>Fibrotic changes (Option B):</strong> Not a primary determinant of prognosis in emphysematous COPD.</p>\r\n<p><strong>Arterial blood gases (Option D):</strong> Useful for assessing hypoxemia/hypercapnia but not a reliable long-term mortality predictor.</p>",
+      "correct_choice_id": 223,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 24,
+      "choices": [
+        {
+          "id": 231,
+          "text": "<p><span style=\"font-size:12.0pt;\">Aspergilloma</span></p>"
+        },
+        {
+          "id": 232,
+          "text": "<p><span style=\"font-size:12.0pt;\">Guillain-Barre syndrome</span></p>"
+        },
+        {
+          "id": 233,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cryptogenic fibrosing alveolitis</span></p>"
+        },
+        {
+          "id": 234,
+          "text": "<p><span style=\"font-size:12.0pt;\">Congestive cardiac failure</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old man has a 2-year history of increasing shortness of breath. This is worse with exertion, e.g. climbing the stairs at home and is even slightly so at rest. He is a non-smoker. On examination, his pulse is 95 beats/min and his blood pressure is 140/95 mmHg. He has finger clubbing and a crackling noise at the end of inspiration over the bases of the lungs. There was no ankle oedema. Lung function tests show: FVC 2.5 L (predicted 3.2 ), FEV<sub>1</sub> 2.1 L (predicted 2.4), FEV<sub>1</sub> % 76% (predicted 75%), Diffusing Capacity: Gas Transfer Factor for carbon monoxide: DLCO 17 ml/min/mmHg (predicted:25 ml/min/mmHg). Which one of the following diagnoses is likely?</span></p>",
+      "unique_key": "DT1196271",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196271,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The patient shows progressive dyspnea, finger clubbing, basal end-inspiratory crackles, restrictive lung function, and reduced DLCO, which are classic features of <strong>idiopathic pulmonary fibrosis (cryptogenic fibrosing alveolitis)</strong>.</p>\r\n<ul>\r\n<li><strong>Clinical features</strong>:\r\n<ul>\r\n<li>Middle-aged adult with gradual onset of exertional dyspnea</li>\r\n<li>Bibasal inspiratory crackles (\"<strong>Velcro-like\"</strong>)</li>\r\n<li>Clubbing indicates chronic interstitial involvement</li>\r\n<li>Non-smoker &rarr; reduces likelihood of COPD or emphysema</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pulmonary function tests</strong>:\r\n<ul>\r\n<li>FVC and FEV<sub>1</sub> mildly reduced</li>\r\n<li>FEV<sub>1</sub>/FVC ratio ~ normal &rarr; restrictive pattern</li>\r\n<li>DLCO markedly reduced &rarr; impaired gas exchange typical of interstitial lung disease</li>\r\n</ul>\r\n</li>\r\n<li><strong>Cryptogenic fibrosing alveolitis</strong> (CFA / idiopathic pulmonary fibrosis):\r\n<ul>\r\n<li>Chronic, progressive interstitial fibrosis of unknown etiology</li>\r\n<li>Basal, peripheral lung involvement</li>\r\n<li>HRCT shows reticular, honeycomb changes</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Aspergilloma (Option A):</strong> Usually occurs in pre-existing cavities; symptoms include hemoptysis; restrictive pattern not typical.</p>\r\n<p><strong>Guillain-Barre syndrome (Option B):</strong> Acute neuromuscular weakness; lung volumes may reduce but no clubbing or crackles.</p>\r\n<p><strong>Congestive cardiac failure (Option D):</strong> Dyspnea and crackles possible, but clubbing and restrictive patterns with low DLCO are atypical; often associated with peripheral edema.</p>",
+      "correct_choice_id": 233,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 25,
+      "choices": [
+        {
+          "id": 241,
+          "text": "<p><span style=\"font-size:12.0pt;\">Steroids</span></p>"
+        },
+        {
+          "id": 242,
+          "text": "<p><span style=\"font-size:12.0pt;\">Beta agonist inhalers</span></p>"
+        },
+        {
+          "id": 243,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stopping smoking</span></p>"
+        },
+        {
+          "id": 244,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tiotropium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old patient with COPD is on maximal treatment. Which one of the following is likely to prevent further disease progression?</span></p>",
+      "unique_key": "DT1196275",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196275,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Smoking cessation is the only intervention proven to slow the decline in lung function and disease progression in COPD.</p>\r\n<ul>\r\n<li><strong>COPD progression</strong>:\r\n<ul>\r\n<li>Primarily driven by ongoing exposure to cigarette smoke and environmental irritants</li>\r\n<li>Pharmacological treatments (bronchodilators, inhaled corticosteroids, anticholinergics) improve symptoms, reduce exacerbations, and enhance quality of life, but do not slow FEV<sub>1</sub> decline significantly</li>\r\n</ul>\r\n</li>\r\n<li><strong>Smoking cessation</strong>:\r\n<ul>\r\n<li>Proven to reduce the rate of FEV<sub>1</sub> decline</li>\r\n<li>Improves survival and decreases exacerbations</li>\r\n<li>Most effective disease-modifying intervention</li>\r\n</ul>\r\n</li>\r\n<li>Other therapies:\r\n<ul>\r\n<li><strong>Steroids</strong> &rarr; reduce inflammation, exacerbation frequency in selected patients, but do not prevent progression <strong>(Option A ruled out)</strong></li>\r\n<li><strong>Beta agonists</strong> &rarr; symptom control, bronchodilation <strong>(Option B ruled out)</strong></li>\r\n<li><strong>Tiotropium</strong> &rarr; improves symptoms and reduces exacerbations, slows FEV<sub>1</sub> decline minimally, but less than smoking cessation <strong>(Option D ruled out)</strong></li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 243,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 26,
+      "choices": [
+        {
+          "id": 251,
+          "text": "<p><span style=\"font-size:12.0pt;\">Isocyanates</span></p>"
+        },
+        {
+          "id": 252,
+          "text": "<p><span style=\"font-size:12.0pt;\">Coal miners</span></p>"
+        },
+        {
+          "id": 253,
+          "text": "<p><span style=\"font-size:12.0pt;\">Steel</span></p>"
+        },
+        {
+          "id": 254,
+          "text": "<p><span style=\"font-size:12.0pt;\">Zinc</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A lifelong non-smoker is diagnosed with emphysema. Which of the following would be the most likely aetiological agent?</span></p>",
+      "unique_key": "DT1196293",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196293,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Coal workers' pneumoconiosis</strong> and long-term exposure to coal dust can lead to <strong>emphysema</strong> in non-smokers, especially in coal miners.</p>\r\n<ul>\r\n<li><strong>Clinical context</strong>:\r\n<ul>\r\n<li><strong>Emphysema</strong> in non-smokers is often occupationally induced</li>\r\n<li><strong>Coal dust</strong> inhalation &rarr; small airway inflammation and alveolar wall destruction &rarr; emphysematous changes</li>\r\n</ul>\r\n</li>\r\n<li><strong>Pathophysiology</strong>:\r\n<ul>\r\n<li>Dust particles cause chronic inflammation, leading to <strong>centrilobular emphysema</strong>, particularly in upper lobes</li>\r\n<li>Risk increases with duration of exposure&nbsp;</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Isocyanates (Option A):</strong> Cause airway hyperreactivity and asthma, not alveolar destruction leading to emphysema.</p>\r\n<p><strong>Steel (Option C):</strong> Occupational exposure may cause respiratory irritation, but emphysema is not typical.</p>\r\n<p><strong>Zinc (Option D):</strong> Can cause metal fume fever or acute pneumonitis; not chronic emphysema.</p>",
+      "correct_choice_id": 252,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 27,
+      "choices": [
+        {
+          "id": 261,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low FEV1/FVC, high RV/TLC</span></p>"
+        },
+        {
+          "id": 262,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low FEV1/FVC, normal TLC</span></p>"
+        },
+        {
+          "id": 263,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low VC, low FEV1, normal TLC, low RV/TLC</span></p>"
+        },
+        {
+          "id": 264,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low VC, low TLC, high RV/TLC</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In restrictive lung disease due to respiratory muscle weakness, which of the following statements is true?</span></p>",
+      "unique_key": "DT1196299",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196299,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Respiratory muscle weakness</strong> causes <strong>reduced lung volumes</strong> (VC, TLC), but <strong>incomplete emptying</strong> leads to relative increase in <strong>RV/TLC ratio</strong>.</p>\r\n<ul>\r\n<li>Mechanism in respiratory muscle weakness:\r\n<ul>\r\n<li>Weak inspiratory muscles &rarr; cannot fully inflate lungs &rarr; low TLC</li>\r\n<li>Weak expiratory muscles &rarr; cannot fully exhale &rarr; residual volume remains high &rarr; RV/TLC ratio increases</li>\r\n<li>Vital capacity (VC) is reduced</li>\r\n</ul>\r\n</li>\r\n<li><strong>Spirometry findings</strong>:\r\n<ul>\r\n<li>FEV<sub>1</sub> reduced proportionally with VC &rarr; FEV<sub>1</sub>/FVC ratio usually normal or slightly increased</li>\r\n<li>TLC reduced &rarr; restrictive pattern</li>\r\n<li>RV often normal or slightly increased, leading to high RV/TLC ratio</li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 264,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 28,
+      "choices": [
+        {
+          "id": 271,
+          "text": "<p><span style=\"font-size:12.0pt;\">Helium dilution is more accurate than body plethysmography in measuring residual olme.</span></p>"
+        },
+        {
+          "id": 272,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hypoxaemia at rest will improve with exercise.</span></p>"
+        },
+        {
+          "id": 273,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary compliance is reduced.</span></p>"
+        },
+        {
+          "id": 274,
+          "text": "<p><span style=\"font-size:12.0pt;\">The carbon monoxide transfer factor is reduced.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which ONE of the following is correct regarding severe bullous emphysema:</span></p>",
+      "unique_key": "DT1196310",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196310,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>In severe bullous emphysema, alveolar destruction reduces the surface area for gas exchange, leading to a reduced carbon monoxide transfer factor (TLCO/DLCO).</p>\r\n<ul>\r\n<li><strong>Pathophysiology</strong> of bullous emphysema:\r\n<ul>\r\n<li>Characterized by enlarged airspaces (bullae) due to alveolar wall destruction</li>\r\n<li>Bullae do not participate in gas exchange &rarr; effective alveolar surface area decreases</li>\r\n<li>This leads to reduced DLCO/TLCO on pulmonary function testing</li>\r\n</ul>\r\n</li>\r\n<li><strong>Other physiological changes</strong>:\r\n<ul>\r\n<li>Pulmonary compliance is increased (lungs are \"<strong>floppy\"</strong>), not reduced <strong>(Option C ruled out)</strong></li>\r\n<li>Hypoxemia at rest worsens with exercise due to impaired oxygen transfer <strong>(Option B ruled out)</strong></li>\r\n<li>Helium dilution underestimates residual volume because bullae are poorly ventilated and do not communicate well with airways; body plethysmography is more accurate <strong>(Option A ruled out)</strong></li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 274,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 29,
+      "choices": [
+        {
+          "id": 281,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pneumoconiosis and clubbing</span></p>"
+        },
+        {
+          "id": 282,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung carcinoids and pleural effusion</span></p>"
+        },
+        {
+          "id": 283,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary embolism and left bundle branch block</span></p>"
+        },
+        {
+          "id": 284,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchopulmonary aspergillosis and wheezing</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following associations is matched correctly?</span></p>",
+      "unique_key": "DT1196327",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196327,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Allergic bronchopulmonary aspergillosis (ABPA)</strong> typically occurs in patients with asthma or cystic fibrosis and presents with wheezing due to airway inflammation and obstruction.</p>\r\n<ul>\r\n<li><strong>ABPA</strong> features:\r\n<ul>\r\n<li>Caused by hypersensitivity reaction to Aspergillus fumigatus</li>\r\n<li>Clinical: wheeze, cough, sputum with mucus plugs, sometimes hemoptysis</li>\r\n<li>Radiology: central bronchiectasis, fleeting infiltrates</li>\r\n<li>Pulmonary function: often shows obstructive pattern</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Pneumoconiosis and clubbing (Option A):</strong> Clubbing is usually absent in simple pneumoconiosis; may occur in advanced fibrosis but not classic.</p>\r\n<p><strong>Lung carcinoids and pleural effusion (Option B):</strong> Rarely cause pleural effusion; usually present with obstruction or hemoptysis.</p>\r\n<p><strong>Pulmonary embolism and left bundle branch block (Option C):</strong> PE may cause right heart strain &rarr; right bundle branch block, not LBBB.</p>",
+      "correct_choice_id": 284,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 30,
+      "choices": [
+        {
+          "id": 291,
+          "text": "<p><span style=\"font-size:12.0pt;\">DNase to assist in reinflating collapsed lung segments.</span></p>"
+        },
+        {
+          "id": 292,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rectal pull-through and anastomosis for rectal prolapse.</span></p>"
+        },
+        {
+          "id": 293,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pancreatic transplant for diabetes mellitus.</span></p>"
+        },
+        {
+          "id": 294,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nebulised tobramycin for Pseudomonas colonisation of the lower respiratory tract.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is a recognised treatment for complications of cystic fibrosis?</span></p>",
+      "unique_key": "DT1196331",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196331,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Nebulised tobramycin</strong> is used to treat and suppress chronic Pseudomonas aeruginosa infection in cystic fibrosis, a major contributor to morbidity and lung function decline.</p>\r\n<ul>\r\n<li><strong>Cystic fibrosis complications and their management</strong>:\r\n<ul>\r\n<li><strong>Respiratory infections</strong>: Chronic Pseudomonas colonisation &rarr; use inhaled antibiotics like tobramycin or colistin to reduce bacterial load and preserve lung function.</li>\r\n<li><strong>Airway clearance</strong>: DNase is used to reduce mucus viscosity, not specifically to reinflate collapsed segments.</li>\r\n<li><strong>Gastrointestinal</strong>: Rectal prolapse may occur, but surgical pull-through is rarely first-line; supportive therapy is preferred.</li>\r\n<li><strong>Endocrine</strong>: CF-related diabetes is managed medically; pancreatic transplant is rarely performed.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>DNase to assist in reinflating collapsed lung segments (Option A):</strong> DNase reduces mucus viscosity and aids airway clearance, but does not directly reinflate collapsed lungs.</p>\r\n<p><strong>Rectal pull-through and anastomosis for rectal prolapse (Option B):</strong> Rarely indicated; initial management is conservative with stool softeners and physiotherapy.</p>\r\n<p><strong>Pancreatic transplant for diabetes mellitus (Option C):</strong> CF-related diabetes is typically managed with insulin therapy; transplant is not standard.<strong></strong></p>\r\n<p><strong>Outpatient regimens for cystic fibrosis management include:</strong></p>\r\n<ul>\r\n<li>Exogenous pancreatic enzymes taken with meals</li>\r\n<li>Nutritional supplementation</li>\r\n<li>Anti-inflammatory medication</li>\r\n<li>Bronchodilators</li>\r\n<li>Chronic or periodic administration of oral or aerosolised antibiotics (e.g., as maintenance therapy for patients with P. aeruginosa).</li>\r\n<li>Recombinant DNase aerosols (degrade DNA strands that contribute to mucus viscosity) and nebulised hypertonic saline (serves to augment pcl depth, activate mucociliary clearance, and mobilise inspissated airway secretions) are administered routinely.</li>\r\n<li>Chest physiotherapy several times each day is a standard means to promote clearance of airway mucus.</li>\r\n<li>Among adults with CF, malabsorption, chronic inflammation, and endocrine abnormalities can lead to poor bone mineralisation, requiring treatment with vitamin D, calcium, and other measures</li>\r\n<li>Rectal prolapse is usually idiopathic, occurring between 1 and 5 years. Intestinal parasites, malnutrition, acute diarrhoea, ulcerative colitis, pertussis, Ehlers-Danlos Syndrome, meningocele, cystic fibrosis, and chronic constipation can also predispose to it. Following defecation, the prolapse usually resolves spontaneously or through manual reinsertion by the patient or parent.</li>\r\n</ul>",
+      "correct_choice_id": 294,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 31,
+      "choices": [
+        {
+          "id": 301,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchial wall thickening with ground-glass opacification</span></p>"
+        },
+        {
+          "id": 302,
+          "text": "<p><span style=\"font-size:12.0pt;\">Basilar predominant, subpleural honeycomb change</span></p>"
+        },
+        {
+          "id": 303,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diffuse ground-glass opacification</span></p>"
+        },
+        {
+          "id": 304,
+          "text": "<p><span style=\"font-size:12.0pt;\">Patchy, bilateral consolidation</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following high-resolution computed tomographic findings is typical of cryptogenic organising pneumonia?</span></p>",
+      "unique_key": "DT1196347",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196347,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Cryptogenic organizing pneumonia</strong> typically presents with patchy, often peripheral and bilateral consolidation on HRCT.</p>\r\n<ul>\r\n<li><strong>COP features on HRCT</strong>:\r\n<ul>\r\n<li>Patchy, bilateral consolidation, often peripheral or peribronchial</li>\r\n<li>Ground-glass opacities may also be present but are less predominant</li>\r\n<li>Migratory infiltrates are common</li>\r\n</ul>\r\n</li>\r\n<li><strong>Differentiation from other patterns</strong>:\r\n<ul>\r\n<li><strong>Bronchial wall thickening with ground-glass opacification (Option A):</strong> More typical of <strong>asthma</strong> or hypersensitivity pneumonitis</li>\r\n<li><strong>Basilar predominant, subpleural honeycomb change (Option B):</strong> Classic for usual <strong>interstitial pneumonia</strong> (UIP)/idiopathic pulmonary fibrosis</li>\r\n<li><strong>Diffuse ground-glass opacification (Option C):</strong> Seen in acute <strong>interstitial pneumonia</strong>, <strong>pulmonary edema</strong>, or alveolar hemorrhage</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p><strong>HRCT findings of common interstitial lung diseases:</strong><br /> </p><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240329f958c752-9123-43bd-8b53-e3694136e102.jpg\">",
+      "correct_choice_id": 304,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 32,
+      "choices": [
+        {
+          "id": 311,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mycophenolate</span></p>"
+        },
+        {
+          "id": 312,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pirfenidone</span></p>"
+        },
+        {
+          "id": 313,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nintedanib</span></p>"
+        },
+        {
+          "id": 314,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both B and C</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following therapeutic agents is/are approved for the treatment of idiopathic pulmonary fibrosis?</span></p>",
+      "unique_key": "DT1196367",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196367,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Pirfenidone and nintedanib</strong> are antifibrotic agents approved for IPF that slow disease progression and decline in lung function.</p>\r\n<ul>\r\n<li><strong>Pirfenidone</strong>:</li>\r\n<li>Oral antifibrotic and anti-inflammatory agent\r\n<ul>\r\n<li>Reduces decline in FVC and slows progression of IPF</li>\r\n<li>Side effects: GI upset, rash, photosensitivity</li>\r\n</ul>\r\n</li>\r\n<li><strong>Nintedanib</strong>:\r\n<ul>\r\n<li>Tyrosine kinase inhibitor</li>\r\n<li>Inhibits pathways involved in fibroblast proliferation and deposition of extracellular matrix</li>\r\n<li>Slows FVC decline and disease progression</li>\r\n<li>Side effects: diarrhea, liver enzyme elevation</li>\r\n</ul>\r\n</li>\r\n<li><strong>Mycophenolate (Option A):</strong>\r\n<ul>\r\n<li>Immunosuppressant</li>\r\n<li>May be used in connective tissue disease-associated ILD, but not approved for IPF.</li>\r\n</ul>\r\n</li>\r\n</ul>",
+      "correct_choice_id": 314,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 33,
+      "choices": [
+        {
+          "id": 321,
+          "text": "<p><span style=\"font-size:12.0pt;\">Acquired or autoimmune.</span></p>"
+        },
+        {
+          "id": 322,
+          "text": "<p><span style=\"font-size:12.0pt;\">Congenital</span></p>"
+        },
+        {
+          "id": 323,
+          "text": "<p><span style=\"font-size:12.0pt;\">Associated with hematologic disease.</span></p>"
+        },
+        {
+          "id": 324,
+          "text": "<p><span style=\"font-size:12.0pt;\">Associated with metal dust exposure.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The most common type of pulmonary alveolar proteinosis is:</span></p>",
+      "unique_key": "DT1196375",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196375,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The <strong>acquired/autoimmune type of PAP</strong>, caused by anti-GM-CSF autoantibodies, accounts for ~90% of cases.</p>\r\n<ul>\r\n<li><strong>Pulmonary alveolar proteinosis</strong> is a rare lung disorder characterized by accumulation of surfactant within alveoli, leading to impaired gas exchange and progressive dyspnea.</li>\r\n<li><strong>Types</strong> of PAP:\r\n<ul>\r\n<li><strong>Acquired/Autoimmune</strong> (~90%) - Most common.\r\n<ul>\r\n<li>Caused by autoantibodies against granulocyte-macrophage colony-stimulating factor (GM-CSF).</li>\r\n<li>This inhibits alveolar macrophage function &rarr; impaired surfactant clearance.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n</li>\r\n<li><strong>Secondary</strong> (~5-10%) - Associated with hematologic malignancies (e.g., leukemia, lymphoma), infections, or inhalation of toxic dusts (silica, aluminum, titanium, etc.).</li>\r\n<li><strong>Congenital</strong> (rare) - Due to mutations affecting surfactant protein genes or GM-CSF receptors. Presents in neonates/infants.</li>\r\n<li><strong>Diagnosis</strong>: HRCT shows \"<strong>crazy-paving\"</strong> pattern (ground-glass opacification with interlobular septal thickening).</li>\r\n<li><strong>Treatment</strong>: Whole-lung lavage is mainstay; GM-CSF therapy may be used in autoimmune type.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Congenital (Option B):</strong> Rare, occurs in neonates/infants due to genetic mutations.</p>\r\n<p><strong>Associated with hematologic disease (Option C):</strong> Seen in secondary PAP, but far less common than autoimmune type.</p>\r\n<p><strong>Associated with metal dust exposure (Option D):</strong> Also a cause of secondary PAP, but not the most common.</p><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d19tx39t2q3u48.cloudfront.net/NEETPGMCQ/4c86ca48-69c7-4ac4-b019-e08ec4b054e5.png\">",
+      "correct_choice_id": 321,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 34,
+      "choices": [
+        {
+          "id": 331,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thymoma</span></p>"
+        },
+        {
+          "id": 332,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mesothelioma</span></p>"
+        },
+        {
+          "id": 333,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lung carcinoma</span></p>"
+        },
+        {
+          "id": 334,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lymphoma</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A labourer working at a shipyard developed complaints of insidious onset of dry cough and breathlessness at exertion. A chest X-ray revealed a lower-lobe predominant interstitial opacities with bilateral pleural effusion. Which of the following is the most common malignancy affecting these patients?</span></p>",
+      "unique_key": "DT1196386",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196386,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Occupational asbestos exposure (shipyard work)</strong> is most strongly linked to malignant pleural <strong>mesothelioma</strong>.</p>\r\n<ul>\r\n<li><strong>Asbestos exposure</strong> (common in shipyard, construction, insulation industries) is a well-known risk factor for both <strong>lung carcinoma and malignant mesothelioma</strong>.</li>\r\n<li>The typical radiological features in asbestos-related lung disease include lower-lobe interstitial fibrosis (asbestosis), pleural plaques, and recurrent pleural effusions.</li>\r\n<li>Among malignancies, while asbestos increases the risk of lung carcinoma (especially in smokers), the classic and most characteristic malignancy is malignant pleural mesothelioma.</li>\r\n<li>Mesothelioma arises from mesothelial cells of pleura &rarr; present with progressive dyspnea, chest pain, pleural effusion, and diffuse pleural thickening.</li>\r\n<li>Histology often shows epithelioid, sarcomatoid, or biphasic subtypes.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Thymoma (Option A):</strong> Arises in anterior mediastinum; associated with myasthenia gravis, not asbestos.</p>\r\n<p><strong>Lung carcinoma (Option C):</strong> Asbestos does increase risk, especially synergistically with smoking, but mesothelioma is more characteristic of direct asbestos exposure.</p>\r\n<p><strong>Lymphoma (Option D):</strong> Involves mediastinum or lymph nodes, no association with asbestos.</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V2NEETPGMCQ/20240329dab83c55-975e-4f4f-a3f0-0d0b84fe2818.jpg\">",
+      "correct_choice_id": 332,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 35,
+      "choices": [
+        {
+          "id": 341,
+          "text": "<p><span style=\"font-size:12.0pt;\">Coal</span></p>"
+        },
+        {
+          "id": 342,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silica</span></p>"
+        },
+        {
+          "id": 343,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asbestosis</span></p>"
+        },
+        {
+          "id": 344,
+          "text": "<p><span style=\"font-size:12.0pt;\">Beryllium</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 40-year-old factory worker presents with multiple joint pains. On examination, he has inflammatory joint pain in the small joints of both hands. What is the most likely underlying occupational exposure predisposing him to this condition?</span></p>",
+      "unique_key": "DT1196393",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196393,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Silica exposure</strong> is strongly associated with the development of <strong>rheumatoid arthritis</strong> and other autoimmune diseases</p>\r\n<ul>\r\n<li><strong>Silicosis</strong> is caused by long-term inhalation of crystalline silica dust (e.g., in mining, stone cutting, quarrying, and sandblasting).</li>\r\n<li>Apart from its pulmonary manifestations (upper lobe fibrosis, nodules, increased TB risk), silica has a strong association with autoimmune diseases such as:\r\n<ul>\r\n<li>Rheumatoid arthritis (<strong>Caplan's syndrome</strong>) &rarr; characterized by rheumatoid arthritis + pneumoconiosis + lung nodules.</li>\r\n<li>Systemic sclerosis and lupus &rarr; also more common in silica-exposed workers.</li>\r\n</ul>\r\n</li>\r\n<li>The mechanism involves chronic immune activation and aberrant macrophage response leading to autoantibody formation.</li>\r\n<li>Thus, this patient's symmetrical small-joint inflammatory arthritis (classic for rheumatoid arthritis) in the background of occupational exposure points to silica.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Coal (Option A):</strong> Causes coal workers' pneumoconiosis, but not typically linked with autoimmune joint disease.</p>\r\n<p><strong>Asbestosis (Option C):</strong> Associated with pleural plaques, fibrosis, and mesothelioma, not arthritis.</p>\r\n<p><strong>Beryllium (Option D): </strong>Causes chronic berylliosis (granulomatous lung disease mimicking sarcoidosis), not rheumatoid arthritis.</p>",
+      "correct_choice_id": 342,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 36,
+      "choices": [
+        {
+          "id": 351,
+          "text": "<p><span style=\"font-size:12.0pt;\">Coal worker's pneumoconiosis</span></p>"
+        },
+        {
+          "id": 352,
+          "text": "<p><span style=\"font-size:12.0pt;\">Silicosis</span></p>"
+        },
+        {
+          "id": 353,
+          "text": "<p><span style=\"font-size:12.0pt;\">Farmer's lung</span></p>"
+        },
+        {
+          "id": 354,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asbestosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All of the following conditions cause upper lobe predominant fibrosis in the lung except:</span></p>",
+      "unique_key": "DT1196397",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196397,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Asbestosis </strong>causes a lower lobe predominant fibrosis.<strong></strong></p>\r\n<p><strong>Causes of upper lobe fibrosis:(FASSTEN</strong>)</p>\r\n<ul>\r\n<li><strong>F</strong>armer's lung (hypersensitivity pneumonitis) <strong>(Option C ruled out)</strong></li>\r\n<li><strong>A</strong>nkylosing spondylitis</li>\r\n<li><strong>S</strong>arcoidosis</li>\r\n<li><strong>S</strong>ilicosis <strong>(Option B ruled out)</strong></li>\r\n<li><strong>T</strong>B</li>\r\n<li><strong>E</strong>osinophilic granuloma (Langerhans-cell histiocytosis)</li>\r\n<li><strong>N</strong>eurofibromatosis</li>\r\n<li>Coal worker's pneumoconiosis <strong>(Option A ruled out)</strong><strong></strong></li>\r\n</ul>\r\n<p><strong>Lower Lung Disease (BADRASH)</strong></p>\r\n<ul>\r\n<li>Bronchiolitis obliterans with organising pneumonia (BOOP)/Cryptogenic Organising Pneumonia (COP)</li>\r\n<li><strong>Asbestosis</strong></li>\r\n<li>Drugs (nitrofurantoin, hydralazine, INH, amiodarone, many chemo drugs)</li>\r\n<li>Rheumatologic disease</li>\r\n<li>Aspiration</li>\r\n<li>Scleroderma</li>\r\n<li>Hamman-Rich (acute interstitial pneumonia) and IPF</li>\r\n</ul>",
+      "correct_choice_id": 354,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 37,
+      "choices": [
+        {
+          "id": 361,
+          "text": "<p><span style=\"font-size:12.0pt;\">Byssinosis</span></p>"
+        },
+        {
+          "id": 362,
+          "text": "<p><span style=\"font-size:12.0pt;\">Asbestosis</span></p>"
+        },
+        {
+          "id": 363,
+          "text": "<p><span style=\"font-size:12.0pt;\">Berylliosis</span></p>"
+        },
+        {
+          "id": 364,
+          "text": "<p><span style=\"font-size:12.0pt;\">Coal worker's pneumoconiosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following pneumoconioses mimics the pathological pattern of sarcoidosis?</span></p>",
+      "unique_key": "DT1196409",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1196409,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p><strong>Berylliosis</strong> produces non-caseating granulomas in the lungs and hilar lymph nodes, closely resembling sarcoidosis both radiologically and pathologically.</p>\r\n<ul>\r\n<li><strong>Chronic beryllium disease (berylliosis)</strong> occurs in workers exposed to beryllium dust (aerospace, electronics, nuclear industries).</li>\r\n<li>It is an immune-mediated granulomatous disease, not just due to dust accumulation.</li>\r\n<li><strong>Pathology</strong>: Non-caseating granulomas, identical to sarcoidosis.</li>\r\n<li><strong>Clinical features</strong>: Progressive dyspnea, cough, weight loss, fatigue.</li>\r\n<li><strong>Radiology</strong>: Bilateral hilar lymphadenopathy and interstitial infiltrates (again mimicking sarcoidosis).</li>\r\n<li>Differentiation from sarcoidosis: History of beryllium exposure and a positive beryllium lymphocyte proliferation test.</li>\r\n</ul>\r\n<p><strong>Explanation of incorrect options</strong></p>\r\n<p><strong>Byssinosis (Option A):</strong> Caused by cotton dust exposure; produces asthma-like obstructive symptoms, not granulomas.</p>\r\n<p><strong>Asbestosis (Option B):</strong> Causes interstitial fibrosis, pleural plaques, and malignancies (mesothelioma, lung carcinoma), not sarcoid-like granulomas.</p>\r\n<p><strong>Coal worker's pneumoconiosis (Option D):</strong> Produces coal macules and nodules; complicated disease leads to progressive massive fibrosis, not non-caseating granulomas.</p>",
+      "correct_choice_id": 363,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

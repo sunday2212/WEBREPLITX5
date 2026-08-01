@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "17_Inferential_Descriptive_Statistics"
+  },
+  "questions": [
+    {
+      "id": 78220,
+      "choices": [
+        {
+          "id": 260594,
+          "text": "120"
+        },
+        {
+          "id": 260595,
+          "text": "210"
+        },
+        {
+          "id": 260596,
+          "text": "250"
+        },
+        {
+          "id": 260597,
+          "text": "125"
+        }
+      ],
+      "text": "Following image depicts the Triglyceride levels of 250 patients. The data doesn’t follow normal distribution. How many patients are below point B?<p><img src=\"https://cdn.damsdelhi.com/ckfinder/files/55.jpg\" alt=\"Question Image\"></p>",
+      "unique_key": "Q3843655",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34827897,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) (125 patients) The data represents Triglyceride levels of 250 patients, and it does not follow a normal distribution. This means the distribution is either positively or negatively skewed, so we rely on the median rather than the mean as a measure of central tendency. Point B likely represents the median, which is the value that divides the dataset into two equal halves. Since the median splits the data into two equal parts, exactly 50% of the total 250 patients should have triglyceride levels below point B. Thus, the number of patients below Point B is: 250/2/=125 Incorrect Options: A. 120 – Incorrect If Point B is the median, exactly 125 patients (not 120) should be below it. 120 is slightly less than half, which is not mathematically accurate when dividing an even dataset. B. 210 – Incorrect If 210 patients were below Point B, that would mean only 40 patients are above it. The median always splits the data into two equal halves (50%-50%), so 210 is far too high. C. 250 – Incorrect 250 patients below Point B would mean all patients are below that point, which contradicts the definition of a median (which should have an equal number of patients on both sides). This is logically impossible unless all values were identical, which is not the case in a distribution.",
+      "correct_choice_id": 260597,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/26200591699349537/26200591699349537.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/26200591699349537/26200591699349537.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 78221,
+      "choices": [
+        {
+          "id": 260598,
+          "text": "68%"
+        },
+        {
+          "id": 260599,
+          "text": "99.85%"
+        },
+        {
+          "id": 260600,
+          "text": "97.5%"
+        },
+        {
+          "id": 260601,
+          "text": "99.7%"
+        }
+      ],
+      "text": "The mean hemoglobin level of 5000 students was 14 and standard deviation was 4. The hemoglobin level shows a normal distribution. One of the subjects shows hemoglobin level 3 standard deviations over the mean. What percent of students did he have Hb higher than?",
+      "unique_key": "Q2134419",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34373973,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (B) (99.85%) The mean hemoglobin level of 5000 students is 14, and the standard deviation (SD) is 4. The hemoglobin level follows a normal distribution, which means we can use the empirical rule (68-95-99.7 rule) and Z-scores to determine probabilities. The subject has a hemoglobin level 3 standard deviations (SDs) above the mean: Hb=Mean+(3×SD)=14+(3×4)=26 We need to find what percentage of students have hemoglobin levels lower than this value. Step 1: Z-Score Interpretation In a normal distribution: • 68% of values lie within 1 SD (±1 SD) of the mean. • 95% of values lie within 2 SD (±2 SD) of the mean. • 99.7% of values lie within 3 SD (±3 SD) of the mean. For a subject with 3 SD above the mean, we check the area under the normal curve to the left of this point: • The proportion of the population below 3 SD (left side of the curve) is 99.85%. Thus, this person has a higher Hb level than 99.85% of students. Explanation for Incorrect Options: A. 68% – Incorrect • 68% of values lie within 1 SD of the mean, but this does not relate to a person at 3 SD above the mean. • It underestimates the actual percentage significantly. C. 97.5% – Incorrect • 97.5% of values lie below 2 SD above the mean, but we are considering 3 SD above the mean, which includes more values. D. 99.7% – Incorrect • 99.7% represents the range within ±3 SD (both sides), meaning only 0.3% is outside this range (0.15% on each tail). • The correct answer refers to the left of 3 SD, which is 99.85%, not 99.7%.",
+      "correct_choice_id": 260599,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/47669771699349555/47669771699349555.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/47669771699349555/47669771699349555.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 78222,
+      "choices": [
+        {
+          "id": 260602,
+          "text": "190 paricipants"
+        },
+        {
+          "id": 260603,
+          "text": "195 paricipants"
+        },
+        {
+          "id": 260604,
+          "text": "200 paricipants"
+        },
+        {
+          "id": 260605,
+          "text": "Cant say"
+        }
+      ],
+      "text": "A study on Diabetes mellitus was conducted on 200 elderly people. Their mean postprandial blood glucose is 120 mg/dl, and the standard deviation is 6 mg/dl, how many participants would you expect to have blood glucose between 108 and 132 mg/dl?",
+      "unique_key": "Q3700367",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34609011,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (A) • Z score:(Individual value – mean value)/ SD • Calculating z score for the values – (108-120)/6=-12/6= -2 – (132-120)/6= 12/6= +2 • Our z score is ±2 SD. And we know 95.4% is covered by 2SD • 95.4% of 200 participants will have value between -2sd and + 2sd. i.e 108 and 132. • 95.4% of 200 participants is 190 participants Incorrect Options: B. 195 participants 95% of 200 is exactly 190, not 195. 195 would imply a slightly larger range than ±2 SD, which isn't correct. C. 200 participants 200 participants (100%) would mean the entire dataset falls within this range, which is not true in a normal distribution. Some values will be beyond ±2 SD. D. Can't say We can estimate the number of participants based on the empirical rule and standard normal distribution properties.",
+      "correct_choice_id": 260602,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/66884481699349568/66884481699349568.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/66884481699349568/66884481699349568.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 78223,
+      "choices": [
+        {
+          "id": 260606,
+          "text": "Accepting true null hypothesis"
+        },
+        {
+          "id": 260607,
+          "text": "Rejecting true null hypothesis"
+        },
+        {
+          "id": 260608,
+          "text": "Accepting fall null hypothesis"
+        },
+        {
+          "id": 260609,
+          "text": "Rejecting false null hypothesis"
+        }
+      ],
+      "text": "Statistical power refers to which of the following?",
+      "unique_key": "Q1120714",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34921807,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (D) (Rejecting False Null Hypothesis) Statistical power is the probability of correctly rejecting a false null hypothesis (H?). In other words, it measures a study's ability to detect a true effect when it exists. Power is 1 - ?, where ? (Type II error) is the probability of failing to reject a false null hypothesis. A higher power (e.g., 80% or more) means a study is more likely to detect a real effect if it exists. Thus, the correct answer is D (Rejecting False Null Hypothesis). Incorrect Options: A. Accepting True Null Hypothesis – Incorrect If the null hypothesis is true, failing to reject it is the correct decision, but this is not related to statistical power. Power deals with detecting true effects, not confirming no effect. B. Rejecting True Null Hypothesis – Incorrect Rejecting a true null hypothesis is a Type I error (? error), which is a false positive result. Power is about detecting a true effect, not making errors. C. Accepting False Null Hypothesis – Incorrect Accepting a false null hypothesis is a Type II error (? error), meaning the study misses a real effect. Power is the opposite of this—it aims to reduce Type II errors.",
+      "correct_choice_id": 260609,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/65793081699349652/65793081699349652.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/65793081699349652/65793081699349652.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 78224,
+      "choices": [
+        {
+          "id": 260610,
+          "text": "Chi-square analysis"
+        },
+        {
+          "id": 260611,
+          "text": "Student t test"
+        },
+        {
+          "id": 260612,
+          "text": "Paired t test"
+        },
+        {
+          "id": 260613,
+          "text": "Analysis of variance"
+        }
+      ],
+      "text": "A study is being conducted for comparison of serum cholesterol before and after ingestion of fries and burgers in a sample of fast-food patrons. Choose the most appropriate statistical test to analyze this data.",
+      "unique_key": "Q6542832",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 34184354,
+      "difficulty_level": "intermediate",
+      "subjects_id": [],
+      "solution": "Correct Answer (C) (Paired t-test) A paired t-test is used when comparing the means of two related (paired) groups—in this case, the same individuals before and after ingestion of fries and burgers. Each participant acts as their own control, meaning the test evaluates the difference in serum cholesterol levels within the same subjects before and after eating fast food. The paired t-test accounts for the fact that observations are not independent but rather linked (i.e., pre-test and post-test measurements from the same individuals). Thus, a paired t-test is the most appropriate statistical test for this scenario. Incorrect Options: A. Chi-square analysis The Chi-square test is used for categorical data (e.g., presence vs. absence of disease, male vs. female) rather than continuous data like serum cholesterol levels. Since cholesterol levels are numerical (continuous) variables, Chi-square is not suitable for this analysis. B. Student t-test A Student’s t-test (independent t-test) compares the means between two independent groups (e.g., cholesterol levels in two different groups of people, such as fast-food eaters vs. non-fast-food eaters). However, in this study, the same individuals are measured before and after eating—making it a paired analysis rather than an independent comparison. D. Analysis of variance (ANOVA) ANOVA (Analysis of Variance) is used when comparing more than two groups (e.g., cholesterol levels in people consuming different types of diets). Since this study only has two measurements per subject (before and after eating fast food), ANOVA is not needed.",
+      "correct_choice_id": 260612,
+      "solution_audio": null,
+      "solution_video": "https://cdn.damsdelhi.com/dqb_vod/20069361699350449/20069361699350449.m3u8",
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [],
+      "explanation_video": "https://cdn.damsdelhi.com/dqb_vod/20069361699350449/20069361699350449.m3u8",
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

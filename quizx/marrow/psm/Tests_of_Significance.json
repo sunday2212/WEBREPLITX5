@@ -1,0 +1,320 @@
+{
+  "chapter": "Tests_of_Significance",
+  "questions": 
+[
+  {
+    "q_no": 1,
+    "question": "Question 1: Which of these tests is used in case of a nominal data?",
+    "options": {
+      "a": "Student’s t test",
+      "b": "Analysis of variance",
+      "c": "Chi-square",
+      "d": "Paired t test"
+    },
+    "correct_answer": "c",
+    "explanation": "862 \nSold by @itachibot Chi-square test deals with nominal/ non-parametric data (qualitative). Nominal data is one with a name and does not have a numerical value. Ex blood group, gender, \nreligion Student's t test, ANOVA, and paired t test are used for parametric data (quantitative).",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 2,
+    "question": "Question 2: Which of the following is true for non-parametric tests?",
+    "options": {
+      "a": "ANOVA is an example of a non parametric test",
+      "b": "It is used for skewed distributions",
+      "c": "It involves the assumption that the data has a normal distribution",
+      "d": "It cannot be used for small sample sizes"
+    },
+    "correct_answer": "b",
+    "explanation": "Non-parametric tests are tests that do not assume that the data is normally distributed. Thus, they \nare used for skewed (asymmetric) distributions {skewed either to the lesser side (left-sided \nskewed) or towards the greater side (right-sided skewed)}. The chi-square test is an example of a non-parametric test that is used to test hypotheses in \nrelation to nominal scale data or categorical data. ANOVA is an example of a parametric test.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 3,
+    "question": "Question 3: Which of these terms is used for paired t tests?",
+    "options": {
+      "a": "Independent samples t tests",
+      "b": "Two samples t tests",
+      "c": "Dependent samples t tests",
+      "d": "One sample t tests"
+    },
+    "correct_answer": "c",
+    "explanation": "Paired t tests are also called correlated pairs t test, paired samples t test, or dependent samples t \ntest.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 4,
+    "question": "Question 4: The test of significance done for two or more proportions:",
+    "options": {
+      "a": "Chi- square test",
+      "b": "Student’s test",
+      "c": "Z test",
+      "d": "ANOVA test"
+    },
+    "correct_answer": "a",
+    "explanation": "Chi-Square(2) test is a test used for proportions and associations. It is a non-parametric (non-numeric) test and it is used to test hypotheses in relation to nominal \nscale data or categorical data.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 5,
+    "question": "Question 5: A researcher can use the chi-square test in all of the following situations, except:",
+    "options": {
+      "a": "To test the hypothesis that drug A has the same potency as drug B",
+      "b": "To calculate the degree of freedom of a 3 x 4 contingency table",
+      "c": "To compare the mean corpuscular volume in normal subjects versus those suffering from ",
+      "d": "To compare the proportions of overweight boys and girls in a class"
+    },
+    "correct_answer": "c",
+    "explanation": "The Chi-square test is not used for comparing means for different groups as means can only be \ncalculated for quantitative data. The Chi-square test is used for qualitative data. It can be used: • To test the null hypothesis • To compare proportions • To calculate the degree of freedom",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 6,
+    "question": "Question 6: Which of the following is not true about the Chi-square test?",
+    "options": {
+      "a": "Tests the significance of difference between two proportions",
+      "b": "Tells about the presence or absence of an association between two variables",
+      "c": "Directly measures the strength of association",
+      "d": "It is usually used for skewed data"
+    },
+    "correct_answer": "c",
+    "explanation": "863 \nSold by @itachibot A Chi-square test does not directly measure the strength of association. It merely tells about the \npresence or lack of association.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 7,
+    "question": "Question 7: A Chi-square test would be most appropriate for testing which of the following hypotheses?",
+    "options": {
+      "a": "The mean AIPGE score of Chennai students is greater than Mumbai students",
+      "b": "A smaller proportion of people who were immunized against chicken pox subsequently develop ",
+      "c": "The mean BP of indian, american and english hypertensive men taking ACE inhibitors is the ",
+      "d": "The mean cost of treating a patient with CAD by angioplasty is greater than the mean cost of "
+    },
+    "correct_answer": "b",
+    "explanation": "The Chi-square test is used to compare proportions or qualitative variables e.g., whether people \ndeveloped zoster or not. Options A and D: Two independent groups are being compared with quantitative variables (exam \nscores and cost, respectively). Thus, an unpaired t test will be used. Option C: The blood pressure of 3 groups are being compared, thus making analysis of variance \n(ANOVA) the most appropriate method of testing significance.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 8,
+    "question": "Question 8: The test of choice to measure the difference in means between two groups in a study, with \none group being a control is: 857 \nSold by @itachibot",
+    "options": {
+      "a": "Chi-square test",
+      "b": "Z test",
+      "c": "Unpaired T test",
+      "d": "Paired T test"
+    },
+    "correct_answer": "c",
+    "explanation": "The test of choice to measure the difference in means between two groups in a study, with one \ngroup being a control is unpaired T test.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 9,
+    "question": "Question 9: A cardiologist wants to study the effect of the atorvastatin drug. She measures the initial \ncholesterol levels of 50 patients. After a month's treatment, she measures the cholesterol level \nagain. Which of the following tests will she use to test the statistical significance of the change \nin the cholesterol level?",
+    "options": {
+      "a": "Paired t test",
+      "b": "Unpaired t test",
+      "c": "ANOVA",
+      "d": "Chi-square test"
+    },
+    "correct_answer": "a",
+    "explanation": "In this scenario, the variable (cholesterol level) is quantitative. Moreover, the comparison is being \ndone before and after the treatment (dependent). Hence, a paired t test will be used.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 10,
+    "question": "Question 10: In a particular trial, the association of lung cancer with smoking is found to be 40% in one \nsample and 60% in another. What is the best test to compare the results?",
+    "options": {
+      "a": "Chi-square test",
+      "b": "Fischer test",
+      "c": "Paired t test",
+      "d": "Unpaired test"
+    },
+    "correct_answer": "a",
+    "explanation": "Chi-square tests are best used in comparing proportions and associations.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 11,
+    "question": "Question 11: A pediatrician carried out a study to assess the difference in growth velocities in boys and \ngirls. The average height of a group of 20 boys aged 10 years was 140 ± 13 cm and for 20 girls \nof the same age was 135 ± 7 cm. To test the statistical significance of the difference in height, \nwhich test would she use?",
+    "options": {
+      "a": "Chi square test",
+      "b": "Paired t test",
+      "c": "Student t test",
+      "d": "Analysis of variance test"
+    },
+    "correct_answer": "c",
+    "explanation": "In the given scenario, two independent groups are being compared with quantitative variables. \nThus, a student t test or unpaired t-test is used.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 12,
+    "question": "Question 12: A clinical trial was done between two groups to measure their blood pressure after treatment. \nWhich of the following tests would be appropriate to use?",
+    "options": {
+      "a": "Paired t test",
+      "b": "Unpaired t test",
+      "c": "ANOVA",
+      "d": "Chi-square test"
+    },
+    "correct_answer": "b",
+    "explanation": "In the given scenario, two groups are being compared independent of each other. \nHence, students t test/ unpaired t test should be used. 864 \nSold by @itachibot T tests are used if 2 groups are being compared. If the same group is compared before and after, \npaired T test is used. Otherwise, unpaired T test is used.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 13,
+    "question": "Question 13: Analysis of variance test is used in which scenario among the following?",
+    "options": {
+      "a": "Comparing proportions in more than 2 groups",
+      "b": "Comparing means in more than 2 groups",
+      "c": "Comparing means in same groups before and after intervention",
+      "d": "Comparing means in less than or equal to 2 groups"
+    },
+    "correct_answer": "b",
+    "explanation": "Analysis of variance or ANOVA is used when more than 2 groups are compared for a quantitative \ndifference (means).",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 14,
+    "question": "Question 14: A study was done to assess nutritional status among young children in rural and urban areas. \n30 children in rural and 20 children in urban areas were malnourished. Which of the \nfollowing tests of significance is the most appropriate in this case?",
+    "options": {
+      "a": "Chi Square test",
+      "b": "Paired T test",
+      "c": "Standard error of the mean",
+      "d": "ANOVA"
+    },
+    "correct_answer": "a",
+    "explanation": "The most appropriate test of significance, in this case, is the chi-square test. It is used to compare \nqualitative data between 2 groups with independent measures. Option B: Paired t-test compares paired data or pre-intervention and post-intervention data of the \nsame group. This doesn't apply here as the groups are not paired. Option C: The standard error of the mean is calculated for quantitative data, with a measure of \ncentral tendency as mean. Option D: ANOVA is used to compare more than 2 groups.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 15,
+    "question": "Question 15: A study was conducted to compare the incidence of postpartum depression in mothers as \ncompared to the sex of the child. For assessment, Edinburg Depression scaled score (EDSS) \nwas used. The study was divided into mothers with male babies as one group to be compared \nwith mothers with female babies. Which of the following statistical test will be used to \ndetermine the association? 859 \nSold by @itachibot",
+    "options": {
+      "a": "Students t test",
+      "b": "Paired t test",
+      "c": "ANOVA",
+      "d": "Chi square test"
+    },
+    "correct_answer": "d",
+    "explanation": "The Chi-square test is used to compare qualitative data and compares 2 groups with independent \nmeasures. The variables used here are yes/no signifying the presence/absence of postpartum \ndepression. Hence it is the most appropriate test here. Option A: Student’s t-test is for quantitative data. Here the data is qualitative, hence it can't be \nused. Option B: Paired t-test compares paired data or pre-intervention and post-intervention data of the \nsame group. This doesn't apply here as the groups are not paired. Option C: ANOVA is used to compare more than 2 groups.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 16,
+    "question": "Question 16: Which of the following is the most appropriate test for testing the statistical significance of \nthe difference in heights of school children?",
+    "options": {
+      "a": "Student’s t test",
+      "b": "Chi-square test",
+      "c": "Paired t test",
+      "d": "ANOVA"
+    },
+    "correct_answer": "d",
+    "explanation": "Analysis of variance or ANOVA is used when more than 2 variable groups are compared. In the scenario of comparing heights of school children, we would divide the school children into \nclasses or grades or sections or by schools themselves, etc. This would involve comparing more \nthan 2 groups and thus ANOVA is used. Remember if the question limits its comparison within 2 groups, for example, comparison \nbetween boys and girls in a class then we have to choose unpaired t test. 865 \nSold by @itachibot",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 17,
+    "question": "Question 17: An investigator wants to study the association between maternal intake of iron supplements \nand the incidence of low birth weight. He collects relevant data from 100 pregnant women \nregarding the status of usage of iron supplements and the status of birth weight in their \nnewborns. Which of the following tests will he use for his study?",
+    "options": {
+      "a": "Paired t test",
+      "b": "Student's t test",
+      "c": "ANOVA",
+      "d": "Chi-square test"
+    },
+    "correct_answer": "d",
+    "explanation": "Here, two qualitative variables are being evaluated. First, whether the child belongs to the low \nbirth weight category or not (and not the actual weight of the child, which is a quantitative value). \nSecond, whether or not the mother took iron supplements in the gestational period. Hence, \nthe chi-square test is used as the test the significance of the association.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 18,
+    "question": "Question 18: In a study, two groups of newborns are checked for differences in their birth weights based on \nwhether mothers received supplements or not. Which of the following would be most \nappropriate test of significance?",
+    "options": {
+      "a": "ANOVA",
+      "b": "Un-paired t test",
+      "c": "Chi-square test",
+      "d": "paired t test"
+    },
+    "correct_answer": "b",
+    "explanation": "The unpaired t-test is used to test the difference between two groups of parametric variables or \nmeans when the samples are independent of each other. Here, birth weights (quantitative \nvariable) of the two groups of newborns are being compared, which are independent of each \nother.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 19,
+    "question": "Question 19: A study was planned to find out the effect of iron supplementation during pregnancy on the \nbirth weight of newborn children. Two groups, one with iron supplementation and the other \nwithout, were compared. Birth weights of newborns were recorded as means + SD. Which \nstatistical test is appropriate for the comparison of birth weights between the two groups?",
+    "options": {
+      "a": "Paired t test",
+      "b": "Unpaired t test",
+      "c": "Chi-square test",
+      "d": "ANOVA"
+    },
+    "correct_answer": "b",
+    "explanation": "In the given scenario, we aim to compare only the birth weights of the two groups, which is \na quantitative data, and thus an unpaired t test is most appropriate.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 20,
+    "question": "Question 20: While applying the Chi-square test to a contingency table of 4 rows and 4 columns, what \nwould the degree of freedom be in this case?",
+    "options": {
+      "a": "1",
+      "b": "4",
+      "c": "8",
+      "d": "9"
+    },
+    "correct_answer": "d",
+    "explanation": "In this scenario, df = (4 – 1) (4 – 1) = 9. In a Chi-square test for a contingency table, the degrees of freedom (df) = (r-1) (c-1), where r is the \nnumber of rows and c is the number of columns.",
+    "image": null,
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  },
+  {
+    "q_no": 21,
+    "question": "Question 21: In a Chi-square test for the following data, the degrees of freedom will be: 861 \nSold by @itachibot",
+    "options": {
+      "a": "Forest plot",
+      "b": "Scattergram",
+      "c": "0.4",
+      "d": "1.2"
+    },
+    "correct_answer": "b",
+    "explanation": "In this scenario,contingency table has 3 rows and 4 columns. Hence, the degree of freedom, df = \n(3 – 1) (4 – 1) = 6. In a Chi-square test for a contingency table, the degrees of freedom (df) = (r-1) (c-1), where r is the \nnumber of rows and c is the number of columns. 866 \nSold by @itachibot Correlational and Predictive Techniques",
+    "image": "https://raw.githubusercontent.com/afrahtafreeh/mcqimage/main/marrow/psm/Tests_of_Significance_Q21_q.jpg",
+    "explanation_image": null,
+    "chapter_heading": "Tests of Significance"
+  }
+]}

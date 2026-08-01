@@ -1,0 +1,571 @@
+{
+  "meta": {
+    "title": "15_Nuclear_Medicine"
+  },
+  "questions": [
+    {
+      "text": "Which of the following is true regarding PET scans?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "It uses gamma emitting radioisotope"
+        },
+        {
+          "id": 2,
+          "text": "It is used for 2D image reproduction"
+        },
+        {
+          "id": 3,
+          "text": "Lead collimators are used"
+        },
+        {
+          "id": 4,
+          "text": "It can be used for hybrid imaging"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>PET </strong>or positron emission tomography is a nuclear medicine imaging technique that can be used for <strong>hybrid imaging</strong>. That is, it can be <strong>combined with</strong> <strong>CT</strong> to allow a correlation between the metabolic information (PET) and the cross-sectional anatomic information (CT).</p>\n<p>PET scanning measures the uptake of <strong>positron-emitting radioisotopes</strong> in the body, allowing us to visualize the <strong>functional processes</strong> of the body. <strong>3D images</strong> of tracer concentration within the body are then constructed by computer analysis. Hence, it provides metabolic and functional information, unlike CT and MRI, as it is based on the principle that tumor cells generally have <strong>high metabolic activity</strong> compared with normal tissues.</p>\n<p>A glucose analogue called <strong>fluorodeoxyglucose (FDG)</strong> is used in PET imaging. FDG is taken up by metabolically active cells, where it undergoes phosphorylation to form <strong>FDG-6-phosphate.</strong> Unlike glucose, FDG-6-phosphate cannot undergo further metabolism and becomes<strong> trapped</strong> within the cell and this is detected by the PET scanner.</p>\n<p>Single-photon emission computed tomography <strong>(SPECT)</strong> is another similar imaging technique.</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>PET</strong></p>\n</td>\n<td>\n<p><strong>SPECT</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Very expensive</p>\n</td>\n<td>\n<p>Lower cost</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Uses <strong>positron</strong>-emitting radioisotope (tracer) like <sup><strong>18</strong></sup><strong>F-FDG</strong></p>\n</td>\n<td>\n<p>Uses <strong>gamma</strong>-emitting radioisotopes (tracer) such as <strong>Tc-99m, </strong>I-123, I-131</p>\n</td>\n</tr>\n<tr>\n<td> Better contrast and spatial resolution</td>\n<td> Less contrast and spatial resolution</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>The below imaging modality is a PET CT scan.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/fe0d4b182d584796931ff29f00ff66d2x720x1267.PNG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3988",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following is the principle of PET scan?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Single photon peak at 511 keV"
+        },
+        {
+          "id": 2,
+          "text": "Dual photon peak at 511 keV"
+        },
+        {
+          "id": 3,
+          "text": "Single photon peak at 211 keV"
+        },
+        {
+          "id": 4,
+          "text": "Dual photon peak at 211 keV"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>PET scans are based on the principle of production of a<strong> dual photon peak</strong> at <strong>511</strong> <strong>keV</strong>.</p>\n<p>To perform a PET scan, a radionuclide tracer (labeled to FDG molecules) is used. These molecules decay in the body with the <strong>release of a positron</strong>. The positron travels a short distance and annihilates with an anti-particle (electron). This <strong>annihilation reaction</strong> results in the formation of <strong>two high-energy photons</strong> that travel in opposite directions. Each photon has an energy of 511 keV, making this a dual photon peak at 511 keV.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3991",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following compounds are used in PET scan?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Fluorodeoxyglucose"
+        },
+        {
+          "id": 2,
+          "text": "Technetium pertechnate"
+        },
+        {
+          "id": 3,
+          "text": "Thallous chloride"
+        },
+        {
+          "id": 4,
+          "text": "Gallium citrate"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>PET</strong> involves the use of a radiolabelled bio-compound such as 2-fluoro-2-deoxy-D-glucose (<strong>FDG</strong>) which is injected intravenously. This compound is taken up and broken down in the cells.</p>\n<p>It is based on the principle that tumour cells have a <strong>high metabolic rate</strong>, and hence this compound is also metabolised by tumour cells. FDG is metabolised to FDG-6-phosphate which cannot be further metabolized by tumour cells. Hence it <strong>accumulates in tumour cells</strong> and<strong> </strong>can be measured and quantified.</p>\n<p>The applications of PET include:</p>\n<ul>\n<li><strong>Oncologic</strong>:\n<ul>\n<li>Detection, staging, drug response</li>\n<li>Differentiation between radiation necrosis and recurrence</li>\n</ul>\n</li>\n<li><strong>Neurologic</strong>:\n<ul>\n<li>Early diagnosis of Alzheimer's disease</li>\n<li>Localisation of seizure focus in the interictal phase</li>\n<li>Localising eloquent areas (e.g. speech, motor function)</li>\n</ul>\n</li>\n<li><strong>Cardiac</strong>: Identification of hibernating myocardium</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4009",
+      "difficulty": "easy"
+    },
+    {
+      "text": "While performing a PET-CT scan, uptake in which of the following areas is likely to be a false positive?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Urinary bladder"
+        },
+        {
+          "id": 2,
+          "text": "Testes"
+        },
+        {
+          "id": 3,
+          "text": "Pancreas"
+        },
+        {
+          "id": 4,
+          "text": "Lymph nodes"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>On 18F-FDG <strong>PET-CT</strong> scan, the<strong> urinary bladder</strong> shows normal physiological uptake and is a <strong>potential</strong> source of <strong>false-positive </strong>in oncologic imaging. </p>\n<p>The following are areas of <strong>normal physiological uptake</strong> on PET CT:</p>\n<ul>\n<li>Brain tissue</li>\n<li>Skeletal muscle, especially after strenuous activity and laryngeal muscles following speech</li>\n<li>Myocardium</li>\n<li>Gastrointestinal tract - intestinal wall</li>\n<li>Genitourinary tract - as FDG is excreted via the renal system and passes into the collecting systems</li>\n<li>Brown fat - FDG accumulates here as glucose and ATP are required for heat production</li>\n<li>Thymus</li>\n<li>Bone marrow</li>\n</ul>\n<p>The following image shows supraclavicular uptake on a PET scan, due to the presence of brown adipose tissue.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/aa0e461783e34c3ca1afd3412feeadf3x512x130.PNG\" alt=\"Explanation Image\">",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA3997",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following is not a device used to image gamma radiation in scintigraphy?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Gamma camera"
+        },
+        {
+          "id": 2,
+          "text": "Scintillation camera"
+        },
+        {
+          "id": 3,
+          "text": "Anger camera"
+        },
+        {
+          "id": 4,
+          "text": "Photon camera"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>A <strong>photon camera</strong> is <strong>not</strong> used in <strong>scintigraphy.</strong></p>\n<p>A <strong>gamma camera</strong>, also called a <strong>scintillation</strong> or <strong>Anger</strong> camera, is used to image gamma radiation-emitting radioisotopes. This technique is known as <strong>scintigraphy</strong>.</p>\n<p>The applications of scintigraphy include:</p>\n<ul>\n<li>Early drug development. </li>\n<li>Nuclear medical imaging to view and analyze images of the human body. </li>\n<li>Assess the distribution of medically injected, inhaled, or ingested radionuclides emitting gamma rays. </li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4018",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Among the following, which isotope is used in nuclear scanning?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tc-99m"
+        },
+        {
+          "id": 2,
+          "text": "I-125"
+        },
+        {
+          "id": 3,
+          "text": "Cs-137"
+        },
+        {
+          "id": 4,
+          "text": "Ir-192"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Technetium agents based on <strong>technetium-99m</strong> (Tc-99m) radioisotopes are the most frequently used agents in <strong>nuclear imaging</strong>.</p>\n<p>Tc-99m is a radioactive isotope that works by <strong>emitting gamma rays </strong>in the targeted tissue or organ. These gamma rays are then detected and recorded by specialized <strong>gamma camera</strong> for medical imaging purposes. The radioactive technetium can be chelated to several different compounds to create specific radiopharmaceuticals and optimize imaging of various structures.</p>\n<p>The <strong>half-life</strong> of Tc-99m is <strong>6 hours. </strong>It produces <strong>gamma rays </strong>of <strong>140 keV. </strong>It is a <strong>pure gamma emitter </strong>as it is in a <strong>metastable state. </strong>It decays to the stable isotope of ruthenium-99.</p>\n<p>Other options:</p>\n<p>Iodine-125, caesium-137, and iridium-192 are used in <strong>radiotherapy.</strong></p><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4012",
+      "difficulty": "easy"
+    },
+    {
+      "text": "An 84-year-old man has been diagnosed with Alzheimer's disease. Which of the following can be used to assess his cerebral perfusion?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tc-HMPAO SPECT"
+        },
+        {
+          "id": 2,
+          "text": "In-111 DTPA"
+        },
+        {
+          "id": 3,
+          "text": "Tc-99m MIBI"
+        },
+        {
+          "id": 4,
+          "text": "Tl-201 scintigraphy"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Tc-HMPAO</strong> (technetium-99m hexamethyl propylenamine oxime) <strong>SPECT</strong> is used for the assessment of <strong>cerebral perfusion</strong>. In Alzheimer's disease, it shows reduced perfusion of the temporoparietal region.</p>\n<p>Other options:</p>\n<p>Option B: In-111 (Indium) DTPA is injected intrathecally to assess CSF flow.</p>\n<p>Option C: Tc-99m (Technetium) MIBI is used for parathyroid scintigraphy.</p>\n<p>Option D: Tl-201 (Thallium) is used in myocardial perfusion scanning.</p><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4015",
+      "difficulty": "medium"
+    },
+    {
+      "text": "An oncologist orders a bone scan to assess for bony metastases in a 49-year-old woman with breast cancer.  The radioactive isotope of which of the following is used?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Phosphorous"
+        },
+        {
+          "id": 2,
+          "text": "Iridium"
+        },
+        {
+          "id": 3,
+          "text": "Technetium"
+        },
+        {
+          "id": 4,
+          "text": "Gallium"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Technetium</strong> tagged to various substrates is used for <strong>bone scans</strong>.</p>\n<p>The patient is injected with a small amount of radioactive material such as 600 MBq of <strong>technetium-99m-MDP </strong>and scanned with a gamma camera, a device sensitive to the radiation emitted by the injected material. <strong>MDP </strong>(methyl diphosphonate) adsorbs into the hydroxyapatite crystals and<strong> accumulates</strong> in the areas of <strong>active bone formation</strong>. </p>\n<p>Given below is a bone scan demonstrating bony metastasis in the pelvis.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/6a8957662d5c4c8c8596f82187f317c3x458x385.JPEG\" alt=\"Explanation Image\"><p>Other options:</p>\n<p><strong>Phosphorous</strong> (P-32) and <strong>Iridium </strong>(Ir-192) are used in radiotherapy. </p><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4020",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 48-year-old woman who underwent a renal transplant 4 months ago comes for follow-up. Which of the following would you perform to assess her renal function?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tc 99m DMSA"
+        },
+        {
+          "id": 2,
+          "text": "Tc 99m DTPA"
+        },
+        {
+          "id": 3,
+          "text": "Tc 99m MAG3"
+        },
+        {
+          "id": 4,
+          "text": "Captopril DTPA"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Tc-99m MAG3 (mercaptoacetyltriglycine)</strong> scan can be used in the evaluation of renal transplant function and may also be used in transplant obstruction. The imaging findings of acute rejection are characterised by <strong>diminished flow. </strong></p>\n<p>Tc-99m MAG3 radioisotope<strong> </strong>is eliminated through the kidney through both <strong>glomeruli filtration </strong>and<strong> tubular excretion </strong>and is a measure of both. Indications for 99mTc-MAG3 dynamic renography are as follows:</p>\n<ul>\n<li>To assess divided renal function and urinary drainage where the collecting system is significantly dilated.</li>\n<li>To assess differential renal function following surgery or procedure, for example, post-pyeloplasty. </li>\n<li>To assess for a urinary leak or possible obstruction following the renal transplant. </li>\n</ul>\n<p>Other options: </p>\n<p>Option A: Tc-99m<strong> DMSA</strong> (dimercaptosuccinic acid) is used to evaluate renal structure and morphology, particularly in pediatric imaging for detecting <strong>scarring</strong> and pyelonephritis. It is an ideal agent for the assessment of the renal cortex.</p>\n<p>Option B: Tc-99m<strong> DTPA </strong>(diethylene-triamine-pentaacetate) is cleared only via glomeruli and has no tubular excretion. Hence, it is used for direct measurement of<strong> GFR</strong>.</p>\n<p>Option D: <strong>Captopril DTPA</strong> is used for screening in patients with renovascular hypertension.</p><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4023",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Technetium 99m labeled RBC scan is useful in which of the following patients?<div class='question-desc-html'><ol>\n<li>A 56-year-old man with congestive cardiac failure</li>\n<li>An 18-year-old boy with inflammatory bowel disease</li>\n<li>A 60-year-old woman with a positive fecal occult blood test</li>\n<li>A 20-year-old man who developed splenosis following trauma</li>\n<li>A 66-year-old woman with a solitary pulmonary nodule</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "2, 3, 4"
+        },
+        {
+          "id": 2,
+          "text": "2, 3, 5"
+        },
+        {
+          "id": 3,
+          "text": "1, 4, 5"
+        },
+        {
+          "id": 4,
+          "text": "1, 3, 4"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Tc-99m labeled RBC scan</strong> would be useful in patients 1, 3, and 4. The uses of Tc-99m labeled RBC scan include assessment of the following:</p>\n<ul>\n<li>Assessment of cardiac function in <strong>congestive cardiac failure</strong> and congenital heart disease</li>\n<li>Occult gastrointestinal (<strong>GI</strong>) <strong>bleed</strong></li>\n<li>Vascular lesions like hepatic haemangioma</li>\n<li>Ectopic splenic tissue (<strong>splenosis</strong>)</li>\n</ul>\n<p>Other options:</p>\n<p>Tc-99m labeled <strong>leucocytes</strong> are used in <strong>inflammatory bowel disease </strong>(IBD). </p>\n<p>18-Fluorodeoxyglucose <strong>PET</strong> scan is used in tumors, including solitary <strong>pulmonary nodules</strong>.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4032",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A DMSA scan can be performed in all of the following cases except:",
+      "choices": [
+        {
+          "id": 1,
+          "text": "To look for renal scarring in a child with vesicoureteric reflux"
+        },
+        {
+          "id": 2,
+          "text": "To evaluate a patient with a duplex renal collecting system"
+        },
+        {
+          "id": 3,
+          "text": "To assess renal perfusion in a man with renal artery stenosis"
+        },
+        {
+          "id": 4,
+          "text": "To confirm the presence of an ectopic kidney in a patient"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Tc-99m DMSA </strong>(dimercaptosuccinic acid) scan cannot be used to measure renal plasma flow as it can be only seen on dynamic scans. </p>\n<p>The Tc-99m DMSA scan is used for the assessment of <strong>renal cortex</strong> as it binds to the sulfhydryl groups in proximal tubules with longer retention than other agents. It allows better assessment of differential renal function. It is a <strong>static scan</strong> as opposed to dynamic DTPA or MAG3 scans. It is used for the following:</p>\n<ul>\n<li>Evaluation of renal structure and morphology</li>\n<li>Detection of scarring and pyelonephritis</li>\n<li>Evaluation of renal anatomical abnormalities</li>\n</ul>\n<p>Note: Captopril DTPA is used for screening in patients with renovascular hypertension.</p><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4036",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 61-year-old stroke patient is scheduled to undergo cerebral perfusion scanning. Which of the following would not be useful?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "82RbCl"
+        },
+        {
+          "id": 2,
+          "text": "15O-H2O"
+        },
+        {
+          "id": 3,
+          "text": "13N-NH3"
+        },
+        {
+          "id": 4,
+          "text": "18F-FDG"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>18F-FDG</strong> is a metabolic tracer that is a glucose analog tagged with positron-emitting fluorine-18. It has <strong>no role</strong> in measuring <strong>cerebral perfusion</strong>.</p>\n<p>The following radiotracers are used for the measurement of&nbsp;cerebral perfusion:</p>\n<ul>\n<li>82RbCl (Rubidium chloride)</li>\n<li>15O-H2O&nbsp;</li>\n<li>13N-NH3 (Ammonia)</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4037",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 2-year-old child is brought with recurrent episodes of blood in his stool. Meckel’s diverticulum is suspected. Which of the following can be used to confirm the diagnosis?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Tc pyrophoshate"
+        },
+        {
+          "id": 2,
+          "text": "Tc 99m DTPA"
+        },
+        {
+          "id": 3,
+          "text": "Tc 99m MAG3"
+        },
+        {
+          "id": 4,
+          "text": "Tc 99m pertechnetate"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Tc 99m pertechnetate</strong> scanning is used to confirm the diagnosis of <strong>Meckel's diverticulum</strong>.</p>\n<p>Tc 99m pertechnetate scan, a radionuclide imaging more accurate in the pediatric age group than in adults for Meckel's diverticulum. It has a very high sensitivity and specificity for bleeding Meckel diverticula but is of little value in children with no history of rectal bleeding. </p>\n<p>Other uses of Tc-99m pertechnetate include:</p>\n<ul>\n<li>Thyroid imaging</li>\n<li>Parathyroid imaging for distinguishing from the thyroid gland</li>\n<li>Testicular imaging</li>\n<li>Gastric emptying studies, intestinal and rectal functional studies.</li>\n</ul><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4039",
+      "difficulty": "easy"
+    },
+    {
+      "text": "A 60-year-old woman is being evaluated for severe leg and back pain. CBC shows Hb of 7 g/dl and serum creatinine is 2.3 mg/dl. A plain X-ray of her femur reveals the following.  A bone scan in this patient would likely show which of the following findings?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Hot spots"
+        },
+        {
+          "id": 2,
+          "text": "Cold spots"
+        },
+        {
+          "id": 3,
+          "text": "Diffusely increased uptake"
+        },
+        {
+          "id": 4,
+          "text": "Diffusely decreased uptake"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>This clinical scenario and image showing multiple lytic lesions are suggestive of <strong>multiple myeloma.</strong>&nbsp;This condition&nbsp;presents with&nbsp;<strong>cold spots</strong>&nbsp;on bone scans<strong>&nbsp;</strong>as there is a&nbsp;<strong>lack of</strong>&nbsp;compensatory<strong> osteoblastic activity.</strong></p>\n<p>Multiple myelomas are the most common primary malignant bone neoplasm in adults arising from red marrow due to the monoclonal proliferation of the <strong>plasma cells.</strong></p><hr><h3>Related Pearl: Bone scan findings</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Causes of a hot spot</strong></p>\n</td>\n<td>\n<p><strong>Causes of a cold spot</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Osteomyelitis</p>\n<p><strong>Bone&nbsp;tumors and m</strong><strong>etastases</strong></p>\n<p><strong>Fibrous dysplasia</strong></p>\n<p>Trauma (fracture healing)</p>\n<p><strong>Avascular necrosis</strong></p>\n<p><strong>Perthes&nbsp;disease</strong></p>\n<p>Paget&rsquo;s disease</p>\n<p>Hyperparathyroidism</p>\n</td>\n<td>\n<p><strong>Multiple myeloma</strong></p>\n<p>Fibrous cortical defect</p>\n<p>Pseudoarthrosis</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/4b11703a6d7546a298f76a1d2cc51a1b.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4040",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 56-year-old man is rushed to the ED with severe chest pain and is diagnosed with acute myocardial infarction. Which of the following can be used to assess the area of infarction in this patient?<div class='question-desc-html'><p>ED- Emergency department</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Thallium-20"
+        },
+        {
+          "id": 2,
+          "text": "Gallium"
+        },
+        {
+          "id": 3,
+          "text": "Tc-99m pyrophosphate"
+        },
+        {
+          "id": 4,
+          "text": "Cobalt-91"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Technetium 99m pyrophosphate</strong> is used in hot spot imaging in acute myocardial infarction. It accumulates in the damaged myocardium and the <strong>area of infarct</strong> appears as a <strong>hot spot</strong>.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4041",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 40-year-old woman is referred from a PHC for the evaluation of nodular thyroid enlargement. As part of the evaluation, she is planned for a radio uptake scan. Which of the following isotopes is not used in this test?<div class='question-desc-html'><p>PHC-Primary Health Centre</p></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Iodine-123"
+        },
+        {
+          "id": 2,
+          "text": "Iodine-124"
+        },
+        {
+          "id": 3,
+          "text": "Tc 99m"
+        },
+        {
+          "id": 4,
+          "text": "Iodine-127"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Iodine-127</strong> is the<strong> stable isotope</strong> and is not useful for thyroid imaging.</p>\n<p>The following isotopes are useful in thyroid imaging:</p>\n<ul>\n<li>Iodine-<strong>123: </strong>Functional scan of the thyroid</li>\n<li>Iodine-<strong>124: </strong>Produces positrons and is used in <strong>PET scans</strong></li>\n<li><strong>Tc 99m</strong> pertechnetate </li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4042",
+      "difficulty": "medium"
+    },
+    {
+      "text": "A 43-year-old woman presented with recurrent headaches, palpitations, and sweating. Her blood pressure was found to be 170/110 mm Hg. Further testing revealed elevated urinary metanephrines. An MRI was negative. What is the next best step in management?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "C11 methionine PET"
+        },
+        {
+          "id": 2,
+          "text": "18F-NaF PET"
+        },
+        {
+          "id": 3,
+          "text": "Gallium 68 DOTATOC PET"
+        },
+        {
+          "id": 4,
+          "text": "99mTc pertechnetate scan"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>This clinical scenario is suggestive of <strong>pheochromocytoma</strong>. The diagnosis can be confirmed by <strong>gallium-68</strong> somatostatin receptor <strong>DOTATOC PET</strong> scan.</p>\n<p><strong>Somatostatin receptor scintigraphy </strong>shows increased activity in paragangliomas and is a useful technique for identifying extra-adrenal phaeochromocytomas. The compounds often used in molecular imaging with PET include <strong>68Ga-DOTATOC</strong>, <strong>68Ga-DOTATATE</strong>, and <strong>68Ga-DOTANOC</strong>. They bind to somatostatin receptors with varying affinity for different receptors.</p>\n<p>This investigation is useful in the diagnosis of new lesions in patients with or suspected neuroendocrine tumors. </p>\n<p>Other options: </p>\n<p>Option A: <strong>C11 methionine PET</strong> is a radiolabelled amino acid, and tumour uptake reflects cellular proliferation and microvessel density. It is used in the grading of brain tumors, differential diagnosis and identifying recurrence. </p>\n<p>Option B: <strong>18F-NaF PET</strong> uptake reflects blood flow and bone remodelling. It is used for imaging bone pathology by detecting primary and secondary bone tumours. </p>\n<p>Option D: <strong>99mTc pertechnetate</strong> is useful for thyroid nodules, and ectopic gastric mucosa.</p>\n<p>Note: The investigation of choice for adrenal phaeochromocytoma is contrast-enhanced MRI. </p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4044",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Technetium-99m labelled heat-denatured RBCs are used to diagnose pathology in which of the following?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Biliary system"
+        },
+        {
+          "id": 2,
+          "text": "Kidney"
+        },
+        {
+          "id": 3,
+          "text": "Pulmonary circulation"
+        },
+        {
+          "id": 4,
+          "text": "Spleen"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>Technetium-99m</strong> labelled heat-denatured RBCs are used for specific <strong>splenic assessment</strong> and is gold-standard in <strong>splenosis.</strong></p>\n<p>The uses of Tc-99m labelled RBC scan include assessment of the following:</p>\n<ul>\n<li>Assessment of cardiac function in congestive cardiac failure and congenital heart disease</li>\n<li>Occult gastrointestinal (GI) bleed</li>\n<li>Vascular lesions like hepatic haemangioma</li>\n<li>Ectopic splenic tissue (splenosis)</li>\n</ul><hr><h3>Related Pearl: Radionuclide agents and their uses</h3><table>\n<tbody>\n<tr>\n<td>\n<p><strong>Radionuclide agent</strong></p>\n</td>\n<td>\n<p><strong>Use</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Medronate (MDP) (most common)</p>\n<p>Tc-99m Oxidronate (HMDP)</p>\n<p>Tc-99m HEDP</p>\n</td>\n<td>\n<p>Bone imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Apcitide</p>\n</td>\n<td>\n<p>Peptide imaging of DVT</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Arcitumomab</p>\n</td>\n<td>\n<p>Monoclonal antibody for colorectal cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m albumin colloid</p>\n</td>\n<td>\n<p>Imaging of RES (liver/spleen)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m bicisate (ECD)</p>\n<p>Tc-99m exametazine (HMPAO</p>\n</td>\n<td>\n<p>Cerebral perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Depreotide</p>\n</td>\n<td>\n<p>Somatostatin receptor-bearing pulmonary masses</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m disofenin (DISIDA)</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Glucepatate</p>\n<p>Tc-99m Meriatide</p>\n<p>Tc-99m Succimer (DMSA)</p>\n</td>\n<td>\n<p>Renal imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Human Serum Albumin(HAS)</p>\n</td>\n<td>\n<p>Imaging of cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Lidofenin (HIDA)</p>\n<p>Tc-99m Mebrofenin</p>\n</td>\n<td>\n<p>Hepatobiliary imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m nofetumomab Merpentan NR-LU-10</p>\n</td>\n<td>\n<p>Monoclonal antibody Fab fragment for imaging small cell lung cancer</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pentetate (DTPA)</p>\n</td>\n<td>\n<p>Renal imaging and functional studies; radioaerosol ventilation imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Pyrophosphate (PYP)</p>\n</td>\n<td>\n<p>Avid infarct imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Red Blood Cells (RBCs)</p>\n</td>\n<td>\n<p>Imaging of GI bleeds, cardiac chambers</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sestamibi</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging; breast tumor imaging, parathyroid gland</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Sulfur colloid (SC)</p>\n</td>\n<td>\n<p>Imaging of RES( liver/spleen), gastric emptying, GI bleeds</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Tc-99m Teboroxime</p>\n<p>Tc-99m Tetrofosmin</p>\n</td>\n<td>\n<p>Myocardial perfusion imaging</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><sup>68</sup>Gallium</p>\n</td>\n<td>\n<p>Binds to somatostatin receptors</p>\n<p>Detection of new neuroendocrine tumors</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4038",
+      "difficulty": "medium"
+    },
+    {
+      "text": "What is PACS in medical imaging?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Planned archiving and communication system"
+        },
+        {
+          "id": 2,
+          "text": "Planned archiving computerized system"
+        },
+        {
+          "id": 3,
+          "text": "Picture archiving and communication system"
+        },
+        {
+          "id": 4,
+          "text": "Picture archiving or computerized system"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Picture archiving and communication system </strong>(PACS) is a modality of imaging technology that helps in image transmission from the site of acquisition of images, to multiple different sites at different locations.</p>\n<p>This is not only economical (film-less department), but is also convenient to access multiple modalities (radiographs, CT, MRI, ultrasound) simultaneously at multiple locations within the hospital or across the globe.</p>\n<p>Digital Imaging and Communications in Medicine (<strong>DICOM</strong>) is a standard for handling, storing, printing, and transmitting information in medical imaging. DICOM is used worldwide to store, exchange, and transmit medical images.</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA4007",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Radioactive iodine uptake scan of a patient showed the following result. This is suggestive of which of the following conditions?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Graves’ disease"
+        },
+        {
+          "id": 2,
+          "text": "Endemic iodine deficiency"
+        },
+        {
+          "id": 3,
+          "text": "Subacute thyroiditis"
+        },
+        {
+          "id": 4,
+          "text": "HCG induced thyrotoxicosis"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>The given image shows<strong> low radioactive iodine uptake</strong> (RAIU) suggestive of <strong>subacute thyroiditis.</strong></p>\n<p><strong>High RAIU</strong> is caused due to Graves' disease, endemic iodine deficiency, and HCG-induced thyrotoxicosis.</p>\n<p>In <strong>non-pregnant, hyperthyroid</strong> patients with physical examination suggesting <strong>nodular thyroid</strong> disease, radioactive iodine should be the initial test to determine the etiology. <strong>Pregnancy</strong> and <strong>breastfeeding</strong> are absolute <strong>contraindications</strong> to radionuclide imaging.</p><hr><h3>Related Pearl: Radioiodine uptake of thyroid gland</h3><p>Radioactive iodine uptake (RAIU) scans are interpreted as follows:</p>\n<ul>\n<li><strong>High</strong> (or normal) radioiodine uptake indicates de-novo synthesis of the hormone. Therefore, there is increased hormone synthesis</li>\n<li><strong>Low</strong> (nearly absent) radioiodine uptake indicates:\n<ul>\n<li>Inflammation and destruction of thyroid tissue with release of the preformed hormone into the circulation</li>\n<li>Extrathyroidal source of thyroid hormone</li>\n</ul>\n</li>\n</ul>\n<p>Conditions with high and low RAIU are given below:</p>\n<table>\n<tbody>\n<tr>\n<td><strong>High RAIU</strong></td>\n<td><strong>Low RAIU</strong></td>\n</tr>\n<tr>\n<td>\n<ul>\n<li>Graves&rsquo; disease</li>\n<li>Toxic multinodular goiter</li>\n<li>Toxic adenoma</li>\n<li>Thyroid cancer</li>\n<li>Hydatidiform mole</li>\n<li>TSH-secreting pituitary adenoma</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n</td>\n<td>\n<ul>\n<li>Acute phase of Hashimoto&rsquo;s thyroiditis</li>\n<li>Drug-induced&mdash; iodine, amiodarone-induced thyroiditis</li>\n<li>Subacute/ Dequervain thyroiditis</li>\n<li>Radiation thyroiditis</li>\n<li>Metastatic follicular thyroid carcinoma</li>\n<li>Factitious (iatrogenic) thyrotoxicosis</li>\n<li>Struma ovarii (extrathyroid source)</li>\n<li>Hamburger thyrotoxicosis (exogenous source)</li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/84debe461e9e4ef6a8de25fbe9c71e7fx1280x3027.JPEG\" alt=\"Pearl Image\">",
+      "question_images": [
+        "https://cdn1.dailyrounds.org/uploads/302abfb6b33448c5bf9abba953c6e894.JPEG"
+      ],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MA0882",
+      "difficulty": "medium"
+    }
+  ]
+}

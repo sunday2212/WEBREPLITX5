@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "title": "Biostatistics_Part-_1"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">+0.8</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">+0.2</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">-0.2</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">-0.8</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Inflammatory biological markers are clinically useful in a number of different ways, one being the assessment of disease activity in conditions such as systemic lupus erythematosus (SLE). A new inflammatory marker is being investigated in patients with active SLE flares. When the blood level of the new marker (in mg/L) is plotted against the C-reactive protein (CRP) level (also in mg/L), the following plot is obtained:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220fe3bae1d-6b3c-49a2-8596-a338bf3bc62a.jpg\"><br>Based on the plot, the correlation coefficient between the 2 variables is closest to which of the following values?</span></p>",
+      "unique_key": "DT1292909",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292909,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Correlation coefficient (r)</strong>: Describes the <strong>strength</strong> and <strong>direction</strong> of a linear relationship between two variables, with values ranging from <strong>-1 to +1</strong>.\r\n<ul>\r\n<li><strong>r = +1</strong>: Perfect <strong>positive</strong> correlation (both variables increase together).</li>\r\n<li><strong>r = -1</strong>: Perfect <strong>negative</strong> correlation (one variable increases as the other decreases).</li>\r\n<li><strong>r = 0</strong>: No linear correlation.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p>In this case, the plot between the new inflammatory marker and CRP shows a <strong>clear inverse relationship</strong>, meaning as <strong>CRP levels rise, the new marker's levels drop</strong>. The data points are <strong>closely aligned to a line with a downward slope</strong>, indicating a <strong>strong negative correlation</strong>. An <strong>r value of -0.8</strong> matches this observation, showing a strong negative linear relationship.</p>\r\n<ul>\r\n<li><strong>r = -0.8</strong>: Strong negative correlation, meaning the new marker's levels <strong>decrease</strong> significantly as CRP levels <strong>increase</strong>.</li>\r\n<li><strong>The data points are close</strong> to the line of best fit, which confirms the strength of the association.</li>\r\n<li><strong>The correlation coefficient (r) ranges from -1 to +1 and describes the strength and polarity of a linear association.</strong></li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220dd7a892a-cad3-44c9-bec9-c6f088027128.jpg\">\r\n<p><strong>Why not others</strong>:</p>\r\n<ul>\r\n<li><strong> +0.8</strong>: Incorrect because it suggests a <strong>positive correlation</strong>, where both variables increase together, which is <strong>not the case</strong> here.</li>\r\n<li><strong> +0.2</strong>: Incorrect because this suggests a <strong>weak positive</strong> correlation, which contradicts the observed <strong>negative association</strong>.</li>\r\n<li><strong> -0.2</strong>: Incorrect because it represents a <strong>weak negative correlation</strong>. The data points indicate a <strong>stronger negative relationship</strong>, not a weak one.</li>\r\n</ul>\r\n<p><strong>Key takeaway</strong>: The correlation coefficient <strong>r = -0.8</strong> indicates a <strong>strong negative correlation</strong> between CRP and the new marker, meaning <strong>as CRP increases, the new marker decreases significantly</strong>. This matches the visual pattern seen in the data.</p>",
+      "correct_choice_id": 4,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">The mean is equal to the median</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">The mean is equal to the mode</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">The mean is greater than the median</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">The median is greater than the mean</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A medical student is conducting a chart review of patients admitted to the local emergency department with acute pancreatitis. He is interested in comparing blood glucose levels between mild and severe cases. Before attempting to compare the mean blood glucose levels between the 2 groups of patients, he decides to conduct a descriptive analysis of the variables in each group. Blood glucose levels in patients with severe acute pancreatitis were found to have a strong positively skewed distribution. Which of the following is most likely to be true regarding the data for the severe acute pancreatitis group?</span></p>",
+      "unique_key": "DT1292910",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292910,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Positively skewed distribution</strong>: The data has a <strong>long tail on the right side</strong>, meaning there are more observations with <strong>higher values</strong> than expected.\n<ul>\n<li>The <strong>mean</strong> is sensitive to extreme values and gets <strong>pulled toward the right</strong> (higher values) in positively skewed distributions.</li>\n<li>The <strong>median</strong>, being less sensitive to extreme values, remains closer to the center of the data.</li>\n<li>The <strong>mode</strong> is the value that appears most frequently and is least affected by skew, remaining at the peak of the distribution.</li>\n</ul>\n</li>\n</ul>\n<p>In this scenario, since blood glucose levels are <strong>strongly positively skewed</strong>, the <strong>mean will be higher than the median</strong>, reflecting the influence of extreme high values.</p>\n<ul>\n<li><strong>Mean &gt; Median &gt; Mode</strong>: This is the general order in <strong>positively skewed</strong> distributions.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122015e8e3fd-0d2c-4957-ade8-e1a1a21e0433.jpg\">\n<p><strong>Why not others</strong>:</p>\n<ul>\n<li><strong>A. Mean = Median</strong>: Incorrect, as this equality occurs in a <strong>normal distribution</strong> (no skew).</li>\n<li><strong>B. Mean = Mode</strong>: Incorrect, because the <strong>mode</strong> is not affected by extreme values, while the <strong>mean</strong> is.</li>\n<li><strong>D. Median &gt; Mean</strong>: Incorrect, this describes a <strong>negatively skewed</strong> distribution, where the tail is on the left (lower values).</li>\n</ul>\n<p><strong>Key takeaways</strong>:</p>\n<ul>\n<li>In <strong>positively skewed distributions</strong>, extreme <strong>high values</strong> pull the <strong>mean</strong> to the right, making the <strong>mean greater than the median</strong>.</li>\n<li><strong>Mean &gt; Median &gt; Mode</strong>: This order is typical in <strong>positively skewed</strong> data.</li>\n<li>The <strong>median</strong> often better reflects the central tendency in skewed distributions because it is less affected by outliers.</li>\n<li><strong>Positively skewed data</strong> can result from biological variables like blood glucose, where a few patients have extremely high values, influencing the overall mean.</li>\n</ul>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">B. beta</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Type I error</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Type II error</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">1 - beta</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 62-year-old man with diabetes, hypertension, and hyperlipidemia comes to the emergency department of an academic medical center with chest pain, nausea, vomiting, and diaphoresis. An electrocardiogram demonstrates ST elevation in the anterior leads, and cardiac enzymes are markedly elevated. Investigators at the center are designing a randomized control trial to test the hypothesis that drug B will decrease the mortality associated with acute ST-elevation myocardial infarction compared to standard of care. To ensure that investigators will not miss a difference between drug Band standard of care (if a difference truly exists), which of the following would they want to maximize?</span></p>",
+      "unique_key": "DT1292911",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292911,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li><strong>Power of a study</strong>: Represents the probability of correctly rejecting the null hypothesis when it is false. It is calculated as <strong>1 - beta</strong>.\r\n<ul>\r\n<li><strong>Beta (&beta;)</strong>: Probability of a <strong>Type II error-</strong>failing to detect a true effect or difference (e.g., between drug B and standard care).</li>\r\n<li><strong>1 - beta</strong>: Indicates the likelihood of detecting a significant difference if it truly exists.</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<p>To effectively assess the efficacy of drug B in reducing mortality from acute ST-elevation myocardial infarction (STEMI), maximizing <strong>1 - beta</strong> is critical. This approach ensures that any genuine benefits of drug B compared to standard care are not overlooked.</p>\r\n<p><strong>Why not others</strong>:</p>\r\n<ul>\r\n<li><strong> Beta</strong>: Incorrect, as this is the probability of a <strong>Type II error</strong>, which investigators aim to <strong>minimize</strong>.</li>\r\n<li><strong> Type I error (alpha)</strong>: Incorrect, as this is the risk of incorrectly rejecting the null hypothesis (finding a difference when there isn't one). While important, the focus here is on ensuring that true differences are detected.</li>\r\n<li><strong> Type II error</strong>: Incorrect, as this is another term for beta. The goal is to <strong>minimize</strong> this error, not maximize it.</li>\r\n</ul>\r\n<p><strong>Key takeaways</strong>:</p>\r\n<ul>\r\n<li>To ensure a study detects real differences between treatments, maximizing <strong>power (1 - beta)</strong> is essential.</li>\r\n<li>A higher power reduces the risk of a <strong>Type II error</strong>, allowing for more reliable conclusions regarding drug B's efficacy.</li>\r\n<li>Investigators should balance minimizing <strong>Type I error</strong> while prioritizing the ability to detect true effects, especially in clinical trials involving significant health outcomes.</li>\r\n</ul>",
+      "correct_choice_id": 24,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">3.5 and 6.0 ng/ml</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">3.5 and 6.5 ng/ml</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">4.0 and 6.0 ng/ml</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">4.0 and 5.5 ng/ml</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A large study of serum folate levels in a sample of women age 16-45 reveals that this parameter is normally distributed with a mean of 5.0 ng/ml and a standard deviation of 0.5 ng/ml. According to the study results, 95% of serum folate observations in these patients will lie approximately between which of the following limits?</span></p>",
+      "unique_key": "DT1292912",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292912,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220d7156703-cab2-4128-b892-39b066a5cab5.jpg\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122008df0e23-6582-42f8-9ea6-f84ef7982ae7.jpg\">\n<ul>\n<li><strong>Normal distribution characteristics</strong>:\n<ul>\n<li>Mean serum folate level: <strong>5.0 ng/ml</strong></li>\n<li>Standard deviation (SD): <strong>0.5 ng/ml</strong></li>\n</ul>\n</li>\n<li><strong>Range calculations based on standard deviations</strong>:\n<ul>\n<li><strong>Within &plusmn;1 SD</strong> (68% of data):\n<ul>\n<li>Range: <strong>4.5 - 5.5 ng/ml</strong></li>\n<li>Calculation:\n<ul>\n<li>Lower limit: 5.0&minus;0.5=4.5 ng/ml</li>\n<li>Upper limit: 5.0+0.5=5.5 ng/ml</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Within &plusmn;2 SDs</strong> (95% of data):\n<ul>\n<li>Range: <strong>4.0 - 6.0 ng/ml</strong></li>\n<li>Calculation:\n<ul>\n<li>Lower limit: 5.0&minus;2&times;0.5=4.0 ng/ml</li>\n<li>Upper limit: 5.0+2&times;0.5=6.0 ng/ml</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Within &plusmn;3 SDs</strong> (99.7% of data):\n<ul>\n<li>Range: <strong>3.5 - 6.5 ng/ml</strong></li>\n<li>Calculation:\n<ul>\n<li>Lower limit: 5.0&minus;3&times;0.5=3.5 ng/ml</li>\n<li>Upper limit: 5.0+3&times;0.5=6.5 ng/ml</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p>Based on the 68/95/99.7 rule, <strong>95% of serum folate observations</strong> will lie between <strong>4.0 and 6.0 ng/ml</strong>.</p>\n<p><strong>Why not others</strong>:</p>\n<ul>\n<li><strong>A. 3.5 and 6.0 ng/ml</strong>: Incorrect; this range captures only <strong>97.35%</strong> of the data but does not correspond to <strong>95%</strong>.</li>\n<li><strong>B. 3.5 and 6.5 ng/ml</strong>: Incorrect; this represents the <strong>99.7%</strong> range, not the <strong>95%</strong> range.</li>\n<li><strong>D. 4.0 and 5.5 ng/ml</strong>: Incorrect; this range represents only <strong>68%</strong> of observations and does not encompass <strong>95%</strong>.</li>\n</ul>\n<p><strong>Key takeaways</strong>:</p>\n<ul>\n<li>In a <strong>normal distribution</strong>, the <strong>68/95/99.7 rule</strong> defines the percentage of data within 1, 2, and 3 standard deviations from the mean.</li>\n<li><strong>95% of observations</strong> fall between <strong>4.0 and 6.0 ng/ml</strong>, highlighting the concentration of data around the mean.</li>\n<li>Understanding the spread of data in a normal distribution is essential for accurate interpretation and statistical analysis in clinical research.</li>\n</ul>",
+      "correct_choice_id": 33,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">A higher mean SBP was seen in the cocoa groups overall</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cocoa intake should be recommended for blood pressure management</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cocoa intake was associated with a statistically significant decrease in SBP</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Studies 2, 6, and 7 showed a statistically significant increase in SBP</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A meta-analysis of several trials on the effect of cocoa intake on systolic blood pressure (SBP) revealed the following results:<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220663f9553-0150-45dd-9ee5-4fac1026838a.jpg\"></span></p>",
+      "unique_key": "DT1292913",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292913,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122006cb3d2b-4313-4e11-9abd-1a7d752be2fe.jpg\">\n<ul>\n<li><strong>Meta-analysis Overview</strong>:\n<ul>\n<li>Combines results from several trials (ideally high-quality randomized controlled trials) to enhance statistical power and derive a more precise estimate of an exposure's effect (e.g., cocoa intake) on an outcome (e.g., systolic blood pressure [SBP]).</li>\n<li>Individual trial results are weighted and analyzed to produce a pooled effect estimate.</li>\n</ul>\n</li>\n<li><strong>Key Results</strong>:\n<ul>\n<li><strong>C</strong>: Cocoa intake was associated with a statistically significant decrease in SBP, indicating a beneficial effect on blood pressure management.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Why not others</strong>:</p>\n<ul>\n<li><strong>A. A higher mean SBP was seen in the cocoa groups overall</strong>: Incorrect; this contradicts the premise of the meta-analysis that found a decrease in SBP associated with cocoa intake.</li>\n<li><strong>B. Cocoa intake should be recommended for blood pressure management</strong>: Incorrect; while cocoa may show benefits, recommendations require more evidence, including safety and overall dietary context.</li>\n<li><strong>D. Studies 2, 6, and 7 showed a statistically significant increase in SBP</strong>: Incorrect; this is contrary to the meta-analysis findings, which highlight a decrease in SBP.</li>\n</ul>\n<p><strong>Key takeaways</strong>:</p>\n<ul>\n<li><strong>Meta-analysis</strong> enhances the reliability of results by combining multiple trials, leading to stronger conclusions about the effect of cocoa on SBP.</li>\n<li>A statistically significant decrease in SBP suggests potential health benefits from cocoa intake, but further evidence is necessary before making dietary recommendations.</li>\n<li>Understanding statistical significance and the role of confidence intervals is crucial in evaluating the strength of findings in meta-analyses.</li>\n</ul>",
+      "correct_choice_id": 43,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Quantitative data of a group of patients</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Qualitative data of a group of patients</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data collected on nominal scale</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Data collected on ordinal scale</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Histogram is used to describe:</span></p>",
+      "unique_key": "DT1292914",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292914,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Histogram Overview</strong>:\n<ul>\n<li>A histogram is a graphical representation that displays the distribution of quantitative (numerical) data. It uses bars to show the frequency of data points within specified ranges (intervals).</li>\n</ul>\n</li>\n<li><strong>Key Points</strong>:\n<ul>\n<li><strong>A. Quantitative data of a group of patients (Correct Answer)</strong>:\n<ul>\n<li>Histograms effectively represent quantitative data, such as measurements like age, weight, or blood pressure.</li>\n<li><strong>X-axis</strong>: Represents ranges of values (bins).</li>\n<li><strong>Y-axis</strong>: Represents the frequency of data points in each range.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>Why not others</strong>:</p>\n<ul>\n<li><strong>B. Qualitative data of a group of patients</strong>:\n<ul>\n<li>Incorrect; qualitative data (e.g., gender, race) is better suited for bar charts or pie charts, which show frequency counts of categories rather than numerical intervals.</li>\n</ul>\n</li>\n<li><strong>C. Data collected on nominal scale</strong>:\n<ul>\n<li>Incorrect; nominal scale data consists of categories without inherent order (e.g., blood type, gender) and does not fit a histogram's numerical nature.</li>\n</ul>\n</li>\n<li><strong>D. Data collected on ordinal scale</strong>:\n<ul>\n<li>Incorrect; while ordinal data has a meaningful order (e.g., pain levels), it is not strictly numerical. Bar charts are more appropriate for representing ordinal data.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key takeaways</strong>:</p>\n<ul>\n<li>Histograms are designed for displaying the distribution of <strong>quantitative data</strong>, providing insights into patterns, central tendencies, and variability.</li>\n<li>Understanding the type of data being analyzed is crucial for selecting the appropriate graphical representation, with histograms being specific to quantitative data only.</li>\n<li>Effective data visualization is vital for interpreting research findings and communicating results clearly.</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122033aedd8f-e58f-471a-9b6c-2a20395e6e72.jpg\"><br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122020aff69a-46d3-4a82-9ae2-b02d7bbf86dc.jpg\">",
+      "correct_choice_id": 51,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Arithmetic mean</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Mode</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Standard deviation</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Arithmetic progression</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Incubation period of Leprosy is highly variable so it is best measured as</span></p>",
+      "unique_key": "DT1292915",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292915,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Mode as the Best Measure</strong>:\n<ul>\n<li>The incubation period of leprosy varies widely, ranging from a few months to over a decade. This <strong>high variability</strong> means that using a single representative value is crucial for understanding the typical experience of most individuals.</li>\n<li>The <strong>mode</strong> identifies the value that occurs most frequently in the dataset, providing a clear indication of what incubation period is most common in the population.</li>\n</ul>\n</li>\n<li><strong>Why Not Others</strong>:\n<ul>\n<li><strong>A. Arithmetic Mean</strong>:\n<ul>\n<li>The arithmetic mean can be skewed by extreme values (outliers). For example, if the majority of cases have a short incubation period but a few have exceptionally long periods, the mean would shift, misrepresenting the central tendency.</li>\n</ul>\n</li>\n<li><strong>C. Standard Deviation</strong>:\n<ul>\n<li>While the standard deviation offers insight into the <strong>spread</strong> of the data, it does not give a specific incubation period. It's more about the variability of the data points rather than identifying the most common period.</li>\n</ul>\n</li>\n<li><strong>D. Arithmetic Progression</strong>:\n<ul>\n<li>This term pertains to a sequence of numbers where the difference between consecutive terms is constant, which is not applicable in measuring variability of incubation periods.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><strong>Additional Points</strong>:\n<ul>\n<li><strong>Epidemiological Relevance</strong>: Understanding the incubation period is critical for public health strategies, contact tracing, and determining the timing of interventions.</li>\n<li><strong>Disease Transmission Insight</strong>: Knowing the most common incubation period can help in estimating the potential spread and informing patients about the time frame for possible symptoms after exposure.</li>\n<li><strong>Statistical Summary</strong>: In highly variable data, the mode can serve as a more informative summary than the mean, particularly when data is not symmetrically distributed.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaways</strong>:</p>\n<ul>\n<li>The <strong>mode</strong> effectively summarizes highly variable data, offering insights into the most common incubation period for leprosy.</li>\n<li>Other measures like <strong>mean</strong> and <strong>standard deviation</strong> may misrepresent typical values due to their sensitivity to outliers and focus on variability rather than frequency.</li>\n<li>Accurate measurement of incubation periods is essential for understanding disease transmission and planning effective public health interventions.</li>\n</ul>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">1/SE</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Square of SE</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Root of SE Mean deviation</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">None</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Precision is:</span></p>",
+      "unique_key": "DT1292916",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292916,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Definition of Precision</strong>:\n<ul>\n<li>Precision measures the <strong>consistency</strong> or <strong>reproducibility</strong> of measurements. In statistics, it indicates how close repeated measurements are to each other.</li>\n</ul>\n</li>\n<li><strong>Relationship with Standard Error (SE)</strong>:\n<ul>\n<li>Precision is <strong>inversely related</strong> to the standard error (SE). The formula <strong>Precision = 1/SE</strong> shows that as the SE decreases (indicating less variability in the estimates), the precision of the estimate increases.</li>\n<li>A <strong>lower SE</strong> suggests that the sample mean is a more reliable estimate of the population mean.</li>\n</ul>\n</li>\n<li><strong>Implications of Precision</strong>:\n<ul>\n<li><strong>High Precision</strong>: Results from repeated measurements that yield similar outcomes, indicating that the process is consistent.</li>\n<li><strong>Precision &ne; Accuracy</strong>: A precise measurement can be reproducible yet far from the true value, illustrating that high precision does not ensure accuracy.</li>\n<li><strong>Influence of Sample Size</strong>: Increasing the sample size generally reduces the SE, thereby enhancing precision.</li>\n</ul>\n</li>\n</ul>\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/20241220afa8655c-4a18-4380-9f49-156d1e5ae503.jpg\">\n<p><strong>Why Other Options Are Incorrect</strong>:</p>\n<ul>\n<li><strong>B. Square of SE</strong>:\n<ul>\n<li>Squaring the SE increases its value, contradicting the definition of precision, as higher SE indicates less precision.</li>\n</ul>\n</li>\n<li><strong>C. Root of SE Mean deviation</strong>:\n<ul>\n<li>This is not a standard statistical measure related to precision, and does not define a clear relationship with SE.</li>\n</ul>\n</li>\n<li><strong>D. None</strong>:\n<ul>\n<li>This option is incorrect because option A correctly defines precision.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaways</strong>:</p>\n<ul>\n<li>Precision is mathematically represented as <strong>1/SE</strong>, highlighting the inverse relationship between SE and precision.</li>\n<li>A smaller SE corresponds to <strong>greater precision</strong>, making repeated measurements more reliable.</li>\n<li>Understanding precision is crucial in research, as it affects the interpretation of statistical results and the reliability of conclusions drawn from data.</li>\n</ul>",
+      "correct_choice_id": 71,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Paired t-test</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Students test</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chi square test</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">ANOVA</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">YATE'S correction is applied in which of the statistical test of significance:</span></p>",
+      "unique_key": "DT1292917",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292917,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>Yates' Correction</strong>: Also known as the continuity correction, this adjustment is used in the Chi-square test, especially for 2x2 contingency tables with small sample sizes.</li>\n<li><strong>Purpose</strong>: It helps prevent overestimation of statistical significance when expected frequencies are low, generally below 5.</li>\n<li><strong>Applicability</strong>:\n<ul>\n<li>Best for <strong>small sample sizes</strong>: Particularly when any expected frequency in the contingency table is below 5.</li>\n<li><strong>2x2 Tables</strong>: Primarily applicable to 2x2 tables and not suitable for larger contingency tables (e.g., 3x3, 4x4).</li>\n</ul>\n</li>\n<li><strong>Formula</strong>: Yates' correction modifies the Chi-square formula to include a continuity correction factor</li>\n</ul>\n<p>&chi;2c=k&sum;i=1(|Oi-Ei|-0.5)2Ei</p>\n<ul>\n<li>where:\n<ul>\n<li>O = observed frequency</li>\n<li>E = expected frequency</li>\n</ul>\n</li>\n<li><strong>Conservative Nature</strong>: Using Yates' correction makes the test more conservative, reducing the likelihood of a Type I error (false positive).</li>\n</ul>\n<p><strong>Why Other Options Are Incorrect:</strong></p>\n<ul>\n<li><strong>A. Paired t-test</strong>: This test is used for comparing two related samples, not applicable to Yates' correction.</li>\n<li><strong>B. Students test</strong>: Refers to Student's t-test, used for means comparison, unrelated to categorical data corrections.</li>\n<li><strong>D. ANOVA</strong>: Analysis of variance deals with multiple groups and does not apply Yates' correction.</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>Yates' correction is essential for maintaining statistical accuracy in small sample size analyses with Chi-square tests.</li>\n<li>It prevents overestimation of significance, especially in categorical data with low expected frequencies.</li>\n</ul>",
+      "correct_choice_id": 83,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Not affected by extremes</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Easy to calculate</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Uses all the values</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Advantages of estimating median are all EXCEPT:</span></p>",
+      "unique_key": "DT1292918",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292918,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\n<li><strong>A. Not affected by extremes:</strong>\n<ul>\n<li><strong>True.</strong> The median remains stable even with extreme values (outliers), making it a reliable measure of central tendency in skewed distributions.</li>\n</ul>\n</li>\n<li><strong>B. Easy to calculate:</strong>\n<ul>\n<li><strong>True.</strong> The median can be easily found by ordering data and selecting the middle value(s), requiring minimal computation compared to other measures.</li>\n</ul>\n</li>\n<li><strong>C. Uses all the values:</strong>\n<ul>\n<li><strong>False.</strong> The median only considers the middle value(s) after sorting; it does not utilize all data points. Unlike the mean, which accounts for every value, the median focuses solely on central values.</li>\n</ul>\n</li>\n<li><strong>D. None of the above:</strong>\n<ul>\n<li>This option is incorrect because option C is indeed an exception.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Why Not Others:</strong></p>\n<ul>\n<li><strong>A. Not affected by extremes:</strong>\n<ul>\n<li>This is a significant advantage of the median, making it suitable for skewed data.</li>\n</ul>\n</li>\n<li><strong>B. Easy to calculate:</strong>\n<ul>\n<li>This feature enhances the median's practicality, especially for datasets where calculating the mean may be cumbersome.</li>\n</ul>\n</li>\n<li><strong>D. None of the above:</strong>\n<ul>\n<li>Since option C is false, this option cannot be correct.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Key Takeaways:</strong></p>\n<ul>\n<li>The <strong>median</strong> is a robust measure of central tendency, especially for skewed distributions.</li>\n<li>It <strong>does not</strong> use all data values, making it less sensitive to extreme values compared to the mean.</li>\n<li>Understanding the limitations of the median (e.g., not considering all data points) is crucial for accurate data interpretation.</li>\n</ul>",
+      "correct_choice_id": 93,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Percentile graph</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Percentage graph</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Median graph</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Frequency graph</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">OGIVE curve is a</span></p>",
+      "unique_key": "DT1292919",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292919,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>An ogive is a graph that represents the cumulative frequency or cumulative relative frequency of a dataset, often used to show how many values are below a particular value in a dataset.</li>\r\n<li><strong>Percentile graph:</strong> Correct. An ogive displays cumulative frequencies, which are closely related to percentiles, indicating the relative standing of a value within a dataset.</li>\r\n<li><strong>Percentage graph:</strong> Incorrect. The ogive shows cumulative frequency rather than a simple percentage.</li>\r\n<li><strong>Median graph:</strong> While an ogive can help estimate the median, it is not specifically designed for that purpose.</li>\r\n<li><strong>Frequency graph:</strong> Incorrect, as an ogive represents cumulative frequency, not simple frequency.</li>\r\n</ul>\r\n<p><strong>Why Not Others:</strong></p>\r\n<ul>\r\n<li><strong>B. Percentage graph:</strong> This option is incorrect because the ogive shows cumulative frequency rather than a simple percentage.</li>\r\n<li><strong>C. Median graph:</strong> This is misleading since an ogive can help estimate the median, but it is not primarily focused on median values.</li>\r\n<li><strong>D. Frequency graph:</strong> Incorrect because an ogive represents cumulative frequency, not simple frequency.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>An ogive is primarily a percentile graph, visualizing cumulative frequencies and percentiles.</li>\r\n<li>It helps in determining the distribution of data points in relation to their position in a dataset.</li>\r\n<li>Ogives are useful for understanding data trends and making comparisons across different datasets.</li>\r\n<li>They facilitate the identification of quartiles and deciles, aiding in statistical analysis and decision-making.</li>\r\n</ul>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ratio scale</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dichotomous scale</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nominal scale</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ordinal scale</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Mean and standard deviation can be worked only if data is on:</span></p>",
+      "unique_key": "DT1292920",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1292920,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<ul>\r\n<li>Mean and standard deviation can only be meaningfully calculated for data measured on interval or ratio scales. These scales have equal intervals between values, and in the case of ratio scales, they include a true zero point. Examples include weight, height, and age, where both the mean and standard deviation are relevant measures of central tendency and dispersion.</li>\r\n<li><strong>Dichotomous scale:</strong> This scale has only two categories (e.g., yes/no, male/female), making it impossible to apply mean and standard deviation.</li>\r\n<li><strong>Nominal scale:</strong> This classifies data into categories without any quantitative value (e.g., colors, gender, ethnicity). Since there is no inherent order or numerical meaning, calculating a mean or standard deviation is not possible.</li>\r\n<li><strong>Ordinal scale:</strong> While it has ordered categories (e.g., rankings or levels of satisfaction), the intervals between these categories are not equal, making mean and standard deviation inappropriate.</li>\r\n</ul>\r\n<p><strong>Why Not Others:</strong></p>\r\n<ul>\r\n<li><strong>B. Dichotomous scale:</strong> Incorrect because it only has two categories, which are not suitable for calculating mean or standard deviation.</li>\r\n<li><strong>C. Nominal scale:</strong> This is incorrect as it consists of categories without numerical value or order, making it impossible to compute mean or standard deviation.</li>\r\n<li><strong>D. Ordinal scale:</strong> While ordered, the unequal intervals prevent the meaningful calculation of mean and standard deviation.</li>\r\n</ul>\r\n<p><strong>Key Takeaways:</strong></p>\r\n<ul>\r\n<li>Mean and standard deviation are only applicable to data on a ratio scale, allowing meaningful arithmetic operations.</li>\r\n<li>Ratio scales provide equal intervals and a true zero point, which are essential for calculating these statistical measures.</li>\r\n<li>Understanding the type of data scale is crucial for determining the appropriate statistical analyses to perform.</li>\r\n<li>Using inappropriate scales for these calculations can lead to misleading conclusions and ineffective data interpretation.</li>\r\n</ul>\r\n<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3d535v34tlady.cloudfront.net/V3/NEETPGMCQ/2024122017251185-ff4a-4694-8473-0e64b535d666.jpg\">",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "57_Descriptive_Statistics_Iv_-_Measures_Of_Position"
+  },
+  "questions": [
+    {
+      "text": "Which of the following is not a measure of position?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Z scores"
+        },
+        {
+          "id": 2,
+          "text": "Range"
+        },
+        {
+          "id": 3,
+          "text": "Centiles"
+        },
+        {
+          "id": 4,
+          "text": "Quantiles"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Range</strong> is not a measure of position, it is a measure of <strong>dispersion</strong> or spread.</p>\n<p>The most common measures of <strong>position</strong> are <strong>quantiles, quartiles, centiles </strong>and<strong> z-scores </strong>(standard scores).&nbsp;<strong>Measures of position</strong> give the <strong>position</strong> of specific data in <strong>relation</strong> to <strong>other data</strong> in the set.</p><hr><h3>Related Pearl: Measures in Statistics</h3><table class=\"t1\">\n<tbody>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Measures used in statistics</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Definition</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Examples</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Location </strong>or <strong>Central Tendency</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures summarize the data by defining the <strong>centre or the middle</strong>.</p>\n<p class=\"p1\">An entire distribution can be <strong>characterized</strong> by these measures <strong>which represent all the observations</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Mean, median, mode</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Dispersion </strong>or <strong>Variability </strong>or <strong>Spread</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures help in determining the <strong>extent to which data is stretched or squeezed</strong>.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Range, interquartile range, variance, standard deviation</p>\n</td>\n</tr>\n<tr>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\"><strong>Measures of Position</strong></p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">These measures give the <strong>position of specific data</strong> in relation to other data in the set.</p>\n</td>\n<td class=\"td1\" valign=\"top\">\n<p class=\"p1\">Percentiles, quartiles, centiles,&nbsp; z scores</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>\n<p>&nbsp;</p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2585",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which of the following statements about quantiles are true?<div class='question-desc-html'><ol>\n<li>They divide data into equal groups</li>\n<li>They are used for discrete data</li>\n<li>Median is a type of quantile</li>\n<li>Quintiles divide the distribution into 4 equal parts</li>\n<li>They are also known as fractiles</li>\n</ol></div>",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1, 4 and 5"
+        },
+        {
+          "id": 2,
+          "text": "1, 3 and 5"
+        },
+        {
+          "id": 3,
+          "text": "2, 3 and 4"
+        },
+        {
+          "id": 4,
+          "text": "1, 2, 4 and 5"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Quantiles</strong> are elements in a distribution that <strong>divide data</strong> into <strong>equal</strong> groups. They are also known as <strong>fractiles.</strong> <strong>Median</strong> divides a distribution into <strong>two equal</strong> parts, so it is considered as a quantile. </p>\n<p><strong>Quantiles</strong> are used for <strong>continuous</strong>, <strong>quantitative</strong> data.</p>\n<p><strong>Quintiles</strong> are a type of <strong>quantile</strong> that divides data into <strong>5 equal</strong> groups.</p><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2589",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Centiles divide data into ____ equal parts?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "100"
+        },
+        {
+          "id": 2,
+          "text": "4"
+        },
+        {
+          "id": 3,
+          "text": "99"
+        },
+        {
+          "id": 4,
+          "text": "10"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Centiles</strong> divide data into <strong>100 equal parts.</strong></p><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2588",
+      "difficulty": "easy"
+    },
+    {
+      "text": "During a school health camp, a group of 250 students are arranged in the ascending order of their height. Which student would have the 40th percentile value for height?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "80th"
+        },
+        {
+          "id": 2,
+          "text": "40th"
+        },
+        {
+          "id": 3,
+          "text": "100th"
+        },
+        {
+          "id": 4,
+          "text": "140th"
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p>Here, the <strong>100<sup>th</sup>&nbsp;student</strong>&nbsp;will have the 40<sup>th&nbsp;</sup>percentile value for height.</p>\n<p>To arrive at this, we use the formula <strong>R</strong> = <strong>P/100 x (n + 1)</strong>.<br /> where <strong>R</strong> is the <strong>rank</strong> of the <strong>desired</strong> observation, <strong>P</strong> is the <strong>quantile/percentile</strong> desired and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</p>\n<p>Thus, R = 40/100 x (250 + 1) = 0.4 x 251 = 100.4.</p>\n<p>This is rounded up to the closest number making <strong>R = 100.</strong></p>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2592",
+      "difficulty": "medium"
+    },
+    {
+      "text": "By calculating which of the following can we obtain the central value of a sample with 180 elements?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "90th percentile"
+        },
+        {
+          "id": 2,
+          "text": "2nd decile"
+        },
+        {
+          "id": 3,
+          "text": "9th decile"
+        },
+        {
+          "id": 4,
+          "text": "2nd quartile"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The <strong>2<sup>nd</sup> quartile </strong>gives the central value of 180 elements. The <strong>central value</strong> of a distribution is given by&nbsp;the <strong>median</strong>. It divides the distribution into the ratio of <strong>1:1. </strong></p>\n<p>In<strong> quartiles&nbsp;</strong>elements of the distribution are divided into <strong>4 equal</strong> parts by <strong>3 values</strong>. Each part contains a <strong>quarter</strong>, i.e.,<strong> 25%</strong> of the values. So <strong>two quarters</strong> would give <strong>half</strong> of the values. So the element present at the position of the&nbsp;<strong>2<sup>nd</sup> quartile&nbsp;</strong>would be the central value, i.e., the <strong>median</strong>, with half the values before and half the values after it. This is shown in the image given below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/b1960bc57b0043cab7cbde11f0cfc601x1280x915.JPEG\" alt=\"Explanation Image\"><p>The <strong>5th decile</strong> and <strong>50th percentile</strong> represent the median values of a distribution in decile and percentile respectively.</p><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2593",
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which measure of position divides the distribution in a ratio of 3:1?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "33rd centile"
+        },
+        {
+          "id": 2,
+          "text": "First quartile"
+        },
+        {
+          "id": 3,
+          "text": "7th decile"
+        },
+        {
+          "id": 4,
+          "text": "Third quartile"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p><strong>T</strong><strong>hird quartile Q<sub>3</sub></strong> divides the distribution into the ratio of <strong>3:1.&nbsp;</strong></p>\n<p>In <strong>quartiles:</strong></p>\n<ul>\n<li>the first quartile <strong>Q<sub>1</sub></strong> divides the distribution in the ratio of 1:3</li>\n<li>the second quartile <strong>Q<sub>2</sub></strong> divides it in the ratio of 1:1.</li>\n</ul>\n<p>The division of data by quartiles is shown in the below image.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/528f5ef36f4c42b59c3727d2dcd15beax1280x915.JPEG\" alt=\"Explanation Image\"><p><strong>Centiles </strong>divide data into<strong> 100 equal </strong>parts. <strong>33rd </strong>centile divides the distribution in the ratio of<strong> 33:67.</strong></p>\n<p><strong>Deciles </strong>divide data into<strong> 10 equal </strong>parts. <strong>7th </strong>decile divides the distribution in the ratio of<strong> 7:3.</strong></p><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2594",
+      "difficulty": "easy"
+    },
+    {
+      "text": "You are recording the blood pressure values of 200 adults in a population. The first quartile diastolic BP is 68 mmHg and the third quartile is 105 mmHg. How many patients are there in the 3rd and 4th quarters?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "50"
+        },
+        {
+          "id": 2,
+          "text": "100"
+        },
+        {
+          "id": 3,
+          "text": "75"
+        },
+        {
+          "id": 4,
+          "text": "150"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>In a <strong>quartile</strong>, the data is divided into <strong>4 equal parts</strong>, i.e., <strong>4 quarters</strong>.&nbsp;Therefore, in this scenario, there are&nbsp;<strong>50% </strong>of patients in the <strong>3<sup>rd</sup> and 4<sup>th</sup> quarters</strong>, i.e <strong>100 patients.</strong></p>\n<p>The division of data by quartiles is shown in the image given below.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/9ac7f5f0d45949a389b3dfc2c5c2fbd3x1280x915.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2596",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The forced expiratory volume (FEV) of 300 patients visiting the respiratory medicine outpatient department is recorded. The data has a median value of 2.5 litres with the first and third quartiles being 1.5 litres and 4.5 litres respectively. How many persons in the sample are expected to have an FEV between 1.5 and 4.5 litres?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "75"
+        },
+        {
+          "id": 2,
+          "text": "150"
+        },
+        {
+          "id": 3,
+          "text": "225"
+        },
+        {
+          "id": 4,
+          "text": "200"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>150 </strong>persons are expected to have FEV between<strong> 1.5 and 4.5 litres</strong>.</p>\n<p>In a <strong>quartile,</strong> the data is divided by <strong>3 values</strong> into <strong>4 equal parts.&nbsp;</strong>Thus, each part&nbsp;will have <strong>25% </strong>of the values in the distribution.</p>\n<p>In this scenario, each part will have&nbsp;<strong>75 persons.&nbsp;</strong>Here, 1.5 is the first quartile Q<sub>1</sub>, 2.5 is the second quartile Q<sub>2</sub> and 4.5 is the third quartile Q<sub>3</sub>.&nbsp;Between Q<sub>1</sub> and Q<sub>3</sub>&nbsp;there are two quarters, thus there will be 150 people with FEV between 1.5 and 4.5 litres.</p>\n<p>Data division by quartiles is shown in the below image.</p><img src=\"https://dhmbxeygs57ff.cloudfront.net/uploads/710263f11bdb4cd4915a7a78f28bf9a6x1280x915.JPEG\" alt=\"Explanation Image\"><hr><h3>Related Pearl: Quantiles</h3><p><strong>Quantiles </strong>are elements in a distribution that divide it into <strong>equal groups</strong>.</p>\n<ul>\n<li>They are also referred to as <strong>fractiles</strong>.</li>\n<li>Quantiles are used for <strong>continuous, quantitative data.</strong></li>\n<li>The <strong>median </strong>is also considered a<strong> quantile</strong> as it divides a distribution into <strong>two equal parts.</strong> The median is also the same as the <strong>50<sup>th</sup> percentile </strong>and<strong>&nbsp;second</strong><strong>&nbsp;quartile.</strong></li>\n</ul>\n<p>Types of quantiles:</p>\n<ol>\n<li>Tertiles divide a distribution into 3&nbsp;equal groups</li>\n<li><strong>Quartiles</strong> divide it into <strong>4 equal</strong> parts or quarters</li>\n<li>Quintiles divide a distribution into 5 equal groups</li>\n<li>Deciles&nbsp;divide a distribution into 10 equal parts</li>\n<li>Vigintiles divide it into 20 equal groups</li>\n<li><strong>Centiles:</strong></li>\n</ol>\n<ul>\n<li>They are also called <strong>percentiles</strong> and are commonly used, especially for ranking marks in an exam.</li>\n<li>They divide a distribution into <strong>100 equal parts. </strong>Here, the <strong>median </strong>is the same as the <strong>50<sup>th</sup></strong> percentile.</li>\n<li>The formula to arrive at the rank order of a value is <strong>R</strong> = <strong>P/100 x (n + 1)</strong>, where R is the <strong>rank </strong>of the desired observation, P is the <strong>percentile desired</strong> and <strong>n</strong> is the <strong>number</strong> of <strong>variables</strong> in the data.</li>\n</ul>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2597",
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which of the following distributions is preferred for the calculation of z scores?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "Normal distribution"
+        },
+        {
+          "id": 2,
+          "text": "Right skewed distribution"
+        },
+        {
+          "id": 3,
+          "text": "Left skewed distribution"
+        },
+        {
+          "id": 4,
+          "text": "Bimodal distribution"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p>Z scores are usually calculated in normal distributions.</p><hr><h3>Related Pearl: Z Scores</h3><ul>\n<li><strong>Z score</strong>&nbsp;indicates the <strong>position </strong>of any<strong> element</strong> in a distribution in terms of how many <strong>standard deviations </strong>it lies<strong> from </strong>the<strong> mean </strong>of the distribution.</li>\n<li>It is also called the <strong>standard score.</strong></li>\n<li>If it lies <strong>above</strong> the <strong>mean</strong>, its <strong>z score</strong> will be <strong>positive</strong> and if it lies <strong>below</strong> it, the z score will be <strong>negative</strong>.</li>\n<li>For example, if an element lies 1.5 standard deviations below the mean, its z score will be <strong>-1.5 </strong>and if it lies 0.5 standard deviations above the mean, its z score will be <strong>+0.5.</strong></li>\n<li>The formula for calculating <strong>z scores </strong>is <strong>z = (X- &micro;)/&sigma;</strong>, where x is the element&rsquo;s value, &micro; is the mean and &sigma; is the standard deviation. From this, we can also calculate the actual value of the element.</li>\n<li>Some of the z-values for commonly used percentiles:</li>\n</ul>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Percentile</strong></p>\n</td>\n<td>\n<p><strong>Z value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1<sup>st</sup></p>\n</td>\n<td>\n<p>-2.326</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2.5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10<sup>th</sup></p>\n</td>\n<td>\n<p>-1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>25<sup>th</sup></p>\n</td>\n<td>\n<p>-0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>50<sup>th</sup></p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>75<sup>th</sup></p>\n</td>\n<td>\n<p>0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>90<sup>th</sup></p>\n</td>\n<td>\n<p>1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>95<sup>th</sup></p>\n</td>\n<td>\n<p>1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>97.5<sup>th</sup></p>\n</td>\n<td>\n<p>1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>99<sup>th</sup></p>\n</td>\n<td>\n<p>2.326</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2599",
+      "difficulty": "medium"
+    },
+    {
+      "text": "In a study on haemoglobin levels in healthy women, the data recorded has a mean of 13.5 gm/dL and a standard deviation of 1.5 gm/dL. What is the z score for an element with a haemoglobin value of 15.0 gm/dL?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "1.5"
+        },
+        {
+          "id": 2,
+          "text": "10.0"
+        },
+        {
+          "id": 3,
+          "text": "2.0"
+        },
+        {
+          "id": 4,
+          "text": "1.0"
+        }
+      ],
+      "correct_choice_id": 4,
+      "solution": "<p>The Z score for the element with a haemoglobin value of 15 gm/dL is <strong>1.0.</strong></p>\n<p>The formula for z score, <strong>z = (X- &micro;)/&sigma;.</strong></p>\n<p>X is the value of the element,&nbsp;&micro; is the mean and&nbsp;&sigma; is the standard deviation.</p>\n<p>In this scenario, z = (15 &ndash; 13.5) / 1.5 = 1.5/1.5 = <strong>1.</strong></p><hr><h3>Related Pearl: Z Scores</h3><ul>\n<li><strong>Z score</strong>&nbsp;indicates the <strong>position </strong>of any<strong> element</strong> in a distribution in terms of how many <strong>standard deviations </strong>it lies<strong> from </strong>the<strong> mean </strong>of the distribution.</li>\n<li>It is also called the <strong>standard score.</strong></li>\n<li>If it lies <strong>above</strong> the <strong>mean</strong>, its <strong>z score</strong> will be <strong>positive</strong> and if it lies <strong>below</strong> it, the z score will be <strong>negative</strong>.</li>\n<li>For example, if an element lies 1.5 standard deviations below the mean, its z score will be <strong>-1.5 </strong>and if it lies 0.5 standard deviations above the mean, its z score will be <strong>+0.5.</strong></li>\n<li>The formula for calculating <strong>z scores </strong>is <strong>z = (X- &micro;)/&sigma;</strong>, where x is the element&rsquo;s value, &micro; is the mean and &sigma; is the standard deviation. From this, we can also calculate the actual value of the element.</li>\n<li>Some of the z-values for commonly used percentiles:</li>\n</ul>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Percentile</strong></p>\n</td>\n<td>\n<p><strong>Z value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1<sup>st</sup></p>\n</td>\n<td>\n<p>-2.326</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2.5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10<sup>th</sup></p>\n</td>\n<td>\n<p>-1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>25<sup>th</sup></p>\n</td>\n<td>\n<p>-0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>50<sup>th</sup></p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>75<sup>th</sup></p>\n</td>\n<td>\n<p>0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>90<sup>th</sup></p>\n</td>\n<td>\n<p>1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>95<sup>th</sup></p>\n</td>\n<td>\n<p>1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>97.5<sup>th</sup></p>\n</td>\n<td>\n<p>1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>99<sup>th</sup></p>\n</td>\n<td>\n<p>2.326</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2600",
+      "difficulty": "medium"
+    },
+    {
+      "text": "The diastolic BP of 125 women aged between 18 and 60 years was recorded. The mean of the data is 70 mmHg with a standard deviation of 10 mmHg. What will be the 5th percentile value?",
+      "choices": [
+        {
+          "id": 1,
+          "text": "40"
+        },
+        {
+          "id": 2,
+          "text": "53.6"
+        },
+        {
+          "id": 3,
+          "text": "67.5"
+        },
+        {
+          "id": 4,
+          "text": "89.4"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p>The <strong>z value</strong> for the <strong>5<sup>th</sup> percentile </strong>is <strong>-1.645</strong>.</p>\n<p>Using the formula for z scores, <strong>z = (X- &micro;)/&sigma;, </strong>we get X = z&sigma; + &micro;.</p>\n<p>In this scenario, X = (-1.645 x 10) + 70 = -16.45 + 70 = 53.55 = <strong>53.6.</strong></p><hr><h3>Related Pearl: Z Scores</h3><ul>\n<li><strong>Z score</strong>&nbsp;indicates the <strong>position </strong>of any<strong> element</strong> in a distribution in terms of how many <strong>standard deviations </strong>it lies<strong> from </strong>the<strong> mean </strong>of the distribution.</li>\n<li>It is also called the <strong>standard score.</strong></li>\n<li>If it lies <strong>above</strong> the <strong>mean</strong>, its <strong>z score</strong> will be <strong>positive</strong> and if it lies <strong>below</strong> it, the z score will be <strong>negative</strong>.</li>\n<li>For example, if an element lies 1.5 standard deviations below the mean, its z score will be <strong>-1.5 </strong>and if it lies 0.5 standard deviations above the mean, its z score will be <strong>+0.5.</strong></li>\n<li>The formula for calculating <strong>z scores </strong>is <strong>z = (X- &micro;)/&sigma;</strong>, where x is the element&rsquo;s value, &micro; is the mean and &sigma; is the standard deviation. From this, we can also calculate the actual value of the element.</li>\n<li>Some of the z-values for commonly used percentiles:</li>\n</ul>\n<p>&nbsp;</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Percentile</strong></p>\n</td>\n<td>\n<p><strong>Z value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1<sup>st</sup></p>\n</td>\n<td>\n<p>-2.326</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2.5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5<sup>th</sup></p>\n</td>\n<td>\n<p>-1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10<sup>th</sup></p>\n</td>\n<td>\n<p>-1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>25<sup>th</sup></p>\n</td>\n<td>\n<p>-0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>50<sup>th</sup></p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>75<sup>th</sup></p>\n</td>\n<td>\n<p>0.675</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>90<sup>th</sup></p>\n</td>\n<td>\n<p>1.282</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>95<sup>th</sup></p>\n</td>\n<td>\n<p>1.645</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>97.5<sup>th</sup></p>\n</td>\n<td>\n<p>1.960</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>99<sup>th</sup></p>\n</td>\n<td>\n<p>2.326</p>\n</td>\n</tr>\n</tbody>\n</table><div class=\"table-expand-wrapper\"><button type=\"button\" class=\"table-expand-btn glass-light\">Expand Table</button></div>",
+      "question_images": [],
+      "explanation_images": [],
+      "explanation_video": null,
+      "question_id": "MB2601",
+      "difficulty": "medium"
+    }
+  ]
+}

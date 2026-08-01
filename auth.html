@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — NEXTPULSE</title>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+    <script src="./supabase-config.js"></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #3b6da8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 400px;
+            padding: 2.2rem 2rem;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            animation: rise .4s ease;
+        }
+        @keyframes rise {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo-area {
+            text-align: center;
+            margin-bottom: 1.6rem;
+        }
+        .logo-circle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #2c5282, #3b6da8);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: .6rem;
+            box-shadow: 0 8px 20px rgba(44, 82, 130, .35);
+        }
+        .logo-area h1 {
+            font-size: 1.4rem;
+            color: #2c5282;
+            font-weight: 800;
+        }
+        .logo-area p {
+            color: #64748b;
+            font-size: .85rem;
+            margin-top: .2rem;
+        }
+
+        .view {
+            display: none;
+        }
+        .view.active {
+            display: block;
+        }
+
+        /* ── Social buttons ── */
+        .social-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .75rem;
+            padding: .8rem 1rem;
+            border-radius: 12px;
+            font-size: .92rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s;
+            margin-bottom: .6rem;
+            border: none;
+            text-align: center;
+        }
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        .social-btn i {
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .btn-google {
+            background: #fff;
+            color: #334155;
+            border: 1.5px solid #e2e8f0;
+        }
+        .btn-google:hover {
+            background: #f8fafc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+
+        .btn-microsoft {
+            background: #fff;
+            color: #334155;
+            border: 1.5px solid #e2e8f0;
+        }
+        .btn-microsoft:hover {
+            background: #f8fafc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+
+        /* ── HIDDEN: Facebook & Email (code kept, visually hidden) ── */
+        .btn-facebook,
+        .email-divider,
+        #toggle-email-btn,
+        .email-form-wrap {
+            display: none !important;
+        }
+
+        .ms-logo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 18px;
+            height: 18px;
+            gap: 2px;
+            flex-shrink: 0;
+        }
+        .ms-logo span:nth-child(1) {
+            background: #f25022;
+        }
+        .ms-logo span:nth-child(2) {
+            background: #7fba00;
+        }
+        .ms-logo span:nth-child(3) {
+            background: #00a4ef;
+        }
+        .ms-logo span:nth-child(4) {
+            background: #ffb900;
+        }
+
+        .field {
+            margin-bottom: 1rem;
+        }
+        .field label {
+            display: block;
+            font-size: .83rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: .3rem;
+        }
+        .field input {
+            width: 100%;
+            padding: .7rem .9rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: .95rem;
+            outline: none;
+            transition: border-color .2s;
+        }
+        .field input:focus {
+            border-color: #2c5282;
+        }
+
+        .otp-wrap {
+            display: flex;
+            gap: .5rem;
+            justify-content: center;
+            margin: .5rem 0 1rem;
+        }
+        .otp-wrap input {
+            width: 44px;
+            height: 52px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2c5282;
+            outline: none;
+            transition: border-color .2s;
+        }
+        .otp-wrap input:focus {
+            border-color: #2c5282;
+            background: #f0f6ff;
+        }
+
+        .primary-btn {
+            width: 100%;
+            padding: .85rem;
+            border: none;
+            border-radius: 12px;
+            background: #2c5282;
+            color: #fff;
+            font-size: .95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        .primary-btn:hover {
+            background: #1e3a5f;
+        }
+        .primary-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .link-btn {
+            background: none;
+            border: none;
+            color: #2c5282;
+            font-size: .83rem;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: .6rem;
+            display: block;
+            text-align: center;
+        }
+
+        .status-msg {
+            text-align: center;
+            font-size: .83rem;
+            margin-top: .65rem;
+            min-height: 1rem;
+        }
+        .ok {
+            color: #16a34a;
+        }
+        .err {
+            color: #dc2626;
+        }
+
+        .pic-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.1rem;
+        }
+        .pic-circle {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            border: 3px solid #2c5282;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .pic-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .pic-hint {
+            font-size: .76rem;
+            color: #2c5282;
+            margin-top: .35rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        #loading-screen {
+            position: fixed;
+            inset: 0;
+            background: #1e3a5f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 999;
+        }
+        .spin {
+            width: 42px;
+            height: 42px;
+            border: 4px solid rgba(255, 255, 255, .3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
+            margin-bottom: 1rem;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        #loading-screen p {
+            font-size: .95rem;
+            opacity: .85;
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            color: #64748b;
+            font-size: .82rem;
+            cursor: pointer;
+            margin-bottom: 1.2rem;
+            border: none;
+            background: none;
+        }
+        .back-link:hover {
+            color: #2c5282;
+        }
+
+        .step-label {
+            font-size: .78rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 420px) {
+            .card {
+                padding: 1.6rem 1.2rem;
+            }
+            .otp-wrap input {
+                width: 38px;
+                height: 46px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+<script src="./ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="spin"></div>
+        <p>Checking your session…</p>
+    </div>
+
+    <div class="card" id="auth-card" style="display:none">
+        <div class="logo-area">
+            <div class="logo-circle">N</div>
+            <h1>NEXTPULSE</h1>
+            <p>Enter your real name and college to earn credits</p>
+        </div>
+
+        <!-- ── STEP 1: Choose sign-in method ── -->
+        <div class="view active" id="view-email">
+
+            <button class="social-btn btn-google" onclick="signInWith('google')">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+                Continue with Google
+            </button>
+
+            <button class="social-btn btn-microsoft" onclick="signInWith('azure')">
+                <div class="ms-logo"><span></span><span></span><span></span><span></span></div>
+                Continue with Microsoft
+            </button>
+
+            <!-- ── HIDDEN: Facebook ── -->
+            <button class="social-btn btn-facebook" onclick="signInWith('facebook')">
+                <i class="fab fa-facebook-f"></i>
+                Continue with Facebook
+            </button>
+
+            <!-- ── HIDDEN: Email divider ── -->
+            <div class="email-divider">or</div>
+
+            <!-- ── HIDDEN: Email button ── -->
+            <button class="social-btn btn-email" id="toggle-email-btn" onclick="toggleEmailForm()">
+                <i class="fas fa-envelope"></i>
+                Continue with Email
+            </button>
+
+            <!-- ── HIDDEN: Email form ── -->
+            <div class="email-form-wrap" id="email-form-wrap">
+                <form onsubmit="event.preventDefault(); sendOtp()">
+                    <div class="field" style="margin-top:.6rem;">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <button class="primary-btn" type="submit" id="send-otp-btn">
+                        <i class="fas fa-paper-plane"></i> Send OTP Code
+                    </button>
+                </form>
+            </div>
+
+            <div class="status-msg" id="email-status"></div>
+        </div>
+
+        <!-- ── STEP 2: Enter OTP ── -->
+        <div class="view" id="view-otp">
+            <button class="back-link" onclick="showView('email')">
+                <i class="fas fa-arrow-left"></i> Change email
+            </button>
+            <p class="step-label">Enter the 6-digit code sent to<br><strong id="otp-email-display"></strong></p>
+
+            <div class="otp-wrap">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+                <input type="tel" maxlength="1" class="otp-digit" inputmode="numeric" pattern="[0-9]">
+            </div>
+
+            <button class="primary-btn" onclick="verifyOtp()" id="verify-btn">
+                <i class="fas fa-check-circle"></i> Verify &amp; Login
+            </button>
+            <button class="link-btn" id="resend-btn" onclick="resendOtp()">Resend code</button>
+            <div class="status-msg" id="otp-status"></div>
+        </div>
+
+        <!-- ── STEP 2b: Auth success → open app (PWA) ── -->
+        <div class="view" id="view-success">
+            <div style="text-align:center; padding:1.5rem 0 .5rem;">
+                <div style="font-size:3rem; margin-bottom:.75rem;">✅</div>
+                <h2 style="color:#2c5282; font-size:1.3rem; margin-bottom:.4rem;">You're signed in!</h2>
+                <p style="color:#64748b; font-size:.88rem; margin-bottom:1.6rem; line-height:1.5;">
+                    Tap the button below to open the app<br>in full-screen mode.
+                </p>
+                <button id="open-app-btn"
+                style="display:flex; align-items:center; justify-content:center; gap:.6rem;
+                background:#2c5282; color:#fff; border-radius:12px;
+                padding:.9rem 1rem; font-weight:700; font-size:.95rem;
+                border:none; cursor:pointer; transition:background .2s;
+                width:100%;"
+                onclick="launchApp()">
+                <i class="fas fa-rocket"></i> Open NEXTPULSE
+            </button>
+            <p style="color:#94a3b8; font-size:.75rem; margin-top:1rem;">
+                Opening automatically in <span id="countdown">3</span>s…
+            </p>
+        </div>
+    </div>
+
+    <!-- ── STEP 3: Complete Profile ── -->
+    <div class="view" id="view-profile">
+        <h2 style="color:#2c5282;margin-bottom:.25rem;font-size:1.2rem">Complete Your Profile</h2>
+        <p style="color:#64748b;font-size:.82rem;margin-bottom:1.1rem">Just one more step — tell us about yourself</p>
+
+        <div class="pic-wrap">
+            <div class="pic-circle" id="prof-pic-preview" onclick="document.getElementById('prof-pic-input').click()">👤</div>
+            <span class="pic-hint" onclick="document.getElementById('prof-pic-input').click()">Upload Profile Photo (optional)</span>
+            <input type="file" id="prof-pic-input" accept="image/*" style="display:none">
+        </div>
+
+        <div class="field">
+            <label>Your Full Name *</label>
+            <input type="text" id="prof-name" placeholder="e.g. Rahul Sharma" maxlength="80">
+        </div>
+        <div class="field">
+            <label>College Name *</label>
+            <input type="text" id="prof-college" placeholder="e.g. AIIMS New Delhi" maxlength="120">
+        </div>
+
+        <button class="primary-btn" id="prof-save-btn" onclick="saveProfile()">
+            <i class="fas fa-check-circle"></i> Save &amp; Enter App
+        </button>
+        <div class="status-msg" id="prof-status"></div>
+    </div>
+</div>
+
+<script>
+    const {
+        createClient
+    } = supabase;
+    const _supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    let _currentEmail = '';
+    let _currentUser = null;
+    let _pendingPicFile = null;
+    let _emailFormOpen = false;
+
+    /* ── Cookie helper ── */
+    function getCookie(name) {
+        const match = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '=([^;]*)'));
+        return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    /* ── Build redirect URL robustly ── */
+    function getRedirectUrl() {
+        const path = window.location.pathname.replace(/[^/]*$/, '');
+        return window.location.origin + path + 'auth.html';
+    }
+
+    /* ── Launch app (stays inside PWA) ── */
+    function launchApp() {
+        window.location.href = './app.html';
+    }
+
+    /* ── show/hide views ── */
+    function showView(name) {
+        document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+        document.getElementById('view-' + name).classList.add('active');
+    }
+
+    /* ── Toggle email form (kept for completeness, but button is hidden) ── */
+    function toggleEmailForm() {
+        _emailFormOpen = !_emailFormOpen;
+        const wrap = document.getElementById('email-form-wrap');
+        const btn = document.getElementById('toggle-email-btn');
+        if (_emailFormOpen) {
+            wrap.classList.add('open');
+            btn.innerHTML = '<i class="fas fa-times"></i> Hide Email Form';
+            setTimeout(() => document.getElementById('user-email').focus(), 100);
+        } else {
+            wrap.classList.remove('open');
+            btn.innerHTML = '<i class="fas fa-envelope"></i> Continue with Email';
+        }
+    }
+
+    function showCard() {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('auth-card').style.display = 'block';
+    }
+
+    function showLoading(msg) {
+        document.getElementById('loading-screen').style.display = 'flex';
+        document.getElementById('loading-screen').querySelector('p').textContent = msg || 'Signing you in…';
+        document.getElementById('auth-card').style.display = 'none';
+    }
+
+    let _sessionHandled = false;
+
+    async function handleSession(session) {
+        if (_sessionHandled) return;
+        _sessionHandled = true;
+        if (!session) {
+            showCard();
+            return;
+        }
+        showLoading('Checking your account…');
+        const has = await checkProfile(session.user.id);
+        if (has) {
+            showCard();
+            showView('success');
+            let n = 3;
+            const cd = document.getElementById('countdown');
+            const tick = setInterval(() => {
+                n--;
+                if (cd) cd.textContent = n;
+                if (n <= 0) {
+                    clearInterval(tick);
+                    launchApp();
+                }
+            }, 1000);
+            return;
+        }
+        _currentUser = session.user;
+        prefillMeta(session.user);
+        showCard();
+        showView('profile');
+    }
+
+    const _isHashCallback = window.location.hash.includes('access_token');
+    const _isCodeCallback = window.location.search.includes('code=');
+    const _isOAuthCallback = _isHashCallback || _isCodeCallback;
+
+    _supabase.auth.onAuthStateChange(async (event, session) => {
+        if (event === 'INITIAL_SESSION') {
+            if (_isOAuthCallback && !session) return;
+            await handleSession(session);
+        } else if (event === 'SIGNED_IN') {
+            _sessionHandled = false;
+            await handleSession(session);
+        }
+    });
+
+    if (_isCodeCallback) {
+        setTimeout(async () => {
+            if (_sessionHandled) return;
+            try {
+                const {
+                    error
+                } = await _supabase.auth.exchangeCodeForSession(window.location.href);
+                if (error) throw error;
+            } catch (_) {
+                showLoading('Sign-in failed. Please try again.');
+                setTimeout(showCard, 2500);
+            }
+        }, 8000);
+    }
+
+    setTimeout(() => {
+        if (!_sessionHandled) showCard();
+    }, 15000);
+
+    /* ── Generic OAuth sign-in (Google, Microsoft, Facebook) ── */
+    async function signInWith(provider) {
+        const opts = {
+            redirectTo: getRedirectUrl()
+        };
+        if (provider === 'azure') opts.scopes = 'email openid profile';
+        if (provider === 'facebook') opts.scopes = 'email';
+        const {
+            error
+        } = await _supabase.auth.signInWithOAuth({
+            provider,
+            options: opts
+        });
+        if (error) alert(provider + ' sign-in failed: ' + error.message);
+    }
+
+    /* ── Send OTP (kept for completeness) ── */
+    async function sendOtp() {
+        const email = document.getElementById('user-email').value.trim();
+        const status = document.getElementById('email-status');
+        const btn = document.getElementById('send-otp-btn');
+        if (!email) return;
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+        status.textContent = '';
+
+        const {
+            error
+        } = await _supabase.auth.signInWithOtp({
+            email,
+            options: {
+                shouldCreateUser: true,
+                emailRedirectTo: null
+            }
+        });
+
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send OTP Code';
+
+        if (error) {
+            status.textContent = error.message;
+            status.className = 'status-msg err';
+            return;
+        }
+
+        _currentEmail = email;
+        document.getElementById('otp-email-display').textContent = email;
+        showView('otp');
+        document.querySelectorAll('.otp-digit')[0].focus();
+    }
+
+    /* ── OTP box auto-advance ── */
+    document.querySelectorAll('.otp-digit').forEach((input, idx, all) => {
+        input.addEventListener('input', () => {
+            input.value = input.value.replace(/\D/, '');
+            if (input.value && idx < all.length - 1) all[idx + 1].focus();
+        });
+        input.addEventListener('keydown', e => {
+            if (e.key === 'Backspace' && !input.value && idx > 0) all[idx - 1].focus();
+        });
+        input.addEventListener('paste', e => {
+            e.preventDefault();
+            const digits = (e.clipboardData.getData('text') || '').replace(/\D/g, '').slice(0, 6);
+            all.forEach((box, i) => {
+                box.value = digits[i] || '';
+            });
+            const last = Math.min(digits.length, all.length - 1);
+            all[last].focus();
+        });
+    });
+
+    /* ── Verify OTP ── */
+    async function verifyOtp() {
+        const token = [...document.querySelectorAll('.otp-digit')].map(i => i.value).join('');
+        const status = document.getElementById('otp-status');
+        const btn = document.getElementById('verify-btn');
+
+        if (token.length !== 6) {
+            status.textContent = 'Please enter all 6 digits.';
+            status.className = 'status-msg err';
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Verifying…';
+        status.textContent = '';
+
+        const {
+            data,
+            error
+        } = await _supabase.auth.verifyOtp({
+            email: _currentEmail,
+            token,
+            type: 'email'
+        });
+
+        if (error) {
+            status.textContent = 'Invalid or expired code. Try again.';
+            status.className = 'status-msg err';
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-check-circle"></i> Verify & Login';
+            return;
+        }
+    }
+
+    /* ── Resend OTP ── */
+    async function resendOtp() {
+        const btn = document.getElementById('resend-btn');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        await _supabase.auth.signInWithOtp({
+            email: _currentEmail,
+            options: {
+                shouldCreateUser: true,
+                emailRedirectTo: null
+            }
+        });
+        btn.textContent = 'Code resent ✓';
+        setTimeout(() => {
+            btn.disabled = false;
+            btn.textContent = 'Resend code';
+        }, 30000);
+    }
+
+    /* ── Check if profile exists ── */
+    async function checkProfile(userId) {
+        const {
+            data
+        } = await _supabase.from('profiles').select('id').eq('id', userId).single();
+        return !!data;
+    }
+
+    /* ── Pre-fill from OAuth meta ── */
+    function prefillMeta(user) {
+        const m = user.user_metadata || {};
+        if (m.full_name || m.name) document.getElementById('prof-name').value = m.full_name || m.name;
+        if (m.avatar_url) document.getElementById('prof-pic-preview').innerHTML = `<img src="${m.avatar_url}" alt="avatar">`;
+    }
+
+    /* ── Profile photo preview ── */
+    document.getElementById('prof-pic-input').addEventListener('change', function() {
+        const file = this.files[0];
+        if (!file) return;
+        _pendingPicFile = file;
+        const reader = new FileReader();
+        reader.onload = e => {
+            document.getElementById('prof-pic-preview').innerHTML = `<img src="${e.target.result}" alt="preview">`;
+        };
+        reader.readAsDataURL(file);
+    });
+
+    /* ── Save profile ── */
+    async function saveProfile() {
+        const name = document.getElementById('prof-name').value.trim();
+        const college = document.getElementById('prof-college').value.trim();
+        const status = document.getElementById('prof-status');
+        const btn = document.getElementById('prof-save-btn');
+
+        if (!name || !college) {
+            status.textContent = 'Please fill in your name and college.';
+            status.className = 'status-msg err';
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Saving…';
+
+        let picUrl = null;
+
+        if (_pendingPicFile) {
+            try {
+                const fd = new FormData();
+                fd.append('profilePic', _pendingPicFile);
+                const res = await fetch(`${VPS_API}/api/upload-pic`, {
+                    method: 'POST',
+                    body: fd
+                });
+                if (res.ok) {
+                    const d = await res.json();
+                    picUrl = d.picUrl.startsWith('http') ? d.picUrl : VPS_API + d.picUrl;
+                }
+            } catch (_) {}
+        }
+
+        if (!picUrl && _currentUser) picUrl = (_currentUser.user_metadata || {}).avatar_url || null;
+
+        const rawId = _currentUser.id.replace(/-/g, '');
+        const randomPart = Math.random().toString(36).slice(2, 6).toUpperCase();
+        const myReferralCode = (rawId.slice(0, 6) + randomPart).toUpperCase();
+
+        const {
+            error
+        } = await _supabase.from('profiles').upsert({
+            id: _currentUser.id,
+            name,
+            college,
+            profile_pic_url: picUrl,
+            updated_at: new Date().toISOString(),
+            referral_code: myReferralCode,
+            coins: 0
+        });
+
+        if (error) {
+            status.textContent = 'Could not save: ' + error.message;
+            status.className = 'status-msg err';
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-check-circle"></i> Save & Enter App';
+            return;
+        }
+
+        try {
+            let refCode = null;
+            try {
+                const stored = localStorage.getItem('pending_ref');
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    refCode = (typeof parsed === 'object' && parsed.ref) ? parsed.ref : stored;
+                }
+            } catch (_) {
+                refCode = localStorage.getItem('pending_ref');
+            }
+            refCode = refCode || getCookie('pending_ref') || null;
+
+            if (refCode) {
+                await _supabase.rpc('process_referral_direct', {
+                    p_ref_code: refCode,
+                    p_new_user_id: _currentUser.id
+                });
+            } else {
+                const visitorToken = getCookie('vt') || localStorage.getItem('vt');
+                if (visitorToken) {
+                    await _supabase.rpc('process_referral', {
+                        p_token: visitorToken,
+                        p_new_user_id: _currentUser.id
+                    });
+                }
+            }
+        } catch (_e) {}
+
+        localStorage.removeItem('vt');
+        localStorage.removeItem('pending_ref');
+        localStorage.removeItem('pendingReferral');
+        document.cookie = 'vt=; max-age=0; path=/';
+        document.cookie = 'pending_ref=; max-age=0; path=/';
+
+        status.textContent = 'Profile saved!';
+        status.className = 'status-msg ok';
+        setTimeout(() => launchApp(), 900);
+    }
+</script>
+<script src="theme.js"></script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

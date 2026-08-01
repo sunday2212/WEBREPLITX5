@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c5282">
+    <meta name="description" content="Latest medical education news in India">
+    <title>FINALPULSE | Medical Education News</title>
+    <link rel="manifest" href="/assets/app-D7gEpyfo.webmanifest">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
+     crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-blue: #2C8252;
+            --dark-blue: #1a365d;
+            --dark-gray: #2d3748;
+            --medium-gray: #4a5568;
+            --light-gray: #718096;
+            --bg-light: #f0f4f8;
+            --border-light: #e2e8f0;
+            --card-white: #fff;
+            --accent-red: #e53e3e;
+            --success-green: #38a169;
+            --warning-orange: #ed8936;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--dark-gray);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: #4fd1c7;
+        }
+
+        /* Install Button */
+        #installBtn {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: none;
+            backdrop-filter: blur(10px);
+        }
+
+        #installBtn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .page-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .page-title p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* PWA Installation Guide */
+        .installation-guide {
+            background: var(--card-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-light);
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .guide-header h3 {
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--bg-light);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            color: var(--medium-gray);
+        }
+
+        .tab-btn.active {
+            background: var(--primary-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .platform-steps {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .step-number {
+            background: var(--primary-blue);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        /* News Grid */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .news-card {
+            background: var(--card-white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(45deg, var(--primary-blue), var(--dark-blue));
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .card-header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: inherit;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        }
+
+        .card-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .card-date {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 2rem 1.5rem;
+        }
+
+        .card-summary {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .card-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .card-details.expanded {
+            max-height: 1000px;
+        }
+
+        .card-details ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .card-details li {
+            margin-bottom: 0.8rem;
+            color: var(--medium-gray);
+        }
+
+        .background-info {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .background-info strong {
+            color: var(--dark-blue);
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .read-more-btn:hover {
+            color: var(--dark-blue);
+            transform: translateX(5px);
+        }
+
+        .read-more-btn i {
+            transition: transform 0.3s;
+        }
+
+        .read-more-btn.expanded i {
+            transform: rotate(180deg);
+        }
+
+        /* Notification Styles */
+        #notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 1000;
+            max-width: 90%;
+            animation: slideIn 0.5s ease-out;
+            display: none;
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes slideIn {
+            from { bottom: -100px; opacity: 0; }
+            to { bottom: 20px; opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #notification span {
+            flex-grow: 1;
+            font-size: 1rem;
+        }
+
+        #notification button {
+            background: white;
+            color: var(--primary-blue);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        #notification button:hover {
+            background: var(--bg-light);
+            transform: translateY(-2px);
+        }
+
+        #dismissBtn {
+            background: transparent !important;
+            color: white !important;
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #4a5568;
+        }
+        /* YouTube Video Embed Styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Maximum width on large screens */
+  margin: 20px auto; /* Center the video with some spacing */
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Optional: Add some responsive adjustments */
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+                padding: 1rem;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            .page-title h2 {
+                font-size: 2rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .guide-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 200px;
+            }
+            
+            .installation-guide {
+                padding: 1.5rem;
+                margin: 0 0.5rem 2rem;
+            }
+            
+            #notification {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+                gap: 0.75rem;
+                margin: 0 1rem;
+            }
+            
+            #notification button {
+                width: 100%;
+            }
+            .video-container {
+    margin: 15px auto;
+    border-radius: 6px; /* Slightly smaller radius on mobile */
+  }
+        
+    
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .card-content {
+                padding: 1.5rem 1rem;
+            }
+            
+            .card-header {
+                padding: 1rem;
+            }
+            .video-container {
+    margin: 10px auto;
+            }
+        }
+    </style>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <h1>FINALPULSE</h1>
+        </div>
+        <button id="installBtn"><i class="fas fa-download"></i> Download App</button>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-title">
+            <h2>Indian Medical Education Updates</h2>
+            <p>Stay informed with the latest news and developments in India's medical education sector</p>
+          </div>
+        <!-- PWA Installation Guide -->        <!-- YouTube Video Embed Container -->
+         <p>This app will only download in <b>GOOGLE CHROME</b> and <b>SAFARI BROWSER</b>. Go to bottom of page to see installation guildlines.</p>
+
+<div class="video-container">
+  <iframe
+    src="https://player.cloudinary.com/embed/?cloud_name=dh8fswqrn&public_id=InShot_20251022_231535892_cn1zq1&profile=cld-default"
+    title="Cloudinary video player"
+    style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+    allowfullscreen
+    frameborder="0">
+  </iframe>
+</div>
+
+<p>After clicking on download it is automatically installed in your device so search <b>NEXTPULSE</b> on your device</p>        <div class="news-grid">
+            <!-- News Card 1 -->
+            <div class="news-card">
+                <img src="/assets/images%20(1)%20(28)-T2zIKiv-.png" alt="Medical Education News" class="card-image">
+                <div class="card-header">
+                    <h3>RG Kar Rape Appeal</h3>
+                    <div class="card-date"><i class="fas fa-calendar"></i> January 2025</div>
+                </div>
+                <div class="card-content">
+                    <p class="card-summary">
+                        <strong>Sanjay Roy</strong>, convicted in the brutal August 9, 2024 rape-murder of a postgraduate trainee at Kolkata's RG Kar Medical College, has appealed his life sentence in the Calcutta High Court.
+                    </p>
+                    <div class="card-details" id="details1">
+                        <ul>
+                            <li>The CBI and state sought a death penalty</li>
+                            <li>Roy's defense cited "reformative and rehabilitative" grounds</li>
+                            <li>Hearing scheduled for July 16, 2025</li>
+                        </ul>
+                        <div class="background-info">
+                            <strong>Background:</strong> The 2024 incident triggered nationwide doctor strikes due to safety concerns. The former principal and a police officer were also later arrested for evidence tampering.
+                        </div>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDetails('details1', this)">
+                        Read More <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="news-card">
+                <img src="/assets/images%20(1)%20(19)-DC-W9UHN.png" alt="Medical College News" class="card-image">
+                <div class="card-header">
+                    <h3>Udaipur Electrocution Tragedy</h3>
+                    <div class="card-date"><i class="fas fa-calendar"></i> June 2025</div>
+                </div>
+                <div class="card-content">
+                    <p class="card-summary">
+                        On June 18, 2025, <strong>Dr Ravi Sharma</strong>, a senior resident at RNT Medical College Udaipur, died after electrocution from a faulty water cooler in hostel premises.
+                    </p>
+                    <div class="card-details" id="details2">
+                        <ul>
+                            <li>Resident doctors launched an indefinite strike demanding accountability and compensation</li>
+                            <li>Strike resumed after 11 days following preliminary assurances</li>
+                            <li>Safety concerns raised about hostel infrastructure</li>
+                        </ul>
+                        <div class="background-info">
+                            <strong>Impact:</strong> This incident highlighted the urgent need for better safety measures in medical college hostels across the country.
+                        </div>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDetails('details2', this)">
+                        Read More <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="news-card">
+                <img src="/assets/images%20(1)%20(20)-df19MRVT.png" alt="Medical Student" class="card-image">
+                <div class="card-header">
+                    <h3>Jabalpur Ragging Suicide</h3>
+                    <div class="card-date"><i class="fas fa-calendar"></i> June 2025</div>
+                </div>
+                <div class="card-content">
+                    <p class="card-summary">
+                        A first-year student at Netaji Subhash Chandra Medical College in Jabalpur died by suicide, allegedly due to ragging; jumped from the 4th floor.
+                    </p>
+                    <div class="card-details" id="details3">
+                        <ul>
+                            <li>Family alleged ragging via phone call</li>
+                            <li>Police are investigating both ragging and possible personal-relationship issues</li>
+                            <li>Anti-ragging committees under scrutiny</li>
+                        </ul>
+                        <div class="background-info">
+                            <strong>Action Taken:</strong> The college has suspended several students pending investigation and strengthened anti-ragging measures.
+                        </div>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDetails('details3', this)">
+                        Read More <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- News Card 4 -->
+            <div class="news-card">
+                <img src="/assets/images%20(1)%20(21)-DXqxEhKB.png" alt="Financial Fraud" class="card-image">
+                <div class="card-header">
+                    <h3>₹1,000 Cr Medical College Scam</h3>
+                    <div class="card-date"><i class="fas fa-calendar"></i> Ongoing Investigation</div>
+                </div>
+                <div class="card-content">
+                    <p class="card-summary">
+                        CBI has exposed one of India's largest medical-college scams involving high-level officials and middlemen, allegedly receiving crores in bribes for illegal accreditations.
+                    </p>
+                    <div class="card-details" id="details4">
+                        <ul>
+                            <li>Estimated bribery amount: ₹1,000-1,300 Cr</li>
+                            <li>Over 40 colleges across multiple states involved</li>
+                            <li>National Medical Commission (NMC) has frozen all new medical-college approvals</li>
+                            <li>Seat increases for 2025-26 pending investigation</li>
+                        </ul>
+                        <div class="background-info">
+                            <strong>Impact:</strong> This scandal has shaken the medical education sector and raised questions about the integrity of the accreditation process.
+                        </div>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDetails('details4', this)">
+                        Read More <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- News Card 5 -->
+            <div class="news-card">
+                <img src="/assets/images%20(1)%20(22)-DHdyPEJd.png" alt="Nursing Education" class="card-image">
+                <div class="card-header">
+                    <h3>Kottayam Ragging Horror</h3>
+                    <div class="card-date"><i class="fas fa-calendar"></i> February 2025</div>
+                </div>
+                <div class="card-content">
+                    <p class="card-summary">
+                        On February 11, 2025, five senior students at the Government College of Nursing, Kottayam, Kerala violently assaulted a junior student in a shocking ragging incident.
+                    </p>
+                    <div class="card-details" id="details5">
+                        <ul>
+                            <li>Seniors tied, slashed, and stabbed junior with a metal divider</li>
+                            <li>Applied lotion to wounds to hide evidence</li>
+                            <li>The assault went viral via video</li>
+                            <li>FIR registered and five accused were arrested and suspended</li>
+                        </ul>
+                        <div class="background-info">
+                            <strong>Legal Action:</strong> All five seniors have been charged under relevant sections and face potential expulsion from the nursing program.
+                        </div>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDetails('details5', this)">
+                        Read More <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="installation-guide">
+            <div class="guide-header">
+                <h3><i class="fas fa-mobile-alt"></i> Download App</h3>
+                <p>Get the best experience by installing our App</p>
+            </div>
+            
+            <div class="guide-tabs">
+                <button class="tab-btn active" onclick="showTab('automatic')">
+                    <i class="fas fa-magic"></i> Automatic
+                </button>
+                <button class="tab-btn" onclick="showTab('android')">
+                    <i class="fab fa-android"></i> Android
+                </button>
+                <button class="tab-btn" onclick="showTab('ios')">
+                    <i class="fab fa-apple"></i> iOS
+                </button>
+                <button class="tab-btn" onclick="showTab('windows')">
+                    <i class="fab fa-windows"></i> Windows
+                </button>
+            </div>
+
+            <div id="automatic" class="tab-content active">
+                <div class="platform-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Look for Install Prompt</h4>
+                            <p>A notification will appear asking to install the app. Click "Install Now" when it appears.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Use Install Button</h4>
+                            <p>Click the "Install App" button in the header to install directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="android" class="tab-content">
+                <div class="platform-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open Chrome Browser</h4>
+                            <p>Visit this website using Google Chrome on your Android device.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Tap Menu (⋮)</h4>
+                            <p>Tap the three dots in the top-right corner of Chrome.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Select "Add to Home screen"</h4>
+                            <p>Choose this option from the menu that appears.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Confirm Installation</h4>
+                            <p>Tap "Add" to install the app to your home screen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ios" class="tab-content">
+                <div class="platform-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open Safari Browser</h4>
+                            <p>Visit this website using Safari on your iPhone or iPad.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Tap Share Icon</h4>
+                            <p>Tap the share button (square with arrow) at the bottom of Safari.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Select "Add to Home Screen"</h4>
+                            <p>Scroll and find "Add to Home Screen" option.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Confirm Installation</h4>
+                            <p>Tap "Add" to install the app to your home screen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="windows" class="tab-content">
+                <div class="platform-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open Chrome or Edge</h4>
+                            <p>Visit this website using Chrome or Microsoft Edge.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Look for Install Icon</h4>
+                            <p>Click the install icon (⊕) in the address bar, or use our "Install App" button.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Click Install</h4>
+                            <p>Confirm the installation in the popup dialog.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>App Ready</h4>
+                            <p>The app will be available in your Start Menu and Desktop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Download this app for a better experience?</span>
+        <button id="installPromptBtn">Download Now</button>
+        <button id="dismissBtn">Dismiss</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p><i class="fas fa-stethoscope"></i> Your trusted source for the latest medical education news</p>
+            <div class="copyright">
+                <p>&copy; 2025 FINALPULSE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize access control for index page
+        if (window.accessControl) {
+            accessControl.showPWAPrompt();
+        }
+
+        // PWA Installation Handling
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        const installPromptBtn = document.getElementById('installPromptBtn');
+        const dismissBtn = document.getElementById('dismissBtn');
+        const notification = document.getElementById('notification');
+        
+        // Show install button when PWA is installable
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            window.deferredPrompt = e;
+            
+            installBtn.style.display = 'block';
+            
+            setTimeout(() => {
+                if (deferredPrompt) {
+                    notification.style.display = 'flex';
+                }
+            }, 5000);
+        });
+        
+        // Handle install button click
+        installBtn.addEventListener('click', () => {
+            showInstallPrompt();
+        });
+        
+        // Handle notification install button
+        installPromptBtn.addEventListener('click', () => {
+            showInstallPrompt();
+            notification.style.display = 'none';
+        });
+        
+        // Handle dismiss button
+        dismissBtn.addEventListener('click', () => {
+            notification.style.display = 'none';
+        });
+        
+        // Function to show install prompt
+        function showInstallPrompt() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted install');
+                        installBtn.style.display = 'none';
+                        notification.style.display = 'none';
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        }
+        
+        // Hide install button after app is installed
+        window.addEventListener('appinstalled', () => {
+            console.log('App was installed');
+            installBtn.style.display = 'none';
+            notification.style.display = 'none';
+        });
+        
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', { scope: './' })
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+
+        // Read More/Less Functionality
+        function toggleDetails(detailsId, button) {
+            const details = document.getElementById(detailsId);
+            const isExpanded = details.classList.contains('expanded');
+            
+            if (isExpanded) {
+                details.classList.remove('expanded');
+                button.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
+                button.classList.remove('expanded');
+            } else {
+                details.classList.add('expanded');
+                button.innerHTML = 'Read Less <i class="fas fa-chevron-up"></i>';
+                button.classList.add('expanded');
+            }
+        }
+
+        // Installation Guide Tab Functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+<script src="../theme.js"></script>
+<nav class="bottom-nav">
+      <a href="../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+      <a href="../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+      <a href="../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+      <a href="../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    </nav>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

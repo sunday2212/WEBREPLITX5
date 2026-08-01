@@ -1,0 +1,1082 @@
+{
+  "meta": {
+    "title": "Radiology_Pre-Test"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">JPEG</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">DICOM</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">PACS</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">ARCUS</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All radiology images are stored in a digital format. What is the name of the format?</span></p>",
+      "unique_key": "Q244423",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244423,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>DICOM-Digital Imaging Communication in Medicine - works by modelling the image acquisition process and information objects related to imaging.</li><li>The DICOM Standard specifies a rich and diverse set of information about patients, imaging equipment and procedures, and images.</li></ul><p><strong>Reference: </strong>Informatics in Radiology: An Information Model of the DICOM Standard Charles E. Kahn, Jr, Curtis P. Langlotz, David S. Channin, and Daniel L. Rubin RadioGraphics 2011 31:1, 295-304</p>",
+      "correct_choice_id": 2,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Diagnostic Peritoneal Tap</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ultrasound</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">NCCT-abdomen</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">CECT</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 25 year old young male presenting with abdominal pain after sustaining blunt trauma to his abdomen during a road traffic accident, has a BP-120/80 and a pulse of 72bpm, The next best step in management of this patient is?</span></p>",
+      "unique_key": "Q244424",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244424,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Initial Investigation in a patient with abdominal trauma is Usg to detect hemoperitoneum.</p><p>Investigation of choice to know the source of hemoperitoneum in a stable patient is Cect-Abdomen</p><p>The next line of management in this patient should be to do FAST(USG)</p><p>eFAST stands for Extended Focused Assessment with Sonography for Trauma. It is a rapid ultrasound examination performed in trauma settings to assess for potential internal injuries following blunt or penetrating trauma to the chest or abdomen. eFAST evaluates specific areas, including the pericardium, pleural spaces, and abdomen, to detect free fluid accumulation indicative of internal bleeding.</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/2E.jpg\"><p>or organ injury. This focused ultrasound examination is often performed as part of the initial trauma assessment to guide treatment decisions and determine the need for further diagnostic imaging or interventions.</p><p><strong>Reference:</strong> Christensen's Physics of Diagnostic Radiology, 4th ed, Ch.20, Pg 323</p>",
+      "correct_choice_id": 12,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">G1</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">G2</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">M</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">S</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Most Radioresistant phase of cell cycle is?</span></p>",
+      "unique_key": "Q244425",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244425,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Most Radiosensitive phase of cell cycle is the G2-M interphase or M phase</p><p>Most Radioresistant phase of cell cycle is the late S phase</p><p>During the S phase of the cell cycle, which stands for synthesis, the cell's DNA is replicated. This means that the genetic material is duplicated to prepare for cell division. This phase is crucial for cell division because each new cell needs a complete set of DNA.</p><p>Cells in the S phase are more radioresistant because the process of DNA replication provides additional mechanisms for repairing radiation-induced damage to DNA. The cell has enzymes and other proteins that can recognize and repair damaged DNA, helping the cell survive radiation exposure.</p><p>In contrast, cells in the G1 (first gap) and G2 (second gap) phases are less radioresistant. While G1 is a preparatory phase for DNA replication and cell division, it doesn't have the same level of DNA repair mechanisms as the S phase. G2 is a phase of further preparation for cell division, and although it has some DNA repair mechanisms, they are not as active as in the S phase.</p><p>The M phase (mitosis), where the cell actually divides into two daughter cells, is also relatively sensitive to radiation because the DNA is condensed and more vulnerable to damage.</p><p><strong>Reference:</strong> Robbins &amp; Cotran Pathologic basis of disease, 10th ed, Ch.1, Pg 25</p>",
+      "correct_choice_id": 24,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thermo Luminescence Dosimeter</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thermal Light Detector</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Temperature Level Detector</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Thermo Luminescence Detector</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the name of the instrument in the following image?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/4Q.jpg\"></span></p>",
+      "unique_key": "Q244426",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244426,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Thermo luminescent dosimeter (TLD) is a radiation detection device that is used for personal dose monitoring or to measure patient dose.</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page 846</p>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pleural effusion</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pericardial effusion</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hemoperitoneum</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient underwent a motor vehicle accident. There were no visible injuries identified by the team in the emergency department. There was a suspicion of blunt abdominal trauma and the patient underwent a FAST examination. The following image was obtained What is the most probable diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/5Q.jpg\"></span></p>",
+      "unique_key": "Q244427",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244427,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>The given image shows a view of the heart. Surrounding the heart is fluid which is hypoechoic. This is how a pericardial effusion looks on USG.</p><p><strong>Reference: </strong>Focused Assessment with Sonography in Trauma (FAST) in 2017: What Radiologists Can Learn, John R. Richards and John P. McGahan, Radiology 2017 283:1, 30-48</p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Uterine artery</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Umbilical arteries</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Umbilical veins</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Middle cerebral artery</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following artery is used in management of fetal anemia?</span></p>",
+      "unique_key": "Q244428",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244428,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Fetal Doppler US of the middle cerebral artery is used in two situations:<ul><li>(a) noninvasive assessment of fetal anemia and</li><li>(b) calculation of cerebroplacental ratio as a measure of fetal brain sparing.</li></ul></li><li>In response to hypoxia, the fetus diverts blood flow to the brain, increasing the middle cerebral artery diastolic flow, thereby decreasing the pulsatility index and altering the ratio of the umbilical artery flow to the middle cerebral artery flow.</li></ul><p><strong>Reference:</strong> A Radiologist's Guide to the Performance and Interpretation of Obstetric Doppler US Anne M. Kennedy and Paula J. Woodward RadioGraphics 2019 39:3, 893-910</p>",
+      "correct_choice_id": 54,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Normal pregnance</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decidual reaction</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Molar pregnancy</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ectopic pregnancy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient presented with 3 month amenorrhea. She underwent a urine pregnancy test which showed a positive result. On USG following image was obtained.What is the most probable diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/7Q.jpg\"></span></p>",
+      "unique_key": "Q244429",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244429,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The given image shows areas of cystic degeneration. This along with positive UPT test should raise the suspicion of molar pregnancy.</li><li>The uterus is enlarged with absent fetal echoes. Echogenic material with scattered small cysts fills the uterine cavity (Hydropic Degeneration).</li><li>Total mole is diagnosed when urinary or serum hCG is higher than 100,000 mIU/ml that (which) is the higher normal range of early pregnancy.</li><li>The elevated hCG levels cause ovarian stimulation resulting in formation of bilateral theca lutein cysts.</li></ul><p><strong>Reference:</strong> Ultrasound in obstetrics and gynecology by Dr. P. K. shah, Dr. Mandakini megh, Dr. Nandita palshetkar page number 66</p>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Dandy Walker Malformation</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Chiari Malformation</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vein Of Galen Malformation</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tb Meningitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A CT Angiogram image of a child with high output cardiac failure is given, it suggests the diagnosis of?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/8Q.jpg\"></span></p>",
+      "unique_key": "Q244430",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244430,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>CT cerebral angiogram shows an aneurysmal deep midline intracranial venous structure and in a child with High output cardiac failure suggests Vein Of Galen Malformation</p><p>It is <strong>AV fistula</strong> with prominent median prosencephalic vein</p><p>Child presents with <strong>midline vascular swelling in the brain, Hydrocephalus and CHF.</strong></p><p><strong>Reference:</strong> Diagnostic radiology neuroradiology including head and neck imaging 3rd edition Chapter 11</p>",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bronchoscopy</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">Follow up CT after one year</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRI</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">Image guided biopsy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 35 year old underwent chest radiograph as part of a routine health check up for his employment, Chest Radiograph revealed a nodule in Right lung. He has no history of fever, weight loss, chest pain or hemoptysis. CT scan obtained from the patient is given below. Which of the following should be the most appropriate next step of management?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/9Q.jpg\"></span></p>",
+      "unique_key": "Q244431",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244431,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The irregular spiculated lesion on Chest CT in this patient makes us suspicious of malignancy and warrant CT GUIDED BIOPSY to establish a histological diagnosis.</li><li>Incidental pulmonary nodules, are an extremely common finding on Imaging</li><li>Prior CXRs and CT scans should be obtained if available for comparison and the probability of cancer, determined according to the patient's smoking history, age, and characteristics on imaging</li><li>A PET scan may be useful if the lesion are greater in size and if CT Guided biopsy is not feasible</li></ul><p><strong>Reference:</strong> Diagnostic radiology chest and cardiovascular imaging chapter 12</p>",
+      "correct_choice_id": 84,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Giving slow dose</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Adequate hydration</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">Giving premedication</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What Is the most effective way to prevent contrast induced nephropathy?</span></p>",
+      "unique_key": "Q244432",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244432,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Contrast-induced nephropathy (CIN), also known as contrast-induced acute kidney injury, is an iatrogenic renal injury that follows intravascular administration of radio-opaque contrast media (CM) in susceptible individuals. The most important factor is adequate pre hydration and assessment of renal function.</p><p><strong>Reference:</strong> AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page number 805</p>",
+      "correct_choice_id": 92,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Transabdominal Usg</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">CECT</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">EUS</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">MRI</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Investigation of choice to Determine Local Invasion In Esophageal Carcinoma(T staging) is?</span></p>",
+      "unique_key": "Q244433",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244433,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Endoscopic Ultrasound - Determines Local Invasion In Esophageal Carcinoma(T staging)</p><p>Endoscopic ultrasound (EUS) is a valuable imaging technique that combines endoscopy and ultrasound to provide detailed imaging of the esophagus and surrounding structures. It is commonly used in the diagnosis and staging of esophageal carcinoma. The endoscope is equipped with an ultrasound transducer that provides high-resolution images of the layers of the esophageal wall. This helps in determining the location and extent of the tumor within the esophageal wall.</p><p>Here are some additional uses of endoscopic ultrasound:</p><p>Pancreatic Lesions:</p><p>EUS is widely used for imaging the pancreas. It can help in detecting and characterizing pancreatic tumors, cystic lesions, and other abnormalities. EUS-guided fine-needle aspiration (FNA) or biopsy can be performed for tissue sampling.</p><p>Biliary Tract Disorders:</p><p>EUS can be utilized to evaluate the biliary tract, including the gallbladder and bile ducts. It is particularly useful for identifying common bile duct stones, strictures, and other abnormalities.</p><p>Gastrointestinal Submucosal Lesions:</p><p>EUS is effective in characterizing submucosal lesions in the gastrointestinal tract, such as gastrointestinal stromal tumors (GISTs), leiomyomas, and neuroendocrine tumors. EUS can help determine the depth of involvement and guide further management.</p><p>Rectal Lesions and Anal Sphincter Assessment:</p><p>EUS is employed for evaluating rectal lesions, including rectal cancers, and assessing the anal sphincters. It provides detailed information about the layers of the rectal wall and helps guide treatment decisions.</p><p>Lung Lesions and Mediastinal Staging:</p><p>EUS can be used for imaging mediastinal structures and assessing lymph nodes in the chest. It is commonly employed for staging lung cancer and detecting metastasis in the mediastinal region.</p><p>Adrenal Lesions:</p><p>EUS can aid in the evaluation of adrenal lesions, helping to distinguish between benign and malignant tumors. It can be particularly useful when conventional imaging modalities provide inconclusive results.</p><p>Perirectal and Perianal Fistulas:</p><p>EUS is employed for assessing perianal and perirectal fistulas in patients with inflammatory bowel disease or other conditions. It helps in determining the extent and complexity of fistulous tracts.</p><p>Vascular Structures:</p><p>EUS can visualize vascular structures near the gastrointestinal tract, such as the celiac artery and superior mesenteric artery. This can be useful for planning interventions or assessing potential vascular involvement in nearby tumors.</p><p>Lymph Node Assessment:</p><p>EUS is valuable for evaluating lymph nodes in various regions of the body, providing information about their size, shape, and characteristics. This is important for cancer staging and treatment planning.</p><p>Celiac Plexus Neurolysis:</p><p>EUS can be used for celiac plexus neurolysis, a procedure that involves injecting neurolytic agents near the celiac ganglia to alleviate pain in patients with pancreatic cancer or chronic pancreatitis.</p><p><strong>Reference:</strong> David sutton textbook of radiology edition 8 chapter 13</p>",
+      "correct_choice_id": 103,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Large bowel</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ileum</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Jejunum</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Stomach</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Below given X-Ray indicate obstruction of which of the bowel loops?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/12Q.jpg\"></span></p>",
+      "unique_key": "Q244434",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244434,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Given image shows dilated bowel loops. They are situated in the periphery and shows haustrations. This all suggests large bowel obstruction.</li><li>In small bowel loops obstruction the dilated bowel loops are situated in the centre and shows peculiar features particular to the bowel loops. (jejunal- concertina/plica circularis/valvulae conniventes and featureless- ileum)</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page no 2230</p>",
+      "correct_choice_id": 111,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pneumatosis intestinalis</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pneumoperitoneum</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intestinal obstruction</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intestinal atresia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the following:<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/13Q.jpg\"></span></p>",
+      "unique_key": "Q244435",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244435,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Given Xray shows multiple pockets of air in the walls of the intestine (intramural air) denoted by arrows. This is known as pneumatosis intestinalis.</li><li>In infants, pneumatosis intestinalis suggests an underlying necrotizing enterocolitis, which occurs primarily in premature infants and has a very low survival rate.</li></ul><p><strong>Reference</strong>: Im J, Anjum F. Pneumatosis Intestinalis. [Updated 2021 Dec 8]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK564381/</p>",
+      "correct_choice_id": 121,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Punched out lesion</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Apple core lesion</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Fungating growth</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rat tail appearance</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Given below is a barium enema. Identify the type of lesion shown below<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/14Q.jpg\"></span></p>",
+      "unique_key": "Q244436",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244436,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The given barium image shows Apple core appearance of Ca Colon</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page no 1726</p>",
+      "correct_choice_id": 132,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Achalasia cardia</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">TE fistula</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Carcinoma oesophagus</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Oesophagitis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Identify the following barium image?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/15Q.jpg\"></span></p>",
+      "unique_key": "Q244437",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244437,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The given barium image shows a distended esophagus followed by thinning of the contrast column of the barium giving a rat tail /bird beak appearance. This is known as rat tail sign and is suggestive of achalasia cardia.</li><li>Achalasia cardia is a motility disorder of the GEJ in which there is improper contraction of the GEJ which leads to incomplete emptying of the esophagus and it's progressive dilation.</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page no 2407</p>",
+      "correct_choice_id": 141,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Crohn's disease</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Ulcerative colitis</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intestinal tuberculosis</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Typhoid enteritis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is the most probable diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/16Q.jpg\"></span></p>",
+      "unique_key": "Q244438",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244438,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The given image is of barium enema of the large bowel loops. It shows loss of haustration of the large bowel loops giving a pipe like appearance of the bowel. This is highly suggestive of ulcerative colitis.</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page no 2183</p>",
+      "correct_choice_id": 152,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rheumatoid Arthritis</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Wegners Granulomatosis</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Scleroderma</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tuberculosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 55 Year old male with progressive shortness of breath shows traction bronchiectasis, bibasal fibrosis with volume loss of lungs on HRCT, Barium swallow shows dilated patulous esophagus, most likely cause is?</span></p>",
+      "unique_key": "Q244439",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244439,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>The combination of findings-progressive shortness of breath, traction bronchiectasis, bibasal fibrosis with volume loss of lungs on HRCT, and dilated patulous esophagus on barium swallow-points towards scleroderma as the most likely cause. Scleroderma, or systemic sclerosis, is a connective tissue disorder characterized by fibrosis and vascular abnormalities. It can affect multiple organs, including the lungs and esophagus, leading to symptoms such as shortness of breath and esophageal dysfunction. Traction bronchiectasis and bibasal fibrosis are common findings in scleroderma-related interstitial lung disease, and esophageal dysmotility can result in a dilated esophagus on imaging.</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/17E.jpg\"><p><strong>Reference:</strong> David Sutton's Textbook of radiology &amp; imaging, 8th ed, Ch.18, pg 1232</p>",
+      "correct_choice_id": 163,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Seashore Sign</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Barcode sign/stratosphere sign</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Absent Sliding Sign</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Absent Comet Tail Artifacts</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not an USG sign of Pneumothorax?</span></p>",
+      "unique_key": "Q244440",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244440,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>Sliding sign -sliding of parital and visceral pleura - normal<br /> Absent sliding-Pneumothorax<br> Comet tail artifacts-B lines-NORMAL REVERBERATION ARTIFACTS,<br> Absent comet Tail sign/Absent B lines pneumothorax</p><p>Seashore sign -Normal<br> Absent Seashore sign-Pneumothorax<br> Quad sign-Pleural effusion on static Usg<br> Sinusoid Sign-Pleural Effusion On M mode</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E.jpg\"><p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E1.jpg\"><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E2.jpg\">Quad sign and sinusoid signpleural effusion</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E3.jpg\"><p>Seashore sign-M mode normal</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E4.jpg\"><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E5.jpg\"><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E6.jpg\"><p>Comet tail-normal absent comet tail artifacts pneumothorax</p><ul><li>Ultrasound demonstrates the loss of 'comet-tail artifacts' in patients with a pneumothorax. These reverberation artifacts are lost due to air accumulating within the pleural space, which hinders the propagation of sound waves and eliminates the acoustic impedance gradient</li></ul><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/18E7.jpg\"><p><strong>Reference:</strong> David Sutton's textbook of radiology &amp; imaging, 8th ed, Ch12(respiratory, volume B)</p>",
+      "correct_choice_id": 171,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">ICA block</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">Moya Moya disease</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">ACA aneurysm</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">None of the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What is your diagnosis based on the image shown here?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/19Q.jpg\"></span></p>",
+      "unique_key": "Q244441",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244441,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Moya moya disease (MMD) is an idiopathic progressive arteriopathy characterized by stenosis of the distal (supraclinoid) ICAs and formation of an abnormal vascular network at the base of the brain.</li><li>These \"moya moya collaterals\" can become so extensive that they resemble the \"puff of smoke\" from a cigarette, the Japanese term for which the disease is named.</li><li>DSA, CTA, and MRA show predominantly anterior circulation disease with marked narrowing of both supraclinoid ICAs (\"bottle neck\" sign).</li></ul><p><strong>Reference:</strong> Osborn's Brain, 2nd Edition, Page Number-308.</p>",
+      "correct_choice_id": 182,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">a-3,b-4,c-1,d-2</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">a-1,b-2,c-3,d-4</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">a-4,b-3,c-2,d-1</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">a-2,b-1.c-4,d-3</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Match the following:<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/20Q.jpg\"></span></p>",
+      "unique_key": "Q244442",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244442,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>Xanthogranulomatous pyelonephritis is a chronic granulomatous inflammation of the kidneys.</li><li>On CT scan there are hypoattenuating masses which represent the dilated calyces filled with pus and necrotic debris and are separated by renal column of bertini.with associated obstruction or infection</li><li>This leads to appearance of 'bear paw'.</li><li>Thimble Bladder is small contracted atrophic noncalcific bladder s/o Tuberculosis</li></ul><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/20E.jpg\"><p>BearPaw sign OF Xanthogranulomatous pyelonephritis</p><ul><li>In Pyelonephritis,on CT IVP striated appearance is noted</li><li>chronic infection by the schistosoma causes calcification of the urinary bladder wall.</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page number - 85-93</p>",
+      "correct_choice_id": 191,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">Urethral stricture</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bladder diverticulum</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">Urethral injury</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">Urethral diverticulum</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient presented to OPD with bladder voiding difficulties after urethral instrumentation. He was advised to undergo a RGU which is shown below. Identify the diagnosis.<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/21Q.jpg\"></span></p>",
+      "unique_key": "Q244443",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244443,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>RGU is used for evaluating anterior urethra and MCU is used for evaluating posterior urethra.</li><li>Given image is of RGU which shows thinning of urethra at various levels; suggestive of stricture.</li></ul><p><strong>Reference</strong>: AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page number -211</p>",
+      "correct_choice_id": 201,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liver abscess</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hydatid cyst</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Hepatocellular carcinoma</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cirrhosis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A vet presented to the OPD with abdominal pain and vomiting. On undergoing an USG examination, the following image was obtained of liver. What is the most likely diagnosis?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/22Q.jpg\"></span></p>",
+      "unique_key": "Q244444",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244444,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li>The ultrasound image shows Water Lily sign of Hydatid cyst, result from infection by the Echinococcus tapeworm species and can result in cyst formation anywhere in the body.</li></ul><p>The USG features are The Gharbi ultrasound classification consists of five stages:</p><ul><li>stage 1: homogeneously hypoechogenic cystic thin-walled lesion</li><li>stage 2: septated cystic lesion</li><li>stage 3: cystic lesion with daughter lesions</li><li>stage 4: pseudo-tumor lesion</li><li>stage 5: calcified or partially calcified lesion (inactive cyst)</li></ul><p>The cysts usually have three components:</p><p>Pericyst: composed of inflammatory tissue of host origin Exocyst<br /> Endocyst: scolices (the larval stage of the parasite) and the laminated membrane are produced here</p><p><strong>Reference:</strong> AIIMS-MAMC-PGI's Comprehensive textbook of diagnostic radiology page Number 1893</p>",
+      "correct_choice_id": 212,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rt pulmonary artery</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">Lt Pulmonary Artery</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">Rt Pulmonary vein</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">Left pulmonary vein</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">CT Angio of a patient with polycythemia vera is shown, The thrombus pointed lies in?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/23Q.jpg\"></span></p>",
+      "unique_key": "Q244445",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244445,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>The Posterior most chamber of the heart is Left Atrium and the yellow arrow points towards a thrombus inside left pulmonary vein</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/23E.jpg\">",
+      "correct_choice_id": 222,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 24,
+      "choices": [
+        {
+          "id": 231,
+          "text": "<p><span style=\"font-size:12.0pt;\">Implant rupture</span></p>"
+        },
+        {
+          "id": 232,
+          "text": "<p><span style=\"font-size:12.0pt;\">Gel leak</span></p>"
+        },
+        {
+          "id": 233,
+          "text": "<p><span style=\"font-size:12.0pt;\">Normal implant</span></p>"
+        },
+        {
+          "id": 234,
+          "text": "<p><span style=\"font-size:12.0pt;\">Capsular contracture</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">What does the given image of breast represent on MRI?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/24Q.jpg\"></span></p>",
+      "unique_key": "Q244446",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244446,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<ul><li><strong>Linguine sign</strong>, also known as the&nbsp;<strong>wavy line sign</strong>, is one of the imaging signs of intracapsular rupture of a breast implant.</li></ul><p><strong>Reference:</strong> Primer of diagnostic imaging, sixth edition page number - 578</p>",
+      "correct_choice_id": 231,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 25,
+      "choices": [
+        {
+          "id": 241,
+          "text": "<p><span style=\"font-size:12.0pt;\">Anencephaly</span></p>"
+        },
+        {
+          "id": 242,
+          "text": "<p><span style=\"font-size:12.0pt;\">Encephalocele</span></p>"
+        },
+        {
+          "id": 243,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cystic Hygroma</span></p>"
+        },
+        {
+          "id": 244,
+          "text": "<p><span style=\"font-size:12.0pt;\">Downs syndrome</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A female on antenatal scan is told that there is a problem with her fetus, the following USG image is obtained, probable diagnosis is?<br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/25Q.jpg\"></span></p>",
+      "unique_key": "Q244447",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 244447,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1000018
+      ],
+      "solution": "<p>The Antenatal Scan Image shows Absent cranial bones and absent supraorbital brain parenchyma giving the appearance of Frog eye appearance on Antenatal scan suggestive of Anencephaly</p><p>Anencephaly is the earliest congenital malformation to be diagnosed as early as 10-12 weeks of gestation</p><p>Coronal view-Absent Calvarium and no supraorbital brain parenchyma giving Classic Frog Eye Appearance</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/25E.jpg\"><p>Saggital view-Acrania, loosely arranged brain parenchyma-Anencephaly</p><br><img class=\"w-100\" style=\"height:auto;display:block;vertical-align: middle;border:0; \"src=\"https://d10ehao5y6v0v4.cloudfront.net/V2LBNEETPG/PreTestQuiz/Radiology21122024/25E1.jpg\"><p><strong>Reference:</strong> David sutton textbook of radiology edition 8 chapter 48</p>",
+      "correct_choice_id": 241,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

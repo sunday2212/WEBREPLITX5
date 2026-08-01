@@ -1,0 +1,480 @@
+{
+  "meta": {
+    "title": "Oxygen_Therapy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">4L/minute.</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">6L/minute.</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">8L/minute.</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">10L/minute.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man known to have COPD is admitted with severe respiratory distress. What is the flow rate required to deliver 28% oxygen through a Venturi mask?</span></p>",
+      "unique_key": "DT1226686",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226686,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The flow rate required to deliver 28% oxygen through a Venturi mask is <strong>4L/ min.</strong></p>\n<ul>\n<li><strong>Venturi Mask as a Fixed-Performance Device</strong>:<br /> A Venturi mask is classified as a <strong>fixed-performance device</strong> because it delivers a <strong>constant and known FiO<sub>2</sub></strong> regardless of the patient's respiratory pattern (provided the mask is used correctly).<br /> It achieves this by mixing a fixed ratio of oxygen and ambient air through specially designed jet adapters.</li>\n</ul>\n<p><strong>Mechanism of Air Entrainment</strong>:</p>\n<ul>\n<li>The Venturi effect: High-velocity oxygen passes through a narrow jet orifice, creating a pressure drop that entrains a fixed amount of room air through side ports.</li>\n<li>The <strong>size of the jet orifice and the entrainment ports</strong> determine the final oxygen concentration (FiO<sub>2</sub>).</li>\n<li>Each colored adaptor corresponds to a specific FiO<sub>2</sub> and has a <strong>recommended oxygen flow rate</strong> that must be followed for accuracy.</li>\n</ul>\n<p><strong>Specifics for 28% FiO<sub>2</sub></strong>:</p>\n<ul>\n<li>The <strong>blue</strong> Venturi adapter is typically used for <strong>28% oxygen</strong>.</li>\n<li>According to manufacturer guidelines and support, the required <strong>oxygen flow rate is 4 L/min</strong> to achieve this FiO<sub>2</sub> reliably.</li>\n<li>Deviating from this flow rate can alter the FiO<sub>2</sub> delivered.</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507070c56230f-3d8a-412a-ad62-cfbde9cc38bc.png\"><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507072626ea2b-0dd1-4f62-9867-20f522a5fe3e.png\">",
+      "correct_choice_id": 1,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">The critical temperature of liquid oxygen is ideal to store as a liquid</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Liquid oxygen is easier to store.</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">VIE does not require rigorous maintenance.</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">When evaporated, liquid oxygen occupies a large volume as gas.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">When compared to a cylinder manifold, a vacuum-insulated evaporator (VIE) is the most economical way to store and supply oxygen in a large hospital. What is the single most important reason for this?</span></p>",
+      "unique_key": "DT1226687",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226687,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation</strong>:</p>\n<p>The single most important reason for this is when evaporated, liquid oxygen occupies a large volume as a gas.</p>\n<p><strong>vacuum-insulated evaporator (VIE)</strong></p>\n<ul>\n<li>Storage Conditions:\n<ul>\n<li>Stores liquid oxygen at temperatures between -150&deg;C to -170&deg;C.</li>\n<li>Operates at a pressure of 5-10 atmospheres.</li>\n<li>Functions like a giant thermos flask, with vacuum insulation to minimise heat transfer.</li>\n</ul>\n</li>\n<li>Volume Expansion:\n<ul>\n<li>At 15&deg;C, 1 volume of liquid oxygen expands to approximately 842 volumes of gaseous oxygen.</li>\n<li>This expansion makes VIEs ideal for efficient storage in large hospitals.</li>\n</ul>\n</li>\n<li>Evaporation and Gas Delivery:\n<ul>\n<li>Oxygen constantly evaporates from the top of the liquid surface within the VIE.</li>\n<li>The evaporated oxygen is extremely cold and must be passed through a superheater to reach usable temperatures.</li>\n</ul>\n</li>\n<li>Effect of Increased Flow Rate:\n<ul>\n<li>During high oxygen demand, the temperature of the remaining liquid drops due to the latent heat of vaporisation.</li>\n<li>This can slow evaporation and reduce supply pressure if not compensated.</li>\n</ul>\n</li>\n<li>Pressure-Raising Vaporiser:\n<ul>\n<li>Provides additional external heat to maintain pressure and ensure a continuous gas supply.</li>\n<li>Helps stabilize delivery during rapid or high flow withdrawal periods.</li>\n</ul>\n</li>\n<li>Maintenance &amp; Safety:\n<ul>\n<li>Requires regular maintenance, monitoring of oxygen usage, and routine refilling.</li>\n<li>Equipped with pressure relief valves and venting systems to manage excess pressure and gas buildup safely.</li>\n</ul>\n</li>\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/2025070709a0254a-30b0-4e58-b295-d86a744f7f11.png\">\n<p><strong>Explanation of other options:</strong></p>\n<p>The critical temperature of liquid oxygen is ideal to store as a liquid <strong>(Option A):</strong></p>\n<p>Liquid oxygen has a <strong>low critical temperature</strong> (-118&deg;C), and it must be stored below this in special insulated vessels. This is not the main reason for its use-rather, it's a limitation.</p>\n<p>Liquid oxygen is easier to store <strong>(Option B):</strong></p>\n<p>&rarr; Not entirely true. Liquid oxygen <strong>requires special cryogenic storage</strong> (like VIEs), which is <strong>complex</strong> and not \"easier\" than storing compressed gas cylinders in smaller settings.</p>\n<p>VIE does not require rigorous maintenance <strong>(Option C):</strong></p>\n<p>&rarr; Incorrect. VIE systems <strong>do require maintenance</strong>-e.g., checking insulation, safety valves, and vaporizing systems.</p>\n<p><strong>Key takeaway:</strong></p>\n<p>The <strong>single most important reason</strong> VIE systems are used in large hospitals is that <strong>liquid oxygen, when evaporated, produces a massive volume of gaseous oxygen</strong>, making it <strong>economical and practical for high-demand settings</strong>.</p>",
+      "correct_choice_id": 14,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Work on the Bernoulli principle and jet entrainment</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Will have a fixed entrainment ratio</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">Provide consistent FiO2 even during peak inspiratory flow rate (40 L/min)</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">The entrainment ratio is usually 16:1</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All are true about Venturi masks except</span></p>",
+      "unique_key": "DT1226688",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226688,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation: </strong></p>\n<p>The entrainment ratio is usually 16:1 is the incorrect option. Each colour-coded mask is designed to achieve a specific FiO<sub>2</sub> by entraining a fixed ratio of ambient air to oxygen</p>\n<p>Venturi masks are fixed-performance devices that deliver a specified fraction of inspired oxygen (FiO<sub>2</sub>) by entraining a known amount of ambient air through a jet orifice.</p>\n<p>The entrainment ratio varies depending on the desired FiO<sub>2</sub>.</p>\n<p>For example:</p>\n<ul>\n<li>24% FiO<sub>2</sub> &rarr; Entrains 25 parts air : 1 part oxygen</li>\n<li>40% FiO<sub>2</sub> &rarr; Entrains 3 parts air : 1 part oxygen</li>\n<li>60% FiO<sub>2</sub> &rarr; Entrains 1 part air : 1 part oxygen</li>\n</ul>\n<p>There is no standard or \"usual\" 16:1 ratio across all Venturi masks.</p>\n<p>Explanation of Other Options:</p>\n<p><strong>Work on the Bernoulli principle and jet entrainment (Option A)</strong></p>\n<ul>\n<li>True. Venturi masks operate on the Venturi effect, which is a consequence of the Bernoulli principle. As oxygen flows through a constricted nozzle, its velocity increases, leading to a decrease in pressure. This pressure drop causes ambient air to be drawn in through side ports, mixing with the oxygen to achieve the desired FiO<sub>2</sub>.</li>\n</ul>\n<p><strong>Will have a fixed entrainment ratio (Option B)</strong></p>\n<ul>\n<li>True. Each colour-coded Venturi device is engineered to deliver a specific FiO<sub>2</sub> by entraining a fixed ratio of ambient air to oxygen. For instance, a device delivering 24% FiO<sub>2</sub> has an entrainment ratio of approximately 25:1, meaning for every 1 liter of oxygen, 25 liters of ambient air are entrained.</li>\n</ul>\n<p><strong>Provide consistent FiO<sub>2</sub> even during peak inspiratory flow rate (40 L/min) (Option C)</strong></p>\n<ul>\n<li>True. Venturi masks are designed to deliver a consistent FiO<sub>2</sub> by providing a total flow that exceeds the patient's peak inspiratory flow rate (PIFR). This ensures that the mask can meet the patient's inspiratory demands without significant dilution of the oxygen concentration.</li>\n</ul>",
+      "correct_choice_id": 24,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">Use the Bernoulli principle</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Are variable performance</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Deliver constant concentrations of oxygen</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Require closed face masks</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All are true about High air flow oxygen enriched (HAFOE) devices except</span></p>",
+      "unique_key": "DT1226689",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226689,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>They are fixed performers.</p>\r\n<p>HAFOE stands for 'high air flow oxygen-enriched' devices.</p>\r\n<ul>\r\n<li><strong>HAFOE</strong> stands for <strong>High Air Flow Oxygen Enrichment</strong>, a method of delivering a <strong>fixed concentration of high-flow oxygen</strong> using the <strong>Venturi principle</strong></li>\r\n<li>It's used during <strong>post-operative oxygen therapy</strong> and in patients who need a <strong>precise FiO<sub>2</sub></strong>, such as those with <strong>COPD &amp; CO<sub>2</sub> retention</strong></li>\r\n<li>The Bernoulli principle is used with a venturi device to cause entrainment of air around an oxygen jet ventur- <strong>(Option A ruled out)</strong>.</li>\r\n<li>These devices are constant in performance and require masks with holes to enable high volumes of air to be entrained.<strong>(option C and D </strong><strong>ruled out)</strong></li>\r\n</ul>\r\n<h3>Key Advantages</h3>\r\n<ul>\r\n  <li><strong>Precise control</strong> of FiO<sub>2</sub>, independent of patient's breathing pattern .</li>\r\n<li><strong>Flushes dead space</strong> and <strong>minimizes rebreathing</strong> Ideal for <strong>COPD patients</strong> where over-oxygenation might blunt respiratory drive.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250707e40f77b5-1946-49d0-953b-5c029af503c6.png\">",
+      "correct_choice_id": 32,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased CO2 tension</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Increased duration of exposure</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">High altitude</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">Anaemia</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">During oxygen therapy, pulmonary oxygen toxicity is more likely to be associated with</span></p>",
+      "unique_key": "DT1226690",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226690,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>During prolonged exposure to high concentrations of Oxygen, There is high chance of pulmonary toxicity by high concentrations of oxygen free radicals, and hence option 2</li>\n<li>O2 toxicity is caused by excessive production of oxygen free radicals (e.g., superoxide, hydroxyl radicals, and singlet oxygen). With the use of supplemental O2 at 1 ATA, the manifestations of O2 toxicity are almost exclusively confined to the lung; however, during hyperbaric O2 exposure, other organs can be affected as well.</li>\n<li>O2 toxicity during HBOT can affect mainly the lung, the central nervous system (CNS), and the eye. Pulmonary toxicity in the conscious patient is heralded by symptoms of tracheobronchial irritation, namely, cough and burning chest pain</li>\n</ul>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Necrotising soft tissue infections</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Progressive myopia</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Decompression sickness</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Clostridia infections</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">All the following are indications for hyperbaric oxygen therapy except:</span></p>",
+      "unique_key": "DT1226691",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226691,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation: </strong></p>\n<p>Hyperbaric oxygen therapy is indicated in all the conditions mentioned except Progressive myopia</p>\n<p>The indications for HBOT.</p>\n<ul>\n<li>Carbon monoxide (CO) poisoning,</li>\n<li>Gas bubble injury (gas embolism and decompression sickness [DCS])- option C ruled out</li>\n<li>Soft tissue necrotising infections- option A ruled out</li>\n</ul>\n<p>In detail, HBOT can be used in the following</p><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202507078e621883-2efc-49a7-8a4f-10f7a9bd5b40.png\">",
+      "correct_choice_id": 52,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cough</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Retrolental fibroplasia</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulmonary oedema</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Absorptive atelectasis</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 32-year-old patient has been receiving high-flow oxygen therapy via a non-rebreather mask for the past 48 hours in the ICU. He begins to complain of chest tightness and has a persistent dry cough. Which of the following complications is least likely to be caused by prolonged oxygen therapy at atmospheric pressure?</span></p>",
+      "unique_key": "DT1226692",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226692,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>Retrolental fibroplasia (RLF), now known as retinopathy of prematurity (ROP), is primarily a concern in preterm neonates receiving high concentrations of oxygen. It is not typically associated with prolonged oxygen therapy at atmospheric pressure in adults.</p>\r\n<h4>1. Oxygen Toxicity Types</h4>\r\n<ul>\r\n<li>Pulmonary toxicity (most common in adults)</li>\r\n<li>Retinopathy of prematurity (ROP) (seen in neonates)</li>\r\n<li>Central nervous system toxicity (mainly at hyperbaric pressures)</li>\r\n</ul>\r\n<h4>2. Pulmonary Effects of Prolonged Oxygen at Atmospheric Pressure</h4>\r\n<ul>\r\n<li>Tracheobronchitis &rarr; dry cough, chest discomfort</li>\r\n<li>Alveolar damage &rarr; pulmonary oedema, decreased compliance</li>\r\n<li>Type I pneumocyte damage, surfactant dysfunction</li>\r\n<li>Free radical injury (&uarr; ROS) &rarr; inflammation, apoptosis</li>\r\n</ul>\r\n<h4>3. CNS Oxygen Toxicity</h4>\r\n<ul>\r\n<li>Seen in hyperbaric conditions, not typically at 1 atm</li>\r\n<li>Symptoms include: nausea, dizziness, seizures, tremors</li>\r\n<li>Called the Paul Bert effect</li>\r\n</ul>\r\n<h4>4. Retrolental Fibroplasia (ROP)</h4>\r\n<ul>\r\n<li>Only occurs in preterm neonates</li>\r\n<li>Risk factor: PaO<sub>2</sub> &gt; 100 mm Hg</li>\r\n<li>Not a concern in adults receiving oxygen therapy</li>\r\n</ul>\r\n<h4>5. Oxygen Therapy Guidelines</h4>\r\n<ul>\r\n<li>Avoid FiO<sub>2</sub> &gt; 60% for &gt; 24-48 hours unless clinically indicated</li>\r\n<li>Target SpO<sub>2</sub>:</li>\r\n<ul>\r\n<li>88-92% in COPD patients</li>\r\n<li>94-98% in others</li>\r\n</ul>\r\n  <li>Monitor for signs of toxicity if high FiO<sub>2</sub> is unavoidable</li>\r\n</ul>\r\n<h4>6. Preventive Measures</h4>\r\n<ul>\r\n<li>Use lowest FiO<sub>2</sub> that maintains adequate oxygenation</li>\r\n<li>Monitor ABGs and oxygen saturation closely</li>\r\n<li>In neonates: use blended oxygen and preductal SpO<sub>2</sub> monitoring</li>\r\n</ul>\r\n<p><strong>Explanation of other options:</strong></p>\r\n<ul>\r\n<li>Cough (<strong>option </strong>A) : Prolonged oxygen therapy can lead to irritation of the respiratory tract, resulting in a persistent dry cough.</li>\r\n<li>Pulmonary Edema (<strong>option </strong>C) : High concentrations of oxygen can increase the production of reactive oxygen species, leading to capillary leakage and subsequent pulmonary edema.</li>\r\n<li>Absorptive atelectasis (<strong>option </strong>D): High concentrations of oxygen displace nitrogen in the alveoli. Since oxygen is rapidly absorbed into the bloodstream, the alveoli can collapse, especially if ventilation is compromised. This is called <strong>absorptive or resorption atelectasis</strong>.</li>\r\n</ul>",
+      "correct_choice_id": 62,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Bag and mask ventilation with 100% oxygen</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Intubate and ventilate with 100% oxygen</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Spontaneous breathing with 100% oxygen</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Observe</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A term infant with good muscle tone and a strong cry has an 83% saturation on room air 5 minutes after delivery. The MOST appropriate action at this point would be</span></p>",
+      "unique_key": "DT1226694",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226694,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>The Most appropriate action at this point would be Observe the baby as saturation of 83% at 5 min in a healthy infant is in a normal transitional range.</p>\r\n<ul>\r\n<li>A term infant with a strong cry and good muscle tone does not require oxygen therapy based on a 5-minute saturation alone.</li>\r\n<li>The fetal lungs make a rapid transition from a fluid-filled organ to an air-filled organ. As the zones of atelectasis open, the saturation rises.</li>\r\n<li>The table below shows acceptable preductal oxygen saturation as a function of time.</li>\r\n</ul><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/20250707078b019d-6de3-4613-b66b-e22212bf0be4.png\">\r\n<p><strong>Explanation of other options:</strong></p>\r\n<h4>Bag and mask ventilation with 100% oxygen (option A)</h4>\r\n<ul>\r\n<li>Not indicated. The baby is breathing well and vigorous. Ventilation is not needed unless signs of apnea, bradycardia, or poor tone.</li>\r\n</ul>\r\n<h4>Intubate and ventilate with 100% oxygen (option B)</h4>\r\n<ul>\r\n<li>Far too aggressive for a well-appearing, term baby with normal respiratory effort.</li>\r\n</ul>\r\n<h4>Spontaneous breathing with 100% oxygen (option C)</h4>\r\n<ul>\r\n<li>Not required. High concentrations of oxygen can cause oxidative stress and complications (e.g., ROP, BPD). Room air is adequate unless persistent cyanosis or low saturation beyond expected range.</li>\r\n</ul>\r\n<h3>Key Takeaway:</h3>\r\n<p>In the first 10 minutes after birth, oxygen saturation rises gradually. Intervention is based on respiratory effort, heart rate, and tone, not just SpO<sub>2</sub> alone.</p>",
+      "correct_choice_id": 74,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">A term infant, 46 week's postmenstrual age (PMA), exposed to 100% oxygen for 6 hours</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">A premature infant, 29 week's PMA, exposed to a Pao2 of 150 mm Hg for 1 hour</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">A premature infant, 28 week's PMA, never exposed to supplemental oxygen</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">A cyanotic infant with tetralogy of Fallot, 34 week's PMA, receiving supplemental oxygen</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A neonatologist is evaluating four infants for risk of retinopathy of prematurity (ROP). Which of the following infants is least likely to require ROP screening?</span></p>",
+      "unique_key": "DT1226695",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226695,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<p>A term infant, 46 weeks postmenstrual age (PMA), exposed to 100% oxygen for 6 hours is least likely to require ROP screening, as term infants have fully vascularized retinas &rarr; very low risk of ROP.</p>\r\n<p><strong>Retinopathy of prematurity </strong></p>\r\n<p><strong>Epidemiology and Risk Factors</strong></p>\r\n<ul>\r\n<li>ROP (formerly retrolental fibroplasia) primarily affects preterm infants.</li>\r\n<li>Risk is inversely related to gestational age and birth weight.</li>\r\n<li>Significant risk:\r\n<ul>\r\n<li>&lt;1500 g birth weight</li>\r\n<li>&lt;32 weeks of gestation</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<h4>Pathophysiology</h4>\r\n<ul>\r\n<li>Hyperoxia &rarr; constriction of immature retinal arterioles.</li>\r\n<li>This leads to:\r\n<ul>\r\n<li>Endothelial swelling &amp; degeneration</li>\r\n<li>Disruption of normal retinal vascular development</li>\r\n</ul>\r\n</li>\r\n<li>When oxygen levels normalise:\r\n<ul>\r\n<li>Abnormal neovascularisation occurs</li>\r\n<li>Leads to retinal scarring, detachment, and possible blindness</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n<h4>Oxygen Management to Prevent ROP</h4>\r\n<ul>\r\n<li>Recommended target oxygen saturation:\r\n<ul>\r\n<li>88%-93%</li>\r\n  <li>Corresponds to PaO<sub>2</sub> of 50-70 mm Hg</li>\r\n</ul>\r\n</li>\r\n<li>Preductal saturation monitoring (right arm) is preferred as it Better correlates with oxygen delivery to the retina and brain</li>\r\n</ul>\r\n<p><strong>Other Contributing Risk Factors</strong></p>\r\n<ul>\r\n<li>Respiratory distress syndrome</li>\r\n<li>Mechanical ventilation</li>\r\n<li>Hypoxia / Hyperoxia</li>\r\n<li>Hypocarbia / Hypercarbia</li>\r\n<li>Sepsis</li>\r\n<li>Blood transfusions</li>\r\n<li>Vitamin E deficiency</li>\r\n<li>Congenital infections</li>\r\n<li>Even cyanotic heart disease (without supplemental oxygen) has been associated with ROP in rare cases</li>\r\n</ul>\r\n<p><strong>Key takeaway: </strong></p>\r\n<ul>\r\n<li>Term infants have fully vascularized retinas, &rarr; very low risk of ROP. Preterm infants, especially those &lt;32 weeks or &lt;1500 g, remain at risk even without supplemental oxygen.</li>\r\n<li>Hyperoxia is a major but not exclusive cause of ROP</li>\r\n<li>Other factors (ventilation, sepsis, congenital heart disease) also play a significant role</li>\r\n</ul>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">Maximum inspiratory flow may exceed 30L/min during spontaneous breathing.</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">Nasal cannulae significantly improve oxygenation even if the patient breathes through the mouth</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">A Venturi mask uses the Bernoulli principle.</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">A Hudson mask is a fixed performance device.</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A patient on the high dependency unit has pneumonia and is hypoxia on room air. When deciding which method of oxygen administration is appropriate, which of the following statements is FALSE?</span></p>",
+      "unique_key": "DT1226696",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226696,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The false statement is Hudson mask is a fixed performance device</p>\n<ul>\n<li>A Hudson mask (also known as a simple face mask) is a variable performance device.</li>\n<li>FiO<sub>2</sub> delivered depends on:\n<ul>\n<li>Oxygen flow rate (typically 5-10 L/min)</li>\n<li>Patient's tidal volume and respiratory rate</li>\n<li>Degree of room air entrainment</li>\n</ul>\n</li>\n<li>FiO<sub>2</sub> is not consistent, typically ranges between 35% and 60%, and is not reliable for patients needing precise oxygen levels.</li>\n</ul>\n<p><strong>Explanation of other options:</strong></p>\n<h4>Maximum inspiratory flow may exceed 30 L/min during spontaneous breathing.(option A)</h4>\n<ul>\n<li>In spontaneously breathing patients - especially those in respiratory distress - peak inspiratory flow rates can exceed 30-40 L/min, and may go up to 60 L/min or more.</li>\n<li>This is clinically significant when choosing an oxygen delivery device, as low-flow devices may not meet inspiratory demand, leading to entrainment of room air and variable FiO<sub>2</sub>.</li>\n</ul>\n<h4>Nasal cannulae significantly improve oxygenation even if the patient breathes through the mouth.(option B):</h4>\n<p>Even in mouth breathers, oxygen delivered via nasal cannula improves oxygenation due to:</p>\n<ul>\n<li>Oxygen reservoir effect in the nasopharynx.</li>\n<li>Positive nasopharyngeal oxygen concentration, which gets entrained during inspiration.</li>\n</ul>\n<h4>A Venturi mask uses the Bernoulli principle (Option C):</h4>\n<ul>\n<li>Venturi masks work via the Venturi effect, a manifestation of the Bernoulli principle.</li>\n<li>High-velocity oxygen through a narrow jet creates a pressure drop, entraining room air at a fixed ratio, ensuring a precise FiO<sub>2</sub>, making them fixed-performance devices.</li>\n</ul>\n<p><strong>Key takeaway: </strong></p>\n<p>The Hudson mask is a variable performance device, not fixed, because FiO<sub>2</sub> varies with patient factors (RR, tidal volume).</p>",
+      "correct_choice_id": 94,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">Less than 2 METs</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">Approximately 3-4 METs</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">Greater than 6 METs</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">Greater than 10 METs</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A 65-year-old man with stable angina is being evaluated for elective laparoscopic cholecystectomy. He reports that he can climb one flight of stairs or walk on level ground at 4 km/h without symptoms, but cannot engage in more strenuous activity. Based on this information, his functional capacity is best estimated to be:</span></p>",
+      "unique_key": "DT1226697",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1226697,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>The functional capacity is best estimated to be approximately 3-4 METs.</p>\n<p><strong>Functional Capacity and METs (Metabolic Equivalents): </strong></p>\n<ul>\n<li>The ability to perform physical activities is often expressed in terms of METs.</li>\n<li>One metabolic equivalent is defined as the amount of oxygen consumed at rest, and is equal to <strong>5 mL O2/kg/min</strong>.</li>\n<li>The energy cost of any activity can be determined by multiplying 3.5 by the oxygen consumption (mL O2/kg/min).</li>\n<li>METs can be assessed as follows:\n<ul>\n<li>1 MET: can take care of self (eating, dressing, toilet)-<strong> (option A ruled out)</strong></li>\n<li>4 METs: can walk up a flight of steps or a hill</li>\n<li>4 to 10 METs: can do heavy household work (scrubbing floors, lifting heavy furniture)- <strong>(option </strong><strong>C ruled out)</strong></li>\n<li>&gt;10 METs can participate in strenuous sports (swimming, tennis, basketball, skiing)- <strong>(option D ruled out)</strong></li>\n</ul>\n</li>\n</ul>",
+      "correct_choice_id": 102,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

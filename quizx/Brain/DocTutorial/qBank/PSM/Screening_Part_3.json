@@ -1,0 +1,1082 @@
+{
+  "meta": {
+    "title": "Screening_Part_3"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "choices": [
+        {
+          "id": 1,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity of the test is lower in population A</span></p>"
+        },
+        {
+          "id": 2,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence of disease is lower in population A</span></p>"
+        },
+        {
+          "id": 3,
+          "text": "<p><span style=\"font-size:12.0pt;\">Prevalence of disease is higher in population A</span></p>"
+        },
+        {
+          "id": 4,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity of the test is higher in population A</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A screening test is used in two similar populations, but the proportion of false positive results among those who test positive in population A is lower than among in population B. what is the most likely explanation of this finding</span></p>",
+      "unique_key": "DT1230742",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230742,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation: </strong></p>\n<ul>\n<li><strong>A higher</strong> <strong>prevalence</strong> of the disease in population A would result in fewer false positives among those who test positive, leading to a lower proportion of false positives compared to population B. T</li>\n<li>his is because the <strong>Positive Predictive Value</strong> (PPV) of a test, which is the proportion of true positives among all positive results, is directly proportional to the prevalence of the disease in the population.</li>\n<li>When the prevalence is higher, more of the positive test results are likely to be true positives, which in turn reduces the proportion of false positives.</li>\n</ul>\n<p><strong>Explanation of Other Options</strong></p>\n<p><strong>Specificity of the test is lower in population A (Option A):</strong> If the specificity of the test were lower in population A, it would result in more false positives, not fewer, among those who test positive. Therefore, this option is unlikely.</p>\n<p><strong>Prevalence of disease is lower in population A (Option B):</strong> If the prevalence of the disease were lower in population A, it would lead to fewer true positives and thus a higher proportion of false positives among those who test positive. This would not explain why there are fewer false positives in population A compared to population B.</p>\n<p><strong>Specificity of the test is higher in population A (Option D):</strong> While higher specificity does lead to fewer false positives, this would not be the primary factor in explaining why there are fewer false positives in population A compared to population B, especially when comparing two populations with similar tests. The most likely explanation for a difference in the proportion of false positives among those who test positive is a difference in the prevalence of the disease between the two populations.</p>\n<p><strong>Key Takeaway</strong>:</p>\n<p>The <strong>prevalence</strong> of a disease in a population is directly related to the <strong>Positive Predictive Value</strong> (PPV) of a test. A higher prevalence increases the PPV, meaning a lower proportion of false positive results among those who test positive.</p>",
+      "correct_choice_id": 3,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 2,
+      "choices": [
+        {
+          "id": 11,
+          "text": "<p><span style=\"font-size:12.0pt;\">Its sensitivity has increased</span></p>"
+        },
+        {
+          "id": 12,
+          "text": "<p><span style=\"font-size:12.0pt;\">Is PPV has increased</span></p>"
+        },
+        {
+          "id": 13,
+          "text": "<p><span style=\"font-size:12.0pt;\">Its NPV has increased</span></p>"
+        },
+        {
+          "id": 14,
+          "text": "<p><span style=\"font-size:12.0pt;\">The tests characteristics have not changed</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Due to an effective prevention program, the prevalence of an infectious disease in a community has been reduced by 90%. A physician continues to use the same diagnostic test for the disease that she has always used. How have the test characteristics changed?</span></p>",
+      "unique_key": "DT1230744",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230744,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>With a reduction in disease <strong>prevalence</strong>, the <strong>Negative Predictive Value (NPV)</strong> of the test increases. NPV is the probability that a person with a negative test result is truly disease-free.</li>\n<li>When the prevalence of the disease decreases, there are fewer diseased individuals overall, which means there will be fewer false negatives and more true negatives.</li>\n<li>This results in a higher proportion of correctly identified disease-free individuals among those who test negative, thereby increasing the NPV.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Its sensitivity has increased (Option A):</strong> Sensitivity is an inherent characteristic of the test itself and is not directly affected by changes in disease prevalence. It measures the test's ability to correctly identify individuals with the disease, regardless of how many people in the population have it.</p>\n<p><strong>Its PPV has increased (Option B):</strong> The <strong>Positive Predictive Value (PPV)</strong>, which is the probability that a person with a positive test result is truly diseased, is highly dependent on prevalence. When prevalence decreases, the PPV will also decrease, not increase. Therefore, this option is incorrect.</p>\n<p><strong>The test's characteristics have not changed (Option D):</strong> This is incorrect because the reduction in disease prevalence significantly affects the predictive values of the test, specifically the <strong>NPV</strong>, as explained in the correct answer.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>Changes in disease <strong>prevalence</strong> directly impact the predictive values of a test (<strong>PPV</strong> and <strong>NPV</strong>) but do not affect the test's intrinsic characteristics like <strong>sensitivity</strong> and <strong>specificity</strong>. A decrease in prevalence leads to an increase in NPV and a decrease in PPV.</p>",
+      "correct_choice_id": 13,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 3,
+      "choices": [
+        {
+          "id": 21,
+          "text": "<p><span style=\"font-size:12.0pt;\">Type I error</span></p>"
+        },
+        {
+          "id": 22,
+          "text": "<p><span style=\"font-size:12.0pt;\">Type II error</span></p>"
+        },
+        {
+          "id": 23,
+          "text": "<p><span style=\"font-size:12.0pt;\">1-&beta;</span></p>"
+        },
+        {
+          "id": 24,
+          "text": "<p><span style=\"font-size:12.0pt;\">1-&alpha;</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A test with high specificity has a low</span></p>",
+      "unique_key": "DT1230745",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230745,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>A test with high <strong>specificity</strong> has a low probability of falsely classifying individuals without the disease as positive, which is defined as a <strong>Type I error</strong>.</li>\n<li>Specificity measures the test's ability to correctly identify true negatives.</li>\n<li>Therefore, a high specificity means that the test is good at ruling out the disease in healthy individuals, resulting in a low rate of false positives or Type I errors.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Type II error (Option B):</strong> A Type II error refers to the probability of incorrectly failing to reject a false null hypothesis, which is related to a test's <strong>sensitivity</strong>, not its specificity. A test with high sensitivity has a low Type II error.</p>\n<p><strong>1-&beta; (Option C):</strong> This represents the power of a statistical test, which is the probability of correctly rejecting a false null hypothesis. It is directly related to a test's sensitivity and is not directly influenced by specificity.</p>\n<p><strong>1-&alpha; (Option D):</strong> This represents the significance level of a statistical test, which is a predetermined value set by the researcher. It is not directly influenced by the specificity of the test itself.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>A test with high <strong>specificity</strong> is associated with a low <strong>Type I error</strong> (false positive rate). Conversely, a test with high <strong>sensitivity</strong> is associated with a low <strong>Type II error</strong> (false negative rate).</p>",
+      "correct_choice_id": 21,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 4,
+      "choices": [
+        {
+          "id": 31,
+          "text": "<p><span style=\"font-size:12.0pt;\">The period prevalence rate will decrease</span></p>"
+        },
+        {
+          "id": 32,
+          "text": "<p><span style=\"font-size:12.0pt;\">Apparent 5 year survival rate will increase</span></p>"
+        },
+        {
+          "id": 33,
+          "text": "<p><span style=\"font-size:12.0pt;\">Age adjusted mortality rate will decrease</span></p>"
+        },
+        {
+          "id": 34,
+          "text": "<p><span style=\"font-size:12.0pt;\">Age adjusted mortality rate will increase</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A diagnostic test has been introduced that will detect a certain disease 1 year earlier than it is usually detected. Which of the following is most likely to happen to the disease within 10 yrs after the test is introduced assuming early detection has no effect on the natural history of disease?</span></p>",
+      "unique_key": "DT1230746",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230746,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>With earlier detection, individuals with the disease are identified sooner, but since the disease's natural history remains unchanged, the overall duration of the known disease in the population is reduced.</li>\n<li><strong>Period prevalence rate</strong> is the proportion of a population with a disease at a given time. By identifying cases earlier, the time period during which a person is counted as a \"case\" effectively starts sooner, but their death date remains the same.</li>\n<li>This shortens the average duration of the disease in the population at any given time, thus decreasing the period prevalence rate over a 10-year period.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Apparent 5-year survival rate will increase (Option B):</strong> This is unlikely. This scenario is a classic example of <strong>lead-time bias</strong>. Because the test detects the disease one year earlier, the survival time measured from diagnosis will appear to be one year longer, even though the person's actual lifespan has not changed. This is an apparent increase, not a true one, and since the question asks what is \"most likely to happen,\" a true increase is not the most accurate answer without an effect on the natural history of the disease.</p>\n<p><strong>Age adjusted mortality rate will decrease (Option C):</strong> This is unlikely because the early detection has no effect on the natural course of the disease, and therefore it would not impact mortality rates.</p>\n<p><strong>Age adjusted mortality rate will increase (Option D):</strong> This option contradicts the premise that early detection has no effect on the natural history of the disease. If the disease progression is unaltered, it is unlikely to result in an increase in mortality rates.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>When a diagnostic test is introduced that detects a disease earlier but does not change the disease's natural course, it can lead to <strong>lead-time bias</strong>. This can result in an apparent increase in survival rates and a decrease in the period prevalence rate, as cases are identified sooner and the measured duration of the disease is shortened.</p>",
+      "correct_choice_id": 31,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 5,
+      "choices": [
+        {
+          "id": 41,
+          "text": "<p><span style=\"font-size:12.0pt;\">Smaller proportionate  mortality for breast cancer compared to proportionate mortality prior to its initiation</span></p>"
+        },
+        {
+          "id": 42,
+          "text": "<p><span style=\"font-size:12.0pt;\">Improved long term survival rates for breast cancer patients (adjusted for lead time)</span></p>"
+        },
+        {
+          "id": 43,
+          "text": "<p><span style=\"font-size:12.0pt;\">A decrease in incidence of breast cancer</span></p>"
+        },
+        {
+          "id": 44,
+          "text": "<p><span style=\"font-size:12.0pt;\">A decrease in prevalence of breast cancer</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The best index (indices) for concluding that an early detection program for breast cancer truly improves the natural history of the disease, 15 yrs after its initiation would be</span></p>",
+      "unique_key": "DT1230748",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230748,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Improved long-term survival rates, specifically when adjusted for <strong>lead time</strong>, would indicate a true improvement in the natural history of breast cancer due to early detection.</li>\n<li><strong>Lead-time bias</strong> is the apparent increase in survival time that occurs when a disease is diagnosed earlier by a screening test, but the person's actual lifespan is not extended.</li>\n<li>By adjusting for this bias, the survival rates would reflect a genuine improvement in patient outcomes, confirming the effectiveness of the early detection program.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Smaller proportionate mortality for breast cancer compared to proportionate mortality prior to its initiation (Option A):</strong> While reduced mortality is a positive outcome, it may not solely indicate the effectiveness of the early detection program as it could be influenced by other factors such as advancements in treatment.</p>\n<p><strong>A decrease in incidence of breast cancer (Option C):</strong> A decrease in incidence could be due to factors other than the early detection program, such as changes in risk factors or preventive measures, so it is not a direct measure of the program's effectiveness on disease history.</p>\n<p><strong>A decrease in prevalence of breast cancer (Option D):</strong> Prevalence is influenced by various factors including incidence, mortality, and duration of the disease, so a decrease in prevalence alone may not reflect the impact of the early detection program.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>To prove that a screening program is truly effective, it's crucial to look for an improvement in outcomes that accounts for <strong>lead-time bias</strong>. The most reliable measure is an increase in long-term survival rates that have been adjusted to remove the apparent benefit of earlier diagnosis.</p>",
+      "correct_choice_id": 42,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 6,
+      "choices": [
+        {
+          "id": 51,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduction of CFR in screened individuals</span></p>"
+        },
+        {
+          "id": 52,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduction in mortality in screened individuals</span></p>"
+        },
+        {
+          "id": 53,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduction in incidence in screened individuals</span></p>"
+        },
+        {
+          "id": 54,
+          "text": "<p><span style=\"font-size:12.0pt;\">Reduction in complication in screened individuals</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not a possible outcome measure that could be used as an indicator of the benefit of screening programs aimed at early detection of disease</span></p>",
+      "unique_key": "DT1230750",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230750,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>A <strong>reduction in incidence</strong> is not a possible outcome measure for the benefit of a screening program because screening does not prevent new cases of the disease from occurring.</li>\n<li><strong>Incidence</strong> measures the rate of new cases developing in a population over a specific time period. Screening tests identify existing cases that were previously undetected; they do not impact the number of people who will develop the disease.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Reduction of CFR in screened individuals (Option A):</strong> It assesses the reduction in the proportion of individuals with the disease who die from it, which is a key goal of early detection programs.</p>\n<p><strong>Reduction in mortality in screened individuals (Option B):</strong> Screening programs aim to reduce overall mortality rates by detecting and treating diseases earlier, thus prolonging life.</p>\n<p><strong>Reduction in complication in screened individuals (Option D):</strong> The benefit of early detection is often to prevent or reduce the severity of complications associated with the disease, and this measure directly assesses that goal.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The benefit of a screening program is measured by its impact on the course and outcome of a disease (e.g., mortality, complications, survival rates), not by its effect on the rate of new cases (<strong>incidence</strong>).</p>",
+      "correct_choice_id": 53,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 7,
+      "choices": [
+        {
+          "id": 61,
+          "text": "<p><span style=\"font-size:12.0pt;\">Cervical pap smear in a 40yr old female</span></p>"
+        },
+        {
+          "id": 62,
+          "text": "<p><span style=\"font-size:12.0pt;\">Neonatal screening for hypothyroidism</span></p>"
+        },
+        {
+          "id": 63,
+          "text": "<p><span style=\"font-size:12.0pt;\">Screening of immigrants in a country</span></p>"
+        },
+        {
+          "id": 64,
+          "text": "<p><span style=\"font-size:12.0pt;\">Screening for urine sugar in a 40 yr old male</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is an example for prospective screening</span></p>",
+      "unique_key": "DT1230753",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230753,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Prospective screening</strong> involves screening individuals before they develop symptoms or signs of a disease, often applied to populations such as immigrants upon arrival in a new country.</li>\n<li>This type of screening aims to identify diseases or health conditions in a population to prevent their spread and ensure public health.</li>\n<li>Screening a group of immigrants is a classic example because it is a one-time or initial examination of a specific population as they enter the country.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Cervical pap smear in a 40-year-old female (Option A):</strong> This is a form of ongoing or <strong>mass screening</strong> that occurs at regular intervals based on age and risk factors to detect abnormalities before they become cancerous. It is not specifically a prospective screening, which is more of a one-time check.</p>\n<p><strong>Neonatal screening for hypothyroidism (Option B):</strong> This is an example of a <strong>mass screening</strong> program that is routinely performed on all newborns to detect congenital conditions before symptoms develop, not a prospective screening of a specific population group.</p>\n<p><strong>Screening for urine sugar in a 40 yr old male (Option D):</strong> This is an example of <strong>opportunistic screening</strong>, as it is typically done on individuals who are already seeking medical care and have a higher risk of developing a condition. It is not a prospective screening of a specific population.</p>\n<p><strong>Key Takeaway</strong> <strong>Prospective screening</strong> is a public health strategy that involves a one-time screening of a specific population group (e.g., immigrants) for the presence of certain diseases or health conditions, often before symptoms are apparent.</p>",
+      "correct_choice_id": 63,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 8,
+      "choices": [
+        {
+          "id": 71,
+          "text": "<p><span style=\"font-size:12.0pt;\">Both are increased</span></p>"
+        },
+        {
+          "id": 72,
+          "text": "<p><span style=\"font-size:12.0pt;\">Net sensitivity is increased and Net specificity is decreased</span></p>"
+        },
+        {
+          "id": 73,
+          "text": "<p><span style=\"font-size:12.0pt;\">Net sensitivity is decreased and Net specificity is increased</span></p>"
+        },
+        {
+          "id": 74,
+          "text": "<p><span style=\"font-size:12.0pt;\">Net sensitivity remains the same and Net specificity is increased</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A Hemoccult test with sensitivity of 70% and specificity of 75% is applied for detecting Colon cancer. If the Hemoccult test is negative, no further testing is done. If the test is positive the individual will have a second sample tested with Hemoccult II test. If the second sample also tests positive for blood, they will be referred for more extensive evaluation. The effect on net sensitivity and specificity of this method of screening is</span></p>",
+      "unique_key": "DT1230755",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230755,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The correct option is Net sensitivity is decreased and Net specificity is increased.</li>\n<li>This two-step screening process is a form of <strong>serial testing</strong> where a positive result on the first test must be confirmed by a second positive result. This makes the criteria for a final positive diagnosis much stricter.</li>\n<li>The requirement for two positive tests makes it less likely that a healthy individual will be misclassified as having the disease, thus reducing <strong>false positives</strong>. This increases the overall <strong>specificity</strong> of the screening process.</li>\n<li>Conversely, this same strict criterion increases the chance that a person who truly has the disease will have a negative result on one of the two tests and be missed. This leads to more <strong>false negatives</strong> and a decrease in the overall <strong>sensitivity</strong> of the screening process.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Both are increased (Option A):</strong> This is incorrect because serial testing typically increases specificity at the cost of decreasing sensitivity, not increasing both.</p>\n<p><strong>Net sensitivity is increased and Net specificity is decreased (Option B):</strong> This is incorrect because serial testing makes the criteria for a positive result more difficult to achieve, which leads to a decrease in sensitivity and an increase in specificity, which is the opposite of this option.</p>\n<p><strong>Net sensitivity remains the same and Net specificity is increased (Option D):</strong> This is incorrect because the introduction of a second test to confirm a positive result affects both sensitivity and specificity. The net sensitivity will decrease as the test becomes more stringent.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>A <strong>serial testing</strong> strategy, where a positive result requires confirmation with a second test, will typically <strong>increase the net specificity</strong> of the screening process by reducing false positives, but it will <strong>decrease the net sensitivity</strong> by increasing false negatives.</p>",
+      "correct_choice_id": 73,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 9,
+      "choices": [
+        {
+          "id": 81,
+          "text": "<p><span style=\"font-size:12.0pt;\">98%</span></p>"
+        },
+        {
+          "id": 82,
+          "text": "<p><span style=\"font-size:12.0pt;\">86%</span></p>"
+        },
+        {
+          "id": 83,
+          "text": "<p><span style=\"font-size:12.0pt;\">63%</span></p>"
+        },
+        {
+          "id": 84,
+          "text": "<p><span style=\"font-size:12.0pt;\">40%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a population of 10000, the prevalence of disease is 20%. Two test are applied simultaneously. Test A with sensitivity 80% and specificity 60%. Test B with sensitivity and specificity 90 each. Calculate net sensitivity</span></p>",
+      "unique_key": "DT1230757",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230757,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Net sensitivity is calculated using the combined sensitivity of both tests, considering true positives from either test.</p>\n<p><strong>Explanation for why other options are wrong:</strong></p>\n<p>b. 86%: This option likely arises from a miscalculation or misunderstanding of how to combine the sensitivities of the two tests. It's incorrect because net sensitivity is not calculated as an average of the individual sensitivities but is determined based on the combined ability of both tests to correctly identify true positives.</p>\n<p>c. 63%: This option is incorrect because it may represent the sensitivity of one of the tests individually (such as Test A with 80% sensitivity) but does not account for the combined sensitivity of both tests.</p>\n<p>d. 40%: This option appears to be based on the misconception that sensitivity decreases when two tests are applied simultaneously. However, the combined sensitivity should be equal to or greater than the sensitivity of each individual test, as both tests contribute to identifying true positives.</p>",
+      "correct_choice_id": 81,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 10,
+      "choices": [
+        {
+          "id": 91,
+          "text": "<p><span style=\"font-size:12.0pt;\">98%</span></p>"
+        },
+        {
+          "id": 92,
+          "text": "<p><span style=\"font-size:12.0pt;\">86%</span></p>"
+        },
+        {
+          "id": 93,
+          "text": "<p><span style=\"font-size:12.0pt;\">63%</span></p>"
+        },
+        {
+          "id": 94,
+          "text": "<p><span style=\"font-size:12.0pt;\">40%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">In a population of 10000, the prevalence of disease is 20%. Two tests are applied simultaneously. Test A with sensitivity 80% and specificity 60%. Test B with sensitivity and specificity 90 each. Calculate net sensitivity</span></p>",
+      "unique_key": "DT1230760",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230760,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>The correct option is 98%.</li>\n<li><strong>Net sensitivity</strong> in <strong>simultaneous (parallel) testing</strong> is calculated as the probability that at least one of the tests detects the disease among those who truly have the disease.</li>\n<li>The formula for net sensitivity in this scenario is:<br /> Net Sensitivity=Sensitivity A+Sensitivity B-(Sensitivity A&times;Sensitivity B)</li>\n<li>Using the given values for Test A (80% or 0.80) and Test B (90% or 0.90), the calculation is:<br /> Net Sensitivity=0.80+0.90-(0.80&times;0.90)=1.70-0.72=0.98</li>\n<li>This corresponds to a net sensitivity of 98%.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>When multiple diagnostic tests are applied <strong>simultaneously</strong> (in parallel), the <strong>net sensitivity</strong> of the testing strategy increases, while the <strong>net specificity</strong> decreases. The net sensitivity is the probability that at least one of the tests correctly identifies a person with the disease.</p>",
+      "correct_choice_id": 91,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 11,
+      "choices": [
+        {
+          "id": 101,
+          "text": "<p><span style=\"font-size:12.0pt;\">63% and 98%</span></p>"
+        },
+        {
+          "id": 102,
+          "text": "<p><span style=\"font-size:12.0pt;\">86 % and 13%</span></p>"
+        },
+        {
+          "id": 103,
+          "text": "<p><span style=\"font-size:12.0pt;\">98% and 63%</span></p>"
+        },
+        {
+          "id": 104,
+          "text": "<p><span style=\"font-size:12.0pt;\">13% and 86%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A population is screened for DM using a test with a sensitivity of 70% and specificity 80%. The disease prevalence in this population is 5% and the total population is 10000. if a second screening test which has a sensitivity and specificity of 90% is applied to the test positives of the first test. Calculate net sensitivity and specificity</span></p>",
+      "unique_key": "DT1230764",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230764,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Net sensitivity and specificity are calculated based on the combined performance of both tests, considering true positives from either test.</p>\n<p>The net sensitivity and specificity can be calculated as follows:</p>\n<ol>\n<li>First Screening Test:\n<ul>\n<li>Sensitivity = 70%</li>\n<li>Specificity = 80%</li>\n</ul>\n</li>\n<li>Second Screening Test (Applied to Test Positives of First Test):\n<ul>\n<li>Sensitivity = 90%</li>\n<li>Specificity = 90%</li>\n</ul>\n</li>\n<li>Prevalence of Disease (DM):\n<ul>\n<li>5% of 10,000 population = 500 individuals have DM</li>\n</ul>\n</li>\n<li>Calculations:\n<ul>\n<li>For the first test:\n<ul>\n<li>True Positives (TP1) &asymp; 70% of 500 = 350</li>\n<li>False Negatives (FN1) &asymp; 150</li>\n<li>True Negatives (TN1) &asymp; 80% of (10,000 - 500) = 7,600</li>\n<li>False Positives (FP1) &asymp; 20% of (10,000 - 500) = 1,900</li>\n</ul>\n</li>\n<li>For the second test (applied to TP1):\n<ul>\n<li>True Positives (TP2) &asymp; 90% of 350 = 315</li>\n<li>False Negatives (FN2) &asymp; 35</li>\n<li>True Negatives (TN2) = TN1 (unchanged) &asymp; 7,600</li>\n<li>False Positives (FP2) = FP1 (unchanged) &asymp; 1,900</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Net Sensitivity:\n<ul>\n<li>TP2 / (TP2 + FN2) &asymp; 315 / (315 + 35) &asymp; 90%</li>\n</ul>\n</li>\n<li>Net Specificity:\n<ul>\n<li>TN2 / (TN2 + FP2) &asymp; 7,600 / (7,600 + 1,900) &asymp; 80%</li>\n</ul>\n</li>\n</ol>\n<p>Therefore, the correct answer is option (a): 63% and 98%.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>In a <strong>sequential (serial) testing</strong> strategy, the <strong>net sensitivity</strong> decreases because a person must test positive on all tests to be considered positive. Conversely, the <strong>net specificity</strong> increases because a person must test negative on at least one test to be considered negative, making it less likely to misclassify a healthy person.</p>",
+      "correct_choice_id": 101,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 12,
+      "choices": [
+        {
+          "id": 111,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primordial</span></p>"
+        },
+        {
+          "id": 112,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary</span></p>"
+        },
+        {
+          "id": 113,
+          "text": "<p><span style=\"font-size:12.0pt;\">Secondary</span></p>"
+        },
+        {
+          "id": 114,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tertiary</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Screening is the most commonly used epidemiological tool in school health services. Which level of prevention does it refer to?</span></p>",
+      "unique_key": "DT1230766",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230766,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Screening refers to the identification of disease in individuals before they present with symptoms, which falls under the category of <strong>secondary prevention</strong>.</li>\n<li>Screening in school health services typically involves identifying health conditions or risk factors in students who may not yet show symptoms.</li>\n<li>This aligns with the concept of secondary prevention, which aims to detect and treat health issues in their early stages to prevent their progression and reduce the severity of the disease.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Primordial prevention (Option A):</strong> This level of prevention focuses on addressing societal factors to prevent the emergence of risk factors. School health screening does not directly fall under this category.</p>\n<p><strong>Primary prevention (Option B):</strong> This involves interventions aimed at preventing the occurrence of a disease or injury before any signs or symptoms appear. While some school health services, such as vaccination programs, are a form of primary prevention, screening itself occurs after the potential onset of a risk factor or the disease itself.</p>\n<p><strong>Tertiary prevention (Option D):</strong> This level of prevention focuses on managing and reducing the impact of established diseases or conditions to prevent complications and disabilities. School health screening aims to detect health issues early, before they progress to a more advanced stage, rather than managing established conditions.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The different levels of prevention are distinguished by the stage at which an intervention is implemented. <strong>Primary prevention</strong> aims to prevent a disease from ever occurring. <strong>Secondary prevention</strong> focuses on early detection and treatment of a disease to halt its progression, which is the core function of screening. <strong>Tertiary prevention</strong> involves managing an established disease to prevent further complications.</p>",
+      "correct_choice_id": 113,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 13,
+      "choices": [
+        {
+          "id": 121,
+          "text": "<p><span style=\"font-size:12.0pt;\">Pulse Polio immunisation</span></p>"
+        },
+        {
+          "id": 122,
+          "text": "<p><span style=\"font-size:12.0pt;\">Vitamin A supplementation</span></p>"
+        },
+        {
+          "id": 123,
+          "text": "<p><span style=\"font-size:12.0pt;\">Self breast examination for tumor</span></p>"
+        },
+        {
+          "id": 124,
+          "text": "<p><span style=\"font-size:12.0pt;\">INH prophylaxis to a baby born to mother with TB</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not primary prevention?</span></p>",
+      "unique_key": "DT1230771",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230771,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Self-breast examination</strong> is a form of <strong>secondary prevention</strong> because its purpose is to detect a potential disease (breast cancer) at an early stage, not to prevent the disease from occurring in the first place.</li>\n<li>This type of examination is a screening method that aims for early diagnosis and timely intervention to improve outcomes and prevent the progression of the disease.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Pulse Polio immunisation (Option A):</strong> This is a classic example of <strong>primary prevention</strong>. It aims to prevent the occurrence of polio infection by providing immunity against the poliovirus to individuals before they are exposed to the disease.</p>\n<p><strong>Vitamin A supplementation (Option B):</strong> This is also a form of <strong>primary prevention</strong>. It is given to prevent a deficiency condition (vitamin A deficiency) and its associated health problems from developing.</p>\n<p><strong>INH prophylaxis to a baby born to mother with TB (Option D):</strong> This is a form of <strong>primary prevention</strong>. The goal of INH prophylaxis is to prevent the transmission of tuberculosis infection and the subsequent development of active TB disease in the infant, thus stopping the disease before it can occur in the baby.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Primary prevention</strong> focuses on actions taken to prevent a disease or injury from ever occurring, such as immunization or vitamin supplementation. <strong>Secondary prevention</strong> involves interventions like screening and early detection to halt or slow the progression of a disease that has already begun.</p>",
+      "correct_choice_id": 123,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 14,
+      "choices": [
+        {
+          "id": 131,
+          "text": "<p><span style=\"font-size:12.0pt;\">Total mastectomy for breast cancer</span></p>"
+        },
+        {
+          "id": 132,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tendon transplant in leprosy</span></p>"
+        },
+        {
+          "id": 133,
+          "text": "<p><span style=\"font-size:12.0pt;\">Physiotherapy in residual poliomyelitis</span></p>"
+        },
+        {
+          "id": 134,
+          "text": "<p><span style=\"font-size:12.0pt;\">Provision of spectacles for refractive errors</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is not tertiary prevention?</span></p>",
+      "unique_key": "DT1230773",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230773,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>Total mastectomy is a form of <strong>secondary prevention</strong> because its goal is to remove cancerous tissue to prevent the disease from progressing or spreading to other parts of the body.</li>\n<li>This intervention aims to cure the disease by eliminating it in an early, localized stage, rather than managing the long-term disabilities or complications of an established condition.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Tendon transplant in leprosy (Option B):</strong> This is a form of <strong>tertiary prevention</strong>. It aims to rehabilitate and restore function in an individual who has already developed physical disabilities from the disease, thus minimizing the impact of the condition.</p>\n<p><strong>Physiotherapy in residual poliomyelitis (Option C):</strong> This is a form of <strong>tertiary prevention</strong>. It focuses on managing the disabilities and complications that have resulted from a pre-existing disease (polio), rather than preventing the disease itself or its progression.</p>\n<p><strong>Provision of spectacles for refractive errors (Option D):</strong> This is also considered <strong>tertiary prevention</strong>. It helps a patient manage and adjust to the disability caused by refractive errors, allowing them to function despite the condition. This differs from a curative treatment like LASIK surgery.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Tertiary prevention</strong> focuses on rehabilitation, managing the long-term effects of a disease, and preventing complications or disabilities in individuals who already have a condition. This is distinct from <strong>secondary prevention</strong>, which aims for early detection and treatment to cure a disease or prevent its progression.</p>",
+      "correct_choice_id": 131,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 15,
+      "choices": [
+        {
+          "id": 141,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary, Secondary, Tertiary, Primordial</span></p>"
+        },
+        {
+          "id": 142,
+          "text": "<p><span style=\"font-size:12.0pt;\">Secondary, Primary, Tertiary, Primordial</span></p>"
+        },
+        {
+          "id": 143,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primordial, Primary, Secondary, Tertiary</span></p>"
+        },
+        {
+          "id": 144,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary, Tertiary, Primordial, Secondary</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Analyse the following intervention done in a TB patient and estimate the levels of prevention- Sputum examination of suspects, BCG vaccination, hemi thoracotomy for widespread fibrosis of lung, avoiding overcrowding</span></p>",
+      "unique_key": "DT1230776",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230776,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Sputum examination of suspects</strong> is a form of <strong>secondary prevention</strong> because it is a screening tool used for the early detection of tuberculosis in individuals who may be at risk.</li>\n<li><strong>BCG vaccination</strong> is a classic example of <strong>primary prevention</strong>, as it is an immunization given to prevent the occurrence of the disease in the first place.</li>\n<li><strong>Hemi thoracotomy</strong> for widespread fibrosis of the lung is a surgical procedure to manage a serious complication of an established disease. Therefore, it is a form of <strong>tertiary prevention</strong>.</li>\n<li><strong>Avoiding overcrowding</strong> is a societal intervention aimed at reducing a risk factor for disease transmission. It is an example of <strong>primordial prevention</strong>, which addresses the underlying social and environmental conditions that lead to the emergence of risk factors for disease.</li>\n</ul>\n<p><strong>Key Takeaway:</strong></p>\n<p>Each level of prevention targets a different stage of a disease. <strong>Primordial prevention</strong> addresses broad societal factors that create risk. <strong>Primary prevention</strong> aims to prevent the onset of a disease. <strong>Secondary prevention</strong> focuses on early detection. <strong>Tertiary prevention</strong> manages an established disease to minimize its impact and prevent complications.</p>",
+      "correct_choice_id": 142,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 16,
+      "choices": [
+        {
+          "id": 151,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primordial</span></p>"
+        },
+        {
+          "id": 152,
+          "text": "<p><span style=\"font-size:12.0pt;\">Primary</span></p>"
+        },
+        {
+          "id": 153,
+          "text": "<p><span style=\"font-size:12.0pt;\">Secondary</span></p>"
+        },
+        {
+          "id": 154,
+          "text": "<p><span style=\"font-size:12.0pt;\">Tertiary</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Legal steps to ban the entry of tobacco products in a tribal area where the community has no exposure to tobacco is</span></p>",
+      "unique_key": "DT1230778",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230778,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Primordial prevention</strong> involves addressing the underlying social, economic, and environmental factors that influence health behaviors before a risk factor has even emerged in a population.</li>\n<li>In this case, the community has no existing exposure to tobacco. Banning the product's entry prevents the establishment of tobacco use as a risk factor within the population, which is the defining characteristic of primordial prevention.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Primary (Option B):</strong> Primary prevention typically involves interventions aimed at preventing the onset of disease by addressing an existing risk factor. This intervention is not primary prevention because there is no existing risk factor (tobacco use) to prevent in this community.</p>\n<p><strong>Secondary (Option C):</strong> Secondary prevention involves early detection and treatment of a disease to prevent its progression. Banning tobacco products does not involve detecting or treating an existing disease.</p>\n<p><strong>Tertiary (Option D):</strong> Tertiary prevention involves managing and reducing the impact of an existing disease or disability. This intervention does not relate to managing an existing disease or disability.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The key distinction between <strong>primordial</strong> and <strong>primary prevention</strong> is the presence of a risk factor. Primordial prevention aims to prevent the emergence of a risk factor in the first place, while primary prevention aims to prevent disease from occurring in the presence of an existing risk factor.</p>",
+      "correct_choice_id": 151,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 17,
+      "choices": [
+        {
+          "id": 161,
+          "text": "<p><span style=\"font-size:12.0pt;\">Salt restriction in high NCD areas</span></p>"
+        },
+        {
+          "id": 162,
+          "text": "<p><span style=\"font-size:12.0pt;\">Smoking cessation in high NCD areas</span></p>"
+        },
+        {
+          "id": 163,
+          "text": "<p><span style=\"font-size:12.0pt;\">Preservation of traditional diet in low NCD area</span></p>"
+        },
+        {
+          "id": 164,
+          "text": "<p><span style=\"font-size:12.0pt;\">Early diagnosis and treatment</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Which of the following is primordial prevention of NCD</span></p>",
+      "unique_key": "DT1230782",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230782,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Primordial prevention</strong> aims to address the underlying societal factors that influence health behaviors before a risk factor has emerged in a population.</li>\n<li>Preserving a traditional diet in a community with low non-communicable disease (NCD) rates prevents the adoption of unhealthy dietary habits, which are a major risk factor for NCDs. This proactive approach stops the risk factors from ever developing.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Salt restriction in high NCD areas (Option A):</strong> This option refers to an intervention targeting an existing, specific risk factor (high salt intake) in a population where NCDs are already prevalent. This is an example of <strong>primary prevention</strong>, as it aims to prevent the disease by modifying an existing risk factor.</p>\n<p><strong>Smoking cessation in high NCD areas (Option B):</strong> Similarly, smoking cessation programs target an existing risk factor (tobacco use). This intervention is considered <strong>primary prevention</strong> because it addresses an individual behavior to prevent the onset of NCDs.</p>\n<p><strong>Early diagnosis and treatment (Option D):</strong> This approach focuses on detecting and managing diseases at an early stage to prevent complications. Therefore, it falls under <strong>secondary prevention</strong>, as it is an intervention that occurs after the disease has already developed.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The key difference between <strong>primordial</strong> and <strong>primary prevention</strong> is the stage at which the intervention occurs. Primordial prevention prevents the emergence of risk factors in a healthy population, while primary prevention reduces or eliminates an existing risk factor to prevent a disease from occurring.</p>",
+      "correct_choice_id": 163,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 18,
+      "choices": [
+        {
+          "id": 171,
+          "text": "<p><span style=\"font-size:12.0pt;\">Sensitivity</span></p>"
+        },
+        {
+          "id": 172,
+          "text": "<p><span style=\"font-size:12.0pt;\">Specificity</span></p>"
+        },
+        {
+          "id": 173,
+          "text": "<p><span style=\"font-size:12.0pt;\">Precision</span></p>"
+        },
+        {
+          "id": 174,
+          "text": "<p><span style=\"font-size:12.0pt;\">Accuracy</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Validity of a test is based upon all except</span></p>",
+      "unique_key": "DT1230784",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230784,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Precision</strong> is not a direct component of a test's validity. Instead, it refers to the consistency or reproducibility of a measurement, meaning a test will give similar results when repeated.</li>\n<li><strong>Validity</strong>, on the other hand, refers to how well a test measures what it is supposed to measure. While a test can be precise without being valid, it cannot be valid without being precise. Therefore, precision is a prerequisite for validity, but not a measure of it.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Sensitivity (Option A):</strong> Sensitivity measures the ability of a test to correctly identify individuals who have the disease. It is a fundamental component of a test's validity, as a valid test must be able to correctly identify true positives.</p>\n<p><strong>Specificity (Option B):</strong> Specificity measures the ability of a test to correctly identify individuals who do not have the disease. It is another crucial aspect of a test's validity, as a valid test must also be able to correctly identify true negatives.</p>\n<p><strong>Accuracy (Option D):</strong> Accuracy is an overall measure that encompasses both a test's sensitivity and specificity. A test is considered accurate when it correctly identifies both individuals with and without the disease, reflecting the overall correctness of the test's results.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>validity</strong> of a diagnostic test is fundamentally determined by its <strong>sensitivity</strong> (ability to correctly identify true positives) and <strong>specificity</strong> (ability to correctly identify true negatives). <strong>Precision</strong> is a measure of a test's consistency or reliability, which is a different concept from validity. A test can be precise but not valid, but it cannot be valid without being precise.</p>",
+      "correct_choice_id": 173,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 19,
+      "choices": [
+        {
+          "id": 181,
+          "text": "<p><span style=\"font-size:12.0pt;\">44%</span></p>"
+        },
+        {
+          "id": 182,
+          "text": "<p><span style=\"font-size:12.0pt;\">88%</span></p>"
+        },
+        {
+          "id": 183,
+          "text": "<p><span style=\"font-size:12.0pt;\">70%</span></p>"
+        },
+        {
+          "id": 184,
+          "text": "<p><span style=\"font-size:12.0pt;\">69%</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">To assess the validity of an intern doctor's clinical impression of whether patients complaining of pharyngitis have group A &beta; haemolytic streptococcus infection or not, the gold standard used was throat culture. 37 of 149 patients with sore throat have positive cultures and intern doctors correctly diagnosed 27 of these. On the other hand 112 patients had negative culture results and interns correctly withheld antibiotics from 77. what is the accuracy of the test</span></p>",
+      "unique_key": "DT1230788",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230788,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\r\n<ul>\r\n<li><strong>Accuracy</strong> is a measure of the overall validity of a test, calculated as the proportion of all cases that were correctly diagnosed.</li>\r\n<li>The number of correctly diagnosed cases is the sum of <strong>true positives</strong> (TP) and <strong>true negatives</strong> (TN).</li>\r\n<li>Based on the provided information:\r\n<ul>\r\n<li>True Positives (TP): The number of patients with positive cultures correctly diagnosed by the interns is 27.</li>\r\n<li>True Negatives (TN): The number of patients with negative cultures who had antibiotics correctly withheld is 77.</li>\r\n<li>Total Correct Diagnoses = 27+77=104.</li>\r\n</ul>\r\n</li>\r\n<li>The total number of patients is 149.</li>\r\n<li>The accuracy calculation is:\r\n<ul>\r\n<li>Accuracy= Total Correct Diagnoses/ Total Casesv=149104&asymp;0.6979</li>\r\n</ul>\r\n</li>\r\n<li>When expressed as a percentage and rounded, the accuracy is approximately <strong>69%</strong>.</li>\r\n</ul>\r\n<p><strong>Key Takeaway:</strong></p>\r\n<p>The <strong>accuracy</strong> of a diagnostic test is a measure of its overall correctness. It is calculated by summing the number of <strong>true positives</strong> and <strong>true negatives</strong> and dividing by the total number of individuals tested.</p>",
+      "correct_choice_id": 184,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 20,
+      "choices": [
+        {
+          "id": 191,
+          "text": "<p><span style=\"font-size:12.0pt;\">Construct validity</span></p>"
+        },
+        {
+          "id": 192,
+          "text": "<p><span style=\"font-size:12.0pt;\">Criterion</span></p>"
+        },
+        {
+          "id": 193,
+          "text": "<p><span style=\"font-size:12.0pt;\">Content</span></p>"
+        },
+        {
+          "id": 194,
+          "text": "<p><span style=\"font-size:12.0pt;\">Predictive</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The extent to which the measurement corresponds to theoretical concepts concerning the phenomenon under study</span></p>",
+      "unique_key": "DT1230791",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230791,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Construct validity</strong> is the extent to which a measurement tool or test accurately measures the theoretical concept or construct it is intended to measure.</li>\n<li>For example, if a test is designed to measure \"intelligence,\" its construct validity is the extent to which the test actually measures the theoretical concept of intelligence, rather than other variables like memory or learning.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Criterion (Option B):</strong> Criterion validity refers to how well a measurement corresponds to an established standard or a criterion measure. This type of validity is not specifically related to theoretical concepts but rather to a test's performance against an external benchmark.</p>\n<p><strong>Content (Option C):</strong> Content validity refers to the extent to which a measurement covers all relevant aspects of the concept it is intended to measure. While related, it focuses specifically on the comprehensiveness of the measurement's items, not its alignment with a broader theoretical construct.</p>\n<p><strong>Predictive (Option D):</strong> Predictive validity, a subtype of criterion validity, refers to a measurement's ability to accurately predict future outcomes or behaviors. This is not directly related to the correspondence of the measurement with theoretical concepts.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Validity</strong> is a key aspect of a measurement tool's quality, with several types. <strong>Construct validity</strong> assesses if the tool measures the intended theoretical concept. In contrast, <strong>criterion validity</strong> assesses if the tool's results align with an external criterion, and <strong>content validity</strong> assesses if the tool's items comprehensively cover all aspects of the concept.</p>",
+      "correct_choice_id": 191,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 21,
+      "choices": [
+        {
+          "id": 201,
+          "text": "<p><span style=\"font-size:12.0pt;\">Internal validity</span></p>"
+        },
+        {
+          "id": 202,
+          "text": "<p><span style=\"font-size:12.0pt;\">External validity</span></p>"
+        },
+        {
+          "id": 203,
+          "text": "<p><span style=\"font-size:12.0pt;\">Generizability</span></p>"
+        },
+        {
+          "id": 204,
+          "text": "<p><span style=\"font-size:12.0pt;\">All the above</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The degree to which the results of an observation are correct for the patients being studied is related to</span></p>",
+      "unique_key": "DT1230793",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230793,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Internal validity refers to the degree to which the results of an observation are correct for the patients being studied.</p>\n<p><strong>Explanation for why other options are wrong:</strong></p>\n<p>b. External validity: External validity refers to the extent to which the results of a study can be generalized to other populations or settings. While related to the correctness of results in broader contexts, it specifically focuses on the generalizability of findings beyond the specific study population.</p>\n<p>c. Generalizability: Generalizability is synonymous with external validity and refers to the extent to which study findings can be generalized to other populations or settings. It is related to the broader applicability of research findings rather than the correctness of results within the studied population.</p>\n<p>d. All the above: While internal validity is related to the correctness of results for the studied population, external validity and generalizability encompass broader concepts beyond the specific population studied. Therefore, it is not accurate to include external validity and generalizability as components of internal validity.</p>",
+      "correct_choice_id": 201,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 22,
+      "choices": [
+        {
+          "id": 211,
+          "text": "<p><span style=\"font-size:12.0pt;\">Measuring what it is supposed to measure</span></p>"
+        },
+        {
+          "id": 212,
+          "text": "<p><span style=\"font-size:12.0pt;\">Correctly predicting the presence of disease</span></p>"
+        },
+        {
+          "id": 213,
+          "text": "<p><span style=\"font-size:12.0pt;\">Correctly excluding the possibility of disease</span></p>"
+        },
+        {
+          "id": 214,
+          "text": "<p><span style=\"font-size:12.0pt;\">Yielding same reading or value when repeated under same condition</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Reliability of a test means</span></p>",
+      "unique_key": "DT1230796",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230796,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Reliability refers to the consistency and stability of a test, indicating that it yields the same reading or value when repeated under the same conditions.</p>\n<p><strong>Explanation for why other options are wrong:</strong></p>\n<p>a. Measuring what it is supposed to measure: This option describes construct validity rather than reliability. Construct validity refers to the degree to which a test measures the intended theoretical construct or concept.</p>\n<p>b. Correctly predicting the presence of disease: This option describes the accuracy or validity of a test, specifically its ability to correctly identify the presence of a disease (sensitivity) or absence of a disease (specificity), rather than reliability.</p>\n<p>c. Correctly excluding the possibility of disease: Similar to option b, this describes the accuracy or validity of a test, particularly its ability to correctly identify true negatives, which is related to specificity, rather than reliability.</p>",
+      "correct_choice_id": 214,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 23,
+      "choices": [
+        {
+          "id": 221,
+          "text": "<p><span style=\"font-size:12.0pt;\">70% and 40% respectively</span></p>"
+        },
+        {
+          "id": 222,
+          "text": "<p><span style=\"font-size:12.0pt;\">70% and 0.2 respectively</span></p>"
+        },
+        {
+          "id": 223,
+          "text": "<p><span style=\"font-size:12.0pt;\">70% and 0.4 respectively</span></p>"
+        },
+        {
+          "id": 224,
+          "text": "<p><span style=\"font-size:12.0pt;\">50% and 0.2 respectively</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">The overall agreement and kappa value are<br>Classification of chest X-rays<br><img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509248ebf923b-e478-4163-95fc-5e8465038b5d.png\"></span></p>",
+      "unique_key": "DT1230800",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230800,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Two physicians independently assess 100 patients as either \"Abnormal\" or \"Normal.\"</p>\n<p>Both said \"Abnormal\" for 40 cases &rarr; A+A = 40</p>\n<p>Both said \"Normal\" for 30 cases &rarr; N+N = 30</p>\n<p>Physician A said \"Abnormal\" in total = 60</p>\n<p>Physician B said \"Abnormal\" in total = 50</p>\n<p>Physician A said \"Normal\" = 40</p>\n<p>Physician B said \"Normal\" = 50</p>\n<p><strong>Overall Agreement</strong> = (Cases where both agreed) &divide; (Total cases)</p>\n<p>= (40 + 30) / 100</p>\n<p>= <strong>70%</strong></p>\n<p><strong>Expected agreement on 'Abnormal'</strong> = (A says A &times; B says A) / Total&sup2;</p>\n<p>= (60/100 &times; 50/100) = <strong>0.30</strong></p>\n<p><strong>Expected agreement on 'Normal'</strong> = (A says N &times; B says N) / Total&sup2;</p>\n<p>= (40/100 &times; 50/100) = <strong>0.20</strong></p>\n<p><strong>Total expected agreement</strong> = 0.30 + 0.20 = <strong>0.50</strong></p>\n<p><strong>Kappa (&kappa;)</strong> = (Observed Agreement &minus; Expected Agreement) / (1 &minus; Expected Agreement)</p>\n<p>= (0.70 - 0.50) / (1 - 0.50)</p>\n<p>= 0.20 / 0.50</p>\n<p>= <strong>0.40</strong></p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Overall agreement</strong> is a simple measure of agreement between observers, but it can be misleading because it doesn't account for agreement that would occur by chance. The <strong>Kappa value</strong> (kappa) corrects for this by providing a more robust measure of agreement that is adjusted for chance.</p>\n<p><strong>Reference:</strong>&nbsp;https://pubmed.ncbi.nlm.nih.gov/23092060/</p>",
+      "correct_choice_id": 223,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 24,
+      "choices": [
+        {
+          "id": 231,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low validity, low reliability</span></p>"
+        },
+        {
+          "id": 232,
+          "text": "<p><span style=\"font-size:12.0pt;\">Low validity, high reliability</span></p>"
+        },
+        {
+          "id": 233,
+          "text": "<p><span style=\"font-size:12.0pt;\">High validity, low reliability</span></p>"
+        },
+        {
+          "id": 234,
+          "text": "<p><span style=\"font-size:12.0pt;\">High validity, high reliability</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">A new method of measuring Hb levels has been developed. Ten successive readings of a single sample are as follows: 9.4, 10.4, 9.6, 9.1, 10.8, 12.1, 10.1, 9.8, 9.2, 9.5. but the Hb measured by standard calorimetry was 10.2. therefore the given method has</span></p>",
+      "unique_key": "DT1230802",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230802,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li><strong>Reliability</strong> refers to the consistency or reproducibility of a measurement. The ten readings from the new method show a wide range (from 9.1 to 12.1), which indicates that the method is inconsistent and therefore has <strong>low reliability</strong>.</li>\n<li><strong>Validity</strong> refers to how accurately a measurement tool measures what it is supposed to measure. The gold standard value for the Hb level is 10.2. The individual readings are highly variable and do not consistently correspond to this true value, indicating <strong>low validity</strong>.</li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>Low validity, high reliability (Option B):</strong> This is incorrect because high reliability would imply consistent readings, which contradicts the variability observed in the data.</p>\n<p><strong>High validity, low reliability (Option C):</strong> This is incorrect because high validity would mean the method accurately measures Hb levels, which is not the case as the readings are not consistently close to the gold standard.</p>\n<p><strong>High validity, high reliability (Option D):</strong> This is incorrect because the method is neither accurate nor consistent, meaning it has neither high validity nor high reliability.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p><strong>Validity</strong> and <strong>reliability</strong> are two distinct but related concepts. <strong>Reliability</strong> is about consistency (getting the same result repeatedly), while <strong>validity</strong> is about accuracy (getting a result that is close to the true value). The provided method is neither consistent nor accurate.</p>",
+      "correct_choice_id": 231,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    },
+    {
+      "id": 25,
+      "choices": [
+        {
+          "id": 241,
+          "text": "<p><span style=\"font-size:12.0pt;\">1</span></p>"
+        },
+        {
+          "id": 242,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.75</span></p>"
+        },
+        {
+          "id": 243,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.4</span></p>"
+        },
+        {
+          "id": 244,
+          "text": "<p><span style=\"font-size:12.0pt;\">0.1</span></p>"
+        }
+      ],
+      "text": "<p><span style=\"font-size:12.0pt;\">Kappa greater than _______ is considered to be excellent agreement</span></p>",
+      "unique_key": "DT1230804",
+      "question_audio": null,
+      "question_video": null,
+      "map_id": 1230804,
+      "difficulty_level": "intermediate",
+      "subjects_id": [
+        1
+      ],
+      "solution": "<p><strong>Explanation:</strong></p>\n<ul>\n<li>A <strong>Kappa value</strong> (&kappa;) is a statistical measure used to assess the reliability of agreement between two or more raters. The value ranges from -1 to +1.</li>\n<li>A value greater than <strong>0.75</strong> is generally considered to indicate <strong>excellent agreement</strong> beyond chance, while a value of 1 represents perfect agreement.<img class=\"w-100\" style=\"height:auto; display:block; vertical-align:middle; border:0; \"src=\"https://d3fkkq5frqjyl8.cloudfront.net/V4/NEETPGUPDATEDMCQ/202509244d3b4c95-29a1-4625-a68e-30b9a19185f7.png\"></li>\n</ul>\n<p><strong>Explanation of Other Options:</strong></p>\n<p><strong>1 (Option A):</strong> A Kappa value of 1 signifies perfect agreement, which is the maximum possible value, but 0.75 is the commonly accepted threshold for excellent agreement, not 1.</p>\n<p><strong>0.4 (Option C):</strong> A Kappa value of 0.4 falls within the range of 0.21-0.40, which is considered fair agreement, not excellent.</p>\n<p><strong>0.1 (Option D):</strong> A Kappa value of 0.1 falls within the range of 0.01-0.20, which is considered slight agreement, not excellent.</p>\n<p><strong>Key Takeaway:</strong></p>\n<p>The <strong>Kappa value</strong> provides a standardized way to interpret the strength of agreement between observers. The scale ranges from poor (&lt; 0) to excellent (&gt; 0.75), with 1 representing perfect agreement.</p>",
+      "correct_choice_id": 242,
+      "solution_audio": null,
+      "solution_video": null,
+      "audio_explanation_heading": null,
+      "video_explanation_heading": null,
+      "solution_media_position": "bottom",
+      "tags": [
+        "Factual"
+      ],
+      "explanation_video": null,
+      "question_images": [],
+      "explanation_images": []
+    }
+  ]
+}

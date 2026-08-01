@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- ✅ user-scalable=yes allows pinch-zoom and desktop zoom shortcuts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>OPD Mastery - NEXTPULSE</title>
+
+    <!-- Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2c5282;
+            --secondary: #ffffff;
+            --bg-dark: #0f172a;
+            --header-height: 70px;
+            --footer-height: 60px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg-dark);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            color: var(--secondary);
+        }
+
+        /* --- Header --- */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 0 2rem;
+            height: var(--header-height);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo h1 { font-size: 1.4rem; font-weight: 700; color: white; margin: 0; letter-spacing: 1px; }
+        .logo i { font-size: 1.8rem; color: #4fd1c7; }
+
+        .header-right { display: flex; gap: 10px; align-items: center; }
+
+        .back-btn {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-btn:hover { background: var(--secondary); color: var(--primary); }
+
+        .tool-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .tool-btn:hover { background: rgba(255,255,255,0.1); }
+
+        /* --- Viewer Area --- */
+        .viewer-area {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+            position: relative;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #book-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #book-container {
+            visibility: hidden;
+            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
+        }
+
+        .page { background-color: white; overflow: hidden; }
+        canvas { width: 100%; height: 100%; display: block; }
+
+        /* --- Side Panels --- */
+        .panel {
+            position: fixed;
+            top: 0;
+            left: -350px;
+            width: 320px;
+            height: 100%;
+            background: var(--secondary);
+            color: #333;
+            transition: 0.4s cubic-bezier(0.4,0,0.2,1);
+            z-index: 2000;
+            box-shadow: 15px 0 50px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+        }
+        .panel.active { left: 0; }
+        .panel-header { background: var(--primary); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .panel-content { flex: 1; overflow-y: auto; }
+
+        .search-box { width: 90%; margin: 15px auto; padding: 12px; border-radius: 8px; border: 2px solid #edf2f7; display: block; outline: none; }
+        .list-item { padding: 15px 20px; border-bottom: 1px solid #f1f5f9; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+        .list-item:hover { background: #f8fafc; color: var(--primary); font-weight: 600; }
+        .list-item span { background: #e2e8f0; padding: 2px 8px; border-radius: 4px; font-size: 10px; color: #64748b; }
+
+        /* --- Footer --- */
+        footer {
+            background: #1e293b;
+            height: var(--footer-height);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            z-index: 1000;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            border: none;
+            color: white;
+            width: 45px; height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-btn:hover { transform: scale(1.1); background: #3182ce; }
+
+        /* --- Loading --- */
+        #loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: #0f172a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.3s;
+        }
+        .spinner { width: 50px; height: 50px; border: 4px solid rgba(79,209,199,0.1); border-top: 4px solid #4fd1c7; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        @media (max-width: 600px) {
+            .logo h1 { display: none; }
+            .back-btn span { display: none; }
+            .tool-btn span { display: none; }
+        }
+    </style>
+<script src="../ads-adx.js" defer></script>
+<script>
+window.addEventListener('rewardedAdGranted', function (e) {
+  var locked = document.getElementById('locked-content');
+  if (locked) locked.style.display = 'block';
+});
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/anchor_bottom1/anchor_bottom2', ['fluid'], 'div-gpt-ad-1785412277808-0').addService(googletag.pubads());
+    googletag.defineSlot('/23205238319/vignette_inter1', [MISSING_WIDTH, MISSING_HEIGHT], 'div-gpt-ad-1785408324695-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23205238319/Rewarded_ads6', [1, 1], 'div-gpt-ad-1785416390808-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+<body>
+
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <p style="margin-top:20px; font-weight:600;">Preparing Clinical Notebook...</p>
+        <small id="load-progress" style="margin-top:10px; color: #4fd1c7;">0%</small>
+    </div>
+
+    <header id="mainHeader">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <h1>NEXTPULSE</h1>
+        </div>
+        <div class="header-right">
+            <button class="tool-btn" onclick="togglePanel('indexPanel')"><i class="fas fa-list"></i> <span>Index</span></button>
+            <button class="tool-btn" onclick="togglePanel('searchPanel')"><i class="fas fa-search"></i> <span>Search</span></button>
+            <a href="javascript:history.back()" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="viewer-area">
+        <div id="book-wrapper">
+            <div id="book-container"></div>
+        </div>
+    </div>
+
+    <div id="indexPanel" class="panel">
+        <div class="panel-header">
+            <h3>Notebook Index</h3>
+            <i class="fas fa-times" onclick="closePanels()" style="cursor:pointer"></i>
+        </div>
+        <div class="panel-content" id="fullIndexList"></div>
+    </div>
+
+    <div id="searchPanel" class="panel">
+        <div class="panel-header">
+            <h3>Search Database</h3>
+            <i class="fas fa-times" onclick="closePanels()" style="cursor:pointer"></i>
+        </div>
+        <input type="text" class="search-box" id="searchInput" placeholder="Search conditions...">
+        <div class="panel-content" id="searchResults"></div>
+    </div>
+
+    <footer id="mainFooter">
+        <button class="nav-btn" onclick="pageFlip.flipPrev()"><i class="fas fa-chevron-left"></i></button>
+        <div style="font-weight: 600; width: 120px; text-align: center; font-size: 1.1rem;">
+            <span id="pageCurrent" style="color: #4fd1c7;">1</span> / 52
+        </div>
+        <button class="nav-btn" onclick="pageFlip.flipNext()"><i class="fas fa-chevron-right"></i></button>
+        <button class="nav-btn" id="btnSound" style="margin-left: 20px; background: #4a5568;"><i class="fas fa-volume-up"></i></button>
+    </footer>
+
+    <script>
+        // ─────────────────────────────────────────────────────────
+        // PDF is in the SAME folder as this HTML file on Cloudflare
+        // Pages, so we use a relative path — no external host needed.
+        // Your filename has spaces, encoded here as %20.
+        // (Recommended: rename the file to "opd-mastery-ebook.pdf"
+        //  with no spaces, then just use PDF_URL = 'opd-mastery-ebook.pdf';)
+        // ─────────────────────────────────────────────────────────
+        const PDF_URL = 'https://cdnc.heyzine.com/files/uploaded/2f525ee1fda444bde96c5ba29e86b8d86fe889a9.pdf';
+        const flipSound = new Audio('https://www.soundjay.com/print/sounds/page-flip-01a.mp3');
+
+        let pdfDoc = null;
+        let pageFlip = null;
+        let isSoundEnabled = true;
+
+        const indexData = [
+            { t: "NON-PRODUCTIVE (DRY) COUGH", p: 3 }, { t: "ACIDITY / EPIGASTRIC PAIN", p: 4 },
+            { t: "COUGH (PRODUCTIVE)", p: 5 }, { t: "HEADACHE (RECURRENT)", p: 6 },
+            { t: "NEUROPATHIC PAIN", p: 7 }, { t: "BLOATING / GAS / FULLNESS", p: 8 },
+            { t: "HIGH BLOOD PRESSURE", p: 9 }, { t: "BED WETTING IN TEENS", p: 10 },
+            { t: "HAIR FALL (Diffuse / Gradual)", p: 11 }, { t: "ERECTILE DYSFUNCTION", p: 12 },
+            { t: "LOW SPERM COUNT", p: 13 }, { t: "PREMATURE EJACULATION", p: 14 },
+            { t: "URINARY TRACT INFECTION", p: 15 }, { t: "FILARIASIS (Acute Attack)", p: 16 },
+            { t: "DENGUE FEVER", p: 17 }, { t: "TYPHOID FEVER", p: 18 },
+            { t: "MALARIA", p: 19 }, { t: "DIABETES MELLITUS (Type 2)", p: 20 },
+            { t: "ACUTE SINUSITIS", p: 21 }, { t: "COPD (Chronic Obstructive)", p: 22 },
+            { t: "DYSPEPSIA", p: 23 }, { t: "BELL'S PALSY", p: 24 },
+            { t: "ARTHRITIS", p: 25 }, { t: "SCIATICA PAIN", p: 26 },
+            { t: "BODY ACHE (MYALGIA)", p: 27 }, { t: "OBESITY", p: 28 },
+            { t: "IRRITABLE BOWEL SYNDROME", p: 29 }, { t: "CONSTIPATION", p: 30 },
+            { t: "ACUTE DIARRHOEA", p: 31 }, { t: "DYSLIPIDEMIA", p: 32 },
+            { t: "KNEE PAIN", p: 33 }, { t: "WORM INFESTATION", p: 34 },
+            { t: "VERTIGO", p: 35 }, { t: "NUMBNESS IN ARMS & LEGS", p: 36 },
+            { t: "WHITE DISCHARGE (Vaginal)", p: 37 }, { t: "PCOD — OBS & GYNAE", p: 38 },
+            { t: "IRREGULAR MENSTRUAL CYCLE", p: 39 }, { t: "PAINFUL PERIODS", p: 40 },
+            { t: "FIRST TRIMESTER PREGNANCY", p: 41 }, { t: "SECOND TRIMESTER PREGNANCY", p: 42 },
+            { t: "THIRD TRIMESTER PREGNANCY", p: 43 }, { t: "INFERTILITY", p: 44 },
+            { t: "MASTALGIA (Breast Pain)", p: 45 }, { t: "FIBROID UTERUS", p: 46 },
+            { t: "ANAEMIA IN PREGNANCY", p: 47 }, { t: "GESTATIONAL HYPERTENSION", p: 48 },
+            { t: "GESTATIONAL DIABETES", p: 49 }, { t: "MINOR AILMENTS PREGNANCY", p: 50 },
+            { t: "ORAL CONTRACEPTIVE PILLS", p: 51 }, { t: "EMERGENCY CONTRACEPTION", p: 52 }
+        ];
+
+        async function initApp() {
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+            try {
+                startFakeProgress();
+
+                const loadingTask = pdfjsLib.getDocument(PDF_URL);
+                pdfDoc = await loadingTask.promise;
+                const totalPages = pdfDoc.numPages;
+                const container = document.getElementById('book-container');
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const page = await pdfDoc.getPage(i);
+                    const viewport = page.getViewport({ scale: 2 });
+                    const pageDiv = document.createElement('div');
+                    pageDiv.className = 'page';
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    await page.render({ canvasContext: context, viewport: viewport }).promise;
+                    pageDiv.appendChild(canvas);
+                    container.appendChild(pageDiv);
+                    updateRealProgress(Math.round((i / totalPages) * 100));
+                }
+
+                stopFakeProgress();
+                updateLoadProgress(100);
+
+                startFlipEngine("landscape");
+                buildIndex();
+                document.getElementById('loading-overlay').style.display = 'none';
+            } catch (e) {
+                console.error(e);
+                stopFakeProgress();
+                document.getElementById('load-progress').innerText = 'Failed to load. Please try again.';
+            }
+        }
+
+        // ─── Fake Progress Handling ────────────────────────────
+        let fakeProgressInterval = null;
+        let fakeProgressValue = 0;
+        let realProgressSet = false;
+
+        function startFakeProgress() {
+            fakeProgressValue = 0;
+            realProgressSet = false;
+            document.getElementById('load-progress').innerText = '0%';
+            fakeProgressInterval = setInterval(() => {
+                if (!realProgressSet && fakeProgressValue < 90) {
+                    fakeProgressValue += Math.random() * 8 + 2;
+                    if (fakeProgressValue > 90) fakeProgressValue = 90;
+                    document.getElementById('load-progress').innerText = Math.floor(fakeProgressValue) + '%';
+                }
+            }, 400);
+        }
+
+        function updateRealProgress(percent) {
+            if (!realProgressSet) realProgressSet = true;
+            document.getElementById('load-progress').innerText = percent + '%';
+        }
+
+        function stopFakeProgress() {
+            if (fakeProgressInterval) {
+                clearInterval(fakeProgressInterval);
+                fakeProgressInterval = null;
+            }
+        }
+
+        function updateLoadProgress(value) {
+            document.getElementById('load-progress').innerText = value + '%';
+        }
+
+        // ─── Page Flip Engine ──────────────────────────────────
+        function startFlipEngine(mode) {
+            if (pageFlip) pageFlip.destroy();
+            const isPortrait = (mode === "portrait" || window.innerWidth < 900);
+            pageFlip = new St.PageFlip(document.getElementById('book-container'), {
+                width: 550, height: 800,
+                size: "stretch",
+                minWidth: 315, maxWidth: 1000,
+                minHeight: 420, maxHeight: 1350,
+                maxShadowOpacity: 0.5,
+                showCover: true,
+                mobileScrollSupport: true,
+                usePortrait: isPortrait,
+                flippingTime: 800
+            });
+            pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+            pageFlip.on('flip', (e) => {
+                document.getElementById('pageCurrent').innerText = e.data + 1;
+                if (isSoundEnabled) { flipSound.currentTime = 0; flipSound.play(); }
+            });
+            document.getElementById('book-container').style.visibility = 'visible';
+        }
+
+        function buildIndex() {
+            const list = document.getElementById('fullIndexList');
+            indexData.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'list-item';
+                div.innerHTML = `${item.t} <span>Pg ${item.p}</span>`;
+                div.onclick = () => { pageFlip.turnToPage(item.p - 1); closePanels(); };
+                list.appendChild(div);
+            });
+        }
+
+        document.getElementById('searchInput').oninput = (e) => {
+            const query = e.target.value.toLowerCase();
+            const results = document.getElementById('searchResults');
+            results.innerHTML = '';
+            if(query.length < 2) return;
+            indexData.filter(c => c.t.toLowerCase().includes(query)).forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'list-item';
+                div.innerHTML = `${item.t} <span>Pg ${item.p}</span>`;
+                div.onclick = () => { pageFlip.turnToPage(item.p - 1); closePanels(); };
+                results.appendChild(div);
+            });
+        };
+
+        function togglePanel(id) {
+            const panel = document.getElementById(id);
+            const isAct = panel.classList.contains('active');
+            closePanels();
+            if(!isAct) panel.classList.add('active');
+        }
+
+        function closePanels() {
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+        }
+
+        document.getElementById('btnSound').onclick = function() {
+            isSoundEnabled = !isSoundEnabled;
+            this.innerHTML = isSoundEnabled ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
+        };
+
+        window.onload = initApp;
+    </script>
+<!-- /23205238319/anchor_bottom1/anchor_bottom2 -->
+<div id='div-gpt-ad-1785412277808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785412277808-0'); });
+  </script>
+</div>
+
+<!-- /23205238319/vignette_inter1 -->
+<div id='div-gpt-ad-1785408324695-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785408324695-0'); });
+  </script>
+</div>
+<!-- ===== REWARDED AD BODY ===== -->
+<div id='div-gpt-ad-1785416390808-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
+  </script>
+</div>
+
+<!-- Modal (hidden by default) -->
+<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
+  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+    <p>Watch the ad to continue.</p>
+    <button class="btn" style="display:none;">Close Ad</button>
+  </div>
+</div>
+
+<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+<script>
+  (function() {
+    const COOLDOWN_MS = 600000; // 1 hour
+    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
+    const now = Date.now();
+    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
+      console.log('⏳ Ad cooldown active – skipping.');
+      return;
+    }
+
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(() => {
+      const adSlotRewarded = googletag
+        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
+        .addService(googletag.pubads());
+
+      adSlotRewarded.setForceSafeFrame(true);
+      googletag.pubads().enableAsyncRendering();
+      googletag.enableServices();
+
+      const modal = document.getElementById('rewardModal');
+      const closeButton = modal ? modal.querySelector('.btn') : null;
+
+      window.addEventListener('popstate', function() {
+        history.pushState(null, null, location.href);
+      });
+
+      googletag.pubads().addEventListener('impressionViewable', function() {
+        console.log('👀 Ad impression viewable');
+        if (closeButton) {
+          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        }
+      });
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.isEmpty) {
+          console.log('❌ Ad empty or failed');
+          if (modal) {
+            modal.style.display = 'none';
+          }
+        }
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
+        if (modal) {
+          modal.style.display = 'flex'; // show modal
+        }
+        event.makeRewardedVisible();
+      });
+
+      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
+      });
+
+      googletag.display(adSlotRewarded);
+    });
+  })();
+</script>
+<!-- ===== END REWARDED AD BODY ===== -->
+</body>
+</html>

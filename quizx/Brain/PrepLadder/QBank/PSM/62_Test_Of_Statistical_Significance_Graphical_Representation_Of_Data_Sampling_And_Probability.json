@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "title": "62_Test_Of_Statistical_Significance_Graphical_Representation_Of_Data_Sampling_And_Probability"
+  },
+  "questions": [
+    {
+      "text": "A study aims to compare the mean weight (in kilograms) of children diagnosed with severe protein-energy malnutrition before and after receiving a nutritional intervention program. Which type of statistical test is appropriate for analyzing the data in this scenario?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Both parametric and non-parametric"
+        },
+        {
+          "id": 1,
+          "text": "Non-parametric only"
+        },
+        {
+          "id": 2,
+          "text": "Parametric only"
+        },
+        {
+          "id": 3,
+          "text": "None of the Above"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) Parametric only</strong></p>\n\n<p><strong>Explanation : </strong><br />\nThe appropriate test in this scenario is the <strong>t-test</strong>, which is a <strong>parametric test</strong>. This test is suitable because it compares the means of <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> data (<strong>weight in kilograms</strong>) and analyzes data from the same group of individuals (<strong>children with malnutrition</strong>)</p>\n\n<p><img alt=\"tests of statistical significance\" data-author=\"na\" data-hash=\"299\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/niLdIwdD6JYTf6S3YFwn1733994977.png\" /></p>\n\n<table cellspacing=\"0\" style=\"border-collapse:collapse; width:NaN\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Data Setup</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Parametric test</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Non-Parametric test</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>1 Variable 2 Categories Between Subjects</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Independent t-test</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Mann-Whitney U test</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>1 Variable 2 Categories Within-Subjects</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Paired t-test</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Wilcoxon Signed Rank Test</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>1 Variable >2 Categories Between Subjects</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>One-way ANOVA</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Kruskal Wallis Test</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>1 Variable >2 Categories Within Subjects</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Repeated measures ANOVA</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Friedman test</p>\n\n\t\t\t<p>Mood's <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> test</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>1 Variable (Correlation)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Pearson's r</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Spearman's p (rho)</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/niLdIwdD6JYTf6S3YFwn1733994977.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/U88wDFNhYvAGGeeIA9bh1744661840.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/yzhP4gh4zgtELEmdzF2D1744661933.mp3"
+    },
+    {
+      "text": "A researcher wants to compare the effectiveness of three different types of exercise programs on reducing blood pressure in individuals with hypertension. Which parametric test is most appropriate for analyzing the data?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Paired Student's t-test"
+        },
+        {
+          "id": 1,
+          "text": "Unpaired Student's t-test"
+        },
+        {
+          "id": 2,
+          "text": "ANOVA"
+        },
+        {
+          "id": 3,
+          "text": "Z- test"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) ANOVA</strong></p>\n\n<p><strong>Explanation : </strong></p>\n\n<p><br />\nANOVA is used to compare means in<strong> more than two different groups of individuals</strong>. Here, we have three different exercise groups and comparison is made on the effectiveness of these exercises on hypertension.</p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:621px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Parametric Test</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Description</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Paired Student's t-test</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Used to compare means (± SD) in paired data from the same group of individuals before and after an intervention.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Unpaired Student's t-test</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Used to compare means (± SD) in two different groups of individuals. The<strong> Z-test is a <span class=\"customMeta\" data-dictid=\"0efdcdc9e01692777201003c81c85a\">variant</span> </strong>of the unpaired Student's t-test used when the sample size is > 30.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>ANOVA</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Used to compare means (± SD) in more than two different groups of individuals.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Pearson correlation coefficient</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #131314; border-left:1px solid #131314; border-right:1px solid #131314; border-top:1px solid #131314; vertical-align:top\">\n\t\t\t<p>Measures the <span class=\"customMeta\" data-dictid=\"d02067c4b51692777191b8eec8b062\">linear</span> association between two variables and can range from -1 (perfect negative correlation) to +1 (perfect positive correlation).</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<p><strong>Paired Student's t-test</strong>(<strong>Option A):</strong> Used when you compare two related groups (e.g., before and after in the same individuals). Not appropriate here — this study involves three independent groups.</p>\n\n<p><strong>Unpaired Student's t-test (Option B): </strong>Used to compare the means of <strong>two independent groups. </strong>Again, this study has <strong>three groups</strong>, so this test <strong>cannot be used</strong>.</p>\n\n<p><strong>Z-test (Option D)</strong> :Generally used when comparing means with <strong>known population variance</strong> or very <strong>large sample sizes</strong>. Not commonly used in this kind of study, especially when comparing <strong>more than two groups. </strong>Also, Z-tests are not ideal when comparing <strong>multiple group means</strong> — ANOVA is the standard.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/0M7C7Df4gomh5S2wYeFq1744662022.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/VH6Vc0JrmXbPvT0B9j901746564766.mp3"
+    },
+    {
+      "text": "Which one of the following tests is used to study the association between the use of oral contraceptive pills (OCP) and breast cancer?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Paired T-test"
+        },
+        {
+          "id": 1,
+          "text": "Chi-Square Test"
+        },
+        {
+          "id": 2,
+          "text": "Unpaired T-test"
+        },
+        {
+          "id": 3,
+          "text": "ANOVA"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) <span class=\"customMeta\" data-dictid=\"9560b8d7211692777184e0359e3495\">Chi-square</span> test</strong></p>\n\n<p><strong>Explanation : </strong><br />\nChi-Square Test is a non-parametric test used to study the association between<strong> two <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> variables.</strong> In this scenario, breast cancer and OCP use are both <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> variables.</p>\n\n<p><img alt=\"non-parametric test\" data-author=\"\" data-hash=\"301\" data-license=\"\" data-source=\"\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/61Uj81ZObbM36TaYjf0i1734022683.png\" /></p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/61Uj81ZObbM36TaYjf0i1734022683.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/6tpUAd2dtQE46MF0iShs1744662170.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/xiIJY1KPO3DTTkGHb9b51744662231.mp3"
+    },
+    {
+      "text": "A hospital administrator wants to determine if there is a significant association between the type of hospital ward (General, Intensive Care, and Pediatric) and the number of patients who experienced postoperative infections. The data collected over a month is as follows:\n\n \n\n\n\t\n\t\t\n\t\t\t\n\t\t\tWard\n\t\t\t\n\t\t\t\n\t\t\tPatients with infections\n\t\t\t\n\t\t\t\n\t\t\tPatients without infections\n\t\t\t\n\t\t\t\n\t\t\tTotal\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\tGeneral\n\t\t\t\n\t\t\t\n\t\t\t20\n\t\t\t\n\t\t\t\n\t\t\t80\n\t\t\t\n\t\t\t\n\t\t\t100\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\tIntensive Care\n\t\t\t\n\t\t\t\n\t\t\t30\n\t\t\t\n\t\t\t\n\t\t\t70\n\t\t\t\n\t\t\t\n\t\t\t100\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\tPediatric\n\t\t\t\n\t\t\t\n\t\t\t10\n\t\t\t\n\t\t\t\n\t\t\t90\n\t\t\t\n\t\t\t\n\t\t\t100\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\tTotal\n\t\t\t\n\t\t\t\n\t\t\t60\n\t\t\t\n\t\t\t\n\t\t\t240\n\t\t\t\n\t\t\t\n\t\t\t300\n\t\t\t\n\t\t\n\t\n\n\n \n\nUsing the Chi-Square test, what is the expected number of patients with infections in the General Ward if there is no association between the ward type and infection status?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "15"
+        },
+        {
+          "id": 1,
+          "text": "20"
+        },
+        {
+          "id": 2,
+          "text": "30"
+        },
+        {
+          "id": 3,
+          "text": "60"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer:</strong> <strong>C) 20</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><br />\nThe expected number for each cell in a <span class=\"customMeta\" data-dictid=\"9560b8d7211692777184e0359e3495\">Chi-square</span> test is calculated by multiplying the row total by the column total and dividing by the grand total.</p>\n\n<p><strong>The formula for the expected frequency in a cell is: E=(Row Total)×(Column Total) / Grand Total</strong></p>\n\n<p><strong>For the General <span class=\"customMeta\" data-dictid=\"39723e2b3616927772023f29ae0e0d\">ward</span> and infections:</strong></p>\n\n<p>= (Total patients in General <span class=\"customMeta\" data-dictid=\"39723e2b3616927772023f29ae0e0d\">ward</span> x Total patients with infections) / Total number of patients</p>\n\n<p>= (100 x 60) / 300</p>\n\n<p>= 6000 / 300</p>\n\n<p>= 20</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [],
+      "explanation_audio_eng": "https://image.prepladder.com/content/7DQ8ifsqDTYVHDOxC2s31745324444.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/pkNaIgqAMJ04mm9qo28L1745324546.mp3"
+    },
+    {
+      "text": "What is this graphical representation of frequency of quantitative data called?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Histogram"
+        },
+        {
+          "id": 1,
+          "text": "Bar Diagram"
+        },
+        {
+          "id": 2,
+          "text": "Pictograph"
+        },
+        {
+          "id": 3,
+          "text": "Box and Whisker Plot"
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: </strong>A) Histogram</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><strong>Histogram:</strong></p>\n\n<p><img alt=\"Histogram-\" data-author=\"na\" data-hash=\"302\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png\" /></p>\n\n<ul>\n\t<li>It represents the frequency of continuous variables or <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> variables.</li>\n\t<li>Height is a <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> or <span class=\"customMeta\" data-dictid=\"558c892bf516927771857a44d2fe91\">continuous variable</span> (can take many possible values and also in between values)</li>\n\t<li>It <strong>can be expressed in decimals and there is no gap in between.</strong></li>\n</ul>\n\n<p><br />\n </p>\n\n<p><strong>Bar Diagram:</strong></p>\n\n<p><img alt=\"Bar Diagram\" data-author=\"\" data-hash=\"303\" data-license=\"\" data-source=\"\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/Y0SxVeWpmisypSOHivIz1734022903.png\" /></p>\n\n<ul>\n\t<li>Simple bar diagrams represent the frequency of <span class=\"customMeta\" data-dictid=\"635650799116927771862d7cb568f4\">discrete</span> variables like gender.</li>\n\t<li>Discrete variables: These variables take fewer values and no in-between values.\n\t<ul>\n\t\t<li>Examples: Religion, Blood groups</li>\n\t\t<li>These are <strong>not represented in decimals, so there are gaps.</strong></li>\n\t</ul>\n\t</li>\n</ul>\n\n<p> </p>\n\n<p><strong>Pictograph:</strong></p>\n\n<p><img alt=\"Pictograph\" data-author=\"na\" data-hash=\"304\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/5aKXx2BXbRTlb8kskcqN1734022947.png\" /></p>\n\n<ul>\n\t<li>Used for graphical representation of <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> variables</li>\n\t<li>Used to teach something to a layman (illiterate).</li>\n</ul>\n\n<p><br />\n </p>\n\n<p><strong>Box and Whisker Plot:</strong></p>\n\n<p><img alt=\"CM017-Box and Whisker Plot\" data-author=\"na\" data-hash=\"305\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/CanfMi1WyGRR8EYIjDYa1734022989.png\" /></p>\n\n<ul>\n\t<li>A method of <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> data representation.</li>\n\t<li>Used to represent quartiles.</li>\n\t<li>It comments on the type of distribution i.e., normal or skewed.</li>\n\t<li>There is equal distribution on both sides (no outliers).</li>\n\t<li>It is a normal distribution.</li>\n\t<li>Tails are also equally distributed.</li>\n</ul>",
+      "question_images": [
+        "https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/3gFd3SSokYHbaVfnVtZq1744662311.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/RpsM8NYz3TFHFrGhohuw1744662394.mp3"
+    },
+    {
+      "text": "Given below is a graphical representation of different blood groups of people in three different cities, what is the type of graphical representation used here?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Simple Bar Diagram"
+        },
+        {
+          "id": 1,
+          "text": "Compound Bar Diagram"
+        },
+        {
+          "id": 2,
+          "text": "Component Bar Diagram"
+        },
+        {
+          "id": 3,
+          "text": "Histogram"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: C) Component Bar Diagram</strong></p>\n\n<p><strong>Explanation: </strong><br />\nHere, the same bar has been divided into different components and each component represents its frequency. This is known as a component bar diagram.</p>\n\n<p><strong>Types of bar diagrams:</strong></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:NaN\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Image</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Explanation</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Simple Bar <span class=\"customMeta\" data-dictid=\"a445e59f7816927771864e36b1dbd3\">Diagram</span> (Option A)</strong></p>\n\n\t\t\t<p><img alt=\"Bar Diagram\" data-author=\"na\" data-hash=\"303\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/Y0SxVeWpmisypSOHivIz1734022903.png\" /></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Simple bar diagrams represent the frequency of <span class=\"customMeta\" data-dictid=\"635650799116927771862d7cb568f4\">discrete</span> variables like gender.</li>\n\t\t\t\t<li>Discrete variables:These variables take fewer values and no in between values.\n\t\t\t\t<ul>\n\t\t\t\t\t<li>Examples: Religion, Blood groups</li>\n\t\t\t\t</ul>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Compound Bar <span class=\"customMeta\" data-dictid=\"a445e59f7816927771864e36b1dbd3\">Diagram</span> (Option B)</strong></p>\n\n\t\t\t<p><img alt=\"CM019-Compound Bar Diagram\" data-author=\"na\" data-hash=\"307\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/YqisjAiGsdzwynkFGnbI1734023142.png\" /></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>There are gaps (discrete data) represented with multiple bars.</li>\n\t\t\t\t<li>It is <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> in the first quarter.</li>\n\t\t\t\t<li>It is a Multiple bar diagram/Compound bar diagram.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Component Bar <span class=\"customMeta\" data-dictid=\"a445e59f7816927771864e36b1dbd3\">Diagram</span> (Option C)</strong></p>\n\n\t\t\t<p><img alt=\"CM018-Component Bar Diagram\" data-author=\"na\" data-hash=\"306\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/gjBsxQHBnRIeQ6fce7xl1734023085.png\" /></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Same bar has been divided into different components and each component represents its frequency.</li>\n\t\t\t\t<li>It is a frequency of <span class=\"customMeta\" data-dictid=\"635650799116927771862d7cb568f4\">discrete</span> variables.</li>\n\t\t\t\t<li>It is known as the Component bar diagram.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Histogram (Option D)</strong></p>\n\n\t\t\t<p><img alt=\"Histogram-\" data-author=\"na\" data-hash=\"302\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png\" /></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>It is not a bar diagram.</li>\n\t\t\t\t<li>It represents the frequency of continuous variables or <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> variables.</li>\n\t\t\t\t<li>Height is a <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> or <span class=\"customMeta\" data-dictid=\"558c892bf516927771857a44d2fe91\">continuous variable</span> (can take many possible values and also in between values)</li>\n\t\t\t\t<li>It can be expressed in decimals and there is no gap in between.</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+      "question_images": [
+        "https://image.prepladder.com/notes/gjBsxQHBnRIeQ6fce7xl1734023085.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/Y0SxVeWpmisypSOHivIz1734022903.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/lHGvmGqbfOnPdLEVxBnQ1744662463.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/llUC8SXuixOIi9QbR8K21744662839.mp3"
+    },
+    {
+      "text": "A teacher measured the heights of students in her class and wanted to visualize the distribution of these heights. She is considering using either a histogram or a frequency polygon for this purpose. Which of the following statements correctly distinguishes between a histogram and a frequency polygon?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "A histogram uses bars to represent frequencies of height intervals, while a frequency polygon uses dots connected by straight lines."
+        },
+        {
+          "id": 1,
+          "text": "A histogram displays cumulative frequencies of student heights, whereas a frequency polygon displays individual height measurements."
+        },
+        {
+          "id": 2,
+          "text": "A histogram can only display continuous data like heights, while a frequency polygon can only display categorical data."
+        },
+        {
+          "id": 3,
+          "text": "A histogram provides a clearer representation of changes in student heights over time compared to a frequency polygon."
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: </strong>A) A <span class=\"customMeta\" data-dictid=\"90afc436da16927771896a6d6e86ac\">histogram</span> uses bars to represent frequencies of height intervals, while a <span class=\"customMeta\" data-dictid=\"08c733c4f0169277720362ea293649\">frequency polygon</span> uses dots connected by straight lines.</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><br />\n<strong>Histogram:</strong></p>\n\n<p><img alt=\"Histogram-\" data-author=\"na\" data-hash=\"302\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png\" /></p>\n\n<ul>\n\t<li>It represents the frequency of continuous variables or <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> variables.</li>\n\t<li>Height is a <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> or <span class=\"customMeta\" data-dictid=\"558c892bf516927771857a44d2fe91\">continuous variable</span> (can take many possible values and also in between values)</li>\n\t<li>It can be expressed in decimals and there is no gap in between.</li>\n</ul>\n\n<p><br />\n </p>\n\n<p><strong>Frequency Polygon: </strong></p>\n\n<p><img alt=\"CM020-Frequency Polygon\" data-author=\"na\" data-hash=\"308\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/pCdMYSFmfpPA1DdpZvDX1734023328.png\" /></p>\n\n<ul>\n\t<li>It is drawn above a histogram.</li>\n\t<li>Midpoints are joined by a straight line (frequency polygon).</li>\n\t<li>Height is continuous (quantitative data).</li>\n\t<li>If the number of observations is very large and group intervals are reduced, then the <span class=\"customMeta\" data-dictid=\"08c733c4f0169277720362ea293649\">frequency polygon</span> loses its angulature and becomes a curve, i.e., frequency curve.</li>\n</ul>\n\n<p><strong>Options B, C and D are incorrect because </strong>a <span class=\"customMeta\" data-dictid=\"90afc436da16927771896a6d6e86ac\">histogram</span> represents frequency of continuous variables or <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">quantitative</span> variables and a <span class=\"customMeta\" data-dictid=\"08c733c4f0169277720362ea293649\">frequency polygon</span> is drawn on top of it, connecting its mid-points by straight lines and they both have a similar accuracy in representation of changes in students’ heights over time.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/kKf1szPsZikX1RFQ0IYQ1734022823.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/M1hOSD38ggNthGN7203g1744663036.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/eoRdwonDZIZCNZiSNrc21744663155.mp3"
+    },
+    {
+      "text": "A clinic wants to analyze the cumulative number of patients who have completed a new vaccination program over the past year to evaluate the program's uptake and identify any trends in vaccination rates. Which type of graph should they use?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Line Chart"
+        },
+        {
+          "id": 1,
+          "text": "Ogive"
+        },
+        {
+          "id": 2,
+          "text": "Pie Chart"
+        },
+        {
+          "id": 3,
+          "text": "Box Plot"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) Ogive </strong></p>\n\n<p><strong>Explanation:</strong><br />\n<strong>An ogive or <span class=\"customMeta\" data-dictid=\"fa914a0d95169277718542753b513d\">cumulative</span> frequency curve</strong> is useful for understanding how quantities accumulate over time. By plotting <span class=\"customMeta\" data-dictid=\"fa914a0d95169277718542753b513d\">cumulative</span> <span class=\"customMeta\" data-dictid=\"f23be6aa561692777201ca2e1aaa27\">vaccination</span> completion data on an ogive, the clinic can easily <span class=\"customMeta\" data-dictid=\"67407c787d1692777202245c791c31\">visualize</span> the total number of patients vaccinated up to each month and observe trends in the rate of increase in vaccinations.</p>\n\n<ul>\n\t<li>There is no dip or no fall of the curve.</li>\n\t<li>Cases are constantly increasing</li>\n</ul>\n\n<p style=\"text-align:center\"><img alt=\"Ogive\" data-author=\"na\" data-hash=\"309\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" height=\"354\" src=\"https://image.prepladder.com/notes/K0JsFMii235gsHehjQcA1734023473.png\" width=\"506\" /></p>\n\n<p> </p>\n\n<p style=\"text-align: center;\">Fig. Ogive</p>\n\n<p> </p>\n\n<p>A<strong> line chart (Option A) </strong>is used for showing trends of events or <span class=\"customMeta\" data-dictid=\"17cd3771bb1692777190950c142dbe\">incidence</span> of cases over time. It has both rise and fall.</p>\n\n<p style=\"text-align:center\"><img alt=\" line chart\" data-author=\"na\" data-hash=\"310\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" height=\"278\" src=\"https://image.prepladder.com/notes/MDSIPyvGf68cWYFqFaPu1734023522.png\" width=\"505\" /></p>\n\n<p style=\"text-align: center;\">Fig. Line chart</p>\n\n<p><br />\n </p>\n\n<p>A<strong> pie chart (Option C)</strong> displays the proportions of different categories using slices of a circle.</p>\n\n<ul>\n\t<li>Used to represent variables in percentages and proportions.</li>\n\t<li>Represents <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> variables.</li>\n\t<li>Entire pie chart is 100%</li>\n\t<li>Maximum divisions: 6 - 7 parts</li>\n</ul>\n\n<p style=\"text-align:center\"><img alt=\"pie chart\" data-author=\"na\" data-hash=\"311\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" height=\"340\" src=\"https://image.prepladder.com/notes/xEPHzurMNRUKm0uSdiei1734023566.png\" width=\"520\" /></p>\n\n<p style=\"text-align: center;\">Fig. Pie chart</p>\n\n<p> </p>\n\n<p>A<strong> <span class=\"customMeta\" data-dictid=\"1400a231951692777183075f0ccd76\">box plot</span> (Option D) </strong>is used to show the distribution of data based on a five-number summary (minimum, first <span class=\"customMeta\" data-dictid=\"3478f647331692777196ecbbc7cb89\">quartile</span> (Q1), median, third <span class=\"customMeta\" data-dictid=\"3478f647331692777196ecbbc7cb89\">quartile</span> (Q3), and maximum).</p>\n\n<ul>\n\t<li>It comments on the type of distribution, i.e., normal or skewed.</li>\n</ul>\n\n<p style=\"text-align:center\"><img alt=\"CM017-Box and Whisker Plot\" data-author=\"na\" data-hash=\"305\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" height=\"257\" src=\"https://image.prepladder.com/notes/CanfMi1WyGRR8EYIjDYa1734022989.png\" width=\"544\" /></p>\n\n<p style=\"text-align: center;\">Fig. Box and Whiskerplot</p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/K0JsFMii235gsHehjQcA1734023473.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/KgTgtczCeASpVtcIh1SP1744663267.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/N6aktpj0z8TTKBCoWng61746564841.mp3"
+    },
+    {
+      "text": "A study is conducted to examine the relationship between hours of exercise per week and body mass index (BMI) among adults. Data from 30 participants are collected and plotted, with hours of exercise on the x-axis and BMI on the y-axis. The resulting scatter diagram is as shown below.\n\n\n\nWhat type of correlation is depicted, and what is the correlation coefficient (r) value?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Positive correlation; r = 1"
+        },
+        {
+          "id": 1,
+          "text": "Negative correlation; r = -1"
+        },
+        {
+          "id": 2,
+          "text": "No correlation; r = 0"
+        },
+        {
+          "id": 3,
+          "text": "Weak negative correlation; r = -0.5"
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer:</strong> B) Negative correlation; r = -1</p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><br />\n<strong>Scatter Diagram:</strong></p>\n\n<ul>\n\t<li>Represents correlation between two continuous variables i.e., association and direction of association.</li>\n\t<li>Represented by correlation <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> 'r'.</li>\n\t<li>Value of 'r' ranges from: -1 < 0 < +1</li>\n</ul>\n\n<p> </p>\n\n<p><strong>Perfectly positive association:</strong></p>\n\n<p>Weight is increasing with the increase in height (perfectly <span class=\"customMeta\" data-dictid=\"d02067c4b51692777191b8eec8b062\">linear</span> association)</p>\n\n<p>Value of r = +1</p>\n\n<p><img alt=\"CM025-Scatter Diagram-Perfectly positive association\" data-author=\"na\" data-hash=\"323\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/ZKtp3d0dCTmAqioNEkph1734060970.png\" /></p>\n\n<p><strong>No association between x-axis and y-axis (r=0)</strong></p>\n\n<p><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"2482\" src=\"https://image.prepladder.com/content/kXiDxDQV6AaAAfk1gKS71726802912.jpg\" width=\"2481\" /></p>\n\n<p><strong>Perfectly negative association:</strong></p>\n\n<p>Variables on the x-axis increase with decreasing in the variables on the y-axis.</p>\n\n<p>Value of r = -1</p>\n\n<p><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"596\" src=\"https://image.prepladder.com/content/OEaHcDLK82Zp36EtfcaU1726802928.jpg\" width=\"596\" /></p>\n\n<p><strong>Possible values of r:</strong></p>\n\n<ul>\n\t<li>r = +1 (perfectly positive)</li>\n\t<li>r ≥ 0.7 (Strong positive)</li>\n\t<li>r = 0.4 to 0.6 (moderate positive)</li>\n\t<li>r ≤ 0.3 (Weak positive)</li>\n\t<li>r = -1 (perfectly negative)</li>\n\t<li>r ≥ - 0.7 (Strong negative)</li>\n\t<li>r = -0.4 to -0.6 (moderate negative)</li>\n\t<li>r ≤ - 0.3 (weak negative)</li>\n</ul>",
+      "question_images": [
+        "https://image.prepladder.com/notes/TUgpFavoVAiwRR58WN8d1734060904.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/ZKtp3d0dCTmAqioNEkph1734060970.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/koj2cjjMzhu6CHNpoisO1744663518.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/V812urXQfbyC5EL894He1744663615.mp3"
+    },
+    {
+      "text": "A hospital conducted a study on the recovery times (in days) of patients after a specific surgical procedure. The data was summarized using a box and whisker plot as shown below:\n\n\n\nWhich of the following statements best describes the skewness of the recovery time data shown in the plot above?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "The data has no skewness."
+        },
+        {
+          "id": 1,
+          "text": "The data is positively skewed."
+        },
+        {
+          "id": 2,
+          "text": "The data is negatively skewed."
+        },
+        {
+          "id": 3,
+          "text": "The data is both positively and negatively skewed."
+        }
+      ],
+      "correct_choice_id": 0,
+      "solution": "<p><strong>Correct Answer: A) The data has no skewness.</strong></p>\n\n<p><strong>Explanation:</strong><br />\nIn the given <strong>box and whisker plot</strong>, the right whisker is equal to the left whisker indicating <span class=\"customMeta\" data-dictid=\"d963da62eb16927771993737a99c7c\">Symmetrical</span> distribution or no skewness.</p>\n\n<ul>\n\t<li>It is used to show the distribution of data based on a five-number summary [minimum, first <span class=\"customMeta\" data-dictid=\"3478f647331692777196ecbbc7cb89\">quartile</span> (Q1), median, third <span class=\"customMeta\" data-dictid=\"3478f647331692777196ecbbc7cb89\">quartile</span> (Q3), and maximum].</li>\n\t<li>It comments on the type of distribution i.e., normal or skewed.</li>\n</ul>\n\n<p><strong>Components of a Box and Whisker Plot:</strong></p>\n\n<ul>\n\t<li><strong>Q1</strong> - the lower edge of the box - denotes 25th percentile</li>\n\t<li><strong>Q3</strong> - the upper edge of the box - denotes - 75th percentile</li>\n\t<li><strong>Q2 - Median</strong> - indicates the middle value of the dataset when arranged in <span class=\"customMeta\" data-dictid=\"62f0d7c8491692777182ab7cc82edb\">ascending</span> order.</li>\n</ul>\n\n<ul>\n\t<li><strong>The lower whisker (or left end) </strong>extends from the minimum data point up to Q1</li>\n\t<li><strong>The upper whisker (or right end)</strong> extends from Q3 to the maximum data point.</li>\n</ul>\n\n<p> </p>\n\n<p><strong>Interpretation of a Box and Whisker Plot:</strong></p>\n\n<ul>\n\t<li><strong>Skewness:</strong> A longer whisker on one side suggests that the data is skewed towards that direction (positive <span class=\"customMeta\" data-dictid=\"eb2263f8171692777198fd9a2efdce\">skew</span> for a longer right whisker, negative <span class=\"customMeta\" data-dictid=\"eb2263f8171692777198fd9a2efdce\">skew</span> for a longer left whisker).</li>\n\t<li><strong>Central Tendency:</strong> The <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> (Q3) provides a measure of central tendency. Its position within the box indicates whether the data is symmetrically distributed around the <span class=\"customMeta\" data-dictid=\"979385c98a1692777192fb1721a16e\">median</span> or skewed (long gap suggests <span class=\"customMeta\" data-dictid=\"eb2263f8171692777198fd9a2efdce\">skew</span> in that direction).</li>\n</ul>\n\n<p> </p>\n\n<p><strong>Right <span class=\"customMeta\" data-dictid=\"eb2263f8171692777198fd9a2efdce\">skew</span> (Option B):</strong></p>\n\n<p>i) Gap is more on the right side</p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"314\" src=\"https://image.prepladder.com/content/0b8nWV0Van8vepqJKsx91726803645.jpg\" width=\"289\" /></p>\n\n<p>ii) <span class=\"customMeta\" data-dictid=\"ed17327223169277719753b0e5d6b4\">Rotate</span> the image<strong> clockwise</strong> and interpret - gap on the right is longer - right sided skewness</p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"412\" src=\"https://image.prepladder.com/content/V7Ilhh3xbR4UsaoAzeRd1726803665.jpg\" width=\"207\" /></p>\n\n<p><strong>Left <span class=\"customMeta\" data-dictid=\"eb2263f8171692777198fd9a2efdce\">skew</span> (Negatively skewed):</strong> (Option C)</p>\n\n<p>i) Gap is more on the left side - Mean<Median<Mode</p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"279\" src=\"https://image.prepladder.com/content/k4aanPx93eRGhtIrf4Ow1726803687.jpg\" width=\"237\" /></p>\n\n<p> </p>\n\n<p>ii) Normal gap but left whisker is longer - left-sided skewness</p>\n\n<p> </p>\n\n<p><strong>Normal distribution:</strong> It represents symmetrically distributed data or that the data has no <span class=\"customMeta\" data-dictid=\"7420bc02ac1692777198b6aab78b50\">skewness</span> <strong>(Option A)</strong></p>\n\n<p>i) <span class=\"customMeta\" data-dictid=\"6f4a4d02ec169277718995b05c1d26\">Horizontal</span> box</p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"170\" src=\"https://image.prepladder.com/content/QA7cXGDbXOcZ6Eb815IZ1726803830.png\" width=\"239\" /></p>\n\n<p> </p>\n\n<p>ii) Vertical box</p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"430\" src=\"https://image.prepladder.com/content/mYoUyEMyekgUDRbahu0D1726803847.jpg\" width=\"216\" /></p>",
+      "question_images": [
+        "https://image.prepladder.com/content/UcXIU9ZIh2YsX4hkh07B1726803623.png"
+      ],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/content/0b8nWV0Van8vepqJKsx91726803645.jpg"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/GHKZsm9xcEvJ6Se1ihHg1747422477.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/NgSz69Ghv32Yqc3At6zv1747422566.mp3"
+    },
+    {
+      "text": "Which of the following statements is incorrect about regression?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "It measures the strength and direction of the relationship between two or more variables."
+        },
+        {
+          "id": 1,
+          "text": "It is used to predict the value of a dependent variable based on one or more independent variables."
+        },
+        {
+          "id": 2,
+          "text": "Multiple Linear Regression describes the effect of multiple independent (Qualitative, Quantitative or Mixed) variables on dichotomous qualitative variables (discrete i.e., yes or no)"
+        },
+        {
+          "id": 3,
+          "text": "It can be linear or nonlinear depending on the relationship between variables."
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer: </strong>C) Multiple <span class=\"customMeta\" data-dictid=\"d02067c4b51692777191b8eec8b062\">Linear</span> <span class=\"customMeta\" data-dictid=\"f30740eaeb16927771978fc4c375eb\">Regression</span> describes the effect of multiple independent (Qualitative, <span class=\"customMeta\" data-dictid=\"ef5cb829b8169277719603304e73cb\">Quantitative</span> or Mixed) variables on <span class=\"customMeta\" data-dictid=\"4ce2edf4901692777186a86b62122e\">dichotomous</span> <span class=\"customMeta\" data-dictid=\"1304db17d3169277719684a316a8c4\">qualitative</span> variables (discrete i.e., yes or no)</p>\n\n<p><strong>Explanation</strong></p>\n\n<p><strong>Regression analysis </strong>is a statistical technique used to describe relationships between variables. It represents <span class=\"customMeta\" data-dictid=\"ef297065a41692777201c86360c53a\">unitary</span> change.</p>\n\n<ul>\n\t<li>It quantifies how changes in one variable are associated with changes in another variable(s).</li>\n\t<li>It provides insights into the direction (positive or negative correlation) and strength (the magnitude of the relationship) between variables.<strong> (Option A)</strong></li>\n\t<li>The process involves fitting a mathematical model to observed data to describe the effect of ≥1 <span class=\"customMeta\" data-dictid=\"bee0db3bd316927771908c770411d6\">independent variable</span> on a dependent variable.<strong> (Option B)</strong></li>\n</ul>\n\n<p><strong>Equation: y = a + bx </strong></p>\n\n<p>where, y = Dependent variable; a = Constant ; b = <span class=\"customMeta\" data-dictid=\"f30740eaeb16927771978fc4c375eb\">Regression</span> <span class=\"customMeta\" data-dictid=\"b530604f9d1692777184cf1541ae41\">coefficient</span> ; x = Independent variable</p>\n\n<p>E.g., <span class=\"customMeta\" data-dictid=\"263ee5444e1692777183a7e8e704da\">Blood pressure</span> is a continuous variable, it can be affected by age, cholesterol.</p>\n\n<p><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"596\" src=\"https://image.prepladder.com/content/PFXMGhtPNk6XkIaLGm7t1726804076.jpg\" width=\"596\" /></p>\n\n<ul>\n\t<li>Regression analysis can be applied to both <span class=\"customMeta\" data-dictid=\"d02067c4b51692777191b8eec8b062\">linear</span> and nonlinear relationships between variables.<strong> (Option D)</strong></li>\n\t<li><strong>Linear Regression</strong> describes the effect of one <span class=\"customMeta\" data-dictid=\"bee0db3bd316927771908c770411d6\">independent variable</span> on a <span class=\"customMeta\" data-dictid=\"40af695ae916927771864d5c6f89aa\">dependent variable</span> (y = a + bx<sub>1</sub> ).</li>\n\t<li><strong>Non-Linear Regression</strong> involves more complex mathematical forms, including logarithmic functions.</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/content/PFXMGhtPNk6XkIaLGm7t1726804076.jpg"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/y1hIFYq5fCYEQMlC32Zj1747421747.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/pVaPrJkZgRSOrQ1AP2z11747421833.mp3"
+    },
+    {
+      "text": "Which of the following is an incorrect statement regarding sampling methods?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "In a probability sampling method, each individual in the representative population is provided with an equivalent likelihood of being included in the study."
+        },
+        {
+          "id": 1,
+          "text": "Non-probability sampling includes convenience sampling, voluntary response sampling, purposive sampling, and snowball sampling."
+        },
+        {
+          "id": 2,
+          "text": "As the size of the sample increases, sampling error decreases."
+        },
+        {
+          "id": 3,
+          "text": "Cluster sampling is a type of Non-Random Non-Probability Sampling method."
+        }
+      ],
+      "correct_choice_id": 3,
+      "solution": "<p><strong>Correct Answer: D) Cluster <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> is a type of Non-Random Non-Probability <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> method.</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Cluster <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> is a<strong> Random <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> method</strong> where the population is divided into clusters, and entire clusters are randomly selected to be included in the study. This method ensures that every individual has an<strong> equal chance of being included</strong> in the sample through random selection of clusters.</p>\n\n<p>Sampling methods are of two types:-</p>\n\n<ul>\n\t<li><strong>Probability <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> methods-</strong> Each individual in the population has an equal chance of getting selected.<strong> (Option A)</strong></li>\n</ul>\n\n<ul>\n\t<li><strong>Non-probability <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> methods-</strong> Not every member of the population has an equal chance of getting selected. It does not guarantee that the sample is representative of the population, thus can introduce bias.</li>\n</ul>\n\n<p> </p>\n\n<p><strong>Types of <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> Method:</strong></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Random – Probability</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Non-Random – Non-Probability (Option B)</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"1\" rowspan=\"6\" style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Simple random sampling</li>\n\t\t\t\t<li>Systematic random sampling</li>\n\t\t\t\t<li>Stratified random sampling</li>\n\t\t\t\t<li>Cluster random sampling</li>\n\t\t\t\t<li>Multi-stage sampling</li>\n\t\t\t\t<li>Multi-phase sampling</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td colspan=\"1\" rowspan=\"6\" style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<ul>\n\t\t\t\t<li>Convenient sampling</li>\n\t\t\t\t<li>Purposive sampling</li>\n\t\t\t\t<li>Quota sampling</li>\n\t\t\t\t<li>Snowball sampling</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><img alt=\"sampling\" data-author=\"na\" data-hash=\"327\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png\" /></p>\n\n<p style=\"text-align:center\"><img alt=\"\" data-author=\"NA\" data-hash=\"\" data-license=\"NA\" data-source=\"NA\" data-tags=\"\" height=\"466\" src=\"https://image.prepladder.com/content/xSw9hA0a1wCIFaDKpFB01733223641.png\" width=\"512\" /></p>\n\n<p> </p>\n\n<p><strong>Sampling Error:</strong><br />\nSampling error is the difference between the results obtained from a sample and the actual characteristics of the entire population. This type of error depends on:-</p>\n\n<ul>\n\t<li><strong>Sample Size: </strong>Generally, as the size of the sample increases, the <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> error decreases. <strong>(Option C)</strong></li>\n\t<li><strong>Variability of Individual Readings</strong>: The natural <span class=\"customMeta\" data-dictid=\"128186f064169277720116e786798a\">variability</span> or diversity within the population also affects <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> error</li>\n</ul>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/I7zw4GlOqr18UutKeUTY1747422087.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/HIJASSO9HnE27WFZDdg51747422144.mp3"
+    },
+    {
+      "text": "Which of the following correctly defines Systematic Random Sampling?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "It involves selecting units from the population purely by chance, ensuring each unit has an equal probability of being chosen."
+        },
+        {
+          "id": 1,
+          "text": "It involves selecting every nth unit from the population after a random starting point."
+        },
+        {
+          "id": 2,
+          "text": "It involves systematically dividing the population into subgroups and randomly sampling from each subgroup."
+        },
+        {
+          "id": 3,
+          "text": "It involves dividing the population into groups and randomly selecting entire groups to be included in the sample."
+        }
+      ],
+      "correct_choice_id": 1,
+      "solution": "<p><strong>Correct Answer: B) It involves selecting every nth unit from the population after a random starting point.</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Systematic Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> is a type of<strong> Random <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">Probability</span> <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> Method</strong>. It involves choosing <strong>every nth unit from the population after a randomly determined starting point</strong>, ensuring a <span class=\"customMeta\" data-dictid=\"686725cf89169277719994d7d523d1\">systematic</span> and uniform coverage of the population.</p>\n\n<p><strong>Random <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">Probability</span> <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> Methods:</strong></p>\n\n<table align=\"center\" cellspacing=\"0\" style=\"border-collapse:collapse; width:624px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Sampling Method</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Description</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p style=\"text-align:center\"><strong>Example</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Simple Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> </strong>(Option A)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Selecting units purely by chance, ensuring each unit has an equal <span class=\"customMeta\" data-dictid=\"f52ac1410416927771969ba21fcb63\">probability</span> of being chosen.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Drawing names using random number generators or drawing lots.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Systematic Random Sampling</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Selecting every nth unit from the population after a random starting point.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>From a list of 1000 people and need a sample of 100, select every 10th person on the list after choosing a random starting point between 1 and 10.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Stratified Random Sampling</strong> (Option C)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Dividing the population into subgroups (strata) and randomly <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> from each subgroup.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Dividing a population into age groups (e.g., 18-29, 30-49, 50+) and randomly <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> individuals from each age group</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Cluster Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> </strong>(Option D)</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Dividing the population into clusters and randomly selecting entire clusters to be included.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Dividing a city into neighborhoods (clusters) and randomly selecting a few neighborhoods. All residents in the selected neighborhoods are then included in the sample.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p><strong>Multi-Stage Sampling</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>Combining several <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">sampling</span> methods in stages.</p>\n\t\t\t</td>\n\t\t\t<td style=\"border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top\">\n\t\t\t<p>First, randomly select districts (simple random sampling), then within selected districts, randomly select schools (second stage), and finally, within selected schools, randomly select students (third stage)</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><img alt=\"sampling\" data-author=\"na\" data-hash=\"327\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png\" /></p>\n\n<p> </p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/lek7c34sXl9Q69guUMmC1747421401.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/r7VmwRmhYGcu6uVctszF1747421594.mp3"
+    },
+    {
+      "text": "A researcher is conducting a study to estimate the prevalence of diabetes among patients with obesity. The researcher divides the patients into two gender groups (male and female) and then selects the study sample from each of these two groups separately. Which type of random probability sampling method is being used in this study?",
+      "choices": [
+        {
+          "id": 0,
+          "text": "Simple Random Sampling"
+        },
+        {
+          "id": 1,
+          "text": "Systematic Random Sampling"
+        },
+        {
+          "id": 2,
+          "text": "Stratified Random Sampling"
+        },
+        {
+          "id": 3,
+          "text": "Cluster Random Sampling"
+        }
+      ],
+      "correct_choice_id": 2,
+      "solution": "<p><strong>Correct Answer:</strong> <strong>C) <span class=\"customMeta\" data-dictid=\"e2f163c4cd1692777199def45e74f1\">Stratified</span> Random Sampling</strong></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li><strong>Stratified Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> </strong>is the method used in this study. The researcher divides the population into subgroups (strata) based on gender and then selects random samples from each subgroup.</li>\n\t<li>\n\t<p>This approach ensures that both male and female patients are appropriately represented in the study, allowing for separate estimates of diabetes <span class=\"customMeta\" data-dictid=\"f86aae0bd61692777196f91458c9dd\">prevalence</span> among the different gender groups.</p>\n\t</li>\n</ul>\n\n<p><img alt=\"sampling\" data-author=\"na\" data-hash=\"327\" data-license=\"na\" data-source=\"na\" data-tags=\"December2024\" src=\"https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png\" /></p>\n\n<p> </p>\n\n<p><strong>Other Options:- </strong></p>\n\n<p><strong>Option A</strong> - Simple Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> involves selecting units from the population purely by chance without dividing the population into subgroups.</p>\n\n<p><strong>Option B</strong> - <span class=\"customMeta\" data-dictid=\"686725cf89169277719994d7d523d1\">Systematic</span> Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> involves selecting every nth unit from the population after a random starting point, not dividing the population into subgroups.</p>\n\n<p><strong>Option D</strong> - Cluster Random <span class=\"customMeta\" data-dictid=\"521de62abe16927771989a90d0e9e8\">Sampling</span> involves dividing the population into clusters and then randomly selecting entire clusters, not stratifying by specific characteristics like gender.</p>",
+      "question_images": [],
+      "explanation_video": null,
+      "explanation_images": [
+        "https://image.prepladder.com/notes/buIbG4tsE2fqbJLwmZ261734068589.png"
+      ],
+      "explanation_audio_eng": "https://image.prepladder.com/content/1bFolDOOvPYksHtJXZKa1747421150.mp3",
+      "explanation_audio_hin": "https://image.prepladder.com/content/IjiNiQrUVSu0nEUFYbei1747421236.mp3"
+    }
+  ]
+}
