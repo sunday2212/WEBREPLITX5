@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14243a">
+    <meta name="description" content="Medical News & Updates — Afrahtafreeh">
+    <title>Medical News — Afrahtafreeh</title>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #16233a;
+            --ink-soft: #56606f;
+            --ink-muted: #7b8493;
+            --paper: #f1f3ee;
+            --card: #ffffff;
+            --card-alt: #f9faf7;
+            --teal: #1c6e63;
+            --teal-deep: #0e4a43;
+            --teal-light: #e6f4f1;
+            --teal-glow: rgba(28,110,99,0.15);
+            --maroon: #7a2333;
+            --maroon-deep: #5c1a26;
+            --maroon-soft: #9a4356;
+            --maroon-light: #fdf2f4;
+            --gold: #a9814a;
+            --gold-light: #fbf6ef;
+            --line: rgba(22,35,58,0.1);
+            --line-strong: rgba(22,35,58,0.18);
+            --shadow-sm: 0 2px 8px rgba(20,30,48,0.05);
+            --shadow: 0 8px 28px rgba(20,30,48,0.07);
+            --shadow-lg: 0 16px 48px rgba(20,30,48,0.09);
+            --radius-sm: 8px;
+            --radius: 14px;
+            --radius-lg: 18px;
+            --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: 'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px 60px;
+            line-height: 1.6;
+            background-image:
+                radial-gradient(ellipse at 50% 0%, rgba(28,110,99,0.03) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(122,35,51,0.02) 0%, transparent 50%);
+        }
+        a { color: var(--teal-deep); text-decoration: none; transition: var(--transition); }
+        a:hover { color: var(--teal); }
+        .container { max-width: 860px; width: 100%; }
+        .eyebrow {
+            display: inline-block;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+        }
+
+        /* ── MASTHEAD ─────────────────────── */
+        .masthead { padding: 36px 0 28px; text-align: center; }
+        .masthead-rule { height: 3px; background: var(--ink); width: 100%; border-radius: 1px; }
+        .masthead-rule--thin { height: 1px; background: var(--ink); opacity: 0.5; margin-top: 14px; border-radius: 0.5px; }
+        .masthead-inner { padding: 20px 10px 0; }
+        .masthead .eyebrow { color: var(--maroon); margin-bottom: 4px; }
+        .brand-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: clamp(2rem,6vw,3rem);
+            letter-spacing: -0.015em;
+            color: var(--ink);
+            margin: 8px 0 4px;
+            line-height: 1.15;
+        }
+        .brand-title .accent-dot {
+            display: inline-block; width: 8px; height: 8px;
+            border-radius: 50%; background: var(--maroon);
+            margin: 0 6px; vertical-align: middle; position: relative; top: -0.3em;
+        }
+        .brand-tagline {
+            font-family: 'Fraunces', serif; font-style: italic;
+            font-weight: 500; font-size: 0.95rem; color: var(--ink-soft);
+        }
+
+        /* ── BACK BAR ─────────────────────── */
+        .back-bar {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 28px; padding: 14px 20px;
+            background: var(--card); border: 1px solid var(--line);
+            border-radius: var(--radius); box-shadow: var(--shadow-sm);
+        }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 700; font-size: 0.72rem; letter-spacing: 0.08em;
+            text-transform: uppercase; color: var(--maroon);
+            transition: var(--transition);
+        }
+        .back-link:hover { color: var(--maroon-deep); gap: 12px; }
+        .back-link i { font-size: 0.75rem; }
+        .back-bar-sep { color: var(--line-strong); margin: 0 4px; }
+        .back-bar-crumb {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem; color: var(--ink-muted); letter-spacing: 0.04em;
+        }
+
+        /* ── BLOG PAGE HEADER ─────────────── */
+        .blog-page-header {
+            background: var(--card); border-radius: var(--radius-lg);
+            box-shadow: var(--shadow); border: 1px solid var(--line);
+            padding: 30px 32px 26px; margin-bottom: 32px;
+            position: relative; overflow: hidden;
+        }
+        .blog-page-header::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--maroon), var(--maroon-soft), var(--gold));
+        }
+        .blog-page-header .eyebrow { color: var(--maroon-soft); display: block; margin-bottom: 6px; }
+        .blog-page-header h1 {
+            font-family: 'Fraunces', serif; font-weight: 800;
+            font-size: clamp(1.6rem,4vw,2.2rem); color: var(--ink);
+            letter-spacing: -0.02em; line-height: 1.15;
+        }
+        .blog-page-header h1 span { color: var(--maroon); }
+        .blog-page-header p {
+            font-size: 0.88rem; color: var(--ink-soft); margin-top: 8px; line-height: 1.6;
+        }
+
+        /* ── ARTICLE CARD ─────────────────── */
+        .article-card {
+            background: var(--card); border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg); border: 1px solid var(--line);
+            margin-bottom: 40px; overflow: hidden;
+            scroll-margin-top: 24px;
+        }
+        .article-hero {
+            position: relative; height: 360px; overflow: hidden; background: #e0e0dc;
+        }
+        .article-hero img {
+            width: 100%; height: 100%; object-fit: cover; display: block;
+            transition: transform 0.6s ease;
+        }
+        .article-card:hover .article-hero img { transform: scale(1.02); }
+        .article-hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(22,35,58,0.55) 100%);
+        }
+        .article-hero-meta {
+            position: absolute; bottom: 20px; left: 24px; right: 24px;
+            display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+        }
+        .article-cat-tag {
+            font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+            font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase;
+            padding: 4px 12px; border-radius: 50px; white-space: nowrap;
+        }
+        .tag--protest  { background: var(--maroon); color: #fff; }
+        .tag--neet     { background: var(--teal-deep); color: #fff; }
+        .tag--policy   { background: #6b4a13; color: #fff; }
+        .tag--research { background: #3b3ba6; color: #fff; }
+        .article-hero-date {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+            color: rgba(255,255,255,0.82); letter-spacing: 0.05em;
+        }
+
+        /* ── ARTICLE BODY ─────────────────── */
+        .article-body { padding: 36px 40px 40px; }
+        .article-headline {
+            font-family: 'Fraunces', serif; font-weight: 800;
+            font-size: clamp(1.35rem,3.5vw,1.9rem); color: var(--ink);
+            line-height: 1.25; letter-spacing: -0.018em; margin-bottom: 6px;
+        }
+        .article-deck {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: clamp(1rem,2vw,1.15rem); color: var(--ink-soft);
+            line-height: 1.6; margin-bottom: 24px;
+            padding-bottom: 22px; border-bottom: 1.5px solid var(--line);
+        }
+        .article-byline {
+            display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+        .byline-source {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--maroon-light); color: var(--maroon-deep);
+            border: 1px solid #f0c4cc; padding: 5px 14px; border-radius: 50px;
+            font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+            font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+        }
+        .byline-date {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+            color: var(--ink-muted); letter-spacing: 0.04em;
+        }
+        .byline-read-time {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+            color: var(--ink-muted); letter-spacing: 0.04em;
+        }
+        .article-content { max-width: 680px; }
+        .article-content p {
+            font-size: 1rem; color: var(--ink); line-height: 1.8;
+            margin-bottom: 18px; font-weight: 400;
+        }
+        .article-content h3 {
+            font-family: 'Fraunces', serif; font-weight: 700;
+            font-size: 1.15rem; color: var(--ink);
+            margin: 30px 0 12px; letter-spacing: -0.01em;
+        }
+        .article-content h3::before {
+            content: ''; display: inline-block;
+            width: 4px; height: 1em; background: var(--maroon);
+            border-radius: 2px; margin-right: 10px;
+            vertical-align: middle; position: relative; top: -1px;
+        }
+        .article-content ul {
+            margin: 0 0 18px 0; padding-left: 0; list-style: none;
+        }
+        .article-content ul li {
+            font-size: 1rem; color: var(--ink); line-height: 1.75;
+            padding: 5px 0 5px 22px; position: relative;
+        }
+        .article-content ul li::before {
+            content: ''; position: absolute; left: 0; top: 14px;
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--gold); opacity: 0.85;
+        }
+        .article-pullquote {
+            border-left: 4px solid var(--maroon); background: var(--maroon-light);
+            padding: 20px 24px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 28px 0;
+        }
+        .article-pullquote p {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: 1.05rem; color: var(--maroon-deep);
+            line-height: 1.65; margin: 0 !important;
+        }
+        .article-pullquote cite {
+            display: block; margin-top: 10px;
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+            font-style: normal; color: var(--maroon-soft); letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .article-key-points {
+            background: var(--teal-light); border: 1px solid #b4dcd6;
+            border-radius: var(--radius); padding: 22px 24px; margin: 28px 0;
+        }
+        .article-key-points h4 {
+            font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+            font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--teal-deep); margin-bottom: 14px;
+        }
+        .article-key-points ul { margin: 0; padding: 0; }
+        .article-key-points ul li {
+            font-size: 0.92rem; color: var(--teal-deep); line-height: 1.7;
+            padding: 4px 0 4px 20px;
+        }
+        .article-key-points ul li::before { background: var(--teal); }
+        .article-divider {
+            border: none; height: 1px; background: var(--line);
+            margin: 32px 0;
+        }
+        .article-footer {
+            margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line);
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 14px;
+        }
+        .article-share {
+            display: flex; align-items: center; gap: 8px;
+        }
+        .share-label {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+            font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+            color: var(--ink-muted);
+        }
+        .share-btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 34px; height: 34px; border-radius: 50%;
+            border: 1px solid var(--line); background: var(--card-alt);
+            color: var(--ink-soft); font-size: 0.8rem;
+            cursor: pointer; transition: var(--transition);
+            text-decoration: none;
+        }
+        .share-btn:hover { background: var(--maroon-light); color: var(--maroon); border-color: #f0c4cc; }
+        .back-to-news {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+            font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+            color: var(--teal-deep); padding: 9px 18px;
+            border: 1.5px solid #b4dcd6; border-radius: 50px;
+            background: var(--teal-light); transition: var(--transition);
+        }
+        .back-to-news:hover { background: var(--teal); color: #fff; border-color: var(--teal); }
+
+        /* ── ARTICLE SEPARATOR ────────────── */
+        .article-sep {
+            display: flex; align-items: center; gap: 16px;
+            margin: 0 0 40px; color: var(--ink-muted);
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem;
+            letter-spacing: 0.14em; text-transform: uppercase;
+        }
+        .article-sep::before, .article-sep::after {
+            content: ''; flex: 1; height: 1px; background: var(--line);
+        }
+
+        /* ── FOOTER ───────────────────────── */
+        .site-footer {
+            width: 100%; max-width: 860px; text-align: center;
+            padding-top: 48px; margin-top: 20px;
+            border-top: 2px solid var(--line-strong);
+        }
+        .masthead-rule--thin-footer {
+            height: 1px; background: var(--ink); opacity: 0.5;
+            margin-bottom: 28px; border-radius: 0.5px;
+        }
+        .footer-nav {
+            display: flex; justify-content: center; gap: 2rem;
+            flex-wrap: wrap; margin-bottom: 32px;
+        }
+        .footer-nav a {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;
+            font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+            color: var(--teal-deep); padding: 8px 16px; border-radius: 6px;
+            transition: all var(--transition);
+        }
+        .footer-nav a:hover { color: var(--teal); background: var(--teal-light); transform: translateY(-2px); }
+        .footer-legal {
+            background: var(--card-alt); border: 1px solid var(--line);
+            border-radius: var(--radius); padding: 20px 24px; margin-bottom: 24px;
+        }
+        .footer-legal p {
+            font-size: 0.75rem; color: var(--ink-soft); letter-spacing: 0.08em;
+            text-transform: uppercase; margin: 8px 0; line-height: 1.6;
+        }
+        .site-footer > p {
+            font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+            letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-top: 16px;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 0 14px 40px; }
+            .article-hero { height: 240px; }
+            .article-body { padding: 24px 20px 28px; }
+            .article-content { max-width: 100%; }
+            .footer-nav { gap: 1rem; flex-direction: column; align-items: center; }
+            .footer-nav a { display: block; width: 100%; text-align: center; }
+            .blog-page-header { padding: 22px 20px 18px; }
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <div class="masthead-rule"></div>
+            <div class="masthead-inner">
+                <span class="eyebrow">The White Army · Medico Dispatch</span>
+                <h1 class="brand-title"><a href="./index.html" style="color:inherit">Afrahtafreeh<span class="accent-dot"></span></a></h1>
+                <p class="brand-tagline">Medical Education News</p>
+            </div>
+            <div class="masthead-rule--thin"></div>
+        </header>
+
+        <!-- Back nav -->
+        <div class="back-bar">
+            <a class="back-link" href="./index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <span class="back-bar-sep">·</span>
+            <span class="back-bar-crumb">Medical News &amp; Updates</span>
+        </div>
+
+        <!-- Page header -->
+        <div class="blog-page-header">
+            <span class="eyebrow">Medico Dispatch · Full Coverage</span>
+            <h1>Medical <span>News</span> — Full Articles</h1>
+            <p>In-depth coverage of protests, policy, admissions, and clinical research affecting Indian medicos. Updated regularly.</p>
+        </div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- ARTICLE 1: CJP PROTEST                        -->
+        <!-- ══════════════════════════════════════════════ -->
+        <article class="article-card" id="cjp-protest">
+            <div class="article-hero">
+                <img
+                    src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=85"
+                    alt="Doctors protesting — CJP remarks on medical negligence"
+                    loading="eager"
+                    onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85'"
+                >
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--protest">Protest · CJP</span>
+                    <span class="article-hero-date">July 30, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">Resident Doctors March to Supreme Court Over CJP Remarks on Medical Negligence</h2>
+                <p class="article-deck">Thousands of resident doctors across the country staged a walkout after the Chief Justice's observations during a medical negligence hearing were seen as broadly criminalising clinical practice.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 30, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>In one of the largest coordinated demonstrations by the medical community in recent years, resident doctors from major government hospitals across Delhi, Mumbai, Kolkata, and Chennai walked off the wards on July 30, 2026, in response to remarks made by the Chief Justice of India (CJP) during a high-profile medical negligence hearing at the Supreme Court.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>Walkout began at 6 AM across 30+ major government hospitals nationwide</li>
+                            <li>OPD services suspended; emergency and ICU care continued</li>
+                            <li>FORDA, IMA Resident Doctors' Association, and AIIMS RDA jointly called the strike</li>
+                            <li>Doctors demand written guidelines from judiciary before resuming</li>
+                            <li>MoHFW called an emergency meeting with IMA and resident doctor bodies</li>
+                        </ul>
+                    </div>
+
+                    <h3>What the CJP Said</h3>
+                    <p>During oral arguments in a bench hearing a petition filed by the family of a patient who died post-surgery at a private hospital in Lucknow, the Chief Justice remarked that "doctors cannot hide behind complex medical jargon to escape accountability," and suggested that criminal provisions should apply more broadly when outcomes are adverse despite families having paid large sums. The remarks, while not part of any formal order, circulated rapidly on medical social media within hours of the hearing.</p>
+
+                    <div class="article-pullquote">
+                        <p>"We are not against accountability — we welcome it. But accountability cannot mean that every death, regardless of circumstances, becomes a criminal case. Medicine is not engineering. Outcomes cannot always be guaranteed."</p>
+                        <cite>— Dr. Sanjay Mehta, President, FORDA</cite>
+                    </div>
+
+                    <h3>The Doctors' Demands</h3>
+                    <p>Protest organisers issued a five-point demand charter to the Ministry of Health and Family Welfare and the Supreme Court registry:</p>
+                    <ul>
+                        <li>Judicial clarification distinguishing gross negligence from adverse outcomes before next hearing</li>
+                        <li>Enactment of the Central Healthcare Protection Act within 90 days</li>
+                        <li>Mandatory mediation before any criminal complaint against a healthcare provider is registered</li>
+                        <li>Formation of an expert medical panel to assist courts in negligence adjudication</li>
+                        <li>Written assurance from MoHFW on protection of bona fide clinical decisions</li>
+                    </ul>
+
+                    <h3>Hospital Impact &amp; Government Response</h3>
+                    <p>OPD footfall at AIIMS New Delhi dropped to near-zero by 9 AM, with an estimated 8,000 patients turned away across affected hospitals by noon. Emergency services, intensive care units, and labour rooms were kept operational by senior faculty and on-call consultants. The Health Secretary convened an emergency meeting at Nirman Bhawan by 2 PM, and the Attorney General indicated the Supreme Court would issue a clarificatory statement the following morning.</p>
+
+                    <p>By the evening, the Supreme Court bench issued a press note clarifying that the CJP's oral remarks were "exploratory observations" and should not be read as laying down the law, and that no criminal liability arose from the day's proceedings. FORDA subsequently announced a 48-hour suspension of the strike, pending formal written communication from MoHFW.</p>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This article will be updated as the situation develops. Last updated: July 30, 2026, 11:45 PM IST.</em></p>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=Resident+Doctors+March+Over+CJP+Remarks&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=Resident+Doctors+March+to+Supreme+Court+Over+CJP+Remarks+on+Medical+Negligence" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#cjp-protest').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- ARTICLE 2: NEET PG 2026                       -->
+        <!-- ══════════════════════════════════════════════ -->
+        <article class="article-card" id="neet-pg-2026">
+            <div class="article-hero">
+                <img
+                    src="https://images.unsplash.com/photo-1588776814546-1ffedfeacafd?w=900&q=85"
+                    alt="NEET PG 2026 — medical exam results"
+                    loading="lazy"
+                    onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=85'"
+                >
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--neet">NEET PG 2026</span>
+                    <span class="article-hero-date">July 28, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">NEET PG 2026 Results Declared — Cut-offs Shift Sharply Across Specialties</h2>
+                <p class="article-deck">NMC releases the NEET PG 2026 merit list. Surgery, Paediatrics and Radiology see tightened cut-offs, while Psychiatry and Community Medicine remain more accessible for aspirants.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 28, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;6 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>The National Board of Examinations (NBE) declared the NEET PG 2026 results on July 28, 2026, with the official merit list available on the NBE portal. This year's examination, held on June 15, 2026, saw 2.18 lakh registered candidates — a record high — of whom approximately 1.94 lakh appeared.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>2.18 lakh registered; 1.94 lakh appeared — a record turnout</li>
+                            <li>General category cut-off: 50th percentile (unchanged from 2025)</li>
+                            <li>Surgery, Radiology, and Paediatrics see sharply higher competition scores</li>
+                            <li>Psychiatry, Community Medicine, and Family Medicine remain accessible</li>
+                            <li>MCC counselling Round 1 scheduled from August 18, 2026</li>
+                        </ul>
+                    </div>
+
+                    <h3>Cut-off Trends by Specialty</h3>
+                    <p>The overall qualifying cut-off remains at the 50th percentile for general category candidates, as mandated by NMC. However, the effective competition cut-off — the score needed to realistically compete for seats in sought-after specialties — has risen considerably this year.</p>
+                    <ul>
+                        <li><strong>General Surgery:</strong> Competition score rose by ~8 points year-on-year, driven by increased seats but even higher applicant quality</li>
+                        <li><strong>Radiodiagnosis:</strong> Continues to be the most sought-after specialty; competition scores at an all-time high</li>
+                        <li><strong>Paediatrics:</strong> Saw a 6-point rise in competition score, attributed to new AIIMS and government hospital seats</li>
+                        <li><strong>Psychiatry:</strong> Remains undersubscribed relative to seats; accessible in the 65th–70th percentile range</li>
+                        <li><strong>Community Medicine:</strong> Among the most accessible clinical branches; government hospitals prioritising these seats</li>
+                    </ul>
+
+                    <div class="article-pullquote">
+                        <p>"The rising competition scores reflect the aspirational shift among MBBS graduates. More students are targeting surgical and diagnostic branches, which puts pressure on an already-limited seat pool."</p>
+                        <cite>— Dr. Priya Kapoor, Medical Education Analyst, NMC Advisory Committee</cite>
+                    </div>
+
+                    <h3>Counselling Schedule</h3>
+                    <p>The Medical Counselling Committee (MCC) has released the provisional schedule for NEET PG 2026 counselling. Round 1 will open on August 18, 2026, covering 50% of all-India quota seats at government medical colleges. Candidates are advised to keep their documents ready — MBBS degree certificate, internship completion certificate, NMC registration, and category certificates where applicable.</p>
+
+                    <h3>What Candidates Should Do Now</h3>
+                    <ul>
+                        <li>Download and verify your scorecard on the NBE portal immediately</li>
+                        <li>Cross-check your percentile against previous years' closing ranks for your target specialty</li>
+                        <li>Complete online registration on the MCC portal before August 10, 2026 (Round 1 deadline)</li>
+                        <li>Prepare a preferred-college list across at least 3 specialties as a safety net</li>
+                        <li>Check state quota counselling schedules separately — these vary by state</li>
+                    </ul>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>MCC counselling dates are tentative and subject to Supreme Court orders. Last updated: July 28, 2026.</em></p>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NEET+PG+2026+Results+Declared&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=NEET+PG+2026+Results+Declared+%E2%80%94+Cut-offs+Shift+Sharply+Across+Specialties" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#neet-pg-2026').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- ARTICLE 3: NMC BOND POLICY                    -->
+        <!-- ══════════════════════════════════════════════ -->
+        <article class="article-card" id="nmc-bond">
+            <div class="article-hero">
+                <img
+                    src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=85"
+                    alt="NMC Rural Bond policy — medical policy document"
+                    loading="lazy"
+                    onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85'"
+                >
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--policy">NMC Policy</span>
+                    <span class="article-hero-date">July 25, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">NMC Mandates Rural Bond for PG Graduates — IMA Issues Strong Objection</h2>
+                <p class="article-deck">The National Medical Commission has formalised a one-year compulsory rural posting bond for all newly graduating postgraduate doctors. The IMA has issued a strongly worded objection, calling for an immediate rollback.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 25, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>The National Medical Commission (NMC) published a gazette notification on July 24, 2026 making it mandatory for all doctors completing postgraduate medical education at government-funded institutions to serve a minimum of one year at a rural or semi-urban government health facility before being granted their PG degree certificate and NMC registration.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>One-year rural posting compulsory for all government-funded PG graduates from 2027 batch</li>
+                            <li>Applicable to MD, MS, and DNB degree holders from government medical colleges</li>
+                            <li>Private college PG graduates exempt — drawing sharp criticism from IMA</li>
+                            <li>Supreme Court has issued notice to NMC; stay hearing listed for August 6, 2026</li>
+                            <li>Monthly stipend set at ₹85,000 during rural posting period</li>
+                        </ul>
+                    </div>
+
+                    <h3>The NMC's Rationale</h3>
+                    <p>The NMC circular, signed by the Commission's executive director, states that the move is aimed at addressing the acute shortage of specialist doctors at Primary Health Centres (PHCs), Community Health Centres (CHCs), and District Hospitals across 12 states where the doctor-to-population ratio falls below 1:2,000. The Commission cited a 2025 WHO India study showing that rural areas receive only 30% of the country's specialist medical workforce despite housing 65% of its population.</p>
+
+                    <div class="article-pullquote">
+                        <p>"This policy singles out doctors educated in government institutions — who are already serving society through subsidised training — while exempting their private-sector counterparts. It is discriminatory, unworkable, and will drive talented candidates away from government medical colleges."</p>
+                        <cite>— Dr. Arvind Sharma, Secretary General, IMA</cite>
+                    </div>
+
+                    <h3>IMA's Objections</h3>
+                    <p>The Indian Medical Association filed a representation with the NMC and simultaneously moved the Supreme Court challenging the circular on constitutional grounds. Their primary objections include:</p>
+                    <ul>
+                        <li>The circular selectively burdens government-college graduates, violating Article 14 (equality before law)</li>
+                        <li>Rural postings lack basic safety infrastructure — especially for female doctors posted in isolated locations</li>
+                        <li>The ₹85,000 monthly stipend is insufficient given the loan burden many PG students carry</li>
+                        <li>No mechanism exists for hardship exemptions for candidates with dependent family members</li>
+                        <li>The 12-month delay in full registration disadvantages government-college graduates in global job markets</li>
+                    </ul>
+
+                    <h3>Current Legal Status</h3>
+                    <p>The Supreme Court, on July 25, 2026, issued a notice to the NMC and the Ministry of Health asking them to respond within two weeks. The court has listed the matter for a stay hearing on August 6, 2026. Until then, the notification remains in effect, though no penalty clauses can be triggered before the first affected batch graduates in May 2027.</p>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This is a developing legal story. The SC hearing date is August 6, 2026. Last updated: July 25, 2026.</em></p>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NMC+Mandates+Rural+Bond+for+PG+Graduates&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=NMC+Mandates+Rural+Bond+for+PG+Graduates+%E2%80%94+IMA+Issues+Strong+Objection" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#nmc-bond').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- ARTICLE 4: AIIMS AI RESEARCH                  -->
+        <!-- ══════════════════════════════════════════════ -->
+        <article class="article-card" id="aiims-ai">
+            <div class="article-hero">
+                <img
+                    src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=85"
+                    alt="AI in medicine — AIIMS Delhi TB detection study"
+                    loading="lazy"
+                    onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=85'"
+                >
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--research">Research</span>
+                    <span class="article-hero-date">July 22, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">AIIMS Delhi AI Tool Outperforms Radiologists in Early TB Detection Study</h2>
+                <p class="article-deck">A new deep-learning model developed at AIIMS New Delhi correctly identified early-stage pulmonary tuberculosis from chest X-rays with 94% sensitivity — outperforming the radiologist panel in the blinded trial.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 22, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;7 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>A landmark study published in the <em>Indian Journal of Medical Research</em> on July 21, 2026 has demonstrated that an artificial intelligence model developed entirely within India — at AIIMS New Delhi's Department of Radiodiagnosis — can detect early pulmonary tuberculosis on plain chest X-rays with a sensitivity of 94.2%, outperforming a panel of five senior radiologists who achieved a mean sensitivity of 87.4% on the same dataset.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>AI model sensitivity: 94.2% vs radiologist panel mean: 87.4%</li>
+                            <li>Specificity: 91.8% — low false positive rate critical for mass screening</li>
+                            <li>Trained on 1.2 lakh anonymised chest X-rays from 8 government hospitals</li>
+                            <li>Model runs on a ₹15,000 Raspberry Pi-class device — deployable at PHC level</li>
+                            <li>ICMR has approved a 3-state field trial beginning September 2026</li>
+                        </ul>
+                    </div>
+
+                    <h3>How the Model Works</h3>
+                    <p>The model — named <strong>TBScan-India v2</strong> — is a convolutional neural network trained on 1.2 lakh de-identified chest X-rays sourced from eight government tertiary hospitals across five states. The dataset was curated over 18 months and labelled by a team of 12 radiologists, with consensus labels used as ground truth for training.</p>
+                    <p>Unlike earlier AI models that flagged any abnormality, TBScan-India v2 was specifically trained to identify the subtle early radiographic signs of pulmonary TB — including faint upper-lobe infiltrates, early cavity formation, and minimal pleural reaction — features that are frequently missed or reported as "equivocal" by general physicians in resource-limited settings.</p>
+
+                    <div class="article-pullquote">
+                        <p>"We deliberately trained on X-rays from district hospitals and PHCs — not just AIIMS-quality images. This model has to work in the real India, not just in a well-lit radiology suite with perfect equipment."</p>
+                        <cite>— Dr. Kavita Raghunathan, Principal Investigator, AIIMS Radiodiagnosis</cite>
+                    </div>
+
+                    <h3>Why This Matters for India</h3>
+                    <p>India accounts for approximately 27% of global TB burden, with an estimated 2.8 million new cases annually. A significant proportion of these go undiagnosed or are diagnosed late because frontline facilities in rural India lack qualified radiologists to interpret chest X-rays. TBScan-India v2 addresses this bottleneck directly:</p>
+                    <ul>
+                        <li>The model runs offline on a low-cost device costing approximately ₹15,000 — compatible with PHC-level infrastructure</li>
+                        <li>Results are available in under 90 seconds per image</li>
+                        <li>The interface is designed for ASHA workers and general physicians, not specialists</li>
+                        <li>Positive flags automatically generate a referral slip and alert the district TB officer</li>
+                    </ul>
+
+                    <h3>What Happens Next</h3>
+                    <p>The Indian Council of Medical Research (ICMR) has approved a Phase 3 field trial of TBScan-India v2 across three high-burden states — Uttar Pradesh, Rajasthan, and Maharashtra — beginning September 2026. If the field trial confirms the lab findings, ICMR and NMC are expected to recommend the model for deployment under the National TB Elimination Programme (NTEP) by early 2027. The team also plans to adapt the architecture for early detection of pneumoconiosis and lung malignancies in subsequent studies.</p>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>The full paper is available open-access at the Indian Journal of Medical Research. Last updated: July 22, 2026.</em></p>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=AIIMS+Delhi+AI+Tool+Outperforms+Radiologists+in+TB+Detection&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=AIIMS+Delhi+AI+Tool+Outperforms+Radiologists+in+Early+TB+Detection+Study" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#aiims-ai').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="site-footer" id="top-anchor">
+            <div class="masthead-rule--thin-footer"></div>
+            <nav class="footer-nav">
+                <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="./about.html"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="./disclaimer.html"><i class="fas fa-gavel"></i> Disclaimer</a>
+            </nav>
+            <div class="footer-legal">
+                <p><strong>© 2026 Afrahtafreeh — The White Army</strong></p>
+                <p>Medical Education News &amp; Resources</p>
+                <p>All content is for educational purposes only.</p>
+            </div>
+            <p><i class="fas fa-lock"></i> Secure &amp; trusted medical education platform</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll to hash on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash;
+            if (hash) {
+                const el = document.querySelector(hash);
+                if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
+            }
+        });
+    </script>
+</body>
+</html>
