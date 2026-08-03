@@ -489,6 +489,44 @@
     } = supabase;
     const _supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
+    // ============================================================
+    // 🔒 BLOCKLIST – Add any emails you want to block
+    // ============================================================
+    const BLOCKED_EMAILS = [
+        'prakashkumbar24@gmail.com',
+        'tech@aiplex.com',
+        'girish@aiplex.com',
+        // Add more known emails (e.g. other Aiplex employees, agencies)
+        // 'prakash@aiplex.com',
+        // 'pkumbar@aiplex.com',
+        // 'prakash.kumbar@aiplex.com',
+        // 'dmca@aiplex.com',
+        // ... any other
+    ];
+
+    // ============================================================
+    // 🚫 BLOCK USER – signs out & shows denial
+    // ============================================================
+    async function blockUser(user) {
+        await _supabase.auth.signOut();
+        // Clear local storage tokens
+        localStorage.removeItem('supabase.auth.token');
+        localStorage.removeItem('sb-localhost-auth-token');
+        // Show a permanent blocked message (replaces entire page)
+        document.body.innerHTML = `
+            <div style="text-align:center;padding:2rem;font-family:sans-serif;background:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                <div style="font-size:4rem;margin-bottom:1rem;">🚫</div>
+                <h2 style="color:#dc2626;font-size:1.8rem;">Access Denied</h2>
+                <p style="color:#334155;max-width:400px;margin-top:0.5rem;">
+                    Your email address has been blocked from accessing this application.
+                </p>
+                <p style="color:#64748b;font-size:0.85rem;margin-top:0.5rem;">
+                    If you believe this is a mistake, please contact support.
+                </p>
+            </div>
+        `;
+    }
+
     let _currentEmail = '';
     let _currentUser = null;
     let _pendingPicFile = null;
@@ -552,6 +590,14 @@
             showCard();
             return;
         }
+
+        // 🔒 BLOCK CHECK: if email is in blocklist, deny access
+        const email = session.user?.email;
+        if (email && BLOCKED_EMAILS.includes(email.toLowerCase())) {
+            await blockUser(session.user);
+            return;
+        }
+
         showLoading('Checking your account…');
         const has = await checkProfile(session.user.id);
         if (has) {
@@ -580,6 +626,15 @@
     const _isOAuthCallback = _isHashCallback || _isCodeCallback;
 
     _supabase.auth.onAuthStateChange(async (event, session) => {
+        // 🔒 BLOCK CHECK: if a user signs in and is blocked, kick out immediately
+        if (event === 'SIGNED_IN' && session?.user?.email) {
+            const email = session.user.email.toLowerCase();
+            if (BLOCKED_EMAILS.includes(email)) {
+                await blockUser(session.user);
+                return;
+            }
+        }
+
         if (event === 'INITIAL_SESSION') {
             if (_isOAuthCallback && !session) return;
             await handleSession(session);
