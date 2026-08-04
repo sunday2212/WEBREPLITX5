@@ -479,7 +479,7 @@
     if (navigator.share) {
       navigator.share({
         title: 'Afrahtafreeh — Medical Education',
-        text : `⚕️ Afrahtafreeh: The White Army 🏥\nAll Lectures, Notes and Q banks Available Free 🆓\n\n📱 Compatibilit: Android (Chrome) | iPhone/iPad (Safari) only\n\n🔗 Access here: \n\n📖 Instructions: https://graph.org/How-To-Install-Nextpulse-App-08-04`,
+        text : `⚕️ Afrahtafreeh: The White Army 🏥\nAll Lectures, Notes and Q banks Available Free 🆓\n\n📱 Compatibilit: Android (Chrome) | iPhone/iPad (Safari) only \n\n📖 Instructions: https://graph.org/How-To-Install-Nextpulse-App-08-04\n\n🔗 Website Link:`,
         url  : link
       }).catch(() => navigator.clipboard.writeText(link));
     } else {
