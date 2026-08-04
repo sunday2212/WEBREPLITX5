@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V5  FMGE Subjects - NEXTPULSE | NEET PG Video Lectures</title>
+  <meta name="description" content="Access V5  FMGE NEET PG video lectures across all medical subjects.">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../../../access-control.js"></script>
+</head>
+<body>
+  <script>
+    if (!accessControl.initProtectedPage()) {
+      throw new Error('Access denied - redirecting to index.html');
+    }
+  </script>
+  <header>
+    <div class="header-content">
+      <button onclick="history.back()" style="position: fixed; top: 20px; left: 20px; background: transparent; color: white; border: none; padding: 10px; cursor: pointer; z-index: 1001; font-size: 20px;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h1>V5  FMGE Subjects</h1>
+      <p class="header-subtitle">Expert Faculty Video Lectures</p>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search subjects..." id="searchInput">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="subject-card" onclick="window.location.href='Anaesthesia.html'">
+      <i class="fas fa-pills"></i>
+      <span>Anaesthesia</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Anatomy.html'">
+      <i class="fas fa-allergies"></i>
+      <span>Anatomy</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Biochemistry.html'">
+      <i class="fas fa-heartbeat"></i>
+      <span>Biochemistry</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='CPR.html'">
+      <i class="fas fa-first-aid"></i>
+      <span>CPR</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Dermatology.html'">
+      <i class="fas fa-deaf"></i>
+      <span>Dermatology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='ENT.html'">
+      <i class="fas fa-lungs-virus"></i>
+      <span>ENT</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='FMT.html'">
+      <i class="fas fa-heart"></i>
+      <span>FMT</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='General Medicine.html'">
+      <i class="fas fa-tooth"></i>
+      <span>General Medicine</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Microbiology.html'">
+      <i class="fas fa-head-side-cough"></i>
+      <span>Microbiology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Obstetrics and Gynaecology.html'">
+      <i class="fas fa-pills"></i>
+      <span>Obstetrics and Gynaecology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Ophthalmology.html'">
+      <i class="fas fa-flask"></i>
+      <span>Ophthalmology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Orthopedics.html'">
+      <i class="fas fa-radiation"></i>
+      <span>Orthopedics</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='PSM.html'">
+      <i class="fas fa-virus"></i>
+      <span>PSM</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Paediatrics.html'">
+      <i class="fas fa-child"></i>
+      <span>Paediatrics</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Pathology.html'">
+      <i class="fas fa-syringe"></i>
+      <span>Pathology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Pharmacology.html'">
+      <i class="fas fa-file-medical"></i>
+      <span>Pharmacology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Physiology.html'">
+      <i class="fas fa-tooth"></i>
+      <span>Physiology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Psychiatry.html'">
+      <i class="fas fa-lungs-virus"></i>
+      <span>Psychiatry</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='RRR live.html'">
+      <i class="fas fa-heartbeat"></i>
+      <span>RRR live</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Radiology.html'">
+      <i class="fas fa-book-medical"></i>
+      <span>Radiology</span>
+    </div>
+
+    <div class="subject-card" onclick="window.location.href='Surgery.html'">
+      <i class="fas fa-first-aid"></i>
+      <span>Surgery</span>
+    </div>
+
+
+  </main>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase();
+      const subjects = document.querySelectorAll('.subject-card');
+      subjects.forEach(subject => {
+        const text = subject.textContent.toLowerCase();
+        subject.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+  <script src="../../../stream-player-utils.js"></script>
+  <script src="../../../theme.js"></script>
+  <nav class="bottom-nav">
+    <a href="../../../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+    <a href="../../../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+    <a href="../../../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+    <a href="../../../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+  </nav>
+</body>
+</html>
