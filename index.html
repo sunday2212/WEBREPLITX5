@@ -1055,6 +1055,254 @@
         @media (min-width: 769px) and (max-width: 1024px) {
             .news-grid { grid-template-columns: repeat(2, 1fr); }
         }
+
+        /* ── PWA installation assistant ── */
+        #install-assistant-launcher {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 10000;
+            width: 58px;
+            height: 58px;
+            border: 0;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+            box-shadow: 0 8px 24px rgba(14, 74, 67, 0.35);
+            cursor: pointer;
+            font-size: 1.35rem;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        #install-assistant-launcher:hover,
+        #install-assistant-launcher:focus-visible {
+            transform: translateY(-3px) scale(1.04);
+            box-shadow: 0 12px 30px rgba(14, 74, 67, 0.42);
+            outline: none;
+        }
+        #install-assistant-launcher .assistant-launcher-label {
+            position: absolute;
+            right: 68px;
+            white-space: nowrap;
+            padding: 7px 10px;
+            border-radius: 8px;
+            color: var(--ink);
+            background: #fff;
+            box-shadow: var(--shadow);
+            font: 600 0.76rem/1.2 Arial, sans-serif;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateX(5px);
+            transition: opacity var(--transition), transform var(--transition);
+        }
+        #install-assistant-launcher:hover .assistant-launcher-label,
+        #install-assistant-launcher:focus-visible .assistant-launcher-label {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        #install-assistant-panel {
+            position: fixed;
+            right: 20px;
+            bottom: 90px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            width: min(390px, calc(100vw - 32px));
+            height: min(650px, calc(100vh - 112px));
+            min-height: 420px;
+            overflow: hidden;
+            border: 1px solid rgba(28, 110, 99, 0.18);
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 18px 55px rgba(20, 30, 48, 0.22);
+            font-family: Arial, sans-serif;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(14px) scale(0.97);
+            transform-origin: bottom right;
+            transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+        }
+        #install-assistant-panel.is-open {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .assistant-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 15px;
+            color: #fff;
+            background: linear-gradient(135deg, var(--teal-deep), var(--teal));
+        }
+        .assistant-header-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+        .assistant-header-title i {
+            width: 32px;
+            height: 32px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            color: var(--teal-deep);
+            background: #e6f4f1;
+        }
+        .assistant-header-title strong {
+            display: block;
+            font-size: 0.94rem;
+            line-height: 1.2;
+        }
+        .assistant-header-title small {
+            display: block;
+            margin-top: 2px;
+            color: rgba(255,255,255,0.76);
+            font-size: 0.7rem;
+        }
+        #assistant-close {
+            flex: 0 0 auto;
+            width: 31px;
+            height: 31px;
+            border: 0;
+            border-radius: 50%;
+            color: #fff;
+            background: rgba(255,255,255,0.14);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        #assistant-close:hover, #assistant-close:focus-visible {
+            background: rgba(255,255,255,0.28);
+            outline: none;
+        }
+        #assistant-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px 13px 10px;
+            background: #f7faf8;
+            scroll-behavior: smooth;
+        }
+        .assistant-message {
+            max-width: 92%;
+            margin: 0 0 10px;
+            padding: 10px 12px;
+            border-radius: 13px 13px 13px 4px;
+            color: var(--ink);
+            background: #fff;
+            box-shadow: 0 2px 7px rgba(20,30,48,0.06);
+            font-size: 0.83rem;
+            line-height: 1.48;
+            white-space: pre-line;
+        }
+        .assistant-message.user {
+            margin-left: auto;
+            border-radius: 13px 13px 4px 13px;
+            color: #fff;
+            background: var(--teal);
+        }
+        .assistant-message p + p { margin-top: 7px; }
+        .assistant-message ol, .assistant-message ul {
+            margin: 7px 0 0 18px;
+            padding: 0;
+        }
+        .assistant-message li { margin: 4px 0; }
+        .assistant-message strong { color: var(--teal-deep); }
+        .assistant-message.user strong { color: #fff; }
+        .assistant-message img {
+            display: block;
+            width: 100%;
+            max-height: 230px;
+            margin-top: 9px;
+            border: 1px solid rgba(22,35,58,0.12);
+            border-radius: 8px;
+            object-fit: contain;
+            background: #fff;
+        }
+        .assistant-quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin: 2px 0 12px;
+        }
+        .assistant-quick-replies button {
+            padding: 8px 10px;
+            border: 1px solid rgba(28,110,99,0.28);
+            border-radius: 999px;
+            color: var(--teal-deep);
+            background: #fff;
+            cursor: pointer;
+            font: 600 0.72rem/1.2 Arial, sans-serif;
+        }
+        .assistant-quick-replies button:hover,
+        .assistant-quick-replies button:focus-visible {
+            color: #fff;
+            background: var(--teal);
+            outline: none;
+        }
+        .assistant-typing {
+            color: var(--ink-muted);
+            font-style: italic;
+        }
+        #assistant-input-area {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            padding: 10px;
+            border-top: 1px solid var(--line);
+            background: #fff;
+        }
+        #assistant-input {
+            flex: 1;
+            min-width: 0;
+            min-height: 38px;
+            max-height: 90px;
+            resize: none;
+            padding: 10px 11px;
+            border: 1px solid var(--line-strong);
+            border-radius: 10px;
+            color: var(--ink);
+            background: var(--card-alt);
+            font: 0.8rem/1.35 Arial, sans-serif;
+        }
+        #assistant-input:focus {
+            border-color: var(--teal);
+            outline: 2px solid var(--teal-glow);
+        }
+        #assistant-send {
+            flex: 0 0 38px;
+            width: 38px;
+            height: 38px;
+            border: 0;
+            border-radius: 10px;
+            color: #fff;
+            background: var(--teal);
+            cursor: pointer;
+        }
+        #assistant-send:hover, #assistant-send:focus-visible {
+            background: var(--teal-deep);
+            outline: none;
+        }
+        @media (max-width: 520px) {
+            #install-assistant-launcher {
+                right: 14px;
+                bottom: 14px;
+                width: 54px;
+                height: 54px;
+            }
+            #install-assistant-launcher .assistant-launcher-label { display: none; }
+            #install-assistant-panel {
+                right: 10px;
+                bottom: 78px;
+                left: 10px;
+                width: auto;
+                height: min(620px, calc(100vh - 94px));
+                min-height: 390px;
+                border-radius: 15px;
+            }
+        }
     </style>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
@@ -1336,12 +1584,331 @@
         <button id="installPromptBtn">Install Now</button>
         <button id="dismissBtn">Dismiss</button>
     </div>
+
+    <!-- ── PWA Installation Assistant (index page only) ── -->
+    <button id="install-assistant-launcher" type="button" aria-label="Open installation assistant"
+        aria-controls="install-assistant-panel" aria-expanded="false">
+        <span class="assistant-launcher-label">Need help installing?</span>
+        <i class="fas fa-robot" aria-hidden="true"></i>
+    </button>
+    <section id="install-assistant-panel" role="dialog" aria-modal="false"
+        aria-labelledby="assistant-title" aria-hidden="true">
+        <header class="assistant-header">
+            <div class="assistant-header-title">
+                <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+                <div>
+                    <strong id="assistant-title">Install Afrahtafreeh</strong>
+                    <small>Step-by-step PWA help</small>
+                </div>
+            </div>
+            <button id="assistant-close" type="button" aria-label="Close installation assistant">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </header>
+        <div id="assistant-messages" aria-live="polite" aria-atomic="false"></div>
+        <form id="assistant-input-area">
+            <textarea id="assistant-input" rows="1" maxlength="1000"
+                placeholder="Type your question..." aria-label="Type your question"></textarea>
+            <button id="assistant-send" type="submit" aria-label="Send message">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </form>
+    </section>
+
     <script>
         (function () {
             try {
                 const ref = new URLSearchParams(window.location.search).get('ref');
                 if (ref && ref.trim().length > 0) localStorage.setItem('pendingReferral', ref.trim());
             } catch (_) {}
+        })();
+
+        /* ── PWA installation assistant ── */
+        (function () {
+            const launcher = document.getElementById('install-assistant-launcher');
+            const panel = document.getElementById('install-assistant-panel');
+            const closeButton = document.getElementById('assistant-close');
+            const messages = document.getElementById('assistant-messages');
+            const form = document.getElementById('assistant-input-area');
+            const input = document.getElementById('assistant-input');
+            const imageRoot = './img/';
+
+            if (!launcher || !panel || !messages || !form || !input) return;
+
+            let state = 'intent';
+            let started = false;
+            let groqKeyPromise = null;
+
+            const options = {
+                intent: [
+                    ['App is not installing', 'install'],
+                    ['Download button is missing', 'download'],
+                    ['How do I install it?', 'install'],
+                    ['Something else', 'other']
+                ],
+                firstTime: [
+                    ['Yes, first time', 'first'],
+                    ['No, I installed it before', 'returning']
+                ],
+                platform: [
+                    ['Android', 'android'],
+                    ['PC / Windows', 'pc'],
+                    ['iPhone / iOS', 'iphone']
+                ],
+                finish: [
+                    ['Start over', 'restart'],
+                    ['Ask another question', 'restart']
+                ]
+            };
+
+            function scrollToBottom() {
+                messages.scrollTop = messages.scrollHeight;
+            }
+
+            function addMessage(text, type, image, alt) {
+                const message = document.createElement('div');
+                message.className = 'assistant-message' + (type === 'user' ? ' user' : '');
+                message.textContent = text;
+                if (image) {
+                    const imageElement = document.createElement('img');
+                    imageElement.src = imageRoot + image;
+                    imageElement.alt = alt || 'PWA installation guide';
+                    imageElement.loading = 'lazy';
+                    imageElement.onerror = function () {
+                        imageElement.remove();
+                    };
+                    message.appendChild(imageElement);
+                }
+                messages.appendChild(message);
+                scrollToBottom();
+            }
+
+            function addQuickReplies(kind) {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'assistant-quick-replies';
+                (options[kind] || []).forEach(function (option) {
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.textContent = option[0];
+                    button.addEventListener('click', function () {
+                        handleMessage(option[0], option[1]);
+                    });
+                    wrapper.appendChild(button);
+                });
+                messages.appendChild(wrapper);
+                scrollToBottom();
+            }
+
+            function removeQuickReplies() {
+                messages.querySelectorAll('.assistant-quick-replies').forEach(function (item) {
+                    item.remove();
+                });
+            }
+
+            function askIntent() {
+                state = 'intent';
+                addMessage('Hi! I can help you install the Afrahtafreeh web app. What do you need help with?', 'assistant');
+                addQuickReplies('intent');
+            }
+
+            function askFirstTime() {
+                state = 'firstTime';
+                addMessage('Before we begin: are you installing the app for the first time?', 'assistant');
+                addQuickReplies('firstTime');
+            }
+
+            function askPlatform() {
+                state = 'platform';
+                addMessage('Which device are you using to install it?', 'assistant');
+                addQuickReplies('platform');
+            }
+
+            function showReturningSteps() {
+                state = 'platform';
+                addMessage('No problem. First clear the old app history so the latest version can install cleanly:', 'assistant');
+                addMessage('1. Open your browser settings and clear the Afrahtafreeh site/app history. Follow the first screenshot, then return here.', 'assistant', 'app_history-1.png', 'Clear app history: step 1');
+                addMessage('2. Complete the next app-history step.', 'assistant', 'app_history-2.png', 'Clear app history: step 2');
+                addMessage('Now clear the browser history for this site as well:', 'assistant', 'browser-history.png', 'Clear browser history');
+                addMessage('Once that is done, choose your device and I will guide you through installation.', 'assistant');
+                addQuickReplies('platform');
+            }
+
+            function showPlatformSteps(platform) {
+                state = 'finish';
+                if (platform === 'iphone') {
+                    addMessage('For iPhone / iOS, follow these steps:', 'assistant', 'iphone.png', 'iPhone PWA installation steps');
+                    addMessage('1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select “Add to Home Screen”.\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf “Add to Home Screen” is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.', 'assistant');
+                } else {
+                    const device = platform === 'pc' ? 'PC / Windows' : 'Android';
+                    addMessage('For ' + device + ', follow these steps:', 'assistant', 'android.png', device + ' PWA installation steps');
+                    addMessage('1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose “Install app” or “Add to Home screen”.\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app’s browser.', 'assistant');
+                }
+                addMessage('You are all set. If the download or install option is still missing, tell me what you see on screen and I’ll help troubleshoot it.', 'assistant');
+                addQuickReplies('finish');
+            }
+
+            function inferPlatform(text) {
+                const value = String(text).toLowerCase();
+                if (/iphone|ios|apple|ipad/.test(value)) return 'iphone';
+                if (/pc|windows|computer|desktop|laptop/.test(value)) return 'pc';
+                if (/android|phone|samsung/.test(value)) return 'android';
+                return '';
+            }
+
+            function inferFirstTime(text) {
+                const value = String(text).toLowerCase();
+                if (/^no\b|again|before|old|return/.test(value)) return 'returning';
+                if (/^yes\b|first|new/.test(value)) return 'first';
+                return '';
+            }
+
+            function inferIntent(text) {
+                const value = String(text).toLowerCase();
+                if (/download|button|missing/.test(value)) return 'download';
+                if (/install|pwa|app/.test(value)) return 'install';
+                return 'other';
+            }
+
+            async function getGroqKey() {
+                if (groqKeyPromise) return groqKeyPromise;
+                groqKeyPromise = (async function () {
+                    try {
+                        const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+                        const sessionResult = await client.auth.getSession();
+                        const session = sessionResult.data && sessionResult.data.session;
+                        if (!session) return '';
+                        const profileResult = await client
+                            .from('profiles')
+                            .select('groq_api_key')
+                            .eq('id', session.user.id)
+                            .single();
+                        return profileResult.data && profileResult.data.groq_api_key
+                            ? profileResult.data.groq_api_key
+                            : '';
+                    } catch (error) {
+                        console.warn('Installation assistant could not load Groq key:', error);
+                        return '';
+                    }
+                })();
+                return groqKeyPromise;
+            }
+
+            async function askGroq(question) {
+                const key = await getGroqKey();
+                if (!key) {
+                    addMessage('I can guide you through installation here. Please choose Android, PC / Windows, or iPhone / iOS below.', 'assistant');
+                    addQuickReplies('platform');
+                    return;
+                }
+                const typing = document.createElement('div');
+                typing.className = 'assistant-message assistant-typing';
+                typing.textContent = 'Thinking…';
+                messages.appendChild(typing);
+                scrollToBottom();
+                try {
+                    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'Bearer ' + key
+                        },
+                        body: JSON.stringify({
+                            model: 'llama-3.3-70b-versatile',
+                            temperature: 0.2,
+                            max_tokens: 450,
+                            messages: [
+                                {
+                                    role: 'system',
+                                    content: 'You are the Afrahtafreeh PWA installation assistant. Give concise, friendly, numbered troubleshooting steps focused on Android, iPhone/iOS, or PC installation. Never ask for passwords or API keys. If unrelated, say you only help with this web app installation.'
+                                },
+                                { role: 'user', content: question }
+                            ]
+                        })
+                    });
+                    if (!response.ok) throw new Error('Groq request failed');
+                    const result = await response.json();
+                    const answer = result.choices && result.choices[0] && result.choices[0].message && result.choices[0].message.content;
+                    typing.remove();
+                    addMessage(answer || 'Please choose your device and I will show the installation steps.', 'assistant');
+                } catch (error) {
+                    typing.remove();
+                    addMessage('I could not reach the optional AI helper right now, but I can still guide you. Choose Android, PC, or iPhone below.', 'assistant');
+                    addQuickReplies('platform');
+                }
+            }
+
+            function handleMessage(text, selectedValue) {
+                removeQuickReplies();
+                addMessage(text, 'user');
+
+                if (state === 'intent') {
+                    inferIntent(text);
+                    askFirstTime();
+                } else if (state === 'firstTime') {
+                    const firstTime = selectedValue || inferFirstTime(text);
+                    if (firstTime === 'returning') showReturningSteps();
+                    else if (firstTime === 'first') askPlatform();
+                    else {
+                        addMessage('Please tell me whether this is your first installation or you installed it before.', 'assistant');
+                        addQuickReplies('firstTime');
+                    }
+                } else if (state === 'platform') {
+                    const platform = selectedValue || inferPlatform(text);
+                    if (platform) showPlatformSteps(platform);
+                    else {
+                        addMessage('Please choose Android, PC / Windows, or iPhone / iOS so I can show the correct steps.', 'assistant');
+                        addQuickReplies('platform');
+                    }
+                } else if (state === 'finish') {
+                    if (selectedValue === 'restart') {
+                        messages.innerHTML = '';
+                        askIntent();
+                    } else {
+                        askGroq(text);
+                    }
+                } else {
+                    askGroq(text);
+                }
+                input.value = '';
+                input.style.height = 'auto';
+            }
+
+            function openAssistant() {
+                panel.classList.add('is-open');
+                panel.setAttribute('aria-hidden', 'false');
+                launcher.setAttribute('aria-expanded', 'true');
+                if (!started) {
+                    started = true;
+                    askIntent();
+                }
+                window.setTimeout(function () { input.focus(); }, 120);
+            }
+
+            function closeAssistant() {
+                panel.classList.remove('is-open');
+                panel.setAttribute('aria-hidden', 'true');
+                launcher.setAttribute('aria-expanded', 'false');
+            }
+
+            launcher.addEventListener('click', function () {
+                panel.classList.contains('is-open') ? closeAssistant() : openAssistant();
+            });
+            closeButton.addEventListener('click', closeAssistant);
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const text = input.value.trim();
+                if (text) handleMessage(text);
+            });
+            input.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' && !event.shiftKey) {
+                    event.preventDefault();
+                    form.requestSubmit();
+                }
+            });
+            input.addEventListener('input', function () {
+                input.style.height = 'auto';
+                input.style.height = Math.min(input.scrollHeight, 90) + 'px';
+            });
         })();
 
         let deferredPrompt;
@@ -1353,11 +1920,11 @@
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            installBtn.style.display = 'inline-flex';
+            if (installBtn) installBtn.style.display = 'inline-flex';
             setTimeout(() => { if (deferredPrompt) notification.style.display = 'flex'; }, 5000);
         });
 
-        installBtn.addEventListener('click', showInstallPrompt);
+        if (installBtn) installBtn.addEventListener('click', showInstallPrompt);
         installPromptBtn.addEventListener('click', () => { showInstallPrompt(); notification.style.display = 'none'; });
         dismissBtn.addEventListener('click', () => { notification.style.display = 'none'; });
 
@@ -1366,7 +1933,7 @@
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
-                        installBtn.style.display = 'none';
+                        if (installBtn) installBtn.style.display = 'none';
                         notification.style.display = 'none';
                     }
                     deferredPrompt = null;
@@ -1375,7 +1942,7 @@
         }
 
         window.addEventListener('appinstalled', () => {
-            installBtn.style.display = 'none';
+            if (installBtn) installBtn.style.display = 'none';
             notification.style.display = 'none';
         });
 
