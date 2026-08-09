@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VQQ843R6H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VQQ843R6H">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-9VQQ843R6H');
-</script>
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9VQQ843R6H');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#14243a">
     <link rel="canonical" href="https://afrahtafreeh.site/">
     <meta name="robots" content="index,follow">
     <meta name="description" content="Medical Education News - Afrahtafreeh | FMG Protest, NEET PG 2026, NMC Policy Updates">
-    <!-- Fixed CSP: added https://cdn.jsdelivr.net for Supabase script -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://pagead2.googlesyndication.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://securepubads.g.doubleclick.net https://www.googletagservices.com https://fundingchoicesmessages.google.com https://www.google.com https://cmp.gatekeeperconsent.com https://the.gatekeeperconsent.com https://www.ezojs.com https://ezoicanalytics.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; frame-src https://tpc.googlesyndication.com https://googleads.g.doubleclick.net https://www.google.com; connect-src 'self' https:;">
     <title>Afrahtafreeh | Medical Education News — FMG Protest Updates</title>
-    <!-- Nextpulse Favicon (PNG) -->
     <link rel="icon" type="image/png" sizes="192x192" href="/iconss-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/iconss-512.png">
     <link rel="manifest" href="./app.webmanifest">
@@ -373,9 +372,18 @@
             margin-bottom: 14px;
             flex-shrink: 0;
         }
-        .card-icon--lectures { background: #e6f4f1; color: var(--teal); }
-        .card-icon--notes { background: #fdf2f4; color: var(--maroon); }
-        .card-icon--qbank { background: #fbf6ef; color: var(--gold); }
+        .card-icon--lectures {
+            background: #e6f4f1;
+            color: var(--teal);
+        }
+        .card-icon--notes {
+            background: #fdf2f4;
+            color: var(--maroon);
+        }
+        .card-icon--qbank {
+            background: #fbf6ef;
+            color: var(--gold);
+        }
         .free-edu-card h4 {
             font-family: 'Fraunces', serif;
             font-weight: 600;
@@ -419,8 +427,15 @@
             animation: noticePulse 3s ease-in-out infinite;
         }
         @keyframes noticePulse {
-            0%, 100% { transform: scale(1); opacity: 0.4; }
-            50% { transform: scale(1.5); opacity: 0; }
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
         }
         .notice-section h3 {
             display: flex;
@@ -562,7 +577,6 @@
             border: 1px solid var(--line);
         }
 
-        /* Video / image tutorials */
         .video-tutorials {
             margin-top: 32px;
             border-top: 1px solid var(--line);
@@ -700,8 +714,16 @@
             font-size: 0.92rem;
         }
         @keyframes slideUp {
-            from { bottom: -80px; opacity: 0; transform: translateX(-50%) scale(0.9); }
-            to { bottom: 22px; opacity: 1; transform: translateX(-50%) scale(1); }
+            from {
+                bottom: -80px;
+                opacity: 0;
+                transform: translateX(-50%) scale(0.9);
+            }
+            to {
+                bottom: 22px;
+                opacity: 1;
+                transform: translateX(-50%) scale(1);
+            }
         }
         #notification button {
             background: white;
@@ -717,10 +739,9 @@
         #dismissBtn {
             background: transparent !important;
             color: white !important;
-            border: 1.5px solid rgba(255,255,255,0.5) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
         }
 
-        /* ── NEWS BLOG SECTION ─────────────────────────────── */
         .news-blog-section {
             background: var(--card);
             border-radius: var(--radius-lg);
@@ -733,7 +754,9 @@
         .news-blog-section::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--maroon), var(--maroon-soft), var(--gold));
         }
@@ -790,17 +813,24 @@
             white-space: nowrap;
         }
         .news-live-badge .live-dot {
-            width: 7px; height: 7px;
+            width: 7px;
+            height: 7px;
             border-radius: 50%;
             background: var(--maroon);
             animation: livePulse 1.5s ease-in-out infinite;
         }
         @keyframes livePulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50%       { opacity: 0.35; transform: scale(0.7); }
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.35;
+                transform: scale(0.7);
+            }
         }
 
-        /* Featured (hero) card */
         .news-featured {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -823,7 +853,8 @@
             background: #e8e8e4;
         }
         .news-featured-img img {
-            width: 100%; height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             display: block;
             transition: transform 0.45s ease;
@@ -834,12 +865,13 @@
         .news-featured-img-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(122,35,51,0.18) 0%, transparent 60%);
+            background: linear-gradient(135deg, rgba(122, 35, 51, 0.18) 0%, transparent 60%);
             pointer-events: none;
         }
         .news-featured-badge {
             position: absolute;
-            top: 14px; left: 14px;
+            top: 14px;
+            left: 14px;
             background: var(--maroon);
             color: #fff;
             font-family: 'IBM Plex Mono', monospace;
@@ -868,12 +900,35 @@
             border-radius: 50px;
             margin-bottom: 12px;
         }
-        .news-cat-tag--protest  { background: #fff0f2; color: var(--maroon); border: 1px solid #f5c0cb; }
-        .news-cat-tag--neet     { background: var(--teal-light); color: var(--teal-deep); border: 1px solid #b4dcd6; }
-        .news-cat-tag--policy   { background: var(--gold-light); color: #6b4a13; border: 1px solid #e8c98a; }
-        .news-cat-tag--research { background: #f0f0ff; color: #3b3ba6; border: 1px solid #c0c0ef; }
-        .news-cat-tag--breaking { background: var(--maroon); color: #fff; }
-        .news-cat-tag--fmg      { background: #fef3e2; color: #7a4a1a; border: 1px solid #e8c98a; }
+        .news-cat-tag--protest {
+            background: #fff0f2;
+            color: var(--maroon);
+            border: 1px solid #f5c0cb;
+        }
+        .news-cat-tag--neet {
+            background: var(--teal-light);
+            color: var(--teal-deep);
+            border: 1px solid #b4dcd6;
+        }
+        .news-cat-tag--policy {
+            background: var(--gold-light);
+            color: #6b4a13;
+            border: 1px solid #e8c98a;
+        }
+        .news-cat-tag--research {
+            background: #f0f0ff;
+            color: #3b3ba6;
+            border: 1px solid #c0c0ef;
+        }
+        .news-cat-tag--breaking {
+            background: var(--maroon);
+            color: #fff;
+        }
+        .news-cat-tag--fmg {
+            background: #fef3e2;
+            color: #7a4a1a;
+            border: 1px solid #e8c98a;
+        }
         .news-featured-headline {
             font-family: 'Fraunces', serif;
             font-weight: 700;
@@ -901,7 +956,10 @@
             color: var(--ink-muted);
             letter-spacing: 0.04em;
         }
-        .news-meta-sep { color: var(--line-strong); font-size: 0.7rem; }
+        .news-meta-sep {
+            color: var(--line-strong);
+            font-size: 0.7rem;
+        }
         .news-read-link {
             font-family: 'IBM Plex Mono', monospace;
             font-size: 0.72rem;
@@ -915,10 +973,14 @@
             transition: var(--transition);
             text-decoration: none;
         }
-        .news-read-link:hover { color: var(--maroon-deep); gap: 8px; }
-        .news-read-link::after { content: '→'; }
+        .news-read-link:hover {
+            color: var(--maroon-deep);
+            gap: 8px;
+        }
+        .news-read-link::after {
+            content: '→';
+        }
 
-        /* Grid of smaller cards */
         .news-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -945,15 +1007,19 @@
             background: #e8e8e4;
         }
         .news-card-img img {
-            width: 100%; height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             display: block;
             transition: transform 0.4s ease;
         }
-        .news-card:hover .news-card-img img { transform: scale(1.06); }
+        .news-card:hover .news-card-img img {
+            transform: scale(1.06);
+        }
         .news-card-img .news-cat-tag {
             position: absolute;
-            top: 10px; left: 10px;
+            top: 10px;
+            left: 10px;
             margin: 0;
         }
         .news-card-body {
@@ -979,7 +1045,6 @@
             margin-bottom: 12px;
         }
 
-        /* Ticker bar */
         .news-ticker-bar {
             background: var(--maroon);
             border-radius: 0 0 var(--radius-lg) var(--radius-lg);
@@ -997,7 +1062,7 @@
             text-transform: uppercase;
             color: #fff;
             white-space: nowrap;
-            background: rgba(255,255,255,0.18);
+            background: rgba(255, 255, 255, 0.18);
             padding: 3px 10px;
             border-radius: 50px;
             flex-shrink: 0;
@@ -1012,51 +1077,98 @@
             white-space: nowrap;
             animation: tickerScroll 38s linear infinite;
         }
-        .ticker-inner:hover { animation-play-state: paused; }
+        .ticker-inner:hover {
+            animation-play-state: paused;
+        }
         @keyframes tickerScroll {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
         }
         .ticker-item {
             font-family: 'IBM Plex Mono', monospace;
             font-size: 0.72rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             letter-spacing: 0.02em;
         }
         .ticker-item::before {
             content: '⬥';
-            color: rgba(255,255,255,0.45);
+            color: rgba(255, 255, 255, 0.45);
             margin-right: 10px;
         }
 
         @media (max-width: 768px) {
-            body { padding: 0 14px 32px; }
-            .container { max-width: 100%; }
-            .masthead { padding: 26px 0 20px; }
-            .brand-title { font-size: 2rem; }
+            body {
+                padding: 0 14px 32px;
+            }
+            .container {
+                max-width: 100%;
+            }
+            .masthead {
+                padding: 26px 0 20px;
+            }
+            .brand-title {
+                font-size: 2rem;
+            }
             .cadaver-content {
                 flex-direction: column;
                 align-items: center;
                 gap: 26px;
                 padding: 22px 18px 0;
             }
-            .cadaver-img-container { order: 2; width: 75%; max-width: 220px; }
-            .cadaver-poem { order: 1; width: 100%; }
-            .free-edu-grid { grid-template-columns: 1fr; }
-            .video-grid { flex-direction: column; align-items: center; }
-            .video-item { max-width: 100%; width: 100%; }
-            .footer-nav { gap: 1rem; flex-direction: column; align-items: center; }
-            .footer-nav a { display: block; width: 100%; text-align: center; }
-            .news-featured { grid-template-columns: 1fr; }
-            .news-featured-img { min-height: 200px; }
-            .news-grid { grid-template-columns: 1fr; }
-            .news-blog-masthead { flex-direction: column; align-items: flex-start; }
+            .cadaver-img-container {
+                order: 2;
+                width: 75%;
+                max-width: 220px;
+            }
+            .cadaver-poem {
+                order: 1;
+                width: 100%;
+            }
+            .free-edu-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video-item {
+                max-width: 100%;
+                width: 100%;
+            }
+            .footer-nav {
+                gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .news-featured {
+                grid-template-columns: 1fr;
+            }
+            .news-featured-img {
+                min-height: 200px;
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-blog-masthead {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         @media (min-width: 769px) and (max-width: 1024px) {
-            .news-grid { grid-template-columns: repeat(2, 1fr); }
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
-        /* ── PWA installation assistant ── */
         #install-assistant-launcher {
             position: fixed;
             right: 20px;
@@ -1160,7 +1272,7 @@
         .assistant-header-title small {
             display: block;
             margin-top: 2px;
-            color: rgba(255,255,255,0.76);
+            color: rgba(255, 255, 255, 0.76);
             font-size: 0.7rem;
         }
         #assistant-close {
@@ -1170,12 +1282,13 @@
             border: 0;
             border-radius: 50%;
             color: #fff;
-            background: rgba(255,255,255,0.14);
+            background: rgba(255, 255, 255, 0.14);
             cursor: pointer;
             font-size: 1rem;
         }
-        #assistant-close:hover, #assistant-close:focus-visible {
-            background: rgba(255,255,255,0.28);
+        #assistant-close:hover,
+        #assistant-close:focus-visible {
+            background: rgba(255, 255, 255, 0.28);
             outline: none;
         }
         #assistant-messages {
@@ -1192,7 +1305,7 @@
             border-radius: 13px 13px 13px 4px;
             color: var(--ink);
             background: #fff;
-            box-shadow: 0 2px 7px rgba(20,30,48,0.06);
+            box-shadow: 0 2px 7px rgba(20, 30, 48, 0.06);
             font-size: 0.83rem;
             line-height: 1.48;
             white-space: pre-line;
@@ -1203,48 +1316,32 @@
             color: #fff;
             background: var(--teal);
         }
-        .assistant-message p + p { margin-top: 7px; }
-        .assistant-message ol, .assistant-message ul {
+        .assistant-message p+p {
+            margin-top: 7px;
+        }
+        .assistant-message ol,
+        .assistant-message ul {
             margin: 7px 0 0 18px;
             padding: 0;
         }
-        .assistant-message li { margin: 4px 0; }
-        .assistant-message strong { color: var(--teal-deep); }
-        .assistant-message.user strong { color: #fff; }
+        .assistant-message li {
+            margin: 4px 0;
+        }
+        .assistant-message strong {
+            color: var(--teal-deep);
+        }
+        .assistant-message.user strong {
+            color: #fff;
+        }
         .assistant-message img {
             display: block;
             width: 100%;
             max-height: 230px;
             margin-top: 9px;
-            border: 1px solid rgba(22,35,58,0.12);
+            border: 1px solid rgba(22, 35, 58, 0.12);
             border-radius: 8px;
             object-fit: contain;
             background: #fff;
-        }
-        .assistant-quick-replies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-            margin: 2px 0 12px;
-        }
-        .assistant-quick-replies button {
-            padding: 8px 10px;
-            border: 1px solid rgba(28,110,99,0.28);
-            border-radius: 999px;
-            color: var(--teal-deep);
-            background: #fff;
-            cursor: pointer;
-            font: 600 0.72rem/1.2 Arial, sans-serif;
-        }
-        .assistant-quick-replies button:hover,
-        .assistant-quick-replies button:focus-visible {
-            color: #fff;
-            background: var(--teal);
-            outline: none;
-        }
-        .assistant-typing {
-            color: var(--ink-muted);
-            font-style: italic;
         }
         #assistant-input-area {
             display: flex;
@@ -1281,7 +1378,8 @@
             background: var(--teal);
             cursor: pointer;
         }
-        #assistant-send:hover, #assistant-send:focus-visible {
+        #assistant-send:hover,
+        #assistant-send:focus-visible {
             background: var(--teal-deep);
             outline: none;
         }
@@ -1292,7 +1390,9 @@
                 width: 54px;
                 height: 54px;
             }
-            #install-assistant-launcher .assistant-launcher-label { display: none; }
+            #install-assistant-launcher .assistant-launcher-label {
+                display: none;
+            }
             #install-assistant-panel {
                 right: 10px;
                 bottom: 78px;
@@ -1305,7 +1405,8 @@
         }
     </style>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <div class="container">
@@ -1319,7 +1420,6 @@
             <div class="masthead-rule--thin"></div>
         </header>
 
-        <!-- ══ MEDICAL NEWS BLOG ══════════════════════════════════ -->
         <section class="news-blog-section">
             <div class="news-blog-inner">
                 <div class="news-blog-masthead">
@@ -1331,15 +1431,9 @@
                     <span class="news-live-badge"><span class="live-dot"></span>Live Updates</span>
                 </div>
 
-                <!-- ═══ NEW: FMG PROTEST FEATURED CARD (ABOVE CJP) ═══ -->
                 <a class="news-featured" href="./blog.html#fmg-protest" style="text-decoration:none;display:grid;cursor:pointer;">
                     <div class="news-featured-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=80"
-                            alt="Foreign Medical Graduates protest in India – FMGE reforms demanded"
-                            loading="eager"
-                            onerror="this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80'"
-                        >
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=80" alt="Foreign Medical Graduates protest in India – FMGE reforms demanded" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80'">
                         <div class="news-featured-img-overlay"></div>
                         <span class="news-featured-badge">Breaking</span>
                     </div>
@@ -1355,15 +1449,9 @@
                     </div>
                 </a>
 
-                <!-- Featured story: CJP Protest (existing) -->
                 <a class="news-featured" href="./blog.html#cjp-protest" style="text-decoration:none;display:grid;cursor:pointer;">
                     <div class="news-featured-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80"
-                            alt="Doctors protest"
-                            loading="lazy"
-                            onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80'"
-                        >
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80" alt="Doctors protest" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80'">
                         <div class="news-featured-img-overlay"></div>
                         <span class="news-featured-badge">Featured</span>
                     </div>
@@ -1379,18 +1467,11 @@
                     </div>
                 </a>
 
-                <!-- 4-card grid (includes FMG Protest card) -->
                 <div class="news-grid">
 
-                    <!-- Card 1: NEET PG 2026 -->
                     <a class="news-card" href="./blog.html#neet-pg-2026" style="text-decoration:none;">
                         <div class="news-card-img">
-                            <img
-                                src="https://images.unsplash.com/photo-1588776814546-1ffedfeacafd?w=500&q=80"
-                                alt="NEET PG exam"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&q=80'"
-                            >
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffedfeacafd?w=500&q=80" alt="NEET PG exam" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&q=80'">
                             <span class="news-cat-tag news-cat-tag--neet">NEET PG 2026</span>
                         </div>
                         <div class="news-card-body">
@@ -1404,15 +1485,9 @@
                         </div>
                     </a>
 
-                    <!-- Card 2: NMC Bond Policy -->
                     <a class="news-card" href="./blog.html#nmc-bond" style="text-decoration:none;">
                         <div class="news-card-img">
-                            <img
-                                src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=80"
-                                alt="Medical policy"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80'"
-                            >
+                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=80" alt="Medical policy" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80'">
                             <span class="news-cat-tag news-cat-tag--policy">NMC Policy</span>
                         </div>
                         <div class="news-card-body">
@@ -1426,15 +1501,9 @@
                         </div>
                     </a>
 
-                    <!-- Card 3: AIIMS AI Research -->
                     <a class="news-card" href="./blog.html#aiims-ai" style="text-decoration:none;">
                         <div class="news-card-img">
-                            <img
-                                src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=500&q=80"
-                                alt="AI in medicine"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&q=80'"
-                            >
+                            <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=500&q=80" alt="AI in medicine" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=500&q=80'">
                             <span class="news-cat-tag news-cat-tag--research">Research</span>
                         </div>
                         <div class="news-card-body">
@@ -1448,15 +1517,9 @@
                         </div>
                     </a>
 
-                    <!-- Card 4: FMG PROTEST (grid card) -->
                     <a class="news-card" href="./blog.html#fmg-protest" style="text-decoration:none;">
                         <div class="news-card-img">
-                            <img
-                                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&q=80"
-                                alt="Foreign Medical Graduates protest"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=500&q=80'"
-                            >
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&q=80" alt="Foreign Medical Graduates protest" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=500&q=80'">
                             <span class="news-cat-tag news-cat-tag--fmg">FMG Protest</span>
                         </div>
                         <div class="news-card-body">
@@ -1470,10 +1533,9 @@
                         </div>
                     </a>
 
-                </div><!-- /news-grid -->
-            </div><!-- /news-blog-inner -->
+                </div>
+            </div>
 
-            <!-- Breaking news ticker -->
             <div class="news-ticker-bar">
                 <span class="ticker-label">Breaking</span>
                 <div class="ticker-scroll">
@@ -1485,7 +1547,6 @@
                         <span class="ticker-item">AIIMS Bhopal, Nagpur &amp; Guwahati announce 200 new PG seats from 2027 batch</span>
                         <span class="ticker-item">IMA urges Parliament to pass Central Protection Act for healthcare workers in Winter Session</span>
                         <span class="ticker-item">WHO India study: Doctor-to-patient ratio still below 1:1000 in 12 states</span>
-                        <!-- duplicate for seamless loop -->
                         <span class="ticker-item">FMG protesters demand NMC reduce FMGE cut-off to 40th percentile for all categories – emergency meet Aug 5</span>
                         <span class="ticker-item">Supreme Court stays NMC circular on mandatory rural posting bond pending hearing</span>
                         <span class="ticker-item">FORDA demands written assurance from MoHFW before calling off CJP protest strike</span>
@@ -1497,7 +1558,6 @@
                 </div>
             </div>
         </section>
-        <!-- ══ END MEDICAL NEWS BLOG ═══════════════════════════════ -->
 
         <article class="cadaver-paper">
             <div class="cadaver-header">
@@ -1554,8 +1614,7 @@
                     <div class="cadaver-author">—Krishna Garg</div>
                 </div>
                 <div class="cadaver-img-container">
-                    <img src="cadaver.jpg" alt="Skeleton Illustration" class="cadaver-img"
-                         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Skeleton_kneeling_side_view.jpg/440px-Skeleton_kneeling_side_view.jpg'">
+                    <img src="cadaver.jpg" alt="Skeleton Illustration" class="cadaver-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Skeleton_kneeling_side_view.jpg/440px-Skeleton_kneeling_side_view.jpg'">
                 </div>
             </div>
         </article>
@@ -1585,30 +1644,26 @@
         <button id="dismissBtn">Dismiss</button>
     </div>
 
-    <!-- ── PWA Installation Assistant (index page only) ── -->
-    <button id="install-assistant-launcher" type="button" aria-label="Open installation assistant"
-        aria-controls="install-assistant-panel" aria-expanded="false">
-        <span class="assistant-launcher-label">Need help installing?</span>
+    <button id="install-assistant-launcher" type="button" aria-label="Open assistant" aria-controls="install-assistant-panel" aria-expanded="false">
+        <span class="assistant-launcher-label">Need help?</span>
         <i class="fas fa-robot" aria-hidden="true"></i>
     </button>
-    <section id="install-assistant-panel" role="dialog" aria-modal="false"
-        aria-labelledby="assistant-title" aria-hidden="true">
+    <section id="install-assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title" aria-hidden="true">
         <header class="assistant-header">
             <div class="assistant-header-title">
                 <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
                 <div>
-                    <strong id="assistant-title">Install Afrahtafreeh</strong>
-                    <small>Step-by-step PWA help</small>
+                    <strong id="assistant-title">Afrahtafreeh Assistant</strong>
+                    <small>How can I help you?</small>
                 </div>
             </div>
-            <button id="assistant-close" type="button" aria-label="Close installation assistant">
+            <button id="assistant-close" type="button" aria-label="Close assistant">
                 <i class="fas fa-times" aria-hidden="true"></i>
             </button>
         </header>
         <div id="assistant-messages" aria-live="polite" aria-atomic="false"></div>
         <form id="assistant-input-area">
-            <textarea id="assistant-input" rows="1" maxlength="1000"
-                placeholder="Type your question..." aria-label="Type your question"></textarea>
+            <textarea id="assistant-input" rows="1" maxlength="1000" placeholder="Type your question..." aria-label="Type your question"></textarea>
             <button id="assistant-send" type="submit" aria-label="Send message">
                 <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </button>
@@ -1616,15 +1671,15 @@
     </section>
 
     <script>
-        (function () {
+        (function() {
             try {
                 const ref = new URLSearchParams(window.location.search).get('ref');
                 if (ref && ref.trim().length > 0) localStorage.setItem('pendingReferral', ref.trim());
             } catch (_) {}
         })();
 
-        /* ── PWA installation assistant ── */
-        (function () {
+        /* ── PWA installation assistant (no quick replies, no Groq) ── */
+        (function() {
             const launcher = document.getElementById('install-assistant-launcher');
             const panel = document.getElementById('install-assistant-panel');
             const closeButton = document.getElementById('assistant-close');
@@ -1635,31 +1690,9 @@
 
             if (!launcher || !panel || !messages || !form || !input) return;
 
-            let state = 'intent';
+            let state = 'initial';
             let started = false;
-            let groqKeyPromise = null;
-
-            const options = {
-                intent: [
-                    ['App is not installing', 'install'],
-                    ['Download button is missing', 'download'],
-                    ['How do I install it?', 'install'],
-                    ['Something else', 'other']
-                ],
-                firstTime: [
-                    ['Yes, first time', 'first'],
-                    ['No, I installed it before', 'returning']
-                ],
-                platform: [
-                    ['Android', 'android'],
-                    ['PC / Windows', 'pc'],
-                    ['iPhone / iOS', 'iphone']
-                ],
-                finish: [
-                    ['Start over', 'restart'],
-                    ['Ask another question', 'restart']
-                ]
-            };
+            let userName = '';
 
             function scrollToBottom() {
                 messages.scrollTop = messages.scrollHeight;
@@ -1672,202 +1705,102 @@
                 if (image) {
                     const imageElement = document.createElement('img');
                     imageElement.src = imageRoot + image;
-                    imageElement.alt = alt || 'PWA installation guide';
+                    imageElement.alt = alt || 'Installation guide';
                     imageElement.loading = 'lazy';
-                    imageElement.onerror = function () {
-                        imageElement.remove();
-                    };
+                    imageElement.onerror = function() { imageElement.remove(); };
                     message.appendChild(imageElement);
                 }
                 messages.appendChild(message);
                 scrollToBottom();
             }
 
-            function addQuickReplies(kind) {
-                const wrapper = document.createElement('div');
-                wrapper.className = 'assistant-quick-replies';
-                (options[kind] || []).forEach(function (option) {
-                    const button = document.createElement('button');
-                    button.type = 'button';
-                    button.textContent = option[0];
-                    button.addEventListener('click', function () {
-                        handleMessage(option[0], option[1]);
-                    });
-                    wrapper.appendChild(button);
-                });
-                messages.appendChild(wrapper);
-                scrollToBottom();
+            function askInitial() {
+                state = 'initial';
+                addMessage('How can I help you?', 'assistant');
             }
 
-            function removeQuickReplies() {
-                messages.querySelectorAll('.assistant-quick-replies').forEach(function (item) {
-                    item.remove();
-                });
+            function askName() {
+                state = 'askName';
+                addMessage('What is your name?', 'assistant');
             }
 
-            function askIntent() {
-                state = 'intent';
-                addMessage('Hi! I can help you install the Afrahtafreeh web app. What do you need help with?', 'assistant');
-                addQuickReplies('intent');
-            }
-
-            function askFirstTime() {
-                state = 'firstTime';
-                addMessage('Before we begin: are you installing the app for the first time?', 'assistant');
-                addQuickReplies('firstTime');
+            function askFirstTime(name) {
+                state = 'askFirstTime';
+                addMessage('Nice to meet you, ' + name + '! Are you installing for the first time? (Yes/No)', 'assistant');
             }
 
             function askPlatform() {
-                state = 'platform';
-                addMessage('Which device are you using to install it?', 'assistant');
-                addQuickReplies('platform');
+                state = 'askPlatform';
+                addMessage('Which device are you using? (Android, PC, iPhone)', 'assistant');
             }
 
             function showReturningSteps() {
-                state = 'platform';
+                state = 'askPlatform';
                 addMessage('No problem. First clear the old app history so the latest version can install cleanly:', 'assistant');
                 addMessage('1. Open your browser settings and clear the Afrahtafreeh site/app history. Follow the first screenshot, then return here.', 'assistant', 'app_history-1.png', 'Clear app history: step 1');
                 addMessage('2. Complete the next app-history step.', 'assistant', 'app_history-2.png', 'Clear app history: step 2');
                 addMessage('Now clear the browser history for this site as well:', 'assistant', 'browser-history.png', 'Clear browser history');
                 addMessage('Once that is done, choose your device and I will guide you through installation.', 'assistant');
-                addQuickReplies('platform');
+                askPlatform();
             }
 
             function showPlatformSteps(platform) {
                 state = 'finish';
                 if (platform === 'iphone') {
                     addMessage('For iPhone / iOS, follow these steps:', 'assistant', 'iphone.png', 'iPhone PWA installation steps');
-                    addMessage('1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select “Add to Home Screen”.\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf “Add to Home Screen” is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.', 'assistant');
+                    addMessage('1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select "Add to Home Screen".\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf "Add to Home Screen" is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.', 'assistant');
                 } else {
                     const device = platform === 'pc' ? 'PC / Windows' : 'Android';
                     addMessage('For ' + device + ', follow these steps:', 'assistant', 'android.png', device + ' PWA installation steps');
-                    addMessage('1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose “Install app” or “Add to Home screen”.\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app’s browser.', 'assistant');
+                    addMessage('1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose "Install app" or "Add to Home screen".\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app\'s browser.', 'assistant');
                 }
-                addMessage('You are all set. If the download or install option is still missing, tell me what you see on screen and I’ll help troubleshoot it.', 'assistant');
-                addQuickReplies('finish');
+                addMessage('You are all set. If you need more help, just type "restart" to start over.', 'assistant');
             }
 
-            function inferPlatform(text) {
-                const value = String(text).toLowerCase();
-                if (/iphone|ios|apple|ipad/.test(value)) return 'iphone';
-                if (/pc|windows|computer|desktop|laptop/.test(value)) return 'pc';
-                if (/android|phone|samsung/.test(value)) return 'android';
-                return '';
-            }
+            function handleMessage(text) {
+                const trimmed = text.trim();
+                if (!trimmed) return;
+                addMessage(trimmed, 'user');
+                const lower = trimmed.toLowerCase();
 
-            function inferFirstTime(text) {
-                const value = String(text).toLowerCase();
-                if (/^no\b|again|before|old|return/.test(value)) return 'returning';
-                if (/^yes\b|first|new/.test(value)) return 'first';
-                return '';
-            }
-
-            function inferIntent(text) {
-                const value = String(text).toLowerCase();
-                if (/download|button|missing/.test(value)) return 'download';
-                if (/install|pwa|app/.test(value)) return 'install';
-                return 'other';
-            }
-
-            async function getGroqKey() {
-                if (groqKeyPromise) return groqKeyPromise;
-                groqKeyPromise = (async function () {
-                    try {
-                        const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-                        const sessionResult = await client.auth.getSession();
-                        const session = sessionResult.data && sessionResult.data.session;
-                        if (!session) return '';
-                        const profileResult = await client
-                            .from('profiles')
-                            .select('groq_api_key')
-                            .eq('id', session.user.id)
-                            .single();
-                        return profileResult.data && profileResult.data.groq_api_key
-                            ? profileResult.data.groq_api_key
-                            : '';
-                    } catch (error) {
-                        console.warn('Installation assistant could not load Groq key:', error);
-                        return '';
+                if (state === 'initial') {
+                    askName();
+                } else if (state === 'askName') {
+                    userName = trimmed;
+                    if (userName) {
+                        askFirstTime(userName);
+                    } else {
+                        addMessage('Please tell me your name.', 'assistant');
                     }
-                })();
-                return groqKeyPromise;
-            }
-
-            async function askGroq(question) {
-                const key = await getGroqKey();
-                if (!key) {
-                    addMessage('I can guide you through installation here. Please choose Android, PC / Windows, or iPhone / iOS below.', 'assistant');
-                    addQuickReplies('platform');
-                    return;
-                }
-                const typing = document.createElement('div');
-                typing.className = 'assistant-message assistant-typing';
-                typing.textContent = 'Thinking…';
-                messages.appendChild(typing);
-                scrollToBottom();
-                try {
-                    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': 'Bearer ' + key
-                        },
-                        body: JSON.stringify({
-                            model: 'llama-3.3-70b-versatile',
-                            temperature: 0.2,
-                            max_tokens: 450,
-                            messages: [
-                                {
-                                    role: 'system',
-                                    content: 'You are the Afrahtafreeh PWA installation assistant. Give concise, friendly, numbered troubleshooting steps focused on Android, iPhone/iOS, or PC installation. Never ask for passwords or API keys. If unrelated, say you only help with this web app installation.'
-                                },
-                                { role: 'user', content: question }
-                            ]
-                        })
-                    });
-                    if (!response.ok) throw new Error('Groq request failed');
-                    const result = await response.json();
-                    const answer = result.choices && result.choices[0] && result.choices[0].message && result.choices[0].message.content;
-                    typing.remove();
-                    addMessage(answer || 'Please choose your device and I will show the installation steps.', 'assistant');
-                } catch (error) {
-                    typing.remove();
-                    addMessage('I could not reach the optional AI helper right now, but I can still guide you. Choose Android, PC, or iPhone below.', 'assistant');
-                    addQuickReplies('platform');
-                }
-            }
-
-            function handleMessage(text, selectedValue) {
-                removeQuickReplies();
-                addMessage(text, 'user');
-
-                if (state === 'intent') {
-                    inferIntent(text);
-                    askFirstTime();
-                } else if (state === 'firstTime') {
-                    const firstTime = selectedValue || inferFirstTime(text);
-                    if (firstTime === 'returning') showReturningSteps();
-                    else if (firstTime === 'first') askPlatform();
-                    else {
-                        addMessage('Please tell me whether this is your first installation or you installed it before.', 'assistant');
-                        addQuickReplies('firstTime');
+                } else if (state === 'askFirstTime') {
+                    if (lower === 'yes' || lower === 'y' || lower === 'first' || lower === 'first time') {
+                        askPlatform();
+                    } else if (lower === 'no' || lower === 'n' || lower === 'returning' || lower === 'again') {
+                        showReturningSteps();
+                    } else {
+                        addMessage('Please answer "Yes" or "No". Are you installing for the first time?', 'assistant');
                     }
-                } else if (state === 'platform') {
-                    const platform = selectedValue || inferPlatform(text);
-                    if (platform) showPlatformSteps(platform);
-                    else {
-                        addMessage('Please choose Android, PC / Windows, or iPhone / iOS so I can show the correct steps.', 'assistant');
-                        addQuickReplies('platform');
+                } else if (state === 'askPlatform') {
+                    if (lower.includes('iphone') || lower.includes('ios') || lower.includes('apple') || lower.includes('ipad')) {
+                        showPlatformSteps('iphone');
+                    } else if (lower.includes('android') || lower.includes('phone') || lower.includes('samsung')) {
+                        showPlatformSteps('android');
+                    } else if (lower.includes('pc') || lower.includes('windows') || lower.includes('computer') || lower.includes('desktop') || lower.includes('laptop')) {
+                        showPlatformSteps('pc');
+                    } else {
+                        addMessage('Please tell me which device you are using: Android, PC, or iPhone.', 'assistant');
                     }
                 } else if (state === 'finish') {
-                    if (selectedValue === 'restart') {
+                    if (lower === 'restart' || lower === 'start over') {
                         messages.innerHTML = '';
-                        askIntent();
+                        state = 'initial';
+                        userName = '';
+                        askInitial();
                     } else {
-                        askGroq(text);
+                        addMessage('I can help with installation. Type "restart" to start over or tell me your question.', 'assistant');
                     }
                 } else {
-                    askGroq(text);
+                    askName();
                 }
                 input.value = '';
                 input.style.height = 'auto';
@@ -1879,9 +1812,9 @@
                 launcher.setAttribute('aria-expanded', 'true');
                 if (!started) {
                     started = true;
-                    askIntent();
+                    askInitial();
                 }
-                window.setTimeout(function () { input.focus(); }, 120);
+                setTimeout(function() { input.focus(); }, 120);
             }
 
             function closeAssistant() {
@@ -1890,22 +1823,22 @@
                 launcher.setAttribute('aria-expanded', 'false');
             }
 
-            launcher.addEventListener('click', function () {
+            launcher.addEventListener('click', function() {
                 panel.classList.contains('is-open') ? closeAssistant() : openAssistant();
             });
             closeButton.addEventListener('click', closeAssistant);
-            form.addEventListener('submit', function (event) {
+            form.addEventListener('submit', function(event) {
                 event.preventDefault();
                 const text = input.value.trim();
                 if (text) handleMessage(text);
             });
-            input.addEventListener('keydown', function (event) {
+            input.addEventListener('keydown', function(event) {
                 if (event.key === 'Enter' && !event.shiftKey) {
                     event.preventDefault();
                     form.requestSubmit();
                 }
             });
-            input.addEventListener('input', function () {
+            input.addEventListener('input', function() {
                 input.style.height = 'auto';
                 input.style.height = Math.min(input.scrollHeight, 90) + 'px';
             });
@@ -1925,7 +1858,8 @@
         });
 
         if (installBtn) installBtn.addEventListener('click', showInstallPrompt);
-        installPromptBtn.addEventListener('click', () => { showInstallPrompt(); notification.style.display = 'none'; });
+        installPromptBtn.addEventListener('click', () => { showInstallPrompt();
+            notification.style.display = 'none'; });
         dismissBtn.addEventListener('click', () => { notification.style.display = 'none'; });
 
         function showInstallPrompt() {
@@ -1964,16 +1898,18 @@
             }
         });
     </script>
-    <script src="theme.js"></script>
-    <!-- Supabase script now allowed by CSP -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="./supabase-config.js"></script>
+    <script src="theme.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+    <script src="./supabase-config.js">
+    </script>
     <script>
-        (function () {
+        (function() {
             function setCookie(name, value, maxAge) {
                 document.cookie = name + '=' + encodeURIComponent(value) + '; max-age=' + maxAge + '; path=/; SameSite=Lax';
             }
-            window.addEventListener('DOMContentLoaded', async function () {
+            window.addEventListener('DOMContentLoaded', async function() {
                 const params = new URLSearchParams(window.location.search);
                 const refCode = params.get('ref');
                 if (!refCode) return;
