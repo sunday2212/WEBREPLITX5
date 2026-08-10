@@ -2,574 +2,523 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>NextPulse - Latest MBBS News India</title>
-  <link rel="manifest" href="/assets/app-D7gEpyfo.webmanifest">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="./access-control.js"></script>
-  <script src="./block.js"></script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14243a">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Open Afrahtafreeh from the official site</title>
     <style>
+        :root {
+            color-scheme: light;
+            --ink: #16233a;
+            --muted: #5d6878;
+            --paper: #f1f3ee;
+            --card: #ffffff;
+            --teal: #1c6e63;
+            --teal-deep: #0e4a43;
+            --line: rgba(22, 35, 58, 0.14);
+            --shadow: 0 22px 65px rgba(20, 30, 48, 0.16);
+            --alert-bg: #fef3f2;
+            --alert-border: #fca5a5;
+            --alert-text: #991b1b;
+        }
+
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8fafc;
-            color: #334155;
-            line-height: 1.6;
-        }
-
-        .header {
-            background: #2c5282;
-            color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(44, 82, 130, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .pulse-icon {
-            width: 30px;
-            height: 30px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #2c5282;
-            font-weight: bold;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .nav-menu a:hover {
-            opacity: 0.8;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #2c5282 0%, #3b6da8 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-
-        .trending-badge {
-            background: #ef4444;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 1rem;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: #2c5282;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .news-grid {
+            min-height: 100vh;
+            margin: 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            place-items: center;
+            padding: 24px;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(166, 83, 102, 0.14), transparent 35%),
+                var(--paper);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .news-card {
-            background: white;
+        .notice {
+            width: min(720px, 100%);
+            padding: clamp(28px, 6vw, 58px);
+            border: 1px solid var(--line);
+            border-top: 5px solid var(--teal);
+            border-radius: 22px;
+            background: var(--card);
+            box-shadow: var(--shadow);
+            text-align: center;
+            position: relative;
+        }
+
+        /* ---- CLOUDFLARE ALERT BANNER ---- */
+        .cloudflare-alert {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: -12px 0 24px 0;
+            padding: 16px 18px;
+            border: 1px solid var(--alert-border);
             border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--alert-bg);
+            color: var(--alert-text);
+            text-align: left;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            box-shadow: 0 2px 12px rgba(153, 27, 27, 0.08);
+        }
+        .cloudflare-alert .alert-icon {
+            flex: 0 0 26px;
+            font-size: 1.4rem;
+            line-height: 1;
+            margin-top: 1px;
+        }
+        .cloudflare-alert .alert-body {
+            flex: 1;
+        }
+        .cloudflare-alert .alert-body strong {
+            display: inline-block;
+            margin-bottom: 2px;
+            font-size: 0.98rem;
+        }
+        .cloudflare-alert .alert-close {
+            flex: 0 0 28px;
+            width: 28px;
+            height: 28px;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(153, 27, 27, 0.10);
+            color: var(--alert-text);
+            font-size: 1.2rem;
+            line-height: 1;
             cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: background 0.2s;
+            margin-top: -2px;
+        }
+        .cloudflare-alert .alert-close:hover {
+            background: rgba(153, 27, 27, 0.22);
         }
 
-        .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(44, 82, 130, 0.15);
+        .brand {
+            margin: 0 0 10px;
+            color: var(--teal-deep);
+            font: 700 clamp(1.8rem, 6vw, 3.2rem)/1.05 Georgia, serif;
+            letter-spacing: -0.04em;
         }
 
-        .news-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #2c5282 0%, #4a7fb8 100%);
+        .eyebrow {
+            margin: 0 0 28px;
+            color: #7d3c4d;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font: 700 clamp(1.4rem, 4vw, 2.15rem)/1.15 Georgia, serif;
+        }
+
+        p {
+            max-width: 590px;
+            margin: 0 auto 16px;
+            color: var(--muted);
+            font-size: clamp(0.98rem, 2vw, 1.08rem);
+            line-height: 1.65;
+        }
+
+        .note {
+            margin: 26px auto;
+            padding: 16px 18px;
+            border: 1px solid rgba(125, 60, 77, 0.2);
+            border-radius: 13px;
+            color: #633445;
+            background: #fff7f8;
+            font-size: 0.94rem;
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        .search-row {
             display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 530px;
+            margin: 24px auto;
+            padding: 13px 14px 13px 17px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: #f8faf7;
+            text-align: left;
+        }
+
+        code {
+            flex: 1;
+            min-width: 0;
+            overflow-wrap: anywhere;
+            color: var(--ink);
+            font: 700 0.98rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        }
+
+        #copy-search {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 12px;
+            border: 0;
+            border-radius: 9px;
+            color: #fff;
+            background: var(--teal);
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        #copy-search:hover,
+        #copy-search:focus-visible {
+            background: var(--teal-deep);
+            outline: 3px solid rgba(28, 110, 99, 0.2);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 11px;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-
-        .news-content {
-            padding: 1.5rem;
-        }
-
-        .news-category {
-            color: #2c5282;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-        }
-
-        .news-title {
-            font-size: 1.3rem;
-            color: #1e293b;
-            margin-bottom: 0.8rem;
-            font-weight: 600;
-        }
-
-        .news-excerpt {
-            color: #64748b;
-            margin-bottom: 1rem;
+            min-height: 46px;
+            padding: 0 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 0;
+            cursor: pointer;
             font-size: 0.95rem;
+            transition: transform 0.15s, outline 0.15s, background 0.15s;
         }
 
-        .news-meta {
-            display: flex;
-            justify-content: space-between;
+        .button.primary {
+            color: #fff;
+            background: var(--teal-deep);
+        }
+
+        .button.secondary {
+            border: 1px solid var(--line);
+            color: var(--ink);
+            background: #fff;
+        }
+
+        .button:hover,
+        .button:focus-visible {
+            transform: translateY(-1px);
+            outline: 3px solid rgba(28, 110, 99, 0.2);
+        }
+
+        .button.secondary:hover {
+            background: #f6f8f5;
+        }
+
+        .small {
+            margin-top: 24px;
+            font-size: 0.86rem;
+        }
+
+        /* ---- MODAL / POPUP ---- */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: none;
             align-items: center;
-            font-size: 0.85rem;
-            color: #94a3b8;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+            animation: fadeIn 0.25s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
         }
 
-        .featured-section {
-            background: white;
-            padding: 3rem 2rem;
-            margin: 3rem 0;
+        .modal-box {
+            width: min(880px, 100%);
+            max-height: 90vh;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35);
+            display: flex;
+            flex-direction: column;
+            animation: slideUp 0.3s ease;
+            overflow: hidden;
         }
 
-        .featured-news {
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--line);
+            background: #fafcfa;
+            flex-shrink: 0;
+        }
+        .modal-header h2 {
+            margin: 0;
+            font: 700 1.1rem/1.3 Georgia, serif;
+            color: var(--teal-deep);
+        }
+        .modal-close {
+            width: 36px;
+            height: 36px;
+            border: 0;
+            border-radius: 50%;
+            background: transparent;
+            color: var(--muted);
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            place-items: center;
+            transition: background 0.2s, color 0.2s;
+        }
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.06);
+            color: var(--ink);
         }
 
-        .featured-image {
+        .modal-body {
+            flex: 1;
+            padding: 0;
+            min-height: 400px;
+            height: 70vh;
+            background: #f5f7f4;
+            position: relative;
+        }
+        .modal-body iframe {
+            display: block;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #2c5282 0%, #4a7fb8 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
+            border: 0;
         }
 
-        .featured-content h3 {
-            font-size: 2rem;
-            color: #2c5282;
-            margin-bottom: 1rem;
-        }
-
-        .footer {
-            background: #1e293b;
-            color: white;
-            padding: 3rem 2rem 1rem;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer h4 {
-            color: #2c5282;
-            margin-bottom: 1rem;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-            color: #cbd5e1;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid #334155;
-            color: #94a3b8;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
+        /* ---- ANIMATIONS ---- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
             }
-            
-            .featured-news {
-                grid-template-columns: 1fr;
+            to {
+                opacity: 1;
             }
-            
-            .nav-menu {
-                display: none;
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 520px) {
+            body {
+                padding: 14px;
+            }
+            .notice {
+                border-radius: 16px;
+            }
+            .search-row {
+                align-items: stretch;
+                flex-direction: column;
+            }
+            #copy-search {
+                justify-content: center;
+            }
+            .button {
+                width: 100%;
+            }
+            .modal-box {
+                max-height: 95vh;
+                border-radius: 14px;
+            }
+            .modal-body {
+                height: 60vh;
+                min-height: 300px;
+            }
+            .cloudflare-alert {
+                flex-wrap: wrap;
+            }
+            .cloudflare-alert .alert-close {
+                align-self: flex-start;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .modal-header h2 {
+                font-size: 0.95rem;
+            }
+            .modal-body {
+                height: 50vh;
+                min-height: 240px;
             }
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/assets/app-yyfJI1Qo.css">
-  <link rel="stylesheet" crossorigin href="/assets/styles-DQxNABfx.css">
 </head>
 <body>
-    <script>
-    // Initialize access control for protected page
-    if (!accessControl.initProtectedPage()) {
-      // Page will redirect, so we can stop execution here
-      throw new Error('Access denied - redirecting to index.html');
-    }
-    </script>
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">
-                <div class="pulse-icon">+</div>
-                NextPulse
-            </div>
-    </header>
+    <main class="notice" aria-labelledby="page-title">
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="trending-badge">🔥 TRENDING NOW</div>
-            <h1>Stay Updated with Latest MBBS News</h1>
-            <p>Your trusted source for medical education news, admissions, and NEET updates across India</p>
+        <!-- CLOUDFLARE ALERT BANNER -->
+        <div class="cloudflare-alert" id="cfAlert" role="alert">
+            <span class="alert-icon" aria-hidden="true">⚠️</span>
+            <div class="alert-body">
+                <strong>CLOUDFLARE HAS BLOCKED YOUR IP</strong><br>
+                Due to using a direct link to the website. Please access Afrahtafreeh only through the official
+                search entry point to avoid security restrictions.
+            </div>
+            <button class="alert-close" id="dismissAlert" aria-label="Dismiss alert" title="Dismiss">✕</button>
         </div>
-    </section>
 
-    <div class="container">
-        <h2 class="section-title">Latest Trending News</h2>
-        <div class="news-grid">
-            <div class="news-card" >
-                <div class="news-image">📋</div>
-                <div class="news-content">
-                    <div class="news-category">NEET Updates</div>
-                    <h3 class="news-title">NEET UG 2025 Registration Begins</h3>
-                    <p class="news-excerpt">NTA announces the official dates for NEET UG 2025 registration. Students can apply online from March 2025.</p>
-                    <div class="news-meta">
-                        <span>📅 2 hours ago</span>
-                        <span>👁️ 2.5K views</span>
-                    </div>
-                </div>
+        <p class="eyebrow">Afrahtafreeh · Official access</p>
+        <p class="brand">Afrahtafreeh</p>
+        <h1 id="page-title">Please reopen the app from the official website</h1>
+        <p>
+            This saved app page is no longer the correct entry point for the latest version.
+            To receive current content and install updates, open Afrahtafreeh from its official website.
+        </p>
+        <div class="note">
+            <strong>Important:</strong> This page cannot verify whether Cloudflare has blocked your IP.
+            If you are seeing an access or stale-app problem, clear this site’s browsing history,
+            remove the saved app from your device, and then open the official website again.
+            Please avoid sharing direct app links.
+        </div>
+        <p>Search Google for this exact text:</p>
+        <div class="search-row">
+            <code id="search-text">site:afrahtafreeh.site</code>
+            <button id="copy-search" type="button" aria-label="Copy Google search text">
+                <span aria-hidden="true">⧉</span> Copy
+            </button>
+        </div>
+        <div class="actions">
+            
+            <button class="button secondary" id="instructionsBtn">Chatbot instructions</button>
+        </div>
+        <p class="small">After opening the official site, use the chatbot 🤖 button in the lower-right corner for installation instructions.</p>
+    </main>
+
+    <!-- MODAL POPUP -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-header">
+                <h2 id="modalTitle">📘 NEXTPULSE · Installation Guide</h2>
+                <button class="modal-close" id="modalClose" aria-label="Close popup">✕</button>
             </div>
-
-            <div class="news-card" >
-                <div class="news-image">🏥</div>
-                <div class="news-content">
-                    <div class="news-category">Admissions</div>
-                    <h3 class="news-title">50 New Medical Colleges Approved</h3>
-                    <p class="news-excerpt">Ministry of Health approves establishment of 50 new medical colleges across India, increasing MBBS seats.</p>
-                    <div class="news-meta">
-                        <span>📅 5 hours ago</span>
-                        <span>👁️ 4.2K views</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card" >
-                <div class="news-image">📝</div>
-                <div class="news-content">
-                    <div class="news-category">Exam News</div>
-                    <h3 class="news-title">NEXT Exam Pattern Changed</h3>
-                    <p class="news-excerpt">NBE announces major changes in NEXT examination pattern and syllabus for MBBS graduates.</p>
-                    <div class="news-meta">
-                        <span>📅 1 day ago</span>
-                        <span>👁️ 3.8K views</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card" >
-                <div class="news-image">🎓</div>
-                <div class="news-content">
-                    <div class="news-category">Counselling</div>
-                    <h3 class="news-title">MCC Counselling Schedule Released</h3>
-                    <p class="news-excerpt">Medical Counselling Committee releases the schedule for NEET PG 2025 counselling rounds.</p>
-                    <div class="news-meta">
-                        <span>📅 1 day ago</span>
-                        <span>👁️ 5.1K views</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card" >
-                <div class="news-image">⚕️</div>
-                <div class="news-content">
-                    <div class="news-category">Regulations</div>
-                    <h3 class="news-title">NMC Updates MBBS Curriculum</h3>
-                    <p class="news-excerpt">National Medical Commission introduces competency-based medical education curriculum for MBBS students.</p>
-                    <div class="news-meta">
-                        <span>📅 2 days ago</span>
-                        <span>👁️ 6.3K views</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card" >
-                <div class="news-image">💰</div>
-                <div class="news-content">
-                    <div class="news-category">Scholarships</div>
-                    <h3 class="news-title">New Scholarship Schemes for MBBS</h3>
-                    <p class="news-excerpt">Government launches new scholarship programs for economically disadvantaged MBBS students.</p>
-                    <div class="news-meta">
-                        <span>📅 3 days ago</span>
-                        <span>👁️ 7.2K views</span>
-                    </div>
-                </div>
+            <div class="modal-body">
+                <iframe src="https://graph.org/NEXTPULSE-08-02" title="NEXTPULSE installation guide"></iframe>
             </div>
         </div>
     </div>
 
-    <section class="featured-section">
-        <div class="featured-news">
-            <div class="featured-image">🔬</div>
-            <div class="featured-content">
-                <h3>Featured: Medical Education Reform 2025</h3>
-                <p style="color: #64748b; margin-bottom: 1rem;">
-                    The Ministry of Health and Family Welfare has announced comprehensive reforms in medical education. 
-                    The new framework focuses on competency-based learning, increased practical exposure, and integration 
-                    of modern healthcare technologies in MBBS curriculum.
-                </p>
-                <p style="color: #64748b; margin-bottom: 1rem;">
-                    Key highlights include mandatory rural internships, enhanced clinical skills training, and introduction 
-                    of artificial intelligence in diagnostics as part of the core curriculum.
-                </p>
-                <button style="background: #2c5282; color: white; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600;">
-                    Read Full Article →
-                </button>
-            </div>
-        </div>
-    </section>
-
-  
-    <footer class="footer">
-        <div class="footer-content">
-            <div>
-                <h4>About NextPulse</h4>
-                <p style="color: #cbd5e1;">Your trusted source for the latest MBBS news, admission updates, and medical education information in India.</p>
-            </div>
-  
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 NextPulse. All rights reserved. | Empowering Future Doctors</p>
-            This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-        </div>
-    </footer>
-
     <script>
-        function showAlert(topic) {
-            alert(`Reading article about: ${topic}\n\nThis is a demo page. In a full implementation, this would open the detailed article.`);
-        }
+        (function() {
+            'use strict';
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+            // ---- DOM refs ----
+            const dismissBtn = document.getElementById('dismissAlert');
+            const cfAlert = document.getElementById('cfAlert');
+            const instructionsBtn = document.getElementById('instructionsBtn');
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalClose = document.getElementById('modalClose');
+
+            // ---- Dismiss Cloudflare alert ----
+            if (dismissBtn) {
+                dismissBtn.addEventListener('click', function() {
+                    cfAlert.style.display = 'none';
+                });
+            }
+
+            // ---- Open modal popup on "Chatbot instructions" click ----
+            function openModal() {
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            if (instructionsBtn) {
+                instructionsBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Show a quick second alert as a reminder (optional, but we already have the banner)
+                    // Open the modal
+                    openModal();
+                });
+            }
+
+            // Close modal via × button
+            if (modalClose) {
+                modalClose.addEventListener('click', closeModal);
+            }
+
+            // Close modal by clicking overlay background
+            if (modalOverlay) {
+                modalOverlay.addEventListener('click', function(e) {
+                    if (e.target === modalOverlay) {
+                        closeModal();
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                    closeModal();
                 }
             });
-        });
 
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+            // ---- Copy search text ----
+            const copyButton = document.getElementById('copy-search');
+            const searchText = document.getElementById('search-text').textContent;
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+            if (copyButton) {
+                copyButton.addEventListener('click', async function() {
+                    try {
+                        await navigator.clipboard.writeText(searchText);
+                        copyButton.innerHTML = '<span aria-hidden="true">✓</span> Copied';
+                    } catch (_) {
+                        const helper = document.createElement('textarea');
+                        helper.value = searchText;
+                        helper.setAttribute('readonly', '');
+                        helper.style.position = 'fixed';
+                        helper.style.opacity = '0';
+                        document.body.appendChild(helper);
+                        helper.select();
+                        document.execCommand('copy');
+                        helper.remove();
+                        copyButton.innerHTML = '<span aria-hidden="true">✓</span> Copied';
+                    }
+                    window.setTimeout(function() {
+                        copyButton.innerHTML = '<span aria-hidden="true">⧉</span> Copy';
+                    }, 1800);
+                });
+            }
 
-        document.querySelectorAll('.news-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s, transform 0.5s';
-            observer.observe(card);
-        });
+            // ---- Ensure iframe loads reliably (optional: reload on open) ----
+            // We don't force a reload, but we could if needed.
+            // The iframe will load naturally when the modal opens.
+
+        })();
     </script>
-  <script>
-    // Register service worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js', { scope: './' })
-          .then(registration => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(error => {
-            console.log('Service Worker registration failed:', error);
-          });
-      });
-    }
-
-    // Share functionality
-    function showShareTooltip() {
-      const shareTooltip = document.getElementById('shareTooltip');
-      const overlay = document.getElementById('overlay');
-      
-      shareTooltip.style.display = 'block';
-      overlay.style.display = 'block';
-
-      // Create the share text with your preferred format
-      const shareText = `LASTPULSE - NEET PG Preparation Platform\n\n<b>SITE URL:</b> https://afrahtafreeh.site | \n\n✅<b>ANDROID/PC:</b> Google Chrome - Direct Download \n✅<b>IPHONE/IOS:</b> Add to Homescreen`;
-
-      // Use Web Share API if available
-      if (navigator.share) {
-        navigator.share({
-          title: 'LASTPULSE - NEET PG Preparation Platform',
-          text: 'LASTPULSE - NEET PG Preparation Platform\n\nSITE URL: https://afrahtafreeh.site\n\n✅ANDROID/PC: Google Chrome - Direct Download\n✅IPHONE/IOS: Add to Homescreen',
-          url: 'https://afrahtafreeh.site'
-        })
-        .then(() => console.log('Successful share'))
-        .catch((error) => console.log('Error sharing:', error));
-      } else {
-        // Fallback: Copy to clipboard
-        const plainText = `LASTPULSE - NEET PG Preparation Platform\n\nSITE URL: https://afrahtafreeh.site\n\n✅ ANDROID/PC: Google Chrome - Direct Download\n✅ IPHONE/IOS: Add to Homescreen`;
-        
-        navigator.clipboard.writeText(plainText)
-          .then(() => {
-            // Show confirmation
-            const originalText = shareTooltip.querySelector('h3').textContent;
-            shareTooltip.querySelector('h3').textContent = 'Copied to clipboard! ✓';
-            setTimeout(() => {
-              shareTooltip.querySelector('h3').textContent = originalText;
-            }, 2000);
-          })
-          .catch(err => {
-            console.error('Failed to copy: ', err);
-            // Fallback for older browsers
-            const textArea = document.createElement('textarea');
-            textArea.value = plainText;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            
-            // Show confirmation
-            const originalText = shareTooltip.querySelector('h3').textContent;
-            shareTooltip.querySelector('h3').textContent = 'Copied to clipboard! ✓';
-            setTimeout(() => {
-              shareTooltip.querySelector('h3').textContent = originalText;
-            }, 2000);
-          });
-      }
-    }
-
-    function hideShareTooltip() {
-      const shareTooltip = document.getElementById('shareTooltip');
-      const overlay = document.getElementById('overlay');
-      
-      shareTooltip.style.display = 'none';
-      overlay.style.display = 'none';
-    }
-
-    // Close tooltip when clicking overlay
-    document.getElementById('overlay').addEventListener('click', hideShareTooltip);
-  </script>
-<script src="../theme.js"></script>
-<nav class="bottom-nav">
-      <a href="../appx.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
-      <a href="../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
-      <a href="../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
-      <a href="../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
-    </nav>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
