@@ -1,524 +1,1617 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VQQ843R6H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9VQQ843R6H');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#14243a">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Open Afrahtafreeh from the official site</title>
-    <style>
-        :root {
-            color-scheme: light;
-            --ink: #16233a;
-            --muted: #5d6878;
-            --paper: #f1f3ee;
-            --card: #ffffff;
-            --teal: #1c6e63;
-            --teal-deep: #0e4a43;
-            --line: rgba(22, 35, 58, 0.14);
-            --shadow: 0 22px 65px rgba(20, 30, 48, 0.16);
-            --alert-bg: #fef3f2;
-            --alert-border: #fca5a5;
-            --alert-text: #991b1b;
+    <title>Miss Dopamin - Latest MBBS News India</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./srcx/home/home.css">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./supabase-config.js"></script>
+    <script src="./access-control.js"></script>
+    <script src="./blockX.js"></script>
+    <script src="./push-subscribe.js" defer></script>
+    <!-- AdSense auto-ads: keeps anchor, vignette, in-page running -->
+   
+<style>
+        /* ── Profile badge (pic only) ── */
+        #user-badge {
+            display: none;
+            align-items: center;
+            cursor: pointer;
+        }
+        #user-badge img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2.5px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s;
+        }
+        #user-badge img:hover {
+            transform: scale(1.08);
+        }
+
+        /* ── Profile Sidebar ── */
+        #profile-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 999;
+        }
+        #profile-sidebar {
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 300px;
+            height: 100%;
+            background: #fff;
+            box-shadow: -4px 0 24px rgba(0, 0, 0, 0.18);
+            z-index: 1000;
+            transition: right 0.3s cubic-bezier(.4, 0, .2, 1);
+            display: flex;
+            flex-direction: column;
+            border-radius: 0 0 0 0;
+            overflow: hidden;
+        }
+        #profile-sidebar.open {
+            right: 0;
+        }
+
+        .sidebar-header {
+            background: linear-gradient(135deg, #1a365d, #2c5282);
+            padding: 2rem 1.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .sidebar-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .sidebar-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .sidebar-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.9rem;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+        .sidebar-name {
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.2rem;
+        }
+        .sidebar-college {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.82rem;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .sidebar-body {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+
+        .sidebar-email-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #f1f5f9;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .sidebar-email-row i {
+            color: #2c5282;
+        }
+        .sidebar-email-row span {
+            font-size: 0.82rem;
+            color: #475569;
+            word-break: break-all;
+        }
+
+        .sidebar-logout {
+            width: 100%;
+            padding: 0.85rem;
+            background: #fee2e2;
+            color: #dc2626;
+            border: 1.5px solid #fca5a5;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+        }
+        .sidebar-logout:hover {
+            background: #fecaca;
         }
 
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            min-height: 100vh;
-            margin: 0;
-            display: grid;
-            place-items: center;
-            padding: 24px;
-            color: var(--ink);
-            background:
-                radial-gradient(circle at top left, rgba(166, 83, 102, 0.14), transparent 35%),
-                var(--paper);
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
         }
 
-        .notice {
-            width: min(720px, 100%);
-            padding: clamp(28px, 6vw, 58px);
-            border: 1px solid var(--line);
-            border-top: 5px solid var(--teal);
-            border-radius: 22px;
-            background: var(--card);
-            box-shadow: var(--shadow);
-            text-align: center;
-            position: relative;
+        .header {
+            background: #2c5282;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(44, 82, 130, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        /* ---- CLOUDFLARE ALERT BANNER ---- */
-        .cloudflare-alert {
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin: -12px 0 24px 0;
-            padding: 16px 18px;
-            border: 1px solid var(--alert-border);
-            border-radius: 12px;
-            background: var(--alert-bg);
-            color: var(--alert-text);
-            text-align: left;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            box-shadow: 0 2px 12px rgba(153, 27, 27, 0.08);
-        }
-        .cloudflare-alert .alert-icon {
-            flex: 0 0 26px;
-            font-size: 1.4rem;
-            line-height: 1;
-            margin-top: 1px;
-        }
-        .cloudflare-alert .alert-body {
-            flex: 1;
-        }
-        .cloudflare-alert .alert-body strong {
-            display: inline-block;
-            margin-bottom: 2px;
-            font-size: 0.98rem;
-        }
-        .cloudflare-alert .alert-close {
-            flex: 0 0 28px;
-            width: 28px;
-            height: 28px;
-            border: 0;
-            border-radius: 50%;
-            background: rgba(153, 27, 27, 0.10);
-            color: var(--alert-text);
-            font-size: 1.2rem;
-            line-height: 1;
-            cursor: pointer;
-            display: grid;
-            place-items: center;
-            transition: background 0.2s;
-            margin-top: -2px;
-        }
-        .cloudflare-alert .alert-close:hover {
-            background: rgba(153, 27, 27, 0.22);
-        }
-
-        .brand {
-            margin: 0 0 10px;
-            color: var(--teal-deep);
-            font: 700 clamp(1.8rem, 6vw, 3.2rem)/1.05 Georgia, serif;
-            letter-spacing: -0.04em;
-        }
-
-        .eyebrow {
-            margin: 0 0 28px;
-            color: #7d3c4d;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            margin: 0 0 16px;
-            font: 700 clamp(1.4rem, 4vw, 2.15rem)/1.15 Georgia, serif;
-        }
-
-        p {
-            max-width: 590px;
-            margin: 0 auto 16px;
-            color: var(--muted);
-            font-size: clamp(0.98rem, 2vw, 1.08rem);
-            line-height: 1.65;
-        }
-
-        .note {
-            margin: 26px auto;
-            padding: 16px 18px;
-            border: 1px solid rgba(125, 60, 77, 0.2);
-            border-radius: 13px;
-            color: #633445;
-            background: #fff7f8;
-            font-size: 0.94rem;
-            line-height: 1.55;
-            text-align: left;
-        }
-
-        .search-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            max-width: 530px;
-            margin: 24px auto;
-            padding: 13px 14px 13px 17px;
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            background: #f8faf7;
-            text-align: left;
-        }
-
-        code {
-            flex: 1;
-            min-width: 0;
-            overflow-wrap: anywhere;
-            color: var(--ink);
-            font: 700 0.98rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        }
-
-        #copy-search {
-            flex: 0 0 auto;
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            padding: 9px 12px;
-            border: 0;
-            border-radius: 9px;
-            color: #fff;
-            background: var(--teal);
-            cursor: pointer;
-            font-weight: 700;
-        }
-
-        #copy-search:hover,
-        #copy-search:focus-visible {
-            background: var(--teal-deep);
-            outline: 3px solid rgba(28, 110, 99, 0.2);
-        }
-
-        .actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 11px;
-            margin-top: 28px;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            padding: 0 20px;
-            border-radius: 10px;
-            font-weight: 700;
-            text-decoration: none;
-            border: 0;
-            cursor: pointer;
-            font-size: 0.95rem;
-            transition: transform 0.15s, outline 0.15s, background 0.15s;
-        }
-
-        .button.primary {
-            color: #fff;
-            background: var(--teal-deep);
-        }
-
-        .button.secondary {
-            border: 1px solid var(--line);
-            color: var(--ink);
-            background: #fff;
-        }
-
-        .button:hover,
-        .button:focus-visible {
-            transform: translateY(-1px);
-            outline: 3px solid rgba(28, 110, 99, 0.2);
-        }
-
-        .button.secondary:hover {
-            background: #f6f8f5;
-        }
-
-        .small {
-            margin-top: 24px;
-            font-size: 0.86rem;
-        }
-
-        /* ---- MODAL / POPUP ---- */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 9999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.55);
-            backdrop-filter: blur(6px);
-            animation: fadeIn 0.25s ease;
-        }
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal-box {
-            width: min(880px, 100%);
-            max-height: 90vh;
-            border-radius: 18px;
-            background: #fff;
-            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35);
-            display: flex;
-            flex-direction: column;
-            animation: slideUp 0.3s ease;
-            overflow: hidden;
-        }
-
-        .modal-header {
-            display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--line);
-            background: #fafcfa;
-            flex-shrink: 0;
-        }
-        .modal-header h2 {
-            margin: 0;
-            font: 700 1.1rem/1.3 Georgia, serif;
-            color: var(--teal-deep);
-        }
-        .modal-close {
-            width: 36px;
-            height: 36px;
-            border: 0;
-            border-radius: 50%;
-            background: transparent;
-            color: var(--muted);
-            font-size: 1.5rem;
-            line-height: 1;
-            cursor: pointer;
-            display: grid;
-            place-items: center;
-            transition: background 0.2s, color 0.2s;
-        }
-        .modal-close:hover {
-            background: rgba(0, 0, 0, 0.06);
-            color: var(--ink);
+            align-items: center;
         }
 
-        .modal-body {
-            flex: 1;
-            padding: 0;
-            min-height: 400px;
-            height: 70vh;
-            background: #f5f7f4;
-            position: relative;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        .modal-body iframe {
-            display: block;
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo i {
+            font-size: 1.8rem;
+            color: #4fd1c7;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c5282 0%, #3b6da8 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .trending-badge {
+            background: #ef4444;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #2c5282;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(44, 82, 130, 0.15);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #2c5282 0%, #4a7fb8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-category {
+            color: #2c5282;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-title {
+            font-size: 1.3rem;
+            color: #1e293b;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .news-excerpt {
+            color: #64748b;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .featured-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+        }
+
+        .featured-news {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .featured-image {
             width: 100%;
             height: 100%;
-            border: 0;
+            background: linear-gradient(135deg, #2c5282 0%, #4a7fb8 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
         }
 
-        /* ---- ANIMATIONS ---- */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        .featured-content h3 {
+            font-size: 2rem;
+            color: #2c5282;
+            margin-bottom: 1rem;
         }
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.96);
+
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 3rem 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h4 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
+            .featured-news {
+                grid-template-columns: 1fr;
+            }
+            .nav-menu {
+                display: none;
             }
         }
 
-        /* ---- RESPONSIVE ---- */
-        @media (max-width: 520px) {
-            body {
-                padding: 14px;
-            }
-            .notice {
-                border-radius: 16px;
-            }
-            .search-row {
+        /* ── Theme Toggle Switch ── */
+        .sidebar-theme-toggle {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 26px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .sidebar-theme-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .sidebar-toggle-slider {
+            position: absolute;
+            inset: 0;
+            background: #6b46c1;
+            border-radius: 26px;
+            transition: background 0.3s;
+        }
+        .sidebar-toggle-slider::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 3px;
+            top: 3px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .sidebar-theme-toggle input:checked+.sidebar-toggle-slider {
+            background: #ed8936;
+        }
+        .sidebar-theme-toggle input:checked+.sidebar-toggle-slider::before {
+            transform: translateX(22px);
+        }
+
+        /* ── Dark Mode overrides for app.html elements ── */
+        html:not([data-theme="light"]) #profile-sidebar {
+            background: #1a1d2e !important;
+        }
+        html:not([data-theme="light"]) .sidebar-body {
+            background: #1a1d2e;
+        }
+        html:not([data-theme="light"]) .sidebar-email-row {
+            background: #252b3b;
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .sidebar-email-row span {
+            color: #94a3b8;
+        }
+        html:not([data-theme="light"]) .sidebar-logout {
+            background: #2d1515;
+            color: #fc8181;
+            border-color: #742a2a;
+        }
+        html:not([data-theme="light"]) .sidebar-logout:hover {
+            background: #3b1616;
+        }
+
+        html:not([data-theme="light"]) body {
+            background: #0f1117;
+            color: #e2e8f0;
+        }
+
+        html:not([data-theme="light"]) .header {
+            background: #111827 !important;
+        }
+
+        html:not([data-theme="light"]) .news-card {
+            background: #1a1d2e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        html:not([data-theme="light"]) .news-title {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .news-excerpt {
+            color: #8892a4;
+        }
+        html:not([data-theme="light"]) .news-meta {
+            color: #4a5568;
+        }
+        html:not([data-theme="light"]) .news-category {
+            color: #63b3ed;
+        }
+
+        html:not([data-theme="light"]) .container {
+            background: transparent;
+        }
+        html:not([data-theme="light"]) .section-title {
+            color: #63b3ed;
+        }
+
+        html:not([data-theme="light"]) .featured-section {
+            background: #1a1d2e;
+        }
+        html:not([data-theme="light"]) .featured-content h3 {
+            color: #63b3ed;
+        }
+        html:not([data-theme="light"]) .featured-content p {
+            color: #8892a4 !important;
+        }
+
+        html:not([data-theme="light"]) .footer {
+            background: #0d1117;
+        }
+        html:not([data-theme="light"]) .footer h4 {
+            color: #63b3ed;
+        }
+        html:not([data-theme="light"]) .copyright {
+            color: #4a5568;
+            border-top-color: #2a3045;
+        }
+
+        /* Sidebar groq input in dark */
+        html:not([data-theme="light"]) #sidebar-groq-input {
+            background: #252b3b !important;
+            color: #e2e8f0 !important;
+            border-color: #2a3045 !important;
+        }
+        html:not([data-theme="light"]) #groq-key-status-bar span[style*="color:#2d3748"],
+        html:not([data-theme="light"]) #groq-key-status-bar span {
+            color: #e2e8f0 !important;
+        }
+        html:not([data-theme="light"]) #theme-hint {
+            color: #8892a4;
+        }
+        /* Sidebar divider line in dark */
+        html:not([data-theme="light"]) .sidebar-section[style*="border-top"] {
+            border-top-color: #2a3045 !important;
+        }
+        /* Sidebar section heading row */
+        html:not([data-theme="light"]) .sidebar-section label {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .sidebar-section span {
+            color: #e2e8f0;
+        }
+
+        /* ── Continue Watching ── */
+        .cw-wrap {
+            display: none;
+            padding: 1.2rem 1rem 0;
+        }
+        .cw-heading,
+        .qa-heading {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .cw-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(44, 82, 130, 0.12);
+            border: 1.5px solid #e2e8f0;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.15s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .cw-card:hover {
+            box-shadow: 0 8px 28px rgba(44, 82, 130, 0.2);
+            transform: translateY(-2px);
+        }
+        .cw-card:active {
+            transform: translateY(0);
+        }
+
+        /* 16:9 thumbnail container */
+        .cw-thumb-wrap {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 */
+            background: linear-gradient(135deg, #2c5282, #3b6da8);
+            overflow: hidden;
+        }
+        .cw-thumb-wrap img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cw-thumb-wrap .cw-thumb-fb {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.8rem;
+            opacity: 0.7;
+        }
+        .cw-thumb-wrap .cw-play-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cw-play-overlay i {
+            color: #fff;
+            font-size: 2rem;
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+        }
+
+        /* Card info row */
+        .cw-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0.9rem;
+        }
+        .cw-text {
+            flex: 1;
+            min-width: 0;
+        }
+        .cw-title {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 0.88rem;
+            line-height: 1.35;
+            margin-bottom: 3px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .cw-meta {
+            font-size: 0.72rem;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+        .cw-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #2c5282;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .cw-chevron {
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* ── Quick Access ── */
+        .qa-wrap {
+            padding: 1.2rem 1rem 0;
+        }
+        .qa-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        .qa-item {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: #fff;
+            border-radius: 14px;
+            padding: 0.9rem 0.85rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+            border: 1.5px solid #e2e8f0;
+            transition: box-shadow 0.15s, transform 0.15s;
+        }
+        .qa-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+            transform: translateY(-1px);
+        }
+        .qa-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .qa-label {
+            font-weight: 700;
+            font-size: 0.82rem;
+            color: #1e293b;
+        }
+        .qa-sub {
+            font-size: 0.7rem;
+            color: #64748b;
+        }
+
+        /* ── Tablet / Desktop: side-by-side layout ── */
+        @media (min-width: 600px) {
+            .cw-card {
+                display: flex;
+                flex-direction: row;
                 align-items: stretch;
-                flex-direction: column;
             }
-            #copy-search {
-                justify-content: center;
+            .cw-thumb-wrap {
+                /* Fixed 16:9 width = 220px → height = 123.75px */
+                width: 220px;
+                min-width: 220px;
+                padding-top: 0;
+                height: 130px;
+                border-radius: 14px 0 0 14px;
+                flex-shrink: 0;
             }
-            .button {
+            .cw-info {
+                flex: 1;
+                align-items: flex-start;
+                padding: 1rem 1.1rem;
+            }
+            .cw-text {
                 width: 100%;
             }
-            .modal-box {
-                max-height: 95vh;
-                border-radius: 14px;
-            }
-            .modal-body {
-                height: 60vh;
-                min-height: 300px;
-            }
-            .cloudflare-alert {
-                flex-wrap: wrap;
-            }
-            .cloudflare-alert .alert-close {
-                align-self: flex-start;
+        }
+
+        @media (min-width: 900px) {
+            .cw-thumb-wrap {
+                width: 280px;
+                min-width: 280px;
+                height: 157px;
             }
         }
 
-        @media (max-width: 400px) {
-            .modal-header h2 {
-                font-size: 0.95rem;
-            }
-            .modal-body {
-                height: 50vh;
-                min-height: 240px;
-            }
+        /* ── Dark Mode: Continue Watching ── */
+        html:not([data-theme="light"]) .cw-heading,
+        html:not([data-theme="light"]) .qa-heading {
+            color: #63b3ed;
+        }
+
+        html:not([data-theme="light"]) .cw-card {
+            background: #1e2536;
+            border-color: #2a3045;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+        }
+        html:not([data-theme="light"]) .cw-card:hover {
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+        }
+        html:not([data-theme="light"]) .cw-title {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .cw-meta {
+            color: #8892a4;
+        }
+        html:not([data-theme="light"]) .cw-chevron {
+            color: #4a5568;
+        }
+
+        /* ── Dark Mode: Quick Access ── */
+        html:not([data-theme="light"]) .qa-item {
+            background: #1e2536;
+            border-color: #2a3045;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+        }
+        html:not([data-theme="light"]) .qa-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+        }
+        html:not([data-theme="light"]) .qa-label {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .qa-sub {
+            color: #8892a4;
+        }
+
+        /* ── Share a Lecture Cute Card ── */
+        .share-lecture-card {
+            background: linear-gradient(135deg, #fef9e7, #fdf2e9);
+            border-radius: 20px;
+            margin: 2rem 1rem;
+            padding: 1.8rem 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 2px dashed #f0c27a;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .share-lecture-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .sl-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sl-content h3 {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .sl-content p {
+            font-size: 0.92rem;
+            color: #4a5568;
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #2c5282;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+            transition: background 0.3s, transform 0.15s;
+        }
+        .sl-btn:hover {
+            background: #1e3a5f;
+            transform: translateY(-1px);
+        }
+
+        /* Dark Mode for Share Card */
+        html:not([data-theme="light"]) .share-lecture-card {
+            background: linear-gradient(135deg, #2d3748, #2a3045);
+            border-color: #4a5568;
+        }
+        html:not([data-theme="light"]) .sl-content h3 {
+            color: #63b3ed;
+        }
+        html:not([data-theme="light"]) .sl-content p {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .sl-btn {
+            background: #63b3ed;
+            color: #1a202c;
+        }
+        html:not([data-theme="light"]) .sl-btn:hover {
+            background: #4299e1;
+        }
+
+        /* ── Free Open Source Notice Banner ── */
+        .free-notice {
+            margin: 1.5rem 1rem 0.3rem;
+            padding: 0.85rem 1rem;
+            background: #e8f4e8;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: #2d6a2d;
+            border: 1.5px solid #b7dfb7;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+            line-height: 1.4;
+        }
+        .free-notice i {
+            font-size: 1.15rem;
+            color: #38a169;
+            flex-shrink: 0;
+        }
+        html:not([data-theme="light"]) .free-notice {
+            background: #1a2e1a;
+            border-color: #2a4a2a;
+            color: #9ae6b4;
+        }
+        html:not([data-theme="light"]) .free-notice i {
+            color: #68d391;
+        }
+
+        /* ── Collaborators Section ── */
+        .collab-wrap {
+            padding: 1.5rem 1rem 0;
+        }
+        .collab-heading {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .collab-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff;
+            border-radius: 16px;
+            padding: 1rem 1.1rem;
+            box-shadow: 0 4px 18px rgba(44, 82, 130, 0.1);
+            border: 1.5px solid #e2e8f0;
+            transition: box-shadow 0.2s, transform 0.15s;
+            cursor: pointer;
+        }
+        .collab-card:hover {
+            box-shadow: 0 8px 28px rgba(44, 82, 130, 0.18);
+            transform: translateY(-2px);
+        }
+        .collab-img {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid #e2e8f0;
+            background: #f1f5f9;
+        }
+        .collab-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .collab-name {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #1e293b;
+        }
+        .collab-role {
+            font-size: 0.74rem;
+            color: #64748b;
+        }
+        .collab-badge-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #ebf4ff;
+            color: #2c5282;
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 2px;
+        }
+
+        /* Dark Mode: Collaborators */
+        html:not([data-theme="light"]) .collab-heading {
+            color: #63b3ed;
+        }
+        html:not([data-theme="light"]) .collab-card {
+            background: #1e2536;
+            border-color: #2a3045;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+        }
+        html:not([data-theme="light"]) .collab-card:hover {
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+        }
+        html:not([data-theme="light"]) .collab-name {
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .collab-role {
+            color: #8892a4;
+        }
+        html:not([data-theme="light"]) .collab-badge-icon {
+            background: #1a2942;
+            color: #63b3ed;
+        }
+        html:not([data-theme="light"]) .collab-img {
+            border-color: #2a3045;
+            background: #252b3b;
+        }
+
+        /* ── Image Zoom Modal (lightbox) ── */
+        .image-zoom-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+        .image-zoom-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+        .image-zoom-overlay img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        .image-zoom-overlay.show img {
+            transform: scale(1);
+        }
+        .image-zoom-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.55);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s;
+            z-index: 2001;
+        }
+        .image-zoom-close:hover {
+            background: rgba(0, 0, 0, 0.8);
         }
     </style>
 </head>
 <body>
-    <main class="notice" aria-labelledby="page-title">
+    <script>
+        // Initialize access control for protected page
+        if (!accessControl.initProtectedPage()) {
+            throw new Error('Access denied - redirecting to index.html');
+        }
+    </script>
+    <script>
+        (async () => {
+            const { createClient } = supabase;
+            window._supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+            const { data: { session } } = await window._supabase.auth.getSession();
+            if (!session) {
+                window.location.replace('./auth.html');
+            }
+        })();
+    </script>
 
-        <!-- CLOUDFLARE ALERT BANNER -->
-        <div class="cloudflare-alert" id="cfAlert" role="alert">
-            <span class="alert-icon" aria-hidden="true">⚠️</span>
-            <div class="alert-body">
-                <strong>CLOUDFLARE HAS BLOCKED YOUR IP</strong><br>
-                Due to using a direct link to the website. Please access Afrahtafreeh only through the official
-                search entry point to avoid security restrictions.
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>NEXTPULSE</h1>
             </div>
-            <button class="alert-close" id="dismissAlert" aria-label="Dismiss alert" title="Dismiss">✕</button>
-        </div>
+            <div id="user-badge" title="View profile" onclick="openSidebar()">
+                <img id="badge-pic" src="" alt="profile">
+            </div>
+        </nav>
+    </header>
 
-        <p class="eyebrow">Afrahtafreeh · Official access</p>
-        <p class="brand">Afrahtafreeh</p>
-        <h1 id="page-title">Please reopen the app from the official website</h1>
-        <p>
-            This saved app page is no longer the correct entry point for the latest version.
-            To receive current content and install updates, open Afrahtafreeh from its official website.
-        </p>
-        <div class="note">
-            <strong>Important:</strong> This page cannot verify whether Cloudflare has blocked your IP.
-            If you are seeing an access or stale-app problem, clear this site’s browsing history,
-            remove the saved app from your device, and then open the official website again.
-            Please avoid sharing direct app links.
+<!-- ── Profile Sidebar ── -->
+    <div id="profile-overlay" onclick="closeSidebar()"></div>
+    <div id="profile-sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" onclick="closeSidebar()"><i class="fas fa-times"></i></button>
+            <img id="sidebar-avatar" class="sidebar-avatar" src="" alt="profile">
+            <div class="sidebar-name" id="sidebar-name"></div>
+            <div class="sidebar-college" id="sidebar-college"></div>
         </div>
-        <p>Search Google for this exact text:</p>
-        <div class="search-row">
-            <code id="search-text">site:afrahtafreeh.site</code>
-            <button id="copy-search" type="button" aria-label="Copy Google search text">
-                <span aria-hidden="true">⧉</span> Copy
+        <div class="sidebar-body">
+            <div class="sidebar-email-row">
+                <i class="fas fa-envelope"></i>
+                <span id="sidebar-email"></span>
+            </div>
+            <div class="sidebar-section" style="margin-top:1.1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
+                <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#718096;margin-bottom:0.65rem;display:flex;align-items:center;gap:0.4rem;">
+                    <i class="fas fa-robot" style="color:#6b46c1;"></i> AI Features — Groq API Key
+                </div>
+                <div id="groq-key-status-bar" style="font-size:0.78rem;margin-bottom:0.6rem;"></div>
+                <div style="display:flex;gap:0.4rem;margin-bottom:0.5rem;">
+                    <input type="text" id="sidebar-groq-input" placeholder="Paste Groq API key (gsk_…)"
+                        style="flex:1;padding:0.5rem 0.7rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.83rem;color:#2d3748;outline:none;font-family:monospace;"
+                        onfocus="this.style.borderColor='#6b46c1'" onblur="this.style.borderColor='#e2e8f0'">
+                    <button onclick="saveSidebarGroqKey()"
+                        style="padding:0.5rem 0.85rem;background:#6b46c1;color:white;border:none;border-radius:8px;font-size:0.82rem;font-weight:600;cursor:pointer;flex-shrink:0;">
+                        Save
+                    </button>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <a href="quizx/Aiquiz/groq.html" target="_blank"
+                        style="font-size:0.75rem;color:#6b46c1;font-weight:600;text-decoration:none;">
+                        <i class="fas fa-external-link-alt"></i> Get free API key
+                    </a>
+                    <button onclick="removeSidebarGroqKey()"
+                        style="font-size:0.73rem;color:#a0aec0;background:none;border:none;cursor:pointer;padding:0;">
+                        Remove key
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-section" style="margin-top:1.1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <div style="display:flex;align-items:center;gap:0.55rem;">
+                        <i id="theme-icon" class="fas fa-moon" style="color:#6b46c1;font-size:1rem;"></i>
+                        <span id="theme-label" style="font-size:0.88rem;font-weight:600;color:inherit;">Dark Mode</span>
+                    </div>
+                    <label class="sidebar-theme-toggle">
+                        <input type="checkbox" id="theme-toggle-input" onchange="handleThemeToggle(this)">
+                        <span class="sidebar-toggle-slider"></span>
+                    </label>
+                </div>
+                <p id="theme-hint" style="font-size:0.72rem;color:#a0aec0;margin-top:0.4rem;">Classic dark — easier on the eyes</p>
+            </div>
+            <button class="sidebar-logout" onclick="logOut()">
+                <i class="fas fa-sign-out-alt"></i> Log Out
             </button>
         </div>
-        <div class="actions">
-            
-            <button class="button secondary" id="instructionsBtn">Chatbot instructions</button>
-        </div>
-        <p class="small">After opening the official site, use the chatbot 🤖 button in the lower-right corner for installation instructions.</p>
-    </main>
+    </div>
 
-    <!-- MODAL POPUP -->
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <div class="modal-header">
-                <h2 id="modalTitle">📘 NEXTPULSE · Installation Guide</h2>
-                <button class="modal-close" id="modalClose" aria-label="Close popup">✕</button>
+    <!-- ── Continue Watching Section ── -->
+    <div id="continue-watching-wrap" class="cw-wrap">
+        <h2 class="cw-heading"><i class="fas fa-history"></i> Continue Watching</h2>
+        <div id="cw-card" class="cw-card" onclick="openLastWatched()">
+            <div class="cw-thumb-wrap">
+                <img id="cw-thumb" alt="thumbnail"
+                    onerror="this.style.display='none';document.getElementById('cw-thumb-fallback').style.display='flex'">
+                <div id="cw-thumb-fallback" class="cw-thumb-fb" style="display:none;">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div class="cw-play-overlay"><i class="fas fa-play"></i></div>
             </div>
-            <div class="modal-body">
-                <iframe src="https://graph.org/NEXTPULSE-08-02" title="NEXTPULSE installation guide"></iframe>
+            <div class="cw-info">
+                <div class="cw-text">
+                    <div id="cw-title" class="cw-title">—</div>
+                    <div id="cw-meta" class="cw-meta"></div>
+                    <span class="cw-badge"><i class="fas fa-play" style="font-size:0.6rem;"></i> Resume</span>
+                </div>
+                <i class="fas fa-chevron-right cw-chevron"></i>
             </div>
         </div>
     </div>
 
+    <!-- ── Free Open Source Notice ── -->
+    <div class="free-notice">
+        <i class="fas fa-heart"></i>
+        <span>Nextpulse is a free open source for medicos so don't pay anyone</span>
+    </div>
+
+    <!-- ── Quick Access Grid ── -->
+    <div class="qa-wrap">
+        <h2 class="qa-heading"><i class="fas fa-bolt"></i> Quick Access</h2>
+        <div class="qa-grid">
+            
+            <a href="opd/opd.html" class="qa-item">
+               <div class="qa-icon" style="background:#ebf4ff;">
+                   <i class="fa-solid fa-book-open" style="color:#2c5282; font-size:1.1rem;"></i>
+               </div>
+               <div>
+                    <div class="qa-label">OPD MASTERY</div>
+                    <div class="qa-sub">Clinical E-BOOK</div>
+               </div>
+            </a>
+            <a href="opd/BTRopd.html" class="qa-item">
+               <div class="qa-icon" style="background:#ebf4ff;">
+                   <i class="fa-solid fa-book-open" style="color:#2c5282; font-size:1.1rem;"></i>
+               </div>
+               <div>
+                    <div class="qa-label">BTR OPD</div>
+                    <div class="qa-sub">Both OPT and Emergency</div>
+               </div>
+            </a>
+            <a href="00x12345.html" class="qa-item">
+                <div class="qa-icon" style="background:#ebf4ff;">
+                    <i class="fas fa-play-circle" style="color:#2c5282; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label">Video Lectures</div>
+                    <div class="qa-sub">All platforms</div>
+                </div>
+            </a>
+            <a href="quizx/index.html" class="qa-item">
+                <div class="qa-icon" style="background:#fff5eb;">
+                    <i class="fas fa-question-circle" style="color:#dd6b20; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label">Question Bank</div>
+                    <div class="qa-sub">Practice MCQs</div>
+                </div>
+            </a>
+            <a href="searchx.html" class="qa-item">
+                <div class="qa-icon" style="background:#f0fff4;">
+                    <i class="fas fa-search" style="color:#276749; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label">Search</div>
+                    <div class="qa-sub">Find lectures</div>
+                </div>
+            </a>
+            <a href="quizx/Aiquiz/index.html" class="qa-item">
+                <div class="qa-icon" style="background:#faf5ff;">
+                    <i class="fas fa-brain" style="color:#6b46c1; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label">AI Quiz</div>
+                    <div class="qa-sub">Smart practice</div>
+                </div>
+            </a>
+            <a href="pomodaro/index.html" class="qa-item">
+                <div class="qa-icon" style="background:#ebf8ff;">
+                    <i class="fas fa-clock" style="color:#2b6cb0; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label">Pomodoro</div>
+                    <div class="qa-sub">Focus timer</div>
+                </div>
+            </a>
+        </div>
+    </div>
+<!-- Ezoic removed: replaced by GAM/ADX app_top slot above -->
+    <!-- ── Collaborators Section (click to zoom image) ── -->
+    <div class="collab-wrap">
+        <h2 class="collab-heading"><i class="fas fa-users"></i> Collaborators</h2>
+        <div class="collab-card" onclick="openImageZoom('collabe.png')" style="cursor:pointer;">
+            <img src="collabe.png" alt="Team Medical Content" class="collab-img"
+                onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'width:52px;height:52px;border-radius:14px;flex-shrink:0;background:#e8f0fe;display:flex;align-items:center;justify-content:center;font-size:1.5rem;border:2px solid #e2e8f0;\'>🏥</div>')">
+            <div class="collab-info">
+                <div class="collab-name">Team Medical Content</div>
+                <div class="collab-role">Content Partner &amp; Review</div>
+                <span class="collab-badge-icon"><i class="fas fa-check-circle"></i> Verified</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ✨ Share a Lecture – Cute Support Card ── -->
+    <div class="share-lecture-card">
+        <div class="sl-content">
+            <div class="sl-icon">📚✨</div>
+            <h3>Have a lecture we're missing? ⛳</h3>
+            <p>If you have any lecture that's not in the app yet, please share it with us on Telegram. Your little help means a lot! 💖</p>
+            <a href="https://t.me/Nextpulse_support_bot" target="_blank" class="sl-btn">
+                <i class="fab fa-telegram-plane"></i> Please Share Here
+            </a>
+        </div>
+    </div>
+
+    <div style="height:1.5rem;"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>About NextPulse</h4>
+                <p style="color: #cbd5e1;">Your trusted source for the latest MBBS news, admission updates, and medical education information in India.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 NextPulse. All rights reserved. | Empowering Future Doctors</p>
+            This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="height: 22px;margin-left: 5px;" />
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+        <a href="00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+        <a href="searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+        <a href="quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    </nav>
+
+    <!-- ── Image Zoom Overlay (lightbox) ── -->
+    <div id="image-zoom-overlay" class="image-zoom-overlay" onclick="closeImageZoom(event)">
+        <button class="image-zoom-close" onclick="closeImageZoom(event)">&times;</button>
+        <img id="zoom-image" src="" alt="zoomed image">
+    </div>
+
     <script>
-        (function() {
-            'use strict';
+        /* ── Load profile into badge + sidebar ── */
+        let _profileData = null;
 
-            // ---- DOM refs ----
-            const dismissBtn = document.getElementById('dismissAlert');
-            const cfAlert = document.getElementById('cfAlert');
-            const instructionsBtn = document.getElementById('instructionsBtn');
-            const modalOverlay = document.getElementById('modalOverlay');
-            const modalClose = document.getElementById('modalClose');
+        async function loadProfile() {
+            let tries = 0;
+            while (!window._supabase && tries++ < 20) {
+                await new Promise(r => setTimeout(r, 100));
+            }
+            if (!window._supabase) return;
 
-            // ---- Dismiss Cloudflare alert ----
-            if (dismissBtn) {
-                dismissBtn.addEventListener('click', function() {
-                    cfAlert.style.display = 'none';
-                });
+            const { data: { session } } = await window._supabase.auth.getSession();
+            if (!session) return;
+
+            const { data: profile } = await window._supabase
+                .from('profiles')
+                .select('name, college, profile_pic_url, groq_api_key')
+                .eq('id', session.user.id)
+                .single();
+
+            if (!profile) return;
+
+            _profileData = { ...profile, email: session.user.email, userId: session.user.id };
+
+            const fallbackAvatar = 'https://ui-avatars.com/api/?name=' +
+                encodeURIComponent(profile.name) + '&background=2c5282&color=fff&size=128&bold=true';
+
+            const picSrc = profile.profile_pic_url || fallbackAvatar;
+
+            const badge = document.getElementById('user-badge');
+            badge.style.display = 'flex';
+            const badgeImg = document.getElementById('badge-pic');
+            badgeImg.src = picSrc;
+            badgeImg.onerror = () => { badgeImg.src = fallbackAvatar; };
+
+            const sideAvatar = document.getElementById('sidebar-avatar');
+            sideAvatar.src = picSrc;
+            sideAvatar.onerror = () => { sideAvatar.src = fallbackAvatar; };
+            document.getElementById('sidebar-name').textContent = profile.name;
+            document.getElementById('sidebar-college').textContent = profile.college || '';
+            document.getElementById('sidebar-email').textContent = session.user.email || '';
+
+            loadGroqKeyStatus(profile.groq_api_key);
+            loadContinueWatching();
+        }
+
+        function loadGroqKeyStatus(groqKey) {
+            const statusBar = document.getElementById('groq-key-status-bar');
+            const input = document.getElementById('sidebar-groq-input');
+
+            if (groqKey && groqKey.length > 0) {
+                const maskedKey = groqKey.substring(0, 6) + '...' + groqKey.substring(groqKey.length - 4);
+                statusBar.innerHTML = `<span style="color:#059669;">✓ API key saved: <strong>${maskedKey}</strong></span>`;
+                input.value = '';
+                input.placeholder = 'Paste a new key to update';
+            } else {
+                statusBar.innerHTML = `<span style="color:#dc2626;">✗ No API key configured</span>`;
+                input.value = '';
+                input.placeholder = 'Paste Groq API key (gsk_…)';
+            }
+        }
+
+        async function saveSidebarGroqKey() {
+            if (!_profileData || !_profileData.userId) {
+                alert('Please wait for profile to load');
+                return;
             }
 
-            // ---- Open modal popup on "Chatbot instructions" click ----
-            function openModal() {
-                modalOverlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
+            const input = document.getElementById('sidebar-groq-input');
+            const key = input.value.trim();
+
+            if (!key) {
+                alert('Please enter a Groq API key');
+                return;
             }
 
-            function closeModal() {
-                modalOverlay.classList.remove('active');
-                document.body.style.overflow = '';
+            if (!key.startsWith('gsk_')) {
+                alert('Invalid Groq API key format (should start with gsk_)');
+                return;
             }
 
-            if (instructionsBtn) {
-                instructionsBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    // Show a quick second alert as a reminder (optional, but we already have the banner)
-                    // Open the modal
-                    openModal();
-                });
-            }
+            try {
+                const { error } = await window._supabase
+                    .from('profiles')
+                    .update({ groq_api_key: key })
+                    .eq('id', _profileData.userId);
 
-            // Close modal via × button
-            if (modalClose) {
-                modalClose.addEventListener('click', closeModal);
-            }
-
-            // Close modal by clicking overlay background
-            if (modalOverlay) {
-                modalOverlay.addEventListener('click', function(e) {
-                    if (e.target === modalOverlay) {
-                        closeModal();
-                    }
-                });
-            }
-
-            // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
-                    closeModal();
+                if (error) {
+                    alert('Failed to save key: ' + error.message);
+                    return;
                 }
-            });
 
-            // ---- Copy search text ----
-            const copyButton = document.getElementById('copy-search');
-            const searchText = document.getElementById('search-text').textContent;
+                _profileData.groq_api_key = key;
+                loadGroqKeyStatus(key);
+                alert('✓ Groq API key saved successfully!');
+            } catch (err) {
+                alert('Error saving key: ' + err.message);
+            }
+        }
 
-            if (copyButton) {
-                copyButton.addEventListener('click', async function() {
-                    try {
-                        await navigator.clipboard.writeText(searchText);
-                        copyButton.innerHTML = '<span aria-hidden="true">✓</span> Copied';
-                    } catch (_) {
-                        const helper = document.createElement('textarea');
-                        helper.value = searchText;
-                        helper.setAttribute('readonly', '');
-                        helper.style.position = 'fixed';
-                        helper.style.opacity = '0';
-                        document.body.appendChild(helper);
-                        helper.select();
-                        document.execCommand('copy');
-                        helper.remove();
-                        copyButton.innerHTML = '<span aria-hidden="true">✓</span> Copied';
-                    }
-                    window.setTimeout(function() {
-                        copyButton.innerHTML = '<span aria-hidden="true">⧉</span> Copy';
-                    }, 1800);
-                });
+        async function removeSidebarGroqKey() {
+            if (!_profileData || !_profileData.userId) {
+                alert('Please wait for profile to load');
+                return;
             }
 
-            // ---- Ensure iframe loads reliably (optional: reload on open) ----
-            // We don't force a reload, but we could if needed.
-            // The iframe will load naturally when the modal opens.
+            if (!confirm('Are you sure you want to remove your Groq API key?')) {
+                return;
+            }
 
-        })();
+            try {
+                const { error } = await window._supabase
+                    .from('profiles')
+                    .update({ groq_api_key: null })
+                    .eq('id', _profileData.userId);
+
+                if (error) {
+                    alert('Failed to remove key: ' + error.message);
+                    return;
+                }
+
+                _profileData.groq_api_key = null;
+                loadGroqKeyStatus(null);
+                alert('✓ Groq API key removed successfully!');
+            } catch (err) {
+                alert('Error removing key: ' + err.message);
+            }
+        }
+
+        async function loadContinueWatching() {
+            let lw = null;
+            try {
+                const stored = localStorage.getItem('last_watched');
+                if (stored) {
+                    const p = JSON.parse(stored);
+                    if (p && p.streamUrl) lw = p;
+                }
+            } catch (_) {}
+
+            if (!lw) return;
+
+            renderContinueWatching(lw);
+
+            if (!lw.thumbnailUrl && lw.jsonPath && lw.jsonPath.length > 5) {
+                try {
+                    const resp = await fetch('1234xxx/' + lw.jsonPath);
+                    if (resp.ok) {
+                        const json = await resp.json();
+                        const lectures = json.lectures || json;
+                        if (Array.isArray(lectures)) {
+                            const idx = (lw.lectureIndex != null && lectures[lw.lectureIndex])
+                                ? lw.lectureIndex
+                                : lectures.findIndex(l => l.title === lw.title);
+                            const lec = lectures[idx >= 0 ? idx : 0];
+                            if (lec && lec.thumbnailUrl) {
+                                lw.thumbnailUrl = lec.thumbnailUrl;
+                                try { localStorage.setItem('last_watched', JSON.stringify(lw)); } catch (_) {}
+                                renderContinueWatching(lw);
+                            }
+                        }
+                    }
+                } catch (_) {}
+            }
+
+            try {
+                let tries = 0;
+                while (!window._supabase && tries++ < 15) {
+                    await new Promise(r => setTimeout(r, 100));
+                }
+                if (!window._supabase) return;
+
+                const { data: { session } } = await window._supabase.auth.getSession();
+                if (!session) return;
+
+                const { data, error } = await window._supabase
+                    .from('profiles')
+                    .select('last_watched')
+                    .eq('id', session.user.id)
+                    .single();
+
+                if (error || !data) return;
+                const remote = data.last_watched;
+                if (remote && remote.streamUrl) {
+                    const localTime  = new Date(lw.savedAt  || 0).getTime();
+                    const remoteTime = new Date(remote.savedAt || 0).getTime();
+                    if (remoteTime > localTime) {
+                        lw = remote;
+                        renderContinueWatching(lw);
+                    }
+                }
+            } catch (_) {}
+        }
+
+        function renderContinueWatching(lw) {
+            if (!lw) return;
+            document.getElementById('continue-watching-wrap').style.display = 'block';
+            document.getElementById('cw-title').textContent = lw.title || '—';
+            document.getElementById('cw-meta').textContent = lw.meta || '';
+            if (lw.thumbnailUrl) {
+                document.getElementById('cw-thumb').src = lw.thumbnailUrl;
+            }
+        }
+
+        function openLastWatched() {
+            try {
+                const stored = localStorage.getItem('last_watched');
+                if (stored) {
+                    const lw = JSON.parse(stored);
+                    if (lw && lw.streamUrl) {
+                        const params = new URLSearchParams();
+                        params.set('stream', lw.streamUrl);
+                        if (lw.title)        params.set('title', lw.title);
+                        if (lw.jsonPath)     params.set('jsonPath', lw.jsonPath);
+                        if (lw.lectureIndex != null) params.set('lectureIndex', lw.lectureIndex);
+                        if (lw.subject)      params.set('subject', lw.subject);
+                        if (lw.platform)     params.set('platformPath', lw.platform);
+                        if (lw.downloadUrl)  params.set('download', lw.downloadUrl);
+                        window.location.href = 'stream-player.html?' + params.toString();
+                    }
+                }
+            } catch (_) {}
+        }
+
+        /* ── Theme Toggle ── */
+        function handleThemeToggle(checkbox) {
+            const isDark = checkbox.checked;
+            window._theme.set(isDark ? 'dark' : 'light');
+            const icon  = document.getElementById('theme-icon');
+            const label = document.getElementById('theme-label');
+            const hint  = document.getElementById('theme-hint');
+            if (isDark) {
+                icon.className = 'fas fa-moon';
+                icon.style.color = '#6b46c1';
+                label.textContent = 'Dark Mode';
+                hint.textContent  = 'Classic dark — easier on the eyes';
+            } else {
+                icon.className = 'fas fa-sun';
+                icon.style.color = '#ed8936';
+                label.textContent = 'Light Mode';
+                hint.textContent  = 'Bright and clean';
+            }
+        }
+
+        function initThemeToggle() {
+            const isDark   = window._theme.get() === 'dark';
+            const checkbox = document.getElementById('theme-toggle-input');
+            if (!checkbox) return;
+            checkbox.checked = isDark;
+            const icon  = document.getElementById('theme-icon');
+            const label = document.getElementById('theme-label');
+            const hint  = document.getElementById('theme-hint');
+            if (isDark) {
+                icon.className = 'fas fa-moon';
+                icon.style.color = '#6b46c1';
+                label.textContent = 'Dark Mode';
+                hint.textContent  = 'Classic dark — easier on the eyes';
+            } else {
+                icon.className = 'fas fa-sun';
+                icon.style.color = '#ed8936';
+                label.textContent = 'Light Mode';
+                hint.textContent  = 'Bright and clean';
+            }
+        }
+
+        /* ── Image Zoom / Lightbox ── */
+        function openImageZoom(src) {
+            const overlay = document.getElementById('image-zoom-overlay');
+            const img = document.getElementById('zoom-image');
+            img.src = src;
+            overlay.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageZoom(event) {
+            // Close only if the click is directly on the overlay background or the close button
+            if (event && event.target !== document.getElementById('image-zoom-overlay') &&
+                event.target !== document.querySelector('.image-zoom-close')) {
+                return;
+            }
+            const overlay = document.getElementById('image-zoom-overlay');
+            overlay.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+
+        function openSidebar() {
+            document.getElementById('profile-overlay').style.display = 'block';
+            document.getElementById('profile-sidebar').classList.add('open');
+        }
+
+        function closeSidebar() {
+            document.getElementById('profile-overlay').style.display = 'none';
+            document.getElementById('profile-sidebar').classList.remove('open');
+        }
+
+        async function logOut() {
+            await window._supabase.auth.signOut();
+            window.location.replace('./auth.html');
+        }
+
+        window.addEventListener('load', () => {
+            loadProfile();
+            initThemeToggle();
+        });
     </script>
 </body>
 </html>
