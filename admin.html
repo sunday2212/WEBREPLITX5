@@ -371,9 +371,9 @@
         <div class="form-group">
           <label class="form-label">Click URL <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
           <input type="text" id="notif-url" class="form-input"
-            placeholder="/app.html  or  /1234xxx/marrow/subjects.html"
+            placeholder="/appx.html  or  /1234xxx/marrow/subjects.html"
             oninput="updatePreview()">
-          <div class="form-hint">Leave blank to open the home page. Use relative paths like <code>/app.html</code></div>
+          <div class="form-hint">Leave blank to open the home page. Use relative paths like <code>/appx.html</code></div>
         </div>
 
         <!-- Live preview -->
@@ -384,7 +384,7 @@
             <div>
               <div class="notif-preview-title" id="preview-title">Title will appear here</div>
               <div class="notif-preview-body"  id="preview-body">Message body will appear here…</div>
-              <div class="notif-preview-url"   id="preview-url">nextpulse.pages.dev/app.html</div>
+              <div class="notif-preview-url"   id="preview-url">nextpulse.pages.dev/appx.html</div>
             </div>
           </div>
         </div>
@@ -567,7 +567,7 @@
   function updatePreview() {
     const title = document.getElementById('notif-title').value || 'Title will appear here';
     const body  = document.getElementById('notif-body').value  || 'Message body will appear here…';
-    const url   = document.getElementById('notif-url').value   || '/app.html';
+    const url   = document.getElementById('notif-url').value   || '/appx.html';
     document.getElementById('preview-title').textContent = title;
     document.getElementById('preview-body').textContent  = body;
     document.getElementById('preview-url').textContent   = window.location.host + (url.startsWith('/') ? url : '/' + url);
@@ -602,7 +602,7 @@
     maintenance: {
       title: '🔧 Scheduled Maintenance',
       body:  'NextPulse will be down briefly for updates. We\'ll be back shortly!',
-      url:   '/app.html'
+      url:   '/appx.html'
     }
   };
 
@@ -623,7 +623,7 @@
   async function sendNotification() {
     const title = document.getElementById('notif-title').value.trim();
     const body  = document.getElementById('notif-body').value.trim();
-    const url   = document.getElementById('notif-url').value.trim() || '/app.html';
+    const url   = document.getElementById('notif-url').value.trim() || '/appx.html';
 
     const btn    = document.getElementById('send-btn');
     const banner = document.getElementById('result-banner');

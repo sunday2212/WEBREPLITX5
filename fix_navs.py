@@ -22,7 +22,7 @@ for root, _, files in os.walk("."):
 
             # Compute correct relative paths
             nav_code = NAV_TEMPLATE.format(
-                app=rel_path(file_path, "./app.html"),
+                app=rel_path(file_path, "./appx.html"),
                 platforms=rel_path(file_path, "./00x1234.html"),
                 search=rel_path(file_path, "./search.html"),
                 quiz=rel_path(file_path, "./quiz/index.html"),

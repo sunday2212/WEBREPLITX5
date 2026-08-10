@@ -1,7 +1,7 @@
 /**
  * push-subscribe.js
  * Registers the user's browser for Web Push notifications.
- * Include this script on app.html (after supabase-config.js).
+ * Include this script on appx.html (after supabase-config.js).
  */
 (function () {
   'use strict';

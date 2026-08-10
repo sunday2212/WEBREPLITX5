@@ -13,7 +13,7 @@ function goBack() {
 
 // Function to go to home page
 function goHome() {
-  window.location.href = '../app.html';
+  window.location.href = '../appx.html';
 }
 
 // Function to redirect to not-updated page when a link is broken

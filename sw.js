@@ -3,7 +3,7 @@ const urlsToCache = [
   './',
   './index.html',
   './splash.html',
-  './app.html',
+  './appx.html',
   './00x1234.html',
   './search.html',
   './styles.css',
@@ -17,7 +17,7 @@ const urlsToCache = [
   './platforms/dams/dams-subjects.html',
   './platforms/prepladder/prepladder-subjects.html',
   './quiz/index.html',
-  './quiz/app.html',
+  './quiz/appx.html',
   './quiz/00x1234.html',
   './quiz/bookmarks.html',
   './quiz/qbank-main.css'
@@ -127,7 +127,7 @@ self.addEventListener('push', (event) => {
     body:            data.body   || '',
     icon:            data.icon   || '/iconss-192.png',
     badge:           data.badge  || '/iconss-192.png',
-    data:            { url: data.url || '/app.html' },
+    data:            { url: data.url || '/appx.html' },
     vibrate:         [200, 100, 200],
     requireInteraction: false,
     tag:             'nextpulse-notification',
@@ -141,7 +141,7 @@ self.addEventListener('push', (event) => {
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
 
-  const targetUrl = event.notification.data?.url || '/app.html';
+  const targetUrl = event.notification.data?.url || '/appx.html';
 
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then(windowClients => {

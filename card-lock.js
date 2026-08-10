@@ -633,7 +633,7 @@
       }
 
       // Reuse existing Supabase client if page already created one (_supabase is
-      // defined in some pages like app.html; otherwise create a fresh client)
+      // defined in some pages like appx.html; otherwise create a fresh client)
       _sb = (typeof _supabase !== 'undefined' && _supabase)
         ? _supabase
         : supabase.createClient(SUPABASE_URL, SUPABASE_KEY);

@@ -19,7 +19,7 @@
     <h2>Enter the site — ₹5</h2>
     <p>Secure test checkout (Razorpay)</p>
     <button id="payBtn">Pay ₹5</button>
-    <p class="small">This uses Razorpay test key (client-side). After payment you'll be redirected to <code>app.html</code>.</p>
+    <p class="small">This uses Razorpay test key (client-side). After payment you'll be redirected to <code>appx.html</code>.</p>
   </div>
 
   <!-- Razorpay checkout script -->
@@ -42,14 +42,14 @@
           // image: "", // optional: your logo url
           // order_id: "", // optional if you create an order on server
           handler: function (response){
-            // On successful payment — redirect to app.html with payment id
+            // On successful payment — redirect to appx.html with payment id
             // response contains razorpay_payment_id, razorpay_order_id (if set), razorpay_signature (if order_id used)
             try {
               const pid = encodeURIComponent(response.razorpay_payment_id || "");
-              window.location.href = "app.html?payment_id=" + pid;
+              window.location.href = "appx.html?payment_id=" + pid;
             } catch (e) {
               // fallback redirect
-              window.location.href = "app.html";
+              window.location.href = "appx.html";
             }
           },
           modal: {
@@ -79,7 +79,7 @@
   </script>
 <script src="theme.js"></script>
 <nav class="bottom-nav">
-      <a href="app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+      <a href="appx.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
       <a href="00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
       <a href="searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
       <a href="quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
