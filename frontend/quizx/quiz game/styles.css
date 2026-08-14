@@ -171,3 +171,10 @@ button.big{font-size:1.05rem;padding:.9rem 1.6rem}
   padding:.65rem 1rem;border-radius:10px;cursor:pointer;font-weight:600;flex:1;min-width:140px;transition:.15s}
 .ghost:hover:not(:disabled){background:rgba(139,123,255,.14)}
 .ghost:disabled{opacity:.6;cursor:default}
+
+
+/* bookmark / question preview rows */
+.bm-row{display:flex;align-items:center;gap:.7rem;text-align:left;width:100%}
+.bm-thumb{width:54px;height:54px;object-fit:cover;border-radius:8px;flex:0 0 auto;border:1px solid var(--line)}
+.bm-txt{display:block;font-size:.9rem;line-height:1.35}
+.bm-tag{display:block;font-size:.72rem;color:var(--pri2);font-weight:600;margin-bottom:.15rem;text-transform:uppercase;letter-spacing:.03em}

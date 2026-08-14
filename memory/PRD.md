@@ -14,7 +14,13 @@ Stack: plain HTML/CSS/JS + Supabase JS client. AI via user's Groq key (profiles.
 - Supabase tables: profiles, quiz_bookmarks, game_rooms, round_answers (user runs schema.sql).
 
 ## Implemented (2026-06)
-### Fork bug-fix batch (all verified via testing_agent — iteration_3.json, 100%)
+### Fork bug-fix batch (verified via testing_agent — iteration_3 & iteration_4, 100%)
+0. **Refined batch (iteration_4)**: unified Manual+AI prompt now corrects filled fields AND
+   fills blanks (question/options/correct/explanation) from NEET PG knowledge, or builds a full
+   MCQ when blank. AI Question Bank now has Subject + Sub-topic + **Hardness** (`DIFFICULTY_LEVELS`)
+   dropdowns plus a free-text specific-topic input. **From Bookmarks** now resolves each bookmark
+   and shows a readable question preview (`.bm-txt`) + image thumbnail (`.bm-thumb`) instead of raw
+   HTML/label. Folder question snippets also render as plain text. Helpers `plain()`/`firstImg()`.
 1. **Question-bank HTML now renders** (was showing raw `<p><span…>` code). `game.js` `rich()` = DOM
    allowlist sanitizer (safe formatting tags + IMG https src; strips style/script/iframe/svg/inline
    styles/event handlers). Applied to question text, options, results, results popup. Images scale via CSS.

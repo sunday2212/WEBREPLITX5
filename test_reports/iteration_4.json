@@ -1,0 +1,27 @@
+{
+  "summary": "Frontend-only refined-requirements retest completed against the public DEMO URL. All 5 requested areas passed: the source picker exposes exactly four merged sources with no AI card; blank Manual Entry AI fallback fills the MCQ and starts a round; AI Question Bank exposes and accepts Subject, dependent Sub-topic, 3-level Hardness, and specific-topic controls; and five bookmark rows render readable, pickable question previews without literal HTML. Bank generation, bookmark selection, desktop presentation, and 390px mobile reachability were also verified.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/test_reports/iteration_4.json"
+  ],
+  "success_rate": {
+    "backend": "N/A (frontend-only request)",
+    "frontend": "100% (5/5 requested refined requirement areas passed; supplementary integration and mobile checks also passed)"
+  },
+  "seed_data_creation": "No persistent data created; DEMO mode was reset between scenarios and used only its in-memory sample bank.",
+  "should_call_test_agent_after_fix": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Public DEMO URL passed with source dataset exactly [manual, bookmarks, bank, folder]. Blank #m-ai populated #m-q and all four options, then #m-go rendered matching .qtext and four .opt buttons. Bank exposed 19 subjects, 13 initial Anatomy sub-topics, values Easy/Medium/Hard, and #b-top; selecting Psychiatry replaced chapters with 15 Psychiatry entries. Five .bm-row/.bm-txt sample previews were non-empty, tag-free visible text, and selecting one started the represented question. Real provider-backed AI correction and LIVE Supabase bookmarks/images remain untested because this request supplied DEMO mode with no login/API key.",
+  "rca_of_the_issue": "No defect reproduced in the refined DEMO requirements. The implementation merges AI behavior into formManual(), builds bank controls from Aiquiz SUBJECTS/DIFFICULTY_LEVELS, and converts bookmark question HTML through plain(rich(...)) before escaped preview rendering."
+}
