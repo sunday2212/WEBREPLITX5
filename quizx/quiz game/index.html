@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Battle — Real-Time Multiplayer MCQ</title>
+  <!-- Google AdSense Auto Ads (optional): replace ca-pub-XXXX and uncomment.
+       Layout below is auto-ads friendly: normal document flow, scrollable body,
+       no full-screen overlay locks.
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script>
+  -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎯 <span>Quiz Battle</span> <em id="room-badge">…</em></div>
+    <div class="me">
+      <img id="me-avatar" class="av" alt="" />
+      <div class="me-info"><div id="me-name" class="nm">…</div><div id="me-college" class="col"></div></div>
+      <button id="btn-settings" class="icon" title="Settings">⚙️</button>
+      <button id="btn-leave" class="icon danger" title="Leave">⏻</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage-card"><div id="stage"><div class="center"><div class="spinner"></div><p class="muted">Joining room…</p></div></div></section>
+    <aside class="side">
+      <div class="lb-head"><h3>🏆 Leaderboard</h3><span class="count"><b id="lb-count">0</b> online</span></div>
+      <div id="leaderboard"></div>
+      <!-- Ad slot (only renders if ADSENSE_CLIENT set in config.js) -->
+      <div id="ad-slot" class="ad-slot"></div>
+    </aside>
+  </main>
+
+  <div id="modal-root"></div>
+
+  <script type="module">
+    import { CONFIG, DEMO_MODE } from './config.js';
+    import { Game } from './game.js';
+    import { DemoNet } from './net-demo.js';
+
+    async function boot() {
+      let net;
+      if (DEMO_MODE) {
+        net = new DemoNet();
+      } else {
+        const { SupabaseNet } = await import('./net-supabase.js');
+        net = new SupabaseNet();
+      }
+      const game = new Game(net);
+      window.__game = game;
+      document.getElementById('btn-settings').addEventListener('click', () => game.openSettings());
+      document.getElementById('btn-leave').addEventListener('click', async () => {
+        await game.leave();
+        document.getElementById('stage').innerHTML =
+          '<div class="center"><h2>You left the room</h2><p class="muted">Your points for this session are gone. Refresh to rejoin.</p></div>';
+      });
+      // AdSense slot
+      if (CONFIG.ADSENSE_CLIENT) {
+        const el = document.getElementById('ad-slot');
+        el.innerHTML = `<ins class="adsbygoogle" style="display:block" data-ad-client="${CONFIG.ADSENSE_CLIENT}" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+        try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e){}
+      }
+      await game.start();
+    }
+    boot();
+  </script>
+</body>
+</html>
