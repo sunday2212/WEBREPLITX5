@@ -143,3 +143,31 @@ button.big{font-size:1.05rem;padding:.9rem 1.6rem}
   .source-grid{grid-template-columns:1fr}
   .src[data-src=folder]{grid-column:auto}
 }
+
+
+/* ---- rendered question-bank / AI HTML content ---- */
+.qtext p,.opt p,.explanation p,.correct p{margin:0}
+.qtext p + p,.opt p + p{margin-top:.4rem}
+.qtext img,.opt img,.explanation img,.correct img{max-width:100%;height:auto;
+  border-radius:8px;display:block;margin:.5rem 0}
+.qtext span,.opt span,.correct span,.explanation span{font-size:inherit !important}
+
+/* answered reveal + explanation */
+.explanation{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--pri2);
+  border-radius:10px;padding:.7rem .9rem;margin:.8rem 0;font-size:.95rem;line-height:1.45;text-align:left}
+.explanation b{display:block;margin-bottom:.3rem;color:var(--pri2)}
+.reveal{margin-top:.9rem}
+.reveal.bad .correct{color:var(--ok)}
+.opt.is-correct{border-color:var(--ok);background:rgba(46,204,113,.14)}
+
+/* manual-entry form controls */
+.modal-body textarea{width:100%;padding:.65rem;border-radius:10px;background:var(--bg2);
+  border:1px solid var(--line);color:var(--txt);font-size:.95rem;font-family:inherit;resize:vertical}
+.opt-lbl{display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--muted);margin:.6rem 0 .25rem}
+.opt-lbl input{width:auto !important}
+.btn-row{display:flex;gap:.6rem;margin-top:1rem;flex-wrap:wrap}
+.btn-row .primary{margin-top:0;width:auto;flex:1;min-width:140px}
+.ghost{background:transparent;border:1px solid var(--pri2);color:var(--txt);
+  padding:.65rem 1rem;border-radius:10px;cursor:pointer;font-weight:600;flex:1;min-width:140px;transition:.15s}
+.ghost:hover:not(:disabled){background:rgba(139,123,255,.14)}
+.ghost:disabled{opacity:.6;cursor:default}
