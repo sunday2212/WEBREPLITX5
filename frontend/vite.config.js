@@ -127,7 +127,20 @@ export default defineConfig({
     }
   ],
   server: {
-    port: 8080,
-    open: true
+    host: '0.0.0.0',
+    port: 3000,
+    open: false,
+    allowedHosts: true,
+    watch: {
+      ignored: [
+        '**/node_modules/**',
+        '**/dist/**',
+        '**/distx/**',
+        '**/quizx/Brain/**',
+        '**/quizx/prepladder/**',
+        '**/quizx/marrow/**',
+        '**/1234xxx/**',
+      ],
+    },
   }
 })

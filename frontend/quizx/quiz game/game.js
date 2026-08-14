@@ -4,12 +4,53 @@
 // ============================================================================
 
 import { CONFIG } from './config.js';
-import { generateMCQ, randomFromBank, SAMPLE_BANK } from './ai.js';
+import { aiManual, aiBank, randomFromBank, SAMPLE_BANK } from './ai.js';
+import { SUBJECTS } from '../Aiquiz/js/config.js';
 import * as qbank from './qbank.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => (
   { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// Renders trusted question-bank / AI HTML (with images) using a DOM allowlist:
+// only safe formatting tags survive; <style>, <script>, iframe, svg, event
+// handlers, inline styles and non-http image srcs are stripped. Manual player
+// input is untrusted in multiplayer, so this must be an allowlist, not a blacklist.
+const ALLOWED_TAGS = new Set(['P','BR','SPAN','B','STRONG','I','EM','U','SUB','SUP',
+  'IMG','TABLE','THEAD','TBODY','TR','TD','TH','UL','OL','LI','DIV','SMALL',
+  'BLOCKQUOTE','CODE','PRE','HR','FONT']);
+const DROP_TAGS = new Set(['SCRIPT','STYLE','IFRAME','SVG','LINK','META','OBJECT',
+  'EMBED','FORM','INPUT','BUTTON','TEXTAREA','SELECT','AUDIO','VIDEO','BASE',
+  'TITLE','HEAD','NOSCRIPT','TEMPLATE']);
+const IMG_ATTRS = ['src','alt','width','height'];
+const rich = (s) => {
+  const tpl = document.createElement('template');
+  tpl.innerHTML = String(s == null ? '' : s);
+  const clean = (parent) => {
+    Array.from(parent.childNodes).forEach((n) => {
+      if (n.nodeType === Node.COMMENT_NODE) { n.remove(); return; }
+      if (n.nodeType !== Node.ELEMENT_NODE) return; // text nodes pass through
+      const tag = n.tagName;
+      if (DROP_TAGS.has(tag)) { n.remove(); return; }
+      if (!ALLOWED_TAGS.has(tag)) {          // unwrap unknown tag, keep clean children
+        clean(n);
+        while (n.firstChild) parent.insertBefore(n.firstChild, n);
+        n.remove();
+        return;
+      }
+      const keep = tag === 'IMG' ? IMG_ATTRS : [];
+      Array.from(n.attributes).forEach((a) => {
+        const name = a.name.toLowerCase();
+        if (!keep.includes(name)) { n.removeAttribute(a.name); return; }
+        if (name === 'src' && !/^https?:\/\//i.test(String(a.value).trim())) n.removeAttribute(a.name);
+      });
+      clean(n);
+    });
+  };
+  clean(tpl.content);
+  return tpl.innerHTML;
+};
+const expBlock = (q) => q && q.explanation
+  ? `<div class="explanation"><b>Explanation</b><div>${rich(q.explanation)}</div></div>` : '';
 
 const LS = {
   get provider() { return localStorage.getItem('qg_provider') || CONFIG.DEFAULT_AI_PROVIDER; },
@@ -161,7 +202,6 @@ export class Game {
       <p class="muted">Pick how you want to set this round's MCQ.</p>
       <div class="source-grid">
         <button class="src" data-src="manual"><span>✍️</span>Manual Entry</button>
-        <button class="src" data-src="ai"><span>✨</span>AI Auto-Generate</button>
         <button class="src" data-src="bookmarks"><span>⭐</span>From Bookmarks</button>
         <button class="src" data-src="bank"><span>📚</span>AI Question Bank</button>
         <button class="src" data-src="folder"><span>📁</span>Question Bank Folder</button>
@@ -172,7 +212,6 @@ export class Game {
 
   handleSource(src) {
     if (src === 'manual') return this.formManual();
-    if (src === 'ai') return this.formAI();
     if (src === 'bookmarks') return this.listBookmarks();
     if (src === 'bank') return this.formBank();
     if (src === 'folder') return this.formFolder();
@@ -180,33 +219,41 @@ export class Game {
 
   formManual() {
     this.modal(`<h2>Manual Entry</h2>
-      <label>Question</label><input id="m-q" placeholder="Type your question" />
-      ${[0,1,2,3].map(i => `<label>Option ${i+1} <input type="radio" name="m-c" value="${i}" ${i===0?'checked':''}/> correct</label>
+      <label>Question</label><textarea id="m-q" rows="2" placeholder="Type your question (leave blank for a random NEET PG question)"></textarea>
+      ${[0,1,2,3].map(i => `<label class="opt-lbl">Option ${i+1} <input type="radio" name="m-c" value="${i}" ${i===0?'checked':''}/> correct</label>
         <input id="m-o${i}" placeholder="Option ${i+1}" />`).join('')}
-      <button class="primary" id="m-go">Start Round</button>`);
-    $('#m-go', this.modalEl).addEventListener('click', () => {
-      const text = $('#m-q', this.modalEl).value.trim();
-      const options = [0,1,2,3].map(i => $('#m-o'+i, this.modalEl).value.trim());
-      const correctIndex = Number(this.modalEl.querySelector('input[name="m-c"]:checked').value);
-      if (!text || options.some(o => !o)) return this.toast('Fill question and all 4 options');
-      this.commitQuestion({ text, options, correctIndex });
+      <label>Explanation (optional)</label><textarea id="m-exp" rows="2" placeholder="Shown to players after they answer"></textarea>
+      <div class="btn-row">
+        <button class="ghost" id="m-ai" type="button">✨ AI Generate / Fix</button>
+        <button class="primary" id="m-go" type="button">Start Round</button>
+      </div>
+      <p class="muted">AI uses NEET PG medical knowledge: fixes mistakes if filled, generates options/answer if only a question is typed, or a random question if blank.</p>`);
+    const readForm = () => ({
+      question: $('#m-q', this.modalEl).value.trim(),
+      options: [0,1,2,3].map(i => $('#m-o'+i, this.modalEl).value.trim()),
+      correctIndex: Number(this.modalEl.querySelector('input[name="m-c"]:checked').value),
+      explanation: $('#m-exp', this.modalEl).value.trim(),
     });
-  }
-
-  formAI() {
-    const configured = !!LS.key;
-    this.modal(`<h2>AI Auto-Generate</h2>
-      ${configured ? '' : '<p class="warn">No API key saved. Add one in Settings (⚙️) or a sample question will be used.</p>'}
-      <label>Topic (optional)</label><input id="ai-topic" placeholder="e.g. Photosynthesis" />
-      <p class="muted">Provider: <b>${esc(LS.provider)}</b></p>
-      <button class="primary" id="ai-go">Generate & Start</button>`);
-    $('#ai-go', this.modalEl).addEventListener('click', async () => {
-      $('#ai-go', this.modalEl).disabled = true;
-      $('#ai-go', this.modalEl).textContent = 'Generating...';
+    const writeForm = (q) => {
+      $('#m-q', this.modalEl).value = q.text || '';
+      (q.options || []).forEach((o, i) => { const el = $('#m-o'+i, this.modalEl); if (el) el.value = o; });
+      const r = this.modalEl.querySelector(`input[name="m-c"][value="${q.correctIndex || 0}"]`);
+      if (r) r.checked = true;
+      if (q.explanation) $('#m-exp', this.modalEl).value = q.explanation;
+    };
+    $('#m-ai', this.modalEl).addEventListener('click', async () => {
+      const btn = $('#m-ai', this.modalEl); btn.disabled = true; btn.textContent = 'Thinking…';
       try {
-        const q = await generateMCQ($('#ai-topic', this.modalEl).value.trim(), LS.provider, LS.key);
-        this.commitQuestion(q);
-      } catch (e) { this.toast('AI failed: ' + e.message); this.formAI(); }
+        const q = await aiManual(readForm(), LS.provider, LS.key);
+        writeForm(q);
+        this.toast('AI updated the question — review, then Start Round');
+      } catch (e) { this.toast('AI failed: ' + e.message); }
+      finally { btn.disabled = false; btn.textContent = '✨ AI Generate / Fix'; }
+    });
+    $('#m-go', this.modalEl).addEventListener('click', () => {
+      const f = readForm();
+      if (!f.question || f.options.some(o => !o)) return this.toast('Fill question and all 4 options (or use AI)');
+      this.commitQuestion({ text: f.question, options: f.options, correctIndex: f.correctIndex, explanation: f.explanation });
     });
   }
 
@@ -236,22 +283,28 @@ export class Game {
     }));
   }
 
-  // AI Question Bank — subject / chapter / manual topic -> AI generates (Groq)
+  // AI Question Bank — Subject + Chapter dropdowns (from Aiquiz SUBJECTS) -> Groq
   formBank() {
     const configured = !!LS.key;
+    const subjects = Object.keys(SUBJECTS);
     this.modal(`<h2>📚 AI Question Bank</h2>
       ${configured ? '' : '<p class="warn">No API key saved. Add one in Settings (⚙️) or a sample question will be used.</p>'}
-      <label>Subject</label><input id="b-sub" placeholder="e.g. Psychiatry" />
-      <label>Chapter</label><input id="b-chap" placeholder="optional" />
-      <label>Topic</label><input id="b-top" placeholder="optional, e.g. Stupor vs Coma" />
-      <p class="muted">Provider: <b>${esc(LS.provider)}</b></p>
-      <button class="primary" id="b-go">Generate & Start</button>`);
+      <label>Subject</label><select id="b-sub">${subjects.map(s => `<option>${esc(s)}</option>`).join('')}</select>
+      <label>Chapter</label><select id="b-chap"></select>
+      <p class="muted">AI generates a NEET PG question from the selected subject & chapter. Provider: <b>${esc(LS.provider)}</b></p>
+      <button class="primary" id="b-go" type="button">Generate & Start</button>`);
+    const subSel = $('#b-sub', this.modalEl), chapSel = $('#b-chap', this.modalEl);
+    const fillChapters = () => {
+      const chs = SUBJECTS[subSel.value] || [];
+      chapSel.innerHTML = chs.map(c => `<option>${esc(c)}</option>`).join('');
+    };
+    subSel.addEventListener('change', fillChapters); fillChapters();
     $('#b-go', this.modalEl).addEventListener('click', async () => {
-      const parts = ['b-sub', 'b-chap', 'b-top'].map(id => $('#' + id, this.modalEl).value.trim()).filter(Boolean);
-      const composed = parts.join(' - ') || 'general knowledge';
       const btn = $('#b-go', this.modalEl); btn.disabled = true; btn.textContent = 'Generating…';
-      try { const q = await generateMCQ(composed, LS.provider, LS.key); this.commitQuestion(q); }
-      catch (e) { this.toast('AI failed: ' + e.message); this.formBank(); }
+      try {
+        const q = await aiBank({ subject: subSel.value, chapter: chapSel.value }, LS.provider, LS.key);
+        this.commitQuestion(q);
+      } catch (e) { this.toast('AI failed: ' + e.message); this.formBank(); }
     });
   }
 
@@ -310,7 +363,8 @@ export class Game {
   async commitQuestion(q) {
     this.closeModal();
     if (!q || !Array.isArray(q.options) || q.options.length < 2) return this.toast('Invalid question');
-    await this.startAnswering({ text: q.text, options: q.options, correctIndex: q.correctIndex });
+    await this.startAnswering({ text: q.text, options: q.options, correctIndex: q.correctIndex,
+      explanation: q.explanation || q.solution || '' });
   }
 
   // ---------- rendering ----------
@@ -367,16 +421,21 @@ export class Game {
       const answered = this.answers.filter(a => a.round === s.round).length;
       const total = this.present().filter(p => p.id !== s.setterId).length;
       const locked = this.myAnswered || iAmSetter;
+      const myAns = this.answers.find(a => a.round === s.round && a.userId === this.me.id);
+      const reveal = (this.myAnswered && !iAmSetter)
+        ? `<div class="reveal ${myAns && myAns.choiceIndex === q.correctIndex ? 'good' : 'bad'}">
+             <div class="correct">✓ ${rich(q.options[q.correctIndex])}</div>${expBlock(q)}</div>`
+        : '';
       stage.innerHTML = `
         <div class="timerbar"><div class="fill" style="width:${pct}%"></div></div>
         <div class="thead"><span class="pill">Round ${s.round}</span>
           <span class="clock">⏱ ${remaining}s</span>
           <span class="muted">${answered}/${total} answered</span></div>
-        <h2 class="qtext">${esc(q.text)}</h2>
+        <h2 class="qtext">${rich(q.text)}</h2>
         <div class="opts">${q.options.map((o, i) =>
-          `<button class="opt" data-i="${i}" ${locked ? 'disabled' : ''}>${esc(o)}</button>`).join('')}</div>
-        ${iAmSetter ? '<p class="muted">You set this question — watch the others answer.</p>'
-          : (this.myAnswered ? '<p class="ok">Answer locked in! Waiting for others…</p>' : '')}`;
+          `<button class="opt ${locked && i === q.correctIndex ? 'is-correct' : ''}" data-i="${i}" ${locked ? 'disabled' : ''}>${rich(o)}</button>`).join('')}</div>
+        ${iAmSetter ? `<p class="muted">You set this question — watch the others answer.</p>${expBlock(q)}`
+          : (this.myAnswered ? '<p class="ok">Answer locked in! Waiting for others…</p>' + reveal : '')}`;
       if (!locked) stage.querySelectorAll('.opt').forEach(b =>
         b.addEventListener('click', () => this.submitMyAnswer(Number(b.dataset.i))));
       return;
@@ -386,7 +445,8 @@ export class Game {
       const q = s.question;
       stage.innerHTML = `<div class="center"><span class="pill">Round ${s.round} results</span>
         <h2>Correct answer</h2>
-        <div class="correct">${esc(q.options[q.correctIndex])}</div>
+        <div class="correct">${rich(q.options[q.correctIndex])}</div>
+        ${expBlock(q)}
         <p class="muted">Next turn starting soon…</p></div>`;
     }
   }
@@ -409,7 +469,8 @@ export class Game {
         <span class="pts">+${pts}</span></div>`;
     }).join('') || '<p class="muted">No one answered this round.</p>';
     this.modal(`<h2>Round ${s.round} Rankings</h2>
-      <p class="muted">Correct answer: <b>${esc(q.options[q.correctIndex])}</b></p>
+      <p class="muted">Correct answer: <b>${rich(q.options[q.correctIndex])}</b></p>
+      ${expBlock(q)}
       <div class="results">${body}</div>`, true);
     clearTimeout(this._popupT);
     this._popupT = setTimeout(() => this.closeModal(), CONFIG.RESULTS_SECONDS * 1000);
