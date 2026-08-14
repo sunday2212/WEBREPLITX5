@@ -1618,69 +1618,108 @@
             </div>
         </article>
         <!-- Add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
+<!-- add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
 <div class="code-generator"
 style="margin-top: 32px; padding-top: 24px; border-top: 1.5px solid var(--line); display: flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: center;">
 
 <button id="generateCodeBtn"
-style="background: var(--maroon); color: white; border: none; padding: 12px 32px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 700; cursor: pointer; transition: all var(--transition); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(122, 35, 51, 0.25);">
-<i class="fas fa-key" aria-hidden="true"></i> Code
+style="background: var(--maroon); color: white; border: none; padding: 12px 32px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 700; cursor: pointer; transition: all var(--transition); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(122, 35, 51, 0.25); min-width: 160px; justify-content: center;">
+<i class="fas fa-clock" aria-hidden="true"></i> <span id="btnText">Code</span>
 </button>
 
 <span id="generatedCode"
-style="font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--teal-deep); background: var(--teal-light); padding: 8px 24px; border-radius: 10px; min-width: 170px; text-align: center; display: inline-block; border: 1px solid rgba(28, 110, 99, 0.15); letter-spacing: 0.04em;">
-NEXT•••
+style="font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--teal-deep); background: var(--teal-light); padding: 8px 24px; border-radius: 10px; min-width: 170px; text-align: center; display: inline-block; border: 1px solid rgba(28, 110, 99, 0.15); letter-spacing: 0.04em; opacity: 0.3; transition: opacity 0.4s ease;">
+⏳ WAIT
 </span>
 
-<p style="font-size: 0.7rem; color: var(--ink-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; width: 100%; text-align: center; margin: 2px 0 0;">
-Click the button to generate your unique code
+<p id="codeHelper" style="font-size: 0.7rem; color: var(--ink-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; width: 100%; text-align: center; margin: 2px 0 0;">
+Click the button to start the 30‑second countdown
 </p>
 </div>
 
 <script>
     (function() {
         const btn = document.getElementById('generateCodeBtn');
+        const btnText = document.getElementById('btnText');
         const display = document.getElementById('generatedCode');
+        const helper = document.getElementById('codeHelper');
 
-        if (!btn || !display) return;
+        if (!btn || !btnText || !display || !helper) return;
+
+        let countdownInterval = null;
+        let isRunning = false;
+        let remaining = 30;
 
         function generateCode() {
-            // 3 random digits → 000–999
             const digits = String(Math.floor(Math.random() * 1000)).padStart(3, '0');
             return 'NEXT' + digits;
         }
 
-        function animateDisplay(el) {
-            el.style.transition = 'transform 0.12s ease, background 0.2s ease';
-            el.style.transform = 'scale(1.08)';
-            el.style.background = '#d4ede8';
-            setTimeout(() => {
-                el.style.transform = 'scale(1)';
-                el.style.background = 'var(--teal-light)';
-            }, 150);
+        function updateDisplay(code) {
+            display.textContent = code;
+            display.style.opacity = '1';
+            display.style.transition = 'opacity 0.4s ease';
+        }
+
+        function resetDisplay() {
+            display.textContent = '⏳ WAIT';
+            display.style.opacity = '0.3';
+        }
+
+        function startCountdown() {
+            if (isRunning) return;
+
+            isRunning = true;
+            remaining = 30;
+            resetDisplay();
+            btn.disabled = true;
+            btn.style.cursor = 'not-allowed';
+            btn.style.opacity = '0.7';
+            helper.textContent = '⏱️ Please wait... code will appear in 30 seconds';
+
+            // Update button text with timer
+            btnText.textContent = remaining + 's';
+
+            countdownInterval = setInterval(function() {
+                remaining--;
+                btnText.textContent = remaining + 's';
+
+                if (remaining <= 0) {
+                    clearInterval(countdownInterval);
+                    countdownInterval = null;
+                    isRunning = false;
+                    btn.disabled = false;
+                    btn.style.cursor = 'pointer';
+                    btn.style.opacity = '1';
+                    btnText.textContent = 'Code';
+
+                    // Generate and show the code
+                    const code = generateCode();
+                    updateDisplay(code);
+                    helper.textContent = '✅ Code generated — click again for a new one';
+
+                    // Copy to clipboard
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(code).catch(() => {});
+                    }
+
+                    // Brief flash animation on the button
+                    btn.style.background = 'var(--teal)';
+                    setTimeout(() => {
+                        btn.style.background = 'var(--maroon)';
+                    }, 400);
+                }
+            }, 1000);
         }
 
         btn.addEventListener('click', function() {
-            const code = generateCode();
-            display.textContent = code;
-            animateDisplay(display);
-
-            // Also update the button text briefly to show feedback
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied!';
-            btn.style.background = 'var(--teal)';
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = 'var(--maroon)';
-            }, 800);
-
-            // Copy to clipboard
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(code).catch(() => {});
-            }
+            if (isRunning) return; // ignore clicks while timer runs
+            startCountdown();
         });
 
-        // Generate a default code on page load
-        display.textContent = generateCode();
+        // Pre‑fill display with a placeholder
+        resetDisplay();
+        helper.textContent = 'Click the button to start the 30‑second countdown';
     })();
 </script>
 
