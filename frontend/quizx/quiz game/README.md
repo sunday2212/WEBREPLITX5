@@ -16,10 +16,25 @@ quizx/quiz game/
 └── README.md
 ```
 
-## Quick try (Demo Mode)
-Open `index.html` (or serve the folder with any static server). With no Supabase
-keys set, it runs in **DEMO MODE**: you + 3 bots, full turn/timer/scoring loop,
-all 5 question sources, results popup and leaderboard.
+## Status: WIRED TO YOUR REPO ✅
+Placed at `frontend/quizx/quiz game/`. Already configured for WEBREPLITX5:
+- Supabase URL + publishable key filled in `config.js` (from your `supabase-config.js`).
+- Leaderboard reads `profiles.name / college / profile_pic_url`.
+- AI = **Groq**, key read/written to `profiles.groq_api_key` (your profile bar).
+- Question bank + folder dropdown read `/quizx/Brain/file-manifest.json` and the
+  per-topic JSON files (`{questions:[{text, choices:[{id,text}], correct_choice_id}]}`).
+- Bookmarks resolve `quiz_bookmarks.file_path` + `question_index` from those files.
+
+### To finish going live (only 2 steps)
+1. Run `schema.sql` in Supabase SQL Editor (adds only `game_rooms` + `round_answers`;
+   never touches your existing tables/auth).
+2. In Supabase → Auth → URL Configuration, make sure your domain + the game page
+   URL are allowed redirect URLs (Google OAuth returns to the page).
+
+Open it on your site at:  `https://yourdomain.com/quizx/quiz%20game/`
+(add a link/button from your quizx menu). Append `?demo=1` to preview with 3 bots.
+
+### Files
 
 ## Go live (real multiplayer)
 1. In Supabase: **Auth → Providers → Google** → enable and add your OAuth creds.

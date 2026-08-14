@@ -176,101 +176,15 @@ export class SupabaseNet {
     return { ai_provider: CONFIG.DEFAULT_AI_PROVIDER, ai_api_key: this.groqKey || '' };
   }
 
-  // ---- file-based question sources (your bank/bookmarks are JSON files) ----
-  _fileUrl(filePath) {
-    const base = CONFIG.QUESTION_FILE_BASE || (window.location.origin + '/');
-    try { return new URL(filePath, base).href; }
-    catch (e) { return base.replace(/\/$/, '') + '/' + String(filePath).replace(/^\//, ''); }
-  }
-
-  async _loadFile(filePath) {
-    if (!this._fileCache) this._fileCache = {};
-    if (this._fileCache[filePath]) return this._fileCache[filePath];
-    const res = await fetch(this._fileUrl(filePath));
-    if (!res.ok) throw new Error('Cannot load ' + filePath);
-    let json = await res.json();
-    // questions may be at top-level array or under a key
-    const arr = Array.isArray(json) ? json
-      : (json.questions || json.data || json.items || json.mcqs || []);
-    this._fileCache[filePath] = arr;
-    return arr;
-  }
-
-  // Bookmarks store a reference (file_path + question_index); resolve to a real Q.
+  // ---- bookmarks: return raw refs; qbank.js resolves them from JSON files ----
   async getBookmarks() {
-    const { normalizeQuestion } = await import('./ai.js');
     const { data } = await this.sb.from('quiz_bookmarks')
       .select('file_path, question_index, q_no, topic_name, folder_path')
       .eq('user_id', this.me.id).order('bookmarked_at', { ascending: false }).limit(50);
-    const out = [];
-    for (const b of (data || [])) {
-      try {
-        const arr = await this._loadFile(b.file_path);
-        const raw = arr[b.question_index];
-        const q = normalizeQuestion(raw);
-        if (q && q.text) out.push(q);
-      } catch (e) { /* skip unresolved bookmark */ }
-    }
-    return out;
-  }
-
-  // "Question Bank Folder" dropdown, driven by your manifest / metadata JSON.
-  // Returns folder identifiers (path/label). Structure-tolerant.
-  async getFolders() {
-    if (!CONFIG.MANIFEST_URL) return [];
-    try {
-      const res = await fetch(CONFIG.MANIFEST_URL);
-      const m = await res.json();
-      const files = this._manifestFiles(m);
-      const folders = new Set();
-      files.forEach(f => {
-        const p = (f.folder || f.path || f.file_path || f);
-        const dir = String(p).split('/').slice(0, -1).join('/');
-        if (dir) folders.add(dir);
-      });
-      this._manifest = files;
-      return [...folders].sort();
-    } catch (e) { return []; }
-  }
-
-  // Given a folder, return normalized questions from files in that folder.
-  async getBankQuestions(filter) {
-    const { normalizeQuestion } = await import('./ai.js');
-    if (!this._manifest) await this.getFolders();
-    const files = (this._manifest || []).filter(f => {
-      const p = String(f.path || f.file_path || f.folder || f);
-      return !filter.folder || p.startsWith(filter.folder);
-    });
-    const out = [];
-    for (const f of files.slice(0, 5)) {
-      const fp = f.path || f.file_path || f;
-      try {
-        const arr = await this._loadFile(fp);
-        arr.slice(0, 30).forEach(raw => {
-          const q = normalizeQuestion(raw);
-          if (q && q.text) out.push({ ...q, folder: filter.folder });
-        });
-      } catch (e) { /* skip */ }
-    }
-    return out;
-  }
-
-  // Extract a flat file list from various manifest shapes.
-  _manifestFiles(m) {
-    if (Array.isArray(m)) return m;
-    if (m.files) return m.files;
-    if (m.manifest) return m.manifest;
-    // nested tree -> flatten any {path/file_path} leaves
-    const out = [];
-    const walk = (node) => {
-      if (!node) return;
-      if (Array.isArray(node)) return node.forEach(walk);
-      if (typeof node === 'object') {
-        if (node.path || node.file_path) out.push(node);
-        Object.values(node).forEach(walk);
-      }
-    };
-    walk(m);
-    return out;
+    return (data || []).map(r => ({
+      file_path: r.file_path,
+      question_index: r.question_index,
+      topic_name: r.topic_name || r.folder_path,
+    }));
   }
 }

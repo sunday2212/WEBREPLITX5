@@ -5,6 +5,7 @@
 
 import { CONFIG } from './config.js';
 import { generateMCQ, randomFromBank, SAMPLE_BANK } from './ai.js';
+import * as qbank from './qbank.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => (
@@ -210,62 +211,105 @@ export class Game {
   }
 
   async listBookmarks() {
-    let items = [];
-    if (typeof this.net.getBookmarks === 'function') items = await this.net.getBookmarks();
-    if (!items.length) items = SAMPLE_BANK.slice(0, 4); // demo fallback
-    this.modal(`<h2>From Bookmarks</h2>${items.length ? '' : '<p class="muted">No bookmarks found.</p>'}
-      <div class="list">${items.map((q,i) =>
-        `<button class="row" data-i="${i}">${esc(q.text)}</button>`).join('')}</div>`);
-    this.modalEl.querySelectorAll('.row').forEach(b =>
-      b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
+    this.modal(`<h2>⭐ From Bookmarks</h2><div id="bm-list" class="list"><div class="spinner"></div></div>`);
+    let rows = [];
+    try { if (typeof this.net.getBookmarks === 'function') rows = await this.net.getBookmarks(); } catch (e) { /* ignore */ }
+    const el = $('#bm-list', this.modalEl);
+    if (!rows.length) {
+      const items = SAMPLE_BANK.slice(0, 5);
+      el.innerHTML = items.map((q, i) => `<button class="row" data-i="${i}">${esc(q.text)}</button>`).join('')
+        || '<p class="muted">No bookmarks found.</p>';
+      this.modalEl.querySelectorAll('.row').forEach(b =>
+        b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
+      return;
+    }
+    el.innerHTML = rows.map((r, i) => {
+      const label = r.topic_name || String(r.file_path).split('/').pop().replace(/\.json$/i, '').replace(/_/g, ' ');
+      return `<button class="row" data-i="${i}" data-fp="${esc(r.file_path)}" data-qi="${r.question_index}">${esc(label)} · Q${(Number(r.question_index) || 0) + 1}</button>`;
+    }).join('');
+    el.querySelectorAll('.row').forEach(b => b.addEventListener('click', async () => {
+      const orig = b.textContent; b.textContent = 'Loading…';
+      try {
+        const q = await qbank.resolveBookmark(b.dataset.fp, Number(b.dataset.qi));
+        if (q && q.text) this.commitQuestion(q); else { this.toast('Could not load this bookmark'); b.textContent = orig; }
+      } catch (e) { this.toast('Bookmark load failed'); b.textContent = orig; }
+    }));
   }
 
-  async formBank() {
-    const subjects = [...new Set(SAMPLE_BANK.map(q => q.subject))];
-    this.modal(`<h2>AI Question Bank</h2>
-      <label>Subject</label><select id="b-sub"><option value="">Any</option>
-        ${subjects.map(s => `<option>${esc(s)}</option>`).join('')}</select>
+  // AI Question Bank — subject / chapter / manual topic -> AI generates (Groq)
+  formBank() {
+    const configured = !!LS.key;
+    this.modal(`<h2>📚 AI Question Bank</h2>
+      ${configured ? '' : '<p class="warn">No API key saved. Add one in Settings (⚙️) or a sample question will be used.</p>'}
+      <label>Subject</label><input id="b-sub" placeholder="e.g. Psychiatry" />
       <label>Chapter</label><input id="b-chap" placeholder="optional" />
-      <label>Topic</label><input id="b-top" placeholder="optional" />
-      <button class="primary" id="b-go">Pick a question</button>`);
+      <label>Topic</label><input id="b-top" placeholder="optional, e.g. Stupor vs Coma" />
+      <p class="muted">Provider: <b>${esc(LS.provider)}</b></p>
+      <button class="primary" id="b-go">Generate & Start</button>`);
     $('#b-go', this.modalEl).addEventListener('click', async () => {
-      const filter = { subject: $('#b-sub', this.modalEl).value,
-        chapter: $('#b-chap', this.modalEl).value.trim() };
-      let q;
-      if (typeof this.net.getBankQuestions === 'function') {
-        const list = await this.net.getBankQuestions(filter);
-        q = list.length ? list[Math.floor(Math.random()*list.length)] : randomFromBank(filter);
-      } else q = randomFromBank(filter);
-      this.commitQuestion(q);
+      const parts = ['b-sub', 'b-chap', 'b-top'].map(id => $('#' + id, this.modalEl).value.trim()).filter(Boolean);
+      const composed = parts.join(' - ') || 'general knowledge';
+      const btn = $('#b-go', this.modalEl); btn.disabled = true; btn.textContent = 'Generating…';
+      try { const q = await generateMCQ(composed, LS.provider, LS.key); this.commitQuestion(q); }
+      catch (e) { this.toast('AI failed: ' + e.message); this.formBank(); }
     });
   }
 
+  // Question Bank Folder — cascading Platform -> Folder -> File -> Question
   async formFolder() {
-    let folders = [];
-    if (typeof this.net.getFolders === 'function') folders = await this.net.getFolders();
-    if (!folders.length) folders = [...new Set(SAMPLE_BANK.map(q => q.chapter))];
-    this.modal(`<h2>Latest Question Bank Folder</h2>
-      <label>Choose folder</label>
-      <select id="f-sel">${folders.map(f => `<option>${esc(f)}</option>`).join('')}</select>
-      <div id="f-list" class="list"></div>`);
-    const load = async () => {
-      const folder = $('#f-sel', this.modalEl).value;
-      let items = [];
-      if (typeof this.net.getBankQuestions === 'function')
-        items = await this.net.getBankQuestions({ folder });
-      if (!items.length) items = SAMPLE_BANK.filter(q => q.chapter === folder);
-      $('#f-list', this.modalEl).innerHTML = items.map((q,i) =>
-        `<button class="row" data-i="${i}">${esc(q.text)}</button>`).join('') || '<p class="muted">Empty folder</p>';
-      this.modalEl.querySelectorAll('#f-list .row').forEach(b =>
-        b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
-    };
-    $('#f-sel', this.modalEl).addEventListener('change', load);
-    load();
+    this.modal(`<h2>📁 Question Bank Folder</h2>
+      <label>Platform</label><select id="ff-plat"><option>Loading…</option></select>
+      <label>Folder</label><select id="ff-folder"><option value="">—</option></select>
+      <label>File</label><select id="ff-file"><option value="">—</option></select>
+      <label>Question</label><div id="ff-q" class="list"><p class="muted">Pick a file above.</p></div>`);
+    const platSel = $('#ff-plat', this.modalEl), folSel = $('#ff-folder', this.modalEl),
+      fileSel = $('#ff-file', this.modalEl), qList = $('#ff-q', this.modalEl);
+
+    let platforms = [];
+    try { platforms = await qbank.getPlatforms(); } catch (e) { /* fall through */ }
+
+    if (!platforms.length) { // demo / manifest unavailable -> sample bank
+      const folders = [...new Set(SAMPLE_BANK.map(q => q.chapter))];
+      platSel.innerHTML = '<option>Demo Bank</option>';
+      folSel.innerHTML = folders.map(f => `<option>${esc(f)}</option>`).join('');
+      fileSel.parentElement.style.display = 'none'; fileSel.style.display = 'none';
+      const load = () => {
+        const items = SAMPLE_BANK.filter(q => q.chapter === folSel.value);
+        qList.innerHTML = items.map((q, i) => `<button class="row" data-i="${i}">${esc(q.text)}</button>`).join('') || '<p class="muted">Empty</p>';
+        this.modalEl.querySelectorAll('#ff-q .row').forEach(b => b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
+      };
+      folSel.addEventListener('change', load); load();
+      return;
+    }
+
+    platSel.innerHTML = '<option value="">Select platform</option>' + platforms.map(p => `<option>${esc(p)}</option>`).join('');
+    platSel.addEventListener('change', async () => {
+      folSel.innerHTML = '<option>Loading…</option>'; fileSel.innerHTML = '<option value="">—</option>'; qList.innerHTML = '';
+      if (!platSel.value) { folSel.innerHTML = '<option value="">—</option>'; return; }
+      const folders = await qbank.getFoldersForPlatform(platSel.value);
+      folSel.innerHTML = '<option value="">Select folder</option>' + folders.map(f =>
+        `<option value="${esc(f.path)}">${esc(f.path.split('/').slice(1).join(' / ') || f.path)} (${f.count})</option>`).join('');
+    });
+    folSel.addEventListener('change', async () => {
+      fileSel.innerHTML = '<option>Loading…</option>'; qList.innerHTML = '';
+      if (!folSel.value) { fileSel.innerHTML = '<option value="">—</option>'; return; }
+      const files = await qbank.getFilesInFolder(folSel.value);
+      fileSel.innerHTML = '<option value="">Select file</option>' + files.map(f => `<option value="${esc(f.path)}">${esc(f.name)}</option>`).join('');
+    });
+    fileSel.addEventListener('change', async () => {
+      if (!fileSel.value) { qList.innerHTML = ''; return; }
+      qList.innerHTML = '<div class="spinner"></div>';
+      let qs = [];
+      try { qs = await qbank.getQuestions(fileSel.value); } catch (e) { /* ignore */ }
+      if (!qs.length) { qList.innerHTML = '<p class="muted">No questions in this file.</p>'; return; }
+      qList.innerHTML = qs.slice(0, 150).map((q, i) => `<button class="row" data-i="${i}">${esc(q.text.slice(0, 130))}</button>`).join('');
+      this.modalEl.querySelectorAll('#ff-q .row').forEach(b => b.addEventListener('click', () => this.commitQuestion(qs[b.dataset.i])));
+    });
   }
 
   async commitQuestion(q) {
     this.closeModal();
-    if (!q || !q.options || q.options.length !== 4) return this.toast('Invalid question');
+    if (!q || !Array.isArray(q.options) || q.options.length < 2) return this.toast('Invalid question');
     await this.startAnswering({ text: q.text, options: q.options, correctIndex: q.correctIndex });
   }
 

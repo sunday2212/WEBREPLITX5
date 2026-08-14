@@ -5,9 +5,9 @@
 // ============================================================================
 
 export const CONFIG = {
-  // --- Supabase (get these from Supabase Dashboard -> Project Settings -> API) ---
-  SUPABASE_URL: 'YOUR_SUPABASE_URL_HERE',
-  SUPABASE_ANON_KEY: 'YOUR_SUPABASE_ANON_KEY_HERE',
+  // --- Supabase (from your supabase-config.js) ---
+  SUPABASE_URL: 'https://txhxgmryxsebqfxoocos.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_Rp_naWKL3nPS-6nlOx1LHw_40Rc4T1M',
 
   // --- Game room ---
   ROOM_ID: 'main',           // change to run multiple independent rooms
@@ -27,11 +27,11 @@ export const CONFIG = {
   // Base URL where those JSON files live. Empty = same origin as this page
   // (e.g. https://yourdomain.com/). file_path from quiz_bookmarks is resolved
   // relative to this. Set it if your JSONs live under a sub-path or CDN.
-  QUESTION_FILE_BASE: '',
+  QUESTION_FILE_BASE: '/quizx/Brain/',
   // URL of your file manifest / website metadata JSON that lists the question
   // bank folders + files (used to build the "Question Bank Folder" dropdown).
   // Leave empty to hide that source until configured.
-  MANIFEST_URL: '',
+  MANIFEST_URL: '/quizx/Brain/file-manifest.json',
 
   // --- Google AdSense (optional) ---
   // Put your publisher id like 'ca-pub-1234567890123456' to show an ad slot.
@@ -48,4 +48,6 @@ export function isSupabaseConfigured() {
   );
 }
 
-export const DEMO_MODE = !isSupabaseConfigured();
+export const DEMO_MODE =
+  (typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('demo'))
+  || !isSupabaseConfigured();

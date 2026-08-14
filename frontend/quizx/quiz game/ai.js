@@ -149,6 +149,11 @@ export function normalizeQuestion(raw) {
 
   // correct answer: index / letter / matching text / boolean flags
   let ci = raw.correctIndex ?? raw.correct_index ?? raw.answerIndex;
+  // your medical JSON format: choices:[{id,text}] + correct_choice_id
+  if (ci == null && raw.correct_choice_id != null && Array.isArray(raw.choices)) {
+    const j = raw.choices.findIndex(c => c && c.id === raw.correct_choice_id);
+    if (j >= 0) ci = j;
+  }
   if (ci == null) {
     const ans = raw.answer ?? raw.correct ?? raw.correctAnswer ?? raw.correct_option ?? raw.ans;
     if (typeof ans === 'number') ci = ans;
@@ -169,9 +174,6 @@ export function normalizeQuestion(raw) {
   }
   ci = Math.max(0, Math.min(options.length - 1, Number(ci) || 0));
 
-  // ensure exactly 4 options (pad or trim) so the UI stays consistent
-  while (options.length < 4) options.push('—');
-  if (options.length > 4) options = options.slice(0, 4);
-
-  return { text: String(text), options, correctIndex: ci };
+  // keep the original number of options (medical MCQs can have 4 or 5).
+  return { text: String(text), options, correctIndex: ci, solution: raw.solution || '' };
 }
