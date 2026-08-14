@@ -96,9 +96,82 @@ async function genGemini(topic, apiKey) {
   return parseMCQ(text);
 }
 
-// provider: 'openai' | 'gemini'
+// Groq is OpenAI-compatible. Uses the key stored in profiles.groq_api_key.
+async function genGroq(topic, apiKey) {
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      temperature: 0.9,
+      messages: [
+        { role: 'system', content: 'You are a quiz generator that outputs only JSON.' },
+        { role: 'user', content: PROMPT(topic) },
+      ],
+    }),
+  });
+  if (!res.ok) throw new Error('Groq error: ' + (await res.text()));
+  const data = await res.json();
+  return parseMCQ(data?.choices?.[0]?.message?.content);
+}
+
+// provider: 'groq' | 'openai' | 'gemini'
 export async function generateMCQ(topic, provider, apiKey) {
   if (!apiKey) return randomFromBank(); // graceful fallback
   if (provider === 'gemini') return genGemini(topic, apiKey);
-  return genOpenAI(topic, apiKey);
+  if (provider === 'openai') return genOpenAI(topic, apiKey);
+  return genGroq(topic, apiKey);
+}
+
+// ----------------------------------------------------------------------------
+// Normalize a raw question object from your JSON files into { text, options[4],
+// correctIndex }. Handles many common shapes so it works with your existing
+// question JSONs without hard-coding field names.
+// ----------------------------------------------------------------------------
+const LETTER = { a: 0, b: 1, c: 2, d: 3, A: 0, B: 1, C: 2, D: 3 };
+
+export function normalizeQuestion(raw) {
+  if (!raw) return null;
+  const text = raw.question || raw.text || raw.q || raw.title || raw.statement || '';
+
+  // options can be an array, or an object {A:..,B:..}, or opt1..opt4
+  let options = raw.options || raw.choices || raw.answers || raw.opts;
+  if (!options) {
+    const keyed = ['A', 'B', 'C', 'D'].map(k => raw['option' + k] ?? raw['opt' + k]);
+    if (keyed.some(v => v != null)) options = keyed;
+  }
+  if (options && !Array.isArray(options) && typeof options === 'object') {
+    options = Object.keys(options).sort().map(k => options[k]);
+  }
+  if (!Array.isArray(options)) return null;
+  options = options.map(o => (o && typeof o === 'object' ? (o.text || o.value || JSON.stringify(o)) : String(o)));
+  if (options.length < 2) return null;
+
+  // correct answer: index / letter / matching text / boolean flags
+  let ci = raw.correctIndex ?? raw.correct_index ?? raw.answerIndex;
+  if (ci == null) {
+    const ans = raw.answer ?? raw.correct ?? raw.correctAnswer ?? raw.correct_option ?? raw.ans;
+    if (typeof ans === 'number') ci = ans;
+    else if (typeof ans === 'string') {
+      if (ans in LETTER && ans.length === 1) ci = LETTER[ans];
+      else {
+        const idx = options.findIndex(o => String(o).trim() === ans.trim());
+        ci = idx >= 0 ? idx : 0;
+      }
+    }
+  }
+  if (ci == null) {
+    const flagIdx = options.findIndex((_, i) => {
+      const o = (raw.options || raw.choices || [])[i];
+      return o && typeof o === 'object' && (o.correct || o.isCorrect);
+    });
+    ci = flagIdx >= 0 ? flagIdx : 0;
+  }
+  ci = Math.max(0, Math.min(options.length - 1, Number(ci) || 0));
+
+  // ensure exactly 4 options (pad or trim) so the UI stays consistent
+  while (options.length < 4) options.push('—');
+  if (options.length > 4) options = options.slice(0, 4);
+
+  return { text: String(text), options, correctIndex: ci };
 }

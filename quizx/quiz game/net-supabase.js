@@ -35,11 +35,13 @@ export class SupabaseNet {
     let avatar = user.user_metadata?.avatar_url || '';
     let college = '';
     try {
-      const { data } = await this.sb.from('profiles').select('*').eq('id', user.id).single();
+      const { data } = await this.sb.from('profiles')
+        .select('name, college, profile_pic_url, groq_api_key').eq('id', user.id).single();
       if (data) {
         name = data.name || name;
-        avatar = data.avatar_url || avatar;
+        avatar = data.profile_pic_url || avatar;   // your column is profile_pic_url
         college = data.college || '';
+        this.groqKey = data.groq_api_key || '';     // key already in profile bar
       }
     } catch (e) { /* profiles row may not exist yet */ }
     return { id: user.id, name, college, avatar };
@@ -162,41 +164,113 @@ export class SupabaseNet {
     try { await this.channel.untrack(); await this.sb.removeChannel(this.channel); } catch (e) { /* ignore */ }
   }
 
+  // The user's AI key already lives in profiles.groq_api_key (the profile bar).
   async saveApiKey(provider, key) {
     try {
-      await this.sb.from('user_settings').upsert({
-        user_id: this.me.id, ai_provider: provider, ai_api_key: key,
-      });
+      await this.sb.from('profiles').update({ groq_api_key: key }).eq('id', this.me.id);
+      this.groqKey = key;
     } catch (e) { /* non-fatal: key still saved in localStorage */ }
   }
 
   async loadApiKey() {
-    try {
-      const { data } = await this.sb.from('user_settings').select('*').eq('user_id', this.me.id).single();
-      return data || null;
-    } catch (e) { return null; }
+    return { ai_provider: CONFIG.DEFAULT_AI_PROVIDER, ai_api_key: this.groqKey || '' };
   }
 
-  // ---- question sources backed by Supabase ----
+  // ---- file-based question sources (your bank/bookmarks are JSON files) ----
+  _fileUrl(filePath) {
+    const base = CONFIG.QUESTION_FILE_BASE || (window.location.origin + '/');
+    try { return new URL(filePath, base).href; }
+    catch (e) { return base.replace(/\/$/, '') + '/' + String(filePath).replace(/^\//, ''); }
+  }
+
+  async _loadFile(filePath) {
+    if (!this._fileCache) this._fileCache = {};
+    if (this._fileCache[filePath]) return this._fileCache[filePath];
+    const res = await fetch(this._fileUrl(filePath));
+    if (!res.ok) throw new Error('Cannot load ' + filePath);
+    let json = await res.json();
+    // questions may be at top-level array or under a key
+    const arr = Array.isArray(json) ? json
+      : (json.questions || json.data || json.items || json.mcqs || []);
+    this._fileCache[filePath] = arr;
+    return arr;
+  }
+
+  // Bookmarks store a reference (file_path + question_index); resolve to a real Q.
   async getBookmarks() {
-    const { data } = await this.sb.from('quiz_bookmarks').select('*').eq('user_id', this.me.id);
-    return (data || []).map(b => b.question);
+    const { normalizeQuestion } = await import('./ai.js');
+    const { data } = await this.sb.from('quiz_bookmarks')
+      .select('file_path, question_index, q_no, topic_name, folder_path')
+      .eq('user_id', this.me.id).order('bookmarked_at', { ascending: false }).limit(50);
+    const out = [];
+    for (const b of (data || [])) {
+      try {
+        const arr = await this._loadFile(b.file_path);
+        const raw = arr[b.question_index];
+        const q = normalizeQuestion(raw);
+        if (q && q.text) out.push(q);
+      } catch (e) { /* skip unresolved bookmark */ }
+    }
+    return out;
   }
-  async getBankFilters() {
-    const { data } = await this.sb.from('question_bank').select('subject,chapter,folder');
-    return data || [];
-  }
-  async getBankQuestions(filter) {
-    let q = this.sb.from('question_bank').select('*');
-    if (filter.subject) q = q.eq('subject', filter.subject);
-    if (filter.chapter) q = q.eq('chapter', filter.chapter);
-    if (filter.folder) q = q.eq('folder', filter.folder);
-    const { data } = await q.limit(100);
-    return (data || []).map(r => ({ text: r.text, options: r.options, correctIndex: r.correct_index,
-      subject: r.subject, chapter: r.chapter, folder: r.folder }));
-  }
+
+  // "Question Bank Folder" dropdown, driven by your manifest / metadata JSON.
+  // Returns folder identifiers (path/label). Structure-tolerant.
   async getFolders() {
-    const { data } = await this.sb.from('question_bank').select('folder');
-    return [...new Set((data || []).map(r => r.folder).filter(Boolean))];
+    if (!CONFIG.MANIFEST_URL) return [];
+    try {
+      const res = await fetch(CONFIG.MANIFEST_URL);
+      const m = await res.json();
+      const files = this._manifestFiles(m);
+      const folders = new Set();
+      files.forEach(f => {
+        const p = (f.folder || f.path || f.file_path || f);
+        const dir = String(p).split('/').slice(0, -1).join('/');
+        if (dir) folders.add(dir);
+      });
+      this._manifest = files;
+      return [...folders].sort();
+    } catch (e) { return []; }
+  }
+
+  // Given a folder, return normalized questions from files in that folder.
+  async getBankQuestions(filter) {
+    const { normalizeQuestion } = await import('./ai.js');
+    if (!this._manifest) await this.getFolders();
+    const files = (this._manifest || []).filter(f => {
+      const p = String(f.path || f.file_path || f.folder || f);
+      return !filter.folder || p.startsWith(filter.folder);
+    });
+    const out = [];
+    for (const f of files.slice(0, 5)) {
+      const fp = f.path || f.file_path || f;
+      try {
+        const arr = await this._loadFile(fp);
+        arr.slice(0, 30).forEach(raw => {
+          const q = normalizeQuestion(raw);
+          if (q && q.text) out.push({ ...q, folder: filter.folder });
+        });
+      } catch (e) { /* skip */ }
+    }
+    return out;
+  }
+
+  // Extract a flat file list from various manifest shapes.
+  _manifestFiles(m) {
+    if (Array.isArray(m)) return m;
+    if (m.files) return m.files;
+    if (m.manifest) return m.manifest;
+    // nested tree -> flatten any {path/file_path} leaves
+    const out = [];
+    const walk = (node) => {
+      if (!node) return;
+      if (Array.isArray(node)) return node.forEach(walk);
+      if (typeof node === 'object') {
+        if (node.path || node.file_path) out.push(node);
+        Object.values(node).forEach(walk);
+      }
+    };
+    walk(m);
+    return out;
   }
 }

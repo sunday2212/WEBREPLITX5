@@ -11,7 +11,7 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => (
   { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 const LS = {
-  get provider() { return localStorage.getItem('qg_provider') || 'openai'; },
+  get provider() { return localStorage.getItem('qg_provider') || CONFIG.DEFAULT_AI_PROVIDER; },
   set provider(v) { localStorage.setItem('qg_provider', v); },
   get key() { return localStorage.getItem('qg_apikey') || ''; },
   set key(v) { localStorage.setItem('qg_apikey', v); },
@@ -37,6 +37,13 @@ export class Game {
     });
     if (res && res.redirecting) return; // OAuth redirect in progress
     this.me = this.net.me;
+    // Seed AI key/provider from the user's Supabase profile (profiles.groq_api_key)
+    if (typeof this.net.loadApiKey === 'function') {
+      try {
+        const s = await this.net.loadApiKey();
+        if (s) { if (s.ai_provider) LS.provider = s.ai_provider; if (s.ai_api_key && !LS.key) LS.key = s.ai_api_key; }
+      } catch (e) { /* ignore */ }
+    }
     this.renderHeader();
     this.maybeHostBootstrap();
     this._tick = setInterval(() => this.hostLoop(), 1000);
@@ -369,12 +376,13 @@ export class Game {
     this.modal(`<h2>⚙️ Settings</h2>
       <label>AI Provider</label>
       <select id="set-prov">
+        <option value="groq" ${LS.provider==='groq'?'selected':''}>Groq (default)</option>
         <option value="openai" ${LS.provider==='openai'?'selected':''}>OpenAI (GPT)</option>
         <option value="gemini" ${LS.provider==='gemini'?'selected':''}>Google Gemini</option>
       </select>
       <label>Your API Key</label>
-      <input id="set-key" type="password" value="${esc(LS.key)}" placeholder="sk-... / AIza..." />
-      <p class="muted">Stored locally in your browser${typeof this.net.saveApiKey==='function' ? ' and Supabase' : ''}.</p>
+      <input id="set-key" type="password" value="${esc(LS.key)}" placeholder="gsk_... / sk-... / AIza..." />
+      <p class="muted">Groq keys are saved to your profile (profiles.groq_api_key) and reused across the site.</p>
       <button class="primary" id="set-save">Save</button>`);
     $('#set-save', this.modalEl).addEventListener('click', async () => {
       LS.provider = $('#set-prov', this.modalEl).value;

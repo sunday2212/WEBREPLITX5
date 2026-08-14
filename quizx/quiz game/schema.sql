@@ -1,42 +1,18 @@
 -- ============================================================================
--- Quiz Game schema for Supabase. Run this in Supabase SQL Editor.
--- Assumes Google OAuth is enabled (Auth -> Providers -> Google).
+-- QUIZ BATTLE — SAFE schema for an EXISTING project (WEBREPLITX5).
+-- Only adds the 2 new game tables. Does NOT touch profiles, quiz_bookmarks,
+-- auth, or your file-based question bank. Idempotent (safe to re-run).
+-- Run in Supabase Dashboard -> SQL Editor.
+-- (Make sure Auth -> Providers -> Google is already enabled.)
 -- ============================================================================
 
--- 1) Profiles (populated on Google sign-up). If you already have a profiles
---    table, keep yours — just make sure it has: id, name, college, avatar_url.
-create table if not exists public.profiles (
-  id uuid primary key references auth.users(id) on delete cascade,
-  name text,
-  college text,
-  avatar_url text,
-  created_at timestamptz default now()
-);
-
--- Auto-create a profile row on new signup using Google metadata
-create or replace function public.handle_new_user()
-returns trigger language plpgsql security definer as $$
-begin
-  insert into public.profiles (id, name, avatar_url)
-  values (new.id,
-          coalesce(new.raw_user_meta_data->>'full_name', new.email),
-          new.raw_user_meta_data->>'avatar_url')
-  on conflict (id) do nothing;
-  return new;
-end; $$;
-
-drop trigger if exists on_auth_user_created on auth.users;
-create trigger on_auth_user_created
-  after insert on auth.users
-  for each row execute procedure public.handle_new_user();
-
--- 2) Shared room state (one row per room). Synced to all clients via Realtime.
+-- 1) SHARED ROOM STATE (one row per room), broadcast to all clients via Realtime
 create table if not exists public.game_rooms (
   id text primary key,
-  phase text default 'lobby',           -- lobby | setting | answering | results
+  phase text default 'lobby',            -- lobby | setting | answering | results
   round_no int default 0,
   setter_id uuid,
-  question jsonb,                        -- { text, options[4], correctIndex }
+  question jsonb,                         -- { text, options[4], correctIndex }
   start_ts timestamptz,
   end_ts timestamptz,
   updated_at timestamptz default now()
@@ -44,12 +20,12 @@ create table if not exists public.game_rooms (
 insert into public.game_rooms (id, phase) values ('main','lobby')
   on conflict (id) do nothing;
 
--- 3) Per-round answers
+-- 2) PER-ROUND ANSWERS
 create table if not exists public.round_answers (
   id uuid primary key default gen_random_uuid(),
   room_id text not null,
   round_no int not null,
-  user_id uuid not null,
+  user_id uuid not null,                  -- = auth.uid()
   name text,
   avatar text,
   choice_index int,
@@ -58,71 +34,41 @@ create table if not exists public.round_answers (
 );
 create index if not exists idx_answers_room_round on public.round_answers(room_id, round_no);
 
--- 4) Bookmarked questions per user
-create table if not exists public.quiz_bookmarks (
-  id uuid primary key default gen_random_uuid(),
-  user_id uuid not null references auth.users(id) on delete cascade,
-  question jsonb not null,               -- { text, options[4], correctIndex }
-  created_at timestamptz default now()
-);
-
--- 5) Question bank (subject / chapter / folder driven) — map to your existing one
-create table if not exists public.question_bank (
-  id uuid primary key default gen_random_uuid(),
-  subject text,
-  chapter text,
-  folder text,                           -- "Latest Question Bank Folder"
-  topic text,
-  text text not null,
-  options jsonb not null,                -- ["a","b","c","d"]
-  correct_index int not null default 0
-);
-
--- 6) Optional: save the user's own AI API key
-create table if not exists public.user_settings (
-  user_id uuid primary key references auth.users(id) on delete cascade,
-  ai_provider text default 'openai',
-  ai_api_key text
-);
-
 -- ---------------------------------------------------------------------------
--- Row Level Security
+-- ROW LEVEL SECURITY (only for the 2 new tables)
 -- ---------------------------------------------------------------------------
-alter table public.profiles       enable row level security;
-alter table public.game_rooms     enable row level security;
-alter table public.round_answers  enable row level security;
-alter table public.quiz_bookmarks enable row level security;
-alter table public.question_bank  enable row level security;
-alter table public.user_settings  enable row level security;
+alter table public.game_rooms    enable row level security;
+alter table public.round_answers enable row level security;
 
--- profiles: everyone can read (for leaderboard names/college/avatar)
-create policy "profiles read"  on public.profiles for select using (true);
-create policy "profiles upd"   on public.profiles for update using (auth.uid() = id);
-create policy "profiles ins"   on public.profiles for insert with check (auth.uid() = id);
-
--- game_rooms: any authenticated player can read & write shared room state
+drop policy if exists "rooms read"  on public.game_rooms;
+drop policy if exists "rooms write" on public.game_rooms;
 create policy "rooms read"  on public.game_rooms for select using (true);
 create policy "rooms write" on public.game_rooms for all
   using (auth.role() = 'authenticated') with check (auth.role() = 'authenticated');
 
--- round_answers: readable by all, insertable by the answering user
+drop policy if exists "answers read" on public.round_answers;
+drop policy if exists "answers ins"  on public.round_answers;
 create policy "answers read" on public.round_answers for select using (true);
 create policy "answers ins"  on public.round_answers for insert
   with check (auth.uid() = user_id);
 
--- bookmarks: private to owner
-create policy "bm all" on public.quiz_bookmarks for all
-  using (auth.uid() = user_id) with check (auth.uid() = user_id);
-
--- question_bank: readable by all authenticated users
-create policy "bank read" on public.question_bank for select using (true);
-
--- user_settings: private to owner
-create policy "settings all" on public.user_settings for all
-  using (auth.uid() = user_id) with check (auth.uid() = user_id);
-
 -- ---------------------------------------------------------------------------
--- Enable Realtime for the tables the clients subscribe to
+-- ENABLE REALTIME on both tables
 -- ---------------------------------------------------------------------------
-alter publication supabase_realtime add table public.game_rooms;
-alter publication supabase_realtime add table public.round_answers;
+alter table public.game_rooms    replica identity full;
+alter table public.round_answers replica identity full;
+do $$ begin
+  alter publication supabase_realtime add table public.game_rooms;
+exception when duplicate_object then null; end $$;
+do $$ begin
+  alter publication supabase_realtime add table public.round_answers;
+exception when duplicate_object then null; end $$;
+
+-- ============================================================================
+-- NOTES:
+--  * AI key           -> read/written to existing profiles.groq_api_key (Groq).
+--  * Leaderboard data -> existing profiles (name, college, profile_pic_url).
+--  * Bookmarks        -> existing quiz_bookmarks (file_path + question_index),
+--                        resolved from your JSON files at runtime.
+--  * Question bank    -> your existing JSON files + manifest (no DB table).
+-- ============================================================================
