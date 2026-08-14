@@ -1617,6 +1617,72 @@
                 </div>
             </div>
         </article>
+        <!-- Add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
+<div class="code-generator"
+style="margin-top: 32px; padding-top: 24px; border-top: 1.5px solid var(--line); display: flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: center;">
+
+<button id="generateCodeBtn"
+style="background: var(--maroon); color: white; border: none; padding: 12px 32px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 700; cursor: pointer; transition: all var(--transition); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(122, 35, 51, 0.25);">
+<i class="fas fa-key" aria-hidden="true"></i> Code
+</button>
+
+<span id="generatedCode"
+style="font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--teal-deep); background: var(--teal-light); padding: 8px 24px; border-radius: 10px; min-width: 170px; text-align: center; display: inline-block; border: 1px solid rgba(28, 110, 99, 0.15); letter-spacing: 0.04em;">
+NEXT•••
+</span>
+
+<p style="font-size: 0.7rem; color: var(--ink-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; width: 100%; text-align: center; margin: 2px 0 0;">
+Click the button to generate your unique code
+</p>
+</div>
+
+<script>
+    (function() {
+        const btn = document.getElementById('generateCodeBtn');
+        const display = document.getElementById('generatedCode');
+
+        if (!btn || !display) return;
+
+        function generateCode() {
+            // 3 random digits → 000–999
+            const digits = String(Math.floor(Math.random() * 1000)).padStart(3, '0');
+            return 'NEXT' + digits;
+        }
+
+        function animateDisplay(el) {
+            el.style.transition = 'transform 0.12s ease, background 0.2s ease';
+            el.style.transform = 'scale(1.08)';
+            el.style.background = '#d4ede8';
+            setTimeout(() => {
+                el.style.transform = 'scale(1)';
+                el.style.background = 'var(--teal-light)';
+            }, 150);
+        }
+
+        btn.addEventListener('click', function() {
+            const code = generateCode();
+            display.textContent = code;
+            animateDisplay(display);
+
+            // Also update the button text briefly to show feedback
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied!';
+            btn.style.background = 'var(--teal)';
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = 'var(--maroon)';
+            }, 800);
+
+            // Copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).catch(() => {});
+            }
+        });
+
+        // Generate a default code on page load
+        display.textContent = generateCode();
+    })();
+</script>
 
         <footer class="site-footer">
             <div class="masthead-rule--thin"></div>
