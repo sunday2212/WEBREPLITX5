@@ -40,11 +40,35 @@ export function randomFromBank(filter = {}) {
   return { text: q.text, options: q.options.slice(), correctIndex: q.correctIndex };
 }
 
-const PROMPT = (topic) =>
-  `Generate ONE multiple-choice quiz question about "${topic || 'general knowledge'}". ` +
+const SHAPE =
   `Return ONLY strict minified JSON with this exact shape and nothing else: ` +
-  `{"text":"...","options":["a","b","c","d"],"correctIndex":0}. ` +
-  `Exactly 4 options. correctIndex is 0-based.`;
+  `{"text":"...","options":["a","b","c","d"],"correctIndex":0,"explanation":"..."}. ` +
+  `Exactly 4 options. correctIndex is 0-based. "explanation" briefly justifies the correct answer using medical knowledge.`;
+
+const MED = 'You are a medical educator setting NEET PG / INICET standard MCQs. Output only JSON.';
+
+// Build the right prompt for the Manual Entry "AI Generate / Fix" button.
+// - full question + options -> proof-read & correct mistakes
+// - only a question       -> generate options + answer + explanation
+// - nothing               -> random NEET PG question
+function manualPrompt({ question, options, correctIndex }) {
+  const q = (question || '').trim();
+  const opts = (options || []).map(o => (o || '').trim());
+  const filled = opts.filter(Boolean);
+  if (q && filled.length >= 2) {
+    return `Proof-read and correct the following NEET PG MCQ. Fix any spelling, grammar or medical/factual errors and make sure the marked answer is correct. Keep the original intent and options where possible.\n` +
+      `Question: ${q}\nOptions: ${JSON.stringify(opts)}\nMarked correctIndex: ${Number(correctIndex) || 0}\n` + SHAPE;
+  }
+  if (q) {
+    return `For the following NEET PG question, generate 4 plausible answer options, pick the correct one and explain it.\nQuestion: ${q}\n` + SHAPE;
+  }
+  return `Generate ONE random high-yield NEET PG / INICET level medical MCQ. ` + SHAPE;
+}
+
+function bankPrompt({ subject, chapter, topic }) {
+  const scope = [subject, chapter, topic].filter(Boolean).join(' - ') || 'general medicine';
+  return `Generate ONE NEET PG / INICET level multiple-choice question on "${scope}". ` + SHAPE;
+}
 
 function parseMCQ(raw) {
   if (!raw) throw new Error('Empty AI response');
@@ -62,10 +86,11 @@ function parseMCQ(raw) {
     text: String(obj.text),
     options: obj.options.map(String),
     correctIndex: (ci >= 0 && ci <= 3) ? ci : 0,
+    explanation: obj.explanation ? String(obj.explanation) : '',
   };
 }
 
-async function genOpenAI(topic, apiKey) {
+async function genOpenAI(prompt, apiKey) {
   const res = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
@@ -73,8 +98,8 @@ async function genOpenAI(topic, apiKey) {
       model: 'gpt-4o-mini',
       temperature: 0.9,
       messages: [
-        { role: 'system', content: 'You are a quiz generator that outputs only JSON.' },
-        { role: 'user', content: PROMPT(topic) },
+        { role: 'system', content: MED },
+        { role: 'user', content: prompt },
       ],
     }),
   });
@@ -83,12 +108,12 @@ async function genOpenAI(topic, apiKey) {
   return parseMCQ(data?.choices?.[0]?.message?.content);
 }
 
-async function genGemini(topic, apiKey) {
+async function genGemini(prompt, apiKey) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ contents: [{ parts: [{ text: PROMPT(topic) }] }] }),
+    body: JSON.stringify({ contents: [{ parts: [{ text: MED + '\n' + prompt }] }] }),
   });
   if (!res.ok) throw new Error('Gemini error: ' + (await res.text()));
   const data = await res.json();
@@ -97,7 +122,7 @@ async function genGemini(topic, apiKey) {
 }
 
 // Groq is OpenAI-compatible. Uses the key stored in profiles.groq_api_key.
-async function genGroq(topic, apiKey) {
+async function genGroq(prompt, apiKey) {
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
@@ -105,8 +130,8 @@ async function genGroq(topic, apiKey) {
       model: 'llama-3.3-70b-versatile',
       temperature: 0.9,
       messages: [
-        { role: 'system', content: 'You are a quiz generator that outputs only JSON.' },
-        { role: 'user', content: PROMPT(topic) },
+        { role: 'system', content: MED },
+        { role: 'user', content: prompt },
       ],
     }),
   });
@@ -115,12 +140,28 @@ async function genGroq(topic, apiKey) {
   return parseMCQ(data?.choices?.[0]?.message?.content);
 }
 
+function dispatch(prompt, provider, apiKey) {
+  if (provider === 'gemini') return genGemini(prompt, apiKey);
+  if (provider === 'openai') return genOpenAI(prompt, apiKey);
+  return genGroq(prompt, apiKey);
+}
+
+// Manual Entry AI helper (correct / fill / generate depending on inputs).
+export async function aiManual(input, provider, apiKey) {
+  if (!apiKey) return randomFromBank();
+  return dispatch(manualPrompt(input), provider, apiKey);
+}
+
+// AI Question Bank: generate from subject/chapter.
+export async function aiBank(input, provider, apiKey) {
+  if (!apiKey) return randomFromBank();
+  return dispatch(bankPrompt(input), provider, apiKey);
+}
+
 // provider: 'groq' | 'openai' | 'gemini'
 export async function generateMCQ(topic, provider, apiKey) {
   if (!apiKey) return randomFromBank(); // graceful fallback
-  if (provider === 'gemini') return genGemini(topic, apiKey);
-  if (provider === 'openai') return genOpenAI(topic, apiKey);
-  return genGroq(topic, apiKey);
+  return dispatch(bankPrompt({ topic }), provider, apiKey);
 }
 
 // ----------------------------------------------------------------------------
