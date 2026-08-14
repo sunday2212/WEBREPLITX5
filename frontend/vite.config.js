@@ -6,6 +6,7 @@ import fse from 'fs-extra'
 import fs from 'fs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const outputDir = path.resolve(__dirname, '../dist')
 
 // Find all HTML files
 const htmlFiles = glob.sync('**/*.html', {
@@ -16,8 +17,14 @@ const htmlFiles = glob.sync('**/*.html', {
 console.log(`Found ${htmlFiles.length} HTML files`)
 
 export default defineConfig({
+  // The repository keeps the legacy static site in frontend/, but Cloudflare
+  // Pages publishes the repository-level dist/ directory. Keeping the Vite
+  // root explicit makes the same paths work from both the root npm script and
+  // a direct Vite invocation.
+  root: __dirname,
   build: {
-    outDir: 'dist',
+    outDir: outputDir,
+    emptyOutDir: true,
     assetsDir: 'assets',
     rollupOptions: {
       input: {
@@ -29,9 +36,13 @@ export default defineConfig({
     {
       name: 'copy-all-files',
       closeBundle() {
+        // Vite's root is frontend/, while the deploy artifact belongs at the
+        // repository root. Do not write copied legacy pages into frontend/dist.
+        const deployDir = outputDir
+
         // Copy all HTML files
         htmlFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
@@ -42,7 +53,7 @@ export default defineConfig({
           ignore: ['node_modules/**', 'dist/**']
         })
         cssFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
@@ -54,7 +65,7 @@ export default defineConfig({
         })
         jsFiles.forEach(file => {
           const src = path.join(__dirname, file)
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           
           let content = fs.readFileSync(src, 'utf8')
@@ -77,7 +88,7 @@ export default defineConfig({
           ignore: ['node_modules/**', 'dist/**', 'package.json', 'package-lock.json']
         })
         jsonFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
@@ -88,7 +99,7 @@ export default defineConfig({
           ignore: ['node_modules/**', 'dist/**']
         })
         txtFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
@@ -99,10 +110,20 @@ export default defineConfig({
           ignore: ['node_modules/**', 'dist/**']
         })
         xmlFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
+
+        // Cloudflare Pages control files have no extension, so keep them
+        // explicitly in the deploy artifact as well.
+        for (const file of ['_headers', '_redirects']) {
+          const source = path.join(__dirname, file)
+          if (fs.existsSync(source)) {
+            const dest = path.join(deployDir, file)
+            fse.copySync(source, dest)
+          }
+        }
         
         // ✅ FIXED: Copy images and other assets INCLUDING VIDEO FILES
         const assetFiles = glob.sync('**/*.{png,jpg,jpeg,gif,svg,ico,webp,woff,woff2,ttf,eot,mp4,webm,mov,avi}', {
@@ -110,7 +131,7 @@ export default defineConfig({
           ignore: ['node_modules/**', 'dist/**']
         })
         assetFiles.forEach(file => {
-          const dest = path.join(__dirname, 'dist', file)
+          const dest = path.join(deployDir, file)
           fse.ensureDirSync(path.dirname(dest))
           fse.copySync(path.join(__dirname, file), dest)
         })
@@ -127,7 +148,10 @@ export default defineConfig({
     }
   ],
   server: {
-    port: 8080,
-    open: true
+    host: '0.0.0.0',
+    port: 5000,
+    strictPort: true,
+    allowedHosts: true,
+    open: false
   }
 })
