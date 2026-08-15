@@ -18,9 +18,9 @@ export const CONFIG = {
   SETTER_BONUS: 0,           // points the question setter gets per round
 
   // --- AI (question auto-generate) ---
-  // Your site already stores each user's key in profiles.groq_api_key, so the
-  // default provider is Groq. Users can still override in Settings.
-  DEFAULT_AI_PROVIDER: 'groq',   // 'groq' | 'openai' | 'gemini'
+  // Google Gemini is the default. Existing Groq keys remain available and are
+  // never overwritten unless the user explicitly saves a new Groq key.
+  DEFAULT_AI_PROVIDER: 'gemini',   // 'groq' | 'openai' | 'gemini'
 
   // --- File-based Question Bank / Bookmarks ---
   // Your bookmarks + question bank are JSON files served from your domain.
