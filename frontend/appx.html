@@ -1258,9 +1258,9 @@
                     </button>
                 </div>
                 <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <a href="https://ai.google.dev/gemini-api/docs/api-key" target="_blank"
+                    <a id="profile-get-api-key" href="quizx/Aiquiz/api-key-guide.html?provider=gemini" target="_blank" rel="noopener"
                         style="font-size:0.75rem;color:#6b46c1;font-weight:600;text-decoration:none;">
-                        <i class="fas fa-external-link-alt"></i> Get an API key
+                        <i class="fas fa-key"></i> Get my API key
                     </a>
                 </div>
                 <div style="font-size:0.72rem;color:#718096;margin-top:0.35rem;">The selected provider and its key are shared across AI Quiz, Doubt Solver, and Quiz Battle.</div>
@@ -1609,6 +1609,11 @@
                 : `<span style="color:#dc2626;">✗ No ${manager.PROVIDERS[provider].label} key configured</span>`;
             input.value = '';
             input.placeholder = `Paste ${manager.PROVIDERS[provider].label} API key (${manager.PROVIDERS[provider].placeholder})`;
+            const guideLink = document.getElementById('profile-get-api-key');
+            if (guideLink) {
+                guideLink.href = `quizx/Aiquiz/api-key-guide.html?provider=${encodeURIComponent(provider)}`;
+                guideLink.setAttribute('aria-label', `How to get a ${manager.PROVIDERS[provider].label} API key`);
+            }
             providerSelect.onchange = () => loadGroqKeyStatus();
         }
 
