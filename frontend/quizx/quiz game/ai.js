@@ -51,23 +51,33 @@ const MED = 'You are a medical educator setting NEET PG / INICET standard MCQs. 
 // - full question + options -> proof-read & correct mistakes
 // - only a question       -> generate options + answer + explanation
 // - nothing               -> random NEET PG question
-function manualPrompt({ question, options, correctIndex }) {
+// One prompt covers all Manual-Entry cases: correct what's filled, fill what's
+// blank (question / options / correct answer / explanation), or build the whole
+// MCQ from scratch when everything is empty.
+function manualPrompt({ question, options, correctIndex, explanation }) {
   const q = (question || '').trim();
   const opts = (options || []).map(o => (o || '').trim());
-  const filled = opts.filter(Boolean);
-  if (q && filled.length >= 2) {
-    return `Proof-read and correct the following NEET PG MCQ. Fix any spelling, grammar or medical/factual errors and make sure the marked answer is correct. Keep the original intent and options where possible.\n` +
-      `Question: ${q}\nOptions: ${JSON.stringify(opts)}\nMarked correctIndex: ${Number(correctIndex) || 0}\n` + SHAPE;
-  }
-  if (q) {
-    return `For the following NEET PG question, generate 4 plausible answer options, pick the correct one and explain it.\nQuestion: ${q}\n` + SHAPE;
-  }
-  return `Generate ONE random high-yield NEET PG / INICET level medical MCQ. ` + SHAPE;
+  return `You are a medical educator preparing NEET PG / INICET standard MCQs.\n` +
+    `A partially or fully filled MCQ is given below (blank fields may be empty strings):\n` +
+    `Question: ${q || '(blank)'}\n` +
+    `Options: ${JSON.stringify(opts)}\n` +
+    `Marked correctIndex (may be a guess): ${Number(correctIndex) || 0}\n` +
+    `Explanation: ${(explanation || '').trim() || '(blank)'}\n\n` +
+    `Rules:\n` +
+    `- Keep the author's intent. For any field that is FILLED, only fix spelling, grammar, language and medical/factual errors.\n` +
+    `- For any field that is BLANK, generate it accurately from NEET PG medical knowledge so the whole MCQ is consistent.\n` +
+    `- If everything is blank, create one high-yield random NEET PG MCQ.\n` +
+    `- Ensure exactly 4 options, the correct one identified by correctIndex, and a concise explanation.\n` + SHAPE;
 }
 
-function bankPrompt({ subject, chapter, topic }) {
-  const scope = [subject, chapter, topic].filter(Boolean).join(' - ') || 'general medicine';
-  return `Generate ONE NEET PG / INICET level multiple-choice question on "${scope}". ` + SHAPE;
+function bankPrompt({ subject, chapter, topic, difficulty }) {
+  const scope = [subject, chapter].filter(Boolean).join(' - ') || 'general medicine';
+  const focus = (topic || '').trim();
+  const diff = (difficulty || '').trim();
+  return `Generate ONE NEET PG / INICET level multiple-choice question.\n` +
+    `Subject & sub-topic: ${scope}.\n` +
+    (focus ? `Specific focus: ${focus}.\n` : '') +
+    (diff ? `Difficulty: ${diff}.\n` : '') + SHAPE;
 }
 
 function parseMCQ(raw) {
