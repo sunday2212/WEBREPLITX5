@@ -1,9 +1,9 @@
 // API Configuration
 
-export const getGroqAPIKey = () => localStorage.getItem('groqApiKey') || "";
+export const getGroqAPIKey = () => window.AIKeyManager.getCachedAISettings().keys.groq || "";
 
 export const updateAPIKey = (groqKey) => {
-    localStorage.setItem('groqApiKey', groqKey);
+    return window.AIKeyManager.saveAISettings('groq', groqKey);
 };
 
 export const getAPIUrl = () => 'https://api.groq.com/openai/v1/chat/completions';
