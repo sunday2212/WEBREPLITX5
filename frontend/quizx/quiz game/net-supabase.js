@@ -160,6 +160,25 @@ export class SupabaseNet {
     });
   }
 
+  async uploadImage(dataUrl, kind = 'question') {
+    const match = String(dataUrl || '').match(
+      /^data:(image\/(?:png|jpeg|jpg|gif|webp));base64,(.+)$/i
+    );
+    if (!match) return dataUrl;
+    const mime = match[1].toLowerCase().replace('jpg', 'jpeg');
+    const extension = mime.split('/')[1] === 'jpeg' ? 'jpg' : mime.split('/')[1];
+    const bytes = Uint8Array.from(atob(match[2]), c => c.charCodeAt(0));
+    const id = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const path = `${this.me.id}/${kind}-${id}.${extension}`;
+    const { error } = await this.sb.storage.from('quiz-images').upload(path, bytes, {
+      contentType: mime, upsert: false,
+    });
+    if (error) throw error;
+    const { data } = this.sb.storage.from('quiz-images').getPublicUrl(path);
+    return data.publicUrl;
+  }
+
   async leave() {
     try { await this.channel.untrack(); await this.sb.removeChannel(this.channel); } catch (e) { /* ignore */ }
   }
