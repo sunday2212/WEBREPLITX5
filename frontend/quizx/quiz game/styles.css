@@ -108,6 +108,8 @@ button.big{font-size:1.05rem;padding:.9rem 1.6rem}
 .src span{font-size:1.6rem}
 .src:hover{border-color:var(--pri2);transform:translateY(-2px)}
 .src[data-src=folder]{grid-column:1 / -1}
+.src[data-src=manual]{border-color:rgba(139,123,255,.55)}
+.src[data-src=manual] small{font-size:.7rem;color:var(--muted);font-weight:400}
 
 .list{display:flex;flex-direction:column;gap:.5rem;margin-top:.8rem}
 .row{text-align:left;background:var(--bg2);border:1px solid var(--line);color:var(--txt);
@@ -178,3 +180,6 @@ button.big{font-size:1.05rem;padding:.9rem 1.6rem}
 .bm-thumb{width:54px;height:54px;object-fit:cover;border-radius:8px;flex:0 0 auto;border:1px solid var(--line)}
 .bm-txt{display:block;font-size:.9rem;line-height:1.35}
 .bm-tag{display:block;font-size:.72rem;color:var(--pri2);font-weight:600;margin-bottom:.15rem;text-transform:uppercase;letter-spacing:.03em}
+.bm-preview-text{display:block}
+.question-image{margin:.7rem 0;text-align:center}
+.question-image img{max-width:100%;height:auto;border-radius:10px}
