@@ -11,8 +11,8 @@
   'use strict';
 
   // Keep provider models in one place. These are the current model IDs used by
-  // the official Gemini Interactions API and OpenAI Responses API.
-  const GEMINI_MODEL = 'gemini-3.6-flash';
+  // the official Gemini generateContent API and OpenAI Responses API.
+  const GEMINI_MODEL = 'gemini-3.5-flash-lite';
   const OPENAI_MODEL = 'gpt-5.6';
 
   const PROVIDERS = {
@@ -24,7 +24,7 @@
       guideUrl: 'https://aistudio.google.com/app/apikey',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: GEMINI_MODEL, label: 'Gemini 3.6 Flash', badge: 'Fast · stable · great for quizzes' },
+        { id: GEMINI_MODEL, label: 'Gemini 3.5 Flash Lite', badge: 'Fast · stable · great for quizzes' },
       ],
     },
     groq: {
@@ -300,21 +300,13 @@
     let response;
     if (provider === 'gemini') {
       response = await fetch(
-        'https://generativelanguage.googleapis.com/v1beta/interactions',
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`,
         {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-goog-api-key': key,
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            model,
-            system_instruction: prompt.startsWith('You are a medical educator')
-              ? prompt.split('\n').shift()
-              : 'You are a helpful assistant.',
-            input: prompt,
-            generation_config: { temperature, max_output_tokens: maxTokens },
-            store: false,
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { temperature, maxOutputTokens: maxTokens },
           }),
         }
       );
