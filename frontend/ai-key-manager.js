@@ -10,10 +10,10 @@
 (function () {
   'use strict';
 
-  // Keep the Gemini model in one place. Older releases used Gemini 2.5, which
-  // can return NOT_FOUND for new API keys. This is a stable model supported by
-  // the Gemini generateContent endpoint used below.
-  const GEMINI_MODEL = 'gemini-3.5-flash';
+  // Keep provider models in one place. These are the current model IDs used by
+  // the official Gemini Interactions API and OpenAI Responses API.
+  const GEMINI_MODEL = 'gemini-3.6-flash';
+  const OPENAI_MODEL = 'gpt-5.6';
 
   const PROVIDERS = {
     gemini: {
@@ -24,7 +24,7 @@
       guideUrl: 'https://aistudio.google.com/app/apikey',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: GEMINI_MODEL, label: 'Gemini 3.5 Flash', badge: 'Fast · stable · great for quizzes' },
+        { id: GEMINI_MODEL, label: 'Gemini 3.6 Flash', badge: 'Fast · stable · great for quizzes' },
       ],
     },
     groq: {
@@ -44,7 +44,7 @@
       guide: 'OpenAI Platform',
       guideUrl: 'https://platform.openai.com/api-keys',
       models: [
-        { id: 'gpt-4.1-mini', label: 'GPT-4.1 mini', badge: 'Fast · low cost · reliable' },
+        { id: OPENAI_MODEL, label: 'GPT-5.6', badge: 'Reliable · current OpenAI model' },
       ],
     },
   };
@@ -248,6 +248,49 @@
     return `${key.slice(0, 6)}••••••••${key.slice(-4)}`;
   }
 
+  function responseText(data) {
+    if (!data) return '';
+    if (typeof data.output_text === 'string') return data.output_text;
+    if (typeof data.text === 'string') return data.text;
+
+    const parts = data.output || data.outputs || data.steps || data.candidates || data.choices;
+    if (Array.isArray(parts)) {
+      return parts.map((part) => {
+        if (typeof part === 'string') return part;
+        if (typeof part.text === 'string') return part.text;
+        if (part.message && typeof part.message.content === 'string') return part.message.content;
+        if (part.message && Array.isArray(part.message.content)) {
+          return part.message.content.map(item => item.text || '').join('');
+        }
+        if (Array.isArray(part.content)) {
+          return part.content.map(item => item.text || '').join('');
+        }
+        return '';
+      }).join('');
+    }
+    return '';
+  }
+
+  async function providerError(provider, response, model) {
+    let details = '';
+    try {
+      const body = await response.json();
+      details = body?.error?.message || body?.error?.status || JSON.stringify(body);
+      const code = body?.error?.code || body?.error?.type;
+      if (provider === 'openai' && (code === 'insufficient_quota'
+        || response.status === 429 || /credit|quota|billing/i.test(details))) {
+        throw new Error(
+          'OpenAI has no API credits available. Add credits or billing at ' +
+          'https://platform.openai.com/settings/organization/billing, then try again.'
+        );
+      }
+    } catch (error) {
+      if (error.message.startsWith('OpenAI has no API credits')) throw error;
+      if (!details) details = error.message;
+    }
+    throw new Error(`${PROVIDERS[provider].label} error (${response.status}): ${details || 'Request failed'}`);
+  }
+
   async function callAI(provider, key, prompt, options = {}) {
     provider = normalizeProvider(provider);
     if (!key) throw new Error(`No ${PROVIDERS[provider].label} API key is saved.`);
@@ -257,7 +300,7 @@
     let response;
     if (provider === 'gemini') {
       response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        'https://generativelanguage.googleapis.com/v1beta/interactions',
         {
           method: 'POST',
           headers: {
@@ -265,41 +308,45 @@
             'x-goog-api-key': key,
           },
           body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { temperature, maxOutputTokens: maxTokens },
+            model,
+            system_instruction: prompt.startsWith('You are a medical educator')
+              ? prompt.split('\n').shift()
+              : 'You are a helpful assistant.',
+            input: prompt,
+            generation_config: { temperature, max_output_tokens: maxTokens },
+            store: false,
           }),
         }
       );
-      if (!response.ok) {
-        const details = await response.text();
-        if (response.status === 404) {
-          throw new Error(
-            `Google Gemini model "${model}" is unavailable for this request. ` +
-            `Please reload the latest app version and try again. Details: ${details}`
-          );
-        }
-        throw new Error(`Google Gemini error: ${details}`);
-      }
+      if (!response.ok) await providerError('gemini', response, model);
       const data = await response.json();
-      return data?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+      return responseText(data);
     }
 
     const endpoint = provider === 'groq'
       ? 'https://api.groq.com/openai/v1/chat/completions'
-      : 'https://api.openai.com/v1/chat/completions';
-    response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
-      body: JSON.stringify({
+      : 'https://api.openai.com/v1/responses';
+    const body = provider === 'groq'
+      ? {
         model,
         temperature,
         max_tokens: maxTokens,
         messages: [{ role: 'user', content: prompt }],
-      }),
+      }
+      : {
+        model,
+        instructions: 'You are a helpful assistant. Return only the answer requested by the user.',
+        input: prompt,
+        max_output_tokens: maxTokens,
+      };
+    response = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
+      body: JSON.stringify(body),
     });
-    if (!response.ok) throw new Error(`${PROVIDERS[provider].label} error: ${await response.text()}`);
+    if (!response.ok) await providerError(provider, response, model);
     const data = await response.json();
-    return data?.choices?.[0]?.message?.content || '';
+    return responseText(data);
   }
 
   window.AIKeyManager = {
