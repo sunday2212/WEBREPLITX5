@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
     <!-- Theme must load before render to avoid flash -->
     <script src="../../theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../../supabase-config.js"></script>
+    <script src="../../ai-key-manager.js"></script>
     <script type="module" src="script.js"></script>
     <!-- Add Font Awesome for the arrow icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -47,13 +50,16 @@
         <div id="api-key-container" class="api-key-container">
             <div class="api-key-form">
                 <div class="form-group">
-                    <label for="groq-api-key">Groq API Key:</label>
-                    <input type="text" id="groq-api-key" placeholder="Enter your Groq API key" />
+                    <label for="ai-provider">AI Provider:</label>
+                    <select id="ai-provider"></select>
+                </div>
+                <div class="form-group">
+                    <label for="ai-api-key">API Key:</label>
+                    <input type="password" id="ai-api-key" placeholder="Enter your API key" autocomplete="off" />
                 </div>
                 <button id="save-api-keys" class="save-api-keys-btn">Save API Key</button>
                 <p style="margin-top: 10px; font-size: 14px;">
-                    Don’t have an API key? 
-                    <a href="groq.html" style="color: #2c5281; text-decoration: underline;">Click here to learn how</a>.
+                    The selected provider and key are shared with Profile, Doubt Solver, and Quiz Battle.
                 </p>
             </div>
         </div>
