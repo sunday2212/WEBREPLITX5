@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get your AI API key</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../theme.js"></script>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f4f7fb;
+    }
+    .guide-header {
+      padding: 2.5rem 1.25rem 3rem;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb 55%, #7c3aed);
+    }
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      display: inline-flex;
+      gap: .45rem;
+      align-items: center;
+      padding: .55rem .8rem;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+    }
+    .guide-header h1 { margin: 0 0 .6rem; font-size: clamp(1.65rem, 4vw, 2.4rem); }
+    .guide-header p { margin: 0 auto; max-width: 640px; color: #dbeafe; }
+    .provider-tabs {
+      display: flex;
+      justify-content: center;
+      gap: .6rem;
+      flex-wrap: wrap;
+      max-width: 850px;
+      margin: -1.5rem auto 1.5rem;
+      padding: 0 1rem;
+      position: relative;
+    }
+    .provider-tab {
+      border: 1px solid #dbe3f0;
+      border-radius: 999px;
+      padding: .7rem 1rem;
+      background: #fff;
+      color: #334155;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(30, 58, 138, .1);
+      font-weight: 700;
+    }
+    .provider-tab.active { color: #fff; background: #2563eb; border-color: #2563eb; }
+    .guide-container { max-width: 900px; margin: 0 auto; padding: 0 1rem 2.5rem; }
+    .summary-card, .step, .safety-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+    }
+    .summary-card { padding: 1.15rem 1.3rem; margin-bottom: 1rem; }
+    .summary-card h2 { margin: 0 0 .35rem; font-size: 1.15rem; }
+    .summary-card p { margin: 0; color: #64748b; }
+    .model-pill {
+      display: inline-block;
+      margin-top: .6rem;
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4338ca;
+      font-weight: 700;
+      font-size: .82rem;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: .9rem;
+      margin: 1rem 0;
+      padding: 1.15rem;
+    }
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      color: #fff;
+      background: #2563eb;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+    .step h3 { margin: .1rem 0 .35rem; font-size: 1.04rem; }
+    .step p { margin: 0; color: #475569; line-height: 1.6; }
+    .step a { color: #1d4ed8; font-weight: 700; }
+    .safety-card {
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      border-color: #fbbf24;
+      background: #fffbeb;
+    }
+    .safety-card strong { color: #92400e; }
+    .safety-card p { margin: .35rem 0 0; color: #78350f; line-height: 1.55; }
+    .return-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      margin-top: 1.25rem;
+      color: #fff;
+      background: #2563eb;
+      padding: .8rem 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer { padding: 1.25rem; color: #64748b; text-align: center; font-size: .85rem; }
+    @media (max-width: 520px) {
+      .guide-header { padding-top: 3.5rem; }
+      .step { grid-template-columns: 34px 1fr; padding: .95rem; }
+      .step-number { width: 32px; height: 32px; font-size: .9rem; }
+    }
+    html:not([data-theme="light"]) body { color: #e6edf3; background: #0d1117; }
+    html:not([data-theme="light"]) .summary-card,
+    html:not([data-theme="light"]) .step,
+    html:not([data-theme="light"]) .provider-tab { color: #e6edf3; background: #161b22; border-color: #30363d; }
+    html:not([data-theme="light"]) .summary-card p,
+    html:not([data-theme="light"]) .step p { color: #aab4c3; }
+    html:not([data-theme="light"]) .model-pill { background: #1e253b; color: #a5b4fc; }
+    html:not([data-theme="light"]) .safety-card { background: #2d2410; border-color: #9a6700; }
+    html:not([data-theme="light"]) .safety-card p { color: #f3cc73; }
+  </style>
+</head>
+<body>
+  <header class="guide-header">
+    <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+    <h1><i class="fas fa-key"></i> Get your AI API key</h1>
+    <p>Follow the steps for the AI you selected. Your key is stored in your account and used only to generate your quizzes and doubt answers.</p>
+  </header>
+
+  <nav class="provider-tabs" aria-label="AI providers">
+    <button class="provider-tab" data-provider="gemini"><i class="fas fa-star"></i> Google Gemini (AI Studio)</button>
+    <button class="provider-tab" data-provider="groq"><i class="fas fa-bolt"></i> Groq</button>
+    <button class="provider-tab" data-provider="openai"><i class="fas fa-comments"></i> ChatGPT / OpenAI</button>
+  </nav>
+
+  <main class="guide-container">
+    <section class="summary-card">
+      <h2 id="provider-title"></h2>
+      <p id="provider-summary"></p>
+      <span class="model-pill" id="provider-model"></span>
+    </section>
+    <section id="steps" aria-live="polite"></section>
+    <section class="safety-card">
+      <strong><i class="fas fa-shield-halved"></i> Keep your key private</strong>
+      <p>Never paste an API key into a public post, source repository, or screenshot. This app saves your key to your account so you use your own provider quota. Delete or rotate it from the provider dashboard if it is ever exposed.</p>
+    </section>
+    <a id="return-link" class="return-link" href="index.html"><i class="fas fa-arrow-left"></i> Return to AI Quiz Setup</a>
+  </main>
+  <footer>Provider links open official websites. Free availability and rate limits can change over time.</footer>
+
+  <script>
+    const guides = {
+      gemini: {
+        title: 'Google Gemini API key',
+        summary: 'Create a free key in Google AI Studio. No credit card needed to start on the free tier.',
+        model: 'This app uses the Gemini 2.5 Flash model automatically.',
+        steps: [
+          ['Open Google AI Studio', 'Go to <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio API keys</a> and sign in with your Google account.'],
+          ['Create the key', 'Click <strong>Create API key</strong>. Choose an existing Google Cloud project or let it create a new one for you.'],
+          ['Copy the key', 'Copy the key (it starts with <strong>AIza…</strong>) immediately. Treat it like a password and never share it publicly.'],
+          ['Save it here', 'Return to the app, choose <strong>Google Gemini</strong> as your AI, paste the key, and press <strong>Save API Key</strong>. The model is selected for you.']
+        ]
+      },
+      groq: {
+        title: 'Groq API key',
+        summary: 'Create a free Groq Cloud key. Groq is extremely fast and has a generous free tier — great for quizzes.',
+        model: 'This app uses the Llama 3.3 70B Versatile model automatically.',
+        steps: [
+          ['Open Groq Cloud', 'Go to the official <a href="https://console.groq.com/keys" target="_blank" rel="noopener">Groq API Keys page</a> and sign in or create a free account (no card required).'],
+          ['Open API Keys', 'In the Groq Console, open <strong>API Keys</strong> from the left menu or dashboard.'],
+          ['Create a key', 'Click <strong>Create API Key</strong>, give it a name such as <em>AI Quiz</em>, then confirm.'],
+          ['Copy it once', 'Copy the key (it starts with <strong>gsk_…</strong>) when it is shown. Groq may not show the full key again after you leave the page.'],
+          ['Save it here', 'Return to the app, choose <strong>Groq</strong> as your AI, paste the key, and press <strong>Save API Key</strong>. The model is selected for you.']
+        ]
+      },
+      openai: {
+        title: 'ChatGPT / OpenAI API key',
+        summary: 'Create an API key on the OpenAI developer platform. API billing is separate from a ChatGPT subscription.',
+        model: 'This app uses the GPT-4.1 mini model automatically.',
+        steps: [
+          ['Open the API keys page', 'Go to the official <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI API keys page</a> and sign in or create an account.'],
+          ['Add billing or credits', 'OpenAI API usage is billed separately from ChatGPT Plus. Follow the prompts to add a small amount of billing or credits before making requests.'],
+          ['Create a secret key', 'Click <strong>Create new secret key</strong>, give it a name such as <em>AI Quiz</em>, and confirm.'],
+          ['Copy the key immediately', 'Copy the secret key (it starts with <strong>sk-…</strong>) before closing the dialog. OpenAI does not show it again later.'],
+          ['Save it here', 'Return to the app, choose <strong>ChatGPT (OpenAI)</strong> as your AI, paste the key, and press <strong>Save API Key</strong>. The model is selected for you.']
+        ]
+      }
+    };
+
+    function render(provider) {
+      const guide = guides[provider] || guides.gemini;
+      document.title = `Get ${guide.title}`;
+      document.getElementById('provider-title').textContent = guide.title;
+      document.getElementById('provider-summary').textContent = guide.summary;
+      document.getElementById('provider-model').textContent = guide.model;
+      document.getElementById('steps').innerHTML = guide.steps.map((step, index) => `
+        <article class="step">
+          <div class="step-number">${index + 1}</div>
+          <div><h3>${step[0]}</h3><p>${step[1]}</p></div>
+        </article>
+      `).join('');
+      document.getElementById('return-link').href = `index.html?provider=${provider}`;
+      document.querySelectorAll('.provider-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.provider === provider);
+        tab.onclick = () => {
+          history.replaceState(null, '', `?provider=${tab.dataset.provider}`);
+          render(tab.dataset.provider);
+        };
+      });
+    }
+    render(new URLSearchParams(location.search).get('provider'));
+  </script>
+</body>
+</html>
