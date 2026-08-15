@@ -51,8 +51,24 @@
     return PROVIDERS[provider] ? provider : DEFAULT_PROVIDER;
   }
 
+  // Normalize model ids. Handles legacy names and strips any optional
+  // "models/" prefix that older saved values or API responses might include.
   function normalizeModel(provider, model) {
     const models = PROVIDERS[normalizeProvider(provider)].models;
+    // Default to provider's first model when model is falsy
+    if (!model) return models[0].id;
+
+    model = String(model || '').trim();
+    // Strip legacy "models/" prefix that some responses/store use
+    model = model.replace(/^models\//, '');
+
+    // Map known deprecated model IDs to current ones
+    const LEGACY_MODEL_MAP = {
+      'gemini-2.5-flash': 'gemini-3.5-flash',
+      // add other mappings here as providers evolve
+    };
+    if (LEGACY_MODEL_MAP[model]) model = LEGACY_MODEL_MAP[model];
+
     return models.some(item => item.id === model) ? model : models[0].id;
   }
 
@@ -64,13 +80,18 @@
     if (!keys.groq && localStorage.getItem('groqApiKey')) {
       keys.groq = localStorage.getItem('groqApiKey');
     }
+
+    // Provider may be stored under multiple legacy keys
+    const provider = normalizeProvider(
+      stored.provider || localStorage.getItem('aiProvider') || localStorage.getItem('qg_provider')
+    );
+
+    // Model can be stored in the cached value or the older aiModel key; normalize it
+    const rawModel = stored.model || localStorage.getItem('aiModel') || null;
+
     return {
-      provider: normalizeProvider(stored.provider || localStorage.getItem('aiProvider') ||
-        localStorage.getItem('qg_provider')),
-      model: normalizeModel(
-        stored.provider || localStorage.getItem('aiProvider') || localStorage.getItem('qg_provider'),
-        stored.model
-      ),
+      provider,
+      model: normalizeModel(provider, rawModel),
       keys,
     };
   }
@@ -143,6 +164,8 @@
         settings.provider = normalizeProvider(
           profile.ai_provider || metadata.ai_provider || settings.provider
         );
+        // normalizeModel will handle legacy model ids and prefixes coming from
+        // profile or metadata
         settings.model = normalizeModel(
           settings.provider,
           profile.ai_model || metadata.ai_model || settings.model
