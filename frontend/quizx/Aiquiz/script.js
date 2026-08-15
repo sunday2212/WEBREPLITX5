@@ -1,5 +1,5 @@
 import { QuizUI } from './js/ui.js';
-    const { loadAISettings, saveAISettings, getCachedAISettings, providerOptions, modelOptions, PROVIDERS } =
+    const { loadAISettings, saveAISettings, getCachedAISettings, providerOptions, PROVIDERS } =
     window.AIKeyManager;
 
 // Utility function for custom popup
@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const saveApiKeysBtn = document.getElementById('save-api-keys');
     const apiKeyInput = document.getElementById('ai-api-key');
     const providerInput = document.getElementById('ai-provider');
-    const modelInput = document.getElementById('ai-model');
-    const modelHelp = document.getElementById('ai-model-help');
     const getApiKey = document.getElementById('get-api-key');
     const apiKeyNote = document.getElementById('api-key-note');
 
@@ -35,9 +33,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const provider = providerInput.value;
         const cached = getCachedAISettings();
         const providerInfo = PROVIDERS[provider];
-        modelInput.innerHTML = modelOptions(provider, cached.model);
-        const selectedModel = modelInput.value;
-        modelHelp.textContent = providerInfo.models.find(item => item.id === selectedModel)?.badge || '';
         getApiKey.href = `api-key-guide.html?provider=${encodeURIComponent(provider)}`;
         getApiKey.setAttribute('aria-label', `How to get a ${providerInfo.label} API key`);
         apiKeyNote.textContent = provider === 'openai'
@@ -49,21 +44,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         apiKeyInput.dataset.hasSavedKey = key ? 'true' : 'false';
     };
     providerInput.addEventListener('change', syncInput);
-    modelInput.addEventListener('change', () => {
-        const providerInfo = PROVIDERS[providerInput.value];
-        modelHelp.textContent = providerInfo.models.find(item => item.id === modelInput.value)?.badge || '';
-    });
     syncInput();
 
     if (saveApiKeysBtn) {
         saveApiKeysBtn.addEventListener('click', async () => {
             const provider = providerInput.value;
             const key = apiKeyInput.value.trim();
-            const model = modelInput.value;
 
             if (key) {
                 try {
-                    await saveAISettings(provider, key, model);
+                    await saveAISettings(provider, key);
                     apiKeyInput.value = '';
                     syncInput();
                     showPopup(`${PROVIDERS[provider].label} key saved and shared across the site!`);
