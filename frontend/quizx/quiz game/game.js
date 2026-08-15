@@ -89,6 +89,10 @@ const LS = {
     return (settings && settings.keys[LS.provider]) || localStorage.getItem('qg_apikey') || '';
   },
   set key(v) { localStorage.setItem('qg_apikey', v); },
+  get model() {
+    const settings = window.AIKeyManager && window.AIKeyManager.getCachedAISettings();
+    return settings && settings.provider === LS.provider ? settings.model : '';
+  },
 };
 
 export class Game {
@@ -709,6 +713,8 @@ export class Game {
 
   // ---------- settings ----------
   openSettings() {
+    const manager = window.AIKeyManager;
+    const currentModel = LS.model || (manager && manager.PROVIDERS[LS.provider].models[0].id) || '';
     this.modal(`<h2>⚙️ Settings</h2>
       <label>AI Provider</label>
       <select id="set-prov">
@@ -716,15 +722,27 @@ export class Game {
         <option value="openai" ${LS.provider==='openai'?'selected':''}>OpenAI (GPT)</option>
          <option value="groq" ${LS.provider==='groq'?'selected':''}>Groq AI</option>
       </select>
+      <label>Quiz model</label>
+      <select id="set-model">${manager ? manager.modelOptions(LS.provider, currentModel) : ''}</select>
       <label>Your API Key</label>
       <input id="set-key" type="password" value="${esc(LS.key)}" placeholder="gsk_... / sk-... / AIza..." />
-       <p class="muted">The selected provider and key are saved to your Supabase profile and reused across the site.</p>
+       <p class="muted">The selected provider, model, and key are saved to your Supabase profile and reused across the site.</p>
+       <a class="settings-guide-link" id="set-guide" href="../Aiquiz/api-key-guide.html?provider=${LS.provider}" target="_blank" rel="noopener">🔑 Get my API key</a>
       <button class="primary" id="set-save">Save</button>`);
+    const providerSelect = $('#set-prov', this.modalEl);
+    const modelSelect = $('#set-model', this.modalEl);
+    const guideLink = $('#set-guide', this.modalEl);
+    providerSelect.addEventListener('change', () => {
+      const provider = providerSelect.value;
+      if (manager) modelSelect.innerHTML = manager.modelOptions(provider, manager.PROVIDERS[provider].models[0].id);
+      guideLink.href = `../Aiquiz/api-key-guide.html?provider=${provider}`;
+    });
     $('#set-save', this.modalEl).addEventListener('click', async () => {
       LS.provider = $('#set-prov', this.modalEl).value;
       LS.key = $('#set-key', this.modalEl).value.trim();
+      const model = $('#set-model', this.modalEl).value;
        if (LS.key && window.AIKeyManager) {
-         await window.AIKeyManager.saveAISettings(LS.provider, LS.key);
+         await window.AIKeyManager.saveAISettings(LS.provider, LS.key, model);
        } else if (typeof this.net.saveApiKey === 'function') {
          await this.net.saveApiKey(LS.provider, LS.key);
        }
