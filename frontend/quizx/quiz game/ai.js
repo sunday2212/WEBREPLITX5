@@ -183,7 +183,16 @@ const LETTER = { a: 0, b: 1, c: 2, d: 3, A: 0, B: 1, C: 2, D: 3 };
 
 export function normalizeQuestion(raw) {
   if (!raw) return null;
-  const text = raw.question || raw.text || raw.q || raw.title || raw.statement || '';
+  const content = (value) => {
+    if (value == null) return '';
+    if (typeof value === 'string' || typeof value === 'number') return String(value);
+    if (typeof value === 'object') {
+      return content(value.html ?? value.content ?? value.text ?? value.value
+        ?? value.question ?? value.statement ?? '');
+    }
+    return '';
+  };
+  const text = content(raw.question ?? raw.text ?? raw.q ?? raw.title ?? raw.statement);
 
   // options can be an array, or an object {A:..,B:..}, or opt1..opt4
   let options = raw.options || raw.choices || raw.answers || raw.opts;
@@ -195,7 +204,7 @@ export function normalizeQuestion(raw) {
     options = Object.keys(options).sort().map(k => options[k]);
   }
   if (!Array.isArray(options)) return null;
-  options = options.map(o => (o && typeof o === 'object' ? (o.text || o.value || JSON.stringify(o)) : String(o)));
+  options = options.map(o => content(o));
   if (options.length < 2) return null;
 
   // correct answer: index / letter / matching text / boolean flags
@@ -224,5 +233,13 @@ export function normalizeQuestion(raw) {
     ci = flagIdx >= 0 ? flagIdx : 0;
   }
   ci = Math.max(0, Math.min(options.length - 1, Number(ci) || 0));
-
-  
+  const imageValue = raw.image ?? raw.image_url ?? raw.imageUrl ?? raw.img
+    ?? (raw.media && (raw.media.url || raw.media.src));
+  return {
+    text,
+    options,
+    correctIndex: ci,
+    explanation: content(raw.explanation ?? raw.solution ?? raw.explanation_html),
+    image: content(imageValue),
+  };
+}
