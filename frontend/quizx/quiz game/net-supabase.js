@@ -81,7 +81,10 @@ export class SupabaseNet {
     this.channel.on('postgres_changes',
       { event: 'INSERT', schema: 'public', table: 'round_answers', filter: `room_id=eq.${CONFIG.ROOM_ID}` },
       (payload) => {
-        this._answers.push(this._mapAnswer(payload.new));
+        const answer = this._mapAnswer(payload.new);
+        if (!this._answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
+          this._answers.push(answer);
+        }
         this._cb.onAnswers && this._cb.onAnswers(this.getAnswers());
       });
 
@@ -92,6 +95,7 @@ export class SupabaseNet {
           avatar: this.me.avatar, score: 0, joinedAt: Date.now(),
         });
         await this._loadRoom();
+        await this._loadAnswers();
       }
     });
 
@@ -107,6 +111,21 @@ export class SupabaseNet {
   async _loadRoom() {
     const { data } = await this.sb.from('game_rooms').select('*').eq('id', CONFIG.ROOM_ID).single();
     if (data) { this._state = data; this._cb.onRoomState && this._cb.onRoomState(this.getRoomState()); }
+  }
+
+  async _loadAnswers() {
+    const { data, error } = await this.sb.from('round_answers')
+      .select('*')
+      .eq('room_id', CONFIG.ROOM_ID)
+      .order('answered_at', { ascending: true })
+      .limit(2000);
+    if (error) return;
+    (data || []).map(row => this._mapAnswer(row)).forEach(answer => {
+      if (!this._answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
+        this._answers.push(answer);
+      }
+    });
+    this._cb.onAnswers && this._cb.onAnswers(this.getAnswers());
   }
 
   players() {
