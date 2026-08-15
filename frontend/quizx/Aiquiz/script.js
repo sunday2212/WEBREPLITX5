@@ -1,5 +1,6 @@
 import { QuizUI } from './js/ui.js';
-import { updateAPIKey, getGroqAPIKey } from './js/config.js';
+const { loadAISettings, saveAISettings, getCachedAISettings, providerOptions, PROVIDERS } =
+    window.AIKeyManager;
 
 // Utility function for custom popup
 function showPopup(message) {
@@ -15,28 +16,43 @@ function showPopup(message) {
 }
 
 // Initialize the quiz application
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const quizUI = new QuizUI();
 
     // Handle API key setup
     const saveApiKeysBtn = document.getElementById('save-api-keys');
-    const groqApiKeyInput = document.getElementById('groq-api-key');
+    const apiKeyInput = document.getElementById('ai-api-key');
+    const providerInput = document.getElementById('ai-provider');
 
-    // Load saved API key on page load
-    const savedGroqKey = getGroqAPIKey();
-    if (groqApiKeyInput && savedGroqKey) {
-        groqApiKeyInput.value = savedGroqKey;
-    }
+    // Load the same Supabase-backed provider/key settings used everywhere else.
+    const settings = await loadAISettings(true);
+    providerInput.innerHTML = providerOptions(settings.provider);
+    const syncInput = () => {
+        const provider = providerInput.value;
+        const key = getCachedAISettings().keys[provider] || '';
+        apiKeyInput.value = '';
+        apiKeyInput.placeholder = `Enter ${PROVIDERS[provider].label} API key (${PROVIDERS[provider].placeholder})`;
+        apiKeyInput.dataset.hasSavedKey = key ? 'true' : 'false';
+    };
+    providerInput.addEventListener('change', syncInput);
+    syncInput();
 
     if (saveApiKeysBtn) {
-        saveApiKeysBtn.addEventListener('click', () => {
-            const groqKey = groqApiKeyInput.value.trim();
+        saveApiKeysBtn.addEventListener('click', async () => {
+            const provider = providerInput.value;
+            const key = apiKeyInput.value.trim();
 
-            if (groqKey) {
-                updateAPIKey(groqKey);
-                showPopup('Groq API key saved successfully!');
+            if (key) {
+                try {
+                    await saveAISettings(provider, key);
+                    apiKeyInput.value = '';
+                    syncInput();
+                    showPopup(`${PROVIDERS[provider].label} key saved and shared across the site!`);
+                } catch (e) {
+                    showPopup('Could not save API key: ' + e.message);
+                }
             } else {
-                showPopup('Please enter your Groq API key.');
+                showPopup(`Enter your ${PROVIDERS[provider].label} API key.`);
             }
         });
     }
