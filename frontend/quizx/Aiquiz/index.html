@@ -54,10 +54,21 @@
                     <select id="ai-provider"></select>
                 </div>
                 <div class="form-group">
+                    <label for="ai-model">Quiz model:</label>
+                    <select id="ai-model"></select>
+                    <small id="ai-model-help" class="ai-model-help"></small>
+                </div>
+                <div class="form-group">
                     <label for="ai-api-key">API Key:</label>
                     <input type="password" id="ai-api-key" placeholder="Enter your API key" autocomplete="off" />
                 </div>
-                <button id="save-api-keys" class="save-api-keys-btn">Save API Key</button>
+                <div class="api-key-actions">
+                    <button id="save-api-keys" class="save-api-keys-btn">Save API Key</button>
+                    <a id="get-api-key" class="get-api-key-btn" href="api-key-guide.html?provider=gemini">
+                        <i class="fas fa-key"></i> Get my API key
+                    </a>
+                </div>
+                <p id="api-key-note" class="api-key-note"></p>
                 <p style="margin-top: 10px; font-size: 14px;">
                     The selected provider and key are shared with Profile, Doubt Solver, and Quiz Battle.
                 </p>
