@@ -125,7 +125,12 @@ export class Game {
     }
     this.renderHeader();
     this.maybeHostBootstrap();
-    this._tick = setInterval(() => this.hostLoop(), 1000);
+    // The room state is realtime, but the countdown is local UI state. Redraw
+    // it every second for every player instead of waiting for a database event.
+    this._tick = setInterval(() => {
+      this.hostLoop();
+      if (this.state?.phase === 'answering') this.renderStage();
+    }, 1000);
   }
 
   // ---------- host orchestration ----------
@@ -134,7 +139,10 @@ export class Game {
   maybeHostBootstrap() {
     if (!this.me || !this.net.isHost()) return;
     const s = this.net.getRoomState();
-    if (!s || s.phase === 'lobby' || !s.phase) {
+    const setterPresent = s?.setterId && this.present().some(p => p.id === s.setterId);
+    // If the current setter leaves while the source picker is open, promote
+    // the next online player so the room never gets stuck in setup.
+    if (!s || s.phase === 'lobby' || !s.phase || (s.phase === 'setting' && !setterPresent)) {
       if (this.present().length >= 1) this.beginSetting(null);
     }
   }
@@ -244,13 +252,13 @@ export class Game {
   // ---------- question sourcing (setter's turn) ----------
   openSourcePicker() {
     this.modal(`<h2>Your turn — choose a question</h2>
-      <p class="muted">Pick how you want to set this round's MCQ.</p>
+      <p class="muted">Pick how you want to set this question.</p>
       <div class="source-grid">
          <button class="src" data-src="manual"><span>✍️</span>Manual + AI Assist<small>Write, fix or auto-fill an MCQ</small></button>
         <button class="src" data-src="bookmarks"><span>⭐</span>From Bookmarks</button>
         <button class="src" data-src="bank"><span>📚</span>AI Question Bank</button>
         <button class="src" data-src="folder"><span>📁</span>Question Bank Folder</button>
-      </div>`);
+      </div>`, true, () => this.closeModal());
     this.modalEl.querySelectorAll('.src').forEach(b =>
       b.addEventListener('click', () => this.handleSource(b.dataset.src)));
   }
@@ -283,9 +291,10 @@ export class Game {
       <div id="m-exp-image-preview"></div>
       <div class="btn-row">
         <button class="ghost" id="m-ai" type="button">✨ AI Fix / Fill</button>
-        <button class="primary" id="m-go" type="button">Start Round</button>
+        <button class="primary" id="m-go" type="button">Start Question</button>
       </div>
-      <p class="muted">AI uses NEET PG medical knowledge to fix spelling, grammar and medical errors, fill blank fields, or generate a complete question when everything is blank.</p>`);
+       <p class="muted">AI uses NEET PG medical knowledge to fix spelling, grammar and medical errors, fill blank fields, or generate a complete question when everything is blank.</p>`,
+       true, () => this.openSourcePicker());
     const readForm = () => ({
       question: $('#m-q', this.modalEl).value.trim(),
       options: [0,1,2,3].map(i => $('#m-o'+i, this.modalEl).value.trim()),
@@ -342,7 +351,7 @@ export class Game {
       try {
         const q = await aiManual(readForm(), LS.provider, LS.key);
         writeForm(q);
-         this.toast('AI fixed and filled the question — review, then Start Round');
+         this.toast('AI fixed and filled the question — review, then Start Question');
       } catch (e) { this.toast('AI failed: ' + e.message); }
       finally { btn.disabled = false; btn.textContent = '✨ AI Fix / Fill'; }
     });
@@ -356,9 +365,13 @@ export class Game {
   }
 
   async listBookmarks() {
-    this.modal(`<h2>⭐ From Bookmarks</h2><p class="muted">Tap a question to set it for this round.</p><div id="bm-list" class="list"><div class="spinner"></div></div>`);
+    this.modal(`<h2>⭐ From Bookmarks</h2><p class="muted">Tap a question to set it for everyone.</p><div id="bm-list" class="list"><div class="spinner"></div></div>`,
+      true, () => this.openSourcePicker());
     let rows = [];
     try { if (typeof this.net.getBookmarks === 'function') rows = await this.net.getBookmarks(); } catch (e) { /* ignore */ }
+    // The user may have pressed the back arrow while the bookmark query was
+    // in flight. Do not render into the newly opened source picker.
+    if (!this.modalEl || !$('#bm-list', this.modalEl)) return;
     const el = $('#bm-list', this.modalEl);
     if (!rows.length) {
       const items = SAMPLE_BANK.slice(0, 5);
@@ -402,7 +415,8 @@ export class Game {
        <label>Hardness level</label><select id="b-diff">${levels.map(l => `<option value="${esc(l)}">${esc(l)} — ${esc(DIFFICULTY_LEVELS[l])}</option>`).join('')}</select>
        <label>Specific topic (type yourself, optional)</label><input id="b-top" placeholder="e.g. Frank-Starling law" />
       <p class="muted">AI generates a NEET PG question from your selection. Provider: <b>${esc(LS.provider)}</b></p>
-      <button class="primary" id="b-go" type="button">Generate & Start</button>`);
+       <button class="primary" id="b-go" type="button">Generate & Start</button>`,
+       true, () => this.openSourcePicker());
     const subSel = $('#b-sub', this.modalEl), chapSel = $('#b-chap', this.modalEl);
     const fillChapters = () => {
       const chs = SUBJECTS[subSel.value] || [];
@@ -429,12 +443,14 @@ export class Game {
       <label>Platform</label><select id="ff-plat"><option>Loading…</option></select>
       <label>Folder</label><select id="ff-folder"><option value="">—</option></select>
       <label>File</label><select id="ff-file"><option value="">—</option></select>
-      <label>Question</label><div id="ff-q" class="list"><p class="muted">Pick a file above.</p></div>`);
+       <label>Question</label><div id="ff-q" class="list"><p class="muted">Pick a file above.</p></div>`,
+       true, () => this.openSourcePicker());
     const platSel = $('#ff-plat', this.modalEl), folSel = $('#ff-folder', this.modalEl),
       fileSel = $('#ff-file', this.modalEl), qList = $('#ff-q', this.modalEl);
 
     let platforms = [];
     try { platforms = await qbank.getPlatforms(); } catch (e) { /* fall through */ }
+    if (!this.modalEl || !$('#ff-plat', this.modalEl)) return;
 
     if (!platforms.length) { // demo / manifest unavailable -> sample bank
       const folders = [...new Set(SAMPLE_BANK.map(q => q.chapter))];
@@ -476,11 +492,30 @@ export class Game {
   }
 
   async commitQuestion(q) {
-    this.closeModal();
     if (!q || !Array.isArray(q.options) || q.options.length < 2) return this.toast('Invalid question');
-    await this.startAnswering({ text: q.text, options: q.options, correctIndex: q.correctIndex,
+    const question = { text: q.text, options: q.options, correctIndex: q.correctIndex,
       explanation: q.explanation || q.solution || '', image: q.image || '',
-      explanationImage: q.explanationImage || '' });
+       explanationImage: q.explanationImage || '' };
+    this.closeModal();
+    const storedQuestion = await this.prepareQuestionMedia(question);
+    await this.startAnswering(storedQuestion);
+  }
+
+  // Data URLs are useful for the local preview, but large base64 strings are
+  // unreliable in realtime JSON payloads. Upload manual images to Supabase
+  // Storage when available and keep the data URL as a fallback for demo mode.
+  async prepareQuestionMedia(question) {
+    if (typeof this.net.uploadImage !== 'function') return question;
+    const prepared = { ...question };
+    for (const key of ['image', 'explanationImage']) {
+      if (!String(prepared[key] || '').startsWith('data:image/')) continue;
+      try {
+        prepared[key] = await this.net.uploadImage(prepared[key], key);
+      } catch (e) {
+        this.toast('Image storage is not configured; keeping the local image for this question');
+      }
+    }
+    return prepared;
   }
 
   // ---------- rendering ----------
@@ -538,13 +573,13 @@ export class Game {
 
     if (s.phase === 'setting') {
       if (iAmSetter) {
-        stage.innerHTML = `<div class="center"><span class="pill">Round ${s.round}</span>
-          <h2>It’s your turn!</h2><p class="muted">Set a question for everyone.</p>
+        stage.innerHTML = `<div class="center">
+           <h2>It’s your turn!</h2><p class="muted">Set a question for everyone.</p>
           <button class="primary big" id="pick">Choose a question</button></div>`;
         $('#pick').addEventListener('click', () => this.openSourcePicker());
       } else {
-        stage.innerHTML = `<div class="center"><span class="pill">Round ${s.round}</span>
-          <h2>${esc(setterName)} is setting a question…</h2>
+        stage.innerHTML = `<div class="center">
+           <h2>${esc(setterName)} is setting a question…</h2>
           <div class="spinner"></div></div>`;
       }
       return;
@@ -564,7 +599,7 @@ export class Game {
         : '';
       stage.innerHTML = `
         <div class="timerbar"><div class="fill" style="width:${pct}%"></div></div>
-        <div class="thead"><span class="pill">Round ${s.round}</span>
+         <div class="thead"><span class="pill">Question</span>
           <span class="clock">⏱ ${remaining}s</span>
           <span class="muted">${answered}/${total} answered</span></div>
          <h2 class="qtext">${rich(q.text)}${imageBlock(q)}</h2>
@@ -579,7 +614,7 @@ export class Game {
 
     if (s.phase === 'results') {
       const q = s.question;
-      stage.innerHTML = `<div class="center"><span class="pill">Round ${s.round} results</span>
+      stage.innerHTML = `<div class="center"><span class="pill">Question results</span>
         <h2>Correct answer</h2>
         <div class="correct">${rich(q.options[q.correctIndex])}</div>
         ${expBlock(q)}
@@ -604,7 +639,7 @@ export class Game {
         <span class="tag">${a.correct ? 'Correct' : 'Wrong'}</span>
         <span class="pts">+${pts}</span></div>`;
     }).join('') || '<p class="muted">No one answered this round.</p>';
-    this.modal(`<h2>Round ${s.round} Rankings</h2>
+     this.modal(`<h2>Question rankings</h2>
       <p class="muted">Correct answer: <b>${rich(q.options[q.correctIndex])}</b></p>
       ${expBlock(q)}
       <div class="results">${body}</div>`, true);
@@ -638,16 +673,19 @@ export class Game {
   }
 
   // ---------- modal + toast helpers ----------
-  modal(html, dismissable = true) {
+  modal(html, dismissable = true, backHandler = null) {
     this.closeModal();
     const root = $('#modal-root');
     const wrap = document.createElement('div');
     wrap.className = 'modal-wrap';
-    wrap.innerHTML = `<div class="modal"><button class="x" aria-label="close">✕</button>
+    wrap.innerHTML = `<div class="modal">
+      ${backHandler ? '<button class="modal-back" type="button" aria-label="Back">←</button>' : ''}
+      <button class="x" aria-label="close">✕</button>
       <div class="modal-body">${html}</div></div>`;
     root.appendChild(wrap);
     this.modalEl = wrap.querySelector('.modal-body');
     wrap.querySelector('.x').addEventListener('click', () => this.closeModal());
+    if (backHandler) wrap.querySelector('.modal-back').addEventListener('click', backHandler);
     if (dismissable) wrap.addEventListener('click', (e) => { if (e.target === wrap) this.closeModal(); });
   }
   closeModal() { const r = $('#modal-root'); if (r) r.innerHTML = ''; this.modalEl = null; }
