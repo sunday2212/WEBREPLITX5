@@ -46,6 +46,7 @@ const SHAPE =
   `Exactly 4 options. correctIndex is 0-based. "explanation" briefly justifies the correct answer using medical knowledge.`;
 
 const MED = 'You are a medical educator setting NEET PG / INICET standard MCQs. Output only JSON.';
+const GEMINI_MODEL = 'gemini-3.5-flash';
 
 function selectedModel(provider, fallback) {
   const manager = typeof window !== 'undefined' && window.AIKeyManager;
@@ -128,11 +129,16 @@ async function genOpenAI(prompt, apiKey) {
 }
 
 async function genGemini(prompt, apiKey) {
-  const model = selectedModel('gemini', 'gemini-3.5-flash');
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  // Do not trust an old cached/profile model here. Earlier builds used a
+  // retired Gemini model, which returns NOT_FOUND for some newer API keys.
+  const model = GEMINI_MODEL;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   const res = await fetch(url, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'x-goog-api-key': apiKey,
+    },
     body: JSON.stringify({ contents: [{ parts: [{ text: MED + '\n' + prompt }] }] }),
   });
   if (!res.ok) throw new Error('Gemini error: ' + (await res.text()));
