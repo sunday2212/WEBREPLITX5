@@ -9,6 +9,7 @@
        no full-screen overlay locks.
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script>
   -->
+  <script src="../../theme.js"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,6 +18,7 @@
     <div class="me">
       <img id="me-avatar" class="av" alt="" />
       <div class="me-info"><div id="me-name" class="nm">…</div><div id="me-college" class="col"></div></div>
+      <button id="btn-theme" class="icon" title="Switch theme" aria-label="Switch theme">☀️</button>
       <button id="btn-settings" class="icon" title="Settings">⚙️</button>
       <button id="btn-leave" class="icon danger" title="Leave">⏻</button>
     </div>
@@ -32,6 +34,7 @@
     </aside>
   </main>
 
+  <div id="live-activity" class="live-activity" aria-live="polite" aria-label="Live answering activity"></div>
   <div id="modal-root"></div>
 
   <script type="module">
@@ -49,6 +52,18 @@
       }
       const game = new Game(net);
       window.__game = game;
+      const themeButton = document.getElementById('btn-theme');
+      const updateThemeButton = () => {
+        const light = window._theme && window._theme.get() === 'light';
+        themeButton.textContent = light ? '🌙' : '☀️';
+        themeButton.title = light ? 'Switch to dark theme' : 'Switch to light theme';
+        themeButton.setAttribute('aria-label', themeButton.title);
+      };
+      updateThemeButton();
+      themeButton.addEventListener('click', () => {
+        if (window._theme) window._theme.toggle();
+        updateThemeButton();
+      });
       document.getElementById('btn-settings').addEventListener('click', () => game.openSettings());
       document.getElementById('btn-leave').addEventListener('click', async () => {
         await game.leave();
