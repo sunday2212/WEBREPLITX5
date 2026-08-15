@@ -17,9 +17,9 @@
       placeholder: 'AIza…',
       guide: 'Google AI Studio',
       guideUrl: 'https://aistudio.google.com/app/apikey',
+      // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash-Lite', badge: 'Fastest + budget-friendly' },
-        { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', badge: 'Best balance' },
+        { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', badge: 'Fast · free tier · great for quizzes' },
       ],
     },
     groq: {
@@ -29,8 +29,7 @@
       guide: 'Groq Cloud',
       guideUrl: 'https://console.groq.com/keys',
       models: [
-        { id: 'llama-3.1-8b-instant', label: 'Llama 3.1 8B Instant', badge: 'Fastest + high free limit' },
-        { id: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B Versatile', badge: 'Best quality' },
+        { id: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B Versatile', badge: 'Fast · high free limit · best for quizzes' },
       ],
     },
     openai: {
@@ -40,8 +39,7 @@
       guide: 'OpenAI Platform',
       guideUrl: 'https://platform.openai.com/api-keys',
       models: [
-        { id: 'gpt-4o-mini', label: 'GPT-4o mini', badge: 'Fast + low cost' },
-        { id: 'gpt-4.1-mini', label: 'GPT-4.1 mini', badge: 'More capable' },
+        { id: 'gpt-4.1-mini', label: 'GPT-4.1 mini', badge: 'Fast · low cost · reliable' },
       ],
     },
   };
