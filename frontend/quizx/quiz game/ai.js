@@ -46,7 +46,8 @@ const SHAPE =
   `Exactly 4 options. correctIndex is 0-based. "explanation" briefly justifies the correct answer using medical knowledge.`;
 
 const MED = 'You are a medical educator setting NEET PG / INICET standard MCQs. Output only JSON.';
-const GEMINI_MODEL = 'gemini-3.5-flash';
+const GEMINI_MODEL = 'gemini-3.6-flash';
+const OPENAI_MODEL = 'gpt-5.6';
 
 function selectedModel(provider, fallback) {
   const manager = typeof window !== 'undefined' && window.AIKeyManager;
@@ -109,42 +110,81 @@ function parseMCQ(raw) {
   };
 }
 
+function responseText(data) {
+  if (!data) return '';
+  if (typeof data.output_text === 'string') return data.output_text;
+  if (typeof data.text === 'string') return data.text;
+  const parts = data.output || data.outputs || data.steps || data.candidates || data.choices;
+  if (!Array.isArray(parts)) return '';
+  return parts.map((part) => {
+    if (typeof part === 'string') return part;
+    if (typeof part.text === 'string') return part.text;
+    if (part.message && typeof part.message.content === 'string') return part.message.content;
+    if (part.message && Array.isArray(part.message.content)) {
+      return part.message.content.map(item => item.text || '').join('');
+    }
+    if (Array.isArray(part.content)) return part.content.map(item => item.text || '').join('');
+    return '';
+  }).join('');
+}
+
+async function providerError(provider, res) {
+  let details = '';
+  try {
+    const body = await res.json();
+    details = body?.error?.message || body?.error?.status || JSON.stringify(body);
+    const code = body?.error?.code || body?.error?.type;
+    if (provider === 'openai' && (code === 'insufficient_quota'
+      || res.status === 429 || /credit|quota|billing/i.test(details))) {
+      throw new Error(
+        'OpenAI has no API credits available. Add credits or billing at ' +
+        'https://platform.openai.com/settings/organization/billing, then try again.'
+      );
+    }
+  } catch (error) {
+    if (error.message.startsWith('OpenAI has no API credits')) throw error;
+    if (!details) details = error.message;
+  }
+  throw new Error(`${provider === 'gemini' ? 'Gemini' : 'OpenAI'} error (${res.status}): ${details || 'Request failed'}`);
+}
+
 async function genOpenAI(prompt, apiKey) {
-  const model = selectedModel('openai', 'gpt-4.1-mini');
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const model = selectedModel('openai', OPENAI_MODEL);
+  const res = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
       model,
-      temperature: 0.9,
-      messages: [
-        { role: 'system', content: MED },
-        { role: 'user', content: prompt },
-      ],
+      instructions: MED,
+      input: prompt,
+      max_output_tokens: 1200,
     }),
   });
-  if (!res.ok) throw new Error('OpenAI error: ' + (await res.text()));
+  if (!res.ok) await providerError('openai', res);
   const data = await res.json();
-  return parseMCQ(data?.choices?.[0]?.message?.content);
+  return parseMCQ(responseText(data));
 }
 
 async function genGemini(prompt, apiKey) {
-  // Do not trust an old cached/profile model here. Earlier builds used a
-  // retired Gemini model, which returns NOT_FOUND for some newer API keys.
   const model = GEMINI_MODEL;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  const url = 'https://generativelanguage.googleapis.com/v1beta/interactions';
   const res = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'x-goog-api-key': apiKey,
     },
-    body: JSON.stringify({ contents: [{ parts: [{ text: MED + '\n' + prompt }] }] }),
+    body: JSON.stringify({
+      model,
+      system_instruction: MED,
+      input: prompt,
+      generation_config: { temperature: 0.9, max_output_tokens: 1200 },
+      store: false,
+    }),
   });
-  if (!res.ok) throw new Error('Gemini error: ' + (await res.text()));
+  if (!res.ok) await providerError('gemini', res);
   const data = await res.json();
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  return parseMCQ(text);
+  return parseMCQ(responseText(data));
 }
 
 // Groq is OpenAI-compatible. Uses the key stored in profiles.groq_api_key.
