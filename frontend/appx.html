@@ -124,6 +124,99 @@
             text-align: center;
             line-height: 1.4;
         }
+        .profile-edit-toggle {
+            margin-top: 0.75rem;
+            padding: 0.45rem 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .profile-edit-toggle:hover {
+            background: rgba(255, 255, 255, 0.23);
+            border-color: rgba(255, 255, 255, 0.75);
+        }
+        .profile-edit-form {
+            margin-bottom: 1rem;
+            padding: 0.9rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background: #f8fafc;
+        }
+        .profile-edit-form[hidden] {
+            display: none;
+        }
+        .profile-edit-form label {
+            display: block;
+            margin: 0.7rem 0 0.3rem;
+            color: #475569;
+            font-size: 0.76rem;
+            font-weight: 700;
+        }
+        .profile-edit-form label:first-child {
+            margin-top: 0;
+        }
+        .profile-edit-form input[type="text"],
+        .profile-edit-form input[type="file"] {
+            width: 100%;
+            padding: 0.58rem 0.65rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            background: #fff;
+            color: #2d3748;
+            font: inherit;
+            font-size: 0.83rem;
+        }
+        .profile-edit-form input[type="file"] {
+            padding: 0.4rem;
+        }
+        .profile-edit-preview {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-top: 0.55rem;
+            color: #718096;
+            font-size: 0.72rem;
+        }
+        .profile-edit-preview img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #cbd5e1;
+        }
+        .profile-edit-actions {
+            display: flex;
+            gap: 0.45rem;
+            margin-top: 0.85rem;
+        }
+        .profile-edit-actions button {
+            flex: 1;
+            padding: 0.58rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .profile-edit-save {
+            border: 0;
+            background: #2c5282;
+            color: #fff;
+        }
+        .profile-edit-cancel {
+            border: 1px solid #cbd5e1;
+            background: transparent;
+            color: #475569;
+        }
+        .profile-edit-status {
+            margin-top: 0.55rem;
+            font-size: 0.75rem;
+            line-height: 1.35;
+        }
 
         .sidebar-body {
             flex: 1;
@@ -497,6 +590,26 @@
         }
         html:not([data-theme="light"]) .sidebar-email-row span {
             color: #94a3b8;
+        }
+        html:not([data-theme="light"]) .profile-edit-form {
+            background: #252b3b;
+            border-color: #3b455c;
+        }
+        html:not([data-theme="light"]) .profile-edit-form label {
+            color: #cbd5e1;
+        }
+        html:not([data-theme="light"]) .profile-edit-form input[type="text"],
+        html:not([data-theme="light"]) .profile-edit-form input[type="file"] {
+            background: #1a1d2e;
+            border-color: #4a5568;
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .profile-edit-cancel {
+            border-color: #4a5568;
+            color: #cbd5e1;
+        }
+        html:not([data-theme="light"]) .profile-edit-preview {
+            color: #a0aec0;
         }
         html:not([data-theme="light"]) .sidebar-logout {
             background: #2d1515;
@@ -1106,12 +1219,29 @@
             <img id="sidebar-avatar" class="sidebar-avatar" src="" alt="profile">
             <div class="sidebar-name" id="sidebar-name"></div>
             <div class="sidebar-college" id="sidebar-college"></div>
+            <button id="profile-edit-btn" class="profile-edit-toggle" type="button" onclick="toggleProfileEdit()">
+                <i class="fas fa-pen"></i> Edit profile
+            </button>
         </div>
         <div class="sidebar-body">
             <div class="sidebar-email-row">
                 <i class="fas fa-envelope"></i>
                 <span id="sidebar-email"></span>
             </div>
+            <form id="profile-edit-form" class="profile-edit-form" hidden onsubmit="saveProfileEdits(event)">
+                <label for="profile-edit-name">Name</label>
+                <input id="profile-edit-name" type="text" maxlength="120" autocomplete="name" required>
+                <label for="profile-edit-college">College name</label>
+                <input id="profile-edit-college" type="text" maxlength="120" autocomplete="organization" required>
+                <label for="profile-edit-photo">Profile photo</label>
+                <input id="profile-edit-photo" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+                <div id="profile-edit-preview" class="profile-edit-preview"></div>
+                <div class="profile-edit-actions">
+                    <button type="button" class="profile-edit-cancel" onclick="toggleProfileEdit(false)">Cancel</button>
+                    <button id="profile-edit-save" type="submit" class="profile-edit-save">Save changes</button>
+                </div>
+                <div id="profile-edit-status" class="profile-edit-status" aria-live="polite"></div>
+            </form>
             <div class="sidebar-section" style="margin-top:1.1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
                 <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#718096;margin-bottom:0.65rem;display:flex;align-items:center;gap:0.4rem;">
                     <i class="fas fa-robot" style="color:#6b46c1;"></i> AI Features — API Keys
@@ -1354,6 +1484,114 @@
 
             loadGroqKeyStatus();
             loadContinueWatching();
+        }
+
+        function profileFallbackAvatar(name) {
+            return 'https://ui-avatars.com/api/?name=' +
+                encodeURIComponent(name || 'Player') + '&background=2c5282&color=fff&size=128&bold=true';
+        }
+
+        function renderProfile(profile) {
+            const fallbackAvatar = profileFallbackAvatar(profile.name);
+            const picSrc = profile.profile_pic_url || fallbackAvatar;
+            const badge = document.getElementById('user-badge');
+            badge.style.display = 'flex';
+            const badgeImg = document.getElementById('badge-pic');
+            badgeImg.src = picSrc;
+            badgeImg.onerror = () => { badgeImg.src = fallbackAvatar; };
+            const sideAvatar = document.getElementById('sidebar-avatar');
+            sideAvatar.src = picSrc;
+            sideAvatar.onerror = () => { sideAvatar.src = fallbackAvatar; };
+            document.getElementById('sidebar-name').textContent = profile.name || '';
+            document.getElementById('sidebar-college').textContent = profile.college || '';
+        }
+
+        function toggleProfileEdit(force) {
+            const form = document.getElementById('profile-edit-form');
+            if (!form || !_profileData) return;
+            const shouldOpen = typeof force === 'boolean' ? force : form.hidden;
+            form.hidden = !shouldOpen;
+            document.getElementById('profile-edit-btn').innerHTML = shouldOpen
+                ? '<i class="fas fa-times"></i> Close editor'
+                : '<i class="fas fa-pen"></i> Edit profile';
+            if (shouldOpen) {
+                document.getElementById('profile-edit-name').value = _profileData.name || '';
+                document.getElementById('profile-edit-college').value = _profileData.college || '';
+                document.getElementById('profile-edit-photo').value = '';
+                document.getElementById('profile-edit-preview').innerHTML =
+                    `<img src="${_profileData.profile_pic_url || profileFallbackAvatar(_profileData.name)}" alt="Current profile photo"><span>Choose a new photo to replace it</span>`;
+                document.getElementById('profile-edit-status').textContent = '';
+            }
+        }
+
+        document.getElementById('profile-edit-photo').addEventListener('change', function () {
+            const file = this.files && this.files[0];
+            if (!file) return;
+            if (!file.type.startsWith('image/')) {
+                this.value = '';
+                document.getElementById('profile-edit-status').textContent = 'Please choose an image file.';
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = () => {
+                document.getElementById('profile-edit-preview').innerHTML =
+                    `<img src="${String(reader.result || '')}" alt="New profile photo"><span>${file.name}</span>`;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        async function saveProfileEdits(event) {
+            event.preventDefault();
+            if (!_profileData || !_profileData.userId || !window._supabase) return;
+            const name = document.getElementById('profile-edit-name').value.trim();
+            const college = document.getElementById('profile-edit-college').value.trim();
+            const fileInput = document.getElementById('profile-edit-photo');
+            const file = fileInput.files && fileInput.files[0];
+            const status = document.getElementById('profile-edit-status');
+            const saveButton = document.getElementById('profile-edit-save');
+            if (!name || !college) {
+                status.style.color = '#dc2626';
+                status.textContent = 'Please enter both your name and college.';
+                return;
+            }
+            if (file && file.size > 5 * 1024 * 1024) {
+                status.style.color = '#dc2626';
+                status.textContent = 'Please choose a photo smaller than 5 MB.';
+                return;
+            }
+            saveButton.disabled = true;
+            saveButton.textContent = file ? 'Uploading…' : 'Saving…';
+            status.textContent = '';
+            try {
+                let picUrl = _profileData.profile_pic_url || null;
+                if (file) {
+                    if (typeof VPS_API === 'undefined' || !VPS_API) {
+                        throw new Error('Photo upload service is not configured.');
+                    }
+                    const fd = new FormData();
+                    fd.append('profilePic', file);
+                    const response = await fetch(`${VPS_API}/api/upload-pic`, { method: 'POST', body: fd });
+                    if (!response.ok) throw new Error('Photo upload failed.');
+                    const uploaded = await response.json();
+                    if (!uploaded.picUrl) throw new Error('Photo upload returned no URL.');
+                    picUrl = uploaded.picUrl.startsWith('http') ? uploaded.picUrl : VPS_API + uploaded.picUrl;
+                }
+                const { error } = await window._supabase.from('profiles')
+                    .update({ name, college, profile_pic_url: picUrl, updated_at: new Date().toISOString() })
+                    .eq('id', _profileData.userId);
+                if (error) throw error;
+                _profileData = { ..._profileData, name, college, profile_pic_url: picUrl };
+                renderProfile(_profileData);
+                status.style.color = '#059669';
+                status.textContent = 'Profile saved.';
+                setTimeout(() => toggleProfileEdit(false), 700);
+            } catch (error) {
+                status.style.color = '#dc2626';
+                status.textContent = 'Could not save profile: ' + (error.message || 'Please try again.');
+            } finally {
+                saveButton.disabled = false;
+                saveButton.textContent = 'Save changes';
+            }
         }
 
         async function loadGroqKeyStatus() {
