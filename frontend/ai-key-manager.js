@@ -6,6 +6,18 @@
    profiles (see quizx/quiz game/schema.sql). Auth user metadata is also used
    as a schema-safe persistence fallback, so existing profiles do not lose
    their Groq key while the migration is being applied.
+
+   NOTE (Aug 2026): all three previous default model IDs had been retired
+   by their providers, which is why "AI Fix / Fill" was returning 404s:
+     - Gemini:  gemini-2.5-flash      -> blocked for existing/new keys ahead
+                                          of its Oct 16, 2026 shutdown
+     - Groq:    llama-3.3-70b-versatile -> deprecated June 17, 2026
+     - OpenAI:  gpt-4.1-mini          -> being retired across Azure/API,
+                                          OpenAI is consolidating on GPT-5.x
+   Defaults below have been updated to each provider's current recommended
+   replacement. If you see a 404 "model not found" again in the future,
+   it almost always means the provider retired this ID too — check the
+   provider's docs and swap the `id` value in PROVIDERS[...].models below.
 */
 (function () {
   'use strict';
@@ -19,7 +31,7 @@
       guideUrl: 'https://aistudio.google.com/app/apikey',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', badge: 'Fast · free tier · great for quizzes' },
+        { id: 'gemini-flash-latest', label: 'Gemini Flash (latest)', badge: 'Fast · free tier · auto-tracks current GA model' },
       ],
     },
     groq: {
@@ -29,7 +41,7 @@
       guide: 'Groq Cloud',
       guideUrl: 'https://console.groq.com/keys',
       models: [
-        { id: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B Versatile', badge: 'Fast · high free limit · best for quizzes' },
+        { id: 'openai/gpt-oss-120b', label: 'GPT-OSS 120B', badge: 'Fast · high free limit · Groq\'s recommended replacement for Llama 3.3 70B' },
       ],
     },
     openai: {
@@ -39,7 +51,7 @@
       guide: 'OpenAI Platform',
       guideUrl: 'https://platform.openai.com/api-keys',
       models: [
-        { id: 'gpt-4.1-mini', label: 'GPT-4.1 mini', badge: 'Fast · low cost · reliable' },
+        { id: 'gpt-5-mini', label: 'GPT-5 mini', badge: 'Fast · low cost · current-gen replacement for GPT-4.1 mini' },
       ],
     },
   };
