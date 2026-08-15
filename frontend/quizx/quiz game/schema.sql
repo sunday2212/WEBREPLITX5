@@ -72,3 +72,19 @@ exception when duplicate_object then null; end $$;
 --                        resolved from your JSON files at runtime.
 --  * Question bank    -> your existing JSON files + manifest (no DB table).
 -- ============================================================================
+
+-- 3) MANUAL QUESTION IMAGES (run this too for live cross-user image display)
+-- The game uploads selected images here and stores only a public URL in
+-- game_rooms.question. This avoids putting multi-megabyte base64 data in JSONB.
+insert into storage.buckets (id, name, public)
+values ('quiz-images', 'quiz-images', true)
+on conflict (id) do update set public = true;
+
+drop policy if exists "quiz images public read" on storage.objects;
+create policy "quiz images public read" on storage.objects
+  for select using (bucket_id = 'quiz-images');
+
+drop policy if exists "quiz images authenticated upload" on storage.objects;
+create policy "quiz images authenticated upload" on storage.objects
+  for insert to authenticated
+  with check (bucket_id = 'quiz-images');
