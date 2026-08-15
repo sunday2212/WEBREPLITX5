@@ -69,6 +69,16 @@ h1 {
     color: #94a3b8;
 }
 
+.api-key-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.api-key-actions > * {
+    flex: 1 1 190px;
+}
+
 .save-api-keys-btn {
     background-color: #2c5281;
     color: white;
@@ -78,6 +88,37 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s;
+}
+
+.get-api-key-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #2c5281;
+    border-radius: 4px;
+    color: #2c5281;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.get-api-key-btn:hover {
+    color: white;
+    background: #2c5281;
+}
+
+.ai-model-help,
+.api-key-note {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.api-key-note {
+    margin-top: -0.5rem;
 }
 
 .save-api-keys-btn:hover {
