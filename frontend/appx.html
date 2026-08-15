@@ -20,6 +20,7 @@
     <script src="./theme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="./supabase-config.js"></script>
+    <script src="./ai-key-manager.js"></script>
     <script src="./access-control.js"></script>
     <script src="./blockX.js"></script>
     <script src="./push-subscribe.js" defer></script>
@@ -1113,11 +1114,12 @@
             </div>
             <div class="sidebar-section" style="margin-top:1.1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
                 <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#718096;margin-bottom:0.65rem;display:flex;align-items:center;gap:0.4rem;">
-                    <i class="fas fa-robot" style="color:#6b46c1;"></i> AI Features — Groq API Key
+                    <i class="fas fa-robot" style="color:#6b46c1;"></i> AI Features — API Keys
                 </div>
                 <div id="groq-key-status-bar" style="font-size:0.78rem;margin-bottom:0.6rem;"></div>
+                <select id="profile-ai-provider" style="width:100%;padding:0.5rem 0.7rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.83rem;color:#2d3748;margin-bottom:0.5rem;"></select>
                 <div style="display:flex;gap:0.4rem;margin-bottom:0.5rem;">
-                    <input type="text" id="sidebar-groq-input" placeholder="Paste Groq API key (gsk_…)"
+                    <input type="password" id="sidebar-groq-input" placeholder="Paste Google Gemini API key (AIza…)"
                         style="flex:1;padding:0.5rem 0.7rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.83rem;color:#2d3748;outline:none;font-family:monospace;"
                         onfocus="this.style.borderColor='#6b46c1'" onblur="this.style.borderColor='#e2e8f0'">
                     <button onclick="saveSidebarGroqKey()"
@@ -1126,15 +1128,12 @@
                     </button>
                 </div>
                 <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <a href="quizx/Aiquiz/groq.html" target="_blank"
+                    <a href="https://ai.google.dev/gemini-api/docs/api-key" target="_blank"
                         style="font-size:0.75rem;color:#6b46c1;font-weight:600;text-decoration:none;">
-                        <i class="fas fa-external-link-alt"></i> Get free API key
+                        <i class="fas fa-external-link-alt"></i> Get an API key
                     </a>
-                    <button onclick="removeSidebarGroqKey()"
-                        style="font-size:0.73rem;color:#a0aec0;background:none;border:none;cursor:pointer;padding:0;">
-                        Remove key
-                    </button>
                 </div>
+                <div style="font-size:0.72rem;color:#718096;margin-top:0.35rem;">The selected provider and its key are shared across AI Quiz, Doubt Solver, and Quiz Battle.</div>
             </div>
             <div class="sidebar-section" style="margin-top:1.1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
                 <div style="display:flex;align-items:center;justify-content:space-between;">
@@ -1327,7 +1326,7 @@
 
             const { data: profile } = await window._supabase
                 .from('profiles')
-                .select('name, college, profile_pic_url, groq_api_key')
+                .select('*')
                 .eq('id', session.user.id)
                 .single();
 
@@ -1353,24 +1352,26 @@
             document.getElementById('sidebar-college').textContent = profile.college || '';
             document.getElementById('sidebar-email').textContent = session.user.email || '';
 
-            loadGroqKeyStatus(profile.groq_api_key);
+            loadGroqKeyStatus();
             loadContinueWatching();
         }
 
-        function loadGroqKeyStatus(groqKey) {
+        async function loadGroqKeyStatus() {
             const statusBar = document.getElementById('groq-key-status-bar');
             const input = document.getElementById('sidebar-groq-input');
-
-            if (groqKey && groqKey.length > 0) {
-                const maskedKey = groqKey.substring(0, 6) + '...' + groqKey.substring(groqKey.length - 4);
-                statusBar.innerHTML = `<span style="color:#059669;">✓ API key saved: <strong>${maskedKey}</strong></span>`;
-                input.value = '';
-                input.placeholder = 'Paste a new key to update';
-            } else {
-                statusBar.innerHTML = `<span style="color:#dc2626;">✗ No API key configured</span>`;
-                input.value = '';
-                input.placeholder = 'Paste Groq API key (gsk_…)';
-            }
+            const providerSelect = document.getElementById('profile-ai-provider');
+            const manager = window.AIKeyManager;
+            if (!manager) return;
+            const settings = await manager.loadAISettings(true);
+            providerSelect.innerHTML = manager.providerOptions(settings.provider);
+            const provider = providerSelect.value;
+            const key = settings.keys[provider] || '';
+            statusBar.innerHTML = key
+                ? `<span style="color:#059669;">✓ ${manager.PROVIDERS[provider].label} key saved: <strong>${manager.maskKey(key)}</strong></span>`
+                : `<span style="color:#dc2626;">✗ No ${manager.PROVIDERS[provider].label} key configured</span>`;
+            input.value = '';
+            input.placeholder = `Paste ${manager.PROVIDERS[provider].label} API key (${manager.PROVIDERS[provider].placeholder})`;
+            providerSelect.onchange = () => loadGroqKeyStatus();
         }
 
         async function saveSidebarGroqKey() {
@@ -1381,62 +1382,19 @@
 
             const input = document.getElementById('sidebar-groq-input');
             const key = input.value.trim();
+            const provider = document.getElementById('profile-ai-provider').value;
 
             if (!key) {
-                alert('Please enter a Groq API key');
-                return;
-            }
-
-            if (!key.startsWith('gsk_')) {
-                alert('Invalid Groq API key format (should start with gsk_)');
+                alert('Please enter an API key');
                 return;
             }
 
             try {
-                const { error } = await window._supabase
-                    .from('profiles')
-                    .update({ groq_api_key: key })
-                    .eq('id', _profileData.userId);
-
-                if (error) {
-                    alert('Failed to save key: ' + error.message);
-                    return;
-                }
-
-                _profileData.groq_api_key = key;
-                loadGroqKeyStatus(key);
-                alert('✓ Groq API key saved successfully!');
+                await window.AIKeyManager.saveAISettings(provider, key);
+                await loadGroqKeyStatus();
+                alert(`✓ ${window.AIKeyManager.PROVIDERS[provider].label} key saved and shared across the site!`);
             } catch (err) {
                 alert('Error saving key: ' + err.message);
-            }
-        }
-
-        async function removeSidebarGroqKey() {
-            if (!_profileData || !_profileData.userId) {
-                alert('Please wait for profile to load');
-                return;
-            }
-
-            if (!confirm('Are you sure you want to remove your Groq API key?')) {
-                return;
-            }
-
-            try {
-                const { error } = await window._supabase
-                    .from('profiles')
-                    .update({ groq_api_key: null })
-                    .eq('id', _profileData.userId);
-
-                if (error) {
-                    alert('Failed to remove key: ' + error.message);
-                    return;
-                }
-
-                _profileData.groq_api_key = null;
-                loadGroqKeyStatus(null);
-                alert('✓ Groq API key removed successfully!');
-            } catch (err) {
-                alert('Error removing key: ' + err.message);
             }
         }
 
