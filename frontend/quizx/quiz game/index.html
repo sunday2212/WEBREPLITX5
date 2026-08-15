@@ -23,7 +23,7 @@
       <div class="me-info"><div id="me-name" class="nm">…</div><div id="me-college" class="col"></div></div>
       <button id="btn-theme" class="icon" title="Switch theme" aria-label="Switch theme">☀️</button>
       <button id="btn-settings" class="icon" title="Settings">⚙️</button>
-      <button id="btn-leave" class="icon danger" title="Leave">⏻</button>
+      <button id="btn-leave" class="icon" title="Back to Quiz" aria-label="Back to Quiz">←</button>
     </div>
   </header>
 
@@ -70,8 +70,13 @@
       document.getElementById('btn-settings').addEventListener('click', () => game.openSettings());
       document.getElementById('btn-leave').addEventListener('click', async () => {
         await game.leave();
-        document.getElementById('stage').innerHTML =
-          '<div class="center"><h2>You left the room</h2><p class="muted">Your points for this session are gone. Refresh to rejoin.</p></div>';
+         const referrer = document.referrer;
+         const cameFromThisSite = referrer && new URL(referrer).origin === window.location.origin;
+         if (cameFromThisSite && window.history.length > 1) {
+           window.history.back();
+         } else {
+           window.location.href = '../index.html';
+         }
       });
       // AdSense slot
       if (CONFIG.ADSENSE_CLIENT) {
