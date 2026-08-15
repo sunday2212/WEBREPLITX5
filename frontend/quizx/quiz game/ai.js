@@ -128,7 +128,7 @@ async function genOpenAI(prompt, apiKey) {
 }
 
 async function genGemini(prompt, apiKey) {
-  const model = selectedModel('gemini', 'gemini-2.5-flash');
+  const model = selectedModel('gemini', 'gemini-3.5-flash');
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: 'POST',

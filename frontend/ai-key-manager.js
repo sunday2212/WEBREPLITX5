@@ -19,7 +19,7 @@
       guideUrl: 'https://aistudio.google.com/app/apikey',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash', badge: 'Fast · free tier · great for quizzes' },
+        { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', badge: 'Fast · free tier · great for quizzes' },
       ],
     },
     groq: {
