@@ -225,6 +225,4 @@ export function normalizeQuestion(raw) {
   }
   ci = Math.max(0, Math.min(options.length - 1, Number(ci) || 0));
 
-  // keep the original number of options (medical MCQs can have 4 or 5).
-  return { text: String(text), options, correctIndex: ci, solution: raw.solution || '' };
-}
+  
