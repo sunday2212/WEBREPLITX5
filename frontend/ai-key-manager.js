@@ -10,16 +10,21 @@
 (function () {
   'use strict';
 
+  // Keep the Gemini model in one place. Older releases used Gemini 2.5, which
+  // can return NOT_FOUND for new API keys. This is a stable model supported by
+  // the Gemini generateContent endpoint used below.
+  const GEMINI_MODEL = 'gemini-3.5-flash';
+
   const PROVIDERS = {
     gemini: {
       label: 'Google Gemini',
       shortLabel: 'Gemini',
-      placeholder: 'AIza…',
+      placeholder: 'Google AI Studio key',
       guide: 'Google AI Studio',
       guideUrl: 'https://aistudio.google.com/app/apikey',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
-        { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', badge: 'Fast · free tier · great for quizzes' },
+        { id: GEMINI_MODEL, label: 'Gemini 3.5 Flash', badge: 'Fast · stable · great for quizzes' },
       ],
     },
     groq: {
@@ -51,24 +56,8 @@
     return PROVIDERS[provider] ? provider : DEFAULT_PROVIDER;
   }
 
-  // Normalize model ids. Handles legacy names and strips any optional
-  // "models/" prefix that older saved values or API responses might include.
   function normalizeModel(provider, model) {
     const models = PROVIDERS[normalizeProvider(provider)].models;
-    // Default to provider's first model when model is falsy
-    if (!model) return models[0].id;
-
-    model = String(model || '').trim();
-    // Strip legacy "models/" prefix that some responses/store use
-    model = model.replace(/^models\//, '');
-
-    // Map known deprecated model IDs to current ones
-    const LEGACY_MODEL_MAP = {
-      'gemini-2.5-flash': 'gemini-3.5-flash',
-      // add other mappings here as providers evolve
-    };
-    if (LEGACY_MODEL_MAP[model]) model = LEGACY_MODEL_MAP[model];
-
     return models.some(item => item.id === model) ? model : models[0].id;
   }
 
@@ -80,18 +69,13 @@
     if (!keys.groq && localStorage.getItem('groqApiKey')) {
       keys.groq = localStorage.getItem('groqApiKey');
     }
-
-    // Provider may be stored under multiple legacy keys
-    const provider = normalizeProvider(
-      stored.provider || localStorage.getItem('aiProvider') || localStorage.getItem('qg_provider')
-    );
-
-    // Model can be stored in the cached value or the older aiModel key; normalize it
-    const rawModel = stored.model || localStorage.getItem('aiModel') || null;
-
     return {
-      provider,
-      model: normalizeModel(provider, rawModel),
+      provider: normalizeProvider(stored.provider || localStorage.getItem('aiProvider') ||
+        localStorage.getItem('qg_provider')),
+      model: normalizeModel(
+        stored.provider || localStorage.getItem('aiProvider') || localStorage.getItem('qg_provider'),
+        stored.model
+      ),
       keys,
     };
   }
@@ -164,8 +148,6 @@
         settings.provider = normalizeProvider(
           profile.ai_provider || metadata.ai_provider || settings.provider
         );
-        // normalizeModel will handle legacy model ids and prefixes coming from
-        // profile or metadata
         settings.model = normalizeModel(
           settings.provider,
           profile.ai_model || metadata.ai_model || settings.model
@@ -275,17 +257,29 @@
     let response;
     if (provider === 'gemini') {
       response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': key,
+          },
           body: JSON.stringify({
             contents: [{ parts: [{ text: prompt }] }],
             generationConfig: { temperature, maxOutputTokens: maxTokens },
           }),
         }
       );
-      if (!response.ok) throw new Error(`Google Gemini error: ${await response.text()}`);
+      if (!response.ok) {
+        const details = await response.text();
+        if (response.status === 404) {
+          throw new Error(
+            `Google Gemini model "${model}" is unavailable for this request. ` +
+            `Please reload the latest app version and try again. Details: ${details}`
+          );
+        }
+        throw new Error(`Google Gemini error: ${details}`);
+      }
       const data = await response.json();
       return data?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
     }
