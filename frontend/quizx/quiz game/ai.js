@@ -109,7 +109,7 @@ function parseMCQ(raw) {
 }
 
 async function genOpenAI(prompt, apiKey) {
-  const model = selectedModel('openai', 'gpt-4o-mini');
+  const model = selectedModel('openai', 'gpt-4.1-mini');
   const res = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
@@ -128,7 +128,7 @@ async function genOpenAI(prompt, apiKey) {
 }
 
 async function genGemini(prompt, apiKey) {
-  const model = selectedModel('gemini', 'gemini-2.5-flash-lite');
+  const model = selectedModel('gemini', 'gemini-2.5-flash');
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: 'POST',
@@ -143,7 +143,7 @@ async function genGemini(prompt, apiKey) {
 
 // Groq is OpenAI-compatible. Uses the key stored in profiles.groq_api_key.
 async function genGroq(prompt, apiKey) {
-  const model = selectedModel('groq', 'llama-3.1-8b-instant');
+  const model = selectedModel('groq', 'llama-3.3-70b-versatile');
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
