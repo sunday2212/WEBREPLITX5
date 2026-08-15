@@ -47,8 +47,11 @@ const rich = (s) => {
           // those against the game page while rejecting javascript/data URLs.
           try {
             const url = new URL(src, document.baseURI);
-            if (!/^https?:$/.test(url.protocol)
-                || (url.origin !== window.location.origin && !/^https?:\/\//i.test(src))) {
+            const isSafeDataImage = url.protocol === 'data:'
+              && /^data:image\/(png|jpe?g|gif|webp);base64,/i.test(src);
+            if ((!/^https?:$/.test(url.protocol) && !isSafeDataImage)
+                || (url.origin !== window.location.origin
+                  && !/^https?:\/\//i.test(src) && !isSafeDataImage)) {
               n.removeAttribute(a.name);
             } else {
               n.setAttribute('src', url.href);
@@ -65,7 +68,10 @@ const rich = (s) => {
   return tpl.innerHTML;
 };
 const expBlock = (q) => q && q.explanation
-  ? `<div class="explanation"><b>Explanation</b><div>${rich(q.explanation)}</div></div>` : '';
+  ? `<div class="explanation"><b>Explanation</b><div>${rich(q.explanation)}</div>${q.explanationImage
+    ? rich(`<img src="${esc(q.explanationImage)}" alt="Explanation illustration">`) : ''}</div>`
+  : (q && q.explanationImage
+    ? `<div class="explanation"><b>Explanation</b>${rich(`<img src="${esc(q.explanationImage)}" alt="Explanation illustration">`)}</div>` : '');
 // Plain-text preview (strips tags) + first image src — used for pickable lists.
 const plain = (s) => { const d = document.createElement('div'); d.innerHTML = rich(s); return (d.textContent || '').replace(/\s+/g, ' ').trim(); };
 const firstImg = (s) => { const d = document.createElement('div'); d.innerHTML = rich(s); const im = d.querySelector('img'); return im ? im.getAttribute('src') : ''; };
@@ -92,6 +98,8 @@ export class Game {
     this.myScore = 0;
     this.scoredRounds = new Set();
     this._tick = null;
+    this._seenAnswers = new Set();
+    this._activityTimers = new Map();
   }
 
   async start() {
@@ -190,6 +198,14 @@ export class Game {
   }
 
   onAnswersUpdate() {
+    this.answers.forEach((answer) => {
+      const key = `${answer.round}:${answer.userId}`;
+      if (this._seenAnswers.has(key)) return;
+      this._seenAnswers.add(key);
+      if (answer.userId !== this.me?.id && answer.round === this.state?.round) {
+        this.showLiveActivity(answer);
+      }
+    });
     if (this.state && this.state.phase === 'answering') this.renderStage();
   }
 
@@ -243,10 +259,22 @@ export class Game {
   formManual() {
     this.modal(`<h2>Manual Entry</h2>
       <p class="muted">Write an MCQ yourself, or leave any field blank and let AI complete and proofread it.</p>
-      <label>Question</label><textarea id="m-q" rows="2" placeholder="Type your question (leave blank for a random NEET PG question)"></textarea>
+      <label>Question or image</label>
+      <textarea id="m-q" class="auto-expand" rows="2" placeholder="Type your question, or add an image below for an image-based question"></textarea>
+      <div class="image-picker">
+        <span class="muted">Optional question image</span>
+        <input id="m-q-image" type="file" accept="image/png,image/jpeg,image/gif,image/webp" />
+      </div>
+      <div id="m-q-image-preview"></div>
       ${[0,1,2,3].map(i => `<label class="opt-lbl">Option ${i+1} <input type="radio" name="m-c" value="${i}"/> correct</label>
         <input id="m-o${i}" placeholder="Option ${i+1}" />`).join('')}
-      <label>Explanation (optional)</label><textarea id="m-exp" rows="2" placeholder="Shown to players after they answer"></textarea>
+      <label>Explanation or image (optional)</label>
+      <textarea id="m-exp" class="auto-expand" rows="2" placeholder="Explain the answer, or add an explanation image below"></textarea>
+      <div class="image-picker">
+        <span class="muted">Optional explanation image</span>
+        <input id="m-exp-image" type="file" accept="image/png,image/jpeg,image/gif,image/webp" />
+      </div>
+      <div id="m-exp-image-preview"></div>
       <div class="btn-row">
         <button class="ghost" id="m-ai" type="button">✨ AI Fix / Fill</button>
         <button class="primary" id="m-go" type="button">Start Round</button>
@@ -258,6 +286,8 @@ export class Game {
       correctIndex: this.modalEl.querySelector('input[name="m-c"]:checked')
         ? Number(this.modalEl.querySelector('input[name="m-c"]:checked').value) : null,
       explanation: $('#m-exp', this.modalEl).value.trim(),
+      image: $('#m-q-image', this.modalEl).dataset.dataUrl || '',
+      explanationImage: $('#m-exp-image', this.modalEl).dataset.dataUrl || '',
     });
     const writeForm = (q) => {
       $('#m-q', this.modalEl).value = q.text || '';
@@ -266,6 +296,41 @@ export class Game {
       if (r) r.checked = true;
       if (q.explanation) $('#m-exp', this.modalEl).value = q.explanation;
     };
+    const autoExpand = (el) => {
+      el.style.height = 'auto';
+      el.style.height = `${Math.min(el.scrollHeight, window.innerHeight * .45)}px`;
+    };
+    this.modalEl.querySelectorAll('textarea.auto-expand').forEach((el) => {
+      el.addEventListener('input', () => autoExpand(el));
+      autoExpand(el);
+    });
+    const setupImagePicker = (inputId, previewId) => {
+      const input = $(`#${inputId}`, this.modalEl);
+      const preview = $(`#${previewId}`, this.modalEl);
+      input.addEventListener('change', () => {
+        const file = input.files && input.files[0];
+        if (!file) return;
+        if (file.size > 4 * 1024 * 1024) {
+          input.value = '';
+          return this.toast('Please choose an image smaller than 4 MB');
+        }
+        const reader = new FileReader();
+        reader.onload = () => {
+          input.dataset.dataUrl = String(reader.result || '');
+          preview.innerHTML = `<div class="image-preview">
+            <img src="${esc(input.dataset.dataUrl)}" alt="Selected image">
+            <span>${esc(file.name)}</span>
+            <button class="remove-image" type="button">Remove</button>
+          </div>`;
+          preview.querySelector('.remove-image').addEventListener('click', () => {
+            input.value = ''; delete input.dataset.dataUrl; preview.innerHTML = '';
+          });
+        };
+        reader.readAsDataURL(file);
+      });
+    };
+    setupImagePicker('m-q-image', 'm-q-image-preview');
+    setupImagePicker('m-exp-image', 'm-exp-image-preview');
     $('#m-ai', this.modalEl).addEventListener('click', async () => {
       const btn = $('#m-ai', this.modalEl); btn.disabled = true; btn.textContent = 'Thinking…';
       try {
@@ -277,9 +342,10 @@ export class Game {
     });
     $('#m-go', this.modalEl).addEventListener('click', () => {
       const f = readForm();
-      if (!f.question || f.options.some(o => !o) || f.correctIndex == null)
-        return this.toast('Fill the question, all 4 options and choose the correct answer (or use AI)');
-      this.commitQuestion({ text: f.question, options: f.options, correctIndex: f.correctIndex, explanation: f.explanation });
+      if ((!f.question && !f.image) || f.options.some(o => !o) || f.correctIndex == null)
+        return this.toast('Add a question or image, fill all 4 options and choose the correct answer');
+      this.commitQuestion({ text: f.question, options: f.options, correctIndex: f.correctIndex,
+        explanation: f.explanation, image: f.image, explanationImage: f.explanationImage });
     });
   }
 
@@ -407,7 +473,8 @@ export class Game {
     this.closeModal();
     if (!q || !Array.isArray(q.options) || q.options.length < 2) return this.toast('Invalid question');
     await this.startAnswering({ text: q.text, options: q.options, correctIndex: q.correctIndex,
-      explanation: q.explanation || q.solution || '', image: q.image || '' });
+      explanation: q.explanation || q.solution || '', image: q.image || '',
+      explanationImage: q.explanationImage || '' });
   }
 
   // ---------- rendering ----------
@@ -430,6 +497,26 @@ export class Game {
           <div class="col">${esc(p.college || '')}</div></div>
         <div class="pts">${p.score}</div>
       </div>`).join('') || '<p class="muted">No players online</p>';
+  }
+
+  showLiveActivity(answer) {
+    const root = $('#live-activity');
+    if (!root) return;
+    const key = `${answer.round}:${answer.userId}`;
+    const item = document.createElement('div');
+    item.className = 'live-activity-item';
+    item.innerHTML = `<img src="${esc(answer.avatar || '')}" alt="">
+      <span class="activity-name">${esc(answer.name || 'A player')}</span>
+      <span class="activity-copy">answered</span>`;
+    root.appendChild(item);
+    while (root.children.length > 4) root.firstElementChild.remove();
+    clearTimeout(this._activityTimers.get(key));
+    const timer = setTimeout(() => {
+      item.classList.add('leaving');
+      setTimeout(() => item.remove(), 500);
+      this._activityTimers.delete(key);
+    }, 3600);
+    this._activityTimers.set(key, timer);
   }
 
   renderStage() {
