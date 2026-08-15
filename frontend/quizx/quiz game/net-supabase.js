@@ -10,6 +10,7 @@ import { CONFIG } from './config.js';
 export class SupabaseNet {
   constructor() {
     this.sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
+    window._supabase = this.sb;
     this.me = null;
     this.channel = null;
     this._players = [];
@@ -36,12 +37,11 @@ export class SupabaseNet {
     let college = '';
     try {
       const { data } = await this.sb.from('profiles')
-        .select('name, college, profile_pic_url, groq_api_key').eq('id', user.id).single();
+        .select('*').eq('id', user.id).single();
       if (data) {
         name = data.name || name;
         avatar = data.profile_pic_url || avatar;   // your column is profile_pic_url
         college = data.college || '';
-        this.groqKey = data.groq_api_key || '';     // key already in profile bar
       }
     } catch (e) { /* profiles row may not exist yet */ }
     return { id: user.id, name, college, avatar };
@@ -164,16 +164,12 @@ export class SupabaseNet {
     try { await this.channel.untrack(); await this.sb.removeChannel(this.channel); } catch (e) { /* ignore */ }
   }
 
-  // The user's AI key already lives in profiles.groq_api_key (the profile bar).
   async saveApiKey(provider, key) {
-    try {
-      await this.sb.from('profiles').update({ groq_api_key: key }).eq('id', this.me.id);
-      this.groqKey = key;
-    } catch (e) { /* non-fatal: key still saved in localStorage */ }
+    return window.AIKeyManager.saveAISettings(provider, key);
   }
 
   async loadApiKey() {
-    return { ai_provider: CONFIG.DEFAULT_AI_PROVIDER, ai_api_key: this.groqKey || '' };
+    return window.AIKeyManager.loadAISettings(true);
   }
 
   // ---- bookmarks: return raw refs; qbank.js resolves them from JSON files ----
