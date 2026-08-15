@@ -5,7 +5,7 @@
 
 import { CONFIG } from './config.js';
 import { aiManual, aiBank, randomFromBank, SAMPLE_BANK } from './ai.js';
-import { SUBJECTS } from '../Aiquiz/js/config.js';
+import { SUBJECTS, DIFFICULTY_LEVELS } from '../Aiquiz/js/config.js';
 import * as qbank from './qbank.js';
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -51,6 +51,9 @@ const rich = (s) => {
 };
 const expBlock = (q) => q && q.explanation
   ? `<div class="explanation"><b>Explanation</b><div>${rich(q.explanation)}</div></div>` : '';
+// Plain-text preview (strips tags) + first image src — used for pickable lists.
+const plain = (s) => { const d = document.createElement('div'); d.innerHTML = rich(s); return (d.textContent || '').replace(/\s+/g, ' ').trim(); };
+const firstImg = (s) => { const d = document.createElement('div'); d.innerHTML = rich(s); const im = d.querySelector('img'); return im ? im.getAttribute('src') : ''; };
 
 const LS = {
   get provider() { return localStorage.getItem('qg_provider') || CONFIG.DEFAULT_AI_PROVIDER; },
@@ -258,40 +261,52 @@ export class Game {
   }
 
   async listBookmarks() {
-    this.modal(`<h2>⭐ From Bookmarks</h2><div id="bm-list" class="list"><div class="spinner"></div></div>`);
+    this.modal(`<h2>⭐ From Bookmarks</h2><p class="muted">Tap a question to set it for this round.</p><div id="bm-list" class="list"><div class="spinner"></div></div>`);
     let rows = [];
     try { if (typeof this.net.getBookmarks === 'function') rows = await this.net.getBookmarks(); } catch (e) { /* ignore */ }
     const el = $('#bm-list', this.modalEl);
     if (!rows.length) {
       const items = SAMPLE_BANK.slice(0, 5);
-      el.innerHTML = items.map((q, i) => `<button class="row" data-i="${i}">${esc(q.text)}</button>`).join('')
+      el.innerHTML = items.map((q, i) => `<button class="row bm-row" data-i="${i}"><span class="bm-txt">${esc(plain(q.text))}</span></button>`).join('')
         || '<p class="muted">No bookmarks found.</p>';
-      this.modalEl.querySelectorAll('.row').forEach(b =>
+      this.modalEl.querySelectorAll('.bm-row').forEach(b =>
         b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
       return;
     }
-    el.innerHTML = rows.map((r, i) => {
-      const label = r.topic_name || String(r.file_path).split('/').pop().replace(/\.json$/i, '').replace(/_/g, ' ');
-      return `<button class="row" data-i="${i}" data-fp="${esc(r.file_path)}" data-qi="${r.question_index}">${esc(label)} · Q${(Number(r.question_index) || 0) + 1}</button>`;
-    }).join('');
-    el.querySelectorAll('.row').forEach(b => b.addEventListener('click', async () => {
-      const orig = b.textContent; b.textContent = 'Loading…';
-      try {
-        const q = await qbank.resolveBookmark(b.dataset.fp, Number(b.dataset.qi));
-        if (q && q.text) this.commitQuestion(q); else { this.toast('Could not load this bookmark'); b.textContent = orig; }
-      } catch (e) { this.toast('Bookmark load failed'); b.textContent = orig; }
+    // Resolve each bookmark to its real question so we can preview text + image.
+    const resolved = await Promise.all(rows.map(async (r) => {
+      try { const q = await qbank.resolveBookmark(r.file_path, Number(r.question_index) || 0); return (q && q.text) ? q : null; }
+      catch { return null; }
     }));
+    const items = [];
+    const html = resolved.map((q, i) => {
+      if (!q) return '';
+      const r = rows[i];
+      const label = r.topic_name || String(r.file_path).split('/').pop().replace(/\.json$/i, '').replace(/_/g, ' ');
+      const idx = items.push(q) - 1;
+      const snip = plain(q.text).slice(0, 160) || label;
+      const img = firstImg(q.text);
+      return `<button class="row bm-row" data-i="${idx}">
+        ${img ? `<img class="bm-thumb" src="${esc(img)}" alt=""/>` : ''}
+        <span class="bm-txt"><span class="bm-tag">${esc(label)}</span>${esc(snip)}</span></button>`;
+    }).join('');
+    el.innerHTML = html || '<p class="muted">No readable bookmarks found.</p>';
+    this.modalEl.querySelectorAll('.bm-row').forEach(b =>
+      b.addEventListener('click', () => this.commitQuestion(items[b.dataset.i])));
   }
 
-  // AI Question Bank — Subject + Chapter dropdowns (from Aiquiz SUBJECTS) -> Groq
+  // AI Question Bank — Subject + Sub-topic + Hardness (from Aiquiz) + free-text topic -> Groq
   formBank() {
     const configured = !!LS.key;
     const subjects = Object.keys(SUBJECTS);
+    const levels = Object.keys(DIFFICULTY_LEVELS);
     this.modal(`<h2>📚 AI Question Bank</h2>
       ${configured ? '' : '<p class="warn">No API key saved. Add one in Settings (⚙️) or a sample question will be used.</p>'}
       <label>Subject</label><select id="b-sub">${subjects.map(s => `<option>${esc(s)}</option>`).join('')}</select>
-      <label>Chapter</label><select id="b-chap"></select>
-      <p class="muted">AI generates a NEET PG question from the selected subject & chapter. Provider: <b>${esc(LS.provider)}</b></p>
+      <label>Sub-topic</label><select id="b-chap"></select>
+      <label>Hardness</label><select id="b-diff">${levels.map(l => `<option value="${esc(l)}">${esc(l)} — ${esc(DIFFICULTY_LEVELS[l])}</option>`).join('')}</select>
+      <label>Specific topic (optional)</label><input id="b-top" placeholder="e.g. Frank-Starling law" />
+      <p class="muted">AI generates a NEET PG question from your selection. Provider: <b>${esc(LS.provider)}</b></p>
       <button class="primary" id="b-go" type="button">Generate & Start</button>`);
     const subSel = $('#b-sub', this.modalEl), chapSel = $('#b-chap', this.modalEl);
     const fillChapters = () => {
@@ -302,7 +317,12 @@ export class Game {
     $('#b-go', this.modalEl).addEventListener('click', async () => {
       const btn = $('#b-go', this.modalEl); btn.disabled = true; btn.textContent = 'Generating…';
       try {
-        const q = await aiBank({ subject: subSel.value, chapter: chapSel.value }, LS.provider, LS.key);
+        const q = await aiBank({
+          subject: subSel.value,
+          chapter: chapSel.value,
+          difficulty: $('#b-diff', this.modalEl).value,
+          topic: $('#b-top', this.modalEl).value.trim(),
+        }, LS.provider, LS.key);
         this.commitQuestion(q);
       } catch (e) { this.toast('AI failed: ' + e.message); this.formBank(); }
     });
@@ -355,7 +375,7 @@ export class Game {
       let qs = [];
       try { qs = await qbank.getQuestions(fileSel.value); } catch (e) { /* ignore */ }
       if (!qs.length) { qList.innerHTML = '<p class="muted">No questions in this file.</p>'; return; }
-      qList.innerHTML = qs.slice(0, 150).map((q, i) => `<button class="row" data-i="${i}">${esc(q.text.slice(0, 130))}</button>`).join('');
+      qList.innerHTML = qs.slice(0, 150).map((q, i) => `<button class="row" data-i="${i}">${esc(plain(q.text).slice(0, 130))}</button>`).join('');
       this.modalEl.querySelectorAll('#ff-q .row').forEach(b => b.addEventListener('click', () => this.commitQuestion(qs[b.dataset.i])));
     });
   }
