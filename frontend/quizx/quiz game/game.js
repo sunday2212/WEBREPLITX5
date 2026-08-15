@@ -206,12 +206,18 @@ export class Game {
     this.state = s;
     if (!s) return;
     if (!prev || prev.round !== s.round) { this.myAnswered = false; }
+    if (s.phase === 'answering') {
+      this.myAnswered = !!this.answers.find(a => a.round === s.round && a.userId === this.me?.id);
+    }
     if (s.phase === 'results') { this.scoreMyRound(s); }
     if (s.phase !== 'results') { this._resultsAt = null; }
     this.renderStage();
   }
 
   onAnswersUpdate() {
+    if (this.state?.phase === 'answering') {
+      this.myAnswered = !!this.answers.find(a => a.round === this.state.round && a.userId === this.me?.id);
+    }
     this.answers.forEach((answer) => {
       const key = `${answer.round}:${answer.userId}`;
       if (this._seenAnswers.has(key)) return;
@@ -244,8 +250,17 @@ export class Game {
     if (this.myAnswered || !this.state || this.state.phase !== 'answering') return;
     if (this.me.id === this.state.setterId) return;
     this.myAnswered = true;
-    await this.net.submitAnswer({ round: this.state.round, userId: this.me.id,
-      name: this.me.name, avatar: this.me.avatar, choiceIndex, answeredAt: Date.now() });
+    const answer = { round: this.state.round, userId: this.me.id,
+      name: this.me.name, avatar: this.me.avatar, choiceIndex, answeredAt: Date.now() };
+    try {
+      await this.net.submitAnswer(answer);
+      if (!this.answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
+        this.answers = [...this.answers, answer];
+      }
+    } catch (error) {
+      this.myAnswered = false;
+      this.toast('Could not submit your answer. Please try again.');
+    }
     this.renderStage();
   }
 
@@ -540,15 +555,53 @@ export class Game {
       </div>`).join('') || '<p class="muted">No players online</p>';
   }
 
+  voteRows() {
+    const q = this.state?.question;
+    if (!q) return [];
+    const answers = this.answers.filter(a => a.round === this.state.round);
+    const total = answers.length;
+    return q.options.map((option, index) => {
+      const voters = answers.filter(a => a.choiceIndex === index);
+      return {
+        option,
+        index,
+        voters,
+        count: voters.length,
+        percent: total ? Math.round((voters.length / total) * 100) : 0,
+      };
+    }).sort((a, b) => b.count - a.count || a.index - b.index);
+  }
+
+  openVoteView() {
+    const rows = this.voteRows();
+    const total = rows.reduce((sum, row) => sum + row.count, 0);
+    const body = rows.map(row => `
+      <div class="vote-option">
+        <div class="vote-option-head">
+          <b>${String.fromCharCode(65 + row.index)}. ${rich(row.option)}</b>
+          <span>${row.percent}% · ${row.count} ${row.count === 1 ? 'vote' : 'votes'}</span>
+        </div>
+        <div class="vote-bar"><i style="width:${row.percent}%"></i></div>
+        <div class="vote-voters">
+          ${row.voters.length
+            ? row.voters.map(v => `<span class="vote-voter"><img src="${esc(v.avatar || '')}" alt="">${esc(v.name || 'A player')}</span>`).join('')
+            : '<span class="muted">No one chose this option yet.</span>'}
+        </div>
+      </div>`).join('');
+    this.modal(`<h2>Live vote</h2>
+      <p class="muted">${total} ${total === 1 ? 'person has' : 'people have'} answered. Most chosen options appear first.</p>
+      <div class="vote-results">${body}</div>`);
+  }
+
   showLiveActivity(answer) {
     const root = $('#live-activity');
     if (!root) return;
     const key = `${answer.round}:${answer.userId}`;
     const item = document.createElement('div');
     item.className = 'live-activity-item';
-    item.innerHTML = `<img src="${esc(answer.avatar || '')}" alt="">
+      item.innerHTML = `<img src="${esc(answer.avatar || '')}" alt="">
       <span class="activity-name">${esc(answer.name || 'A player')}</span>
-      <span class="activity-copy">answered</span>`;
+       <span class="activity-copy">has answered</span>`;
     root.appendChild(item);
     while (root.children.length > 4) root.firstElementChild.remove();
     clearTimeout(this._activityTimers.get(key));
@@ -603,12 +656,19 @@ export class Game {
           <span class="clock">⏱ ${remaining}s</span>
           <span class="muted">${answered}/${total} answered</span></div>
          <h2 class="qtext">${rich(q.text)}${imageBlock(q)}</h2>
-        <div class="opts">${q.options.map((o, i) =>
+         <div class="opts">${q.options.map((o, i) =>
           `<button class="opt ${locked && i === q.correctIndex ? 'is-correct' : ''}" data-i="${i}" ${locked ? 'disabled' : ''}>${rich(o)}</button>`).join('')}</div>
+         <div class="vote-footer">
+           ${this.myAnswered && !iAmSetter
+             ? '<button type="button" class="view-vote" id="view-vote">View vote</button>'
+             : `<span class="vote-count">${answered} ${answered === 1 ? 'person has' : 'people have'} answered</span>`}
+         </div>
         ${iAmSetter ? `<p class="muted">You set this question — watch the others answer.</p>${expBlock(q)}`
           : (this.myAnswered ? '<p class="ok">Answer locked in! Waiting for others…</p>' + reveal : '')}`;
       if (!locked) stage.querySelectorAll('.opt').forEach(b =>
         b.addEventListener('click', () => this.submitMyAnswer(Number(b.dataset.i))));
+       const voteButton = $('#view-vote', stage);
+       if (voteButton) voteButton.addEventListener('click', () => this.openVoteView());
       return;
     }
 
