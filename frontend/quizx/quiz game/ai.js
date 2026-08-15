@@ -47,6 +47,14 @@ const SHAPE =
 
 const MED = 'You are a medical educator setting NEET PG / INICET standard MCQs. Output only JSON.';
 
+function selectedModel(provider, fallback) {
+  const manager = typeof window !== 'undefined' && window.AIKeyManager;
+  const settings = manager && manager.getCachedAISettings();
+  return settings && settings.provider === provider && settings.model
+    ? settings.model
+    : fallback;
+}
+
 // Build the right prompt for the Manual Entry "AI Generate / Fix" button.
 // - full question + options -> proof-read & correct mistakes
 // - only a question       -> generate options + answer + explanation
@@ -101,11 +109,12 @@ function parseMCQ(raw) {
 }
 
 async function genOpenAI(prompt, apiKey) {
+  const model = selectedModel('openai', 'gpt-4o-mini');
   const res = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: 'gpt-4o-mini',
+      model,
       temperature: 0.9,
       messages: [
         { role: 'system', content: MED },
@@ -119,7 +128,8 @@ async function genOpenAI(prompt, apiKey) {
 }
 
 async function genGemini(prompt, apiKey) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const model = selectedModel('gemini', 'gemini-2.5-flash-lite');
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -133,11 +143,12 @@ async function genGemini(prompt, apiKey) {
 
 // Groq is OpenAI-compatible. Uses the key stored in profiles.groq_api_key.
 async function genGroq(prompt, apiKey) {
+  const model = selectedModel('groq', 'llama-3.1-8b-instant');
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
+      model,
       temperature: 0.9,
       messages: [
         { role: 'system', content: MED },
