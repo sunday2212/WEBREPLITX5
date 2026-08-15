@@ -1,6 +1,6 @@
 // ============================================================================
 // AI MCQ generation (provider-agnostic). The user supplies their own API key.
-// Supported providers: 'openai' and 'gemini'.
+// Supported providers: 'groq', 'openai', and 'gemini'.
 // Falls back to a built-in question bank when no key / demo mode.
 // ============================================================================
 
@@ -119,7 +119,7 @@ async function genOpenAI(prompt, apiKey) {
 }
 
 async function genGemini(prompt, apiKey) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
