@@ -125,7 +125,7 @@ export class SupabaseNet {
         this._answers.push(answer);
       }
     });
-    this._cb.onAnswers && this._cb.onAnswers(this.getAnswers());
+    this._cb.onAnswers && this._cb.onAnswers(this.getAnswers(), { initial: true });
   }
 
   players() {
