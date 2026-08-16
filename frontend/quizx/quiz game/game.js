@@ -113,7 +113,7 @@ export class Game {
     const res = await this.net.init({
       onPlayers: (p) => { this.players = p; this.renderLeaderboard(); this.maybeHostBootstrap(); },
       onRoomState: (s) => this.onRoomState(s),
-      onAnswers: (a) => { this.answers = a; this.onAnswersUpdate(); },
+      onAnswers: (a, meta) => { this.answers = a; this.onAnswersUpdate(meta); },
     });
     if (res && res.redirecting) return; // OAuth redirect in progress
     this.me = this.net.me;
@@ -139,6 +139,26 @@ export class Game {
 
   // ---------- host orchestration ----------
   present() { return this.players.slice(); }
+
+  // Only answers submitted after the current question started belong in the
+  // current UI. Supabase intentionally keeps round_answers for results and
+  // history, so filtering by round alone can display old answers again when a
+  // player joins an existing room.
+  roundAnswers(state = this.state) {
+    if (!state || state.round == null || state.phase !== 'answering' && state.phase !== 'results') {
+      return [];
+    }
+    const currentStart = Number(state.startTs || 0);
+    const earliest = currentStart ? currentStart - 5000 : 0;
+    const seen = new Set();
+    return this.answers.filter((answer) => {
+      const key = `${answer.round}:${answer.userId}`;
+      if (answer.round !== state.round || seen.has(key)) return false;
+      if (earliest && Number(answer.answeredAt || 0) < earliest) return false;
+      seen.add(key);
+      return true;
+    });
+  }
 
   maybeHostBootstrap() {
     if (!this.me || !this.net.isHost()) return;
@@ -182,7 +202,7 @@ export class Game {
     if (s.phase === 'answering') {
       const now = Date.now();
       const answerers = this.present().filter(p => p.id !== s.setterId);
-      const answered = new Set(this.answers.filter(a => a.round === s.round).map(a => a.userId));
+      const answered = new Set(this.roundAnswers(s).map(a => a.userId));
       const allAnswered = answerers.length > 0 && answerers.every(p => answered.has(p.id));
       if (now >= s.endTs || allAnswered) {
         await this.net.setRoomState({ ...s, phase: 'results' });
@@ -209,24 +229,32 @@ export class Game {
     const prev = this.state;
     this.state = s;
     if (!s) return;
-    if (!prev || prev.round !== s.round) { this.myAnswered = false; }
+    const newQuestion = !prev || prev.round !== s.round
+      || (prev.phase !== 'answering' && s.phase === 'answering');
+    if (newQuestion) {
+      this.myAnswered = false;
+      this._seenAnswers.clear();
+      this.clearLiveActivity();
+    }
     if (s.phase === 'answering') {
-      this.myAnswered = !!this.answers.find(a => a.round === s.round && a.userId === this.me?.id);
+      this.myAnswered = !!this.roundAnswers(s).find(a => a.userId === this.me?.id);
     }
     if (s.phase === 'results') { this.scoreMyRound(s); }
     if (s.phase !== 'results') { this._resultsAt = null; }
     this.renderStage();
   }
 
-  onAnswersUpdate() {
+  onAnswersUpdate(meta = {}) {
     if (this.state?.phase === 'answering') {
-      this.myAnswered = !!this.answers.find(a => a.round === this.state.round && a.userId === this.me?.id);
+      this.myAnswered = !!this.roundAnswers(this.state).find(a => a.userId === this.me?.id);
     }
-    this.answers.forEach((answer) => {
+    const onlineIds = new Set(this.present().map(player => player.id));
+    this.roundAnswers(this.state).forEach((answer) => {
       const key = `${answer.round}:${answer.userId}`;
       if (this._seenAnswers.has(key)) return;
       this._seenAnswers.add(key);
-      if (answer.userId !== this.me?.id && answer.round === this.state?.round) {
+      if (!meta.initial && answer.userId !== this.me?.id && onlineIds.has(answer.userId)
+          && answer.userId !== this.state?.setterId) {
         this.showLiveActivity(answer);
       }
     });
@@ -236,7 +264,7 @@ export class Game {
   scoreMyRound(s) {
     if (this.scoredRounds.has(s.round)) { this.showResultsPopup(s); this.renderStage(); return; }
     this.scoredRounds.add(s.round);
-    const mine = this.answers.find(a => a.round === s.round && a.userId === this.me.id);
+    const mine = this.roundAnswers(s).find(a => a.userId === this.me.id);
     let pts = 0;
     if (this.me.id === s.setterId) {
       pts = CONFIG.SETTER_BONUS;
@@ -562,7 +590,7 @@ export class Game {
   voteRows() {
     const q = this.state?.question;
     if (!q) return [];
-    const answers = this.answers.filter(a => a.round === this.state.round);
+    const answers = this.roundAnswers(this.state);
     const total = answers.length;
     return q.options.map((option, index) => {
       const voters = answers.filter(a => a.choiceIndex === index);
@@ -617,6 +645,14 @@ export class Game {
     this._activityTimers.set(key, timer);
   }
 
+  clearLiveActivity() {
+    const root = $('#live-activity');
+    if (!root) return;
+    root.replaceChildren();
+    this._activityTimers.forEach(timer => clearTimeout(timer));
+    this._activityTimers.clear();
+  }
+
   renderStage() {
     const s = this.state;
     const stage = $('#stage');
@@ -646,10 +682,12 @@ export class Game {
       const q = s.question;
       const remaining = Math.max(0, Math.ceil((s.endTs - Date.now()) / 1000));
       const pct = Math.max(0, (remaining / CONFIG.ROUND_SECONDS) * 100);
-      const answered = this.answers.filter(a => a.round === s.round).length;
-      const total = this.present().filter(p => p.id !== s.setterId).length;
+      const answers = this.roundAnswers(s);
+      const answered = answers.length;
       const locked = this.myAnswered || iAmSetter;
-      const myAns = this.answers.find(a => a.round === s.round && a.userId === this.me.id);
+      const myAns = answers.find(a => a.userId === this.me.id);
+      const myAttempted = myAns ? 1 : 0;
+      const myCorrect = myAns && myAns.choiceIndex === q.correctIndex ? 1 : 0;
       const reveal = (this.myAnswered && !iAmSetter)
         ? `<div class="reveal ${myAns && myAns.choiceIndex === q.correctIndex ? 'good' : 'bad'}">
              <div class="correct">✓ ${rich(q.options[q.correctIndex])}</div>${expBlock(q)}</div>`
@@ -658,7 +696,7 @@ export class Game {
         <div class="timerbar"><div class="fill" style="width:${pct}%"></div></div>
          <div class="thead"><span class="pill">Question</span>
           <span class="clock">⏱ ${remaining}s</span>
-          <span class="muted">${answered}/${total} answered</span></div>
+           <span class="muted">${myCorrect}/${myAttempted} correct</span></div>
          <h2 class="qtext">${rich(q.text)}${imageBlock(q)}</h2>
          <div class="opts">${q.options.map((o, i) =>
           `<button class="opt ${locked && i === q.correctIndex ? 'is-correct' : ''}" data-i="${i}" ${locked ? 'disabled' : ''}>${rich(o)}</button>`).join('')}</div>
@@ -688,7 +726,7 @@ export class Game {
 
   showResultsPopup(s) {
     const q = s.question;
-    const rows = this.answers.filter(a => a.round === s.round)
+    const rows = this.roundAnswers(s)
       .map(a => ({ ...a, correct: a.choiceIndex === q.correctIndex }))
       .sort((a, b) => (b.correct - a.correct) || (a.answeredAt - b.answeredAt));
     const body = rows.map((a, i) => {
