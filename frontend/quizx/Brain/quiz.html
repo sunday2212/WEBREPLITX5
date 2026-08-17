@@ -2152,7 +2152,7 @@
               <input type="text" id="doubt-key-field" placeholder="API key" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off">
               <button class="doubt-key-save-btn" onclick="saveDoubtApiKey()">Save</button>
             </div>
-            <a id="doubt-get-key" href="../Aiquiz/api-key-guide.html?provider=${provider}" target="_blank" rel="noopener"
+            <a id="doubt-get-key" href="../Aiquiz/${manager.PROVIDERS[provider].guidePage}" target="_blank" rel="noopener"
                style="display:inline-block;margin-top:0.6rem;font-size:0.8rem;font-weight:600;color:#2563eb;text-decoration:none;">
               <i class="fas fa-key"></i> Get my API key
             </a>
@@ -2164,10 +2164,11 @@
           const p = providerSelect.value;
           document.getElementById('doubt-key-field').placeholder =
             `${manager.PROVIDERS[p].label} API key (${manager.PROVIDERS[p].placeholder})`;
+          document.getElementById('doubt-key-field').value = settings.keys[p] || '';
           document.getElementById('doubt-provider-hint').textContent =
             `Using ${manager.PROVIDERS[p].label}.`;
           const guideLink = document.getElementById('doubt-get-key');
-          if (guideLink) guideLink.href = `../Aiquiz/api-key-guide.html?provider=${p}`;
+          if (guideLink) guideLink.href = `../Aiquiz/${manager.PROVIDERS[p].guidePage}`;
         };
         providerSelect.onchange = syncHint;
         syncHint();
