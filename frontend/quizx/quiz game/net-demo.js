@@ -4,7 +4,7 @@
 // interface the game controller uses for the real Supabase backend.
 // ============================================================================
 
-import { CONFIG } from './config.js';
+import { CONFIG, calculateCorrectPoints } from './config.js';
 import { randomFromBank } from './ai.js';
 
 const avatar = (seed) =>
@@ -53,6 +53,11 @@ export class DemoNet {
     this._cb.onAnswers && this._cb.onAnswers(this.getAnswers());
   }
 
+  async clearAnswers() {
+    this._answers = [];
+    this._cb.onAnswers && this._cb.onAnswers(this.getAnswers(), { reset: true });
+  }
+
   async setRoomState(state) {
     this._state = { ...state };
     this._clearBotTimers();
@@ -77,9 +82,11 @@ export class DemoNet {
         const choiceIndex = correct
           ? q.correctIndex
           : (q.correctIndex + 1 + Math.floor(Math.random() * 3)) % 4;
+        const answeredAt = Date.now();
         this.submitAnswer({
           round: state.round, userId: bot.id, name: bot.name,
-          avatar: bot.avatar, choiceIndex, answeredAt: Date.now(),
+          avatar: bot.avatar, choiceIndex, answeredAt,
+          points: correct ? calculateCorrectPoints(answeredAt, state.endTs) : 0,
         });
       }, delay);
       this._botTimers.push(t);
@@ -91,11 +98,9 @@ export class DemoNet {
     this._answers.filter(a => a.round === state.round && a.userId !== 'me').forEach(a => {
       const correct = a.choiceIndex === state.question.correctIndex;
       if (!correct) return;
-      const remaining = Math.max(0, (state.endTs - a.answeredAt) / 1000);
-      const pts = Math.max(
-        CONFIG.MIN_CORRECT_POINTS,
-        Math.round(CONFIG.BASE_POINTS * (remaining / CONFIG.ROUND_SECONDS))
-      );
+      const pts = a.points != null
+        ? a.points
+        : calculateCorrectPoints(a.answeredAt, state.endTs);
       const bot = this._players.find(p => p.id === a.userId);
       if (bot) bot.score += pts;
       a.points = pts;
@@ -104,5 +109,8 @@ export class DemoNet {
   }
 
   _clearBotTimers() { this._botTimers.forEach(clearTimeout); this._botTimers = []; }
-  async leave() { this._clearBotTimers(); }
+  async leave() {
+    this._clearBotTimers();
+    this._answers = this._answers.filter(a => a.userId !== this.me.id);
+  }
 }
