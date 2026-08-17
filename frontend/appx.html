@@ -1305,7 +1305,7 @@
                 <div id="groq-key-status-bar" style="font-size:0.78rem;margin-bottom:0.6rem;"></div>
                 <select id="profile-ai-provider" style="width:100%;padding:0.5rem 0.7rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.83rem;color:#2d3748;margin-bottom:0.5rem;"></select>
                 <div style="display:flex;gap:0.4rem;margin-bottom:0.5rem;">
-                    <input type="text" id="sidebar-groq-input" placeholder="Paste Google Gemini API key"
+                    <input type="text" id="sidebar-groq-input" placeholder="Paste Groq API key (gsk_…)"
                         spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off"
                         style="flex:1;padding:0.5rem 0.7rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:0.83rem;color:#2d3748;outline:none;font-family:monospace;"
                         onfocus="this.style.borderColor='#6b46c1'" onblur="this.style.borderColor='#e2e8f0'">
@@ -1315,7 +1315,7 @@
                     </button>
                 </div>
                 <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <a id="profile-get-api-key" href="quizx/Aiquiz/api-key-guide.html?provider=gemini" target="_blank" rel="noopener"
+                    <a id="profile-get-api-key" href="quizx/Aiquiz/groq.html" target="_blank" rel="noopener"
                         style="font-size:0.75rem;color:#6b46c1;font-weight:600;text-decoration:none;">
                         <i class="fas fa-key"></i> Get my API key
                     </a>
@@ -1673,11 +1673,11 @@
             statusBar.innerHTML = key
                 ? `<span style="color:#059669;">✓ ${manager.PROVIDERS[provider].label} key saved: <strong>${manager.maskKey(key)}</strong></span>`
                 : `<span style="color:#dc2626;">✗ No ${manager.PROVIDERS[provider].label} key configured</span>`;
-            input.value = '';
+            input.value = key;
             input.placeholder = `Paste ${manager.PROVIDERS[provider].label} API key (${manager.PROVIDERS[provider].placeholder})`;
             const guideLink = document.getElementById('profile-get-api-key');
             if (guideLink) {
-                guideLink.href = `quizx/Aiquiz/api-key-guide.html?provider=${encodeURIComponent(provider)}`;
+                guideLink.href = `quizx/Aiquiz/${manager.PROVIDERS[provider].guidePage}`;
                 guideLink.setAttribute('aria-label', `How to get a ${manager.PROVIDERS[provider].label} API key`);
             }
             providerSelect.onchange = () => loadGroqKeyStatus();
