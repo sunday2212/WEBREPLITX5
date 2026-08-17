@@ -3,7 +3,7 @@
 // and all UI rendering. Backend-agnostic (works with DemoNet or SupabaseNet).
 // ============================================================================
 
-import { CONFIG } from './config.js';
+import { CONFIG, calculateCorrectPoints } from './config.js';
 import { aiManual, aiBank, randomFromBank, SAMPLE_BANK } from './ai.js';
 import { SUBJECTS, DIFFICULTY_LEVELS } from '../Aiquiz/js/config.js';
 import * as qbank from './qbank.js';
@@ -160,6 +160,14 @@ export class Game {
     });
   }
 
+  pointsForAnswer(answer, state) {
+    if (!answer || !state?.question || answer.userId === state.setterId
+        || answer.choiceIndex !== state.question.correctIndex) {
+      return 0;
+    }
+    return calculateCorrectPoints(answer.answeredAt, state.endTs);
+  }
+
   maybeHostBootstrap() {
     if (!this.me || !this.net.isHost()) return;
     const s = this.net.getRoomState();
@@ -182,6 +190,7 @@ export class Game {
   async beginSetting(prevSetter) {
     const setter = this.nextSetterId(prevSetter);
     const round = ((this.net.getRoomState()?.round) || 0) + 1;
+    if (typeof this.net.clearAnswers === 'function') await this.net.clearAnswers();
     await this.net.setRoomState({ phase: 'setting', round, setterId: setter,
       question: null, startTs: null, endTs: null });
   }
@@ -201,7 +210,7 @@ export class Game {
 
     if (s.phase === 'answering') {
       const now = Date.now();
-      const answerers = this.present().filter(p => p.id !== s.setterId);
+      const answerers = this.present();
       const answered = new Set(this.roundAnswers(s).map(a => a.userId));
       const allAnswered = answerers.length > 0 && answerers.every(p => answered.has(p.id));
       if (now >= s.endTs || allAnswered) {
@@ -253,8 +262,7 @@ export class Game {
       const key = `${answer.round}:${answer.userId}`;
       if (this._seenAnswers.has(key)) return;
       this._seenAnswers.add(key);
-      if (!meta.initial && answer.userId !== this.me?.id && onlineIds.has(answer.userId)
-          && answer.userId !== this.state?.setterId) {
+      if (!meta.initial && answer.userId !== this.me?.id && onlineIds.has(answer.userId)) {
         this.showLiveActivity(answer);
       }
     });
@@ -267,11 +275,9 @@ export class Game {
     const mine = this.roundAnswers(s).find(a => a.userId === this.me.id);
     let pts = 0;
     if (this.me.id === s.setterId) {
-      pts = CONFIG.SETTER_BONUS;
+      pts = 0;
     } else if (mine && mine.choiceIndex === s.question.correctIndex) {
-      const remaining = Math.max(0, (s.endTs - mine.answeredAt) / 1000);
-      pts = Math.max(CONFIG.MIN_CORRECT_POINTS,
-        Math.round(CONFIG.BASE_POINTS * (remaining / CONFIG.ROUND_SECONDS)));
+      pts = mine.points != null ? mine.points : this.pointsForAnswer(mine, s);
     }
     if (pts) { this.myScore += pts; this.net.setScore(this.me.id, this.myScore); }
     if (mine) mine.points = pts;
@@ -280,10 +286,10 @@ export class Game {
 
   async submitMyAnswer(choiceIndex) {
     if (this.myAnswered || !this.state || this.state.phase !== 'answering') return;
-    if (this.me.id === this.state.setterId) return;
     this.myAnswered = true;
     const answer = { round: this.state.round, userId: this.me.id,
       name: this.me.name, avatar: this.me.avatar, choiceIndex, answeredAt: Date.now() };
+    answer.points = this.pointsForAnswer(answer, this.state);
     try {
       await this.net.submitAnswer(answer);
       if (!this.answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
@@ -684,11 +690,11 @@ export class Game {
       const pct = Math.max(0, (remaining / CONFIG.ROUND_SECONDS) * 100);
       const answers = this.roundAnswers(s);
       const answered = answers.length;
-      const locked = this.myAnswered || iAmSetter;
+      const locked = this.myAnswered;
       const myAns = answers.find(a => a.userId === this.me.id);
       const myAttempted = myAns ? 1 : 0;
       const myCorrect = myAns && myAns.choiceIndex === q.correctIndex ? 1 : 0;
-      const reveal = (this.myAnswered && !iAmSetter)
+      const reveal = this.myAnswered
         ? `<div class="reveal ${myAns && myAns.choiceIndex === q.correctIndex ? 'good' : 'bad'}">
              <div class="correct">✓ ${rich(q.options[q.correctIndex])}</div>${expBlock(q)}</div>`
         : '';
@@ -699,13 +705,14 @@ export class Game {
            <span class="muted">${myCorrect}/${myAttempted} correct</span></div>
          <h2 class="qtext">${rich(q.text)}${imageBlock(q)}</h2>
          <div class="opts">${q.options.map((o, i) =>
-          `<button class="opt ${locked && i === q.correctIndex ? 'is-correct' : ''}" data-i="${i}" ${locked ? 'disabled' : ''}>${rich(o)}</button>`).join('')}</div>
+          `<button class="opt ${this.myAnswered && i === q.correctIndex ? 'is-correct' : ''}" data-i="${i}" ${locked ? 'disabled' : ''}>${rich(o)}</button>`).join('')}</div>
          <div class="vote-footer">
-           ${this.myAnswered && !iAmSetter
+          ${this.myAnswered
              ? '<button type="button" class="view-vote" id="view-vote">View vote</button>'
              : `<span class="vote-count">${answered} ${answered === 1 ? 'person has' : 'people have'} answered</span>`}
          </div>
-        ${iAmSetter ? `<p class="muted">You set this question — watch the others answer.</p>${expBlock(q)}`
+        ${iAmSetter && !this.myAnswered
+          ? '<p class="muted">You set this question, but you can answer it too. Your result will not affect points.</p>'
           : (this.myAnswered ? '<p class="ok">Answer locked in! Waiting for others…</p>' + reveal : '')}`;
       if (!locked) stage.querySelectorAll('.opt').forEach(b =>
         b.addEventListener('click', () => this.submitMyAnswer(Number(b.dataset.i))));
@@ -719,7 +726,9 @@ export class Game {
       stage.innerHTML = `<div class="center"><span class="pill">Question results</span>
         <h2>Correct answer</h2>
         <div class="correct">${rich(q.options[q.correctIndex])}</div>
-        ${expBlock(q)}
+        <details class="explanation-collapse">
+          <summary>View explanation</summary>${expBlock(q)}
+        </details>
         <p class="muted">Next turn starting soon…</p></div>`;
     }
   }
@@ -730,20 +739,21 @@ export class Game {
       .map(a => ({ ...a, correct: a.choiceIndex === q.correctIndex }))
       .sort((a, b) => (b.correct - a.correct) || (a.answeredAt - b.answeredAt));
     const body = rows.map((a, i) => {
-      const pts = a.correct
-        ? (a.points != null ? a.points
-          : Math.max(CONFIG.MIN_CORRECT_POINTS,
-            Math.round(CONFIG.BASE_POINTS * Math.max(0, (s.endTs - a.answeredAt)/1000) / CONFIG.ROUND_SECONDS)))
+      const isSetter = a.userId === s.setterId;
+      const pts = !isSetter && a.correct
+        ? (a.points != null ? a.points : this.pointsForAnswer(a, s))
         : 0;
       return `<div class="res-row ${a.correct ? 'good' : 'bad'}">
         <span class="pos">${a.correct ? '#'+(i+1) : '—'}</span>
         <img class="av" src="${esc(a.avatar)}"/><span class="nm">${esc(a.name)}</span>
-        <span class="tag">${a.correct ? 'Correct' : 'Wrong'}</span>
+        <span class="tag">${a.correct ? (isSetter ? 'Correct · setter' : 'Correct') : 'Wrong'}</span>
         <span class="pts">+${pts}</span></div>`;
     }).join('') || '<p class="muted">No one answered this round.</p>';
      this.modal(`<h2>Question rankings</h2>
       <p class="muted">Correct answer: <b>${rich(q.options[q.correctIndex])}</b></p>
-      ${expBlock(q)}
+      <details class="explanation-collapse">
+        <summary>View explanation</summary>${expBlock(q)}
+      </details>
       <div class="results">${body}</div>`, true);
     clearTimeout(this._popupT);
     this._popupT = setTimeout(() => this.closeModal(), CONFIG.RESULTS_SECONDS * 1000);
