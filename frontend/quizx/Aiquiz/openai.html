@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get ChatGPT / OpenAI API Key</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { color-scheme: light; --brand: #2c5281; --accent: #10a37f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; color: #333; background: #f9fafb; }
+    header { position: relative; padding: 2.5rem 1.25rem 2rem; color: white; text-align: center; background: linear-gradient(135deg, #173b35, #10a37f 58%, #2c5281); }
+    header h1 { margin: 0 0 .55rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+    header p { max-width: 680px; margin: 0 auto; color: #d7f8ee; line-height: 1.5; }
+    .back-link { position: absolute; top: 1rem; left: 1rem; display: inline-flex; align-items: center; gap: .45rem; padding: .55rem .8rem; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; }
+    .back-link:hover { background: rgba(255,255,255,.14); }
+    .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem 1rem; }
+    .intro, .step, .safety { background: white; border: 1px solid #e2e8f0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    .intro { padding: 1.2rem 1.35rem; margin-bottom: 1.5rem; border-left: 6px solid var(--accent); }
+    .intro h2 { margin: 0 0 .35rem; color: var(--brand); font-size: 1.2rem; }
+    .intro p { margin: 0; line-height: 1.55; color: #526173; }
+    .model { display: inline-block; margin-top: .7rem; padding: .35rem .7rem; color: #087f5b; background: #e6f7f1; border-radius: 999px; font-size: .85rem; font-weight: bold; }
+    .step { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; padding: 1.2rem; border-left: 6px solid var(--brand); }
+    .step-content { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; }
+    .step-text { flex: 1 1 300px; min-width: 0; }
+    .step-visual { flex: 1 1 300px; max-width: 450px; margin: 0 auto; padding: 1.25rem; color: #087f5b; background: #effaf6; border: 1px solid #b8eadb; border-radius: 8px; }
+    .step-visual i { display: block; margin-bottom: .6rem; font-size: 2rem; color: var(--accent); }
+    .step-visual strong { display: block; margin-bottom: .35rem; }
+    .step-visual span { color: #526173; font-size: .9rem; line-height: 1.45; }
+    .step h2 { margin: 0; color: var(--brand); font-size: 1.2rem; }
+    .step p { margin: .5rem 0 0; line-height: 1.6; }
+    a { color: #087f5b; font-weight: bold; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .safety { padding: 1rem 1.2rem; margin-top: 1.2rem; border-color: #f6c344; background: #fffbeb; }
+    .safety strong { color: #8a5a00; }
+    .safety p { margin: .35rem 0 0; color: #73510d; line-height: 1.55; }
+    .return-link { display: inline-flex; align-items: center; gap: .45rem; margin-top: 1.25rem; padding: .8rem 1.1rem; color: white; background: var(--brand); border-radius: 8px; }
+    footer { padding: 1rem; color: #666; text-align: center; font-size: .9rem; }
+    html:not([data-theme="light"]) body { color: #e6edf3; background: #0d1117; }
+    html:not([data-theme="light"]) .intro, html:not([data-theme="light"]) .step, html:not([data-theme="light"]) .safety { color: #e6edf3; background: #161b22; border-color: #30363d; }
+    html:not([data-theme="light"]) .intro p, html:not([data-theme="light"]) .step p, html:not([data-theme="light"]) footer { color: #aab4c3; }
+    html:not([data-theme="light"]) .step-visual { color: #8de0c6; background: #132a26; border-color: #226b59; }
+    html:not([data-theme="light"]) .step-visual span { color: #aab4c3; }
+    @media (max-width: 680px) {
+      header { padding-top: 4rem; }
+      .container { margin-top: 1.25rem; padding: 0 .75rem 1rem; }
+      .step { padding: 1rem; }
+      .step-visual { order: -1; max-width: none; }
+    }
+  </style>
+  <script src="../../access-control.js"></script>
+  <script src="../../block.js"></script>
+  <script src="../../error-handler/link-checker.js"></script>
+</head>
+<body>
+  <script>if (!accessControl.initProtectedPage()) throw new Error('Access denied - redirecting to index.html');</script>
+  <header>
+    <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
+    <h1><i class="fas fa-comments"></i> Steps to Get ChatGPT / OpenAI API Key</h1>
+    <p>Follow this guide to create an OpenAI developer key for AI Quiz, Quiz Battle, and the medical doubt solver.</p>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <h2>ChatGPT / OpenAI Platform</h2>
+      <p>OpenAI API keys are created on the OpenAI developer platform. A ChatGPT subscription and API billing are separate, so check the API platform account before using the key.</p>
+      <span class="model">Model used by this app: GPT-5.6</span>
+    </section>
+    <article class="step">
+      <h2>Step 1: Open the OpenAI API keys page</h2>
+      <div class="step-content"><div class="step-text"><p>Open the official <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI API keys page</a> in a new tab.</p></div><div class="step-visual"><i class="fas fa-globe"></i><strong>OpenAI Platform</strong><span>Use the official platform.openai.com domain and sign in to the account you want to use.</span></div></div>
+    </article>
+    <article class="step">
+      <h2>Step 2: Check API billing</h2>
+      <div class="step-content"><div class="step-text"><p>OpenAI API access is billed separately from ChatGPT Plus. If the platform asks for billing or credits, complete that step before making API requests.</p></div><div class="step-visual"><i class="fas fa-credit-card"></i><strong>API billing is separate</strong><span>ChatGPT Plus does not automatically provide OpenAI API credits.</span></div></div>
+    </article>
+    <article class="step">
+      <h2>Step 3: Create a secret key</h2>
+      <div class="step-content"><div class="step-text"><p>Click <strong>Create new secret key</strong>, give it a recognizable name such as <em>AI Quiz</em>, and confirm the dialog.</p></div><div class="step-visual"><i class="fas fa-key"></i><strong>Create new secret key</strong><span>Use a separate key for this app so it is easy to revoke later if needed.</span></div></div>
+    </article>
+    <article class="step">
+      <h2>Step 4: Copy the key immediately</h2>
+      <div class="step-content"><div class="step-text"><p>Copy the secret key while it is displayed. It normally starts with <strong>sk-</strong>. OpenAI does not show the full secret key again after the dialog is closed.</p></div><div class="step-visual"><i class="fas fa-copy"></i><strong>Copy and protect it</strong><span>Never share the complete key in a screenshot, chat, or public repository.</span></div></div>
+    </article>
+    <article class="step">
+      <h2>Step 5: Save it in the app</h2>
+      <div class="step-content"><div class="step-text"><p>Return to AI Quiz Setup, Quiz Battle, Profile, or the doubt solver. Select <strong>ChatGPT (OpenAI)</strong>, paste the key, and press <strong>Save API Key</strong>. It will be reused everywhere.</p></div><div class="step-visual"><i class="fas fa-check-circle"></i><strong>One key, all AI features</strong><span>After saving, the other supported screens automatically use this saved OpenAI key.</span></div></div>
+    </article>
+    <section class="safety"><strong><i class="fas fa-shield-halved"></i> Keep your key private</strong><p>If the key is exposed, delete it from the OpenAI platform and create a replacement. Monitor usage and set limits in the provider dashboard.</p></section>
+    <a class="return-link" href="index.html?provider=openai"><i class="fas fa-arrow-left"></i> Return to AI Quiz Setup</a>
+  </main>
+  <footer>OpenAI links open the official developer platform.</footer>
+  <script src="../../theme.js"></script>
+</body>
+</html>
