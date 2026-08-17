@@ -764,20 +764,20 @@ export class Game {
     this.modal(`<h2>⚙️ Settings</h2>
       <label>AI Provider</label>
       <select id="set-prov">
-         <option value="gemini" ${LS.provider==='gemini'?'selected':''}>Google Gemini (default)</option>
-        <option value="openai" ${LS.provider==='openai'?'selected':''}>OpenAI (GPT)</option>
-         <option value="groq" ${LS.provider==='groq'?'selected':''}>Groq AI</option>
+        <option value="groq" ${LS.provider==='groq'?'selected':''}>Groq (default)</option>
+        <option value="gemini" ${LS.provider==='gemini'?'selected':''}>Google Gemini</option>
+        <option value="openai" ${LS.provider==='openai'?'selected':''}>ChatGPT (OpenAI)</option>
       </select>
       <label>Your API Key</label>
       <input id="set-key" type="password" value="${esc(LS.key)}" placeholder="gsk_... / sk-... / AIza..." />
        <p class="muted">The selected provider and key are saved to your Supabase profile and reused across the site.</p>
-       <a class="settings-guide-link" id="set-guide" href="../Aiquiz/api-key-guide.html?provider=${LS.provider}" target="_blank" rel="noopener">🔑 Get my API key</a>
+       <a class="settings-guide-link" id="set-guide" href="../Aiquiz/${window.AIKeyManager.PROVIDERS[LS.provider].guidePage}" target="_blank" rel="noopener">🔑 Get my API key</a>
       <button class="primary" id="set-save">Save</button>`);
     const providerSelect = $('#set-prov', this.modalEl);
     const guideLink = $('#set-guide', this.modalEl);
     providerSelect.addEventListener('change', () => {
       const provider = providerSelect.value;
-      guideLink.href = `../Aiquiz/api-key-guide.html?provider=${provider}`;
+      guideLink.href = `../Aiquiz/${window.AIKeyManager.PROVIDERS[provider].guidePage}`;
     });
     $('#set-save', this.modalEl).addEventListener('click', async () => {
       LS.provider = $('#set-prov', this.modalEl).value;
