@@ -18,9 +18,9 @@ export const CONFIG = {
   SETTER_BONUS: 0,           // points the question setter gets per round
 
   // --- AI (question auto-generate) ---
-  // Google Gemini is the default. Existing Groq keys remain available and are
+  // Groq is the default. Existing keys for the other providers remain available and are
   // never overwritten unless the user explicitly saves a new Groq key.
-  DEFAULT_AI_PROVIDER: 'gemini',   // 'groq' | 'openai' | 'gemini'
+  DEFAULT_AI_PROVIDER: 'groq',   // 'groq' | 'openai' | 'gemini'
 
   // --- File-based Question Bank / Bookmarks ---
   // Your bookmarks + question bank are JSON files served from your domain.
