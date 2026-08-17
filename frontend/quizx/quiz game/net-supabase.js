@@ -16,6 +16,7 @@ export class SupabaseNet {
     this._players = [];
     this._state = null;
     this._answers = [];
+    this._activeRound = null;
     this._cb = {};
     this._score = 0;
   }
@@ -74,14 +75,27 @@ export class SupabaseNet {
       { event: '*', schema: 'public', table: 'game_rooms', filter: `id=eq.${CONFIG.ROOM_ID}` },
       (payload) => {
         this._state = payload.new || null;
+        const nextRound = this._state?.round_no;
+        if (nextRound !== this._activeRound) {
+          this._activeRound = nextRound;
+          this._answers = [];
+        }
         this._cb.onRoomState && this._cb.onRoomState(this.getRoomState());
       });
 
     // Answers stream
     this.channel.on('postgres_changes',
-      { event: 'INSERT', schema: 'public', table: 'round_answers', filter: `room_id=eq.${CONFIG.ROOM_ID}` },
+      { event: '*', schema: 'public', table: 'round_answers', filter: `room_id=eq.${CONFIG.ROOM_ID}` },
       (payload) => {
+        if (payload.eventType === 'DELETE') {
+          const removed = payload.old;
+          this._answers = this._answers.filter(a => a.userId !== removed.user_id
+            || a.round !== removed.round_no);
+          this._cb.onAnswers && this._cb.onAnswers(this.getAnswers(), { reset: true });
+          return;
+        }
         const answer = this._mapAnswer(payload.new);
+        if (this._activeRound != null && answer.round !== this._activeRound) return;
         if (!this._answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
           this._answers.push(answer);
         }
@@ -96,6 +110,7 @@ export class SupabaseNet {
         });
         await this._loadRoom();
         await this._loadAnswers();
+        await this._resetRoomIfAlone();
       }
     });
 
@@ -110,15 +125,20 @@ export class SupabaseNet {
 
   async _loadRoom() {
     const { data } = await this.sb.from('game_rooms').select('*').eq('id', CONFIG.ROOM_ID).single();
-    if (data) { this._state = data; this._cb.onRoomState && this._cb.onRoomState(this.getRoomState()); }
+    if (data) {
+      this._state = data;
+      this._activeRound = data.round_no;
+      this._answers = [];
+      this._cb.onRoomState && this._cb.onRoomState(this.getRoomState());
+    }
   }
 
   async _loadAnswers() {
-    const { data, error } = await this.sb.from('round_answers')
+    let query = this.sb.from('round_answers')
       .select('*')
-      .eq('room_id', CONFIG.ROOM_ID)
-      .order('answered_at', { ascending: true })
-      .limit(2000);
+      .eq('room_id', CONFIG.ROOM_ID);
+    if (this._activeRound != null) query = query.eq('round_no', this._activeRound);
+    const { data, error } = await query.order('answered_at', { ascending: true }).limit(2000);
     if (error) return;
     (data || []).map(row => this._mapAnswer(row)).forEach(answer => {
       if (!this._answers.some(a => a.round === answer.round && a.userId === answer.userId)) {
@@ -126,6 +146,24 @@ export class SupabaseNet {
       }
     });
     this._cb.onAnswers && this._cb.onAnswers(this.getAnswers(), { initial: true });
+  }
+
+  async clearAnswers() {
+    const { error } = await this.sb.from('round_answers')
+      .delete().eq('room_id', CONFIG.ROOM_ID);
+    if (error) throw error;
+    this._answers = [];
+    this._cb.onAnswers && this._cb.onAnswers(this.getAnswers(), { reset: true });
+  }
+
+  async _resetRoomIfAlone() {
+    if (this._players.length !== 1 || this._players[0]?.id !== this.me.id
+        || !this._state || this._state.phase === 'lobby') return;
+    await this.clearAnswers();
+    await this.setRoomState({
+      phase: 'lobby', round: 0, setterId: null,
+      question: null, startTs: null, endTs: null,
+    });
   }
 
   players() {
@@ -165,6 +203,7 @@ export class SupabaseNet {
     await this.sb.from('round_answers').insert({
       room_id: CONFIG.ROOM_ID, round_no: ans.round, user_id: ans.userId,
       name: ans.name, avatar: ans.avatar, choice_index: ans.choiceIndex,
+      points: ans.points ?? 0,
       answered_at: new Date(ans.answeredAt).toISOString(),
     });
   }
@@ -199,6 +238,10 @@ export class SupabaseNet {
   }
 
   async leave() {
+    try {
+      await this.sb.from('round_answers').delete()
+        .eq('room_id', CONFIG.ROOM_ID).eq('user_id', this.me.id);
+    } catch (e) { /* answer cleanup is best effort during disconnect */ }
     try { await this.channel.untrack(); await this.sb.removeChannel(this.channel); } catch (e) { /* ignore */ }
   }
 
