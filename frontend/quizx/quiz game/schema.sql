@@ -48,9 +48,12 @@ create policy "rooms write" on public.game_rooms for all
 
 drop policy if exists "answers read" on public.round_answers;
 drop policy if exists "answers ins"  on public.round_answers;
+drop policy if exists "answers delete" on public.round_answers;
 create policy "answers read" on public.round_answers for select using (true);
 create policy "answers ins"  on public.round_answers for insert
   with check (auth.uid() = user_id);
+create policy "answers delete" on public.round_answers for delete
+  using (true);
 
 -- ---------------------------------------------------------------------------
 -- ENABLE REALTIME on both tables
