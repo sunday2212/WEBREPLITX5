@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         const provider = providerInput.value;
         const cached = getCachedAISettings();
         const providerInfo = PROVIDERS[provider];
-        getApiKey.href = `api-key-guide.html?provider=${encodeURIComponent(provider)}`;
+        getApiKey.href = PROVIDERS[provider].guidePage;
         getApiKey.setAttribute('aria-label', `How to get a ${providerInfo.label} API key`);
         apiKeyNote.textContent = provider === 'openai'
             ? 'OpenAI API access is billed separately; ChatGPT Plus does not include API credits.'
             : 'Free usage depends on the provider account and current rate limits.';
         const key = cached.keys[provider] || '';
-        apiKeyInput.value = '';
+        apiKeyInput.value = key;
         apiKeyInput.placeholder = `Enter ${providerInfo.label} API key (${providerInfo.placeholder})`;
         apiKeyInput.dataset.hasSavedKey = key ? 'true' : 'false';
     };
