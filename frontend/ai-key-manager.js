@@ -22,6 +22,7 @@
       placeholder: 'Google AI Studio key',
       guide: 'Google AI Studio',
       guideUrl: 'https://aistudio.google.com/app/apikey',
+      guidePage: 'gemini.html',
       // Single fixed model per provider (model picker removed from the UI).
       models: [
         { id: GEMINI_MODEL, label: 'Gemini 3.5 Flash Lite', badge: 'Fast · stable · great for quizzes' },
@@ -33,6 +34,7 @@
       placeholder: 'gsk_…',
       guide: 'Groq Cloud',
       guideUrl: 'https://console.groq.com/keys',
+      guidePage: 'groq.html',
       models: [
         { id: 'llama-3.3-70b-versatile', label: 'Llama 3.3 70B Versatile', badge: 'Fast · high free limit · best for quizzes' },
       ],
@@ -43,12 +45,13 @@
       placeholder: 'sk-…',
       guide: 'OpenAI Platform',
       guideUrl: 'https://platform.openai.com/api-keys',
+      guidePage: 'openai.html',
       models: [
         { id: OPENAI_MODEL, label: 'GPT-5.6', badge: 'Reliable · current OpenAI model' },
       ],
     },
   };
-  const DEFAULT_PROVIDER = 'gemini';
+  const DEFAULT_PROVIDER = 'groq';
   const CACHE_KEY = 'aiProviderSettings';
   let cachedClient = null;
 
@@ -66,9 +69,11 @@
     try { stored = JSON.parse(localStorage.getItem(CACHE_KEY) || '{}') || {}; } catch (_) {}
     const keys = { ...(stored.keys || {}) };
     // Keep the old localStorage key as a fallback for existing users.
-    if (!keys.groq && localStorage.getItem('groqApiKey')) {
-      keys.groq = localStorage.getItem('groqApiKey');
-    }
+    ['groq', 'gemini', 'openai'].forEach(provider => {
+      if (!keys[provider] && localStorage.getItem(`${provider}ApiKey`)) {
+        keys[provider] = localStorage.getItem(`${provider}ApiKey`);
+      }
+    });
     return {
       provider: normalizeProvider(stored.provider || localStorage.getItem('aiProvider') ||
         localStorage.getItem('qg_provider')),
@@ -92,7 +97,12 @@
       localStorage.setItem('aiModel', value.model);
       // Quiz Battle's existing local cache uses this name.
       localStorage.setItem('qg_provider', value.provider);
-      if (value.keys.groq) localStorage.setItem('groqApiKey', value.keys.groq);
+      Object.entries(value.keys).forEach(([provider, key]) => {
+        if (key) localStorage.setItem(`${provider}ApiKey`, key);
+      });
+      if (value.keys[value.provider]) {
+        localStorage.setItem('qg_apikey', value.keys[value.provider]);
+      }
     } catch (_) {}
     return value;
   }
@@ -230,9 +240,10 @@
 
   function providerOptions(selected) {
     selected = normalizeProvider(selected);
-    return Object.entries(PROVIDERS).map(([value, item]) =>
-      `<option value="${value}" ${value === selected ? 'selected' : ''}>${item.label}</option>`
-    ).join('');
+    return ['groq', 'gemini', 'openai'].map(value => {
+      const item = PROVIDERS[value];
+      return `<option value="${value}" ${value === selected ? 'selected' : ''}>${item.label}</option>`;
+    }).join('');
   }
 
   function modelOptions(provider, selected) {
