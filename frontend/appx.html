@@ -25,7 +25,7 @@
     <script src="./blockX.js"></script>
     <script src="./push-subscribe.js" defer></script>
     <!-- AdSense auto-ads: keeps anchor, vignette, in-page running -->
-   
+
 <style>
         /* ── Profile badge (pic only) ── */
         #user-badge {
@@ -836,6 +836,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
             border: 1.5px solid #e2e8f0;
             transition: box-shadow 0.15s, transform 0.15s;
+            position: relative;
         }
         .qa-item:hover {
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
@@ -858,6 +859,46 @@
         .qa-sub {
             font-size: 0.7rem;
             color: #64748b;
+        }
+
+        /* ── "NEW" badge on Quiz Game ── */
+        .qa-new-badge {
+            position: absolute;
+            top: -6px;
+            right: -4px;
+            background: #e53e3e;
+            color: #fff;
+            font-size: 0.58rem;
+            font-weight: 800;
+            padding: 2px 9px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(229, 62, 62, 0.4);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            line-height: 1.4;
+            border: 1.5px solid #fff;
+        }
+
+        /* ── Quiz Game card glow ── */
+        .qa-item-quiz {
+            border-color: #f6ad55 !important;
+            background: linear-gradient(135deg, #fffaf0, #fff5eb) !important;
+            box-shadow: 0 0 0 0 rgba(237, 137, 54, 0.3);
+            animation: quizGlow 2.2s ease-in-out infinite;
+        }
+        .qa-item-quiz:hover {
+            box-shadow: 0 4px 20px rgba(237, 137, 54, 0.35) !important;
+            transform: translateY(-2px);
+        }
+
+        @keyframes quizGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(237, 137, 54, 0.25);
+            }
+            50% {
+                box-shadow: 0 0 0 4px rgba(237, 137, 54, 0.15);
+            }
         }
 
         /* ── Tablet / Desktop: side-by-side layout ── */
@@ -932,6 +973,21 @@
         }
         html:not([data-theme="light"]) .qa-sub {
             color: #8892a4;
+        }
+
+        /* ── Dark Mode: Quiz Game card ── */
+        html:not([data-theme="light"]) .qa-item-quiz {
+            background: linear-gradient(135deg, #2d2416, #2a1f12) !important;
+            border-color: #c05621 !important;
+        }
+        html:not([data-theme="light"]) .qa-item-quiz .qa-label {
+            color: #fbd38d;
+        }
+        html:not([data-theme="light"]) .qa-item-quiz .qa-sub {
+            color: #b7946e;
+        }
+        html:not([data-theme="light"]) .qa-new-badge {
+            border-color: #1a1d2e;
         }
 
         /* ── Share a Lecture Cute Card ── */
@@ -1318,7 +1374,19 @@
     <div class="qa-wrap">
         <h2 class="qa-heading"><i class="fas fa-bolt"></i> Quick Access</h2>
         <div class="qa-grid">
-            
+
+            <!-- ── 🎮 Quiz Game (NEW) ── -->
+            <a href="quizx/quiz%20game/index.html" class="qa-item qa-item-quiz">
+                <span class="qa-new-badge">✦ NEW</span>
+                <div class="qa-icon" style="background:linear-gradient(135deg,#ed8936,#dd6b20);">
+                    <i class="fas fa-gamepad" style="color:white; font-size:1.1rem;"></i>
+                </div>
+                <div>
+                    <div class="qa-label" style="color:#c05621;">Live Quiz</div>
+                    <div class="qa-sub">Play &amp; learn</div>
+                </div>
+            </a>
+
             <a href="opd/opd.html" class="qa-item">
                <div class="qa-icon" style="background:#ebf4ff;">
                    <i class="fa-solid fa-book-open" style="color:#2c5282; font-size:1.1rem;"></i>
