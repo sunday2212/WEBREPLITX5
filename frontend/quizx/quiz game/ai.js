@@ -40,6 +40,21 @@ export function randomFromBank(filter = {}) {
   return { text: q.text, options: q.options.slice(), correctIndex: q.correctIndex };
 }
 
+// AI models often put the correct answer first even when asked to vary it.
+// Shuffle the option rows after generation and move correctIndex with the
+// correct option so every answer position has the same probability.
+function shuffleQuestionOptions(question) {
+  const options = question.options.slice();
+  let correctIndex = question.correctIndex;
+  for (let i = options.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+    if (correctIndex === i) correctIndex = j;
+    else if (correctIndex === j) correctIndex = i;
+  }
+  return { ...question, options, correctIndex };
+}
+
 const SHAPE =
   `Return ONLY strict minified JSON with this exact shape and nothing else: ` +
   `{"text":"...","options":["a","b","c","d"],"correctIndex":0,"explanation":"..."}. ` +
@@ -102,12 +117,12 @@ function parseMCQ(raw) {
   if (!obj.text || !Array.isArray(obj.options) || obj.options.length !== 4)
     throw new Error('AI returned malformed question');
   const ci = Number(obj.correctIndex);
-  return {
+  return shuffleQuestionOptions({
     text: String(obj.text),
     options: obj.options.map(String),
     correctIndex: (ci >= 0 && ci <= 3) ? ci : 0,
     explanation: obj.explanation ? String(obj.explanation) : '',
-  };
+  });
 }
 
 function responseText(data) {
