@@ -13,8 +13,8 @@ export const CONFIG = {
   ROOM_ID: 'main',           // change to run multiple independent rooms
   ROUND_SECONDS: 60,         // answering window
   RESULTS_SECONDS: 8,        // how long the results popup stays before next turn
-  BASE_POINTS: 1000,         // max points for an instant correct answer
-  MIN_CORRECT_POINTS: 100,   // floor points for a correct (but slow) answer
+  BASE_POINTS: 99,           // max points for an instant correct answer
+  MIN_CORRECT_POINTS: 1,     // floor points for a correct (but slow) answer
   SETTER_BONUS: 0,           // points the question setter gets per round
 
   // --- AI (question auto-generate) ---
@@ -38,6 +38,20 @@ export const CONFIG = {
   // Leave empty to hide. Layout is auto-ads friendly (no full-screen locks).
   ADSENSE_CLIENT: '',
 };
+
+// Keep every correct-answer award to one or two digits. Faster answers score
+// closer to 99, while a correct answer at the end of the timer still earns 1.
+export function calculateCorrectPoints(answeredAt, endTs) {
+  const remaining = Math.max(0, Number(endTs || 0) - Number(answeredAt || 0));
+  const roundMs = CONFIG.ROUND_SECONDS * 1000;
+  const speed = roundMs ? Math.min(1, remaining / roundMs) : 0;
+  return Math.max(
+    CONFIG.MIN_CORRECT_POINTS,
+    Math.min(CONFIG.BASE_POINTS,
+      Math.round(CONFIG.MIN_CORRECT_POINTS
+        + (CONFIG.BASE_POINTS - CONFIG.MIN_CORRECT_POINTS) * speed))
+  );
+}
 
 export function isSupabaseConfigured() {
   return (
