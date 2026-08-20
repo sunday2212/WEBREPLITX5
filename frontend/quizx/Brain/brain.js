@@ -216,6 +216,10 @@ function renderCategories(children) {
 }
 
 function navigateToItem(index) {
+  // Always re-sync from the URL so stale global state (e.g. after a
+  // browser/device back-button bfcache restore) can never cause the wrong
+  // platform/folder to open or a platform to appear "stuck".
+  initPathFromURL();
   const currentChildren = getCurrentChildren();
   const item = currentChildren[index];
   
@@ -261,6 +265,7 @@ function openContentFolder(item, itemIndex) {
 }
 
 function goBack() {
+  initPathFromURL();
   if (currentPath.length > 0) {
     currentPath.pop();
     if (currentPath.length === 0) {
@@ -274,6 +279,7 @@ function goBack() {
 }
 
 function navigateToBreadcrumb(index) {
+  initPathFromURL();
   if (index === -1) {
     window.location.href = 'index.html';
   } else {
