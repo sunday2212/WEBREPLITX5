@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --ink: #16233a;
@@ -1169,11 +1169,100 @@
             }
         }
 
-        #install-assistant-launcher {
+        /* ─── WAVE EFFECT FOR CHATBOT ROBOT ─── */
+        .wave-container {
             position: fixed;
             right: 20px;
             bottom: 20px;
-            z-index: 10000;
+            z-index: 10001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+        .wave-ring-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66px;
+            height: 66px;
+        }
+        .wave-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2.5px solid rgba(28, 110, 99, 0.35);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            animation: wavePulse 2.6s ease-out infinite;
+            pointer-events: none;
+        }
+        .wave-ring:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            animation-delay: 0s;
+            border-color: rgba(28, 110, 99, 0.25);
+        }
+        .wave-ring:nth-child(2) {
+            width: 130%;
+            height: 130%;
+            animation-delay: 0.7s;
+            border-color: rgba(28, 110, 99, 0.18);
+        }
+        .wave-ring:nth-child(3) {
+            width: 160%;
+            height: 160%;
+            animation-delay: 1.4s;
+            border-color: rgba(28, 110, 99, 0.10);
+        }
+        .wave-ring:nth-child(4) {
+            width: 190%;
+            height: 190%;
+            animation-delay: 2.1s;
+            border-color: rgba(28, 110, 99, 0.06);
+        }
+        @keyframes wavePulse {
+            0% {
+                transform: translate(-50%, -50%) scale(0.7);
+                opacity: 0.9;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 0;
+            }
+        }
+        /* glow pulse on the button itself */
+        .wave-ring-wrapper .pulse-glow {
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(28, 110, 99, 0.12) 0%, transparent 70%);
+            animation: glowPulse 2.6s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes glowPulse {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(0.9);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.8;
+            }
+        }
+        /* launcher button inside wave container */
+        #install-assistant-launcher {
+            position: relative !important;
+            right: auto !important;
+            bottom: auto !important;
+            z-index: 10002 !important;
             width: 58px;
             height: 58px;
             border: 0;
@@ -1186,6 +1275,7 @@
             cursor: pointer;
             font-size: 1.35rem;
             transition: transform var(--transition), box-shadow var(--transition);
+            flex-shrink: 0;
         }
         #install-assistant-launcher:hover,
         #install-assistant-launcher:focus-visible {
@@ -1193,26 +1283,119 @@
             box-shadow: 0 12px 30px rgba(14, 74, 67, 0.42);
             outline: none;
         }
-        #install-assistant-launcher .assistant-launcher-label {
-            position: absolute;
-            right: 68px;
+
+        /* ─── "TALK TO ADMIN" LABEL ─── */
+        .assistant-launcher-label {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #fff;
+            background: linear-gradient(135deg, var(--teal-deep), var(--teal));
+            padding: 10px 20px 10px 18px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(14, 74, 67, 0.30);
             white-space: nowrap;
-            padding: 7px 10px;
-            border-radius: 8px;
-            color: var(--ink);
-            background: #fff;
-            box-shadow: var(--shadow);
-            font: 600 0.76rem/1.2 Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.02em;
+            transition: transform var(--transition), box-shadow var(--transition);
+            border: 1.5px solid rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(4px);
+            animation: labelPulse 2.8s ease-in-out infinite;
             pointer-events: none;
-            opacity: 0;
-            transform: translateX(5px);
-            transition: opacity var(--transition), transform var(--transition);
+            user-select: none;
         }
-        #install-assistant-launcher:hover .assistant-launcher-label,
-        #install-assistant-launcher:focus-visible .assistant-launcher-label {
-            opacity: 1;
-            transform: translateX(0);
+        .assistant-launcher-label i {
+            font-size: 1rem;
+            opacity: 0.9;
         }
+        @keyframes labelPulse {
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(14, 74, 67, 0.30);
+            }
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 8px 30px rgba(14, 74, 67, 0.45);
+            }
+        }
+        .assistant-launcher-label .label-badge {
+            background: rgba(255, 255, 255, 0.22);
+            border-radius: 30px;
+            padding: 1px 10px;
+            font-size: 0.6rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.9);
+            margin-left: 2px;
+        }
+
+        @media (max-width: 520px) {
+            .wave-container {
+                right: 14px;
+                bottom: 14px;
+                gap: 8px;
+            }
+            .wave-ring-wrapper {
+                width: 54px;
+                height: 54px;
+                flex-shrink: 0;
+            }
+            #install-assistant-launcher {
+                width: 50px;
+                height: 50px;
+                font-size: 1.1rem;
+            }
+            .assistant-launcher-label {
+                font-size: 0.75rem;
+                padding: 7px 14px 7px 12px;
+                gap: 5px;
+            }
+            .assistant-launcher-label .label-badge {
+                display: none;
+            }
+            .assistant-launcher-label i {
+                font-size: 0.8rem;
+            }
+            .wave-ring {
+                border-width: 2px;
+            }
+        }
+        @media (max-width: 420px) {
+            .assistant-launcher-label {
+                font-size: 0.65rem;
+                padding: 5px 10px 5px 8px;
+            }
+            .assistant-launcher-label i {
+                font-size: 0.65rem;
+            }
+            .wave-ring-wrapper {
+                width: 44px;
+                height: 44px;
+            }
+            #install-assistant-launcher {
+                width: 42px;
+                height: 42px;
+                font-size: 0.95rem;
+            }
+            .wave-ring:nth-child(2) {
+                width: 140%;
+                height: 140%;
+            }
+            .wave-ring:nth-child(3) {
+                width: 180%;
+                height: 180%;
+            }
+            .wave-ring:nth-child(4) {
+                width: 220%;
+                height: 220%;
+            }
+        }
+
+        /* ─── CHATBOT PANEL (unchanged layout) ─── */
         #install-assistant-panel {
             position: fixed;
             right: 20px;
@@ -1384,15 +1567,6 @@
             outline: none;
         }
         @media (max-width: 520px) {
-            #install-assistant-launcher {
-                right: 14px;
-                bottom: 14px;
-                width: 54px;
-                height: 54px;
-            }
-            #install-assistant-launcher .assistant-launcher-label {
-                display: none;
-            }
             #install-assistant-panel {
                 right: 10px;
                 bottom: 78px;
@@ -1405,7 +1579,7 @@
         }
     </style>
 
-    
+
 </head>
 <body>
     <div class="container">
@@ -1617,112 +1791,108 @@
                 </div>
             </div>
         </article>
-        
-        <!-- Add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
-<!-- add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
-<div class="code-generator"
-style="margin-top: 32px; padding-top: 24px; border-top: 1.5px solid var(--line); display: flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: center;">
 
-<button id="generateCodeBtn"
-style="background: var(--maroon); color: white; border: none; padding: 12px 32px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 700; cursor: pointer; transition: all var(--transition); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(122, 35, 51, 0.25); min-width: 160px; justify-content: center;">
-<i class="fas fa-clock" aria-hidden="true"></i> <span id="btnText">Code</span>
-</button>
+        <!-- add this block inside .news-blog-inner, right after .news-grid and before the closing </div> of .news-blog-inner -->
+        <div class="code-generator" style="margin-top: 32px; padding-top: 24px; border-top: 1.5px solid var(--line); display: flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: center;">
 
-<span id="generatedCode"
-style="font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--teal-deep); background: var(--teal-light); padding: 8px 24px; border-radius: 10px; min-width: 170px; text-align: center; display: inline-block; border: 1px solid rgba(28, 110, 99, 0.15); letter-spacing: 0.04em; opacity: 0.3; transition: opacity 0.4s ease;">
-⏳ WAIT
-</span>
+            <button id="generateCodeBtn" style="background: var(--maroon); color: white; border: none; padding: 12px 32px; border-radius: 50px; font-family: 'Inter', sans-serif; font-weight: 700; cursor: pointer; transition: all var(--transition); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(122, 35, 51, 0.25); min-width: 160px; justify-content: center;">
+                <i class="fas fa-clock" aria-hidden="true"></i> <span id="btnText">Code</span>
+            </button>
 
-<p id="codeHelper" style="font-size: 0.7rem; color: var(--ink-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; width: 100%; text-align: center; margin: 2px 0 0;">
-Click the button to start the 30‑second countdown
-</p>
-</div>
+            <span id="generatedCode" style="font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; font-weight: 700; color: var(--teal-deep); background: var(--teal-light); padding: 8px 24px; border-radius: 10px; min-width: 170px; text-align: center; display: inline-block; border: 1px solid rgba(28, 110, 99, 0.15); letter-spacing: 0.04em; opacity: 0.3; transition: opacity 0.4s ease;">
+                ⏳ WAIT
+            </span>
 
-<script>
-    (function() {
-        const btn = document.getElementById('generateCodeBtn');
-        const btnText = document.getElementById('btnText');
-        const display = document.getElementById('generatedCode');
-        const helper = document.getElementById('codeHelper');
+            <p id="codeHelper" style="font-size: 0.7rem; color: var(--ink-muted); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; width: 100%; text-align: center; margin: 2px 0 0;">
+                Click the button to start the 30‑second countdown
+            </p>
+        </div>
 
-        if (!btn || !btnText || !display || !helper) return;
+        <script>
+            (function() {
+                const btn = document.getElementById('generateCodeBtn');
+                const btnText = document.getElementById('btnText');
+                const display = document.getElementById('generatedCode');
+                const helper = document.getElementById('codeHelper');
 
-        let countdownInterval = null;
-        let isRunning = false;
-        let remaining = 30;
+                if (!btn || !btnText || !display || !helper) return;
 
-        function generateCode() {
-            const digits = String(Math.floor(Math.random() * 1000)).padStart(3, '0');
-            return 'NEXT' + digits;
-        }
+                let countdownInterval = null;
+                let isRunning = false;
+                let remaining = 30;
 
-        function updateDisplay(code) {
-            display.textContent = code;
-            display.style.opacity = '1';
-            display.style.transition = 'opacity 0.4s ease';
-        }
-
-        function resetDisplay() {
-            display.textContent = '⏳ WAIT';
-            display.style.opacity = '0.3';
-        }
-
-        function startCountdown() {
-            if (isRunning) return;
-
-            isRunning = true;
-            remaining = 30;
-            resetDisplay();
-            btn.disabled = true;
-            btn.style.cursor = 'not-allowed';
-            btn.style.opacity = '0.7';
-            helper.textContent = '⏱️ Please wait... code will appear in 30 seconds';
-
-            // Update button text with timer
-            btnText.textContent = remaining + 's';
-
-            countdownInterval = setInterval(function() {
-                remaining--;
-                btnText.textContent = remaining + 's';
-
-                if (remaining <= 0) {
-                    clearInterval(countdownInterval);
-                    countdownInterval = null;
-                    isRunning = false;
-                    btn.disabled = false;
-                    btn.style.cursor = 'pointer';
-                    btn.style.opacity = '1';
-                    btnText.textContent = 'Code';
-
-                    // Generate and show the code
-                    const code = generateCode();
-                    updateDisplay(code);
-                    helper.textContent = '✅ Code generated — click again for a new one';
-
-                    // Copy to clipboard
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(code).catch(() => {});
-                    }
-
-                    // Brief flash animation on the button
-                    btn.style.background = 'var(--teal)';
-                    setTimeout(() => {
-                        btn.style.background = 'var(--maroon)';
-                    }, 400);
+                function generateCode() {
+                    const digits = String(Math.floor(Math.random() * 1000)).padStart(3, '0');
+                    return 'NEXT' + digits;
                 }
-            }, 1000);
-        }
 
-        btn.addEventListener('click', function() {
-            if (isRunning) return; // ignore clicks while timer runs
-            startCountdown();
-        });
+                function updateDisplay(code) {
+                    display.textContent = code;
+                    display.style.opacity = '1';
+                    display.style.transition = 'opacity 0.4s ease';
+                }
 
-        // Pre‑fill display with a placeholder
-        resetDisplay();
-        helper.textContent = 'Click the button to start the 30‑second countdown';
-    })();
-</script>
+                function resetDisplay() {
+                    display.textContent = '⏳ WAIT';
+                    display.style.opacity = '0.3';
+                }
+
+                function startCountdown() {
+                    if (isRunning) return;
+
+                    isRunning = true;
+                    remaining = 30;
+                    resetDisplay();
+                    btn.disabled = true;
+                    btn.style.cursor = 'not-allowed';
+                    btn.style.opacity = '0.7';
+                    helper.textContent = '⏱️ Please wait... code will appear in 30 seconds';
+
+                    // Update button text with timer
+                    btnText.textContent = remaining + 's';
+
+                    countdownInterval = setInterval(function() {
+                        remaining--;
+                        btnText.textContent = remaining + 's';
+
+                        if (remaining <= 0) {
+                            clearInterval(countdownInterval);
+                            countdownInterval = null;
+                            isRunning = false;
+                            btn.disabled = false;
+                            btn.style.cursor = 'pointer';
+                            btn.style.opacity = '1';
+                            btnText.textContent = 'Code';
+
+                            // Generate and show the code
+                            const code = generateCode();
+                            updateDisplay(code);
+                            helper.textContent = '✅ Code generated — click again for a new one';
+
+                            // Copy to clipboard
+                            if (navigator.clipboard && navigator.clipboard.writeText) {
+                                navigator.clipboard.writeText(code).catch(() => {});
+                            }
+
+                            // Brief flash animation on the button
+                            btn.style.background = 'var(--teal)';
+                            setTimeout(() => {
+                                btn.style.background = 'var(--maroon)';
+                            }, 400);
+                        }
+                    }, 1000);
+                }
+
+                btn.addEventListener('click', function() {
+                    if (isRunning) return; // ignore clicks while timer runs
+                    startCountdown();
+                });
+
+                // Pre‑fill display with a placeholder
+                resetDisplay();
+                helper.textContent = 'Click the button to start the 30‑second countdown';
+            })();
+        </script>
 
         <footer class="site-footer">
             <div class="masthead-rule--thin"></div>
@@ -1749,10 +1919,28 @@ Click the button to start the 30‑second countdown
         <button id="dismissBtn">Dismiss</button>
     </div>
 
-    <button id="install-assistant-launcher" type="button" aria-label="Open assistant" aria-controls="install-assistant-panel" aria-expanded="false">
-        <span class="assistant-launcher-label">Need help?</span>
-        <i class="fas fa-robot" aria-hidden="true"></i>
-    </button>
+    <!-- ─── WAVE CONTAINER + CHATBOT LAUNCHER ─── -->
+    <div class="wave-container">
+        <div class="wave-ring-wrapper">
+            <!-- wave rings -->
+            <span class="wave-ring"></span>
+            <span class="wave-ring"></span>
+            <span class="wave-ring"></span>
+            <span class="wave-ring"></span>
+            <span class="pulse-glow"></span>
+            <!-- launcher button -->
+            <button id="install-assistant-launcher" type="button" aria-label="Open assistant" aria-controls="install-assistant-panel" aria-expanded="false">
+                <i class="fas fa-robot" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!-- "Talk to Admin" label -->
+        <span class="assistant-launcher-label">
+            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+            Talk to Admin
+            <span class="label-badge">Live</span>
+        </span>
+    </div>
+
     <section id="install-assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title" aria-hidden="true">
         <header class="assistant-header">
             <div class="assistant-header-title">
@@ -1841,10 +2029,14 @@ Click the button to start the 30‑second countdown
 
             function showReturningSteps() {
                 state = 'askPlatform';
-                addMessage('No problem. First clear the old app history so the latest version can install cleanly:', 'assistant');
-                addMessage('1. Open your browser settings and clear the Afrahtafreeh site/app history. Follow the first screenshot, then return here.', 'assistant', 'app_history-1.png', 'Clear app history: step 1');
-                addMessage('2. Complete the next app-history step.', 'assistant', 'app_history-2.png', 'Clear app history: step 2');
-                addMessage('Now clear the browser history for this site as well:', 'assistant', 'browser-history.png', 'Clear browser history');
+                addMessage('No problem. First clear the old app history so the latest version can install cleanly:',
+                    'assistant');
+                addMessage('1. Open your browser settings and clear the Afrahtafreeh site/app history. Follow the first screenshot, then return here.',
+                    'assistant', 'app_history-1.png', 'Clear app history: step 1');
+                addMessage('2. Complete the next app-history step.', 'assistant', 'app_history-2.png',
+                    'Clear app history: step 2');
+                addMessage('Now clear the browser history for this site as well:', 'assistant', 'browser-history.png',
+                    'Clear browser history');
                 addMessage('Once that is done, choose your device and I will guide you through installation.', 'assistant');
                 askPlatform();
             }
@@ -1852,13 +2044,28 @@ Click the button to start the 30‑second countdown
             function showPlatformSteps(platform) {
                 state = 'finish';
                 if (platform === 'iphone') {
-                    addMessage('For iPhone / iOS, follow these steps:', 'assistant', 'iphone.png', 'iPhone PWA installation steps');
-                    addMessage('1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select "Add to Home Screen".\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf "Add to Home Screen" is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.', 'assistant');
+                    addMessage('For iPhone / iOS, follow these steps:', 'assistant', 'iphone.png',
+                        'iPhone PWA installation steps');
+                    addMessage(
+                        '1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select "Add to Home Screen".\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf "Add to Home Screen" is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.',
+                        'assistant');
                 } else {
                     const device = platform === 'pc' ? 'PC / Windows' : 'Android';
-                    addMessage('For ' + device + ', follow these steps:', 'assistant', 'android.png', device + ' PWA installation steps');
-                    addMessage('1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose "Install app" or "Add to Home screen".\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app\'s browser.', 'assistant');
+                    addMessage('For ' + device + ', follow these steps:', 'assistant', 'android.png', device +
+                        ' PWA installation steps');
+                    addMessage(
+                        '1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose "Install app" or "Add to Home screen".\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app\'s browser.',
+                        'assistant');
                 }
+
+                // ─── NEW FINAL STEP: "After Installation, Find "NEXTPULSE" app on your device" ───
+                addMessage(
+                    '✅ After installation, find the "NEXTPULSE" app on your device — it appears on your home screen with a distinctive icon.',
+                    'assistant',
+                    'https://i.postimg.cc/vB0zZJL6/IMG-20260820-192516.jpg',
+                    'NEXTPULSE app icon'
+                );
+
                 addMessage('You are all set. If you need more help, just type "restart" to start over.', 'assistant');
             }
 
@@ -1886,11 +2093,13 @@ Click the button to start the 30‑second countdown
                         addMessage('Please answer "Yes" or "No". Are you installing for the first time?', 'assistant');
                     }
                 } else if (state === 'askPlatform') {
-                    if (lower.includes('iphone') || lower.includes('ios') || lower.includes('apple') || lower.includes('ipad')) {
+                    if (lower.includes('iphone') || lower.includes('ios') || lower.includes('apple') || lower.includes(
+                            'ipad')) {
                         showPlatformSteps('iphone');
                     } else if (lower.includes('android') || lower.includes('phone') || lower.includes('samsung')) {
                         showPlatformSteps('android');
-                    } else if (lower.includes('pc') || lower.includes('windows') || lower.includes('computer') || lower.includes('desktop') || lower.includes('laptop')) {
+                    } else if (lower.includes('pc') || lower.includes('windows') || lower.includes('computer') || lower
+                        .includes('desktop') || lower.includes('laptop')) {
                         showPlatformSteps('pc');
                     } else {
                         addMessage('Please tell me which device you are using: Android, PC, or iPhone.', 'assistant');
@@ -1902,7 +2111,8 @@ Click the button to start the 30‑second countdown
                         userName = '';
                         askInitial();
                     } else {
-                        addMessage('I can help with installation. Type "restart" to start over or tell me your question.', 'assistant');
+                        addMessage('I can help with installation. Type "restart" to start over or tell me your question.',
+                            'assistant');
                     }
                 } else {
                     askName();
