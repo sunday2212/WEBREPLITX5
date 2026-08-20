@@ -1169,7 +1169,7 @@
             }
         }
 
-        /* ─── WAVE EFFECT FOR CHATBOT ROBOT ─── */
+        /* ─── WAVE EFFECT FOR CHATBOT ROBOT (enhanced & attractive) ─── */
         .wave-container {
             position: fixed;
             right: 20px;
@@ -1177,63 +1177,78 @@
             z-index: 10001;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             gap: 12px;
             cursor: pointer;
+            flex-direction: row-reverse; /* label on left, wave+button on right */
         }
         .wave-ring-wrapper {
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 66px;
-            height: 66px;
+            width: 76px;
+            height: 76px;
+            flex-shrink: 0;
         }
+        /* enhanced rings: more rings, bigger, with gradient & glow */
         .wave-ring {
             position: absolute;
             border-radius: 50%;
-            border: 2.5px solid rgba(28, 110, 99, 0.35);
+            border: 2.5px solid rgba(28, 110, 99, 0.30);
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(0.8);
-            animation: wavePulse 2.6s ease-out infinite;
+            transform: translate(-50%, -50%) scale(0.7);
+            animation: wavePulse 3s ease-out infinite;
             pointer-events: none;
+            box-shadow: 0 0 12px rgba(28, 110, 99, 0.10);
         }
         .wave-ring:nth-child(1) {
             width: 100%;
             height: 100%;
             animation-delay: 0s;
             border-color: rgba(28, 110, 99, 0.25);
+            border-width: 3px;
         }
         .wave-ring:nth-child(2) {
-            width: 130%;
-            height: 130%;
-            animation-delay: 0.7s;
+            width: 140%;
+            height: 140%;
+            animation-delay: 0.6s;
             border-color: rgba(28, 110, 99, 0.18);
+            border-width: 2.5px;
         }
         .wave-ring:nth-child(3) {
-            width: 160%;
-            height: 160%;
-            animation-delay: 1.4s;
-            border-color: rgba(28, 110, 99, 0.10);
+            width: 180%;
+            height: 180%;
+            animation-delay: 1.2s;
+            border-color: rgba(28, 110, 99, 0.12);
+            border-width: 2px;
         }
         .wave-ring:nth-child(4) {
-            width: 190%;
-            height: 190%;
-            animation-delay: 2.1s;
-            border-color: rgba(28, 110, 99, 0.06);
+            width: 220%;
+            height: 220%;
+            animation-delay: 1.8s;
+            border-color: rgba(28, 110, 99, 0.08);
+            border-width: 1.5px;
+        }
+        .wave-ring:nth-child(5) {
+            width: 260%;
+            height: 260%;
+            animation-delay: 2.4s;
+            border-color: rgba(28, 110, 99, 0.05);
+            border-width: 1px;
         }
         @keyframes wavePulse {
             0% {
-                transform: translate(-50%, -50%) scale(0.7);
+                transform: translate(-50%, -50%) scale(0.6);
                 opacity: 0.9;
             }
             100% {
-                transform: translate(-50%, -50%) scale(1.3);
+                transform: translate(-50%, -50%) scale(1.4);
                 opacity: 0;
             }
         }
-        /* glow pulse on the button itself */
+        /* glow pulse on the button itself (more prominent) */
         .wave-ring-wrapper .pulse-glow {
             position: absolute;
             border-radius: 50%;
@@ -1242,19 +1257,19 @@
             transform: translate(-50%, -50%);
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(28, 110, 99, 0.12) 0%, transparent 70%);
-            animation: glowPulse 2.6s ease-in-out infinite;
+            background: radial-gradient(circle, rgba(28, 110, 99, 0.20) 0%, transparent 70%);
+            animation: glowPulse 2.8s ease-in-out infinite;
             pointer-events: none;
         }
         @keyframes glowPulse {
             0%,
             100% {
-                transform: translate(-50%, -50%) scale(0.9);
+                transform: translate(-50%, -50%) scale(0.8);
                 opacity: 0.3;
             }
             50% {
-                transform: translate(-50%, -50%) scale(1.2);
-                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 0.9;
             }
         }
         /* launcher button inside wave container */
@@ -1263,37 +1278,37 @@
             right: auto !important;
             bottom: auto !important;
             z-index: 10002 !important;
-            width: 58px;
-            height: 58px;
+            width: 62px;
+            height: 62px;
             border: 0;
             border-radius: 50%;
             display: grid;
             place-items: center;
             color: #fff;
             background: linear-gradient(135deg, var(--teal), var(--teal-deep));
-            box-shadow: 0 8px 24px rgba(14, 74, 67, 0.35);
+            box-shadow: 0 8px 28px rgba(14, 74, 67, 0.40);
             cursor: pointer;
-            font-size: 1.35rem;
+            font-size: 1.5rem;
             transition: transform var(--transition), box-shadow var(--transition);
             flex-shrink: 0;
         }
         #install-assistant-launcher:hover,
         #install-assistant-launcher:focus-visible {
-            transform: translateY(-3px) scale(1.04);
-            box-shadow: 0 12px 30px rgba(14, 74, 67, 0.42);
+            transform: scale(1.06) translateY(-3px);
+            box-shadow: 0 14px 36px rgba(14, 74, 67, 0.50);
             outline: none;
         }
 
-        /* ─── "TALK TO ADMIN" LABEL ─── */
+        /* ─── "TALK TO ADMIN" LABEL (now on left) ─── */
         .assistant-launcher-label {
             font-family: 'Inter', 'Segoe UI', sans-serif;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #fff;
             background: linear-gradient(135deg, var(--teal-deep), var(--teal));
-            padding: 10px 20px 10px 18px;
+            padding: 10px 22px 10px 18px;
             border-radius: 50px;
-            box-shadow: 0 6px 20px rgba(14, 74, 67, 0.30);
+            box-shadow: 0 6px 24px rgba(14, 74, 67, 0.30);
             white-space: nowrap;
             display: flex;
             align-items: center;
@@ -1305,6 +1320,7 @@
             animation: labelPulse 2.8s ease-in-out infinite;
             pointer-events: none;
             user-select: none;
+            order: 0; /* ensure it stays on left */
         }
         .assistant-launcher-label i {
             font-size: 1rem;
@@ -1314,17 +1330,17 @@
             0%,
             100% {
                 transform: scale(1);
-                box-shadow: 0 6px 20px rgba(14, 74, 67, 0.30);
+                box-shadow: 0 6px 24px rgba(14, 74, 67, 0.30);
             }
             50% {
-                transform: scale(1.04);
-                box-shadow: 0 8px 30px rgba(14, 74, 67, 0.45);
+                transform: scale(1.05);
+                box-shadow: 0 10px 36px rgba(14, 74, 67, 0.45);
             }
         }
         .assistant-launcher-label .label-badge {
             background: rgba(255, 255, 255, 0.22);
             border-radius: 30px;
-            padding: 1px 10px;
+            padding: 1px 12px;
             font-size: 0.6rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -1338,16 +1354,17 @@
                 right: 14px;
                 bottom: 14px;
                 gap: 8px;
+                flex-direction: row-reverse;
             }
             .wave-ring-wrapper {
-                width: 54px;
-                height: 54px;
+                width: 60px;
+                height: 60px;
                 flex-shrink: 0;
             }
             #install-assistant-launcher {
                 width: 50px;
                 height: 50px;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             .assistant-launcher-label {
                 font-size: 0.75rem;
@@ -1363,6 +1380,11 @@
             .wave-ring {
                 border-width: 2px;
             }
+            /* reduce ring sizes on small screens */
+            .wave-ring:nth-child(2) { width: 150%; height: 150%; }
+            .wave-ring:nth-child(3) { width: 190%; height: 190%; }
+            .wave-ring:nth-child(4) { width: 230%; height: 230%; }
+            .wave-ring:nth-child(5) { width: 270%; height: 270%; }
         }
         @media (max-width: 420px) {
             .assistant-launcher-label {
@@ -1373,29 +1395,21 @@
                 font-size: 0.65rem;
             }
             .wave-ring-wrapper {
-                width: 44px;
-                height: 44px;
+                width: 50px;
+                height: 50px;
             }
             #install-assistant-launcher {
                 width: 42px;
                 height: 42px;
-                font-size: 0.95rem;
+                font-size: 1rem;
             }
-            .wave-ring:nth-child(2) {
-                width: 140%;
-                height: 140%;
-            }
-            .wave-ring:nth-child(3) {
-                width: 180%;
-                height: 180%;
-            }
-            .wave-ring:nth-child(4) {
-                width: 220%;
-                height: 220%;
-            }
+            .wave-ring:nth-child(2) { width: 160%; height: 160%; }
+            .wave-ring:nth-child(3) { width: 200%; height: 200%; }
+            .wave-ring:nth-child(4) { width: 240%; height: 240%; }
+            .wave-ring:nth-child(5) { width: 280%; height: 280%; }
         }
 
-        /* ─── CHATBOT PANEL (unchanged layout) ─── */
+        /* ─── CHATBOT PANEL (fully responsive, no overflow) ─── */
         #install-assistant-panel {
             position: fixed;
             right: 20px;
@@ -1403,9 +1417,11 @@
             z-index: 9999;
             display: flex;
             flex-direction: column;
-            width: min(390px, calc(100vw - 32px));
+            width: min(400px, calc(100vw - 32px));
+            max-width: 400px;
             height: min(650px, calc(100vh - 112px));
             min-height: 420px;
+            max-height: calc(100vh - 100px);
             overflow: hidden;
             border: 1px solid rgba(28, 110, 99, 0.18);
             border-radius: 18px;
@@ -1431,6 +1447,7 @@
             padding: 14px 15px;
             color: #fff;
             background: linear-gradient(135deg, var(--teal-deep), var(--teal));
+            flex-shrink: 0;
         }
         .assistant-header-title {
             display: flex;
@@ -1446,6 +1463,7 @@
             border-radius: 50%;
             color: var(--teal-deep);
             background: #e6f4f1;
+            flex-shrink: 0;
         }
         .assistant-header-title strong {
             display: block;
@@ -1480,6 +1498,7 @@
             padding: 15px 13px 10px;
             background: #f7faf8;
             scroll-behavior: smooth;
+            min-height: 0;
         }
         .assistant-message {
             max-width: 92%;
@@ -1492,6 +1511,7 @@
             font-size: 0.83rem;
             line-height: 1.48;
             white-space: pre-line;
+            word-wrap: break-word;
         }
         .assistant-message.user {
             margin-left: auto;
@@ -1533,6 +1553,7 @@
             padding: 10px;
             border-top: 1px solid var(--line);
             background: #fff;
+            flex-shrink: 0;
         }
         #assistant-input {
             flex: 1;
@@ -1572,9 +1593,48 @@
                 bottom: 78px;
                 left: 10px;
                 width: auto;
+                max-width: none;
                 height: min(620px, calc(100vh - 94px));
                 min-height: 390px;
+                max-height: calc(100vh - 90px);
                 border-radius: 15px;
+            }
+        }
+        @media (max-width: 400px) {
+            #install-assistant-panel {
+                right: 6px;
+                left: 6px;
+                bottom: 72px;
+                height: min(580px, calc(100vh - 86px));
+                min-height: 340px;
+                border-radius: 12px;
+            }
+            .assistant-header {
+                padding: 10px 12px;
+            }
+            .assistant-header-title strong {
+                font-size: 0.82rem;
+            }
+            #assistant-messages {
+                padding: 10px 10px 6px;
+            }
+            .assistant-message {
+                font-size: 0.78rem;
+                padding: 8px 10px;
+            }
+            #assistant-input-area {
+                padding: 6px 8px;
+            }
+            #assistant-input {
+                font-size: 0.75rem;
+                padding: 8px 10px;
+                min-height: 32px;
+            }
+            #assistant-send {
+                flex: 0 0 32px;
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -1921,8 +1981,16 @@
 
     <!-- ─── WAVE CONTAINER + CHATBOT LAUNCHER ─── -->
     <div class="wave-container">
+        <!-- "Talk to Admin" label (now on the left) -->
+        <span class="assistant-launcher-label">
+            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+            Talk to Admin
+            <span class="label-badge">Live</span>
+        </span>
+
         <div class="wave-ring-wrapper">
-            <!-- wave rings -->
+            <!-- wave rings (enhanced: 5 rings, more spread, glow) -->
+            <span class="wave-ring"></span>
             <span class="wave-ring"></span>
             <span class="wave-ring"></span>
             <span class="wave-ring"></span>
@@ -1933,12 +2001,6 @@
                 <i class="fas fa-robot" aria-hidden="true"></i>
             </button>
         </div>
-        <!-- "Talk to Admin" label -->
-        <span class="assistant-launcher-label">
-            <i class="fas fa-comment-dots" aria-hidden="true"></i>
-            Talk to Admin
-            <span class="label-badge">Live</span>
-        </span>
     </div>
 
     <section id="install-assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title" aria-hidden="true">
@@ -1994,14 +2056,26 @@
             function addMessage(text, type, image, alt) {
                 const message = document.createElement('div');
                 message.className = 'assistant-message' + (type === 'user' ? ' user' : '');
-                message.textContent = text;
+                // Use innerHTML to support line breaks and image
+                message.innerHTML = text.replace(/\n/g, '<br>');
                 if (image) {
-                    const imageElement = document.createElement('img');
-                    imageElement.src = imageRoot + image;
-                    imageElement.alt = alt || 'Installation guide';
-                    imageElement.loading = 'lazy';
-                    imageElement.onerror = function() { imageElement.remove(); };
-                    message.appendChild(imageElement);
+                    const img = document.createElement('img');
+                    img.src = image;
+                    img.alt = alt || 'Installation guide';
+                    img.loading = 'lazy';
+                    img.style.maxWidth = '100%';
+                    img.style.borderRadius = '8px';
+                    img.style.marginTop = '9px';
+                    img.style.border = '1px solid rgba(22,35,58,0.12)';
+                    img.onerror = function() {
+                        // fallback: show text instead of broken image
+                        const fallback = document.createElement('div');
+                        fallback.style.cssText =
+                            'background:#f0f0f0;padding:10px;border-radius:8px;margin-top:9px;font-size:0.75rem;color:#666;text-align:center;';
+                        fallback.textContent = '🖼️ Image could not be loaded.';
+                        img.replaceWith(fallback);
+                    };
+                    message.appendChild(img);
                 }
                 messages.appendChild(message);
                 scrollToBottom();
@@ -2019,7 +2093,8 @@
 
             function askFirstTime(name) {
                 state = 'askFirstTime';
-                addMessage('Nice to meet you, ' + name + '! Are you installing for the first time? (Yes/No)', 'assistant');
+                addMessage('Nice to meet you, ' + name + '! Are you installing for the first time? (Yes/No)',
+                'assistant');
             }
 
             function askPlatform() {
@@ -2032,11 +2107,11 @@
                 addMessage('No problem. First clear the old app history so the latest version can install cleanly:',
                     'assistant');
                 addMessage('1. Open your browser settings and clear the Afrahtafreeh site/app history. Follow the first screenshot, then return here.',
-                    'assistant', 'app_history-1.png', 'Clear app history: step 1');
-                addMessage('2. Complete the next app-history step.', 'assistant', 'app_history-2.png',
+                    'assistant', imageRoot + 'app_history-1.png', 'Clear app history: step 1');
+                addMessage('2. Complete the next app-history step.', 'assistant', imageRoot + 'app_history-2.png',
                     'Clear app history: step 2');
-                addMessage('Now clear the browser history for this site as well:', 'assistant', 'browser-history.png',
-                    'Clear browser history');
+                addMessage('Now clear the browser history for this site as well:', 'assistant', imageRoot +
+                    'browser-history.png', 'Clear browser history');
                 addMessage('Once that is done, choose your device and I will guide you through installation.', 'assistant');
                 askPlatform();
             }
@@ -2044,26 +2119,26 @@
             function showPlatformSteps(platform) {
                 state = 'finish';
                 if (platform === 'iphone') {
-                    addMessage('For iPhone / iOS, follow these steps:', 'assistant', 'iphone.png',
+                    addMessage('For iPhone / iOS, follow these steps:', 'assistant', imageRoot + 'iphone.png',
                         'iPhone PWA installation steps');
                     addMessage(
-                        '1. Open afrahtafreeh.site in Safari (not another browser).\n2. Tap the Share button.\n3. Select "Add to Home Screen".\n4. Tap Add. The app icon will appear on your Home Screen.\n\nIf "Add to Home Screen" is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.',
+                        '1. Open afrahtafreeh.site in Safari (not another browser).<br>2. Tap the Share button.<br>3. Select "Add to Home Screen".<br>4. Tap Add. The app icon will appear on your Home Screen.<br><br>If "Add to Home Screen" is not visible, scroll the Share menu, confirm you are using Safari, and reload the website once.',
                         'assistant');
                 } else {
                     const device = platform === 'pc' ? 'PC / Windows' : 'Android';
-                    addMessage('For ' + device + ', follow these steps:', 'assistant', 'android.png', device +
-                        ' PWA installation steps');
+                    addMessage('For ' + device + ', follow these steps:', 'assistant', imageRoot + 'android.png',
+                        device + ' PWA installation steps');
                     addMessage(
-                        '1. Open afrahtafreeh.site in Chrome.\n2. Sign in if needed and wait for the page to finish loading.\n3. Open the three-dot menu (⋮).\n4. Choose "Install app" or "Add to Home screen".\n5. Confirm Install / Add.\n\nIf the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app\'s browser.',
+                        '1. Open afrahtafreeh.site in Chrome.<br>2. Sign in if needed and wait for the page to finish loading.<br>3. Open the three-dot menu (⋮).<br>4. Choose "Install app" or "Add to Home screen".<br>5. Confirm Install / Add.<br><br>If the option is missing, update Chrome, reload the page, and make sure you are on the website—not inside another app\'s browser.',
                         'assistant');
                 }
 
-                // ─── NEW FINAL STEP: "After Installation, Find "NEXTPULSE" app on your device" ───
+                // ─── FINAL STEP: "After Installation, find "NEXTPULSE" app on your device" with image ───
                 addMessage(
-                    '✅ After installation, find the "NEXTPULSE" app on your device — it appears on your home screen with a distinctive icon.',
+                    '✅ After installation, find the <strong>NEXTPULSE</strong> app on your device — it appears on your home screen with a distinctive icon. Open the app from your device (not from the website).',
                     'assistant',
                     'https://i.postimg.cc/vB0zZJL6/IMG-20260820-192516.jpg',
-                    'NEXTPULSE app icon'
+                    'NEXTPULSE app icon on device'
                 );
 
                 addMessage('You are all set. If you need more help, just type "restart" to start over.', 'assistant');
