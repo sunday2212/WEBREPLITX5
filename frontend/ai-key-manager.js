@@ -268,14 +268,24 @@
     if (Array.isArray(parts)) {
       return parts.map((part) => {
         if (typeof part === 'string') return part;
-        if (typeof part.text === 'string') return part.text;
-        if (part.message && typeof part.message.content === 'string') return part.message.content;
+        if (typeof part.text === 'string' && part.text.trim()) return part.text;
+        if (part.message && typeof part.message.content === 'string' && part.message.content.trim()) {
+          return part.message.content;
+        }
         if (part.message && Array.isArray(part.message.content)) {
-          return part.message.content.map(item => item.text || '').join('');
+          const joined = part.message.content.map(item => item.text || '').join('');
+          if (joined.trim()) return joined;
         }
         if (Array.isArray(part.content)) {
-          return part.content.map(item => item.text || '').join('');
+          const joined = part.content.map(item => item.text || '').join('');
+          if (joined.trim()) return joined;
         }
+        // Fallback for reasoning models (e.g. Groq gpt-oss) that may leave
+        // `content` empty and place the answer in a `reasoning` field.
+        if (part.message && typeof part.message.reasoning === 'string' && part.message.reasoning.trim()) {
+          return part.message.reasoning;
+        }
+        if (typeof part.reasoning === 'string' && part.reasoning.trim()) return part.reasoning;
         return '';
       }).join('');
     }
