@@ -1,6 +1,7 @@
-import { fetchFromAPI } from './api.js';
+import { fetchFromAPIWith, getProviderOrder } from './api.js';
 
-const MAX_ATTEMPTS = 3;
+// Attempts to make against EACH provider before moving on to the next one.
+const ATTEMPTS_PER_PROVIDER = 2;
 
 export async function generateQuestion(subject, difficulty, topic = '', askedQuestions = []) {
     const difficultyContext = getDifficultyContext(difficulty);
@@ -21,53 +22,75 @@ export async function generateQuestion(subject, difficulty, topic = '', askedQue
         }
         where "correctIndex" is the 0-based index of the correct option.`;
 
-    let lastErrorMessage = 'Unknown error.';
+    // Selected provider first, then any other provider the user added a key for.
+    const providers = getProviderOrder();
+    if (providers.length === 0) {
+        return errorQuestion('No AI provider API key found. Please add your API key first.');
+    }
+
+    const selected = providers[0];
+    const errors = [];
     let lastRaw = '';
 
-    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-        try {
-            const response = await fetchFromAPI(prompt);
+    // Try each provider in turn; only fall back to the next provider after the
+    // current one has genuinely failed (error, rate limit, empty, or unparseable).
+    for (const provider of providers) {
+        for (let attempt = 1; attempt <= ATTEMPTS_PER_PROVIDER; attempt++) {
+            try {
+                const response = await fetchFromAPIWith(provider, prompt);
 
-            // Check if response contains an error property
-            if (response && typeof response === 'object' && response.error) {
-                throw new Error(`API Error: ${JSON.stringify(response.error)}`);
+                if (response && typeof response === 'object' && response.error) {
+                    throw new Error(`API Error: ${JSON.stringify(response.error)}`);
+                }
+
+                const raw = typeof response === 'string' ? response : JSON.stringify(response ?? '');
+                lastRaw = raw;
+
+                const questionData = extractQuestionJSON(raw);
+                if (questionData) {
+                    if (provider !== selected) {
+                        console.warn(`Primary provider "${label(selected)}" failed; served this question with fallback "${label(provider)}".`);
+                    }
+                    return questionData;
+                }
+
+                const reason = raw && raw.trim()
+                    ? 'Could not find valid JSON in the response.'
+                    : 'The AI returned an empty response.';
+                errors.push(`${label(provider)} (try ${attempt}): ${reason}`);
+                console.warn(`${label(provider)} attempt ${attempt}/${ATTEMPTS_PER_PROVIDER}: ${reason}`, raw);
+            } catch (error) {
+                const msg = error && error.message ? error.message : String(error);
+                errors.push(`${label(provider)} (try ${attempt}): ${msg}`);
+                console.warn(`${label(provider)} attempt ${attempt}/${ATTEMPTS_PER_PROVIDER} error:`, msg);
+
+                // Auth / key / quota problems won't fix themselves — stop retrying
+                // this provider and fall back to the next one immediately.
+                if (/api key|no .* key is saved|401|403|invalid[_\s-]?api|unauthor|quota|billing|credit/i.test(msg)) {
+                    break;
+                }
             }
 
-            const raw = typeof response === 'string' ? response : JSON.stringify(response ?? '');
-            lastRaw = raw;
-
-            const questionData = extractQuestionJSON(raw);
-            if (questionData) {
-                return questionData;
+            if (attempt < ATTEMPTS_PER_PROVIDER) {
+                await sleep(600 * attempt);
             }
-
-            lastErrorMessage = raw && raw.trim()
-                ? 'Could not find valid JSON in API response.'
-                : 'The AI returned an empty response.';
-            console.warn(`Question Generation attempt ${attempt}/${MAX_ATTEMPTS} failed: ${lastErrorMessage}`, raw);
-        } catch (error) {
-            lastErrorMessage = error && error.message ? error.message : String(error);
-            console.warn(`Question Generation attempt ${attempt}/${MAX_ATTEMPTS} error:`, lastErrorMessage);
-
-            // Don't waste retries on auth / key / quota problems – they won't fix themselves.
-            if (/api key|no .* key is saved|401|403|invalid[_\s-]?api|unauthor|quota|billing|credit/i.test(lastErrorMessage)) {
-                break;
-            }
-        }
-
-        // Give the model a moment and try again (simple linear backoff).
-        if (attempt < MAX_ATTEMPTS) {
-            await sleep(700 * attempt);
         }
     }
 
-    // Surface the real error so it can actually be debugged from the quiz screen.
-    const rawSnippet = lastRaw && lastRaw.trim()
-        ? ` | Response received: ${truncate(lastRaw.trim(), 300)}`
-        : '';
-    console.error('Question Generation Error (all attempts failed):', lastErrorMessage, lastRaw);
+    // Every available provider failed — surface the real reasons for debugging.
+    const rawSnippet = lastRaw && lastRaw.trim() ? ` | Last response: ${truncate(lastRaw.trim(), 200)}` : '';
+    console.error('Question Generation failed on all providers:', errors);
+    return errorQuestion(`Failed to load question. Tried ${providers.map(label).join(', ')}. ${errors.slice(-3).join(' | ')}${rawSnippet}`);
+}
+
+function label(provider) {
+    const P = window.AIKeyManager.PROVIDERS;
+    return (P[provider] && (P[provider].shortLabel || P[provider].label)) || provider;
+}
+
+function errorQuestion(message) {
     return {
-        question: `Failed to load question after ${MAX_ATTEMPTS} attempts. ${lastErrorMessage}${rawSnippet}`,
+        question: message,
         options: ['Error', 'Error', 'Error', 'Error'],
         correctIndex: 0
     };
