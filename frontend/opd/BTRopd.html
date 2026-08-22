@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
     <title>BTR OPD - NEXTPULSE</title>
 
-    <!-- Dependencies -->
+    <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- Page Flip -->
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google GPT -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 
     <style>
         :root {
@@ -19,7 +28,17 @@
             --footer-height: 60px;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
 
         body {
             background: var(--bg-dark);
@@ -27,10 +46,12 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 100vh;
-            width: 100vw;
             color: var(--secondary);
         }
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
 
         header {
             background: var(--primary);
@@ -45,43 +66,61 @@
             flex-shrink: 0;
         }
 
-        .logo { display: flex; align-items: center; gap: 12px; }
-        .logo h1 { font-size: 1.4rem; font-weight: 700; color: white; margin: 0; letter-spacing: 1px; }
-        .logo i { font-size: 1.8rem; color: #4fd1c7; }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-        .header-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 1px;
+        }
 
-        .back-btn {
+        .logo i {
+            font-size: 1.8rem;
+            color: #4fd1c7;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .back-btn,
+        .tool-btn {
             background: rgba(255,255,255,0.15);
             color: white;
             border: 1px solid rgba(255,255,255,0.3);
-            padding: 0.6rem 1.2rem;
-            border-radius: 8px;
             cursor: pointer;
-            font-weight: 600;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .back-btn:hover { background: var(--secondary); color: var(--primary); }
-
-        .tool-btn {
-            background: none;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
             padding: 8px 12px;
-            border-radius: 6px;
+            border-radius: 7px;
+            font-weight: 600;
             transition: 0.2s;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 7px;
+            text-decoration: none;
+            font-size: 14px;
         }
-        .tool-btn:hover { background: rgba(255,255,255,0.1); }
+
+        .tool-btn {
+            background: none;
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .back-btn:hover,
+        .tool-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* =========================================================
+           VIEWER
+        ========================================================= */
 
         .viewer-area {
             flex: 1;
@@ -89,9 +128,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+            background: radial-gradient(
+                circle,
+                #1e293b 0%,
+                #0f172a 100%
+            );
             position: relative;
-            padding: 20px;
+            padding: 15px;
             overflow: hidden;
             min-height: 0;
         }
@@ -107,13 +150,76 @@
 
         #book-container {
             visibility: hidden;
-            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
             width: 100%;
             height: 100%;
+            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
         }
 
-        .page { background-color: white; overflow: hidden; }
-        .page canvas { width: 100%; height: 100%; display: block; }
+        .page {
+            background: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .page canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .page-loading {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #64748b;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .page-loading i {
+            font-size: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        .page-error {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            color: #dc2626;
+            background: white;
+        }
+
+        /* =========================================================
+           PAGE BADGE
+        ========================================================= */
+
+        #pageBadge {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 10;
+            pointer-events: none;
+            user-select: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* =========================================================
+           SIDE PANELS
+        ========================================================= */
 
         .panel {
             position: fixed;
@@ -121,22 +227,70 @@
             left: -350px;
             width: 320px;
             height: 100%;
-            background: var(--secondary);
+            background: white;
             color: #333;
-            transition: 0.4s cubic-bezier(0.4,0,0.2,1);
-            z-index: 2000;
+            transition: 0.35s ease;
+            z-index: 3000;
             box-shadow: 15px 0 50px rgba(0,0,0,0.6);
             display: flex;
             flex-direction: column;
         }
-        .panel.active { left: 0; }
-        .panel-header { background: var(--primary); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
-        .panel-content { flex: 1; overflow-y: auto; padding-bottom: 20px; }
 
-        .search-box { width: 90%; margin: 15px auto; padding: 12px; border-radius: 8px; border: 2px solid #edf2f7; display: block; outline: none; }
-        .list-item { padding: 15px 20px; border-bottom: 1px solid #f1f5f9; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
-        .list-item:hover { background: #f8fafc; color: var(--primary); font-weight: 600; }
-        .list-item span { background: #e2e8f0; padding: 2px 8px; border-radius: 4px; font-size: 10px; color: #64748b; }
+        .panel.active {
+            left: 0;
+        }
+
+        .panel-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .panel-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 20px;
+        }
+
+        .search-box {
+            width: 90%;
+            margin: 15px auto;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #edf2f7;
+            display: block;
+            outline: none;
+        }
+
+        .list-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .list-item:hover {
+            background: #f8fafc;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .list-item span {
+            background: #e2e8f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            color: #64748b;
+            white-space: nowrap;
+        }
 
         .empty-message {
             padding: 30px 20px;
@@ -145,13 +299,17 @@
             font-size: 14px;
         }
 
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
         footer {
             background: #1e293b;
             height: var(--footer-height);
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 25px;
             z-index: 1000;
             border-top: 1px solid rgba(255,255,255,0.05);
             flex-shrink: 0;
@@ -161,16 +319,25 @@
             background: var(--primary);
             border: none;
             color: white;
-            width: 45px; height: 45px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.25s;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .nav-btn:hover { transform: scale(1.1); background: #3182ce; }
+
+        .nav-btn:hover {
+            transform: scale(1.08);
+            background: #3182ce;
+        }
+
+        /* =========================================================
+           LOADING
+        ========================================================= */
 
         #loading-overlay {
             position: fixed;
@@ -183,40 +350,84 @@
             z-index: 9999;
             transition: opacity 0.3s;
         }
-        .spinner { width: 50px; height: 50px; border: 4px solid rgba(79,209,199,0.1); border-top: 4px solid #4fd1c7; border-radius: 50%; animation: spin 1s linear infinite; }
-        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(79,209,199,0.1);
+            border-top: 4px solid #4fd1c7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #load-progress {
+            color: #4fd1c7;
+            margin-top: 10px;
+        }
+
+        #load-status {
+            margin-top: 8px;
+            color: #94a3b8;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* =========================================================
+           MODAL
+        ========================================================= */
 
         .modal-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.6);
+            inset: 0;
+            background: rgba(0,0,0,0.65);
             z-index: 9999;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .modal-box {
             background: white;
             padding: 30px;
             border-radius: 12px;
             width: 350px;
-            max-width: 90%;
+            max-width: 92%;
             color: #333;
         }
-        .modal-box h3 { margin-bottom: 20px; }
-        .modal-box label { display: block; margin-top: 10px; font-weight: 600; font-size: 14px; }
+
+        .modal-box h3 {
+            margin-bottom: 20px;
+        }
+
+        .modal-box label {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
         .modal-box input {
             width: 100%;
-            padding: 8px;
+            padding: 9px;
             margin: 4px 0 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 14px;
         }
-        .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 16px;
+        }
+
         .modal-actions button {
             padding: 8px 16px;
             border: none;
@@ -224,563 +435,2130 @@
             cursor: pointer;
             font-size: 14px;
         }
-        .modal-actions .btn-cancel { background: #ccc; }
-        .modal-actions .btn-save { background: #2c5282; color: white; }
-        .modal-msg { margin-top: 10px; font-size: 14px; }
 
-        /* Page Badge */
-        #pageBadge {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px 18px;
-            border-radius: 30px;
-            font-size: 20px;
-            font-weight: bold;
-            z-index: 10;
-            pointer-events: none;
-            user-select: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.2);
+        .btn-cancel {
+            background: #ccc;
         }
 
+        .btn-save {
+            background: #2c5282;
+            color: white;
+        }
+
+        .modal-msg {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* =========================================================
+           REWARDED AD MODAL
+        ========================================================= */
+
+        #rewardModal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+            z-index: 9000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #rewardModal .reward-box {
+            background: white;
+            color: #222;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            width: 350px;
+            max-width: 90%;
+        }
+
+        #rewardModal button {
+            margin-top: 15px;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #2c5282;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
         @media (max-width: 600px) {
-            .logo h1 { display: none; }
-            .back-btn span { display: none; }
-            .tool-btn span { display: none; }
-            header { padding: 0 0.5rem; }
-            .modal-box { width: 95%; padding: 20px; }
+
+            header {
+                padding: 0 8px;
+            }
+
+            .logo h1 {
+                display: none;
+            }
+
+            .logo i {
+                font-size: 1.5rem;
+            }
+
+            .header-right {
+                gap: 5px;
+            }
+
+            .back-btn,
+            .tool-btn {
+                padding: 8px 9px;
+            }
+
+            .back-btn span,
+            .tool-btn span {
+                display: none;
+            }
+
+            .viewer-area {
+                padding: 5px;
+            }
+
+            footer {
+                gap: 12px;
+            }
+
             #pageBadge {
-                font-size: 16px;
-                padding: 6px 14px;
-                bottom: 20px;
-                right: 20px;
+                font-size: 15px;
+                padding: 6px 12px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .panel {
+                width: 85%;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <div id="loading-overlay">
-        <div class="spinner"></div>
-        <p style="margin-top:20px; font-weight:600;">Preparing BTR OPD...</p>
-        <small id="load-progress" style="margin-top:10px; color: #4fd1c7;">0%</small>
-    </div>
+<!-- =============================================================
+     LOADING
+============================================================= -->
 
-    <header>
-        <div class="logo">
-            <i class="fas fa-heartbeat"></i>
-            <h1>NEXTPULSE</h1>
-        </div>
-        <div class="header-right">
-            <button class="tool-btn" onclick="togglePanel('indexPanel')"><i class="fas fa-list"></i> <span>Index</span></button>
-            <button class="tool-btn" onclick="togglePanel('searchPanel')"><i class="fas fa-search"></i> <span>Search</span></button>
-            <button class="tool-btn" id="btnAddTopic" onclick="showAddTopicModal()"><i class="fas fa-plus"></i> <span>Add Topic</span></button>
-            <a href="javascript:history.back()" class="back-btn">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back</span>
-            </a>
-        </div>
-    </header>
+<div id="loading-overlay">
 
-    <div class="viewer-area">
-        <div id="book-wrapper">
-            <div id="book-container"></div>
-        </div>
-        <!-- Page Badge -->
-        <div id="pageBadge">
-            Page <span id="badgePage">1</span>
-        </div>
-    </div>
+    <div class="spinner"></div>
 
-    <div id="indexPanel" class="panel">
-        <div class="panel-header">
-            <h3>BTR OPD Index</h3>
-            <i class="fas fa-times" onclick="closePanels()" style="cursor:pointer"></i>
-        </div>
-        <div class="panel-content" id="fullIndexList"></div>
-    </div>
+    <p style="margin-top:20px; font-weight:600;">
+        Preparing BTR OPD...
+    </p>
 
-    <div id="searchPanel" class="panel">
-        <div class="panel-header">
-            <h3>Search</h3>
-            <i class="fas fa-times" onclick="closePanels()" style="cursor:pointer"></i>
-        </div>
-        <input type="text" class="search-box" id="searchInput" placeholder="Search topics...">
-        <div class="panel-content" id="searchResults"></div>
-    </div>
+    <small id="load-progress">0%</small>
 
-    <footer>
-        <button class="nav-btn" onclick="if(pageFlip) pageFlip.flipPrev()"><i class="fas fa-chevron-left"></i></button>
-        <div style="font-weight: 600; width: 120px; text-align: center; font-size: 1.1rem;">
-            <span id="pageCurrent" style="color: #4fd1c7;">1</span> / <span id="pageTotal">0</span>
-        </div>
-        <button class="nav-btn" onclick="if(pageFlip) pageFlip.flipNext()"><i class="fas fa-chevron-right"></i></button>
-        <button class="nav-btn" id="btnSound" style="margin-left: 20px; background: #4a5568;"><i class="fas fa-volume-up"></i></button>
-    </footer>
+    <small id="load-status">
+        Connecting to PDF server...
+    </small>
 
-    <script>
-        // ──────────────────────────────────────────────────────────────
-        // CONFIGURATION
-        // ──────────────────────────────────────────────────────────────
-
-        // Your working Google Sheets API
-        const API_URL = 'https://script.google.com/macros/s/AKfycbyEk4b9GdPsWt8RmTkvUowMytQJbMArsV4I8NnDVgGWYrzY7-DF2l5bjLoujH-Q3Tun/exec';
-
-        // Your single PDF (hosted on VPS)
-        const PDF_URL = 'https://pdf.afrahtafreeh.site/BTRopd.pdf';
-
-        const flipSound = new Audio('https://www.soundjay.com/print/sounds/page-flip-01a.mp3');
-
-        // ──────────────────────────────────────────────────────────────
-        // STATE
-        // ──────────────────────────────────────────────────────────────
-
-        let pdfDoc = null;
-        let pageFlip = null;
-        let isSoundEnabled = true;
-        let currentIndex = [];
-
-        // ──────────────────────────────────────────────────────────────
-        // LOAD INDEX FROM GOOGLE SHEETS
-        // ──────────────────────────────────────────────────────────────
-
-        async function loadIndex() {
-            try {
-                const res = await fetch(API_URL + '?t=' + Date.now());
-                if (!res.ok) throw new Error('HTTP ' + res.status);
-                currentIndex = await res.json();
-                if (!Array.isArray(currentIndex)) currentIndex = [];
-                buildIndex();
-                updateSearch();
-            } catch (e) {
-                console.error('Failed to load index:', e);
-                currentIndex = [];
-                buildIndex();
-            }
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // BUILD INDEX UI
-        // ──────────────────────────────────────────────────────────────
-
-        function buildIndex() {
-            const list = document.getElementById('fullIndexList');
-            list.innerHTML = '';
-            if (!currentIndex || currentIndex.length === 0) {
-                list.innerHTML = '<div class="empty-message">No topics yet.<br>Click "Add Topic" to create one!</div>';
-                return;
-            }
-            const sorted = [...currentIndex].sort((a, b) => a.p - b.p);
-            sorted.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'list-item';
-                div.innerHTML = `${escapeHtml(item.t)} <span>Pg ${item.p}</span>`;
-                div.onclick = () => {
-                    if (pageFlip) {
-                        pageFlip.turnToPage(item.p - 1);
-                        closePanels();
-                    }
-                };
-                list.appendChild(div);
-            });
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // SEARCH
-        // ──────────────────────────────────────────────────────────────
-
-        function updateSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const results = document.getElementById('searchResults');
-            results.innerHTML = '';
-            if (query.length < 2) return;
-            const matches = currentIndex.filter(c => c.t.toLowerCase().includes(query));
-            if (matches.length === 0) {
-                results.innerHTML = '<div class="empty-message">No matching topics.</div>';
-                return;
-            }
-            matches.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'list-item';
-                div.innerHTML = `${escapeHtml(item.t)} <span>Pg ${item.p}</span>`;
-                div.onclick = () => {
-                    if (pageFlip) {
-                        pageFlip.turnToPage(item.p - 1);
-                        closePanels();
-                    }
-                };
-                results.appendChild(div);
-            });
-        }
-
-        document.getElementById('searchInput').addEventListener('input', updateSearch);
-
-        // ──────────────────────────────────────────────────────────────
-        // ADD TOPIC MODAL
-        // ──────────────────────────────────────────────────────────────
-
-        function showAddTopicModal() {
-            const existing = document.querySelector('.modal-overlay');
-            if (existing) existing.remove();
-
-            const overlay = document.createElement('div');
-            overlay.className = 'modal-overlay';
-            overlay.innerHTML = `
-                <div class="modal-box">
-                    <h3>Add New Topic</h3>
-                    <label>Topic Name</label>
-                    <input id="newTopic" type="text" placeholder="e.g. HEADACHE (RECURRENT)">
-                    <label>Page Number</label>
-                    <input id="newPage" type="number" min="1" placeholder="e.g. 6">
-                    <div class="modal-msg" id="addMsg"></div>
-                    <div class="modal-actions">
-                        <button class="btn-cancel" onclick="closeModal()">Cancel</button>
-                        <button class="btn-save" onclick="submitTopic()">Save</button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(overlay);
-
-            // Auto-fill the page number with current page
-            const currentPage = pageFlip ? pageFlip.getCurrentPageIndex() + 1 : 1;
-            const pageInput = document.getElementById('newPage');
-            if (pageInput) pageInput.value = currentPage;
-
-            setTimeout(() => document.getElementById('newTopic').focus(), 100);
-        }
-
-        function closeModal() {
-            const overlay = document.querySelector('.modal-overlay');
-            if (overlay) overlay.remove();
-        }
-
-        async function submitTopic() {
-            const topicInput = document.getElementById('newTopic');
-            const pageInput = document.getElementById('newPage');
-            const msg = document.getElementById('addMsg');
-
-            const topic = topicInput.value.trim();
-            const page = parseInt(pageInput.value);
-
-            if (!topic) {
-                msg.style.color = 'red';
-                msg.textContent = 'Please enter a topic name.';
-                return;
-            }
-            if (isNaN(page) || page < 1) {
-                msg.style.color = 'red';
-                msg.textContent = 'Please enter a valid page number.';
-                return;
-            }
-
-            const saveBtn = document.querySelector('.btn-save');
-            saveBtn.disabled = true;
-            saveBtn.textContent = 'Saving...';
-            msg.style.color = '#2c5282';
-            msg.textContent = 'Adding topic...';
-
-            try {
-                await fetch(API_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ topic, page })
-                });
-
-                msg.style.color = 'green';
-                msg.textContent = '✅ Topic added! Refreshing...';
-
-                setTimeout(async () => {
-                    await loadIndex();
-                    closeModal();
-                }, 1500);
-
-            } catch (e) {
-                console.error(e);
-                msg.style.color = 'red';
-                msg.textContent = 'Error adding topic. Try again.';
-                saveBtn.disabled = false;
-                saveBtn.textContent = 'Save';
-            }
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // PANEL TOGGLES
-        // ──────────────────────────────────────────────────────────────
-
-        function togglePanel(id) {
-            const panel = document.getElementById(id);
-            const isActive = panel.classList.contains('active');
-            closePanels();
-            if (!isActive) panel.classList.add('active');
-        }
-
-        function closePanels() {
-            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // PDF LOADING
-        // ──────────────────────────────────────────────────────────────
-
-        async function loadPDF() {
-            const container = document.getElementById('book-container');
-            container.innerHTML = '';
-            container.style.visibility = 'hidden';
-
-            const overlay = document.getElementById('loading-overlay');
-            overlay.style.display = 'flex';
-            document.getElementById('load-progress').textContent = '0%';
-
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
-            try {
-                startFakeProgress();
-                const loadingTask = pdfjsLib.getDocument(PDF_URL);
-                pdfDoc = await loadingTask.promise;
-                const totalPages = pdfDoc.numPages;
-                document.getElementById('pageTotal').textContent = totalPages;
-
-                for (let i = 1; i <= totalPages; i++) {
-                    const page = await pdfDoc.getPage(i);
-                    const viewport = page.getViewport({ scale: 2 });
-                    const pageDiv = document.createElement('div');
-                    pageDiv.className = 'page';
-                    const canvas = document.createElement('canvas');
-                    const context = canvas.getContext('2d');
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-                    await page.render({ canvasContext: context, viewport: viewport }).promise;
-                    pageDiv.appendChild(canvas);
-                    container.appendChild(pageDiv);
-                    updateRealProgress(Math.round((i / totalPages) * 100));
-                }
-
-                stopFakeProgress();
-                document.getElementById('load-progress').textContent = '100%';
-
-                startFlipEngine();
-                document.getElementById('loading-overlay').style.display = 'none';
-
-            } catch (e) {
-                console.error('Failed to load PDF:', e);
-                stopFakeProgress();
-                document.getElementById('load-progress').textContent = 'Failed to load. Please refresh.';
-                setTimeout(() => {
-                    document.getElementById('loading-overlay').style.display = 'none';
-                }, 3000);
-            }
-        }
-
-        // ─── Fake Progress ──────────────────────────────────────────
-
-        let fakeProgressInterval = null;
-        let fakeProgressValue = 0;
-        let realProgressSet = false;
-
-        function startFakeProgress() {
-            fakeProgressValue = 0;
-            realProgressSet = false;
-            document.getElementById('load-progress').textContent = '0%';
-            fakeProgressInterval = setInterval(() => {
-                if (!realProgressSet && fakeProgressValue < 90) {
-                    fakeProgressValue += Math.random() * 8 + 2;
-                    if (fakeProgressValue > 90) fakeProgressValue = 90;
-                    document.getElementById('load-progress').textContent = Math.floor(fakeProgressValue) + '%';
-                }
-            }, 400);
-        }
-
-        function updateRealProgress(percent) {
-            if (!realProgressSet) realProgressSet = true;
-            document.getElementById('load-progress').textContent = percent + '%';
-        }
-
-        function stopFakeProgress() {
-            if (fakeProgressInterval) {
-                clearInterval(fakeProgressInterval);
-                fakeProgressInterval = null;
-            }
-        }
-
-        // ─── Flip Engine ────────────────────────────────────────────
-
-        function startFlipEngine() {
-            if (pageFlip) {
-                pageFlip.destroy();
-                pageFlip = null;
-            }
-
-            const container = document.getElementById('book-container');
-            const isPortrait = window.innerWidth < 900;
-
-            pageFlip = new St.PageFlip(container, {
-                width: 550,
-                height: 800,
-                size: "stretch",
-                minWidth: 315,
-                maxWidth: 1000,
-                minHeight: 420,
-                maxHeight: 1350,
-                maxShadowOpacity: 0.5,
-                showCover: true,
-                mobileScrollSupport: true,
-                usePortrait: isPortrait,
-                flippingTime: 800
-            });
-
-            pageFlip.loadFromHTML(document.querySelectorAll('.page'));
-
-            pageFlip.on('flip', (e) => {
-                const currentPage = e.data + 1;
-                document.getElementById('pageCurrent').textContent = currentPage;
-                document.getElementById('badgePage').textContent = currentPage; // update badge
-                if (isSoundEnabled) {
-                    flipSound.currentTime = 0;
-                    flipSound.play().catch(() => {});
-                }
-            });
-
-            container.style.visibility = 'visible';
-            // Set initial badge
-            document.getElementById('badgePage').textContent = '1';
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // SOUND TOGGLE
-        // ──────────────────────────────────────────────────────────────
-
-        document.getElementById('btnSound').addEventListener('click', function() {
-            isSoundEnabled = !isSoundEnabled;
-            this.innerHTML = isSoundEnabled ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
-        });
-
-        // ──────────────────────────────────────────────────────────────
-        // UTILITY
-        // ──────────────────────────────────────────────────────────────
-
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // ──────────────────────────────────────────────────────────────
-        // RESIZE HANDLER
-        // ──────────────────────────────────────────────────────────────
-
-        let resizeTimeout;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(() => {
-                if (pageFlip) {
-                    const isPortrait = window.innerWidth < 900;
-                    pageFlip.updateOptions({ usePortrait: isPortrait });
-                }
-            }, 300);
-        });
-
-        // ──────────────────────────────────────────────────────────────
-        // INIT
-        // ──────────────────────────────────────────────────────────────
-
-        async function init() {
-            await loadIndex();
-            await loadPDF();
-        }
-
-        init();
-
-        // Expose to global scope for inline onclick
-        window.togglePanel = togglePanel;
-        window.closePanels = closePanels;
-        window.showAddTopicModal = showAddTopicModal;
-        window.submitTopic = submitTopic;
-        window.closeModal = closeModal;
-        window.pageFlip = () => pageFlip;
-    </script>
-
-<!-- ===== REWARDED AD BODY ===== -->
-<div id='div-gpt-ad-1785416390808-0'>
-  <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1785416390808-0'); });
-  </script>
 </div>
 
-<!-- Modal (hidden by default) -->
-<div id="rewardModal" class="modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5" style="display:none;">
-  <div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
-    <p>Watch the ad to continue.</p>
-    <button class="btn" style="display:none;">Close Ad</button>
-  </div>
+
+<!-- =============================================================
+     HEADER
+============================================================= -->
+
+<header>
+
+    <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <h1>NEXTPULSE</h1>
+    </div>
+
+    <div class="header-right">
+
+        <button
+            class="tool-btn"
+            onclick="togglePanel('indexPanel')">
+
+            <i class="fas fa-list"></i>
+            <span>Index</span>
+
+        </button>
+
+        <button
+            class="tool-btn"
+            onclick="togglePanel('searchPanel')">
+
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+
+        </button>
+
+        <button
+            class="tool-btn"
+            id="btnAddTopic"
+            onclick="showAddTopicModal()">
+
+            <i class="fas fa-plus"></i>
+            <span>Add Topic</span>
+
+        </button>
+
+        <a
+            href="javascript:history.back()"
+            class="back-btn">
+
+            <i class="fas fa-arrow-left"></i>
+            <span>Back</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =============================================================
+     VIEWER
+============================================================= -->
+
+<div class="viewer-area">
+
+    <div id="book-wrapper">
+
+        <div id="book-container"></div>
+
+    </div>
+
+    <div id="pageBadge">
+        Page
+        <span id="badgePage">1</span>
+    </div>
+
 </div>
 
-<!-- Rewarded ad logic (cooldown + out‑of‑page) -->
+
+<!-- =============================================================
+     INDEX
+============================================================= -->
+
+<div id="indexPanel" class="panel">
+
+    <div class="panel-header">
+
+        <h3>BTR OPD Index</h3>
+
+        <i
+            class="fas fa-times"
+            onclick="closePanels()"
+            style="cursor:pointer">
+        </i>
+
+    </div>
+
+    <div
+        class="panel-content"
+        id="fullIndexList">
+    </div>
+
+</div>
+
+
+<!-- =============================================================
+     SEARCH
+============================================================= -->
+
+<div id="searchPanel" class="panel">
+
+    <div class="panel-header">
+
+        <h3>Search</h3>
+
+        <i
+            class="fas fa-times"
+            onclick="closePanels()"
+            style="cursor:pointer">
+        </i>
+
+    </div>
+
+    <input
+        type="text"
+        class="search-box"
+        id="searchInput"
+        placeholder="Search topics...">
+
+    <div
+        class="panel-content"
+        id="searchResults">
+    </div>
+
+</div>
+
+
+<!-- =============================================================
+     FOOTER
+============================================================= -->
+
+<footer>
+
+    <button
+        class="nav-btn"
+        onclick="previousPage()">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <div
+        style="
+        font-weight:600;
+        width:120px;
+        text-align:center;
+        font-size:1.1rem;">
+
+        <span
+            id="pageCurrent"
+            style="color:#4fd1c7;">
+            1
+        </span>
+
+        /
+
+        <span id="pageTotal">
+            0
+        </span>
+
+    </div>
+
+    <button
+        class="nav-btn"
+        onclick="nextPage()">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+    <button
+        class="nav-btn"
+        id="btnSound"
+        style="
+        margin-left:15px;
+        background:#4a5568;">
+
+        <i class="fas fa-volume-up"></i>
+
+    </button>
+
+</footer>
+
+
+<!-- =============================================================
+     REWARDED AD
+============================================================= -->
+
+<div id="rewardModal">
+
+    <div class="reward-box">
+
+        <p>
+            Watch the ad to continue.
+        </p>
+
+        <button
+            id="rewardCloseButton"
+            style="display:none;">
+            Close Ad
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =============================================================
+     JAVASCRIPT
+============================================================= -->
+
 <script>
-  (function() {
-    const COOLDOWN_MS = 600000; // 1 hour
-    const lastAdTime = localStorage.getItem('hasShownRewardedAd');
-    const now = Date.now();
-    if (lastAdTime && (now - parseInt(lastAdTime, 10)) < COOLDOWN_MS) {
-      console.log('⏳ Ad cooldown active – skipping.');
-      return;
+
+    /* =========================================================
+       CONFIGURATION
+    ========================================================= */
+
+    const API_URL =
+        'https://script.google.com/macros/s/AKfycbyEk4b9GdPsWt8RmTkvUowMytQJbMArsV4I8NnDVgGWYrzY7-DF2l5bjLoujH-Q3Tun/exec';
+
+
+    const PDF_URL =
+        'https://pdf.afrahtafreeh.site/BTRopd.pdf';
+
+
+    const flipSound =
+        new Audio(
+            'https://www.soundjay.com/print/sounds/page-flip-01a.mp3'
+        );
+
+
+    /* =========================================================
+       PDF.JS CONFIGURATION
+    ========================================================= */
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+
+    /* =========================================================
+       STATE
+    ========================================================= */
+
+    let pdfDoc = null;
+
+    let pageFlip = null;
+
+    let isSoundEnabled = true;
+
+    let currentIndex = [];
+
+    let totalPages = 0;
+
+    let renderedPages = new Map();
+
+    let renderingPages = new Map();
+
+    let currentPageNumber = 1;
+
+
+    /*
+     * Number of pages kept rendered around the current page.
+     *
+     * Example:
+     *
+     * Current = 50
+     *
+     * Render:
+     * 48
+     * 49
+     * 50
+     * 51
+     * 52
+     *
+     * This keeps RAM usage much lower than rendering all 178.
+     */
+
+    const RENDER_RADIUS = 2;
+
+
+    /* =========================================================
+       HELPERS
+    ========================================================= */
+
+    function $(id) {
+        return document.getElementById(id);
     }
 
-    window.googletag = window.googletag || { cmd: [] };
-    googletag.cmd.push(() => {
-      const adSlotRewarded = googletag
-        .defineOutOfPageSlot('/23205238319/Rewarded_ads6', googletag.enums.OutOfPageFormat.REWARDED)
-        .addService(googletag.pubads());
 
-      adSlotRewarded.setForceSafeFrame(true);
-      googletag.pubads().enableAsyncRendering();
-      googletag.enableServices();
+    function setStatus(text) {
 
-      const modal = document.getElementById('rewardModal');
-      const closeButton = modal ? modal.querySelector('.btn') : null;
+        const status = $('load-status');
 
-      window.addEventListener('popstate', function() {
-        history.pushState(null, null, location.href);
-      });
-
-      googletag.pubads().addEventListener('impressionViewable', function() {
-        console.log('👀 Ad impression viewable');
-        if (closeButton) {
-          setTimeout(() => { closeButton.style.display = 'block'; }, 30000);
+        if (status) {
+            status.textContent = text;
         }
-      });
 
-      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-        if (event.isEmpty) {
-          console.log('❌ Ad empty or failed');
-          if (modal) {
-            modal.style.display = 'none';
-          }
+    }
+
+
+    function setProgress(percent) {
+
+        const progress = $('load-progress');
+
+        if (progress) {
+            progress.textContent =
+                Math.max(0, Math.min(100, percent)) + '%';
         }
-      });
 
-      googletag.pubads().addEventListener('rewardedSlotReady', function(event) {
-        if (modal) {
-          modal.style.display = 'flex'; // show modal
+    }
+
+
+    /* =========================================================
+       GOOGLE SHEETS INDEX
+    ========================================================= */
+
+    async function loadIndex() {
+
+        try {
+
+            const res =
+                await fetch(
+                    API_URL + '?t=' + Date.now()
+                );
+
+            if (!res.ok) {
+                throw new Error(
+                    'HTTP ' + res.status
+                );
+            }
+
+            currentIndex =
+                await res.json();
+
+            if (!Array.isArray(currentIndex)) {
+                currentIndex = [];
+            }
+
+            buildIndex();
+
+            updateSearch();
+
+        } catch (e) {
+
+            console.error(
+                'Failed to load index:',
+                e
+            );
+
+            currentIndex = [];
+
+            buildIndex();
+
         }
-        event.makeRewardedVisible();
-      });
 
-      googletag.pubads().addEventListener('rewardedSlotClosed', function() {
-        if (modal) {
-          modal.style.display = 'none';
+    }
+
+
+    /* =========================================================
+       BUILD INDEX
+    ========================================================= */
+
+    function buildIndex() {
+
+        const list =
+            $('fullIndexList');
+
+        list.innerHTML = '';
+
+
+        if (
+            !currentIndex ||
+            currentIndex.length === 0
+        ) {
+
+            list.innerHTML =
+                '<div class="empty-message">' +
+                'No topics yet.<br>' +
+                'Click "Add Topic" to create one!' +
+                '</div>';
+
+            return;
+
         }
-        localStorage.setItem('hasShownRewardedAd', Date.now().toString());
-      });
 
-      googletag.display(adSlotRewarded);
-    });
-  })();
+
+        const sorted =
+            [...currentIndex].sort(
+                (a, b) => a.p - b.p
+            );
+
+
+        sorted.forEach(item => {
+
+            const div =
+                document.createElement('div');
+
+            div.className = 'list-item';
+
+            div.innerHTML =
+                `${escapeHtml(item.t)}
+                 <span>Pg ${item.p}</span>`;
+
+
+            div.onclick = () => {
+
+                if (!pageFlip) {
+                    return;
+                }
+
+                const target =
+                    Math.max(
+                        0,
+                        Math.min(
+                            totalPages - 1,
+                            Number(item.p) - 1
+                        )
+                    );
+
+                pageFlip.turnToPage(target);
+
+                closePanels();
+
+            };
+
+
+            list.appendChild(div);
+
+        });
+
+    }
+
+
+    /* =========================================================
+       SEARCH
+    ========================================================= */
+
+    function updateSearch() {
+
+        const query =
+            $('searchInput')
+                .value
+                .toLowerCase()
+                .trim();
+
+
+        const results =
+            $('searchResults');
+
+        results.innerHTML = '';
+
+
+        if (query.length < 2) {
+            return;
+        }
+
+
+        const matches =
+            currentIndex.filter(item =>
+                String(item.t || '')
+                    .toLowerCase()
+                    .includes(query)
+            );
+
+
+        if (matches.length === 0) {
+
+            results.innerHTML =
+                '<div class="empty-message">' +
+                'No matching topics.' +
+                '</div>';
+
+            return;
+
+        }
+
+
+        matches.forEach(item => {
+
+            const div =
+                document.createElement('div');
+
+            div.className = 'list-item';
+
+            div.innerHTML =
+                `${escapeHtml(item.t)}
+                 <span>Pg ${item.p}</span>`;
+
+
+            div.onclick = () => {
+
+                if (!pageFlip) {
+                    return;
+                }
+
+                const target =
+                    Math.max(
+                        0,
+                        Math.min(
+                            totalPages - 1,
+                            Number(item.p) - 1
+                        )
+                    );
+
+                pageFlip.turnToPage(target);
+
+                closePanels();
+
+            };
+
+
+            results.appendChild(div);
+
+        });
+
+    }
+
+
+    $('searchInput')
+        .addEventListener(
+            'input',
+            updateSearch
+        );
+
+
+    /* =========================================================
+       ADD TOPIC MODAL
+    ========================================================= */
+
+    function showAddTopicModal() {
+
+        const existing =
+            document.querySelector(
+                '.modal-overlay'
+            );
+
+        if (existing) {
+            existing.remove();
+        }
+
+
+        const overlay =
+            document.createElement('div');
+
+        overlay.className =
+            'modal-overlay';
+
+
+        overlay.innerHTML = `
+
+            <div class="modal-box">
+
+                <h3>Add New Topic</h3>
+
+                <label>
+                    Topic Name
+                </label>
+
+                <input
+                    id="newTopic"
+                    type="text"
+                    placeholder="e.g. HEADACHE (RECURRENT)">
+
+
+                <label>
+                    Page Number
+                </label>
+
+                <input
+                    id="newPage"
+                    type="number"
+                    min="1"
+                    placeholder="e.g. 6">
+
+
+                <div
+                    class="modal-msg"
+                    id="addMsg">
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        class="btn-cancel"
+                        onclick="closeModal()">
+
+                        Cancel
+
+                    </button>
+
+
+                    <button
+                        class="btn-save"
+                        onclick="submitTopic()">
+
+                        Save
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        document.body.appendChild(
+            overlay
+        );
+
+
+        const currentPage =
+            pageFlip
+                ? pageFlip.getCurrentPageIndex() + 1
+                : 1;
+
+
+        $('newPage').value =
+            currentPage;
+
+
+        setTimeout(
+            () => $('newTopic').focus(),
+            100
+        );
+
+    }
+
+
+    function closeModal() {
+
+        const overlay =
+            document.querySelector(
+                '.modal-overlay'
+            );
+
+        if (overlay) {
+            overlay.remove();
+        }
+
+    }
+
+
+    async function submitTopic() {
+
+        const topicInput =
+            $('newTopic');
+
+        const pageInput =
+            $('newPage');
+
+        const msg =
+            $('addMsg');
+
+
+        const topic =
+            topicInput.value.trim();
+
+
+        const page =
+            parseInt(
+                pageInput.value,
+                10
+            );
+
+
+        if (!topic) {
+
+            msg.style.color = 'red';
+
+            msg.textContent =
+                'Please enter a topic name.';
+
+            return;
+
+        }
+
+
+        if (
+            isNaN(page) ||
+            page < 1 ||
+            page > totalPages
+        ) {
+
+            msg.style.color = 'red';
+
+            msg.textContent =
+                'Please enter a valid page number.';
+
+            return;
+
+        }
+
+
+        const saveBtn =
+            document.querySelector(
+                '.btn-save'
+            );
+
+
+        saveBtn.disabled = true;
+
+        saveBtn.textContent =
+            'Saving...';
+
+
+        msg.style.color =
+            '#2c5282';
+
+        msg.textContent =
+            'Adding topic...';
+
+
+        try {
+
+            await fetch(
+                API_URL,
+                {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type':
+                            'application/json'
+                    },
+                    body: JSON.stringify({
+                        topic,
+                        page
+                    })
+                }
+            );
+
+
+            msg.style.color =
+                'green';
+
+            msg.textContent =
+                '✅ Topic added! Refreshing...';
+
+
+            setTimeout(
+                async () => {
+
+                    await loadIndex();
+
+                    closeModal();
+
+                },
+                1500
+            );
+
+
+        } catch (e) {
+
+            console.error(e);
+
+            msg.style.color =
+                'red';
+
+            msg.textContent =
+                'Error adding topic. Try again.';
+
+            saveBtn.disabled =
+                false;
+
+            saveBtn.textContent =
+                'Save';
+
+        }
+
+    }
+
+
+    /* =========================================================
+       PANELS
+    ========================================================= */
+
+    function togglePanel(id) {
+
+        const panel =
+            $(id);
+
+        const isActive =
+            panel.classList.contains(
+                'active'
+            );
+
+
+        closePanels();
+
+
+        if (!isActive) {
+            panel.classList.add(
+                'active'
+            );
+        }
+
+    }
+
+
+    function closePanels() {
+
+        document
+            .querySelectorAll('.panel')
+            .forEach(panel =>
+                panel.classList.remove(
+                    'active'
+                )
+            );
+
+    }
+
+
+    /* =========================================================
+       CREATE PAGE PLACEHOLDERS
+    ========================================================= */
+
+    function createPagePlaceholders() {
+
+        const container =
+            $('book-container');
+
+
+        container.innerHTML = '';
+
+
+        for (
+            let i = 1;
+            i <= totalPages;
+            i++
+        ) {
+
+            const pageDiv =
+                document.createElement('div');
+
+
+            pageDiv.className =
+                'page';
+
+
+            pageDiv.dataset.page =
+                i;
+
+
+            const loading =
+                document.createElement('div');
+
+
+            loading.className =
+                'page-loading';
+
+
+            loading.innerHTML =
+                '<i class="fas fa-spinner"></i>';
+
+
+            pageDiv.appendChild(
+                loading
+            );
+
+
+            container.appendChild(
+                pageDiv
+            );
+
+        }
+
+    }
+
+
+    /* =========================================================
+       GET PDF PAGE
+    ========================================================= */
+
+    async function renderPage(pageNumber) {
+
+        if (
+            !pdfDoc ||
+            pageNumber < 1 ||
+            pageNumber > totalPages
+        ) {
+            return;
+        }
+
+
+        if (
+            renderedPages.has(
+                pageNumber
+            )
+        ) {
+            return;
+        }
+
+
+        if (
+            renderingPages.has(
+                pageNumber
+            )
+        ) {
+            return renderingPages.get(
+                pageNumber
+            );
+        }
+
+
+        const promise =
+            renderPageInternal(
+                pageNumber
+            );
+
+
+        renderingPages.set(
+            pageNumber,
+            promise
+        );
+
+
+        try {
+
+            await promise;
+
+        } finally {
+
+            renderingPages.delete(
+                pageNumber
+            );
+
+        }
+
+    }
+
+
+    async function renderPageInternal(
+        pageNumber
+    ) {
+
+        const pageDiv =
+            document.querySelector(
+                `.page[data-page="${pageNumber}"]`
+            );
+
+
+        if (!pageDiv) {
+            return;
+        }
+
+
+        try {
+
+            const pdfPage =
+                await pdfDoc.getPage(
+                    pageNumber
+                );
+
+
+            /*
+             * Lower scale on mobile.
+             *
+             * This is extremely important
+             * for RAM usage.
+             */
+
+            const isMobile =
+                window.innerWidth < 600;
+
+
+            const scale =
+                isMobile
+                    ? 1.15
+                    : 1.45;
+
+
+            const viewport =
+                pdfPage.getViewport({
+                    scale
+                });
+
+
+            const canvas =
+                document.createElement(
+                    'canvas'
+                );
+
+
+            const context =
+                canvas.getContext(
+                    '2d',
+                    {
+                        alpha: false
+                    }
+                );
+
+
+            /*
+             * Device pixel ratio is capped.
+             *
+             * This prevents huge canvases
+             * on high-DPI phones.
+             */
+
+            const dpr =
+                Math.min(
+                    window.devicePixelRatio || 1,
+                    1.5
+                );
+
+
+            canvas.width =
+                Math.floor(
+                    viewport.width * dpr
+                );
+
+
+            canvas.height =
+                Math.floor(
+                    viewport.height * dpr
+                );
+
+
+            canvas.style.width =
+                viewport.width + 'px';
+
+
+            canvas.style.height =
+                viewport.height + 'px';
+
+
+            const loading =
+                pageDiv.querySelector(
+                    '.page-loading'
+                );
+
+
+            if (loading) {
+                loading.remove();
+            }
+
+
+            pageDiv.appendChild(
+                canvas
+            );
+
+
+            await pdfPage.render({
+
+                canvasContext:
+                    context,
+
+                viewport:
+
+                    pdfPage.getViewport({
+                        scale:
+                            scale * dpr
+                    })
+
+            }).promise;
+
+
+            renderedPages.set(
+                pageNumber,
+                canvas
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                'Page rendering error:',
+                pageNumber,
+                error
+            );
+
+
+            pageDiv.innerHTML = `
+
+                <div class="page-error">
+
+                    <div>
+
+                        <i
+                            class="fas fa-exclamation-triangle">
+                        </i>
+
+                        <br><br>
+
+                        Failed to render page
+                        ${pageNumber}
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }
+
+    }
+
+
+    /* =========================================================
+       RENDER NEARBY PAGES
+    ========================================================= */
+
+    async function renderNearbyPages(
+        centerPage
+    ) {
+
+        const pages = [];
+
+
+        for (
+            let offset = -RENDER_RADIUS;
+            offset <= RENDER_RADIUS;
+            offset++
+        ) {
+
+            const page =
+                centerPage + offset;
+
+
+            if (
+                page >= 1 &&
+                page <= totalPages
+            ) {
+
+                pages.push(page);
+
+            }
+
+        }
+
+
+        /*
+         * Current page first.
+         */
+
+        if (
+            pages.includes(
+                centerPage
+            )
+        ) {
+
+            await renderPage(
+                centerPage
+            );
+
+        }
+
+
+        /*
+         * Nearby pages in parallel.
+         */
+
+        const nearby =
+            pages.filter(
+                page =>
+                    page !== centerPage
+            );
+
+
+        await Promise.all(
+            nearby.map(
+                page =>
+                    renderPage(page)
+            )
+        );
+
+    }
+
+
+    /* =========================================================
+       CLEAN FAR PAGES
+    ========================================================= */
+
+    function cleanupFarPages(
+        centerPage
+    ) {
+
+        /*
+         * Keep a slightly larger
+         * cache than RENDER_RADIUS
+         * to avoid repeated rendering.
+         */
+
+        const keepRadius = 4;
+
+
+        for (
+            const [
+                pageNumber,
+                canvas
+            ]
+            of renderedPages
+        ) {
+
+            if (
+                Math.abs(
+                    pageNumber -
+                    centerPage
+                ) > keepRadius
+            ) {
+
+                if (
+                    canvas &&
+                    canvas.parentNode
+                ) {
+
+                    canvas.parentNode.removeChild(
+                        canvas
+                    );
+
+                }
+
+
+                renderedPages.delete(
+                    pageNumber
+                );
+
+
+                const pageDiv =
+                    document.querySelector(
+                        `.page[data-page="${pageNumber}"]`
+                    );
+
+
+                if (pageDiv) {
+
+                    pageDiv.innerHTML = `
+
+                        <div class="page-loading">
+
+                            <i class="fas fa-spinner"></i>
+
+                        </div>
+
+                    `;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    /* =========================================================
+       START PAGE FLIP
+    ========================================================= */
+
+    async function startFlipEngine() {
+
+        const container =
+            $('book-container');
+
+
+        if (pageFlip) {
+
+            try {
+                pageFlip.destroy();
+            } catch (e) {}
+
+            pageFlip = null;
+
+        }
+
+
+        const isPortrait =
+            window.innerWidth < 900;
+
+
+        pageFlip =
+            new St.PageFlip(
+                container,
+                {
+
+                    width: 550,
+
+                    height: 800,
+
+                    size: 'stretch',
+
+                    minWidth: 280,
+
+                    maxWidth: 1000,
+
+                    minHeight: 380,
+
+                    maxHeight: 1350,
+
+                    maxShadowOpacity: 0.5,
+
+                    showCover: true,
+
+                    mobileScrollSupport: true,
+
+                    usePortrait:
+                        isPortrait,
+
+                    flippingTime: 650,
+
+                    drawShadow: true,
+
+                    maxShadowOpacity: 0.45
+
+                }
+            );
+
+
+        const pages =
+            container.querySelectorAll(
+                '.page'
+            );
+
+
+        pageFlip.loadFromHTML(
+            pages
+        );
+
+
+        pageFlip.on(
+            'flip',
+            async event => {
+
+                const current =
+                    event.data + 1;
+
+
+                currentPageNumber =
+                    current;
+
+
+                $('pageCurrent')
+                    .textContent =
+                    current;
+
+
+                $('badgePage')
+                    .textContent =
+                    current;
+
+
+                if (isSoundEnabled) {
+
+                    flipSound.currentTime =
+                        0;
+
+                    flipSound
+                        .play()
+                        .catch(() => {});
+
+                }
+
+
+                /*
+                 * Render current +
+                 * nearby pages.
+                 */
+
+                renderNearbyPages(
+                    current
+                );
+
+
+                cleanupFarPages(
+                    current
+                );
+
+            }
+        );
+
+
+        /*
+         * Make viewer visible
+         * immediately.
+         */
+
+        container.style.visibility =
+            'visible';
+
+
+        /*
+         * Render first pages.
+         */
+
+        await renderNearbyPages(1);
+
+
+        $('loading-overlay')
+            .style.display =
+            'none';
+
+    }
+
+
+    /* =========================================================
+       LOAD PDF
+    ========================================================= */
+
+    async function loadPDF() {
+
+        const container =
+            $('book-container');
+
+
+        container.innerHTML = '';
+
+        container.style.visibility =
+            'hidden';
+
+
+        const overlay =
+            $('loading-overlay');
+
+
+        overlay.style.display =
+            'flex';
+
+
+        setProgress(0);
+
+        setStatus(
+            'Connecting to PDF server...'
+        );
+
+
+        try {
+
+            /*
+             * PDF.js configuration
+             *
+             * Range loading is enabled.
+             *
+             * This prevents the browser from
+             * unnecessarily downloading the
+             * entire PDF before rendering.
+             */
+
+            const loadingTask =
+                pdfjsLib.getDocument({
+
+                    url: PDF_URL,
+
+                    rangeChunkSize:
+                        1024 * 1024,
+
+                    disableAutoFetch:
+                        false,
+
+                    disableStream:
+                        false,
+
+                    withCredentials:
+                        false
+
+                });
+
+
+            /*
+             * Download progress.
+             */
+
+            loadingTask.onProgress =
+                function(progress) {
+
+                    if (
+                        progress.total
+                    ) {
+
+                        const percent =
+                            Math.round(
+                                (
+                                    progress.loaded /
+                                    progress.total
+                                ) * 100
+                            );
+
+
+                        setProgress(
+                            percent
+                        );
+
+
+                        setStatus(
+                            `Loading PDF... ${percent}%`
+                        );
+
+                    } else {
+
+                        setStatus(
+                            'Loading PDF...'
+                        );
+
+                    }
+
+                };
+
+
+            pdfDoc =
+                await loadingTask.promise;
+
+
+            totalPages =
+                pdfDoc.numPages;
+
+
+            $('pageTotal')
+                .textContent =
+                totalPages;
+
+
+            setProgress(100);
+
+
+            setStatus(
+                `${totalPages} pages found. Preparing viewer...`
+            );
+
+
+            /*
+             * Create only lightweight
+             * placeholders.
+             */
+
+            createPagePlaceholders();
+
+
+            /*
+             * Start page-flip immediately.
+             */
+
+            await startFlipEngine();
+
+
+        } catch (error) {
+
+            console.error(
+                'PDF loading failed:',
+                error
+            );
+
+
+            setProgress(0);
+
+
+            setStatus(
+                'Failed to load PDF.'
+            );
+
+
+            $('loading-overlay')
+                .querySelector('.spinner')
+                .style.display =
+                'none';
+
+
+            $('load-progress')
+                .textContent =
+                'ERROR';
+
+
+            $('load-progress')
+                .style.color =
+                '#ef4444';
+
+
+            const status =
+                $('load-status');
+
+
+            status.innerHTML =
+                `
+                Unable to load BTR OPD PDF.
+                <br><br>
+                Please refresh the page.
+                <br><br>
+                <small>
+                ${escapeHtml(
+                    error.message ||
+                    'Unknown error'
+                )}
+                </small>
+                `;
+
+        }
+
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    function previousPage() {
+
+        if (pageFlip) {
+            pageFlip.flipPrev();
+        }
+
+    }
+
+
+    function nextPage() {
+
+        if (pageFlip) {
+            pageFlip.flipNext();
+        }
+
+    }
+
+
+    /* =========================================================
+       SOUND
+    ========================================================= */
+
+    $('btnSound')
+        .addEventListener(
+            'click',
+            function() {
+
+                isSoundEnabled =
+                    !isSoundEnabled;
+
+
+                this.innerHTML =
+                    isSoundEnabled
+                        ? '<i class="fas fa-volume-up"></i>'
+                        : '<i class="fas fa-volume-mute"></i>';
+
+            }
+        );
+
+
+    /* =========================================================
+       HTML ESCAPE
+    ========================================================= */
+
+    function escapeHtml(text) {
+
+        const div =
+            document.createElement(
+                'div'
+            );
+
+
+        div.textContent =
+            text == null
+                ? ''
+                : String(text);
+
+
+        return div.innerHTML;
+
+    }
+
+
+    /* =========================================================
+       RESIZE
+    ========================================================= */
+
+    let resizeTimeout = null;
+
+
+    window.addEventListener(
+        'resize',
+        function() {
+
+            clearTimeout(
+                resizeTimeout
+            );
+
+
+            resizeTimeout =
+                setTimeout(
+                    function() {
+
+                        if (
+                            !pageFlip
+                        ) {
+                            return;
+                        }
+
+
+                        const isPortrait =
+                            window.innerWidth < 900;
+
+
+                        try {
+
+                            pageFlip.updateOptions({
+
+                                usePortrait:
+                                    isPortrait
+
+                            });
+
+                        } catch (e) {
+
+                            console.warn(
+                                'PageFlip resize:',
+                                e
+                            );
+
+                        }
+
+                    },
+                    300
+                );
+
+        }
+    );
+
+
+    /* =========================================================
+       REWARDED ADS
+    ========================================================= */
+
+    (function() {
+
+        const COOLDOWN_MS =
+            600000;
+
+
+        const lastAdTime =
+            localStorage.getItem(
+                'hasShownRewardedAd'
+            );
+
+
+        const now =
+            Date.now();
+
+
+        if (
+            lastAdTime &&
+            (
+                now -
+                parseInt(
+                    lastAdTime,
+                    10
+                )
+            ) < COOLDOWN_MS
+        ) {
+
+            console.log(
+                'Rewarded ad cooldown active.'
+            );
+
+            return;
+
+        }
+
+
+        window.googletag =
+            window.googletag ||
+            {
+                cmd: []
+            };
+
+
+        googletag.cmd.push(
+            function() {
+
+                try {
+
+                    const adSlotRewarded =
+                        googletag
+                            .defineOutOfPageSlot(
+                                '/23205238319/Rewarded_ads6',
+                                googletag.enums.OutOfPageFormat.REWARDED
+                            );
+
+
+                    if (
+                        !adSlotRewarded
+                    ) {
+
+                        console.log(
+                            'Rewarded ad slot unavailable.'
+                        );
+
+                        return;
+
+                    }
+
+
+                    adSlotRewarded
+                        .addService(
+                            googletag.pubads()
+                        );
+
+
+                    adSlotRewarded
+                        .setForceSafeFrame(
+                            true
+                        );
+
+
+                    googletag
+                        .pubads()
+                        .enableAsyncRendering();
+
+
+                    const modal =
+                        $('rewardModal');
+
+
+                    const closeButton =
+                        $('rewardCloseButton');
+
+
+                    googletag
+                        .pubads()
+                        .addEventListener(
+                            'rewardedSlotReady',
+                            function(event) {
+
+                                if (modal) {
+                                    modal.style.display =
+                                        'flex';
+                                }
+
+
+                                event.makeRewardedVisible();
+
+                            }
+                        );
+
+
+                    googletag
+                        .pubads()
+                        .addEventListener(
+                            'rewardedSlotClosed',
+                            function() {
+
+                                if (modal) {
+                                    modal.style.display =
+                                        'none';
+                                }
+
+
+                                localStorage.setItem(
+                                    'hasShownRewardedAd',
+                                    Date.now().toString()
+                                );
+
+                            }
+                        );
+
+
+                    googletag
+                        .pubads()
+                        .addEventListener(
+                            'slotRenderEnded',
+                            function(event) {
+
+                                if (
+                                    event.isEmpty
+                                ) {
+
+                                    if (modal) {
+                                        modal.style.display =
+                                            'none';
+                                    }
+
+                                }
+
+                            }
+                        );
+
+
+                    googletag
+                        .pubads()
+                        .addEventListener(
+                            'impressionViewable',
+                            function() {
+
+                                if (
+                                    closeButton
+                                ) {
+
+                                    setTimeout(
+                                        function() {
+
+                                            closeButton.style.display =
+                                                'inline-block';
+
+                                        },
+                                        30000
+                                    );
+
+                                }
+
+                            }
+                        );
+
+
+                    if (
+                        closeButton
+                    ) {
+
+                        closeButton.onclick =
+                            function() {
+
+                                modal.style.display =
+                                    'none';
+
+                            };
+
+                    }
+
+
+                    googletag
+                        .enableServices();
+
+
+                    googletag.display(
+                        adSlotRewarded
+                    );
+
+                } catch (error) {
+
+                    console.error(
+                        'Rewarded ad error:',
+                        error
+                    );
+
+                }
+
+            }
+        );
+
+    })();
+
+
+    /* =========================================================
+       INITIALIZATION
+    ========================================================= */
+
+    async function init() {
+
+        /*
+         * Load index independently.
+         *
+         * Even if Google Sheets fails,
+         * the PDF can still load.
+         */
+
+        loadIndex();
+
+        /*
+         * Load PDF.
+         */
+
+        await loadPDF();
+
+    }
+
+
+    /* =========================================================
+       GLOBAL FUNCTIONS
+    ========================================================= */
+
+    window.togglePanel =
+        togglePanel;
+
+    window.closePanels =
+        closePanels;
+
+    window.showAddTopicModal =
+        showAddTopicModal;
+
+    window.submitTopic =
+        submitTopic;
+
+    window.closeModal =
+        closeModal;
+
+    window.previousPage =
+        previousPage;
+
+    window.nextPage =
+        nextPage;
+
+
+    /* =========================================================
+       START
+    ========================================================= */
+
+    init();
+
 </script>
-<!-- ===== END REWARDED AD BODY ===== -->
+
 </body>
 </html>
