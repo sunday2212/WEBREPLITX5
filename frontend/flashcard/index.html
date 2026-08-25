@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Flashcards · NEXTPULSE</title>
+  <meta name="theme-color" content="#0f1420" />
+
+  <!-- Theme initialiser (must run before render) -->
+  <script src="../theme.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./flashcard.css" />
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../supabase-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="fc-header">
+    <button class="fc-back" onclick="location.href='../appx.html'" title="Back"><i class="fas fa-arrow-left"></i></button>
+    <h2 class="fc-title"><i class="fas fa-layer-group"></i> Flashcards</h2>
+    <div class="fc-spacer"></div>
+    <button class="fc-iconbtn" id="themeToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+    <img id="userAvatar" class="fc-avatar" src="" alt="me" title="You" style="display:none" onclick="location.href='../appx.html'" />
+  </header>
+
+  <!-- ===== Controls ===== -->
+  <div class="fc-controls">
+    <div class="fc-searchwrap">
+      <i class="fas fa-search"></i>
+      <input id="search" class="fc-search" placeholder="Search text or #tags…" />
+      <button class="fc-clear" id="clearSearch" style="display:none"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="fc-tabs">
+      <button class="fc-tab active" data-tab="all">All</button>
+      <button class="fc-tab" data-tab="mine">My Cards</button>
+      <button class="fc-tab" data-tab="due">Due Today</button>
+      <button class="fc-studyall" id="studyAll"><i class="fas fa-play"></i> Study</button>
+    </div>
+  </div>
+
+  <!-- ===== Feed ===== -->
+  <div class="fc-feed" id="feed">
+    <div class="fc-loading"><i class="fas fa-spinner spin"></i> Loading flashcards…</div>
+  </div>
+
+  <!-- ===== FAB ===== -->
+  <button class="fc-fab" id="fab" title="Create flashcard"><i class="fas fa-plus"></i></button>
+
+  <!-- ===== Create Modal ===== -->
+  <div class="fc-overlay" id="createOverlay">
+    <div class="fc-modal">
+      <div class="fc-modal-head">
+        <h3><i class="fas fa-plus-circle"></i> Create Flashcard</h3>
+        <button class="fc-close" data-close="createOverlay"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="fc-modal-body">
+        <div class="fc-msg" id="createMsg"></div>
+
+        <div class="fc-field">
+          <label>Card type</label>
+          <div class="fc-seg" id="typeSeg">
+            <button type="button" class="active" data-type="basic"><i class="fas fa-clone"></i> Basic</button>
+            <button type="button" data-type="mcq"><i class="fas fa-list-check"></i> Multiple Choice</button>
+          </div>
+        </div>
+
+        <!-- FRONT -->
+        <div class="fc-side">
+          <div class="fc-side-title"><i class="fas fa-eye"></i> Front (question)</div>
+          <textarea id="frontText" class="fc-textarea" placeholder="Front text (optional)…"></textarea>
+          <div class="fc-imgrow">
+            <label class="fc-filebtn"><i class="fas fa-image"></i> Add image
+              <input type="file" id="frontImg" accept="image/*" hidden />
+            </label>
+            <img class="fc-preview" id="frontPrev" />
+            <button class="fc-rmimg" id="frontRm" type="button">Remove</button>
+          </div>
+          <!-- MCQ options -->
+          <div id="mcqBlock" style="display:none;flex-direction:column;gap:10px">
+            <div class="fc-side-title" style="font-size:.82rem"><i class="fas fa-check-double"></i> Options (mark the correct one)</div>
+            <div id="optList"></div>
+            <button type="button" class="fc-addopt" id="addOpt"><i class="fas fa-plus"></i> Add option</button>
+          </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="fc-side">
+          <div class="fc-side-title"><i class="fas fa-lightbulb"></i> Back (answer)</div>
+          <textarea id="backText" class="fc-textarea" placeholder="Back text (optional)…"></textarea>
+          <div class="fc-imgrow">
+            <label class="fc-filebtn"><i class="fas fa-image"></i> Add image
+              <input type="file" id="backImg" accept="image/*" hidden />
+            </label>
+            <img class="fc-preview" id="backPrev" />
+            <button class="fc-rmimg" id="backRm" type="button">Remove</button>
+          </div>
+        </div>
+
+        <div class="fc-field">
+          <label>Tags (space or comma separated, e.g. #anatomy #heart)</label>
+          <input id="tags" class="fc-input" placeholder="#anatomy #cardiology" />
+        </div>
+
+        <div class="fc-switch">
+          <div><strong>Post anonymously</strong><br /><small>Hide your name &amp; college on this card</small></div>
+          <label class="switch"><input type="checkbox" id="anon" /><span class="slider"></span></label>
+        </div>
+
+        <button class="fc-save" id="saveBtn"><i class="fas fa-paper-plane"></i> Publish Flashcard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Creator info modal ===== -->
+  <div class="fc-overlay" id="creatorOverlay">
+    <div class="fc-modal" style="max-width:360px">
+      <div class="fc-modal-head">
+        <h3><i class="fas fa-user"></i> Created by</h3>
+        <button class="fc-close" data-close="creatorOverlay"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="fc-creator" id="creatorBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== Image zoom ===== -->
+  <div class="fc-overlay" id="zoomOverlay" style="align-items:center">
+    <img id="zoomImg" style="max-width:94vw;max-height:90vh;border-radius:14px" />
+  </div>
+
+  <!-- ===== Study reels ===== -->
+  <div class="fc-study" id="study">
+    <div class="fc-study-top">
+      <button class="fc-study-close" id="studyClose"><i class="fas fa-times"></i></button>
+      <span class="fc-study-count" id="studyCount">0 / 0</span>
+    </div>
+    <div class="fc-reels" id="reels"></div>
+  </div>
+
+  <script src="./flashcard.js"></script>
+</body>
+</html>
