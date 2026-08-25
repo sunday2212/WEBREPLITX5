@@ -91,19 +91,6 @@
             <img class="fc-preview" id="frontPrev" />
             <button class="fc-rmimg" id="frontRm" type="button">Remove</button>
           </div>
-          <div class="fc-field fc-color-field">
-            <label>Front card colour</label>
-            <div class="fc-swatches" id="frontSwatches">
-              <button type="button" class="fc-sw active" data-color="" title="Default"><i class="fas fa-ban"></i></button>
-              <button type="button" class="fc-sw" data-color="#fde68a" style="background:#fde68a"></button>
-              <button type="button" class="fc-sw" data-color="#bbf7d0" style="background:#bbf7d0"></button>
-              <button type="button" class="fc-sw" data-color="#bfdbfe" style="background:#bfdbfe"></button>
-              <button type="button" class="fc-sw" data-color="#fbcfe8" style="background:#fbcfe8"></button>
-              <button type="button" class="fc-sw" data-color="#e9d5ff" style="background:#e9d5ff"></button>
-              <button type="button" class="fc-sw" data-color="#1e293b" style="background:#1e293b"></button>
-              <label class="fc-sw fc-sw-custom" title="Custom colour"><i class="fas fa-eye-dropper"></i><input type="color" id="frontColorCustom" hidden /></label>
-            </div>
-          </div>
           <div id="mcqBlock" style="display:none;flex-direction:column;gap:10px">
             <div class="fc-side-title" style="font-size:.82rem"><i class="fas fa-check-double"></i> Options (mark the correct one)</div>
             <div id="optList"></div>
@@ -137,23 +124,10 @@
             <img class="fc-preview" id="backPrev" />
             <button class="fc-rmimg" id="backRm" type="button">Remove</button>
           </div>
-          <div class="fc-field fc-color-field">
-            <label>Back card colour</label>
-            <div class="fc-swatches" id="backSwatches">
-              <button type="button" class="fc-sw active" data-color="" title="Default"><i class="fas fa-ban"></i></button>
-              <button type="button" class="fc-sw" data-color="#fde68a" style="background:#fde68a"></button>
-              <button type="button" class="fc-sw" data-color="#bbf7d0" style="background:#bbf7d0"></button>
-              <button type="button" class="fc-sw" data-color="#bfdbfe" style="background:#bfdbfe"></button>
-              <button type="button" class="fc-sw" data-color="#fbcfe8" style="background:#fbcfe8"></button>
-              <button type="button" class="fc-sw" data-color="#e9d5ff" style="background:#e9d5ff"></button>
-              <button type="button" class="fc-sw" data-color="#1e293b" style="background:#1e293b"></button>
-              <label class="fc-sw fc-sw-custom" title="Custom colour"><i class="fas fa-eye-dropper"></i><input type="color" id="backColorCustom" hidden /></label>
-            </div>
-          </div>
         </div>
 
         <div class="fc-field">
-          <label>Tags <span style="color:var(--danger)">*required</span> (space or comma separated, e.g. #anatomy #heart)</label>
+          <label>Tags (space or comma separated, e.g. #anatomy #heart)</label>
           <input id="tags" class="fc-input" placeholder="#anatomy #cardiology" />
         </div>
 

@@ -15,17 +15,6 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => (s == null ? '' : String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])));
 function fallbackAvatar(name){ return 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name || 'User') + '&background=2c5282&color=fff&size=128&bold=true'; }
 
-/* ---- card colour ---- */
-let frontColor = '', backColor = '';
-function contrastColor(hex){
-  if (!hex) return '';
-  let h = hex.replace('#',''); if (h.length === 3) h = h.split('').map(c=>c+c).join('');
-  const r = parseInt(h.substr(0,2),16), g = parseInt(h.substr(2,2),16), b = parseInt(h.substr(4,2),16);
-  const lum = (0.299*r + 0.587*g + 0.114*b) / 255;
-  return lum > 0.6 ? '#15202b' : '#ffffff';
-}
-function colorStyle(c){ return c ? `background:${c};color:${contrastColor(c)};` : ''; }
-
 /* ---- safe rich-text ---- */
 function filterStyle(s){
   const allow = ['color','background-color','font-weight','font-style','text-decoration','font-size','font-family'];
@@ -95,45 +84,6 @@ function initRTE(root){
   });
 }
 document.querySelectorAll('.fc-rte').forEach(initRTE);
-
-/* ---------- colour swatches ---------- */
-function setColor(which, val){ if (which === 'front') frontColor = val; else backColor = val; }
-function initSwatches(wrapId, which){
-  const wrap = $(wrapId);
-  if (!wrap) return;
-  wrap.querySelectorAll('.fc-sw').forEach(sw => {
-    const custom = sw.querySelector('input[type=color]');
-    if (custom){
-      custom.addEventListener('input', () => {
-        wrap.querySelectorAll('.fc-sw').forEach(x=>x.classList.remove('active'));
-        sw.classList.add('active'); sw.dataset.color = custom.value; sw.style.background = custom.value;
-        setColor(which, custom.value);
-      });
-    } else {
-      sw.addEventListener('click', () => {
-        wrap.querySelectorAll('.fc-sw').forEach(x=>x.classList.remove('active'));
-        sw.classList.add('active'); setColor(which, sw.dataset.color || '');
-      });
-    }
-  });
-}
-function applyColorSelection(wrapId, which, val){
-  const wrap = $(wrapId);
-  if (!wrap) return;
-  val = val || '';
-  let matched = false;
-  wrap.querySelectorAll('.fc-sw').forEach(x => x.classList.remove('active'));
-  // pick matching preset
-  const preset = [...wrap.querySelectorAll('.fc-sw')].find(x => !x.classList.contains('fc-sw-custom') && (x.dataset.color || '') === val);
-  if (preset){ preset.classList.add('active'); matched = true; }
-  if (!matched && val){
-    const lbl = wrap.querySelector('.fc-sw-custom');
-    if (lbl){ lbl.classList.add('active'); lbl.dataset.color = val; lbl.style.background = val; const inp = lbl.querySelector('input'); if (inp) inp.value = val; }
-  }
-  setColor(which, val);
-}
-initSwatches('frontSwatches', 'front');
-initSwatches('backSwatches', 'back');
 
 /* ---------- boot ---------- */
 (async function boot(){
@@ -218,9 +168,8 @@ function cardHTML(c){
   const liked = LIKED.has(c.id);
   const media = c.front_image
     ? `<img class="fc-card-media" src="${esc(c.front_image)}" onclick="openSolve('${c.id}')" onerror="this.style.display='none'"/>` : '';
-  const ftColor = c.front_color ? `color:${contrastColor(c.front_color)};` : '';
-  const front = c.front_text ? `<div class="fc-front" style="${ftColor}">${sanitizeHTML(c.front_text)}</div>`
-    : (!c.front_image ? `<div class="fc-front" style="${ftColor || 'color:var(--muted)'}">Tap to solve</div>` : '');
+  const front = c.front_text ? `<div class="fc-front">${sanitizeHTML(c.front_text)}</div>`
+    : (!c.front_image ? `<div class="fc-front" style="color:var(--muted)">Tap to solve</div>` : '');
   const tags = (c.tags||[]).length
     ? `<div class="fc-tags">${c.tags.map(t=>`<span class="fc-tag" onclick="event.stopPropagation();searchTag('${esc(t)}')">#${esc(t)}</span>`).join('')}</div>` : '';
   const badge = c.card_type === 'mcq'
@@ -235,7 +184,7 @@ function cardHTML(c){
        <button class="fc-fbtn del" title="Delete" onclick="event.stopPropagation();delCard('${c.id}')"><i class="fas fa-trash"></i></button>` : '';
   return `<div class="fc-card">
     ${media}
-    <div class="fc-card-body" style="${colorStyle(c.front_color)}" onclick="openSolve('${c.id}')">
+    <div class="fc-card-body" onclick="openSolve('${c.id}')">
       ${badge}${front}${tags}
     </div>
     <div class="fc-card-foot">
@@ -336,14 +285,12 @@ function faceHTML(c){
   const aImg = c.back_image ? `<img class="fc-face-img" src="${esc(c.back_image)}" onclick="zoomImg('${esc(c.back_image)}')" onerror="this.style.display='none'"/>` : '';
   const aTxt = c.back_text ? `<div class="fc-face-text">${sanitizeHTML(c.back_text)}</div>`
     : (c.card_type==='mcq' ? `<div class="fc-face-text">✅ ${esc((c.options||[])[c.correct_index]||'')}</div>` : '');
-  const qStyle = c.front_color ? ` style="${colorStyle(c.front_color)}padding:18px;border-radius:16px"` : '';
-  const aStyle = c.back_color ? `display:none;${colorStyle(c.back_color)}padding:18px;border-radius:16px` : 'display:none';
-  return `<div class="fc-q"${qStyle}>
+  return `<div class="fc-q">
       <div class="fc-face-label"><i class="fas fa-eye"></i> Question</div>
       ${qImg}${qTxt}${mcq}
     </div>
     <button class="fc-showbtn" onclick="revealAnswer(this)"><i class="fas fa-rotate"></i> Show Answer</button>
-    <div class="fc-a" style="${aStyle}">
+    <div class="fc-a" style="display:none">
       <div class="fc-face-label"><i class="fas fa-lightbulb"></i> Answer</div>
       ${aImg}${aTxt}
     </div>`;
@@ -408,8 +355,6 @@ function resetForm(){
   ['frontImg','backImg'].forEach(id=>$(id).value='');
   ['frontPrev','backPrev'].forEach(id=>{ const p=$(id); p.src=''; p.dataset.url=''; p.classList.remove('show'); });
   ['frontRm','backRm'].forEach(id=>$(id).classList.remove('show'));
-  applyColorSelection('frontSwatches','front','');
-  applyColorSelection('backSwatches','back','');
   showMsg('', '');
 }
 function showMsg(type, text){ const m=$('createMsg'); m.className='fc-msg '+(type||''); m.textContent=text; }
@@ -434,8 +379,6 @@ function openEdit(id){
   }
   if (c.front_image){ const p=$('frontPrev'); p.src=c.front_image; p.dataset.url=c.front_image; p.classList.add('show'); $('frontRm').classList.add('show'); }
   if (c.back_image){ const p=$('backPrev'); p.src=c.back_image; p.dataset.url=c.back_image; p.classList.add('show'); $('backRm').classList.add('show'); }
-  applyColorSelection('frontSwatches','front', c.front_color || '');
-  applyColorSelection('backSwatches','back', c.back_color || '');
   openOverlay('createOverlay');
 }
 
@@ -484,9 +427,6 @@ $('saveBtn').addEventListener('click', async () => {
   if (!hasFront){ showMsg('err','Add front text, image, or options.'); return; }
   if (!hasBack){ showMsg('err','Add back text or image (the answer).'); return; }
 
-  const tagList = parseTags($('tags').value);
-  if (!tagList.length){ showMsg('err','Please add at least one #tag (required).'); $('tags').focus(); return; }
-
   btn.disabled = true; showMsg('', ''); const origHtml = btn.innerHTML;
   btn.innerHTML = '<i class="fas fa-spinner spin"></i> Uploading…';
   try{
@@ -505,13 +445,11 @@ $('saveBtn').addEventListener('click', async () => {
       card_type: cardType,
       options: cardType==='mcq' ? options : [],
       correct_index: cardType==='mcq' ? correctIndex : null,
-      tags: tagList,
+      tags: parseTags($('tags').value),
       is_anonymous: anon,
       creator_name: anon ? null : ME.name,
       creator_college: anon ? null : ME.college,
-      creator_pic: anon ? null : ME.pic,
-      front_color: frontColor || null,
-      back_color: backColor || null
+      creator_pic: anon ? null : ME.pic
     };
 
     if (editingId){
