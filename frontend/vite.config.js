@@ -152,6 +152,18 @@ export default defineConfig({
     port: 5000,
     strictPort: true,
     allowedHosts: true,
-    open: false
+    open: false,
+    watch: {
+      // Dev-only: the legacy site has 800+ static HTML/JSON files which blow
+      // past the container's inotify watcher limit. Ignore the heavy content
+      // folders so the dev server stays alive. Does NOT affect the build.
+      ignored: [
+        '**/node_modules/**', '**/dist/**',
+        '**/quizx/**', '**/marrowx/**', '**/1234xxx/**', '**/datax/**',
+        '**/distx/**', '**/newx/**', '**/opd/**', '**/pomodaro/**',
+        '**/srcx/**', '**/cssx/**', '**/img/**',
+        '**/*.json', '**/*.xml'
+      ]
+    }
   }
 })
