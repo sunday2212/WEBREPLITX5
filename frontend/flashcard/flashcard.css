@@ -163,6 +163,12 @@ img{max-width:100%}
 .switch input:checked+.slider{background:var(--primary)}
 .switch input:checked+.slider:before{transform:translateX(22px)}
 .fc-save{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border:none;padding:14px;border-radius:12px;font-weight:800;font-size:1rem;cursor:pointer}
+/* colour swatches */
+.fc-color-field{gap:8px}
+.fc-swatches{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fc-sw{width:34px;height:34px;border-radius:9px;border:2px solid var(--border);cursor:pointer;background:var(--card);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:.8rem;padding:0;position:relative;overflow:hidden}
+.fc-sw.active{border-color:var(--primary);box-shadow:0 0 0 2px var(--primary)}
+.fc-sw-custom input[type=color]{position:absolute;inset:0;opacity:0;cursor:pointer}
 .fc-save:disabled{opacity:.6;cursor:not-allowed}
 .fc-msg{font-size:.85rem;padding:8px 12px;border-radius:10px;display:none}
 .fc-msg.err{display:block;background:rgba(229,62,62,.15);color:var(--danger)}
