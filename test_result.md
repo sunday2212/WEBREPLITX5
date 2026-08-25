@@ -237,20 +237,60 @@ frontend:
         agent: "testing"
         comment: "⚠ MINOR ISSUE: Mobile layout at 390x844 has some responsiveness concerns. Layout flex-direction remains 'row' instead of 'column' - leaderboard and stage don't stack vertically as expected. Question options show grid-template-columns: 324px which may not be optimal for 390px width. However, NO horizontal overflow detected, so layout is usable. This is a minor UI optimization issue, not a critical functionality problem."
 
+  - task: "Flashcard tag validation (compulsory)"
+    implemented: true
+    working: true
+    file: "/app/frontend/flashcard/flashcard.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "✓ PASS: Tag validation works correctly. When attempting to publish a flashcard without tags, the form prevents submission and displays error message 'Please add at least one #tag (required).' in #createMsg with 'err' class. After adding a tag (e.g., #anatomy), the form would proceed successfully. Tested with Supabase stub on desktop viewport 1920x800."
+
+  - task: "Flashcard front & back card color selection"
+    implemented: true
+    working: true
+    file: "/app/frontend/flashcard/flashcard.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "✓ PASS: Color swatch functionality working perfectly. Both #frontSwatches and #backSwatches visible with 8 color options each. Clicking a color swatch (tested #bfdbfe) correctly applies 'active' class. Feed cards render with correct colored backgrounds: Card 1 has background:#bfdbfe with dark text (#15202b), Card 2 has background:#1e293b with white text (#ffffff). Auto-contrast function working correctly for text readability."
+
+  - task: "Flashcard solve popup (regression test)"
+    implemented: true
+    working: true
+    file: "/app/frontend/flashcard/flashcard.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "✓ PASS: Solve popup functionality working as expected. Clicking a feed card body opens #solveOverlay with question section visible and 'Show Answer' button (.fc-showbtn). Answer section (.fc-a) initially hidden (display:none). After clicking 'Show Answer', answer section becomes visible (display:flex) and button hides (display:none). Question/answer reveal flow works correctly."
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
-  test_sequence: 1
+  test_sequence: 2
   run_ui: true
   test_date: "2025-01-14"
 
 test_plan:
   current_focus:
-    - "All core features tested"
+    - "Flashcard tag validation"
+    - "Flashcard color selection"
+    - "Flashcard solve popup"
   stuck_tasks: []
-  test_all: true
+  test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "testing"
     message: "Comprehensive testing completed for multiplayer quiz game. All 10 major features tested across desktop (1920x800) and mobile (390x844) viewports. 9 out of 10 features working perfectly. 1 minor mobile layout optimization issue identified (non-critical). Game is fully functional in DEMO MODE with proper turn rotation, scoring, and all question source flows working correctly."
+  - agent: "testing"
+    message: "NEW TESTING SESSION: Flashcards page - Verified two new frontend modifications. All 3 test cases PASSED: (1) Tag validation working correctly - prevents submission without tags and shows proper error message, (2) Front & back card color swatches functional - colors apply correctly to feed cards with auto-contrast for readability, (3) Solve popup regression test passed - question/answer reveal flow works as expected. Supabase successfully stubbed for testing. No critical issues found."
