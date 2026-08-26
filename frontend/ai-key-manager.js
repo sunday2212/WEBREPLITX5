@@ -36,7 +36,7 @@
       guideUrl: 'https://console.groq.com/keys',
       guidePage: 'groq.html',
       models: [
-        { id: 'llama-3.1-8b-instant', label: 'llama-3.1-8b-instant', badge: 'Fast · high free limit · best for quizzes' },
+        { id: 'openai/gpt-oss-20b', label: 'openai/gpt-oss-20b', badge: 'Fast · high free limit · best for quizzes' },
       ],
     },
     openai: {
