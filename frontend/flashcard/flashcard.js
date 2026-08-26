@@ -325,35 +325,37 @@ function zoomImg(src){ $('zoomImg').src = src; openOverlay('zoomOverlay'); }
 
 /* ---------- shared card face (solve popup + study) ---------- */
 function faceHTML(c){
-  const qImg = c.front_image ? `<img class="fc-face-img" src="${esc(c.front_image)}" onclick="zoomImg('${esc(c.front_image)}')" onerror="this.style.display='none'"/>` : '';
+  const qImg = c.front_image ? `<img class="fc-face-img" src="${esc(c.front_image)}" onerror="this.style.display='none'"/>` : '';
   const qTxt = c.front_text ? `<div class="fc-face-text">${sanitizeHTML(c.front_text)}</div>` : '';
   let mcq = '';
   if (c.card_type === 'mcq' && (c.options||[]).length){
-    mcq = `<div class="fc-mcq" data-correct="${c.correct_index}">` +
+    mcq = `<div class="fc-mcq" data-correct="${c.correct_index}" onclick="event.stopPropagation()">` +
       c.options.map((o,oi)=>`<button onclick="pickMCQ(this,${oi},${c.correct_index})">${esc(o)}</button>`).join('') +
       `</div>`;
   }
-  const aImg = c.back_image ? `<img class="fc-face-img" src="${esc(c.back_image)}" onclick="zoomImg('${esc(c.back_image)}')" onerror="this.style.display='none'"/>` : '';
+  const aImg = c.back_image ? `<img class="fc-face-img" src="${esc(c.back_image)}" onerror="this.style.display='none'"/>` : '';
   const aTxt = c.back_text ? `<div class="fc-face-text">${sanitizeHTML(c.back_text)}</div>`
     : (c.card_type==='mcq' ? `<div class="fc-face-text">✅ ${esc((c.options||[])[c.correct_index]||'')}</div>` : '');
-  const qStyle = c.front_color ? ` style="${colorStyle(c.front_color)}padding:18px;border-radius:16px"` : '';
-  const aStyle = c.back_color ? `display:none;${colorStyle(c.back_color)}padding:18px;border-radius:16px` : 'display:none';
-  return `<div class="fc-q"${qStyle}>
-      <div class="fc-face-label"><i class="fas fa-eye"></i> Question</div>
-      ${qImg}${qTxt}${mcq}
+  const qStyle = c.front_color ? ` style="${colorStyle(c.front_color)}"` : '';
+  const aStyle = c.back_color ? ` style="${colorStyle(c.back_color)}"` : '';
+  return `<div class="fc-flipcard" onclick="flipCard(this)">
+    <div class="fc-flip-inner">
+      <div class="fc-flip-face fc-flip-front"${qStyle}>
+        <div class="fc-face-label"><i class="fas fa-eye"></i> Question</div>
+        <div class="fc-face-scroll">${qImg}${qTxt}${mcq}</div>
+        <div class="fc-flip-hint"><i class="fas fa-hand-pointer"></i> tap to flip</div>
+      </div>
+      <div class="fc-flip-face fc-flip-back"${aStyle}>
+        <div class="fc-face-label"><i class="fas fa-lightbulb"></i> Answer</div>
+        <div class="fc-face-scroll">${aImg}${aTxt}</div>
+        <div class="fc-flip-hint"><i class="fas fa-rotate-left"></i> tap to flip back</div>
+      </div>
     </div>
-    <button class="fc-showbtn" onclick="revealAnswer(this)"><i class="fas fa-rotate"></i> Show Answer</button>
-    <div class="fc-a" style="${aStyle}">
-      <div class="fc-face-label"><i class="fas fa-lightbulb"></i> Answer</div>
-      ${aImg}${aTxt}
-    </div>`;
+  </div>`;
 }
-function revealAnswer(btn){
-  const face = btn.parentNode;
-  const ans = face.querySelector('.fc-a');
-  ans.style.display = 'flex';
-  btn.style.display = 'none';
-  ans.scrollIntoView({ behavior:'smooth', block:'nearest' });
+function flipCard(el){
+  const inner = el.querySelector('.fc-flip-inner');
+  if (inner) inner.classList.toggle('flipped');
 }
 
 /* ---------- solve popup (single card) ---------- */
@@ -549,9 +551,7 @@ function startStudy(list){
 }
 function slideHTML(c, i){
   return `<div class="fc-slide" data-idx="${i}">
-    <div class="fc-flip">
-      <div class="fc-face">${faceHTML(c)}</div>
-    </div>
+    <div class="fc-flip">${faceHTML(c)}</div>
     ${i < studyList.length-1 ? '<div class="fc-swipe-hint"><i class="fas fa-chevron-down"></i> scroll for next</div>' : '<div class="fc-swipe-hint">🎉 last card</div>'}
   </div>`;
 }
@@ -578,7 +578,7 @@ window.showCreator = showCreator;
 window.searchTag = searchTag;
 window.zoomImg = zoomImg;
 window.openSolve = openSolve;
-window.revealAnswer = revealAnswer;
+window.flipCard = flipCard;
 window.openEdit = openEdit;
 window.delCard = delCard;
 window.pickMCQ = pickMCQ;
