@@ -215,7 +215,16 @@ img{max-width:100%}
 
 /* ---- Solve popup ---- */
 .fc-solve-modal{max-width:760px}
-.fc-solve-modal .fc-face{border:none;box-shadow:none;max-height:78vh;padding:24px 26px}
+.fc-solve-body{height:72vh;padding:18px}
+
+/* ---- Flip card (solve + study) ---- */
+.fc-flipcard{width:100%;height:100%;cursor:pointer;perspective:1500px}
+.fc-flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,.15,.2,1)}
+.fc-flip-inner.flipped{transform:rotateY(180deg)}
+.fc-flip-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:22px;background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+.fc-flip-back{transform:rotateY(180deg)}
+.fc-face-scroll{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:16px}
+.fc-flip-hint{text-align:center;color:var(--muted);font-size:.8rem;display:flex;align-items:center;justify-content:center;gap:6px;opacity:.85}
 
 /* ---- Study reels ---- */
 .fc-study{position:fixed;inset:0;z-index:200;background:var(--bg);display:none}
@@ -228,7 +237,7 @@ html[data-theme="light"] .fc-study-top{background:linear-gradient(180deg,rgba(25
 .fc-reels::-webkit-scrollbar{display:none}
 .fc-slide{height:100%;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;padding:74px 18px 24px;position:relative}
 .fc-flip{width:100%;max-width:700px;height:100%;max-height:88vh;display:flex;flex-direction:column}
-.fc-slide .fc-face{flex:1;box-shadow:var(--shadow)}
+.fc-flip .fc-flipcard{flex:1;min-height:0}
 .fc-swipe-hint{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:var(--muted);font-size:.85rem;animation:bob 1.6s infinite;pointer-events:none}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
@@ -246,8 +255,8 @@ html[data-theme="light"] .fc-study-top{background:linear-gradient(180deg,rgba(25
   .fc-card-body{padding:12px}
   .fc-front{font-size:.95rem}
   .fc-face-text{font-size:1.2rem}
-  .fc-face{padding:20px}
-  .fc-solve-modal .fc-face{max-height:74vh;padding:18px}
+  .fc-flip-face{padding:20px}
+  .fc-solve-body{height:76vh;padding:12px}
   .fc-mcq button{font-size:.98rem;padding:13px 15px}
   .fc-title{font-size:1.05rem}
 }
