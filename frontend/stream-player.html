@@ -737,8 +737,40 @@
             showPlayer();
         }
 
+        // Render media only after the Supabase access code has been claimed.
+        function renderMediaIframe(container, url, title) {
+            container.innerHTML = '';
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.title = title;
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+            iframe.allowFullscreen = true;
+            iframe.setAttribute('webkitallowfullscreen', '');
+            iframe.setAttribute('mozallowfullscreen', '');
+            container.appendChild(iframe);
+        }
+
+        async function openProtectedMedia(rawUrl, action, title) {
+            const iframeContainer = document.getElementById('main-iframe-container');
+            iframeContainer.innerHTML = `<div class="loading">Preparing secure ${action} access...</div>`;
+
+            if (typeof window.claimProtectedMediaUrl !== 'function') {
+                iframeContainer.innerHTML = '<div class="error-message">Secure media access is not ready. Please refresh and try again.</div>';
+                return false;
+            }
+
+            const protectedUrl = await window.claimProtectedMediaUrl(rawUrl, action);
+            if (!protectedUrl) {
+                iframeContainer.innerHTML = '<div class="error-message">This media could not be opened securely.</div>';
+                return false;
+            }
+
+            renderMediaIframe(iframeContainer, protectedUrl, title);
+            return true;
+        }
+
         // Show player screen
-        function showPlayer() {
+        async function showPlayer() {
             if (!streamUrl && contentType !== 'pdf') {
                 document.getElementById('error-message').textContent = 'Missing stream URL';
                 return;
@@ -768,15 +800,9 @@
                 if (watchBtn) watchBtn.style.display = 'none';
 
                 // Update download buttons to load URL in embedded iframe (same as video download)
-                function loadPdfInIframe(url) {
+                async function loadPdfInIframe(url) {
                     if (!url) { alert('Download URL not available'); return; }
-                    iframeContainer.innerHTML = `
-                        <iframe src="${url}"
-                                title="Download PDF"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                                allowfullscreen>
-                        </iframe>
-                    `;
+                    await openProtectedMedia(url, 'download', 'Download PDF');
                     iframeContainer.style.paddingBottom = '56.25%';
                 }
 
@@ -800,17 +826,12 @@
                 if (sidebar) sidebar.style.display = 'none';
 
             } else {
-                // Video mode: normal iframe player (random server pick on each load)
-                const iframeContainer = document.getElementById('main-iframe-container');
-                iframeContainer.innerHTML = `
-                    <iframe src="${_randomStreamUrl()}"
-                            title="${decodeURIComponent(videoTitle)}"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                            allowfullscreen
-                            webkit-allowfullscreen
-                            mozallowfullscreen>
-                    </iframe>
-                `;
+                // Video mode: claim the stream before loading the protected URL.
+                await openProtectedMedia(
+                    _randomStreamUrl(),
+                    'stream',
+                    decodeURIComponent(videoTitle)
+                );
 
                 // Show 4th YouTube video on desktop (guard against missing element)
                 if (window.innerWidth >= 992) {
@@ -835,8 +856,9 @@
                 alert('Download URL not available');
                 return;
             }
-            checkVideoDownloadLimit(function() {
+            openProtectedMedia(chosenUrl, 'download', decodeURIComponent(videoTitle));
                 const iframeContainer = document.getElementById('main-iframe-container');
+                /*
                 iframeContainer.innerHTML = `
                     <iframe src="${chosenUrl}"
                             title="Download ${decodeURIComponent(videoTitle)}"
@@ -846,7 +868,7 @@
                             mozallowfullscreen>
                     </iframe>
                 `;
-            });
+            */
         }
 
         // Handle Watch - S2 button (Server-2 streaming)
@@ -856,7 +878,9 @@
                 alert('Stream URL not available');
                 return;
             }
+            openProtectedMedia(chosenUrl, 'stream', decodeURIComponent(videoTitle));
             const iframeContainer = document.getElementById('main-iframe-container');
+            /*
             iframeContainer.innerHTML = `
                 <iframe src="${chosenUrl}"
                         title="${decodeURIComponent(videoTitle)}"
@@ -865,7 +889,7 @@
                         webkit-allowfullscreen
                         mozallowfullscreen>
                 </iframe>
-            `;
+            */
         }
 
         // Handle Download - S2 button (randomly picks a server, same as S1)
@@ -875,7 +899,8 @@
                 alert('Download URL not available');
                 return;
             }
-            checkVideoDownloadLimit(function() {
+            openProtectedMedia(chosenUrl, 'download', decodeURIComponent(videoTitle));
+            /*
                 const iframeContainer = document.getElementById('main-iframe-container');
                 iframeContainer.innerHTML = `
                     <iframe src="${chosenUrl}"
@@ -886,7 +911,7 @@
                             mozallowfullscreen>
                     </iframe>
                 `;
-            });
+            */
         }
 
         // Format platform name for file paths
@@ -1229,14 +1254,14 @@
 
         // Load next lectures when player is shown
         const originalShowPlayer = showPlayer;
-        showPlayer = function() {
-            originalShowPlayer();
+        showPlayer = async function() {
+            await originalShowPlayer();
             loadNextLectures();
         };
 
         // No additional initialization needed - callbacks are set via data attributes
 
-        // ── Video download limit (5 per day, resets at midnight) ──────────────
+        /* Legacy download limiter replaced by the protected media flow below.
         (function initDownloadLimit() {
             const { createClient } = supabase;
             const _dlSupabase = createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -1326,6 +1351,105 @@
                     setLsCount(uid, count + 1);
                     proceedFn();
                 }
+             };
+         */
+
+        // ── Protected media access (5 downloads + 5 streams per day) ────────
+        // The access code is created for the current user immediately before
+        // a media URL is loaded. The SQL RPC performs the atomic daily limit
+        // check, so client-side storage cannot bypass the quota.
+        (function initProtectedMediaAccess() {
+            const { createClient } = supabase;
+            const _mediaSupabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+            const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+            const CODE_TTL_MS = 24 * 60 * 60 * 1000;
+
+            function generateAccessCode() {
+                const bytes = new Uint8Array(10);
+                crypto.getRandomValues(bytes);
+                return Array.from(bytes, byte => CODE_ALPHABET[byte % CODE_ALPHABET.length]).join('');
+            }
+
+            function appendAccessCode(rawUrl, code) {
+                const protectedUrl = new URL(rawUrl, window.location.href);
+                if (!['http:', 'https:'].includes(protectedUrl.protocol)) {
+                    throw new Error('Unsupported media URL');
+                }
+                protectedUrl.searchParams.delete('access_code');
+                protectedUrl.searchParams.set('access_code', code);
+                return protectedUrl.toString();
+            }
+
+            function showLimitPopup(action) {
+                const title = document.querySelector('#dl-limit-box h3');
+                const description = document.querySelector('#dl-limit-box p');
+                const actionName = action === 'stream' ? 'stream' : 'download';
+
+                if (title) {
+                    title.textContent = `Daily ${actionName === 'stream' ? 'Stream' : 'Download'} Limit Reached`;
+                }
+                if (description) {
+                    description.innerHTML = `You can ${actionName} up to <strong>5 ${actionName}s per day</strong>.<br>
+                        Your limit resets at <strong>midnight</strong>.<br>
+                        ${actionName === 'stream' ? 'You can still <strong>download</strong> available files.' : 'You can still <strong>watch</strong> available videos.'}`;
+                }
+                document.getElementById('dl-limit-overlay').classList.add('active');
+            }
+
+            window.claimProtectedMediaUrl = async function(rawUrl, action) {
+                if (!rawUrl) {
+                    alert(`${action === 'stream' ? 'Stream' : 'Download'} URL not available`);
+                    return null;
+                }
+                if (!['download', 'stream'].includes(action)) {
+                    console.error('Unsupported protected media action:', action);
+                    return null;
+                }
+
+                try {
+                    const { data: sessionData, error: sessionError } = await _mediaSupabase.auth.getSession();
+                    if (sessionError) throw sessionError;
+
+                    const user = sessionData?.session?.user;
+                    if (!user) {
+                        alert('Please sign in before opening protected media.');
+                        return null;
+                    }
+
+                    const code = generateAccessCode();
+                    const expiresAt = new Date(Date.now() + CODE_TTL_MS).toISOString();
+                    const { error: insertError } = await _mediaSupabase
+                        .from('media_access_codes')
+                        .insert({
+                            code,
+                            user_id: user.id,
+                            expires_at: expiresAt
+                        });
+
+                    if (insertError) throw insertError;
+
+                    const { data: claim, error: claimError } = await _mediaSupabase.rpc(
+                        'claim_media_access',
+                        { p_code: code, p_action: action }
+                    );
+
+                    if (claimError) throw claimError;
+
+                    if (!claim?.allowed) {
+                        if (claim?.reason === 'daily_limit') {
+                            showLimitPopup(action);
+                        } else {
+                            alert('This protected media link is not available.');
+                        }
+                        return null;
+                    }
+
+                    return appendAccessCode(rawUrl, code);
+                } catch (error) {
+                    console.error('Protected media access failed:', error);
+                    alert('Secure media access is temporarily unavailable. Please try again.');
+                    return null;
+                }
             };
         })();
     </script>
@@ -1334,11 +1458,11 @@
     <div id="dl-limit-overlay" onclick="if(event.target===this)this.classList.remove('active')">
         <div id="dl-limit-box">
             <div class="dl-icon">🚫</div>
-            <h3>Daily Download Limit Reached</h3>
+            <h3>Daily Media Limit Reached</h3>
             <div class="dl-count-badge">5 / 5</div>
-            <p>You can download up to <strong>5 videos per day</strong>.<br>
+            <p>You can download or stream up to <strong>5 times per day</strong>.<br>
                Your limit resets at <strong>midnight</strong>.<br>
-               You can still <strong>watch</strong> all videos without any limit!</p>
+               Each action is tracked separately.</p>
             <button id="dl-limit-close-btn" onclick="document.getElementById('dl-limit-overlay').classList.remove('active')">
                 Got it
             </button>
