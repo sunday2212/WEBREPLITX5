@@ -1919,10 +1919,12 @@
             } catch (_) {}
         }
 
-        /* ── VPS Status Check (Single HTTPS Endpoint) ── */
+        /* ── VPS Status Check (Handles CORS gracefully) ── */
         (function () {
             var STATUS_URL = 'https://web.afrahtafreeh.site';
-            var FETCH_TIMEOUT = 5000; // 5 seconds max
+            // CORS proxy fallback (used only if direct fetch fails)
+            var PROXY_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(STATUS_URL);
+            var FETCH_TIMEOUT = 6000;
 
             var vpsBtn    = document.getElementById('checkVpsBtn');
             var vpsLabel  = document.getElementById('vpsBtnLabel');
@@ -1949,6 +1951,14 @@
                 });
             }
 
+            function fetchStatus(url) {
+                return fetchWithTimeout(url, { method: 'GET', cache: 'no-store' }, FETCH_TIMEOUT)
+                    .then(function (res) {
+                        if (!res.ok) throw new Error('HTTP ' + res.status);
+                        return res.json();
+                    });
+            }
+
             function setVpsState(state, message) {
                 vpsDot.className = 'vps-dot' + (state ? ' ' + state : '');
                 vpsStatus.className = 'vps-status' + (state ? ' ' + state : '');
@@ -1960,24 +1970,23 @@
                 vpsLabel.textContent = 'Checking…';
                 setVpsState('checking', 'Checking…');
 
-                fetchWithTimeout(STATUS_URL, {
-                    method: 'GET',
-                    cache: 'no-store',
-                    headers: { 'Accept': 'application/json' }
-                }, FETCH_TIMEOUT)
-                    .then(function (response) {
-                        if (!response.ok) throw new Error('HTTP ' + response.status);
-                        return response.json();
+                // Step 1: Try direct fetch
+                fetchStatus(STATUS_URL)
+                    .catch(function () {
+                        // Step 2: If direct fails (CORS), use proxy
+                        console.warn('Direct fetch blocked (likely CORS), falling back to proxy...');
+                        return fetchStatus(PROXY_URL);
                     })
                     .then(function (data) {
-                        // Server is active if the JSON says "running"
+                        // Check the server_status field from your JSON
                         if (data && data.server_status === 'running') {
                             setVpsState('online', 'Active');
                         } else {
                             setVpsState('offline', 'Inactive');
                         }
                     })
-                    .catch(function () {
+                    .catch(function (err) {
+                        console.error('VPS Check failed:', err);
                         setVpsState('offline', 'Inactive');
                     })
                     .finally(function () {
