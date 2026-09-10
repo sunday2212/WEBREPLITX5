@@ -183,81 +183,6 @@
             outline: 3px solid rgba(28, 110, 99, 0.2);
         }
 
-        /* ---- VPS CHECK BLOCK ---- */
-        .vps-check {
-            max-width: 590px;
-            margin: 28px auto 0;
-            padding: 20px 18px;
-            border: 1px dashed rgba(28, 110, 99, 0.4);
-            border-radius: 14px;
-            background: #f4faf8;
-        }
-
-        .vps-note {
-            margin: 0 0 16px;
-            color: var(--teal-deep);
-            font-size: 0.95rem;
-            font-weight: 700;
-            line-height: 1.55;
-        }
-
-        #checkVpsBtn {
-            margin: 0 auto;
-            background: var(--teal);
-            color: #fff;
-        }
-
-        #checkVpsBtn:disabled {
-            opacity: 0.7;
-            cursor: progress;
-            transform: none;
-        }
-
-        .vps-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin-right: 9px;
-            border-radius: 50%;
-            background: #9aa5b1;
-            transition: background 0.2s, box-shadow 0.2s;
-        }
-        .vps-dot.checking {
-            background: #f0a500;
-            animation: vpsPulse 1s ease-in-out infinite;
-        }
-        .vps-dot.online {
-            background: #16a34a;
-            box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.18);
-        }
-        .vps-dot.offline {
-            background: #dc2626;
-            box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.18);
-        }
-
-        .vps-status {
-            margin: 14px 0 0;
-            min-height: 1.3em;
-            font-size: 0.9rem;
-            font-weight: 600;
-            line-height: 1.5;
-        }
-        .vps-status.checking { color: #a16207; }
-        .vps-status.online   { color: #15803d; }
-        .vps-status.offline  { color: #b91c1c; }
-
-        .vps-meta {
-            margin: 8px 0 0;
-            font-size: 0.78rem;
-            color: var(--muted);
-            line-height: 1.5;
-        }
-
-        @keyframes vpsPulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50%      { opacity: 0.45; transform: scale(0.8); }
-        }
-
         .actions {
             display: flex;
             flex-wrap: wrap;
@@ -386,12 +311,22 @@
 
         /* ---- ANIMATIONS ---- */
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to   { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px) scale(0.96); }
-            to   { opacity: 1; transform: translateY(0) scale(1); }
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
 
         /* ---- RESPONSIVE ---- */
@@ -473,23 +408,8 @@
                 <span aria-hidden="true">⧉</span> Copy
             </button>
         </div>
-
-        <!-- ===== VPS STATUS CHECK (above Continue / Last watch) ===== -->
-        <div class="vps-check">
-            <p class="vps-note">
-                You have limited downloads and streams so first check server is active or not.
-            </p>
-            <button class="button" id="checkVpsBtn" type="button">
-                <span class="vps-dot" id="vpsDot" aria-hidden="true"></span>
-                <span id="vpsBtnLabel">Check Server Status</span>
-            </button>
-            <p class="vps-status" id="vpsStatus" role="status" aria-live="polite"></p>
-            <p class="vps-meta">
-                Server checked: <strong>103.165.11.199</strong> (ports 8080, 8081, 5000)
-            </p>
-        </div>
-
         <div class="actions">
+            
             <button class="button secondary" id="instructionsBtn">Chatbot instructions</button>
         </div>
         <p class="small">After opening the official site, use the chatbot 🤖 button in the lower-right corner for installation instructions.</p>
@@ -512,153 +432,12 @@
         (function() {
             'use strict';
 
-            /* =========================================================
-               1) VPS STATUS CHECK — multiple ports
-               ========================================================= */
-
-            // Your VPS IP and the known HTTP ports
-            var VPS_HOST = '103.165.11.199';
-            var VPS_PORTS = [8080, 8081, 5000];
-
-            // Build URLs to test
-            var VPS_URLS = VPS_PORTS.map(function(port) {
-                return 'http://' + VPS_HOST + ':' + port + '/';
-            });
-
-            var DIRECT_TIMEOUT = 5000;   // ms per direct probe
-            var PROXY_TIMEOUT  = 9000;   // ms per proxy probe
-
-            var vpsBtn    = document.getElementById('checkVpsBtn');
-            var vpsLabel  = document.getElementById('vpsBtnLabel');
-            var vpsDot    = document.getElementById('vpsDot');
-            var vpsStatus = document.getElementById('vpsStatus');
-
-            // Public CORS proxies used only when the page is on HTTPS
-            var PROXIES = [
-                function(u) { return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u); },
-                function(u) { return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u); },
-                function(u) { return 'https://corsproxy.io/?url=' + encodeURIComponent(u); }
-            ];
-
-            function fetchWithTimeout(url, options, ms) {
-                return new Promise(function(resolve, reject) {
-                    var controller = new AbortController();
-                    var timer = setTimeout(function() {
-                        controller.abort();
-                        reject(new Error('timeout'));
-                    }, ms);
-
-                    var opts = Object.assign({}, options, { signal: controller.signal });
-
-                    fetch(url, opts).then(function(res) {
-                        clearTimeout(timer);
-                        resolve(res);
-                    }).catch(function(err) {
-                        clearTimeout(timer);
-                        reject(err);
-                    });
-                });
-            }
-
-            // Direct probe (works when this page is served over HTTP).
-            function directProbe(url) {
-                var probeUrl = url + '?_=' + Date.now();
-                return fetchWithTimeout(probeUrl, {
-                    mode: 'no-cors',
-                    cache: 'no-store',
-                    redirect: 'follow'
-                }, DIRECT_TIMEOUT).then(function() {
-                    return true;
-                });
-            }
-
-            // Proxy probe (fallback for HTTPS pages).
-            function proxyProbe(builder, url) {
-                var proxyUrl = builder(url);
-                return fetchWithTimeout(proxyUrl, {
-                    cache: 'no-store',
-                    redirect: 'follow'
-                }, PROXY_TIMEOUT).then(function(res) {
-                    if (!res.ok) throw new Error('bad status ' + res.status);
-                    return true;
-                });
-            }
-
-            function setVpsState(state, message) {
-                vpsDot.className = 'vps-dot' + (state ? ' ' + state : '');
-                vpsStatus.className = 'vps-status' + (state ? ' ' + state : '');
-                vpsStatus.textContent = message || '';
-            }
-
-            // Try one URL directly, then via proxies if needed
-            function probeUrl(url) {
-                return directProbe(url)
-                    .then(function() { return true; })
-                    .catch(function() {
-                        // Try proxies one by one
-                        var i = 0;
-                        function next() {
-                            if (i >= PROXIES.length) return false;
-                            var builder = PROXIES[i++];
-                            return proxyProbe(builder, url)
-                                .then(function() { return true; })
-                                .catch(function() { return next(); });
-                        }
-                        return next();
-                    });
-            }
-
-            function runVpsCheck() {
-                vpsBtn.disabled = true;
-                vpsLabel.textContent = 'Checking…';
-                setVpsState('checking', '⏳ Contacting server on ports 8080, 8081, 5000…');
-
-                // Try each URL in sequence until one succeeds
-                var index = 0;
-                function tryNext() {
-                    if (index >= VPS_URLS.length) {
-                        // All failed
-                        var time = new Date().toLocaleTimeString();
-                        setVpsState('offline', '❌ Server seems INACTIVE on all checked ports. Please wait a few minutes and try again. (' + time + ')');
-                        vpsBtn.disabled = false;
-                        vpsLabel.textContent = 'Check Server Status';
-                        return;
-                    }
-
-                    var url = VPS_URLS[index++];
-                    probeUrl(url)
-                        .then(function(online) {
-                            if (online) {
-                                var time = new Date().toLocaleTimeString();
-                                setVpsState('online', '✅ Server is ACTIVE (port ' + VPS_PORTS[index-1] + ') — you can continue. (' + time + ')');
-                                vpsBtn.disabled = false;
-                                vpsLabel.textContent = 'Check Server Status';
-                            } else {
-                                tryNext();
-                            }
-                        })
-                        .catch(function() {
-                            tryNext();
-                        });
-                }
-
-                tryNext();
-            }
-
-            if (vpsBtn) {
-                vpsBtn.addEventListener('click', runVpsCheck);
-            }
-
-            /* =========================================================
-               2) EXISTING PAGE LOGIC
-               ========================================================= */
-
             // ---- DOM refs ----
-            var dismissBtn = document.getElementById('dismissAlert');
-            var cfAlert = document.getElementById('cfAlert');
-            var instructionsBtn = document.getElementById('instructionsBtn');
-            var modalOverlay = document.getElementById('modalOverlay');
-            var modalClose = document.getElementById('modalClose');
+            const dismissBtn = document.getElementById('dismissAlert');
+            const cfAlert = document.getElementById('cfAlert');
+            const instructionsBtn = document.getElementById('instructionsBtn');
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalClose = document.getElementById('modalClose');
 
             // ---- Dismiss Cloudflare alert ----
             if (dismissBtn) {
@@ -681,14 +460,18 @@
             if (instructionsBtn) {
                 instructionsBtn.addEventListener('click', function(e) {
                     e.preventDefault();
+                    // Show a quick second alert as a reminder (optional, but we already have the banner)
+                    // Open the modal
                     openModal();
                 });
             }
 
+            // Close modal via × button
             if (modalClose) {
                 modalClose.addEventListener('click', closeModal);
             }
 
+            // Close modal by clicking overlay background
             if (modalOverlay) {
                 modalOverlay.addEventListener('click', function(e) {
                     if (e.target === modalOverlay) {
@@ -697,6 +480,7 @@
                 });
             }
 
+            // Close modal with Escape key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
                     closeModal();
@@ -704,8 +488,8 @@
             });
 
             // ---- Copy search text ----
-            var copyButton = document.getElementById('copy-search');
-            var searchText = document.getElementById('search-text').textContent;
+            const copyButton = document.getElementById('copy-search');
+            const searchText = document.getElementById('search-text').textContent;
 
             if (copyButton) {
                 copyButton.addEventListener('click', async function() {
@@ -713,7 +497,7 @@
                         await navigator.clipboard.writeText(searchText);
                         copyButton.innerHTML = '<span aria-hidden="true">✓</span> Copied';
                     } catch (_) {
-                        var helper = document.createElement('textarea');
+                        const helper = document.createElement('textarea');
                         helper.value = searchText;
                         helper.setAttribute('readonly', '');
                         helper.style.position = 'fixed';
@@ -729,6 +513,10 @@
                     }, 1800);
                 });
             }
+
+            // ---- Ensure iframe loads reliably (optional: reload on open) ----
+            // We don't force a reload, but we could if needed.
+            // The iframe will load naturally when the modal opens.
 
         })();
     </script>
