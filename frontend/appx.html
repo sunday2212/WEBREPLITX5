@@ -1235,6 +1235,111 @@
         .image-zoom-close:hover {
             background: rgba(0, 0, 0, 0.8);
         }
+
+        /* ── VPS Status Check ── */
+        .vps-check-wrap {
+            padding: 1.2rem 1rem 0;
+        }
+        .vps-check {
+            background: #f4faf8;
+            border: 1.5px dashed rgba(28, 110, 99, 0.4);
+            border-radius: 14px;
+            padding: 1.1rem 1rem;
+            text-align: center;
+        }
+        .vps-note {
+            margin: 0 0 0.85rem;
+            color: #0e4a43;
+            font-size: 0.86rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .vps-check-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 0 18px;
+            border: 0;
+            border-radius: 10px;
+            background: #1c6e63;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.15s, transform 0.15s;
+        }
+        .vps-check-btn:hover:not(:disabled) {
+            background: #0e4a43;
+            transform: translateY(-1px);
+        }
+        .vps-check-btn:disabled {
+            opacity: 0.7;
+            cursor: progress;
+            transform: none;
+        }
+        .vps-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 9px;
+            border-radius: 50%;
+            background: #9aa5b1;
+            transition: background 0.2s, box-shadow 0.2s;
+            flex-shrink: 0;
+        }
+        .vps-dot.checking {
+            background: #f0a500;
+            animation: vpsPulse 1s ease-in-out infinite;
+        }
+        .vps-dot.online {
+            background: #16a34a;
+            box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.18);
+        }
+        .vps-dot.offline {
+            background: #dc2626;
+            box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.18);
+        }
+        .vps-status {
+            margin: 0.75rem 0 0;
+            min-height: 1.3em;
+            font-size: 0.82rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        .vps-status.checking { color: #a16207; }
+        .vps-status.online   { color: #15803d; }
+        .vps-status.offline  { color: #b91c1c; }
+        .vps-meta {
+            margin: 0.5rem 0 0;
+            font-size: 0.72rem;
+            color: #718096;
+            line-height: 1.5;
+        }
+        @keyframes vpsPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50%      { opacity: 0.45; transform: scale(0.8); }
+        }
+        /* Dark Mode: VPS check */
+        html:not([data-theme="light"]) .vps-check {
+            background: #1a2e2a;
+            border-color: rgba(104, 211, 145, 0.35);
+        }
+        html:not([data-theme="light"]) .vps-note {
+            color: #9ae6b4;
+        }
+        html:not([data-theme="light"]) .vps-check-btn {
+            background: #2c7a6e;
+        }
+        html:not([data-theme="light"]) .vps-check-btn:hover:not(:disabled) {
+            background: #38a169;
+        }
+        html:not([data-theme="light"]) .vps-meta {
+            color: #8892a4;
+        }
+        html:not([data-theme="light"]) .vps-meta strong {
+            color: #cbd5e1;
+        }
     </style>
 </head>
 <body>
@@ -1338,6 +1443,23 @@
             <button class="sidebar-logout" onclick="logOut()">
                 <i class="fas fa-sign-out-alt"></i> Log Out
             </button>
+        </div>
+    </div>
+
+    <!-- ── VPS Status Check (above Continue Watching) ── -->
+    <div class="vps-check-wrap">
+        <div class="vps-check">
+            <p class="vps-note">
+                You have limited downloads and streams so first check server is active or not.
+            </p>
+            <button class="vps-check-btn" id="checkVpsBtn" type="button">
+                <span class="vps-dot" id="vpsDot" aria-hidden="true"></span>
+                <span id="vpsBtnLabel">Check Server Status</span>
+            </button>
+            <p class="vps-status" id="vpsStatus" role="status" aria-live="polite"></p>
+            <p class="vps-meta">
+                Server checked: <strong>103.165.11.199</strong> (ports 8080, 8081, 5000)
+            </p>
         </div>
     </div>
 
@@ -1813,6 +1935,124 @@
             } catch (_) {}
         }
 
+        /* ── VPS Status Check ── */
+        (function () {
+            var VPS_HOST = '103.165.11.199';
+            var VPS_PORTS = [8080, 8081, 5000];
+            var VPS_URLS = VPS_PORTS.map(function (port) {
+                return 'http://' + VPS_HOST + ':' + port + '/';
+            });
+
+            var DIRECT_TIMEOUT = 5000;
+            var PROXY_TIMEOUT  = 9000;
+
+            var vpsBtn    = document.getElementById('checkVpsBtn');
+            var vpsLabel  = document.getElementById('vpsBtnLabel');
+            var vpsDot    = document.getElementById('vpsDot');
+            var vpsStatus = document.getElementById('vpsStatus');
+
+            if (!vpsBtn) return;
+
+            var PROXIES = [
+                function (u) { return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u); },
+                function (u) { return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u); },
+                function (u) { return 'https://corsproxy.io/?url=' + encodeURIComponent(u); }
+            ];
+
+            function fetchWithTimeout(url, options, ms) {
+                return new Promise(function (resolve, reject) {
+                    var controller = new AbortController();
+                    var timer = setTimeout(function () {
+                        controller.abort();
+                        reject(new Error('timeout'));
+                    }, ms);
+                    var opts = Object.assign({}, options, { signal: controller.signal });
+                    fetch(url, opts).then(function (res) {
+                        clearTimeout(timer);
+                        resolve(res);
+                    }).catch(function (err) {
+                        clearTimeout(timer);
+                        reject(err);
+                    });
+                });
+            }
+
+            function directProbe(url) {
+                var probeUrl = url + '?_=' + Date.now();
+                return fetchWithTimeout(probeUrl, {
+                    mode: 'no-cors',
+                    cache: 'no-store',
+                    redirect: 'follow'
+                }, DIRECT_TIMEOUT).then(function () { return true; });
+            }
+
+            function proxyProbe(builder, url) {
+                var proxyUrl = builder(url);
+                return fetchWithTimeout(proxyUrl, {
+                    cache: 'no-store',
+                    redirect: 'follow'
+                }, PROXY_TIMEOUT).then(function (res) {
+                    if (!res.ok) throw new Error('bad status ' + res.status);
+                    return true;
+                });
+            }
+
+            function setVpsState(state, message) {
+                vpsDot.className = 'vps-dot' + (state ? ' ' + state : '');
+                vpsStatus.className = 'vps-status' + (state ? ' ' + state : '');
+                vpsStatus.textContent = message || '';
+            }
+
+            function probeUrl(url) {
+                return directProbe(url)
+                    .then(function () { return true; })
+                    .catch(function () {
+                        var i = 0;
+                        function next() {
+                            if (i >= PROXIES.length) return false;
+                            var builder = PROXIES[i++];
+                            return proxyProbe(builder, url)
+                                .then(function () { return true; })
+                                .catch(function () { return next(); });
+                        }
+                        return next();
+                    });
+            }
+
+            function runVpsCheck() {
+                vpsBtn.disabled = true;
+                vpsLabel.textContent = 'Checking…';
+                setVpsState('checking', '⏳ Contacting server on ports 8080, 8081, 5000…');
+
+                var index = 0;
+                function tryNext() {
+                    if (index >= VPS_URLS.length) {
+                        var time = new Date().toLocaleTimeString();
+                        setVpsState('offline', '❌ Server seems INACTIVE on all checked ports. Please wait a few minutes and try again. (' + time + ')');
+                        vpsBtn.disabled = false;
+                        vpsLabel.textContent = 'Check Server Status';
+                        return;
+                    }
+                    var url = VPS_URLS[index++];
+                    probeUrl(url).then(function (online) {
+                        if (online) {
+                            var time = new Date().toLocaleTimeString();
+                            setVpsState('online', '✅ Server is ACTIVE (port ' + VPS_PORTS[index - 1] + ') — you can continue. (' + time + ')');
+                            vpsBtn.disabled = false;
+                            vpsLabel.textContent = 'Check Server Status';
+                        } else {
+                            tryNext();
+                        }
+                    }).catch(function () {
+                        tryNext();
+                    });
+                }
+                tryNext();
+            }
+
+            vpsBtn.addEventListener('click', runVpsCheck);
+        })();
+
         /* ── Theme Toggle ── */
         function handleThemeToggle(checkbox) {
             const isDark = checkbox.checked;
@@ -1864,7 +2104,6 @@
         }
 
         function closeImageZoom(event) {
-            // Close only if the click is directly on the overlay background or the close button
             if (event && event.target !== document.getElementById('image-zoom-overlay') &&
                 event.target !== document.querySelector('.image-zoom-close')) {
                 return;
