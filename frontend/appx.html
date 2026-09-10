@@ -24,7 +24,6 @@
     <script src="./access-control.js"></script>
     <script src="./blockX.js"></script>
     <script src="./push-subscribe.js" defer></script>
-    <!-- AdSense auto-ads: keeps anchor, vignette, in-page running -->
 
 <style>
         /* ── Profile badge (pic only) ── */
@@ -1303,19 +1302,13 @@
         .vps-status {
             margin: 0.75rem 0 0;
             min-height: 1.3em;
-            font-size: 0.82rem;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 700;
             line-height: 1.5;
         }
         .vps-status.checking { color: #a16207; }
         .vps-status.online   { color: #15803d; }
         .vps-status.offline  { color: #b91c1c; }
-        .vps-meta {
-            margin: 0.5rem 0 0;
-            font-size: 0.72rem;
-            color: #718096;
-            line-height: 1.5;
-        }
         @keyframes vpsPulse {
             0%, 100% { opacity: 1; transform: scale(1); }
             50%      { opacity: 0.45; transform: scale(0.8); }
@@ -1333,12 +1326,6 @@
         }
         html:not([data-theme="light"]) .vps-check-btn:hover:not(:disabled) {
             background: #38a169;
-        }
-        html:not([data-theme="light"]) .vps-meta {
-            color: #8892a4;
-        }
-        html:not([data-theme="light"]) .vps-meta strong {
-            color: #cbd5e1;
         }
     </style>
 </head>
@@ -1457,9 +1444,6 @@
                 <span id="vpsBtnLabel">Check Server Status</span>
             </button>
             <p class="vps-status" id="vpsStatus" role="status" aria-live="polite"></p>
-            <p class="vps-meta">
-                Server checked: <strong>103.165.11.199</strong> (ports 8080, 8081, 5000)
-            </p>
         </div>
     </div>
 
@@ -1935,16 +1919,10 @@
             } catch (_) {}
         }
 
-        /* ── VPS Status Check ── */
+        /* ── VPS Status Check (Single HTTPS Endpoint) ── */
         (function () {
-            var VPS_HOST = '103.165.11.199';
-            var VPS_PORTS = [8080, 8081, 5000];
-            var VPS_URLS = VPS_PORTS.map(function (port) {
-                return 'http://' + VPS_HOST + ':' + port + '/';
-            });
-
-            var DIRECT_TIMEOUT = 5000;
-            var PROXY_TIMEOUT  = 9000;
+            var STATUS_URL = 'https://web.afrahtafreeh.site';
+            var FETCH_TIMEOUT = 5000; // 5 seconds max
 
             var vpsBtn    = document.getElementById('checkVpsBtn');
             var vpsLabel  = document.getElementById('vpsBtnLabel');
@@ -1952,12 +1930,6 @@
             var vpsStatus = document.getElementById('vpsStatus');
 
             if (!vpsBtn) return;
-
-            var PROXIES = [
-                function (u) { return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u); },
-                function (u) { return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u); },
-                function (u) { return 'https://corsproxy.io/?url=' + encodeURIComponent(u); }
-            ];
 
             function fetchWithTimeout(url, options, ms) {
                 return new Promise(function (resolve, reject) {
@@ -1977,77 +1949,41 @@
                 });
             }
 
-            function directProbe(url) {
-                var probeUrl = url + '?_=' + Date.now();
-                return fetchWithTimeout(probeUrl, {
-                    mode: 'no-cors',
-                    cache: 'no-store',
-                    redirect: 'follow'
-                }, DIRECT_TIMEOUT).then(function () { return true; });
-            }
-
-            function proxyProbe(builder, url) {
-                var proxyUrl = builder(url);
-                return fetchWithTimeout(proxyUrl, {
-                    cache: 'no-store',
-                    redirect: 'follow'
-                }, PROXY_TIMEOUT).then(function (res) {
-                    if (!res.ok) throw new Error('bad status ' + res.status);
-                    return true;
-                });
-            }
-
             function setVpsState(state, message) {
                 vpsDot.className = 'vps-dot' + (state ? ' ' + state : '');
                 vpsStatus.className = 'vps-status' + (state ? ' ' + state : '');
                 vpsStatus.textContent = message || '';
             }
 
-            function probeUrl(url) {
-                return directProbe(url)
-                    .then(function () { return true; })
-                    .catch(function () {
-                        var i = 0;
-                        function next() {
-                            if (i >= PROXIES.length) return false;
-                            var builder = PROXIES[i++];
-                            return proxyProbe(builder, url)
-                                .then(function () { return true; })
-                                .catch(function () { return next(); });
-                        }
-                        return next();
-                    });
-            }
-
             function runVpsCheck() {
                 vpsBtn.disabled = true;
                 vpsLabel.textContent = 'Checking…';
-                setVpsState('checking', '⏳ Contacting server on ports 8080, 8081, 5000…');
+                setVpsState('checking', 'Checking…');
 
-                var index = 0;
-                function tryNext() {
-                    if (index >= VPS_URLS.length) {
-                        var time = new Date().toLocaleTimeString();
-                        setVpsState('offline', '❌ Server seems INACTIVE on all checked ports. Please wait a few minutes and try again. (' + time + ')');
+                fetchWithTimeout(STATUS_URL, {
+                    method: 'GET',
+                    cache: 'no-store',
+                    headers: { 'Accept': 'application/json' }
+                }, FETCH_TIMEOUT)
+                    .then(function (response) {
+                        if (!response.ok) throw new Error('HTTP ' + response.status);
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        // Server is active if the JSON says "running"
+                        if (data && data.server_status === 'running') {
+                            setVpsState('online', 'Active');
+                        } else {
+                            setVpsState('offline', 'Inactive');
+                        }
+                    })
+                    .catch(function () {
+                        setVpsState('offline', 'Inactive');
+                    })
+                    .finally(function () {
                         vpsBtn.disabled = false;
                         vpsLabel.textContent = 'Check Server Status';
-                        return;
-                    }
-                    var url = VPS_URLS[index++];
-                    probeUrl(url).then(function (online) {
-                        if (online) {
-                            var time = new Date().toLocaleTimeString();
-                            setVpsState('online', '✅ Server is ACTIVE (port ' + VPS_PORTS[index - 1] + ') — you can continue. (' + time + ')');
-                            vpsBtn.disabled = false;
-                            vpsLabel.textContent = 'Check Server Status';
-                        } else {
-                            tryNext();
-                        }
-                    }).catch(function () {
-                        tryNext();
                     });
-                }
-                tryNext();
             }
 
             vpsBtn.addEventListener('click', runVpsCheck);
