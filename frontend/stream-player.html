@@ -1396,6 +1396,29 @@
                 document.getElementById('dl-limit-overlay').classList.add('active');
             }
 
+            function getLectureKey() {
+                const path = String(
+                    jsonFilePath || [platformPath, subjectName].filter(Boolean).join('/')
+                ).trim();
+                const hasLectureIndex = Number.isInteger(lectureIndex) && lectureIndex >= 0;
+                let title = '';
+
+                try {
+                    title = decodeURIComponent(videoTitle || '').trim();
+                } catch (_) {
+                    title = String(videoTitle || '').trim();
+                }
+
+                // Prefer the page's JSON path and index so the same lecture keeps
+                // one quota record when the user switches between S1/S2 or
+                // stream/download. Older links may not have an index, so title is
+                // the stable fallback for those links.
+                if (path && hasLectureIndex) return `${path}#${lectureIndex}`;
+                if (path && title) return `${path}#${title}`;
+                if (title) return title;
+                return String(streamUrl || downloadUrl || '').trim();
+            }
+
             window.claimProtectedMediaUrl = async function(rawUrl, action) {
                 if (!rawUrl) {
                     alert(`${action === 'stream' ? 'Stream' : 'Download'} URL not available`);
@@ -1428,9 +1451,16 @@
 
                     if (insertError) throw insertError;
 
+                    const lectureKey = getLectureKey();
+                    if (!lectureKey) throw new Error('Unable to identify the lecture');
+
                     const { data: claim, error: claimError } = await _mediaSupabase.rpc(
                         'claim_media_access',
-                        { p_code: code, p_action: action }
+                        {
+                            p_code: code,
+                            p_action: action,
+                            p_lecture_key: lectureKey
+                        }
                     );
 
                     if (claimError) throw claimError;
