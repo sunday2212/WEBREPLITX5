@@ -698,6 +698,47 @@
         .tg-steps code { background: rgba(34,158,217,.15); color: #229ED9; padding: .1rem .35rem; border-radius: 5px; }
         .tg-steps img { width: 100%; border-radius: 10px; border: 1px solid #30363d; display: block; }
 
+        /* ── Copy chip for @BotFather ── */
+        .copy-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .35rem;
+            background: rgba(34,158,217,.15);
+            color: #229ED9;
+            border: 1px solid rgba(34,158,217,.4);
+            border-radius: 8px;
+            padding: .12rem .55rem;
+            margin-left: .4rem;
+            font-size: .82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .2s, transform .15s;
+            vertical-align: middle;
+            font-family: inherit;
+            line-height: 1.4;
+        }
+        .copy-chip:hover { background: rgba(34,158,217,.3); transform: translateY(-1px); }
+        .copy-chip:active { transform: scale(.95); }
+        .copy-chip i { font-size: .82rem; }
+        .copy-chip.copied {
+            background: rgba(63,185,80,.18);
+            border-color: rgba(63,185,80,.5);
+            color: #3fb950;
+        }
+
+        /* ── Missing-image fallback ── */
+        .img-missing {
+            width: 100%;
+            padding: 1.5rem 1rem;
+            border: 1px dashed #30363d;
+            border-radius: 10px;
+            text-align: center;
+            color: #8b949e;
+            font-size: .85rem;
+            background: rgba(255,255,255,.02);
+        }
+        html[data-theme="light"] .img-missing { border-color: #cbd5e1; color: #64748b; }
+
     </style>
 </head>
 <body>
@@ -1680,27 +1721,38 @@
         </div>
     </div>
 
-    <!-- How to get bot token modal (replace the images with your own screenshots) -->
+    <!-- How to get bot token modal (uses local screenshots in ./botfather/) -->
     <div id="tg-howto-overlay" onclick="if(event.target===this)closeHowToModal()" data-testid="how-to-modal">
         <div id="tg-howto-box">
             <button id="tg-howto-close" onclick="closeHowToModal()" aria-label="Close" data-testid="how-to-close-btn">&times;</button>
             <h3><i class="fab fa-telegram-plane"></i> How to get your Bot Token</h3>
             <ol class="tg-steps">
                 <li>
-                    <p><b>Step 1.</b> Open Telegram, search for <b>@BotFather</b> and press <b>Start</b>.</p>
-                    <img src="https://picsum.photos/seed/botfather-step1/620/320" alt="Open BotFather" loading="lazy">
+                    <p><b>Step 1.</b> Open Telegram, search for
+                        <b>@BotFather</b><button type="button" class="copy-chip" id="copy-botfather-btn"
+                               onclick="copyBotFather(event)" title="Copy @BotFather"
+                               data-testid="copy-botfather-btn">
+                            <i class="fas fa-copy" id="copy-botfather-icon"></i>
+                            <span id="copy-botfather-tip">Copy</span>
+                        </button>
+                        and press <b>Start</b>.</p>
+                    <img src="./botfather/1.jpg" alt="Open BotFather and press Start" loading="lazy"
+                         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 1 not found (botfather/1.jpg)'}))">
                 </li>
                 <li>
                     <p><b>Step 2.</b> Send <b>/newbot</b>, then choose a name and a username that ends with <b>bot</b>.</p>
-                    <img src="https://picsum.photos/seed/botfather-step2/620/320" alt="Send /newbot" loading="lazy">
+                    <img src="./botfather/2.jpg" alt="Send /newbot to BotFather" loading="lazy"
+                         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 2 not found (botfather/2.jpg)'}))">
                 </li>
                 <li>
                     <p><b>Step 3.</b> BotFather replies with your <b>bot token</b> (like <code>123456789:ABC-DEF...</code>). Copy it.</p>
-                    <img src="https://picsum.photos/seed/botfather-step3/620/320" alt="Copy the token" loading="lazy">
+                    <img src="./botfather/3.jpg" alt="Copy the bot token" loading="lazy"
+                         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 3 not found (botfather/3.jpg)'}))">
                 </li>
                 <li>
                     <p><b>Step 4.</b> Open your new bot, press <b>Start</b> once, then paste the token here.</p>
-                    <img src="https://picsum.photos/seed/botfather-step4/620/320" alt="Start your bot" loading="lazy">
+                    <img src="./botfather/4.jpg" alt="Start your new bot" loading="lazy"
+                         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 4 not found (botfather/4.jpg)'}))">
                 </li>
             </ol>
             <button class="tg-action-btn" onclick="closeHowToModal()" data-testid="how-to-got-it-btn">Got it</button>
@@ -1849,6 +1901,54 @@
     function closeHowToModal() { const o = document.getElementById('tg-howto-overlay'); if (o) o.classList.remove('active'); }
     window.openHowToModal = openHowToModal;
     window.closeHowToModal = closeHowToModal;
+
+    // ── Copy "@BotFather" to clipboard ──
+    function copyBotFather(e) {
+        if (e) e.stopPropagation();
+
+        const btn = document.getElementById('copy-botfather-btn');
+        const icon = document.getElementById('copy-botfather-icon');
+        const tip = document.getElementById('copy-botfather-tip');
+        const text = '@BotFather';
+
+        const showDone = () => {
+            if (btn) btn.classList.add('copied');
+            if (icon) icon.className = 'fas fa-check';
+            if (tip) tip.textContent = 'Copied!';
+            setTimeout(() => {
+                if (btn) btn.classList.remove('copied');
+                if (icon) icon.className = 'fas fa-copy';
+                if (tip) tip.textContent = 'Copy';
+            }, 1800);
+        };
+
+        const fallback = () => {
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-1000px';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                ta.setSelectionRange(0, ta.value.length);
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showDone();
+            } catch (_) {
+                if (tip) tip.textContent = 'Copy failed';
+                setTimeout(() => { if (tip) tip.textContent = 'Copy'; }, 1800);
+            }
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(showDone).catch(fallback);
+        } else {
+            fallback();
+        }
+    }
+    window.copyBotFather = copyBotFather;
     </script>
 
 <script src="theme.js"></script>
