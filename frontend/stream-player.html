@@ -549,6 +549,155 @@
             background: #dc2626;
         }
 
+        /* ── Telegram delivery button + modal ── */
+        #get-telegram-btn {
+            background: #229ED9;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        #get-telegram-btn:hover {
+            background: #1b87ba;
+        }
+        #tg-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        #tg-overlay.active { display: flex; }
+        #tg-box {
+            background: #161b22;
+            border: 2px solid #229ED9;
+            border-radius: 16px;
+            padding: 1.75rem 1.5rem;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: dlPopIn .25s ease;
+        }
+        html[data-theme="light"] #tg-box { background: #fff; }
+        #tg-box .tg-icon { font-size: 2.75rem; color: #229ED9; margin-bottom: .5rem; }
+        #tg-box h3 { color: #229ED9; font-size: 1.2rem; margin-bottom: .5rem; }
+        #tg-box p { color: #94a3b8; font-size: .92rem; line-height: 1.5; margin-bottom: 1rem; }
+        html[data-theme="light"] #tg-box p { color: #475569; }
+        #tg-token-input {
+            width: 100%;
+            padding: .7rem .9rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            background: #0d1117;
+            color: #e6edf3;
+            font-size: .95rem;
+            margin-bottom: 1rem;
+            outline: none;
+        }
+        html[data-theme="light"] #tg-token-input { background: #f8fafc; color: #0f172a; border-color: #cbd5e1; }
+        #tg-token-input:focus { border-color: #229ED9; }
+        .tg-action-btn {
+            background: #229ED9;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: .65rem 1.6rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .2s;
+            width: 100%;
+        }
+        .tg-action-btn:disabled { opacity: .6; cursor: not-allowed; }
+        .tg-action-btn:hover:not(:disabled) { background: #1b87ba; }
+        #tg-close-x {
+            position: absolute;
+            top: 12px; right: 16px;
+            background: none; border: none;
+            color: #8b949e; font-size: 1.4rem; cursor: pointer;
+        }
+        #tg-msg { font-size: .9rem; margin-top: .75rem; min-height: 1.2rem; }
+        #tg-msg.ok { color: #3fb950; }
+        #tg-msg.err { color: #f87171; }
+
+        /* ── Player tabs (Get File In Telegram | Stream Online) ── */
+        .player-tabs {
+            display: flex;
+            gap: .5rem;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.04);
+            padding: .35rem;
+            border-radius: 12px;
+        }
+        html[data-theme="light"] .player-tabs { background: #eef2f7; }
+        .player-tab {
+            flex: 1;
+            display: flex; align-items: center; justify-content: center; gap: .5rem;
+            padding: .7rem .8rem;
+            border: none;
+            border-radius: 9px;
+            background: transparent;
+            color: #94a3b8;
+            font-size: .98rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .2s, color .2s;
+        }
+        .player-tab i { font-size: 1.05rem; }
+        .player-tab:hover { color: #e6edf3; }
+        html[data-theme="light"] .player-tab:hover { color: #0f172a; }
+        .player-tab.active { background: #229ED9; color: #fff; box-shadow: 0 4px 14px rgba(34,158,217,.35); }
+        #tab-stream.active { background: #3498db; box-shadow: 0 4px 14px rgba(52,152,219,.35); }
+
+        .player-panel { animation: dlPopIn .2s ease; }
+
+        /* ── Telegram inline panel ── */
+        .tg-panel-inner {
+            background: rgba(34,158,217,0.06);
+            border: 1px solid rgba(34,158,217,0.35);
+            border-radius: 14px;
+            padding: 1.6rem 1.3rem;
+            text-align: center;
+        }
+        .tg-panel-inner .tg-icon { font-size: 2.6rem; color: #229ED9; margin-bottom: .4rem; }
+        .tg-panel-inner h3 { color: #229ED9; font-size: 1.2rem; margin-bottom: .5rem; }
+        .tg-panel-inner p { color: #94a3b8; font-size: .93rem; line-height: 1.55; margin-bottom: 1rem; }
+        html[data-theme="light"] .tg-panel-inner p { color: #475569; }
+        #tg-token-row { max-width: 460px; margin: 0 auto 1rem; }
+        .tg-howto-link {
+            background: none; border: none; color: #229ED9;
+            font-size: .88rem; cursor: pointer; margin-top: .1rem; text-decoration: underline;
+        }
+        .tg-panel-inner .tg-action-btn { max-width: 460px; margin: 0 auto; display: block; }
+
+        /* ── How-to modal ── */
+        #tg-howto-overlay {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.7); z-index: 10000;
+            align-items: center; justify-content: center; padding: 1rem;
+        }
+        #tg-howto-overlay.active { display: flex; }
+        #tg-howto-box {
+            position: relative; background: #161b22; border: 2px solid #229ED9;
+            border-radius: 16px; padding: 1.6rem 1.4rem; max-width: 640px; width: 100%;
+            max-height: 88vh; overflow-y: auto; text-align: left;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+        }
+        html[data-theme="light"] #tg-howto-box { background: #fff; }
+        #tg-howto-box h3 { color: #229ED9; font-size: 1.2rem; margin-bottom: 1rem; text-align: center; }
+        #tg-howto-close {
+            position: absolute; top: 10px; right: 16px;
+            background: none; border: none; color: #8b949e; font-size: 1.6rem; cursor: pointer;
+        }
+        .tg-steps { list-style: none; padding: 0; margin: 0 0 1rem; }
+        .tg-steps li { margin-bottom: 1.2rem; }
+        .tg-steps p { color: #c9d1d9; font-size: .95rem; line-height: 1.5; margin-bottom: .5rem; }
+        html[data-theme="light"] .tg-steps p { color: #334155; }
+        .tg-steps code { background: rgba(34,158,217,.15); color: #229ED9; padding: .1rem .35rem; border-radius: 5px; }
+        .tg-steps img { width: 100%; border-radius: 10px; border: 1px solid #30363d; display: block; }
+
     </style>
 </head>
 <body>
@@ -590,6 +739,36 @@
             <div class="player-layout">
                 <!-- Main Video Section -->
                 <div class="main-video-section">
+                    <div class="player-tabs">
+                        <button class="player-tab" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            Get File In Telegram
+                        </button>
+                        <button class="player-tab active" id="tab-stream" onclick="switchPlayerTab('stream')" data-testid="tab-stream-online">
+                            <i class="fas fa-play-circle"></i>
+                            Stream Online
+                        </button>
+                    </div>
+
+                    <!-- Panel: Get File In Telegram -->
+                    <div id="telegram-panel" class="player-panel" style="display:none;" data-testid="telegram-panel">
+                        <div class="tg-panel-inner">
+                            <div class="tg-icon"><i class="fab fa-telegram-plane"></i></div>
+                            <h3 id="tg-title">Get file in Telegram</h3>
+                            <p id="tg-desc">Loading…</p>
+                            <div id="tg-token-row" style="display:none;">
+                                <input id="tg-token-input" type="text" placeholder="Paste your Telegram bot token" autocomplete="off" spellcheck="false" data-testid="telegram-token-input">
+                                <button type="button" class="tg-howto-link" onclick="openHowToModal()" data-testid="how-to-get-token-btn">
+                                    <i class="fas fa-circle-question"></i> How to get bot token?
+                                </button>
+                            </div>
+                            <button class="tg-action-btn" id="tg-action-btn" onclick="tgPrimaryAction()" disabled data-testid="telegram-action-btn">Please wait…</button>
+                            <div id="tg-msg" data-testid="telegram-msg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel: Stream Online (unchanged) -->
+                    <div id="stream-online-panel" class="player-panel" data-testid="stream-online-panel">
                     <div class="video-iframe-container" id="main-iframe-container">
                         <div class="loading">Loading video...</div>
                     </div>
@@ -618,6 +797,8 @@
                             DOWNLOAD - S2
                         </button>
                     </div>
+                    </div>
+
 
                 </div>
 
@@ -1498,6 +1679,177 @@
             </button>
         </div>
     </div>
+
+    <!-- How to get bot token modal (replace the images with your own screenshots) -->
+    <div id="tg-howto-overlay" onclick="if(event.target===this)closeHowToModal()" data-testid="how-to-modal">
+        <div id="tg-howto-box">
+            <button id="tg-howto-close" onclick="closeHowToModal()" aria-label="Close" data-testid="how-to-close-btn">&times;</button>
+            <h3><i class="fab fa-telegram-plane"></i> How to get your Bot Token</h3>
+            <ol class="tg-steps">
+                <li>
+                    <p><b>Step 1.</b> Open Telegram, search for <b>@BotFather</b> and press <b>Start</b>.</p>
+                    <img src="https://picsum.photos/seed/botfather-step1/620/320" alt="Open BotFather" loading="lazy">
+                </li>
+                <li>
+                    <p><b>Step 2.</b> Send <b>/newbot</b>, then choose a name and a username that ends with <b>bot</b>.</p>
+                    <img src="https://picsum.photos/seed/botfather-step2/620/320" alt="Send /newbot" loading="lazy">
+                </li>
+                <li>
+                    <p><b>Step 3.</b> BotFather replies with your <b>bot token</b> (like <code>123456789:ABC-DEF...</code>). Copy it.</p>
+                    <img src="https://picsum.photos/seed/botfather-step3/620/320" alt="Copy the token" loading="lazy">
+                </li>
+                <li>
+                    <p><b>Step 4.</b> Open your new bot, press <b>Start</b> once, then paste the token here.</p>
+                    <img src="https://picsum.photos/seed/botfather-step4/620/320" alt="Start your bot" loading="lazy">
+                </li>
+            </ol>
+            <button class="tg-action-btn" onclick="closeHowToModal()" data-testid="how-to-got-it-btn">Got it</button>
+        </div>
+    </div>
+
+    <script>
+    // ── Get File In Telegram (tab): register the user's bot token once (saved to
+    //    their Supabase profile via the PWA's Google-auth session), then deliver
+    //    the current video into their own bot with protect_content ON. No limits.
+    (function initTelegramDelivery() {
+        const { createClient } = supabase;
+        const _tgSb = createClient(SUPABASE_URL, SUPABASE_KEY);
+        const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+
+        function el(id) { return document.getElementById(id); }
+        function setMsg(t, k) { const m = el('tg-msg'); if (m) { m.textContent = t || ''; m.className = k || ''; } }
+
+        function genCode() {
+            const bytes = new Uint8Array(10);
+            crypto.getRandomValues(bytes);
+            return Array.from(bytes, b => CODE_ALPHABET[b % CODE_ALPHABET.length]).join('');
+        }
+
+        function extractTokenAndOrigin() {
+            const candidate = (typeof streamUrl === 'string' && streamUrl) ||
+                              (typeof downloadUrl === 'string' && downloadUrl) || '';
+            if (!candidate) return { token: null, origin: null };
+            let u;
+            try { u = new URL(candidate, window.location.href); } catch (_) { return { token: null, origin: null }; }
+            const patterns = [ /\/prepare\/([A-Za-z0-9_-]+)/, /\/api\/(?:generate|download)\/([A-Za-z0-9_-]+)/ ];
+            for (const re of patterns) { const m = u.pathname.match(re); if (m) return { token: m[1], origin: u.origin }; }
+            return { token: null, origin: u.origin };
+        }
+
+        async function getUser() {
+            const { data } = await _tgSb.auth.getSession();
+            return data && data.session ? data.session.user : null;
+        }
+
+        async function getSavedToken(userId) {
+            const { data, error } = await _tgSb.from('profiles').select('telegram_bot_token').eq('id', userId).maybeSingle();
+            if (error) return null;
+            return data && data.telegram_bot_token ? data.telegram_bot_token : null;
+        }
+
+        let _state = 'idle';   // 'register' | 'deliver'
+        let _loaded = false;
+
+        async function loadTelegramPanel(force) {
+            if (_loaded && !force) return;
+            _loaded = true;
+            setMsg('');
+            const btn = el('tg-action-btn');
+            const row = el('tg-token-row');
+            btn.disabled = true; btn.textContent = 'Please wait…';
+            row.style.display = 'none';
+            el('tg-desc').textContent = 'Checking your account…';
+
+            const user = await getUser();
+            if (!user) {
+                el('tg-title').textContent = 'Sign in required';
+                el('tg-desc').textContent = 'Please sign in to receive lectures inside your own Telegram bot.';
+                btn.style.display = 'none';
+                return;
+            }
+            btn.style.display = '';
+
+            const saved = await getSavedToken(user.id);
+            if (!saved) {
+                _state = 'register';
+                el('tg-title').textContent = 'Connect your Telegram bot';
+                el('tg-desc').innerHTML = 'Paste your Telegram <b>bot token</b> below (one-time setup). Not sure how? Tap “How to get bot token?”.';
+                row.style.display = '';
+                el('tg-token-input').value = '';
+                btn.textContent = 'Save bot token';
+                btn.disabled = false;
+            } else {
+                _state = 'deliver';
+                el('tg-title').textContent = 'Send this lecture to Telegram';
+                el('tg-desc').innerHTML = 'Your bot is connected. Tap below and this video is delivered into your Telegram bot with content protection ON — <b>no daily limit</b>.';
+                row.style.display = 'none';
+                btn.textContent = 'Send to my Telegram';
+                btn.disabled = false;
+            }
+        }
+        window._loadTelegramPanel = loadTelegramPanel;
+
+        window.tgPrimaryAction = async function() {
+            const btn = el('tg-action-btn');
+
+            if (_state === 'register') {
+                const token = el('tg-token-input').value.trim();
+                if (!/^\d{6,}:[A-Za-z0-9_-]{30,}$/.test(token)) { setMsg('That does not look like a valid bot token.', 'err'); return; }
+                btn.disabled = true; setMsg('Saving…', '');
+                const user = await getUser();
+                if (!user) { setMsg('Please sign in first.', 'err'); btn.disabled = false; return; }
+                const { error } = await _tgSb.from('profiles').update({ telegram_bot_token: token }).eq('id', user.id);
+                if (error) { setMsg('Could not save your token. Please try again.', 'err'); btn.disabled = false; return; }
+                setMsg('✅ Bot token saved.', 'ok');
+                await loadTelegramPanel(true);
+                return;
+            }
+
+            if (_state !== 'deliver') return;
+
+            const { token, origin } = extractTokenAndOrigin();
+            if (!token || !origin) { setMsg('Could not identify this video.', 'err'); return; }
+            btn.disabled = true; setMsg('Sending to your Telegram bot…', '');
+
+            const user = await getUser();
+            if (!user) { setMsg('Please sign in first.', 'err'); btn.disabled = false; return; }
+
+            const code = genCode();
+            const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+            const { error: insErr } = await _tgSb.from('media_access_codes').insert({ code, user_id: user.id, expires_at: expiresAt });
+            if (insErr) { setMsg('Access could not be prepared. Try again.', 'err'); btn.disabled = false; return; }
+
+            try {
+                const resp = await fetch(`${origin}/api/telegram/${token}?access_code=${encodeURIComponent(code)}`);
+                const data = await resp.json();
+                if (data.success) setMsg('✅ ' + (data.message || 'Sent to your Telegram bot.'), 'ok');
+                else setMsg(data.error || 'Delivery failed. Please try again.', 'err');
+            } catch (_) { setMsg('Delivery service is unavailable right now.', 'err'); }
+            btn.disabled = false;
+        };
+    })();
+
+    // ── Player tabs: Get File In Telegram | Stream Online ──
+    function switchPlayerTab(which) {
+        const isTg = which === 'telegram';
+        const tgPanel = document.getElementById('telegram-panel');
+        const stPanel = document.getElementById('stream-online-panel');
+        const tgTab = document.getElementById('tab-telegram');
+        const stTab = document.getElementById('tab-stream');
+        if (tgPanel) tgPanel.style.display = isTg ? 'block' : 'none';
+        if (stPanel) stPanel.style.display = isTg ? 'none' : 'block';
+        if (tgTab) tgTab.classList.toggle('active', isTg);
+        if (stTab) stTab.classList.toggle('active', !isTg);
+        if (isTg && typeof window._loadTelegramPanel === 'function') window._loadTelegramPanel(false);
+    }
+    window.switchPlayerTab = switchPlayerTab;
+
+    // ── How to get bot token modal ──
+    function openHowToModal() { const o = document.getElementById('tg-howto-overlay'); if (o) o.classList.add('active'); }
+    function closeHowToModal() { const o = document.getElementById('tg-howto-overlay'); if (o) o.classList.remove('active'); }
+    window.openHowToModal = openHowToModal;
+    window.closeHowToModal = closeHowToModal;
+    </script>
 
 <script src="theme.js"></script>
 </body>
