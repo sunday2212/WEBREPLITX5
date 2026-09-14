@@ -781,18 +781,18 @@
                 <!-- Main Video Section -->
                 <div class="main-video-section">
                     <div class="player-tabs">
-                        <button class="player-tab" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
+                        <button class="player-tab active" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
                             <i class="fab fa-telegram-plane"></i>
                             Get File In Telegram
                         </button>
-                        <button class="player-tab active" id="tab-stream" onclick="switchPlayerTab('stream')" data-testid="tab-stream-online">
+                        <button class="player-tab" id="tab-stream" onclick="switchPlayerTab('stream')" data-testid="tab-stream-online">
                             <i class="fas fa-play-circle"></i>
                             Stream Online
                         </button>
                     </div>
 
-                    <!-- Panel: Get File In Telegram -->
-                    <div id="telegram-panel" class="player-panel" style="display:none;" data-testid="telegram-panel">
+                    <!-- Panel: Get File In Telegram (DEFAULT / shown first) -->
+                    <div id="telegram-panel" class="player-panel" data-testid="telegram-panel">
                         <div class="tg-panel-inner">
                             <div class="tg-icon"><i class="fab fa-telegram-plane"></i></div>
                             <h3 id="tg-title">Get file in Telegram</h3>
@@ -808,8 +808,8 @@
                         </div>
                     </div>
 
-                    <!-- Panel: Stream Online (unchanged) -->
-                    <div id="stream-online-panel" class="player-panel" data-testid="stream-online-panel">
+                    <!-- Panel: Stream Online (hidden by default) -->
+                    <div id="stream-online-panel" class="player-panel" style="display:none;" data-testid="stream-online-panel">
                     <div class="video-iframe-container" id="main-iframe-container">
                         <div class="loading">Loading video...</div>
                     </div>
@@ -1475,10 +1475,15 @@
         })();
 
         // Load next lectures when player is shown
+        // Also auto-load the Telegram panel since it's now the DEFAULT tab
         const originalShowPlayer = showPlayer;
         showPlayer = async function() {
             await originalShowPlayer();
             loadNextLectures();
+            // Default tab is Telegram — load its panel content
+            if (typeof window._loadTelegramPanel === 'function') {
+                try { window._loadTelegramPanel(false); } catch (_) {}
+            }
         };
 
         // No additional initialization needed - callbacks are set via data attributes
