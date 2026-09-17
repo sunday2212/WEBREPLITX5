@@ -1725,20 +1725,29 @@
             }
 
             function showLimitPopup(action) {
+                const limits = { stream: 7, download: 5, telegram: 15 };
+                const names  = { stream: 'Stream', download: 'Download', telegram: 'Telegram' };
+                const n = limits[action] || 5;
                 const title = document.querySelector('#dl-limit-box h3');
                 const description = document.querySelector('#dl-limit-box p');
-                const actionName = action === 'stream' ? 'stream' : 'download';
+                const badge = document.querySelector('#dl-limit-box .dl-count-badge');
 
-                if (title) {
-                    title.textContent = `Daily ${actionName === 'stream' ? 'Stream' : 'Download'} Limit Reached`;
-                }
+                if (title) title.textContent = `Daily ${names[action] || 'Media'} Limit Reached`;
+                if (badge) badge.textContent = `${n} / ${n}`;
                 if (description) {
-                    description.innerHTML = `You can ${actionName} up to <strong>5 ${actionName}s per day</strong>.<br>
-                        Your limit resets at <strong>midnight</strong>.<br>
-                        ${actionName === 'stream' ? 'You can still <strong>download</strong> available files.' : 'You can still <strong>watch</strong> available videos.'}`;
+                    let extra = '';
+                    if (action === 'stream') extra = 'You can still <strong>download</strong> or send to <strong>Telegram</strong>.';
+                    else if (action === 'download') extra = 'You can still <strong>watch</strong> or send to <strong>Telegram</strong>.';
+                    else if (action === 'telegram') extra = 'You can still <strong>watch</strong> or <strong>download</strong> lectures.';
+                    description.innerHTML = `You can ${(names[action] || 'use').toLowerCase()} up to
+                        <strong>${n} lecture${n === 1 ? '' : 's'} per 24 hours</strong>.<br>
+                        Your limit resets <strong>within 24 hours</strong>.<br>${extra}`;
                 }
                 document.getElementById('dl-limit-overlay').classList.add('active');
             }
+            // Shared with the "Get File In Telegram" tab so the Telegram daily
+            // limit shows the same popup as stream/download limits.
+            window.showLimitPopup = showLimitPopup;
 
             function getLectureKey() {
                 const path = String(
@@ -2089,16 +2098,16 @@
         window.copyBotFather = copyBotFather;
     </script>
 
-    <!-- Download limit popup -->
-    <div id="dl-limit-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-        <div id="dl-limit-box">
+    <!-- Daily limit popup (stream / download / telegram) -->
+    <div id="dl-limit-overlay" data-testid="limit-popup-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+        <div id="dl-limit-box" data-testid="limit-popup-box">
             <div class="dl-icon">🚫</div>
             <h3>Daily Media Limit Reached</h3>
             <div class="dl-count-badge">5 / 5</div>
-            <p>You can download or stream up to <strong>5 times per day</strong>.<br>
-               Your limit resets at <strong>midnight</strong>.<br>
-               Each action is tracked separately.</p>
-            <button id="dl-limit-close-btn" onclick="document.getElementById('dl-limit-overlay').classList.remove('active')">
+            <p>You can watch, download or send lectures to Telegram up to a set number
+               of times.<br>Your limit resets <strong>within 24 hours</strong>.<br>
+               Each action (stream / download / Telegram) is tracked separately.</p>
+            <button id="dl-limit-close-btn" data-testid="limit-popup-close-btn" onclick="document.getElementById('dl-limit-overlay').classList.remove('active')">
                 Got it
             </button>
         </div>
@@ -2236,7 +2245,7 @@
             } else {
                 _state = 'deliver';
                 el('tg-title').textContent = 'Send this lecture to Telegram';
-                el('tg-desc').innerHTML = 'Your bot is connected. Tap below and this video is delivered into your Telegram bot with content protection ON — <b>no daily limit</b>.';
+                el('tg-desc').innerHTML = 'Your bot is connected. Tap below and this video is delivered into your Telegram bot with content protection ON — <b>up to 15 lectures per 24 hours</b>.';
                 row.style.display = 'none';
                 btn.textContent = 'Send to my Telegram';
                 btn.disabled = false;
@@ -2271,51 +2280,73 @@
             const user = await getUser();
             if (!user) { setMsg('Please sign in first.', 'err'); return; }
 
-            // ══════════ MANDATORY 10-SECOND WAIT (cannot be skipped) ══════════
+            // ══════════ BACKGROUND SEND + ENGAGEMENT TIMER ══════════
+            // The file is sent to Telegram IMMEDIATELY, in the background,
+            // while the wait timer runs — so the timer no longer adds on top
+            // of the delivery time. When the timer ends we wait for the
+            // background send to finish (if it hasn't already) and ALWAYS
+            // notify the real result (success or the exact error).
             _busy = true;
             btn.disabled = true;
 
+            // 1) Fire the delivery right away (does not block the timer).
+            const deliveryPromise = (async () => {
+                const code = genCode();
+                const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+                const { error: insErr } = await _tgSb.from('media_access_codes')
+                    .insert({ code, user_id: user.id, expires_at: expiresAt });
+                if (insErr) return { ok: false, status: 0, error: 'Access could not be prepared. Try again.' };
+                try {
+                    const resp = await fetch(`${origin}/api/telegram/${token}?access_code=${encodeURIComponent(code)}`);
+                    let data = {};
+                    try { data = await resp.json(); } catch (_) {}
+                    return {
+                        ok: resp.ok && data.success === true,
+                        status: resp.status,
+                        message: data.message,
+                        error: data.error || 'Delivery failed. Please try again.'
+                    };
+                } catch (_) {
+                    return { ok: false, status: 0, error: 'Delivery service is unavailable right now.' };
+                }
+            })();
+            deliveryPromise.catch(() => {});   // no uncaught rejection
+
+            // 2) Run the engagement countdown concurrently with the send.
             let remaining = TG_WAIT_SECONDS;
             const paint = () => {
                 btn.innerHTML = '<i class="fas fa-hourglass-half"></i> Please wait ' + remaining + 's…';
                 setMsg('Preparing your file for Telegram… ' + remaining + 's', 'wait');
             };
             paint();
+            await new Promise((resolve) => {
+                const t = setInterval(() => {
+                    remaining--;
+                    if (remaining > 0) { paint(); return; }
+                    clearInterval(t);
+                    resolve();
+                }, 1000);
+            });
 
-            const waitTimer = setInterval(async () => {
-                remaining--;
-                if (remaining > 0) { paint(); return; }
+            // 3) Timer done — wait for the background send to finish if the
+            //    queue made it slower than the timer ("timer grows with queue").
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Finishing…';
+            setMsg('Almost done — delivering to your Telegram…', 'wait');
+            const result = await deliveryPromise;
 
-                clearInterval(waitTimer);
+            // 4) Always notify the real outcome.
+            if (result.ok) {
+                setMsg('✅ ' + (result.message || 'Video sent successfully to your Telegram bot.'), 'ok');
+            } else if (result.status === 429) {
+                if (typeof window.showLimitPopup === 'function') window.showLimitPopup('telegram');
+                setMsg(result.error, 'err');
+            } else {
+                setMsg(result.error, 'err');
+            }
 
-                // Timer finished — now actually deliver
-                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Sending…';
-                setMsg('Sending to your Telegram bot…', '');
-
-                const code = genCode();
-                const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
-                const { error: insErr } = await _tgSb.from('media_access_codes').insert({ code, user_id: user.id, expires_at: expiresAt });
-                if (insErr) {
-                    setMsg('Access could not be prepared. Try again.', 'err');
-                    btn.textContent = 'Send to my Telegram';
-                    btn.disabled = false;
-                    _busy = false;
-                    return;
-                }
-
-                try {
-                    const resp = await fetch(`${origin}/api/telegram/${token}?access_code=${encodeURIComponent(code)}`);
-                    const data = await resp.json();
-                    if (data.success) setMsg('✅ ' + (data.message || 'Sent to your Telegram bot.'), 'ok');
-                    else setMsg(data.error || 'Delivery failed. Please try again.', 'err');
-                } catch (_) {
-                    setMsg('Delivery service is unavailable right now.', 'err');
-                }
-
-                btn.textContent = 'Send to my Telegram';
-                btn.disabled = false;
-                _busy = false;
-            }, 1000);
+            btn.textContent = 'Send to my Telegram';
+            btn.disabled = false;
+            _busy = false;
         };
     })();
     </script>
