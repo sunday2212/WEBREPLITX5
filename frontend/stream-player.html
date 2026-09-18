@@ -1980,7 +1980,7 @@
             content.style.display = 'none';
             setPlayerTabsEnabled(false);   // user cannot jump away / back to skip
 
-            const TOTAL_MS = 30000;
+            const TOTAL_MS = 45000;
             const started  = Date.now();
             const CIRC     = 2 * Math.PI * 52;   // r = 52
 
@@ -1988,7 +1988,7 @@
                 ring.style.strokeDasharray  = CIRC;
                 ring.style.strokeDashoffset = 0;
             }
-            if (numEl) numEl.textContent = '30';
+            if (numEl) numEl.textContent = '45';
 
             const tick = function () {
                 const elapsed   = Date.now() - started;
@@ -2178,7 +2178,7 @@
         const _tgSb = createClient(SUPABASE_URL, SUPABASE_KEY);
         const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
-        const TG_WAIT_SECONDS = 10;   // mandatory wait before sending
+        const TG_WAIT_SECONDS = 30;   // mandatory wait before sending
 
         function el(id) { return document.getElementById(id); }
         function setMsg(t, k) { const m = el('tg-msg'); if (m) { m.textContent = t || ''; m.className = k || ''; } }
