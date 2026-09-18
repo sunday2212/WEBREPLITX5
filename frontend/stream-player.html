@@ -1978,7 +1978,7 @@
             content.style.display = 'none';
             setPlayerTabsEnabled(false);   // user cannot jump away / back to skip
 
-            const TOTAL_MS = 15000;
+            const TOTAL_MS = 30000;
             const started  = Date.now();
             const CIRC     = 2 * Math.PI * 52;   // r = 52
 
@@ -1986,7 +1986,7 @@
                 ring.style.strokeDasharray  = CIRC;
                 ring.style.strokeDashoffset = 0;
             }
-            if (numEl) numEl.textContent = '15';
+            if (numEl) numEl.textContent = '30';
 
             const tick = function () {
                 const elapsed   = Date.now() - started;
