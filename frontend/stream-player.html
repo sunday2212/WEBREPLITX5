@@ -2311,7 +2311,7 @@
                          onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 3 not found (botfather/3.jpg)'}))">
                 </li>
                 <li>
-                    <p><b>Step 4.</b> Open your new bot, press <b>Start</b> once, then paste the token here.</p>
+                    <p><b>Step 4.</b> Open your new bot, press <b>/Start</b> once, then paste the token here.</p>
                     <img src="./botfather/4x.jpg" alt="Start your new bot" loading="lazy"
                          onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-missing',textContent:'Screenshot 4 not found (botfather/4.jpg)'}))">
                 </li>
@@ -2399,7 +2399,7 @@
             } else {
                 _state = 'deliver';
                 el('tg-title').textContent = 'Send this lecture to Telegram';
-                el('tg-desc').innerHTML = 'Your bot is connected. Tap below and this video is delivered into your Telegram bot with content protection ON — <b>up to 15 lectures per 24 hours</b>.';
+                el('tg-desc').innerHTML = 'Your bot is connected. Tap below and this video is delivered into your Telegram bot — <b>up to 15 lectures per 24 hours</b>.';
                 row.style.display = 'none';
                 btn.textContent = 'Send to my Telegram';
                 btn.disabled = false;
