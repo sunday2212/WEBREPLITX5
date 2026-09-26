@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nextpulse-v93';
+const CACHE_NAME = 'nextpulse-v94';
 const urlsToCache = [
   './',
   './index.html',
