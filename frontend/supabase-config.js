@@ -1,5 +1,5 @@
 const SUPABASE_URL  = 'https://supabase.afrahtafreeh.site';
-const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyAgCiAgICAicm9sZSI6ICJhbm9uIiwKICAgICJpc3MiOiAic3VwYWJhc2UtZGVtbyIsCiAgICAiaWF0IjogMTY0MTc2OTIwMCIsCiAgICAiZXhwIjogMTc5OTUzNTYwMAp9.dc_X5iR_VP_qT0zsiyj_I_OZ2T9FtRU2BBNWN8Bu4GE';
+const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzkwMzQxOTU4LCJleHAiOjIxMDU3MDE5NTh9.5WNJZ1OlWwCs6B2-1VBN-LTZUAJiicslTyu2RCdTlUA';
 const VPS_API       = 'https://api.afrahtafreeh.site';
 
 // Expose the same public configuration to shared modules loaded by pages
