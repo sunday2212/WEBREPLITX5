@@ -403,7 +403,7 @@
         }
 
         /* ══════════════════════════════════════════════════════════════
-           ── STREAM 15s COUNTDOWN GATE ──
+           ── STREAM COUNTDOWN GATE ──
            ══════════════════════════════════════════════════════════════ */
         .stream-countdown {
             display: flex;
@@ -827,26 +827,6 @@
         #tab-stream.active { background: #3498db; box-shadow: 0 4px 14px rgba(52,152,219,.35); }
         .player-tab:disabled { opacity: .45; cursor: not-allowed; }
 
-        /* ── TEMPORARY: locked "Stream Online" tab ── */
-        .player-tab.locked {
-            opacity: .6;
-            cursor: not-allowed;
-        }
-        .player-tab.locked:hover { color: #94a3b8; background: transparent; }
-        html[data-theme="light"] .player-tab.locked:hover { color: #94a3b8; }
-        .tab-lock-badge {
-            font-size: .62rem;
-            font-weight: 800;
-            letter-spacing: .4px;
-            text-transform: uppercase;
-            background: #ef4444;
-            color: #fff;
-            padding: .12rem .45rem;
-            border-radius: 20px;
-            margin-left: .3rem;
-            white-space: nowrap;
-        }
-
         /* ── Telegram "works even if server is down" notice ── */
         .tg-notice {
             display: flex;
@@ -877,7 +857,7 @@
         .tg-notice strong { color: #229ED9; }
         .tg-notice .tg-notice-line + .tg-notice-line { margin-top: .35rem; }
 
-        /* ── Toast (used by the locked stream tab) ── */
+        /* ── Toast ── */
         #np-toast {
             position: fixed;
             left: 50%;
@@ -890,7 +870,7 @@
             padding: .85rem 1.1rem;
             background: #1e293b;
             color: #fff;
-            border-left: 5px solid #ef4444;
+            border-left: 5px solid #229ED9;
             border-radius: 10px;
             box-shadow: 0 14px 40px rgba(0, 0, 0, .45);
             font-size: .88rem;
@@ -902,7 +882,7 @@
             transition: opacity .25s ease, transform .25s ease;
         }
         #np-toast.show { opacity: 1; transform: translate(-50%, 0); }
-        #np-toast i { color: #ef4444; font-size: 1rem; flex-shrink: 0; }
+        #np-toast i { color: #229ED9; font-size: 1rem; flex-shrink: 0; }
 
         .player-panel { animation: dlPopIn .2s ease; }
 
@@ -1105,9 +1085,6 @@
                                     <div class="tg-notice-line">
                                         <strong>Use Telegram</strong> — your videos keep streaming even when the server is down.
                                     </div>
-                                    <div class="tg-notice-line" id="tg-lock-line">
-                                        <b>Stream Online is temporarily locked.</b> Please use Telegram below.
-                                    </div>
                                 </div>
                             </div>
 
@@ -1128,7 +1105,7 @@
                     <!-- Panel: Stream Online (hidden by default) -->
                     <div id="stream-online-panel" class="player-panel" style="display:none;" data-testid="stream-online-panel">
 
-                        <!-- ══════════ 15s COUNTDOWN GATE ══════════ -->
+                        <!-- ══════════ COUNTDOWN GATE ══════════ -->
                         <div id="stream-countdown" class="stream-countdown">
                             <div class="sc-ring">
                                 <svg viewBox="0 0 120 120" aria-hidden="true">
@@ -1352,7 +1329,7 @@
                 const watchBtn = document.getElementById('watch-s2-btn');
                 if (watchBtn) watchBtn.style.display = 'none';
 
-                // PDFs skip the 15s stream gate entirely
+                // PDFs skip the stream gate entirely
                 var _scEl = document.getElementById('stream-countdown');
                 var _scContent = document.getElementById('stream-content');
                 if (_scEl) _scEl.style.display = 'none';
@@ -2038,14 +2015,8 @@
         })();
 
         /* ══════════════════════════════════════════════════════════════════
-           ── TEMPORARY STREAM LOCK ──
-           Flip STREAM_LOCKED to false to re-enable "Stream Online".
-           While locked, the tab stays visible but cannot be opened and the
-           user is nudged to the Telegram delivery tab instead.
+           ── Small bottom toast (utility) ──
            ══════════════════════════════════════════════════════════════════ */
-        var STREAM_LOCKED = true;   // ← TEMPORARY LOCK
-
-        // Small bottom toast
         var _npToastTimer = null;
         function showToast(message, icon) {
             var t = document.getElementById('np-toast');
@@ -2056,7 +2027,7 @@
                 t.setAttribute('aria-live', 'polite');
                 document.body.appendChild(t);
             }
-            t.innerHTML = '<i class="fas fa-' + (icon || 'lock') + '"></i><span></span>';
+            t.innerHTML = '<i class="fas fa-' + (icon || 'info-circle') + '"></i><span></span>';
             t.querySelector('span').textContent = message;
             t.classList.add('show');
             clearTimeout(_npToastTimer);
@@ -2064,41 +2035,12 @@
         }
         window.showToast = showToast;
 
-        // Paint the locked state on load
-        (function applyStreamLock() {
-            var stTab = document.getElementById('tab-stream');
-            var lockLine = document.getElementById('tg-lock-line');
-
-            if (!STREAM_LOCKED) {
-                if (lockLine) lockLine.style.display = 'none';
-                return;
-            }
-
-            if (stTab) {
-                stTab.classList.add('locked');
-                stTab.setAttribute('aria-disabled', 'true');
-                stTab.title = 'Streaming is temporarily unavailable — please use Get File In Telegram.';
-                stTab.innerHTML = '<i class="fas fa-lock"></i> Stream Online' +
-                                  '<span class="tab-lock-badge">Locked</span>';
-            }
-
-            // Make sure the stream panel can never be shown while locked
-            var stPanel = document.getElementById('stream-online-panel');
-            if (stPanel) stPanel.style.display = 'none';
-        })();
-
-        function showStreamLockedNotice() {
-            showToast('Stream Online is temporarily locked. Please use “Get File In Telegram” — it works even when the server is down.', 'lock');
-        }
-        window.showStreamLockedNotice = showStreamLockedNotice;
-
         /* ══════════════════════════════════════════════════════════════════
-           ── STREAM ONLINE 15-SECOND COUNTDOWN GATE ──
-           Cannot be skipped: tabs are locked, the panel content stays
-           hidden until the timer reaches zero, and re-entering the tab
-           keeps the remaining time running.
+           ── STREAM ONLINE COUNTDOWN GATE ──
+           The panel content stays hidden until the timer reaches zero,
+           and re-entering the tab keeps the remaining time running.
            ══════════════════════════════════════════════════════════════════ */
-        window._streamUnlocked     = false;   // true once the 15s wait is done
+        window._streamUnlocked     = false;   // true once the wait is done
         window._streamTimerRunning = false;   // true while the countdown runs
         window._tabsLocked         = false;   // locks tab buttons during countdown
 
@@ -2161,14 +2103,8 @@
 
         // ── Player tabs: Get File In Telegram | Stream Online ──
         function switchPlayerTab(which) {
-            // Block any tab switching while the 15s stream gate is running
+            // Block any tab switching while the stream gate is running
             if (window._tabsLocked && which !== 'stream') return;
-
-            // ── TEMPORARY LOCK: Stream Online stays closed ──
-            if (which === 'stream' && STREAM_LOCKED) {
-                showStreamLockedNotice();
-                return;   // stay on the Telegram tab
-            }
 
             const isTg  = which === 'telegram';
             const tgPanel = document.getElementById('telegram-panel');
@@ -2184,7 +2120,7 @@
             if (isTg) {
                 if (typeof window._loadTelegramPanel === 'function') window._loadTelegramPanel(false);
             } else {
-                // Stream Online → mandatory 15 second wait before revealing player
+                // Stream Online → mandatory wait before revealing player
                 if (!window._streamUnlocked) {
                     startStreamCountdown();
                 } else {
