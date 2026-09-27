@@ -797,7 +797,7 @@
         #tg-msg.err { color: #f87171; }
         #tg-msg.wait { color: #229ED9; font-weight: 700; }
 
-        /* ── Player tabs (Get File In Telegram | Stream Online) ── */
+        /* ── Player tabs (Stream Online | Get File In Telegram) ── */
         .player-tabs {
             display: flex;
             gap: .5rem;
@@ -1064,18 +1064,18 @@
                     </div>
 
                     <div class="player-tabs">
-                        <button class="player-tab active" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
-                            <i class="fab fa-telegram-plane"></i>
-                            Get File In Telegram
-                        </button>
-                        <button class="player-tab" id="tab-stream" onclick="switchPlayerTab('stream')" data-testid="tab-stream-online">
+                        <button class="player-tab active" id="tab-stream" onclick="switchPlayerTab('stream')" data-testid="tab-stream-online">
                             <i class="fas fa-play-circle"></i>
                             Stream Online
                         </button>
+                        <button class="player-tab" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            Get File In Telegram
+                        </button>
                     </div>
 
-                    <!-- Panel: Get File In Telegram (DEFAULT / shown first) -->
-                    <div id="telegram-panel" class="player-panel" data-testid="telegram-panel">
+                    <!-- Panel: Get File In Telegram (switchable) -->
+                    <div id="telegram-panel" class="player-panel" style="display:none;" data-testid="telegram-panel">
                         <div class="tg-panel-inner">
 
                             <!-- ── Notification: Telegram keeps working when the server is down ── -->
@@ -1102,8 +1102,8 @@
                         </div>
                     </div>
 
-                    <!-- Panel: Stream Online (hidden by default) -->
-                    <div id="stream-online-panel" class="player-panel" style="display:none;" data-testid="stream-online-panel">
+                    <!-- Panel: Stream Online (DEFAULT / shown first) -->
+                    <div id="stream-online-panel" class="player-panel" style="display:block;" data-testid="stream-online-panel">
 
                         <!-- ══════════ COUNTDOWN GATE ══════════ -->
                         <div id="stream-countdown" class="stream-countdown">
@@ -1112,10 +1112,10 @@
                                     <circle class="sc-ring-bg" cx="60" cy="60" r="52"></circle>
                                     <circle class="sc-ring-fg" id="sc-ring-progress" cx="60" cy="60" r="52"></circle>
                                 </svg>
-                                <div class="sc-number" id="sc-number">15</div>
+                                <div class="sc-number" id="sc-number">30</div>
                             </div>
                             <h3>Preparing your stream…</h3>
-                            <p>Please wait while we set up a secure connection. The player will unlock automatically.</p>
+                            <p>Please wait while we set up a secure connection. The player will unlock automatically. You can switch to <strong>Telegram</strong> while you wait.</p>
                             <span class="sc-lock"><i class="fas fa-lock"></i> Do not close or refresh this page</span>
                         </div>
 
@@ -1755,15 +1755,14 @@
         })();
 
         // Load next lectures when player is shown
-        // Also auto-load the Telegram panel since it's now the DEFAULT tab
+        // Stream Online is the default tab → start its gate immediately.
         const originalShowPlayer = showPlayer;
         showPlayer = async function() {
             await originalShowPlayer();
             loadNextLectures();
-            // Default tab is Telegram — load its panel content
-            if (typeof window._loadTelegramPanel === 'function') {
-                try { window._loadTelegramPanel(false); } catch (_) {}
-            }
+            // Stream Online is the default tab → kick off the 30s gate right away.
+            // Telegram panel content loads lazily the first time its tab is tapped.
+            switchPlayerTab('stream');
         };
 
         // No additional initialization needed - callbacks are set via data attributes
@@ -2037,20 +2036,12 @@
 
         /* ══════════════════════════════════════════════════════════════════
            ── STREAM ONLINE COUNTDOWN GATE ──
-           The panel content stays hidden until the timer reaches zero,
-           and re-entering the tab keeps the remaining time running.
+           The panel content stays hidden until the timer reaches zero.
+           The countdown is timestamp-based, so switching to Telegram and
+           coming back cannot skip or restart it.
            ══════════════════════════════════════════════════════════════════ */
         window._streamUnlocked     = false;   // true once the wait is done
         window._streamTimerRunning = false;   // true while the countdown runs
-        window._tabsLocked         = false;   // locks tab buttons during countdown
-
-        function setPlayerTabsEnabled(enabled) {
-            window._tabsLocked = !enabled;
-            const tgTab = document.getElementById('tab-telegram');
-            const stTab = document.getElementById('tab-stream');
-            if (tgTab) tgTab.disabled = !enabled;
-            if (stTab) stTab.disabled = !enabled;
-        }
 
         function startStreamCountdown() {
             if (window._streamUnlocked || window._streamTimerRunning) return;
@@ -2066,17 +2057,18 @@
             window._streamTimerRunning = true;
             wrap.style.display = 'flex';
             content.style.display = 'none';
-            setPlayerTabsEnabled(false);   // user cannot jump away / back to skip
+            /* Tabs stay ENABLED on purpose — the user may switch to Telegram
+               while the gate runs and come back to the stream afterwards. */
 
-            const TOTAL_MS = 45000;
+            const TOTAL_MS = 30000;                 // 30 seconds
             const started  = Date.now();
-            const CIRC     = 2 * Math.PI * 52;   // r = 52
+            const CIRC     = 2 * Math.PI * 52;      // r = 52
 
             if (ring) {
                 ring.style.strokeDasharray  = CIRC;
                 ring.style.strokeDashoffset = 0;
             }
-            if (numEl) numEl.textContent = '45';
+            if (numEl) numEl.textContent = '30';
 
             const tick = function () {
                 const elapsed   = Date.now() - started;
@@ -2092,7 +2084,12 @@
                     window._streamUnlocked     = true;
                     wrap.style.display = 'none';
                     content.style.display = 'block';
-                    setPlayerTabsEnabled(true);
+
+                    const stTab = document.getElementById('tab-stream');
+                    if (stTab && !stTab.classList.contains('active') &&
+                        typeof showToast === 'function') {
+                        showToast('Stream is ready — tap "Stream Online" to watch.', 'play-circle');
+                    }
                 }
             };
 
@@ -2101,11 +2098,8 @@
         }
         window.startStreamCountdown = startStreamCountdown;
 
-        // ── Player tabs: Get File In Telegram | Stream Online ──
+        // ── Player tabs: Stream Online (default) | Get File In Telegram ──
         function switchPlayerTab(which) {
-            // Block any tab switching while the stream gate is running
-            if (window._tabsLocked && which !== 'stream') return;
-
             const isTg  = which === 'telegram';
             const tgPanel = document.getElementById('telegram-panel');
             const stPanel = document.getElementById('stream-online-panel');
@@ -2120,13 +2114,14 @@
             if (isTg) {
                 if (typeof window._loadTelegramPanel === 'function') window._loadTelegramPanel(false);
             } else {
-                // Stream Online → mandatory wait before revealing player
+                const wrap    = document.getElementById('stream-countdown');
+                const content = document.getElementById('stream-content');
                 if (!window._streamUnlocked) {
-                    startStreamCountdown();
+                    startStreamCountdown();               // no-op if already running
+                    if (wrap)    wrap.style.display    = 'flex';
+                    if (content) content.style.display = 'none';
                 } else {
-                    const wrap = document.getElementById('stream-countdown');
-                    const content = document.getElementById('stream-content');
-                    if (wrap) wrap.style.display = 'none';
+                    if (wrap)    wrap.style.display    = 'none';
                     if (content) content.style.display = 'block';
                 }
             }
