@@ -827,6 +827,33 @@
         #tab-stream.active { background: #3498db; box-shadow: 0 4px 14px rgba(52,152,219,.35); }
         .player-tab:disabled { opacity: .45; cursor: not-allowed; }
 
+        /* ── Locked (temporarily disabled) tab ── */
+        .player-tab.locked,
+        .player-tab:disabled.locked {
+            opacity: 1;
+            cursor: not-allowed;
+            color: #7d8794;
+            background: rgba(148, 163, 184, 0.12);
+        }
+        html[data-theme="light"] .player-tab.locked { color: #7a8798; background: #e2e8f0; }
+        .player-tab.locked:hover { color: #7d8794; transform: none; }
+        html[data-theme="light"] .player-tab.locked:hover { color: #7a8798; }
+        .player-tab .lock-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+            font-size: .7rem;
+            font-weight: 800;
+            letter-spacing: .3px;
+            text-transform: uppercase;
+            background: rgba(148, 163, 184, .22);
+            color: #94a3b8;
+            padding: .12rem .45rem;
+            border-radius: 20px;
+            line-height: 1.4;
+        }
+        html[data-theme="light"] .player-tab .lock-badge { background: #cbd5e1; color: #475569; }
+
         /* ── Telegram "works even if server is down" notice ── */
         .tg-notice {
             display: flex;
@@ -1068,9 +1095,18 @@
                             <i class="fas fa-play-circle"></i>
                             Stream Online
                         </button>
-                        <button class="player-tab" id="tab-telegram" onclick="switchPlayerTab('telegram')" data-testid="tab-get-telegram">
-                            <i class="fab fa-telegram-plane"></i>
+
+                        <!-- ══════════ TEMPORARILY LOCKED TAB ══════════
+                             The Telegram tab is disabled on purpose. Remove the
+                             `disabled` attribute (or set TELEGRAM_TAB_LOCKED = false
+                             in the script below) to re-enable it. -->
+                        <button class="player-tab locked" id="tab-telegram" onclick="switchPlayerTab('telegram')"
+                                data-testid="tab-get-telegram" disabled
+                                aria-disabled="true"
+                                title="Telegram delivery is temporarily unavailable">
+                            <i class="fas fa-lock"></i>
                             Get File In Telegram
+                            <span class="lock-badge">Locked</span>
                         </button>
                     </div>
 
@@ -1171,6 +1207,35 @@
         const streamUrlX = urlParams.get('streamx');
         const downloadUrlX = urlParams.get('downloadx');
         const videoTitle = urlParams.get('title') || (contentType === 'pdf' ? 'PDF Document' : 'Lecture Video');
+
+        /* ══════════════════════════════════════════════════════════════════
+           ── TEMPORARY TELEGRAM LOCK ──
+           Set TELEGRAM_TAB_LOCKED = false to re-enable the
+           "Get File In Telegram" tab. While true, the tab is disabled,
+           greyed out with a "Locked" badge, and all Telegram actions are
+           short-circuited (panel loader + primary action + tab switch).
+           ══════════════════════════════════════════════════════════════════ */
+        const TELEGRAM_TAB_LOCKED = true;
+
+        (function applyTelegramLockState() {
+            const tgTab = document.getElementById('tab-telegram');
+            const tgPanel = document.getElementById('telegram-panel');
+            if (TELEGRAM_TAB_LOCKED) {
+                if (tgTab) {
+                    tgTab.disabled = true;
+                    tgTab.classList.add('locked');
+                    tgTab.setAttribute('aria-disabled', 'true');
+                    tgTab.setAttribute('title', 'Telegram delivery is temporarily unavailable');
+                }
+                // Make sure the Telegram panel can never be the visible one
+                if (tgPanel) tgPanel.style.display = 'none';
+            } else if (tgTab) {
+                tgTab.disabled = false;
+                tgTab.classList.remove('locked');
+                tgTab.removeAttribute('aria-disabled');
+                tgTab.removeAttribute('title');
+            }
+        })();
 
         // ── Random server rotation helpers ────────────────────────────────────
         (function initServerRotation() {
@@ -1855,7 +1920,7 @@
                     const { data: sessionData, error: sessionError } = await _mediaSupabase.auth.getSession();
                     if (sessionError) throw sessionError;
 
-                    const user = sessionData?.session?.user;
+                    const user = data?.session?.user;
                     if (!user) {
                         alert('Please sign in before opening protected media.');
                         return null;
@@ -2101,6 +2166,17 @@
         // ── Player tabs: Stream Online (default) | Get File In Telegram ──
         function switchPlayerTab(which) {
             const isTg  = which === 'telegram';
+
+            /* ── TEMPORARY TELEGRAM LOCK ──
+               Hard guard: even if the button is force-enabled via devtools,
+               the Telegram panel cannot be opened while the lock is on. */
+            if (isTg && TELEGRAM_TAB_LOCKED) {
+                if (typeof showToast === 'function') {
+                    showToast('Telegram delivery is temporarily unavailable. Please use Stream or Download.', 'lock');
+                }
+                return;
+            }
+
             const tgPanel = document.getElementById('telegram-panel');
             const stPanel = document.getElementById('stream-online-panel');
             const tgTab   = document.getElementById('tab-telegram');
@@ -2108,7 +2184,7 @@
 
             if (tgPanel) tgPanel.style.display = isTg ? 'block' : 'none';
             if (stPanel) stPanel.style.display = isTg ? 'none' : 'block';
-            if (tgTab) tgTab.classList.toggle('active', isTg);
+            if (tgTab) tgTab.classList.toggle('active', isTg && !TELEGRAM_TAB_LOCKED);
             if (stTab) stTab.classList.toggle('active', !isTg);
 
             if (isTg) {
@@ -2256,6 +2332,7 @@
     //    their Supabase profile via the PWA's Google-auth session), then deliver
     //    the current video into their own bot with protect_content ON. No limits.
     //    A mandatory 10-second wait is enforced before delivery.
+    //    NOTE: While TELEGRAM_TAB_LOCKED is true, this whole flow is disabled.
     (function initTelegramDelivery() {
         const { createClient } = supabase;
         const _tgSb = createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -2299,6 +2376,15 @@
         let _busy = false;     // blocks double-clicks / timer re-entry
 
         async function loadTelegramPanel(force) {
+            /* ── TEMPORARY TELEGRAM LOCK ── */
+            if (typeof TELEGRAM_TAB_LOCKED !== 'undefined' && TELEGRAM_TAB_LOCKED) {
+                el('tg-title').textContent = 'Temporarily unavailable';
+                el('tg-desc').textContent = 'Telegram delivery is temporarily unavailable. Please use Stream Online or Download.';
+                const b = el('tg-action-btn'); if (b) { b.style.display = 'none'; b.disabled = true; }
+                const r = el('tg-token-row'); if (r) r.style.display = 'none';
+                return;
+            }
+
             if (_busy) return;              // never refresh the panel mid-countdown
             if (_loaded && !force) return;
             _loaded = true;
@@ -2339,6 +2425,14 @@
         window._loadTelegramPanel = loadTelegramPanel;
 
         window.tgPrimaryAction = async function() {
+            /* ── TEMPORARY TELEGRAM LOCK ── */
+            if (typeof TELEGRAM_TAB_LOCKED !== 'undefined' && TELEGRAM_TAB_LOCKED) {
+                if (typeof showToast === 'function') {
+                    showToast('Telegram delivery is temporarily unavailable.', 'lock');
+                }
+                return;
+            }
+
             const btn = el('tg-action-btn');
             if (_busy) return;
 
