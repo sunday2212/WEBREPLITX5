@@ -827,6 +827,14 @@
         #tab-stream.active { background: #3498db; box-shadow: 0 4px 14px rgba(52,152,219,.35); }
         .player-tab:disabled { opacity: .45; cursor: not-allowed; }
 
+        /* ── TEMPORARY LOCK look for the Telegram tab ── */
+        #tab-telegram.tg-locked {
+            opacity: .5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        #tab-telegram.tg-locked:hover { color: #94a3b8; }
+
         /* ── Telegram "works even if server is down" notice ── */
         .tg-notice {
             display: flex;
@@ -2181,6 +2189,65 @@
             }
         }
         window.copyBotFather = copyBotFather;
+
+        /* ══════════════════════════════════════════════════════════════════
+           ── TEMPORARY LOCK ON THE TELEGRAM TAB ──
+           The Telegram tab is locked for a short period when the page loads.
+           Everything else (Stream Online, downloads, etc.) works normally.
+           Change LOCK_SECONDS below to adjust the lock duration.
+           ══════════════════════════════════════════════════════════════════ */
+        (function initTelegramTemporaryLock() {
+            var LOCK_SECONDS = 60;   // ← how long to lock the Telegram tab (seconds)
+
+            var tab = document.getElementById('tab-telegram');
+            if (!tab) return;
+
+            var originalHTML = tab.innerHTML;
+            var remaining    = LOCK_SECONDS;
+            var unlocked     = false;
+
+            function paint() {
+                tab.innerHTML = '<i class="fas fa-lock"></i> Telegram (' + remaining + 's)';
+            }
+
+            // Apply the lock
+            tab.disabled = true;
+            tab.classList.add('tg-locked');
+            tab.setAttribute('aria-disabled', 'true');
+            tab.title = 'Telegram option is temporarily locked';
+            paint();
+
+            var timer = setInterval(function () {
+                remaining--;
+
+                if (remaining > 0) { paint(); return; }
+
+                // Unlock
+                clearInterval(timer);
+                unlocked = true;
+                tab.disabled = false;
+                tab.classList.remove('tg-locked');
+                tab.removeAttribute('aria-disabled');
+                tab.title = '';
+                tab.innerHTML = originalHTML;
+
+                if (typeof showToast === 'function') {
+                    showToast('Telegram option is now available.', 'unlock');
+                }
+            }, 1000);
+
+            // Safety net: block any programmatic switch to Telegram while locked
+            var _origSwitch = window.switchPlayerTab;
+            window.switchPlayerTab = function (which) {
+                if (which === 'telegram' && !unlocked) {
+                    if (typeof showToast === 'function') {
+                        showToast('Telegram option is temporarily locked. Please wait ' + remaining + 's.', 'lock');
+                    }
+                    return;
+                }
+                return _origSwitch.apply(this, arguments);
+            };
+        })();
     </script>
 
     <!-- Daily limit popup (stream / download / telegram) -->
