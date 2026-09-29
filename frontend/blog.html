@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#14243a">
-    <meta name="description" content="Medical News & Updates — Afrahtafreeh — FMG Protest, NEET PG 2026, NMC Policy, AI in Medicine">
-    <title>Medical News — Afrahtafreeh</title>
+    <meta name="description" content="Medical News & Updates — Afrahtafreeh — NEET PG 2026 Result & Cut-offs, MCC Counselling, FMGE October 2026 Exemption, NMC Seat Expansion, AIIMS AI Research">
+    <title>Medical News — NEET PG 2026 Result, Counselling & FMGE Updates | Afrahtafreeh</title>
     <link rel="manifest" href="./app.webmanifest">
     <link rel="apple-touch-icon" href="./icon-192.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to Google ad servers so Auto ads render faster -->
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -355,12 +360,94 @@
             .footer-nav a { display: block; width: 100%; text-align: center; }
             .blog-page-header { padding: 22px 20px 18px; }
         }
+
+        /* ── READING PROGRESS BAR (engagement: encourages full read) ── */
+        #reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0%;
+            background: linear-gradient(90deg, var(--teal), var(--maroon), var(--gold));
+            z-index: 10000;
+            transition: width 0.1s linear;
+            box-shadow: 0 1px 4px rgba(20,30,48,0.2);
+        }
+
+        /* ── RELATED STORIES (Read Next) — more pageviews per session ── */
+        .related-stories {
+            margin-top: 26px;
+            padding-top: 22px;
+            border-top: 1.5px dashed var(--line-strong);
+        }
+        .related-stories-title {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 700;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--maroon);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .related-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: var(--card-alt);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            transition: var(--transition);
+        }
+        .related-item:hover {
+            border-color: var(--maroon-soft);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-2px);
+            background: #fff;
+        }
+        .related-item .r-tag {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal-deep);
+        }
+        .related-item .r-head {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: var(--ink);
+            line-height: 1.35;
+        }
+        .related-item:hover .r-head { color: var(--maroon); }
+        @media (max-width: 600px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
     </style>
     
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
      crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "Afrahtafreeh — The White Army",
+  "url": "https://afrahtafreeh.site/",
+  "description": "Medical Education News covering NEET PG, MCC counselling, FMGE, NMC policy and AIIMS research for Indian medical students and doctors."
+}
+</script>
 </head>
 <body>
+    <div id="reading-progress" aria-hidden="true"></div>
     <div class="container">
 
         <!-- Masthead -->
@@ -388,242 +475,80 @@
             <p>In‑depth coverage of protests, policy, admissions, and clinical research affecting Indian medicos. Updated regularly.</p>
         </div>
 
-        <!-- ══════════════════════════════════════════════ -->
-        <!-- ARTICLE 1: FMG PROTEST (NEW, placed first)   -->
-        <!-- ══════════════════════════════════════════════ -->
-        <article class="article-card" id="fmg-protest">
-            <div class="article-hero">
-                <img
-                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900&q=85"
-                    alt="Foreign Medical Graduates protest outside NBEMS office over FMGE transparency"
-                    loading="eager"
-                    onerror="this.src='https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=85'"
-                >
-                <div class="article-hero-overlay"></div>
-                <div class="article-hero-meta">
-                    <span class="article-cat-tag tag--fmg">FMG Protest</span>
-                    <span class="article-hero-date">Updated August 2026</span>
-                </div>
-            </div>
-            <div class="article-body">
-                <h2 class="article-headline">FMGE 2026 Pass Rate Hits Record Low — Foreign Medical Graduates Protest, Move Supreme Court Over Exam Transparency</h2>
-                <p class="article-deck">After the FMGE June 2026 result showed one of the lowest qualifying rates in the exam's history, foreign-trained doctors protested outside the NBEMS office and petitioned the Supreme Court, demanding access to question papers, response sheets, and answer keys.</p>
-                <div class="article-byline">
-                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
-                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;Updated August 2026</span>
-                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;7 min read</span>
-                </div>
-                <div class="article-content">
-                    <p>The Foreign Medical Graduate Examination (FMGE) — the mandatory licensing test every Indian citizen with a foreign medical degree must clear before practising in India — is once again at the centre of a transparency dispute. The exam is conducted twice a year by the National Board of Examinations in Medical Sciences (NBEMS) on behalf of the National Medical Commission (NMC), and clearing it is the only route to provisional or permanent medical registration in the country for graduates of foreign universities.</p>
-
-                    <div class="article-key-points">
-                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
-                        <ul>
-                            <li>FMGE June 2026 was held on June 28, 2026; roughly 38,000 candidates appeared</li>
-                            <li>Only about 4,000–4,500 candidates qualified — a pass rate near 12.3%, among the lowest in the exam's history</li>
-                            <li>FMGs protested outside the NBEMS office in early July 2026 over the sudden format shift and lack of transparency</li>
-                            <li>A Supreme Court petition seeking disclosure of question papers, response sheets and answer keys was admitted in late July 2026</li>
-                            <li>NBEMS has historically declined to release answer keys, citing question-bank confidentiality</li>
-                        </ul>
-                    </div>
-
-                    <h3>What Happened With the June 2026 Result</h3>
-                    <p>FMGE June 2026 was conducted on June 28, and results were declared in early July. Of the roughly 38,000 candidates who appeared, only around 12.3% qualified — one of the steepest year-on-year drops the exam has recorded, and by some counts the lowest pass percentage in its recent history. Candidates and educators who spoke to reporters pointed to a noticeably harder question paper and inconsistent testing conditions across centres, on top of the exam's already brutal historical failure rate.</p>
-                    <p>FMG groups, including the All FMGs Association (AFA), said on social media that the pass percentage had fallen by close to half compared with the previous three to four sessions, and argued the paper had become tougher than NEET PG or INI-CET in places. They also flagged that FMGE carries an exam fee while candidates still cannot access a published answer key to check their own performance.</p>
-
-                    <h3>Why "Transparency" Is the Real Flashpoint</h3>
-                    <p>Unlike most large national entrance exams in India, FMGE does not publish a provisional answer key, does not release response sheets, and offers candidates no formal channel to challenge a question or request re-evaluation. A candidate receives only a final scorecard — pass or fail — with no way to see which questions they got wrong.</p>
-                    <p>This isn't new. FMG associations have been asking NBE to release the answer key since at least 2024, when the board's leadership publicly defended withholding it, arguing that publishing questions would let coaching centres reverse-engineer the exam pattern and that the question bank itself needed to stay confidential. That justification has never fully satisfied candidates, especially as pass rates swung sharply from year to year with no public data trail to explain why.</p>
-
-                    <div class="article-pullquote">
-                        <p>One Ukraine-trained graduate who spoke to reporters outside the NBEMS office put it simply: some universities abroad may have weaker standards, and some students may under-prepare — but an exam that decides a doctor's entire career should still let candidates see where they went wrong.</p>
-                        <cite>— Paraphrased from an FMG candidate's account, Newslaundry, July 2026</cite>
-                    </div>
-
-                    <h3>The Supreme Court Petition</h3>
-                    <p>In late July 2026, the Supreme Court issued notice to the Centre, the NMC, and NBE on a petition seeking disclosure of the FMGE June 2026 question papers, candidates' response sheets, and the official answer key. The petition asks for a fair and effective mechanism to verify scores and seek re-evaluation where discrepancies are found. It also seeks forward-looking directions: publication of provisional answer keys for future sessions, an independent panel to review candidate objections, and disclosure of final answer keys going forward — essentially asking the court to bring FMGE in line with how most other competitive exams in India are run.</p>
-
-                    <h3>A Pattern of Recurring FMG Protests</h3>
-                    <p>The July 2026 protest is the latest in a string of FMG mobilisations over the past year, most of them about process rather than the exam's difficulty itself:</p>
-                    <ul>
-                        <li><strong>November 2025:</strong> Hundreds of FMGs protested outside the NMC office over long-pending FMGE eligibility certificates, some delayed by one to two years, which blocked them from even sitting the exam.</li>
-                        <li><strong>March 2026:</strong> FMGs protested an NMC notice requiring physical, onsite "compensation" training for classes taken online during the COVID-19 pandemic — years after the fact. Following representations from FMG associations, the NMC agreed by mid-March 2026 to revise the guideline and continue accepting existing compensation certificates.</li>
-                        <li><strong>June 2026:</strong> Reports emerged of state medical councils, including in Rajasthan, allegedly withholding registration for FMGs over the same online-class compensation issue, despite the March clarification.</li>
-                    </ul>
-                    <p>Taken together, these episodes point to a recurring complaint from the FMG community: that rules, certificates, and now exam outcomes are decided through internal processes with little visibility for the candidates whose careers depend on them.</p>
-
-                    <h3>What FMGE Pass Rates Have Looked Like</h3>
-                    <p>FMGE's qualifying mark has stayed fixed at 150 out of 300, but the share of candidates clearing it has swung considerably session to session:</p>
-                    <ul>
-                        <li><strong>December 2022:</strong> around 32% qualified</li>
-                        <li><strong>December 2024:</strong> 29.62% qualified (13,149 of 44,390 candidates)</li>
-                        <li><strong>June 2025:</strong> 18.61% qualified (6,707 of 36,034 candidates)</li>
-                        <li><strong>December 2025:</strong> 23.37% qualified, a modest recovery</li>
-                        <li><strong>June 2026:</strong> approximately 12.3% qualified — the steepest drop in recent sessions</li>
-                    </ul>
-                    <p>With no published answer key or item-level data, candidates have no independent way to know whether these swings reflect changing difficulty, evaluation changes, or something else — which is precisely the gap the current Supreme Court petition is trying to close.</p>
-
-                    <h3>What Happens Next</h3>
-                    <p>The Centre, NMC, and NBE now have to respond to the Supreme Court notice. If the court rules in the petitioners' favour, it could force NBEMS to publish answer keys and open a re-evaluation window for FMGE for the first time — a structural change FMG associations have sought for years. Until then, the June 2026 results stand, and affected candidates are left to plan their next attempt without knowing exactly where they lost marks.</p>
-
-                    <hr class="article-divider">
-                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This is a developing story; court proceedings and NBE responses may change the details above. Sources: Medical Dialogues, Newslaundry, Careers360. Last updated: August 2026.</em></p>
-                </div>
-                <div class="article-footer">
-                    <div class="article-share">
-                        <span class="share-label">Share</span>
-                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=FMGE+2026+Pass+Rate+Hits+Record+Low+%E2%80%94+FMGs+Protest%2C+Move+Supreme+Court&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a class="share-btn" href="https://wa.me/?text=FMGE+2026+Pass+Rate+Hits+Record+Low+%E2%80%94+FMGs+Protest%2C+Move+Supreme+Court+Over+Exam+Transparency" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#fmg-protest').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
-                    </div>
-                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
-                </div>
-            </div>
-        </article>
-
-        <div class="article-sep">More Articles</div>
-
-        <!-- ══════════════════════════════════════════════ -->
-        <!-- ARTICLE 2: CJP PROTEST (existing)            -->
-        <!-- ══════════════════════════════════════════════ -->
-        <article class="article-card" id="cjp-protest">
-            <div class="article-hero">
-                <img
-                    src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=85"
-                    alt="Doctors protesting — CJP remarks on medical negligence"
-                    loading="lazy"
-                    onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85'"
-                >
-                <div class="article-hero-overlay"></div>
-                <div class="article-hero-meta">
-                    <span class="article-cat-tag tag--protest">Protest · CJP</span>
-                    <span class="article-hero-date">July 30, 2026</span>
-                </div>
-            </div>
-            <div class="article-body">
-                <h2 class="article-headline">Resident Doctors March to Supreme Court Over CJP Remarks on Medical Negligence</h2>
-                <p class="article-deck">Thousands of resident doctors across the country staged a walkout after the Chief Justice's observations during a medical negligence hearing were seen as broadly criminalising clinical practice.</p>
-                <div class="article-byline">
-                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
-                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 30, 2026</span>
-                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
-                </div>
-                <div class="article-content">
-                    <p>In one of the largest coordinated demonstrations by the medical community in recent years, resident doctors from major government hospitals across Delhi, Mumbai, Kolkata, and Chennai walked off the wards on July 30, 2026, in response to remarks made by the Chief Justice of India (CJP) during a high-profile medical negligence hearing at the Supreme Court.</p>
-                    <!-- (full content as before, but we keep it concise for brevity; actual content from original) -->
-                    <div class="article-key-points">
-                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
-                        <ul>
-                            <li>Walkout began at 6 AM across 30+ major government hospitals nationwide</li>
-                            <li>OPD services suspended; emergency and ICU care continued</li>
-                            <li>FORDA, IMA Resident Doctors' Association, and AIIMS RDA jointly called the strike</li>
-                            <li>Doctors demand written guidelines from judiciary before resuming</li>
-                            <li>MoHFW called an emergency meeting with IMA and resident doctor bodies</li>
-                        </ul>
-                    </div>
-                    <h3>What the CJP Said</h3>
-                    <p>During oral arguments in a bench hearing a petition filed by the family of a patient who died post-surgery at a private hospital in Lucknow, the Chief Justice remarked that "doctors cannot hide behind complex medical jargon to escape accountability," and suggested that criminal provisions should apply more broadly when outcomes are adverse despite families having paid large sums. The remarks, while not part of any formal order, circulated rapidly on medical social media within hours of the hearing.</p>
-                    <div class="article-pullquote">
-                        <p>"We are not against accountability — we welcome it. But accountability cannot mean that every death, regardless of circumstances, becomes a criminal case. Medicine is not engineering. Outcomes cannot always be guaranteed."</p>
-                        <cite>— Dr. Sanjay Mehta, President, FORDA</cite>
-                    </div>
-                    <h3>The Doctors' Demands</h3>
-                    <p>Protest organisers issued a five-point demand charter to the Ministry of Health and Family Welfare and the Supreme Court registry:</p>
-                    <ul>
-                        <li>Judicial clarification distinguishing gross negligence from adverse outcomes before next hearing</li>
-                        <li>Enactment of the Central Healthcare Protection Act within 90 days</li>
-                        <li>Mandatory mediation before any criminal complaint against a healthcare provider is registered</li>
-                        <li>Formation of an expert medical panel to assist courts in negligence adjudication</li>
-                        <li>Written assurance from MoHFW on protection of bona fide clinical decisions</li>
-                    </ul>
-                    <h3>Hospital Impact &amp; Government Response</h3>
-                    <p>OPD footfall at AIIMS New Delhi dropped to near-zero by 9 AM, with an estimated 8,000 patients turned away across affected hospitals by noon. Emergency services, intensive care units, and labour rooms were kept operational by senior faculty and on-call consultants. The Health Secretary convened an emergency meeting at Nirman Bhawan by 2 PM, and the Attorney General indicated the Supreme Court would issue a clarificatory statement the following morning.</p>
-                    <p>By the evening, the Supreme Court bench issued a press note clarifying that the CJP's oral remarks were "exploratory observations" and should not be read as laying down the law, and that no criminal liability arose from the day's proceedings. FORDA subsequently announced a 48-hour suspension of the strike, pending formal written communication from MoHFW.</p>
-                    <hr class="article-divider">
-                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This article will be updated as the situation develops. Last updated: July 30, 2026, 11:45 PM IST.</em></p>
-                </div>
-                <div class="article-footer">
-                    <div class="article-share">
-                        <span class="share-label">Share</span>
-                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=Resident+Doctors+March+Over+CJP+Remarks&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a class="share-btn" href="https://wa.me/?text=Resident+Doctors+March+to+Supreme+Court+Over+CJP+Remarks+on+Medical+Negligence" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#cjp-protest').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
-                    </div>
-                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
-                </div>
-            </div>
-        </article>
-
-        <div class="article-sep">More Articles</div>
-
-        <!-- ══════════════════════════════════════════════ -->
-        <!-- ARTICLE 3: NEET PG 2026                       -->
-        <!-- ══════════════════════════════════════════════ -->
+        <!-- ══════════════════════════ -->
+        <!-- ARTICLE 1: NEET PG 2026 RESULT (Sept 2026) -->
+        <!-- ══════════════════════════ -->
         <article class="article-card" id="neet-pg-2026">
             <div class="article-hero">
-                <img
-                    src="https://images.unsplash.com/photo-1588776814546-1ffedfeacafd?w=900&q=85"
-                    alt="NEET PG 2026 — medical exam results"
-                    loading="lazy"
-                    onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=85'"
-                >
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffedfeacafd?w=900&q=85" alt="NEET PG 2026 result declared by NBEMS with revised cut-offs" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=85'">
                 <div class="article-hero-overlay"></div>
                 <div class="article-hero-meta">
-                    <span class="article-cat-tag tag--neet">NEET PG 2026</span>
-                    <span class="article-hero-date">July 28, 2026</span>
+                    <span class="article-cat-tag tag--neet">NEET PG 2026 · Result</span>
+                    <span class="article-hero-date">September 29, 2026</span>
                 </div>
             </div>
             <div class="article-body">
-                <h2 class="article-headline">NEET PG 2026 Results Declared — Cut-offs Shift Sharply Across Specialties</h2>
-                <p class="article-deck">NMC releases the NEET PG 2026 merit list. Surgery, Paediatrics and Radiology see tightened cut-offs, while Psychiatry and Community Medicine remain more accessible for aspirants.</p>
+                <h2 class="article-headline">NEET PG 2026 Result Declared by NBEMS — General Cut-off at 262 Marks; Scorecards & Answer Keys From October 1</h2>
+                <p class="article-deck">The National Board of Examinations in Medical Sciences (NBEMS) has declared the NEET PG 2026 result following the September 5 re-examination for candidates affected by the Jaipur centre power failure. Qualifying cut-offs have been fixed at 262 marks for General/EWS, 244 for General-PwBD and 226 for reserved categories.</p>
                 <div class="article-byline">
                     <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
-                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 28, 2026</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 29, 2026</span>
                     <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;6 min read</span>
                 </div>
                 <div class="article-content">
-                    <p>The National Board of Examinations (NBE) declared the NEET PG 2026 results on July 28, 2026, with the official merit list available on the NBE portal. This year's examination, held on June 15, 2026, saw 2.18 lakh registered candidates — a record high — of whom approximately 1.94 lakh appeared.</p>
+                    <p>The long wait is over. NBEMS has officially declared the NEET PG 2026 result, clearing the way for the post-graduate medical admission season to begin. The declaration came after a re-examination was held on September 5, 2026 for a section of candidates whose exam was disrupted by a power failure at a Jaipur centre — a step NBEMS said was necessary to keep the process fair for every aspirant.</p>
+
                     <div class="article-key-points">
                         <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
                         <ul>
-                            <li>2.18 lakh registered; 1.94 lakh appeared — a record turnout</li>
-                            <li>General category cut-off: 50th percentile (unchanged from 2025)</li>
-                            <li>Surgery, Radiology, and Paediatrics see sharply higher competition scores</li>
-                            <li>Psychiatry, Community Medicine, and Family Medicine remain accessible</li>
-                            <li>MCC counselling Round 1 scheduled from August 18, 2026</li>
+                            <li>General / EWS qualifying cut-off: <strong>262 marks (50th percentile)</strong></li>
+                            <li>General-PwBD: <strong>244 marks (45th percentile)</strong></li>
+                            <li>SC / ST / OBC (including PwBD): <strong>226 marks (40th percentile)</strong></li>
+                            <li>Individual scorecards &amp; official answer keys available <strong>on or after October 1, 2026</strong></li>
+                            <li>Download portals: <strong>nbe.edu.in</strong> and <strong>natboard.edu.in</strong></li>
                         </ul>
                     </div>
-                    <h3>Cut-off Trends by Specialty</h3>
-                    <p>The overall qualifying cut-off remains at the 50th percentile for general category candidates, as mandated by NMC. However, the effective competition cut-off — the score needed to realistically compete for seats in sought-after specialties — has risen considerably this year.</p>
-                    <ul>
-                        <li><strong>General Surgery:</strong> Competition score rose by ~8 points year-on-year, driven by increased seats but even higher applicant quality</li>
-                        <li><strong>Radiodiagnosis:</strong> Continues to be the most sought-after specialty; competition scores at an all-time high</li>
-                        <li><strong>Paediatrics:</strong> Saw a 6-point rise in competition score, attributed to new AIIMS and government hospital seats</li>
-                        <li><strong>Psychiatry:</strong> Remains undersubscribed relative to seats; accessible in the 65th–70th percentile range</li>
-                        <li><strong>Community Medicine:</strong> Among the most accessible clinical branches; government hospitals prioritising these seats</li>
-                    </ul>
+
+                    <h3>The Cut-offs, Explained</h3>
+                    <p>NBEMS has set the qualifying percentiles in line with regulation: the 50th percentile for General and EWS candidates translates to 262 marks this year, the 45th percentile for General-PwBD candidates to 244 marks, and the 40th percentile for SC/ST/OBC candidates (including those under PwBD) to 226 marks. Clearing the cut-off makes a candidate eligible for counselling — it does not by itself guarantee a seat, which still depends on rank, category and choices filled during counselling.</p>
+
+                    <h3>Scorecards and Answer Keys From October 1</h3>
+                    <p>According to NBEMS, individual scorecards and the official answer keys will be made available for download on or after October 1, 2026 through the candidate portal. The answer key release is expected to include question IDs, response IDs and the evaluation scores, giving candidates a clear view of how their responses were marked.</p>
+
                     <div class="article-pullquote">
-                        <p>"The rising competition scores reflect the aspirational shift among MBBS graduates. More students are targeting surgical and diagnostic branches, which puts pressure on an already-limited seat pool."</p>
-                        <cite>— Dr. Priya Kapoor, Medical Education Analyst, NMC Advisory Committee</cite>
+                        <p>Clearing the NEET PG cut-off only opens the door to counselling. Your final seat depends on your rank, your category and — crucially — how carefully you fill your choices when MCC opens registration.</p>
+                        <cite>— Afrahtafreeh Editorial Desk</cite>
                     </div>
-                    <h3>Counselling Schedule</h3>
-                    <p>The Medical Counselling Committee (MCC) has released the provisional schedule for NEET PG 2026 counselling. Round 1 will open on August 18, 2026, covering 50% of all-India quota seats at government medical colleges. Candidates are advised to keep their documents ready — MBBS degree certificate, internship completion certificate, NMC registration, and category certificates where applicable.</p>
+
                     <h3>What Candidates Should Do Now</h3>
                     <ul>
-                        <li>Download and verify your scorecard on the NBE portal immediately</li>
-                        <li>Cross-check your percentile against previous years' closing ranks for your target specialty</li>
-                        <li>Complete online registration on the MCC portal before August 10, 2026 (Round 1 deadline)</li>
-                        <li>Prepare a preferred-college list across at least 3 specialties as a safety net</li>
-                        <li>Check state quota counselling schedules separately — these vary by state</li>
+                        <li>Download and safely save your scorecard the moment it goes live (October 1 onward)</li>
+                        <li>Note your percentile and All-India Rank; compare against last year's closing ranks for your target branch</li>
+                        <li>Keep documents ready for counselling — scorecard, admit card, MBBS degree/provisional certificate, internship completion certificate, medical registration and category/PwBD certificates</li>
+                        <li>Rely only on official notifications from NBEMS and MCC — avoid unofficial "agents" promising seats</li>
                     </ul>
+
                     <hr class="article-divider">
-                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>MCC counselling dates are tentative and subject to Supreme Court orders. Last updated: July 28, 2026.</em></p>
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>Cut-offs and dates are per the official NBEMS declaration. Always confirm on nbe.edu.in. Sources: NBEMS, Indian Express, The New Indian Express, Careerindia. Last updated: September 29, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#mcc-counselling">
+                            <span class="r-tag">Counselling · MCC</span>
+                            <span class="r-head">NEET PG 2026 Counselling: MCC Schedule Awaited — Documents & AIQ Seat Process</span>
+                        </a>
+                        <a class="related-item" href="#fmge-2026">
+                            <span class="r-tag">FMGE 2026</span>
+                            <span class="r-head">FMGE October 2026: 2021–22 Batch Seeks One-Time Exemption</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="article-footer">
                     <div class="article-share">
                         <span class="share-label">Share</span>
-                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NEET+PG+2026+Results+Declared&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a class="share-btn" href="https://wa.me/?text=NEET+PG+2026+Results+Declared+%E2%80%94+Cut-offs+Shift+Sharply+Across+Specialties" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NEET+PG+2026+Result+Declared+%E2%80%94+General+Cut-off+262&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=NEET+PG+2026+Result+Declared+%E2%80%94+General+Cut-off+262" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#neet-pg-2026').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
                     </div>
                     <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
@@ -633,69 +558,78 @@
 
         <div class="article-sep">More Articles</div>
 
-        <!-- ══════════════════════════════════════════════ -->
-        <!-- ARTICLE 4: NMC BOND POLICY                    -->
-        <!-- ══════════════════════════════════════════════ -->
-        <article class="article-card" id="nmc-bond">
+        <!-- ARTICLE 2: MCC COUNSELLING -->
+        <article class="article-card" id="mcc-counselling">
             <div class="article-hero">
-                <img
-                    src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=85"
-                    alt="NMC Rural Bond policy — medical policy document"
-                    loading="lazy"
-                    onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85'"
-                >
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85" alt="NEET PG 2026 MCC counselling registration and document checklist" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=85'">
                 <div class="article-hero-overlay"></div>
                 <div class="article-hero-meta">
-                    <span class="article-cat-tag tag--policy">NMC Policy</span>
-                    <span class="article-hero-date">July 25, 2026</span>
+                    <span class="article-cat-tag tag--policy">Counselling · MCC</span>
+                    <span class="article-hero-date">September 28, 2026</span>
                 </div>
             </div>
             <div class="article-body">
-                <h2 class="article-headline">NMC Mandates Rural Bond for PG Graduates — IMA Issues Strong Objection</h2>
-                <p class="article-deck">The National Medical Commission has formalised a one-year compulsory rural posting bond for all newly graduating postgraduate doctors. The IMA has issued a strongly worded objection, calling for an immediate rollback.</p>
+                <h2 class="article-headline">NEET PG 2026 Counselling: MCC Schedule Still Awaited — Full Document Checklist & AIQ Seat Process</h2>
+                <p class="article-deck">With the result out, all eyes are now on the Medical Counselling Committee (MCC), which is yet to release the official NEET PG 2026 counselling schedule. Here's exactly what to prepare so you're not caught off guard when registration opens.</p>
                 <div class="article-byline">
                     <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
-                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 25, 2026</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 28, 2026</span>
                     <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
                 </div>
                 <div class="article-content">
-                    <p>The National Medical Commission (NMC) published a gazette notification on July 24, 2026 making it mandatory for all doctors completing postgraduate medical education at government-funded institutions to serve a minimum of one year at a rural or semi-urban government health facility before being granted their PG degree certificate and NMC registration.</p>
+                    <p>The Medical Counselling Committee has not yet announced the dates for NEET PG 2026 counselling. Candidates are advised to monitor the official MCC portal at <strong>mcc.nic.in/pg-medical-counselling/</strong> for updates on registration, fee payment, choice filling and the seat matrix. The MCC conducts counselling for 50% of All-India Quota (AIQ) seats, while state authorities handle counselling for their respective state quotas.</p>
+
                     <div class="article-key-points">
                         <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
                         <ul>
-                            <li>One-year rural posting compulsory for all government-funded PG graduates from 2027 batch</li>
-                            <li>Applicable to MD, MS, and DNB degree holders from government medical colleges</li>
-                            <li>Private college PG graduates exempt — drawing sharp criticism from IMA</li>
-                            <li>Supreme Court has issued notice to NMC; stay hearing listed for August 6, 2026</li>
-                            <li>Monthly stipend set at ₹85,000 during rural posting period</li>
+                            <li>MCC counselling schedule for NEET PG 2026 is <strong>not yet released</strong></li>
+                            <li>MCC handles <strong>50% AIQ seats</strong>; states run their own quota counselling separately</li>
+                            <li>Official portal: <strong>mcc.nic.in/pg-medical-counselling/</strong></li>
+                            <li>Registration typically involves fee payment, choice filling and seat allotment rounds</li>
+                            <li>Keep both AIQ and state-quota options open as a safety strategy</li>
                         </ul>
                     </div>
-                    <h3>The NMC's Rationale</h3>
-                    <p>The NMC circular, signed by the Commission's executive director, states that the move is aimed at addressing the acute shortage of specialist doctors at Primary Health Centres (PHCs), Community Health Centres (CHCs), and District Hospitals across 12 states where the doctor-to-population ratio falls below 1:2,000. The Commission cited a 2025 WHO India study showing that rural areas receive only 30% of the country's specialist medical workforce despite housing 65% of its population.</p>
-                    <div class="article-pullquote">
-                        <p>"This policy singles out doctors educated in government institutions — who are already serving society through subsidised training — while exempting their private-sector counterparts. It is discriminatory, unworkable, and will drive talented candidates away from government medical colleges."</p>
-                        <cite>— Dr. Arvind Sharma, Secretary General, IMA</cite>
-                    </div>
-                    <h3>IMA's Objections</h3>
-                    <p>The Indian Medical Association filed a representation with the NMC and simultaneously moved the Supreme Court challenging the circular on constitutional grounds. Their primary objections include:</p>
+
+                    <h3>Documents You Must Keep Ready</h3>
                     <ul>
-                        <li>The circular selectively burdens government-college graduates, violating Article 14 (equality before law)</li>
-                        <li>Rural postings lack basic safety infrastructure — especially for female doctors posted in isolated locations</li>
-                        <li>The ₹85,000 monthly stipend is insufficient given the loan burden many PG students carry</li>
-                        <li>No mechanism exists for hardship exemptions for candidates with dependent family members</li>
-                        <li>The 12-month delay in full registration disadvantages government-college graduates in global job markets</li>
+                        <li>NEET PG 2026 scorecard and admit card</li>
+                        <li>MBBS degree certificate / provisional certificate</li>
+                        <li>Internship completion certificate</li>
+                        <li>Medical registration certificate (permanent/provisional)</li>
+                        <li>Category certificate (SC/ST/OBC/EWS), PwBD certificate or NRI documents, where applicable</li>
+                        <li>Valid photo ID and recent passport-size photographs</li>
                     </ul>
-                    <h3>Current Legal Status</h3>
-                    <p>The Supreme Court, on July 25, 2026, issued a notice to the NMC and the Ministry of Health asking them to respond within two weeks. The court has listed the matter for a stay hearing on August 6, 2026. Until then, the notification remains in effect, though no penalty clauses can be triggered before the first affected batch graduates in May 2027.</p>
+
+                    <div class="article-pullquote">
+                        <p>The single biggest avoidable mistake every counselling season is a missing or mismatched certificate. Verify names, dates and spellings across every document now — not on the last day of registration.</p>
+                        <cite>— Afrahtafreeh Counselling Desk</cite>
+                    </div>
+
+                    <h3>How to Approach Choice Filling</h3>
+                    <p>Once registration opens, prepare a realistic preference list rather than filling seats emotionally. Study previous years' closing ranks for your target branches and colleges, list a healthy mix of "dream", "realistic" and "safe" options, and never leave the choice list too short. Understand the rules for each round — fresh, upgradation and mop-up — before you lock your choices.</p>
+
                     <hr class="article-divider">
-                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This is a developing legal story. The SC hearing date is August 6, 2026. Last updated: July 25, 2026.</em></p>
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>Counselling dates are subject to official MCC notification. Rely only on mcc.nic.in. Sources: MCC, Times of India, Sunday Guardian. Last updated: September 28, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#neet-pg-2026">
+                            <span class="r-tag">NEET PG 2026 · Result</span>
+                            <span class="r-head">NEET PG 2026 Result Declared — General Cut-off at 262 Marks</span>
+                        </a>
+                        <a class="related-item" href="#nmc-seat-expansion">
+                            <span class="r-tag">NMC Policy</span>
+                            <span class="r-head">NMC Releases 2026-27 UG Seat Matrix; Govt Targets 75,000 New Seats</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="article-footer">
                     <div class="article-share">
                         <span class="share-label">Share</span>
-                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NMC+Mandates+Rural+Bond+for+PG+Graduates&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a class="share-btn" href="https://wa.me/?text=NMC+Mandates+Rural+Bond+for+PG+Graduates+%E2%80%94+IMA+Issues+Strong+Objection" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#nmc-bond').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NEET+PG+2026+Counselling+%E2%80%94+MCC+Schedule+Awaited%2C+Document+Checklist&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=NEET+PG+2026+Counselling+%E2%80%94+MCC+Schedule+Awaited%2C+Document+Checklist" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#mcc-counselling').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
                     </div>
                     <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
                 </div>
@@ -704,69 +638,290 @@
 
         <div class="article-sep">More Articles</div>
 
-        <!-- ══════════════════════════════════════════════ -->
-        <!-- ARTICLE 5: AIIMS AI RESEARCH                  -->
-        <!-- ══════════════════════════════════════════════ -->
-        <article class="article-card" id="aiims-ai">
+        <!-- ARTICLE 3: FMGE 2026 -->
+        <article class="article-card" id="fmge-2026">
             <div class="article-hero">
-                <img
-                    src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=85"
-                    alt="AI in medicine — AIIMS Delhi TB detection study"
-                    loading="lazy"
-                    onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=85'"
-                >
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900&q=85" alt="FMGE October 2026 foreign medical graduates seek exemption" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=85'">
                 <div class="article-hero-overlay"></div>
                 <div class="article-hero-meta">
-                    <span class="article-cat-tag tag--research">Research</span>
-                    <span class="article-hero-date">July 22, 2026</span>
+                    <span class="article-cat-tag tag--fmg">FMGE 2026</span>
+                    <span class="article-hero-date">September 26, 2026</span>
                 </div>
             </div>
             <div class="article-body">
-                <h2 class="article-headline">AIIMS Delhi AI Tool Outperforms Radiologists in Early TB Detection Study</h2>
-                <p class="article-deck">A new deep-learning model developed at AIIMS New Delhi correctly identified early-stage pulmonary tuberculosis from chest X-rays with 94% sensitivity — outperforming the radiologist panel in the blinded trial.</p>
+                <h2 class="article-headline">FMGE October 2026: Medicos Urge NMC & NBE to Grant One-Time Exemption for 2021–22 MBBS-Abroad Batch</h2>
+                <p class="article-deck">Ahead of the October 2026 FMGE, foreign medical graduates from the 2021–22 batch have appealed to the NMC and NBE for a one-time exemption, citing the exceptional disruption caused by the COVID-19 pandemic and the war in Ukraine during their study years.</p>
                 <div class="article-byline">
                     <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
-                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;July 22, 2026</span>
-                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;7 min read</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 26, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
                 </div>
                 <div class="article-content">
-                    <p>A landmark study published in the <em>Indian Journal of Medical Research</em> on July 21, 2026 has demonstrated that an artificial intelligence model developed entirely within India — at AIIMS New Delhi's Department of Radiodiagnosis — can detect early pulmonary tuberculosis on plain chest X-rays with a sensitivity of 94.2%, outperforming a panel of five senior radiologists who achieved a mean sensitivity of 87.4% on the same dataset.</p>
+                    <p>The Foreign Medical Graduate Examination (FMGE) is the mandatory licensing test that every Indian citizen holding a medical degree from a foreign university must clear before being allowed to practise in India. As the October 2026 session approaches, a section of candidates from the 2021–22 MBBS-abroad batch has renewed a long-standing demand: a one-time exemption or relaxation, recognising that their medical education was uniquely disrupted.</p>
+
                     <div class="article-key-points">
                         <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
                         <ul>
-                            <li>AI model sensitivity: 94.2% vs radiologist panel mean: 87.4%</li>
-                            <li>Specificity: 91.8% — low false positive rate critical for mass screening</li>
-                            <li>Trained on 1.2 lakh anonymised chest X-rays from 8 government hospitals</li>
-                            <li>Model runs on a ₹15,000 Raspberry Pi-class device — deployable at PHC level</li>
-                            <li>ICMR has approved a 3-state field trial beginning September 2026</li>
+                            <li>Candidates from the <strong>2021–22 MBBS-abroad batch</strong> are requesting a one-time FMGE exemption</li>
+                            <li>They cite COVID-19 online classes and the Ukraine war forcing mid-course transfers</li>
+                            <li>The plea is directed at the <strong>NMC and NBE</strong> ahead of the October 2026 exam</li>
+                            <li>As of now, <strong>no official policy change has been confirmed</strong></li>
+                            <li>FMGE remains twice-yearly; qualifying mark stays 150 out of 300</li>
                         </ul>
                     </div>
-                    <h3>How the Model Works</h3>
-                    <p>The model — named <strong>TBScan-India v2</strong> — is a convolutional neural network trained on 1.2 lakh de-identified chest X-rays sourced from eight government tertiary hospitals across five states. The dataset was curated over 18 months and labelled by a team of 12 radiologists, with consensus labels used as ground truth for training.</p>
-                    <p>Unlike earlier AI models that flagged any abnormality, TBScan-India v2 was specifically trained to identify the subtle early radiographic signs of pulmonary TB — including faint upper-lobe infiltrates, early cavity formation, and minimal pleural reaction — features that are frequently missed or reported as "equivocal" by general physicians in resource-limited settings.</p>
+
+                    <h3>Why the 2021–22 Batch Is Different</h3>
+                    <p>Students who began medicine abroad in 2021–22 faced an unusually turbulent path: prolonged online-only teaching during the pandemic, followed for many by the sudden displacement caused by the war in Ukraine, which forced transfers to universities in other countries mid-degree. Candidates argue that these back-to-back disruptions compromised the clinical exposure that FMGE assumes every graduate has received, and that a one-time relaxation would be a fair acknowledgement of circumstances beyond their control.</p>
+
                     <div class="article-pullquote">
-                        <p>"We deliberately trained on X-rays from district hospitals and PHCs — not just AIIMS-quality images. This model has to work in the real India, not just in a well-lit radiology suite with perfect equipment."</p>
-                        <cite>— Dr. Kavita Raghunathan, Principal Investigator, AIIMS Radiodiagnosis</cite>
+                        <p>We are not asking to skip the standard. We are asking the regulators to recognise that our clinical training was interrupted by a pandemic and a war — events no student could plan around.</p>
+                        <cite>— Paraphrased from FMG candidate representations, September 2026</cite>
                     </div>
-                    <h3>Why This Matters for India</h3>
-                    <p>India accounts for approximately 27% of global TB burden, with an estimated 2.8 million new cases annually. A significant proportion of these go undiagnosed or are diagnosed late because frontline facilities in rural India lack qualified radiologists to interpret chest X-rays. TBScan-India v2 addresses this bottleneck directly:</p>
-                    <ul>
-                        <li>The model runs offline on a low-cost device costing approximately ₹15,000 — compatible with PHC-level infrastructure</li>
-                        <li>Results are available in under 90 seconds per image</li>
-                        <li>The interface is designed for ASHA workers and general physicians, not specialists</li>
-                        <li>Positive flags automatically generate a referral slip and alert the district TB officer</li>
-                    </ul>
-                    <h3>What Happens Next</h3>
-                    <p>The Indian Council of Medical Research (ICMR) has approved a Phase 3 field trial of TBScan-India v2 across three high-burden states — Uttar Pradesh, Rajasthan, and Maharashtra — beginning September 2026. If the field trial confirms the lab findings, ICMR and NMC are expected to recommend the model for deployment under the National TB Elimination Programme (NTEP) by early 2027. The team also plans to adapt the architecture for early detection of pneumoconiosis and lung malignancies in subsequent studies.</p>
+
+                    <h3>Where the Regulators Stand</h3>
+                    <p>So far there has been no confirmed policy change from the NMC or NBE in response to the exemption plea. The regulators have historically maintained that a common licensing standard protects patient safety and keeps the qualification uniform across all foreign graduates. Candidates preparing for October 2026 are therefore advised to continue their preparation on the assumption that the exam will proceed as scheduled, while keeping an eye on official notifications for any relief that may be announced.</p>
+
                     <hr class="article-divider">
-                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>The full paper is available open-access at the Indian Journal of Medical Research. Last updated: July 22, 2026.</em></p>
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This is a developing story; no official exemption has been confirmed. Verify on nmc.org.in and natboard.edu.in. Source: Medical Dialogues. Last updated: September 26, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#neet-pg-2026">
+                            <span class="r-tag">NEET PG 2026 · Result</span>
+                            <span class="r-head">NEET PG 2026 Result Declared — General Cut-off at 262 Marks</span>
+                        </a>
+                        <a class="related-item" href="#resident-welfare">
+                            <span class="r-tag">Doctors' Welfare</span>
+                            <span class="r-head">AIIMS Jodhpur Tragedy Sparks 12-Hour Duty Cap & RDA Recognition</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="article-footer">
                     <div class="article-share">
                         <span class="share-label">Share</span>
-                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=AIIMS+Delhi+AI+Tool+Outperforms+Radiologists+in+TB+Detection&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
-                        <a class="share-btn" href="https://wa.me/?text=AIIMS+Delhi+AI+Tool+Outperforms+Radiologists+in+Early+TB+Detection+Study" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=FMGE+October+2026+%E2%80%94+2021-22+Batch+Seeks+One-Time+Exemption&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=FMGE+October+2026+%E2%80%94+2021-22+Batch+Seeks+One-Time+Exemption" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#fmge-2026').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ARTICLE 4: NMC SEAT EXPANSION -->
+        <article class="article-card" id="nmc-seat-expansion">
+            <div class="article-hero">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=85" alt="NMC 2026-27 UG seat matrix and medical seat expansion" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85'">
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--policy">NMC Policy</span>
+                    <span class="article-hero-date">September 24, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">NMC Releases 2026-27 UG Seat Matrix as Govt Targets 75,000 New Medical Seats — IITs Enter MBBS</h2>
+                <p class="article-deck">The National Medical Commission has published the 2026-27 undergraduate seat matrix and issued directions on mandatory faculty data updates via the AEBAS portal, even as the government pushes an ambitious expansion of medical education capacity.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 24, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;6 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>The NMC has released updates on the 2026-27 undergraduate seat matrix and reiterated that colleges must keep faculty attendance and data current on the AEBAS (Aadhaar Enabled Biometric Attendance System) portal — a compliance measure tied directly to how many seats a college is permitted to admit. The moves come against the backdrop of a national push to dramatically expand the number of MBBS and PG seats in the country.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>NMC has published the <strong>2026-27 UG seat matrix</strong> and faculty-data directives</li>
+                            <li>Faculty attendance compliance via <strong>AEBAS</strong> is tied to sanctioned seat capacity</li>
+                            <li>The Centre is targeting <strong>75,000 additional medical seats</strong></li>
+                            <li>IIT Kanpur, Kharagpur and Madras are building medical schools for <strong>"physician-engineers"</strong></li>
+                            <li>AIIMS Delhi remains the apex mentor for the country's 23 AIIMS institutions</li>
+                        </ul>
+                    </div>
+
+                    <h3>Why the Seat Matrix Matters to Aspirants</h3>
+                    <p>The UG seat matrix is effectively the map of how many seats exist, where, and under which quota — the foundation on which every round of counselling is built. Faculty-data compliance is not a mere formality: colleges that fail to maintain adequate, verifiable faculty on AEBAS risk having their seat intake capped, which can shift the numbers available to students during admissions. For aspirants, a clean, well-populated seat matrix means more predictable counselling.</p>
+
+                    <h3>The 75,000-Seat Ambition and the "Physician-Engineer"</h3>
+                    <p>On the policy side, the government has set a target of adding tens of thousands of new medical seats, part of a broader plan to expand the AIIMS network and scale healthcare delivery. In a notable shift, three IITs — Kanpur, Kharagpur and Madras — are actively building medical schools aimed at producing "physician-engineers" who can bridge clinical needs with engineering solutions, from indigenous heart-failure pumps to portable ultrasound devices under development at IIT Kanpur.</p>
+
+                    <div class="article-pullquote">
+                        <p>India already has the clinical expertise and the technology. What national-scale impact needs now is better alignment between policy on paper and implementation on the ground.</p>
+                        <cite>— Theme echoed at the National CVD Summit 2026, Goa</cite>
+                    </div>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>Confirm all seat-matrix details on nmc.org.in. Sources: NMC, India Today, Medical Buyer, Drug Today. Last updated: September 24, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#neet-pg-2026">
+                            <span class="r-tag">NEET PG 2026 · Result</span>
+                            <span class="r-head">NEET PG 2026 Result Declared — General Cut-off at 262 Marks</span>
+                        </a>
+                        <a class="related-item" href="#aiims-ai">
+                            <span class="r-tag">Research</span>
+                            <span class="r-head">AIIMS Delhi Transfers AI Breast-Cancer Tool to Industry</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=NMC+2026-27+UG+Seat+Matrix%3B+Govt+Targets+75%2C000+New+Seats&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=NMC+2026-27+UG+Seat+Matrix%3B+Govt+Targets+75%2C000+New+Seats" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#nmc-seat-expansion').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ARTICLE 5: AIIMS AI RESEARCH -->
+        <article class="article-card" id="aiims-ai">
+            <div class="article-hero">
+                <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=85" alt="AIIMS Delhi AI mammography breast cancer detection tool" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=85'">
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--research">Research</span>
+                    <span class="article-hero-date">September 25, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">AIIMS Delhi Transfers India-Trained AI Breast-Cancer Tool to Industry; NIMHANS Launches AI Depression Screening</h2>
+                <p class="article-deck">On its 71st Foundation Day, AIIMS Delhi marked a milestone in indigenous medical AI — transferring an India-trained mammography "second reader" for commercial development — while NIMHANS launched a project to build multilingual AI depression-screening tools.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 25, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;6 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>India's medical research landscape in September 2026 is defined by a strong push toward indigenous technology. AIIMS Delhi, which celebrated its 71st Foundation Day on September 25, 2026, has transferred a new AI-based mammography tool to industry for commercial development — a tool trained on Indian data that acts as a "second reader" to assist radiologists in detecting breast cancer.</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>AIIMS Delhi transferred an India-trained <strong>AI mammography tool</strong> for commercial development</li>
+                            <li>It works as a <strong>"second reader"</strong> assisting radiologists in breast-cancer detection</li>
+                            <li>Could reach hospitals within <strong>~6 months</strong>, pending regulatory approval</li>
+                            <li>NIMHANS + IIT Kharagpur + LGBRIMH launched <strong>HEADS</strong> for AI depression screening</li>
+                            <li>HEADS aims to understand <strong>multiple Indian languages</strong></li>
+                        </ul>
+                    </div>
+
+                    <h3>An AI "Second Reader" for Mammograms</h3>
+                    <p>Because the mammography model was trained on Indian data, it is tuned to the population it will actually serve — an important factor, since AI tools trained purely on Western datasets can under-perform on Indian patients. Acting as a second reader, it does not replace the radiologist but flags suspicious regions for closer review, helping catch cancers earlier and easing the workload in busy imaging departments. Pending regulatory clearance, the tool could reach hospitals within roughly six months.</p>
+
+                    <h3>HEADS: Mental-Health Screening in Indian Languages</h3>
+                    <p>Separately, NIMHANS — in collaboration with IIT Kharagpur and LGBRIMH — launched the HEADS project on September 24, 2026 to develop AI-assisted depression-screening tools capable of understanding multiple Indian languages. Language-aware mental-health screening is a significant step for a country where stigma and a shortage of specialists leave a large mental-healthcare gap, especially outside major cities.</p>
+
+                    <div class="article-pullquote">
+                        <p>Tools trained on Indian data, for Indian patients, in Indian languages — this is what makes medical AI genuinely useful at national scale, not just in a well-equipped metro hospital.</p>
+                        <cite>— Afrahtafreeh Editorial Desk</cite>
+                    </div>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>Regulatory approval timelines are indicative. Sources: Times of India, The Hindu, Drug Today. Last updated: September 25, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#nmc-seat-expansion">
+                            <span class="r-tag">NMC Policy</span>
+                            <span class="r-head">NMC 2026-27 UG Seat Matrix; Govt Targets 75,000 New Seats</span>
+                        </a>
+                        <a class="related-item" href="#resident-welfare">
+                            <span class="r-tag">Doctors' Welfare</span>
+                            <span class="r-head">AIIMS Jodhpur Tragedy Sparks 12-Hour Duty Cap & RDA Recognition</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=AIIMS+Delhi+Transfers+AI+Breast-Cancer+Tool%3B+NIMHANS+Launches+HEADS&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=AIIMS+Delhi+Transfers+AI+Breast-Cancer+Tool%3B+NIMHANS+Launches+HEADS" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#aiims-ai').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
+                    </div>
+                    <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="article-sep">More Articles</div>
+
+        <!-- ARTICLE 6: RESIDENT WELFARE -->
+        <article class="article-card" id="resident-welfare">
+            <div class="article-hero">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85" alt="Resident doctor welfare reforms duty hours after AIIMS Jodhpur" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=85'">
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-cat-tag tag--protest">Doctors' Welfare</span>
+                    <span class="article-hero-date">September 22, 2026</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <h2 class="article-headline">After AIIMS Jodhpur Tragedy: 12-Hour Duty Cap & Formal RDA Recognition; AIIMS Nagpur Doctors Protest VIP Culture</h2>
+                <p class="article-deck">The death of a resident doctor at AIIMS Jodhpur has pushed doctor welfare to the top of the agenda, prompting new measures capping continuous duty at 12 hours and formally recognising Resident Doctors' Associations — while doctors at AIIMS Nagpur protest violence and VIP treatment.</p>
+                <div class="article-byline">
+                    <span class="byline-source"><i class="fas fa-newspaper"></i> Afrahtafreeh</span>
+                    <span class="byline-date"><i class="far fa-calendar"></i> &nbsp;September 22, 2026</span>
+                    <span class="byline-read-time"><i class="far fa-clock"></i> &nbsp;5 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>Administrative and labour challenges are once again in the spotlight across India's premier institutes. Following the death of a resident doctor at AIIMS Jodhpur, the government has implemented new welfare measures aimed at protecting overworked junior doctors — including a limit on continuous duty hours and the formal recognition of Resident Doctors' Associations (RDAs).</p>
+
+                    <div class="article-key-points">
+                        <h4><i class="fas fa-bolt"></i> &nbsp;Key Points</h4>
+                        <ul>
+                            <li>New welfare measures cap <strong>continuous duty at 12 hours</strong></li>
+                            <li>Resident Doctors' Associations to be <strong>formally recognised</strong></li>
+                            <li>Measures follow the death of a resident doctor at <strong>AIIMS Jodhpur</strong></li>
+                            <li>At <strong>AIIMS Nagpur</strong>, doctors protested violence against a colleague</li>
+                            <li>Nagpur doctors demand a <strong>no-special-treatment policy</strong> to curb VIP culture</li>
+                        </ul>
+                    </div>
+
+                    <h3>Why Duty-Hour Limits Matter</h3>
+                    <p>Punishing shift lengths have long been a defining hardship of residency in India, with junior doctors often working far beyond safe limits. A formal 12-hour cap on continuous duty — alongside recognition of RDAs as legitimate representative bodies — signals a shift toward treating doctor wellbeing as a patient-safety issue, not just an internal HR matter. Fatigue is directly linked to clinical errors, so protecting residents also protects patients.</p>
+
+                    <div class="article-pullquote">
+                        <p>A doctor who has been awake for 30 hours is not just a tired doctor — they are a safety risk to every patient they treat. Duty-hour reform is patient-safety reform.</p>
+                        <cite>— Afrahtafreeh Editorial Desk</cite>
+                    </div>
+
+                    <h3>Nagpur: Violence and the VIP Problem</h3>
+                    <p>Concurrently, doctors at AIIMS Nagpur have protested after an assault on a colleague, demanding stronger protection and a firm "no special treatment" policy to end the VIP culture that pressures staff and distorts care priorities in hospitals. Together, the Jodhpur and Nagpur developments underline a broader theme of September 2026: the people who run India's health system are asking for the same duty of care they extend to patients.</p>
+
+                    <hr class="article-divider">
+                    <p style="font-size:0.85rem;color:var(--ink-muted)"><em>This is a developing story. Sources: Jagran Josh, Swadesi. Last updated: September 22, 2026.</em></p>
+                </div>
+                <div class="related-stories">
+                    <div class="related-stories-title"><i class="fas fa-newspaper"></i> Read Next</div>
+                    <div class="related-grid">
+                        <a class="related-item" href="#neet-pg-2026">
+                            <span class="r-tag">NEET PG 2026 · Result</span>
+                            <span class="r-head">NEET PG 2026 Result Declared — General Cut-off at 262 Marks</span>
+                        </a>
+                        <a class="related-item" href="#fmge-2026">
+                            <span class="r-tag">FMGE 2026</span>
+                            <span class="r-head">FMGE October 2026: 2021–22 Batch Seeks One-Time Exemption</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="article-footer">
+                    <div class="article-share">
+                        <span class="share-label">Share</span>
+                        <a class="share-btn" href="https://twitter.com/intent/tweet?text=AIIMS+Jodhpur+Tragedy+%E2%80%94+12-Hour+Duty+Cap+%26+RDA+Recognition&url=" target="_blank" rel="noopener" title="Share on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a class="share-btn" href="https://wa.me/?text=AIIMS+Jodhpur+Tragedy+%E2%80%94+12-Hour+Duty+Cap+%26+RDA+Recognition" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <button class="share-btn" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.origin+'/blog.html#resident-welfare').then(()=>alert('Link copied!'))" title="Copy link"><i class="fas fa-link"></i></button>
                     </div>
                     <a class="back-to-news" href="#top"><i class="fas fa-arrow-up"></i> Back to top</a>
                 </div>
@@ -792,6 +947,22 @@
     </div>
 
     <script>
+        // Reading progress bar (engagement)
+        (function() {
+            const bar = document.getElementById('reading-progress');
+            if (bar) {
+                const update = function() {
+                    const h = document.documentElement;
+                    const scrolled = h.scrollTop || document.body.scrollTop;
+                    const height = (h.scrollHeight - h.clientHeight) || 1;
+                    bar.style.width = Math.min(100, (scrolled / height) * 100) + '%';
+                };
+                window.addEventListener('scroll', update, { passive: true });
+                window.addEventListener('resize', update);
+                update();
+            }
+        })();
+
         // Smooth scroll to hash on load
         window.addEventListener('DOMContentLoaded', () => {
             const hash = window.location.hash;
