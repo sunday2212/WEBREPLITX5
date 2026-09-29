@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nextpulse-v94';
+const CACHE_NAME = 'nextpulse-v95';
 const urlsToCache = [
   './',
   './index.html',
@@ -88,7 +88,31 @@ self.addEventListener('fetch', (event) => {
   }
 
   const isHtml = url.pathname.endsWith('.html') || url.pathname.endsWith('/') || url.pathname === '';
+  const sameOrigin = url.origin === self.location.origin;
 
+  /* ── HTML pages: NETWORK-FIRST ──
+     Installed PWA users must always get the freshest app shell (ad setup,
+     features, fixes). Cache is only an offline fallback. Previously this was
+     cache-first, which kept users on stale pages with old ad loading. */
+  if (isHtml && event.request.method === 'GET') {
+    event.respondWith(
+      fetch(event.request)
+        .then(async (response) => {
+          if (sameOrigin && response.ok) {
+            const cloneForCache = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, cloneForCache));
+          }
+          return injectThemeScript(response.clone());
+        })
+        .catch(() => caches.match(event.request).then(async (cached) => {
+          if (cached) return injectThemeScript(cached.clone());
+          return caches.match('./splash.html');
+        }))
+    );
+    return;
+  }
+
+  /* ── Assets & cross-origin (incl. ad scripts): cache-first, network fallback ── */
   event.respondWith(
     caches.match(event.request)
       .then(async (cached) => {

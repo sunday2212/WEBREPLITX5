@@ -1578,6 +1578,94 @@
             </a>
         </div>
     </div>
+<!-- ── Daily MCQ Challenge (daily habit + text content for ad slots) ── -->
+    <div class="daily-mcq" id="daily-mcq">
+        <div class="daily-mcq-head">
+            <h2 class="daily-mcq-heading"><i class="fas fa-brain"></i> Daily MCQ Challenge</h2>
+            <span class="daily-mcq-date" id="dailyMcqDate"></span>
+        </div>
+        <p class="daily-mcq-q" id="dailyMcqQ">Loading today's question…</p>
+        <div class="daily-mcq-opts" id="dailyMcqOpts"></div>
+        <p class="daily-mcq-expl" id="dailyMcqExpl" style="display:none;"></p>
+        <div class="daily-mcq-foot">
+            <a href="quizx/index.html" class="daily-mcq-more"><i class="fas fa-question-circle"></i> Practice more in Q Bank</a>
+            <span class="daily-mcq-streak" id="dailyMcqStatus"></span>
+        </div>
+    </div>
+    <style>
+        .daily-mcq { max-width: 1100px; margin: 0 auto 1.6rem; padding: 1.3rem 1.4rem; background: rgba(127,140,160,0.08); border: 1px solid rgba(127,140,160,0.28); border-radius: 16px; }
+        .daily-mcq-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 0.6rem; }
+        .daily-mcq-heading { font-size: 1.05rem; margin: 0; display: flex; align-items: center; gap: 0.5rem; }
+        .daily-mcq-heading i { color: #6b46c1; }
+        .daily-mcq-date { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.65; }
+        .daily-mcq-q { font-size: 0.98rem; font-weight: 600; line-height: 1.55; margin: 0 0 0.8rem; }
+        .daily-mcq-opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .daily-mcq-opt { padding: 0.65rem 0.8rem; border: 1.5px solid rgba(127,140,160,0.35); border-radius: 10px; background: rgba(127,140,160,0.06); font-size: 0.88rem; cursor: pointer; text-align: left; transition: all 0.2s ease; color: inherit; }
+        .daily-mcq-opt:hover { border-color: #6b46c1; transform: translateY(-1px); }
+        .daily-mcq-opt.correct { background: rgba(56,161,105,0.18); border-color: #38a169; font-weight: 700; }
+        .daily-mcq-opt.wrong { background: rgba(229,62,62,0.14); border-color: #e53e3e; opacity: 0.8; }
+        .daily-mcq-opt:disabled { cursor: default; }
+        .daily-mcq-expl { margin: 0.8rem 0 0; font-size: 0.86rem; line-height: 1.6; padding: 0.7rem 0.9rem; background: rgba(56,161,105,0.10); border-left: 3px solid #38a169; border-radius: 8px; }
+        .daily-mcq-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 0.9rem; flex-wrap: wrap; }
+        .daily-mcq-more { font-size: 0.85rem; font-weight: 700; color: #6b46c1; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; }
+        .daily-mcq-more:hover { text-decoration: underline; }
+        .daily-mcq-streak { font-size: 0.78rem; font-weight: 600; opacity: 0.75; }
+        @media (max-width: 560px) { .daily-mcq-opts { grid-template-columns: 1fr; } }
+    </style>
+    <script>
+        (function () {
+            var BANK = [
+                { q: "The afferent limb of the corneal reflex is carried by which cranial nerve?", o: ["Trigeminal nerve (V1)", "Facial nerve (VII)", "Glossopharyngeal nerve (IX)", "Oculomotor nerve (III)"], a: 0, e: "Afferent limb = ophthalmic division of trigeminal (V1); the efferent limb (blink) is the facial nerve (VII)." },
+                { q: "First-line drug for typical absence seizures in children?", o: ["Carbamazepine", "Ethosuximide", "Phenytoin", "Phenobarbitone"], a: 1, e: "Ethosuximide blocks T-type Ca2+ channels in thalamic neurons — drug of choice for absence seizures." },
+                { q: "Krukenberg tumour is bilateral ovarian metastasis classically from which primary?", o: ["Breast carcinoma", "Colon carcinoma", "Gastric signet-ring cell carcinoma", "Renal cell carcinoma"], a: 2, e: "Krukenberg tumour = mucin-filled signet-ring cells in both ovaries, classically from gastric cancer." },
+                { q: "Bitot's spots on the conjunctiva indicate deficiency of which vitamin?", o: ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"], a: 0, e: "Bitot's spots (foamy conjunctival patches) are a hallmark of Vitamin A deficiency — leading cause of preventable childhood blindness." },
+                { q: "Reed-Sternberg cells are characteristic of which malignancy?", o: ["Burkitt lymphoma", "Hodgkin lymphoma", "Multiple myeloma", "Follicular lymphoma"], a: 1, e: "Reed-Sternberg cells (owl-eye nuclei, CD15+ CD30+) define classical Hodgkin lymphoma." },
+                { q: "Macrolide antibiotics inhibit bacterial protein synthesis by binding to?", o: ["30S ribosomal subunit", "50S ribosomal subunit (23S rRNA)", "DNA gyrase", "Dihydrofolate reductase"], a: 1, e: "Macrolides (azithromycin, erythromycin) bind the 50S subunit at 23S rRNA and block translocation." },
+                { q: "'Nutmeg liver' is produced by which condition?", o: ["Chronic passive venous congestion (right heart failure)", "Acute hepatitis B", "Wilson disease", "Alpha-1 antitrypsin deficiency"], a: 0, e: "Alternating congested centrilobular and pale periportal zones give the cut surface a nutmeg pattern in chronic right-sided heart failure." },
+                { q: "Charcot's triad of acute ascending cholangitis includes fever, jaundice and?", o: ["Hypotension", "Confusion", "Right upper quadrant pain", "Pruritus"], a: 2, e: "Charcot's triad = fever + RUQ pain + jaundice. Add hypotension and confusion and it becomes Reynolds' pentad." },
+                { q: "Subacute combined degeneration of the spinal cord is caused by deficiency of?", o: ["Vitamin B1", "Vitamin B6", "Vitamin B12", "Folate"], a: 2, e: "B12 deficiency damages the dorsal columns and lateral corticospinal tracts — subacute combined degeneration." },
+                { q: "Owl's eye intranuclear inclusions on histology suggest infection with?", o: ["Herpes simplex virus", "Cytomegalovirus (CMV)", "Rabies virus", "Measles virus"], a: 1, e: "CMV shows large cells with basophilic owl's eye intranuclear inclusions (cytomegalo = enlarged cell)." },
+                { q: "Most common cause of renovascular hypertension in a young woman?", o: ["Atherosclerosis", "Fibromuscular dysplasia of renal artery", "Pheochromocytoma", "Coarctation of aorta"], a: 1, e: "In young women, fibromuscular dysplasia ('string of beads') is the classic cause of renal artery stenosis; atherosclerosis dominates in older patients." },
+                { q: "Infective endocarditis after a dental procedure is most commonly caused by?", o: ["Staphylococcus aureus", "Streptococcus viridans group", "Enterococcus faecalis", "Pseudomonas aeruginosa"], a: 1, e: "Viridans-group streptococci from the oropharynx classically seed damaged valves after dental work." }
+            ];
+            var dayIdx = Math.floor(Date.now() / 86400000) % BANK.length;
+            var item = BANK[dayIdx];
+            var key = "dailyMcq_" + new Date().toISOString().slice(0, 10);
+            var qEl = document.getElementById("dailyMcqQ");
+            var optsEl = document.getElementById("dailyMcqOpts");
+            var explEl = document.getElementById("dailyMcqExpl");
+            var dateEl = document.getElementById("dailyMcqDate");
+            var statusEl = document.getElementById("dailyMcqStatus");
+            if (!qEl || !optsEl) return;
+            dateEl.textContent = new Date().toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
+            qEl.textContent = item.q;
+            var letters = ["A", "B", "C", "D"];
+            function answered(pick) {
+                try { localStorage.setItem(key, String(pick)); } catch (_) {}
+                Array.prototype.forEach.call(optsEl.children, function (btn, i) {
+                    btn.disabled = true;
+                    if (i === item.a) btn.classList.add("correct");
+                    else if (i === pick) btn.classList.add("wrong");
+                });
+                explEl.textContent = "✅ Answer: " + item.o[item.a] + " — " + item.e;
+                explEl.style.display = "block";
+                statusEl.textContent = pick === item.a ? "Correct — great start! 🔥" : "Noted — review the explanation 👍";
+            }
+            item.o.forEach(function (text, i) {
+                var btn = document.createElement("button");
+                btn.className = "daily-mcq-opt";
+                btn.type = "button";
+                btn.innerHTML = "<strong>" + letters[i] + ".</strong> " + text;
+                btn.addEventListener("click", function () { answered(i); });
+                optsEl.appendChild(btn);
+            });
+            try {
+                var prev = localStorage.getItem(key);
+                if (prev !== null) answered(parseInt(prev, 10));
+            } catch (_) {}
+        })();
+    </script>
+
 <!-- Ezoic removed: replaced by GAM/ADX app_top slot above -->
     <!-- ── Collaborators Section (click to zoom image) ── -->
     <div class="collab-wrap">

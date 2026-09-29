@@ -1020,6 +1020,51 @@
         }
         html[data-theme="light"] .img-missing { border-color: #cbd5e1; color: #64748b; }
 
+        /* ── LECTURE INFO / STUDY CONTENT BLOCKS (text content = Auto ads in-page slots) ── */
+        .lecture-info {
+            max-width: 1100px;
+            margin: 1.75rem auto 2.5rem;
+            padding: 1.5rem 1.75rem;
+            background: var(--card-white, #ffffff);
+            border: 1px solid var(--border-light, rgba(127,140,160,0.25));
+            border-radius: 14px;
+            color: var(--dark-gray, inherit);
+            line-height: 1.75;
+        }
+        .lecture-info h3 {
+            font-size: 1.02rem;
+            margin: 1.1rem 0 0.45rem;
+            padding-left: 0.65rem;
+            border-left: 3px solid var(--primary-blue, #3498db);
+            color: var(--dark-blue, inherit);
+        }
+        .lecture-info h3:first-child { margin-top: 0; }
+        .lecture-info p { margin: 0.35rem 0; font-size: 0.95rem; }
+        .lecture-info ul { margin: 0.35rem 0 0.35rem 1.2rem; font-size: 0.95rem; }
+        .lecture-info li { margin: 0.3rem 0; }
+        .lecture-info a { color: var(--primary-blue, #3498db); font-weight: 600; }
+        .countdown-tip {
+            margin-top: 1.1rem;
+            padding: 0.85rem 1.1rem;
+            background: rgba(127,140,160,0.10);
+            border-radius: 10px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .countdown-tip strong { color: var(--primary-blue, #3498db); }
+        .browse-all-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 0.9rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--primary-blue, #3498db);
+            text-decoration: none;
+        }
+        .browse-all-link:hover { text-decoration: underline; }
+
     </style>
 
 </head>
@@ -1131,6 +1176,10 @@
                             <h3>Preparing your stream…</h3>
                             <p>Please wait while we set up a secure connection. The player will unlock automatically. You can switch to <strong>Telegram</strong> while you wait.</p>
                             <span class="sc-lock"><i class="fas fa-lock"></i> Do not close or refresh this page</span>
+                            <div class="countdown-tip">
+                                <strong>💡 While you wait — study tip:</strong>
+                                <span id="countdown-tip-text">Watch at 1.25× speed the first time, then re-watch the difficult 10 minutes at normal speed. Active recall beats passive re-watching — pause after each concept and try to explain it aloud before moving on.</span>
+                            </div>
                         </div>
 
                         <!-- ══════════ ACTUAL STREAM CONTENT (revealed after countdown) ══════════ -->
@@ -1171,9 +1220,27 @@
                     <div id="nextLecturesContainer">
                         <div class="loading" style="padding: 2rem; text-align: center;">Loading next lectures...</div>
                     </div>
+                    <a class="browse-all-link" href="./00x12345.html"><i class="fas fa-th-large"></i> Browse all platforms &amp; subjects</a>
                 </div>
             </div>
         </div>
+
+        <!-- ── LECTURE INFO (text content — gives Auto ads in-page slots on this page) ── -->
+        <section class="lecture-info" aria-label="About this lecture">
+            <h3>About this lecture</h3>
+            <p>You are watching <strong id="li-title">this lecture</strong><span id="li-subject"></span> on NEXTPULSE. Every lecture can be streamed online in the player above, sent to your Telegram for offline viewing, or downloaded for revision. Our library is organised by platform and subject so you can move through a complete series in order.</p>
+
+            <h3>How to get the most from this lecture</h3>
+            <ul>
+                <li><strong>First pass at 1.25× speed</strong> to map the topic, then re-watch the difficult sections at normal speed.</li>
+                <li><strong>Pause and recall:</strong> after each concept, close your eyes and explain it aloud — active recall beats re-watching.</li>
+                <li><strong>Pair with MCQs:</strong> after finishing, attempt related questions in the <a href="./quizx/index.html">Question Bank</a> to lock in retention.</li>
+                <li><strong>Continue the series:</strong> use the Next Lectures panel to move through the subject in sequence without searching.</li>
+            </ul>
+
+            <h3>Keep exploring</h3>
+            <p>Finished early? Jump back to <a href="./appx.html">Home</a> for quick access to the Question Bank, flashcards, AI Quiz and focus timer, or head to the <a href="./00x12345.html">video library</a> to pick another subject. Lectures are added regularly, so there is always something new to revise.</p>
+        </section>
     </div>
 
     <script>
@@ -1185,6 +1252,36 @@
         const streamUrlX = urlParams.get('streamx');
         const downloadUrlX = urlParams.get('downloadx');
         const videoTitle = urlParams.get('title') || (contentType === 'pdf' ? 'PDF Document' : 'Lecture Video');
+
+        // ── Fill "About this lecture" block + rotate the countdown study tip daily ──
+        (function enrichLectureInfo() {
+            const liTitle = document.getElementById('li-title');
+            if (liTitle && videoTitle && videoTitle !== 'Lecture Video' && videoTitle !== 'PDF Document') {
+                liTitle.textContent = videoTitle;
+            }
+            const subjectParam = urlParams.get('subject') || '';
+            if (subjectParam) {
+                const liSubject = document.getElementById('li-subject');
+                if (liSubject) {
+                    const pretty = subjectParam.replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                    liSubject.textContent = ' — part of the ' + pretty + ' series';
+                }
+            }
+            const tips = [
+                'Watch at 1.25× speed the first time, then re-watch the difficult 10 minutes at normal speed. Active recall beats passive re-watching — pause after each concept and try to explain it aloud before moving on.',
+                'Keep a rough notebook beside you. Writing just 5–6 keywords per lecture forces your brain to process, not just watch. Revise those keywords tomorrow morning.',
+                'The forgetting curve is steep: whatever you watch today, try to recall it once before sleeping and once within 48 hours. Two short recalls are worth more than one long re-watch.',
+                'After the lecture ends, attempt 10 MCQs on the same topic in the Question Bank. Testing yourself immediately can double how much you retain a week later.',
+                'If a section feels dense, note the timestamp and move on — then come back to it fresh. Struggling productively and returning beats zoning out on replay.',
+                'Teach-back method: after finishing, explain the topic to an imaginary junior in 2 minutes. If you get stuck, that is exactly the part to re-watch.',
+                'Pair related lectures back-to-back using the Next Lectures panel — learning a full concept block in one sitting builds stronger connections than scattered viewing.'
+            ];
+            const tipEl = document.getElementById('countdown-tip-text');
+            if (tipEl) {
+                const dayIndex = Math.floor(Date.now() / 86400000) % tips.length;
+                tipEl.textContent = tips[dayIndex];
+            }
+        })();
 
         // ── Random server rotation helpers ────────────────────────────────────
         (function initServerRotation() {
@@ -1474,10 +1571,10 @@
                 console.log('Using provided lecture index:', currentIndex);
             }
 
-            // Get next 4 lectures
+            // Get next 8 lectures (more = longer binge sessions, more page views)
             const nextLectures = currentIndex !== -1 ?
-                data.lectures.slice(currentIndex + 1, currentIndex + 5) :
-                data.lectures.slice(0, 4);
+                data.lectures.slice(currentIndex + 1, currentIndex + 9) :
+                data.lectures.slice(0, 8);
 
             if (nextLectures.length === 0) {
                 container.innerHTML = '<div class="no-more-lectures">No more lectures in this subject</div>';
