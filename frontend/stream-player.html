@@ -1065,6 +1065,18 @@
         }
         .browse-all-link:hover { text-decoration: underline; }
 
+        /* Dark theme (default) overrides for the new blocks */
+        html:not([data-theme="light"]) .lecture-info {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.12);
+            color: #e2e8f0;
+        }
+        html:not([data-theme="light"]) .lecture-info h3 { color: #f0f4f8; border-left-color: #63b3ed; }
+        html:not([data-theme="light"]) .lecture-info a { color: #63b3ed; }
+        html:not([data-theme="light"]) .countdown-tip { background: rgba(255,255,255,0.07); color: #cbd5e1; }
+        html:not([data-theme="light"]) .countdown-tip strong { color: #63b3ed; }
+        html:not([data-theme="light"]) .browse-all-link { color: #63b3ed; }
+
     </style>
 
 </head>

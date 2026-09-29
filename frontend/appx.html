@@ -1610,6 +1610,10 @@
         .daily-mcq-more { font-size: 0.85rem; font-weight: 700; color: #6b46c1; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; }
         .daily-mcq-more:hover { text-decoration: underline; }
         .daily-mcq-streak { font-size: 0.78rem; font-weight: 600; opacity: 0.75; }
+        html:not([data-theme="light"]) .daily-mcq { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); }
+        html:not([data-theme="light"]) .daily-mcq-opt { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.16); }
+        html[data-theme="light"] .daily-mcq { background: #f1f5f9; border-color: #e2e8f0; }
+        html[data-theme="light"] .daily-mcq-opt { background: #fff; border-color: #cbd5e1; color: #2d3748; }
         @media (max-width: 560px) { .daily-mcq-opts { grid-template-columns: 1fr; } }
     </style>
     <script>
