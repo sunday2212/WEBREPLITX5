@@ -2,18 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<!--ADS-EARLY-->
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
-<link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
-<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298" crossorigin="anonymous"></script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lectures - NEXTPULSE | NEET PG Preparation</title>
   <meta name="description" content="Access comprehensive video lectures. Expert faculty for NEET PG preparation.">
   <meta name="keywords" content="NEET PG, medical lectures, video lectures">
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     .completion-toggle {
@@ -211,11 +204,11 @@
       background-color: #27ae60;
     }
   </style>
-  <script src="../../access-control.js"></script>
-  <script src="../../block.js"></script>
-  <script src="../../error-handler/link-checker.js"></script>
-  
-
+  <script src="../../../access-control.js"></script>
+  <script src="../../../block.js"></script>
+  <script src="../../../error-handler/link-checker.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 <script>
@@ -235,14 +228,6 @@
     </div>
   </header>
   <main>
-  <!--PAGE-INTRO-->
-  <style>
-  .page-intro{margin:0 0 1.2rem;padding:0.85rem 1.1rem;background:rgba(127,140,160,0.10);border:1px solid rgba(127,140,160,0.28);border-left:4px solid #4f8cff;border-radius:10px;line-height:1.65;font-size:0.9rem;color:inherit;}
-  .page-intro p{margin:0;}
-  html[data-theme="light"] .page-intro{background:#f1f5f9;border-color:#e2e8f0;border-left-color:#2563eb;}
-  html:not([data-theme="light"]) .page-intro{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.12);border-left-color:#63b3ed;}
-  </style>
-  <div class="page-intro"><p><strong>Mission 3.0 Lap1 lectures.</strong> This is a curated collection of expert-faculty video lectures for MBBS, NEET PG, INI-CET and FMGE aspirants. Stream the lectures in sequence, note the high-yield points as you go, and pair each topic with MCQ practice for strong retention. New content is added regularly, so bookmark this page and check back often.</p></div>
     <div class="lecture-list" id="lectureList">
       <p>Loading lectures...</p>
     </div>
@@ -404,8 +389,8 @@
 
         openButton.addEventListener('click', function() {
           openStreamPlayer(
-            lecture.streamingUrl,
-            lecture.downloadUrl || lecture.streamingUrl,
+            lecture.streamingUrl || lecture.streamingUrlx || '',
+            lecture.downloadUrl || lecture.downloadUrlx || lecture.streamingUrl || '',
             lecture.title
           );
         });
@@ -501,13 +486,13 @@
       loadLectures();
     });
   </script>
-  <script src="../../stream-player-utils.js"></script>
-  <script src="../../theme.js"></script>
+  <script src="../../../stream-player-utils.js"></script>
+  <script src="../../../theme.js"></script>
   <nav class="bottom-nav">
-    <a href="../../appx.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
-    <a href="../../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
-    <a href="../../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
-    <a href="../../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    <a href="../../../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+    <a href="../../../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+    <a href="../../../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+    <a href="../../../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
   </nav>
 </body>
 </html>
