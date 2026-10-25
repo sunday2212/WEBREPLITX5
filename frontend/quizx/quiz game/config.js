@@ -33,10 +33,6 @@ export const CONFIG = {
   // Leave empty to hide that source until configured.
   MANIFEST_URL: '/quizx/Brain/file-manifest.json',
 
-  // --- Google AdSense (optional) ---
-  // Put your publisher id like 'ca-pub-1234567890123456' to show an ad slot.
-  // Leave empty to hide. Layout is auto-ads friendly (no full-screen locks).
-  ADSENSE_CLIENT: '',
 };
 
 // Keep every correct-answer award to one or two digits. Faster answers score

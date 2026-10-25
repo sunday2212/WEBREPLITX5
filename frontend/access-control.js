@@ -1,88 +1,48 @@
 // Centralized access control for browser vs PWA detection.
 // Everyone (including search/ad crawlers) gets the SAME behaviour - no special bot access.
 class AccessControl {
-  constructor() {
-    this.botUserAgents = [
-      'Googlebot',
-      'Googlebot-Image',
-      'Mediapartners-Google',
-      'AdsBot-Google',
-      'Google-Ads-Overview',
-      'Google-Adwords',
-      'Google-Site-Verification',
-      'Bingbot',
-      'Slurp',
-      'DuckDuckBot',
-      'Baiduspider',
-      'YandexBot',
-      'facebookexternalhit',
-      'twitterbot',
-      'rogerbot',
-      'linkedinbot',
-      'embedly',
-      'quora link preview',
-      'showyoubot',
-      'outbrain',
-      'pinterest',
-      'developers.google.com/+/web/snippet',
-      'www.google.com/webmasters/tools/richsnippets',
-      'slackbot',
-      'vkShare',
-      'W3C_Validator',
-      'redditbot',
-      'Applebot',
-      'WhatsApp',
-      'flipboard',
-      'tumblr',
-      'bitlybot',
-      'SkypeUriPreview',
-      'nuzzel',
-      'Discordbot',
-      'Google Page Speed',
-      'Qwantify',
-      'pinterestbot',
-      'Bitrix link preview',
-      'XING-contenttabreceiver',
-      'Chrome-Lighthouse',
-      'TelegramBot'
-    ];
-  }
-
   // Check if current context is PWA (standalone mode)
   isPWA() {
-    return window.matchMedia && 
-           window.matchMedia('(display-mode: standalone)').matches ||
+    return window.matchMedia &&
+           (window.matchMedia('(display-mode: standalone)').matches ||
+            window.matchMedia('(display-mode: fullscreen)').matches) ||
            window.navigator.standalone === true ||
            document.referrer.includes('android-app://');
   }
 
-  // Check if user agent is a search engine bot or crawler
-  isBot() {
-    const userAgent = navigator.userAgent;
-    return this.botUserAgents.some(bot => 
-      userAgent.toLowerCase().includes(bot.toLowerCase())
-    );
+  // Pages that open in a normal browser. EVERY other page works only
+  // inside the installed NEXTPULSE app (PWA).
+  //  - index, blog            : public website
+  //  - about, contact, privacy, disclaimer : required by Google AdSense
+  //  - auth, payment, app, admin : login / payment return / notice / admin
+  publicPages() {
+    return ['/', '/blog', '/about', '/contact', '/privacy', '/disclaimer',
+            '/auth', '/payment', '/app', '/admin'];
   }
 
-  // Check if current page is index.html (public page)
+  // Normalise "/blog.html", "/blog", "/index.html", "/" ...
+  normalisedPath() {
+    let p = window.location.pathname || '/';
+    try { p = decodeURIComponent(p); } catch (e) { /* keep raw */ }
+    if (p.endsWith('/')) p += 'index';
+    p = p.replace(/\.html?$/i, '');
+    if (p === '/index') p = '/';
+    return p;
+  }
+
+  // Public page = allowed in a normal browser
   isIndexPage() {
-    const path = window.location.pathname;
-    return path === '/' || path === '/index.html' || path.endsWith('/');
+    return this.publicPages().includes(this.normalisedPath());
   }
 
   // Check if access is allowed to protected pages
   isAccessAllowed() {
-    // Allow bots (for SEO and Google Ads crawling)
-    if (this.isBot()) {
-      return true;
-    }
-    
     // Allow installed-app (PWA) users
     if (this.isPWA()) {
       return true;
     }
     
-    // Allow browser access ONLY to index.html
+    // Allow browser access ONLY to the public pages above
     if (this.isIndexPage()) {
       return true;
     }
@@ -94,9 +54,10 @@ class AccessControl {
   // Redirect to index.html with PWA install prompt
   redirectToIndex() {
     const currentPath = window.location.pathname;
-    const indexPaths = ['/', '/index.html'];
     
-    if (!indexPaths.includes(currentPath)) {
+    if (this.normalisedPath() !== '/') {
+      // Hide the protected page immediately so nothing shows before redirect
+      try { document.documentElement.style.display = 'none'; } catch (e) { /* ignore */ }
       // Create URL to index.html with current domain
       const baseUrl = window.location.origin;
       const newUrl = new URL(baseUrl);
@@ -112,8 +73,6 @@ class AccessControl {
   initProtectedPage() {
     // Check if access is allowed
     if (this.isAccessAllowed()) {
-      // ✅ NEW: Refresh Ads on protected pages
-      this.refreshAds();
       return true;
     }
 
@@ -125,8 +84,6 @@ class AccessControl {
   // Initialize for index page - show PWA prompt if needed
   initIndexPage() {
     this.showPWAPrompt();
-    // ✅ NEW: Refresh Ads on index page as well
-    this.refreshAds();
     return true;
   }
 
@@ -192,23 +149,6 @@ class AccessControl {
     document.body.insertBefore(promptDiv, document.body.firstChild);
   }
 
-  // ✅ NEW METHOD - safely triggers AdSense on each page load
-  refreshAds() {
-    // Don't run for bots
-    if (this.isBot()) return;
-    // Don't run if access is blocked (will redirect anyway)
-    if (!this.isAccessAllowed()) return;
-    // Avoid duplicate pushes on the same page load
-    if (window._adsRefreshed) return;
-    window._adsRefreshed = true;
-
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      // AdSense script might not be fully loaded yet - safely ignore
-    }
-  }
-
   // Install PWA
   installPWA() {
     if (window.deferredPrompt) {
@@ -237,6 +177,12 @@ class AccessControl {
 
 // Global instance
 window.accessControl = new AccessControl();
+
+// Automatic guard: any page that loads this file is app-only (unless it is
+// in publicPages). A normal browser visitor is sent to index.html straight away.
+if (!window.accessControl.isAccessAllowed()) {
+  window.accessControl.redirectToIndex();
+}
 
 // PWA install prompt handling
 window.addEventListener('beforeinstallprompt', (e) => {

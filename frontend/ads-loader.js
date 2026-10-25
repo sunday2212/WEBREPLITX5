@@ -1,6 +1,8 @@
-/* Google Auto Ads - one line on every page: <script src="/ads-loader.js" defer></script>
-   Loads the official AdSense Auto Ads script once the page is open and visible,
-   so pages that instantly redirect (login / install-app) never send an ad request. */
+/* Google Auto Ads - one line on every page:
+     <script src="/ads-loader.js" defer></script>
+   Loads the official AdSense Auto Ads script once the page is open and
+   visible, so pages that instantly redirect (login / install-app) never
+   send an ad request. */
 (function () {
   var AD_SRC = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298';
 

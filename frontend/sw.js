@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nextpulse-v97';
+const CACHE_NAME = 'nextpulse-v98';
 const urlsToCache = [
   './',
   './index.html',
@@ -51,8 +51,13 @@ function buildHeaders(response) {
 
 /* ─── Install ─── */
 self.addEventListener('install', (event) => {
+  /* cache.addAll() rejects the WHOLE install if a single file is missing
+     (00x1234.html, search.html, platforms/…, quiz/… do not exist), so the
+     worker never installed. Cache each file on its own and skip misses. */
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => Promise.allSettled(urlsToCache.map(u => cache.add(u))) )
+    caches.open(CACHE_NAME).then(cache =>
+      Promise.allSettled(urlsToCache.map(u => cache.add(u)))
+    )
   );
   self.skipWaiting();
 });
@@ -60,21 +65,17 @@ self.addEventListener('install', (event) => {
 /* ─── Fetch ─── */
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
-  const userAgent = event.request.headers.get('user-agent') || '';
 
-  if (isBot(userAgent)) {
-    event.respondWith(
-      caches.match(event.request).then(r => r || fetch(event.request))
-    );
-    return;
-  }
+  /* Cross-origin requests (Google Ads, analytics, Supabase, CDNs) go straight
+     to the network - the service worker never touches them. */
+  if (url.origin !== self.location.origin) return;
+  if (event.request.method !== 'GET') return;
 
   const isHtml = url.pathname.endsWith('.html') || url.pathname.endsWith('/') || url.pathname === '';
   const sameOrigin = url.origin === self.location.origin;
 
   /* ── HTML pages: NETWORK-FIRST ──
-     Installed PWA users must always get the freshest app shell (ad setup,
-     features, fixes). Cache is only an offline fallback. Previously this was
+     Installed PWA users must always get the freshest app shell (features, fixes). Cache is only an offline fallback. Previously this was
      cache-first, which kept users on stale pages with old ad loading. */
   if (isHtml && event.request.method === 'GET') {
     event.respondWith(
@@ -94,16 +95,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  /* ── Assets & cross-origin (incl. ad scripts): cache-first, network fallback ── */
+  /* ── Same-origin assets: network-first, cache only as offline fallback ──
+     (cache-first would keep serving old JS/CSS after you update the site) */
   event.respondWith(
-    caches.match(event.request)
-      .then(async (cached) => {
-        const response = cached || await fetch(event.request);
-        if (isHtml) {
-          return injectThemeScript(response.clone());
-        }
-        return response;
-      })
+    fetch(event.request).catch(() =>
+      caches.match(event.request).then(r => r || Response.error())
+    )
   );
 });
 
