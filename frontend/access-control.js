@@ -1,5 +1,5 @@
-// Centralized access control for browser vs PWA detection
-// OPTIMIZED FOR GOOGLE AUTO ADS IN PWA MODE
+// Centralized access control for browser vs PWA detection.
+// Everyone (including search/ad crawlers) gets the SAME behaviour - no special bot access.
 class AccessControl {
   constructor() {
     this.botUserAgents = [
@@ -77,7 +77,7 @@ class AccessControl {
       return true;
     }
     
-    // Allow PWA users (where Google Ads will work)
+    // Allow installed-app (PWA) users
     if (this.isPWA()) {
       return true;
     }

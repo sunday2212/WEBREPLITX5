@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nextpulse-v95';
+const CACHE_NAME = 'nextpulse-v97';
 const urlsToCache = [
   './',
   './index.html',
@@ -49,28 +49,10 @@ function buildHeaders(response) {
   return h;
 }
 
-/* ─── Bot detection ─── */
-const botUserAgents = [
-  'Googlebot','Bingbot','Slurp','DuckDuckBot','Baiduspider','YandexBot',
-  'facebookexternalhit','twitterbot','rogerbot','linkedinbot','embedly',
-  'quora link preview','showyoubot','outbrain','pinterest',
-  'developers.google.com/+/web/snippet','www.google.com/webmasters/tools/richsnippets',
-  'slackbot','vkShare','W3C_Validator','redditbot','Applebot','WhatsApp',
-  'flipboard','tumblr','bitlybot','SkypeUriPreview','nuzzel','Discordbot',
-  'Google Page Speed','Qwantify','pinterestbot','Bitrix link preview',
-  'XING-contenttabreceiver','Chrome-Lighthouse','TelegramBot',
-  'Google-Ads-Overview','Google-Adwords','Google-Site-Verification'
-];
-
-function isBot(userAgent) {
-  if (!userAgent) return false;
-  return botUserAgents.some(bot => userAgent.toLowerCase().includes(bot.toLowerCase()));
-}
-
 /* ─── Install ─── */
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then(cache => Promise.allSettled(urlsToCache.map(u => cache.add(u))) )
   );
   self.skipWaiting();
 });

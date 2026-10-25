@@ -2,26 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-<!--ADS-EARLY-->
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
-<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
-<link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin>
-<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz Battle — Real-Time Multiplayer MCQ</title>
-  <!-- Google AdSense Auto Ads (optional): replace ca-pub-XXXX and uncomment.
-       Layout below is auto-ads friendly: normal document flow, scrollable body,
-       no full-screen overlay locks.
-  
-  -->
-  <script src="../../theme.js"></script>
+   <script src="../../theme.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../../supabase-config.js"></script>
   <script src="../../ai-key-manager.js"></script>
   <link rel="stylesheet" href="styles.css" />
 
+ <script src="/ads-loader.js" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -40,8 +31,6 @@
     <aside class="side">
       <div class="lb-head"><h3>🏆 Leaderboard</h3><span class="count"><b id="lb-count">0</b> online</span></div>
       <div id="leaderboard"></div>
-      <!-- Ad slot (only renders if ADSENSE_CLIENT set in config.js) -->
-      <div id="ad-slot" class="ad-slot"></div>
     </aside>
   </main>
 
