@@ -1062,6 +1062,54 @@
     </style>
 
  <script src="/ads-loader.js" defer></script>
+
+    <!-- ══════════ REWARDED AD (Google Ad Manager) — watch ad to skip the 30s wait ══════════ -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      window._skipWait = false;
+      window._rewardedEvt = null;
+
+      googletag.cmd.push(function () {
+        var slot = googletag.defineOutOfPageSlot(
+          '/23205238319/Rewarded_ads6',
+          googletag.enums.OutOfPageFormat.REWARDED
+        );
+        if (!slot) return;   // device/browser doesn't support rewarded ads
+        slot.addService(googletag.pubads());
+
+        // Ad is ready → show the "Watch ad" button (only while the wait is still running)
+        googletag.pubads().addEventListener('rewardedSlotReady', function (e) {
+          window._rewardedEvt = e;
+          var b = document.getElementById('reward-skip-btn');
+          if (b && !window._streamUnlocked) b.style.display = 'inline-flex';
+        });
+
+        // User watched the ad → reward: skip the countdown
+        googletag.pubads().addEventListener('rewardedSlotGranted', function () {
+          window._skipWait = true;
+          if (typeof showToast === 'function') {
+            showToast('Thanks for watching! Unlocking your stream…', 'gift');
+          }
+        });
+
+        // Ad closed → clean up
+        googletag.pubads().addEventListener('rewardedSlotClosed', function () {
+          window._rewardedEvt = null;
+          var b = document.getElementById('reward-skip-btn');
+          if (b) b.style.display = 'none';
+          googletag.destroySlots([slot]);
+        });
+
+        googletag.enableServices();
+        googletag.display(slot);
+      });
+
+      // Called ONLY by the user's tap on the button (never auto-triggered)
+      function showRewardedAd() {
+        if (window._rewardedEvt) window._rewardedEvt.makeRewardedVisible();
+      }
+    </script>
 </head>
 <body>
     <header>
@@ -1171,6 +1219,13 @@
                             <h3>Preparing your stream…</h3>
                             <p>Please wait while we set up a secure connection. The player will unlock automatically. You can switch to <strong>Telegram</strong> while you wait.</p>
                             <span class="sc-lock"><i class="fas fa-lock"></i> Do not close or refresh this page</span>
+
+                            <!-- Rewarded ad button (appears only when Google has an ad ready) -->
+                            <button id="reward-skip-btn" type="button" onclick="showRewardedAd()"
+                                style="display:none;align-items:center;gap:8px;margin-top:1rem;padding:.75rem 1.4rem;background:#6b46c1;color:#fff;border:0;border-radius:50px;font-weight:700;font-size:.92rem;cursor:pointer;">
+                                <i class="fas fa-gift"></i> Watch a short ad to skip the wait
+                            </button>
+
                             <div class="countdown-tip">
                                 <strong>💡 While you wait — study tip:</strong>
                                 <span id="countdown-tip-text">Watch at 1.25× speed the first time, then re-watch the difficult 10 minutes at normal speed. Active recall beats passive re-watching — pause after each concept and try to explain it aloud before moving on.</span>
@@ -2144,6 +2199,7 @@
            The panel content stays hidden until the timer reaches zero.
            The countdown is timestamp-based, so switching to Telegram and
            coming back cannot skip or restart it.
+           A completed rewarded ad (window._skipWait) unlocks it early.
            ══════════════════════════════════════════════════════════════════ */
         window._streamUnlocked     = false;   // true once the wait is done
         window._streamTimerRunning = false;   // true while the countdown runs
@@ -2183,12 +2239,16 @@
                 if (numEl) numEl.textContent = secs > 0 ? secs : '0';
                 if (ring)  ring.style.strokeDashoffset = CIRC * (elapsed / TOTAL_MS);
 
-                if (remaining <= 0) {
+                if (remaining <= 0 || window._skipWait) {
                     clearInterval(timerId);
                     window._streamTimerRunning = false;
                     window._streamUnlocked     = true;
                     wrap.style.display = 'none';
                     content.style.display = 'block';
+
+                    // Hide the rewarded-ad button once the stream is unlocked
+                    const rb = document.getElementById('reward-skip-btn');
+                    if (rb) rb.style.display = 'none';
 
                     const stTab = document.getElementById('tab-stream');
                     if (stTab && !stTab.classList.contains('active') &&
