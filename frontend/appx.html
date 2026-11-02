@@ -2569,16 +2569,37 @@
                         throw new Error(result.error.message || 'Payment was not completed.');
                     }
 
-                    // 3) confirm with YOUR server (never trust the browser alone)
+                    // 3) confirm with YOUR server (with retry logic)
                     msg('Confirming payment…');
-                    var v = await fetch(DONATE_API + '/api/donate/verify/' + encodeURIComponent(order.order_id));
-                    var vr = await v.json();
+                    
+                    let isPaid = false;
+                    let attempts = 0;
+                    
+                    // Retry up to 5 times (10 seconds total)
+                    while (attempts < 5) {
+                        var v = await fetch(DONATE_API + '/api/donate/verify/' + encodeURIComponent(order.order_id));
+                        var vr = await v.json();
+                        
+                        if (vr.status === 'PAID') {
+                            isPaid = true;
+                            break;
+                        }
+                        
+                        attempts++;
+                        if (attempts < 5) {
+                            msg('Confirming payment... (Please wait)', '#a16207');
+                            // Wait 2 seconds before trying again
+                            await new Promise(r => setTimeout(r, 2000));
+                        }
+                    }
 
-                    if (vr.status === 'PAID') {
+                    if (isPaid) {
                         msg('Thank you so much for your support! 💖', '#059669');
                         setTimeout(closeDonate, 2500);
                     } else {
-                        msg('Payment status: ' + (vr.status || 'PENDING') + '. If money was debited it will be confirmed shortly.', '#a16207');
+                        // If it still says ACTIVE after 10 seconds, assume it's processing
+                        msg('Payment is processing. Thank you for your support! 💖', '#059669');
+                        setTimeout(closeDonate, 3000);
                     }
                 } catch (err) {
                     msg(err.message || 'Something went wrong.', '#dc2626');
