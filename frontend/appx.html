@@ -12,6 +12,7 @@
 </script>
     <meta charset="UTF-8">
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Dopamin - Latest MBBS News India</title>
     <link rel="stylesheet" href="./styles.css">
@@ -25,9 +26,6 @@
     <script src="./access-control.js"></script>
     <script src="./blockX.js"></script>
     <script src="./push-subscribe.js" defer></script>
-    
-    <!-- Cashfree SDK -->
-    <script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
 
 <style>
         /* ── Profile badge (pic only) ── */
@@ -1532,71 +1530,6 @@
                 font-size: 1rem;
             }
         }
-
-        /* ── Donate Card CSS ── */
-        .donate-card {
-            margin: 1rem;
-            padding: 1.3rem 1.2rem;
-            background: linear-gradient(135deg, #fff1f2, #fff7ed);
-            border: 1.5px solid #fecdd3;
-            border-radius: 18px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-        }
-        .donate-card h3 { font-size: 1.1rem; color: #be123c; margin-bottom: .35rem; }
-        .donate-card p  { font-size: .86rem; color: #475569; margin-bottom: .9rem; line-height: 1.5; }
-        .donate-open-btn {
-            display: inline-flex; align-items: center; gap: .5rem;
-            background: #e11d48; color: #fff; border: 0; border-radius: 50px;
-            padding: .75rem 1.8rem; font-size: 1rem; font-weight: 700; cursor: pointer;
-            box-shadow: 0 4px 12px rgba(225, 29, 72, .3);
-            transition: background .2s, transform .15s;
-        }
-        .donate-open-btn:hover { background: #be123c; transform: translateY(-1px); }
-
-        .donate-overlay {
-            display: none; position: fixed; inset: 0; z-index: 1500;
-            background: rgba(0, 0, 0, .55); align-items: center; justify-content: center; padding: 1rem;
-        }
-        .donate-overlay.show { display: flex; }
-        .donate-modal {
-            width: 100%; max-width: 380px; background: #fff; border-radius: 18px;
-            padding: 1.4rem 1.3rem; position: relative; box-shadow: 0 20px 50px rgba(0, 0, 0, .35);
-        }
-        .donate-close {
-            position: absolute; top: .7rem; right: .7rem; width: 32px; height: 32px;
-            border: 0; border-radius: 50%; background: #f1f5f9; color: #475569; cursor: pointer; font-size: 1rem;
-        }
-        .donate-modal h3 { color: #be123c; margin-bottom: .3rem; font-size: 1.1rem; }
-        .donate-sub { font-size: .8rem; color: #64748b; margin-bottom: .9rem; }
-        .donate-chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: .8rem; }
-        .donate-chip {
-            padding: .55rem 0; border: 1.5px solid #cbd5e1; border-radius: 10px; background: #f8fafc;
-            font-weight: 700; font-size: .88rem; color: #334155; cursor: pointer;
-        }
-        .donate-chip.active { border-color: #e11d48; background: #fff1f2; color: #be123c; }
-        .donate-input {
-            width: 100%; padding: .65rem .75rem; border: 1.5px solid #cbd5e1; border-radius: 10px;
-            font-size: .92rem; margin-bottom: .6rem; font-family: inherit; color: #2d3748; background: #fff;
-        }
-        .donate-input:focus { outline: none; border-color: #e11d48; }
-        .donate-pay-btn {
-            width: 100%; padding: .8rem; border: 0; border-radius: 12px; background: #e11d48; color: #fff;
-            font-size: 1rem; font-weight: 700; cursor: pointer;
-        }
-        .donate-pay-btn:disabled { opacity: .65; cursor: progress; }
-        .donate-msg { margin-top: .6rem; font-size: .82rem; min-height: 1.2em; text-align: center; line-height: 1.4; }
-
-        html:not([data-theme="light"]) .donate-card { background: linear-gradient(135deg, #2d1a20, #2a2018); border-color: #6b2a3a; }
-        html:not([data-theme="light"]) .donate-card h3 { color: #fb7185; }
-        html:not([data-theme="light"]) .donate-card p  { color: #cbd5e1; }
-        html:not([data-theme="light"]) .donate-modal { background: #1a1d2e; }
-        html:not([data-theme="light"]) .donate-modal h3 { color: #fb7185; }
-        html:not([data-theme="light"]) .donate-sub { color: #8892a4; }
-        html:not([data-theme="light"]) .donate-close { background: #252b3b; color: #cbd5e1; }
-        html:not([data-theme="light"]) .donate-chip { background: #252b3b; border-color: #3b455c; color: #e2e8f0; }
-        html:not([data-theme="light"]) .donate-chip.active { background: #3b1a24; border-color: #e11d48; color: #fb7185; }
-        html:not([data-theme="light"]) .donate-input { background: #252b3b; border-color: #3b455c; color: #e2e8f0; }
     </style>
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 <script>
@@ -1754,39 +1687,6 @@
         <i class="fas fa-heart"></i>
         <span>Nextpulse is a free open source for medicos so don't pay anyone.</span>
     </div>
-
-    <!-- ── Donate Card ── -->
-    <div class="donate-card">
-        <h3>❤️ Help us keep Nextpulse running</h3>
-        <p>Servers cost money. Any small amount helps us pay for hosting so the app stays free for every medico.</p>
-        <button type="button" class="donate-open-btn" onclick="openDonate()">
-            <i class="fas fa-heart"></i> Donate
-        </button>
-    </div>
-
-    <div id="donate-overlay" class="donate-overlay" onclick="if(event.target===this)closeDonate()">
-        <div class="donate-modal">
-            <button type="button" class="donate-close" onclick="closeDonate()" aria-label="Close">&times;</button>
-            <h3>Support the server ❤️</h3>
-            <p class="donate-sub">Choose an amount. UPI, cards and net banking supported.</p>
-
-            <div class="donate-chips" id="donate-chips">
-                <button type="button" class="donate-chip" data-amt="20">₹20</button>
-                <button type="button" class="donate-chip active" data-amt="50">₹50</button>
-                <button type="button" class="donate-chip" data-amt="100">₹100</button>
-                <button type="button" class="donate-chip" data-amt="500">₹500</button>
-            </div>
-
-            <input id="donate-amount" class="donate-input" type="number" min="10" max="50000" step="1"
-                   inputmode="numeric" placeholder="Or enter custom amount (min ₹10)" value="50">
-            <input id="donate-phone" class="donate-input" type="tel" maxlength="10" inputmode="numeric"
-                   placeholder="Mobile number (10 digits)">
-
-            <button id="donate-pay-btn" type="button" class="donate-pay-btn" onclick="startDonation()">Donate now</button>
-            <div id="donate-msg" class="donate-msg" aria-live="polite"></div>
-        </div>
-    </div>
-
 <div id='div-gpt-ad-1793027647227-0' style='min-width:300px;min-height:250px;margin:1rem auto;text-align:center;'>
   <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1793027647227-0'); });</script>
 </div>
@@ -2485,130 +2385,6 @@
             loadProfile();
             initThemeToggle();
         });
-    </script>
-
-    <!-- ── Donation JS Logic ── -->
-    <script>
-        (function () {
-            var DONATE_API = "https://cash.afrahtafreeh.site";
-            var CASHFREE_MODE = "production"; // Set to production since you are using production keys
-            var cashfree = null;
-
-            function msg(text, color) {
-                var el = document.getElementById('donate-msg');
-                el.textContent = text || '';
-                el.style.color = color || '#64748b';
-            }
-
-            window.openDonate = function () {
-                document.getElementById('donate-overlay').classList.add('show');
-                msg('');
-            };
-            window.closeDonate = function () {
-                document.getElementById('donate-overlay').classList.remove('show');
-            };
-
-            // amount chips
-            document.getElementById('donate-chips').addEventListener('click', function (e) {
-                var chip = e.target.closest('.donate-chip');
-                if (!chip) return;
-                document.querySelectorAll('.donate-chip').forEach(function (c) { c.classList.remove('active'); });
-                chip.classList.add('active');
-                document.getElementById('donate-amount').value = chip.dataset.amt;
-            });
-            document.getElementById('donate-amount').addEventListener('input', function () {
-                document.querySelectorAll('.donate-chip').forEach(function (c) {
-                    c.classList.toggle('active', c.dataset.amt === document.getElementById('donate-amount').value);
-                });
-            });
-
-            window.startDonation = async function () {
-                var btn    = document.getElementById('donate-pay-btn');
-                var amount = parseInt(document.getElementById('donate-amount').value, 10);
-                var phone  = document.getElementById('donate-phone').value.trim();
-
-                if (!amount || amount < 10 || amount > 50000) {
-                    return msg('Enter an amount between ₹10 and ₹50,000.', '#dc2626');
-                }
-                if (!/^[6-9]\d{9}$/.test(phone)) {
-                    return msg('Enter a valid 10-digit mobile number.', '#dc2626');
-                }
-                if (typeof Cashfree === 'undefined') {
-                    return msg('Payment SDK failed to load. Check your internet and retry.', '#dc2626');
-                }
-                btn.disabled = true;
-                btn.textContent = 'Please wait…';
-                msg('Creating secure payment…');
-
-                try {
-                    // 1) ask YOUR server to create a Cashfree order
-                    var res = await fetch(DONATE_API + '/api/donate/create-order', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            amount: amount,
-                            phone: phone,
-                            name:  (_profileData && _profileData.name)  || 'Supporter',
-                            email: (_profileData && _profileData.email) || '',
-                            userId:(_profileData && _profileData.userId) || ''
-                        })
-                    });
-                    var order = await res.json();
-                    if (!res.ok || !order.payment_session_id) {
-                        throw new Error(order.error || 'Could not create order.');
-                    }
-
-                    // 2) open Cashfree checkout in a popup
-                    cashfree = cashfree || Cashfree({ mode: CASHFREE_MODE });
-                    var result = await cashfree.checkout({
-                        paymentSessionId: order.payment_session_id,
-                        redirectTarget: '_modal'
-                    });
-
-                    if (result && result.error) {
-                        throw new Error(result.error.message || 'Payment was not completed.');
-                    }
-
-                    // 3) confirm with YOUR server (with retry logic)
-                    msg('Confirming payment…');
-                    
-                    let isPaid = false;
-                    let attempts = 0;
-                    
-                    // Retry up to 5 times (10 seconds total)
-                    while (attempts < 5) {
-                        var v = await fetch(DONATE_API + '/api/donate/verify/' + encodeURIComponent(order.order_id));
-                        var vr = await v.json();
-                        
-                        if (vr.status === 'PAID') {
-                            isPaid = true;
-                            break;
-                        }
-                        
-                        attempts++;
-                        if (attempts < 5) {
-                            msg('Confirming payment... (Please wait)', '#a16207');
-                            // Wait 2 seconds before trying again
-                            await new Promise(r => setTimeout(r, 2000));
-                        }
-                    }
-
-                    if (isPaid) {
-                        msg('Thank you so much for your support! 💖', '#059669');
-                        setTimeout(closeDonate, 2500);
-                    } else {
-                        // If it still says ACTIVE after 10 seconds, assume it's processing
-                        msg('Payment is processing. Thank you for your support! 💖', '#059669');
-                        setTimeout(closeDonate, 3000);
-                    }
-                } catch (err) {
-                    msg(err.message || 'Something went wrong.', '#dc2626');
-                } finally {
-                    btn.disabled = false;
-                    btn.textContent = 'Donate now';
-                }
-            };
-        })();
     </script>
 </body>
 </html>
