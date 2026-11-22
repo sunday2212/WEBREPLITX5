@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lectures - NEXTPULSE | NEET PG Preparation</title>
   <meta name="description" content="Access comprehensive video lectures. Expert faculty for NEET PG preparation.">
   <meta name="keywords" content="NEET PG, medical lectures, video lectures">
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     .completion-toggle {
@@ -55,22 +53,6 @@
 
     .lecture-card {
       position: relative;
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .lecture-card:hover {
-      transform: translateY(-3px);
-    }
-
-    .lecture-card h3 {
-      margin-top: 0;
-      margin-bottom: 15px;
-      color: #2c3e50;
     }
 
     .video-popup {
@@ -168,6 +150,25 @@
       border-radius: 4px;
     }
 
+    .lecture-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .lecture-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .lecture-card h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
     .button-container {
       display: flex;
       gap: 10px;
@@ -203,12 +204,11 @@
       background-color: #27ae60;
     }
   </style>
-  <script src="../../access-control.js"></script>
-  <script src="../../block.js"></script>
-  <script src="../../error-handler/link-checker.js"></script>
-  
-
- <script src="/ads-loader.js" defer></script>
+  <script src="../../../access-control.js"></script>
+  <script src="../../../block.js"></script>
+  <script src="../../../error-handler/link-checker.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920367457745298"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 <script>
@@ -228,14 +228,6 @@
     </div>
   </header>
   <main>
-  <!--PAGE-INTRO-->
-  <style>
-  .page-intro{margin:0 0 1.2rem;padding:0.85rem 1.1rem;background:rgba(127,140,160,0.10);border:1px solid rgba(127,140,160,0.28);border-left:4px solid #4f8cff;border-radius:10px;line-height:1.65;font-size:0.9rem;color:inherit;}
-  .page-intro p{margin:0;}
-  html[data-theme="light"] .page-intro{background:#f1f5f9;border-color:#e2e8f0;border-left-color:#2563eb;}
-  html:not([data-theme="light"]) .page-intro{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.12);border-left-color:#63b3ed;}
-  </style>
-  <div class="page-intro"><p><strong>Paediatrics lectures.</strong> These paediatrics lectures cover growth and development, neonatology, immunisation and common childhood illnesses with high-yield exam points. Stream the lectures in sequence, note the high-yield points as you go, and pair each topic with MCQ practice for strong retention. New content is added regularly, so bookmark this page and check back often.</p></div>
     <div class="lecture-list" id="lectureList">
       <p>Loading lectures...</p>
     </div>
@@ -333,20 +325,33 @@
         if (lecturesData.length > 0) {
           renderLectures(lecturesData);
         } else {
-          console.log('No lectures found in JSON');
-          document.getElementById('lectureList').innerHTML = '<p>No lectures available.</p>';
+          console.log('No lectures found in JSON, using fallback');
+          useFallbackLectures();
         }
       } catch (error) {
         console.error('Error loading lectures:', error);
-        document.getElementById('lectureList').innerHTML =
-          '<p style="color:red;">Failed to load lectures: ' + error.message + '</p>';
+        console.log('Using fallback lectures due to error');
+        useFallbackLectures();
       }
+    }
+
+    function useFallbackLectures() {
+      lecturesData = [
+        { title: "Introduction", streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+        { title: "Basic Terminology", streamingUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+      ];
+      console.log('Using fallback lectures:', lecturesData.length, 'lectures');
+      renderLectures(lecturesData);
     }
 
     function escapeHtml(text) {
       const map = {
-        '&': '&amp;', '<': '&lt;', '>': '&gt;',
-        '"': '&quot;', "'": '&#039;', '\\': '&#92;'
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;',
+        '\\': '&#92;'
       };
       return text.replace(/[&<>"'\\]/g, m => map[m]);
     }
@@ -430,6 +435,11 @@
       document.body.removeChild(popup);
     }
 
+    function downloadVideo(streamUrl) {
+      const downloadUrl = streamUrl.replace('/watch/', '/dl/');
+      window.open(downloadUrl, '_blank');
+    }
+
     function openStreamPlayer(streamUrl, downloadUrl, title) {
       if (!streamUrl) {
         alert('Stream URL not available');
@@ -476,13 +486,13 @@
       loadLectures();
     });
   </script>
-  <script src="../../stream-player-utils.js"></script>
-  <script src="../../theme.js"></script>
+  <script src="../../../stream-player-utils.js"></script>
+  <script src="../../../theme.js"></script>
   <nav class="bottom-nav">
-    <a href="../../appx.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
-    <a href="../../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
-    <a href="../../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
-    <a href="../../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
+    <a href="../../../app.html" class="active"><i class="fas fa-lightbulb"></i><span>Home</span></a>
+    <a href="../../../00x12345.html"><i class="fas fa-play-circle"></i><span>Videos</span></a>
+    <a href="../../../searchx.html"><i class="fas fa-search"></i><span>Search</span></a>
+    <a href="../../../quizx/index.html"><i class="fas fa-question-circle"></i><span>Q Bank</span></a>
   </nav>
 </body>
 </html>
